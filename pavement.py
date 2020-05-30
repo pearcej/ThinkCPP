@@ -36,7 +36,7 @@ if master_url is None:
     master_url = get_master_url()
 
 master_app = 'runestone'
-serving_dir = "./build/studentcsp"
+serving_dir = "./build/thinkcpp"
 
 #new 7/2019 changes
 # Change to False when running localhost
