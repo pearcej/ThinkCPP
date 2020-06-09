@@ -17,7 +17,7 @@ We will start out with structures and get to classes in
 Chapter `[class] <#class>`__ (there is not much difference between
 them).
 
-.. fillintheblank:: fill_eight_one
+.. fillintheblank:: compound_values_1
 
     Strings are made up of smaller pieces (the characters). This makes strings an example of a _____ type.
 
@@ -25,14 +25,14 @@ them).
       :.*: Try again!
 
 
-.. fillintheblank:: fill_eight_two
+.. fillintheblank:: compound_values_2
 
     One of the mechanisms for creating your own compound values is structures. What is the other?
 
     - :(?:c|C)lasses: Correct!
       :.*: Try again!
 
-.. mchoice:: question_eight_intro
+.. mchoice:: compound_values_3
    :practice: T
    :answer_a: integer
    :answer_b: string

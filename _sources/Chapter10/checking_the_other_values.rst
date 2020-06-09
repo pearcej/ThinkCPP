@@ -60,8 +60,7 @@ In each case, the number of appearances is within about 1% of the
 expected value (10,000), so we conclude that the random numbers are
 probably uniform.
 
-.. mchoice:: question10_11_1
-   :multiple_answers:
+.. mchoice:: checking_values_1
    :answer_a: inside of the for loop.
    :answer_b: outside of the for loop, but inside of the function it's used in.
    :answer_c: outside of the function, and everywhere else in the program.
@@ -72,7 +71,7 @@ probably uniform.
 
    If you declare a variable inside a ``for`` statement, where can it exist?
 
-.. mchoice:: question10_11_2
+.. mchoice:: checking_values_2
    :multiple_answers:
    :answer_a: the difference between actual and expected number of appearances increases
    :answer_b: the difference between actual and expected number of appearances decreases

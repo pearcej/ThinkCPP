@@ -29,15 +29,14 @@ compiler that you don’t intend to change a parameter, it can help remind
 you. If you try to change one, you should get a compiler error, or at
 least a warning.
 
-.. dragndrop:: dnd9_3
+.. dragndrop:: const_parameters_1
     :feedback: Try again.
     :match_1: passing by value|||the calling function and the callee are appropriately encapsulated—it is not possible for a change in one to affect the other, except by affecting the return value.
     :match_2: passing by reference|||more efficient, because it avoids copying the argument
 
     Match the action to a benefit of its use.
 
-.. mchoice:: question_nine_five
-   :multiple_answers:
+.. mchoice:: const_parameters_2
    :answer_a: Makes reference parameters just as safe as value parameters.
    :answer_b: Can be used when you intend to modify a parameter.
    :answer_c: The syntax can look like this: void printTime (const Time& time)...

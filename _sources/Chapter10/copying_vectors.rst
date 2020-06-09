@@ -21,7 +21,9 @@ would expect.
 
 .. activecode:: ch10_3
    :language: cpp
-   
+
+   Take a look at the active code below, which uses the copy constructor.
+   ~~~~
    #include <iostream>
    #include <vector>
    using namespace std;
@@ -29,15 +31,15 @@ would expect.
    void print_vec(vector<int> vec);
 
    int main() {
-      vector<int> count = {1,2,3,4};
-      cout << "count = "; print_vec(count);
+       vector<int> count = {1,2,3,4};
+       cout << "count = "; print_vec(count);
 
-      vector<int> copy_1 (count);
-      vector<int> copy_2 = count;
+       vector<int> copy_1 (count);
+       vector<int> copy_2 = count;
 
-      cout << "copy_1 = "; print_vec(copy_1);
-      cout << "copy_2 = "; print_vec(copy_2);
-      cout << "We just made two copies of count.  As you can see, both methods work the same!" << endl;
+       cout << "copy_1 = "; print_vec(copy_1);
+       cout << "copy_2 = "; print_vec(copy_2);
+       cout << "We just made two copies of count.  As you can see, both methods work the same!" << endl;
    }
 
    ====
@@ -54,7 +56,7 @@ would expect.
    }
 
 
-.. mchoice:: question10_3_1
+.. mchoice:: copying_vectors_1
    :multiple_answers:
    :answer_a: vector&#60;double&#62; nums = decimals;
    :answer_b: vector&#60;double&#62; decimals = nums;
@@ -68,7 +70,7 @@ would expect.
 
    How would you make a copy of ``vector<double> decimals`` called **nums**?
 
-.. fillintheblank:: question10_3_2
+.. fillintheblank:: copying_vectors_2
 
    What is the name of the function that takes a vector as an argument, and 
    creates a new vector of the same size and with the same elements?

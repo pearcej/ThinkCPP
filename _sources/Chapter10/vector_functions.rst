@@ -11,26 +11,26 @@ then vector function ``push_back()`` for that purpose.
 
 ::
 
-   #include<iostream>
-   #include<vector>
+   #include <iostream>
+   #include <vector>
    using namespace std;
-   int main()
-   {
+   
+   int main() {
      vector<int> values;
-     int c,i,len;
+     int c, i, len;
      cin >> c;
 
-     while(c != -1) {
+     while (c != -1) {
        values.push_back(c);
        cin >> c;
      }
-     len=values.size();
-     for(i = 0; i < len; i++) {
+     len = values.size();
+     for (i = 0; i < len; i++) {
        cout << values[i] << endl;
      }
    }
 
-.. mchoice:: question10_6_1
+.. mchoice:: vector_functions_1
    :answer_a: 5
    :answer_b: 6
    :answer_c: 7
@@ -43,7 +43,7 @@ then vector function ``push_back()`` for that purpose.
 
    Let **nums** be the vector { 0, 1, 2, 3, 4 }. If we run the command ``nums.push_back(3)``, what will be returned by ``nums.size()``?
 
-.. parsonsprob:: question10_6_2
+.. parsonsprob:: vector_functions_2
 
    Construct the make_even() function that loops through vec, adds 1 to any elements
    that are odd, and returns the new vector.

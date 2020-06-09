@@ -49,25 +49,26 @@ And again, to call it, we have to invoke it on a ``Time`` object:
 
 The output of this program is ``9:22:50``.
 
-Let's try changing the input!
-
 .. activecode:: 11_4
    :language: cpp
 
+   Feel free to change the input and experiment around with the active
+   code below!
+   ~~~~
    #include <iostream>
    using namespace std;
 
    struct Time {
-     int hour, minute;
-     double second;
-     void print ();
-     void increment (double secs);
+       int hour, minute;
+       double second;
+       void print ();
+       void increment (double secs);
    };
 
    int main() {
-     Time currentTime = { 9, 14, 30.0 };
-     currentTime.increment (500.0);
-     currentTime.print ();
+       Time currentTime = { 9, 14, 30.0 };
+       currentTime.increment (500.0);
+       currentTime.print ();
    }
 
    ====
@@ -87,25 +88,25 @@ Let's try changing the input!
      }
    }
 
-.. fillintheblank:: question11_4_1
+.. fillintheblank:: another_example_1
 
     Suppose we have previously declared ``Time currentTime = {9, 14, 30.0}``.  What should be printed by ``time.print()`` after calling ``time.increment(645.0)``? Type your response in the form **hh:mm:ss**.
     
     - :(9:25:15): Correct!
       :.*: Incorrect! Try plugging the given input into the active code above!
 
-.. fillintheblank:: question11_4_2
+.. fillintheblank:: another_example_2
 
     When we call a member function, we __________ the function on the data structure.
     
     - :([Ii]nvoke)|(INVOKE): Correct!
       :.*: Incorrect! Try reading the past few pages again!
 
-.. parsonsprob:: question11_4_3
+.. parsonsprob:: another_example_3
 
-   Create the Cat object with member functions make_noise() and catch_mouse().  
-   The make_noise() function should print different noises depending on the cat's mood.
-   The catch_mouse() function returns true if the product of the cat's weight and age is
+   Create the ``Cat`` object with member functions ``make_noise`` and ``catch_mouse``.  
+   The ``make_noise`` function should print different noises depending on the cat's mood.
+   The ``catch_mouse`` function returns true if the product of the cat's weight and age is
    less than twice the speed of the mouse.  Write the functions in the same order they appear 
    inside the structure. Use implicit variable access.
    -----

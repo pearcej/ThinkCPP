@@ -21,32 +21,33 @@ are legal.
 ::
 
      cout << blank.x << ", " << blank.y << endl;
-     double distance = blank.x * blank.x + blank.y * blank.y;
-
-
-The first line outputs ``3, 4``; the second line calculates the value
-25.
+     double distance = sqrt(blank.x * blank.x + blank.y * blank.y);
 
 .. activecode:: eightone_two_one
   :language: cpp
 
-    #include <iostream>
-    using namespace std;
+  In the active code below, we access the instance variables of ``Point`` object 
+  ``black`` using dot notation and output their values. Next, we output the 
+  distance from the origin.
+  ~~~~
+  #include <iostream>
+  #include <cmath>
+  using namespace std;
 
-    struct Point {
+  struct Point {
       double x, y;
-    };
+  };
 
-    int main() {
+  int main() {
       Point blank;
       blank.x = 3.0;
       blank.y = 4.0;
       cout << blank.x << ", " << blank.y << endl;
-      double distance = blank.x * blank.x + blank.y * blank.y;
+      double distance = sqrt(blank.x * blank.x + blank.y * blank.y);
       cout << distance << endl;
-    }
+  }
 
-.. mchoice:: question_eight_one_one
+.. mchoice:: accessing_instance_variables_1
    :practice: T
    :answer_a: ``string`` is the instance variable, ``cube`` is the object
    :answer_b: ``x`` is the instance variable, ``thing`` is the object
@@ -61,7 +62,7 @@ The first line outputs ``3, 4``; the second line calculates the value
    In ``string x = thing.cube;``, what is the object and what is the instance variable we are reading the value of?
 
 
-.. mchoice:: question_eight_one_onetwo
+.. mchoice:: accessing_instance_variables_2
    :practice: T
    :answer_a: 2.0 7.0 53
    :answer_b: 2.07.053
@@ -90,7 +91,7 @@ The first line outputs ``3, 4``; the second line calculates the value
         cout << distance << endl;
       }
 
-.. mchoice:: question_eight_point_three
+.. mchoice:: accessing_instance_variables_3
    :practice: T
    :answer_a: int y = circle.x();
    :answer_b: int circle = x.y;

@@ -10,7 +10,7 @@ number of values.
 In the next few sections, we will write programs that generate a
 sequence of random numbers and check whether this property holds true.
 
-.. fillintheblank:: question10_8_1
+.. fillintheblank:: statistics_1
 
     Random numbers are distributed __________.
 

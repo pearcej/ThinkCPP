@@ -3,26 +3,31 @@ String concatenation
 
 Interestingly, the ``+`` operator can be used on strings; it performs
 string **concatenation**. To concatenate means to join the two operands
-end to end. For example:
+end to end. 
 
 .. activecode:: seventwelve
   :language: cpp
   :caption: String concatenation
 
+  In the active code below, we use the ``+`` operator to concatenate ``fruit`` with
+  ``bakedGood`` to create ``dessert``.
+  ~~~~
   #include <iostream>
   using namespace std;
 
   int main() {
-     string fruit = "banana";
-     string bakedGood = " nut bread";
-     string dessert = fruit + bakedGood;
-     cout << dessert << endl;
+      string fruit = "banana";
+      string bakedGood = " nut bread";
+      string dessert = fruit + bakedGood;
+      cout << dessert << endl;
   }
 
 The output of this program is ``banana nut bread``.
 
-Unfortunately, the ``+`` operator does not work on native C strings, so
-you cannot write something like
+.. warning::
+   Unfortunately, the ``+`` operator does not work on native C strings.
+
+Thus, you cannot write something like
 
 ::
 
@@ -45,17 +50,19 @@ order:
   :language: cpp
   :caption: String concatenation
 
+  The active code below outputs the ducklings names in alphabetical order.
+  ~~~~
   #include <iostream>
   using namespace std;
 
   int main() {
-     string suffix = "ack";
-     char letter = 'J';
-     while (letter <= 'Q') {
-       cout << letter + suffix << endl;
-       letter++;
-     }
-   }
+      string suffix = "ack";
+      char letter = 'J';
+      while (letter <= 'Q') {
+          cout << letter + suffix << endl;
+          letter++;
+      }
+  }
 
 The output of this program is:
 
@@ -75,7 +82,7 @@ and not with native C strings. Unfortunately, an expression like
 ``letter + "ack"`` is syntactically legal in C++, although it produces a
 very strange result, at least in my development environment.
 
-.. mchoice:: test_question_seven_five
+.. mchoice:: string_concatenation_1
    :practice: T
    :answer_a: C++ rocks
    :answer_b: C++
@@ -96,22 +103,25 @@ very strange result, at least in my development environment.
       string t = "rocks";
       cout << s + t << endl;
 
-.. parsonsprob:: question_seven_five
+.. parsonsprob:: string_concatenation_2
+   :numbered: left
+   :adaptive:
 
    As an exercise, put together the code below so that it prints ``C++ is so fun!""
    -----
    int main() {
-   -----
+   =====
       string language = "C++";
       string action = " is so ";
       string adjective = "fun!";
-   -----
+   =====
       string language = "C++"; #distractor
       string action = "is so";
       string adjective = "fun!";
-   -----
+   =====
       cout << language + action + adjective << endl;
-   -----
+   =====
       cout << "language" + "action" + "adjective" << endl; #distractor
-   -----
+   =====
    }
+

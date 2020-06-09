@@ -33,7 +33,7 @@ different ways. First, it is an argument to ``howMany``, specifying
 which value I am interested in. Second, it is an index into the
 histogram, specifying which location I should store the result in.
 
-.. mchoice:: question10_12_1
+.. mchoice:: histogram_1
    :multiple_answers:
    :answer_a: Vectors require more typing than using individual variables to store data.
    :answer_b: Vectors create multiple storage locations at once under the same name.

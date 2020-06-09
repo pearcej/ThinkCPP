@@ -44,7 +44,7 @@ Computer Science sequence, Data Structures, you will see some of the
 most interesting, clever, and useful algorithms computer science has
 produced.
 
-.. fillintheblank:: fill_nine_two
+.. fillintheblank:: algorithms_1
 
     When you write a general solution for a class of problems, as opposed to a specific solution to a single problem, you have written an ____.
 

@@ -65,25 +65,26 @@ function call.
   :language: cpp
   :caption: Two-dimensional tables
 
+  Try running the active code below, which uses ``printMultiples``.
+  ~~~~
   #include <iostream>
   using namespace std;
 
-  void printMultiples (int n)
-  {
-    int i = 1;
-    while (i <= 6) {
-      cout << n*i << "   ";
-      i = i + 1;
-    }
-    cout << endl;
+  void printMultiples (int n) {
+      int i = 1;
+      while (i <= 6) {
+          cout << n*i << "   ";
+          i = i + 1;
+      }
+      cout << endl;
   }
 
   int main() {
-    int i = 1;
-    while (i <= 6) {
-      printMultiples (i);
-      i = i + 1;
-    }
+      int i = 1;
+      while (i <= 6) {
+          printMultiples (i);
+          i = i + 1;
+      }
   }
 
 The output of this program is
@@ -104,29 +105,30 @@ bothers you, you can also use tab characters, like below.
   :language: cpp
   :caption: Two-dimensional tables
 
+  The active code below uses tab characters to make the table neater.
+  ~~~~
   #include <iostream>
   using namespace std;
 
-  void printMultiples (int n)
-  {
-    int i = 1;
-    while (i <= 6) {
-      cout << n*i << '\t';
-      i = i + 1;
-    }
-    cout << endl;
+  void printMultiples (int n) {
+      int i = 1;
+      while (i <= 6) {
+          cout << n*i << '\t';
+          i = i + 1;
+      }
+      cout << endl;
   }
 
   int main() {
-    int i = 1;
-    while (i <= 6) {
-      printMultiples (i);
-      i = i + 1;
-    }
+      int i = 1;
+      while (i <= 6) {
+          printMultiples (i);
+          i = i + 1;
+      }
   }
 
 
-.. mchoice:: test_question_six_five
+.. mchoice:: encapsulation_generalization_1
    :answer_a: Replacing integers with parameters.
    :answer_b: Using a parameter that exists in several different functions.
    :answer_c: Taking a very specific task and making it more applicable to other situations.
@@ -140,7 +142,9 @@ bothers you, you can also use tab characters, like below.
    What is the purpose of generalization?
 
 
-.. parsonsprob:: question_six_one
+.. parsonsprob:: encapsulation_generalization_2
+   :numbered: left
+   :adaptive:
 
    Create a function that represents encapsulation and generalization. The function should take in an integer, n, and print out its multiples.
    -----
@@ -165,7 +169,7 @@ bothers you, you can also use tab characters, like below.
      cout << endl; }
 
 
-.. mchoice:: test_question_six_six
+.. mchoice:: encapsulation_generalization_3
    :answer_a: The while loop, which allows the code to execute until the statement within the parenthesis is no longer true.
    :answer_b: The first line, which declares the name, parameter, and return type.
    :answer_c: The last line, which prints out a newline.

@@ -25,7 +25,7 @@ reasonably unpredictable and unrepeatable, like the number of
 milliseconds since the last second tick, and use that number as a seed.
 The details of how to do that depend on your development environment.
 
-.. mchoice:: question10_14_1
+.. mchoice:: random_seeds_1
    :answer_a: Calling the random() function with no arguments.
    :answer_b: Calling srand() on a integer seed.
    :answer_c: Running the gettimeofday() function, and calling srand() on the result.

@@ -16,21 +16,24 @@ standard format. If you call ``printPoint (blank)``, it will output
 .. activecode:: eightone_two
   :language: cpp
 
-    #include <iostream>
-    using namespace std;
+  The active code below uses the ``printPoint`` function. Run the code to 
+  see the output!
+  ~~~~
+  #include <iostream>
+  using namespace std;
 
-    struct Point {
+  struct Point {
       double x, y;
-    };
+  };
 
-    void printPoint (Point p) {
+  void printPoint (Point p) {
       cout << "(" << p.x << ", " << p.y << ")" << endl;
-    }
+  }
 
-    int main() {
+  int main() {
       Point blank = { 3.0, 4.0 };
       printPoint (blank);
-    }
+  }
 
 As a second example, we can rewrite the ``distance`` function from
 Section `[distance] <#distance>`__ so that it takes two ``Point``\ s as
@@ -44,7 +47,7 @@ parameters instead of four ``double``\ s.
      return sqrt (dx*dx + dy*dy);
    }
 
-.. mchoice:: question_eight_point_five
+.. mchoice:: structures_parameters_1
    :practice: T
    :answer_a: (-2.0, -7.0)
    :answer_b: (2.0, 7.0)
@@ -61,7 +64,7 @@ parameters instead of four ``double``\ s.
    .. code-block:: cpp
 
       struct Coordinate {
-      double x, y;
+        double x, y;
       };
 
       void printOppositeCoordinate (Point p) {
@@ -73,16 +76,10 @@ parameters instead of four ``double``\ s.
         printOppositeCoordinate (coord);
       }
 
-.. parsonsprob:: question_8_point5_1
+.. parsonsprob:: structures_parameters_2
 
    Construct a function that takes in three Point structures and prints the average of the x coordinates and the average of the y coordinates as a coordinate. Find the x average before the y average.
    -----
-   struct Point {
-   =====
-    double x, y;
-   =====
-   };
-   =====
    void printAveragePoint(Point p1, Point p2, Point p3) {
    =====
     double avgX = (p1.x + p2.x + p3.x)/3;
@@ -95,4 +92,4 @@ parameters instead of four ``double``\ s.
    =====
     cout << "(" << "avgX" << "," << "avgY" << ")"; #distractor
    =====
-    }
+   }

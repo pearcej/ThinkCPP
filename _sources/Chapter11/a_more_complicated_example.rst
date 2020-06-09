@@ -35,11 +35,12 @@ To invoke this function:
 You can almost read the invocation like English: “If the done-time is
 after the current-time, then...”
 
-Let's try another practical example using the ``after()`` function!  Feel free to modify the time that school gets out, and the time that the track meet starts, if you wish!
-
 .. activecode:: 11_6
    :language: cpp
 
+   The active code below is another practical example using the ``after()`` function. 
+   Feel free to modify the time that school gets out, and the time that the track meet starts, if you wish!
+   ~~~~
    #include <iostream>
    using namespace std;
 
@@ -73,7 +74,7 @@ Let's try another practical example using the ``after()`` function!  Feel free t
      return false;
    }
 
-.. mchoice:: question11_6_1
+.. mchoice:: more_complicated_example_1
    :multiple_answers:
    :answer_a: There is only one Time parameter.
    :answer_b: The function operates on two Time objects.
@@ -87,7 +88,7 @@ Let's try another practical example using the ``after()`` function!  Feel free t
 
    Which is/are true about the ``Time::after`` member function?
 
-.. mchoice:: question11_6_2
+.. mchoice:: more_complicated_example_2
    :answer_a: One
    :answer_b: Two
    :answer_c: Three
@@ -100,7 +101,7 @@ Let's try another practical example using the ``after()`` function!  Feel free t
 
    In a function that operates on **four** structures, how many of them are accessed with dot notation?
 
-.. parsonsprob:: question11_6_3
+.. parsonsprob:: more_complicated_example_3
 
    Create the Dog::is_older() function as it would be defined INSIDE of the Dog structure definition.  This function
    checks if the current Dog is older than another Dog.  The function is invoked on the current Dog.

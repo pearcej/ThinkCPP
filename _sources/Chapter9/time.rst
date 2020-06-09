@@ -11,23 +11,24 @@ It seems clear that ``hour`` and ``minute`` should be integers. Just to
 keep things interesting, let’s make ``second`` a ``double``, so we can
 record fractions of a second.
 
-Here’s what the structure definition looks like. We can create a ``Time`` object in the usual way:
-
 .. activecode:: nineone
   :language: cpp
 
-    #include <iostream>
-    using namespace std;
+  The active code below shows what the structure definition looks like. 
+  We can create a ``Time`` object in the usual way.
+  ~~~~
+  #include <iostream>
+  using namespace std;
 
-    struct Time {
+  struct Time {
       int hour, minute;
       double second;
-      };
+  };
 
-    int main() {
-        Time time = { 11, 59, 3.14159 };
-        cout << time.hour << ":" << time.minute << ":" << time.second;
-     }
+  int main() {
+      Time time = { 11, 59, 3.14159 };
+      cout << time.hour << ":" << time.minute << ":" << time.second;
+  }
 
 The state diagram for this object looks like this:
 
@@ -42,8 +43,7 @@ reason that instance variables are so-named is that every instance of a
 type has a copy of the instance variables for that type.
 
 
-.. mchoice:: question_nine_one
-   :multiple_answers:
+.. mchoice:: time_1
    :answer_a: sandwich, coffee, pastry
    :answer_b: dollar, cents
    :answer_c: Price, struct
@@ -66,8 +66,7 @@ type has a copy of the instance variables for that type.
         Price pastry = { 2, 0 };
       }
 
-.. mchoice:: question_nine_two
-   :multiple_answers:
+.. mchoice:: time_2
    :answer_a: sandwich, coffee, pastry
    :answer_b: dollar, cents
    :answer_c: Price, struct
@@ -90,8 +89,7 @@ type has a copy of the instance variables for that type.
         Price pastry = { 2, 0 };
       }
 
-.. mchoice:: question_nine_three
-   :multiple_answers:
+.. mchoice:: time_3
    :answer_a: sandwich, coffee, pastry
    :answer_b: dollar, cents
    :answer_c: Price
@@ -114,24 +112,50 @@ type has a copy of the instance variables for that type.
         Price pastry = { 2, 0 };
       }
 
-**Complete the ``printTime`` function, which should print out the time in the HOUR:MINUTE:SECONDS format, just like above.**
-
 .. activecode:: ninetwo
   :language: cpp
 
-    #include <iostream>
-    using namespace std;
+  Try writing the ``printTime`` function in the commented section
+  of the active code below. ``printTime`` should print out the time
+  in the HOUR:MINUTE:SECONDS format. If you get stuck, you can reveal the extra problem
+  at the end for help. 
+  ~~~~
+  #include <iostream>
+  using namespace std;
 
-    struct Time {
+  struct Time {
       int hour, minute;
       double second;
-      };
+  };
 
-    void printTime(Time& x) {
+  void printTime(Time& time) {
+      // ``printTime`` should print out the time in the   
+      // HOUR:MINUTE:SECONDS format. Write your implementation here.
+  }
 
-    }
+  int main() {
+      Time time = { 11, 59, 3.14159 };
 
-    int main() {
-        Time time = { 11, 59, 3.14159 };
-        printTime(time);
-     }
+      // Should output "11:59:3.14159"
+      printTime(time);
+  }
+
+.. reveal:: 9_1_1
+   :showtitle: Reveal Problem
+   :hidetitle: Hide Problem
+
+   .. parsonsprob:: time_4
+      :numbered: left
+      :adaptive:
+   
+      Let's write the code for the ``printTime`` function. ``printTime`` 
+      should print out the time in the HOUR:MINUTE:SECONDS format.
+      -----
+      void printTime(Time& time) {
+      =====
+      Time printTime(Time& time) {                         #paired
+      =====
+         cout << time.hour << ":" << time.minute << ":" << time.second;
+      =====
+         cout << hour << ":" << minute << ":" << second;                        #paired 
+      }

@@ -42,11 +42,11 @@ Unfortunately, this is syntactically legal, so the compiler will not
 warn you. The effect of this statement is to leave the value of
 ``index`` unchanged. This is often a difficult bug to track down.
 
-Remember, you can write ``index = index +1;``, or you can write
-``index++;``, but you shouldn’t mix them.
+.. warning::
+   Remember, you can write ``index = index +1;``, or you can write
+   ``index++;``, but you shouldn’t mix them.
 
-
-.. clickablearea:: click_seven_four
+.. clickablearea:: increment_decrement_1
     :question: Click on the incorrect or not suggested increment statements.
     :iscode:
     :feedback: Re-read the text above and try again.
@@ -57,10 +57,9 @@ Remember, you can write ``index = index +1;``, or you can write
         :click-correct: count = count++;:endclick:
         :click-correct: cout << x++ << endl;:endclick:
         :click-incorrect: count--; :endclick:
-        }
+    }
 
-
-.. mchoice:: test_question_seven_two___
+.. mchoice:: increment_decrement_2
    :practice: T
    :answer_a: 5 4 3 2 1
    :answer_b: -5 -4 -3 -2 -1
@@ -77,25 +76,28 @@ Remember, you can write ``index = index +1;``, or you can write
       :linenos:
 
       int x = -5;
-      while (x < 0){
+      while (x < 0) {
         x++;
         cout << x << " ";
       }
 
-.. parsonsprob:: question_seven_four_
+.. parsonsprob:: increment_decrement_3
+   :numbered: left
+   :adaptive:
 
    Print every number from 1-10 in this format: "Number 1". Each number should be on its own line.
    -----
    int x = 0;
-
+   =====
    x = 0; #distractor
-
+   =====
    while (x < 10) {
-
+   =====
        cout << "Number " << x << endl;
-
+   =====
        cout << "Number " << x; #distractor
-
+   =====
        ++x; #distractor
-
-       x++;}
+   =====
+       x++;
+   }

@@ -27,9 +27,10 @@ This definition indicates that there are two elements in this structure,
 named ``x`` and ``y``. These elements are called **instance variables**,
 for reasons I will explain a little later.
 
-It is a common error to leave off the semi-colon at the end of a
-structure definition. It might seem odd to put a semi-colon after a
-squiggly-brace, but you’ll get used to it.
+.. note::
+   It is a common error to leave off the semi-colon at the end of a
+   structure definition. It might seem odd to put a semi-colon after a
+   squiggly-brace, but you’ll get used to it.
 
 Once you have defined the new structure, you can create variables with
 that type:
@@ -58,7 +59,7 @@ As usual, the name of the variable ``blank`` appears outside the box and
 its value appears inside the box. In this case, that value is a compound
 object with two named instance variables.
 
-.. mchoice:: question_eight_one
+.. mchoice:: point_objects_1
    :practice: T
    :answer_a: blank.x = 3.0;
    :answer_b: Point.x = 3.0;
@@ -82,7 +83,7 @@ object with two named instance variables.
         Point nice;
       }
 
-.. parsonsprob:: question_8_1
+.. parsonsprob:: point_objects_2
 
    Construct a block of code that correctly creates variables of a certain structure's type.
    -----
@@ -101,7 +102,7 @@ object with two named instance variables.
       Point.x = 3.0; #distractor
    }
 
-.. mchoice:: question_eight_point_two
+.. mchoice:: point_objects_3
    :practice: T
    :answer_a: outside of any function definition, usually at the beginning of the program
    :answer_b: after the main function

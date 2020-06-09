@@ -30,8 +30,7 @@ This can be slightly more efficient, although it can be confusing enough
 to cause subtle errors. For the vast majority of programming, it is
 worth a spending a little run time to avoid a lot of debugging time.
 
-.. mchoice:: question_nine_six
-   :multiple_answers:
+.. mchoice:: fillin_functions_1
    :answer_a: Time& t1
    :answer_b: Time& t2
    :answer_c: Time& sum

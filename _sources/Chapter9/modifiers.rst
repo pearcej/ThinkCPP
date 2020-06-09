@@ -35,63 +35,106 @@ replacing the ``if`` statements with ``while`` statements:
 .. activecode:: nineseven
   :language: cpp
 
-   #include <iostream>
-   using namespace std;
+  The active code below uses the ``increment`` function. Run the active code to
+  see what the output is!
+  ~~~~
+  #include <iostream>
+  using namespace std;
 
-   struct Time {
-     int hour, minute;
-     double second;
-   };
+  struct Time {
+      int hour, minute;
+      double second;
+  };
 
-   void printTime (Time& t) {
-     cout << t.hour << ":" << t.minute << ":" << t.second << endl;
-     cout << "Time is " << t.hour << " hour " << t.minute << " minutes " << t.second << " seconds  "<<endl;
-   }
+  void printTime (Time& t) {
+      cout << t.hour << ":" << t.minute << ":" << t.second << endl;
+  }
 
-   void increment (Time& time, double secs) {
-     time.second += secs;
+  void increment (Time& time, double secs) {
+      time.second += secs;
+      while (time.second >= 60.0) {
+          time.second -= 60.0;
+          time.minute += 1;
+      }
+      while (time.minute >= 60) {
+          time.minute -= 60;
+          time.hour += 1;
+      }
+  }
 
-     while (time.second >= 60.0) {
-       time.second -= 60.0;
-       time.minute += 1;
-     }
-     while (time.minute >= 60) {
-       time.minute -= 60;
-       time.hour += 1;
-     }
-   }
-
-   int main() {
-     Time currentTime = { 9, 14, 30.0 };
-     increment(currentTime, 60.0);
-     printTime (currentTime);
-    }
-
-This solution is correct, but not very efficient. Can you think of a
-solution that does not require iteration? Try it in the space below:
+  int main() {
+      Time currentTime = { 9, 14, 30.0 };
+      increment(currentTime, 60.0);
+      printTime (currentTime);
+  }
 
 .. activecode:: nineeight
   :language: cpp
 
-   #include <iostream>
-   using namespace std;
+  The solution above is correct, but not very efficient. Can you think of a
+  solution that does not require iteration? Try writing a more efficient version
+  of ``increment`` in the commented section of the active code below. If you get stuck, 
+  you can reveal the extra problem at the end for help. 
+  ~~~~
+  #include <iostream>
+  using namespace std;
 
-   struct Time {
-     int hour, minute;
-     double second;
-   };
+  struct Time {
+      int hour, minute;
+      double second;
+  };
 
-   void printTime (Time& t) {
-     cout << t.hour << ":" << t.minute << ":" << t.second << endl;
-     cout << "Time is " << t.hour << " hour " << t.minute << " minutes " << t.second << " seconds  "<<endl;
-   }
+  void printTime (Time& t) {
+      cout << t.hour << ":" << t.minute << ":" << t.second << endl;
+  }
 
-   void increment (Time& time, double secs) {
+  void increment (Time& time, double secs) {
+      // Write your implementation here.
+  }
 
-   }
+  int main() {
+      Time t1 = { 9, 14, 30.0 };
+      increment(t1, 60.0);
+      // Should output "9:15:30"
+      printTime (t1);
 
-   int main() {
-     Time currentTime = { 9, 14, 30.0 };
-     increment(currentTime, 60.0);
-     printTime (currentTime);
-    }
+      Time t2 = { 9, 59, 45.0 };
+      increment(t2, 120.0);
+      // Should output "10:1:45"
+      printTime (t2);
+  }
+
+.. reveal:: 9_6_1
+   :showtitle: Reveal Problem
+   :hidetitle: Hide Problem
+
+   .. parsonsprob:: modifiers_1
+      :numbered: left
+      :adaptive:
+   
+      Let's write the code for the ``increment`` function. ``increment`` 
+      adds a number of seconds to a ``Time`` object and updates the values
+      of the object.
+      -----
+      void increment (Time& time, double secs) {
+      =====
+      void increment (const Time& time, double secs) {                         #paired
+      =====
+         int mins = (time.second + secs) / 60;
+      =====
+         int mins = (time.second + secs) % 60;                        #paired 
+      =====
+         time.second = time.second + secs - 60 * mins;
+      =====
+         time.second = time.second + secs;                        #paired 
+      =====
+         int hours = (time.minute + mins) / 60;
+      =====
+         int hours = (time.second + second) / 60;                        #paired 
+      =====
+         time.minute = time.minute + mins - 60 * hours;
+      =====
+         time.second = time.minute + mins - 60 * hours;                        #paired 
+      =====
+         time.hour += hours;
+      }

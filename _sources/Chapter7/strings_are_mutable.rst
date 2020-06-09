@@ -2,25 +2,27 @@
 -------------------------
 
 You can change the letters in an ``string`` one at a time using the
-``[]`` operator on the left side of an assignment. For example,
+``[]`` operator on the left side of an assignment.
 
 .. activecode:: sevenfourteen
   :language: cpp
   :caption: String are mutable
 
-    #include <iostream>
-    using namespace std;
+  The active code below changes the first letter in ``greeting`` to be
+  ``'J'``.
+  ~~~~
+  #include <iostream>
+  using namespace std;
 
-    int main() {
-
-     string greeting = "Hello, world!";
-     greeting[0] = 'J';
-     cout << greeting << endl;
-     }
+  int main() {
+      string greeting = "Hello, world!";
+      greeting[0] = 'J';
+      cout << greeting << endl;
+  }
 
 produces the output ``Jello, world!``.
 
-.. mchoice:: test_question_seven_six
+.. mchoice:: string_mutable_1
    :practice: T
    :answer_a: icd cream
    :answer_b: icedcream

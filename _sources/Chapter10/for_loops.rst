@@ -46,41 +46,42 @@ is equivalent to
        i++;
      }
 
-In the active code blocks below, you can test this out for yourself!
-
 .. activecode:: ch10_4_for_loop
    :language: cpp
-   
+
+   Run the active code below, which uses a for loop.
+   ~~~~
    #include <iostream>
    #include <vector>
    using namespace std;
 
    int main() {
-      vector<int> count = {1,2,3,4};
-      int i;
-      for (i = 0; i < 4; i++) {
-         cout << count[i] << endl;
-      }
+       vector<int> count = {1,2,3,4};
+       int i;
+       for (i = 0; i < 4; i++) {
+           cout << count[i] << endl;
+       }
    }
 
 .. activecode:: ch10_4_while_loop
    :language: cpp
-   
+
+   Run the active code below, which uses a while loop.
+   ~~~~
    #include <iostream>
    #include <vector>
    using namespace std;
 
    int main() {
-      vector<int> count = {1,2,3,4};
-      int i = 0;
-      while (i < 4) {
-         cout << count[i] << endl;
-         i++;
-      }
+       vector<int> count = {1,2,3,4};
+       int i = 0;
+       while (i < 4) {
+           cout << count[i] << endl;
+           i++;
+       }
    }
 
-
-.. fillintheblank:: question10_4_1
+.. fillintheblank:: for_loops_1
 
     How many times would the following loop execute?  ``for (int i = 1; i < 4; i++)``
 
@@ -88,7 +89,7 @@ In the active code blocks below, you can test this out for yourself!
       :4: Incorrect! The loop does not execute when i = 4.
       :.*: Incorrect!
 
-.. mchoice:: question10_4_2
+.. mchoice:: for_loops_2
    :answer_a: in the BODIES of both loops
    :answer_b: in the BODY of a for loop, and in the statement of a while loop
    :answer_c: in the statement of a for loop, and in the BODY of a while loop

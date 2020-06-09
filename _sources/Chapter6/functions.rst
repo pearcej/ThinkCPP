@@ -19,6 +19,67 @@ Here are some of the reasons functions are useful:
 
 For example, instead of writing the 53 lines of code below...
 
+.. activecode:: sixnine
+  :language: cpp
+  :caption: Two-dimensional tables
+
+  #include <iostream>
+  using namespace std;
+
+  int main() {
+      int x = 4;
+      x = x * 2;
+      x = x / 2;
+      x = x + 2;
+      x = x - 2;
+      cout << x << endl;
+      x = 13;
+      x = x * 2;
+      x = x / 2;
+      x = x + 2;
+      x = x - 2;
+      cout << x << endl;
+      x = 100;
+      x = x * 2;
+      x = x / 2;
+      x = x + 2;
+      x = x - 2;
+      cout << x << endl;
+      x = 22;
+      x = x * 2;
+      x = x / 2;
+      x = x + 2;
+      x = x - 2;
+      cout << x << endl;
+      x = 220;
+      x = x * 2;
+      x = x / 2;
+      x = x + 2;
+      x = x - 2;
+      cout << x << endl;
+      x = 0;
+      x = x * 2;
+      x = x / 2;
+      x = x + 2;
+      x = x - 2;
+      cout << x << endl;
+      x = 1000;
+      x = x * 2;
+      x = x / 2;
+      x = x + 2;
+      x = x - 2;
+      cout << x << endl;
+      x = 254;
+      x = x * 2;
+      x = x / 2;
+      x = x + 2;
+      x = x - 2;
+      cout << x << endl;
+  }
+
+..you would reduce it to the 21 lines of code below, making it easier to read, debug, and use
+the function many times with rewriting it each time.
+
 .. activecode:: sixten
   :language: cpp
   :caption: Two-dimensional tables
@@ -26,88 +87,27 @@ For example, instead of writing the 53 lines of code below...
   #include <iostream>
   using namespace std;
 
-  int main() {
-    int x = 4;
-    x = x * 2;
-    x = x / 2;
-    x = x + 2;
-    x = x - 2;
-    cout << x << endl;
-    x = 13;
-    x = x * 2;
-    x = x / 2;
-    x = x + 2;
-    x = x - 2;
-    cout << x << endl;
-    x = 100;
-    x = x * 2;
-    x = x / 2;
-    x = x + 2;
-    x = x - 2;
-    cout << x << endl;
-    x = 22;
-    x = x * 2;
-    x = x / 2;
-    x = x + 2;
-    x = x - 2;
-    cout << x << endl;
-    x = 220;
-    x = x * 2;
-    x = x / 2;
-    x = x + 2;
-    x = x - 2;
-    cout << x << endl;
-    x = 0;
-    x = x * 2;
-    x = x / 2;
-    x = x + 2;
-    x = x - 2;
-    cout << x << endl;
-    x = 1000;
-    x = x * 2;
-    x = x / 2;
-    x = x + 2;
-    x = x - 2;
-    cout << x << endl;
-    x = 254;
-    x = x * 2;
-    x = x / 2;
-    x = x + 2;
-    x = x - 2;
-    cout << x << endl;
-  }
-
-..you would reduce it to the 21 lines of code below, making it easier to read, debug, and use
-the function many times with rewriting it each time.
-
-.. activecode:: sixeleven
-  :language: cpp
-  :caption: Two-dimensional tables
-
-  #include <iostream>
-  using namespace std;
-
   void all_operators(int x) {
-    x = x * 2;
-    x = x / 2;
-    x = x + 2;
-    x = x - 2;
-    cout << x << endl;
+      x = x * 2;
+      x = x / 2;
+      x = x + 2;
+      x = x - 2;
+      cout << x << endl;
   }
 
   int main() {
-    all_operators(4);
-    all_operators(13);
-    all_operators(100);
-    all_operators(22);
-    all_operators(220);
-    all_operators(0);
-    all_operators(1000);
-    all_operators(254);
+      all_operators(4);
+      all_operators(13);
+      all_operators(100);
+      all_operators(22);
+      all_operators(220);
+      all_operators(0);
+      all_operators(1000);
+      all_operators(254);
   }
 
 
-.. mchoice:: test_question_six_two
+.. mchoice:: functions_1
    :practice: T
    :answer_a: A named sequence of statements.
    :answer_b: Any sequence of statements.
@@ -122,7 +122,9 @@ the function many times with rewriting it each time.
    What is a function in C++?
 
 
-.. parsonsprob:: question_six_two
+.. parsonsprob:: functions_2
+   :numbered: left
+   :adaptive:
 
    Create a function called absoluteValue, which returns the absolute value of a parameter num. Assume you do not have access to #include <cmath>.
    -----
@@ -145,7 +147,7 @@ the function many times with rewriting it each time.
     return absNum;} }
 
 
-.. mchoice:: test_question_six_seven
+.. mchoice:: functions_3
    :practice: T
    :answer_a: Once you write and debug a function, you can reuse it.
    :answer_b: Makes your program easier to read and debug.

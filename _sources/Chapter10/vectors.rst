@@ -60,7 +60,7 @@ assigned to each of the elements.
 This statement creates a vector of four elements and initializes all of
 them to zero. 
 
-.. mchoice:: question10_1_1
+.. mchoice:: vectors_1
    :answer_a: vector&#60;string&#62; words ("", 5);
    :answer_b: vector&#60;string&#62; words (5);
    :answer_c: vector&#60;string&#62; words (5, "");
@@ -73,7 +73,7 @@ them to zero.
 
    How would you create a vector of five words and initialize all of them to empty strings?
 
-.. mchoice:: question10_1_2
+.. mchoice:: vectors_2
    :multiple_answers:
    :answer_a: 1
    :answer_b: "a"
@@ -89,7 +89,7 @@ them to zero.
 
    Which of the following could be an element of **words**?
 
-.. mchoice:: question10_1_3
+.. mchoice:: vectors_3
    :answer_a: initializer
    :answer_b: constructor
    :answer_c: creator

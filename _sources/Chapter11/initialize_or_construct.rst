@@ -37,8 +37,7 @@ parameters to the instance variables:
 
 ::
 
-   Time::Time (int h, int m, double s)
-   {
+   Time::Time (int h, int m, double s) {
      hour = h;  minute = m;  second = s;
    }
 
@@ -49,29 +48,29 @@ except that the arguments have to be two integers and a ``double``:
 
      Time currentTime (9, 14, 30.0);
 
-In the active code below, you can experiment passing values into the two 
-different constructors that we have defined on this page and the previous
-page.
-
 .. activecode:: 11_8
    :language: cpp
 
+   In the active code below, you can experiment passing values into the two 
+   different constructors that we have defined on this page and the previous
+   page.
+   ~~~~
    #include <iostream>
    using namespace std;
 
    struct Time {
-     int hour, minute;
-     double second;
-     Time (double secs);
-     Time (int h, int m, double s);
-     void print ();
+       int hour, minute;
+       double second;
+       Time (double secs);
+       Time (int h, int m, double s);
+       void print ();
    };
 
    int main() {
-     Time marathon (9000);
-     cout << "My marathon time is "; marathon.print(); cout << "." << endl;
-     Time race (7, 30, 0.0);
-     cout << "My next race is at "; race.print(); cout << "." << endl;
+       Time marathon (9000);
+       cout << "My marathon time is "; marathon.print(); cout << "." << endl;
+       Time race (7, 30, 0.0);
+       cout << "My next race is at "; race.print(); cout << "." << endl;
    }
 
    ====
@@ -92,7 +91,7 @@ page.
      cout << hour << ":" << minute << ":" << second;
    }
 
-.. mchoice:: question11_8_1
+.. mchoice:: initialize_or_construct_1
    :answer_a: When we initialize a new object, the compiler automatically finds the correct constructor to use.
    :answer_b: You can always initialize an object using squiggly-braces.
    :answer_c: You can have many constructors with the same name.
@@ -105,7 +104,7 @@ page.
 
    Which statement is **false** about constructors?
 
-.. mchoice:: question11_8_2
+.. mchoice:: initialize_or_construct_2
    :answer_a: friend constructors
    :answer_b: overriding
    :answer_c: overloading
@@ -118,10 +117,10 @@ page.
 
    What is the term for having multiple constructors with the same "name" that take different parameters?
 
-.. parsonsprob:: question11_8_3
+.. parsonsprob:: initialize_or_construct_3
 
-   Implement two constructors for the Dog structure.  One should be a default constructor, the other should take
-   arguments.  The weight needs to be converted from pounds to kilograms in the second constructor (for
+   Implement two constructors for the ``Dog`` structure. One should be a default constructor, the other should take
+   arguments. The weight needs to be converted from pounds to kilograms in the second constructor (for
    reference, 1 kilogram is approximately 2.2 pounds).
    -----
    struct Dog {

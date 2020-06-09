@@ -10,38 +10,30 @@ displays the instance variables in a human-readable form, which you attempted on
      cout << t.hour << ":" << t.minute << ":" << t.second << endl;
    }
 
-The output of this function, if we pass ``time`` an argument, is
-``11:59:3.14159``.
-
 .. activecode:: ninethree
   :language: cpp
 
-   #include <iostream>
-   using namespace std;
+  In the active code below, the output of this function, if we pass ``time`` an argument, is
+  ``11:59:3.14159``.
+  ~~~~
+  #include <iostream>
+  using namespace std;
 
-   struct Time {
-     int hour, minute;
-     double second;
-   };
+  struct Time {
+      int hour, minute;
+      double second;
+  };
 
+  void printTime (Time& t) {
+      cout << t.hour << ":" << t.minute << ":" << t.second << endl;
+  }
 
-   void printTime (Time& t) {
-     cout << t.hour << ":" << t.minute << ":" << t.second << endl;
-     cout << "Time is " << t.hour << " hour " << t.minute << " minutes " << t.second << " seconds  "<<endl;
-   }
+  int main () {
+      Time time = { 11, 59, 3.14159 };
+      printTime(time);
+  }
 
-
-   int main ()
-   {
-    Time time = { 11, 59, 3.14159 };
-    printTime(time);
-
-    return 0;
-   }
-
-
-.. mchoice:: question_nine_four
-   :multiple_answers:
+.. mchoice:: printTime_1
    :answer_a: cout << "Price is " << "p.dollar" << " dollars and" << "p.cents" << "cents." << endl;
    :answer_b: cout << "Price is " << p.dollar << " dollars and" << p.cents << "cents." << endl;
    :answer_c: cout << "Price is " << p.dollar << " dollars and" << p.cents << "cents." << endl
@@ -59,7 +51,7 @@ The output of this function, if we pass ``time`` an argument, is
       };
 
       void printPrice(Price& p) {
-
+        // Implementation here
       }
 
       int main() {

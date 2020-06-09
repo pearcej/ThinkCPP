@@ -59,7 +59,7 @@ you are comfortable converting from one form to another, you will be
 able to choose the best form for whatever you are doing.
 
 
-.. mchoice:: question11_1_1
+.. mchoice:: objects_and_functions_1
    :answer_a: object-oriented programming
    :answer_b: data-oriented programming
    :answer_c: structured programming
@@ -72,7 +72,7 @@ able to choose the best form for whatever you are doing.
 
    What is do we call programming that makes use of data structures and functions that interact with them?
 
-.. mchoice:: question11_1_2
+.. mchoice:: objects_and_functions_2
    :answer_a: all
    :answer_b: some
    :answer_c: none
@@ -83,7 +83,7 @@ able to choose the best form for whatever you are doing.
    
    Free-standing functions can perform __________ of the operation(s) that a member function can.
 
-.. mchoice:: question11_1_3
+.. mchoice:: objects_and_functions_3
    :answer_a: before the structure definition
    :answer_b: inside of the structure definition
    :answer_c: after the structure definition

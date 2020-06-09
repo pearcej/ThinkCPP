@@ -41,6 +41,10 @@ return value is the number of times the value appears.
 .. activecode:: 10_10
    :language: cpp
 
+   Take a look at the active code below which uses the ``howMany`` function. Run the
+   code to see how many times the target appears in the vector! Feel free to 
+   modify the code and experiment around.
+   ~~~~
    #include <iostream>
    #include <vector>
    using namespace std;
@@ -50,13 +54,13 @@ return value is the number of times the value appears.
    int howMany (const vector<int>& vec, int value);
 
    int main() {
-      int numValues = 20;
-      int upperBound = 10;
-      int target = 6;
-      vector<int> vector = randomVector (numValues, upperBound);
-      printVector (vector);
-      cout << endl;
-      cout << "The number " << target << " appears " << howMany(vector,target) << " times in our vector!";
+       int numValues = 20;
+       int upperBound = 10;
+       int target = 6;
+       vector<int> vector = randomVector (numValues, upperBound);
+       printVector (vector);
+       cout << endl;
+       cout << "The number " << target << " appears " << howMany(vector,target) << " times in our vector!";
    }
 
    ====
@@ -83,7 +87,7 @@ return value is the number of times the value appears.
       }
    }
 
-.. mchoice:: question10_10_1
+.. mchoice:: counting_1
    :answer_a: a method of programming where you write simple "helper" functions that are later incorporated into larger functions
    :answer_b: a method of programming in which you tackle the largest functions first, and save the simple functions for later 
    :answer_c: a method of programming where you break the task down into smaller and smaller components until it cannot be simplified further
@@ -93,10 +97,10 @@ return value is the number of times the value appears.
    :feedback_b: Incorrect! This is describing top-down design.
    :feedback_c: Incorrect! This is describing top-down design.
    :feedback_d: Incorrect! Bottom-up design uses many simple functions rather than a few complex ones, so it is not minimizing the number of functions being used.
-
+ 
    Which of the following is the best definition of bottom-up design?
 
-.. parsonsprob:: question10_10_2
+.. parsonsprob:: counting_2
 
    Construct a block of code that counts how many numbers are between lowerbound and upperbound inclusive.
    -----
