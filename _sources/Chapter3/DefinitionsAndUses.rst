@@ -1,4 +1,4 @@
-Definitions and uses
+Definitions and Uses
 --------------------
 
 Pulling together all the code fragments from the previous section, the
@@ -9,18 +9,15 @@ whole program looks like this:
     #include <iostream>
     using namespace std;
 
-    void newLine ()
-    {
+    void newLine () {
       cout << endl;
     }
 
-    void threeLine ()
-    {
+    void threeLine () {
       newLine ();  newLine ();  newLine ();
     }
 
-    int main ()
-    {
+    int main () {
       cout << "First Line." << endl;
       threeLine ();
       cout << "Second Line." << endl;
@@ -40,31 +37,40 @@ before (above) the first use of the function. You should try compiling
 this program with the functions in a different order and see what error
 messages you get.
 
-**Call the function called newBorder in your main function. This adds a divider
-in between sections of your output.**
 
-.. activecode:: threeseven
-  :language: cpp
-  :caption: Creating a border function.
+.. fillintheblank:: defns_uses_1
 
-  #include <iostream>
-  using namespace std;
+   The function definition must be written |blank| the first use of the function.
+    
+   - :([Bb][Ee][Ff][Oo][Rr][Ee])|([Aa][Bb][Oo][Vv][Ee]): Correct!
+     :.*: Try again!
 
-  void newBorder () {
-    cout << "..................." << endl;
-  }
 
-  int main ()
-  {
-    cout << "First Line." << endl;
-    #Call function here!
-    cout << "Second Line." << endl;
-    return 0;
-  }
+.. activecode:: defns_uses_2
+   :language: cpp
+   :caption: The newBorder Function
 
-.. parsonsprob:: question_three_one
+   Call the function called newBorder in your main function. This adds a 
+   divider in between sections of your output.
+   ~~~~
+   #include <iostream>
+   using namespace std;
 
-   Construct a block of code that correctly defines a function.
+   void newBorder () {
+       cout << "..................." << endl;
+   }
+
+   int main () {
+       cout << "First Line." << endl;
+       //Call your function here!
+       cout << "Second Line." << endl;
+       return 0;
+   }
+
+
+.. parsonsprob:: defns_uses_3
+
+   Construct a block of code that correctly defines a the addTwo function.
    -----
    int addTwo(int x) {
 
@@ -77,4 +83,5 @@ in between sections of your output.**
     return new;
 
     return x; #distractor
-    }
+
+   }

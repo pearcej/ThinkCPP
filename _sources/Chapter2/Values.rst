@@ -13,7 +13,7 @@ the same way you output strings:
 
 ::
 
-      cout << 17 << endl;
+    cout << 17 << endl;
 
 A character value is a letter or digit or punctuation mark enclosed in
 single quotes, like ’a’ or ’5’. You can output character values the same
@@ -21,7 +21,7 @@ way:
 
 ::
 
-      cout << '}' << endl;
+    cout << '}' << endl;
 
 This example outputs a single close squiggly-brace on a line by itself.
 
@@ -35,14 +35,17 @@ first is a string, the second is a character and the third is an
 integer. The reason this distinction is important should become clear
 soon.
 
-.. fillintheblank:: question2_2_1
 
-    A |blank| value is a single letter, number, or punctuation enclosed in single quotes.
+.. fillintheblank:: values_1
 
-    - :([Cc][Hh][Aa][Rr]|[Cc][Hh][Aa][Rr][Aa][Cc][Tt][Ee][Rr]): Correct!
-      :.*: Try again!
+   A |blank| value is a single letter, number, or punctuation enclosed 
+   in single quotes.
 
-.. mchoice:: question2_2_2
+   - :([Cc][Hh][Aa][Rr]|[Cc][Hh][Aa][Rr][Aa][Cc][Tt][Ee][Rr]): Correct!
+     :.*: Try again!
+
+
+.. mchoice:: values_2
    :answer_a: 1
    :answer_b: 2
    :answer_c: 3
@@ -51,25 +54,24 @@ soon.
    :feedback_b: "endl" creates one new line. The first line will say 7, while the second will print 77.
    :feedback_c: In C++, you must make sure to say "endl" every time you'd like to create a new line.
 
-
    On how many separate lines will the 7's be printed?
 
-   .. code-block:: cpp
+   ::
 
-    #include <iostream>
-    using namespace std;
+       #include <iostream>
+       using namespace std;
 
-    int main ()
-    {
-      cout << 7 << endl;
-      cout << 7;
-      cout << 7;
-    }
+       int main () {
+         cout << 7 << endl;
+         cout << 7;
+         cout << 7;
+       }
 
-.. dragndrop:: question2_2_3
-    :feedback: Try again!
-    :match_1:  1|||integer
-    :match_2: "1"|||string
-    :match_3: '1'|||character
 
-    Match the value to its data type.
+.. dragndrop:: values_3
+   :feedback: Try again!
+   :match_1:  1|||integer
+   :match_2: "1"|||string
+   :match_3: '1'|||character
+
+   Match the value to its data type.

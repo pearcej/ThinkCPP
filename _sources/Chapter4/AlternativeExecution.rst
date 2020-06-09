@@ -1,6 +1,6 @@
 .. _alternative:
 
-Alternative execution
+Alternative Execution
 ---------------------
 
 A second form of conditional execution is alternative execution, in
@@ -9,11 +9,11 @@ one gets executed. The syntax looks like:
 
 ::
 
-      if (x%2 == 0) {
-        cout << "x is even" << endl;
-      } else {
-        cout << "x is odd" << endl;
-      }
+    if (x % 2 == 0) {
+      cout << "x is even" << endl;
+    } else {
+      cout << "x is odd" << endl;
+    }
 
 If the remainder when x is divided by 2 is zero, then we know that x is
 even, and this code displays a message to that effect. If the condition
@@ -27,9 +27,10 @@ function, as follows:
 ::
 
     void printParity (int x) {
-      if (x%2 == 0) {
+      if (x % 2 == 0) {
         cout << "x is even" << endl;
-      } else {
+      } 
+      else {
         cout << "x is odd" << endl;
       }
     }
@@ -40,7 +41,7 @@ would call this function as follows:
 
 ::
 
-        printParity (17);
+    printParity (17);
 
 Always remember that when you *call* a function, you do not have to
 declare the types of the arguments you provide. C++ can figure out what
@@ -48,80 +49,88 @@ type they are. You should resist the temptation to write things like:
 
 ::
 
-      int number = 17;
-      printParity (int number);         // WRONG!!!
-
-
-.. activecode:: fourthree
-  :language: cpp
-  :caption: Alternative execution within a function
-
-  #include <iostream>
-  using namespace std;
-
-  void printParity (int x) {
-    if (x%2 == 0) {
-      cout << "x is even" << endl;
-    } else {
-      cout << "x is odd" << endl;
-    }
-  }
-
-    int main ()
-    {
     int number = 17;
-    printParity(number);
-    int otherNumber = 18;
-    printParity(otherNumber);
-    return 0;
-    }
+    printParity (int number);         // WRONG!!!
 
-.. mchoice:: test_question_four_one_
-   :practice: T
+
+.. activecode:: alt_execution_AC_1
+   :language: cpp
+   :caption: Even or Odd?
+
+   #include <iostream>
+   using namespace std;
+
+   void printParity (int x) {
+       if (x % 2 == 0) {
+           cout << "x is even" << endl;
+       } 
+       else {
+           cout << "x is odd" << endl;
+       }
+   }
+
+   int main () {
+       int number = 17;
+       printParity(number);
+       int otherNumber = 18;
+       printParity(otherNumber);
+       return 0;
+   }
+
+
+.. mchoice:: alt_execution_1
    :answer_a: It is cold!
    :answer_b: It is warm!
-   :answer_c: Nothing prints
+   :answer_c: Nothing prints.
+   :answer_d: Error message.
    :correct: b
    :feedback_a: That statement would print if degrees was less than 50.
    :feedback_b: Correct!
    :feedback_c: One of the statements is satisfied, so something does print.
+   :feedback_d: There is nothing in the code below that would generate an error.
 
-   What will print?
+   What will be printed after the main is executed?
 
-   .. code-block:: cpp
+   ::
 
-        void weather(int temp) {
-          if temp < 50 {
-            cout << "It is cold!";
-          }
-          else {
-            cout << "It is warm!";
-          }
-        }
+       void weather(int temp) {
+         if temp < 52 {
+           cout << "It is cold!";
+         }
+         else {
+           cout << "It is warm!";
+         }
+       }
 
-        int main() {
-          int degrees = 52;
-          weather(degrees);
-        }
+       int main() {
+         int degrees = 52;
+         weather(degrees);
+       }
 
-.. parsonsprob:: question_four_one
 
-   Construct a block of code that correctly goes through alternative execution. If num is greater than 30, print "expensive".
+.. parsonsprob:: alt_execution_2
+
+   Construct a block of code that correctly goes through alternative 
+   execution for pricing of an entre at a nice restaurant.  If the
+   price is more than $30.00, print "Expensive!".  If the price is
+   less than $30.00, print "Inexpensive!"
    -----
    int cost = 40;
 
    if (cost > 30) {
 
-   if (cost > 30): #distractor
+   if (cost > 30) #distractor
 
-   cout << "Expensive!";
+    cout << "Expensive!";
 
-   } //first bracket
+   } //"if" bracket
 
    else {
 
-   else: #distractor
+   else if { #distractor
 
-   cout << "Inexpensive!"
+    cout << "Inexpensive!" #distractor
 
-   }
+    cout << "Inexpensive!";
+
+   } //"else" bracket

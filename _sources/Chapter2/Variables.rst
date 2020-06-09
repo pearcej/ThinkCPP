@@ -12,7 +12,7 @@ new variable named fred that has type char.
 
 ::
 
-        char fred;
+    char fred;
 
 This kind of statement is called a **declaration**.
 
@@ -27,7 +27,7 @@ To create an integer variable, the syntax is
 
 ::
 
-      int bob;
+    int bob;
 
 where bob is the arbitrary name you made up for the variable. In
 general, you will want to make up variable names that indicate what you
@@ -36,39 +36,43 @@ declarations:
 
 ::
 
-        char firstLetter;
-        char lastLetter;
-        int hour, minute;
+    char firstLetter;
+    char lastLetter;
+    int hour, minute;
 
 you could probably make a good guess at what values would be stored in
 them. This example also demonstrates the syntax for declaring multiple
 variables with the same type: hour and minute are both integers (int
 type).
 
-.. fillintheblank:: question2_3_1
+
+.. fillintheblank:: variables_1
 
    Take a look at the code block below:
    
-   .. code-block:: cpp
+   ::
 
-      char tom;
+       char tom;
 
    It's an example of a(n) |blank| statement.
 
    - :[Dd][Ee][Cc][Ll][Aa][Rr][Aa][Tt][Ii][Oo][Nn]: Correct!
      :.*: Try again!
 
-.. dragndrop:: question2_3_2
-    :feedback: Try again!
-    :match_1:  char joe;|||'x'
-    :match_2: string ten;|||"Joe"
-    :match_3: int x;|||10
 
-    Match the variable to the kind of value it can store.
+.. dragndrop:: variables_2
+   :feedback: Ideally, you want your variables to be named according to what they represent.  Not the case here!  Try again!
+   :match_1:  char joe;|||'x'
+   :match_2: string ten;|||"Joe"
+   :match_3: int x;|||10
 
-.. fillintheblank:: question2_3_3
+   Match the variable to the kind of value it can store.
 
-   A(n) |blank| is a name given to a location in memory used to keep track of a value.
+
+.. fillintheblank:: variables_3
+
+   A(n) |blank| is a name given to a location in memory used to keep 
+   track of a value.
 
    - :[Vv][Aa][Rr][Ii][Aa][Bb][Ll][Ee]: Correct!
      :.*: Try again!

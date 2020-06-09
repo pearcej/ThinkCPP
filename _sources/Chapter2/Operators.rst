@@ -25,22 +25,22 @@ Addition, subtraction and multiplication all do what you expect, but you
 might be surprised by division. For example, compile the following program around
 observe the output.
 
-.. activecode:: twonine
+.. activecode:: operators_AC_1
    :language: cpp
-   :caption: Operators
+   :caption: Integer Division
 
    #include <iostream>
    using namespace std;
 
    int main () {
-      int hour, minute;
-      hour = 11;
-      minute = 59;
-      cout << "Number of minutes since midnight: ";
-      cout << hour*60 + minute << endl;
-      cout << "Fraction of the hour that has passed: ";
-      cout << minute/60 << endl;
-      return 0;
+       int hour, minute;
+       hour = 11;
+       minute = 59;
+       cout << "Number of minutes since midnight: ";
+       cout << hour*60 + minute << endl;
+       cout << "Fraction of the hour that has passed: ";
+       cout << minute/60 << endl;
+       return 0;
    }
 
 The first line is what we expected, but the second line is odd. The
@@ -58,8 +58,8 @@ than a fraction:
 
 ::
 
-      cout << "Percentage of the hour that has passed: ";
-      cout << minute*100/60 << endl;
+    cout << "Percentage of the hour that has passed: ";
+    cout << minute*100/60 << endl;
 
 The result is:
 
@@ -76,23 +76,26 @@ capable of storing fractional values.
    In C++, floating-points are declared as type ``double``. We’ll get 
    to that in the next chapter.
 
-.. dragndrop:: question2_7_1
-    :feedback: Try again!
-    :match_1:  x*10|||100
-    :match_2: x-10|||0
-    :match_3: 100/x|||10
-    :match_4: (x+x+x+x+x)*20|||1000
 
-    Match the statement to the result, given ``int x = 10``.
+.. dragndrop:: operators_1
+   :feedback: Try again!
+   :match_1:  x*10|||100
+   :match_2: x-10|||0
+   :match_3: 100/x|||10
+   :match_4: (x+x+x+x+x)*20|||1000
 
-.. fillintheblank:: question2_7_2
+   Match the statement to the result, given ``int x = 10``.
 
-    Integer division always rounds |blank| to the nearest integer.
 
-    - :[Dd][Oo][Ww][Nn]: Correct!
-      :.*: Try again!
+.. fillintheblank:: operators_2
 
-.. mchoice:: question2_7_3
+   Integer division always rounds |blank| to the nearest integer.
+
+   - :[Dd][Oo][Ww][Nn]: Correct!
+     :.*: Try again!
+
+
+.. mchoice:: operators_3
    :answer_a: 0
    :answer_b: 1
    :answer_c: .667
@@ -105,31 +108,31 @@ capable of storing fractional values.
 
    What is the output?
 
-   .. code-block:: cpp
+   ::
 
-    int main ()
-    {
-      int sum = 2 / 3;
-      cout << sum;
-    }
+       int main () {
+         int sum = 2 / 3;
+         cout << sum;
+       }
 
-.. activecode:: twoten
-  :language: cpp
-  :caption: Operators check
 
-  Fix the code below so that it prints out the total cost of the meal (fries,
-  a milkshake, and a hamburger) using one of the operators.
+.. activecode:: operators_4
+   :language: cpp
+   :caption: Fast Food
 
-  ~~~~
-  #include <iostream>
-  using namespace std;
+   Fix the code below so that it prints out the total cost of the meal 
+   (fries, a milkshake, and a hamburger) using one of the operators.
 
-  int main () {
-     int fries, milkshake, hamburger;
-     fries = 2;
-     milkshake = 3;
-     hamburger = 6;
-     cout << "The total cost of the meal is ";
-     cout << << " dollars." << endl;
-     return 0;
-  }
+   ~~~~
+   #include <iostream>
+   using namespace std;
+
+   int main () {
+       int fries, milkshake, hamburger;
+       fries = 2;
+       milkshake = 3;
+       hamburger = 6;
+       cout << "The total cost of the meal is ";
+       cout << << " dollars." << endl;
+       return 0;
+   }

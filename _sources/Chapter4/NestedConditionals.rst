@@ -1,31 +1,30 @@
-Nested conditionals
+Nested Conditionals
 -------------------
 
 In addition to chaining, you can also nest one conditional within
 another. We could have written the previous example as:
 
-.. activecode:: fourseven
-  :language: cpp
-  :caption: Nested conditionals
+.. activecode:: nested_conditionals_AC_1
+   :language: cpp
+   :caption: Classifying an Integer
 
-  #include <iostream>
-  using namespace std;
+   #include <iostream>
+   using namespace std;
 
-    int main ()
-    {
-      int x = 9;
-      if (x == 0) {
-        cout << "x is zero" << endl;
-      }
-      else {
-        if (x > 0) {
-          cout << "x is positive" << endl;
-        } else {
-          cout << "x is negative" << endl;
-        }
-      }
-      return 0;
-    }
+   int main () {
+       int x = 9;
+       if (x == 0) {
+           cout << "x is zero" << endl;
+       }
+       else {
+           if (x > 0) {
+               cout << "x is positive" << endl;
+           } 
+           else {
+               cout << "x is negative" << endl;
+           }
+       return 0;
+   }
 
 There is now an outer conditional that contains two branches. The first
 branch contains a simple output statement, but the second branch
@@ -41,68 +40,129 @@ On the other hand, this kind of **nested structure** is common, and we
 will see it again, so you better get used to it.
 
 
-**Check your understanding!**
-
-.. mchoice:: test_question_four_five
+.. mchoice:: nested_conditionals_1
    :answer_a: Hey!
    :answer_b: Hi!
    :answer_c: Hello!
+   :answer_d: Nothing will print.
    :correct: a
    :feedback_a: Correct!
    :feedback_b: Remember that the program would only enter the "else" if x was not equal to 0.
    :feedback_c: Remember that the program would only enter the "else" if x was not equal to 0.
+   :feedback_d: Only one of the condtionals will execute, but something will print, regardless of which one it is.
 
    What will print?
 
-   .. code-block:: cpp
+   ::
 
-    #include <iostream>
-    using namespace std;
+       #include <iostream>
+       using namespace std;
 
-    int main ()
-    {
-      int x = 0;
-      if (x == 0) {
-        cout << "Hey!" << endl;
-      }
-      else {
-        if (x > 0) {
-          cout << "Hi!" << endl;
-        } else {
-          cout << "Hello!" << endl;
-        }
-      }
-      return 0;
-    }
+       int main () {
+         int x = 0;
+         if (x == 0) {
+           cout << "Hey!" << endl;
+         }
+         else {
+           if (x > 0) {
+             cout << "Hi!" << endl;
+           } 
+           else {
+             cout << "Hello!" << endl;
+           }
+         }
+         return 0;
+       }
 
-.. mchoice:: test_question_four_five_one
+
+.. mchoice:: nested_conditionals_2
    :answer_a: Hey!
    :answer_b: Hi!
    :answer_c: Hello!
+   :answer_d: Nothing will print.
    :correct: c
    :feedback_a: Remember that the program would only enter the first "if" if x was equal to 0.
    :feedback_b: Remember that the program would only enter the nested "if" if x was greater than 0.
    :feedback_c: Correct!
+   :feedback_d: Only one of the condtionals will execute, but something will print, regardless of which one it is.
 
    What will print?
 
-   .. code-block:: cpp
+   ::
 
-    #include <iostream>
-    using namespace std;
+       #include <iostream>
+       using namespace std;
 
-    int main ()
-    {
-      int x = -4;
-      if (x == 0) {
-        cout << "Hey!" << endl;
-      }
-      else {
-        if (x > 0) {
-          cout << "Hi!" << endl;
-        } else {
-          cout << "Hello!" << endl;
-        }
-      }
-      return 0;
-    }
+       int main () {
+         int x = -4;
+         if (x == 0) {
+           cout << "Hey!" << endl;
+         }
+         else {
+           if (x > 0) {
+             cout << "Hi!" << endl;
+           } 
+           else {
+             cout << "Hello!" << endl;
+           }
+         }
+         return 0;
+       }
+
+.. mchoice:: nested_conditionals_3
+   :answer_a: Back Left!
+   :answer_b: Back Right!
+   :answer_c: Front Left!
+   :answer_d: Front Right!
+   :answer_e: Error!
+   :correct: b
+   :feedback_a: Remember that the > opearator is not inclusive.
+   :feedback_b: z > m is true, and m > m is false, so a student with these initials would be seated in the back right.
+   :feedback_c: z > m is true because z comes after m.  Also, the > opearator is not inclusive.
+   :feedback_d: z > m is true because z comes after m.
+   :feedback_e: Character comparisons are legal, and useful in this case!
+
+   Your school uses a system to arrange students in a large stadium using 
+   their initials.  Look at the function definition below.  Where would a
+   student with the initials "MZ" be seated?
+
+   ::
+
+       #include <iostream>
+       using namespace std;
+
+       string seatingArrangement(char first, char last) {
+         if (last > m) {
+           if (first > m) {
+             return "Back Left!";
+           }
+           esle {
+             return "Back Right!";
+           }
+         }
+         else {
+           if (first > m) {
+             return "Front Left!";
+           }
+           else {
+             return "Front Right!";
+           }
+         }
+       }
+
+       int main () {
+         int x = -4;
+         if (x == 0) {
+           cout << "Hey!" << endl;
+         }
+         else {
+           if (x > 0) {
+             cout << "Hi!" << endl;
+           } 
+           else {
+             cout << "Hello!" << endl;
+           }
+         }
+         return 0;
+       }
+

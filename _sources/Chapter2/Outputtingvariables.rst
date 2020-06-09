@@ -1,33 +1,35 @@
-Outputting variables
+Outputting Variables
 --------------------
 
 You can output the value of a variable using the same commands we used
 to output simple values. After observing the output, try inputting your own time!
 
-.. activecode:: twofive
+
+.. activecode:: outputting_vars_AC_1
    :language: cpp
-   :caption: Outputting variables
+   :caption: Time Output
 
    #include <iostream>
    using namespace std;
    // main: generate some simple output
 
    int main () {
-      int hour, minute;
-      char colon;
+       int hour, minute;
+       char colon;
 
-      hour = 11;
-      minute = 59;
-      colon = ':';
+       hour = 11;
+       minute = 59;
+       colon = ':';
 
-      cout << "The current time is ";
-      cout << hour;
-      cout << colon;
-      cout << minute;
-      cout << endl;
+       cout << "The current time is ";
+       cout << hour;
+       cout << colon;
+       cout << minute;
+       cout << endl;
 
-      return 0;
+       return 0;
    }
+
 
 This program creates two integer variables named hour and minute, and a
 character variable named colon. It assigns appropriate values to each of
@@ -45,31 +47,34 @@ put it in quotes. For example: ``cout << "hour";``
 As we have seen before, you can include more than one value in a single
 output statement, which can make the previous program more concise:
 
-.. activecode:: twosix
+
+.. activecode:: outputting_vars_AC_2
    :language: cpp
-   :caption: Outputting variables
+   :caption: Condensing The Code
 
    #include <iostream>
    using namespace std;
    // main: generate some simple output
 
    int main () {
-      int hour, minute;
-      char colon;
+       int hour, minute;
+       char colon;
 
-      hour = 11;
-      minute = 59;
-      colon = ':';
+       hour = 11;
+       minute = 59;
+       colon = ':';
 
-      cout << "The current time is " << hour << colon << minute << endl;
+       cout << "The current time is " << hour << colon << minute << endl;
 
-      return 0;
+       return 0;
    }
+
 
 On one line, this program outputs a string, two integers, a character,
 and the special value endl. Very impressive!
 
-.. mchoice:: question2_5_1
+
+.. mchoice:: outputting_vars_1
    :answer_a: a
    :answer_b: b
    :answer_c: z
@@ -84,17 +89,18 @@ and the special value endl. Very impressive!
 
    What prints?
 
-   .. code-block:: cpp
+   ::
 
-    int main () {
-      char a;
-      char b;
-      a = 'z';
-      b = '8';
-      cout << "a";
-    }
+       int main () {
+         char a;
+         char b;
+         a = 'z';
+         b = '8';
+         cout << "a";
+       }
 
-.. mchoice:: question2_5_2
+
+.. mchoice:: outputting_vars_2
    :answer_a: a
    :answer_b: b
    :answer_c: z
@@ -109,17 +115,18 @@ and the special value endl. Very impressive!
 
    Now, what prints?
 
-   .. code-block:: cpp
+   ::
 
-    int main () {
-      char a;
-      char b;
-      a = 'z';
-      b = '8';
-      cout << b;
-    }
+       int main () {
+         char a;
+         char b;
+         a = 'z';
+         b = '8';
+         cout << b;
+       }
 
-.. mchoice:: question2_5_3
+
+.. mchoice:: outputting_vars_3
    :answer_a: x
    :answer_b: y
    :answer_c: 3
@@ -134,39 +141,40 @@ and the special value endl. Very impressive!
 
    And now, what prints?
 
-   .. code-block:: cpp
+   ::
 
-    int main () {
-      int x;
-      char y;
-      x = '3';
-      y = 'e';
-      cout << 'y';
-    }
+       int main () {
+         int x;
+         char y;
+         x = '3';
+         y = 'e';
+         cout << 'y';
+       }
 
-.. dragndrop:: question2_5_4
-    :feedback: Try again!
-    :match_1:  x = 2|||int
-    :match_2: y = "2"|||string
-    :match_3: z = '2'|||char
 
-    Match the variable initialization to its correct type.
+.. dragndrop:: outputting_vars_4
+   :feedback: Try again!
+   :match_1:  x = 2|||int
+   :match_2: y = "2"|||string
+   :match_3: z = '2'|||char
 
-.. activecode:: twoseven
-  :language: cpp
-  :caption: Integers and chars declaration
+   Match the variable initialization to its correct type.
+
+
+.. activecode:: outputting_vars_5
+   :language: cpp
+   :caption: Variable Declaration
   
-  Fix the following code so that each variable has a type!
+   Fix the following code so that each variable has a type!
+   ~~~~
 
-  ~~~~
+   #include <iostream>
+   using namespace std;
 
-  #include <iostream>
-  using namespace std;
-
-  int main() {
-    x = 0;
-    z = '.';
-    cout << x;
-    cout << z << endl;
-    return 0;
-  }
+   int main() {
+       x = 0;
+       z = '.';
+       cout << x;
+       cout << z << endl;
+       return 0;
+   }

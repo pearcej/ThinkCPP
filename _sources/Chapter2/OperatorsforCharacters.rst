@@ -1,20 +1,20 @@
-Operators for characters
+Operators for Characters
 ------------------------
 
 Interestingly, the same mathematical operations that work on integers
 also work on characters. For example, observe the following output.
 
-.. activecode:: twotwelve
+.. activecode:: char_operations_AC_1
    :language: cpp
-   :caption: Using operators with characters
+   :caption: Adding to Characters
 
    #include <iostream>
    using namespace std;
 
    int main () {
-      char letter;
-      letter = 'a' + 1;
-      cout << letter << endl;
+       char letter;
+       letter = 'a' + 1;
+       cout << letter << endl;
    }
 
 Although it is syntactically legal to multiply characters, it is almost never
@@ -25,16 +25,16 @@ variables and character values to character variables, but that is not
 completely true. In some cases, C++ converts automatically between
 types. For example, the following is legal.
 
-.. activecode:: twothirteen
+.. activecode:: char_operations_AC_2
    :language: cpp
-   :caption: Converting automatically between types.
+   :caption: Automatic Type Conversion
 
    #include <iostream>
    using namespace std;
 
    int main () {
-      int number;
-      number = 'a';
+       int number;
+       number = 'a';
    }
 
 The result is 97, which is the number that is used internally by C++ to
@@ -55,14 +55,16 @@ of the rules and the number of exceptions. In this book I have tried to
 simplify things by emphasizing the rules and omitting many of the
 exceptions.
 
-.. fillintheblank:: question2_9_1
 
-    What is the value of letter if ``letter = 'c' + 3``?
+.. fillintheblank:: char_operations_1
 
-    - :f: Correct!
-      :.*: Try again!
+   What is the value of letter if ``letter = 'c' + 3``?
 
-.. parsonsprob:: question2_9_2
+   - :f: Correct!
+     :.*: Try again!
+
+
+.. parsonsprob:: char_operations_2
    :adaptive:
 
    Construct a main function that outputs "c".

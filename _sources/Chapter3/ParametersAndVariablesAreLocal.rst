@@ -1,4 +1,4 @@
-Parameters and variables are local
+Parameters and Variables are Local
 ----------------------------------
 
 Parameters and variables only exist inside their own functions. Within
@@ -6,22 +6,24 @@ the confines of main, there is no such thing as phil. If you try to use
 it, the compiler will complain. Similarly, inside printTwice there is no
 such thing as argument.
 
-.. activecode:: threenine
-  :language: cpp
-  :caption: Understanding parameters from previous section.
 
-  #include <iostream>
-  using namespace std;
+.. activecode:: locals_AC_1
+   :language: cpp
+   :caption: Understanding Parameters
 
-  void printTwice (char phil) {
-    cout << phil << phil << endl;
-  }
+   #include <iostream>
+   using namespace std;
 
-  int main () {
-    char argument = 'b';
-    printTwice (argument);
-    return 0;
-  }
+   void printTwice (char phil) {
+       cout << phil << phil << endl;
+   }
+
+   int main () {
+       char argument = 'b';
+       printTwice (argument);
+       return 0;
+   }
+
 
 Variables like this are said to be **local**. In order to keep track of
 parameters and local variables, it is useful to draw a **stack
@@ -46,8 +48,8 @@ In the example, main has one local variable, argument, and no
 parameters. printTwice has no local variables and one parameter, named
 phil.
 
-.. mchoice:: test_question_three_three
-   :practice: T
+
+.. mchoice:: locals_1
    :answer_a: 1 local variable, 1 parameter
    :answer_b: 0 local variables, 1 parameter
    :answer_c: 2 local variables, 0 parameters
@@ -60,25 +62,22 @@ phil.
 
    How many local variables and parameters does main have?
 
-   .. code-block:: cpp
-      :linenos:
+   ::
 
-        void printHelloName (string name) {
-          cout << "Hello " << name << "!";
-          }
+       void printHelloName (string name) {
+         cout << "Hello " << name << "!";
+       }
 
-        int main ()
-        {
-          string name1 = "Phil";
-          printHelloName(name1);
-          string name2 = "Joe";
-          printHelloName(name2);
-          return 0;
-          }
+       int main () {
+         string name1 = "Phil";
+         printHelloName(name1);
+         string name2 = "Joe";
+         printHelloName(name2);
+         return 0;
+       }
 
 
-.. mchoice:: test_question_three_four
-   :practice: T
+.. mchoice:: locals_2
    :answer_a: 1 local variable, 1 parameter
    :answer_b: 0 local variables, 1 parameter
    :answer_c: 2 local variables, 0 parameters
@@ -91,17 +90,25 @@ phil.
 
    How many local variables and parameters does printHelloName have?
 
-   .. code-block:: cpp
+   ::
 
-        void printHelloName (string name) {
-          cout << "Hello " << name << "!";
-          }
+       void printHelloName (string name) {
+         cout << "Hello " << name << "!";
+       }
 
-        int main ()
-        {
-          string name1 = "Phil";
-          printHelloName(name1);
-          string name2 = "Joe";
-          printHelloName(name2);
-          return 0;
-        }
+       int main () {
+         string name1 = "Phil";
+         printHelloName(name1);
+         string name2 = "Joe";
+         printHelloName(name2);
+         return 0;
+       }
+
+
+.. fillintheblank:: locals_3
+
+   Whenever we make a function call, we create a(n) |blank| of that fucntion,
+   which contiains the parameters and local variables for that function.
+    
+   - :[Ii][Nn][Ss][Tt][Aa][Nn][Cc][Ee]: You could create many instances of one function, each with their own parameters and local variables if you wanted!
+     :.*: Try again!

@@ -1,6 +1,6 @@
 .. _hello:
 
-The first program
+The First Program
 -----------------
 
 Traditionally the first program people write in a new language is called
@@ -8,10 +8,9 @@ Traditionally the first program people write in a new language is called
 In C++, this program looks like this:
 
 
-.. activecode:: oneone
+.. activecode:: first_program_AC
    :language: cpp
    :caption: Hello World
-
 
    #include <iostream>
    using namespace std;
@@ -19,9 +18,10 @@ In C++, this program looks like this:
    // main: generate some simple output
 
    int main () {
-     cout << "Hello, World." << endl;
-     return 0;
+       cout << "Hello, World." << endl;
+       return 0;
    }
+
 
 Some people judge the quality of a programming language by the
 simplicity of the “Hello, World.” program. By this standard, C++ does
@@ -94,14 +94,16 @@ modify it in various ways and see what happens. If you get an error
 message, try to remember what the message says and what caused it, so if
 you see it again in the future you will know what it means.
 
-.. fillintheblank:: question1_6_1
 
-    How do you indicate a comment in C++?
+.. fillintheblank:: first_program_1
+
+   How do you indicate a comment in C++?
     
-    - :[//][//]: Correct!
-      :.*: Try again!
+   - :[//][//]: Correct!
+     :.*: Try again!
 
-.. mchoice:: question1_6_2
+
+.. mchoice:: first_program_2
    :multiple_answers:
    :answer_a: It marks the spot in the program where execution begins.
    :answer_b: There is a limit the number of statements you can put in int main() because they occupy system memory.
@@ -117,11 +119,13 @@ you see it again in the future you will know what it means.
 
    Which is true about the ``int main()``?
 
-.. fillintheblank:: question1_6_3
 
-    |blank| is an object that allows you to send output to the terminal.  It requires you to use the |blank| operator.
+.. fillintheblank:: first_program_3
+
+   |blank| is an object that allows you to send output to the terminal.  
+   It requires you to use the |blank| operator.
     
-    - :(cout): Correct!
-      :.*: Try again!
-    - :(\<\<): Correct!
-      :.*: Try again!
+   - :(cout): Correct!
+     :.*: Try again!
+   - :(\<\<): Correct!
+     :.*: Try again!

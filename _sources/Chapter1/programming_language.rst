@@ -1,4 +1,4 @@
-What is a programming language?
+What is a Programming Language?
 -------------------------------
 
 The programming language you will be learning is C++. It is a high-level language.
@@ -68,17 +68,20 @@ On the other hand, it is useful to know what the steps are that are
 happening in the background, so that if something goes wrong you can
 figure out what it is.
 
-.. fillintheblank:: question1_2_1
 
-    A(n) |blank| translates a high-level program line by line, executing commands as they come.
-    A(n) |blank| translates a high-level program all at once, before executing any of the commands!
+.. fillintheblank:: programming_lang_1
 
-    - :[Ii][Nn][Tt][Ee][Rr][Pp][Rr][Ee][Tt][Ee][Rr]: Correct!
-      :.*: Try again!
-    - :[Cc][Oo][Mm][Pp][Ii][Ll][Ee][Rr]: Correct!
-      :.*: Try again!
+   A(n) |blank| translates a high-level program line by line, executing 
+   commands as they come.  A(n) |blank| translates a high-level program 
+   all at once, before executing any of the commands!
 
-.. mchoice:: question1_2_2
+   - :[Ii][Nn][Tt][Ee][Rr][Pp][Rr][Ee][Tt][Ee][Rr]: Correct!
+     :.*: Try again!
+   - :[Cc][Oo][Mm][Pp][Ii][Ll][Ee][Rr]: Correct!
+     :.*: Try again!
+
+
+.. mchoice:: programming_lang_2
    :multiple_answers:
    :answer_a: High-level programs are only used for a few special applications.
    :answer_b: Programs written in a high-level language must be translated before they can be run.
@@ -94,7 +97,8 @@ figure out what it is.
 
    Which is true about a high-level programming language?
 
-.. mchoice:: question1_2_3
+
+.. mchoice:: programming_lang_3
    :answer_a: To translate the program line by line.
    :answer_b: To copy the program from disk to memory and make the computer run the program.
    :answer_c: To translate the program all at once.
@@ -107,9 +111,10 @@ figure out what it is.
 
    What is the role of an executor?
 
-.. dragndrop:: question1_2_4
-    :feedback: Try again!
-    :match_1: source code|||our program written in C++
-    :match_2: object code|||translated version of our program that the computer can understand and execute
 
-    Match each term to an example of it!
+.. dragndrop:: programming_lang_4
+   :feedback: Try again!
+   :match_1: source code|||our program written in C++
+   :match_2: object code|||translated version of our program that the computer can understand and execute
+
+   Match each term to an example of it!

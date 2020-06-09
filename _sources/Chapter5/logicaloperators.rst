@@ -28,13 +28,13 @@ statements.
 
    How would you write the following code using a single conditional?
 
-   .. code-block:: cpp
+   ::
 
-    if (x > 0) {
-      if (x < 10) {
-          cout << "x is a positive single digit." << endl;
+       if (x > 0) {
+         if (x < 10) {
+             cout << "x is a positive single digit." << endl;
+           }
         }
-     }
 
 .. dragndrop:: dragndrop_five_two
     :feedback: Try again!

@@ -1,4 +1,4 @@
-Order of operations
+Order of Operations
 -------------------
 
 When more than one operator appears in an expression the order of
@@ -22,35 +22,40 @@ started:
    parentheses to make an expression easier to read, as in ``(minute \*
    100) / 60``, even though it doesn’t change the result.
 
-.. activecode:: twoeleven
+
+.. activecode:: order_of_operations_AC_1
    :language: cpp
-   :caption: Order of operations
+   :caption: The Role of Parentheses
   
-   Observe the output of the code below to see how parentheses can change a value.
+   Observe the output of the code below to see how parentheses can change a 
+   value.
 
    ~~~~
    #include <iostream>
    using namespace std;
 
    int main () {
-      cout << (2 * 3) - 1 << endl;
-      cout << 2 * (3 - 1) << endl;
-      cout << 2 / 3 - 1 << endl;
-      cout << 2 / (3 -1) << endl;
+       cout << (2 * 3) - 1 << endl;
+       cout << 2 * (3 - 1) << endl;
+       cout << 2 / 3 - 1 << endl;
+       cout << 2 / (3 -1) << endl;
    }
 
-.. dragndrop:: question2_8_1
-    :feedback: Try again!
-    :match_1:  (6*4)+1|||25
-    :match_2: 6*(4+1)|||30
-    :match_3: (6/4)+1|||2
-    :match_4: 6/(4+1)|||1
 
-    Match the expression to its correct output. Don't forget to consider integer division!
+.. dragndrop:: order_of_operations_1
+   :feedback: Try again!
+   :match_1:  (6*4)+1|||25
+   :match_2: 6*(4+1)|||30
+   :match_3: (6/4)+1|||2
+   :match_4: 6/(4+1)|||1
 
-.. fillintheblank:: question2_8_2
+   Match the expression to its correct output. Don't forget to consider integer 
+   division!
 
-    Any time you want to override the rules of precedence, you can use...
 
-    - :[Pp][Aa][Rr][Ee][Nn][Tt][Hh][Ee][Ss][Ee][Ss]: Correct!
-      :.*: Try again!
+.. fillintheblank:: order_of_operations_2
+
+   Any time you want to override the rules of precedence, you can use |blank|.
+
+   - :[Pp][Aa][Rr][Ee][Nn][Tt][Hh][Ee][Ss][Ee][Ss]: Correct!
+     :.*: Try again!

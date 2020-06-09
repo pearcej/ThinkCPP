@@ -15,7 +15,7 @@ download a copy electronically from
 
 ::
 
-        http://www.ansi.org/
+    http://www.ansi.org/
 
 Rather than memorize the list, I would suggest that you take advantage
 of a feature provided in many development environments: code
@@ -27,15 +27,17 @@ and other code black.
    If you type a variable name and it turns blue, watch out! You might get 
    some strange behavior from the compiler.
 
-.. fillintheblank:: question2_6_1
 
-    Words that are reserved in C++ because they are used by the compiler to parse the structure of your program
-    are called |blank|.
+.. fillintheblank:: keywords_1
 
-    - :[Kk][Ee][Yy][Ww][Oo][Rr][Dd][Ss]: Correct!
-      :.*: Try again!
+   Words that are reserved in C++ because they are used by the compiler 
+   to parse the structure of your program are called |blank|.
 
-.. mchoice:: question2_6_2
+   - :[Kk][Ee][Yy][Ww][Oo][Rr][Dd][Ss]: Correct!
+     :.*: Try again!
+
+
+.. mchoice:: keywords_2
    :answer_a: integer
    :answer_b: cout
    :answer_c: variable
@@ -48,11 +50,13 @@ and other code black.
    :feedback_d: string cannot be used as a variable name.
    :feedback_e: char is a keyword and cannot be used as a variable name.
 
-   Which of the following are keywords or will otherwise generate some error from the compiler if used as a variable name?
+   Which of the following are keywords or will otherwise generate 
+   some error from the compiler if used as a variable name?
 
-.. activecode:: twoeight
+
+.. activecode:: keywords_3
    :language: cpp
-   :caption: Code highlighting
+   :caption: Keywords Cannot Be Variable Names
 
    Fix the code below so that the variable names are not keywords.
 
@@ -61,9 +65,9 @@ and other code black.
    using namespace std;
 
    int main() {
-      int char = 20;
-      char first_initial = 'E';
-      char last_initial = 'P';
-      cout << "My age is " << char << endl;
-      cout << "My initials are " << first_initial << " and " << last_initial;
+       int char = 20;
+       char first_initial = 'E';
+       char last_initial = 'P';
+       cout << "My age is " << char << endl;
+       cout << "My initials are " << first_initial << " and " << last_initial;
    }

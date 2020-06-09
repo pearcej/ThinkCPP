@@ -1,4 +1,4 @@
-Boolean values
+Boolean Values
 --------------
 
 The types we have seen so far are pretty big. There are a lot of
@@ -14,9 +14,9 @@ operator is a boolean value. For example:
 
 ::
 
-      if (x == 5) {
-        // do something
-      }
+    if (x == 5) {
+      // do something
+    }
 
 The operator == compares two integers and produces a boolean value.
 
@@ -25,9 +25,32 @@ a boolean expression is called for. For example,
 
 ::
 
-      while (true) {
-        // loop forever
-      }
+    while (true) {
+      // loop forever
+    }
 
 is a standard idiom for a loop that should run forever (or until it
 reaches a return or break statement).
+
+
+.. fillintheblank:: bool_vals_1
+
+    The boolean type has two values |blank| and |blank|.  The |blank|
+    operator is used to check if two boolean values are equal.
+
+    - :([Tt][Rr][Uu][Ee]|[Ff][Aa][Ll][Ss][Ee]): There are only two possible values for a bool.
+      :.*: Try again!
+    - :([Tt][Rr][Uu][Ee]|[Ff][Aa][Ll][Ss][Ee]): There are only two possible values for a bool.
+      :.*: Try again!
+    - :==: Correct!
+      :.*: Try again!
+
+.. parsonsprob:: bool_vals_2
+
+   Put the following blocks in order of how large the set is.  Put the largest
+   set at the top.
+   -----
+   double
+   int
+   char
+   bool

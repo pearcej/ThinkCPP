@@ -1,4 +1,4 @@
-Program development
+Program Development
 -------------------
 
 At this point you should be able to look at complete C++ functions and
@@ -39,8 +39,8 @@ values. Somewhere in main I would add:
 
 ::
 
-      double dist = distance (1.0, 2.0, 4.0, 6.0);
-      cout << dist << endl;
+    double dist = distance (1.0, 2.0, 4.0, 6.0);
+    cout << dist << endl;
 
 I chose these values so that the horizontal distance is 3 and the
 vertical distance is 4; that way, the result will be 5 (the hypotenuse
@@ -107,28 +107,27 @@ Finally, we can use the sqrt function to compute and return the result.
 
 Then in main, we should output and check the value of the result.
 
-.. activecode:: fivetwo
-  :language: cpp
-  :caption: Program development
+.. activecode:: program_dvlmt_AC_1
+   :language: cpp
+   :caption: Program Development
 
-  #include <iostream>
-  #include <cmath>
-  using namespace std;
+   #include <iostream>
+   #include <cmath>
+   using namespace std;
 
-    double distance (double x1, double y1, double x2, double y2) {
-      double dx = x2 - x1;
-      double dy = y2 - y1;
-      double dsquared = dx*dx + dy*dy;
-      double result = sqrt (dsquared);
-      return result;
-    }
+   double distance (double x1, double y1, double x2, double y2) {
+       double dx = x2 - x1;
+       double dy = y2 - y1;
+       double dsquared = dx*dx + dy*dy;
+       double result = sqrt (dsquared);
+       return result;
+   }
 
-    int main ()
-    {
-      double dist = distance (1.0, 2.0, 4.0, 6.0);
-      cout << dist << endl;
+   int main () {
+       double dist = distance (1.0, 2.0, 4.0, 6.0);
+       cout << dist << endl;
       return 0;
-    }
+   }
 
 As you gain more experience programming, you might find yourself writing
 and debugging more than one line at a time. Nevertheless, this
@@ -147,7 +146,7 @@ The key aspects of the process are:
    expressions, but only if it does not make the program difficult to
    read.
 
-.. mchoice:: test_question_five_two_one_test__
+.. mchoice:: program_dvlmt_1
    :answer_a: combining the parameters
    :answer_b: printing out the parameters
    :answer_c: returning something
@@ -159,7 +158,7 @@ The key aspects of the process are:
    What is a helpful first placekeeper when outlining a function?
 
 
-.. mchoice:: test_question_five_two_one_
+.. mchoice::program_dvlmt_2
    :answer_a: Use temporary variables to hold intermediate values so you can output and check them.
    :answer_b: Start with a working program and make small, incremental changes. That way you know exactly where the error is if you have one.
    :answer_c: Writing a program from start to finish, and then testing at the end in order to understand all of the errors at once.
@@ -173,7 +172,7 @@ The key aspects of the process are:
    Which of the following is not a key aspect of the incremental development process?
 
 
-.. mchoice:: test_question_five_two_one_one
+.. mchoice:: program_dvlmt_3
    :answer_a: Scaffolding - the use of more than 5 lines in a function with no indentation
    :answer_b: Placekeeping - allows the function to compile and return something
    :answer_c: Scaffolding - code that is helpful for testing values, but is not included in the final product
@@ -186,15 +185,15 @@ The key aspects of the process are:
 
    The print statements in the distance function will be removed after testing. What is this called, and what is its purpose?
 
-   .. code-block:: cpp
+   ::
 
-    #include <iostream>
-    using namespace std;
+       #include <iostream>
+       using namespace std;
 
-    double distance (double x1, double y1, double x2, double y2) {
-      double dx = x2 - x1;
-      double dy = y2 - y1;
-      cout << "dx is " << dx << endl;
-      cout << "dy is " << dy << endl;
-      return 0.0;
-    }
+       double distance (double x1, double y1, double x2, double y2) {
+         double dx = x2 - x1;
+         double dy = y2 - y1;
+         cout << "dx is " << dx << endl;
+         cout << "dy is " << dy << endl;
+         return 0.0;
+       }
