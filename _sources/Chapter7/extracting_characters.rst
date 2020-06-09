@@ -4,20 +4,23 @@ Extracting characters from a string
 Strings are called “strings” because they are made up of a sequence, or
 string, of characters. The first operation we are going to perform on a
 string is to extract one of the characters. C++ uses square brackets
-(``[`` and ``]``) for this operation:
+(``[`` and ``]``) for this operation.
 
 .. activecode:: seventhree
   :language: cpp
   :caption: Accessing a string character
 
+  Take a look at the active code below. We extract the character
+  at index 1 from ``fruit`` using ``[`` and ``]``.
+  ~~~~
   #include <iostream>
   using namespace std;
 
-    int main() {
-     string fruit = "banana";
-     char letter = fruit[1];
-     cout << letter << endl;
-    }
+  int main() {
+      string fruit = "banana";
+      char letter = fruit[1];
+      cout << letter << endl;
+  }
 
 The expression ``fruit[1]`` indicates that I want character number 1
 from the string named ``fruit``. The result is stored in a ``char``
@@ -34,23 +37,28 @@ counting from zero. The 0th letter (“zeroeth”) of ``"banana"`` is ``b``.
 The 1th letter (“oneth”) is ``a`` and the 2th (“twoeth”) letter is
 ``n``.
 
+.. note::
+   In C++, indexing begins at 0!
+
 If you want the the zereoth letter of a string, you have to put zero in
-the square brackets:
+the square brackets.
 
 .. activecode:: sevenfour
   :language: cpp
   :caption: Accessing a string character
 
+  The active code below accesses the first character in ``fruit``.
+  ~~~~
   #include <iostream>
   using namespace std;
 
-    int main() {
-     string fruit = "banana";
-     char letter = fruit[0];
-     cout << letter << endl;
-    }
+  int main() {
+      string fruit = "banana";
+      char letter = fruit[0];
+      cout << letter << endl;
+  }
 
-.. mchoice:: test_question_seven_one
+.. mchoice:: extracting_characters_1
    :practice: T
    :answer_a: 1
    :answer_b: 0
@@ -72,9 +80,9 @@ the square brackets:
       int main () {
         string bake = "bake a cake!";
         char letter = bake[?];
-       }
+      }
 
-.. clickablearea:: click_seven_one
+.. clickablearea:: extracting_characters_2
     :question: Click on each spot where a character in a string is accessed.
     :iscode:
     :feedback: Remember, square brackets [] are used to access a character in a string.
@@ -84,10 +92,12 @@ the square brackets:
         char letter = :click-correct:fruit[2];:endclick:
         :click-incorrect:cout << fruit << endl;:endclick:
         cout <<  :click-correct:fruit[4]:endclick:  << endl;
-        }
+    }
 
 
-.. parsonsprob:: question_seven_one__
+.. parsonsprob:: extracting_characters_3
+   :numbered: left
+   :adaptive:
 
    Construct a block of code that correctly prints the letter "a".
    -----

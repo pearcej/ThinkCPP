@@ -22,31 +22,33 @@ The reason this is useful is that you sometimes don’t know when you
 start writing exactly how to divide the program into functions. This
 approach lets you design as you go along.
 
-.. activecode:: sixnine
+.. activecode:: sixeleven
   :language: cpp
   :caption: Two-dimensional tables
 
+  The active code below uses the ``printMultTable`` function.
+  Run the active code to see what happens!
+  ~~~~
   #include <iostream>
   using namespace std;
 
-  void printMultiples (int n)
-  {
-    int i = 1;
-    while (i <= 6) {
-      cout << n*i << '\t';
-      i = i + 1;
-    }
-    cout << endl;
+  void printMultiples (int n) {
+      int i = 1;
+      while (i <= 6) {
+          cout << n*i << '\t';
+          i = i + 1;
+      }
+      cout << endl;
   }
 
   void printMultTable() {
-    int i = 1;
-    while (i <= 6) {
-      printMultiples (i);
-      i = i + 1;
-    }
+      int i = 1;
+      while (i <= 6) {
+          printMultiples (i);
+          i = i + 1;
+      }
   }
 
   int main() {
-    printMultTable();
+      printMultTable();
   }

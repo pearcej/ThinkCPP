@@ -30,17 +30,18 @@ sample, run this loop:
 .. activecode:: ch10_7
    :language: cpp
 
+   Take a look at the active code below, which generates 4 random numbers.
+   ~~~~
    #include <iostream>
    #include <cstdlib>
    using namespace std;
 
-   int main ()
-   {
-     for (int i = 0; i < 4; i++) {
-       int x = random ();
-       cout << x << endl;
-     }
-     return 0;
+   int main () {
+       for (int i = 0; i < 4; i++) {
+           int x = random ();
+           cout << x << endl;
+       }
+       return 0;
    }
 
 On my machine I got the following output:
@@ -65,24 +66,28 @@ simple way to do that is with the modulus operator. For example:
 
 Since ``y`` is the remainder when ``x`` is divided by ``upperBound``,
 the only possible values for ``y`` are between 0 and ``upperBound - 1``,
-including both end points. Keep in mind, though, that ``y`` will never
-be equal to ``upperBound``.
+including both end points. 
+
+.. note::
+   Keep in mind, though, that ``y`` will never be equal to ``upperBound``.
 
 .. activecode:: ch10_7_1
    :language: cpp
-   
+
+   The active code below generates random numbers between 1 and 7.
+   ~~~~
    #include <iostream>
    #include <cstdlib>
    using namespace std;
 
    int main () {
-      int upperBound = 8;
-      cout << "Let's generate some random numbers between 1 and 7!" << endl;
-      for (int i = 0; i < 10; i++) {
-         int x = random ();
-         int y = x % upperBound;
-         cout << y << " ";
-      }
+       int upperBound = 8;
+       cout << "Let's generate some random numbers between 1 and 7!" << endl;
+       for (int i = 0; i < 10; i++) {
+           int x = random ();
+           int y = x % upperBound;
+           cout << y << " ";
+       }
    }
 
 It is also frequently useful to generate random floating-point values. A
@@ -100,21 +105,23 @@ between 100.0 and 200.0.
 
 .. activecode:: ch10_7_2
    :language: cpp
-   
+
+   The active code below generates random numbers between 0 and 1.
+   ~~~~
    #include <iostream>
    #include <cstdlib>
    using namespace std;
 
    int main () {
-      cout << "Let's generate some random numbers between 0 and 1!" << endl;
-      for (int i = 0; i < 10; i++) {
-         int x = random ();
-         double y = double(x) / RAND_MAX;
-         cout << y << " ";
-      }
+       cout << "Let's generate some random numbers between 0 and 1!" << endl;
+       for (int i = 0; i < 10; i++) {
+           int x = random ();
+           double y = double(x) / RAND_MAX;
+           cout << y << " ";
+       }
    }
 
-.. fillintheblank:: question10_7_1
+.. fillintheblank:: random_numbers_1
 
     Pseudorandom numbers are said to be __________, because different numbers are generated every time the program is executed.
 
@@ -122,7 +129,7 @@ between 100.0 and 200.0.
       :([Dd]eterministic|DETERMINISTIC): Incorrect! Deterministic programs do the same thing every time they are executed.
       :.*: Incorrect!
 
-.. mchoice:: question10_7_2
+.. mchoice:: random_numbers_2
    :answer_a: cstdlib
    :answer_b: random
    :answer_c: cmath
@@ -135,7 +142,7 @@ between 100.0 and 200.0.
 
    What header file do we need to declare in order to use the ``random`` function?
 
-.. mchoice:: question10_7_3
+.. mchoice:: random_numbers_3
    :answer_a: int y = x / 12
    :answer_b: int y = x % 12
    :answer_c: int y = x / 13

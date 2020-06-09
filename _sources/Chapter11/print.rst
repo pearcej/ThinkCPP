@@ -94,24 +94,24 @@ the function works. If you omit the definition, or provide a definition
 that has an interface different from what you promised, the compiler
 will complain.
 
-Feel free to mess around with input for currentTime in the active code below!
-
 .. activecode:: 11_2
    :language: cpp
 
+   Feel free to mess around with input for ``currentTime`` in the active code below!
+   ~~~~
    #include <iostream>
    using namespace std;
 
    struct Time {
-     int hour, minute;
-     double second;
+       int hour, minute;
+       double second;
 
-     void print ();
+       void print ();
    };
 
    int main() {
-     Time currentTime = { 9, 14, 30.0 };
-     currentTime.print ();
+       Time currentTime = { 9, 14, 30.0 };
+       currentTime.print ();
    }
 
    ====
@@ -119,14 +119,14 @@ Feel free to mess around with input for currentTime in the active code below!
      cout << hour << ":" << minute << ":" << second << endl;
    }
 
-.. fillintheblank:: question11_2_1
+.. fillintheblank:: print_1
 
     What keyword do we use to refer to the current object?
 
     - :([Tt]his|THIS): Correct! But be careful: this is actually a pointer to the current object!
       :.*: Incorrect!
 
-.. mchoice:: question11_2_2
+.. mchoice:: print_2
    :multiple_answers:
    :answer_a: change the name of the function to Dog::bark
    :answer_b: remove the Dog parameter
@@ -140,9 +140,9 @@ Feel free to mess around with input for currentTime in the active code below!
 
    We have a free-standing function called **dog_bark** which takes a **Dog** object as a parameter.  What step(s) do we need to take to convert ``dog_bark(const Dog& dog)`` to a member function of the ``Dog`` class?
 
-.. parsonsprob:: question11_2_3
+.. parsonsprob:: print_3
 
-   Create the Dog object with member functions bark() and is_teacup_dog().  Write the functions 
+   Create the ``Dog`` object with member functions ``bark`` and ``is_teacup_dog``.  Write the functions 
    in the same order they appear inside the structure.
    -----
    struct Dog {

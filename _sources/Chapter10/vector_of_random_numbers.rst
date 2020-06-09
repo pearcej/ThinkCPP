@@ -57,6 +57,8 @@ which is pretty random-looking. Your results might be different.
 .. activecode:: 10_9
    :language: cpp
 
+   Try running the active code below!
+   ~~~~
    #include <iostream>
    #include <vector>
    using namespace std;
@@ -65,10 +67,10 @@ which is pretty random-looking. Your results might be different.
    void printVector (const vector<int>& vec);
 
    int main() {
-      int numValues = 20;
-      int upperBound = 10;
-      vector<int> vector = randomVector (numValues, upperBound);
-      printVector (vector);
+       int numValues = 20;
+       int upperBound = 10;
+       vector<int> vector = randomVector (numValues, upperBound);
+       printVector (vector);
    }
 
    ====
@@ -100,14 +102,14 @@ To test this theory, we’ll write some programs that count the number of
 times each value appears, and then see what happens when we increase
 ``numValues``.
 
-.. fillintheblank:: question10_9_1
+.. fillintheblank:: vector_of_rand_nums_1
 
     How should we declare the parameter, **vector**, if we don't intend to make any changes to it?
 
     - :([Cc]onst|CONST): Correct!
       :.*: Incorrect, Try again!
 
-.. mchoice:: question10_9_2
+.. mchoice:: vector_of_rand_nums_2
    :answer_a: more uniform
    :answer_b: less uniform
    :answer_c: more normal

@@ -1,24 +1,24 @@
 ``string`` variables
 --------------------
 
-You can create a variable with type ``string`` in the usual ways:
+You can create a variable with type ``string`` in the usual ways.
 
 .. activecode:: sevenone
   :language: cpp
   :caption: Creating a string variable
 
+  In the active code below, the first line creates a ``string`` without 
+  giving it a value. The second line assigns it the string value ``"Hello."`` 
+  The third line is a combined declaration and assignment, also called an initialization.
+  ~~~~
   #include <iostream>
   using namespace std;
 
   int main() {
-     string first;
-     first = "Hello, ";
-     string second = "world.";
+      string first;
+      first = "Hello, ";
+      string second = "world.";
   }
-
-The first line creates a ``string`` without giving it a value. The
-second line assigns it the string value ``"Hello."`` The third line is a
-combined declaration and assignment, also called an initialization.
 
 Normally when string values like ``"Hello, "`` or ``"world."`` appear,
 they are treated as C strings. In this case, when we assign them to an
@@ -36,24 +36,25 @@ for the ``string`` class, and you will have to add the file ``string``
 to the list of files you want to compile. The details of how to do this
 depend on your programming environment.
 
-Before proceeding, you should type in the program above and make sure
-you can compile and run it.
-
 .. activecode:: seventwo
   :language: cpp
   :caption: Outputting a string variable
 
+  Run the active code below!
+  ~~~~
   #include <iostream>
   using namespace std;
 
   int main() {
-     string first;
-     first = "Hello, ";
-     string second = "world.";
-     cout << first << second << endl;
+      string first;
+      first = "Hello, ";
+      string second = "world.";
+      cout << first << second << endl;
   }
 
-.. parsonsprob:: question_seven_one
+.. parsonsprob:: string_variables_1
+   :numbered: left
+   :adaptive:
 
    Construct a block of code that correctly prints out a string variable.
    -----
@@ -66,7 +67,7 @@ you can compile and run it.
    cout << x << endl;
 
 
-.. mchoice:: test_question_seven_one__
+.. mchoice:: string_variables_2
    :practice: T
    :answer_a: string x = "Hello";
    :answer_b: x = "Hello";
@@ -80,7 +81,7 @@ you can compile and run it.
    How would you initialize a string?
 
 
-.. clickablearea:: click_seven_one__
+.. clickablearea:: string_variables_3
     :question: Click on each spot where a string assignment occurs.
     :iscode:
     :feedback: Remember, square brackets [] are used to access a character in a string.
@@ -91,4 +92,4 @@ you can compile and run it.
         :click-correct:fruit = "pear";:endclick:
         :click-incorrect:string flavor;:endclick:
         :click-correct:flavor = "vanilla";:endclick:
-      }
+    }

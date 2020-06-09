@@ -17,7 +17,7 @@ something like this:
 
 Try it in your development environment and see how it looks.
 
-.. clickablearea:: click_seven_two
+.. clickablearea:: runtime_error_1
     :question: Click on each spot that would cause a runtime error.
     :iscode:
     :feedback: Remember, an index that is negative or greater than the length of the string - 1 will give a run-time error.
@@ -29,9 +29,11 @@ Try it in your development environment and see how it looks.
         :click-incorrect:cout << fruit << endl;:endclick:
         cout <<  :click-correct:fruit[-4]:endclick:  << endl;
         cout <<  :click-incorrect:fruit[4]:endclick:  << endl;
-        }
+    }
 
-.. parsonsprob:: question_seven_two_one
+.. parsonsprob:: runtime_error_2
+   :numbered: left
+   :adaptive:
 
    Construct a block of code that correctly changes the string to say "cat in the hat" instead of "cat on the mat", then print it.
    -----

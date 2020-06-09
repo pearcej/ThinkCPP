@@ -3,21 +3,23 @@ Length
 
 To find the length of a string (number of characters), we can use the
 ``length`` function. The syntax for calling this function is a little
-different from what we’ve seen before:
+different from what we’ve seen before.
 
 .. activecode:: sevenfive
   :language: cpp
   :caption: Finding the length of a string
 
+  The active code below outputs the length of ``fruit``.
+  ~~~~
   #include <iostream>
   using namespace std;
 
-    int main() {
-     string fruit = "Watermelon";
-     int length;
-     length = fruit.length();
-     cout << length << endl;
-     }
+  int main() {
+      string fruit = "Watermelon";
+      int length;
+      length = fruit.length();
+      cout << length << endl;
+  }
 
 To describe this function call, we would say that we are **invoking**
 the length function on the string named ``fruit``. This vocabulary may
@@ -29,22 +31,6 @@ notation,” because the dot (period) separates the name of the object,
 ``length`` takes no arguments, as indicated by the empty parentheses
 ``()``. The return value is an integer, in this case 6. Notice that it
 is legal to have a variable with the same name as a function.
-
-When we print the value of length, we get...
-
-.. activecode:: sevensix
-  :language: cpp
-  :caption: Finding the length of a string and outputting it
-
-  #include <iostream>
-  using namespace std;
-
-    int main() {
-     string fruit = "Watermelon";
-     int length;
-     length = fruit.length();
-     cout << length << endl;
-     }
 
 To find the last letter of a string, you might be tempted to try
 something like
@@ -59,22 +45,29 @@ That won’t work. The reason is that there is no 6th letter in
 from 0 to 5. To get the last character, you have to subtract 1 from
 ``length``.
 
+.. warning::
+   A common source of error involving strings and other arrays is indexing
+   out of bounds. This is usually the result of forgetting to subtract 1 from
+   ``length``.
 
 .. activecode:: sevenseven
   :language: cpp
   :caption: Finding the length of a string and outputting it
 
+  The active code below outputs the last character in ``fruit``
+  using the ``length`` function.
+  ~~~~
   #include <iostream>
   using namespace std;
 
-    int main() {
-     string fruit = "Watermelon";
-     int length = fruit.length();
-     char last = fruit[length-1];
-     cout << last;
-     }
+  int main() {
+      string fruit = "Watermelon";
+      int length = fruit.length();
+      char last = fruit[length-1];
+      cout << last;
+  }
 
-.. mchoice:: test_question_seven_two
+.. mchoice:: length_1
    :practice: T
    :answer_a: 11
    :answer_b: 12
@@ -91,7 +84,7 @@ from 0 to 5. To get the last character, you have to subtract 1 from
       cout << s.length() << endl;
 
 
-.. mchoice:: test_question_seven_three
+.. mchoice:: length_2
    :practice: T
    :answer_a: o
    :answer_b: r
@@ -112,9 +105,11 @@ from 0 to 5. To get the last character, you have to subtract 1 from
       cout << (s[s.length()-5]) << endl;
 
 
-.. parsonsprob:: question_seven_two
+.. parsonsprob:: length_3
+   :numbered: left
+   :adaptive:
 
-   Construct a block of code that correctly implements the accumulator pattern, with course being the first variable initialized.
+   Construct a block of code that correctly implements the accumulator pattern, with ``course`` being the first variable initialized.
    -----
    int main() {
 

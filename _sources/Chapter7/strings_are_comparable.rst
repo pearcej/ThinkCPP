@@ -2,23 +2,23 @@
 ----------------------------
 
 All the comparison operators that work on ``int``\ s and ``double``\ s
-also work on ``strings``. For example, if you want to know if two
-strings are equal:
+also work on ``strings``. 
 
 .. activecode:: sevenfifteen
   :language: cpp
   :caption: Strings are comparable
 
+  Take a look at the active code below, which checks to see if ``word`` is 
+  equal to ``"banana"``.
+  ~~~~
   #include <iostream>
   using namespace std;
 
   int main() {
-
-     word = "banana";
-
-     if (word == "banana") {
-       cout << "Yes, we have no bananas!" << endl;
-     }
+      word = "banana";
+      if (word == "banana") {
+          cout << "Yes, we have no bananas!" << endl;
+      }
   }
 
 The other comparison operations are useful for putting words in
@@ -28,21 +28,24 @@ alphabetical order.
   :language: cpp
   :caption: Strings are comparable
 
-    #include <iostream>
-    using namespace std;
+  The active code below uses comparison operators to determine the ordering
+  of ``word`` relative to ``"banana"``.
+  ~~~~
+  #include <iostream>
+  using namespace std;
 
-    int main() {
+  int main() {
 
-     string word = "Zebra";
+    string word = "Zebra";
 
-     if (word < "banana") {
-       cout << "Your word, " << word << ", comes before banana." << endl;
-     } else if (word > "banana") {
-       cout << "Your word, " << word << ", comes after banana." << endl;
-     } else {
-       cout << "Yes, we have no bananas!" << endl;
-     }
+    if (word < "banana") {
+      cout << "Your word, " << word << ", comes before banana." << endl;
+    } else if (word > "banana") {
+      cout << "Your word, " << word << ", comes after banana." << endl;
+    } else {
+      cout << "Yes, we have no bananas!" << endl;
     }
+  }
 
 You should be aware, though, that the ``string`` class does not handle
 upper and lower case letters the same way that people do. All the upper
@@ -59,7 +62,7 @@ which is making the program realize that zebras are not fruit.
 
 For the following questions, remember that in C++ ``1`` means true and ``0`` means false.
 
-.. mchoice:: test_question_seven
+.. mchoice:: strings_comparable_1
    :practice: T
    :answer_a: 1
    :answer_b: 0
@@ -73,7 +76,7 @@ For the following questions, remember that in C++ ``1`` means true and ``0`` mea
 
       "Dog" < "Doghouse";
 
-.. mchoice:: test_question_seven_eight
+.. mchoice:: strings_comparable_2
    :practice: T
    :answer_a: 1
    :answer_b: 0
@@ -89,7 +92,7 @@ For the following questions, remember that in C++ ``1`` means true and ``0`` mea
 
       "dog" < "Dog";
 
-.. mchoice:: test_question_seven_nine
+.. mchoice:: strings_comparable_3
    :practice: T
    :answer_a: 1
    :answer_b: 0

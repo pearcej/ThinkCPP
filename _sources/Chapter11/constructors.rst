@@ -55,14 +55,14 @@ and it invokes the constructor we just wrote, passing the value of
 object and the constructor initializes its instance variables. The
 result is assigned to the variable ``time``.
 
-.. fillintheblank:: question11_7_1
+.. fillintheblank:: constructors_1
 
     The member function that initializes objects automatically when they are created is called a(n) __________.
 
     - :([Cc]onstructor|CONSTRUCTOR): Correct!
       :.*: Incorrect!
 
-.. mchoice:: question11_7_2
+.. mchoice:: constructors_2
    :answer_a: They initialize the instance variables of an object.
    :answer_b: They have the same name as the class.
    :answer_c: They return an instance of an object.
@@ -75,7 +75,7 @@ result is assigned to the variable ``time``.
 
    Which statment is **false** about constructors?
 
-.. fillintheblank:: question11_7_3
+.. fillintheblank:: constructors_3
 
     Write code to initialize the variable ``lunch`` that has type ``Time`` and a value of 1800 seconds.
 

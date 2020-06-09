@@ -88,8 +88,7 @@ this case there are none):
    using namespace std;
    #include "Time.h"
 
-   int main ()
-   {
+   int main () {
      Time currentTime (9, 14, 30.0);
      currentTime.increment (500.0);
      currentTime.print ();
@@ -149,7 +148,7 @@ automatically. The nice thing is that you don’t have to recompile the
 library every time you compile a program. For the most part the library
 doesn’t change, so there is no reason to recompile it.
 
-.. mchoice:: question11_10_1
+.. mchoice:: header_files_1
    :answer_a: the file that contains structure/function definitions
    :answer_b: the file that contains structure/function implementation
    :answer_c: the file that contains int main()
@@ -162,7 +161,7 @@ doesn’t change, so there is no reason to recompile it.
 
    What is a header file?
 
-.. mchoice:: question11_10_2
+.. mchoice:: header_files_2
    :answer_a: #include <header.h>
    :answer_b: #include <"header.h">
    :answer_c: #include header.h
@@ -175,7 +174,7 @@ doesn’t change, so there is no reason to recompile it.
 
    If I have defined a structure in ``header.h``, how would I include it in the implementation file?
 
-.. mchoice:: question11_10_3
+.. mchoice:: header_files_3
    :answer_a: Files can be compiled separately and linked to a single program later.
    :answer_b: Separate compilation can be time-consuming, since you're working with more files.
    :answer_c: It minimizes interactions between components.

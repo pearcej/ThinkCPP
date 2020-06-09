@@ -18,10 +18,11 @@ expression:
 All of these are legal assignment statements. Here is the effect of this
 code fragment:
 
-Since elements of this vector are numbered from 0 to 3, there is no
-element with the index 4. It is a common error to go beyond the bounds
-of a vector, which causes a run-time error. The program outputs an error
-message like “Illegal vector index”, and then quits.
+.. warning::
+   Since elements of this vector are numbered from 0 to 3, there is no
+   element with the index 4. It is a common error to go beyond the bounds
+   of a vector, which causes a run-time error. The program outputs an error
+   message like “Illegal vector index”, and then quits.
 
 You can use any expression as an index, as long as it has type ``int``.
 One of the most common ways to index a vector is with a loop variable.
@@ -44,11 +45,12 @@ outputting the ``i``\ th element. This type of vector traversal is very
 common. Vectors and loops go together like fava beans and a nice
 Chianti.
 
-Let's take a look at how we can modify vectors by accessing elements!
-
 .. activecode:: ch10_2
    :language: cpp
-   
+
+   Take a look at the active code below. We can modify the vectors by accessing
+   its elements.
+   ~~~~
    #include <iostream>
    #include <vector>
    using namespace std;
@@ -56,13 +58,13 @@ Let's take a look at how we can modify vectors by accessing elements!
    void print_vec(vector<int> vec);
 
    int main() {
-      vector<int> count = {1,2,3,4};
-      cout << "Before we make any changes, count = "; print_vec(count);
-      count[0] = 7;
-      count[1] = count[0] * 2;
-      count[2]++;
-      count[3] -= 60;
-      cout << "After we made the above changes, count = "; print_vec(count);
+       vector<int> count = {1,2,3,4};
+       cout << "Before we make any changes, count = "; print_vec(count);
+       count[0] = 7;
+       count[1] = count[0] * 2;
+       count[2]++;
+       count[3] -= 60;
+       cout << "After we made the above changes, count = "; print_vec(count);
    }
 
    ====
@@ -78,7 +80,7 @@ Let's take a look at how we can modify vectors by accessing elements!
       cout << "]" << endl;
    }
 
-.. mchoice:: question10_2_1
+.. mchoice:: accessing_elements_1
    :multiple_answers:
    :answer_a: vec[3] = vec[3]++;
    :answer_b: vec(3) = vec(3) + 1;
@@ -94,7 +96,7 @@ Let's take a look at how we can modify vectors by accessing elements!
 
    How would you increment the third element of ``vector<int> vec`` by one?
 
-.. fillintheblank:: question10_2_2
+.. fillintheblank:: accessing_elements_2
 
     What is the highest index reached by ``while(i < 7)``?
 

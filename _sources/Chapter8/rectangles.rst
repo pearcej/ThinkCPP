@@ -80,26 +80,29 @@ together they make up the first of the three values that go into the new
 .. activecode:: eightpointeight
   :language: cpp
 
-    #include <iostream>
-    using namespace std;
+  The active code below uses the ``Rectangle`` structure. Feel free to
+  modify the code and experiment around!
+  ~~~~
+  #include <iostream>
+  using namespace std;
 
-    struct Point {
+  struct Point {
       double x, y;
-    };
+  };
 
-    struct Rectangle {
+  struct Rectangle {
       Point corner;
       double width, height;
-    };
+  };
 
-    int main() {
+  int main() {
       Rectangle box = { { 0.0, 0.0 }, 100.0, 200.0 };
       box.width += 50.0;
       cout << box.height << endl;
       cout << box.width << endl;
-    }
+  }
 
-.. mchoice:: question_eight_point_eight_one
+.. mchoice:: rectangles_1
    :practice: T
    :answer_a: double x = corner.box.x;
    :answer_b: double x = box.corner.x;
@@ -119,7 +122,7 @@ together they make up the first of the three values that go into the new
       double x = temp.x;
 
 
-.. clickablearea:: click_eight_point_eight
+.. clickablearea:: rectangles_2
     :question: Click on the legal ways to create a Point and Rectangle structure, assuming that the Point and Rectangle structures are declared above the main function in the same way as in the active code above.
     :iscode:
     :feedback: Re-read the text above and try again.
@@ -127,7 +130,7 @@ together they make up the first of the three values that go into the new
     :click-incorrect:def main() {:endclick:
         :click-incorrect:Point corner = { 0.0, 0.0 );:endclick:
         :click-incorrect:Rectangle box = { ( 0.0, 0.0 ), 100.0, 200.0 }:endclick:
-        :click-correct: Rectangle box = { { 0.0, 0.0 }, 100.0, 200.0 };:endclick:
-        :click-correct: Point corner = { 0.0, 0.0 };:endclick:
-        :click-correct: Rectangle box = { corner, 100.0, 200.0 };:endclick:
-        }
+        :click-correct:Rectangle box = { { 0.0, 0.0 }, 100.0, 200.0 };:endclick:
+        :click-correct:Point corner = { 0.0, 0.0 };:endclick:
+        :click-correct:Rectangle box = { corner, 100.0, 200.0 };:endclick:
+    }

@@ -7,8 +7,7 @@ write something like:
 
 ::
 
-   void swap (int& x, int& y)
-   {
+   void swap (int& x, int& y) {
      int temp = x;
      x = y;
      y = temp;
@@ -32,23 +31,24 @@ effect on ``i`` and ``j``.
 .. activecode:: eighthree
   :language: cpp
 
-    #include <iostream>
-    using namespace std;
+  The active code below uses the ``swap`` function. Run the active code
+  for the output!
+  ~~~~
+  #include <iostream>
+  using namespace std;
 
-    void swap (int& x, int& y)
-    {
+  void swap (int& x, int& y) {
       int temp = x;
       x = y;
       y = temp;
-    }
+  }
 
-    int main() {
+  int main() {
       int i = 7;
       int j = 9;
       swap (i, j);
       cout << i << j << endl;
-    }
-
+  }
 
 When people start passing things like integers by reference, they often
 try to use an expression as a reference argument. For example:
@@ -65,7 +65,7 @@ little tricky to figure out exactly what kinds of expressions can be
 passed by reference. For now a good rule of thumb is that reference
 arguments have to be variables.
 
-.. mchoice:: test_question_eight_one
+.. mchoice:: pass_others_reference_1
    :practice: T
    :answer_a: x, y, z
    :answer_b: x, y, z, q
@@ -80,25 +80,22 @@ arguments have to be variables.
 
    .. code-block:: cpp
 
-      void swap (int& x, int& y)
-      {
+      void swap (int& x, int& y) {
         int temp = x;
         x = y;
         y = temp;
       }
 
-      void add (int& z, int q)
-      {
+      void add (int& z, int q) {
         z = z + y;
       }
 
-      int multiply (int a, int b)
-      {
+      int multiply (int a, int b) {
         int total = a * b;
         return total;
       }
 
-.. parsonsprob:: question_eight_point_ten_one
+.. parsonsprob:: pass_others_reference_2
 
    Create a function called addNum that takes two parameters, an integer x and an integer y. The function should add y to x, then print x. The variable x should be modified, while the variable y should not.
    -----

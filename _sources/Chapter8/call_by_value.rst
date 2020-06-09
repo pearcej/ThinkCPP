@@ -20,29 +20,30 @@ This kind of parameter-passing is called “pass by value” because it is
 the value of the structure (or other type) that gets passed to the
 function.
 
-Observe the output of the code below. The function ``addTwo`` changes the instance variables, but not on ``blank`` itself.
-
 .. activecode:: eightone_two_one_____
   :language: cpp
 
-    #include <iostream>
-    using namespace std;
+  Take a look at the active code below. Notice from the output of the code below how the 
+  function ``addTwo`` changes the instance variables, but not on ``blank`` itself.
+  ~~~~
+  #include <iostream>
+  using namespace std;
 
-    struct Point {
+  struct Point {
       double x, y;
-    };
+  };
 
-    void addTwo (Point p) {
+  void addTwo (Point p) {
       cout << "(" << p.x + 2 << ", " << p.y + 2 << ")" << endl;
-    }
+  }
 
-    int main() {
+  int main() {
       Point blank = { 3.0, 4.0 };
       addTwo (blank);
       cout << "(" << blank.x << "," << blank.y << ")" << endl;
-    }
+  }
 
-.. mchoice:: question_eight_point_six_two
+.. mchoice:: call_by_value_1
    :practice: T
    :answer_a: 2 4
    :answer_b: 2 4 2
@@ -72,7 +73,7 @@ Observe the output of the code below. The function ``addTwo`` changes the instan
       }
 
 
-.. mchoice:: question_eight_point_six_one
+.. mchoice:: call_by_value_2
    :practice: T
    :answer_a: 6.0, 8.0, 3.0, 4.0
    :answer_b: 6.0, 8.0, 6.0, 8.0

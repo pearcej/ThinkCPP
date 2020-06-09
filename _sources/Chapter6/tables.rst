@@ -22,24 +22,26 @@ been errors in the underlying tables, most famously in the table the
 original Intel Pentium used to perform floating-point division.
 
 Although a “log table” is not as useful as it once was, it still makes a
-good example of iteration. The following program outputs a sequence of
-values in the left column and their logarithms in the right column:
+good example of iteration. 
 
 .. activecode:: sixfour
   :language: cpp
   :caption: Tables
 
+  The active code below outputs a sequence of values in the left column 
+  and their logarithms in the right column.
+  ~~~~
   #include <iostream>
   #include <cmath>
   using namespace std;
 
   int main() {
-     double x = 1.0;
-     while (x < 10.0) {
-       cout << x << "\t" << log(x) << "\n";
-       x = x + 1.0;
-     }
-     return 0;
+      double x = 1.0;
+      while (x < 10.0) {
+          cout << x << "\t" << log(x) << "\n";
+          x = x + 1.0;
+      }
+      return 0;
   }
 
 The sequence ``\t`` represents a **tab** character. The sequence ``\n``
@@ -106,17 +108,20 @@ of other powers of two, we could modify the program like this:
   :language: cpp
   :caption: Tables
 
+  If we wanted to find the logarithms of other powers of two, 
+  we could modify the program like this. Run the active code below.
+  ~~~~
   #include <iostream>
   #include <cmath>
   using namespace std;
 
   int main() {
-     double x = 1.0;
-     while (x < 100.0) {
-       cout << x << "\t" << log(x) / log(2.0) << endl;
-       x = x * 2.0;
-     }
-     return 0;
+      double x = 1.0;
+      while (x < 100.0) {
+          cout << x << "\t" << log(x) / log(2.0) << endl;
+          x = x * 2.0;
+      }
+      return 0;
   }
 
 Now instead of adding something to ``x`` each time through the loop,
@@ -142,14 +147,14 @@ knowing the powers of two is! As an exercise, modify this program so
 that it outputs the powers of two up to 65536 (that’s :math:`2^{16}`).
 Print it out and memorize it.
 
-.. fillintheblank:: fill_six_one
+.. fillintheblank:: tables_1
 
     What is the equivalent of endl, and typically used at the end of a string?
 
     - :(?:(?:\\n)|(?:(?:n|N)ewline\s(?:c|C)haracter)): Is the correct answer!
       :.*: Try again!
 
-.. fillintheblank:: fill_six_two
+.. fillintheblank:: tables_2
 
     How would you write a tab character?
 

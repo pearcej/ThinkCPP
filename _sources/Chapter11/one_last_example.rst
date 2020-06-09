@@ -38,30 +38,30 @@ The next line of the function invokes the constructor that takes a
 single ``double`` as a parameter; the last line returns the resulting
 object.
 
-Feel free to try out the ``add()`` function below!
-
 .. activecode:: 11_9
    :language: cpp
 
+   Feel free to try out the ``add`` function in the active code below!
+   ~~~~
    #include <iostream>
    using namespace std;
 
    struct Time {
-     int hour, minute;
-     double second;
-     Time (double secs);
-     Time (int h, int m, double s);
-     bool after (const Time& time2) const;
-     Time add (const Time& t2) const;
-     double convertToSeconds () const;
-     void print ();
+       int hour, minute;
+       double second;
+       Time (double secs);
+       Time (int h, int m, double s);
+       bool after (const Time& time2) const;
+       Time add (const Time& t2) const;
+       double convertToSeconds () const;
+       void print ();
    };
 
    int main() {
-     Time t1 (9, 20, 0.0); cout << "t1 = "; t1.print(); cout << endl;
-     Time t2 (7, 30, 0.0); cout << "t2 = "; t2.print(); cout << endl;
-     Time t3 = t1.add(t2);
-     cout << "Time t1 + Time t2 = "; t3.print(); cout << endl;
+       Time t1 (9, 20, 0.0); cout << "t1 = "; t1.print(); cout << endl;
+       Time t2 (7, 30, 0.0); cout << "t2 = "; t2.print(); cout << endl;
+       Time t3 = t1.add(t2);
+       cout << "Time t1 + Time t2 = "; t3.print(); cout << endl;
    }
 
    ====
@@ -105,7 +105,7 @@ Feel free to try out the ``add()`` function below!
      return false;
    }
 
-.. fillintheblank:: chapter11_9_1
+.. fillintheblank:: one_last_example_1
 
     Inside a member function, the compiler assumes that we want to invoke the function
     on the __________ object.
@@ -113,7 +113,7 @@ Feel free to try out the ``add()`` function below!
     - :([Cc]urrent|CURRENT): Correct!
       :.*: Incorrect! It may help you to read the section again!
 
-.. fillintheblank:: chapter11_9_2
+.. fillintheblank:: one_last_example_2
 
     We have previously initialized t1 and t1 using constructors ``Time t1 (8, 30, 45.0)``
     and ``Time t2 (1, 50, 13.0)``. What should be returned by ``t1.add(t2)``?

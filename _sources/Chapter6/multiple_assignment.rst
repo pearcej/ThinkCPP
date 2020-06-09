@@ -9,17 +9,18 @@ is to replace the old value of the variable with a new value.
   :language: cpp
   :caption: Multiple assignment
 
+  The active code below reassigns ``fred`` from 5 to 7 and prints both values out.
+  ~~~~
   #include <iostream>
   using namespace std;
 
-    int main ()
-    {
-     int fred = 5;
-     cout << fred;
-     fred = 7;
-     cout << fred;
-     return 0;
-    }
+  int main () {
+      int fred = 5;
+      cout << fred;
+      fred = 7;
+      cout << fred;
+      return 0;
+  }
 
 The output of this program is ``57``, because the first time we print
 ``fred`` his value is 5, and the second time his value is 7.
@@ -28,16 +29,18 @@ The output of this program is ``57``, because the first time we print
   :language: cpp
   :caption: Multiple assignment
 
+  The active code below reassigns ``fred`` from 5 to 7 without printing out the initial
+  value.
+  ~~~~
   #include <iostream>
   using namespace std;
 
-    int main ()
-    {
-     int fred = 5;
-     fred = 7;
-     cout << fred;
-     return 0;
-    }
+  int main () {
+      int fred = 5;
+      fred = 7;
+      cout << fred;
+      return 0;
+  }
 
 However, if we do not print ``fred`` the first time, the output is only 7 because
 the value of ``fred`` is just 7 when it is printed.
@@ -56,6 +59,12 @@ important to distinguish between an assignment statement and a statement
 of equality. Because C++ uses the ``=`` symbol for assignment, it is
 tempting to interpret a statement like ``a = b`` as a statement of
 equality. It is not!
+
+.. warning::
+   An assignment statement uses a single ``=`` symbols. For example, ``x = 3``
+   assigns the value of 3 to the variable ``x``. On the other hand, an equality
+   statement uses two ``=`` symbols. For example, ``x == 3`` is a boolean that is true
+   if ``x`` is equal to 3 and is false otherwise.
 
 First of all, equality is commutative, and assignment is not. For
 example, in mathematics if :math:`a = 7` then :math:`7 = a`. But in C++
@@ -82,7 +91,7 @@ with caution. If the values of variables are changing constantly in
 different parts of the program, it can make the code difficult to read
 and debug.
 
-.. dragndrop:: dragndrop_six_one
+.. dragndrop:: multiple_assignment_1
     :feedback: Try again!
     :match_1:  4=a|||Illegal
     :match_2: a==b|||Checking if a is equal to b
@@ -91,7 +100,7 @@ and debug.
 
     Match the expression to the statement that best describes it.
 
-.. mchoice:: test_question_six_one_
+.. mchoice:: multiple_assignment_2
    :answer_a: 10!1!
    :answer_b: 10 ! 1 !
    :answer_c: 10 ! 10 !
@@ -109,11 +118,10 @@ and debug.
     #include <iostream>
     using namespace std;
 
-    int main ()
-    {
-     int x = 10;
-     cout << x << "!";
-     x = 1;
-     cout << x << "!";
-     return 0;
+    int main () {
+      int x = 10;
+      cout << x << "!";
+      x = 1;
+      cout << x << "!";
+      return 0;
     }

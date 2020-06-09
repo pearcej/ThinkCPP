@@ -6,54 +6,35 @@ the arguments, and it has no side effects like modifying an argument or
 outputting something. The only result of calling a pure function is the
 return value.
 
-One example is ``after``, which compares two ``Time``\ s and returns a
-``bool`` that indicates whether the first operand comes after the
-second:
-
 .. activecode:: ninefour
   :language: cpp
 
-   #include <iostream>
-   using namespace std;
+  One example is the function ``after``, which compares two ``Time``\ s and returns a
+  ``bool`` that indicates whether the first operand comes after the second. Take a look
+  at the active code below.
+  ~~~~
+  #include <iostream>
+  using namespace std;
 
-   struct Time {
-     int hour, minute;
-     double second;
-   };
+  struct Time {
+      int hour, minute;
+      double second;
+  };
 
-
-   bool after (Time& time1, Time& time2) {
-
-     if (time1.hour > time2.hour) {
-      return true;
-      }
-     if (time1.hour < time2.hour){
+  bool after (Time& time1, Time& time2) {
+      if (time1.hour > time2.hour) { return true; }
+      if (time1.hour < time2.hour) { return false; }
+      if (time1.minute > time2.minute) { return true; }
+      if (time1.minute < time2.minute) { return false; }
+      if (time1.second > time2.second) { return true; }
       return false;
-      }
+  }
 
-     if (time1.minute > time2.minute) {
-      return true;
-      }
-     if (time1.minute < time2.minute) {
-      return false;
-      }
-
-     if (time1.second > time2.second) {
-     return true;
-     }
-
-     return false;
-   }
-
-
-   int main ()
-   {
-    Time time = { 11, 59, 3.14159 };
-    Time time2 = { 1, 50, 3.14159 };
-    bool value = after(time, time2);
-    cout << value;
-    return 0;
-   }
+  int main () {
+      Time time = { 11, 59, 3.14159 };
+      Time time2 = { 1, 50, 3.14159 };
+      cout << after(time, time2);
+  }
 
 What is the result of this function if the two times are equal? Does
 that seem like the appropriate result for this function? If you were
@@ -77,40 +58,40 @@ Here is a rough draft of this function that is not quite right:
      return sum;
    }
 
-Here is an example of how to use this function. If ``currentTime``
-contains the current time and ``breadTime`` contains the amount of time
-it takes for your breadmaker to make bread, then you could use
-``addTime`` to figure out when the bread will be done.
-
 .. activecode:: ninefive
   :language: cpp
 
-   #include <iostream>
-   using namespace std;
+  Take a look at the active code below. If ``currentTime``
+  contains the current time and ``breadTime`` contains the amount of time
+  it takes for your breadmaker to make bread, then you could use
+  ``addTime`` to figure out when the bread will be done.
+  ~~~~
+  #include <iostream>
+  using namespace std;
 
-   struct Time {
-     int hour, minute;
-     double second;
-   };
+  struct Time {
+      int hour, minute;
+      double second;
+  };
 
-   void printTime (Time& t) {
-     cout << t.hour << ":" << t.minute << ":" << t.second << endl;
-   }
+  void printTime (Time& t) {
+      cout << t.hour << ":" << t.minute << ":" << t.second << endl;
+  }
 
-   Time addTime (Time& t1, Time& t2) {
-     Time sum;
-     sum.hour = t1.hour + t2.hour;
-     sum.minute = t1.minute + t2.minute;
-     sum.second = t1.second + t2.second;
-     return sum;
-   }
+  Time addTime (Time& t1, Time& t2) {
+      Time sum;
+      sum.hour = t1.hour + t2.hour;
+      sum.minute = t1.minute + t2.minute;
+      sum.second = t1.second + t2.second;
+      return sum;
+  }
 
-   int main() {
-     Time currentTime = { 9, 14, 30.0 };
-     Time breadTime = { 3, 35, 0.0 };
-     Time doneTime = addTime (currentTime, breadTime);
-     printTime (doneTime);
-    }
+  int main() {
+      Time currentTime = { 9, 14, 30.0 };
+      Time breadTime = { 3, 35, 0.0 };
+      Time doneTime = addTime (currentTime, breadTime);
+      printTime (doneTime);
+  }
 
 The output of this program is ``12:49:30``, which is correct. On the
 other hand, there are cases where the result is not correct. Can you
@@ -126,41 +107,42 @@ Here’s a second, corrected version of this function.
 .. activecode:: ninesix
   :language: cpp
 
-   #include <iostream>
-   using namespace std;
+  The active code below is the corrected version of ``addTime``.
+  ~~~~
+  #include <iostream>
+  using namespace std;
 
-   struct Time {
-     int hour, minute;
-     double second;
-   };
+  struct Time {
+      int hour, minute;
+      double second;
+  };
 
-   void printTime (Time& t) {
-     cout << t.hour << ":" << t.minute << ":" << t.second << endl;
-   }
+  void printTime (Time& t) {
+      cout << t.hour << ":" << t.minute << ":" << t.second << endl;
+  }
 
-   Time addTime (Time& t1, Time& t2) {
-     Time sum;
-     sum.hour = t1.hour + t2.hour;
-     sum.minute = t1.minute + t2.minute;
-     sum.second = t1.second + t2.second;
+  Time addTime (Time& t1, Time& t2) {
+      Time sum;
+      sum.hour = t1.hour + t2.hour;
+      sum.minute = t1.minute + t2.minute;
+      sum.second = t1.second + t2.second;
+      if (sum.second >= 60.0) {
+          sum.second -= 60.0;
+          sum.minute += 1;
+      }
+      if (sum.minute >= 60) {
+          sum.minute -= 60;
+          sum.hour += 1;
+      }
+      return sum;
+  }
 
-     if (sum.second >= 60.0) {
-       sum.second -= 60.0;
-       sum.minute += 1;
-     }
-     if (sum.minute >= 60) {
-       sum.minute -= 60;
-       sum.hour += 1;
-     }
-     return sum;
-   }
-
-   int main() {
-     Time currentTime = { 9, 14, 30.0 };
-     Time breadTime = { 3, 35, 0.0 };
-     Time doneTime = addTime (currentTime, breadTime);
-     printTime (doneTime);
-    }
+  int main() {
+      Time currentTime = { 9, 14, 30.0 };
+      Time breadTime = { 3, 35, 0.0 };
+      Time doneTime = addTime (currentTime, breadTime);
+      printTime (doneTime);
+  }
 
 Although it’s correct, it’s starting to get big. Later, I will suggest
 an alternate approach to this problem that will be much shorter.
@@ -170,7 +152,7 @@ This code demonstrates two operators we have not seen before, ``+=`` and
 variables. For example, the statement ``sum.second -= 60.0;`` is
 equivalent to ``sum.second = sum.second - 60;``
 
-.. dragndrop:: dnd9_2
+.. dragndrop:: pure_functions_1
     :feedback: Try again.
     :match_1: x.dollar += 2;|||x.dollar = x.dollar + 2;
     :match_2: x.dollar -= 2;|||x.dollar = x.dollar - 2;

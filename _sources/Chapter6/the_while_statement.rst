@@ -7,24 +7,25 @@ Using a ``while`` statement, we can rewrite ``countdown``:
   :language: cpp
   :caption: Multiple assignment
 
+  Try running the active code below! Afterwards, try changing 9 to a different
+  integer to see how the function works!
+  ~~~~
   #include <iostream>
   using namespace std;
 
-   int countdown(int n) {
-     while (n > 0) {
-       cout << n << endl;
-       n = n-1;
-     }
-     cout << "Blastoff!" << endl;
-     return 0;
-   }
+  int countdown(int n) {
+      while (n > 0) {
+          cout << n << endl;
+          n = n-1;
+      }
+      cout << "Blastoff!" << endl;
+      return 0;
+  }
 
-   int main() {
+  int main() {
       countdown(9);
       return 0;
-   }
-
-Try changing 9 to a different integer to see how the function works!
+  }
 
 You can almost read a ``while`` statement as if it were English. What
 this means is, “While ``n`` is greater than zero, continue displaying
@@ -54,6 +55,11 @@ Otherwise the loop will repeat forever, which is called an **infinite
 loop**. An endless source of amusement for computer scientists is the
 observation that the directions on shampoo, “Lather, rinse, repeat,” are
 an infinite loop.
+
+.. warning::
+   Make sure your while loops don't loop forever! If they are
+   meant to terminate, make sure to change the value of a variable, like
+   incrementing or decrementing a counter.
 
 In the case of ``countdown``, we can prove that the loop will terminate
 because we know that the value of ``n`` is finite, and we can see that
@@ -95,7 +101,7 @@ Particular values aside, the interesting question is whether we can
 prove that this program terminates for *all* values of n. So far, no one
 has been able to prove it *or* disprove it!
 
-.. mchoice:: test_question_six_one
+.. mchoice:: while_statement_1
    :practice: T
    :answer_a: n = 2
    :answer_b: n != 0
@@ -108,7 +114,7 @@ has been able to prove it *or* disprove it!
 
    Which of the following is NOT a valid condition for a while statement?
 
-.. mchoice:: test_question_six_one_one
+.. mchoice:: while_statement_2
    :practice: T
    :answer_a: n starts at 10 and is incremented by 1 each time through the loop, so it will always be positive.
    :answer_b: The answer starts at 1 and is incremented by n each time, so it will always be positive.
@@ -127,12 +133,12 @@ has been able to prove it *or* disprove it!
      int n = 10;
      int answer = 1;
      while (n > 0) {
-         answer = answer + n;
-         n = n + 1;
+       answer = answer + n;
+       n = n + 1;
      }
      cout << answer;
 
-.. mchoice:: test_question_six_one_two
+.. mchoice:: while_statement_3
    :practice: T
    :answer_a: 4 7
    :answer_b: 5 7
@@ -150,10 +156,10 @@ has been able to prove it *or* disprove it!
      int n = 1;
      int x = 2;
      while (n < 5) {
-         n = n + 1;
-         x = x + 1;
-         n = n + 2;
-         x = x + n;
+       n = n + 1;
+       x = x + 1;
+       n = n + 2;
+       x = x + n;
      }
      cout << n;
      cout << x;

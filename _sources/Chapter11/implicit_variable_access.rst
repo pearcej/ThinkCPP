@@ -11,8 +11,7 @@ the current object. So we could have written:
 
 ::
 
-   void Time::print ()
-   {
+   void Time::print () {
      cout << hour << ":" << minute << ":" << second << endl;
    }
 
@@ -20,7 +19,7 @@ This kind of variable access is called “implicit” because the name of
 the object does not appear explicitly. Features like this are one reason
 member functions are often more concise than nonmember functions.
 
-.. mchoice:: question11_3_1
+.. mchoice:: implicit_variable_access_1
    :answer_a: after being granted permission
    :answer_b: only inside of that specific member function
    :answer_c: using dot notation
@@ -33,7 +32,7 @@ member functions are often more concise than nonmember functions.
 
    Implicit variable access in member functions allows us to access member variables __________.
 
-.. mchoice:: question11_3_2
+.. mchoice:: implicit_variable_access_2
    :answer_a: Every time you are working with data structures!
    :answer_b: When you implement member functions inside of the structure definition.
    :answer_c: When you implement member functions outside of the structure definition.

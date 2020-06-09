@@ -42,36 +42,35 @@ Now we can call the function in the usual way:
      reflect (blank);
      printPoint (blank);
 
-The output of this program is as expected:
-
 .. activecode:: eightone
   :language: cpp
 
+  Take a look at the active code below. ``reflect`` passes the parameter ``p``
+  by reference. Notice that the output of this code matches what we expect it to be.
+  ~~~~
+  #include <iostream>
+  using namespace std;
 
-    #include <iostream>
-    using namespace std;
-
-    struct Point {
+  struct Point {
       double x, y;
-    };
+  };
 
-    void reflect (Point& p)
-    {
+  void reflect (Point& p) {
       double temp = p.x;
       p.x = p.y;
       p.y = temp;
-    }
+  }
 
-    void printPoint (Point p) {
+  void printPoint (Point p) {
       cout << "(" << p.x << ", " << p.y << ")" << endl;
-    }
+  }
 
-    int main() {
+  int main() {
       Point blank = { 3.0, 4.0 };
       printPoint (blank);
       reflect (blank);
       printPoint (blank);
-    }
+  }
 
 ::
 
@@ -100,14 +99,14 @@ where. Nevertheless, in C++ programs, almost all structures are passed
 by reference almost all the time. In this book I will follow that
 convention.
 
-.. fillintheblank:: fill_eight_three
+.. fillintheblank:: call_by_reference_1
 
     Which symbol should you put in front of the data type of the parameter of a function to make it pass by reference?
 
     - :&: Correct!
       :.*: Try again!
 
-.. mchoice:: question_eight_point_seven_two
+.. mchoice:: call_by_reference_2
    :practice: T
    :answer_a: Passing structures by reference is more versatile
    :answer_b: Passing structures by reference is faster, because the system does not have to copy the whole structure
@@ -121,7 +120,7 @@ convention.
 
    Which is NOT a benefit to using pass by reference instead of pass by value?
 
-.. mchoice:: question_eight_point_seven_one
+.. mchoice:: call_by_reference_3
    :practice: T
    :answer_a: 2 4
    :answer_b: 2 4 2
@@ -150,7 +149,7 @@ convention.
         cout << num << endl;
       }
 
-.. mchoice:: question_eight_one_onethree
+.. mchoice:: call_by_reference_4
    :practice: T
    :answer_a: 6.0, 8.0, 3.0, 4.0
    :answer_b: 6.0, 8.0, 6.0, 8.0

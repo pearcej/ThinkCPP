@@ -50,44 +50,43 @@ It is legal to assign one structure to another. For example:
 
 The output of this program is ``3, 4``.
 
-.. clickablearea:: click_eight_one
+.. clickablearea:: operations_structures_1
     :question: Click on all incorrect statements.
     :iscode:
     :feedback: Remember, this syntax can be used only in an initialization, not in an assignment statement.
 
-    :click-incorrect:def main(){:endclick:
+    :click-incorrect:int main() {:endclick:
         :click-incorrect:Point blank = { 3.0, 4.0 };:endclick:
         :click-incorrect:Point hello;:endclick:
         :click-correct:hello = { 3.0, 4.0 };:endclick:
         :click-incorrect:Point new;:endclick:
         :click-incorrect:new = (Point){3.0, 4.0};:endclick:
         :click-correct:new = {3.0, 4.0};:endclick:
-        }
+    }
 
-.. parsonsprob:: question_8_1_2
+.. parsonsprob:: operations_structures_2
 
    Construct a block of code that correctly initializes the instance variables of a structure.
    -----
    struct Point {
-
+   =====
       double x, y;
-
    };
-
+   =====
    int main() {
-
+   =====
       Point blank;
-
+   =====
       int blank; #distractor
-
+   =====
       blank = (Point){ 12.0, 3.2 };
-
+   =====
       blank = (Point){ 12.0, 3.2 } #distractor
-
+   =====
       blank = { 12.0, 3.2 }; #distractor
    }
 
-.. mchoice:: question_eight_point_four
+.. mchoice:: operations_structures_3
    :multiple_answers:
    :answer_a: %
    :answer_b: =

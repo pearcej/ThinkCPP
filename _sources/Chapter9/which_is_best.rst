@@ -14,8 +14,7 @@ reasonable to do so, and resort to modifiers only if there is a
 compelling advantage. This approach might be called a functional
 programming style.
 
-.. mchoice:: question_nine_seven
-   :multiple_answers:
+.. mchoice:: which_is_best_1
    :answer_a: Writing modifiers only if there is a compelling advantage. Otherwise, write pure functions.
    :answer_b: Writing fill-in functions only if there is a compelling advantage. Otherwise, write modifiers.
    :answer_c: Writing pure functions only if there is a compelling advantage. Otherwise, write modifiers.
@@ -26,7 +25,7 @@ programming style.
 
    What is a functional programming style?
 
-.. fillintheblank:: fill_nine_one
+.. fillintheblank:: which_is_best_2
 
     Anything that can be done with modifiers and fill-in functions can also be done with ____.
 

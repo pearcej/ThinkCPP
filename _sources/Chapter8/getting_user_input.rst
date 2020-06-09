@@ -38,30 +38,31 @@ Thus, getting input from the user might look like this:
 .. activecode:: eightfour
   :language: cpp
 
-   #include <iostream>
+  The active code below is an example of what getting input from the
+  user might look like.
+  ~~~~
+  #include <iostream>
+  using namespace std;
 
-   using namespace std;
+  int main () {
+      int x;
 
-   int main ()
-   {
-     int x;
+      // prompt the user for input
+      cout << "Enter an integer: ";
 
-     // prompt the user for input
-     cout << "Enter an integer: ";
+      // get input
+      cin >> x;
 
-     // get input
-     cin >> x;
+      // check and see if the input statement succeeded
+      if (cin.good() == false) {
+          cout << "That was not an integer." << endl;
+          return -1;
+      }
 
-     // check and see if the input statement succeeded
-     if (cin.good() == false) {
-       cout << "That was not an integer." << endl;
-       return -1;
-     }
-
-     // print the value we got from the user
-     cout << x << endl;
-     return 0;
-   }
+      // print the value we got from the user
+      cout << x << endl;
+      return 0;
+  }
 
 ``cin`` can also be used to input a ``string``:
 
@@ -108,7 +109,7 @@ To convert a string to an integer you can use the ``atoi`` function
 defined in the header file ``cstdlib``. We will get to that in
 Section `[parsing] <#parsing>`__.
 
-.. mchoice:: test_question_eight_point_eleven_one
+.. mchoice:: getting_user_input_1
    :practice: T
    :answer_a: getline only takes the first word of input while getline reads the entire line until the user hits Return or Enter.
    :answer_b: cin only takes the first word of input while cin reads the entire line until the user hits Return or Enter.
@@ -118,11 +119,9 @@ Section `[parsing] <#parsing>`__.
    :feedback_b: Correct!
    :feedback_c: Try again.
 
-
    What is the difference between ``cin`` and ``getline``?
 
-
-.. mchoice:: test_question_eight_point_eleven_two
+.. mchoice:: getting_user_input_2
    :practice: T
    :answer_a: John
    :answer_b: J
@@ -132,21 +131,18 @@ Section `[parsing] <#parsing>`__.
    :feedback_b: Correct!
    :feedback_c: Try again!
 
-
    The user types in ``John Doe``. What prints?
 
    .. code-block:: cpp
 
-      int main(){
+      int main() {
         char name;
-
         cout << "What is your name? ";
         cin >> name;
         cout << name << endl;
-
       }
 
-.. mchoice:: test_question_eight_point_eleven_three
+.. mchoice:: getting_user_input_3
    :practice: T
    :answer_a: John
    :answer_b: J
@@ -156,21 +152,18 @@ Section `[parsing] <#parsing>`__.
    :feedback_b: Try again!
    :feedback_c: Try again!
 
-
    The user types in ``John Doe``. What prints?
 
    .. code-block:: cpp
 
-      int main(){
+      int main() {
         string name;
-
         cout << "What is your name? ";
         cin >> name;
         cout << name << endl;
-
       }
 
-.. mchoice:: test_question_eight_point_eleven_four
+.. mchoice:: getting_user_input_4
    :practice: T
    :answer_a: John
    :answer_b: J
@@ -185,11 +178,9 @@ Section `[parsing] <#parsing>`__.
 
    .. code-block:: cpp
 
-      int main(){
+      int main() {
         string name;
-
         cout << "What is your name? ";
         getline (cin, name);
         cout << name << endl;
-
       }

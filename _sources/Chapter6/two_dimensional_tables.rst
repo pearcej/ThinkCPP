@@ -13,17 +13,20 @@ of 2, all on one line.
   :language: cpp
   :caption: Two-dimensional tables
 
+  Run the active code below, which uses a simple loop that prints the multiples
+  of 2, all on one line.
+  ~~~~
   #include <iostream>
   using namespace std;
 
   int main() {
-     int i = 1;
-     while (i <= 6) {
-       cout << 2*i << "   ";
-       i = i + 1;
-     }
-     cout << endl;
-     return 0;
+      int i = 1;
+      while (i <= 6) {
+          cout << 2*i << "   ";
+          i = i + 1;
+      }
+      cout << endl;
+      return 0;
   }
 
 The first line initializes a variable named ``i``, which is going to act
@@ -41,7 +44,7 @@ The output of this program is:
 
 So far, so good. The next step is to **encapsulate** and **generalize**.
 
-.. mchoice:: test_question_six_three
+.. mchoice:: 2D_tables_1
    :answer_a: counter
    :answer_b: loop variable
    :answer_c: Both a and b
@@ -60,16 +63,16 @@ So far, so good. The next step is to **encapsulate** and **generalize**.
     using namespace std;
 
     int main() {
-       int x = 1;
-       while (x <= 6) {
-         cout << 2*x << "   ";
-         x = x + 1;
-       }
-       cout << endl;
-       return 0;
+      int x = 1;
+      while (x <= 6) {
+        cout << 2*x << "   ";
+        x = x + 1;
+      }
+      cout << endl;
+      return 0;
     }
 
-.. mchoice:: test_question_six_four
+.. mchoice:: 2D_tables_2
    :answer_a: Change the first output statement to say cout << 3*x << endl;
    :answer_b: Change the first output statement to say cout << 3*x << \n;
    :answer_c: Change the second output statement to say cout << endl << endl;
@@ -88,11 +91,11 @@ So far, so good. The next step is to **encapsulate** and **generalize**.
     using namespace std;
 
     int main() {
-       int x = 1;
-       while (x <= 6) {
-         cout << 3*x << "  ";
-         x = x + 1;
-       }
-       cout << endl;
-       return 0;
+      int x = 1;
+      while (x <= 6) {
+        cout << 3*x << "  ";
+        x = x + 1;
+      }
+      cout << endl;
+      return 0;
     }

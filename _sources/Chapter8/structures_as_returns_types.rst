@@ -29,40 +29,41 @@ it is being passed by reference), and assign the return value to a
 .. activecode:: eighttwo
   :language: cpp
 
-    #include <iostream>
-    using namespace std;
+  The active code below uses the ``findCenter`` function. Run the code
+  to see what the output is!
+  ~~~~
+  #include <iostream>
+  using namespace std;
 
-    struct Point {
+  struct Point {
       double x, y;
-    };
+  };
 
-    struct Rectangle {
+  struct Rectangle {
       Point corner;
       double width, height;
-    };
+  };
 
-    void printPoint (Point p) {
+  void printPoint (Point p) {
       cout << "(" << p.x << ", " << p.y << ")" << endl;
-    }
+  }
 
-    Point findCenter (Rectangle& box)
-    {
+  Point findCenter (Rectangle& box) {
       double x = box.corner.x + box.width/2;
       double y = box.corner.y + box.height/2;
       Point result = {x, y};
       return result;
-    }
+  }
 
-    int main() {
+  int main() {
       Rectangle box = { {0.0, 0.0}, 100, 200 };
       Point center = findCenter (box);
       printPoint (center);
-    }
-
+  }
 
 The output of this program is ``(50, 100)``.
 
-.. mchoice:: question_eight_one_onefour
+.. mchoice:: structures_return_types_1
    :practice: T
    :answer_a: addTwo, printPoint, findCenter
    :answer_b: printPoint, findCenter

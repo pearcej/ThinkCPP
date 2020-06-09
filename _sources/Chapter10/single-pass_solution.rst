@@ -28,7 +28,7 @@ As an exercise, encapsulate this code in a function called ``histogram``
 that takes a vector and the range of values in the vector (in this case
 0 through 10), and that returns a histogram of the values in the vector.
 
-.. mchoice:: question10_13_1
+.. mchoice:: single_pass_solution_1
    :multiple_answers:
    :answer_a: Your code runs without a problem because counters are automatically initialized to zero.
    :answer_b: Your code might run, but it probably won't produce the output you desire.
@@ -42,7 +42,7 @@ that takes a vector and the range of values in the vector (in this case
 
    What happens if you don't initialize a counter?
 
-.. parsonsprob:: question10_13_2
+.. parsonsprob:: single_pass_solution_2
 
    Construct a function called histogram that takes a vector and the range of values in the vector, and that returns a histogram of values in the vector.
    -----
