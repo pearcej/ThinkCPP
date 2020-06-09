@@ -10,51 +10,57 @@ ability to take small building blocks and **compose** them. For example,
 we know how to multiply integers and we know how to output values; it
 turns out we can do both at the same time:
 
-.. activecode:: twofourteen
+
+.. activecode:: composition_AC_1
    :language: cpp
-   :caption: Outputting multiplication
+   :caption: Multiplication Output
 
    #include <iostream>
    using namespace std;
 
    int main () {
-      cout << 17 * 3;
+       cout << 17 * 3;
    }
+
 
 Actually, I shouldn’t say “at the same time,” since in reality the
 multiplication has to happen before the output, but the point is that
 any expression, involving numbers, characters, and variables, can be
 used inside an output statement. We’ve already seen one example:
 
-.. activecode:: twofifteen
+
+.. activecode:: composition_AC_2
    :language: cpp
-   :caption: Outputting multiplication and addition
+   :caption: Variable Output
 
    #include <iostream>
    using namespace std;
 
    int main () {
-      int hour = 7;
-      int minute = 1;
-      cout << hour*60 + minute << endl;
+       int hour = 7;
+       int minute = 1;
+       cout << hour*60 + minute << endl;
    }
+
 
 You can also put arbitrary expressions on the right-hand side of an
 assignment statement:
 
-.. activecode:: twosixteen
+
+.. activecode:: composition_AC_3
    :language: cpp
-   :caption: Outputting multiplication and division
+   :caption: Performing Calculations Before Assignment
 
    #include <iostream>
    using namespace std;
 
    int main () {
-      int minute = 3;
-      int percentage;
-      percentage = (minute * 100) / 60;
-      cout << percentage;
+       int minute = 3;
+       int percentage;
+       percentage = (minute * 100) / 60;
+       cout << percentage;
    }
+
 
 This ability may not seem so impressive now, but we will see other
 examples where composition makes it possible to express complex
@@ -69,7 +75,8 @@ That’s because the left side indicates the storage location where the
 result will go. Expressions do not represent storage locations, only 
 values. So the following is illegal: ``minute+1 = hour;``.
 
-.. mchoice:: question2_10_1
+
+.. mchoice:: composition_1
    :answer_a: Change the fourth line within main to **pets = dogs + cats;**
    :answer_b: Change the third line within main to **int pets = dogs;**
    :answer_c: Change the fourth line within main to **pets == dogs + cats;**
@@ -78,34 +85,35 @@ values. So the following is illegal: ``minute+1 = hour;``.
    :feedback_b: The variables were assigned as two different types, so they wouldn't both need to be changed.
    :feedback_c: Yes, variable d is a char because it was assigned as a single character with single quotes around it.
 
-
    What must be changed in order for this code block to work?
 
-   .. code-block:: cpp
+   ::
 
-      #include <iostream>
-      using namespace std;
+       #include <iostream>
+       using namespace std;
 
-      int main ()
-      {
-        int dogs = 3;
-        int cats = 6;
-        int pets;
-        dogs + cats = pets;
-        cout << "I have " << pets << " pets!";
-        return 0;
-      }
+       int main () {
+         int dogs = 3;
+         int cats = 6;
+         int pets;
+         dogs + cats = pets;
+         cout << "I have " << pets << " pets!";
+         return 0;
+       }
 
-.. fillintheblank:: question2_10_2
 
-    The left-hand side of an assignment statement has to be a |blank| name, not an expression.
+.. fillintheblank:: composition_2
 
-    - :[Vv][Aa][Rr][Ii][Aa][Bb][Ll][Ee]: Correct!
-      :.*: Try again!
+   The left-hand side of an assignment statement has to be a |blank| 
+   name, not an expression.
 
-.. fillintheblank:: question2_10_3
+   - :[Vv][Aa][Rr][Ii][Aa][Bb][Ll][Ee]: Correct!
+     :.*: Try again!
 
-    In programming, another word for **combine** is |blank|.
 
-    - :[Cc][Oo][Mm][Pp][Oo][Ss][Ee]: Correct!
-      :.*: Try again!
+.. fillintheblank:: composition_3
+
+   In programming, another word for **combine** is |blank|.
+
+   - :[Cc][Oo][Mm][Pp][Oo][Ss][Ee]: Correct!
+     :.*: Try again!

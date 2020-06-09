@@ -26,14 +26,14 @@ arguments that you provide. If you write:
 
 ::
 
-        double x = area (3.0);
+    double x = area (3.0);
 
 C++ goes looking for a function named ''area'' that takes a double as an
 argument, and so it uses the first version. If you write
 
 ::
 
-        double x = area (1.0, 2.0, 4.0, 6.0);
+    double x = area (1.0, 2.0, 4.0, 6.0);
 
 C++ uses the second version of ''area''.
 
@@ -55,9 +55,7 @@ think you are. To check, stick in an output statement (it doesn’t matter
 what it says) and make sure the behavior of the program changes
 accordingly.
 
-**Check your understanding!**
-
-.. mchoice:: test_question_five_two
+.. mchoice:: overloading_1
    :answer_a: double price(int a, int b);
    :answer_b: double price(int a, string b, string c);
    :answer_c: double price(double x, int y, string z);
@@ -68,13 +66,12 @@ accordingly.
 
    Which of the following function declarations would be legal if it was added to the program below?
 
-   .. code-block:: cpp
+   ::
 
-     double price (int x, int y);
+       double price (int x, int y);
+       double price (double a, int b, string c);
 
-     double price (double a, int b, string c);
-
-.. mchoice:: test_question_five_two_one
+.. mchoice:: overloading_2
    :answer_a: recursiveness
    :answer_b: debugging
    :answer_c: overloading
@@ -85,8 +82,7 @@ accordingly.
 
    What can be the use of the same name for different functions, such as seen below, be called?
 
-   .. code-block:: cpp
+   ::
 
-     double price(int x, int y);
-
-     double price(double a, int b, string c);
+       double price(int x, int y);
+       double price(double a, int b, string c);

@@ -1,4 +1,4 @@
-What is debugging?
+What is Debugging?
 ------------------
 
 Programming is a complex process, and since it is done by human beings,
@@ -101,26 +101,30 @@ Users’ Guide* Beta Version 1).
 In later chapters I will make more suggestions about debugging and other
 programming practices.
 
-.. fillintheblank:: question1_4_1
 
-    Another word for an error is a(n) |blank|.  The process of finding and fixing errors is called |blank|.
+.. fillintheblank:: debugging_1
+
+   Another word for an error is a(n) |blank|.  The process of finding 
+   and fixing errors is called |blank|.
     
-    - :[Bb][Uu][Gg]: Correct!
-      :.*: Try again!
-    - :[Dd][Ee][Bb][Uu][Gg][Gg][Ii][Nn][Gg]: Correct!
-      :.*: Try again!
+   - :[Bb][Uu][Gg]: Correct!
+     :.*: Try again!
+   - :[Dd][Ee][Bb][Uu][Gg][Gg][Ii][Nn][Gg]: Correct!
+     :.*: Try again!
 
-.. dragndrop:: question1_4_2
-    :feedback: Try again!
-    :match_1: compile-time error|||an error that surfaces when something is wrong with the structure of your program
-    :match_2: run-time error|||an error that come up when your program is executed
-    :match_3: semantic error|||your program does what you told it to do, not what you intended for it to do
 
-    Match each term to its definition!
+.. dragndrop:: debugging_2
+   :feedback: Try again!
+   :match_1: compile-time error|||an error that surfaces when something is wrong with the structure of your program
+   :match_2: run-time error|||an error that come up when your program is executed
+   :match_3: semantic error|||your program does what you told it to do, not what you intended for it to do
 
-.. fillintheblank:: question1_4_3
+   Match each term to its definition!
 
-    The structure of your program and the rules it must follow are called the |blank|.
+
+.. fillintheblank:: debugging_3
+
+   The structure of your program and the rules it must follow are called the |blank|.
     
-    - :[Ss][Yy][Nn][Tt][Aa][Xx]: Correct!
-      :.*: Try again!
+   - :[Ss][Yy][Nn][Tt][Aa][Xx]: Correct!
+     :.*: Try again!

@@ -6,9 +6,9 @@ in them. We do that with an **assignment statement**.
 
 ::
 
-        firstLetter = 'a';   // give firstLetter the value 'a'
-        hour = 11;           // assign the value 11 to hour
-        minute = 59;         // set minute to 59
+    firstLetter = 'a';   // give firstLetter the value 'a'
+    hour = 11;           // assign the value 11 to hour
+    minute = 59;         // set minute to 59
 
 This example shows three assignments, and the comments show three
 different ways people sometimes talk about assignment statements. The
@@ -30,23 +30,21 @@ assignment statements:
    :align: center
    :alt: image
 
-
-
 I sometimes use different shapes to indicate different variable types.
 These shapes should help remind you that one of the rules in C++ is that
 a variable has to have the same type as the value you assign it.
 
 .. Warning::
-   The variable type that you declare must match the type of the value assigned to it.
-   A type mismatch will generate a compile error.
+   The variable type that you declare must match the type of the value 
+   assigned to it.  A type mismatch will generate a compile error.
 
 For example, you cannot store a string in an int variable. The following
 statement generates a compile error.
 
 ::
 
-      int hour;
-      hour = "Hello.";       // WRONG !!
+    int hour;
+    hour = "Hello.";       // WRONG !!
 
 This rule is sometimes a source of confusion, because there are many
 ways that you can convert values from one type to another, and C++
@@ -61,17 +59,18 @@ assignment is illegal:
 
 ::
 
-      int minute = "59";         // WRONG!
+    int minute = "59";         // WRONG!
 
 
-.. fillintheblank:: question2_4_1
+.. fillintheblank:: assignment_1
 
-    A(n) |blank| statement gives a value to a variable.
+   A(n) |blank| statement gives a value to a variable.
 
-    - :[Aa][Ss][Ss][Ii][Gg][Nn][Mm][Ee][Nn][Tt]: Correct!
-      :.*: Try again!
+   - :[Aa][Ss][Ss][Ii][Gg][Nn][Mm][Ee][Nn][Tt]: Correct!
+     :.*: Try again!
 
-.. mchoice:: question2_4_2
+
+.. mchoice:: assignment_2
    :answer_a: Change the type of variable q from int to char.
    :answer_b: Change the type of both variables (p and q) from int to char.
    :answer_c: Change the type of variable p from int to char.
@@ -84,21 +83,21 @@ assignment is illegal:
 
    What must be changed in order for this code block to work?
 
-   .. code-block:: cpp
+   ::
 
-    #include <iostream>
-    using namespace std;
-    // main: generate some simple output
+       #include <iostream>
+       using namespace std;
+       // main: generate some simple output
 
-    int main ()
-    {
-      int p;
-      int q;
-      p = 'h';
-      q = '9';
-    }
+       int main () {
+         int p;
+         int q;
+         p = 'h';
+         q = '9';
+       }
 
-.. parsonsprob:: question2_4_3
+
+.. parsonsprob:: assignment_3
    :adaptive:
    
    Construct a main function that assigns "Hello" to the variable h, then prints out h's value.

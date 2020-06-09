@@ -1,4 +1,4 @@
-Conditional execution
+Conditional Execution
 ---------------------
 
 In order to write useful programs, we almost always need the ability to
@@ -8,9 +8,9 @@ simplest form is the if statement:
 
 ::
 
-      if (x > 0) {
-        cout << "x is positive" << endl;
-      }
+    if (x > 0) {
+      cout << "x is positive" << endl;
+    }
 
 The expression in parentheses is called the condition. If it is true,
 then the statements in brackets get executed. If the condition is not
@@ -20,12 +20,12 @@ The condition can contain any of the comparison operators:
 
 ::
 
-        x == y               // x equals y
-        x != y               // x is not equal to y
-        x > y                // x is greater than y
-        x < y                // x is less than y
-        x >= y               // x is greater than or equal to y
-        x <= y               // x is less than or equal to y
+    x == y               // x equals y
+    x != y               // x is not equal to y
+    x > y                // x is greater than y
+    x < y                // x is less than y
+    x >= y               // x is greater than or equal to y
+    x <= y               // x is less than or equal to y
 
 Although these operations are probably familiar to you, the syntax C++
 uses is a little different from mathematical symbols like :math:`=`,
@@ -33,57 +33,64 @@ uses is a little different from mathematical symbols like :math:`=`,
 instead of a double ``==``. Remember that = is the assignment operator, and
 ``==`` is a comparison operator. Also, there is no such thing as ``=<`` or ``=>``.
 
-The two sides of a condition operator have to be the same type. You can
-only compare ints to ints and doubles to doubles. Unfortunately, at this
-point you can’t compare Strings at all! There is a way to compare
+.. note::
+   The two sides of a condition operator have to be the same type. 
+   
+You can only compare ints to ints and doubles to doubles. Unfortunately, 
+at this point you can’t compare Strings at all! There is a way to compare
 Strings, but we won’t get to it for a couple of chapters.
 
 Observe the conditional statement below.
 
-.. activecode:: fourtwo
-  :language: cpp
-  :caption: Conditional execution
+.. activecode:: conditional_execution_AC_1
+   :language: cpp
+   :caption: Testing Values of x
 
-    #include <iostream>
-    using namespace std;
+   #include <iostream>
+   using namespace std;
 
-    int main ()
-    {
-      int x = 12;
-      if (x == 12) {
-        cout << "Equal!" << endl;
-      }
-      if (x != 13) {
-        cout << "Not equal!" << endl;
-      }
-      if (x < 6) {
-        cout << "Bigger!" << endl;
-      }
-      return 0;
-    }
+   int main () {
+       int x = 12;
+       if (x == 12) {
+           cout << "Equal!" << endl;
+       }
+       if (x != 13) {
+           cout << "Not equal!" << endl;
+       }
+       if (x < 6) {
+           cout << "Bigger!" << endl;
+       }
+       return 0;
+   }
 
-**Check your understanding!**
 
-.. mchoice:: test_question_four_two
-   :answer_a: Change the value of x to 2
-   :answer_b: Change the last conditional statement to **x > 6**
-   :answer_c: Add a semicolon to the end of the conditional statement.
+.. mchoice:: conditional_execution_1
+   :answer_a: Change the value of x to be anything less than 6.
+   :answer_b: Change the value of x to 13.
+   :answer_c: Change the sign of the last conditional statement to x > 6.
+   :answer_d: Change the value of the return from 0 to "Bigger!"
    :correct: b
    :feedback_a: While "Bigger" would now print, the other two statements would not!
-   :feedback_b: Correct!
-   :feedback_c: Conditional statements do not need semicolons because they have curly braces, just like the main function.
-   :feedback_d: Make sure to use the math keywords reserved in C++ when using math functions. Using **cosine** instead of *cos* is incorrect.
+   :feedback_b: Now, none of the statements would print!
+   :feedback_c: Now, all of the statements would print.
+   :feedback_c: main returns an int, so trying to make it return a string will cause an error.
+
+   Observe the code above. "Bigger" never prints! How can you modify this so that all of the statements print?
 
 
-   Observe the code above. "Bigger" never prints! How can you fix this so that all of the statements print?
+.. dragndrop:: conditional_execution_2
+   :feedback: Try again!
+   :match_2: x != y|||x = 10, y = 2
+   :match_4: x <= y|||x = 5, y = 5
+   :match_6: x < y|||x = 2, y = 10
 
-.. dragndrop:: dragndrop_four_one
-    :feedback: Try again!
-    :match_1:  x == y|||x equals y
-    :match_2: x != y|||x is not equal to y
-    :match_3: x > y|||x is greater than y
-    :match_4: x < y|||x is less than y
-    :match_5: x >= y|||x is greater than or equal to y
-    :match_6: x <= y|||x is less than or equal to y
+   Match the operator to values of x and y that would return true.
 
-    Match the operator to its definition in words.
+
+.. dragndrop:: conditional_execution_3
+   :feedback: Try again!
+   :match_2: x == y|||x = 3, y = 3
+   :match_4: x >= y|||x = 6, y = 2
+   :match_6: x < y|||x = 2, y = 6
+
+   Match the operator to values of x and y that would return true.

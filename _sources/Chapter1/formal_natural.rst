@@ -1,6 +1,6 @@
 .. _formal:
 
-Formal and natural languages
+Formal and Natural Languages
 ----------------------------
 
 **Natural languages** are the languages that people speak, like English,
@@ -13,8 +13,9 @@ is a formal language that is particularly good at denoting relationships
 among numbers and symbols. Chemists use a formal language to represent
 the chemical structure of molecules. And most importantly:
 
-    **Programming languages are formal languages that have been designed
-    to express computations.**
+.. Note::
+   Programming languages are formal languages that have been designed
+   to express computations.
 
 As I mentioned before, formal languages tend to have strict rules about
 syntax. For example, :math:`3+3=6` is a syntactically correct
@@ -95,7 +96,8 @@ Finally, remember that the details matter. Little things like spelling
 errors and bad punctuation, which you can get away with in natural
 languages, can make a big difference in a formal language.
 
-.. mchoice:: question1_5_1
+
+.. mchoice:: formal_natural_1
    :multiple_answers:
    :answer_a: C++
    :answer_b: scientific notation
@@ -111,22 +113,25 @@ languages, can make a big difference in a formal language.
 
    Select all **formal** languages from the choices below.
 
-.. fillintheblank:: question1_5_2
 
-    Analyzing the structure of a sentence or a program is called |blank|.
+.. fillintheblank:: formal_natural_2
+
+   Analyzing the structure of a sentence or a program is called |blank|.
     
-    - :[Pp][Aa][Rr][Ss][Ii][Nn][Gg]: Correct!
-      :.*: Try again!
+   - :[Pp][Aa][Rr][Ss][Ii][Nn][Gg]: Correct!
+     :.*: Try again!
 
-.. dragndrop:: question1_5_3
-    :feedback: Try again!
-    :match_1: ambiguity|||being unclear and open to interpretation
-    :match_2: redundancy|||being repetetive to get the point across
-    :match_3: literalness|||meaning exactly what is said, nothing more
 
-    Match each term to an example of it!
+.. dragndrop:: formal_natural_3
+   :feedback: Try again!
+   :match_1: ambiguity|||being unclear and open to interpretation
+   :match_2: redundancy|||being repetetive to get the point across
+   :match_3: literalness|||meaning exactly what is said, nothing more
 
-.. mchoice:: question1_5_4
+   Match each term to an example of it!
+
+
+.. mchoice:: formal_natural_4
    :multiple_answers:
    :answer_a: ambiguous
    :answer_b: redundant

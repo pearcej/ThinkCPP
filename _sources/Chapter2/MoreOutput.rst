@@ -1,21 +1,23 @@
-More output
+More Output
 -----------
 
 As I mentioned in the last chapter, you can put as many statements as
 you want in main. For example, to output more than one line:
 
-.. activecode:: twoone
+
+.. activecode:: more_output_AC_1
    :language: cpp
-   :caption: Simple output
+   :caption: Two Lines of Output
 
    #include <iostream>
    using namespace std;
    // main: generate some simple output
 
    int main () {
-      cout << "Hello, world." << endl;     // output one line
-      cout << "How are you?" << endl;      // output another
+       cout << "Hello, world." << endl;     // output one line
+       cout << "How are you?" << endl;      // output another
    }
+
 
 As you can see, it is legal to put comments at the end of a line, as
 well as on a line by themselves.
@@ -33,17 +35,19 @@ punctuation marks, and other special characters.
 Often it is useful to display the output from multiple output statements
 all on one line. You can do this by leaving out the first endl:
 
-.. activecode:: twotwo
+
+.. activecode:: more_output_AC_2
    :language: cpp
-   :caption: Cruel world!
+   :caption: Two Statements, One Line of Output
 
    #include <iostream>
    using namespace std;
 
    int main () {
-      cout << "Goodbye, ";
-      cout << "cruel world!" << endl;
+       cout << "Goodbye, ";
+       cout << "cruel world!" << endl;
    }
+
 
 In this case the output appears on a single line as ``Goodbye, cruel
 world!``. Notice that there is a space between the word “Goodbye,” and the
@@ -53,45 +57,51 @@ the behavior of the program.
 Spaces that appear outside of quotation marks generally do not affect
 the behavior of the program. For example, I could have written:
 
-.. activecode:: twothree
+
+.. activecode:: more_output_AC_3
    :language: cpp
-   :caption: Cruel world! (no spaces)
+   :caption: Spaces Removed (messy)
 
    #include <iostream>
    using namespace std;
 
    int main () {
-      cout<<"Goodbye, ";
-      cout<<"cruel world!"<<endl;
+       cout<<"Goodbye, ";
+       cout<<"cruel world!"<<endl;
    }
+
 
 This program would compile and run just as well as the original. The
 breaks at the ends of lines (newlines) do not affect the program’s
 behavior either, so I could have written:
 
-.. activecode:: twofour
+
+.. activecode:: more_output_AC_4
    :language: cpp
-   :caption: Cruel world! (one line)
+   :caption: Spaces removed, One Line (very messy)
 
    #include <iostream>
    using namespace std;
 
    int main(){cout<<"Goodbye, ";cout<<"cruel world!"<<endl;}
 
+
 That would work, too, although you have probably noticed that the
 program is getting harder and harder to read. Newlines and spaces are
 useful for organizing your program visually, making it easier to read
 the program and locate syntax errors.
 
-.. dragndrop:: question2_1_1
-    :feedback: Try again!
-    :match_1:  cout<<"Hello"; cout<<"Hello";|||one line
-    :match_2: cout<<"Hello" << endl; cout<<"Hello";|||two lines
 
-    Match the code snippet to the correct amount of lines that would be printed.
+.. dragndrop:: more_output_1
+   :feedback: Try again!
+   :match_1:  cout<<"Hello"; cout<<"Hello";|||one line
+   :match_2: cout<<"Hello" << endl; cout<<"Hello";|||two lines
+
+   Match the code snippet to the correct amount of lines that would 
+   be printed.
 
 
-.. fillintheblank:: question2_1_2
+.. fillintheblank:: more_output_2
 
    The phrases that appear in quotation marks are called |blank|.
 
@@ -99,15 +109,11 @@ the program and locate syntax errors.
      :.*: Try again!
 
 
-.. parsonsprob:: question2_1_3
+.. parsonsprob:: more_output_3
    :adaptive:
    
-   Construct a main function that prints out 
-
-   ::
-
-      Hello,
-      world!
+   Construct a main function that prints "Hello, world!" so that 
+   "Hello," and "world!" are on two separate lines.
 
    on separate lines as shown above.
    -----

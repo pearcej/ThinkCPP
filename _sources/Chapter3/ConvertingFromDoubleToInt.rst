@@ -1,4 +1,4 @@
-Converting from double to int
+Converting from ``double`` to ``int``
 -----------------------------
 
 As I mentioned, C++ converts ints to doubles automatically if necessary,
@@ -17,8 +17,8 @@ example:
 
 ::
 
-      double pi = 3.14159;
-      int x = int (pi);
+    double pi = 3.14159;
+    int x = int (pi);
 
 The int function returns an integer, so x gets the value 3. Converting
 to an integer always rounds down, even if the fraction part is
@@ -27,48 +27,48 @@ to an integer always rounds down, even if the fraction part is
 For every type in C++, there is a corresponding function that typecasts
 its argument to the appropriate type.
 
-.. mchoice:: test_question_three_two_
-   :practice: T
+
+.. mchoice:: double_to_int_1
    :answer_a: temp
    :answer_b: 8
    :answer_c: 7
    :answer_d: 8.0
+   :answer_e: 7.0
    :correct: c
    :feedback_a: This is the name of a variable. Only the value of a variable will print with cout.
    :feedback_b: Remember that converting to an integer always rounds down.
    :feedback_c: Correct!
-   :feedback_d: This is not an integer data type.
+   :feedback_d: This is not an integer data type, and it's not the right number.
+   :feedback_e: This is not an integer data type.
+
+   In the lab, we measured a temperature of 7.99999999 degrees C, using 
+   an extremely precise measuring device.  Now we are writing a program 
+   to perform some calculations with our data.  Consider the following C++ 
+   code. 
+
+   ::
+
+       int main () {
+         double temp = 7.99999999;
+         int roundedTemp = int (temp);
+         cout << roundedTemp;
+       }
+
+   What is the value of roundedTemp?
 
 
-   Consider the following C++ code. Note that line numbers are included on the left.
+.. activecode:: double_to_int_2
+   :language: cpp
+   :caption: Double to Int
 
-   .. code-block:: cpp
-      :linenos:
+   Convert the price to an int. Then use a print statement to observe the output!
+   ~~~~
+   #include <iostream>
+   using namespace std;
 
-      int main ()
-      {
-        double temp = 7.99999999;
-        int round_temp = int (temp);
-        cout << round_temp;
-      }
-
-
-   What will print?
-
-
-**Convert this double to an int. Then use a print statement to observe the output!***
-
-.. activecode:: threeone
-  :language: cpp
-  :caption: Double to int
-
-  #include <iostream>
-  using namespace std;
-
-    int main ()
-    {
-      double price = 6.98;
-      int sale_price = ;
-      cout << sale_price;
-      return 0;
-    }
+   int main () {
+       double price = 6.98;
+       int sale_price;
+       cout << sale_price;
+       return 0;
+   }

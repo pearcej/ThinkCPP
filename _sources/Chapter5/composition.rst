@@ -14,15 +14,15 @@ we have a function, distance, that does that.
 
 ::
 
-      double radius = distance (xc, yc, xp, yp);
+    double radius = distance (xc, yc, xp, yp);
 
 The second step is to find the area of a circle with that radius, and
 return it.
 
 ::
 
-      double result = area (radius);
-      return result;
+    double result = area (radius);
+    return result;
 
 Wrapping that all up in a function, we get:
 
@@ -49,39 +49,38 @@ by composing the function calls:
 
 **See everything come together below!**
 
-.. activecode:: fivethreee
-  :language: cpp
-  :caption: Composition
+.. activecode:: fun_composition_AC_1
+   :language: cpp
+   :caption: Composition
 
-  #include <iostream>
-  #include <cmath>
-  using namespace std;
+   #include <iostream>
+   #include <cmath>
+   using namespace std;
 
-    double distance (double x1, double y1, double x2, double y2) {
-      double dx = x2 - x1;
-      double dy = y2 - y1;
-      double dsquared = dx*dx + dy*dy;
-      double result = sqrt (dsquared);
-      return result;
-    }
+   double distance (double x1, double y1, double x2, double y2) {
+       double dx = x2 - x1;
+       double dy = y2 - y1;
+       double dsquared = dx*dx + dy*dy;
+       double result = sqrt (dsquared);
+       return result;
+   }
 
-    double area (double radius) {
-      double area = 3.14 * (radius * radius);
-      return area;
-    }
+   double area (double radius) {
+       double area = 3.14 * (radius * radius);
+       return area;
+   }
 
-    double fred (double xc, double yc, double xp, double yp) {
-      return area (distance (xc, yc, xp, yp));
-    }
+   double fred (double xc, double yc, double xp, double yp) {
+       return area (distance (xc, yc, xp, yp));
+   }
 
-    int main ()
-    {
-      double circle_area = fred (1.0, 2.0, 4.0, 6.0);
-      cout << circle_area << endl;
-      return 0;
-    }
+   int main () {
+       double circle_area = fred (1.0, 2.0, 4.0, 6.0);
+       cout << circle_area << endl;
+       return 0;
+   }
 
-.. mchoice:: test_question_five_three_one_one
+.. mchoice:: fun_composition_1
    :answer_a: print_hello_name
    :answer_b: love_cupcakes
    :answer_c: eat_pizza
@@ -94,8 +93,8 @@ by composing the function calls:
 
    Technically, what can the name of the following function also be?
 
-   .. code-block:: cpp
+   ::
 
-    void printHelloName (string name) {
-      cout << "Hello " << name << "!" <<  endl;
-    }
+       void printHelloName (string name) {
+         cout << "Hello " << name << "!" <<  endl;
+       }

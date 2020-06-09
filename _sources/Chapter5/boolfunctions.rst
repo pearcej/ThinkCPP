@@ -1,4 +1,4 @@
-Bool functions
+Bool Functions
 --------------
 
 Functions can return bool values just like any other type, which is

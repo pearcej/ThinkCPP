@@ -41,21 +41,28 @@ logical operator:
     An operator that combines boolean values in order to test compound
     conditions.
 
-.. dragndrop:: chapter_five_glossary_one
-    :feedback: Try again!
-    :match_1:  return type|||The type of value a function returns.
-    :match_2: return value|||The value provided as the result of a function call.
-    :match_3: dead code|||Part of a program that can never be executed.
-    :match_4: scaffolding|||Code that is used during program development but is not part of the final version.
-    :match_5: void|||A special return type that does not return a value.
 
-.. dragndrop:: chapter_five_glossary_two
-    :feedback: Try again!
-    :match_1:  overloading|||Having more than one function with the same name but different parameters.
-    :match_2: boolean|||A value or variable that can take on one of two states, often called true and false.
-    :match_3: flag|||A variable (usually type bool) that records a condition or status information.
-    :match_4: comparison operator|||An operator that compares two values and produces a boolean that indicates the relationship between the operands.
-    :match_5: logical operator|||An operator that combines boolean values in order to test compound conditions.
+.. dragndrop:: chapter_five_glossary_1
+   :feedback: Try again!
+   :match_1: return type|||The type of value a function returns.
+   :match_2: return value|||The value provided as the result of a function call.
+   :match_3: comparison operator|||An operator that compares two values and produces a boolean.
+   :match_4: logical operator|||An operator that combines boolean values in order to test compound conditions.
+
+
+.. dragndrop:: chapter_five_glossary_2
+   :feedback: Try again!
+   :match_1: dead code|||Part of a program that can never be executed.
+   :match_2: scaffolding|||Codemused during program development but not part of the final version.
+   :match_3: overloading|||Having more than one function with the same name but different parameters.
+
+
+.. dragndrop:: chapter_five_glossary_3
+   :feedback: Try again!
+   :match_1: boolean|||A value or variable that can take on one of two states, often called true and false.
+   :match_2: flag|||A variable that records a condition or status information.
+   :match_3: void|||A special return type that does not return a value.
+    
 
 .. [1]
    There is a way to fix that using the boolalpha flag, but it is too

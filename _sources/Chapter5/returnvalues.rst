@@ -1,4 +1,4 @@
-Return values
+Return Values
 -------------
 
 Some of the built-in functions we have used, like the math functions,
@@ -8,8 +8,8 @@ part of an expression. For example:
 
 ::
 
-      double e = exp (1.0);
-      double height = radius * sin (angle);
+    double e = exp (1.0);
+    double height = radius * sin (angle);
 
 But so far all the functions we have written have been **void**
 functions; that is, functions that return no value. When you call a void
@@ -17,8 +17,8 @@ function, it is typically on a line by itself, with no assignment:
 
 ::
 
-      nLines (3);
-      countdown (n-1);
+    nLines (3);
+    countdown (n-1);
 
 In this chapter, we are going to write functions that return things,
 which I will refer to as **fruitful** functions, for want of a better
@@ -77,32 +77,6 @@ statement in a function, you should keep in mind that as soon as one is
 executed, the function terminates without executing any subsequent
 statements.
 
-**Check your understanding!**
-
-.. mchoice:: test_question_five_one
-   :answer_a: double
-   :answer_b: int
-   :answer_c: string
-   :correct: c
-   :feedback_a: There are no doubles used in this function.
-   :feedback_b: The parameter does not have to be the same type as the return type.
-   :feedback_c: Correct! The variable "outside" is being returned, which is of string type.
-
-   What should the return type of the below function be?
-
-   .. code-block:: cpp
-
-     weather (int temp) {
-      string outside = "";
-      if (temp < 50) {
-        outside = "cold";
-      }
-      else {
-        outside = "warm"
-      }
-      return outside;
-     }
-
 
 Code that appears after a return statement, or any place else where it
 can never be executed, is called **dead code**. Some compilers warn you
@@ -112,27 +86,26 @@ If you put return statements inside a conditional, then you have to
 guarantee that *every possible path* through the program hits a return
 statement. For example:
 
-.. activecode:: fiveonenew
-  :language: cpp
-  :caption: Return values
+.. activecode:: return_vals_AC_1
+   :language: cpp
+   :caption: Return Values
 
-  #include <iostream>
-  using namespace std;
+   #include <iostream>
+   using namespace std;
 
-    double absoluteValue (double x) {
-      if (x < 0) {
-        return -x;
-      } else if (x > 0) {
-        return x;
-      }                          // WRONG!!
-    }
+   double absoluteValue (double x) {
+       if (x < 0) {
+           return -x;
+       } 
+       else if (x > 0) {
+           return x;
+       }                          // WRONG!!
+   }
 
-    int main ()
-    {
-      cout << absoluteValue(0);
-      return 0;
-    }
-
+   int main () {
+       cout << absoluteValue(0);
+       return 0;
+   }
 
 This program is not correct because if x happens to be 0, then neither
 condition will be true and the function will end without hitting a
@@ -160,33 +133,58 @@ have an option that tells them to be extra strict and report all the
 errors they can find. You should turn this option on all the time. The
 implementation below would fix the error in the code.
 
-.. activecode:: fivetwonew
-  :language: cpp
-  :caption: Return values
+.. activecode:: return_vals_AC_2
+   :language: cpp
+   :caption: Return Values
 
-  #include <iostream>
-  using namespace std;
+   #include <iostream>
+   using namespace std;
 
-    double absoluteValue (double x) {
-      if (x < 0) {
-        return -x;
-      } else if (x > 0) {
-        return x;
-      }
-      return x;                      // WRONG!!
-    }
+   double absoluteValue (double x) {
+       if (x < 0) {
+           return -x;
+       } 
+       else if (x > 0) {
+           return x;
+       }
+       return x;                      // WRONG!!
+   }
 
-    int main ()
-    {
+   int main () {
       cout << absoluteValue(0);
       return 0;
-    }
+   }
 
 As an aside, you should know that there is a function in the math
 library called fabs that calculates the absolute value of a
 double—correctly.
 
-.. mchoice:: test_question_five_one_one
+
+.. mchoice:: return_vals_1
+   :answer_a: double
+   :answer_b: int
+   :answer_c: string
+   :correct: c
+   :feedback_a: There are no doubles used in this function.
+   :feedback_b: The parameter does not have to be the same type as the return type.
+   :feedback_c: Correct! The variable "outside" is being returned, which is of string type.
+
+   What should the return type of the below function be?
+
+   ::
+
+       weather (int temp) {
+        string outside = "";
+        if (temp < 50) {
+          outside = "cold";
+        }
+        else {
+          outside = "warm"
+        }
+        return outside;
+       }
+
+.. mchoice:: return_vals_2
    :answer_a: 4
    :answer_b: 2
    :answer_c: 16
@@ -197,20 +195,19 @@ double—correctly.
 
    What will print?
 
-   .. code-block:: cpp
+   ::
 
-    #include <iostream>
-    using namespace std;
+       #include <iostream>
+       using namespace std;
 
-    int timesTwo(int x) {
-      int y = x;
-      return y;
-      y = y * 2;
-    }
+       int timesTwo(int x) {
+         int y = x;
+         return y;
+         y = y * 2;
+       }
 
-    int main ()
-    {
-      int i = 2;
-      cout << timesTwo(i);
-      return 0;
-    }
+       int main () {
+         int i = 2;
+         cout << timesTwo(i);
+         return 0;
+       }

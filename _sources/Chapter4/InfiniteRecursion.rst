@@ -1,4 +1,4 @@
-Infinite recursion
+Infinite Recursion
 ------------------
 
 In the examples in the previous section, notice that each time the
@@ -14,9 +14,11 @@ calls forever and the program will never terminate. This is known as
 
 In most programming environments, a program with an infinite recursion
 will not really run forever. Eventually, something will break and the
-program will report an error. This is the first example we have seen of
-a run-time error (an error that does not appear until you run the
-program).
+program will report an error. 
+
+.. warning::
+   Infinite recursion is the first example we have seen of a run-time 
+   error (an error that does not appear until you run the program).
 
 You should write a small program that recurses forever and run it to see
 what happens. Below is an example. The function adds to the number **n**
@@ -41,3 +43,106 @@ line is being created infinitely.
     int main() {
       void nLines(10);
     }
+
+
+.. fillintheblank:: unbounded_recursion_1
+
+   If a recursive function never reaches its |blank| |blank|, then the function
+   will continue executing indefinitely.  This is called |blank| |blank|.
+
+   - :[Bb][Aa][Ss][Ee]: Correct!
+     :x: Try again!
+   - :[Cc][Aa][Ss][Ee]: Correct!
+     :x: Try again!
+   - :[Ii][Nn][Ff][Ii][Nn][Ii][Tt][Ee]: Correct!
+     :.*: Try again!
+   - :[Rr][Ee][Cc][Uu][Rr][Ss][Ii][Oo][Nn]: Correct!
+     :.*: Try again!
+
+
+.. mchoice:: unbounded_recursion_2
+   :answer_a: The function will print "Not Negative!"
+   :answer_b: The function will print "Not Negative!" more than once.  Then it will print "Negative!" and will stop executing.
+   :answer_c: The function will print "Negative!"
+   :answer_d: The function will never stop executing, there will be infinite recursion.
+   :correct: c
+   :feedback_a: The function will never print "Not Negative!" since we start with a negative number!
+   :feedback_b: The function will never print "Not Negative!" since we start with a negative number!
+   :feedback_c: We start with a negative number, so the function will reach the base case.
+   :feedback_d: We start with a negative number, so the function will reach the base case.
+
+   Take a look at the code below.  What will happen if you were to run it on
+   your machine?
+
+   ::
+
+       #include <iostream>
+       using namespace std;
+
+       void isNegative(int n) {
+         if (n >= 0) {
+           cout << "Not Negative!";
+           nLines(n - 1);
+         }
+         cout << "Negative!";
+       }
+
+       int main() {
+         void isNegative(-10);
+       }
+
+
+.. mchoice:: unbounded_recursion_3
+   :answer_a: The function will print "Not Negative!"
+   :answer_b: The function will print "Not Negative!" more than once.  Then it will print "Negative!" and will stop executing.
+   :answer_c: The function will print "Negative!"
+   :answer_d: The function will never stop executing, there will be infinite recursion.
+   :correct: b
+   :feedback_a: The function will print "Not Negative!", but it won't stop there!
+   :feedback_b: The function will print "Not Negative!" until it reaches a negative number.
+   :feedback_c: The function will eventually print "Not Negative!", but that's not all!
+   :feedback_d: Since we decrement each time, the base case will be reached.
+
+   Suppose we have already defined isNegative (see previous question).
+   What will happen if we run the code with this input?
+
+   ::
+
+       #include <iostream>
+       using namespace std;
+
+       int main() {
+         void isNegative(10);
+       }
+
+
+.. mchoice:: unbounded_recursion_4
+   :answer_a: The function will print "Not Negative!"
+   :answer_b: The function will print "Not Negative!" more than once.  Then it will print "Negative!" and will stop executing.
+   :answer_c: The function will print "Negative!"
+   :answer_d: The function will never stop executing, there will be infinite recursion.
+   :correct: d
+   :feedback_a: The function will print "Not Negative!" but it won't stop there!
+   :feedback_b: The function will print "Not Negative!" more than once.  But will it print "Negative"?
+   :feedback_c: We start with a positive number, so the function simply won't print "Not Negative!"
+   :feedback_d: Our input is incremented with every recursive call, so if we start with a positive number, we will never reach the base case.
+
+   The isNegative function has been **edited** as shown below.  What will 
+   happen now when we run the code?
+
+   ::
+
+       #include <iostream>
+       using namespace std;
+
+       void isNegative(int n) {
+         if (n >= 0) {
+           cout << "Not Negative!";
+           nLines(n + 1);
+         }
+         cout << "Negative!";
+       }
+
+       int main() {
+         void isNegative(10);
+       }

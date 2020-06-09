@@ -1,4 +1,4 @@
-Functions with results
+Functions with Results
 ----------------------
 
 You might have noticed by now that some of the functions we are using,
@@ -17,6 +17,9 @@ perform an action but don’t return a value. That raises some questions:
 
 The answer to the third question is “yes, you can write functions that
 return values,” and we’ll do it in a couple of chapters. I will leave it
-up to you to answer the other two questions by trying them out. Any time
-you have a question about what is legal or illegal in C++, a good way to
-find out is to ask the compiler.
+up to you to answer the other two questions by trying them out. 
+
+.. note::
+   Any time you have a question about what is legal or illegal in C++, a 
+   good way to find out is to ask the compiler.  It will let you answer
+   your question by throwing an error... or not!

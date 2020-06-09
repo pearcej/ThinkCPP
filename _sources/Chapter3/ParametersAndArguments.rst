@@ -1,4 +1,4 @@
-Parameters and arguments
+Parameters and Arguments
 ------------------------
 
 Some of the built-in functions we have used have **parameters**, which
@@ -16,9 +16,9 @@ indicates the type of each parameter. For example:
 
 ::
 
-      void printTwice (char phil) {
-        cout << phil << phil << endl;
-      }
+    void printTwice (char phil) {
+      cout << phil << phil << endl;
+    }
 
 This function takes a single parameter, named phil, that has type char.
 Whatever that parameter is (and at this point we have no idea what it
@@ -31,10 +31,10 @@ we might have a main function like this:
 
 ::
 
-      int main () {
-        printTwice ('a');
-        return 0;
-      }
+    int main () {
+      printTwice ('a');
+      return 0;
+    }
 
 The char value you provide is called an **argument**, and we say that
 the argument is **passed** to the function. In this case the value ’a’
@@ -45,80 +45,132 @@ instead:
 
 ::
 
-      int main () {
-        char argument = 'b';
-        printTwice (argument);
-        return 0;
-      }
+    int main () {
+      char argument = 'b';
+      printTwice (argument);
+      return 0;
+    }
 
 Notice something very important here: the name of the variable we pass
 as an argument (argument) has nothing to do with the name of the
 parameter (phil). Let me say that again:
 
-    **The name of the variable we pass as an argument has nothing to do
-    with the name of the parameter.**
+.. note::
+   The name of the variable we pass as an argument has nothing to do
+   with the name of the parameter.
 
 They can be the same or they can be different, but it is important to
 realize that they are not the same thing, except that they happen to
 have the same value (in this case the character ’b’).
 
-The value you provide as an argument must have the same type as the
-parameter of the function you call. This rule is important, but it is
-sometimes confusing because C++ sometimes converts arguments from one
-type to another automatically. For now you should learn the general
-rule, and we will deal with exceptions later.
+.. warning::
+   The value you provide as an argument must have the same type as the
+   parameter of the function you call.
+   
+This rule is important, but it is sometimes confusing because C++ 
+sometimes converts arguments from one type to another automatically. 
+For now you should learn the general rule, and we will deal with 
+exceptions later.
 
 
-.. activecode:: threeeight
-  :language: cpp
-  :caption: Understanding parameters.
+.. activecode:: params_args_AC_1
+   :language: cpp
+   :caption: Parameter Practice
 
-    #include <iostream>
-    using namespace std;
+   #include <iostream>
+   using namespace std;
 
-    void printTwice (char phil) {
-      cout << phil << phil << endl;
-      }
+   void printTwice (char phil) {
+       cout << phil << phil << endl;
+   }
 
-    int main () {
-      char argument = 'b';
-      printTwice (argument);
-      return 0;
-      }
-
-.. mchoice:: test_question_three_two
-   :practice: T
-   :answer_a: philphil
-   :answer_b: b b
-   :answer_c: bb
-   :correct: c
-   :feedback_a: "phil" is just the name of the variable/parameter, not its value.
-   :feedback_b: This is close, but in order for there to be a space, a space must be explicitly printed/outputted.
-   :feedback_c: Correct!
-
-   What will print?
-
-   .. code-block:: cpp
-
-      #include <iostream>
-      using namespace std;
-
-      void printTwice (char phil) {
-        cout << phil << phil << endl;
-      }
-
-      int main () {
-        char argument = 'b';
-        printTwice (argument);
-        return 0;
-      }
+   int main () {
+       char argument = 'b';
+       printTwice (argument);
+       return 0;
+   }
 
 
-.. dragndrop:: dragndrop_two_one_
+.. fillintheblank:: params_args_1
+
+   ::
+
+       #include <iostream>
+       using namespace std;
+
+       void printTwice (char phil) {
+         cout << phil << phil << endl;
+       }
+
+       int main () {
+         string argument = "sassy";
+         printTwice (argument);
+         return 0;
+       }
+
+   What will be printed to the terminal?  If nothing will print, 
+   or if the compiler will throw an error, type "error".
+    
+   - :error: The type provided does not match the expected parameter type!
+     :sassysassy: If you look closely, you'll notice that the type of the argument is not the same as the type of the parameter.
+     :.*: Try again!
+
+
+.. fillintheblank:: params_args_2
+
+   ::
+
+       #include <iostream>
+       using namespace std;
+
+       void printTwice (char phil) {
+         cout << phil << phil << endl;
+       }
+
+       int main () {
+         char argument = 'b';
+         printTwice (argument);
+         return 0;
+       }
+
+   What will be printed to the terminal?  If nothing will print, 
+   or if the compiler will throw an error, type "error".
+    
+   - :bb: The printTwice fucntion will print the character argument proveided two times.
+     :error: Something will be printed to the terminal!
+     :.*: Try again!
+
+
+.. fillintheblank:: params_args_3
+
+   ::
+
+       #include <iostream>
+       using namespace std;
+
+       void printTwice (char phil) {
+         cout << phil << phil << endl;
+       }
+
+       int main () {
+         double argument = 3.14;
+         printTwice (argument);
+         return 0;
+       }
+
+   What will be printed to the terminal?  If nothing will print, 
+   or if the compiler will throw an error, type "error".
+    
+   - :error: The type provided does not match the expected parameter type!
+     :3.143.14: If you look closely, you'll notice that the type of the argument is not the same as the type of the parameter.
+     :.*: Try again!
+
+
+.. dragndrop:: params_args_4
     :feedback: Try again!
     :match_1: int timesTwo(int x, int y);|||timesTwo(4, 7);
     :match_2: int timesTwo(string y, int x);|||timesTwo("hello", 10);
     :match_3: int timesTwo(double x, string y);|||timesTwo(4.5, "hello");
     :match_4: int timesTwo(string x, string y);|||timesTwo("hello", "hi");
 
-    Match the function declaration to the function call.
+    Match the function declaration to an example of its function call.
