@@ -16,7 +16,7 @@ sys.path.append(os.getcwd())
 
 home_dir = os.getcwd()
 
-project_name = "ThinkCPP"
+project_name = "thinkcpp"
 
 #master_url = None
 #if master_url is None:
@@ -40,7 +40,7 @@ serving_dir = "./build/thinkcpp"
 
 #new 7/2019 changes
 # Change to False when running localhost
-dynamic_pages = False
+dynamic_pages = True
 
 if dynamic_pages:
     dest = './published'
