@@ -35,30 +35,30 @@ To invoke this function:
 You can almost read the invocation like English: “If the done-time is
 after the current-time, then...”
 
-.. activecode:: 11_6
+.. activecode:: more_complicated_example_AC_1
    :language: cpp
 
-   The active code below is another practical example using the ``after()`` function. 
+   The active code below is another practical example using the ``after`` function. 
    Feel free to modify the time that school gets out, and the time that the track meet starts, if you wish!
    ~~~~
    #include <iostream>
    using namespace std;
 
    struct Time {
-     int hour, minute;
-     double second;
-     bool after (const Time& time2) const;
+       int hour, minute;
+       double second;
+       bool after (const Time& time2) const;
    };
 
    int main() {
-     Time end_school = { 2, 20, 0.0 };
-     Time track_meet = { 1, 30, 0.0 };
-     if (track_meet.after (end_school)) {
-        cout << "The track meet starts after school is dismissed." << endl;
-     }
-     else {
-        cout << "The track meet starts before school gets out, athletes will get an early dismissal." << endl;
-     }
+       Time end_school = { 2, 20, 0.0 };
+       Time track_meet = { 1, 30, 0.0 };
+       if (track_meet.after (end_school)) {
+           cout << "The track meet starts after school is dismissed." << endl;
+       }
+       else {
+           cout << "The track meet starts before school gets out, athletes will get an early dismissal." << endl;
+       }
    }
 
    ====
@@ -102,6 +102,8 @@ after the current-time, then...”
    In a function that operates on **four** structures, how many of them are accessed with dot notation?
 
 .. parsonsprob:: more_complicated_example_3
+   :numbered: left
+   :adaptive:
 
    Create the Dog::is_older() function as it would be defined INSIDE of the Dog structure definition.  This function
    checks if the current Dog is older than another Dog.  The function is invoked on the current Dog.

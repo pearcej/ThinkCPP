@@ -54,7 +54,7 @@ On my machine the output is
 
 which is pretty random-looking. Your results might be different.
 
-.. activecode:: 10_9
+.. activecode:: vector_of_rand_nums_AC_1
    :language: cpp
 
    Try running the active code below!

@@ -65,6 +65,8 @@ The output of this program is ``3, 4``.
     }
 
 .. parsonsprob:: operations_structures_2
+   :numbered: left
+   :adaptive:
 
    Construct a block of code that correctly initializes the instance variables of a structure.
    -----

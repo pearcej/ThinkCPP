@@ -20,6 +20,26 @@ tend to be confusing, I would discourage you from using them. In fact,
 to discourage you even more, I’m not going to tell you what the result
 is. If you really want to know, you can try it.
 
+.. activecode:: increment_decrement_AC_1
+  :language: cpp
+  :caption: Looping and counting
+
+  The active code demonstrates how using increment operators
+  with ``cout`` statements can be confusing.
+  ~~~~
+  #include <iostream>
+  using namespace std;
+
+  int main() {
+      int x = 0;
+      // We incremented x, so it should print out 1 now right?
+      cout << x++ << endl; // Weird, x is still 0?
+  }
+
+If you're curious about this, feel free to search up about prefix and postfix 
+increment operators. But for now, just avoid incrementing a variable 
+and using it in an expression at the same time.
+
 Using the increment operators, we can rewrite the letter-counter:
 
 ::
@@ -31,6 +51,30 @@ Using the increment operators, we can rewrite the letter-counter:
        }
        index++;
      }
+
+.. activecode:: increment_decrement_AC_2
+  :language: cpp
+  :caption: Looping and counting
+
+  The active code below adds increment operators to our old letter-counter.
+  ~~~~
+  #include <iostream>
+  using namespace std;
+
+  int main() {
+      string fruit = "banana";
+      int length = fruit.length();
+      int count = 0;
+
+      int index = 0;
+      while (index < length) {
+          if (fruit[index] == 'a') {
+              count++;
+          }
+          index++;
+      }
+      cout << count << endl;
+  }
 
 It is a common error to write something like
 
@@ -54,9 +98,9 @@ warn you. The effect of this statement is to leave the value of
     :click-incorrect:def main() {:endclick:
         :click-incorrect:count = count + 1;:endclick:
         :click-incorrect:index++;:endclick:
-        :click-correct: count = count++;:endclick:
-        :click-correct: cout << x++ << endl;:endclick:
-        :click-incorrect: count--; :endclick:
+        :click-correct:count = count++;:endclick:
+        :click-correct:cout << x++ << endl;:endclick:
+        :click-incorrect:count--; :endclick:
     }
 
 .. mchoice:: increment_decrement_2

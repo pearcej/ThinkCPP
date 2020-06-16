@@ -45,7 +45,7 @@ A more general definition of “abstraction” is “The process of modeling a
 complex system with a simplified description in order to suppress
 unnecessary details while capturing relevant behavior.”
 
-.. mchoice:: question12_10_1
+.. mchoice:: decks_and_subdecks_1
    :answer_a: It uses binary search to locate the card in the deck.
    :answer_b: If the program user plays by the rules, we can think of deck, low, and high abstractly as a subdeck.
    :answer_c: It can only access the part of the deck that is between the bounds high and low.
@@ -58,7 +58,7 @@ unnecessary details while capturing relevant behavior.”
 
    Which is false about the ``findBisect()`` funtion?
 
-.. fillintheblank:: question12_10_2
+.. fillintheblank:: decks_and_subdecks_2
 
    When a programmer hides all unnecessary details from the user to reduce complexity and increase efficiency, this is called __________.
 

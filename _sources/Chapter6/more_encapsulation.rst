@@ -22,7 +22,7 @@ The reason this is useful is that you sometimes don’t know when you
 start writing exactly how to divide the program into functions. This
 approach lets you design as you go along.
 
-.. activecode:: sixeleven
+.. activecode:: more_encapsulation_AC_1
   :language: cpp
   :caption: Two-dimensional tables
 

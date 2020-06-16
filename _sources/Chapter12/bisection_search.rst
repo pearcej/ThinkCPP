@@ -149,27 +149,25 @@ convince yourself.
 
    The code below searches finds the same card from the same deck we used on the previous page.
    This time, it uses bisection search to locate the card.
-
    ~~~~
-
    #include <iostream>
    #include <string>
    #include <vector>
    using namespace std;
 
    struct Card {
-      int suit, rank;
+       int suit, rank;
 
-      Card ();
-      Card (int s, int r);
-      void print () const;
-      bool isGreater (const Card& c2) const;
+       Card ();
+       Card (int s, int r);
+       void print () const;
+       bool isGreater (const Card& c2) const;
    };
 
    vector<Card> buildDeck();
 
    bool equals (const Card& c1, const Card& c2){
-     return (c1.rank == c2.rank && c1.suit == c2.suit);
+       return (c1.rank == c2.rank && c1.suit == c2.suit);
    }
 
    void printDeck(const vector<Card>& deck);
@@ -177,9 +175,9 @@ convince yourself.
    int findBisect (const Card& card, const vector<Card>& deck, int low, int high);
 
    int main() {
-      vector<Card> deck = buildDeck();
-      Card card (3, 6);
-      cout << findBisect(card, deck, 0, 51);
+       vector<Card> deck = buildDeck();
+       Card card (3, 6);
+       cout << findBisect(card, deck, 0, 51);
    }
 
    ====
@@ -280,7 +278,7 @@ case and writing the recursive call so that the base case is never
 reached. Either error will cause an infinite recursion, in which case
 C++ will (eventually) generate a run-time error.
 
-.. mchoice:: question12_9_1
+.. mchoice:: bisection_search_1
    :answer_a: linear search
    :answer_b: bisection search
    :answer_c: both methods will work, but linear search is more efficient
@@ -294,7 +292,7 @@ C++ will (eventually) generate a run-time error.
    You are given a list of spelling words where the words are **not sorted** in any way.
    What search method should you use?
 
-.. mchoice:: question12_9_2
+.. mchoice:: bisection_search_2
    :answer_a: linear search
    :answer_b: bisection search
    :answer_c: both methods will work, but linear search is more efficient
@@ -308,7 +306,7 @@ C++ will (eventually) generate a run-time error.
    You are given the same list of spelling words, but this time the words are **sorted alphabetically**.
    What search method should you use this time?
 
-.. mchoice:: question12_9_3
+.. mchoice:: bisection_search_3
    :multiple_answers:
    :answer_a: having more than one recursive call
    :answer_b: not including a base case
@@ -322,7 +320,7 @@ C++ will (eventually) generate a run-time error.
 
    When writing a recursive function, which of the following will result in infinite recursion?
 
-.. fillintheblank:: question12_9_4
+.. fillintheblank:: bisection_search_4
 
    How many recursive calls are used to locate the King of Hearts? (Hearts = suit 2, King = rank 13).
 

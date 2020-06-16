@@ -32,7 +32,7 @@ have to keep doing it until ``second`` is below 60. We can do that by
 replacing the ``if`` statements with ``while`` statements:
 
 
-.. activecode:: nineseven
+.. activecode:: modifiers_AC_1
   :language: cpp
 
   The active code below uses the ``increment`` function. Run the active code to
@@ -68,7 +68,7 @@ replacing the ``if`` statements with ``while`` statements:
       printTime (currentTime);
   }
 
-.. activecode:: nineeight
+.. activecode:: modifiers_AC_2
   :language: cpp
 
   The solution above is correct, but not very efficient. Can you think of a

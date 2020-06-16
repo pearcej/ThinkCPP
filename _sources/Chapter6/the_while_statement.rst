@@ -3,7 +3,7 @@ The while statement
 
 Using a ``while`` statement, we can rewrite ``countdown``:
 
-.. activecode:: sixthree
+.. activecode:: the_while_statement_AC_1
   :language: cpp
   :caption: Multiple assignment
 

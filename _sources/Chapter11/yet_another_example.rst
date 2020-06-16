@@ -30,7 +30,7 @@ parameter list (which is empty in this case).
 The ``print`` function in the previous section should also declare that
 the implicit parameter is ``const``.
 
-.. activecode:: 11_5
+.. activecode:: yet_another_example_AC_1
    :language: cpp
 
    Feel free to try out the ``convertToSeconds()`` function in the active code below!

@@ -6,7 +6,7 @@ the arguments, and it has no side effects like modifying an argument or
 outputting something. The only result of calling a pure function is the
 return value.
 
-.. activecode:: ninefour
+.. activecode:: pure_function_AC_1
   :language: cpp
 
   One example is the function ``after``, which compares two ``Time``\ s and returns a
@@ -58,7 +58,7 @@ Here is a rough draft of this function that is not quite right:
      return sum;
    }
 
-.. activecode:: ninefive
+.. activecode:: pure_function_AC_2
   :language: cpp
 
   Take a look at the active code below. If ``currentTime``
@@ -104,7 +104,7 @@ minutes into the hours column.
 
 Here’s a second, corrected version of this function.
 
-.. activecode:: ninesix
+.. activecode:: pure_function_AC_3
   :language: cpp
 
   The active code below is the corrected version of ``addTime``.

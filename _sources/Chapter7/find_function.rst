@@ -8,12 +8,12 @@ that index, ``find`` takes a character and finds the index where that
 character appears.
 
 
-.. activecode:: seveneight
+.. activecode:: find_function_AC_1
   :language: cpp
   :caption: The find function
 
   Take a look at the active code below, which uses the ``find`` function to find
-  the character ``'a'`` in ``fruit`` and ``dessert``.
+  the character ``'a'`` in string ``fruit`` and string ``dessert``.
   ~~~~
   #include <iostream>
   using namespace std;
@@ -37,12 +37,12 @@ In addition, there is a version of ``find`` that takes another
 ``string`` as an argument and that finds the index where the substring
 appears in the string. 
 
-.. activecode:: sevennine
+.. activecode:: find_function_AC_2
   :language: cpp
   :caption: The find function
 
   The active code below finds the starting index of ``"nan"`` in ``fruit``.
-
+  ~~~~
   #include <iostream>
   using namespace std;
 

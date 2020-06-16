@@ -16,8 +16,7 @@ and generalizes it to print multiples of ``n``.
 
 ::
 
-   void printMultiples (int n)
-   {
+   void printMultiples (int n) {
      int i = 1;
      while (i <= 6) {
        cout << n*i << "   ";
@@ -61,7 +60,7 @@ First of all, notice how similar this loop is to the one inside
 function call.
 
 
-.. activecode:: sixseven
+.. activecode:: encapsulation_generalization_AC_1
   :language: cpp
   :caption: Two-dimensional tables
 
@@ -101,7 +100,7 @@ The output of this program is
 which is a (slightly sloppy) multiplication table. If the sloppiness
 bothers you, you can also use tab characters, like below.
 
-.. activecode:: sixeight
+.. activecode:: encapsulation_generalization_AC_2
   :language: cpp
   :caption: Two-dimensional tables
 

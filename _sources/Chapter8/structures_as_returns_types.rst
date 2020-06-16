@@ -8,8 +8,7 @@ You can write functions that return structures. For example,
 
 ::
 
-   Point findCenter (Rectangle& box)
-   {
+   Point findCenter (Rectangle& box) {
      double x = box.corner.x + box.width/2;
      double y = box.corner.y + box.height/2;
      Point result = {x, y};
@@ -26,7 +25,7 @@ it is being passed by reference), and assign the return value to a
      Point center = findCenter (box);
      printPoint (center);
 
-.. activecode:: eighttwo
+.. activecode:: structures_return_types_AC_1
   :language: cpp
 
   The active code below uses the ``findCenter`` function. Run the code
@@ -99,8 +98,7 @@ The output of this program is ``(50, 100)``.
         cout << "(" << p.x << ", " << p.y << ")" << endl;
       }
 
-      Point findCenter (Rectangle& box)
-      {
+      Point findCenter (Rectangle& box) {
         double x = box.corner.x + box.width/2;
         double y = box.corner.y + box.height/2;
         Point result = {x, y};

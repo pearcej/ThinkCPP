@@ -51,3 +51,103 @@ to write functions named ``stringToUpper`` and ``stringToLower`` that
 take a single ``string`` as a parameter, and that modify the string by
 converting all the letters to upper or lower case. The return type
 should be ``void``.
+
+.. activecode:: character_classification_AC_1
+  :language: cpp
+
+  Try writing the ``stringToUpper`` and ``stringToLower`` functions in the 
+  commented sections of the active code below. Both functions take a single ``string``
+  as a parameter and have return type ``void``. ``stringToUpper`` should convert the string
+  to uppercase, and ``stringToLower`` should convert the string to lowercase. Some functions that 
+  you might find useful include ``isalpha``, ``isupper``, ``islower``, ``toupper``, and ``tolower``.
+  If you get stuck, you can reveal the extra problems at the end for help. 
+  ~~~~
+  #include <iostream>
+  #include "ctype.h"
+  using namespace std;
+
+  void stringToUpper (string &input) {
+      // ``stringToUpper`` should convert a string to uppercase. 
+      // Write your implementation here.
+  }
+
+  void stringToLower (string &input) {
+      // ``stringToLower`` should convert a string to lowercase.   
+      // Write your implementation here.
+  }
+
+  int main() {
+      string upper = stringToUpper ("This String Should Be Converted To Uppercase!");
+      stringToUpper (upper);
+      cout << upper << endl;
+      string lower = stringToLower ("This String Should Be Converted To Lowercase!");
+      stringToLower (lower);
+      cout << lower << endl;
+  }
+
+.. reveal:: 7_14_1
+   :showtitle: Reveal Problem
+   :hidetitle: Hide Problem
+
+   .. parsonsprob:: character_classification_1
+      :numbered: left
+      :adaptive:
+   
+      Let's write the code for the ``stringToUpper`` function. ``stringToUpper`` 
+      should convert a string to uppercase.
+      -----
+      void stringToUpper (string &input) {
+      =====
+      void stringToUpper (string input) {                         #paired
+      =====
+         for (int i = 0; i < input.length(); ++i) {
+      =====
+         for (int i = 0; i < input.length() - 1; ++i) {                        #paired 
+      =====
+            if (isalpha(input[i]) && islower(input[i])) {
+      =====
+            if (isalpha(input[i]) && isupper(input[i])) {                        #paired 
+      =====
+               input[i] = toupper(input[i]);
+            }
+         }
+      }
+
+      =====
+               toupper(input[i]);                        #paired
+            }
+         }
+      }
+
+.. reveal:: 7_14_2
+   :showtitle: Reveal Problem
+   :hidetitle: Hide Problem
+
+   .. parsonsprob:: character_classification_2
+      :numbered: left
+      :adaptive:
+   
+      Let's write the code for the ``stringToLower`` function. ``stringToLower`` 
+      should convert a string to lowercase.
+      -----
+      void stringToLower (string &input) {
+      =====
+      void stringToLower (string input) {                         #paired
+      =====
+         for (int i = 0; i < input.length(); ++i) {
+      =====
+         for (int i = 0; i < input.length(); --i) {                        #paired 
+      =====
+            if (isalpha(input[i]) && isupper(input[i])) {
+      =====
+            if (isalpha(input[i]) || isupper(input[i])) {                        #paired 
+      =====
+               input[i] = tolower(input[i]);
+            }
+         }
+      }
+      =====
+               input[i] = tolower(input[0]);                        #paired
+            }
+         }
+      }

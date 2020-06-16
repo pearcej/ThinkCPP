@@ -39,8 +39,7 @@ it makes more sense to write ``isGreater`` as a member function:
 
 ::
 
-   bool Card::isGreater (const Card& c2) const
-   {
+   bool Card::isGreater (const Card& c2) const {
      // first check the suits
      if (suit > c2.suit) return true;
      if (suit < c2.suit) return false;
@@ -83,34 +82,37 @@ in most card games.
 .. activecode:: 12_5
    :language: cpp
 
+   Take a look at the active code below, which uses the ``isGreater`` function.
+   Feel free to change the values of the cards.
+   ~~~~
    #include <iostream>
    #include <string>
    #include <vector>
    using namespace std;
 
    struct Card {
-     int suit, rank;
+       int suit, rank;
 
-     Card ();
-     Card (int s, int r);
-     void print () const;
-     bool equals (const Card& c2) const;
-     bool isGreater (const Card& c2) const;
+       Card ();
+       Card (int s, int r);
+       void print () const;
+       bool equals (const Card& c2) const;
+       bool isGreater (const Card& c2) const;
    };
 
    int main() {
-     Card card1 (2,10);
-     Card card2 (2,4);
-     if (card1.isGreater (card2)) {
-        card1.print ();
-        cout << "is greater than" << endl;
-        card2.print ();
-     }
-     else {
-        card2.print ();
-        cout << "is greater than" << endl;
-        card1.print ();
-     }  
+       Card card1 (2,10);
+       Card card2 (2,4);
+       if (card1.isGreater (card2)) {
+           card1.print ();
+           cout << "is greater than" << endl;
+           card2.print ();
+       }
+       else {
+           card2.print ();
+           cout << "is greater than" << endl;
+           card1.print ();
+       }  
    }
 
    ====
@@ -169,7 +171,7 @@ in most card games.
       cout << ranks[rank] << " of " << suits[suit] << endl;
    }
 
-.. mchoice:: question12_5_1
+.. mchoice:: isGreater_function_1
    :multiple_answers:
    :answer_a: bool
    :answer_b: string
@@ -185,7 +187,7 @@ in most card games.
 
    Select all **totally ordered** sets.
 
-.. fillintheblank:: question12_5_2
+.. fillintheblank:: isGreater_function_2
 
     ::
 

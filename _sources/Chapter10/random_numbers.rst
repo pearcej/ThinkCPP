@@ -27,7 +27,7 @@ my computer) also defined in the header file. Each time you call
 ``random`` you get a different randomly-generated number. To see a
 sample, run this loop:
 
-.. activecode:: ch10_7
+.. activecode:: random_numbers_AC_1
    :language: cpp
 
    Take a look at the active code below, which generates 4 random numbers.
@@ -71,7 +71,7 @@ including both end points.
 .. note::
    Keep in mind, though, that ``y`` will never be equal to ``upperBound``.
 
-.. activecode:: ch10_7_1
+.. activecode:: random_numbers_AC_2
    :language: cpp
 
    The active code below generates random numbers between 1 and 7.
@@ -103,10 +103,12 @@ both end points. As an exercise, you might want to think about how to
 generate a random floating-point value in a given range; for example,
 between 100.0 and 200.0.
 
-.. activecode:: ch10_7_2
+.. activecode:: random_numbers_AC_3
    :language: cpp
 
-   The active code below generates random numbers between 0 and 1.
+   The active code below generates random numbers between 0 and 1. Can you modify it 
+   to generate random numbers between 100.0 and 200.0? If you're stuck you can 
+   reveal the hint below!
    ~~~~
    #include <iostream>
    #include <cstdlib>
@@ -120,6 +122,13 @@ between 100.0 and 200.0.
            cout << y << " ";
        }
    }
+
+.. reveal:: 10_7_1
+   :showtitle: Reveal Hint
+   :hidetitle: Hide Hint
+
+   The formula to generate random numbers between min and max is 
+   min + (max - min) * double(x) / RAND_MAX. 
 
 .. fillintheblank:: random_numbers_1
 

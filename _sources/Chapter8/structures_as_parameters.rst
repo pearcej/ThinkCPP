@@ -13,7 +13,7 @@ You can pass structures as parameters in the usual way. For example,
 standard format. If you call ``printPoint (blank)``, it will output
 ``(3, 4)``.
 
-.. activecode:: eightone_two
+.. activecode:: structures_parameters_AC_1
   :language: cpp
 
   The active code below uses the ``printPoint`` function. Run the code to 
@@ -46,6 +46,32 @@ parameters instead of four ``double``\ s.
      double dy = p2.y - p1.y;
      return sqrt (dx*dx + dy*dy);
    }
+   
+.. activecode:: structures_parameters_AC_2
+  :language: cpp
+
+  The active code below uses the updated version of the ``distance`` function.
+  Feel free to modify the code!
+  ~~~~
+  #include <iostream>
+  #include <cmath>
+  using namespace std;
+
+  struct Point {
+      double x, y;
+  };
+
+  double distance (Point p1, Point p2) {
+      double dx = p2.x - p1.x;
+      double dy = p2.y - p1.y;
+      return sqrt (dx*dx + dy*dy);
+  }
+
+  int main() {
+      Point origin = { 0.0, 0.0 };
+      Point point = { 3.0, 4.0 };
+      cout << "The distance from the point to the origin is " << distance (origin, point) << endl;
+  }
 
 .. mchoice:: structures_parameters_1
    :practice: T
@@ -77,6 +103,8 @@ parameters instead of four ``double``\ s.
       }
 
 .. parsonsprob:: structures_parameters_2
+   :numbered: left
+   :adaptive:
 
    Construct a function that takes in three Point structures and prints the average of the x coordinates and the average of the y coordinates as a coordinate. Find the x average before the y average.
    -----

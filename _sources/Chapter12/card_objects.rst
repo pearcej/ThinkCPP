@@ -49,8 +49,7 @@ definition for the ``Card`` type looks like this:
 
 ::
 
-   struct Card
-   {
+   struct Card {
      int suit, rank;
 
      Card ();
@@ -84,7 +83,7 @@ represents the 3 of Clubs:
 The first argument, ``0`` represents the suit Clubs, the second,
 naturally, represents the rank 3.
 
-.. fillintheblank:: question12_2_1
+.. fillintheblank:: card_objects_1
 
     The instance variables for a playing card are |blank| and |blank|.
 
@@ -93,7 +92,7 @@ naturally, represents the rank 3.
     - :([Ss][Uu][Ii][Tt])|([Rr][Aa][Nn][Kk]): Correct!
       :.*: Incorrect!  Try again!
 
-.. mchoice:: question12_2_2
+.. mchoice:: card_objects_2
    :answer_a: To translate each rank / suit into a secret code.
    :answer_b: To create apstrings to represent each rank / suit.
    :answer_c: To define a mapping between each rank / suit and a sequence of numbers.
@@ -106,14 +105,14 @@ naturally, represents the rank 3.
 
    What does it mean to **encode** the ranks and suits?
 
-.. fillintheblank:: question12_2_3
+.. fillintheblank:: card_objects_3
 
     The symbol :math:`\mapsto` means __________.
 
     - :([Mm][Aa][Pp][Ss] [Tt][Oo]): Correct!
       :.*: Incorrect!  Try again!
 
-.. mchoice:: question12_2_4
+.. mchoice:: card_objects_4
    :answer_a: To have better organization in your code.
    :answer_b: To make it possible to compare objects that have non-numerical values.
    :answer_c: To represent complex objects visually.

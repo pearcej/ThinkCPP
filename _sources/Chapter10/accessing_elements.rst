@@ -2,8 +2,8 @@
 ------------------
 
 The ``[]`` operator reads and writes the elements of a vector in much
-the same way it accesses the characters in an ``apstring``. As with
-``apstring``\ s, the indices start at zero, so ``count[0]`` refers to
+the same way it accesses the characters in an ``string``. As with
+``string``\ s, the indices start at zero, so ``count[0]`` refers to
 the “zeroeth” element of the vector, and ``count[1]`` refers to the
 “oneth” element. You can use the ``[]`` operator anywhere in an
 expression:
@@ -17,6 +17,11 @@ expression:
 
 All of these are legal assignment statements. Here is the effect of this
 code fragment:
+
+.. figure:: Images/10.2count_diagram.png
+   :scale: 60%
+   :align: center
+   :alt: image
 
 .. warning::
    Since elements of this vector are numbered from 0 to 3, there is no
@@ -45,7 +50,7 @@ outputting the ``i``\ th element. This type of vector traversal is very
 common. Vectors and loops go together like fava beans and a nice
 Chianti.
 
-.. activecode:: ch10_2
+.. activecode:: accessing_elements_AC_1
    :language: cpp
 
    Take a look at the active code below. We can modify the vectors by accessing
@@ -55,7 +60,14 @@ Chianti.
    #include <vector>
    using namespace std;
 
-   void print_vec(vector<int> vec);
+   void print_vec(vector<int> vec) {
+       cout << "[";
+       for (size_t i = 0; i < vec.size() - 1; ++i) {
+           cout <<  vec[i] << ",";
+       }
+       cout << vec[vec.size()-1];
+       cout << "]" << endl;
+   }
 
    int main() {
        vector<int> count = {1,2,3,4};
@@ -65,19 +77,6 @@ Chianti.
        count[2]++;
        count[3] -= 60;
        cout << "After we made the above changes, count = "; print_vec(count);
-   }
-
-   ====
-   
-   void print_vec(vector<int> vec) {
-      size_t i = 0;
-      cout << "[";
-      while (i < vec.size()-1) {
-          cout << vec[i] << ",";
-          i++;
-      }
-      cout << vec[vec.size()-1];
-      cout << "]" << endl;
    }
 
 .. mchoice:: accessing_elements_1

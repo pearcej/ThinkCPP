@@ -28,7 +28,7 @@ program to convince yourself this is true. If the parameters ``x`` and
 ``swap`` would not work. It would modify ``x`` and ``y`` and have no
 effect on ``i`` and ``j``.
 
-.. activecode:: eighthree
+.. activecode:: pass_others_reference_AC_1
   :language: cpp
 
   The active code below uses the ``swap`` function. Run the active code
@@ -96,21 +96,25 @@ arguments have to be variables.
       }
 
 .. parsonsprob:: pass_others_reference_2
+   :numbered: left
+   :adaptive:
 
    Create a function called addNum that takes two parameters, an integer x and an integer y. The function should add y to x, then print x. The variable x should be modified, while the variable y should not.
    -----
    void addNum(int& x, int y) {
-
+   =====
    void addNum(int x&, int y) { #distractor
-
+   =====
    void addNum(int x, int y) { #distractor
-
+   =====
    void addNum(int& x, int& y) { #distractor
-
+   =====
       x = x + y;
-
+   =====
       y = x + y; #distractor
-
-      cout << x;}
-
+   =====
+      cout << x;
+   }
+   =====
       return x; #distractor
+   }

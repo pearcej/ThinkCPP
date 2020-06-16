@@ -19,7 +19,7 @@ because there is a better alternative:
 The ``=`` operator works on ``vector``\ s in pretty much the way you
 would expect.
 
-.. activecode:: ch10_3
+.. activecode:: copying_vectors_AC_1
    :language: cpp
 
    Take a look at the active code below, which uses the copy constructor.

@@ -53,26 +53,24 @@ The output of this code is
 
    The code below searches for a particular card in a standard deck of 52 cards.
    It returns the index that the card was located at.
-
    ~~~~
-
    #include <iostream>
    #include <string>
    #include <vector>
    using namespace std;
 
    struct Card {
-      int suit, rank;
+       int suit, rank;
 
-      Card ();
-      Card (int s, int r);
-      void print () const;
+       Card ();
+       Card (int s, int r);
+       void print () const;
    };
 
    vector<Card> buildDeck();
    
    bool equals (const Card& c1, const Card& c2){
-     return (c1.rank == c2.rank && c1.suit == c2.suit);
+       return (c1.rank == c2.rank && c1.suit == c2.suit);
    }
 
    void printDeck(const vector<Card>& deck);
@@ -80,9 +78,9 @@ The output of this code is
    int find (const Card& card, const vector<Card>& deck);
 
    int main() {
-      vector<Card> deck = buildDeck();
-      Card card (3, 6);
-      cout << find(card, deck);
+       vector<Card> deck = buildDeck();
+       Card card (3, 6);
+       cout << find(card, deck);
    }
 
    ====
@@ -146,7 +144,7 @@ The output of this code is
       return -1;
    }
 
-.. fillintheblank:: question12_8_1
+.. fillintheblank:: searching_1
 
    Say we have standard deck of cards. According to our ``find()`` function, the 
    for loop will execute a minimum of |blank| times, and a maximum of |blank|
@@ -157,7 +155,7 @@ The output of this code is
    - :52: Correct!
      :.*: Incorrect! What if the card we were searching for wasn't in the deck? In this case, we'd have looped through all of the cards!
 
-.. fillintheblank:: question12_8_2
+.. fillintheblank:: searching_2
 
    ``buildEuchreDeck()`` returns the deck of Euchre cards defined on the previous page.
    If we run the following code, what is returned?

@@ -18,8 +18,7 @@ As a member function, it looks like this:
 
 ::
 
-   bool Card::equals (const Card& c2) const
-   {
+   bool Card::equals (const Card& c2) const {
      return (rank == c2.rank && suit == c2.suit);
    }
 
@@ -43,8 +42,7 @@ to rewrite ``equals`` as a nonmember function:
 
 ::
 
-   bool equals (const Card& c1, const Card& c2)
-   {
+   bool equals (const Card& c1, const Card& c2) {
      return (c1.rank == c2.rank && c1.suit == c2.suit);
    }
 
@@ -61,31 +59,31 @@ Of course, this is a matter of taste. My point here is that you should
 be comfortable writing both member and nonmember functions, so that you
 can choose the interface that works best depending on the circumstance.
 
-You can see how the ``equals()`` function works by running the active code below.
-
 .. activecode:: 12_4
    :language: cpp
 
+   Run the active code below to see how the ``equals()`` function works.
+   ~~~~
    #include <iostream>
    #include <string>
    #include <vector>
    using namespace std;
 
    struct Card {
-     int suit, rank;
+       int suit, rank;
 
-     Card ();
-     Card (int s, int r);
-     void print () const;
-     bool equals (const Card& c2) const;
+       Card ();
+       Card (int s, int r);
+       void print () const;
+       bool equals (const Card& c2) const;
    };
 
    int main() {
-     Card card1 (1,11);
-     Card card2 (1,11);
-     Card card3 (3,11);
-     card1.equals(card2);
-     card1.equals(card3);
+       Card card1 (1,11);
+       Card card2 (1,11);
+       Card card3 (3,11);
+       card1.equals(card2);
+       card1.equals(card3);
    }
 
    ====
@@ -134,7 +132,7 @@ You can see how the ``equals()`` function works by running the active code below
       cout << ranks[rank] << " of " << suits[suit] << endl;
    }
 
-.. mchoice:: question12_4_1
+.. mchoice:: equals_function_1
    :answer_a: Directly, using the build in == operator.
    :answer_b: Compare their ranks and suits separately using the == operator. If either comparison is true, then they are equal.
    :answer_c: Compare their ranks and suits separately using the == operator. If either comparison is false, then they are NOT equal.
@@ -147,7 +145,7 @@ You can see how the ``equals()`` function works by running the active code below
 
    How can we compare two ``Card`` objects?
 
-.. mchoice:: question12_4_2
+.. mchoice:: equals_function_2
    :answer_a: A free-standing function, because we shouldn't "invoke" the function on just one Card.
    :answer_b: A member function, because the equals() operation is part of the Card data structure.
    :answer_c: Does not matter!
@@ -158,7 +156,9 @@ You can see how the ``equals()`` function works by running the active code below
 
    Should we write the equals() function as a free-standing function, or as a member function of ``Card``?
 
-.. parsonsprob:: question12_4_3
+.. parsonsprob:: equals_function_3
+   :numbered: left
+   :adaptive:
 
    In a card game called Euchre, the highest ranked suit is called the trump suit.  The trump suit contains
    all of the cards of that suit, and the Jack of the other suit of the same color.  For example, if Hearts

@@ -4,7 +4,7 @@
 All the comparison operators that work on ``int``\ s and ``double``\ s
 also work on ``strings``. 
 
-.. activecode:: sevenfifteen
+.. activecode:: strings_comparable_AC_1
   :language: cpp
   :caption: Strings are comparable
 
@@ -24,7 +24,7 @@ also work on ``strings``.
 The other comparison operations are useful for putting words in
 alphabetical order.
 
-.. activecode:: sevensixteen
+.. activecode:: strings_comparable_AC_2
   :language: cpp
   :caption: Strings are comparable
 

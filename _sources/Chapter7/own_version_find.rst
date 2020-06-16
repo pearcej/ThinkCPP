@@ -9,8 +9,7 @@ function.
 
 ::
 
-   int find (string s, char c, int i)
-   {
+   int find (string s, char c, int i) {
      while (i<s.length()) {
        if (s[i] == c) return i;
        i = i + 1;
@@ -23,7 +22,7 @@ version of ``find``, we have to pass the ``string`` as the first
 argument. The other arguments are the character we are looking for and
 the index where we should start.
 
-.. activecode:: seventen
+.. activecode:: own_version_find_AC_1
   :language: cpp
   :caption: Our own find function
 

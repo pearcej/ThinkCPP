@@ -43,6 +43,8 @@ that takes a vector and the range of values in the vector (in this case
    What happens if you don't initialize a counter?
 
 .. parsonsprob:: single_pass_solution_2
+   :numbered: left
+   :adaptive:
 
    Construct a function called histogram that takes a vector and the range of values in the vector, and that returns a histogram of values in the vector.
    -----

@@ -9,7 +9,7 @@ values from 1 to 6.
 A good way to start is to write a simple loop that prints the multiples
 of 2, all on one line.
 
-.. activecode:: sixsix
+.. activecode:: 2D_tables_AC_1
   :language: cpp
   :caption: Two-dimensional tables
 

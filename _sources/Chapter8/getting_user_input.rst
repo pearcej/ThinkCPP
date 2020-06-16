@@ -35,7 +35,7 @@ previous operation failed, and also that the next operation will fail.
 
 Thus, getting input from the user might look like this:
 
-.. activecode:: eightfour
+.. activecode:: getting_user_input_AC_1
   :language: cpp
 
   The active code below is an example of what getting input from the
@@ -98,6 +98,24 @@ you want the result to be stored.
 
 ``getline`` reads the entire line until the user hits Return or Enter.
 This is useful for inputting strings that contain spaces.
+
+.. activecode:: getting_user_input_AC_2
+  :language: cpp
+
+  The active code below is an example of what getting input from the
+  user might look like using ``getline``.
+  ~~~~
+  #include <iostream>
+  #include <string>
+  using namespace std;
+
+  int main () {
+     string name;
+
+     cout << "What is your full name? ";
+     getline (cin, name);
+     cout << "Hello " << name << "!" << endl;
+  }
 
 In fact, ``getline`` is generally useful for getting input of any kind.
 For example, if you wanted the user to type an integer, you could input
