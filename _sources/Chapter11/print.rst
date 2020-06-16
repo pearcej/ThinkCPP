@@ -94,7 +94,7 @@ the function works. If you omit the definition, or provide a definition
 that has an interface different from what you promised, the compiler
 will complain.
 
-.. activecode:: 11_2
+.. activecode:: print_AC_1
    :language: cpp
 
    Feel free to mess around with input for ``currentTime`` in the active code below!
@@ -141,6 +141,8 @@ will complain.
    We have a free-standing function called **dog_bark** which takes a **Dog** object as a parameter.  What step(s) do we need to take to convert ``dog_bark(const Dog& dog)`` to a member function of the ``Dog`` class?
 
 .. parsonsprob:: print_3
+   :numbered: left
+   :adaptive:
 
    Create the ``Dog`` object with member functions ``bark`` and ``is_teacup_dog``.  Write the functions 
    in the same order they appear inside the structure.

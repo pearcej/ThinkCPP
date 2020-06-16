@@ -23,7 +23,7 @@ are legal.
      cout << blank.x << ", " << blank.y << endl;
      double distance = sqrt(blank.x * blank.x + blank.y * blank.y);
 
-.. activecode:: eightone_two_one
+.. activecode:: accessing_instance_variables_AC_1
   :language: cpp
 
   In the active code below, we access the instance variables of ``Point`` object 

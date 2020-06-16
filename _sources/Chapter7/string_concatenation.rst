@@ -5,7 +5,7 @@ Interestingly, the ``+`` operator can be used on strings; it performs
 string **concatenation**. To concatenate means to join the two operands
 end to end. 
 
-.. activecode:: seventwelve
+.. activecode:: string_concatenation_AC_1
   :language: cpp
   :caption: String concatenation
 
@@ -46,7 +46,7 @@ for Ducklings*, the names of the ducklings are Jack, Kack, Lack, Mack,
 Nack, Ouack, Pack and Quack. Here is a loop that outputs these names in
 order:
 
-.. activecode:: seventhirteen
+.. activecode:: string_concatenation_AC_2
   :language: cpp
   :caption: String concatenation
 

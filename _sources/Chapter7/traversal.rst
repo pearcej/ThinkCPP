@@ -6,11 +6,11 @@ each character in turn, do something to it, and continue until the end.
 This pattern of processing is called a **traversal**. A natural way to
 encode a traversal is with a ``while`` statement.
 
-.. activecode:: seventhree_
+.. activecode:: traversal_AC_1
   :language: cpp
   :caption: Accessing a string character
 
-  The active code below outputs each letter of ``fruit``
+  The active code below outputs each letter of string ``fruit``
   using a while loop.
   ~~~~
   #include <string>
@@ -43,7 +43,7 @@ index and each index refers to a single character.
 As an exercise, write a function that takes an ``string`` as an argument
 and that outputs the letters backwards, all on one line.
 
-.. activecode:: seveneight_ 
+.. activecode:: traversal_AC_2 
    :language: cpp
 
    Try writing the ``reverseWord`` function in the commented section
@@ -73,21 +73,25 @@ and that outputs the letters backwards, all on one line.
       Let's write the code for the ``reverseWord`` function. ``reverseWord``
       should take a string as a parameter and output the letters backwards.
       -----
-      void reverseWord(string input) {
+      void reverseWord (string input) {
       =====
-      int x;
+        int x;
       =====
-      for(x=input.length() - 1;x>=0;x--) {
+        for (x = input.length() - 1; x >= 0; x--) {
       =====
-      for(x=input.length() - 1;x>0;x--) {  #distractor
+        for (x = input.length() - 1; x > 0 ; x--) {  #distractor
       =====
-      for(x=input.length();x>0;x++) {  #distractor
+        for (x = input.length(); x > 0; x++) {  #distractor
       =====
-      for(x=input.length();x>=0;x++) {  #distractor
+        for (x = input.length(); x >= 0; x++) {  #distractor
       =====
-      cout<<input[x];}
+          cout << input[x];
+        }
+      }
       =====
-      cout <<input[-x];} #distractor
+          cout << input[-x];
+        }
+      } #distractor
 
 .. mchoice:: traversal_2
    :practice: T

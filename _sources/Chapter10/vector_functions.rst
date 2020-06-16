@@ -30,6 +30,42 @@ then vector function ``push_back()`` for that purpose.
      }
    }
 
+.. activecode:: vector_functions_AC_1
+   :language: cpp
+
+   The active code below uses the ``push_back`` function to add 
+   even numbers less than or equal to 10 to the vector ``values``.
+   ~~~~
+   #include <iostream>
+   #include <vector>
+   using namespace std;
+
+   void print_vec(vector<int> vec);
+   
+   int main() {
+       vector<int> values;
+       int i = 0;
+
+       while (i <= 10) {
+           values.push_back(i);
+           i += 2;
+       }
+       print_vec(values);
+   }
+
+   ====
+
+   void print_vec(vector<int> vec) {
+      size_t i = 0;
+      cout << "[";
+      while (i < vec.size()-1) {
+          cout << vec[i] << ",";
+          i++;
+      }
+      cout << vec[vec.size()-1];
+      cout << "]" << endl;
+   }
+
 .. mchoice:: vector_functions_1
    :answer_a: 5
    :answer_b: 6
@@ -44,8 +80,10 @@ then vector function ``push_back()`` for that purpose.
    Let **nums** be the vector { 0, 1, 2, 3, 4 }. If we run the command ``nums.push_back(3)``, what will be returned by ``nums.size()``?
 
 .. parsonsprob:: vector_functions_2
+   :numbered: left
+   :adaptive:
 
-   Construct the make_even() function that loops through vec, adds 1 to any elements
+   Construct the ``make_even`` function that loops through vec, adds 1 to any elements
    that are odd, and returns the new vector.
    -----
    vector&#60;int&#62; make_even(vector&#60;int&#62; vec) {

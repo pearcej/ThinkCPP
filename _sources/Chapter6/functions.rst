@@ -19,7 +19,7 @@ Here are some of the reasons functions are useful:
 
 For example, instead of writing the 53 lines of code below...
 
-.. activecode:: sixnine
+.. activecode:: functions_AC_1
   :language: cpp
   :caption: Two-dimensional tables
 
@@ -80,7 +80,7 @@ For example, instead of writing the 53 lines of code below...
 ..you would reduce it to the 21 lines of code below, making it easier to read, debug, and use
 the function many times with rewriting it each time.
 
-.. activecode:: sixten
+.. activecode:: functions_AC_2
   :language: cpp
   :caption: Two-dimensional tables
 
@@ -126,25 +126,28 @@ the function many times with rewriting it each time.
    :numbered: left
    :adaptive:
 
-   Create a function called absoluteValue, which returns the absolute value of a parameter num. Assume you do not have access to #include <cmath>.
+   Create a function called ``absoluteValue``, which returns the absolute value of a parameter ``num``. Assume you do not have access to ``#include <cmath>``.
    -----
    int absoluteValue (int num) {
-
+   =====
    void absoluteValue (int num) { #distractor
-
+   =====
    int absoluteValue (int num) #distractor
-
+   =====
    void absoluteValue (int num) #distractor
-
-    if (num > 0) {
-
-    return num; }
-
-    else{
-
-    int absNum = -(num);
-
-    return absNum;} }
+   =====
+     if (num > 0) {
+   =====
+       return num; 
+     }
+   =====
+     else {
+   =====
+       int absNum = -(num);
+   =====
+       return absNum;
+     } 
+   }
 
 
 .. mchoice:: functions_3

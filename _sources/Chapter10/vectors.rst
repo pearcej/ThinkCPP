@@ -44,6 +44,11 @@ takes a single argument, which is the size of the new vector.
 The following figure shows how vectors are represented in state
 diagrams:
 
+.. figure:: Images/10.1state_diagram.png
+   :scale: 60%
+   :align: center
+   :alt: image
+
 The large numbers inside the boxes are the **elements** of the vector.
 The small numbers outside the boxes are the indices used to identify
 each box. When you allocate a new vector, the elements are not

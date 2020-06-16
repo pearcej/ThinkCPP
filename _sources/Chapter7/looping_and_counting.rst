@@ -1,12 +1,12 @@
 Looping and counting
 --------------------
 
-.. activecode:: seveneleven
+.. activecode:: looping_and_counting_AC_1
   :language: cpp
   :caption: Looping and counting
 
   The active code below counts the number of times the letter ``'a'``
-  appears in a string:
+  appears in a string ``fruit``.
   ~~~~
   #include <iostream>
   using namespace std;

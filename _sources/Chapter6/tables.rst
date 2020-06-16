@@ -24,7 +24,7 @@ original Intel Pentium used to perform floating-point division.
 Although a “log table” is not as useful as it once was, it still makes a
 good example of iteration. 
 
-.. activecode:: sixfour
+.. activecode:: tables_AC_1
   :language: cpp
   :caption: Tables
 
@@ -104,8 +104,8 @@ We can see that 1, 2, 4 and 8 are powers of two, because their
 logarithms base 2 are round numbers. If we wanted to find the logarithms
 of other powers of two, we could modify the program like this:
 
-.. activecode:: sixfive
-  :language: cpp
+.. activecode:: tables_AC_2
+  :language: cpp67io
   :caption: Tables
 
   If we wanted to find the logarithms of other powers of two, 
@@ -121,7 +121,6 @@ of other powers of two, we could modify the program like this:
           cout << x << "\t" << log(x) / log(2.0) << endl;
           x = x * 2.0;
       }
-      return 0;
   }
 
 Now instead of adding something to ``x`` each time through the loop,
@@ -147,14 +146,60 @@ knowing the powers of two is! As an exercise, modify this program so
 that it outputs the powers of two up to 65536 (that’s :math:`2^{16}`).
 Print it out and memorize it.
 
-.. fillintheblank:: tables_1
+.. activecode:: tables_AC_3
+  :language: cpp
+  :caption: Tables
+
+  Modify the active code below so that it outputs the power of two
+  up to 65536, which is :math:`2^{16}`. If you get stuck, you can 
+  reveal the extra problem at the end for help. 
+  ~~~~
+  #include <iostream>
+  #include <cmath>
+  using namespace std;
+
+  int main() {
+      double x = 1.0;
+      while (x < 100.0) {
+          cout << x << "\t" << log(x) / log(2.0) << endl;
+          x = x * 2.0;
+      }
+  }
+
+.. reveal:: 6_4_1
+   :showtitle: Reveal Problem
+   :hidetitle: Hide Problem
+
+   .. parsonsprob:: tables_1
+      :numbered: left
+      :adaptive:
+   
+      Let's write the code that prints out the powers of two.
+      -----
+      int main() {
+      =====
+         int x = 1;
+      =====
+         while (x < 17) {
+      =====
+         while (x < 16) {                        #paired 
+      =====
+            cout << x << "\t" << pow(2, x) << endl;
+      =====
+            cout << x << "\t" << pow(x, 2) << endl;                        #paired 
+      =====
+            x++;
+         }
+      }
+
+.. fillintheblank:: tables_2
 
     What is the equivalent of endl, and typically used at the end of a string?
 
     - :(?:(?:\\n)|(?:(?:n|N)ewline\s(?:c|C)haracter)): Is the correct answer!
       :.*: Try again!
 
-.. fillintheblank:: tables_2
+.. fillintheblank:: tables_3
 
     How would you write a tab character?
 

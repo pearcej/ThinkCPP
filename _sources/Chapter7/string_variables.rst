@@ -3,7 +3,7 @@
 
 You can create a variable with type ``string`` in the usual ways.
 
-.. activecode:: sevenone
+.. activecode:: string_variables_AC_1
   :language: cpp
   :caption: Creating a string variable
 
@@ -36,7 +36,7 @@ for the ``string`` class, and you will have to add the file ``string``
 to the list of files you want to compile. The details of how to do this
 depend on your programming environment.
 
-.. activecode:: seventwo
+.. activecode:: string_variables_AC_2
   :language: cpp
   :caption: Outputting a string variable
 

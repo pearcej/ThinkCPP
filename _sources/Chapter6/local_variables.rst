@@ -12,10 +12,11 @@ variable*. They have the same name, but they do not refer to the same
 storage location, and changing the value of one of them has no effect on
 the other.
 
-Remember that variables that are declared inside a function definition
-are local. You cannot access a local variable from outside its “home”
-function, and you are free to have multiple variables with the same
-name, as long as they are not in the same function.
+.. note::
+   Remember that variables that are declared inside a function definition
+   are local. You cannot access a local variable from outside its “home”
+   function, and you are free to have multiple variables with the same
+   name, as long as they are not in the same function.
 
 The stack diagram for this program shows clearly that the two variables
 named ``i`` are not in the same storage location. They can have

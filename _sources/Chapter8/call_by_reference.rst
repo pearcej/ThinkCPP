@@ -11,8 +11,7 @@ write a ``reflect`` function is something like this:
 
 ::
 
-   void reflect (Point p)      // WRONG !!
-   {
+   void reflect (Point p) {      // WRONG !!
      double temp = p.x;
      p.x = p.y;
      p.y = temp;
@@ -27,8 +26,7 @@ declaration:
 
 ::
 
-   void reflect (Point& p)
-   {
+   void reflect (Point& p) {
      double temp = p.x;
      p.x = p.y;
      p.y = temp;
@@ -42,7 +40,7 @@ Now we can call the function in the usual way:
      reflect (blank);
      printPoint (blank);
 
-.. activecode:: eightone
+.. activecode:: call_by_reference_AC_1
   :language: cpp
 
   Take a look at the active code below. ``reflect`` passes the parameter ``p``

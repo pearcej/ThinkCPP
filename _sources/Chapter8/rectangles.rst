@@ -77,7 +77,7 @@ The innermost squiggly braces are the coordinates of the corner point;
 together they make up the first of the three values that go into the new
 ``Rectangle``. This statement is an example of **nested structure**.
 
-.. activecode:: eightpointeight
+.. activecode:: rectangles_AC_1
   :language: cpp
 
   The active code below uses the ``Rectangle`` structure. Feel free to

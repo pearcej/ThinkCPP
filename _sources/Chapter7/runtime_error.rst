@@ -17,6 +17,22 @@ something like this:
 
 Try it in your development environment and see how it looks.
 
+.. activecode:: runtime_error_AC_1 
+   :language: cpp
+
+   Running the active code below will result in a runtime error. Can you fix 
+   it so that we print out the first letter and last letter of string ``greeting`` instead
+   of indexing out of range?
+   ~~~~
+   #include <iostream>
+   using namespace std;
+
+   int main() {
+       string greeting = "Hello world";
+       cout << "The first letter is " << greeting[-1] << endl;
+       cout << "The last letter is " << greeting[greeting.length()] << endl;
+   }
+
 .. clickablearea:: runtime_error_1
     :question: Click on each spot that would cause a runtime error.
     :iscode:

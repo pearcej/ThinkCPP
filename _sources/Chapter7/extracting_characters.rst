@@ -6,12 +6,12 @@ string, of characters. The first operation we are going to perform on a
 string is to extract one of the characters. C++ uses square brackets
 (``[`` and ``]``) for this operation.
 
-.. activecode:: seventhree
+.. activecode:: extracting_characters_AC_1
   :language: cpp
   :caption: Accessing a string character
 
   Take a look at the active code below. We extract the character
-  at index 1 from ``fruit`` using ``[`` and ``]``.
+  at index 1 from string ``fruit`` using ``[`` and ``]``.
   ~~~~
   #include <iostream>
   using namespace std;
@@ -43,11 +43,11 @@ The 1th letter (“oneth”) is ``a`` and the 2th (“twoeth”) letter is
 If you want the the zereoth letter of a string, you have to put zero in
 the square brackets.
 
-.. activecode:: sevenfour
+.. activecode:: extracting_characters_AC_2
   :language: cpp
   :caption: Accessing a string character
 
-  The active code below accesses the first character in ``fruit``.
+  The active code below accesses the first character in string ``fruit``.
   ~~~~
   #include <iostream>
   using namespace std;

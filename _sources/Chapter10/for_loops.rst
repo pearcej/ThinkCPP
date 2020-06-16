@@ -46,10 +46,10 @@ is equivalent to
        i++;
      }
 
-.. activecode:: ch10_4_for_loop
+.. activecode:: for_loops_AC_1
    :language: cpp
 
-   Run the active code below, which uses a for loop.
+   Run the active code below, which uses a ``for`` loop.
    ~~~~
    #include <iostream>
    #include <vector>
@@ -63,10 +63,10 @@ is equivalent to
        }
    }
 
-.. activecode:: ch10_4_while_loop
+.. activecode:: for_loops_AC_2
    :language: cpp
 
-   Run the active code below, which uses a while loop.
+   Run the active code below, which uses a ``while`` loop.
    ~~~~
    #include <iostream>
    #include <vector>
@@ -103,6 +103,8 @@ is equivalent to
    Where are the incrementors in ``for`` loops and ``while``?
 
 .. parsonsprob:: question10_4_3
+   :numbered: left
+   :adaptive:
 
    Construct the ``half_life()`` function that prints the first num half lives
    of the initial amount.

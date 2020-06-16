@@ -27,42 +27,40 @@ type ``Card``. Therefore, it is legal to invoke ``print`` on
    :language: cpp
 
    A Euchre Deck contains 9's, 10's, Jacks, Queens, Kings, and Aces of all four suits.  
-   Modify the buildDeck() function below to create a Euchre deck. The printDeck()
+   Modify the ``buildDeck`` function below to create a Euchre deck. The ``printDeck``
    function will allow you to verify that you have done this correctly.
-
    ~~~~
-
    #include <iostream>
    #include <string>
    #include <vector>
    using namespace std;
 
    struct Card {
-      int suit, rank;
+       int suit, rank;
 
-      Card ();
-      Card (int s, int r);
-      void print () const;
+       Card ();
+       Card (int s, int r);
+       void print () const;
    };
 
    vector<Card> buildDeck() {
-      vector<Card> deck (52);
-      int i = 0;
-      for (int suit = 0; suit <= 3; suit++) {
-         for (int rank = 1; rank <= 13; rank++) {
-            deck[i].suit = suit;
-            deck[i].rank = rank;
-            i++;
-         }
-      }
-      return deck;
+       vector<Card> deck (52);
+       int i = 0;
+       for (int suit = 0; suit <= 3; suit++) {
+           for (int rank = 1; rank <= 13; rank++) {
+               deck[i].suit = suit;
+               deck[i].rank = rank;
+               i++;
+           }
+       }
+       return deck;
    }
 
    void printDeck(const vector<Card>& deck);
 
    int main() {
-      vector<Card> deck = buildDeck();
-      printDeck(deck);
+       vector<Card> deck = buildDeck();
+       printDeck(deck);
    }
 
    ====

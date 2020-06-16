@@ -10,7 +10,7 @@ displays the instance variables in a human-readable form, which you attempted on
      cout << t.hour << ":" << t.minute << ":" << t.second << endl;
    }
 
-.. activecode:: ninethree
+.. activecode:: printTime_AC_1
   :language: cpp
 
   In the active code below, the output of this function, if we pass ``time`` an argument, is
@@ -35,14 +35,14 @@ displays the instance variables in a human-readable form, which you attempted on
 
 .. mchoice:: printTime_1
    :answer_a: cout << "Price is " << "p.dollar" << " dollars and" << "p.cents" << "cents." << endl;
-   :answer_b: cout << "Price is " << p.dollar << " dollars and" << p.cents << "cents." << endl;
-   :answer_c: cout << "Price is " << p.dollar << " dollars and" << p.cents << "cents." << endl
+   :answer_b: cout << "Price is " << p.dollar << " dollars and " << p.cents << " cents." << endl;
+   :answer_c: cout << "Price is " << p.dollar << " dollars and " << p.cents << "cents." << endl
    :correct: b
    :feedback_a: Try again.
    :feedback_b: Correct!
    :feedback_c: There is an important character that ends nearly all statements in C++.
 
-   Which of the following would be a correct way to display the price of an object and finish the printPrice, which we saw on the previous page?
+   Which of the following would be a correct way to display the price of an object and finish the ``printPrice``, which we saw on the previous page?
 
    .. code-block:: cpp
 

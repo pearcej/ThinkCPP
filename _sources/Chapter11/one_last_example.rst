@@ -38,7 +38,7 @@ The next line of the function invokes the constructor that takes a
 single ``double`` as a parameter; the last line returns the resulting
 object.
 
-.. activecode:: 11_9
+.. activecode:: one_last_example_AC_1
    :language: cpp
 
    Feel free to try out the ``add`` function in the active code below!

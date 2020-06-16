@@ -7,20 +7,16 @@ write a function that prints the object in human-readable form.
 
 In the case of ``Card`` objects, “human-readable” means that we have to
 map the internal representation of the rank and suit onto words. A
-natural way to do that is with a vector of ``apstring``\ s. You can
-create a vector of ``apstring``\ s the same way you create an vector of
+natural way to do that is with a vector of ``string``\ s. You can
+create a vector of ``string``\ s the same way you create an vector of
 other types:
 
 ::
 
-     apvector<apstring> suits (4);
+     vector<string> suits (4);
 
-Of course, in order to use ``apvector``\ s and ``apstring``\ s, you will
+Of course, in order to use ``vector``\ s and ``string``\ s, you will
 have to include the header files for both.
-
-.. note::
-   Alternatively, you could use the ``string`` and ``vector`` header files,
-   which accomplish the same thing.
 
 To initialize the elements of the vector, we can use a series of
 assignment statements.
@@ -41,15 +37,14 @@ on which it is invoked:
 
 ::
 
-   void Card::print () const
-   {
-     apvector<apstring> suits (4);
+   void Card::print () const {
+     vector<string> suits (4);
      suits[0] = "Clubs";
      suits[1] = "Diamonds";
      suits[2] = "Hearts";
      suits[3] = "Spades";
 
-     apvector<apstring> ranks (14);
+     vector<string> ranks (14);
      ranks[1] = "Ace";
      ranks[2] = "2";
      ranks[3] = "3";
@@ -82,29 +77,29 @@ use dot notation to specify the object). The output of this code
 
 is ``Jack of Diamonds``.
 
-The active code below uses the ``Card::print()`` function.  Feel free to modify 
-the values that ``card`` is being initialized to in the constructor:  this will 
-change the output from the ``Card::print()`` function.
-
 .. activecode:: 12_3
    :language: cpp
 
+   The active code below uses the ``Card::print()`` function.  Feel free to modify 
+   the values that ``card`` is being initialized to in the constructor:  this will 
+   change the output from the ``Card::print()`` function.
+   ~~~~
    #include <iostream>
    #include <string>
    #include <vector>
    using namespace std;
 
    struct Card {
-     int suit, rank;
+       int suit, rank;
 
-     Card ();
-     Card (int s, int r);
-     void print () const;
+       Card ();
+       Card (int s, int r);
+       void print () const;
    };
 
    int main() {
-     Card card (1,11);
-     card.print ();
+       Card card (1,11);
+       card.print ();
    }
 
    ====
@@ -150,7 +145,7 @@ of the user, it doesn’t matter what the encoding is, since all input and
 output uses human-readable formats. On the other hand, it is often
 helpful for the programmer if the mappings are easy to remember.
 
-.. mchoice:: question12_3_1
+.. mchoice:: printCard_function_1
    :answer_a: rank.ranks
    :answer_b: ranks.rank
    :answer_c: ranks[rank]
@@ -163,7 +158,7 @@ helpful for the programmer if the mappings are easy to remember.
 
    How would we select the appropriate string for the instance variable ``rank``?
 
-.. fillintheblank:: question12_3_2
+.. fillintheblank:: printCard_function_2
 
     ::
 
@@ -175,7 +170,7 @@ helpful for the programmer if the mappings are easy to remember.
     - :(Ace of Spades): Correct!
       :.*: Incorrect!  Try this input on the code above!
 
-.. mchoice:: question12_3_3
+.. mchoice:: printCard_function_3
    :multiple_answers:
    :answer_a: Yes, because the mappings should be easy for the programmer to remember.
    :answer_b: Yes, because the mappings should be easy for the user to remember.

@@ -49,7 +49,7 @@ And again, to call it, we have to invoke it on a ``Time`` object:
 
 The output of this program is ``9:22:50``.
 
-.. activecode:: 11_4
+.. activecode:: another_example_AC_1
    :language: cpp
 
    Feel free to change the input and experiment around with the active
@@ -103,6 +103,8 @@ The output of this program is ``9:22:50``.
       :.*: Incorrect! Try reading the past few pages again!
 
 .. parsonsprob:: another_example_3
+   :numbered: left
+   :adaptive:
 
    Create the ``Cat`` object with member functions ``make_noise`` and ``catch_mouse``.  
    The ``make_noise`` function should print different noises depending on the cat's mood.

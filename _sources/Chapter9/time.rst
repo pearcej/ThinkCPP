@@ -11,7 +11,7 @@ It seems clear that ``hour`` and ``minute`` should be integers. Just to
 keep things interesting, let’s make ``second`` a ``double``, so we can
 record fractions of a second.
 
-.. activecode:: nineone
+.. activecode:: time_AC_1
   :language: cpp
 
   The active code below shows what the structure definition looks like. 
@@ -52,7 +52,7 @@ type has a copy of the instance variables for that type.
    :feedback_b: Try again.
    :feedback_c: Try again.
 
-   Which of the following words are variables of type Price?
+   Which of the following words are variables of type ``Price``?
 
    .. code-block:: cpp
 
@@ -75,7 +75,7 @@ type has a copy of the instance variables for that type.
    :feedback_b: Correct!
    :feedback_c: Try again.
 
-   Which of the following words are instance variables of the Price structure?
+   Which of the following words are instance variables of the ``Price`` structure?
 
    .. code-block:: cpp
 
@@ -112,7 +112,7 @@ type has a copy of the instance variables for that type.
         Price pastry = { 2, 0 };
       }
 
-.. activecode:: ninetwo
+.. activecode:: time_AC_2
   :language: cpp
 
   Try writing the ``printTime`` function in the commented section

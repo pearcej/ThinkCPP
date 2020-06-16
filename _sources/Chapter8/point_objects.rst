@@ -27,7 +27,7 @@ This definition indicates that there are two elements in this structure,
 named ``x`` and ``y``. These elements are called **instance variables**,
 for reasons I will explain a little later.
 
-.. note::
+.. warning::
    It is a common error to leave off the semi-colon at the end of a
    structure definition. It might seem odd to put a semi-colon after a
    squiggly-brace, but you’ll get used to it.
@@ -84,6 +84,8 @@ object with two named instance variables.
       }
 
 .. parsonsprob:: point_objects_2
+   :numbered: left
+   :adaptive:
 
    Construct a block of code that correctly creates variables of a certain structure's type.
    -----

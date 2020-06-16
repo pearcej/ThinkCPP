@@ -48,7 +48,7 @@ except that the arguments have to be two integers and a ``double``:
 
      Time currentTime (9, 14, 30.0);
 
-.. activecode:: 11_8
+.. activecode:: initialize_or_construct_AC_1
    :language: cpp
 
    In the active code below, you can experiment passing values into the two 
@@ -118,6 +118,8 @@ except that the arguments have to be two integers and a ``double``:
    What is the term for having multiple constructors with the same "name" that take different parameters?
 
 .. parsonsprob:: initialize_or_construct_3
+   :numbered: left
+   :adaptive:
 
    Implement two constructors for the ``Dog`` structure. One should be a default constructor, the other should take
    arguments. The weight needs to be converted from pounds to kilograms in the second constructor (for

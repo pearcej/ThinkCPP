@@ -11,6 +11,11 @@ that creates a new deck of 52 cards:
 
 Here is the state diagram for this object:
 
+.. figure:: Images/12.6deck_state_diagram.png
+   :scale: 60%
+   :align: center
+   :alt: image
+
 The three dots represent the 48 cards I didn’t feel like drawing. Keep
 in mind that we haven’t initialized the instance variables of the cards
 yet. In some environments, they will get initialized to zero, as shown
@@ -54,42 +59,44 @@ variable from an object (the dot operator). The expression
 
 This deck-building code is encapsulated in a function called
 ``buildDeck`` that takes no parameters and that returns a
-fully-populated vector of ``Card``\ s.  See the implementation
-in the active code below.
+fully-populated vector of ``Card``\ s. 
 
 .. activecode:: 12_6
    :language: cpp
 
+   Take a look at the active code below, which includes the implementation of
+   the ``buildDeck`` function. 
+   ~~~~
    #include <iostream>
    #include <string>
    #include <vector>
    using namespace std;
 
    struct Card {
-      int suit, rank;
+       int suit, rank;
 
-      Card ();
-      Card (int s, int r);
-      void print () const;
+       Card ();
+       Card (int s, int r);
+       void print () const;
    };
 
    vector<Card> buildDeck() {
-      vector<Card> deck (52);
-      int i = 0;
-      for (int suit = 0; suit <= 3; suit++) {
-         for (int rank = 1; rank <= 13; rank++) {
-            deck[i].suit = suit;
-            deck[i].rank = rank;
-            i++;
-         }
-      }
-      return deck;
+       vector<Card> deck (52);
+       int i = 0;
+       for (int suit = 0; suit <= 3; suit++) {
+           for (int rank = 1; rank <= 13; rank++) {
+               deck[i].suit = suit;
+               deck[i].rank = rank;
+               i++;
+           }
+       }
+       return deck;
    }
 
    int main() {
-      vector<Card> deck = buildDeck();
-      cout << "We just created our deck of 52 cards. We can access an individual card by indexing." << endl;
-      cout << "For example, the first card in the deck is: "; deck[0].print();
+       vector<Card> deck = buildDeck();
+       cout << "We just created our deck of 52 cards. We can access an individual card by indexing." << endl;
+       cout << "For example, the first card in the deck is: "; deck[0].print();
    }
 
    ====
@@ -127,7 +134,7 @@ in the active code below.
       cout << ranks[rank] << " of " << suits[suit] << endl;
    }
 
-.. mchoice:: question12_6_1
+.. mchoice:: vector_of_cards_1
    :multiple_answers:
    :answer_a: There are 16 cards in the deck.
    :answer_b: The deck is single-suited.
@@ -157,7 +164,7 @@ in the active code below.
         return deck;
      }
 
-.. fillintheblank:: question12_6_2
+.. fillintheblank:: vector_of_cards_2
 
     If we actually created the deck in the previous question, what is printed after the following code runs?
     

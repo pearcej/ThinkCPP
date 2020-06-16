@@ -17,7 +17,7 @@ have objects that contain objects, and so on.
 In the next two chapters we will look at some examples of these
 combinations, using ``Card`` objects as a case study.
 
-.. mchoice:: question12_1_1
+.. mchoice:: composition_1
    :answer_a: You can have vectors that contain other vectors and objects that contain other objects.
    :answer_b: You can have vectors that contain other vectors, but you can never have objects that contain other objects.
    :answer_c: You can never have vectors that contain other vectors, but you can have objects that contain other objects.
@@ -30,7 +30,7 @@ combinations, using ``Card`` objects as a case study.
 
    Which of the following statements is correct?
 
-.. fillintheblank:: question12_1_2
+.. fillintheblank:: composition_2
 
     There are many different arrangements to combine language features.  This is called __________.
 

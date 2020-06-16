@@ -38,7 +38,7 @@ return value is the number of times the value appears.
      return count;
    }
 
-.. activecode:: 10_10
+.. activecode:: counting_AC_1
    :language: cpp
 
    Take a look at the active code below which uses the ``howMany`` function. Run the
@@ -101,6 +101,8 @@ return value is the number of times the value appears.
    Which of the following is the best definition of bottom-up design?
 
 .. parsonsprob:: counting_2
+   :numbered: left
+   :adaptive:
 
    Construct a block of code that counts how many numbers are between lowerbound and upperbound inclusive.
    -----

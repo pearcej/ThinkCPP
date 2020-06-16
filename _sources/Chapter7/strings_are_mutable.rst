@@ -4,7 +4,7 @@
 You can change the letters in an ``string`` one at a time using the
 ``[]`` operator on the left side of an assignment.
 
-.. activecode:: sevenfourteen
+.. activecode:: strings_are_mutable_AC_1
   :language: cpp
   :caption: String are mutable
 
@@ -20,7 +20,7 @@ You can change the letters in an ``string`` one at a time using the
       cout << greeting << endl;
   }
 
-produces the output ``Jello, world!``.
+This produces the output ``Jello, world!``.
 
 .. mchoice:: string_mutable_1
    :practice: T
@@ -42,3 +42,21 @@ produces the output ``Jello, world!``.
       string fav_food = "ice cream";
       fav_food[3] = "d";
       cout << fav_food << endl;
+
+.. mchoice:: string_mutable_2
+   :practice: T
+   :answer_a: message[9] = "w";
+   :answer_b: message[10] = "w";
+   :answer_c: "w" = message[9];
+   :answer_d: message[8] = "w";
+   :correct: a
+   :feedback_a: Correct!
+   :feedback_b: Incorrect! Remember indexing starts at 0.
+   :feedback_c: Incorrect! In order to change a letter in a string, the ``[]`` operator must be on the left of the assignment.
+   :feedback_d: Incorrect! Remember indexing starts at 0.
+
+   How can we fix the message to be "You're a wizard Harry"?
+
+   .. code-block:: cpp
+
+      string message = "You're a lizard Harry";

@@ -71,6 +71,39 @@ expected, this program generates a square 7x7 table:
    6   12   18   24   30   36   42
    7   14   21   28   35   42   49
 
+.. activecode:: more_generalization_AC_1
+  :language: cpp
+  :caption: Two-dimensional tables
+
+  The active code below uses the updated ``printMultTable`` function.
+  Notice that with generalization, we can create multiplication tables of
+  multiple sizes by simply changing the parameter passed into ``printMultTable``.
+  Run the active code to see what happens!
+  ~~~~
+  #include <iostream>
+  using namespace std;
+
+  void printMultiples (int n, int high) {
+      int i = 1;
+      while (i <= high) {
+          cout << n*i << "\t";
+          i = i + 1;
+      }
+      cout << endl;
+  }
+
+  void printMultTable (int high) {
+      int i = 1;
+      while (i <= high) {
+          printMultiples (i, high);
+          i = i + 1;
+      }
+  }
+
+  int main() {
+      printMultTable(7);
+  }
+
 When you generalize a function appropriately, you often find that the
 resulting program has capabilities you did not intend. For example, you
 might notice that the multiplication table is symmetric, because
@@ -101,3 +134,36 @@ and you get
    7   14   21   28   35   42   49
 
 I’ll leave it up to you to figure out how it works.
+
+.. activecode:: more_generalization_AC_2
+  :language: cpp
+  :caption: Two-dimensional tables
+
+  The active code below prints half the multiplication table.
+  We can achieve this by replacing the ``printMultiples (i, high)`` in 
+  ``printMultTable`` with ``printMultiples (i, i)``.
+  Run the active code to see what happens!
+  ~~~~
+  #include <iostream>
+  using namespace std;
+
+  void printMultiples (int n, int high) {
+      int i = 1;
+      while (i <= high) {
+          cout << n*i << "\t";
+          i = i + 1;
+      }
+      cout << endl;
+  }
+
+  void printMultTable (int high) {
+      int i = 1;
+      while (i <= high) {
+          printMultiples (i, i);
+          i = i + 1;
+      }
+  }
+
+  int main() {
+      printMultTable(7);
+  }

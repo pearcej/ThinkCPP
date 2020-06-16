@@ -61,7 +61,7 @@ are convinced, we can use these functions to rewrite ``addTime``:
    }
 
 
-.. activecode:: nineten
+.. activecode:: incremental_development_AC_1
   :language: cpp
 
   The active code below uses the ``convertToSeconds`` and ``makeTime`` functions.
@@ -111,7 +111,7 @@ demonstrate that it is correct (assuming, as usual, that the functions
 it calls are correct). As an exercise, rewrite ``increment`` the same
 way.
 
-.. activecode:: nineeleven
+.. activecode:: incremental_development_AC_2
   :language: cpp
 
   Write your implementation of ``increment`` in the commented area of the active 

@@ -5,7 +5,7 @@ I haven’t said much about it, but it is legal in C++ to make more than
 one assignment to the same variable. The effect of the second assignment
 is to replace the old value of the variable with a new value.
 
-.. activecode:: sixone
+.. activecode:: multiple_assignment_AC_1
   :language: cpp
   :caption: Multiple assignment
 
@@ -25,7 +25,7 @@ is to replace the old value of the variable with a new value.
 The output of this program is ``57``, because the first time we print
 ``fred`` his value is 5, and the second time his value is 7.
 
-.. activecode:: sixtwo
+.. activecode:: multiple_assignment_AC_2
   :language: cpp
   :caption: Multiple assignment
 
