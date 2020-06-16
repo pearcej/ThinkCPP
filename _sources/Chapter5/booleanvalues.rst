@@ -18,7 +18,7 @@ operator is a boolean value. For example:
       // do something
     }
 
-The operator == compares two integers and produces a boolean value.
+The operator ``==`` compares two integers and produces a boolean value.
 
 The values true and false are keywords in C++, and can be used anywhere
 a boolean expression is called for. For example,
@@ -38,9 +38,9 @@ reaches a return or break statement).
     The boolean type has two values |blank| and |blank|.  The |blank|
     operator is used to check if two boolean values are equal.
 
-    - :([Tt][Rr][Uu][Ee]|[Ff][Aa][Ll][Ss][Ee]): There are only two possible values for a bool.
+    - :([Tt][Rr][Uu][Ee]|[Ff][Aa][Ll][Ss][Ee]): Correct!
       :.*: Try again!
-    - :([Tt][Rr][Uu][Ee]|[Ff][Aa][Ll][Ss][Ee]): There are only two possible values for a bool.
+    - :([Tt][Rr][Uu][Ee]|[Ff][Aa][Ll][Ss][Ee]): Correct!
       :.*: Try again!
     - :==: Correct!
       :.*: Try again!

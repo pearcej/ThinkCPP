@@ -20,23 +20,24 @@ can store it in a bool variable
 
 ::
 
-    bool evenFlag = (n%2 == 0);     // true if n is even
-    bool positiveFlag = (x > 0);    // true if x is positive
+    bool evenFlag = (n % 2 == 0);     // true if n is even
+    bool plusFlag = (x > 0);    // true if x is positive
 
 and then use it as part of a conditional statement later
 
 ::
 
     if (evenFlag) {
-      cout << "n was even when I checked it" << endl;
+      cout << "n was even when I checked it";
     }
 
 A variable used in this way is called a **flag**, since it flags the
 presence or absence of some condition.
 
+
 .. dragndrop:: bool_var_1
    :feedback: Try again!
-   :match_1: x / 2 > 4|||false
+   :match_1: x * 2 > 4|||false
    :match_2: x >= 2|||true
 
    Match the conditional statement to the correct boolean, given x = 2.
@@ -53,12 +54,16 @@ presence or absence of some condition.
 
 .. mchoice:: bool_var_3
    :answer_a: n was even when I checked it x was positive when I checked it
-   :answer_b: x was positive when I checked it
-   :answer_c: n was even when I checked itx was positive when I checked it
-   :correct: c
-   :feedback_a: A space is not automatically added, it must also be outputted
-   :feedback_b: Try again!
-   :feedback_c: Correct!
+   :answer_b: x was positive when I checked it n was even when I checked it
+   :answer_c: x was positive when I checked it
+   :answer_d: n was even when I checked itx was positive when I checked it
+   :answer_e: x was positive when I checked itn was even when I checked it
+   :correct: d
+   :feedback_a: A space is not automatically added.
+   :feedback_b: Make sure you follow the correct order of execution.  Also, a space is not automatically added.
+   :feedback_c: Take another look at the result from the modulus operator.
+   :feedback_d: Both flags are made, and no space is added.
+   :feedback_e: Make sure you follow the correct order of execution.
 
    What will print?
 
@@ -67,13 +72,13 @@ presence or absence of some condition.
        int n = 16;
        int x = 4;
 
-       bool evenFlag = (n%2 == 0);
-       bool positiveFlag = (x > 0);
+       bool evenFlag = (n % 2 == 0);
+       bool plusFlag = (x > 0);
 
        if (evenFlag) {
-         cout << "n was even when I checked it" << endl;
+         cout << "n was even when I checked it";
        }
 
-       if (positiveFlag) {
-         cout << "x was positive when I checked it"
+       if (plusFlag) {
+         cout << "x was positive when I checked it";
        }

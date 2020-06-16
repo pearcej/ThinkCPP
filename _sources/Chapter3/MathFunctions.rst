@@ -27,6 +27,9 @@ using a syntax that is similar to mathematical notation:
    :language: cpp
    :caption: Using the cmath Library
 
+   This program performs calculations using some of the built-in functions 
+   from the cmath library.
+   ~~~~
    #include <iostream>
    #include <cmath>
    using namespace std;
@@ -43,15 +46,18 @@ using a syntax that is similar to mathematical notation:
 
 
 The first example sets log to the logarithm of 17, base :math:`e`. There
-is also a function called log10 that takes logarithms base 10.
+is also a function called ``log10`` that takes logarithms base 10.
 
 The second example finds the sine of the value of the variable angle.
-C++ assumes that the values you use with sin and the other trigonometric
-functions (cos, tan) are in *radians*. To convert from degrees to
-radians, you can divide by 360 and multiply by :math:`2 \pi`.
+C++ assumes that the values you use with ``sin`` and the other trigonometric
+functions (``cos``, ``tan``) are in *radians*. 
+
+.. note::
+   To convert from degrees to radians, you can divide by 360 and multiply
+   by :math:`2 \pi`.
 
 If you don’t happen to know :math:`\pi` to 15 digits, you can calculate
-it using the acos function. The arccosine (or inverse cosine) of -1 is
+it using the ``acos`` function. The arccosine (or inverse cosine) of -1 is
 :math:`\pi`, because the cosine of :math:`\pi` is -1.
 
 
@@ -59,6 +65,11 @@ it using the acos function. The arccosine (or inverse cosine) of -1 is
    :language: cpp
    :caption: Working with Angles
 
+   This program also uses built-in functions from the cmath library,
+   specifically the functions that deal with angles.  As you can see,
+   we have a line of code that converts the default radians value to
+   degrees.
+   ~~~~
    #include <iostream>
    #include <cmath>
    using namespace std;
@@ -85,7 +96,7 @@ iostream using an **include** statement:
     using namespace std;
 
 iostream contains information about input and output (I/O) streams,
-including the object named cout. C++ has a powerful feature called
+including the object named ``cout``. C++ has a powerful feature called
 namespaces, that allow you to write your own implementation of cout. But
 in most cases, we would need to use the standard implementation. To
 convey this to the compiler, we use the line
@@ -95,7 +106,7 @@ convey this to the compiler, we use the line
     using namespace std;
 
 .. note::
-   As a rule of the thumb, you should write using namespace std; whenever
+   As a rule of the thumb, you should write ``using namespace std;`` whenever
    you use iostream.
 
 Similarly, the math header file contains information about the math

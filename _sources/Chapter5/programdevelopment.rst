@@ -70,6 +70,11 @@ I added output statements that will let me check the intermediate values
 before proceeding. As I mentioned, I already know that they should be
 3.0 and 4.0.
 
+.. note::
+   If you are ever unsure why a function isn't returning what you
+   expect it to, using ``cout`` statements at different steps in
+   your function will help you figure it out.
+
 When the function is finished I will remove the output statements. Code
 like that is called **scaffolding**, because it is helpful for building
 the program, but it is not part of the final product. Sometimes it is a
@@ -111,6 +116,9 @@ Then in main, we should output and check the value of the result.
    :language: cpp
    :caption: Program Development
 
+   This program implements the distance function that we've been 
+   talking about and outputs the result.
+   ~~~~
    #include <iostream>
    #include <cmath>
    using namespace std;
@@ -150,38 +158,41 @@ The key aspects of the process are:
    :answer_a: combining the parameters
    :answer_b: printing out the parameters
    :answer_c: returning something
+   :answer_d: debugging
    :correct: c
-   :feedback_a: Try again!
-   :feedback_b: Try again!
-   :feedback_c: Correct! Return something of the same data type as the return type of the function.
+   :feedback_a: Unless the function requires you to do so, then this is unnecessary.
+   :feedback_b: If you don't know the values of the parameters, this could be useful, but there is a better answer.
+   :feedback_c: This is called placekeeping.  You don't have to return the correct answer, but you do need to return the correct data type.
+   :feedback_d: You don't need to debug until after you've written the function.
 
-   What is a helpful first placekeeper when outlining a function?
+   When writing the implementation for a function, a good place to
+   start is __________.
 
 
-.. mchoice::program_dvlmt_2
+.. mchoice:: program_dvlmt_2
    :answer_a: Use temporary variables to hold intermediate values so you can output and check them.
    :answer_b: Start with a working program and make small, incremental changes. That way you know exactly where the error is if you have one.
-   :answer_c: Writing a program from start to finish, and then testing at the end in order to understand all of the errors at once.
-   :answer_d: Once the program is working, you might want to remove some of the or consolidate multiple statements into compound expressions, but only if it does not make the program difficult to read.
+   :answer_c: Writing a program from start to finish, and then debugging at the end in order to understand all of the errors at once.
+   :answer_d: Once the program is working, you might want to consolidate some statements into compound expressions, or remove them entirely.
    :correct: c
-   :feedback_a: Try again!
-   :feedback_b: Try again!
-   :feedback_c: Correct! Trying to understand all of the errors in your program at once can make it very difficult to understand.
-   :feedback_d: Try again!
+   :feedback_a: Temporary variables are very useful in understanding what is happening at each step.
+   :feedback_b: This is the definition of incremental development.
+   :feedback_c: Incremental development uses step by step debugging in order to avoid the difficulty this would present.
+   :feedback_d: This is good practice, as long as it doesn't make the program difficult to read.
 
    Which of the following is not a key aspect of the incremental development process?
 
 
 .. mchoice:: program_dvlmt_3
-   :answer_a: Scaffolding - the use of more than 5 lines in a function with no indentation
-   :answer_b: Placekeeping - allows the function to compile and return something
-   :answer_c: Scaffolding - code that is helpful for testing values, but is not included in the final product
-   :answer_d: Placekeeping - the use of parameters in a function
+   :answer_a: scaffolding - allows the function to compile and return something
+   :answer_b: placekeeping - allows the function to compile and return something
+   :answer_c: scaffolding - used to test values of temporary variables, later removed
+   :answer_d: placekeeping - used to test values of temporary variables, later removed
    :correct: c
-   :feedback_a: Try again!
-   :feedback_b: Try again!
-   :feedback_c: Correct! Printing out the values can help you understand whether the function is working or not.
-   :feedback_d: Try again!
+   :feedback_a: This is not the correct definition of scaffolding.
+   :feedback_b: This is the correct definition of placekeeping but is not the correct answer.
+   :feedback_c: Printing out the values allows you to observe whether the function is working or not.
+   :feedback_d: This is not the correct definition of placekeeping.
 
    The print statements in the distance function will be removed after testing. What is this called, and what is its purpose?
 

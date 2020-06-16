@@ -4,10 +4,10 @@ Parameters and Arguments
 Some of the built-in functions we have used have **parameters**, which
 are values that you provide to let the function do its job. For example,
 if you want to find the sine of a number, you have to indicate what the
-number is. Thus, sin takes a double value as a parameter.
+number is. Thus, ``sin`` takes a ``double`` value as a parameter.
 
 Some functions take more than one parameter, like pow, which takes two
-doubles, the base and the exponent.
+``double`` s, the base and the exponent.
 
 Notice that in each of these cases we have to specify not only how many
 parameters there are, but also what type they are. So it shouldn’t
@@ -20,14 +20,14 @@ indicates the type of each parameter. For example:
       cout << phil << phil << endl;
     }
 
-This function takes a single parameter, named phil, that has type char.
+This function takes a single parameter, named phil, that has type ``char``.
 Whatever that parameter is (and at this point we have no idea what it
-is), it gets printed twice, followed by a newline. I chose the name phil
+is), it gets printed twice, followed by a new line. I chose the name phil
 to suggest that the name you give a parameter is up to you, but in
 general you want to choose something more illustrative than phil.
 
-In order to call this function, we have to provide a char. For example,
-we might have a main function like this:
+In order to call this function, we have to provide a ``char``. For example,
+we might have a ``main`` function like this:
 
 ::
 
@@ -36,11 +36,11 @@ we might have a main function like this:
       return 0;
     }
 
-The char value you provide is called an **argument**, and we say that
+The ``char`` value you provide is called an **argument**, and we say that
 the argument is **passed** to the function. In this case the value ’a’
 is passed as an argument to printTwice where it will get printed twice.
 
-Alternatively, if we had a char variable, we could use it as an argument
+Alternatively, if we had a ``char`` variable, we could use it as an argument
 instead:
 
 ::
@@ -77,6 +77,9 @@ exceptions later.
    :language: cpp
    :caption: Parameter Practice
 
+   The following code will show the output of the printTwice function.
+   Try modifying the value of argument to change the output.
+   ~~~~
    #include <iostream>
    using namespace std;
 

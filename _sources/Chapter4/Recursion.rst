@@ -21,26 +21,26 @@ For example, look at the following function:
       } 
       else {
         cout << n << endl;
-        countdown (n-1);
+        countdown (n - 1);
       }
     }
 
-The name of the function is countdown and it takes a single integer as a
+The name of the function is ``countdown`` and it takes a single integer as a
 parameter. If the parameter is zero, it outputs the word “Blastoff.”
 Otherwise, it outputs the parameter and then calls a function named
-countdown—itself—passing ``n-1`` as an argument.
+``countdown`` —itself— passing ``n - 1`` as an argument.
 
-What happens if we call this function like this:
-
-.. activecode:: fourten
+.. activecode:: recursion_AC_1
    :language: cpp
    :caption: Recursion
 
+   Watch how the countdown function works when we start with a value
+   of 3.
+   ~~~~
    #include <iostream>
    #include <cmath>
    using namespace std;
-
-
+   
    void countdown (int n) {
        if (n == 0) {
            cout << "Blastoff!" << endl;
@@ -56,25 +56,27 @@ What happens if we call this function like this:
        return 0;
    }
 
-  The execution of countdown begins with ``n=3``, and since n is not zero, it
+What happens if we call ``countdown`` function like this:
+
+  The execution of ``countdown`` begins with ``n = 3``, and since n is not zero, it
   outputs the value 3, and then calls itself...
 
-      The execution of countdown begins with ``n=2``, and since n is not zero,
+      The execution of ``countdown`` begins with ``n = 2``, and since n is not zero,
       it outputs the value 2, and then calls itself...
 
-          The execution of countdown begins with ``n=1``, and since n is not
+          The execution of ``countdown`` begins with ``n = 1``, and since n is not
           zero, it outputs the value 1, and then calls itself...
 
-              The execution of countdown begins with ``n=0``, and since n is
+              The execution of ``countdown`` begins with ``n = 0``, and since n is
               zero, it outputs the word “Blastoff!” and then returns.
 
-          The countdown that got ``n=1`` returns.
+          The ``countdown`` that got ``n = 1`` returns.
 
-      The countdown that got ``n=2`` returns.
+      The ``countdown`` that got ``n = 2`` returns.
 
-  The countdown that got ``n=3`` returns.
+  The ``countdown`` that got ``n = 3`` returns.
 
-And then you’re back in main (what a trip). So the total output looks
+And then you’re back in ``main`` (what a trip). So the total output looks
 like:
 
 ::
@@ -84,8 +86,8 @@ like:
     1
     Blastoff!
 
-As a second example, let’s look again at the functions newLine and
-threeLine.
+As a second example, let’s look again at the functions ``newLine`` and
+``threeLine``.
 
 ::
 
@@ -111,7 +113,7 @@ newlines, or 106. A better alternative would be
 
 This program is similar to countdown; as long as n is greater than zero,
 it outputs one newline, and then calls itself to output ``n-1`` additional
-newlines. Thus, the total number of newlines is ``1 + (n-1)``, which usually
+newlines. Thus, the total number of newlines is ``1 + (n - 1)``, which usually
 comes out to roughly n.
 
 
@@ -189,7 +191,7 @@ comes out to roughly n.
    :feedback_a: If we start at zero, will the function ever call itself?
    :feedback_b: If we start at zero, will the function ever call itself?
    :feedback_c: The only output statement in this program prints a "!", therefore "0" would never print.
-   :feedback_a: Correct! The program never enters the "if" statement within the function because n is never greater than 0.
+   :feedback_d: Correct! The program never enters the "if" statement within the function because n is never greater than 0.
    
    What will print?
 

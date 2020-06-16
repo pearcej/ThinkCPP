@@ -11,7 +11,7 @@ can use any expression as an argument to a function:
 
 This statement takes the value of pi, divides it by two and adds the
 result to the value of angle. The sum is then passed as an argument to
-the cos function.
+the ``cos`` function.
 
 You can also take the result of one function and pass it as an argument
 to another:
@@ -21,6 +21,9 @@ to another:
    :language: cpp
    :caption: Composition of Math Functions
 
+   This program finds the log base e of 10 and raises e to that power.  The
+   result of this computation is assigned to x.
+   ~~~~
    #include <iostream>
    #include <cmath>
    using namespace std;
@@ -29,10 +32,6 @@ to another:
        double x = exp (log (10.0));
        cout << x;
    }
-
-
-The above statement finds the log base :math:`e` of 10 and then raises
-:math:`e` to that power. The result gets assigned to x.
 
 
 .. mchoice:: function_comp_1

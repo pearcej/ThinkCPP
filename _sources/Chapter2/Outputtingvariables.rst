@@ -5,13 +5,15 @@ You can output the value of a variable using the same commands we used
 to output simple values. After observing the output, try inputting your own time!
 
 
-.. activecode:: outputting_vars_AC_1
+.. activecode:: output_vars_AC_1
    :language: cpp
    :caption: Time Output
-
+   
+   This program outputs the current time, according to the values you
+   provide for hour and minute.
+   ~~~~
    #include <iostream>
    using namespace std;
-   // main: generate some simple output
 
    int main () {
        int hour, minute;
@@ -48,13 +50,15 @@ As we have seen before, you can include more than one value in a single
 output statement, which can make the previous program more concise:
 
 
-.. activecode:: outputting_vars_AC_2
+.. activecode:: output_vars_AC_2
    :language: cpp
    :caption: Condensing The Code
 
+   This program does the same thing as the previous, but the print
+   statements have been condensed to one line.  This is better style.
+   ~~~~
    #include <iostream>
    using namespace std;
-   // main: generate some simple output
 
    int main () {
        int hour, minute;
@@ -71,10 +75,10 @@ output statement, which can make the previous program more concise:
 
 
 On one line, this program outputs a string, two integers, a character,
-and the special value endl. Very impressive!
+and the special value ``endl``. Very impressive!
 
 
-.. mchoice:: outputting_vars_1
+.. mchoice:: output_vars_1
    :answer_a: a
    :answer_b: b
    :answer_c: z
@@ -100,7 +104,7 @@ and the special value endl. Very impressive!
        }
 
 
-.. mchoice:: outputting_vars_2
+.. mchoice:: output_vars_2
    :answer_a: a
    :answer_b: b
    :answer_c: z
@@ -126,7 +130,7 @@ and the special value endl. Very impressive!
        }
 
 
-.. mchoice:: outputting_vars_3
+.. mchoice:: output_vars_3
    :answer_a: x
    :answer_b: y
    :answer_c: 3
@@ -152,7 +156,7 @@ and the special value endl. Very impressive!
        }
 
 
-.. dragndrop:: outputting_vars_4
+.. dragndrop:: output_vars_4
    :feedback: Try again!
    :match_1:  x = 2|||int
    :match_2: y = "2"|||string
@@ -161,13 +165,12 @@ and the special value endl. Very impressive!
    Match the variable initialization to its correct type.
 
 
-.. activecode:: outputting_vars_5
+.. activecode:: output_vars_5
    :language: cpp
    :caption: Variable Declaration
   
    Fix the following code so that each variable has a type!
    ~~~~
-
    #include <iostream>
    using namespace std;
 

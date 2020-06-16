@@ -12,10 +12,10 @@ less obvious:
 
 ::
 
-    1+1
-    hour-1
-    hour*60 + minute
-    minute/60
+    1 + 1
+    hour - 1
+    hour * 60 + minute
+    minute / 60
 
 Expressions can contain both variables names and integer values. In each
 case the name of the variable is replaced with its value before the
@@ -29,17 +29,21 @@ observe the output.
    :language: cpp
    :caption: Integer Division
 
+   This program is supposed to print the fraction of the hour that has
+   passed since midnight.  You'll notice that the result isn't quite what
+   you expect.  Read on to find out why!
+   ~~~~
    #include <iostream>
    using namespace std;
 
    int main () {
        int hour, minute;
-       hour = 11;
+       hour = 12;
        minute = 59;
        cout << "Number of minutes since midnight: ";
-       cout << hour*60 + minute << endl;
+       cout << hour * 60 + minute << endl;
        cout << "Fraction of the hour that has passed: ";
-       cout << minute/60 << endl;
+       cout << minute / 60 << endl;
        return 0;
    }
 
@@ -59,7 +63,7 @@ than a fraction:
 ::
 
     cout << "Percentage of the hour that has passed: ";
-    cout << minute*100/60 << endl;
+    cout << minute * 100 / 60 << endl;
 
 The result is:
 

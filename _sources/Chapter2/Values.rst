@@ -4,7 +4,7 @@ Values
 A value is one of the fundamental things—like a letter or a number—that
 a program manipulates. The only values we have manipulated so far are
 the string values we have been outputting, like "Hello, world.". You
-(and the compiler) can identify string values because they are enclosed
+(and the compiler) can identify ``string`` values because they are enclosed
 in quotation marks.
 
 There are other kinds of values, including integers and characters. An
@@ -24,10 +24,6 @@ way:
     cout << '}' << endl;
 
 This example outputs a single close squiggly-brace on a line by itself.
-
-.. note::
-   In C++, integer values are declared as type ``int`` and character values 
-   are declared as type ``char``.
 
 It is easy to confuse different types of values, like "5", ’5’ and 5,
 but if you pay attention to the punctuation, it should be clear that the
