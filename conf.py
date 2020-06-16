@@ -46,8 +46,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'Think Like a Computer Scientist - C++'
-copyright = '2020 - Based on Think Like a Computer Scientist'
+project = 'How to Think Like a Computer Scientist - C++'
+copyright = '2020 - Based on How to Think Like a Computer Scientist'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the

@@ -34,11 +34,11 @@ instead of a double ``==``. Remember that = is the assignment operator, and
 ``==`` is a comparison operator. Also, there is no such thing as ``=<`` or ``=>``.
 
 .. note::
-   Both sides of a conditional operator have to be the same type. 
-   
-Despite automatic type conversion, you can only compare ``int`` s to ``int`` s and 
+   Both sides of a conditional operator have to be the same type.
+
+Despite automatic type conversion, you can only compare ``int`` s to ``int`` s and
 ``double`` s to ``double`` s. Unfortunately, at this point you can’t compare ``string`` s
-at all! There is a way to compare them, but we won’t get to it for a couple of 
+at all! There is a way to compare them, but we won’t get to it for a couple of
 chapters.
 
 Observe the conditional statement below.
@@ -77,7 +77,7 @@ Observe the conditional statement below.
    :feedback_a: While "Bigger" would now print, the other two statements would not!
    :feedback_b: Now, none of the statements would print!
    :feedback_c: Now, all of the statements would print.
-   :feedback_c: main returns an int, so trying to make it return a string will cause an error.
+   :feedback_d: main returns an int, so trying to make it return a string will cause an error.
 
    Observe the code above. "Bigger" never prints! How can you modify this so that all of the statements print?
 

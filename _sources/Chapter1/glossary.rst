@@ -99,13 +99,13 @@ debugging:
 .. dragndrop:: chapter_one_glossary_4
    :feedback: Try again!
    :match_1: problem-solving|||The process of formulating a problem, finding a solution, and expressing the solution.
-   :match_4: syntax|||The structure of a program.
-   :match_5: semantics|||The meaning of a program.
-   :match_1: parse|||To examine a program and analyze the syntactic structure.
+   :match_2: syntax|||The structure of a program.
+   :match_3: semantics|||The meaning of a program.
+   :match_4: parse|||To examine a program and analyze the syntactic structure.
 
 
-.. dragndrop:: chapter_one_glossary_5   
-   :match_2: syntax error|||An error in a program that makes it impossible to parse and compile.
-   :match_3: run-time error|||An error in a program that makes it fail upon execution.
-   :match_4: logical error|||An error in a program that makes it do something other than what the programmer intended.
-   :match_5: debugging|||The process of finding and removing any of the three kinds of errors.
+.. dragndrop:: chapter_one_glossary_5
+   :match_1: syntax error|||An error in a program that makes it impossible to parse and compile.
+   :match_2: run-time error|||An error in a program that makes it fail upon execution.
+   :match_3: logical error|||An error in a program that makes it do something other than what the programmer intended.
+   :match_4: debugging|||The process of finding and removing any of the three kinds of errors.

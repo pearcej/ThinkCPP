@@ -1,5 +1,5 @@
 Converting from ``double`` to ``int``
------------------------------
+----------------------------------------
 
 As I mentioned, C++ converts ``int`` s to ``double`` s automatically if necessary,
 because no information is lost in the translation. On the other hand,
@@ -41,10 +41,10 @@ its argument to the appropriate type.
    :feedback_d: This is not an integer data type, and it's not the right number.
    :feedback_e: This is not an integer data type.
 
-   In the lab, we measured a temperature of 7.99999999 degrees C, using 
-   an extremely precise measuring device.  Now we are writing a program 
-   to perform some calculations with our data.  Consider the following C++ 
-   code. 
+   In the lab, we measured a temperature of 7.99999999 degrees C, using
+   an extremely precise measuring device.  Now we are writing a program
+   to perform some calculations with our data.  Consider the following C++
+   code.
 
    ::
 

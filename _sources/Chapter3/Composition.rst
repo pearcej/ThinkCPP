@@ -43,7 +43,7 @@ to another:
    :feedback_a: log2 is not a built in cmath function, but you could write an implementation for it if you wanted!
    :feedback_b: This correctly uses cmath functions!
    :feedback_c: This would be correct if it ended in a semi-colon.
-   :feedback_cd Make sure to use the math keywords reserved in C++ when using math functions. Using **cosine** instead of *cos* is incorrect.
+   :feedback_d: Make sure to use the math keywords reserved in C++ when using math functions. Using **cosine** instead of *cos* is incorrect.
 
    Which of these statements has correct syntax?
 
@@ -55,6 +55,6 @@ to another:
    ::
 
        double x = sin ( log10 (1000) * exp (2) );
-    
+
    - :-0\.175112: Correct!
      :.*: Try again! (try modifying the active code to test it out!)

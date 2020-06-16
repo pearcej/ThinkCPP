@@ -14,8 +14,8 @@ you want in ``main``. For example, to output more than one line:
    ~~~~
    #include <iostream>
    using namespace std;
-   // main: generate some simple output
 
+   // main: generate some simple output
    int main () {
        cout << "Hello, world." << endl;     // output one line
        cout << "How are you?" << endl;      // output another
@@ -26,13 +26,13 @@ As you can see, it is legal to put comments at the end of a line, as
 well as on a line by themselves.
 
 The phrases that appear in quotation marks are called **strings**,
-because they are made up of a sequence (string) of letters. 
+because they are made up of a sequence (string) of letters.
 
 .. note::
    In C++, strings are declared as type ``string``.  We'll explain what that
    means in the next few pages.
 
-Actually, strings can contain any combination of letters, numbers, 
+Actually, strings can contain any combination of letters, numbers,
 punctuation marks, and other special characters.
 
 Often it is useful to display the output from multiple output statements
@@ -93,7 +93,7 @@ behavior either, so I could have written:
 
    This program accomplishes the same thing as the previous two, but
    it only uses one line.  Once again, this is a matter of personal
-   preference, but in my opinion, this format is pretty messy and 
+   preference, but in my opinion, this format is pretty messy and
    relatively hard to follow.
    ~~~~
    #include <iostream>
@@ -113,7 +113,7 @@ the program and locate syntax errors.
    :match_1:  cout<<"Hello"; cout<<"Hello";|||one line
    :match_2: cout<<"Hello" << endl; cout<<"Hello";|||two lines
 
-   Match the code snippet to the correct amount of lines that would 
+   Match the code snippet to the correct amount of lines that would
    be printed.
 
 
@@ -126,12 +126,12 @@ the program and locate syntax errors.
 
 
 .. parsonsprob:: more_output_3
+   :numbered: left
    :adaptive:
-   
-   Construct a main function that prints "Hello, world!" so that 
-   "Hello," and "world!" are on two separate lines.
 
-   on separate lines as shown above.
+   Construct a main function that prints "Hello, world!" so that
+   "Hello," and "world!" are printed on two separate lines.
+
    -----
    int main () {
    =====
