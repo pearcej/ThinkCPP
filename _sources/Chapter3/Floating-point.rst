@@ -28,6 +28,12 @@ same time:
 In fact, this syntax is quite common. A combined declaration and
 assignment is sometimes called an **initialization**.
 
+.. warning::
+   It is important that you **initialize** any and all variables that you
+   declare.  Failure to do so will generate an error (if you're lucky), or
+   C++ will initialize the variable to leftover memory, which could lead to
+   undefined behavior.
+
 Although floating-point numbers are useful, they are often a source of
 confusion because there seems to be an overlap between integers and
 floating-point numbers. For example, if you have the value 1, is that an
@@ -43,8 +49,8 @@ illegal
 
     int x = 1.1;
 
-because the variable on the left is an int and the value on the right is
-a double. But it is easy to forget this rule, especially because there
+because the variable on the left is an ``int`` and the value on the right is
+a ``double``. But it is easy to forget this rule, especially because there
 are places where C++ automatically converts from one type to another.
 For example,
 
@@ -52,8 +58,8 @@ For example,
 
     double y = 1;
 
-should technically not be legal, but C++ allows it by converting the int
-to a double automatically. This leniency is convenient, but it can cause
+should technically not be legal, but C++ allows it by converting the ``int``
+to a ``double`` automatically. This leniency is convenient, but it can cause
 problems; for example:
 
 ::

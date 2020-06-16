@@ -24,11 +24,11 @@ whole program looks like this:
       return 0;
     }
 
-This program contains three function definitions: newLine, threeLine,
-and main.
+This program contains three function definitions: ``newLine``, ``threeLine``,
+and ``main``.
 
-Inside the definition of main, there is a statement that uses or calls
-threeLine. Similarly, threeLine calls newLine three times. Notice that
+Inside the definition of ``main``, there is a statement that uses or calls
+``threeLine``. Similarly, ``threeLine`` calls ``newLine`` three times. Notice that
 the definition of each function appears above the place where it is
 used.
 
@@ -69,6 +69,7 @@ messages you get.
 
 
 .. parsonsprob:: defns_uses_3
+   :adaptive:
 
    Construct a block of code that correctly defines a the addTwo function.
    -----

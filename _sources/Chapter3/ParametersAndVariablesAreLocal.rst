@@ -2,8 +2,8 @@ Parameters and Variables are Local
 ----------------------------------
 
 Parameters and variables only exist inside their own functions. Within
-the confines of main, there is no such thing as phil. If you try to use
-it, the compiler will complain. Similarly, inside printTwice there is no
+the confines of ``main``, there is no such thing as phil. If you try to use
+it, the compiler will complain. Similarly, inside ``printTwice`` there is no
 such thing as argument.
 
 
@@ -11,6 +11,10 @@ such thing as argument.
    :language: cpp
    :caption: Understanding Parameters
 
+   The following code will show the output of the printTwice function.
+   Notice that it is the argument 'b' that is outputted, not the
+   variable 'phil'.
+   ~~~~
    #include <iostream>
    using namespace std;
 
@@ -44,8 +48,8 @@ variables for that function. In the diagram an instance of a function is
 represented by a box with the name of the function on the outside and
 the variables and parameters inside.
 
-In the example, main has one local variable, argument, and no
-parameters. printTwice has no local variables and one parameter, named
+In the example, ``main`` has one local variable, argument, and no
+parameters. ``printTwice`` has no local variables and one parameter, named
 phil.
 
 

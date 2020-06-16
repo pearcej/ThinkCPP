@@ -8,6 +8,10 @@ another. We could have written the previous example as:
    :language: cpp
    :caption: Classifying an Integer
 
+   This program classifies a number (x) as positive, negative, or zero,
+   just like the program on the previous page.  However, this time, we are
+   using nested conditionals.
+   ~~~~
    #include <iostream>
    using namespace std;
 
@@ -31,6 +35,11 @@ branch contains a simple output statement, but the second branch
 contains another if statement, which has two branches of its own.
 Fortunately, those two branches are both output statements, although
 they could have been conditional statements as well.
+
+.. note::
+   There is not a limit to the number of times you can nest a conditional.
+   However, you should try to limit this number, as it will reduce the
+   complexity of your program structure.
 
 Notice again that indentation helps make the structure apparent, but
 nevertheless, nested conditionals get difficult to read very quickly. In
@@ -128,9 +137,6 @@ will see it again, so you better get used to it.
 
    ::
 
-       #include <iostream>
-       using namespace std;
-
        string seatingArrangement(char first, char last) {
          if (last > m) {
            if (first > m) {
@@ -148,21 +154,5 @@ will see it again, so you better get used to it.
              return "Front Right!";
            }
          }
-       }
-
-       int main () {
-         int x = -4;
-         if (x == 0) {
-           cout << "Hey!" << endl;
-         }
-         else {
-           if (x > 0) {
-             cout << "Hi!" << endl;
-           } 
-           else {
-             cout << "Hello!" << endl;
-           }
-         }
-         return 0;
        }
 

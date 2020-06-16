@@ -15,6 +15,8 @@ turns out we can do both at the same time:
    :language: cpp
    :caption: Multiplication Output
 
+   This program performs multiplication and prints the result simultaneously.
+   ~~~~
    #include <iostream>
    using namespace std;
 
@@ -33,13 +35,16 @@ used inside an output statement. We’ve already seen one example:
    :language: cpp
    :caption: Variable Output
 
+   This program performs a calculation involving variables and prints
+   the result at the same time.
+   ~~~~
    #include <iostream>
    using namespace std;
 
    int main () {
        int hour = 7;
        int minute = 1;
-       cout << hour*60 + minute << endl;
+       cout << hour * 60 + minute << endl;
    }
 
 
@@ -51,6 +56,9 @@ assignment statement:
    :language: cpp
    :caption: Performing Calculations Before Assignment
 
+   This program performs a calculation involving variables and 
+   simultaneously assigns the result to a variable.
+   ~~~~
    #include <iostream>
    using namespace std;
 
@@ -73,7 +81,7 @@ computations neatly and concisely.
 
 That’s because the left side indicates the storage location where the 
 result will go. Expressions do not represent storage locations, only 
-values. So the following is illegal: ``minute+1 = hour;``.
+values. So the following is illegal: ``minute + 1 = hour;``.
 
 
 .. mchoice:: composition_1

@@ -2,7 +2,7 @@ Functions with Results
 ----------------------
 
 You might have noticed by now that some of the functions we are using,
-like the math functions, yield results. Other functions, like newLine,
+like the math functions, yield results. Other functions, like ``newLine``,
 perform an action but don’t return a value. That raises some questions:
 
 -  What happens if you call a function and you don’t do anything with

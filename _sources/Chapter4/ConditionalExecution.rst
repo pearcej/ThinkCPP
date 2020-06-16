@@ -34,11 +34,12 @@ instead of a double ``==``. Remember that = is the assignment operator, and
 ``==`` is a comparison operator. Also, there is no such thing as ``=<`` or ``=>``.
 
 .. note::
-   The two sides of a condition operator have to be the same type. 
+   Both sides of a conditional operator have to be the same type. 
    
-You can only compare ints to ints and doubles to doubles. Unfortunately, 
-at this point you can’t compare Strings at all! There is a way to compare
-Strings, but we won’t get to it for a couple of chapters.
+Despite automatic type conversion, you can only compare ``int`` s to ``int`` s and 
+``double`` s to ``double`` s. Unfortunately, at this point you can’t compare ``string`` s
+at all! There is a way to compare them, but we won’t get to it for a couple of 
+chapters.
 
 Observe the conditional statement below.
 
@@ -46,6 +47,9 @@ Observe the conditional statement below.
    :language: cpp
    :caption: Testing Values of x
 
+   This program shows how you can use conditional statements to
+   assess true/false situations.
+   ~~~~
    #include <iostream>
    using namespace std;
 

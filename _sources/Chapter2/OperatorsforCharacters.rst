@@ -8,6 +8,10 @@ also work on characters. For example, observe the following output.
    :language: cpp
    :caption: Adding to Characters
 
+   This program performs character addition.  It works by converting
+   the character 'a' to ASCII, adding 1 to this value, then converting the 
+   result from ASCIIs back to a character.
+   ~~~~
    #include <iostream>
    using namespace std;
 
@@ -29,6 +33,9 @@ types. For example, the following is legal.
    :language: cpp
    :caption: Automatic Type Conversion
 
+   This program performs automatic type converstion.  It converts 'a' 
+   to its ASCII value.
+   ~~~~
    #include <iostream>
    using namespace std;
 
@@ -41,6 +48,12 @@ The result is 97, which is the number that is used internally by C++ to
 represent the letter ’a’. However, it is generally a good idea to treat
 characters as characters, and integers as integers, and only convert
 from one to the other if there is a good reason.
+
+.. note::
+   Characters in C++ hold ASCII values, which range from 0 to 128.  Uppercase
+   'A' has an ASCII value of 65, lowercase 'a' has a value of 97, and a space
+   ' ' has a value of 32.  C++ converts characters to their ASCII values to 
+   perform automatic type conversion and character arithmetic.
 
 Automatic type conversion is an example of a common problem in designing
 a programming language, which is that there is a conflict between

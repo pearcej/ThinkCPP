@@ -9,9 +9,9 @@ program.
 .. note::
    The order of execution is not necessarily the order in which functions
    are defined!  For example, the last function that you write might be the 
-   first one that you call in the main function.
+   first one that you call in the ``main`` function.
 
-Execution always begins at the first statement of main, regardless of
+Execution always begins at the first statement of ``main``, regardless of
 where it is in the program (often it is at the bottom). Statements are
 executed one at a time, in order, until you reach a function call.
 Function calls are like a detour in the flow of execution. Instead of
@@ -20,23 +20,23 @@ function, execute all the statements there, and then come back and pick
 up again where you left off.
 
 That sounds simple enough, except that you have to remember that one
-function can call another. Thus, while we are in the middle of main, we
-might have to go off and execute the statements in threeLine. But while
-we are executing threeLine, we get interrupted three times to go off and
-execute newLine.
+function can call another. Thus, while we are in the middle of ``main``, we
+might have to go off and execute the statements in ``threeLine``. But while
+we are executing ``threeLine``, we get interrupted three times to go off and
+execute ``newLine``.
 
 Fortunately, C++ is adept at keeping track of where it is, so each time
-newLine completes, the program picks up where it left off in threeLine,
-and eventually gets back to main so the program can terminate.
-
-What’s the moral of this sordid tale? When you read a program, don’t
-read from top to bottom. Instead, **follow the flow of execution**.
+``newLine`` completes, the program picks up where it left off in ``threeLine``,
+and eventually gets back to ``main`` so the program can terminate.
 
 
 .. activecode:: multiple_functions_AC_1
    :language: cpp
    :caption: Multiply / Add Two
 
+   This program calls the multiplyTwo and addTwo functions in the
+   main.  See if you can follow the order of execution.
+   ~~~~
    #include <iostream>
    using namespace std;
 
@@ -63,20 +63,22 @@ read from top to bottom. Instead, **follow the flow of execution**.
    }
 
 
+What’s the moral of this sordid tale? When you read a program, don’t
+read from top to bottom. Instead, **follow the flow of execution**.
+
+
 .. dragndrop:: multiple_functions_1
    :feedback: Try again!
-   :match_1:  addTwo|||executes last
-   :match_2: multiplyTwo|||executes second
-   :match_3: printTotal|||executes third
-   :match_4: main|||executes first
+   :match_1: multiplyTwo|||executes next
+   :match_2: printTotal|||executes last
+   :match_3: main|||executes first
 
-   Reference the active code above. Match the function name to its order 
-   of execution.
+   Match the function to the order it is executed in the program above.
 
 
 .. mchoice:: multiple_functions_2
    :answer_a: 12, 13, 14, 8, 9, 10, 15, 16, 17
-   :answer_b: 13, 14, 8, 9, 4, 5, 6, 4, 5, 6, 4, 5, 6, 10, 15, 16, 17
+   :answer_b: 12, 13, 14, 8, 9, 4, 5, 6, 4, 5, 6, 4, 5, 6, 10, 15, 16, 17
    :answer_c: 1, 2, 12, 13, 14, 8, 9, 10, 15, 16, 17
    :answer_d: 1, 2, 4, 5, 6, 8, 9, 10, 12, 13, 14, 15, 16, 17
    :answer_e: 1, 2, 12, 13, 14, 8, 9, 4, 5, 6, 4, 5, 6, 4, 5, 6, 10, 15, 16, 17
@@ -84,7 +86,7 @@ read from top to bottom. Instead, **follow the flow of execution**.
    :feedback_a: Keep in mind that one of the functions is being called three times.
    :feedback_b: Execution begins in the main, then functions are executed as they are called.
    :feedback_c: Keep in mind that one of the functions is being called three times.  Also, note that function execution begins in int main.
-   :feedback_d: Remember to follow the order of execution, which is not necessarily the order the program is written.
+   :feedback_d: Keep in mind that execution begins in the main.  Remember to follow the order of execution, which is not necessarily the order the program is written.
    :feedback_e: Keep in mind that execution begins in the main.
 
    Consider the following C++ code. Note that line numbers are included 

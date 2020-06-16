@@ -12,6 +12,9 @@ In C++, this program looks like this:
    :language: cpp
    :caption: Hello World
 
+   The "Hello, World." program is a great place to start learning a new
+   language.  Observe the program structure below.
+   ~~~~
    #include <iostream>
    using namespace std;
 
@@ -40,7 +43,7 @@ program where execution begins. When the program runs, it starts by
 executing the first statement in ``main`` and it continues, in order, until
 it gets to the last statement, and then it quits.
 
-There is no limit to the number of statements that can be in main, but
+There is no limit to the number of statements that can be in ``main``, but
 the example contains only one. It is a basic **output** statement,
 meaning that it outputs or displays a message on the screen.
 

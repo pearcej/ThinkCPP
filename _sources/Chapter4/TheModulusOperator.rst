@@ -10,6 +10,9 @@ the same as for other operators:
    :language: cpp
    :caption: Modulus Operations
 
+   This program shows the difference between the division operator
+   and the modulus operator.
+   ~~~~
    #include <iostream>
    using namespace std;
 
@@ -37,7 +40,7 @@ x (in base 10). Similarly ``x % 100`` yields the last two digits.
    :answer_a: Use x % 2, and if the result is 0, it is odd.
    :answer_b: Use x % 2, and if the result is  1, it is odd.
    :answer_c: Use x / 2, and if the result is 0, it is odd.
-   :answer_c: Use x / 2, and if the result is  1, it is odd.
+   :answer_d: Use x / 2, and if the result is  1, it is odd.
    :correct: b
    :feedback_a: If you divide a number by two and it has no remainder, that means it is an even number!
    :feedback_b: If you divide a number by two and it has a remainder of one, that means it is an odd number!

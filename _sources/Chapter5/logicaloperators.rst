@@ -17,30 +17,37 @@ Logical operators often provide a way to simplify nested conditional
 statements.
 
 
-.. mchoice:: test_question_five_three
+.. mchoice:: logical_op_1
+   :multiple_answers:
    :answer_a: if (x > 0 && x < 10) {...
    :answer_b: if (x > 0 || x < 10) {...
    :answer_c: if (x > 0 ! x < 10) {...
-   :correct: a
-   :feedback_a: Correct!
-   :feedback_b: || represents "or", but we need both sides of the conditional to be true, not just one
+   :answer_d: if ( !(x < 0) && !(x > 10) ) {...
+   :answer_e: if ( !(x <= 0) && !(x >= 10) ) {...
+   :correct: a,e
+   :feedback_a: This is exactly what the nested conditionals are saying.
+   :feedback_b: || represents "or", but we need both sides of the conditional to be true.
    :feedback_c: The ! operator cannot be used to compare two sides of a conditional.
+   :feedback_d: If x = 0 or if x = 10, this expression will return true when it shouldn't.
+   :feedback_e: If it IS NOT what we don't want, then it IS what we want!
 
-   How would you write the following code using a single conditional?
+   How could you re-write the following code using a single conditional?
 
    ::
 
-       if (x > 0) {
-         if (x < 10) {
-             cout << "x is a positive single digit." << endl;
-           }
+      if (x > 0) {
+        if (x < 10) {
+          cout << "x is a positive single digit" << endl;
         }
+      }
 
-.. dragndrop:: dragndrop_five_two
-    :feedback: Try again!
-    :match_1:  (n%2 == 1 && n == 7)|||true, "and"
-    :match_2: (n%2 == 0 || n + 1 == 8)|||true, "or"
-    :match_3: !(n == 7)|||false, "not"
-    :match_4: !(n >= 10)|||true, "not"
+.. dragndrop:: logical_op_2
+   :feedback: Try again!
+   :match_1: (n * 2 > 10 && n >= 7)|||true, "and"
+   :match_2: (n * 2 > 10 && n < 7)|||false, "and"
+   :match_3: (n%2 == 1 || n == 8)|||true, "or"
+   :match_4: (n%2 == 0 || n == 8)|||false, "or"
+   :match_5: !(n == 7)|||false, "not"
+   :match_6: !(n >= 10)|||true, "not"
 
-    Match the conditional statement to the correct boolean and the meaning of the operator in use, given n = 7.
+   Match the conditional statement to the correct boolean and the meaning of the operator in use, given n = 7.

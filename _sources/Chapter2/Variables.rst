@@ -7,8 +7,13 @@ stores a value.
 
 Just as there are different types of values (integer, character, etc.),
 there are different types of variables. When you create a new variable,
-you have to declare what type it is. The following statement creates a 
-new variable named fred that has type char.
+you have to declare what type it is. 
+
+.. note::
+   In C++, integer variables are declared as type ``int`` and character variables 
+   are declared as type ``char``.
+
+The following statement creates a new variable named fred that has type ``char``.
 
 ::
 
@@ -17,8 +22,8 @@ new variable named fred that has type char.
 This kind of statement is called a **declaration**.
 
 The type of a variable determines what kind of values it can store. A
-char variable can contain characters, and it should come as no surprise
-that int variables can store integers.
+``char`` variable can contain characters, and it should come as no surprise
+that ``int`` variables can store integers.
 
 There are several types in C++ that can store string values, but we are
 going to skip that for now (see Chapter 7).
@@ -42,7 +47,7 @@ declarations:
 
 you could probably make a good guess at what values would be stored in
 them. This example also demonstrates the syntax for declaring multiple
-variables with the same type: hour and minute are both integers (int
+variables with the same type: hour and minute are both integers (``int``
 type).
 
 

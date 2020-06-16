@@ -1,4 +1,4 @@
-What is a Programming Language?
+﻿What is a Programming Language?
 -------------------------------
 
 The programming language you will be learning is C++. It is a high-level language.
@@ -69,7 +69,7 @@ happening in the background, so that if something goes wrong you can
 figure out what it is.
 
 
-.. fillintheblank:: programming_lang_1
+.. fillintheblank:: program_lang_1
 
    A(n) |blank| translates a high-level program line by line, executing 
    commands as they come.  A(n) |blank| translates a high-level program 
@@ -81,7 +81,7 @@ figure out what it is.
      :.*: Try again!
 
 
-.. mchoice:: programming_lang_2
+.. mchoice:: program_lang_2
    :multiple_answers:
    :answer_a: High-level programs are only used for a few special applications.
    :answer_b: Programs written in a high-level language must be translated before they can be run.
@@ -98,7 +98,7 @@ figure out what it is.
    Which is true about a high-level programming language?
 
 
-.. mchoice:: programming_lang_3
+.. mchoice:: program_lang_3
    :answer_a: To translate the program line by line.
    :answer_b: To copy the program from disk to memory and make the computer run the program.
    :answer_c: To translate the program all at once.
@@ -112,7 +112,7 @@ figure out what it is.
    What is the role of an executor?
 
 
-.. dragndrop:: programming_lang_4
+.. dragndrop:: program_lang_4
    :feedback: Try again!
    :match_1: source code|||our program written in C++
    :match_2: object code|||translated version of our program that the computer can understand and execute

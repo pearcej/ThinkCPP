@@ -1,4 +1,4 @@
-.. _formal:
+﻿.. _formal:
 
 Formal and Natural Languages
 ----------------------------
@@ -14,7 +14,7 @@ among numbers and symbols. Chemists use a formal language to represent
 the chemical structure of molecules. And most importantly:
 
 .. Note::
-   Programming languages are formal languages that have been designed
+   Programming languages are **formal languages** that have been designed
    to express computations.
 
 As I mentioned before, formal languages tend to have strict rules about
@@ -37,8 +37,11 @@ subscripts after the element name, not before.
 
 When you read a sentence in English or a statement in a formal language,
 you have to figure out what the structure of the sentence is (although
-in a natural language you do this unconsciously). This process is called
-**parsing**.
+in a natural language you do this unconsciously). 
+
+.. note::
+   The process of examining a program and analysing the syntactic structure
+   is called **parsing**.
 
 For example, when you hear the sentence, “The other shoe fell,” you
 understand that “the other shoe” is the subject and “fell” is the verb.

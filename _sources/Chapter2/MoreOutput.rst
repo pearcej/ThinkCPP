@@ -2,13 +2,16 @@ More Output
 -----------
 
 As I mentioned in the last chapter, you can put as many statements as
-you want in main. For example, to output more than one line:
+you want in ``main``. For example, to output more than one line:
 
 
 .. activecode:: more_output_AC_1
    :language: cpp
    :caption: Two Lines of Output
 
+   This program prints two different statements on two different lines
+   using ``endl``.
+   ~~~~
    #include <iostream>
    using namespace std;
    // main: generate some simple output
@@ -33,13 +36,17 @@ Actually, strings can contain any combination of letters, numbers,
 punctuation marks, and other special characters.
 
 Often it is useful to display the output from multiple output statements
-all on one line. You can do this by leaving out the first endl:
+all on one line. You can do this by leaving out the first ``endl``:
 
 
 .. activecode:: more_output_AC_2
    :language: cpp
    :caption: Two Statements, One Line of Output
 
+   This program prints two different statements on the same line.  Note that
+   there we added a space after "Goodbye," because the compiler doesn't know
+   that we want a space between statements unless we specifically tell it.
+   ~~~~
    #include <iostream>
    using namespace std;
 
@@ -62,6 +69,10 @@ the behavior of the program. For example, I could have written:
    :language: cpp
    :caption: Spaces Removed (messy)
 
+   This program accomplishes the same thing as the one above.  The
+   difference is that there are no spaces separating the different
+   components of each line.  This is a matter of personal preference.
+   ~~~~
    #include <iostream>
    using namespace std;
 
@@ -80,6 +91,11 @@ behavior either, so I could have written:
    :language: cpp
    :caption: Spaces removed, One Line (very messy)
 
+   This program accomplishes the same thing as the previous two, but
+   it only uses one line.  Once again, this is a matter of personal
+   preference, but in my opinion, this format is pretty messy and 
+   relatively hard to follow.
+   ~~~~
    #include <iostream>
    using namespace std;
 

@@ -1,4 +1,4 @@
-What is Debugging?
+﻿What is Debugging?
 ------------------
 
 Programming is a complex process, and since it is done by human beings,
@@ -15,8 +15,11 @@ Compile-time errors
 
 The compiler can only translate a program if the program is
 syntactically correct; otherwise, the compilation fails and you will not
-be able to run your program. **Syntax** refers to the structure of your
-program and the rules about that structure.
+be able to run your program.
+ 
+.. note::
+   **Syntax** refers to the structure of your program and the rules about 
+   that structure.
 
 For example, in English, a sentence must begin with a capital letter and
 end with a period. this sentence contains a syntax error. So does this
@@ -52,17 +55,20 @@ you encounter one.
 Logic errors and semantics
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The third type of error is the **logical** or **semantic** error. If
-there is a logical error in your program, it will compile and run
+The third type of error is the **logical** or **semantic** error. 
+
+.. note::
+   **Semantics** refer to the meaning of the program.
+
+If there is a semantic error in your program, it will compile and run
 successfully, in the sense that the computer will not generate any error
 messages, but it will not do the right thing. It will do something else.
-Specifically, it will do what you told it to do.
+**Specifically, it will do what you told it to do.**
 
 The problem is that the program you wrote is not the program you wanted
-to write. The meaning of the program (its semantics) is wrong.
-Identifying logical errors can be tricky, since it requires you to work
-backwards by looking at the output of the program and trying to figure
-out what it is doing.
+to write. The meaning of the program is wrong. Identifying semantic errors 
+can be tricky, since it requires you to work backwards by looking at the 
+output of the program and trying to figure out what it is doing.
 
 Experimental debugging
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -115,7 +121,7 @@ programming practices.
 
 .. dragndrop:: debugging_2
    :feedback: Try again!
-   :match_1: compile-time error|||an error that surfaces when something is wrong with the structure of your program
+   :match_1: syntax (compile-time) error|||an error that surfaces when something is wrong with the structure of your program
    :match_2: run-time error|||an error that come up when your program is executed
    :match_3: semantic error|||your program does what you told it to do, not what you intended for it to do
 

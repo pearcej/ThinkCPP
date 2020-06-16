@@ -39,6 +39,9 @@ The correct syntax is printTime (hour, minute).
    :language: cpp
    :caption: Understanding Multiple Parameters
 
+   This program shows how the dollar_amount and cent_amount arguments
+   are passed into the printPrice function.
+   ~~~~
    #include <iostream>
    using namespace std;
 

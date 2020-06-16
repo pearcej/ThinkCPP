@@ -1,9 +1,9 @@
 Converting from ``double`` to ``int``
 -----------------------------
 
-As I mentioned, C++ converts ints to doubles automatically if necessary,
+As I mentioned, C++ converts ``int`` s to ``double`` s automatically if necessary,
 because no information is lost in the translation. On the other hand,
-going from a double to an int requires rounding off. C++ doesn’t perform
+going from a ``double`` to an ``int`` requires rounding off. C++ doesn’t perform
 this operation automatically, in order to make sure that you, as the
 programmer, are aware of the loss of the fractional part of the number.
 

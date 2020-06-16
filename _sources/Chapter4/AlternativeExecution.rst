@@ -11,7 +11,8 @@ one gets executed. The syntax looks like:
 
     if (x % 2 == 0) {
       cout << "x is even" << endl;
-    } else {
+    } 
+    else {
       cout << "x is odd" << endl;
     }
 
@@ -35,7 +36,7 @@ function, as follows:
       }
     }
 
-Now you have a function named printParity that will display an
+Now you have a function named ``printParity`` that will display an
 appropriate message for any integer you care to provide. In main you
 would call this function as follows:
 
@@ -57,6 +58,10 @@ type they are. You should resist the temptation to write things like:
    :language: cpp
    :caption: Even or Odd?
 
+   This program shows you how the print parity function works.
+   Feel free to modify the values of number and otherNumber to
+   see how the output is changed.
+   ~~~~
    #include <iostream>
    using namespace std;
 
@@ -109,6 +114,7 @@ type they are. You should resist the temptation to write things like:
 
 
 .. parsonsprob:: alt_execution_2
+   :adaptive:
 
    Construct a block of code that correctly goes through alternative 
    execution for pricing of an entre at a nice restaurant.  If the

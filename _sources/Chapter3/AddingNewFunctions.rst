@@ -3,9 +3,9 @@ Adding New Functions
 
 So far we have only been using the functions that are built into C++,
 but it is also possible to add new functions. Actually, we have already
-seen one function definition: main. The function named main is special
+seen one function definition: ``main``. The function named ``main`` is special
 because it indicates where the execution of the program begins, but the
-syntax for main is the same as for any other function definition:
+syntax for ``main`` is the same as for any other function definition:
 
 ::
 
@@ -14,7 +14,7 @@ syntax for main is the same as for any other function definition:
     }
 
 You can make up any name you want for your function, except that you
-can’t call it main or any other C++ keyword. The list of parameters
+can’t call it ``main`` or any other C++ keyword. The list of parameters
 specifies what information, if any, you have to provide in order to use
 (or **call**) the new function.
 
@@ -28,11 +28,11 @@ write also have no parameters, so the syntax looks like this:
       cout << endl;
     }
 
-This function is named newLine; it contains only a single statement,
-which outputs a newline character, represented by the special value
-endl.
+This function is named ``newLine``; it contains only a single statement,
+which outputs a new line character, represented by the special value
+``endl``.
 
-In main we can call this new function using syntax that is similar to
+In ``main`` we can call this new function using syntax that is similar to
 the way we call the built-in C++ commands:
 
 ::
@@ -66,7 +66,7 @@ space between the lines? We could call the same function repeatedly:
       return 0;
     }
 
-Or we could write a new function, named threeLine, that prints three new
+Or we could write a new function, named ``threeLine``, that prints three new
 lines:
 
 
@@ -74,6 +74,10 @@ lines:
    :language: cpp
    :caption: The threeLine Function
 
+   Here we define the threeLine function, which calls the newLine function
+   three times.  The result is a function that prints three lines after it
+   is called.
+   ~~~~
    #include <iostream>
    using namespace std;
 
@@ -98,16 +102,21 @@ You should notice a few things about this program:
 -  You can call the same procedure repeatedly. In fact, it is quite
    common and useful to do so.
 
--  You can have one function call another function. In this case, main
-   calls threeLine and threeLine calls newLine. Again, this is common
+-  You can have one function call another function. In this case, ``main``
+   calls ``threeLine`` and threeLine calls ``newLine``. Again, this is common
    and useful.
 
--  In threeLine I wrote three statements all on the same line, which is
+-  In ``threeLine`` I wrote three statements all on the same line, which is
    syntactically legal (remember that spaces and new lines usually don’t
    change the meaning of a program). On the other hand, **it is usually a
    better idea to put each statement on a line by itself**, to make your
    program easy to read. I sometimes break that rule in this book to
    save space.
+
+.. note::
+   In general, you'll want to write your code so that it is easy for others
+   to follow.  This is especially important if you choose computer science
+   as a career!
 
 So far, it may not be clear why it is worth the trouble to create all
 these new functions. Actually, there are a lot of reasons, but this
