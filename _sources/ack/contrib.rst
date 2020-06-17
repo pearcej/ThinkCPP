@@ -10,7 +10,7 @@ adding unit tests for C++, and adding a visualizer for C++.
 
 Contributor List
 ==================
-* Barbara Ericson - The effort to make this book interactive was led by Barbara Ericson
+* Barbara Ericson - Led the effort to make this ebook interactive
 * Ewelina Papiez - Added interactive questions to the ebook
 * Mariah Zeweke - Added interactive questions to the ebook
 * Richard Wang - Added interactive questions to the ebook

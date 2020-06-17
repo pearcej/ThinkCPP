@@ -7,18 +7,11 @@ Copyright Notice
 
 | Copyright (C) Barbara Ericson and Allen B. Downey.
 | This ebook in an interactive version of the How to Think Like a Computer
-| Scientist: C++ Version at
+| Scientist: C++ Version by Allen Downey at
 | https://open.umn.edu/opentextbooks/textbooks/how-to-think-like-a-computer-scientist-c-version
 
 License
 ================
-| Permission is granted to copy, distribute and/or modify this document
-| under the terms of the Creative Commons License CC BY-NC.
-|
-| This license lets others remix, adapt, and build upon your work non-commercially,
-| and although their new works must also acknowledge you and be non-commercial,
-| they don’t have to license their derivative works on the same terms.
-| See https://creativecommons.org/licenses/by-nc/4.0/ for more information
 
 .. raw:: html
 
