@@ -45,3 +45,13 @@ Table of Contents
    Chapter13/toctree.rst
    Chapter14/toctree.rst
    Chapter15/toctree.rst
+
+Acknowledgements
+::::::::::::::::
+
+.. toctree::
+   :caption: Acknowledgements
+   :maxdepth: 1
+
+   ack/copyright.rst
+   ack/contrib.rst
