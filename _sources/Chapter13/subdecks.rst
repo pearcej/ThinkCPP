@@ -11,10 +11,10 @@ the specified subset of the deck:
 ::
 
    Deck Deck::subdeck (int low, int high) const {
-     Deck sub (high-low+1);
+     Deck sub (high - low + 1);
 
-     for (size_t i = 0; i<sub.cards.size(); i++) {
-       sub.cards[i] = cards[low+i];
+     for (size_t i = 0; i < sub.cards.size(); i++) {
+       sub.cards[i] = cards[low + i];
      }
      return sub;
    }
@@ -24,16 +24,18 @@ constructor that takes the size of the deck as an argument and that does
 not initialize the cards. The cards get initialized when they are copied
 from the original deck.
 
-The length of the subdeck is ``high-low+1`` because both the low card
-and high card are included. This sort of computation can be confusing,
-and lead to “off-by-one” errors. Drawing a picture is usually the best
-way to avoid them.
+The length of the subdeck is ``high - low + 1`` because both the low card
+and high card are included. 
+
+.. warning::
+   This sort of computation can be confusing and can lead to “off-by-one” 
+   errors. Drawing a picture is usually the best way to avoid them.
 
 As an exercise, write a version of ``findBisect`` that takes a subdeck
 as an argument, rather than a deck and an index range. Which version is
 more error-prone? Which version do you think is more efficient?
 
-.. activecode:: thirteeneight 
+.. activecode:: subdeck_cards_1
    :language: cpp
 
    Try writing the ``findBisect`` function in the commented section
@@ -55,227 +57,195 @@ more error-prone? Which version do you think is more efficient?
    int randomInt (int low, int high);
 
    struct Card {
-     Rank rank;
-     Suit suit;
-     Card ();
-     Card (Suit s, Rank r);
-     void print () const;
-     bool isGreater (const Card& c2) const;
-     bool equals (const Card& c2) const;
+       Rank rank;
+       Suit suit;
+       Card ();
+       Card (Suit s, Rank r);
+       void print () const;
+       bool isGreater (const Card& c2) const;
+       bool equals (const Card& c2) const;
    };
 
    struct Deck {
-     vector<Card> cards;
-     Deck ();
-     Deck (int n);
-     void print () const;
-     void swapCards (int index1, int index2);
-     int findLowestCard (int index);
-     void shuffleDeck ();
-     void sortDeck ();
-     Deck subdeck (int low, int high) const;
+       vector<Card> cards;
+       Deck ();
+       Deck (int n);
+       void print () const;
+       void swapCards (int index1, int index2);
+       int findLowestCard (int index);
+       void shuffleDeck ();
+       void sortDeck ();
+       Deck subdeck (int low, int high) const;
    };
 
    int findBisect (Deck subdeck, Card card) {
-     // ``findBisect`` should search through the subdeck and 
-     // return the location of card. If card is not found in 
-     // subdeck, it should return -1.
-     // Delete the return 0 and write your implementation here.
-     return 0;
+       // ``findBisect`` should search through the subdeck and 
+       // return the location of card. If card is not found in 
+       // subdeck, it should return -1.
+       // Delete the return 0 and write your implementation here.
+       return 0;
    }
 
    int main() {
-     Deck deck;
-     Deck clubs = deck.subdeck(0, 12);
-     clubs.print();
-     Card card1 (CLUBS, SEVEN);
-     Card card2 (DIAMONDS, KING);
-     cout << endl;
-     cout << "The Seven of Clubs is at index " << findBisect (clubs, card1) << endl;
-     cout << "The King of Diamonds is at index " << findBisect (clubs, card2) << endl;
+       Deck deck;
+       Deck clubs = deck.subdeck(0, 12);
+       clubs.print();
+       Card card1 (CLUBS, SEVEN);
+       Card card2 (DIAMONDS, KING);
+       cout << endl;
+       cout << "The Seven of Clubs is at index " << findBisect (clubs, card1) << endl;
+       cout << "The King of Diamonds is at index " << findBisect (clubs, card2) << endl;
    }
    ====
    Card::Card () {
-     suit = SPADES;  rank = ACE;
+       suit = SPADES;  rank = ACE;
    }
 
    Card::Card (Suit s, Rank r) {
-     suit = s;  rank = r;
+       suit = s;  rank = r;
    }
 
    void Card::print () const {
-     vector<string> suits (4);
-     suits[0] = "Clubs";
-     suits[1] = "Diamonds";
-     suits[2] = "Hearts";
-     suits[3] = "Spades";
+       vector<string> suits (4);
+       suits[0] = "Clubs";
+       suits[1] = "Diamonds";
+       suits[2] = "Hearts";
+       suits[3] = "Spades";
 
-     vector<string> ranks (14);
-     ranks[1] = "Ace";
-     ranks[2] = "2";
-     ranks[3] = "3";
-     ranks[4] = "4";
-     ranks[5] = "5";
-     ranks[6] = "6";
-     ranks[7] = "7";
-     ranks[8] = "8";
-     ranks[9] = "9";
-     ranks[10] = "10";
-     ranks[11] = "Jack";
-     ranks[12] = "Queen";
-     ranks[13] = "King";
+       vector<string> ranks (14);
+       ranks[1] = "Ace";
+       ranks[2] = "2";
+       ranks[3] = "3";
+       ranks[4] = "4";
+       ranks[5] = "5";
+       ranks[6] = "6";
+       ranks[7] = "7";
+       ranks[8] = "8";
+       ranks[9] = "9";
+       ranks[10] = "10";
+       ranks[11] = "Jack";
+       ranks[12] = "Queen";
+       ranks[13] = "King";
 
-      cout << ranks[rank] << " of " << suits[suit] << endl;
+       cout << ranks[rank] << " of " << suits[suit] << endl;
    }
 
    bool Card::isGreater (const Card& c2) const {
-      if (suit > c2.suit) return true;
-      if (suit < c2.suit) return false;
-      if (rank > c2.rank) return true;
-      if (rank < c2.rank) return false;
-      return false;
+       if (suit > c2.suit) return true;
+       if (suit < c2.suit) return false;
+       if (rank > c2.rank) return true;
+       if (rank < c2.rank) return false;
+       return false;
    }
 
-   bool Card::equals (const Card& c2) const
-    {
-      return (rank == c2.rank && suit == c2.suit);
-    }
+   bool Card::equals (const Card& c2) const {
+       return (rank == c2.rank && suit == c2.suit);
+   }
 
-   Deck::Deck ()
-   {
-     vector<Card> temp (52);
-     cards = temp;
+   Deck::Deck () {
+       vector<Card> temp (52);
+       cards = temp;
 
-     int i = 0;
-     for (Suit suit = CLUBS; suit <= SPADES; suit = Suit(suit+1)) {
-       for (Rank rank = ACE; rank <= KING; rank = Rank(rank+1)) {
-         cards[i].suit = suit;
-         cards[i].rank = rank;
-         i++;
+       int i = 0;
+       for (Suit suit = CLUBS; suit <= SPADES; suit = Suit(suit+1)) {
+           for (Rank rank = ACE; rank <= KING; rank = Rank(rank+1)) {
+               cards[i].suit = suit;
+               cards[i].rank = rank;
+               i++;
+           }
        }
-     }
    }
 
-   Deck::Deck (int size)
-   {
-      vector<Card> temp (size);
-      cards = temp;
-    }
+   Deck::Deck (int size) {
+        vector<Card> temp (size);
+        cards = temp;
+   }
 
    void Deck::print () const {
-     for (size_t i = 0; i < cards.size(); i++) {
-       cards[i].print ();
-     }
+       for (size_t i = 0; i < cards.size(); i++) {
+           cards[i].print ();
+       }
    }
 
    int randomInt (int low, int high) {
-      srand (time(NULL));
-      int x = random ();
-      int y = x % (high - low + 1) + low; 
-      return y;
+       srand (time(NULL));
+       int x = random ();
+       int y = x % (high - low + 1) + low; 
+       return y;
    }
 
    void Deck::swapCards (int index1, int index2) {
-      Card temp = cards[index1];
-      cards[index1] = cards[index2]; 
-      cards[index2] = temp;
+       Card temp = cards[index1];
+       cards[index1] = cards[index2]; 
+       cards[index2] = temp;
    }
 
    int Deck::findLowestCard (int index) {
-      int min = index;
-      for (size_t i = index; i < cards.size(); ++i) { 
-         if (cards[min].isGreater(cards[i])) { 
-            min = i;
-         }
+       int min = index;
+       for (size_t i = index; i < cards.size(); ++i) { 
+           if (cards[min].isGreater(cards[i])) { 
+               min = i;
+           }
       }
       return min;
    }
 
    void Deck::shuffleDeck () {
-     for (size_t i = 0; i < cards.size(); i++) {
-       int x = randomInt (i, cards.size() - 1);
-       swapCards (i, x);
-     }
+       for (size_t i = 0; i < cards.size(); i++) {
+           int x = randomInt (i, cards.size() - 1);
+           swapCards (i, x);
+       }
    }
 
    void Deck::sortDeck () {
-     for (size_t i = 0; i < cards.size(); i++) {
-       int x = findLowestCard (i);
-       swapCards (i, x);
-     }
+       for (size_t i = 0; i < cards.size(); i++) {
+           int x = findLowestCard (i);
+           swapCards (i, x);
+       }
    }
 
    Deck Deck::subdeck (int low, int high) const {
-     Deck sub (high-low+1);
+       Deck sub (high-low+1);
 
-     for (size_t i = 0; i<sub.cards.size(); i++) {
-       sub.cards[i] = cards[low+i];
-     }
-     return sub;
+       for (size_t i = 0; i<sub.cards.size(); i++) {
+           sub.cards[i] = cards[low+i];
+       }
+       return sub;
    }
 
-.. reveal:: 13_8_1
-   :showtitle: Reveal Problem
+.. reveal:: subdecks_reveal_1
+   :showtitle: findBisect Help
    :hidetitle: Hide Problem
 
-   .. parsonsprob:: question13_8_1
+   .. parsonsprob:: subdecks_help_1
       :numbered: left
       :adaptive:
 
-      Let's write the code for this version of the ``findBisect`` function. 
-      ``findBisect`` should take a subdeck and a card as parameters and
+      Let's write the code for this version of the findBisect function. 
+      findBisect should take a subdeck and a card as parameters and
       return the index of the card in the subdeck or -1 if it's not found.
       -----
       int findBisect (Deck subdeck, Card card) {
       =====
       int findBisect (Subdeck subdeck, Card card) {                         #paired
       =====
-         if (subdeck.size() == 1 && !subdeck[0].equals(card)) return -1;
+       if (subdeck.size() == 1 && !subdeck[0].equals(card)) return -1;
       =====
-         int mid = subdeck.size() / 2;
+        int mid = subdeck.size() / 2;
       =====
-         int mid = (high + low) / 2;                         #paired
+        int mid = (high + low) / 2;                         #paired
       =====
-         if (subdeck[mid].equals(card)) return mid;
+       if (subdeck[mid].equals(card)) return mid;
       =====
-         else if (subdeck[mid].isGreater(card)) {
-           return findBisect (subdeck.subdeck(0, mid - 1), card);
-         }  
+       else if (subdeck[mid].isGreater(card)) {
+        return findBisect (subdeck.subdeck(0, mid - 1), card);
+       }  
       =====
-         else if (subdeck[mid].isGreater(card)) {
-           return findBisect (subdeck.subdeck(mid + 1, subdeck.size()), card);                         #paired
-         } 
+       else if (subdeck[mid].isGreater(card)) {                         #paired
+        return findBisect (subdeck.subdeck(mid + 1, subdeck.size()), card);
+       } 
       =====
-         else {
-           return findBisect (subdeck.subdeck(mid + 1, subdeck.size()), card);
-         }
-      }
-
-.. mchoice:: question13_8_2
-   :practice: T
-   :answer_a: 4
-   :answer_b: 9
-   :answer_c: 49
-   :answer_d: Invalid num! Please try again.
-   :answer_e: Code will not run.
-   :correct: c
-   :feedback_a: Incorrect! Try running it with the active code.
-   :feedback_b: Incorrect! Try running it with the active code.
-   :feedback_c: Correct!
-   :feedback_d: Incorrect! Try running it with the active code.
-   :feedback_e: Incorrect! Try running it with the active code.
-
-   What is the correct output of the code below?
-
-   .. code-block:: cpp
-
-      int main() {
-        Deck deck;
-        Deck sub = deck.subdeck(0, 12);
-        clubs.print();
-        Card card1 (CLUBS, SEVEN);
-        Card card2 (DIAMONDS, KING);
-        cout << endl;
-        cout << "The Seven of Clubs is at index " << findBisect (clubs, card1) << endl;
-        cout << "The King of Diamonds is at index " << findBisect (clubs, card2) << endl;
+       else {
+        return findBisect (subdeck.subdeck(mid + 1, subdeck.size()), card);
+       }
       }
