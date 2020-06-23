@@ -133,48 +133,52 @@ bothers you, you can also use tab characters, like below.
    :answer_c: Taking a very specific task and making it more applicable to other situations.
    :answer_d: Creating two functions with the same purpose but different names.
    :correct: c
-   :feedback_a: Try again!
-   :feedback_b: Try again!
-   :feedback_c: Correct!
-   :feedback_d: Try again!
+   :feedback_a: This may be a possible way to generalize, but not the purpose.
+   :feedback_b: This is not the purpose of generalization.
+   :feedback_c: This makes your code more versatile.
+   :feedback_d: This is not the purpose of generalization.
 
    What is the purpose of generalization?
-
 
 .. parsonsprob:: encapsulation_generalization_2
    :numbered: left
    :adaptive:
 
-   Create a function that represents encapsulation and generalization. The function should take in an integer, n, and print out its multiples.
+   Create a function called ``powersOfTwo`` which prints out a table with the powers of two up to :math:`2^{5}`.
    -----
-   void printMultiples (int n) {
+   void powersOfTwo () {
+   =====
+     int x = 1;
+   =====
+     while (x <= 5) {
+   =====
+       cout << x << "\t" << pow(2, x) << endl;
+   =====
+       cout << x << "\t" << pow(x, 2) << endl;  #paired
+   =====
+       x++;
+     }
+   }
 
-   void printMultiples (int n) #distractor
+.. parsonsprob:: encapsulation_generalization_3
+   :numbered: left
+   :adaptive:
 
-   printMultiples (int n) { #distractor
-
-   void printMultiples (string n) { #distractor
-
-     int i = 1;
-
-     int i = 1 #distractor
-
-     while (i <= 6) {
-
-       cout << n*i << "   ";
-
-       i = i + 1; }
-
-     cout << endl; }
-
-
-.. mchoice:: encapsulation_generalization_3
-   :answer_a: The while loop, which allows the code to execute until the statement within the parenthesis is no longer true.
-   :answer_b: The first line, which declares the name, parameter, and return type.
-   :answer_c: The last line, which prints out a newline.
-   :correct: b
-   :feedback_a: Try again!
-   :feedback_b: Correct!
-   :feedback_c: Try again!
-
-   What is the example of encapsulation in the you solved code above?
+   Now let's generalize the function to print out the powers of a parameter n up to :math:`n^{5}`. Create a 
+   function called ``powersOfn`` which takes an int n as a parameter.
+   -----
+   void powersOfn (int n) {
+   =====
+   void powersOfn (int n) {  #paired
+   =====
+     int x = 1;
+   =====
+     while (x <= 5) {
+   =====
+       cout << x << "\t" << pow(n, x) << endl;
+   =====
+       cout << x << "\t" << pow(2, x) << endl;  #paired
+   =====
+       x++;
+     }
+   }

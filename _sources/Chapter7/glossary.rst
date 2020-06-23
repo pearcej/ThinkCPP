@@ -43,10 +43,3 @@ concatenate:
 
 
     Match the definition to the term.
-
-.. [1]
-   You might be wondering what I mean by **class**.It will be a few more
-   chapters before I can give a complete definition, but for now a class
-   is a collection of functions that defines the operations we can
-   perform on some type. The ``string`` class contains all the functions
-   that apply to ``string``\ \ s.

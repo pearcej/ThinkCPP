@@ -61,10 +61,10 @@ tempting to interpret a statement like ``a = b`` as a statement of
 equality. It is not!
 
 .. warning::
-   An assignment statement uses a single ``=`` symbols. For example, ``x = 3``
+   An assignment statement uses a single ``=`` symbol. For example, ``x = 3``
    assigns the value of 3 to the variable ``x``. On the other hand, an equality
-   statement uses two ``=`` symbols. For example, ``x == 3`` is a boolean that is true
-   if ``x`` is equal to 3 and is false otherwise.
+   statement uses two ``=`` symbols. For example, ``x == 3`` is a boolean that evaluates
+   to true if ``x`` is equal to 3 and evaluates to false otherwise.
 
 First of all, equality is commutative, and assignment is not. For
 example, in mathematics if :math:`a = 7` then :math:`7 = a`. But in C++
@@ -106,7 +106,7 @@ and debug.
    :answer_c: 10 ! 10 !
    :answer_d: 1!1!
    :correct: a
-   :feedback_a: Correct!
+   :feedback_a: There are no spaces between the numbers.
    :feedback_b: Remember, in C++ spaces must be printed.
    :feedback_c: Carefully look at the values being assigned.
    :feedback_d: Carefully look at the values being assigned.
@@ -124,4 +124,31 @@ and debug.
       x = 1;
       cout << x << "!";
       return 0;
+    }
+
+.. mchoice:: multiple_assignment_3
+   :answer_a: True
+   :answer_b: False
+   :answer_c: 0
+   :answer_d: 1
+   :correct: d
+   :feedback_a: Remember that printing a boolean results in either 0 or 1.
+   :feedback_b: Remember that printing a boolean results in either 0 or 1.
+   :feedback_c: Is x equal to y?
+   :feedback_d: x is equal to y, so the output is 1.
+
+   What is the correct output?
+
+   .. code-block:: cpp
+
+    #include <iostream>
+    using namespace std;
+
+    int main () {
+      int x = 0;
+      x = 5;
+      int y = x;
+      y = 5;
+      bool z = x == y;
+      cout << z;
     }

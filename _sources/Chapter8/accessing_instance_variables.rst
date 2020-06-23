@@ -54,10 +54,10 @@ are legal.
    :answer_c: ``thing`` is the instance variable, ``cube`` is the object
    :answer_d: ``cube`` is the instance variable, ``thing`` is the object
    :correct: d
-   :feedback_a: ``string`` is a data type
-   :feedback_b: ``x`` is the local variable
+   :feedback_a: ``string`` is a data type.
+   :feedback_b: ``x`` is the local variable.
    :feedback_c: Consider the placement of ``thing`` -- it is before the ``.``
-   :feedback_d: Correct!
+   :feedback_d: Yes, we access the instance variable ``cube`` of the object ``thing`` using the dot operator.
 
    In ``string x = thing.cube;``, what is the object and what is the instance variable we are reading the value of?
 
@@ -70,7 +70,7 @@ are legal.
    :answer_d: 7.02.053
    :correct: b
    :feedback_a: Spaces need to be printed out like any other output.
-   :feedback_b: Correct!
+   :feedback_b: There are no spaces in the correct output.
    :feedback_c: The order in which the variables are printed out do not need to match the order in which they are declared.
    :feedback_d: The order in which the variables are printed out do not need to match the order in which they are declared.
 
@@ -101,6 +101,6 @@ are legal.
    :feedback_a: No parentheses are needed.
    :feedback_b: You should be assigning to the local variable x.
    :feedback_c: You should be assigning to the local variable x.
-   :feedback_d: Correct!
+   :feedback_d: This is the correct way to assign the value of y to x.
 
    You want to go to the object named ``circle`` and get the value of ``y``, then assign it to the local variable ``x``. How would you do that?

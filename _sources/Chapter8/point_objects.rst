@@ -68,10 +68,11 @@ object with two named instance variables.
    :correct: c
    :feedback_a: This declaration would not work for the specific code block below.
    :feedback_b: The specific name of the structure should be used, not its type.
-   :feedback_c: Correct!
+   :feedback_c: Yes, we can access and modify the instance variables using the dot operator.
    :feedback_d: The semi-colon is missing at the end.
 
-   Which of the following would be the correct way to create a variable with a point type, given the code below.
+   Which of the following would be the correct way to initialize the instance variables
+   of the ``Point`` object?
 
    .. code-block:: cpp
 
@@ -111,9 +112,9 @@ object with two named instance variables.
    :answer_c: after the include statements
    :answer_d: both a and c
    :correct: d
-   :feedback_a: Try again!
-   :feedback_b: Try again!
-   :feedback_c: Try again!
-   :feedback_d: Correct!
+   :feedback_a: Read over the other answer choices as well.
+   :feedback_b: The struct cannot be defined after the main function or else it can't be used in the program.
+   :feedback_c: Read over the other answer choices as well.
+   :feedback_d: Yes, structs are usually defined after the include statements and before the main function.
 
    ``struct`` definitions occur...

@@ -73,7 +73,7 @@ depend on your programming environment.
    :answer_b: x = "Hello";
    :answer_c: string x;
    :correct: a
-   :feedback_a: Correct!
+   :feedback_a: This is the correct way to initialize a string.
    :feedback_b: This is an assignment.
    :feedback_c: This is a declaration.
 

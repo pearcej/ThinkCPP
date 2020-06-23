@@ -93,7 +93,7 @@ from 0 to 5. To get the last character, you have to subtract 1 from
    :correct: b
    :feedback_a: Take a look at the index calculation again, s.length()-5.
    :feedback_b: Yes, s.length() is 12 and 12-5 is 7.  Use 7 as index and remember to start counting with 0.
-   :feedback_c: s is at index 11
+   :feedback_c: s is at index 11.
    :feedback_d: You subtract 5 before using the index operator so it will work.
 
 

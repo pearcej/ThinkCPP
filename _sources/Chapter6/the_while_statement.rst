@@ -13,18 +13,16 @@ Using a ``while`` statement, we can rewrite ``countdown``:
   #include <iostream>
   using namespace std;
 
-  int countdown(int n) {
+  void countdown (int n) {
       while (n > 0) {
           cout << n << endl;
           n = n-1;
       }
       cout << "Blastoff!" << endl;
-      return 0;
   }
 
   int main() {
-      countdown(9);
-      return 0;
+      countdown (9);
   }
 
 You can almost read a ``while`` statement as if it were English. What
@@ -107,9 +105,9 @@ has been able to prove it *or* disprove it!
    :answer_b: n != 0
    :answer_c: n % 2 == 1
    :correct: a
-   :feedback_a: Correct! A single equal sign is the assignment operator, not comparison
-   :feedback_b: This would be valid because it means the loop would run while n is not equal to 0
-   :feedback_c: This would be valid because it mean the loop would run until n was an even number
+   :feedback_a: A single equal sign is the assignment operator, not comparison.
+   :feedback_b: This would be valid because it means the loop would run while n is not equal to 0.
+   :feedback_c: This would be valid because it mean the loop would run until n was an even number.
 
 
    Which of the following is NOT a valid condition for a while statement?
@@ -121,9 +119,9 @@ has been able to prove it *or* disprove it!
    :answer_c: You cannot compare n to 0 in while loop.  You must compare it to another variable.
    :answer_d: In the while loop body, we must set n to False, and this code does not do that.
    :correct: a
-   :feedback_a: The loop will run as long as n is positive.  In this case, we can see that n will never become non-positive.
+   :feedback_a: The loop will run as long as n is positive. In this case, we can see that n will never become non-positive.
    :feedback_b: While it is true that answer will always be positive, answer is not considered in the loop condition.
-   :feedback_c: It is perfectly valid to compare n to 0.  Though indirectly, this is what causes the infinite loop.
+   :feedback_c: It is perfectly valid to compare n to 0. Though indirectly, this is what causes the infinite loop.
    :feedback_d: The loop condition must become False for the loop to terminate, but n by itself is not the condition in this case.
 
    The following code contains an infinite loop.  Which is the best explanation for why the loop does not terminate?
