@@ -99,7 +99,7 @@ and that outputs the letters backwards, all on one line.
    :answer_b: 1
    :answer_c: 2
    :correct: b
-   :feedback_a: Incorrect, i goes through the odd numbers starting at 1.
+   :feedback_a: i goes through the odd numbers starting at 1.
    :feedback_b: Yes, i goes through the odd numbers starting at 1.  o is at position 1 and 8.
    :feedback_c: There are 2 o characters but idx does not take on the correct index values for both.
 

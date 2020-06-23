@@ -41,7 +41,7 @@ number of a’s.
    :correct: c
    :feedback_a: Notice that x is negative.
    :feedback_b: Notice that the value of x is incremented before it is printed.
-   :feedback_c: Correct! The value of x is incremented before it is printed so the first value printed is -4.
+   :feedback_c: The value of x is incremented before it is printed so the first value printed is -4.
 
 
    What does the following code print?

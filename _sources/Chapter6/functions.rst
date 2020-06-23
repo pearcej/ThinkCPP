@@ -157,9 +157,9 @@ the function many times with rewriting it each time.
    :answer_c: Functions facilitate both recursion and iteration.
    :answer_d: None of the above.
    :correct: d
-   :feedback_a: Try again!
-   :feedback_b: Try again!
-   :feedback_c: Try again!
-   :feedback_d: Correct!
+   :feedback_a: The reusability of functions is very useful.
+   :feedback_b: By abstracting blocks of code, functions make your code easier to read and understand.
+   :feedback_c: Recursive functions and iterative functions are useful.
+   :feedback_d: All of the choices above are reasons for why functions are useful.
 
    What is of these is NOT a reason that functions are useful?

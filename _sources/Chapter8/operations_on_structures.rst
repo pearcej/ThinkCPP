@@ -96,10 +96,10 @@ The output of this program is ``3, 4``.
    :answer_d: ==
    :answer_e: +
    :correct: a, c, d, e
-   :feedback_a: Correct!
-   :feedback_b: The assignment operators does work fro structures.
-   :feedback_c: Correct!
-   :feedback_d: Correct!
-   :feedback_e: Correct!
+   :feedback_a: The modulo operator does not work on structures.
+   :feedback_b: The assignment operator does work on structures.
+   :feedback_c: The greater than operator does not work on structures.
+   :feedback_d: The equality operator does not work on structures.
+   :feedback_e: The addition operator does not work on structures.
 
    Which operators do NOT work on structures. Select all that apply.

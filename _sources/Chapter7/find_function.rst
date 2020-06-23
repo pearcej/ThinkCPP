@@ -27,7 +27,7 @@ character appears.
       cout << another_index << endl;
   }
 
-This example finds the index of the letter ``’a’`` in the string. In
+This example finds the index of the letter ``'a'`` in the string. In
 this case, the letter appears three times, so it is not obvious what
 ``find`` should do. According to the documentation, it returns the index
 of the *first* appearance, so the result is 1. If the given letter does

@@ -82,7 +82,7 @@ parameters instead of four ``double``\ s.
    :correct: c
    :feedback_a: Take a close look at the printOppositeCoordinate function.
    :feedback_b: Take a close look at the printOppositeCoordinate function.
-   :feedback_c: Correct!
+   :feedback_c: Yes, this is the correct output.
    :feedback_d: Take a close look at the printOppositeCoordinate function.
 
    What will print?

@@ -124,4 +124,3 @@ very strange result, at least in my development environment.
       cout << "language" + "action" + "adjective" << endl; #distractor
    =====
    }
-

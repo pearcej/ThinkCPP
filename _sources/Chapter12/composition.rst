@@ -23,10 +23,10 @@ combinations, using ``Card`` objects as a case study.
    :answer_c: You can never have vectors that contain other vectors, but you can have objects that contain other objects.
    :answer_d: You can never have vectors that contain other vectors, nor objects that contain other objects.
    :correct: a
-   :feedback_a: Correct! This is called composition!
-   :feedback_b: Incorrect! In this chapter you will see how you can have objects that contain other objects.
-   :feedback_c: Incorrect! In this chapter you will see how you can have vectors that contain other vectors.
-   :feedback_d: Incorrect! Vectors and objects can have nested compositons!
+   :feedback_a: This is called composition!
+   :feedback_b: In this chapter you will see how you can have objects that contain other objects.
+   :feedback_c: In this chapter you will see how you can have vectors that contain other vectors.
+   :feedback_d: Vectors and objects can have nested compositons!
 
    Which of the following statements is correct?
 

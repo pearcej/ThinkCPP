@@ -78,12 +78,12 @@ So far, so good. The next step is to **encapsulate** and **generalize**.
    :answer_c: Change the second output statement to say cout << endl << endl;
    :answer_d: This code already prints each multiple on its own line.
    :correct: a
-   :feedback_a: Correct!
+   :feedback_a: The addition of the endl will print the multiples of three on separate lines.
    :feedback_b: A newline character must be used in conjunction with a string. In this case, we are outputting an integer. To use a newline character in this scenario you must use quotes around it. (ex. "\n")
    :feedback_c: This would simply print out two new lines after all of the multiples have already printed on one line.
    :feedback_d: This code prints all multiples out on one line.
 
-   Currently, the code below prints all of the multiples of 3 on one line. How can you change the output so that each multiple prints on its own line?
+   Currently, the code below prints all of the multiples of three on one line. How can you change the output so that each multiple prints on its own line?
 
    .. code-block:: cpp
 

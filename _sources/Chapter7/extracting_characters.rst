@@ -65,8 +65,8 @@ the square brackets.
    :answer_c: 2
    :correct: b
    :feedback_a: Don't forget that computer scientists do not start counting at 1!
-   :feedback_b: Correct!
-   :feedback_c: This would access the letter "k"
+   :feedback_b: Yes, this would access the letter "b".
+   :feedback_c: This would access the letter "k".
 
 
    What would replace the "?" in order to access the letter "b" in the string below?
