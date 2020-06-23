@@ -64,7 +64,7 @@ phil.
    :feedback_c: Correct!
    :feedback_d: A parameter would be located within the parentheses next to the function's name.
 
-   How many local variables and parameters does main have?
+   How many local variables and parameters does ``main`` have?
 
    ::
 
@@ -92,7 +92,7 @@ phil.
    :feedback_c: A local variable exists when a variable is declared within a function.
    :feedback_d: A local variable exists when a variable is declared within a function.
 
-   How many local variables and parameters does printHelloName have?
+   How many local variables and parameters does ``printHelloName`` have?
 
    ::
 

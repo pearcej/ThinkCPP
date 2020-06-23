@@ -88,7 +88,7 @@ line is being created infinitely.
        }
 
        int main() {
-         void isNegative(-10);
+         isNegative(-10);
        }
 
 
@@ -112,7 +112,7 @@ line is being created infinitely.
        using namespace std;
 
        int main() {
-         void isNegative(10);
+         isNegative(10);
        }
 
 
@@ -144,5 +144,5 @@ line is being created infinitely.
        }
 
        int main() {
-         void isNegative(10);
+         isNegative(10);
        }

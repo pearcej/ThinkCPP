@@ -35,5 +35,15 @@ invoked with the parameter n = 4.
    :feedback_c: If nLines could reach its base case, it could be done in 5 function calls, but does it ever reach the base case?
    :feedback_d: The nLines function never reaches its base case, so the stack diagram would be infinitely long.
 
-   Refer to the ``nLines`` function on the previous page.  How many instances
-   of ``nLines`` would there be in the stack diagram if we begin with n = 4?
+   Refer to the ``nLines`` function below.  It is the same as the ``nLines``
+   function defined on the previous page.  How many instances of ``nLines``
+   would there be in the stack diagram if we begin with n = 4?
+
+   ::
+     
+       void nLines(int n) {
+         if (n > 0) {
+           cout << endl;
+           nLines(n + 1);
+         }
+       }

@@ -180,7 +180,7 @@ The key aspects of the process are:
    :feedback_c: Incremental development uses step by step debugging in order to avoid the difficulty this would present.
    :feedback_d: This is good practice, as long as it doesn't make the program difficult to read.
 
-   Which of the following is not a key aspect of the incremental development process?
+   Which of the following is **not** a key aspect of the incremental development process?
 
 
 .. mchoice:: program_dvlmt_3

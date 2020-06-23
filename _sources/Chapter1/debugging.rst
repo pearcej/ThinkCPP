@@ -122,7 +122,7 @@ programming practices.
 .. dragndrop:: debugging_2
    :feedback: Try again!
    :match_1: syntax (compile-time) error|||an error that surfaces when something is wrong with the structure of your program
-   :match_2: run-time error|||an error that come up when your program is executed
+   :match_2: run-time error|||an error that comes up when your program is executed
    :match_3: semantic error|||your program does what you told it to do, not what you intended for it to do
 
    Match each term to its definition!

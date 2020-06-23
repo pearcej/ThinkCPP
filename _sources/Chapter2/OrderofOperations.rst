@@ -12,7 +12,7 @@ started:
 
 -  If the operators have the same precedence they are evaluated from
    left to right. So in the expression ``minute * 100 / 60``, the multiplication
-   happens first, yielding 5900 / 60, which in turn yields 98. If the
+   happens first, yielding ``5900 / 60``, which in turn yields 98. If the
    operations had gone from right to left, the result would be 59 * 1
    which is 59, which is wrong.
 
@@ -59,3 +59,63 @@ started:
 
    - :[Pp][Aa][Rr][Ee][Nn][Tt][Hh][Ee][Ss][Ee][Ss]: Correct!
      :.*: Try again!
+
+
+The next 4 questions walk you through an example of the rules of precedence.
+Answer them in order to check what you remember about the order of operations!
+
+
+.. clickablearea:: order_of_operations_3
+   :question: Click on ALL PARTS of the expression that get evaluated first.  For example, if "1 + 1" gets evaluated first, click on "1", "+", and "1".
+   :iscode:
+   :feedback: Try again!
+
+   :click-incorrect:1:endclick: :click-incorrect:+:endclick: :click-incorrect:2:endclick: :click-incorrect:*:endclick: ( :click-correct:10:endclick: :click-correct:-:endclick: :click-correct:2:endclick: ) :click-incorrect:/:endclick: :click-incorrect:4:endclick:
+
+
+Once you've submitted your answer for Question 3, click on Question 4 below.
+
+
+.. reveal:: reveal1
+   :showtitle: Question 4
+   :hidetitle: Hide Content
+
+   .. clickablearea:: order_of_operations_4
+      :question: Click on ALL PARTS of the expression that get evaluated NEXT.  For example, if "1 + 1" gets evaluated first, click on "1", "+", and "1".
+      :iscode:
+      :feedback: Try again!
+
+      :click-incorrect:1:endclick: :click-incorrect:+:endclick: :click-correct:2:endclick: :click-correct:*:endclick: :click-correct:8:endclick: :click-incorrect:/:endclick: :click-incorrect:4:endclick:
+
+
+Once you've submitted your answer for Question 4, click on Question 5 below.
+
+
+.. reveal:: reveal2
+   :showtitle: Question 5
+   :hidetitle: Hide Content
+
+   .. clickablearea:: order_of_operations_5
+      :question: Click on ALL PARTS of the expression that get evaluated NEXT.  For example, if "1 + 1" gets evaluated first, click on "1", "+", and "1".
+      :iscode:
+      :feedback: Try again!
+
+      :click-incorrect:1:endclick: :click-incorrect:+:endclick: :click-correct:16:endclick: :click-correct:/:endclick: :click-correct:4:endclick:
+
+
+Once you've submitted your answer for Question 5, click on Question 6 below.
+
+
+.. reveal:: reveal3
+   :showtitle: Question 6
+   :hidetitle: Hide Content
+
+   ::
+
+       1 + 5
+
+   is the only operation remaining.  I'm not going to ask you any questions
+   about it, I'm just going to ask you to wrap your head around the fact that
+   the ``+`` operator appeared **first** in the calculation, but it was the **last**
+   operator to be evaluated.  The order of operations can be kind of confusing
+   at times, but I think you've got a good grasp of the concept!

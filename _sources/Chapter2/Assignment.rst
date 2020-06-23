@@ -52,8 +52,8 @@ sometimes converts things automatically. But for now you should remember
 that as a general rule variables and values have the same type, and
 we’ll talk about special cases later.
 
-Another source of confusion is that some ``string`` s *look* like integers,
-but they are not. For example, the ``string`` "123", which is made up of the
+Another source of confusion is that some strings *look* like integers,
+but they are not. For example, the string "123", which is made up of the
 characters 1, 2 and 3, is not the same thing as the *number* 123. This
 assignment is illegal:
 
@@ -98,6 +98,7 @@ assignment is illegal:
 
 
 .. parsonsprob:: assignment_3
+   :numbered: left
    :adaptive:
    
    Construct a main function that assigns "Hello" to the variable h, then prints out h's value.

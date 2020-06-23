@@ -84,14 +84,16 @@ result will go. Expressions do not represent storage locations, only
 values. So the following is illegal: ``minute + 1 = hour;``.
 
 
-.. mchoice:: composition_1
-   :answer_a: Change the fourth line within main to **pets = dogs + cats;**
-   :answer_b: Change the third line within main to **int pets = dogs;**
-   :answer_c: Change the fourth line within main to **pets == dogs + cats;**
+.. mchoice:: compos_1
+   :answer_a: Change the fourth line in main to pets = dogs + cats;
+   :answer_b: Change the fourth line in main to int pets = dogs + cats;
+   :answer_c: Change the fourth line in main to pets == dogs + cats;
+   :answer_d: Change the fourth line in main to int pets == dogs + cats;
    :correct: a
-   :feedback_a: Correct!
-   :feedback_b: The variables were assigned as two different types, so they wouldn't both need to be changed.
-   :feedback_c: Yes, variable d is a char because it was assigned as a single character with single quotes around it.
+   :feedback_a: Assignment statements operate such that the evaluated expression on the right is assigned to the variable on the left.
+   :feedback_b: pets has already been declared as an int.
+   :feedback_c: The == operator checks if the left side EQUALS the right side.  It is not the correct operator here.
+   :feedback_d: pets has already been declared as an int.  Also, the == operator is not the proper choice here.
 
    What must be changed in order for this code block to work?
 
@@ -110,7 +112,7 @@ values. So the following is illegal: ``minute + 1 = hour;``.
        }
 
 
-.. fillintheblank:: composition_2
+.. fillintheblank:: compos_2
 
    The left-hand side of an assignment statement has to be a |blank| 
    name, not an expression.
@@ -119,7 +121,7 @@ values. So the following is illegal: ``minute + 1 = hour;``.
      :.*: Try again!
 
 
-.. fillintheblank:: composition_3
+.. fillintheblank:: compos_3
 
    In programming, another word for **combine** is |blank|.
 

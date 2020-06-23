@@ -91,7 +91,7 @@ and the special value ``endl``. Very impressive!
    :feedback_d: z is the value of a and will not be printed
    :feedback_e: There is no type mismatch, so there will not be a compile error.
 
-   What prints?
+   What prints when the following code is run?
 
    ::
 

@@ -95,7 +95,7 @@ figure out what it is.
    :feedback_d: Computers can only execute programs in LOW-level languages.
    :feedback_e: High-level programs are portable, meaning they can run on different kinds of computers with little to no modification.
 
-   Which is true about a high-level programming language?
+   Multiple Response: Which is true about a high-level programming language?
 
 
 .. mchoice:: program_lang_3

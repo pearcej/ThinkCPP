@@ -54,7 +54,7 @@ functions (``cos``, ``tan``) are in *radians*.
 
 .. note::
    To convert from degrees to radians, you can divide by 360 and multiply
-   by :math:`2 \pi`.
+   by 2 * pi.
 
 If you don’t happen to know :math:`\pi` to 15 digits, you can calculate
 it using the ``acos`` function. The arccosine (or inverse cosine) of -1 is
@@ -123,9 +123,9 @@ have been derived from the **C** language.
 
 .. dragndrop:: math_functions_1
    :feedback: Try again!
-   :match_1: #include &#60;cmath&#62; |||allows the use of functions like log and sin
-   :match_2: #include &#60;iostream&#62; |||contains information about input and output streams
-   :match_3: using namespace std; |||the standard implementation of cout
+   :match_1: #include &#60;cmath&#62; ||| allows the use of functions like log and sin
+   :match_2: #include &#60;iostream&#62; ||| contains information about input and output streams
+   :match_3: using namespace std; ||| the standard implementation of cout
 
    Match the statement to its description.
 

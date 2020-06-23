@@ -25,7 +25,7 @@ The type of a variable determines what kind of values it can store. A
 ``char`` variable can contain characters, and it should come as no surprise
 that ``int`` variables can store integers.
 
-There are several types in C++ that can store string values, but we are
+There are several types in C++ that can store ``string`` values, but we are
 going to skip that for now (see Chapter 7).
 
 To create an integer variable, the syntax is

@@ -38,6 +38,7 @@ and other code black.
 
 
 .. mchoice:: keywords_2
+   :multiple_answers:
    :answer_a: integer
    :answer_b: cout
    :answer_c: variable
@@ -50,8 +51,9 @@ and other code black.
    :feedback_d: string cannot be used as a variable name.
    :feedback_e: char is a keyword and cannot be used as a variable name.
 
-   Which of the following are keywords or will otherwise generate 
-   some error from the compiler if used as a variable name?
+   Multiple Response: Which of the following are keywords or will 
+   otherwise generate some error from the compiler if used as a 
+   variable name?
 
 
 .. activecode:: keywords_3

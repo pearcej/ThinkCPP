@@ -168,7 +168,7 @@ example only demonstrates two:
    :iscode:
    :feedback: Remember, the operator '=' is used for assignment.
 
-   :click-correct:void printX(){:endclick:
+   :click-correct:void printX() {:endclick:
        :click-incorrect:cout << "X";:endclick:
    }
    

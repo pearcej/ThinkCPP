@@ -66,7 +66,7 @@ Another advantage of using accessor functions is that we can change the
 internal representations of cards without having to change any client
 programs.
 
-.. activecode:: fourteenone 
+.. activecode:: priv_data_AC_1 
    :language: cpp
 
    Run the active code below. Uncomment the commented out code to see what happens!
@@ -77,68 +77,68 @@ programs.
    using namespace std;
 
    struct Card {
-     private:
-       int suit, rank;
-     public:
-       Card ();
-       Card (int s, int r);
-       int getRank () const { return rank; }
-       int getSuit () const { return suit; }
-       void setRank (int r) { rank = r; }
-       void setSuit (int s) { suit = s; }
-       void print () const;
+       private:
+           int suit, rank;
+       public:
+           Card ();
+           Card (int s, int r);
+           int getRank () const { return rank; }
+           int getSuit () const { return suit; }
+           void setRank (int r) { rank = r; }
+           void setSuit (int s) { suit = s; }
+           void print () const;
    };
 
    int main() {
-     Card card (3, 8);
-     card.print();
-     cout << "Rank: " << card.getRank() << "    Suit: " << card.getSuit() << endl;
-     card.setRank(12);
-     card.setSuit(2);
-     card.print();
-     cout << "Rank: " << card.getRank() << "    Suit: " << card.getSuit() << endl;
+       Card card (3, 8);
+       card.print();
+       cout << "Rank: " << card.getRank() << "    Suit: " << card.getSuit() << endl;
+       card.setRank(12);
+       card.setSuit(2);
+       card.print();
+       cout << "Rank: " << card.getRank() << "    Suit: " << card.getSuit() << endl;
      
-     // If you uncomment the following code, you'll get an error! We cannot directly  
-     // access the private data members of Card, which is why we use accessor functions.
+       // If you uncomment the following code, you'll get an error! We cannot directly  
+       // access the private data members of Card, which is why we use accessor functions.
      
-     /* 
-     cout << "Rank: " << card.rank << "\t Suit: " << card.suit << endl;
-     card.rank = 4;
-     card.suit = 0; 
-     */
+       /* 
+       cout << "Rank: " << card.rank << "\t Suit: " << card.suit << endl;
+       card.rank = 4;
+       card.suit = 0; 
+       */
    }
    ====
    Card::Card () {
-     suit = 3;  rank = 0;
+       suit = 3;  rank = 0;
    }
 
    Card::Card (int s, int r) {
-     suit = s;  rank = r;
+       suit = s;  rank = r;
    }
 
    void Card::print () const {
-     vector<string> suits (4);
-     suits[0] = "Clubs";
-     suits[1] = "Diamonds";
-     suits[2] = "Hearts";
-     suits[3] = "Spades";
+       vector<string> suits (4);
+       suits[0] = "Clubs";
+       suits[1] = "Diamonds";
+       suits[2] = "Hearts";
+       suits[3] = "Spades";
 
-     vector<string> ranks (14);
-     ranks[1] = "Ace";
-     ranks[2] = "2";
-     ranks[3] = "3";
-     ranks[4] = "4";
-     ranks[5] = "5";
-     ranks[6] = "6";
-     ranks[7] = "7";
-     ranks[8] = "8";
-     ranks[9] = "9";
-     ranks[10] = "10";
-     ranks[11] = "Jack";
-     ranks[12] = "Queen";
-     ranks[13] = "King";
+       vector<string> ranks (14);
+       ranks[1] = "Ace";
+       ranks[2] = "2";
+       ranks[3] = "3";
+       ranks[4] = "4";
+       ranks[5] = "5";
+       ranks[6] = "6";
+       ranks[7] = "7";
+       ranks[8] = "8";
+       ranks[9] = "9";
+       ranks[10] = "10";
+       ranks[11] = "Jack";
+       ranks[12] = "Queen";
+       ranks[13] = "King";
 
-      cout << ranks[rank] << " of " << suits[suit] << endl;
+       cout << ranks[rank] << " of " << suits[suit] << endl;
    }
 
 .. mchoice:: question14_1_1
@@ -170,4 +170,4 @@ programs.
    :feedback_c: Incorrect!
    :feedback_d: Correct!
 
-   Which of the following are examples of accessor functions?
+   Multiple Response: Which of the following are examples of accessor functions?

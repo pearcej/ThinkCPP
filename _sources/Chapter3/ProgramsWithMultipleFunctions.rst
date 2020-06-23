@@ -11,8 +11,8 @@ program.
    are defined!  For example, the last function that you write might be the 
    first one that you call in the ``main`` function.
 
-Execution always begins at the first statement of ``main``, regardless of
-where it is in the program (often it is at the bottom). Statements are
+**Execution always begins at the first statement of** ``main``, **regardless of
+where it is in the program** (often it is at the bottom). Statements are
 executed one at a time, in order, until you reach a function call.
 Function calls are like a detour in the flow of execution. Instead of
 going to the next statement, you go to the first line of the called
@@ -67,16 +67,17 @@ What’s the moral of this sordid tale? When you read a program, don’t
 read from top to bottom. Instead, **follow the flow of execution**.
 
 
-.. dragndrop:: multiple_functions_1
-   :feedback: Try again!
-   :match_1: multiplyTwo|||executes next
-   :match_2: printTotal|||executes last
-   :match_3: main|||executes first
+.. dragndrop:: multiple_fun_1
+    :feedback: Try again!
+    :match_1: multiplyTwo ||| executes second
+    :match_2: printTotal ||| executes third
+    :match_3: main ||| executes first
+    :match_4: addTwo ||| executes last
 
-   Match the function to the order it is executed in the program above.
+    Match the function to the order it is executed in the program above.
 
 
-.. mchoice:: multiple_functions_2
+.. mchoice:: multiple_fun_2
    :answer_a: 12, 13, 14, 8, 9, 10, 15, 16, 17
    :answer_b: 12, 13, 14, 8, 9, 4, 5, 6, 4, 5, 6, 4, 5, 6, 10, 15, 16, 17
    :answer_c: 1, 2, 12, 13, 14, 8, 9, 10, 15, 16, 17

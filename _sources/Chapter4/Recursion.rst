@@ -107,7 +107,7 @@ newlines, or 106. A better alternative would be
     void nLines (int n) {
       if (n > 0) {
         cout << endl;
-        nLines (n-1);
+        nLines (n - 1);
       }
     }
 

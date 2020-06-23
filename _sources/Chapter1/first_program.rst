@@ -1,4 +1,4 @@
-.. _hello:
+﻿.. _hello:
 
 The First Program
 -----------------
@@ -17,9 +17,7 @@ In C++, this program looks like this:
    ~~~~
    #include <iostream>
    using namespace std;
-
    // main: generate some simple output
-
    int main () {
        cout << "Hello, World." << endl;
        return 0;
@@ -120,7 +118,7 @@ you see it again in the future you will know what it means.
    :feedback_d: int main() and all functions in C++ are enclosed by squiggly brackets ( { and }).
    :feedback_e: Forgetting a semicolol will cause a compile error!
 
-   Which is true about the ``int main()``?
+   Multiple Response: Which is true about the ``int main()``?
 
 
 .. fillintheblank:: first_program_3

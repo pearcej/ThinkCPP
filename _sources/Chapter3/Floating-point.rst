@@ -5,8 +5,8 @@ In the last chapter we had some problems dealing with numbers that were
 not integers. We worked around the problem by measuring percentages
 instead of fractions, but a more general solution is to use
 floating-point numbers, which can represent fractions as well as
-integers. In C++, there are two floating-point types, called float and
-double. In this book we will use doubles exclusively.
+integers. In C++, there are two floating-point types, called ``float`` and
+``double``. In this book we will use doubles exclusively.
 
 You can create floating-point variables and assign values to them using
 the same syntax we used for the other types. For example:
@@ -102,19 +102,13 @@ performing floating-point operations.
    Match the statement to the word that best describes it.
 
 
-.. mchoice:: floating_point_2
-   :answer_a: combination
-   :answer_b: initialization
-   :answer_c: floating
-   :answer_d: assignment
-   :correct: b
-   :feedback_a: Try again!
-   :feedback_b: Correct!
-   :feedback_c: Try again!
-   :feedback_d: Try again!
+.. fillintheblank:: floating_point_2
 
-   What is it called when a declaration and an assignment statement 
-   are combined?
+   A(n) |blank| statment consists of a declaration statement and an 
+   assignment statement, which are combined.
+    
+   - :[Ii][Nn][Ii][Tt][Ii][Aa][Ll][Ii][Zz][Aa][Tt][Ii][Oo][Nn]: Correct!
+     :.*: Try again!
 
 
 .. fillintheblank:: floating_point_3

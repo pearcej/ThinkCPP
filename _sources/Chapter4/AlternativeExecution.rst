@@ -116,10 +116,11 @@ type they are. You should resist the temptation to write things like:
 .. parsonsprob:: alt_execution_2
    :adaptive:
 
-   Construct a block of code that correctly goes through alternative 
+   Construct a block of code that correctly goes through alternative
    execution for pricing of an entre at a nice restaurant.  If the
    price is more than $30.00, print "Expensive!".  If the price is
-   less than $30.00, print "Inexpensive!"
+   less than $30.00, print "Inexpensive!"  You should by initializing
+   the cost to $40.
    -----
    int cost = 40;
 

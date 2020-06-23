@@ -31,7 +31,7 @@ statements.
    :feedback_d: If x = 0 or if x = 10, this expression will return true when it shouldn't.
    :feedback_e: If it IS NOT what we don't want, then it IS what we want!
 
-   How could you re-write the following code using a single conditional?
+   Multiple Response: How could you re-write the following code using a single conditional?
 
    ::
 

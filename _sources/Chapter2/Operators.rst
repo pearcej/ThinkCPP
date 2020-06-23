@@ -88,18 +88,10 @@ capable of storing fractional values.
    :match_3: 100/x|||10
    :match_4: (x+x+x+x+x)*20|||1000
 
-   Match the statement to the result, given ``int x = 10``.
+   Match the statement to the result, given that x = 10.
 
 
-.. fillintheblank:: operators_2
-
-   Integer division always rounds |blank| to the nearest integer.
-
-   - :[Dd][Oo][Ww][Nn]: Correct!
-     :.*: Try again!
-
-
-.. mchoice:: operators_3
+.. mchoice:: operators_2
    :answer_a: 0
    :answer_b: 1
    :answer_c: .667
@@ -118,6 +110,16 @@ capable of storing fractional values.
          int sum = 2 / 3;
          cout << sum;
        }
+
+
+.. fillintheblank:: operators_3
+
+   Integer division always rounds |blank| to the nearest |blank|.
+
+   - :[Dd][Oo][Ww][Nn]: Correct!
+     :x: Try again!
+   - :[Ii][Nn][Tt][Ee][Gg][Ee][Rr]: Correct!
+     :.*: Try again!
 
 
 .. activecode:: operators_4

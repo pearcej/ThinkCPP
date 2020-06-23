@@ -11,7 +11,8 @@ example:
     {
       if (x >= 0 && x < 10) {
         return true;
-      } else {
+      } 
+      else {
         return false;
       }
     }
@@ -40,9 +41,9 @@ In main you can call this function in the usual ways:
       cout << isSingleDigit (2) << endl;
       bool bigFlag = !isSingleDigit (17);
 
-.. activecode:: fivethree
+.. activecode:: bool_fun_AC_1
   :language: cpp
-  :caption: Bool functions
+  :caption: Bool Functions
 
   #include <iostream>
   #include <cmath>
@@ -79,18 +80,23 @@ The most common use of bool functions is inside conditional statements
       }
 
 
-.. dragndrop:: dragndrop_five_three
+.. dragndrop:: bool_fun_1
     :feedback: Try again!
     :match_1:  (x%2 == 1 && x == 7)|||0
     :match_2: (x%2 == 0 || x + 1 == 4)|||1
 
-
     Match the conditional statement to its output, assuming it is outputted using cout and x = 3.
 
 
-.. parsonsprob:: question_five_one
+.. parsonsprob:: bool_fun_2
+   :adaptive:
+   :numbered:
 
-   Construct a block of code that prints out "positive" if num is positive, "even" if num is even, and "both" if it is both positive and even.
+   Construct a block of code that first checks if a number is positive,
+   then checks if it's even, and then prints out a message to classify
+   the number.  It prints "both" if the number is both positive and even,
+   "even" if the number is only even, and finally "positive" if the number
+   is only positive.
    -----
    bool positiveFlag = (x > 0);
 
@@ -104,12 +110,12 @@ The most common use of bool functions is inside conditional statements
 
    if (evenFlag || positiveFlag) {  #distractor
 
-      cout << "both"; }
+    cout << "both"; }
 
    else if (evenFlag) {
 
-      cout << "even"; }
+    cout << "even"; }
 
    else {
 
-      cout << "positive"; }
+    cout << "positive"; }

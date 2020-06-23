@@ -52,7 +52,7 @@ from one to the other if there is a good reason.
 .. note::
    Characters in C++ hold ASCII values, which range from 0 to 128.  Uppercase
    'A' has an ASCII value of 65, lowercase 'a' has a value of 97, and a space
-   ' ' has a value of 32.  C++ converts characters to their ASCII values to 
+   has a value of 32.  C++ converts characters to their ASCII values to 
    perform automatic type conversion and character arithmetic.
 
 Automatic type conversion is an example of a common problem in designing

@@ -7,7 +7,7 @@ can use any expression as an argument to a function:
 
 ::
 
-    double x = cos (angle + pi/2);
+    double x = cos (angle + pi / 2);
 
 This statement takes the value of pi, divides it by two and adds the
 result to the value of angle. The sum is then passed as an argument to

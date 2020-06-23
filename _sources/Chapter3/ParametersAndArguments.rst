@@ -6,7 +6,7 @@ are values that you provide to let the function do its job. For example,
 if you want to find the sine of a number, you have to indicate what the
 number is. Thus, ``sin`` takes a ``double`` value as a parameter.
 
-Some functions take more than one parameter, like pow, which takes two
+Some functions take more than one parameter, like ``pow``, which takes two
 ``double`` s, the base and the exponent.
 
 Notice that in each of these cases we have to specify not only how many
@@ -61,7 +61,7 @@ parameter (phil). Let me say that again:
 
 They can be the same or they can be different, but it is important to
 realize that they are not the same thing, except that they happen to
-have the same value (in this case the character ’b’).
+have the same value (in this case, the character ’b’).
 
 .. warning::
    The value you provide as an argument must have the same type as the

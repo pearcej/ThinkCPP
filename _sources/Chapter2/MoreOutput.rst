@@ -43,9 +43,7 @@ all on one line. You can do this by leaving out the first ``endl``:
    :language: cpp
    :caption: Two Statements, One Line of Output
 
-   This program prints two different statements on the same line.  Note that
-   there we added a space after "Goodbye," because the compiler doesn't know
-   that we want a space between statements unless we specifically tell it.
+   This program prints two different statements on the same line.
    ~~~~
    #include <iostream>
    using namespace std;
@@ -91,10 +89,10 @@ behavior either, so I could have written:
    :language: cpp
    :caption: Spaces removed, One Line (very messy)
 
-   This program accomplishes the same thing as the previous two, but
+   This program accomplishes the same thing as the two above, but
    it only uses one line.  Once again, this is a matter of personal
-   preference, but in my opinion, this format is pretty messy and
-   relatively hard to follow.
+   preference.  However, this format is pretty messy and relatively 
+   hard to follow.
    ~~~~
    #include <iostream>
    using namespace std;

@@ -5,15 +5,29 @@ In the previous example I used temporary variables to spell out the
 steps, and to make the code easier to debug, but I could have saved a
 few lines:
 
-::
+.. activecode:: recursion_ex_AC_1
+   :language: cpp
+   :caption: Factorial Recursion
 
-    int factorial (int n) {
-      if (n == 0) {
-        return 1;
-      } else {
-        return n * factorial (n-1);
-      }
-    }
+   This program uses recursion to calculate the factorial of
+   the passed argument.  It is the condensed version of the
+   example on the previous page.
+   ~~~~
+   #include <iostream>
+   using namespace std;
+
+   int factorial (int n) {
+       if (n == 0) {
+           return 1;
+       } 
+       else {
+           return n * factorial (n-1);
+       }
+   }
+
+   int main () {
+       cout << factorial(3) << endl;
+   }
 
 From now on I will tend to use the more concise version, but I recommend
 that you use the more explicit version while you are developing code.
@@ -32,15 +46,30 @@ mathematical function is fibonacci, which has the following definition:
 
 Translated into C++, this is
 
-::
 
-    int fibonacci (int n) {
-      if (n == 0 || n == 1) {
-        return 1;
-      } else {
-        return fibonacci (n-1) + fibonacci (n-2);
-      }
-    }
+.. activecode:: recursion_ex_AC_2
+   :language: cpp
+   :caption: Fibonacci Recursion
+
+   This program uses recursion to calculate the nth number in the
+   fibonacci sequence.
+   ~~~~
+   #include <iostream>
+   using namespace std;
+
+   int fibonacci (int n) {
+       if (n == 0 || n == 1) {
+           return 1;
+       } 
+       else {
+           return fibonacci (n-1) + fibonacci (n-2);
+       }
+   }
+
+   int main () {
+       cout << fibonacci(3) << endl;
+   }
+
 
 If you try to follow the flow of execution here, even for fairly small
 values of n, your head explodes. But according to the leap of faith, if

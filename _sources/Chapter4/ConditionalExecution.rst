@@ -84,17 +84,17 @@ Observe the conditional statement below.
 
 .. dragndrop:: conditional_execution_2
    :feedback: Try again!
-   :match_2: x != y|||x = 10, y = 2
-   :match_4: x <= y|||x = 5, y = 5
-   :match_6: x < y|||x = 2, y = 10
+   :match_1: x != y|||x = 10, y = 2
+   :match_2: x <= y|||x = 5, y = 5
+   :match_3: x < y|||x = 2, y = 10
 
    Match the operator to values of x and y that would return true.
 
 
 .. dragndrop:: conditional_execution_3
    :feedback: Try again!
-   :match_2: x == y|||x = 3, y = 3
-   :match_4: x >= y|||x = 6, y = 2
-   :match_6: x < y|||x = 2, y = 6
+   :match_1: x == y|||x = 3, y = 3
+   :match_2: x >= y|||x = 6, y = 2
+   :match_3: x < y|||x = 2, y = 6
 
    Match the operator to values of x and y that would return true.
