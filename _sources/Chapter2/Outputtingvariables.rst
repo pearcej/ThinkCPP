@@ -165,19 +165,27 @@ and the special value ``endl``. Very impressive!
    Match the variable initialization to its correct type.
 
 
-.. activecode:: output_vars_5
-   :language: cpp
-   :caption: Variable Declaration
-  
-   Fix the following code so that each variable has a type!
-   ~~~~
-   #include <iostream>
-   using namespace std;
-
-   int main() {
-       x = 0;
-       z = '.';
-       cout << x;
-       cout << z << endl;
-       return 0;
+.. parsonsprob:: output_vars_5
+   :numbered: left
+   :adaptive:
+   
+   Construct a main function that assigns "Hello" to the variable h, then prints out h's value.
+   -----
+   int main () {
+   =====
+    string h;
+   =====
+    char h; #paired
+   =====
+    h = "Hello";
+   =====
+    h = Hello; #paired
+   =====
+    cout << h;
+   =====
+    cout << "Hello"; #paired
+   =====
+    cout << "h"; #paired
+   =====
    }
+   

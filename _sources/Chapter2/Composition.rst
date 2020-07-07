@@ -127,3 +127,58 @@ values. So the following is illegal: ``minute + 1 = hour;``.
 
    - :[Cc][Oo][Mm][Pp][Oo][Ss][Ee]: Correct!
      :.*: Try again!
+
+
+.. activecode:: compos_4
+   :language: cpp
+   :autograde: unittest
+
+   Finish the code below so that the velocity is calculated
+   and returned on the same line.  Hint: the current velocity
+   results from 1) the initial velocity and 2) the acceleration over
+   a window of time.  Use v0 for initial velocity, a for
+   acceleration, and t for time.
+   ~~~~
+   int velocity(int v0, int a, int t) {
+       // You may only use the next line for your code.
+       return ;
+   }
+
+   ====
+
+   #define CATCH_CONFIG_MAIN // This tells Catch to provide a main() - only do   this in one cpp file
+   #include <catch.hpp>
+
+   TEST_CASE( "Velocity Check", "[velocity]" ) {
+   REQUIRE( velocity(1,2,3) == 7 );
+   REQUIRE( velocity(-1,2,3) == 5 );
+   REQUIRE( velocity(1,-2,3) == -5 );
+   REQUIRE( velocity(0,2,3) == 6 );
+   REQUIRE( velocity(1,0,3) == 1 );
+   }
+
+
+.. activecode:: compos_5
+   :language: cpp
+   :autograde: unittest
+
+   Finish the code below so that the volume of a cylinder with
+   radius r and height h is calculated and returned on the same line.
+   Use 3.14 for pi.
+   ~~~~
+   double volume(int r, int h) {
+       // You may only use the next line for your code.
+       return ;
+   }
+
+   ====
+
+   #define CATCH_CONFIG_MAIN // This tells Catch to provide a main() - only do   this in one cpp file
+   #include <catch.hpp>
+
+   TEST_CASE( "Volume Check", "[volume]" ) {
+   REQUIRE( volume(6,6) == 678.24 );
+   REQUIRE( volume(3,6) == 169.56 );
+   REQUIRE( volume(0,6) == 0 );
+   REQUIRE( volume(6,0) == 0 );
+   }

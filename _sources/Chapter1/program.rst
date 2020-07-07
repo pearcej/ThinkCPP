@@ -1,7 +1,7 @@
 What is a Program?
 ------------------
 
-A program is a sequence of instructions that specifies how to perform a
+A **program** is a sequence of instructions that specifies how to perform a
 computation. The computation might be something mathematical, like
 solving a system of equations or finding the roots of a polynomial, but
 it can also be a symbolic computation, like searching and replacing text
