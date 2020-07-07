@@ -105,7 +105,7 @@ logarithms base 2 are round numbers. If we wanted to find the logarithms
 of other powers of two, we could modify the program like this:
 
 .. activecode:: tables_AC_2
-  :language: cpp67io
+  :language: cpp
   :caption: Tables
 
   If we wanted to find the logarithms of other powers of two, 

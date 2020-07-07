@@ -20,3 +20,6 @@ Strings and things
    character_classification.rst
    other_string_functions.rst
    glossary.rst
+   multiple_choice.rst
+   mixed_up_code.rst
+   coding_practice.rst

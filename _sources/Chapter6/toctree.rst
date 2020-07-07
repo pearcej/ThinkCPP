@@ -15,3 +15,6 @@ Iteration
    local_variables.rst
    more_generalization.rst
    glossary.rst
+   multiple_choice.rst
+   mixed_up_code.rst
+   coding_practice.rst
