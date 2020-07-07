@@ -8,14 +8,12 @@ structure of your program, and if you use them as variable names, it
 will get confused. These words, called **keywords**, include ``int``, ``char``,
 ``void``, ``endl`` and many more.
 
-The complete list of keywords is included in the C++ Standard, which is
-the official language definition adopted by the the International
-Organization for Standardization (ISO) on September 1, 1998. You can
-download a copy electronically from
+A list of C++ keywords is availiable publically on ``cppreference``.  You can
+take a look for yourself by pasting the following link into your browser.
 
 ::
 
-    http://www.ansi.org/
+    https://en.cppreference.com/w/cpp/keyword
 
 Rather than memorize the list, I would suggest that you take advantage
 of a feature provided in many development environments: code
@@ -26,6 +24,12 @@ and other code black.
 .. Warning::
    If you type a variable name and it turns blue, watch out! You might get 
    some strange behavior from the compiler.
+
+.. note::
+   Case matters!  You can name a ``string`` variable ``String`` without an issue
+   because C++ does not consider ``String`` to be the same as keyword ``string``.
+   Also, a anything written in quotes, for example ``"string"`` is not considered
+   a keyword in C++, even if it is spelt the same.
 
 
 .. fillintheblank:: keywords_1
@@ -56,20 +60,49 @@ and other code black.
    variable name?
 
 
-.. activecode:: keywords_3
+.. clickablearea:: keywords_3
+    :question: Click on all keywords.
+    :iscode:
+    :feedback: Try again!
+
+    :click-correct:int:endclick: main() {
+        :click-correct:double:endclick: :click-incorrect:x:endclick: = 1.0;
+        :click-correct:int:endclick: :click-incorrect:y:endclick: = :click-incorrect:x:endclick: + 5;
+        :click-correct:bool:endclick: :click-incorrect:Bool:endclick:;
+        :click-correct:string:endclick: :click-incorrect:s:endclick: = :click-incorrect:"void":endclick:;
+        :click-correct:if:endclick: (:click-incorrect:y:endclick: > :click-incorrect:x:endclick:) {
+           :click-incorrect:Bool:endclick: = :click-correct:true:endclick:;
+        }
+        :click-incorrect:cout:endclick: << :click-incorrect:Bool:endclick: << :click-correct:endl:endclick:;
+    }
+
+
+.. activecode:: keywords_4
    :language: cpp
-   :caption: Keywords Cannot Be Variable Names
+   :autograde: unittest
 
-   Fix the code below so that the variable names are not keywords.
-
+   Fix the code below so that it runs without errors.  Hint: you might
+   need to change the names of some variables.
    ~~~~
-   #include <iostream>
-   using namespace std;
+   int main () {
+      int friend = 4;
+      int enemy = friend * (-1);
+      cout << "enemy = " << enemy << endl;
 
-   int main() {
-       int char = 20;
-       char first_initial = 'E';
-       char last_initial = 'P';
-       cout << "My age is " << char << endl;
-       cout << "My initials are " << first_initial << " and " << last_initial;
+      char true = 'T';
+      char false = 'F';
+      cout << true << " is short for true. ";
+      cout << false << " is short for false." << endl;
+
+      // Do not modify anything below.
+      return 0;
+   }
+
+   ====
+
+   #define CATCH_CONFIG_MAIN // This tells Catch to provide a main() - only do   this in one cpp file
+   #include <catch.hpp>
+
+   TEST_CASE( "Compile Check", "[compile]" ) {
+   REQUIRE( main() == 0 );
    }

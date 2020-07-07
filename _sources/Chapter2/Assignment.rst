@@ -101,22 +101,32 @@ assignment is illegal:
    :numbered: left
    :adaptive:
    
-   Construct a main function that assigns "Hello" to the variable h, then prints out h's value.
+   You love your car, and you decide to keep track of its make, model,
+   and year.  You do so using three assignment statements IN THAT ORDER.
+   Now, I don't know what car you really drive, but for the sake of this 
+   problem, I'm assuming that you drive a 2001 Jeep Cherokee.  Hint: there
+   are a couple ways to write an assignment statement.
    -----
-   int main () {
+   string make;
+   make = "Jeep";
    =====
-    string h;
+   string make = Jeep; #paired
    =====
-    int h; #distractor
+   make = "Jeep;" #paired
    =====
-    h = "Hello";
+   string model = "Cherokee";
    =====
-    h = Hello; #distractor
+   string model; #paired
+   model = Cherokee;
    =====
-    cout << h;
+   string model = Cherokee; #paired
    =====
-    cout << "Hello"; #distractor
+   int year = 2001;
    =====
-    cout << "h"; #distractor
+   int year; #paired
+   2001 = year;
    =====
-   }
+   int year; #paired
+   year = 2001
+
+

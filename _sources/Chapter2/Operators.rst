@@ -122,23 +122,45 @@ capable of storing fractional values.
      :.*: Try again!
 
 
-.. activecode:: operators_4
-   :language: cpp
-   :caption: Fast Food
-
-   Fix the code below so that it prints out the total cost of the meal 
-   (fries, a milkshake, and a hamburger) using one of the operators.
-
-   ~~~~
-   #include <iostream>
-   using namespace std;
-
+.. parsonsprob:: operators_4
+   :numbered: left
+   :adaptive:
+   
+   Construct a code block that prints the total cost of your meal,
+   including the 6.0% sales tax, after you purchase two orders of
+   fries, three burgers, and a milkshake.  Start by initializing
+   the value of sales tax, then the prices of the food.  Once you
+   have initialized the variables, you can perform your calculations
+   and save the result in the price variable.  At the very end, you
+   will print out the total price.
+   -----
    int main () {
-       int fries, milkshake, hamburger;
-       fries = 2;
-       milkshake = 3;
-       hamburger = 6;
-       cout << "The total cost of the meal is ";
-       cout << << " dollars." << endl;
-       return 0;
+   =====
+    double tax = 0.06;
+   =====
+    double tax = 6.0; #paired
+   =====
+    double fries, milkshake, burger;
+   =====
+    int fries, milkshake, burger; #paired
+   =====
+    fries = 2.50;
+    milkshake = 3.75;
+    burger = 3.00;
+   =====
+    double price = 2 * fries + 3 * burger + milkshake;
+   =====
+    int price = 2 * fries + 3 * burger + milkshake; #paired
+   =====
+    double priceWithTax = price + price * tax;
+   =====
+    double priceWithTax = price * tax; #paired
+   =====
+    cout << "The total cost of your meal is $"; 
+    cout << priceWithTax << "." << endl;
+   =====
+    cout << "The total cost of your meal is $"; #paired
+    cout << price << "." << endl;
+   =====
    }
+   

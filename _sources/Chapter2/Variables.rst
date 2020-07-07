@@ -81,3 +81,32 @@ type).
 
    - :[Vv][Aa][Rr][Ii][Aa][Bb][Ll][Ee]: Correct!
      :.*: Try again!
+
+
+.. parsonsprob:: variables_4
+   :numbered: left
+   :adaptive:
+   
+   Write code that creates the variables name, firstInitial,
+   and numberOfSiblings IN THAT ORDER.  It is up to you to choose
+   the correct types for these variables.
+   -----
+   string name;
+   =====
+   string name #paired
+   =====
+   char firstInitial;
+   =====
+   char firstInitial #paired
+   =====
+   string firstInitial; #paired
+   =====
+   string firstInitial #paired
+   =====
+   int numberOfSiblings;
+   =====
+   int numberOfSiblings #paired
+   =====
+   double numberOfSiblings; #paired
+   =====
+   double numberOfSiblings #paired

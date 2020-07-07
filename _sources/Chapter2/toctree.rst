@@ -8,7 +8,7 @@ Variables and types
    Values.rst
    Variables.rst
    Assignment.rst
-   Outputtingvariables.rst
+   OutputtingVariables.rst
    Keywords.rst
    Operators.rst
    OrderofOperations.rst

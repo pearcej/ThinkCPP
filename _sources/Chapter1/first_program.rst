@@ -116,7 +116,7 @@ you see it again in the future you will know what it means.
    :feedback_b: There is no limit to the number of statements you can put in int main(), but it is good practice to keep the main as short as possible.
    :feedback_c: When the program runs, it starts by executing the first statement in main, and it continues until the last.
    :feedback_d: int main() and all functions in C++ are enclosed by squiggly brackets ( { and }).
-   :feedback_e: Forgetting a semicolol will cause a compile error!
+   :feedback_e: Forgetting a semicolon will cause a compile error!
 
    Multiple Response: Which is true about the ``int main()``?
 

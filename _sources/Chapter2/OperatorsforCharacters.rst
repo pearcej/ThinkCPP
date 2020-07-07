@@ -79,23 +79,25 @@ exceptions.
 
 .. parsonsprob:: char_operations_2
    :adaptive:
+   :numbered: left
 
-   Construct a main function that outputs "c".
+   Construct a main function that uses character operations to 
+   generate the output 'r'.
    -----
    int main () {
    =====
-    char let;
+    char r;
    =====
-    int let; #distractor
+    int r; #distractor
    =====
-    let = 'a' + 2;
+    r = 'p' + 2;
    =====
-    let = a + 2; #distractor
+    r = p + 2; #distractor
    =====
-    let = 'a' + 3; #distractor
+    r = 'p' + 3; #distractor
    =====
-    cout << let;
+    cout << r;
    =====
-    cout << "let"; #distractor
+    cout << "r"; #distractor
    =====
    }
