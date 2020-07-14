@@ -114,7 +114,7 @@ languages, can make a big difference in a formal language.
    :feedback_d: English is a natural language.
    :feedback_e: Chemical formulas represent what elements a compound is made of! For example CO2 is is carbon dioxide!
 
-   Multiple Response: Select all **formal** languages from the choices below.
+   **Multiple Response** Select all **formal** languages from the choices below.
 
 
 .. fillintheblank:: formal_natural_2
@@ -140,7 +140,7 @@ languages, can make a big difference in a formal language.
    :answer_b: redundant
    :answer_c: literal
    :answer_d: verbose
-   :answer_e: consise
+   :answer_e: concise
    :correct: c,e
    :feedback_a: Formal languages are designed to be unambiguous, so that each statement has only one meaning.
    :feedback_b: Formal language is straight to the point.
@@ -148,4 +148,4 @@ languages, can make a big difference in a formal language.
    :feedback_d: Formal language is straight to the point.
    :feedback_e: Formal language is straight to the point.
 
-   Multiple Response: Formal languages are...
+   **Multiple Response** Formal languages are...

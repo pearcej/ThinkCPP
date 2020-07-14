@@ -108,8 +108,8 @@ the program and locate syntax errors.
 
 .. dragndrop:: more_output_1
    :feedback: Try again!
-   :match_1:  cout<<"Hello"; cout<<"Hello";|||one line
-   :match_2: cout<<"Hello" << endl; cout<<"Hello";|||two lines
+   :match_1: cout<<"Hello"; cout <<"Hello";|||one line
+   :match_2: cout<<"Hello"<< endl; cout<<"Hello";|||two lines
 
    Match the code snippet to the correct amount of lines that would
    be printed.

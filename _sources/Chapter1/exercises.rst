@@ -1,4 +1,4 @@
-Multiple Choice Questions
+Multiple Choice Exercises
 -------------------------
 
 Answer the following **Multiple Choice** questions to
@@ -82,7 +82,7 @@ assess what you have learned in this chapter.
 
 .. mchoice:: programming_4
 
-    **Multiple Response**  What are the basic functions that appear in just about 
+    **Multiple Response**  What are the basic functions that appear in
     every programming language?
 
     -   math operations
@@ -91,7 +91,9 @@ assess what you have learned in this chapter.
 
     -   debugging
 
-        -   Debugging is a process that is separate from the program.
+        -   Debugging is the process of finding and fixing errors AFTER you 
+            have written your program. It's not one of the basic functions
+            of a programming language.
 
     -   input/output from the terminal and saved files
 
@@ -100,9 +102,8 @@ assess what you have learned in this chapter.
 
     -   testing for conditions
 
-        +   Typically, you'd want to test for certain conditions and then execute an
-            appropriate sequence of statements depending on whether the conditions
-            were met.
+        +   This is why you would consider using conditional statements
+            in your program.
 
     -   repetition
 
@@ -111,7 +112,7 @@ assess what you have learned in this chapter.
 
 .. mchoice:: programming_5
 
-    What type of error would the following generate?  Assume you are
+    What type of error would the following code cause?  Assume you are
     trying to calculate the volume of a cylinder:
 
     ::
@@ -171,84 +172,104 @@ assess what you have learned in this chapter.
 
 .. mchoice:: programming_7
 
-    **Multiple Response**  Which of the following are true about C++.
+    **Multiple Response**  C++ is a(n) ________.
 
-    -   Some statements can have more than one meaning.  You have to put
-        things into context to understand what they mean.
+    -   formal language
 
-        -   Statements in C++ are unambiguous.  Each statement has exactly
-            one meaning, regardless of its context.
+        +   all programming languages are formal languages!
 
-    -   Programs are verbose in efforts to reduce misunderstandings.
+    -   natural language
 
-        -   Programmers actually try to use as few lines of code as possible to
-            get the job done!
+        -   C++ certainly did not evolve naturally!
 
-    -   Each statement means exactly what it says.
+    -   foreign language
 
-        +   Programming in C++ is not supposed to be tricky!  For instance, 
-            an integer is an ``int``, a character is a ``char``, and a string 
-            of text is a ``string``.
+        -   C++ might seem foreign to you, but it's used globally!
 
-    -   Programs in C++ are short and to the point.
+    -   high-level language.
 
-        +   Programs in C++ are very concise.
+        +   C++ must be translated before the computer can understand!
+
+    -   low-level language.
+
+        -   C++ must be translated before the computer can understand!
 
 
 .. mchoice:: programming_8
 
-    **Multiple Response** Which of the following is true about the ``int main()``.
+    **Multiple Response** Which of the following is true about writing a program.
 
     -   The compiler ignores anything after ``//``.
 
         +   This is called a comment, which you can use to describe your code to
             outsiders who might not understand.
 
-    -   There is no limit the number of statements you can put in ``int main()``.
+    -   There is no limit the number of statements you can put in ``main``.
 
         +   You can include as many statments as you want to, but it is good 
             practice to keep the main as short as possible.
 
-    -   Program execution begins at the first line of code, and ends at ``int main().``
+    -   Program execution begins at the first line of code.
 
-        -   Program execution actually begins with ``int main()``.  Then, program
-            execution happens in order, from top to bottom.
+        -   Program execution actually begins with ``main`` and then
+            happens in order, from top to bottom.
 
-    -   ``int main()`` is enclosed by squiggly brackets ``{ }``.
+    -   ``main`` is enclosed by squiggly brackets ``{ }``.
 
-        +   ``int main()`` and *all* functions in C++ are enclosed by squiggly brackets.
+        +   The ``main`` program and *all* functions in C++ are enclosed by squiggly brackets.
 
-    -   The end of a statement is marked with a colon ``:``.
+    -   The end of each statement is marked with a colon ``:``.
 
         -   Actually, each statement is terminated with a *semi* colon ``;``.
 
 
 .. mchoice:: programming_9
-   :multiple_answers:
-   :answer_a: High-level programs are only used for a few special applications.
-   :answer_b: Programs written in a high-level language must be translated before they can be run.
-   :answer_c: It's easier to program in a high-level language.
-   :answer_d: Computers can only execute programs written in high-level languages.
-   :answer_e: High-level programs can only run on one kind of computer (you'd have to rewrite the program if you wanted to use a different machine).
-   :correct: b,c
-   :feedback_a: Almost all programs are written in high-level languages!
-   :feedback_b: All high-level programs must be translated to a low-level programs before the computer can execute them!
-   :feedback_c: It takes less time to write in a high-level language, the code is shorter and easier to read, and it's more likely to be correct!
-   :feedback_d: Computers can only execute programs in LOW-level languages.
-   :feedback_e: High-level programs are portable, meaning they can run on different kinds of computers with little to no modification.
 
-   **Multiple Response** Which is true about a high-level programming language?
+    **Multiple Response** Which is true about programming languages?
+
+    -   Low-level languages are only used for a few special applications.
+
+        +   Low-level languages take more time to write, and they are much harder to
+            understand, so they aren't used often.
+
+    -   Programs written in low-level languages must be translated before they can be run.
+
+        -   Low level languages are already written in a language that your computer
+            can understand, so they don't need to be translated!
+
+    -   It's easier to program in a high-level language than a low-level language.
+
+        +   High-level languages take less time to write, they are much easier to
+            understand, and they are more likely to be correct!
+
+    -   Computers can only execute programs written in low-level languages.
+
+        +   This is why most programs need to be translated before they can be run!
+
+    -   High-level languages can run on many different kinds of computers without an issue.
+
+        +   This is called portability.
 
 
 .. mchoice:: programming_10
-   :answer_a: analyzing a the syntax of a sentence
-   :answer_b: looking through a program for errors
-   :answer_c: examining a the syntactic structure of a program
-   :answer_d: trying to understand the meaning of a program
-   :correct: c
-   :feedback_a: This is how we parse in the literary sense.
-   :feedback_b: This is actually called debugging!
-   :feedback_c: Parsing can help you find syntax errors.
-   :feedback_d: This is analying the semantics, not the syntax!
 
-   What is parsing in the coding sense?
+    You were asked to parse through your program, what should this entail?
+
+    -   You should walk through your program line by line to make sure it's 
+        that your code doing what it is supposed to.
+
+        -   This is how you would detect a semantic error. Parsing doesn't involve
+            semantic errors.
+
+    -   You should search through your program for syntax errors.
+
+        +   Parsing involves looking at the syntactic structure of your program.
+
+    -   You should translate your program to object code.
+
+        -   This would be quite a chore! Luckily you have an interpreter or a compiler
+            to do that for you!
+
+    -   You should run your program and check for run-time errors.
+
+        -   Parsing doesn't involve run-time errors.

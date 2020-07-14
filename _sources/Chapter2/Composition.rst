@@ -85,22 +85,22 @@ values. So the following is illegal: ``minute + 1 = hour;``.
 
 
 .. mchoice:: compos_1
-   :answer_a: Change the fourth line in main to pets = dogs + cats;
-   :answer_b: Change the fourth line in main to int pets = dogs + cats;
-   :answer_c: Change the fourth line in main to pets == dogs + cats;
-   :answer_d: Change the fourth line in main to int pets == dogs + cats;
+   :answer_a: Change line 5 to pets = dogs + cats;
+   :answer_b: Change line 5 to int pets = dogs + cats;
+   :answer_c: Change line 5 to pets == dogs + cats;
+   :answer_d: Change line 5 to int pets == dogs + cats;
+   :answer_e: No change, the code runs fine as is.
    :correct: a
    :feedback_a: Assignment statements operate such that the evaluated expression on the right is assigned to the variable on the left.
    :feedback_b: pets has already been declared as an int.
    :feedback_c: The == operator checks if the left side EQUALS the right side.  It is not the correct operator here.
    :feedback_d: pets has already been declared as an int.  Also, the == operator is not the proper choice here.
+   :feedback_e: Assignment statements assign the value on the right to the variable on the left.
 
    What must be changed in order for this code block to work?
 
-   ::
-
-       #include <iostream>
-       using namespace std;
+   .. code-block:: 
+       :linenos:
 
        int main () {
          int dogs = 3;
