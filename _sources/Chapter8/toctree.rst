@@ -16,3 +16,6 @@ Structures
    passing_other_types_by_reference.rst
    getting_user_input.rst
    glossary.rst
+   Exercises.rst
+   mixed_up_code.rst
+   coding_practice.rst
