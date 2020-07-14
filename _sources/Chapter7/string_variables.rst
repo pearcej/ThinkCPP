@@ -8,7 +8,7 @@ You can create a variable with type ``string`` in the usual ways.
   :caption: Creating a string variable
 
   In the active code below, the first line creates a ``string`` without 
-  giving it a value. The second line assigns it the string value ``"Hello."`` 
+  giving it a value. The second line assigns it the string value ``"Hello,"``. 
   The third line is a combined declaration and assignment, also called an initialization.
   ~~~~
   #include <iostream>

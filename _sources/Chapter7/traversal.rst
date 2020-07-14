@@ -75,21 +75,21 @@ and that outputs the letters backwards, all on one line.
       -----
       void reverseWord (string input) {
       =====
-        int x;
+        int x = input.length() - 1;
       =====
-        for (x = input.length() - 1; x >= 0; x--) {
+        int x = input.length();  #paired
       =====
-        for (x = input.length() - 1; x > 0 ; x--) {  #distractor
+        while (x >= 0) {
       =====
-        for (x = input.length(); x > 0; x++) {  #distractor
-      =====
-        for (x = input.length(); x >= 0; x++) {  #distractor
+        while (x > 0) { #paired
       =====
           cout << input[x];
+      =====
+          x--;
         }
       }
       =====
-          cout << input[-x];
+          x++;
         }
       } #distractor
 

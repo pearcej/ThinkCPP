@@ -77,10 +77,10 @@ should be ``void``.
   }
 
   int main() {
-      string upper = stringToUpper ("This String Should Be Converted To Uppercase!");
+      string upper = "This String Should Be Converted To Uppercase!";
       stringToUpper (upper);
       cout << upper << endl;
-      string lower = stringToLower ("This String Should Be Converted To Lowercase!");
+      string lower = "This String Should Be Converted To Lowercase!";
       stringToLower (lower);
       cout << lower << endl;
   }
@@ -100,9 +100,11 @@ should be ``void``.
       =====
       void stringToUpper (string input) {                         #paired
       =====
-         for (int i = 0; i < input.length(); ++i) {
+         int i = 0;
       =====
-         for (int i = 0; i < input.length() - 1; ++i) {                        #paired 
+         while (i < input.length()) {
+      =====
+         while (i < input.length() - 1) {  #paired
       =====
             if (isalpha(input[i]) && islower(input[i])) {
       =====
@@ -110,12 +112,11 @@ should be ``void``.
       =====
                input[i] = toupper(input[i]);
             }
-         }
-      }
-
       =====
                toupper(input[i]);                        #paired
             }
+      =====
+            i++;
          }
       }
 
@@ -134,9 +135,11 @@ should be ``void``.
       =====
       void stringToLower (string input) {                         #paired
       =====
-         for (int i = 0; i < input.length(); ++i) {
+         int i = 0;
       =====
-         for (int i = 0; i < input.length(); --i) {                        #paired 
+         while (i < input.length()) {
+      =====
+         while (i > input.length()) {  #paired 
       =====
             if (isalpha(input[i]) && isupper(input[i])) {
       =====
@@ -144,10 +147,10 @@ should be ``void``.
       =====
                input[i] = tolower(input[i]);
             }
-         }
-      }
       =====
                input[i] = tolower(input[0]);                        #paired
             }
+      =====
+            i++;
          }
       }

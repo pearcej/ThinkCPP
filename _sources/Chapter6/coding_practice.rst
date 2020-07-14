@@ -70,6 +70,7 @@ Coding Practice
 
         .. activecode:: cp_6_AC_2q
            :language: cpp
+           :practice: F
 
            #include <iostream>
            using namespace std;

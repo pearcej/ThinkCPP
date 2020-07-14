@@ -4,39 +4,44 @@ Mixed Up Code Practice
 .. parsonsprob:: mucp_7_1
    :numbered: left
    :adaptive:
+   :noindent:
 
    Let's write the code for the ``cipherText`` function. ``cipherText`` 
    should be a void function that takes a string input as a parameter,
-   increases the value of each character by 1. (i.e. "bad" turns into "cbe"),
+   increases the value of each character by 1 (i.e. "bad" turns into "cbe"),
    and outputs the encrypted string.
    -----
    void cipherText (string input) {
    =====
    string cipherText (string input) {  #paired
    =====
-      for (int i = 0; i < input.length(); ++i) {
+      int i = 0;
    =====
-      for (int i = 0; i < input.length() - 1; ++i) {  #paired
+      while (i < input.length()) {
+   =====
+      while (i < input.length() - 1) {  #paired
    =====
          input[i] = input[i] + 1;
-      }
    =====
          input[i] = input[i] - 1;  #paired
+   =====
+         i++;
       }
    =====
       cout << input;
    }
    =====
-      return input;
+      return input;  #paired
    }
 
 .. parsonsprob:: mucp_7_2
    :numbered: left
    :adaptive:
+   :noindent:
 
    The program below should print out the number of occurences of the character 't'
    in the string tongue_twister but the code is mixed up. Put the necessary blocks 
-   in the correct order, with tongue_twister declared before count.
+   in the correct order, with declaration in the order of tongue_twister, count, and i.
    -----
    int main() {
    =====
@@ -46,14 +51,18 @@ Mixed Up Code Practice
    =====
       int count = 1;  #paired
    =====
-      for (int i = 0; i < tongue_twister.length(); ++i) {
+      int i = 0;
+   =====
+      while (i < tongue_twister.length()) {
    =====
          if (tongue_twister[i] == 't') {
    =====
          if (tongue_twister[i] = 't') {  #paired
    =====
-         count++;
+            count++;
          }
+   =====
+         i++;
       }
    =====
       cout << count;
@@ -62,6 +71,7 @@ Mixed Up Code Practice
 .. parsonsprob:: mucp_7_3
    :numbered: left
    :adaptive:
+   :noindent:
 
    The program below should print out the index of the second instance of the 
    character 'i' but the code is mixed up and contains extra blocks. 
@@ -71,7 +81,9 @@ Mixed Up Code Practice
    =====
       string quote = "Your time is limited, so don't waste it living someone else's life.";
    =====
-      for (int i = 0; i < quote.length(); ++i {  #distractor
+      int i = 0;  #distractor
+   =====
+      while (i < quote.length()) {  #distractor
    =====
       int first = quote.find("i");
    =====
@@ -134,20 +146,23 @@ Mixed Up Code Practice
    =====
       string copy = input;  #distractor
    =====
-      for (int i = 0; i < input.length(); ++i) {
+      int i = 0;
    =====
-      for (int i = 0; i < input.length() - 1; ++i) {  #paired
+      while (i < input.length()) {
+   =====
+      while (i < input.length() - 1) {  #paired
    =====
          if (input[i] == 'e') {
    =====
          if (input[i] = 'e') {  #paired
    =====
-         input[i] = '*';
+            input[i] = '*';
          }
-      }
    =====
-         '*' = input[i];  #paired
+            '*' = input[i];  #paired
          }
+   =====
+         i++;
       }
    =====
       return input;
@@ -168,20 +183,23 @@ Mixed Up Code Practice
    =====
    string censorLetter (string input) {  #paired
    =====
-      for (int i = 0; i < input.length(); ++i) {
+      int i = 0;
    =====
-      for (int i = 1; i < input.length(); ++i) {  #paired
+      int i = 1;  #paired
+   =====
+      while (i < input.length()) {
    =====
          if (input[i] == letter) {
    =====
          if (input[i] == "letter") {  #paired
    =====
-         input[i] = '*';
+            input[i] = '*';
          }
-      }
    =====
-         '*' = input[i];  #paired
+            '*' = input[i];  #paired
          }
+   =====
+         i++;
       }
    =====
       return input;

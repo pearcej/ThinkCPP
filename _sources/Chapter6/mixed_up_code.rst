@@ -4,6 +4,7 @@ Mixed Up Code Practice
 .. parsonsprob:: mucp_6_1
    :numbered: left
    :adaptive:
+   :noindent:
 
    The program below should print out the even numbers between 20 and 40 
    but the code is mixed up and contains extra blocks. Put the necessary blocks
@@ -38,6 +39,7 @@ Mixed Up Code Practice
 .. parsonsprob:: mucp_6_2
    :numbered: left
    :adaptive:
+   :noindent:
 
    The program below should count down from 100 to 0 in decrements of 
    10 but the code is mixed up and contains extra blocks. Put the necessary blocks
@@ -68,6 +70,7 @@ Mixed Up Code Practice
 .. parsonsprob:: mucp_6_3
    :numbered: left
    :adaptive:
+   :noindent:
 
    Let's write the code for the ``repeatHello`` function. ``repeatHello`` 
    should be a void function that takes no arguments and uses a while
