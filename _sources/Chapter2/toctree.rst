@@ -15,3 +15,6 @@ Variables and types
    OperatorsforCharacters.rst
    Composition.rst
    Glossary.rst
+   exercises.rst
+   mixedUpCode.rst
+   activeCode.rst

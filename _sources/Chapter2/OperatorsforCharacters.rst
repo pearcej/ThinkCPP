@@ -55,6 +55,7 @@ from one to the other if there is a good reason.
    has a value of 32.  C++ converts characters to their ASCII values to 
    perform automatic type conversion and character arithmetic.
 
+
 Automatic type conversion is an example of a common problem in designing
 a programming language, which is that there is a conflict between
 **formalism**, which is the requirement that formal languages should

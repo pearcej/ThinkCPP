@@ -138,19 +138,15 @@ capable of storing fractional values.
    =====
     double tax = 0.06;
    =====
-    double tax = 6.0; #paired
-   =====
     double fries, milkshake, burger;
    =====
-    int fries, milkshake, burger; #paired
+    string fries, milkshake, burger; #paired
    =====
     fries = 2.50;
     milkshake = 3.75;
     burger = 3.00;
    =====
     double price = 2 * fries + 3 * burger + milkshake;
-   =====
-    int price = 2 * fries + 3 * burger + milkshake; #paired
    =====
     double priceWithTax = price + price * tax;
    =====

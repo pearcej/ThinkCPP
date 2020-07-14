@@ -85,17 +85,12 @@ and other code black.
    need to change the names of some variables.
    ~~~~
    int main () {
-      int friend = 4;
-      int enemy = friend * (-1);
-      cout << "enemy = " << enemy << endl;
+       int friend = 4;
+       int enemy = friend * (-1);
+       cout << "enemy = " << enemy << endl;
 
-      char true = 'T';
-      char false = 'F';
-      cout << true << " is short for true. ";
-      cout << false << " is short for false." << endl;
-
-      // Do not modify anything below.
-      return 0;
+       // Do not modify anything below.
+       return 0;
    }
 
    ====

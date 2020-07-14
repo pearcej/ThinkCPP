@@ -83,19 +83,19 @@ figure out what it is.
 
 .. mchoice:: program_lang_2
    :multiple_answers:
-   :answer_a: High-level programs are only used for a few special applications.
+   :answer_a: Almost all programs are written in high-level languages.
    :answer_b: Programs written in a high-level language must be translated before they can be run.
-   :answer_c: It's easier to program in a high-level language.
+   :answer_c: It's easier to program in a low-level language than a high-level language.
    :answer_d: Computers can only execute programs written in high-level languages.
    :answer_e: High-level programs can only run on one kind of computer (you'd have to rewrite the program if you wanted to use a different machine).
-   :correct: b,c
-   :feedback_a: Almost all programs are written in high-level languages!
-   :feedback_b: All high-level programs must be translated to a low-level programs before the computer can execute them!
-   :feedback_c: It takes less time to write in a high-level language, the code is shorter and easier to read, and it's more likely to be correct!
-   :feedback_d: Computers can only execute programs in LOW-level languages.
+   :correct: a,b
+   :feedback_a: High-level languages are efficient and easy to understand, an obvious choice for writing a program!
+   :feedback_b: All programs in high-level language must be translated to a low-level language before the computer can execute them!
+   :feedback_c: Actually, its much the other way around!
+   :feedback_d: Computers actually can't understand high-level languages as they are written.
    :feedback_e: High-level programs are portable, meaning they can run on different kinds of computers with little to no modification.
 
-   Multiple Response: Which is true about a high-level programming language?
+   **Multiple Response** Which is true about a high-level programming language?
 
 
 .. mchoice:: program_lang_3

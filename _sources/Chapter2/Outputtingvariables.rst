@@ -114,7 +114,7 @@ and the special value ``endl``. Very impressive!
    :feedback_a: The string a will not be printed.
    :feedback_b: The string b will not be printed.
    :feedback_c: z is the value of a and will not be printed.
-   :feedback_d: 8 is the value of b will not be printed!
+   :feedback_d: 8 is the value of b will be printed!
    :feedback_e: There is no type mismatch, so there will not be a compile error.
 
    Now, what prints?
