@@ -5,21 +5,43 @@ Answer the following **Activecode** questions to
 assess what you have learned in this chapter.
 
 
-.. activecode:: vars_types_a1
-   :language: cpp
+.. tabbed:: vars_types_a1
 
-   Fix the code below so that it runs without errors.  Hint: you might
-   need to change the names of some variables.
-   ~~~~
-   int main () {
-       char true = 'T';
-       char false = 'F';
-       cout << true << " is short for true. ";
-       cout << false << " is short for false." << endl;
+   .. tab:: Question
 
-       // Do not modify anything below.
-       return 0;
-   }
+      .. activecode:: vars_types_a1q
+         :language: cpp
+
+         Fix the code below so that it runs without errors.  Hint: you might
+         need to change the names of some variables.
+         ~~~~
+         int main () {
+             char true = 'T';
+             char false = 'F';
+             cout << true << " is short for true. ";
+             cout << false << " is short for false." << endl;
+
+             // Do not modify anything below.
+             return 0;
+         }
+
+   .. tab:: Answer
+
+      .. activecode:: vars_types_a1a
+         :language: cpp
+
+         Below is one way to fix the program.  ``true`` and ``false`` are
+         keywords, so they cannot be used as variable names.
+         ~~~~
+         int main () {
+             char t = 'T';
+             char f = 'F';
+             cout << t << " is short for true. ";
+             cout << f << " is short for false." << endl;
+
+             // Do not modify anything below.
+             return 0;
+         }    
 
 
 .. activecode:: vars_types_a2
@@ -40,15 +62,34 @@ assess what you have learned in this chapter.
    }
 
 
-.. activecode:: vars_types_a3
-   :language: cpp
+.. tabbed:: vars_types_a3
 
-   Fix the code below so that it prints "Cady scored .90 on the exam."
-   ~~~~
-   int main() {
-       int Cady = (3 * 5) * 6 / 100;
-       cout << "Cady scored" << Cady <<"on the exam."
-   }
+   .. tab:: Question
+
+      .. activecode:: vars_types_a3q
+         :language: cpp
+
+         Fix the code below so that it prints "Cady scored 0.9 on the exam."
+         Although this isn't how we'd usually tell people our scores, 0.9 is
+         the C++ way of expressing 90%.
+         ~~~~
+         int main() {
+             int Cady = (3 * 5) * 6 / 100;
+             cout << "Cady scored" << Cady <<"on the exam.";
+         }
+
+   .. tab:: Answer
+
+      .. activecode:: vars_types_a3a
+         :language: cpp
+
+         Below is one way to fix the program.  We want to use doubles so that
+         our result isn't rounded down to 0 through integer division.
+         ~~~~
+         int main() {
+             double Cady = (3 * 5) * 6 / 100.0;
+             cout << "Cady scored " << Cady <<" on the exam.";
+         }    
 
 
 .. activecode:: vars_types_a4
@@ -68,21 +109,44 @@ assess what you have learned in this chapter.
    }
 
 
-.. activecode:: vars_types_a5
-   :language: cpp
+.. tabbed:: vars_types_a5
 
-   Finish the code below so that assigns ``a`` its correct value of ``'a'``.  Hint:
-   use character operations!
-   ~~~~
-   int main () {
-       char a = 's';
+   .. tab:: Question
 
-       // Complete the line below.
-       a = ;
+      .. activecode:: vars_types_a5q
+         :language: cpp
 
-       // Do not modify anything below.
-       cout << a;
-   }
+         Finish the code below so that assigns ``a`` its correct value of ``'a'``.  Hint:
+         use character operations!
+         ~~~~
+         int main () {
+            char a = 's';
+
+            // Complete the line below.
+            a = ;
+
+            // Do not modify anything below.
+            cout << a;
+         }
+
+   .. tab:: Answer
+
+      .. activecode:: vars_types_a5a
+         :language: cpp
+
+         Below is one way to complete the program.  There are many creative
+         ways that you could use the order of operations to come up with a complex
+         expression that will bring you to ``'a'``, here is one way.
+         ~~~~
+         int main () {
+            char a = 's';
+
+            // Complete the line below.
+            a = a - (3 * 5 + 3);
+
+            // Do not modify anything below.
+            cout << a;
+         }
 
 
 .. activecode:: vars_types_a6
@@ -96,14 +160,31 @@ assess what you have learned in this chapter.
    }
 
 
-.. activecode:: vars_types_a7
-   :language: cpp
+.. tabbed:: vars_types_a7
 
-   Write code that prints "Eat", "More", and "Chicken" on 3 consecutive lines.
-   ~~~~
-   int main () {
+   .. tab:: Question
 
-   }
+      .. activecode:: vars_types_a7q
+         :language: cpp
+
+         Write code that prints "Eat", "More", and "Chicken" on 3 consecutive lines.
+         ~~~~
+         int main () {
+
+         }
+
+   .. tab:: Answer
+
+      .. activecode:: vars_types_a7a
+         :language: cpp
+
+         Below is one way to implement the solution.
+         ~~~~
+         int main () {
+             cout << "Eat" << endl;
+             cout << "More" << endl;
+             cout << "Chicken" << endl;
+         } 
 
 
 .. activecode:: vars_types_a8
@@ -117,17 +198,35 @@ assess what you have learned in this chapter.
    }
 
 
-.. activecode:: vars_types_a9
-   :language: cpp
+.. tabbed:: vars_types_a9
 
-   You have about three hours and fifteen minutes of homework to do today.  Rather
-   than starting it right away, you choose to procrastinate by calculating how many
-   seconds you'll be spending on your work.  Convert the time to seconds and store the
-   result in ``seconds``.
-   ~~~~
-   int main () {
+   .. tab:: Question
 
-   }
+      .. activecode:: vars_types_a9q
+         :language: cpp
+
+         You have about three hours and fifteen minutes of homework to do today.  Rather
+         than starting it right away, you choose to procrastinate by calculating how many
+         seconds you'll be spending on your work.  Convert the time to seconds and store the
+         result in ``seconds``.
+         ~~~~
+         int main () {
+
+         }
+
+   .. tab:: Answer
+
+      .. activecode:: vars_types_a9a
+         :language: cpp
+
+         Below is one way to implement the solution.
+         ~~~~
+         int main () {
+             int hours = 3;
+             int minutes = 15;
+             int totalMinutes = minutes + 60 * hours;
+             int seconds = totalMinutes * 60;
+         }
 
 
 .. activecode:: vars_types_a10

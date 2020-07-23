@@ -16,3 +16,5 @@ Functions
    FunctionsWithMultipleParameters.rst
    FunctionsWithResults.rst
    Glossary.rst 
+   Exercises.rst
+   mixedUpCode.rst

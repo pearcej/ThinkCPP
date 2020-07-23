@@ -113,23 +113,27 @@ performing floating-point operations.
 
 .. fillintheblank:: floating_point_3
 
-   Suppose it's your birthday and your friend bought you a cake that
-   can serve 12.  You want to slice your cake so that each of your 5 
-   friends recieves an equal amount of cake.  Some of your friends are
-   on a diet, and want to know the serving size of their slice.  You
-   write the following code in C++ to answer their question.
+   It's your birthday and your cake can serve 12.  You want to slice it
+   evenly so that you and each of your 4 friends receive an equal amount.  
+   One of your friends is on a diet and, and wants to know the serving size 
+   of her slice.  You write the following code in C++ to answer her question.
 
    ::
 
        int servings = 12;
        int people = 5;
 
-       double servingSize = apples / people;
+       double servingSize = servings / people;
 
-   After execution, what is the value of servingSize? |blank|
+   Based on the value of ``servingSize``, you tell your friend that each
+   slice is |blank| servings.  This is |blank| (more, less, the same) than/as
+   the actual serving size of her slice.
     
-   - :2: Correct! This isn't the information you wanted to calculate, but since C++ performs integer division, it's technically what you asked it to calculate.
-     :.*: Don't forget that slice and people are integer variables!
+   - :2: Correct! C++ performs integer division.
+     :.*: servingSize and people are integer variables!
+   - :[Mm][Oo][Rr][Ee]: Correct! You just unintentionally messed up your friend's diet.
+     :[Ll][Ee][Ss][Ss]: Remember, integer division rounds DOWN to the nearest integer!
+     :.*: Remember, C++ performs integer division.
 
 .. fillintheblank:: floating_point_4
 

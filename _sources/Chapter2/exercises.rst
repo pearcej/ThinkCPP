@@ -198,7 +198,7 @@ assess what you have learned in this chapter.
 
         -   ``pineapple = apples``, but what does ``apples`` equal?
 
-    -   ``My favorite fruit is `mango``
+    -   ``My favorite fruit is mango``
 
         -   ``"mango"`` is the value of the variable ``pineapple`` at the end of
             ``main``, but not at the line of the ``cout``.
