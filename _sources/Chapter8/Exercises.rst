@@ -28,27 +28,27 @@ Multiple Choice Exercises
         double avgGPA = 3.2;
       }
         
-    - x
+    - ``x``
 
       + ``x`` is a ``Student`` which is a ``struct``. 
 
-    - y
+    - ``y``
 
       + ``y`` is a ``Student`` which is a ``struct``. 
 
-    - z
+    - ``z``
 
       + ``z`` is a ``Professor`` which is a ``struct``. 
 
-    - college
+    - ``college``
 
       + ``college`` is a ``string`` which is made up of characters.
 
-    - studentPop
+    - ``studentPop``
 
       - An ``int`` is not a compound value.
 
-    - avgGPA
+    - ``avgGPA``
 
       - A ``double`` is not a compound value.
 
@@ -270,3 +270,104 @@ Multiple Choice Exercises
     - 1
 
       - That is the final value of ``r.isFullyCharged``. 
+
+.. mchoice:: mce_8_8
+
+    What is the output of the code below?
+
+    .. code-block:: cpp
+
+      void foo (int& x, int y) {
+        x = x + 4;
+        y = 2 * x + 3 * y;
+      }
+
+      void bar (int x, int y) {
+        y = 2 * x;
+        x = x - 1;
+        foo (x, x);
+      }
+
+      void func (int &x, int& y) {
+        x = x + 3;
+        bar (y, x);
+      }
+
+      int main() {
+        int x = 4;
+        int y = 7;
+        func (y, x);
+        cout << x << ", " << y;
+      }
+
+    - 4, 7
+
+      - Take a closer look at ``func`` and its parameters. Are they passed by value, passed by reference, or both?
+
+    - 4, 10
+
+      + Since ``bar`` doesn't pass either parameter by reference, neither ``bar`` nor ``foo`` affect the values of ``x`` and ``y``.
+
+    - 7, 7
+
+      - Check the order of the arguments passed into ``func``.
+
+    - 35, 8
+
+      - Take a closer look at the three functions. Are they all passed by reference?
+
+.. mchoice:: mce_8_9
+
+    If the user inputted the string "R2-D2", what is the output of the code below?
+
+    .. code-block:: cpp
+
+      int main() {
+        string name;
+        cin >> name;
+        cout << "Hello, " << name << "!";
+      }
+
+    - R2-D2
+
+      - Take another look at the ``cout`` statement.
+
+    - Hello name!
+
+      - ``name`` is not in quotes so the value stored in ``name`` will be printed.
+
+    - Hello, R2-D2!
+
+      + "R2-D2" is stored in ``name`` and is then outputted in the ``cout`` statement.
+
+    - name
+
+      - ``cin`` reads input from the user.
+
+.. mchoice:: mce_8_10
+
+    If the user inputted the string "C-3PO", what is the output of the code below?
+
+    .. code-block:: cpp
+
+      int main() {
+        char name;
+        cin >> name;
+        cout << "Hello, " << name << "!";
+      }
+
+    - Hello, CPO!
+
+      - ``cin`` reads the first ``char`` in from user input.
+
+    - Hello, C!
+
+      + Since 'C' is the first ``char`` in the input, this is the correct output.
+
+    - Hello, C-3PO!
+
+      - Check the data type of ``name``.
+
+    - Error, we cannot read a character from user input.
+
+      - We can read characters from user input.

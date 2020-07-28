@@ -64,7 +64,7 @@ In main you can call this function in the usual ways:
 
 The first line outputs the value true because 2 is a single-digit
 number. Unfortunately, when C++ outputs bools, it does not display the
-words true and false, but rather the integers 1 and 0. [1]_
+words true and false, but rather the integers 1 and 0.
 
 The second line assigns the value true to bigFlag only if 17 is *not* a
 single-digit number.
@@ -90,7 +90,7 @@ The most common use of bool functions is inside conditional statements
 
 .. parsonsprob:: bool_fun_2
    :adaptive:
-   :numbered:
+   :numbered: left
 
    Construct a block of code that first checks if a number is positive,
    then checks if it's even, and then prints out a message to classify
@@ -99,23 +99,23 @@ The most common use of bool functions is inside conditional statements
    is only positive.
    -----
    bool positiveFlag = (x > 0);
-
+   =====
    bool positiveFlag = (x < 0); #distractor
-
+   =====
    bool evenFlag = (n%2 == 0);
-
+   =====
    bool evenFlag = (n%2 == 1); #distractor
-
+   =====
    if (evenFlag && positiveFlag) {
-
+   =====
    if (evenFlag || positiveFlag) {  #distractor
-
+   =====
     cout << "both"; }
-
+   =====
    else if (evenFlag) {
-
+   =====
     cout << "even"; }
-
+   =====
    else {
-
+   =====
     cout << "positive"; }

@@ -17,3 +17,6 @@ Fruitful functions
    leapoffaith.rst
    onemoreexample.rst
    glossary.rst
+   Exercises.rst
+   mixed_up_code.rst
+   coding_practice.rst

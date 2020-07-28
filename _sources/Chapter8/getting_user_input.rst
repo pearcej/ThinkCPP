@@ -37,9 +37,10 @@ Thus, getting input from the user might look like this:
 
 .. activecode:: getting_user_input_AC_1
   :language: cpp
+  :stdin: 42
 
   The active code below is an example of what getting input from the
-  user might look like.
+  user might look like. Feel free to change 42 to other values!
   ~~~~
   #include <iostream>
   using namespace std;
@@ -101,9 +102,11 @@ This is useful for inputting strings that contain spaces.
 
 .. activecode:: getting_user_input_AC_2
   :language: cpp
+  :stdin: Harry Potter
 
   The active code below is an example of what getting input from the
-  user might look like using ``getline``.
+  user might look like using ``getline``. Feel free to change "Harry Potter"
+  to other values!
   ~~~~
   #include <iostream>
   #include <string>

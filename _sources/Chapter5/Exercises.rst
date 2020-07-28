@@ -1,0 +1,284 @@
+Multiple Choice Exercises
+-------------------------
+
+.. mchoice:: mce_5_1
+
+    What should be the return type of the function ``convertToCelsius``?
+
+    .. code-block:: cpp
+
+      ______ convertToCelsius (double fahrenheit) {
+        double celsius;
+        celsius = (fahrenheit - 32) * 5 / 9;
+        return celsius;
+      }
+        
+    - ``int``
+
+      - What variable are we returning in the function, and what is the variable's type? 
+
+    - ``double``
+
+      + The function returns ``celsius``, which is a ``double``.
+
+    - ``string``
+
+      - What variable are we returning in the function, and what is the variable's type? 
+
+    - ``void``
+
+      - Since we are returning something in the function, the function is not ``void``.
+
+.. mchoice:: mce_5_2
+
+    What would be returned by ``secretFunction`` if the input was 14?
+
+    .. code-block:: cpp
+
+      int secretFunction (int input) {
+        if (input % 2 == 0) {
+          return 3 * input - 2;
+        }
+        else {
+          if (input % 7 == 0) {
+            return input;
+          }
+          return 2 * input + 9;
+        }
+        return input + 4;
+      }  
+
+    - 14
+
+      - Although 14 is divisible by 7, take another look at the conditionals. 
+
+    - 18
+
+      - The flow of code would never reach the last return statement.
+
+    - 37
+
+      - Take a closer look at the conditional statements. 
+
+    - 40
+
+      + Since 14 is divisible by 2, the function returns two less than three times 14.
+
+.. mchoice:: mce_5_3
+
+    If we wanted to create a boolean function called ``isPrime``, which takes an ``int input``
+    as a parameter, which of the following would be the correct function header?
+
+    - ``boolean isPrime (int input)``
+
+      - In C++, use the ``bool`` keyword for a boolean. 
+
+    - ``bool isPrime (input)``
+
+      - In a function header, the type of each variable must be specified in the parameter list.
+
+    - ``bool isPrime (int input)`` 
+
+      + This is the correct function header for the function.
+
+    - ``int isPrime (bool input)``
+
+      - Take a closer look at what the return type is.
+
+.. mchoice:: mce_5_4
+
+    If we wrote the following function, which of the other functions below can we also legally write
+    and add to the program?
+
+    .. code-block:: cpp
+
+      int func (double x, bool y);
+
+    - int func (double a, bool b);
+
+      - Since this function has the same name and parameter types as the given function, it is not allowed.
+
+    - int foo (double x, bool y);
+
+      + This function has a different name from the given function, so it is allowed.
+
+    - int func (double x);
+
+      + Although this function has the same name as the given function, it has a different number of parameters, so it is allowed.
+
+    - void func (double x, bool y);
+
+      - Although this function has a different return type, its parameter list is the same as the given function, so it is not allowed.
+
+    - int func (bool y, double x);
+
+      + Although this function has the same name as the given function, its parameter list is in a different order, so it is allowed.
+
+.. mchoice:: mce_5_5
+
+    What is the output of the code below?
+
+    .. code-block:: cpp
+
+      int main() {
+        bool x = 2 < 3;
+        cout << x;
+        cout << false;
+        cout << ((1 + 4) * 4 > 24);
+        cout << (23 == (32 + 2 - 11));
+      }
+
+    - 1001
+
+      + Since the first and last statements are true and the middle two are false, this is the correct output.
+
+    - truefalsefalsetrue
+
+      - In C++, boolean values are outputted as 0 or 1.
+
+    - 1false01
+
+      - Since the second ``cout`` statement doesn't have quotes around the word "false", the value of 0 is outputted.
+
+    - 0110
+
+      - Remember that if a boolean expression is true, it has a value of 1.
+
+.. mchoice:: mce_5_6
+
+    What is the output of the code below?
+
+    .. code-block:: cpp
+
+      int main() {
+        bool w = !(2 * 3 == 6 || 4 - 3 > 8);
+        bool x = true || 4 > 6;
+        bool y = 3 != 6 - 3 && 23 >= 23;
+        bool z = (4 + 9 < 15 && 3 != 4) || 2 + 5 == 7;  
+        cout << w << x << y << z;
+      }
+
+    - 0101
+
+      + Since the expressions are false, true, false, and true, the output is 0101.
+
+    - 1101
+
+      - Remember the NOT operator (!) inverts the value of a boolean.
+
+    - 0100
+
+      - Take a closer look at the order of operations.
+
+    - 0110
+
+      - Take a closer look at the expressions.
+
+.. mchoice:: mce_5_7
+
+    Are there any issues with the code below?
+
+    .. code-block:: cpp
+
+      bool isEven (int num) {
+        if (num % 2 == 0) {
+          return true;
+        }
+      }
+
+    - Yes, we have to return either 0 or 1.
+
+      - Returning a 0 or 1 would be returning an ``int``, even though booleans evaluate to 0 or 1.
+
+    - Yes, we cannot pass an ``int`` into a ``bool`` function.
+
+      - The type of variables in the parameter list do not affect the return type.
+
+    - Yes, there is no case for odd numbers.
+
+      + Since we never established an else clause, if the input was an odd number, the function would not return anything despite not being a void function.
+
+    - There are no issues with the code.
+
+      - There is an issue with the code. Can you find it?
+
+.. mchoice:: mce_5_8
+
+    Are there any issues with the code below?
+
+    .. code-block:: cpp
+
+      void moonWeight (double earth) {
+        double moon = 0.165 * earth;
+        cout << "You would weigh " << moon << " pounds on the moon." << endl;
+        return moon;
+      }
+
+    - Yes, we cannot have ``cout`` statements in a function.
+
+      - We are allowed to use ``cout`` statements in a function.
+
+    - Yes, we cannot return anything in a ``void`` function.
+
+      + ``void`` functions do not have return values, so we cannot return ``moon``.
+
+    - Yes, we need to return the output statement.
+
+      - ``void`` functions do not have return values.
+
+    - There are no issues with the code.
+
+      - There is an issue with the code. Can you find it?
+
+.. mchoice:: mce_5_9
+
+    What is the return type of main?
+
+    - ``void``
+
+      - What keyword do we use before ``main()`` in every program?
+
+    - ``bool``
+
+      - What keyword do we use before ``main()`` in every program?
+
+    - ``double``
+
+      - What keyword do we use before ``main()`` in every program?
+
+    - ``int``
+
+      + Yes, ``main`` is supposed to return an integer.
+
+.. mchoice:: mce_5_10
+
+    What is the base case of the ``factorial`` recursive function?
+
+    .. code-block:: cpp
+
+      int factorial (int n) {
+        if (n == 0) {
+          return 1;
+        }
+        else {
+          int recurse = factorial (n-1);
+          int result = n * recurse;
+          return result;
+        }
+      }
+
+    - ``n = 0``
+
+      + When ``n`` is 0, the function returns the value 1 without making a recursive call.
+
+    - ``n = 1``
+
+      - When ``n`` is 1, the function makes a recursive call in the else statement.
+
+    - ``n = -1``
+
+      - ``n`` never becomes -1.
+
+    - There is no base case.
+
+      - If there was no base case, the function would recurse infinitely.
