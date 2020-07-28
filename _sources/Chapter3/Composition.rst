@@ -35,26 +35,47 @@ to another:
 
 
 .. mchoice:: function_comp_1
-   :answer_a: double x = log2 (12)
-   :answer_b: double val = tan (angle + pi/3);
-   :answer_c: double num = exp (cos(1.34))
-   :answer_d: double y = exp (cosine(9.8)) + exp (tan(4.5));
-   :correct: b
-   :feedback_a: log2 is not a built in cmath function, but you could write an implementation for it if you wanted!
-   :feedback_b: This correctly uses cmath functions!
-   :feedback_c: This would be correct if it ended in a semi-colon.
-   :feedback_d: Make sure to use the math keywords reserved in C++ when using math functions. Using **cosine** instead of *cos* is incorrect.
 
-   Which of these statements has correct syntax?
+    Which of these statements has proper syntax?
+
+    -   ``double x = log6 (12);``
+
+        -   ``log6`` is not a built in cmath function, but you could write an implementation for it if you wanted!
+
+    -   ``double val = abs (tan (1.57));``
+
+        +   This correctly uses cmath functions!
+
+    -   ``double num = exp (cosine (0.86667));``
+
+        -   ``cosine`` is not a built in cmath function, but ``cos`` is!
+
+    -   ``double y = exp (cos (1.047)) + exp (tan (2.094))``
+
+        -   This would be correct if it ended in a semi-colon.
 
 
-.. fillintheblank:: function_comp_2
+.. mchoice:: function_comp_2
 
-   What is the value of x?
+    Which of these statements returns the y-component of the unit
+    vector at 330 degrees?
 
-   ::
+    -   ``y = cos(330);``
 
-       double x = sin ( log10 (1000) * exp (2) );
+        -   You must always convert to radians before using sinusoidal functions.
 
-   - :-0\.175112: Correct!
-     :.*: Try again! (try modifying the active code to test it out!)
+    -   ``y = cos(330 * 2 * pi / 360);``
+
+        -   ``cos`` will return the x-component.
+
+    -   ``y = sin(330);``
+
+        -   You must always convert to radians before using sinusoidal functions.
+
+    -   ``y = sin(330 * 2 * pi / 360);``
+
+        +   ``sin`` returns the y-component, ``cos`` returns the x-component.
+
+    -   ``y = tan(330 * 2 * pi / 360);``
+
+        -   ``tan`` is not the proper function to use here.

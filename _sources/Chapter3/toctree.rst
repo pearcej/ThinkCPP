@@ -18,3 +18,4 @@ Functions
    Glossary.rst 
    Exercises.rst
    mixedUpCode.rst
+   activeCode.rst

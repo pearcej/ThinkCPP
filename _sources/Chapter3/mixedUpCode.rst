@@ -4,6 +4,61 @@ Mixed-Up Code Exercises
 Answer the following **Mixed-Up Code** questions to
 assess what you have learned in this chapter.
 
+
+.. parsonsprob:: functions_p9
+   :numbered: left
+   :adaptive:
+
+   Construct a function that correctly prints the integer conversion
+   of the passed double.
+   -----
+   void printInteger (double d) {
+   =====
+   printInteger (double d); #paired
+   =====
+    d = int(d);
+   =====
+    d = integer(d); #paired
+   =====
+    cout << d;
+   =====
+    cout d; #paired
+   =====
+   }
+
+
+.. parsonsprob:: functions_p0
+   :numbered: left
+   :adaptive:
+
+   Construct a function called newLine that takes no arguments
+   and prints a blank line.  Then construct another function called
+   divider that prints two blank lines separated by a line of 
+   ". . . . . . . . . . . ."
+   -----
+   void newLine () {
+   =====
+    cout << endl;
+   =====
+   }  //newLine
+   =====
+   void divider () {
+   =====
+    void divider (newLine) { #paired
+   =====
+    newLine ();  //first call
+   =====
+    cout << newLine ();  //first call #paired
+   =====
+    cout << ". . . . . . . . . . . . " << endl;
+   =====
+    newline ();  //second call
+   =====
+    cout << newLine ();  //second call #paired
+   =====
+   }  //divider
+
+
 .. parsonsprob:: functions_p1
    :numbered: left
    :adaptive:
@@ -13,9 +68,9 @@ assess what you have learned in this chapter.
    the value to the terminal.  Use 3.14 for pi.
 
    -----
-   void volCone (double r, double h) {
+   void volumeCone (double r, double h) {
    =====
-   double volCone (double r, double h) { #paired
+   double volumeCone (double r, double h) { #paired
    =====
     double vol = 1/3.0 * 3.14 * r * r * h;
    =====
@@ -26,38 +81,6 @@ assess what you have learned in this chapter.
     int vol = 1/3.0 * 3.14 * r * r * h; #paired
    =====
     cout << vol;
-   =====
-   }
-
-
-.. parsonsprob:: functions_p2
-   :numbered: left
-   :adaptive:
-
-   Your final grade is determined by a midterm component (each midterm
-   is worth 20% of the grade) and a final component. In order to avoid 
-   any discrepancies with students who's grades are on the fence, your 
-   teacher follows this strict grading scale: [0,60) = F, [60, 70) = D, 
-   [70, 80) = C, [80, 90) = B and [90, 100] = A. He does not round until
-   the very end.
-   Construct a function that determines a student's final grade according 
-   to this grading scheme and prints the result.
-   -----
-   void finalGrade (double m1, m2, f) {
-   =====
-   void finalGrade (m1, m2, f) { #paired
-   =====
-    double m_comp = m1 * 0.2 + m2 * 0.2;
-    double f_comp = f * 0.06;
-   =====
-    int m_comp = m1 * 0.2 + m2 * 0.2; #paired
-    int f_comp = f * 0.06;
-   =====
-    double final_grade = m_comp + f_comp;
-   =====
-    cout << int(final_grade);
-   =====
-    cout << final_grade; #paired
    =====
    }
 
@@ -122,9 +145,8 @@ assess what you have learned in this chapter.
    :adaptive:
 
    Suppose you have already defined a function called sumOfSquares which
-   returns the sum of the squares of two numbers, div2 which returns the
-   quotient after dividing a number by 2, and root which returns the square 
-   root of a number.  Construct a function that calculates the hypotenuse 
+   returns the sum of the squares of two numbers and root which returns the 
+   square root of a number.  Construct a function that calculates the hypotenuse 
    of the right triangle and prints the three sidelengths.
    -----
    int main () {
@@ -141,7 +163,7 @@ assess what you have learned in this chapter.
    =====
     double hyp = root(sqSum);
    =====
-    double hyp = div2(sqSum); #paired
+    double hyp = root(s1, s2); #paired
    =====
     cout << "The sides of the triangle are: " << s1 << ", " << s2 << ", " << hyp;
    =====
@@ -214,14 +236,17 @@ assess what you have learned in this chapter.
    function that calculates the probability of a having a snow day, 
    given the fact that it will snow tonight.
    -----
-   void conditionalProb (double B, AunionB) {
+   void conditionalProb (double B, double union) {
    =====
-    double prob = AandB / B;
+   void conditionalProb (double B, union) { #paired
    =====
-    double prob = B / AandB; #paired
+    double prob = union / B;
+   =====
+    double prob = B / union; #paired
    =====
     cout << prob;
-   }
+   =====
+   } //conditionalProb
    =====
    int main () {
    =====
@@ -234,5 +259,39 @@ assess what you have learned in this chapter.
     conditionalProb(pSnowday, pBoth); #paired
    =====
     conditionalProb(pSnowday, pSnow); #paired
+   =====
+   } //main
+
+
+.. parsonsprob:: functions_p2
+   :numbered: left
+   :adaptive:
+
+   Your final grade is determined by a midterm component (each midterm
+   is worth 20% of the grade) and a final component. In order to avoid 
+   any discrepancies with students who's grades are on the fence, your 
+   teacher follows this strict grading scale: [0,60) = F, [60, 70) = D, 
+   [70, 80) = C, [80, 90) = B and [90, 100] = A. He does not round until
+   the very end.
+   Construct a function that determines a student's final grade according 
+   to this grading scheme and prints the result.
+   -----
+   void finalGrade (double m1, double m2, double f) {
+   =====
+   void finalGrade (double m1, m2, f) { #paired
+   =====
+    double m_comp = m1 * 0.2 + m2 * 0.2;
+    double f_comp = f * 0.06;
+   =====
+    int m_comp = m1 * 0.2 + m2 * 0.2; #paired
+    int f_comp = f * 0.06;
+   =====
+    double final_grade = m_comp + f_comp;
+   =====
+    cout << int(final_grade);
+   =====
+    cout << int(final_grade) + 1; #paired
+   =====
+    cout << final_grade; #paired
    =====
    }

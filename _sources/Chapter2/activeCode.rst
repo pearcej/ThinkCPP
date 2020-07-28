@@ -15,6 +15,9 @@ assess what you have learned in this chapter.
          Fix the code below so that it runs without errors.  Hint: you might
          need to change the names of some variables.
          ~~~~
+         #include <iostream>
+         using namespace std;
+
          int main () {
              char true = 'T';
              char false = 'F';
@@ -33,6 +36,9 @@ assess what you have learned in this chapter.
          Below is one way to fix the program.  ``true`` and ``false`` are
          keywords, so they cannot be used as variable names.
          ~~~~
+         #include <iostream>
+         using namespace std;
+
          int main () {
              char t = 'T';
              char f = 'F';
@@ -49,6 +55,9 @@ assess what you have learned in this chapter.
 
    Fix the code below so that it prints "I drive a 2014 Buick Regal".
    ~~~~
+   #include <iostream>
+   using namespace std;
+
    int main () {
        string make;
        make = "Buick"
@@ -73,6 +82,8 @@ assess what you have learned in this chapter.
          Although this isn't how we'd usually tell people our scores, 0.9 is
          the C++ way of expressing 90%.
          ~~~~
+         #include <iostream>
+         using namespace std;
          int main() {
              int Cady = (3 * 5) * 6 / 100;
              cout << "Cady scored" << Cady <<"on the exam.";
@@ -98,6 +109,9 @@ assess what you have learned in this chapter.
    Finish the code below so that it returns the correct volume of a sphere.  Hint: 
    think about what happens when you use integer division.
    ~~~~
+   #include <iostream>
+   using namespace std;
+
    int main () {
        int radius = 5;
 
@@ -119,6 +133,9 @@ assess what you have learned in this chapter.
          Finish the code below so that assigns ``a`` its correct value of ``'a'``.  Hint:
          use character operations!
          ~~~~
+         #include <iostream>
+         using namespace std;
+
          int main () {
             char a = 's';
 
@@ -138,6 +155,9 @@ assess what you have learned in this chapter.
          ways that you could use the order of operations to come up with a complex
          expression that will bring you to ``'a'``, here is one way.
          ~~~~
+         #include <iostream>
+         using namespace std;
+      
          int main () {
             char a = 's';
 
@@ -153,7 +173,8 @@ assess what you have learned in this chapter.
    :language: cpp
 
    Write code that assigns "apples" to oranges, and "oranges" to apples,
-   then swaps their values.  YOU MAY NOT HARDCODE YOUR SOLUTION.
+   then swaps their values.  Be sure to inclue any necessary headers.
+   YOU MAY NOT HARDCODE YOUR SOLUTION.
    ~~~~
    int main () {
 
@@ -168,6 +189,7 @@ assess what you have learned in this chapter.
          :language: cpp
 
          Write code that prints "Eat", "More", and "Chicken" on 3 consecutive lines.
+         Be sure to inclue any necessary headers.
          ~~~~
          int main () {
 
@@ -191,7 +213,8 @@ assess what you have learned in this chapter.
    :language: cpp
 
    Write code that calculates how much you you will spend after tipping 20% on your
-   $36.25 dinner.  Save the result of this calculation in ``plusTip``.
+   $36.25 dinner.  Save the result of this calculation in ``plusTip``.  Be sure to 
+   inclue any necessary headers.
    ~~~~
    int main () {
 
@@ -208,7 +231,7 @@ assess what you have learned in this chapter.
          You have about three hours and fifteen minutes of homework to do today.  Rather
          than starting it right away, you choose to procrastinate by calculating how many
          seconds you'll be spending on your work.  Convert the time to seconds and store the
-         result in ``seconds``.
+         result in ``seconds``.  Be sure to inclue any necessary headers.
          ~~~~
          int main () {
 
@@ -233,7 +256,7 @@ assess what you have learned in this chapter.
    :language: cpp
 
    Write code that calculates and prints the average of a and b if a = 3.14, 
-   and b = 1.59.  You may only use one line of code.
+   and b = 1.59.  You may only use one line of code.  Be sure to inclue any necessary headers.
    ~~~~
    int main () {
 

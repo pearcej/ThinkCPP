@@ -106,7 +106,7 @@ exceptions later.
        }
 
        int main () {
-         string argument = "sassy";
+         string argument = "s";
          printTwice (argument);
          return 0;
        }
@@ -115,7 +115,7 @@ exceptions later.
    or if the compiler will throw an error, type "error".
     
    - :error: The type provided does not match the expected parameter type!
-     :sassysassy: If you look closely, you'll notice that the type of the argument is not the same as the type of the parameter.
+     :ss: The type provided does not match the expected parameter type!
      :.*: Try again!
 
 
@@ -141,31 +141,6 @@ exceptions later.
     
    - :bb: The printTwice fucntion will print the character argument proveided two times.
      :error: Something will be printed to the terminal!
-     :.*: Try again!
-
-
-.. fillintheblank:: params_args_3
-
-   ::
-
-       #include <iostream>
-       using namespace std;
-
-       void printTwice (char phil) {
-         cout << phil << phil << endl;
-       }
-
-       int main () {
-         double argument = 3.14;
-         printTwice (argument);
-         return 0;
-       }
-
-   What will be printed to the terminal?  If nothing will print, 
-   or if the compiler will throw an error, type "error".
-    
-   - :error: The type provided does not match the expected parameter type!
-     :3.143.14: If you look closely, you'll notice that the type of the argument is not the same as the type of the parameter.
      :.*: Try again!
 
 

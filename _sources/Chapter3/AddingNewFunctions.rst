@@ -135,54 +135,76 @@ example only demonstrates two:
 
 
 .. mchoice:: new_functions_1
-   :answer_a: void printName()
-   :answer_b: totalCost(double cost, double tax) {
-   :answer_c: string todaysWeather(int temperature) {
-   :answer_d: double finalGrade {
-   :correct: c
-   :feedback_a: This function header is missing a {, which is need to start and end a function definition.
-   :feedback_b: This function header is missing a return type.
-   :feedback_c: Correct!
-   :feedback_d: This function header is missing parentheses. Even if a function does not take in any parameters, empty parentheses should be used.
 
-   Which of the following is a correct function header (first line of 
-   a function definition)?
+    Which of these statements is false about functions?
 
+    -   You can name a function anything you want.
 
-.. mchoice:: new_functions_2
-   :answer_a: You can name a function anything you want.
-   :answer_b: You can have a fucntion with several parameters or a function with none.
-   :answer_c: You can call a function inside of another function.
-   :answer_d: You can write multiple statements on one line.
-   :correct: a
-   :feedback_a: You can't name a function the same name as a reserved keyword.
-   :feedback_b: This is true! However, you must always use parentheses.
-   :feedback_c: This is true! It is common and useful.
-   :feedback_d: This is true! As long as each statement ends with a semicolon.
+        +   You can't name a function the same name as a reserved keyword.
 
-   Which of the following is **false** about functions?
+    -   You can have a fucntion with several parameters or a function with none.
+
+        -   This is true! However, you must always use parentheses.
+
+    -   You can call a function inside of another function.
+
+        -   This is true! It is common and useful.
+
+    -   You can write multiple statements on one line of a function.
+
+        -   This is true! As long as each statement ends with a semicolon.
 
 
-.. clickablearea:: new_functions_3
-   :question: Click on all function headers statements.
+.. clickablearea:: new_functions_2
+   :question: Click on all function HEADERS.
    :iscode:
    :feedback: Remember, the operator '=' is used for assignment.
 
    :click-correct:void printX() {:endclick:
        :click-incorrect:cout << "X";:endclick:
    }
-   
-   :click-incorrect:int pi = 3.14159;:endclick:
+
+   :click-correct:void printVar(int a) {:endclick:
+       :click-incorrect:cout << a;:endclick:
+   }  
 
    :click-correct:int main() {:endclick:
-       :click-incorrect:int x = 4;:endclick:
-       for (int i = 0; i < 5; ++i){
-           :click-incorrect:y = i;:endclick:
-           :click-incorrect:if y > 2{:endclick:
-               cout << y;
-           }
+       :click-incorrect:int x = 7;:endclick:
+       :click-incorrect:printVar(x);:endclick: 
+       :click-incorrect:if (x < 10) {:endclick:
+           :click-incorrect:x = x - 1;:endclick:
        }
        :click-incorrect:printX();:endclick:
+       :click-incorrect:int y = 3;:endclick:
        :click-incorrect:double result = x / y;:endclick:
-       :click-incorrect:return result;:endclick:
+       :click-incorrect:printVar(result);:endclick:
+       return 0;
    }
+
+
+.. clickablearea:: new_functions_3
+   :question: Click on all function CALLS.
+   :iscode:
+   :feedback: Remember, the operator '=' is used for assignment.
+
+   :click-incorrect:void printX() {:endclick:
+       :click-incorrect:cout << "X";:endclick:
+   }
+
+   :click-incorrect:void printVar(int a) {:endclick:
+       :click-incorrect:cout << a;:endclick:
+   }  
+
+   :click-incorrect:int main() {:endclick:
+       :click-incorrect:int x = 7;:endclick:
+       :click-correct:printVar(x);:endclick:  
+       :click-incorrect:if (x < 10) {:endclick:
+           :click-incorrect:x = x - 1;:endclick:
+       }
+       :click-correct:printX();:endclick:     
+       :click-incorrect:int y = 3;:endclick:
+       :click-incorrect:double result = x / y;:endclick:
+       :click-correct:printVar(result);:endclick:
+       return 0;
+   }
+

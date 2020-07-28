@@ -121,40 +121,44 @@ Such header files have an initial ‘c’ to signify that these header files
 have been derived from the **C** language.
 
 
-.. dragndrop:: math_functions_1
-   :feedback: Try again!
-   :match_1: #include &#60;cmath&#62; ||| allows the use of functions like log and sin
-   :match_2: #include &#60;iostream&#62; ||| contains information about input and output streams
-   :match_3: using namespace std; ||| the standard implementation of cout
+.. dragndrop:: dnd1
+    :feedback: This is feedback.
+    :match_1: cmath|||allows the use of functions like log and sin
+    :match_2: iostream|||contains information about input and output streams
+    :match_3: namespace std|||the standard implementation of cout
 
-   Match the statement to its description.
+    Match the statement to its description.
 
 
 .. fillintheblank:: math_functions_2
 
    What are the units used by sinusoidal functions (sin, asin, e.t.c.) in C++?
     
-   - :[Rr][Aa][Dd][Ii][Aa][Nn][Ss]?: If you need to convert to degrees, just multiply by 360 and divide by 2:math:`\pi`.
+   - :[Rr][Aa][Dd][Ii][Aa][Nn][Ss]?: If you need to convert to degrees, just multiply by 360 and divide by 2pi.
      :[Dd][Ee][Gg][Rr][Ee][Ee][Ss]?: This is a unit sometimes used for sinusoidal functions, but not the one used by C++.
      :.*: Try again!
 
 
-.. activecode:: math_functions_3
-   :language: cpp
-   :caption: What's Missing?
+.. mchoice:: math_functions_3
 
-   There is one statement missing in the program below. Add it in so 
-   that the program complies.
-   ~~~~
-   #include <iostream>
-   using namespace std;
+    **Multiple Response** Select all correct cmath functions.
 
-   int main () {
-       double pi = acos(-0.5);
-       double degrees = 45;
-       double angle = degrees * 2 * pi / 360.0;
-       cout << pi << endl;
-       cout << degrees << endl;
-       cout << angle << endl;
-       return 0;
-   }
+    -   ``cos``
+
+        +   This function computes the cosine of an angle.
+
+    -   ``arctan``
+
+        -   The arc tangent function is actually called ``atan``.
+
+    -   ``log10``
+
+        +   This function computes the common logarithm.
+
+    -   ``pow``
+
+        +   This function raises an expression to a power.
+
+    -   ``ln``
+
+        -   The natural log function is actually called ``log``.
