@@ -4,9 +4,9 @@ Mixed-Up Code Exercises
 Answer the following **Mixed-Up Code** questions to
 assess what you have learned in this chapter.
 
-Parsons (morning)
-
 .. parsonsprob:: vars_types_p1
+   :numbered: left
+   :adaptive:
 
    Construct a block of code that prints: "Lions &" one the first line,
    "Tigers & Bears!" on the second line, and "Oh my!" on the FOURTH line.
@@ -34,6 +34,8 @@ Parsons (morning)
 
 
 .. parsonsprob:: vars_types_p2
+   :numbered: left
+   :adaptive:
 
    Construct a block of code that swaps the value of integers x 
    and y, which have values 3 and 6, respectively.
@@ -65,9 +67,11 @@ Parsons (morning)
 
 
 .. parsonsprob:: vars_types_p3
+   :numbered: left
+   :adaptive:
 
    Dan Humphrey is a 3.98 student at Constance High School.  His crush's
-   first initial is S.  Construct a program that has assigns the variables
+   first initial is S.  Construct a program that assigns the variables
     name, GPA, and crush, in that order.
 
    -----
@@ -98,6 +102,8 @@ Parsons (morning)
 
 
 .. parsonsprob:: vars_types_p4
+   :numbered: left
+   :adaptive:
 
    You decide to make homemade Mac 'n' Cheese for you and your
    roomates.  Whoever wrote the recipe wanted to make things hard
@@ -132,6 +138,8 @@ Parsons (morning)
 
 
 .. parsonsprob:: vars_types_p5
+   :numbered: left
+   :adaptive:
 
    Construct a block of code that takes the volume of the rectangular
    prism defined by length, width, and height and prints
@@ -164,6 +172,8 @@ Parsons (morning)
 
 
 .. parsonsprob:: vars_types_p6
+   :numbered: left
+   :adaptive:
 
    Construct a block of code that converts the character 'a' to 'z'
    using a complex set of operations.  Hint: Think about how many
@@ -188,6 +198,8 @@ Parsons (morning)
 
 
 .. parsonsprob:: vars_types_p7
+   :numbered: left
+   :adaptive:
 
    Construct a block of code that outputs the volume of a cylinder
    with a radius of 3 and a height of 4.  There are many ways to do this using the
@@ -212,9 +224,12 @@ Parsons (morning)
     volume = base * height; #distractor
    =====
     cout << volume; #distractor
+   =====
    }
 
 .. parsonsprob:: vars_types_p8
+   :numbered: left
+   :adaptive:
 
    Construct a block of code that prints "My favorite class is MATH"
    on the same line.
@@ -239,10 +254,12 @@ Parsons (morning)
    }
 
 .. parsonsprob:: vars_types_p9
+   :numbered: left
+   :adaptive:
 
    It's Black Friday and the game system you'be been saving up for is marked
-   down 60%!  Construct a block of code that calculates how much money
-   you'd be saving if the system originally costed $359.99?
+   down to 60% of its original price!  Construct a block of code that calculates 
+   how much money you'd be saving if the system originally costed $359.99?
 
    -----
    int main() {
@@ -253,20 +270,22 @@ Parsons (morning)
    =====
     int game = 359.99; #paired
    =====
-    double discountPrice = game * 0.60;
+    double discountGame = game * 0.60;
    =====
-    double discountPrice = game / 0.60; #paired
+    double discountGame = game / 0.60; #paired
    =====
-    double moneySaved = game - discountPrice;
+    double moneySaved = game - discountGame;
    =====
-    double moneySaved = discountPrice; #paired
+    double moneySaved = discountGame; #paired
    =====
-    double moneySaved = game + discountPrice; #paired
+    double moneySaved = game + discountGame; #paired
    =====
    }
 
 
 .. parsonsprob:: vars_types_p10
+   :numbered: left
+   :adaptive:
 
    Your family just bought a dog and everyone has been fighting over
    what to name it.  It went from Champ to Copper to Higgins, and after

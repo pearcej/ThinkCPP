@@ -14,3 +14,6 @@ Conditionals and recursion
    InfiniteRecursion.rst
    StackDiagrams.rst
    Glossary.rst
+   Exercises.rst
+   mixedUpCode.rst
+   activeCode.rst

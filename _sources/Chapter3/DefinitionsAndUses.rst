@@ -46,26 +46,26 @@ messages you get.
      :.*: Try again!
 
 
-.. activecode:: defns_uses_2
-   :language: cpp
-   :caption: The newBorder Function
+.. mchoice::  defns_uses_2
 
-   Call the function called newBorder in your main function. This adds a 
-   divider in between sections of your output.
-   ~~~~
-   #include <iostream>
-   using namespace std;
+    Which of the following is a correct function header (first line of 
+    a function definition)?
 
-   void newBorder () {
-       cout << "..................." << endl;
-   }
+    -   ``void printName()``
 
-   int main () {
-       cout << "First Line." << endl;
-       //Call your function here!
-       cout << "Second Line." << endl;
-       return 0;
-   }
+        -   This function header is missing a ``{``, which is needed to begin defining the function.
+
+    -   ``totalCostAfterTax () {``
+
+        -   This function header is missing a return type.
+
+    -   ``void todaysWeather () {``
+
+        +   Correct!
+
+    -   ``void finalGrade {``
+
+        -   This function header is missing parentheses. Even if a function does not take in any parameters, empty parentheses should be used.
 
 
 .. parsonsprob:: defns_uses_3

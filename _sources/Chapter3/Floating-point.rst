@@ -93,16 +93,7 @@ different. In fact, most processors have special hardware just for
 performing floating-point operations.
 
 
-.. dragndrop:: floating_point_1
-   :feedback: Try again!
-   :match_1:  double pi = 3.14;|||initialization
-   :match_2: pi = 3.14;|||assignment
-   :match_3: double pi;|||declaration
-
-   Match the statement to the word that best describes it.
-
-
-.. fillintheblank:: floating_point_2
+.. fillintheblank:: floating_point_1
 
    A(n) |blank| statment consists of a declaration statement and an 
    assignment statement, which are combined.
@@ -111,38 +102,54 @@ performing floating-point operations.
      :.*: Try again!
 
 
-.. fillintheblank:: floating_point_3
+.. fillintheblank:: floating_point_2
 
-   Suppose it's your birthday and your friend bought you a cake that
-   can serve 12.  You want to slice your cake so that each of your 5 
-   friends recieves an equal amount of cake.  Some of your friends are
-   on a diet, and want to know the serving size of their slice.  You
-   write the following code in C++ to answer their question.
+   It's your birthday and your cake can serve 12.  You want to slice it
+   evenly so that you and each of your 4 friends receive an equal amount.  
+   One of your friends is on a diet and, and wants to know the serving size 
+   of her slice.  You write the following code in C++ to answer her question.
 
    ::
 
        int servings = 12;
        int people = 5;
 
-       double servingSize = apples / people;
+       double servingSize = servings / people;
 
-   After execution, what is the value of servingSize? |blank|
+   Based on the value of ``servingSize``, you tell your friend that each
+   slice is |blank| servings.  This is |blank| (more, less, the same) than/as
+   the actual serving size of her slice.
     
-   - :2: Correct! This isn't the information you wanted to calculate, but since C++ performs integer division, it's technically what you asked it to calculate.
-     :.*: Don't forget that slice and people are integer variables!
+   - :2: Correct! C++ performs integer division.
+     :.*: servingSize and people are integer variables!
+   - :[Ll][Ee][Ss][Ss]: Correct! You just unintentionally messed up your friend's diet.
+     :[Mm][Oo][Rr][Ee]: Remember, integer division rounds down to the nearest integer.
+     :.*: Remember, C++ performs integer division.
 
-.. fillintheblank:: floating_point_4
+
+.. mchoice:: floating_point_3
+   :answer_a: e
+   :answer_b: 3
+   :answer_c: 2
+   :answer_d: 3.0
+   :answer_e: 2.71828
+   :correct: c
+   :feedback_a: This is the name of a variable. Only the value of a variable will print with cout.
+   :feedback_b: Converting to an int always rounds down.
+   :feedback_c: When we converted e to an int, e was rounded down to 2. When we converted e_nt to e_double, the decimal places from e were lost, and the value of e_double is 2.
+   :feedback_d: Converting to an int always rounds down.
+   :feedback_e: When we converted e to an int, e was rounded down to 2. When we converted e_nt to e_double, the decimal places from e were lost.
+
+   In the lab, we measured a temperature of 7.99999999 degrees C, using
+   an extremely precise measuring device.  Now we are writing a program
+   to perform some calculations with our data.  Consider the following C++
+   code.
 
    ::
 
        double e = 2.71828;
-       int eInt = e;
-       double eDouble = eInt;
-       cout << eDouble;
+       int e_int = e;
+       double e_double = eInt;
+       cout << e_double;
 
-   What is the value of eDouble printed to the terminal?
-    
-   - :2: When we converted e to an int, e was rounded down to 2. When we converted eInt to a double, the decimal places from e were lost, and the value of eDouble remains 2.
-     :2\.0: C++ knows that the value of eDouble is 3.0, but it is displayed to the terminal without the extra decimal places.
-     :2\.71828: When we converted e to an int, e was rounded down to 2. When we converted eInt to a double, the decimal places from e were lost.
-     :.*: Try again!
+   What is the value of ``e_double`` that is printed to the terminal?
