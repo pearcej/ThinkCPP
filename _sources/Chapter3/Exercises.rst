@@ -5,420 +5,267 @@ Answer the following **Multiple Choice** questions to
 assess what you have learned in this chapter.
 
 
-.. mchoice:: functions_mc1
+.. mchoice:: cond_rec_mc1
 
-    You want to spice up your resume before the career fair, so you decide to
-    update your GPA using the program below. What is the GPA that you will 
-    have on display for future employers?
+    Say you run the following code.  What is the value of ``mod``?
 
     ::
 
-        #include <iostream>
-        using namespace std;
+        int x = 4;
+        int y = 7;
+        int mod = y % x;
 
-        int main() {
-          double GPA = 3.52;
-          int updatedGPA = int(GPA);
-          cout << "GPA: " << updatedGPA;
-        }
+    -   0
 
-    -   ``3.0``
+        +   There *is* a remainder.
 
-        -   Its correct to think that your GPA will be rounded down, but what 
-            else happens when you convert from ``int`` to ``double``?
+    -   1
 
-    -   ``3``
+        -   Incorrect!
 
-        +   Converting to an ``int`` always rounds down to the nearest integer, so I do not 
-            recommend using type conversions to build your resume... especially if you're 
-            close to ``4.0``.
+    -   2
 
-    -   ``4.0``
-
-        -   Converting to an int *will* round yor GPA, but not in the direction
-            that you were hoping for... what else happens when you convert from
-            ``int`` to ``double``?
-
-    -   ``4``
-
-        -   Converting to an int *will* round yor GPA, but not in the direction
-            that you were hoping for.
-
-    -   Error!
-
-        -   No errors here! Type conversions are perfectly legal in C++!
-
-
-.. mchoice:: functions_mc2
-
-    What is the value of x after the program executes?
-
-    ::
-
-        #include <iostream>
-        using namespace std;
-
-        int main() {
-          int x = acos(-1);
-        }
-
-    -   3.14159265358979323846
-
-        -   If ``x`` were a double, C++ would automatically round the value
-            of pi to **15** decimal places.
-
-    -   3.142
-
-        -   If ``x`` were a double, C++ would automatically round the value
-            of pi to **15** decimal places.
-
-    -   3.0
-
-        -   Automatic type conversion will round the value of pi down to the
-            nearest integer, but what else happens when we convert a ``double``
-            to an ``int``?
+        -   Incorrect!
 
     -   3
 
-        -   The value of x *should* be 3, since automatic type conversion will
-            round the value of pi down to the nearest integer.
+        +   The remainder of ``7 / 4`` is 3.
 
-    -   Error!
+    -   4
 
-        +   Whenever we use math functions, we must include the ``<cmath>`` header file.
+        -   We can't have a remainder of 4, since 4 is the divisor.
 
 
-.. mchoice:: functions_mc3
+.. mchoice:: cond_rec_mc2
 
-    **Multiple Response** Select all variables that have a *non-zero* value after the decimal place.
-    (3.1 has a *non-zero* value, while 3.0 does not)
+    What is printed when the following code executes?
 
     ::
 
-        #include <iostream>
-        using namespace std;
+        int x = 8;
 
-        int main() {
-          int a = 1.5;
-          double b = a + 1.5;
-          double c = 2.4;
-          double d = 1/5;
-          int e = c * c;
-          double f = int(c);
+        if (x % 3 == 2) {
+            cout << "hey!" << endl;
+        }
+        elif (x != 7) {
+            cout << "hi!" << endl;
+        }
+        elif (x % 2 == 0) {
+            cout << "hello!" << endl;
+        }
+        else {
+            cout << "bye!" << endl;
         }
 
-    -   ``a``
+    -   ::
 
-        -   C++ performs automatic type conversion to round 1.5 down to the 
-            nearest integer.
+            hey!
 
-    -   ``b``
+        +   Since the first conditon is met, the rest of the chained
+            conditional does not execute.
 
-        +   Since ``a = 1``, we know that ``b = 2.5``, which is a non-zero decimal.
+    -   ::
 
-    -   ``c``
+            hi!
 
-        +   ``c`` is a ``double`` and has a non-zero decimal.
+        -   It's true that ``8 != 7``, but "hi!" is not printed here.
 
-    -   ``d``
+    -   ::
 
-        -   C++ performs integer division to round ``1/5`` down to the nearest
-            integer.  The value will be stored as ``0``, not ``0.2``.
+            hi!
 
-    -   ``e``
+        -   It's true that ``8 % 2 == 0``, but "hello!" is not printed!
 
-        -   ``c`` squared may have a non-zero decimal, but automatic type conversion
-            will round it down to the nearest integer before storing the value in ``e``.
-    
-    -   ``f``
+    -   ::
 
-        -   ``int(c)`` rounds ``c`` down to the nearest integer before storing the 
-            value in ``f``. 
+            hey!
+            hi!
+            hello!
 
+        -   All of these conditons are met, but only one expression is
+            printed!
 
-.. mchoice:: functions_mc4
+    -   ::
 
-    **Multiple Response** Which of the following would work as a function header
-    (first line of a function).
+            bye!
 
-    -   ``printHelloWorld () {``
-
-        -   This function header is missing a type.
-
-    -   ``string palindrome (word) {``
-
-        -   The function's parameter is missing a type.
-
-    -   ``int mult (int a, int b) {``
-
-        +   Correct!
-
-    -   ``char shiftThree (char letter)``
-
-        -   This function header is missing a squiggly bracket ``{``.
-
-    -   ``void giveCompliment () {``
-
-        +   Correct!
-    
-    -   ``string friend (string name) {``
-
-        -   ``friend`` is a reserved keyword in C++.
+        -   At least one of the conditons is met, so the ``else`` will not
+            execute!
 
 
-.. mchoice:: functions_mc5
+.. mchoice:: cond_rec_mc3
 
-    What is printed when the following code runs?  Are there any errors?
+    What is printed when the following code executes?
 
     ::
 
-        #include <iostream>
-        using namespace std;
+        int x = 34;
 
-        void giveCompliment () {
-            cout << "You are awesome!";
+        if (32 < x) {
+            cout << "it's freezing!";
+        }
+        if (x < 50) {
+            cout << "it's cold!";
+        }
+        if (x > 65) {
+            cout << "sweater weather!"'
+        }
+        else {
+            cout << "it's hot!";
         }
 
-        void giveInsult () {
-            insult = "You suck!";
-        }
+    -   ::
 
-        int main () {
-            giveInsult ();
-        }
+            it's freezing!
 
-    -   ``"You are awesome!"``
+        -   Take a closer look at the conditions and the way they
+            are written in the program.
 
-        -   The ``giveCompliment`` function is not called in ``main``.
+    -   ::
 
-    -   ``"You suck!"``
+            it's cold!
 
-        -   The ``giveInsult`` function doesn't ``cout`` anything.
+        -   Take a closer look at the conditions and the way they
+            are written in the program.
 
-    -   Nothing is printed.
+    -   ::
 
-        +   Correct!  ``giveInsult`` doesn't ``cout`` anything.
+            it's freezing!
+            it's cold!
 
-    -   Error!
+        -   You've identified some of the conditons that are met!
+            Take another look at the *chain* of conditionals at the
+            end!
 
-        -   There are no errors with this program!
+    -   ::
+
+            it's freezing!
+            it's cold!
+            it's hot!
+
+        +   These statements are quite contradicting, but that's exactly
+            what the output would be if we ran this code.
+
+    -   ::
+
+            it's hot!
+
+        -   Take a closer look at the conditions and the way they
+            are written in the program.
 
 
-.. mchoice:: functions_mc6
+.. mchoice:: cond_rec_mc4
 
-    Rachel and Monica are best friends.  They write a function
-    called ``bestFriends`` so that they announce this fact to the 
-    rest of their friends.  What is printed when they run the code 
-    below? Are there any errors?
+    Suppose you have defined the following function:
 
     ::
 
-        #include <iostream>
-        using namespace std;
-
-        void bestFriends (string a, string b) {
-            cout << a << " is best friends with " << b;
+        void fortuneCookie (int a, bool b, char c) {
+            if (c < 'm') {
+                if (a % 2 == 0) {
+                    cout << "An alien of some sort will be appearing to you shortly.";
+                }
+                else {
+                    cout << "The fortune you seek is in another cookie.";
+                }
+            }
+            elif (c < 'r') {
+                if (b) {
+                    cout << "He who laughs at himself never runs out of things to laugh at.";
+                }
+                else {
+                    cout << "You will be hungry again in one hour.";
+                }
+            }
+            else {
+                cout << "Fortune not found? Abort, retry, ignore.";
+            }
         }
 
-        int main () {
-            string a = "Rachel";
-            string b = "Monica";
-            bestFriends(b, a);
-        }
-
-    -   ``"Monica is best friends with Rachel"``
-
-        +   Correct!
-
-    -   ``"Rachel is best friends with Monica"``
-
-        -   You seem to be confusing your arguments and parameters!
-
-    -   ``a is best friends with b``
-
-        -   The function ``couts`` the *values* of the variables, not their
-            names!
-
-    -   ``b is best friends with a``
-
-        -   The function ``couts`` the *values* of the variables, not their
-            names!
-
-    -   Error!
-
-        -   There are no errors with this program!
-
-
-.. mchoice:: functions_mc7
-
-    What is printed when the following code runs?  Are there any errors?
+    What will be your fortune if you run the following code?
 
     ::
 
-        #include <iostream>
-        using namespace std;
+        fortuneCookie('m', false, 14);
 
-        void greeting (string name) {
-            cout << "hello, " << name << "!";
-        }
+    -   ``An alien of some sort will be appearing to you shortly.``
 
-        void goodbye (string name) {
-            greeting (name);
-            cout << "!!";
-        }
+        -   The nested conditional is true, but what about the outer condition?
 
-        int main () {
-            string hannah = "Hannah";
-            string anna = "Anna";
-            string louise = hannah;
-            hannah = anna;
-            anna = louise;
-            goodbye (anna);
-        }
+    -   ``The fortune you seek is in another cookie.``
 
-    -   ``hello, Hannah!!!``
+        -   Are either of the coditions met to reach this fortune?
 
-        +   Correct!
+    -   ``He who laughs at himself never runs out of things to laugh at.``
 
-    -   ``hello, anna!!!``
+        -   The outer conditonal is true, but what about the inner condition?
 
-        -   The function ``couts`` the *value* of the variable ``anna`` not
-            the variable name!
+    -   ``You will be hungry again in one hour.``
 
-    -   ``hello, Anna!!!``
+        +   ``'m' < 'r'`` is true and ``b`` is false.
 
-        -   Is ``"Anna"`` still the value of ``anna``?
+    -   ``Fortune not found? Abort, retry, ignore.``
 
-    -   ``hello, Louise!``
-
-        -   The ``goodbye`` function adds extra exclamation points.
-
-    -   ``hello, Louise!!!``
-
-        -   We assigned the valu eof ``louise`` to ``anna``.  Is ``"Louise"``
-            the value of ``louise``?
-
-    -   Error!
-
-        -   There are no errors with this program!
+        -   The ``else`` never executes.
 
 
-.. mchoice:: functions_mc8
+.. mchoice:: cond_rec_mc5
 
-    **Multiple Response** Which of the following are legal function
-    calls of ``orderFood``?
+    Suppose you have defined the following function:
 
     ::
 
-        #include <iostream>
-        using namespace std;
-
-        void orderFood (string food, int quantity) {
-            cout << "I'll have " << quantity << " " << food;
+        void encourage (int a, int b, string mood) {
+            if (mood == "bad") {
+                if (a % b == 0) {
+                    cout << "You're amazing!";
+                }
+                elif (b - a == 1) {
+                    cout << "You will do great things!";
+                }
+                else {
+                    cout << "You look good!";
+                }
+            }
+            elif (mood == "good") {
+                cout << "You don't need a compliment!";
+            }
+            else {
+                if (a % 3 == 0) {
+                    cout << "You go girl!";
+                }
+                elif (b % 7 == 0) {
+                    cout << "Go get em!";
+                }
+            }
         }
 
-        int main () {
-            string a = "wings";
-            string b = "sliders";
-            int c = 3;
-            double d = 8.64;
-            char e = 'p';
-        }
-
-    -   ``orderFood(a, c);``
-
-        +   Correct!
-
-    -   ``orderFood(b, d);``
-
-        +   Correct!  Automatic type conversion will convert d to
-            an ``int``.
-
-    -   ``orderFood(e, c);``
-
-        -   ``e`` has a character value, and this function takes a *string*.
-
-    -   ``orderfood(a, d);``
-
-        +   Correct! Automatic type conversion will convert d to
-            an ``int``.
-
-    -   ``orderFood(c, a);``
-
-        -   You have to input your arguments in the correct order.
-
-
-.. mchoice:: functions_mc9
-
-    What is printed when the following code runs?  Are there any errors?
+    What words of encouragement will you hear if you run the following code?
 
     ::
 
-        #include <iostream>
-        using namespace std;
+        encourage (4, 5, "BAD");
 
-        void printWord (string w) {
-            cout << w << w;
-        }
+    -   ``You will do great things!``
 
-        int main () {
-            char a = 'a' + 5;
-            printWord (a);
-        }
+        -   The nested conditional is true, but what about the outer condition?
+            Strings are case sensitive!
 
-    -   ``a``
+    -   ``You look good!``
 
-        -   Is ``a`` still the value of a?  Does the function print only
-            the word only once?
+        -   One of the inner conditions is met, so the ``else`` is not reached,
+            but what about the outer condition?  Strings are case sensitive!
 
-    -   ``f``
+    -   ``You go girl!``
 
-        -   Does the function print only the word only once?
+        -   The outer conditonal is true, but what about the inner condition?
 
-    -   ``aa``
+    -   ``Go get em!``
 
-        -   Is ``a`` still the value of a?
+        -   The outer conditonal is true, but what about the inner condition?
 
-    -   ``ff``
+    -   None.
 
-        -   Is ``char`` the proper variable type to pass as an argument?
-
-
-    -   Error!
-
-        +   ``printWord`` takes a string, not a character, as an argument.
-
-
-.. mchoice:: functions_mc10
-
-    How many local variables and parameters does ``mult`` have?
-
-    ::
-
-        void mult (int a, b, int c) {
-            int d = 7;
-            cout << a * b * c * d;
-        }
-
-    -   1 parameter, 3 local variables
-
-        -   Remember, the parameters are declared in the function definition,
-            and the local variables are declared *inside* of the function.
-
-    -   2 parameters, 4 local variables
-
-        -   You can declare multiple variables at once!  Also, remember that
-            local variables are declared *inside* of the function.
-
-    -   2 parameters, 1 local variables
-
-        -   You can declare multiple variables at once!
-
-    -   3 parameters, 1 local variable
-
-        +   ``a``, ``b``, and ``c`` are parameters declared in the function
-            definition. ``d`` is a local variable declared inside of the function.
-
-    -   3 parameters, 4 local variables
-
-        -   Remember that local variables are declared *inside* of the function.
+        +   None of the ``cout`` statements is reached.  You do not get any words
+            of encouragement, but that's okay because you don't need any!  You're
+            doing great!
