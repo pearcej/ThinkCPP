@@ -5,63 +5,624 @@ Coding Practice
 
     .. tab:: Question
 
-        A palindrome is a word, phrase, or sentence that reads the same forwards and backwards.
-        Write a function ``isPalindrome`` that takes a string input as a parameter and returns 
-        a boolean that is true if the input is a palindrome and false otherwise.  
+        In the not so distant future, robots have replaced humans to do any kind of imaginable
+        work or chore. Define the ``Robot`` structure, which has instance variables ``string name``,
+        ``string model``, ``int serialNumber``, ``int batteryLevelPercentage``,
+        and ``string task`` in that order. Then write the ``printRobotData`` function, which
+        takes a ``Robot`` as a parameter and prints out the robot's data in the following format: 
+        ``name`` (``model`` ``serialNumber``) has ``batteryLevelPercentage`` 
+        percent battery and is currently executing the task "``task``".
 
         .. activecode:: cp_8_AC_1q
            :language: cpp
 
            #include <iostream>
-           #include "ctype.h"
            using namespace std;
 
-           bool isPalindrome (string input) {
+           struct Robot {
+               // Write your implementation here.
+           };
+
+           void printRobotData (Robot r) {
                // Write your implementation here.
            }
 
            int main() {
-               cout << isPalindrome ("racecar") << endl;               // Should output 1
-               cout << isPalindrome ("no lemon, no melon") << endl;    // Should output 1
-               cout << isPalindrome ("kangaroo") << endl;              // Should output 0
+               Robot rob = { "Rob", "XLV", 9800, 45, "washing dishes" };
+               
+               // Should output: Rob (XLV 9800) has 45 percent battery 
+               // and is currently executing the task "washing dishes".
+               printRobotData (rob);
            }
 
 
     .. tab:: Answer
 
-        Below is one way to implement the program. We use the ``isalpha`` function
-        to ignore the non alphabetical characters. Then we continuously check to see 
-        if the letters in the front are equal to the ones in the back until we reach the 
-        middle of the string.
+        Below is one way to implement the program. First we declare the instance variables
+        in the ``struct`` definition. Next, we use dot notation to access
+        the instance variables and output them using ``cout``.
 
         .. activecode:: cp_8_AC_1a
            :language: cpp
+           :optional:
 
            #include <iostream>
-           #include "ctype.h"
            using namespace std;
 
-           bool isPalindrome (string input) {
-               int front = 0;
-               int back = input.length() - 1;
-               while (front < back) {
-                   while (!isalpha(input[front])) {
-                       front++;
-                   }
-                   while (!isalpha(input[back])) {
-                       back--;
-                   }
-                   if (input[front] != input[back]) {
-                       return false;
-                   }
-                   front++;
-                   back--;
-               }
-               return true;
+           struct Robot {
+               string name;
+               string model;
+               int serialNumber;
+               int batteryLevelPercentage;
+               string task;
+           };
+
+           void printRobotData (Robot r) {
+                cout << r.name << " (" << r.model << " " << r.serialNumber 
+                     << ") has " << r.batteryLevelPercentage 
+                     << " percent battery and is currently executing the task \"" 
+                     << r.task << "\"" << endl;
            }
 
            int main() {
-               cout << isPalindrome ("racecar") << endl;               // Should output 1
-               cout << isPalindrome ("no lemon, no melon") << endl;    // Should output 1
-               cout << isPalindrome ("kangaroo") << endl;              // Should output 0
+               Robot rob = { "Rob", "XLV", 9800, 45, "washing dishes" };
+               
+               // Should output: Rob (XLV 9800) has 45 percent battery 
+               // and is currently executing the task "washing dishes".
+               printRobotData (rob);
            }
+
+.. tabbed:: cp_8_2
+
+    .. tab:: Question
+
+        Robots will naturally deplete their charge as they carry out tasks.
+        Write a function called ``chargeRobot`` which takes a ``Robot`` as 
+        a parameter and charges the robot to 100 percent. Then output the statement
+        "Robot ``name`` is fully charged!". 
+
+        .. activecode:: cp_8_AC_2q
+           :language: cpp
+
+           #include <iostream>
+           using namespace std;
+
+           struct Robot {
+               string name;
+               string model;
+               int serialNumber;
+               int batteryLevelPercentage;
+               string task;
+           };
+
+           void printRobotData (Robot r);
+
+           void chargeRobot (Robot& r) {
+               // Write your implementation here.
+           }
+
+           int main() {
+               Robot bob = { "Bob", "MKZ", 143, 65, "sweeping floors" };
+               chargeRobot (bob);
+               printRobotData (bob);  // Bob should now have 100 percent batter
+           }
+           ====
+           void printRobotData (Robot r) {
+                cout << r.name << " (" << r.model << " " << r.serialNumber 
+                     << ") has " << r.batteryLevelPercentage 
+                     << " percent battery and is currently executing the task \"" 
+                     << r.task << "\"" << endl;
+           }
+
+.. tabbed:: cp_8_3
+
+    .. tab:: Question
+
+        In case a robot malfunctions, let's write the function ``resetRobot``. ``resetRobot`` 
+        takes a ``Robot`` as a parameter and resets its name to "EnterAName",
+        recharges the battery to 100 percent, and resets the task to "Idle".
+
+        .. activecode:: cp_8_AC_3q
+           :language: cpp
+
+           #include <iostream>
+           using namespace std;
+
+           struct Robot {
+               string name;
+               string model;
+               int serialNumber;
+               int batteryLevelPercentage;
+               string task;
+           };
+
+           void printRobotData (Robot r);
+
+           void resetRobot (Robot& r) {
+               // Write your implementation here.
+           }
+
+           int main() {
+               Robot a = { "Bot", "RSO", 1985, 32, "gardening" };
+               resetRobot (a);
+               printRobotData (a);  // Bot should be reset
+           }
+           ====
+           void printRobotData (Robot r) {
+                cout << r.name << " (" << r.model << " " << r.serialNumber 
+                     << ") has " << r.batteryLevelPercentage 
+                     << " percent battery and is currently executing the task \"" 
+                     << r.task << "\"" << endl;
+           }
+
+
+    .. tab:: Answer
+
+        Below is one way to implement the program. We can create another ``Robot`` 
+        with the settings after being reset. Then we set ``r`` equal to the new
+        ``Robot`` we created. Notice we use dot notation to ensure that the 
+        ``model`` and ``serialNumber`` are the same.
+
+        .. activecode:: cp_8_AC_3a
+           :language: cpp
+           :optional:
+
+           #include <iostream>
+           using namespace std;
+
+           struct Robot {
+               string name;
+               string model;
+               int serialNumber;
+               int batteryLevelPercentage;
+               string task;
+           };
+
+           void printRobotData (Robot r);
+
+           void resetRobot(Robot& r) {
+               Robot reset = { "EnterAName", r.model, r.serialNumber, 100, "Idle" };
+               r = reset;
+           }
+
+           int main() {
+               Robot a = { "Bot", "RSO", 1985, 32, "gardening" };
+               resetRobot (a);
+               printRobotData (a);  // Bot should be reset
+           }
+           ====
+           void printRobotData (Robot r) {
+                cout << r.name << " (" << r.model << " " << r.serialNumber 
+                     << ") has " << r.batteryLevelPercentage 
+                     << " percent battery and is currently executing the task \"" 
+                     << r.task << "\"" << endl;
+           }
+
+.. tabbed:: cp_8_4
+
+    .. tab:: Question
+
+        Write the ``Pokemon`` structure, which has instance variables ``string pokeName``,
+        ``string type``, ``int level``, and ``int healthPercentage`` in that order. 
+        Next, write the function ``printPokeInfo``, which takes a ``Pokemon`` as a parameter and outputs the
+        Pokemon's info in the following format: ``pokeName`` (Lv. ``level``, ``healthPercentage``\% HP).     
+
+        .. activecode:: cp_8_AC_4q
+           :language: cpp
+
+           #include <iostream>
+           using namespace std;
+
+           struct Pokemon {
+               // Write your implementation here.
+           };
+
+           void printPokeInfo (Pokemon p) {
+               // Write your implementation here.
+           }
+
+           int main() {
+               Pokemon magikarp = { "Magikarp", "Water", 12, 100 };
+               printTrainerInfo (magikarp);
+           }  
+
+.. tabbed:: cp_8_5
+
+    .. tab:: Question
+
+        Now write the ``Trainer`` structure, which has instance variables 
+        ``string trainerName``, ``char gender``, ``int numBadges``, and six ``Pokemon`` objects 
+        named ``first``, ``second``, etc., in that order. Then, write the function 
+        ``printTrainerInfo``, which takes a ``Trainer`` as a parameter and outputs the
+        trainer's info. For example, the code below should print:
+
+        :: 
+
+           Trainer Red has 8 badges and Red's team consists of 
+           Pikachu (Lv. 81, 100% HP)
+           Espeon (Lv. 72, 100% HP)
+           Snorlax (Lv. 75, 100% HP)
+           Venusaur (Lv. 77, 100% HP)
+           Charizard (Lv. 77, 100% HP)
+           Blastoise (Lv. 77, 100% HP)
+
+        .. activecode:: cp_8_AC_5q
+           :language: cpp
+
+           #include <iostream>
+           using namespace std;
+
+           struct Pokemon {
+               string pokeName;
+               string type;
+               int level;
+               int healthPercentage;
+           };
+
+           struct Trainer {
+               // Write your implementation here.
+           };
+
+           void printPokeInfo(Pokemon p);
+
+           void printTrainerInfo (Trainer t) {
+               // Write your implementation here.
+           }
+
+           int main() {
+               Pokemon pikachu = { "Pikachu", "Electric", 81, 100 };
+               Pokemon espeon = { "Espeon", "Psychic", 72, 100 };
+               Pokemon snorlax = { "Snorlax", "Normal", 75, 100 };
+               Pokemon venusaur = { "Venusaur", "Grass & Poison", 77, 100 };
+               Pokemon charizard = { "Charizard", "Fire & Flying", 77, 100 };
+               Pokemon blastoise = { "Blastoise", "Water", 77, 100 };
+               Trainer red = { "Red", 'M', 8, pikachu, espeon, snorlax, venusaur, charizard, blastoise };
+               printTrainerInfo (red);
+           }  
+           ====
+           void printPokeInfo(Pokemon p) {
+               cout << p.pokeName << " (Lv. " << p.level << ", " << p.healthPercentage << "% HP)" << endl;
+           }
+
+
+    .. tab:: Answer
+
+        Below is one way to implement the program. First we declare the instance variables
+        in the ``struct`` definition. Next, we call ``printPokeInfo`` on each ``Pokemon``
+        in ``Trainer`` and output the trainer's info in the correct format.
+
+        .. activecode:: cp_8_AC_5a
+           :language: cpp
+           :optional:
+
+           #include <iostream>
+           using namespace std;
+
+           struct Pokemon {
+               string pokeName;
+               string type;
+               int level;
+               int healthPercentage;
+           };
+
+           struct Trainer {
+               string trainerName;
+               char gender;
+               int numBadges;
+               Pokemon first, second, third, fourth, fifth, sixth;
+           };
+
+           void printPokeInfo(Pokemon p);
+
+           void printTrainerInfo(Trainer t) {
+               cout << "Trainer " << t.trainerName << " has " << t.numBadges
+                    << " badges and " << t.trainerName << "'s team consists of " << endl;
+               printPokeInfo(t.first);
+               printPokeInfo(t.second);
+               printPokeInfo(t.third);
+               printPokeInfo(t.fourth);
+               printPokeInfo(t.fifth);
+               printPokeInfo(t.sixth);
+           }
+
+           int main() {
+               Pokemon pikachu = { "Pikachu", "Electric", 81, 100 };
+               Pokemon espeon = { "Espeon", "Psychic", 72, 100 };
+               Pokemon snorlax = { "Snorlax", "Normal", 75, 100 };
+               Pokemon venusaur = { "Venusaur", "Grass & Poison", 77, 100 };
+               Pokemon charizard = { "Charizard", "Fire & Flying", 77, 100 };
+               Pokemon blastoise = { "Blastoise", "Water", 77, 100 };
+               Trainer red = { "Red", 'M', 8, pikachu, espeon, snorlax, venusaur, charizard, blastoise };
+               printTrainerInfo (red);
+           }  
+           ====
+           void printPokeInfo(Pokemon p) {
+               cout << p.pokeName << " (Lv. " << p.level << ", " << p.healthPercentage << "% HP)" << endl;
+           }
+
+.. tabbed:: cp_8_6
+
+    .. tab:: Question
+
+        When Pokemon are injured, they can be healed up at the Pokemon Center.
+        Write the function ``healPokemon``, which takes a ``Trainer`` as a parameter
+        and heals the Trainer's Pokemon to 100 percent health.
+
+        .. activecode:: cp_8_AC_6q
+           :language: cpp
+
+           #include <iostream>
+           using namespace std;
+
+           struct Pokemon {
+               string pokeName;
+               string type;
+               int level;
+               int healthPercentage;
+           };
+
+           struct Trainer {
+               string trainerName;
+               char gender;
+               int numBadges;
+               Pokemon first, second, third, fourth, fifth, sixth;
+           };
+
+           void printPokeInfo(Pokemon p);
+           void printTrainerInfo(Trainer t);
+
+           void healPokemon(Trainer& t) { 
+               // Write your implementation here.
+           }
+
+           int main() {
+               Pokemon exeggutor = {"Exeggutor", "Grass & Psychic", 58, 78};
+               Pokemon alakazam = {"Alakazam", "Psychic", 54, 0};
+               Pokemon arcanine = {"Arcanine", "Fire", 58, 24};
+               Pokemon rhydon = {"Rhydon", "Ground & Rock", 56, 55};
+               Pokemon gyarados = {"Gyarados", "Water & Flying", 58, 100};
+               Pokemon pidgeot = {"Pidgeot", "Normal & Flying", 56, 35};
+               Trainer blue = {"Blue", 'M', 8, exeggutor, alakazam, arcanine, rhydon, gyarados, pidgeot};
+               printTrainerInfo(blue);
+               healPokemon(blue);
+               printTrainerInfo(blue);  // Pokemon should now all be healed to 100% health
+           }  
+           ====
+           void printPokeInfo(Pokemon p) {
+               cout << p.pokeName << " (Lv. " << p.level << ", " << p.healthPercentage << "% HP)" << endl;
+           }
+
+           void printTrainerInfo(Trainer t) {
+               cout << "Trainer " << t.trainerName << " has " << t.numBadges
+                    << " badges and " << t.trainerName << "'s team consists of " << endl;
+               printPokeInfo(t.first);
+               printPokeInfo(t.second);
+               printPokeInfo(t.third);
+               printPokeInfo(t.fourth);
+               printPokeInfo(t.fifth);
+               printPokeInfo(t.sixth);
+           }
+
+.. tabbed:: cp_8_7
+
+    .. tab:: Question
+
+        Now write the function ``pokeCenter`` which takes a ``Trainer`` as a parameter and 
+        prompts the user if they'd like to heal their Pokemon. Below are the 
+        possible outputs (y, n, or an invalid input). If user inputs 'y', call ``healPokemon``
+        and output the correct dialogue. If user inputs 'n', don't call ``healPokemon``
+        and output the correct dialogue. If user inputs an invalid character, output the error message.
+
+        :: 
+
+           Welcome to the Pokémon Center. Would you like me to take your Pokémon? (y/n) y
+           Okay, I'll take your Pokémon for a few seconds.
+           Your Pokémon are now healed. We hope to see you again. 
+
+           or
+
+           Welcome to the Pokémon Center. Would you like me to take your Pokémon? (y/n) n
+           We hope to see you again.
+
+           or
+
+           Welcome to the Pokémon Center. Would you like me to take your Pokémon? (y/n) h
+           Sorry, not a valid input.
+
+        .. activecode:: cp_8_AC_7q
+           :language: cpp
+           :stdin: y
+
+           #include <iostream>
+           using namespace std;
+
+           struct Pokemon {
+               string pokeName;
+               string type;
+               int level;
+               int healthPercentage;
+           };
+
+           struct Trainer {
+               string trainerName;
+               char gender;
+               int numBadges;
+               Pokemon first, second, third, fourth, fifth, sixth;
+           };
+
+           void printPokeInfo(Pokemon p);
+           void printTrainerInfo(Trainer t);
+           void healPokemon(Trainer& t);
+
+           void pokeCenter(Trainer& t) {
+               // Write your implementation here.
+           }
+
+           int main() {
+               Pokemon exeggutor = {"Exeggutor", "Grass & Psychic", 58, 78};
+               Pokemon alakazam = {"Alakazam", "Psychic", 54, 0};
+               Pokemon arcanine = {"Arcanine", "Fire", 58, 24};
+               Pokemon rhydon = {"Rhydon", "Ground & Rock", 56, 55};
+               Pokemon gyarados = {"Gyarados", "Water & Flying", 58, 100};
+               Pokemon pidgeot = {"Pidgeot", "Normal & Flying", 56, 35};
+               Trainer blue = {"Blue", 'M', 8, exeggutor, alakazam, arcanine, rhydon, gyarados, pidgeot};
+               printTrainerInfo(blue);
+               pokeCenter(blue);
+               printTrainerInfo(blue);  // Pokemon should now all be healed to 100% health
+           }  
+           ====
+           void printPokeInfo(Pokemon p) {
+               cout << p.pokeName << " (Lv. " << p.level << ", " << p.healthPercentage << "% HP)" << endl;
+           }
+
+           void printTrainerInfo(Trainer t) {
+               cout << "Trainer " << t.trainerName << " has " << t.numBadges
+                    << " badges and " << t.trainerName << "'s team consists of " << endl;
+               printPokeInfo(t.first);
+               printPokeInfo(t.second);
+               printPokeInfo(t.third);
+               printPokeInfo(t.fourth);
+               printPokeInfo(t.fifth);
+               printPokeInfo(t.sixth);
+           }
+
+           void healPokemon(Trainer& t) { 
+               t.first.healthPercentage = 100;
+               t.second.healthPercentage = 100;
+               t.third.healthPercentage = 100;
+               t.fourth.healthPercentage = 100;
+               t.fifth.healthPercentage = 100;
+               t.sixth.healthPercentage = 100;
+           }
+
+    .. tab:: Answer
+
+        Below is one way to implement the program. We use conditionals to perform 
+        the correct output and operation depending on the user's input.
+
+        .. activecode:: cp_8_AC_7a
+           :language: cpp
+           :stdin: y
+           :optional:
+
+           #include <iostream>
+           using namespace std;
+
+           struct Pokemon {
+               string pokeName;
+               string type;
+               int level;
+               int healthPercentage;
+           };
+
+           struct Trainer {
+               string trainerName;
+               char gender;
+               int numBadges;
+               Pokemon first, second, third, fourth, fifth, sixth;
+           };
+
+           void printPokeInfo(Pokemon p);
+           void printTrainerInfo(Trainer t);
+           void healPokemon(Trainer& t);
+
+           void pokeCenter(Trainer& t) {
+               char response;
+               cout << "Welcome to the Pokémon Center. Would you like me to take your Pokémon? (y/n) ";
+               cin >> response;
+               if (response == 'y') {
+                   cout << "Okay, I'll take your Pokémon for a few seconds." << endl;
+                   healPokemon(t);
+                   cout << "Your Pokémon are now healed. We hope to see you again." << endl;
+               }
+               else if (response == 'n') {
+                   cout << "We hope to see you again." << endl;
+               }
+               else {
+                   cout << "Sorry, not a valid input." << endl;
+               }
+           }
+
+           int main() {
+               Pokemon exeggutor = {"Exeggutor", "Grass & Psychic", 58, 78};
+               Pokemon alakazam = {"Alakazam", "Psychic", 54, 0};
+               Pokemon arcanine = {"Arcanine", "Fire", 58, 24};
+               Pokemon rhydon = {"Rhydon", "Ground & Rock", 56, 55};
+               Pokemon gyarados = {"Gyarados", "Water & Flying", 58, 100};
+               Pokemon pidgeot = {"Pidgeot", "Normal & Flying", 56, 35};
+               Trainer blue = {"Blue", 'M', 8, exeggutor, alakazam, arcanine, rhydon, gyarados, pidgeot};
+               printTrainerInfo(blue);
+               pokeCenter(blue);
+               printTrainerInfo(blue);  // Pokemon should now all be healed to 100% health
+           }  
+           ====
+           void printPokeInfo(Pokemon p) {
+               cout << p.pokeName << " (Lv. " << p.level << ", " << p.healthPercentage << "% HP)" << endl;
+           }
+
+           void printTrainerInfo(Trainer t) {
+               cout << "Trainer " << t.trainerName << " has " << t.numBadges
+                    << " badges and " << t.trainerName << "'s team consists of " << endl;
+               printPokeInfo(t.first);
+               printPokeInfo(t.second);
+               printPokeInfo(t.third);
+               printPokeInfo(t.fourth);
+               printPokeInfo(t.fifth);
+               printPokeInfo(t.sixth);
+           }
+
+           void healPokemon(Trainer& t) { 
+               t.first.healthPercentage = 100;
+               t.second.healthPercentage = 100;
+               t.third.healthPercentage = 100;
+               t.fourth.healthPercentage = 100;
+               t.fifth.healthPercentage = 100;
+               t.sixth.healthPercentage = 100;
+           }
+
+.. tabbed:: cp_8_8
+
+    .. tab:: Question
+
+        Ever wanted to know how much you'd weigh on each planet? Write the ``convertWeight``
+        function, which takes a ``double earthWeight`` and ``int planet`` as parameters. First, 
+        in ``main``, prompt the user to enter their weight in pounds and a number corresponding to
+        a planet (Mercury is 1, Venus is 2, etc.). Next, call the ``convertWeight`` function using
+        the user's input. Finally, print out their weight on that planet.
+        If the user inputs an invalid planet, print out an error message. 
+        The weight conversion are as follows (multiply the number by ``earthWeight`` to get the weight on that planet):
+        Mercury - 0.38, Venus - 0.91, Earth - 1.00, Mars - 0.38, Jupiter - 2.34, Saturn - 1.06, Uranus - 0.92, and Neptune - 1.19.
+        Below are some examples.
+
+        :: 
+
+           Please enter your weight in pounds: 145.6
+           Please select a planet: 3
+           Your weight on Earth is 145.6 pounds.
+
+           or
+
+           Please enter your weight in pounds: 170
+           Please select a planet: 1
+           Your weight on Mercury is 64.6 pounds.
+
+           or
+
+           Please enter your weight in pounds: 170
+           Please select a planet: 23
+           Error, not a valid planet.
+
+        .. activecode:: cp_8_AC_8q
+           :language: cpp
+           :stdin: 145, 2
+
+           #include <iostream>
+           using namespace std;
+
+           double convertWeight (double earthWeight, int planet) {
+               // Write your implementation here.
+           }
+
+           int main() {
+               // Write your implementation here.
+           }  

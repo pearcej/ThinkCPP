@@ -35,6 +35,7 @@ Coding Practice
 
         .. activecode:: cp_6_AC_1a
            :language: cpp
+           :optional:
 
            #include <iostream>
            using namespace std;
@@ -58,7 +59,7 @@ Coding Practice
 
         Encapsulate the triangle printing program into a function called
         ``printTriangle``. Generalize it so that it takes a parameter
-        int n to generate a nxn triangle. Call your function in main
+        ``int n`` to generate a nxn triangle. Call your function in main
         with an input of 4, which should result in the following output:
 
         :: 
@@ -81,37 +82,6 @@ Coding Practice
 
            int main() {
                // Write your implementation here.
-           }
-
-
-    .. tab:: Answer
-
-        Below is one way to implement the program. We took our code from the 
-        previous question and encapsulated it in the function,
-        replacing the 5 with n. Next, we call the function using 
-        ``printTriangle (4)`` in ``main``.
-
-        .. activecode:: cp_6_AC_2a
-           :language: cpp
-
-           #include <iostream>
-           using namespace std;
-
-           void printTriangle (int n) {
-               int row = 0;
-               while (row < n) {
-                   int col = 0;
-                   while (col <= row) {
-                       cout << "*";
-                       col++;
-                   }
-                   cout << endl;
-                   row++;
-               }
-           }
-
-           int main() {
-               printTriangle (4);
            }
 
 .. tabbed:: cp_6_3
@@ -159,6 +129,7 @@ Coding Practice
 
         .. activecode:: cp_6_AC_3a
            :language: cpp
+           :optional:
 
            #include <iostream>
            using namespace std;
@@ -186,7 +157,7 @@ Coding Practice
 
     .. tab:: Question
 
-        Write the function ``printAddTable`` which takes an int n as a parameter
+        Write the function ``printAddTable`` which takes an ``int n`` as a parameter
         and prints out a nxn addition table. Call your function in ``main`` with
         "10" as the argument. Your output should look like this:
 
@@ -216,32 +187,4 @@ Coding Practice
 
            int main() {
                // Call your function here.
-           }
-
-
-    .. tab:: Answer
-
-        Below is one implementation of the ``printAddTable`` function, which uses nested while loops.
-
-        .. activecode:: cp_6_AC_4a
-           :language: cpp
-
-           #include <iostream>
-           using namespace std;
-   
-           void printAddTable(int n) {
-               int row = 0;
-               while (row <= n) {
-                   int col = 0;
-                   while (col <= n) {
-                       cout << row + col << '\t';
-                       col++;
-                   }
-                   cout << endl;
-                   row++;
-               }
-           }
-
-           int main() {
-               printAddTable (10);
            }

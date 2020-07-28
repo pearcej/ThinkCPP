@@ -6,7 +6,7 @@ Coding Practice
     .. tab:: Question
 
         A palindrome is a word, phrase, or sentence that reads the same forwards and backwards.
-        Write a function ``isPalindrome`` that takes a string input as a parameter and returns 
+        Write a function ``isPalindrome`` that takes a ``string input`` as a parameter and returns 
         a boolean that is true if the input is a palindrome and false otherwise.  
 
         .. activecode:: cp_7_AC_1q
@@ -73,7 +73,7 @@ Coding Practice
 
         How much does Bubba love shrimp? Probably a lot. But how many times does the word "shrimp" come
         up in his monologue? Write a function ``countWord`` that counts the number of times a given word 
-        appears in a given string. ``countWord`` should take two strings input and word as parameters and return an int.
+        appears in a given string. ``countWord`` should take two strings ``input`` and ``word`` as parameters and return an ``int``.
         Feel free to use the ``stringToLower`` function we wrote earlier.
 
         .. activecode:: cp_7_AC_2q
@@ -109,59 +109,13 @@ Coding Practice
                cout << countWord(quote, "shrimp");    // There should be 14 instances of the word "shrimp"
            }
 
-
-    .. tab:: Answer
-
-        Below is one way to implement the program. We first use the ``stringToLower`` function
-        to make all words lowercase. Then we use a while loop and a counter to keep track of
-        how many times "shrimp" appears in input.
-
-        .. activecode:: cp_7_AC_2a
-           :language: cpp
-
-           #include <iostream>
-           #include "ctype.h"
-           using namespace std;
-
-           void stringToLower (string &input) {
-               int i = 0;
-               while (i < input.length()) {
-                   if (isalpha(input[i]) && isupper(input[i])) {
-                       input[i] = tolower(input[i]);
-                   }
-                   i++;
-               }
-           }
-
-           int countWord (string input, string word) {
-               stringToLower (input);
-               int count = 0;
-               while ((int)input.find(word) != -1) {
-                   count++;
-                   input = input.substr(input.find(word) + word.length());
-               }
-               return count;
-           }
-
-           int main() {
-               string quote =
-                   "Anyway, like I was sayin', shrimp is the fruit of the sea. You can "
-                   "barbecue it, boil it, broil it, bake it, saute it. Dey's uh, "
-                   "shrimp-kabobs, shrimp creole, shrimp gumbo. Pan fried, deep fried, "
-                   "stir-fried. There's pineapple shrimp, lemon shrimp, coconut shrimp, "
-                   "pepper shrimp, shrimp soup, shrimp stew, shrimp salad, shrimp and "
-                   "potatoes, shrimp burger, shrimp sandwich. That- that's about "
-                   "it.";
-               cout << countWord(quote, "shrimp");    // There should be 14 instances of the word "shrimp"
-           }
-
 .. tabbed:: cp_7_3
 
     .. tab:: Question
 
         Write a void function ``censorWord`` that censors a given word from a given string and prints
-        out the new string. ``censorWord`` should take two strings input and word as parameters
-        and prints out input with every occurence of word censored with asterisks. For example, 
+        out the new string. ``censorWord`` should take two strings ``input`` and ``word`` as parameters
+        and prints out ``input`` with every occurence of ``word`` censored with asterisks. For example, 
         ``censorWord ("I really, really, really, really, really, really like you", "really")`` results in 
         the following output:
 
@@ -192,13 +146,14 @@ Coding Practice
 
         .. activecode:: cp_7_AC_3a
            :language: cpp
+           :optional:
 
            #include <iostream>
            using namespace std;
 
            void censorWord(string input, string word) {
                int length = word.length();
-               while (input.find(word) != -1) {
+               while ((int)input.find(word) != -1) {
                    int index = input.find(word);
                    int i = 0;
                    while (i < length) {
@@ -218,8 +173,8 @@ Coding Practice
     .. tab:: Question
 
         Write a void function ``removeWord`` that removes a given word from a given string and prints
-        out the new string. ``removeWord`` should take two strings input and word as parameters
-        and prints out input with every occurence of word removed. Use string concatenation and the C++
+        out the new string. ``removeWord`` should take two strings ``input`` and ``word`` as parameters
+        and prints out ``input`` with every occurence of ``word`` removed. Use string concatenation and the C++
         string function ``substr``. ``substr`` takes two parameters, a starting index and a length. For example, 
         if ``string greeting = "hello world"``, then ``greeting.substr(6, 5)`` returns the string ``"world"``.  
         Test your function in main. The output should be:
@@ -236,32 +191,6 @@ Coding Practice
 
            void removeWord (string input, string word) {
                // Write your implementation here.
-           }
-
-           int main() {
-               removeWord ("Gucci gang, Gucci gang, Gucci gang, Gucci gang", "gang");
-           }
-
-
-    .. tab:: Answer
-
-        Below is one way to implement the program. We use a while loop to
-        repeatedly search for instances of word in input. Once found, we replace 
-        the length of the word with asterisks.
-
-        .. activecode:: cp_7_AC_4a
-           :language: cpp
-
-           #include <iostream>
-           using namespace std;
-
-           void removeWord (string input, string word) {
-               int length = word.length();
-               while (input.find(word) != -1) {
-                   int index = input.find(word);
-                   input = input.substr(0, index) + input.substr(index + length);
-               }
-               cout << input;
            }
 
            int main() {
