@@ -90,7 +90,7 @@ The output of this program is ``(50, 100)``.
       Rectangle addTwo (Point& p) {
         double x = p.x + 2;
         double y = p.y + 2;
-        Point result = {{x, y}, x, y};
+        Point result = {x, y};
         return result;
       }
 
