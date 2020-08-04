@@ -270,7 +270,7 @@ assess what you have learned in this chapter.
                     cout << "The fortune you seek is in another cookie.";
                 }
             }
-            elseif (c < 'r') {
+            else if (c < 'r') {
                 if (b) {
                     cout << "He who laughs at himself never runs out of things to laugh at.";
                 }
