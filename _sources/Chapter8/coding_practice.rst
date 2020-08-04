@@ -15,6 +15,7 @@ Coding Practice
 
         .. activecode:: cp_8_AC_1q
            :language: cpp
+           :practice: T
 
            #include <iostream>
            using namespace std;
@@ -72,47 +73,43 @@ Coding Practice
                printRobotData (rob);
            }
 
-.. tabbed:: cp_8_2
+.. activecode:: cp_8_AC_2q
+    :language: cpp
 
-    .. tab:: Question
+    Robots will naturally deplete their charge as they carry out tasks.
+    Write a function called ``chargeRobot`` which takes a ``Robot`` as 
+    a parameter and charges the robot to 100 percent. Then output the statement
+    "Robot ``name`` is fully charged!". 
+    ~~~~
+    #include <iostream>
+    using namespace std;
 
-        Robots will naturally deplete their charge as they carry out tasks.
-        Write a function called ``chargeRobot`` which takes a ``Robot`` as 
-        a parameter and charges the robot to 100 percent. Then output the statement
-        "Robot ``name`` is fully charged!". 
+    struct Robot {
+        string name;
+        string model;
+        int serialNumber;
+        int batteryLevelPercentage;
+        string task;
+    };
 
-        .. activecode:: cp_8_AC_2q
-           :language: cpp
+    void printRobotData (Robot r);
 
-           #include <iostream>
-           using namespace std;
+    void chargeRobot (Robot& r) {
+        // Write your implementation here.
+    }
 
-           struct Robot {
-               string name;
-               string model;
-               int serialNumber;
-               int batteryLevelPercentage;
-               string task;
-           };
-
-           void printRobotData (Robot r);
-
-           void chargeRobot (Robot& r) {
-               // Write your implementation here.
-           }
-
-           int main() {
-               Robot bob = { "Bob", "MKZ", 143, 65, "sweeping floors" };
-               chargeRobot (bob);
-               printRobotData (bob);  // Bob should now have 100 percent batter
-           }
-           ====
-           void printRobotData (Robot r) {
-                cout << r.name << " (" << r.model << " " << r.serialNumber 
-                     << ") has " << r.batteryLevelPercentage 
-                     << " percent battery and is currently executing the task \"" 
-                     << r.task << "\"" << endl;
-           }
+    int main() {
+        Robot bob = { "Bob", "MKZ", 143, 65, "sweeping floors" };
+        chargeRobot (bob);
+        printRobotData (bob);  // Bob should now have 100 percent batter
+    }
+    ====
+    void printRobotData (Robot r) {
+        cout << r.name << " (" << r.model << " " << r.serialNumber 
+                << ") has " << r.batteryLevelPercentage 
+                << " percent battery and is currently executing the task \"" 
+                << r.task << "\"" << endl;
+    }
 
 .. tabbed:: cp_8_3
 
@@ -196,35 +193,32 @@ Coding Practice
                      << ") has " << r.batteryLevelPercentage 
                      << " percent battery and is currently executing the task \"" 
                      << r.task << "\"" << endl;
-           }
+           }    
 
-.. tabbed:: cp_8_4
+.. activecode:: cp_8_AC_4q
+    :language: cpp
+    :practice: T
 
-    .. tab:: Question
+    Write the ``Pokemon`` structure, which has instance variables ``string pokeName``,
+    ``string type``, ``int level``, and ``int healthPercentage`` in that order. 
+    Next, write the function ``printPokeInfo``, which takes a ``Pokemon`` as a parameter and outputs the
+    Pokemon's info in the following format: ``pokeName`` (Lv. ``level``, ``healthPercentage``\% HP). 
+    ~~~~
+    #include <iostream>
+    using namespace std;
 
-        Write the ``Pokemon`` structure, which has instance variables ``string pokeName``,
-        ``string type``, ``int level``, and ``int healthPercentage`` in that order. 
-        Next, write the function ``printPokeInfo``, which takes a ``Pokemon`` as a parameter and outputs the
-        Pokemon's info in the following format: ``pokeName`` (Lv. ``level``, ``healthPercentage``\% HP).     
+    struct Pokemon {
+        // Write your implementation here.
+    };
 
-        .. activecode:: cp_8_AC_4q
-           :language: cpp
+    void printPokeInfo (Pokemon p) {
+        // Write your implementation here.
+    }
 
-           #include <iostream>
-           using namespace std;
-
-           struct Pokemon {
-               // Write your implementation here.
-           };
-
-           void printPokeInfo (Pokemon p) {
-               // Write your implementation here.
-           }
-
-           int main() {
-               Pokemon magikarp = { "Magikarp", "Water", 12, 100 };
-               printTrainerInfo (magikarp);
-           }  
+    int main() {
+        Pokemon magikarp = { "Magikarp", "Water", 12, 100 };
+        printTrainerInfo (magikarp);
+    }  
 
 .. tabbed:: cp_8_5
 
@@ -340,68 +334,64 @@ Coding Practice
                cout << p.pokeName << " (Lv. " << p.level << ", " << p.healthPercentage << "% HP)" << endl;
            }
 
-.. tabbed:: cp_8_6
+.. activecode:: cp_8_AC_6q
+    :language: cpp
 
-    .. tab:: Question
+    When Pokemon are injured, they can be healed up at the Pokemon Center.
+    Write the function ``healPokemon``, which takes a ``Trainer`` as a parameter
+    and heals the Trainer's Pokemon to 100 percent health.
+    ~~~~
+    #include <iostream>
+    using namespace std;
 
-        When Pokemon are injured, they can be healed up at the Pokemon Center.
-        Write the function ``healPokemon``, which takes a ``Trainer`` as a parameter
-        and heals the Trainer's Pokemon to 100 percent health.
+    struct Pokemon {
+        string pokeName;
+        string type;
+        int level;
+        int healthPercentage;
+    };
 
-        .. activecode:: cp_8_AC_6q
-           :language: cpp
+    struct Trainer {
+        string trainerName;
+        char gender;
+        int numBadges;
+        Pokemon first, second, third, fourth, fifth, sixth;
+    };
 
-           #include <iostream>
-           using namespace std;
+    void printPokeInfo(Pokemon p);
+    void printTrainerInfo(Trainer t);
 
-           struct Pokemon {
-               string pokeName;
-               string type;
-               int level;
-               int healthPercentage;
-           };
+    void healPokemon(Trainer& t) { 
+        // Write your implementation here.
+    }
 
-           struct Trainer {
-               string trainerName;
-               char gender;
-               int numBadges;
-               Pokemon first, second, third, fourth, fifth, sixth;
-           };
+    int main() {
+        Pokemon exeggutor = {"Exeggutor", "Grass & Psychic", 58, 78};
+        Pokemon alakazam = {"Alakazam", "Psychic", 54, 0};
+        Pokemon arcanine = {"Arcanine", "Fire", 58, 24};
+        Pokemon rhydon = {"Rhydon", "Ground & Rock", 56, 55};
+        Pokemon gyarados = {"Gyarados", "Water & Flying", 58, 100};
+        Pokemon pidgeot = {"Pidgeot", "Normal & Flying", 56, 35};
+        Trainer blue = {"Blue", 'M', 8, exeggutor, alakazam, arcanine, rhydon, gyarados, pidgeot};
+        printTrainerInfo(blue);
+        healPokemon(blue);
+        printTrainerInfo(blue);  // Pokemon should now all be healed to 100% health
+    }  
+    ====
+    void printPokeInfo(Pokemon p) {
+        cout << p.pokeName << " (Lv. " << p.level << ", " << p.healthPercentage << "% HP)" << endl;
+    }
 
-           void printPokeInfo(Pokemon p);
-           void printTrainerInfo(Trainer t);
-
-           void healPokemon(Trainer& t) { 
-               // Write your implementation here.
-           }
-
-           int main() {
-               Pokemon exeggutor = {"Exeggutor", "Grass & Psychic", 58, 78};
-               Pokemon alakazam = {"Alakazam", "Psychic", 54, 0};
-               Pokemon arcanine = {"Arcanine", "Fire", 58, 24};
-               Pokemon rhydon = {"Rhydon", "Ground & Rock", 56, 55};
-               Pokemon gyarados = {"Gyarados", "Water & Flying", 58, 100};
-               Pokemon pidgeot = {"Pidgeot", "Normal & Flying", 56, 35};
-               Trainer blue = {"Blue", 'M', 8, exeggutor, alakazam, arcanine, rhydon, gyarados, pidgeot};
-               printTrainerInfo(blue);
-               healPokemon(blue);
-               printTrainerInfo(blue);  // Pokemon should now all be healed to 100% health
-           }  
-           ====
-           void printPokeInfo(Pokemon p) {
-               cout << p.pokeName << " (Lv. " << p.level << ", " << p.healthPercentage << "% HP)" << endl;
-           }
-
-           void printTrainerInfo(Trainer t) {
-               cout << "Trainer " << t.trainerName << " has " << t.numBadges
-                    << " badges and " << t.trainerName << "'s team consists of " << endl;
-               printPokeInfo(t.first);
-               printPokeInfo(t.second);
-               printPokeInfo(t.third);
-               printPokeInfo(t.fourth);
-               printPokeInfo(t.fifth);
-               printPokeInfo(t.sixth);
-           }
+    void printTrainerInfo(Trainer t) {
+        cout << "Trainer " << t.trainerName << " has " << t.numBadges
+            << " badges and " << t.trainerName << "'s team consists of " << endl;
+        printPokeInfo(t.first);
+        printPokeInfo(t.second);
+        printPokeInfo(t.third);
+        printPokeInfo(t.fourth);
+        printPokeInfo(t.fifth);
+        printPokeInfo(t.sixth);
+    }
 
 .. tabbed:: cp_8_7
 
@@ -580,49 +570,46 @@ Coding Practice
                t.sixth.healthPercentage = 100;
            }
 
-.. tabbed:: cp_8_8
+.. activecode:: cp_8_AC_8q
+    :language: cpp
+    :stdin: 145, 2
+    :practice: T
 
-    .. tab:: Question
+    Ever wanted to know how much you'd weigh on each planet? Write the ``convertWeight``
+    function, which takes a ``double earthWeight`` and ``int planet`` as parameters. First, 
+    in ``main``, prompt the user to enter their weight in pounds and a number corresponding to
+    a planet (Mercury is 1, Venus is 2, etc.). Next, call the ``convertWeight`` function using
+    the user's input. Finally, print out their weight on that planet.
+    If the user inputs an invalid planet, print out an error message. 
+    The weight conversion are as follows (multiply the number by ``earthWeight`` to get the weight on that planet):
+    Mercury - 0.38, Venus - 0.91, Earth - 1.00, Mars - 0.38, Jupiter - 2.34, Saturn - 1.06, Uranus - 0.92, and Neptune - 1.19.
+    Below are some examples.
 
-        Ever wanted to know how much you'd weigh on each planet? Write the ``convertWeight``
-        function, which takes a ``double earthWeight`` and ``int planet`` as parameters. First, 
-        in ``main``, prompt the user to enter their weight in pounds and a number corresponding to
-        a planet (Mercury is 1, Venus is 2, etc.). Next, call the ``convertWeight`` function using
-        the user's input. Finally, print out their weight on that planet.
-        If the user inputs an invalid planet, print out an error message. 
-        The weight conversion are as follows (multiply the number by ``earthWeight`` to get the weight on that planet):
-        Mercury - 0.38, Venus - 0.91, Earth - 1.00, Mars - 0.38, Jupiter - 2.34, Saturn - 1.06, Uranus - 0.92, and Neptune - 1.19.
-        Below are some examples.
+    :: 
 
-        :: 
+        Please enter your weight in pounds: 145.6
+        Please select a planet: 3
+        Your weight on Earth is 145.6 pounds.
 
-           Please enter your weight in pounds: 145.6
-           Please select a planet: 3
-           Your weight on Earth is 145.6 pounds.
+        or
 
-           or
+        Please enter your weight in pounds: 170
+        Please select a planet: 1
+        Your weight on Mercury is 64.6 pounds.
 
-           Please enter your weight in pounds: 170
-           Please select a planet: 1
-           Your weight on Mercury is 64.6 pounds.
+        or
 
-           or
+        Please enter your weight in pounds: 170
+        Please select a planet: 23
+        Error, not a valid planet.
+    ~~~~
+    #include <iostream>
+    using namespace std;
 
-           Please enter your weight in pounds: 170
-           Please select a planet: 23
-           Error, not a valid planet.
+    double convertWeight (double earthWeight, int planet) {
+        // Write your implementation here.
+    }
 
-        .. activecode:: cp_8_AC_8q
-           :language: cpp
-           :stdin: 145, 2
-
-           #include <iostream>
-           using namespace std;
-
-           double convertWeight (double earthWeight, int planet) {
-               // Write your implementation here.
-           }
-
-           int main() {
-               // Write your implementation here.
-           }  
+    int main() {
+        // Write your implementation here.
+    }  

@@ -5,6 +5,7 @@ Mixed Up Code Practice
    :numbered: left
    :adaptive:
    :noindent:
+   :practice: T
 
    Let's write the code for the ``cipherText`` function. ``cipherText`` 
    should be a void function that takes a string input as a parameter,
@@ -38,6 +39,7 @@ Mixed Up Code Practice
    :numbered: left
    :adaptive:
    :noindent:
+   :practice: T
 
    The program below should print out the number of occurences of the character 't'
    in the string tongue_twister but the code is mixed up. Put the necessary blocks 
@@ -72,6 +74,7 @@ Mixed Up Code Practice
    :numbered: left
    :adaptive:
    :noindent:
+   :practice: T
 
    The program below should print out the index of the second instance of the 
    character 'i' but the code is mixed up and contains extra blocks. 
@@ -100,6 +103,7 @@ Mixed Up Code Practice
 .. parsonsprob:: mucp_7_4
    :numbered: left
    :adaptive:
+   :practice: T
 
    Deep in the forest live the 7 dwarves named Sorty, Torty, Vorty,
    Worty, Xorty, Yorty, and Zorty. The program below should print 
@@ -134,6 +138,7 @@ Mixed Up Code Practice
 .. parsonsprob:: mucp_7_5
    :numbered: left
    :adaptive:
+   :practice: T
 
    On the strange planet of Noes, there's a law that prohibits the usage of the letter "e". 
    As a result, they hired you to write a function called ``censorE`` that replaces all occurences

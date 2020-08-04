@@ -2,6 +2,7 @@ Multiple Choice Exercises
 -------------------------
 
 .. mchoice:: mce_6_1
+    :practice: T
 
     What is the output of the code below?
 
@@ -34,6 +35,7 @@ Multiple Choice Exercises
       - ``i`` is incremented to a value of 10, but since ``i < 10`` is false, the contents of the while loop is not executed, so ``x`` is never assigned the value of 10.
 
 .. mchoice:: mce_6_2
+    :practice: T
 
     What is the final value of ``i`` when the code is finished running?
 
@@ -66,6 +68,7 @@ Multiple Choice Exercises
       + In order for the while loop to terminate, the condition ``i < 10`` must be false, and this is achieved when ``i`` is incremented to 10.
 
 .. mchoice:: mce_6_3
+    :practice: T
 
     How many times does the following while loop run?
 
@@ -97,6 +100,7 @@ Multiple Choice Exercises
       + The value of ``i`` will always be greater than 2, resulting in an infinite loop.
 
 .. mchoice:: mce_6_4
+    :practice: T
 
     What is the output of the code below?
 
@@ -130,6 +134,7 @@ Multiple Choice Exercises
       - Since we repeatedly decrement ``n`` inside the while loop, it will eventually be equal to 3 and the while loop will terminate.
 
 .. mchoice:: mce_6_5
+    :practice: T
 
     What is the output of the code below?
 
@@ -162,6 +167,7 @@ Multiple Choice Exercises
       + Since we never change the value of ``n``, 10 will never equal 3 so the code will run forever.
 
 .. mchoice:: mce_6_6
+    :practice: T
 
     What is the output of the code below?
 
@@ -192,6 +198,7 @@ Multiple Choice Exercises
       - Take a closer look at the mathematical expression inside the while loop.
 
 .. mchoice:: mce_6_7
+    :practice: T
 
     Why are we allowed to use the variable ``x`` in both ``main`` and in the function definition of ``superSecretFunction``?
 

@@ -2,6 +2,7 @@ Multiple Choice Exercises
 -------------------------
 
 .. mchoice:: mce_7_1
+    :practice: T
 
     Which variable below is declared as a ``string`` type?
 
@@ -36,6 +37,7 @@ Multiple Choice Exercises
       - ``isPrime`` is a ``bool``.
 
 .. mchoice:: mce_7_2
+    :practice: T
 
     What value should replace the question mark to output the character 'p'?
 
@@ -63,6 +65,7 @@ Multiple Choice Exercises
       - The character "N" is located at index 0.
 
 .. mchoice:: mce_7_3
+    :practice: T
 
     What is the output of the code below?
 
@@ -99,6 +102,7 @@ Multiple Choice Exercises
       + The final value of ``z`` is 7, and 'y' is at index 7 of ``quote``.
 
 .. mchoice:: mce_7_4
+    :practice: T
 
     What is the output of the code below?
 
@@ -127,6 +131,7 @@ Multiple Choice Exercises
       + ``x`` has a value of 32 and there is no index 32 in ``quote``.
 
 .. mchoice:: mce_7_5
+    :practice: T
 
     What is the output of the code below?
 
@@ -160,6 +165,7 @@ Multiple Choice Exercises
       - Take a look at the conditional in the while loop.
 
 .. mchoice:: mce_7_6
+    :practice: T
 
     What is the output of the code below?
 
@@ -188,6 +194,7 @@ Multiple Choice Exercises
       - There is no index ``15`` in quote.
 
 .. mchoice:: mce_7_7
+    :practice: T
 
     What is the output of the code below?
 
@@ -216,6 +223,7 @@ Multiple Choice Exercises
       - The ``find`` function returns the index of the first instance of the input.
 
 .. mchoice:: mce_7_8
+    :practice: T
 
     What is the output of the code below?
 
@@ -244,6 +252,7 @@ Multiple Choice Exercises
       - Take a closer look at the ``find`` function and its arguments.
 
 .. mchoice:: mce_7_9
+    :practice: T
 
     What is the output of the code below?
 
@@ -279,6 +288,7 @@ Multiple Choice Exercises
       - Count the number of 'e's in ``quote``.
 
 .. mchoice:: mce_7_10
+    :practice: T
 
     What is the output of the code below?
 
@@ -312,6 +322,7 @@ Multiple Choice Exercises
       + We cannot concatenate "call" and "response", so this code results in an error.
 
 .. mchoice:: mce_7_11
+    :practice: T
 
     An error occured while delivering a message. All instances of the letter 's'
     got replaced by 'X's. Can you complete the code below to fix this error by selecting 
@@ -348,6 +359,7 @@ Multiple Choice Exercises
       + This will successfully replace all instances of 'X' with 's'.
 
 .. mchoice:: mce_7_12
+    :practice: T
 
     What is the output of the code below?
 

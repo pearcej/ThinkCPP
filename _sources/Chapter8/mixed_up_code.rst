@@ -5,6 +5,7 @@ Mixed Up Code Practice
    :numbered: left
    :adaptive:
    :noindent:
+   :practice: T
 
    Let's write the code for the ``struct`` definition of ``Song``. 
    The ``Song`` structure will have the instance variables ``string title``, 
@@ -93,6 +94,7 @@ Mixed Up Code Practice
 .. parsonsprob:: mucp_8_4
    :numbered: left
    :adaptive:
+   :practice: T
 
    Let's write the code for the ``struct`` definition of ``Unicorn``. 
    The ``Unicorn`` structure will have the instance variables ``string name``, 
@@ -182,6 +184,7 @@ Mixed Up Code Practice
 .. parsonsprob:: mucp_8_7
    :numbered: left
    :adaptive:
+   :practice: T
 
    Let's write the code for the ``struct`` definitions of ``Address`` and ``Employee``. 
    The ``Address`` structure will have the instance variables ``int houseNumber``, 
