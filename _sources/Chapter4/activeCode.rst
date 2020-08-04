@@ -78,7 +78,7 @@ assess what you have learned in this chapter.
         if (grade >= 85) {
             s = "A";
         }
-        return s;
+        cout << s;
     }
 
 
@@ -145,15 +145,15 @@ assess what you have learned in this chapter.
 .. activecode:: cond_rec_4
     :language: cpp
 
-    Finish the code below so that it returns true if ``x`` is even
+    Finish the code below so that it prints true if ``x`` is even
     and false if ``x`` is odd.
     ~~~~
     #include <iostream>
     using namespace std;
 
-    bool is_even (int num) {
+    void is_even (int num) {
         if (num % 2 == 0) {
-            return true;
+            cout << true;
         }
     }
 
@@ -207,13 +207,58 @@ assess what you have learned in this chapter.
 .. activecode:: cond_rec_a6
     :language: cpp
 
-    Write the function ``greaterThan`` that returns true
+    Write the function ``greaterThan`` that prints true
     if the first ``double`` argument is greater than the 
     second ``double`` argument.  Be sure to include any
     necessary headers.
     ~~~~
-    bool greaterThan () {
+    void greaterThan () {
         
+    }
+
+
+.. tabbed:: cond_rec_a7
+
+   .. tab:: Question
+
+      .. activecode:: cond_rec_a7q
+         :language: cpp
+
+         Write the function ``goodVibes`` that prints "I'm having a ``mood`` day!"
+         depending on the value of ``mood``.  If ``mood`` is "bad", then the function
+         should not do anything since it's good vibes only.  Be sure to
+         include any necessary headers.
+         ~~~~
+         void goodVibes (string mood) {
+        
+         }
+
+   .. tab:: Answer
+
+      .. activecode:: cond_rec_a7a
+         :language: cpp
+
+         Below is one way to write the program.  The return allows the
+         function to exit if there are bad vibes in the room.  Otherise,
+         the function prints as directed.
+         ~~~~
+         void goodVibes (string mood) {
+             if (mood == "bad") {
+                 return;
+             }
+             cout << "I'm having a " << mood << " day";
+         }
+
+
+.. activecode:: cond_rec_8
+    :language: cpp
+
+    Write the function ``exclusiveOr`` that prints true If
+    either ``a`` OR ``b`` is true, and prints false otherwise.
+    Be sure to include any necessary headers.
+    ~~~~
+    void exclusiveOr (bool a, bool b) {
+
     }
 
 
@@ -257,8 +302,8 @@ assess what you have learned in this chapter.
     Write the function ``printNegativeNum`` that asks the user
     for a negative number.  If the user does not provide a negative
     number, it should contine asking until the user provides one.
-    It should then return the negative number.
+    It should then print the negative number.
     ~~~~
-    int printNegativeNum () {
+    void printNegativeNum () {
         
     }

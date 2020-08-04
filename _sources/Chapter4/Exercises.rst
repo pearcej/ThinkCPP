@@ -162,15 +162,15 @@ assess what you have learned in this chapter.
 
         void practicingReturns (int a, int b) {
             if (a < b) {
-                a += b;
+                a += 2;
             }
             if (a > b) {
-                return 0;
+                return;
             }
-            return a + b;
+            cout << a + b;
         }
     
-    What is the value of x after we run the following code?
+    What is printed when we run the following code?
 
     ::
 
@@ -180,23 +180,18 @@ assess what you have learned in this chapter.
 
         -   This is what ``a + b`` would be before the first conditonal.
 
-    -   0
+    -   7
 
-        +   ``a`` is greater than ``b`` after being updated, so we return 0
-            and exit the function.
-
-    -   8
-
-        -   This is the value of ``a + b`` after the first conditional, but It
-            is not what the function returns.
+        -   This is the value of ``a + b`` after the first conditional, but it
+            doesn't print.
 
     -   23
 
         -   This is not the value of ``a + b``.
 
-    -   Error!
+    -   Nothing.
 
-        -   There are no errors that would prevent the program from executing.
+        +   The function exits with a return before anything is printed.
 
 
 
@@ -316,31 +311,35 @@ assess what you have learned in this chapter.
 
     ::
 
-        int theThing (int m, int n, bool b) {
+        void theThing (int m, int n, bool b) {
             if (b) {
                 if (m % 4 == 0) {
-                    return m;
+                    cout << m;
+                    return;
                 }
                 if ((m + n) > 10) {
-                    return m + n;
+                    cout << m + n;
+                    return;
                 }
             }
             else if ((m > n) == b) {
-                return m - n;
+                cout << m - n;
+                return;
             }
             else {
                 if (n % 3 == 0) {
-                    return n;
+                    cout << n;
+                    return;
                 }
             }
-            return -1;
+            cout << -1;
         }
 
-    What is the value of ``x`` when we run the following code?
+    What is printed when we run the following code?
 
     ::
 
-        int x = theThing (5, 10, false);
+        theThing (5, 10, false);
 
     -   5
 
@@ -360,7 +359,7 @@ assess what you have learned in this chapter.
     
     -   -1
 
-        -   The function can't return twice.
+        -   The function has returned.
 
 
 .. mchoice:: cond_rec_mc8
@@ -369,39 +368,43 @@ assess what you have learned in this chapter.
 
     ::
 
-        int theThing (int m, int n, bool b) {
+        void theThing (int m, int n, bool b) {
             if (b) {
                 if (m % 4 == 0) {
-                    return m;
+                    cout << m;
+                    return;
                 }
                 if ((m + n) > 10) {
-                    return m + n;
+                    cout << m + n;
+                    return;
                 }
             }
             else if ((m > n) == b) {
-                return m - n;
+                cout << m - n;
+                return;
             }
             else {
-                if (n % 3 == 1) {
-                    return n;
+                if (n % 3 == 0) {
+                    cout << n;
+                    return;
                 }
             }
-            return -1;
+            cout << -1;
         }
 
-    What is the value of ``x`` when we run the following code?
+    What is printed when we run the following code?
 
     ::
 
-        int x = theThing (6, 4, true);
+        theThing (6, 4, true);
 
     -   6
 
-        -   ``5 % 4 != 0`` in the ``if`` block, so the function doesn't return 6.
+        -   ``5 % 4 != 0`` in the ``if`` block, so the function doesn't print 6.
 
     -   10
 
-        -   ``m + n !> 10`` in the ``if`` block, so the function doesn't return 10.
+        -   ``m + n !> 10`` in the ``if`` block, so the function doesn't print 10.
 
     -   2
 
@@ -413,7 +416,7 @@ assess what you have learned in this chapter.
 
     -   -1
 
-        +   None of the conditions were met, so we reach the default return -1.
+        +   None of the conditions were met, so we reach the default cout -1.
 
 
 .. mchoice:: cond_rec_mc9
@@ -426,7 +429,7 @@ assess what you have learned in this chapter.
             if (m != n) {
                 m += 2;
                 cout << "Moo!";
-                recurse (m, n);
+                moo (m, n);
             }
             else {
                 cout << "Got Milk?";
@@ -473,7 +476,7 @@ assess what you have learned in this chapter.
             if (m != n) {
                 m += 2;
                 cout << "Moo!";
-                recurse (m, n);
+                moo (m, n);
             }
             else {
                 cout << "Got Milk?";

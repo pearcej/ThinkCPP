@@ -30,21 +30,21 @@ assess what you have learned in this chapter.
    :numbered: left
    :adaptive:
 
-   Construct a function that returns a boolean whether a number
+   Construct a function that prints whether a number
    is true.
    -----
-   bool is_true (int number) {
+   void is_true (int number) {
    =====
-   void is_true (int number) { #paired
+   bool is_true (int number) { #paired
    =====
     if (number % 2 == 0) {
    =====
-     return true;
+     cout << true;
     }
    =====
     else {
    =====
-     return false;
+     cout << false;
     }
    =====
    }
@@ -54,23 +54,23 @@ assess what you have learned in this chapter.
    :numbered: left
    :adaptive:
 
-   Construct a function that returns the difference of a and b if the result
-   would result in a positive number.  Otherwise, returns -1.
+   Construct a function that prints the difference of a and b if the result
+   would result in a positive number.  Otherwise, prints -1.
    -----
-   int difference (int a, int b) {
+   void difference (int a, int b) {
    =====
-   void difference (int a, int b) { #paired
+   int difference (int a, int b) { #paired
    =====
     if (a - b > 0) {
    =====
     if (a - b < 0) { #paired
    =====
-     return a - b;
+     cout << a - b;
     }
    =====
     else {
    =====
-     return -1;
+     cout << -1;
     }
    =====
    }
