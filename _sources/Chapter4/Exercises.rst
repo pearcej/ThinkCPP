@@ -47,10 +47,10 @@ assess what you have learned in this chapter.
         if (x % 3 == 2) {
             cout << "hey!" << endl;
         }
-        elif (x != 7) {
+        else if (x != 7) {
             cout << "hi!" << endl;
         }
-        elif (x % 2 == 0) {
+        else if (x % 2 == 0) {
             cout << "hello!" << endl;
         }
         else {
@@ -102,36 +102,36 @@ assess what you have learned in this chapter.
         int x = 34;
 
         if (32 < x) {
-            cout << "it's freezing!";
+            cout << "It's Freezing!";
         }
-        if (x < 50) {
-            cout << "it's cold!";
+        if (x < 40) {
+            cout << "It's Cold!";
         }
         if (x > 65) {
-            cout << "sweater weather!"'
+            cout << "It's Warm!"'
         }
         else {
-            cout << "it's hot!";
+            cout << "It's Hot!";
         }
 
     -   ::
 
-            it's freezing!
+            It's Freezing!
 
         -   Take a closer look at the conditions and the way they
             are written in the program.
 
     -   ::
 
-            it's cold!
+            It's Cold!
 
         -   Take a closer look at the conditions and the way they
             are written in the program.
 
     -   ::
 
-            it's freezing!
-            it's cold!
+            It's Freezing!
+            It's Cold!
 
         -   You've identified some of the conditons that are met!
             Take another look at the *chain* of conditionals at the
@@ -139,22 +139,68 @@ assess what you have learned in this chapter.
 
     -   ::
 
-            it's freezing!
-            it's cold!
-            it's hot!
+            It's Freezing!
+            It's Cold!
+            It's Hot!
 
         +   These statements are quite contradicting, but that's exactly
             what the output would be if we ran this code.
 
     -   ::
 
-            it's hot!
+            It's Hot!
 
         -   Take a closer look at the conditions and the way they
             are written in the program.
 
 
 .. mchoice:: cond_rec_mc4
+
+    Suppose you have defined the following function:
+
+    ::
+
+        void practicingReturns (int a, int b) {
+            if (a < b) {
+                a += b;
+            }
+            if (a > b) {
+                return 0;
+            }
+            return a + b;
+        }
+    
+    What is the value of x after we run the following code?
+
+    ::
+
+        int x = practicingReturns(2, 3);
+    
+    -   5
+
+        -   This is what ``a + b`` would be before the first conditonal.
+
+    -   0
+
+        +   ``a`` is greater than ``b`` after being updated, so we return 0
+            and exit the function.
+
+    -   8
+
+        -   This is the value of ``a + b`` after the first conditional, but It
+            is not what the function returns.
+
+    -   23
+
+        -   This is not the value of ``a + b``.
+
+    -   Error!
+
+        -   There are no errors that would prevent the program from executing.
+
+
+
+.. mchoice:: cond_rec_mc5
 
     Suppose you have defined the following function:
 
@@ -169,7 +215,7 @@ assess what you have learned in this chapter.
                     cout << "The fortune you seek is in another cookie.";
                 }
             }
-            elif (c < 'r') {
+            else if (c < 'r') {
                 if (b) {
                     cout << "He who laughs at himself never runs out of things to laugh at.";
                 }
@@ -186,86 +232,281 @@ assess what you have learned in this chapter.
 
     ::
 
-        fortuneCookie('m', false, 14);
+        fortuneCookie(14, false, 'm'');
 
     -   ``An alien of some sort will be appearing to you shortly.``
 
-        -   The nested conditional is true, but what about the outer condition?
+        -   ``'m'`` is NOT less than ``'m'``, so you don't even enter the ``if`` block.
 
     -   ``The fortune you seek is in another cookie.``
 
-        -   Are either of the coditions met to reach this fortune?
+        -   ``'m'`` is NOT less than ``'m'``, so you don't even enter the ``if`` block.
 
     -   ``He who laughs at himself never runs out of things to laugh at.``
 
-        -   The outer conditonal is true, but what about the inner condition?
+        -   ``if (b)`` really means ``if (b == true)``.
 
     -   ``You will be hungry again in one hour.``
 
-        +   ``'m' < 'r'`` is true and ``b`` is false.
+        +   ``'m' < 'r'`` is true and ``b == false``, so this is the fortune that will print.
 
     -   ``Fortune not found? Abort, retry, ignore.``
 
-        -   The ``else`` never executes.
+        -   ``'m'`` is less than ``'r'`` so you would enter the ``else if`` block, not the ``else``.
 
 
-.. mchoice:: cond_rec_mc5
+.. mchoice:: cond_rec_mc6
 
     Suppose you have defined the following function:
 
     ::
 
-        void encourage (int a, int b, string mood) {
-            if (mood == "bad") {
-                if (a % b == 0) {
-                    cout << "You're amazing!";
-                }
-                elif (b - a == 1) {
-                    cout << "You will do great things!";
+        void fortuneCookie (int a, bool b, char c) {
+            if (c < 'm') {
+                if (a % 2 == 0) {
+                    cout << "An alien of some sort will be appearing to you shortly.";
                 }
                 else {
-                    cout << "You look good!";
+                    cout << "The fortune you seek is in another cookie.";
                 }
             }
-            elif (mood == "good") {
-                cout << "You don't need a compliment!";
+            elseif (c < 'r') {
+                if (b) {
+                    cout << "He who laughs at himself never runs out of things to laugh at.";
+                }
+                else {
+                    cout << "You will be hungry again in one hour.";
+                }
             }
             else {
-                if (a % 3 == 0) {
-                    cout << "You go girl!";
-                }
-                elif (b % 7 == 0) {
-                    cout << "Go get em!";
-                }
+                cout << "Fortune not found? Abort, retry, ignore.";
             }
         }
 
-    What words of encouragement will you hear if you run the following code?
+    What will be your fortune if you run the following code?
 
     ::
 
-        encourage (4, 5, "BAD");
+        fortuneCookie(22, true, 'b');
 
-    -   ``You will do great things!``
+    -   ``An alien of some sort will be appearing to you shortly.``
 
-        -   The nested conditional is true, but what about the outer condition?
-            Strings are case sensitive!
+        +   ``'b' < 'm'`` and ``22 % 2 == 0``, so this is the fortune that will print.
 
-    -   ``You look good!``
+    -   ``The fortune you seek is in another cookie.``
 
-        -   One of the inner conditions is met, so the ``else`` is not reached,
-            but what about the outer condition?  Strings are case sensitive!
+        -   ``22 % 2 == 0``, so you enter the ``if`` block, not the else.
 
-    -   ``You go girl!``
+    -   ``He who laughs at himself never runs out of things to laugh at.``
 
-        -   The outer conditonal is true, but what about the inner condition?
+        -   ``'b'`` is less than ``'m'``, so you would enter the ``if`` block, not the ``else if``.
 
-    -   ``Go get em!``
+    -   ``You will be hungry again in one hour.``
 
-        -   The outer conditonal is true, but what about the inner condition?
+        -   ``'b'`` is less than ``'m'``, so you would enter the ``if`` block, not the ``else if``.
 
-    -   None.
+    -   ``Fortune not found? Abort, retry, ignore.``
 
-        +   None of the ``cout`` statements is reached.  You do not get any words
-            of encouragement, but that's okay because you don't need any!  You're
-            doing great!
+        -   ``'b'`` is less than ``'m'``, so you would enter the ``if`` block, not the ``else``.
+
+
+.. mchoice:: cond_rec_mc7
+
+    Suppose you have defined the following function:
+
+    ::
+
+        int theThing (int m, int n, bool b) {
+            if (b) {
+                if (m % 4 == 0) {
+                    return m;
+                }
+                if ((m + n) > 10) {
+                    return m + n;
+                }
+            }
+            else if ((m > n) == b) {
+                return m - n;
+            }
+            else {
+                if (n % 3 == 0) {
+                    return n;
+                }
+            }
+            return -1;
+        }
+
+    What is the value of ``x`` when we run the following code?
+
+    ::
+
+        int x = theThing (5, 10, false);
+
+    -   5
+
+        -   The outer ``if`` condition is not met, the block does not execute.
+
+    -   15
+
+        -   The outer ``if`` condition is not met, the block does not execute.
+
+    -   -5
+
+        +   ``m > n`` evaluates to false, so the ``else if`` block executes.
+
+    -   10
+
+        -   The condition for ``else if`` is met, so the function never enters the ``else``.
+    
+    -   -1
+
+        -   The function can't return twice.
+
+
+.. mchoice:: cond_rec_mc8
+
+    Suppose you have defined the following function:
+
+    ::
+
+        int theThing (int m, int n, bool b) {
+            if (b) {
+                if (m % 4 == 0) {
+                    return m;
+                }
+                if ((m + n) > 10) {
+                    return m + n;
+                }
+            }
+            else if ((m > n) == b) {
+                return m - n;
+            }
+            else {
+                if (n % 3 == 1) {
+                    return n;
+                }
+            }
+            return -1;
+        }
+
+    What is the value of ``x`` when we run the following code?
+
+    ::
+
+        int x = theThing (6, 4, true);
+
+    -   6
+
+        -   ``5 % 4 != 0`` in the ``if`` block, so the function doesn't return 6.
+
+    -   10
+
+        -   ``m + n !> 10`` in the ``if`` block, so the function doesn't return 10.
+
+    -   2
+
+        -   The condition for ``if`` is met, so the function never enters the ``else if``.
+
+    -   4
+
+        -   The condition for ``if`` is met, so the function never enters the ``else``.
+
+    -   -1
+
+        +   None of the conditions were met, so we reach the default return -1.
+
+
+.. mchoice:: cond_rec_mc9
+
+    Suppose you have defined the following function:
+
+    ::
+
+        void moo (int m, int n) {
+            if (m != n) {
+                m += 2;
+                cout << "Moo!";
+                recurse (m, n);
+            }
+            else {
+                cout << "Got Milk?";
+            }
+        }
+
+    How many times does "Moo!" print when we run the following?
+
+    ::
+
+        moo (4, 8);
+
+    -   0
+
+        -   When we call the function ``4 != 8``, so "Moo!" is printed at least
+            once.
+
+    -   1
+
+        -   The function calls itself inside of the ``if`` loop, so "Moo!" is printed
+            more than once.
+
+    -   2
+
+        +   ``m`` is incremented by two each with each function call, so after two
+            ``m == n`` and the recursion stops.
+
+    -   3
+
+        -   Take a look at how ``m`` is incremented with each function call.
+
+    -   infinite recursion
+
+        -   The function stops printing "Moo!" when ``m == n``.
+
+
+.. mchoice:: cond_rec_mc10
+
+    Suppose you have defined the following function:
+
+    ::
+
+        void moo (int m, int n) {
+            if (m != n) {
+                m += 2;
+                cout << "Moo!";
+                recurse (m, n);
+            }
+            else {
+                cout << "Got Milk?";
+            }
+        }
+
+    How many times does "Moo!" print when we run the following?
+
+    ::
+
+        moo (5, 10);
+
+    -   0
+
+        -   When we call the function ``5 != 10``, so "Moo!" is printed at least
+            once.
+
+    -   1
+
+        -   The function calls itself inside of the ``if`` loop, so "Moo!" is printed
+            more than once.
+
+    -   2
+
+        -   After two function calls, ``m == 9`` and ``n == 10``.  The function is not
+            done printing.
+
+    -   3
+
+        -   After three function calls, ``m == 11`` and ``n == 10``.  The function is not
+            done printing
+
+    -   infinite recursion
+
+        +   The function stops printing "Moo!" when ``m == n``, but since ``m`` is odd
+            and ``n`` is even, they will never be equal as long as we increment by two.
