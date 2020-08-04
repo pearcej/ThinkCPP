@@ -12,15 +12,150 @@ assess what you have learned in this chapter.
       .. activecode:: cond_rec_a1q
          :language: cpp
 
-         Fix the code below 
+         Fix the code below so that it prints "THE TEAM" "THE TEAM" 
+         "THE TEAM" on three separate lines.
          ~~~~
+         #include <iostream>
+         using namespace std;
+
+         x = 8;
+         y = 8;
+         
+         if (x % 2 == 0) {
+             cout << "THE TEAM";
+         }
+         else if (x >= y) {
+             cout << "THE TEAM";
+         }
+         else if (y >= x) {
+             cout <<< "THE TEAM";
+         }
 
    .. tab:: Answer
 
       .. activecode:: cond_rec_a1_a
          :language: cpp
 
-         Below is one way to fix the program.
+         Below is one way to fix the program.  Since we want "THE TEAM"
+         to print three times, we must check all three conditons.  this
+         means changing the ``else if`` statements to ``if`` statements.
+         ~~~~
+         #include <iostream>
+         using namespace std;
+
+         x = 8;
+         y = 8;
+         
+         if (x % 2 == 0) {
+             cout << "THE TEAM" << endl;
+         }
+         if (x >= y) {
+             cout << "THE TEAM" << endl;
+         }
+         if (y >= x) {
+             cout <<< "THE TEAM" << endl;
+         }
+
+
+.. activecode:: cond_rec_a2
+    :language: cpp
+
+    You are part of a class where everyone passes, but it's very hard
+    to pass with an A.  Fix the function so it prints your letter grade 
+    according to this scheme.  [0, 50) = C, [50, 85) = B, and [85, 100] = A.
+    ~~~~
+    #include <iostream>
+    using namespace std;
+
+    string whichDoor (double grade) {
+        s = "";
+        if (grade < 50) {
+            s = "C";
+        }
+        if (grade < 85) {
+            s = "B";
+        }
+        if (grade >= 85) {
+            s = "A";
+        }
+        return s;
+    }
+
+
+.. tabbed:: cond_rec_a3
+
+   .. tab:: Question
+
+      .. activecode:: cond_rec_a3q
+         :language: cpp
+
+         Fix the infinite recursion in the code below.  The function
+         should not count any numbers after 10 (the highest numbers
+         that should print are 9 or 10).  When it is done counting,
+         the function should print that.
+         ~~~~
+         #include <iostream>
+         using namespace std;
+
+         void countBy2 (int num) {
+             if (num != 10) {
+                 cout << num;
+                 countBy2 (num + 2);
+             }
+             else {    
+                 cout << num << endl;
+                 cout << "Done counting!";
+             }
+         }
+
+         int main () {
+             countBy2(6);
+         }
+
+   .. tab:: Answer
+
+      .. activecode:: cond_rec_a3_a
+         :language: cpp
+
+         Below is one way to fix the program.  The infinite recursion
+         happens when we use an odd number as an argument.  By checking
+         that a number is less than 99, the highest numbers to recurse
+         are 98 and 97.  ``98 + 2 == 100`` and ``97 + 2 == 99``, so we
+         never count past 100.
+         ~~~~
+         #include <iostream>
+         using namespace std;
+
+         void countBy2 (int num) {
+             if (num < 9) {
+                 cout << num;
+                 countBy2 (num + 2);
+             }
+             else {    
+                 cout << num << endl;
+                 cout << "Done counting!";
+             }
+         }
+
+         int main () {
+             countBy2(6);
+         }
+
+
+.. activecode:: cond_rec_4
+    :language: cpp
+
+    Finish the code below so that it returns true if ``x`` is even
+    and false if ``x`` is odd.
+    ~~~~
+    #include <iostream>
+    using namespace std;
+
+    bool is_even (int num) {
+        if (num % 2 == 0) {
+            return true;
+        }
+    }
 
 
 .. tabbed:: cond_rec_a5
@@ -30,8 +165,21 @@ assess what you have learned in this chapter.
       .. activecode:: cond_rec_a5q
          :language: cpp
 
-         Finish the code below
+         Finish the code below so that the function will continue to
+         ask for input until the user guesses the word correctly.
          ~~~~
+         #include <iostream>
+         using namespace std;
+
+         bool guessTheWord (string correct) {
+             cout << "Guess the word!";
+             string guess;
+             cin >> guess;
+             if (guess == correct) {
+                 cout << "That's it!";
+             }
+         }
+
 
    .. tab:: Answer
 
@@ -40,21 +188,77 @@ assess what you have learned in this chapter.
 
          Below is one way to complete the program.
          ~~~~
+         #include <iostream>
+         using namespace std;
 
-.. tabbed:: cond_rec_a7
+         bool guessTheWord (string correct) {
+             cout << "Guess the word!";
+             string guess;
+             cin >> guess;
+             if (guess == correct) {
+                 cout << "That's it!";
+             }
+             else {
+                 guessTheWord(correct);
+             }
+         }
+
+
+.. activecode:: cond_rec_a6
+    :language: cpp
+
+    Write the function ``greaterThan`` that returns true
+    if the first ``double`` argument is greater than the 
+    second ``double`` argument.  Be sure to include any
+    necessary headers.
+    ~~~~
+    bool greaterThan () {
+        
+    }
+
+
+.. tabbed:: cond_rec_a9
 
    .. tab:: Question
 
-      .. activecode:: cond_rec_a7q
+      .. activecode:: cond_rec_a9q
          :language: cpp
 
-         Write a program that
+         Write the function ``countdown`` that takes a positive integer
+         and decrements it until eaching zero, printing the number at each 
+         step of the way.  Once it reaches zero, it should print "Blastoff!"
          ~~~~
+         void countdown (int num) {
+        
+         }
 
    .. tab:: Answer
 
-      .. activecode:: cond_rec_a7a
+      .. activecode:: cond_rec_a9a
          :language: cpp
 
          Below is one way to write the program.
          ~~~~
+         void countdown (int num) {
+             if (num != 0){
+                 cout << num << endl;
+                 num -= 1;
+                 countdown (num);
+             }
+             else {
+                 cout << "Blastoff!";
+             }
+         }
+
+
+.. activecode:: cond_rec_a10
+    :language: cpp
+
+    Write the function ``printNegativeNum`` that asks the user
+    for a negative number.  If the user does not provide a negative
+    number, it should contine asking until the user provides one.
+    It should then return the negative number.
+    ~~~~
+    int printNegativeNum () {
+        
+    }
