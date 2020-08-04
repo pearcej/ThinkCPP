@@ -16,6 +16,7 @@ Coding Practice
 
         .. activecode:: cp_5_AC_1q
            :language: cpp
+           :practice: T
 
            #include <iostream>
            using namespace std;
@@ -56,35 +57,32 @@ Coding Practice
                cout << calculateIntAngle (8) << endl;   // Should output 135
            }
 
-.. tabbed:: cp_5_2
+.. activecode:: cp_5_AC_2q
+    :language: cpp
+    :practice: T
 
-    .. tab:: Question
+    The astronomical start and end dates of the four seasons are based on the position of
+    the Earth relative to the Sun. As a result, it changes every year and can be difficult to
+    remember. However, the meteorological start and end dates are based on the Gregorian calendar
+    and is easier to remember. Spring starts on March 1, summer starts on June 1, fall starts on 
+    September 1, and winter starts on December 1. Write a function called ``birthSeason``, which takes
+    two ``int``\s as parameters, ``month`` and ``day``. ``birthSeason`` calculates which season
+    the birthday falls in according to the meteorological start and returns a ``string`` with the correct season.
+    For example, ``birthSeason (7, 5)`` returns "summer" since July 5 is in the summer.
+    ~~~~
+    #include <iostream>
+    using namespace std;
 
-        The astronomical start and end dates of the four seasons are based on the position of
-        the Earth relative to the Sun. As a result, it changes every year and can be difficult to
-        remember. However, the meteorological start and end dates are based on the Gregorian calendar
-        and is easier to remember. Spring starts on March 1, summer starts on June 1, fall starts on 
-        September 1, and winter starts on December 1. Write a function called ``birthSeason``, which takes
-        two ``int``\s as parameters, ``month`` and ``day``. ``birthSeason`` calculates which season
-        the birthday falls in according to the meteorological start and returns a ``string`` with the correct season.
-        For example, ``birthSeason (7, 5)`` returns "summer" since July 5 is in the summer.
+    string birthSeason (int month, int day) {
+        // Write your implementation here.
+    }
 
-        .. activecode:: cp_5_AC_2q
-           :language: cpp
-
-           #include <iostream>
-           using namespace std;
-
-           string birthSeason (int month, int day) {
-               // Write your implementation here.
-           }
-
-           int main() {
-               cout << birthSeason (5, 3) << endl;      // Should output spring
-               cout << birthSeason (7, 5) << endl;      // Should output summer
-               cout << birthSeason (11, 24) << endl;    // Should output fall
-               cout << birthSeason (2, 20) << endl;     // Should output winter
-           }
+    int main() {
+        cout << birthSeason (5, 3) << endl;      // Should output spring
+        cout << birthSeason (7, 5) << endl;      // Should output summer
+        cout << birthSeason (11, 24) << endl;    // Should output fall
+        cout << birthSeason (2, 20) << endl;     // Should output winter
+    }
 
 .. tabbed:: cp_5_3
 
@@ -101,6 +99,7 @@ Coding Practice
 
         .. activecode:: cp_5_AC_3q
            :language: cpp
+           :practice: T
 
            #include <iostream>
            using namespace std;
@@ -144,32 +143,29 @@ Coding Practice
                cout << dogToHumanYears (5) << endl;   // Should output 40
            }
 
-.. tabbed:: cp_5_4
+.. activecode:: cp_5_AC_4q
+    :language: cpp
+    :practice: T
 
-    .. tab:: Question
+    A number is a common factor of two other numbers if it divides evenly into both of the
+    other numbers. For example, 2 is a common factor of 4 and 18, because 2 goes evenly into 
+    4 and 18. Write the function ``isCommonFactor``, which takes three ``ints`` as parameters,
+    ``num1``, ``num2``, and ``factor``. ``isCommonFactor`` returns ``true`` if ``factor`` is a
+    factor of both ``num1`` and ``num2``, and returns ``false`` otherwise.
+    ~~~~
+    #include <iostream>
+    using namespace std;
 
-        A number is a common factor of two other numbers if it divides evenly into both of the
-        other numbers. For example, 2 is a common factor of 4 and 18, because 2 goes evenly into 
-        4 and 18. Write the function ``isCommonFactor``, which takes three ``ints`` as parameters,
-        ``num1``, ``num2``, and ``factor``. ``isCommonFactor`` returns ``true`` if ``factor`` is a
-        factor of both ``num1`` and ``num2``, and returns ``false`` otherwise.
+    bool isCommonFactor (int num1, int num2, int factor) {
+        // Write your implementation here.
+    }
 
-        .. activecode:: cp_5_AC_4q
-           :language: cpp
-
-           #include <iostream>
-           using namespace std;
-
-           bool isCommonFactor (int num1, int num2, int factor) {
-               // Write your implementation here.
-           }
-
-           int main() {
-               cout << isCommonFactor (132, 42, 11) << endl;    // Should output 0
-               cout << isCommonFactor (24, 8, 4) << endl;       // Should output 1
-               cout << isCommonFactor (75, 20, 5) << endl;      // Should output 1
-               cout << isCommonFactor (74, 23, 3) << endl;      // Should output 0
-           }
+    int main() {
+        cout << isCommonFactor (132, 42, 11) << endl;    // Should output 0
+        cout << isCommonFactor (24, 8, 4) << endl;       // Should output 1
+        cout << isCommonFactor (75, 20, 5) << endl;      // Should output 1
+        cout << isCommonFactor (74, 23, 3) << endl;      // Should output 0
+    }
 
 .. tabbed:: cp_5_5
 
@@ -183,6 +179,7 @@ Coding Practice
 
         .. activecode:: cp_5_AC_5q
            :language: cpp
+           :practice: T
 
            #include <iostream>
            using namespace std;
@@ -233,36 +230,33 @@ Coding Practice
                cout << isLeapYear (2000) << endl;   // Should output 1
            }
 
-.. tabbed:: cp_5_6
+.. activecode:: cp_5_AC_6q
+    :language: cpp
+    :practice: T
 
-    .. tab:: Question
+    In the enchanted Mushroom Forest, there are many different types of 
+    mushrooms as far as the eye can see. Most of these mushrooms
+    can make delicious stews and dishes, but some of them are poisonous.
+    Write the function ``isPoisonous``, which takes an ``char size``,
+    ``int numSpots``, and ``bool isRed`` as parameters. If a mushroom is large
+    ('L') and has fewer than 3 spots, it is poisonous. If a mushroom is small ('S')
+    and is red, it is poisonous. If a mushroom has fewer than 3 spots or is not red,
+    it is poisonous. Otherwise, it is not. ``isPoisonous`` should return ``true`` if 
+    the mushroom is poisonous and ``false`` otherwise.
+    ~~~~
+    #include <iostream>
+    using namespace std;
 
-        In the enchanted Mushroom Forest, there are many different types of 
-        mushrooms as far as the eye can see. Most of these mushrooms
-        can make delicious stews and dishes, but some of them are poisonous.
-        Write the function ``isPoisonous``, which takes an ``char size``,
-        ``int numSpots``, and ``bool isRed`` as parameters. If a mushroom is large
-        ('L') and has fewer than 3 spots, it is poisonous. If a mushroom is small ('S')
-        and is red, it is poisonous. If a mushroom has fewer than 3 spots or is not red,
-        it is poisonous. Otherwise, it is not. ``isPoisonous`` should return ``true`` if 
-        the mushroom is poisonous and ``false`` otherwise.
+    bool isPoisonous (char size, int numSpots, bool isRed) {
+        // Write your implementation here.
+    }
 
-        .. activecode:: cp_5_AC_6q
-           :language: cpp
-
-           #include <iostream>
-           using namespace std;
-
-           bool isPoisonous (char size, int numSpots, bool isRed) {
-               // Write your implementation here.
-           }
-
-           int main() {
-               cout << isPoisonous ('S', 10, 0) << endl;    // Should output 1
-               cout << isPoisonous ('S', 2, 1) << endl;     // Should output 1
-               cout << isPoisonous ('L', 1, 1) << endl;     // Should output 1
-               cout << isPoisonous ('L', 4, 1) << endl;     // Should output 0
-           }
+    int main() {
+        cout << isPoisonous ('S', 10, 0) << endl;    // Should output 1
+        cout << isPoisonous ('S', 2, 1) << endl;     // Should output 1
+        cout << isPoisonous ('L', 1, 1) << endl;     // Should output 1
+        cout << isPoisonous ('L', 4, 1) << endl;     // Should output 0
+    }
 
 .. tabbed:: cp_5_7
 
@@ -278,6 +272,7 @@ Coding Practice
 
         .. activecode:: cp_5_AC_7q
            :language: cpp
+           :practice: T
 
            #include <iostream>
            using namespace std;

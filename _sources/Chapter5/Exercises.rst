@@ -2,6 +2,7 @@ Multiple Choice Exercises
 -------------------------
 
 .. mchoice:: mce_5_1
+    :practice: T
 
     What should be the return type of the function ``convertToCelsius``?
 
@@ -30,6 +31,7 @@ Multiple Choice Exercises
       - Since we are returning something in the function, the function is not ``void``.
 
 .. mchoice:: mce_5_2
+    :practice: T
 
     What would be returned by ``secretFunction`` if the input was 14?
 
@@ -65,6 +67,7 @@ Multiple Choice Exercises
       + Since 14 is divisible by 2, the function returns two less than three times 14.
 
 .. mchoice:: mce_5_3
+    :practice: T
 
     If we wanted to create a boolean function called ``isPrime``, which takes an ``int input``
     as a parameter, which of the following would be the correct function header?
@@ -86,6 +89,7 @@ Multiple Choice Exercises
       - Take a closer look at what the return type is.
 
 .. mchoice:: mce_5_4
+    :practice: T
 
     If we wrote the following function, which of the other functions below can we also legally write
     and add to the program?
@@ -115,6 +119,7 @@ Multiple Choice Exercises
       + Although this function has the same name as the given function, its parameter list is in a different order, so it is allowed.
 
 .. mchoice:: mce_5_5
+    :practice: T
 
     What is the output of the code below?
 
@@ -145,6 +150,7 @@ Multiple Choice Exercises
       - Remember that if a boolean expression is true, it has a value of 1.
 
 .. mchoice:: mce_5_6
+    :practice: T
 
     What is the output of the code below?
 
@@ -175,6 +181,7 @@ Multiple Choice Exercises
       - Take a closer look at the expressions.
 
 .. mchoice:: mce_5_7
+    :practice: T
 
     Are there any issues with the code below?
 
@@ -203,6 +210,7 @@ Multiple Choice Exercises
       - There is an issue with the code. Can you find it?
 
 .. mchoice:: mce_5_8
+    :practice: T
 
     Are there any issues with the code below?
 
@@ -231,6 +239,7 @@ Multiple Choice Exercises
       - There is an issue with the code. Can you find it?
 
 .. mchoice:: mce_5_9
+    :practice: T
 
     What is the return type of main?
 
@@ -251,6 +260,7 @@ Multiple Choice Exercises
       + Yes, ``main`` is supposed to return an integer.
 
 .. mchoice:: mce_5_10
+    :practice: T
 
     What is the base case of the ``factorial`` recursive function?
 

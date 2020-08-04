@@ -5,6 +5,7 @@ Mixed Up Code Practice
    :numbered: left
    :adaptive:
    :noindent:
+   :practice: T
 
    Vacation time! But before you go, you need to convert your currency.
    Let's write the code for the ``dollarToYen`` function. ``dollarToYen``
@@ -32,6 +33,7 @@ Mixed Up Code Practice
    :numbered: left
    :adaptive:
    :noindent:
+   :practice: T
 
    When you buy something, you also need to pay sales tax. For example,
    a nice shirt could be labeled with a price of exactly $20, but when 
@@ -60,6 +62,7 @@ Mixed Up Code Practice
    :numbered: left
    :adaptive:
    :noindent:
+   :practice: T
 
    Most assignments and tests are graded as a percentage, but final
    grades are letters. Let's write the code for the ``percentToLetter`` function. 
@@ -117,6 +120,7 @@ Mixed Up Code Practice
    :numbered: left
    :adaptive:
    :noindent:
+   :practice: T
 
    Let's write the code for the ``triangleArea`` function. ``triangleArea``
    takes two ``double`` parameters, ``base`` and ``height``. It returns the 
@@ -142,6 +146,7 @@ Mixed Up Code Practice
 .. parsonsprob:: mucp_5_5
    :numbered: left
    :adaptive:
+   :practice: T
 
    Let's write the code for the ``cylinderVolume`` function. ``cylinderVolume``
    takes two ``double`` parameters, ``radius`` and ``height``. It returns the 
@@ -163,6 +168,7 @@ Mixed Up Code Practice
 .. parsonsprob:: mucp_5_6
    :numbered: left
    :adaptive:
+   :practice: T
 
    On a distant planet, depending on the characteristics of an egg, a kenchic,
    an ooseg, or a guinpen might hatch from it. Let's write the function 
@@ -205,6 +211,7 @@ Mixed Up Code Practice
 .. parsonsprob:: mucp_5_7
    :numbered: left
    :adaptive:
+   :practice: T
 
    Let's write the code for the ``isDoubleDigit`` function. ``isDoubleDigit``
    takes an ``int num`` as a parameter. ``isDoubleDigit`` returns ``true`` if 
@@ -236,6 +243,7 @@ Mixed Up Code Practice
 .. parsonsprob:: mucp_5_8
    :numbered: left
    :adaptive:
+   :practice: T
 
    Let's write the code for the ``isFactor`` function. ``isFactor``
    takes two ``int``\s as parameters, ``num`` and ``factor``.
@@ -268,6 +276,7 @@ Mixed Up Code Practice
 .. parsonsprob:: mucp_5_9
    :numbered: left
    :adaptive:
+   :practice: T
 
    Let's write the code for the ``isPerfectSquare`` function. ``isPerfectSquare``
    takes an ``int input`` as a parameter and returns ``true`` if ``input`` is a 
@@ -301,6 +310,7 @@ Mixed Up Code Practice
 .. parsonsprob:: mucp_5_10
    :numbered: left
    :adaptive:
+   :practice: T
 
    Most bacteria cultures grow exponentially. For this problem,
    assume the number of cells in a bacterial culture doubles every hour.

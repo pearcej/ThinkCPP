@@ -18,6 +18,7 @@ Coding Practice
 
         .. activecode:: cp_6_AC_1q
            :language: cpp
+           :practice: T
 
            #include <iostream>
            using namespace std;
@@ -53,36 +54,32 @@ Coding Practice
                }
            }
 
-.. tabbed:: cp_6_2
+.. activecode:: cp_6_AC_2q
+    :language: cpp
+    :practice: F
 
-    .. tab:: Question
+    Encapsulate the triangle printing program into a function called
+    ``printTriangle``. Generalize it so that it takes a parameter
+    ``int n`` to generate a nxn triangle. Call your function in main
+    with an input of 4, which should result in the following output:
 
-        Encapsulate the triangle printing program into a function called
-        ``printTriangle``. Generalize it so that it takes a parameter
-        ``int n`` to generate a nxn triangle. Call your function in main
-        with an input of 4, which should result in the following output:
+    :: 
 
-        :: 
-   
-           *
-           **
-           ***
-           ****
+        *
+        **
+        ***
+        ****
+    ~~~~
+    #include <iostream>
+    using namespace std;
 
-        .. activecode:: cp_6_AC_2q
-           :language: cpp
-           :practice: F
+    void printTriangle (int n) {
+        // Write your implementation here.
+    }
 
-           #include <iostream>
-           using namespace std;
-
-           void printTriangle (int n) {
-               // Write your implementation here.
-           }
-
-           int main() {
-               // Write your implementation here.
-           }
+    int main() {
+        // Write your implementation here.
+    }
 
 .. tabbed:: cp_6_3
 
@@ -111,6 +108,7 @@ Coding Practice
 
         .. activecode:: cp_6_AC_3q
            :language: cpp
+           :practice: T
 
            #include <iostream>
            using namespace std;
@@ -153,38 +151,35 @@ Coding Practice
                }
            }
 
-.. tabbed:: cp_6_4
+.. activecode:: cp_6_AC_4q
+    :language: cpp
+    :practice: T
 
-    .. tab:: Question
+    Write the function ``printAddTable`` which takes an ``int n`` as a parameter
+    and prints out a nxn addition table. Call your function in ``main`` with
+    "10" as the argument. Your output should look like this:
 
-        Write the function ``printAddTable`` which takes an ``int n`` as a parameter
-        and prints out a nxn addition table. Call your function in ``main`` with
-        "10" as the argument. Your output should look like this:
+    :: 
 
-        :: 
-   
-           0       1       2       3       4       5       6       7       8       9       10
-           1       2       3       4       5       6       7       8       9       10      11
-           2       3       4       5       6       7       8       9       10      11      12
-           3       4       5       6       7       8       9       10      11      12      13
-           4       5       6       7       8       9       10      11      12      13      14
-           5       6       7       8       9       10      11      12      13      14      15
-           6       7       8       9       10      11      12      13      14      15      16
-           7       8       9       10      11      12      13      14      15      16      17
-           8       9       10      11      12      13      14      15      16      17      18
-           9       10      11      12      13      14      15      16      17      18      19
-           10      11      12      13      14      15      16      17      18      19      20
+        0       1       2       3       4       5       6       7       8       9       10
+        1       2       3       4       5       6       7       8       9       10      11
+        2       3       4       5       6       7       8       9       10      11      12
+        3       4       5       6       7       8       9       10      11      12      13
+        4       5       6       7       8       9       10      11      12      13      14
+        5       6       7       8       9       10      11      12      13      14      15
+        6       7       8       9       10      11      12      13      14      15      16
+        7       8       9       10      11      12      13      14      15      16      17
+        8       9       10      11      12      13      14      15      16      17      18
+        9       10      11      12      13      14      15      16      17      18      19
+        10      11      12      13      14      15      16      17      18      19      20
+    ~~~~
+    #include <iostream>
+    using namespace std;
 
-        .. activecode:: cp_6_AC_4q
-           :language: cpp
+    void printAddTable (int n) {
+        // Write your implementation here.
+    }
 
-           #include <iostream>
-           using namespace std;
-   
-           void printAddTable (int n) {
-               // Write your implementation here.
-           }
-
-           int main() {
-               // Call your function here.
-           }
+    int main() {
+        // Call your function here.
+    }

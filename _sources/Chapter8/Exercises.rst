@@ -2,6 +2,7 @@ Multiple Choice Exercises
 -------------------------
 
 .. mchoice:: mce_8_1
+    :practice: T
 
     Which of the following are compound values?
 
@@ -53,6 +54,7 @@ Multiple Choice Exercises
       - A ``double`` is not a compound value.
 
 .. mchoice:: mce_8_2
+    :practice: T
 
     What is wrong with the following ``struct`` definition?
 
@@ -82,6 +84,7 @@ Multiple Choice Exercises
       - There is an error with the definition. Can you find it?
 
 .. mchoice:: mce_8_3
+    :practice: T
 
     How do we assign the value of 4 to the instance variable ``numLegs`` of the ``Dog`` object?
 
@@ -114,6 +117,7 @@ Multiple Choice Exercises
       + Using dot notation on ``doug``, we can set the value of ``numLegs`` to 4.
 
 .. mchoice:: mce_8_4
+    :practice: T
 
     What is the output of the code below?
 
@@ -152,6 +156,7 @@ Multiple Choice Exercises
       - Dot notation accesses the values of the instance variables, not the names.
 
 .. mchoice:: mce_8_5
+    :practice: T
 
     What is the output of the code below?
 
@@ -190,6 +195,7 @@ Multiple Choice Exercises
       - Integer division truncates the extra digits.
 
 .. mchoice:: mce_8_6
+    :practice: T
 
     What is the value of ``s.coffeeCupFull`` when the code is done running?
 
@@ -229,6 +235,7 @@ Multiple Choice Exercises
       + Since we pass a ``Student`` object by value to ``pourCoffee``, the function makes a copy of the object and does not modify the original. 
 
 .. mchoice:: mce_8_7
+    :practice: T
 
     What is the value of ``r.batteryLevelPercentage`` when the code is done running?
 
@@ -272,6 +279,7 @@ Multiple Choice Exercises
       - That is the final value of ``r.isFullyCharged``. 
 
 .. mchoice:: mce_8_8
+    :practice: T
 
     What is the output of the code below?
 
@@ -317,6 +325,7 @@ Multiple Choice Exercises
       - Take a closer look at the three functions. Are they all passed by reference?
 
 .. mchoice:: mce_8_9
+    :practice: T
 
     If the user inputted the string "R2-D2", what is the output of the code below?
 
@@ -345,6 +354,7 @@ Multiple Choice Exercises
       - ``cin`` reads input from the user.
 
 .. mchoice:: mce_8_10
+    :practice: T
 
     If the user inputted the string "C-3PO", what is the output of the code below?
 
