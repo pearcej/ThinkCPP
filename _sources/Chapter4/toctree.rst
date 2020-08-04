@@ -15,5 +15,5 @@ Conditionals and recursion
    StackDiagrams.rst
    Glossary.rst
    Exercises.rst
-   MixedUpCode1.rst
+   MixedUpCode.rst
    activeCode.rst

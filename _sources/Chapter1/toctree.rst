@@ -11,4 +11,4 @@ The way of the program
    formal_natural.rst
    first_program.rst
    glossary.rst
-   Exercises1.rst
+   Exercises.rst
