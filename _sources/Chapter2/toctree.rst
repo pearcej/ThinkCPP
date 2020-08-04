@@ -8,13 +8,13 @@ Variables and types
    Values.rst
    Variables.rst
    Assignment.rst
-   OutputtingVariables.rst
+   OutputtingVariables1.rst
    Keywords.rst
    Operators.rst
    OrderofOperations.rst
    OperatorsforCharacters.rst
    Composition.rst
    Glossary.rst
-   Exercises.rst
+   Exercises1.rst
    mixedUpCode.rst
    activeCode.rst
