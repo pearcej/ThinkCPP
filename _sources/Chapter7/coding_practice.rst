@@ -192,3 +192,279 @@ Coding Practice
     int main() {
         removeWord ("Gucci gang, Gucci gang, Gucci gang, Gucci gang", "gang");
     }
+
+.. tabbed:: cp_7_5
+
+    .. tab:: Question
+
+        ROT13 is a simple letter substitution cipher that shifts every letter forward by 13,
+        looping around if necessary. For example, the letter 'a', 1st in the alphabet, becomes
+        the letter 'n', 14th in the alphabet. The letter 'r', 18th in the alphabet, becomes the 
+        letter 'e', 5th in the alphabet. Since the alphabet has 26 letters and 13 is exactly half, 
+        a message encrypted using ROT13 can be decrypted by calling ROT13 on the encrypted message.
+        Write the function ``ROT13``, which takes a ``string input`` as a parameter and returns 
+        an encrypted ``string``. Test your function in ``main``.
+
+        .. activecode:: cp_7_AC_5q
+           :language: cpp
+           :practice: T
+
+           #include <iostream>
+           #include "ctype.h"
+           using namespace std;
+
+           string ROT13 (string input) {
+               // Write your implementation here.
+           }
+
+           int main() {
+               string original = "Encrypt me then decrypt me!";
+               string encrypted = ROT13 (original);
+               string decrypted = ROT13 (encrypted);
+               cout << original << endl;
+               cout << encrypted << endl;
+               cout << decrypted << endl;
+
+               // Uncomment and run the code below once your function works!
+               // string secretMessage = "Pbatenghyngvbaf! Lbh'ir fhpprffshyyl vzcyrzragrq EBG13 naq qrpbqrq gur frperg zrffntr :)";
+               // cout << ROT13 (secretMessage) << endl;
+           }
+
+
+    .. tab:: Answer
+
+        Below is one way to implement the ``ROT13`` function. We use a ``while`` loop to
+        go through all the letters in the ``string``. If the letter is between 'a' and 'n' or 
+        'A' and 'N', we use character operations to add 13 to each letter. Otherwise,
+        we subtract 13 from each letter. We return the encrypted message at the end.
+
+        .. activecode:: cp_7_AC_5a
+           :language: cpp
+           :optional:
+
+           #include <iostream>
+           #include "ctype.h"
+           using namespace std;
+
+           string ROT13(string input) {
+               int n = 0;
+               while (n < (int)input.length()) {
+                   if (isalpha(input[n])) {
+                       if ((input[n] >= 'a' && input[n] < 'n') || (input[n] >= 'A' && input[n] < 'N')) {
+                           input[n] = input[n] + 13;
+                       }
+                       else {
+                           input[n] = input[n] - 13;
+                       }
+                   }
+                   n++;
+               }
+               return input;
+           }
+
+           int main() {
+               string original = "Encrypt me then decrypt me!";
+               string encrypted = ROT13 (original);
+               string decrypted = ROT13 (encrypted);
+               cout << original << endl;
+               cout << encrypted << endl;
+               cout << decrypted << endl;
+
+               // Uncomment and run the code below once your function works!
+               // string secretMessage = "Pbatenghyngvbaf! Lbh'ir fhpprffshyyl vzcyrzragrq EBG13 naq qrpbqrq gur frperg zrffntr :)";
+               // cout << ROT13 (secretMessage) << endl;
+           }
+
+.. activecode:: cp_7_AC_6q
+    :language: cpp
+    :practice: T
+
+    Write the function ``reverseString`` which takes a ``string input``, reverses it,
+    and returns the reversed ``string``. Test your function in ``main``.
+    ~~~~
+    #include <iostream>
+    using namespace std;
+
+    string reverseWord (string input) {
+        // Write your implementation here.
+    }
+
+    int main() {
+        cout << reverseWord ("hello") << endl;      // Should output "olleh"
+        cout << reverseWord ("world") << endl;      // Should output "dlrow"
+        cout << reverseWord ("racecar") << endl;    // Should output "racecar"
+    }
+
+.. tabbed:: cp_7_7
+
+    .. tab:: Question
+
+        Write the function ``capitalize``, which takes a ``string input`` as a parameter.
+        ``capitalize`` capitalizes the first letter of every word, and returns the new ``string``.
+        Test your function in ``main``.
+
+        .. activecode:: cp_7_AC_7q
+           :language: cpp
+           :practice: T
+
+           #include <iostream>
+           #include "ctype.h"
+           using namespace std;
+
+           string capitalize (string input) {
+               // Write your implementation here.
+           }
+
+           int main() {
+               cout << capitalize ("every word in this string should be capitalized!") << endl;
+               cout << capitalize ("this String As well") << endl;
+           }
+
+
+    .. tab:: Answer
+
+        Below is one way to implement the ``capitalize`` function. We use a ``while`` loop to
+        go through all the ``char``\s in the ``string``. We capitalize the first character
+        and all characters following a space using ``toupper``. At the end, we return the ``string``.
+
+        .. activecode:: cp_7_AC_7a
+           :language: cpp
+           :optional:
+
+           #include <iostream>
+           #include "ctype.h"
+           using namespace std;
+
+           string capitalize (string input) {
+               int n = 0;
+               while (n < (int)input.length()) {
+                   if (n == 0) {
+                       input[n] = toupper(input[n]);
+                   }
+                   else if (input[n-1] == ' ') {
+                       input[n] = toupper(input[n]);
+                   }
+                   n++;
+               }
+               return input;
+           }
+
+           int main() {
+               cout << capitalize ("every word in this string should be capitalized!") << endl;
+               cout << capitalize ("this String As well") << endl;
+           }
+
+.. activecode:: cp_7_AC_8q
+    :language: cpp
+    :practice: T
+
+    Write the function ``countVowels`` which takes a ``string input`` and returns
+    the number of vowerls in the ``string``. Remember, 'a', 'e', 'i', 'o', and 'u'
+    are vowels.
+    ~~~~
+    #include <iostream>
+    using namespace std;
+
+    int countVowels (string input) {
+        // Write your implementation here.
+    }
+
+    int main() {
+        cout << countVowels ("onomatopoeia") << endl;      // Should output 8
+        cout << countVowels ("cysts") << endl;             // Should output 0
+        cout << countVowels ("vowels") << endl;            // Should output 2
+    }
+
+.. tabbed:: cp_7_9
+
+    .. tab:: Question
+
+        Write the function ``longestWord``, which takes a ``string input`` as a parameter.
+        ``longestWord`` returns the words with the most letters in ``input``. If there's a tie,
+        return the first word. Use the ``substr`` function. Test your function in ``main``.
+
+        .. activecode:: cp_7_AC_9q
+           :language: cpp
+           :practice: T
+
+           #include <iostream>
+           using namespace std;
+
+           string longestWord (string input) {
+               // Write your implementation here.
+           }
+
+           int main() {
+               cout << longestWord ("what is the longest word in this string") << endl;  // Should output "longest"
+               cout << longestWord ("these words are very close in size") << endl;       // Should output "these"
+           }
+
+
+    .. tab:: Answer
+
+        Below is one way to implement the ``longestWord`` function. We use a ``while`` loop to
+        go through all the ``char``\s in the ``string``. We use variables to keep track of the
+        longest word, the longest amount of letters, and the length of the current word. We
+        can determine the length of a word by counting the number of ``char``\s between spaces.
+        If the length is greater than the max, length becomes the new max and we update the longest word.
+        This keeps repeating until we reach the end of the string, and the longest word is returned.
+
+        .. activecode:: cp_7_AC_9a
+           :language: cpp
+           :optional:
+
+           #include <iostream>
+           using namespace std;
+
+           string longestWord (string input) {
+               int n = 0;
+               string longest;
+               int maxLength = 0;
+               while (n < (int)input.length()) {
+                   int wordLength = 0;
+                   while (input[n] != ' ' && n < (int)input.length()) {
+                       wordLength++;
+                       n++;
+                   }
+                   if (wordLength > maxLength) {
+                       maxLength = wordLength;
+                       longest = input.substr(n - maxLength, maxLength);
+                   }
+                   n++;
+               }
+               return longest;
+           }
+
+           int main() {
+               cout << longestWord ("what is the longest word in this string") << endl;  // Should output "longest"
+               cout << longestWord ("these words are very close in size") << endl;       // Should output "these"
+           }
+
+.. activecode:: cp_7_AC_10q
+    :language: cpp
+    :practice: T
+
+    Camel case is the practice of writing phrases without spaces or punctuation,
+    indicating the separation of words using capital letter. For example, "camel case"
+    in camel case is "camelCase". Snake case is the practice of writing phrases
+    where each space is replaced by an underscore. For example, "snake case"
+    in snake case is "snake_case". Write the functions ``snakeToCamel`` and ``camelToSnake``.
+    Each function takes a ``string input`` and returns the input using the other stylization.
+    Test your functions in ``main``. Feel free to use any ``string`` functions you'd like.
+    ~~~~
+    #include <iostream>
+    #include "ctype.h"
+    using namespace std;
+
+    string snakeToCamel (string input) {
+        // Write your implementation here.
+    }
+
+    string camelToSnake (string input) {
+        // Write your implementation here.
+    }
+
+    int main() {
+        cout << snakeToCamel ("turn_this_into_camel_case") << endl;   // Should output "turnThisIntoCamelCase"
+        cout << camelToSnake ("turnThisIntoSnakeCase") << endl;       // Should output "turn_this_into_snake_case"
+    }

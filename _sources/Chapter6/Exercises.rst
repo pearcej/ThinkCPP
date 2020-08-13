@@ -229,3 +229,114 @@ Multiple Choice Exercises
     - We're not allowed to do this. The code will result in an error.
 
       - The code does not produce an error.
+
+.. mchoice:: mce_6_8
+    :practice: T
+
+    What is the output of the code below?
+
+    .. code-block:: cpp
+   
+     int loopFive (int n) {
+       while (n % 5 != 0) {
+         n = n + 3;
+       }
+       return n;
+     }
+
+     int main() {
+       cout << loopFive (2);
+       cout << loopFive (3);
+       cout << loopFive (4);
+     }
+
+    - 51510
+
+      + ``n`` is repeatedly incremented by 3 until it is divisible by 5, and this happens when ``n`` is 5, 15, and 10 for the inputs of 2, 3, and 4 respectively.
+
+    - 234
+    
+      - Although the function returns ``n``, ``n`` might not be its original value.
+
+    - 5 15 10
+
+      - Take a closer look at the output statements.
+
+    - 567
+
+      - Take a closer look at the ``while`` loop in the function.
+
+.. mchoice:: mce_6_9
+    :practice: T
+
+    The super evil villian RePete wants to annoy the city by
+    hacking into the city's helper robots and making them repeat
+    everything they say 5 times. However, there's an error in his 
+    code and now the robots won't stop repeating! Can you find the
+    error?
+
+    .. code-block:: cpp
+   
+     void repeatBot (string input) {
+       int n = 0;
+       while (n < 5) {
+         cout << input << " ";
+         n--;
+       }
+     }
+
+     int main() {
+       repeatBot ("Hello, how may I help you?");
+     }
+
+    - ``repeatBot`` can only take one word as an argument.
+
+      - A ``string`` is any number of characters or words surrounded by double quotes, not just one word.
+
+    - Since ``n`` is declared to be 0, 0 is always less than 5, so the code loops infinitely.
+    
+      - The code doesn't loop infinitely because of the value ``n`` was declared to be.
+
+    - Every time the ``while`` loop runs, ``n`` is reset to 0, so it will always be less than 5.
+
+      - The initialization of ``n`` occurs outside the ``while`` loop, so the value of ``n`` does not get reset to 0.
+
+    - Since ``n`` is declared to be 0 and we continuously decrement ``n``, it will always be less than 5, so the code loops infinitely.
+
+      + Since ``n`` starts at 0 and gets smaller, the conditional for the ``while`` loop will always be true, and thus the code runs forever.
+
+.. mchoice:: mce_6_10
+
+    After making some changes to his code, RePete tries again.
+    This time, however, the robots don't repeat anything!
+    Can you find the new error?
+
+    .. code-block:: cpp
+   
+     void repeatBot (string input) {
+       int n = 0;
+       while (n > 5) {
+         cout << input << " ";
+         n++;
+       }
+     }
+
+     int main() {
+       repeatBot ("Hello, how may I help you?");
+     }
+
+    - ``n > 5`` is not a valid conditional, so the ``while`` loop doesn't execute.
+
+      - ``n > 5`` is a boolean statement and thus is a valid conditional.
+
+    - The value of ``n`` never gets modified in the ``while`` loop.
+    
+      - ``n`` is incremented in the ``while`` loop after the ``cout`` statement.
+
+    - In the ``cout`` statement, only spaces are printed.
+
+      - ``input`` is also printed.
+
+    - Since ``n`` is declared to be 0, 0 is not greater than 5, so the ``while`` loop does not execute.
+
+      + The ``while`` loop is ignored, and thus nothing is printed.

@@ -5,6 +5,93 @@ Coding Practice
 
     .. tab:: Question
 
+        Write a function called ``calculator`` which takes two ``double``\s, ``first`` and
+        ``second``, and a ``char operation`` as parameters. ``calculator`` performs
+        addition, subtraction, multiplication, or division with the two ``double``\s 
+        depending on what operation is passed in (+, -, *, /). It then returns the result.
+        Test your function in ``main``.
+
+        .. activecode:: cp_5_AC_1q
+           :language: cpp
+           :practice: T
+
+           #include <iostream>
+           using namespace std;
+
+           double calculator (double first, double second, char operation) {
+               // Write your implementation here.
+           }
+
+           int main() {
+               cout << calculator (3, 6, '+') << endl;      // Should output 9
+               cout << calculator (19, 2, '-') << endl;     // Should output 17
+               cout << calculator (5, 8, '*') << endl;      // Should output 40
+               cout << calculator (16, 4, '/') << endl;     // Should output 4
+           }
+
+
+    .. tab:: Answer
+
+        Below is one way to implement the ``calculator`` function. Using conditionals,
+        we return the correct result depending on which operation was given.
+
+        .. activecode:: cp_5_AC_1a
+           :language: cpp
+           :optional:
+
+           #include <iostream>
+           using namespace std;
+
+           double calculator (double first, double second, char operation) {
+               if (operation == '+') {
+                   return first + second;
+               }
+               else if (operation == '-') {
+                   return first - second;
+               }
+               else if (operation == '*') {
+                   return first * second;
+               }
+               else {
+                   return first / second;
+               }
+           }
+
+           int main() {
+               cout << calculator (3, 6, '+') << endl;      // Should output 9
+               cout << calculator (19, 2, '-') << endl;     // Should output 17
+               cout << calculator (5, 8, '*') << endl;      // Should output 40
+               cout << calculator (16, 4, '/') << endl;     // Should output 4
+           }
+
+.. activecode:: cp_5_AC_2q
+    :language: cpp
+    :practice: T
+
+    A binary number is one that is expressed in the base-2 numeral system.
+    Write a function ``convertToBinary`` which takes an ``int decimal`` as
+    a parameter. ``convertToBinary`` takes the number in decimal, converts
+    it into a binary number, and returns the binary number. Test your function
+    in ``main``.
+    ~~~~
+    #include <iostream>
+    using namespace std;
+
+    int convertToBinary (int decimal) {
+        // Write your implementation here.
+    }
+
+    int main() {
+        cout << convertToBinary (1) << endl;      // Should output 1
+        cout << convertToBinary (5) << endl;      // Should output 101
+        cout << convertToBinary (16) << endl;     // Should output 10000
+        cout << convertToBinary (31) << endl;     // Should output 11111
+    }
+
+.. tabbed:: cp_5_3
+
+    .. tab:: Question
+
         An interior angle of a polygon is the angle between two adjacent 
         sides of the polygon. Each interior angle in an equilateral triangle
         measures 60 degree, each interior angle in a square measures 90 degrees,
@@ -14,7 +101,7 @@ Coding Practice
         interior angle of a regular polygon with ``numSides`` sides. The formula
         to find the interior angle of a regular ngon is (n - 2) x 180 / n.
 
-        .. activecode:: cp_5_AC_1q
+        .. activecode:: cp_5_AC_3q
            :language: cpp
            :practice: T
 
@@ -39,7 +126,7 @@ Coding Practice
         we can find the interior angle and return it. Notice how we use 180.0
         instead of 180 to avoid integer division. 
 
-        .. activecode:: cp_5_AC_1a
+        .. activecode:: cp_5_AC_3a
            :language: cpp
            :optional:
 
@@ -57,7 +144,7 @@ Coding Practice
                cout << calculateIntAngle (8) << endl;   // Should output 135
            }
 
-.. activecode:: cp_5_AC_2q
+.. activecode:: cp_5_AC_4q
     :language: cpp
     :practice: T
 
@@ -84,7 +171,7 @@ Coding Practice
         cout << birthSeason (2, 20) << endl;     // Should output winter
     }
 
-.. tabbed:: cp_5_3
+.. tabbed:: cp_5_5
 
     .. tab:: Question
 
@@ -97,7 +184,7 @@ Coding Practice
         Each year after the second year counts as 4 additional human years. For example, a dog that is
         3 years old is actually 28 years old in human years.
 
-        .. activecode:: cp_5_AC_3q
+        .. activecode:: cp_5_AC_5q
            :language: cpp
            :practice: T
 
@@ -110,9 +197,9 @@ Coding Practice
 
            int main() {
                cout << dogToHumanYears (1) << endl;   // Should output 15
-               cout << dogToHumanYears (2) << endl;   // Should output 28
-               cout << dogToHumanYears (3) << endl;   // Should output 32
-               cout << dogToHumanYears (5) << endl;   // Should output 40
+               cout << dogToHumanYears (2) << endl;   // Should output 24
+               cout << dogToHumanYears (3) << endl;   // Should output 28
+               cout << dogToHumanYears (5) << endl;   // Should output 36
            }
 
 
@@ -122,7 +209,7 @@ Coding Practice
         check to see if the dog is one year old. If it is older than one, then 
         we can use the formula to return the correct age in human years.
 
-        .. activecode:: cp_5_AC_3a
+        .. activecode:: cp_5_AC_5a
            :language: cpp
            :optional:
 
@@ -138,12 +225,12 @@ Coding Practice
 
            int main() {
                cout << dogToHumanYears (1) << endl;   // Should output 15
-               cout << dogToHumanYears (2) << endl;   // Should output 28
-               cout << dogToHumanYears (3) << endl;   // Should output 32
-               cout << dogToHumanYears (5) << endl;   // Should output 40
+               cout << dogToHumanYears (2) << endl;   // Should output 24
+               cout << dogToHumanYears (3) << endl;   // Should output 28
+               cout << dogToHumanYears (5) << endl;   // Should output 36
            }
 
-.. activecode:: cp_5_AC_4q
+.. activecode:: cp_5_AC_6q
     :language: cpp
     :practice: T
 
@@ -167,7 +254,7 @@ Coding Practice
         cout << isCommonFactor (74, 23, 3) << endl;      // Should output 0
     }
 
-.. tabbed:: cp_5_5
+.. tabbed:: cp_5_7
 
     .. tab:: Question
 
@@ -177,7 +264,7 @@ Coding Practice
         Write the boolean function ``isLeapYear``, which takes an ``int year`` as a parameter and returns ``true`` 
         if the year is a leap year and ``false`` otherwise. Test your function in ``main``.
 
-        .. activecode:: cp_5_AC_5q
+        .. activecode:: cp_5_AC_7q
            :language: cpp
            :practice: T
 
@@ -201,7 +288,7 @@ Coding Practice
         Below is one way to implement the program. We can use conditionals in this
         order to efficiently determine whether or not a given year is a leap year.
 
-        .. activecode:: cp_5_AC_5a
+        .. activecode:: cp_5_AC_7a
            :language: cpp
            :optional:
 
@@ -230,7 +317,7 @@ Coding Practice
                cout << isLeapYear (2000) << endl;   // Should output 1
            }
 
-.. activecode:: cp_5_AC_6q
+.. activecode:: cp_5_AC_8q
     :language: cpp
     :practice: T
 
@@ -258,7 +345,7 @@ Coding Practice
         cout << isPoisonous ('L', 4, 1) << endl;     // Should output 0
     }
 
-.. tabbed:: cp_5_7
+.. tabbed:: cp_5_9
 
     .. tab:: Question
 
@@ -270,7 +357,7 @@ Coding Practice
         Write the ``triangularNum`` function, which takes an ``int n`` as a parameter and returns
         the ``n``\th triangular number. Use recursion.
 
-        .. activecode:: cp_5_AC_7q
+        .. activecode:: cp_5_AC_9q
            :language: cpp
            :practice: T
 
@@ -296,7 +383,7 @@ Coding Practice
         is 1, and in that case we return 1. Otherwise, we recursively
         call ``triangularNum`` on ``n-1``.
 
-        .. activecode:: cp_5_AC_7a
+        .. activecode:: cp_5_AC_9a
            :language: cpp
            :optional:
 
@@ -318,3 +405,25 @@ Coding Practice
                cout << triangularNum (6) << endl;     // Should output 21
                cout << triangularNum (17) << endl;    // Should output 153
            }
+
+.. activecode:: cp_5_AC_10q
+    :language: cpp
+    :practice: T
+
+    Write the function ``digitSum`` which takes an ``int num`` as a parameter
+    and returns the sum of all its digits. For example, ``digitSum (1423)``
+    would return 10. Use recursion.
+    ~~~~
+    #include <iostream>
+    using namespace std;
+
+    int digitSum (int num) {
+        // Write your implementation here.
+    }
+
+    int main() {
+        cout << digitSum (123) << endl;    // Should output 6
+        cout << digitSum (8739) << endl;   // Should output 27
+        cout << digitSum (440) << endl;    // Should output 8
+        cout << digitSum (2) << endl;      // Should output 2
+    }
