@@ -67,12 +67,16 @@ started:
    about the order of operations!
 
 
-.. clickablearea:: order_of_operations_3A
-   :question: Click on ALL PARTS of the expression that get evaluated first.  For example, if "1 + 1" gets evaluated first, click on "1", "+", and "1".
-   :iscode:
-   :feedback: Try again!
+.. reveal:: reveal0
+   :showtitle: Question 3A
+   :hidetitle: Hide Content
+   
+   .. clickablearea:: order_of_operations_3A
+      :question: Click on ALL PARTS of the expression that get evaluated first.  For example, if "1 + 1" gets evaluated first, click on "1", "+", and "1".
+      :iscode:
+      :feedback: Try again!
 
-   :click-incorrect:1:endclick: :click-incorrect:+:endclick: :click-incorrect:2:endclick: :click-incorrect:*:endclick: ( :click-correct:10:endclick: :click-correct:-:endclick: :click-correct:2:endclick: ) :click-incorrect:/:endclick: :click-incorrect:4:endclick:
+      :click-incorrect:1:endclick: :click-incorrect:+:endclick: :click-incorrect:2:endclick: :click-incorrect:*:endclick: ( :click-correct:10:endclick: :click-correct:-:endclick: :click-correct:2:endclick: ) :click-incorrect:/:endclick: :click-incorrect:4:endclick:
 
 
 Once you've submitted your answer for Question 3A, click on Question 3B below.

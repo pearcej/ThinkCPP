@@ -1,4 +1,4 @@
-The Way of the Program
+﻿The Way of the Program
 ======================
 
 The goal of this book is to teach you to think like a computer
@@ -16,28 +16,3 @@ think creatively about solutions, and express a solution clearly and
 accurately. As it turns out, the process of learning to program is an
 excellent opportunity to practice problem-solving skills. That’s why
 this chapter is called “The way of the program.”
-
-
-.. poll:: major
-   :option_1: Computer Science / Data Science
-   :option_2: Computer Engineering
-   :option_3: Other Engineering Degree
-   :option_4: Business / Economics
-   :option_5: Nursing / Pre-med
-   :option_6: Mathematics / Statistics
-   :option_7: Other non-Engineering Degree
-
-   What is your intended major?
-
-
-.. poll:: skills
-   :scale: 10
-
-   On a scale from 1 to 10, how would you rate your programming skills 
-   **prior to taking this course**?
-
-
-.. poll:: excitement
-   :scale: 10
-
-   On a scale from 1 to 10, how excited are you to take this class?

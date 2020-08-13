@@ -51,6 +51,15 @@ variables with the same type: hour and minute are both integers (``int``
 type).
 
 
+.. fillintheblank:: variables_3
+
+   A(n) |blank| is a name given to a location in memory used to keep 
+   track of a value.
+
+   - :[Vv][Aa][Rr][Ii][Aa][Bb][Ll][Ee]: Correct!
+     :.*: Try again!
+
+
 .. fillintheblank:: variables_1
 
    Take a look at the code block below:
@@ -65,6 +74,42 @@ type).
      :.*: Try again!
 
 
+.. clickablearea:: variables2.0
+    :question: Click on all instances of integer VARIABLES.
+    :iscode:
+    :feedback: Try again!
+
+    :click-incorrect:int main() {:endclick:
+        int :click-correct:x:endclick: = :click-incorrect:7:endclick:;
+        int :click-correct:y:endclick: = :click-incorrect:10:endclick:;
+        :click-incorrect:char c:endclick: = :click-incorrect:'8':endclick:;
+        while (:click-correct:x:endclick: < :click-correct:y:endclick:) {
+            cout << :click-incorrect:c:endclick: << endl;;
+            :click-correct:x:endclick:++;
+        }
+        double :click-incorrect:d:endclick: = :click-incorrect:9:endclick:;
+        int :click-correct:z:endclick: = :click-correct:x:endclick: + :click-correct:y:endclick:;
+        cout << "It's the year " << :click-incorrect:2000:endclick: + :click-correct:z:endclick: << "!";
+    }
+
+
+.. clickablearea:: variables2.1
+    :question: Click on all instances of character VARIABLES.
+    :iscode:
+    :feedback: Try again!
+
+    int main() {
+        char :click-correct:init1:endclick: = :click-incorrect:'K':endclick:;
+        string :click-incorrect:init2:endclick: = :click-incorrect:"T":endclick:;
+        cout << :click-correct:init1:endclick: << :click-incorrect:"+":endclick: << :click-incorrect:init2:endclick: << endl;
+        string :click-incorrect:init3:endclick: = :click-incorrect:"C":endclick:;
+        char :click-correct:init4:endclick: = :click-incorrect:'J':endclick:;
+        cout << :click-incorrect:init3:endclick: << :click-incorrect:'+':endclick: << :click-correct:init4:endclick: << endl;
+        string :click-incorrect:c:endclick: = :click-incorrect:"Carved their initials in a tree!":endclick:;
+        cout << :click-incorrect:c:endclick:;
+    }
+
+
 .. dragndrop:: variables_2
    :feedback: Ideally, you want your variables to be named according to what they represent.  Not the case here!  Try again!
    :match_1:  char joe;|||'x'
@@ -72,15 +117,6 @@ type).
    :match_3: int x;|||10
 
    Match the variable to the kind of value it can store.
-
-
-.. fillintheblank:: variables_3
-
-   A(n) |blank| is a name given to a location in memory used to keep 
-   track of a value.
-
-   - :[Vv][Aa][Rr][Ii][Aa][Bb][Ll][Ee]: Correct!
-     :.*: Try again!
 
 
 .. parsonsprob:: variables_4

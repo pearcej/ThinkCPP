@@ -91,27 +91,6 @@ capable of storing fractional values.
    Match the statement to the result, given that x = 10.
 
 
-.. mchoice:: operators_2
-   :answer_a: 0
-   :answer_b: 1
-   :answer_c: .667
-   :answer_d: .6666666667
-   :correct: a
-   :feedback_a: Correct! In integer division, the decimal part is simply discarded, which is why the result would be 0.
-   :feedback_b: The decimal part is discarded. This means we do not round up, only down.
-   :feedback_c: In integer division, an integer must be the result.
-   :feedback_d: In integer division, an integer must be the result.
-
-   What is the output?
-
-   ::
-
-       int main () {
-         int sum = 2 / 3;
-         cout << sum;
-       }
-
-
 .. fillintheblank:: operators_3
 
    Integer division always rounds |blank| to the nearest |blank|.
@@ -119,6 +98,51 @@ capable of storing fractional values.
    - :[Dd][Oo][Ww][Nn]: Correct!
      :x: Try again!
    - :[Ii][Nn][Tt][Ee][Gg][Ee][Rr]: Correct!
+     :.*: Try again!
+
+
+.. fillintheblank:: operators_3.1
+
+   ::
+
+      int num1 = 12;
+      int num2 = 5;
+      cout << num1 / num2;
+
+   What is printed to the terminal?
+
+   - :2: Correct!
+     :2.4: Remember, this is an integer division!
+     :.*: Try again!
+
+
+.. fillintheblank:: operators_3.2
+
+   ::
+
+      int num1 = 10;
+      int num2 = 48;
+      cout << num2 / num1;
+
+   What is printed to the terminal?
+
+   - :4: Correct!
+     :4.8: Remember, this is an integer division!
+     :.*: Try again!
+
+
+.. fillintheblank:: operators_3.3
+
+   ::
+
+      int num1 = 7;
+      int num2 = 8;
+      cout << "Decimal: " << num1 / num2;
+
+   What is printed after ``Decimal: ``?
+
+   - :0: Correct!
+     :0.875: Remember, this is an integer division!
      :.*: Try again!
 
 
