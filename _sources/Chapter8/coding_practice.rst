@@ -5,6 +5,73 @@ Coding Practice
 
     .. tab:: Question
 
+        Write the function ``rectangleInfo`` which prompts the user for the width
+        and height of a rectangle. Then ``rectangleInfo`` prints out the area and 
+        perimeter of the rectangle.
+
+        .. activecode:: cp_8_AC_1q
+           :language: cpp
+           :practice: T
+           :stdin: 4, 6
+
+           #include <iostream>
+           using namespace std;
+
+           void rectangleInfo () {
+               // Write your implementation here.
+           }
+
+           int main() {
+               rectangleInfo ();
+           }
+
+
+    .. tab:: Answer
+
+        Below is one way to implement the program. We prompt the user for input
+        using ``cin`` before printing the area and perimeter.
+
+        .. activecode:: cp_8_AC_1a
+           :language: cpp
+           :optional:
+
+           #include <iostream>
+           using namespace std;
+
+           void rectangleInfo () {
+               int height, width;
+               cout << "Please enter the height and width of a rectangle separated by spaces: ";
+               cin >> height >> width;
+               cout << "The area of the rectangle is " << height * width << endl;
+               cout << "The perimeter of the rectangle is " << 2 * (height + width) << endl;
+           }
+
+           int main() {
+               rectangleInfo ();
+           }
+
+.. activecode:: cp_8_AC_2q
+    :language: cpp
+    :stdin: Captain America
+
+    Write a simple function called ``greetUser`` which prompts the user 
+    for their full name. Then the function outputs "Hello ``fullName``!".
+    ~~~~
+    #include <iostream>
+    using namespace std;
+
+    void greetUser () {
+        // Write your implementation here.
+    }
+
+    int main() {
+        greetUser ();
+    }
+
+.. tabbed:: cp_8_3
+
+    .. tab:: Question
+
         In the not so distant future, robots have replaced humans to do any kind of imaginable
         work or chore. Define the ``Robot`` structure, which has instance variables ``string name``,
         ``string model``, ``int serialNumber``, ``int batteryLevelPercentage``,
@@ -13,7 +80,7 @@ Coding Practice
         ``name`` (``model`` ``serialNumber``) has ``batteryLevelPercentage`` 
         percent battery and is currently executing the task "``task``".
 
-        .. activecode:: cp_8_AC_1q
+        .. activecode:: cp_8_AC_3q
            :language: cpp
            :practice: T
 
@@ -43,7 +110,7 @@ Coding Practice
         in the ``struct`` definition. Next, we use dot notation to access
         the instance variables and output them using ``cout``.
 
-        .. activecode:: cp_8_AC_1a
+        .. activecode:: cp_8_AC_3a
            :language: cpp
            :optional:
 
@@ -73,7 +140,7 @@ Coding Practice
                printRobotData (rob);
            }
 
-.. activecode:: cp_8_AC_2q
+.. activecode:: cp_8_AC_4q
     :language: cpp
 
     Robots will naturally deplete their charge as they carry out tasks.
@@ -111,7 +178,7 @@ Coding Practice
                 << r.task << "\"" << endl;
     }
 
-.. tabbed:: cp_8_3
+.. tabbed:: cp_8_5
 
     .. tab:: Question
 
@@ -119,7 +186,7 @@ Coding Practice
         takes a ``Robot`` as a parameter and resets its name to "EnterAName",
         recharges the battery to 100 percent, and resets the task to "Idle".
 
-        .. activecode:: cp_8_AC_3q
+        .. activecode:: cp_8_AC_5q
            :language: cpp
 
            #include <iostream>
@@ -160,7 +227,7 @@ Coding Practice
         ``Robot`` we created. Notice we use dot notation to ensure that the 
         ``model`` and ``serialNumber`` are the same.
 
-        .. activecode:: cp_8_AC_3a
+        .. activecode:: cp_8_AC_5a
            :language: cpp
            :optional:
 
@@ -195,7 +262,7 @@ Coding Practice
                      << r.task << "\"" << endl;
            }    
 
-.. activecode:: cp_8_AC_4q
+.. activecode:: cp_8_AC_6q
     :language: cpp
     :practice: T
 
@@ -220,7 +287,7 @@ Coding Practice
         printTrainerInfo (magikarp);
     }  
 
-.. tabbed:: cp_8_5
+.. tabbed:: cp_8_7
 
     .. tab:: Question
 
@@ -240,7 +307,7 @@ Coding Practice
            Charizard (Lv. 77, 100% HP)
            Blastoise (Lv. 77, 100% HP)
 
-        .. activecode:: cp_8_AC_5q
+        .. activecode:: cp_8_AC_7q
            :language: cpp
 
            #include <iostream>
@@ -285,7 +352,7 @@ Coding Practice
         in the ``struct`` definition. Next, we call ``printPokeInfo`` on each ``Pokemon``
         in ``Trainer`` and output the trainer's info in the correct format.
 
-        .. activecode:: cp_8_AC_5a
+        .. activecode:: cp_8_AC_7a
            :language: cpp
            :optional:
 
@@ -334,7 +401,7 @@ Coding Practice
                cout << p.pokeName << " (Lv. " << p.level << ", " << p.healthPercentage << "% HP)" << endl;
            }
 
-.. activecode:: cp_8_AC_6q
+.. activecode:: cp_8_AC_8q
     :language: cpp
 
     When Pokemon are injured, they can be healed up at the Pokemon Center.
@@ -393,7 +460,7 @@ Coding Practice
         printPokeInfo(t.sixth);
     }
 
-.. tabbed:: cp_8_7
+.. tabbed:: cp_8_9
 
     .. tab:: Question
 
@@ -419,7 +486,7 @@ Coding Practice
            Welcome to the Pokémon Center. Would you like me to take your Pokémon? (y/n) h
            Sorry, not a valid input.
 
-        .. activecode:: cp_8_AC_7q
+        .. activecode:: cp_8_AC_9q
            :language: cpp
            :stdin: y
 
@@ -490,7 +557,7 @@ Coding Practice
         Below is one way to implement the program. We use conditionals to perform 
         the correct output and operation depending on the user's input.
 
-        .. activecode:: cp_8_AC_7a
+        .. activecode:: cp_8_AC_9a
            :language: cpp
            :stdin: y
            :optional:
@@ -570,7 +637,7 @@ Coding Practice
                t.sixth.healthPercentage = 100;
            }
 
-.. activecode:: cp_8_AC_8q
+.. activecode:: cp_8_AC_10q
     :language: cpp
     :stdin: 145, 2
     :practice: T

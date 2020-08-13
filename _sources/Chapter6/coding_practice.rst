@@ -56,7 +56,6 @@ Coding Practice
 
 .. activecode:: cp_6_AC_2q
     :language: cpp
-    :practice: F
 
     Encapsulate the triangle printing program into a function called
     ``printTriangle``. Generalize it so that it takes a parameter
@@ -85,6 +84,100 @@ Coding Practice
 
     .. tab:: Question
 
+        Write a function called ``printPyramid`` that prints out an ``n``\x``n`` pyramid using asterisks. 
+        An example is shown below with ``n`` equal to 5. Your code should use while loops.
+
+        :: 
+   
+               *
+              ***
+             *****
+            *******
+           *********
+
+        .. activecode:: cp_6_AC_3q
+           :language: cpp
+           :practice: T
+
+           #include <iostream>
+           using namespace std;
+
+           void printPyramid (int n) {
+               // Write your implementation here.
+           }
+
+           int main() {
+               printPyramid (5);
+           }
+
+
+    .. tab:: Answer
+
+        Below is one way to implement the program. We use multiple ``while``
+        loops to print out spaces and asterisks. The outer loop creates the 
+        number of rows, and within the outer loop, the two inner loops
+        print out the correct number of spaces and asterisks.
+
+        .. activecode:: cp_6_AC_3a
+           :language: cpp
+           :optional:
+
+           #include <iostream>
+           using namespace std;
+
+           void printPyramid(int n) {
+               int space, numAsterisks;
+               int count = 1;
+               while (count <= n) {
+                   space = n - count;
+                   while (space > 0) {
+                       cout << " ";
+                       space--;
+                   }
+                   numAsterisks = 2 * count - 1;
+                   while (numAsterisks > 0) {
+                       cout << "*";
+                       numAsterisks--;
+                   }
+                   cout << endl;
+                   count++;
+               }
+           }
+
+           int main() {
+               printPyramid (5);
+           }
+
+.. activecode:: cp_6_AC_4q
+    :language: cpp
+    :practice: T
+
+    Write a function called ``printNumPyramid`` that prints out an ``n``\x``n`` number pyramid. 
+    An example is shown below with ``n`` equal to 5. Your code should use while loops.
+
+    :: 
+   
+           1
+          222
+         33333
+        4444444
+       555555555
+    ~~~~
+    #include <iostream>
+    using namespace std;
+
+    void printNumPyramid (int n) {
+        // Write your implementation here.
+    }
+
+    int main() {
+        printNumPyramid (5);
+    }
+
+.. tabbed:: cp_6_5
+
+    .. tab:: Question
+
         A common coding interview question that's also a popular children's game used to teach division is
         FizzBuzz. Write a program that uses a while loop and prints the numbers 1 through 100, but every
         multiple of 3 is replaced with the word "Fizz," every multiple of 5 is replaced with the word "Buzz," 
@@ -106,7 +199,7 @@ Coding Practice
            Fizz
            Buzz
 
-        .. activecode:: cp_6_AC_3q
+        .. activecode:: cp_6_AC_5q
            :language: cpp
            :practice: T
 
@@ -125,7 +218,7 @@ Coding Practice
         the correct output. Feel free to search up on the FizzBuzz coding interview 
         problem if you are interested in other ways to code this program!
 
-        .. activecode:: cp_6_AC_3a
+        .. activecode:: cp_6_AC_5a
            :language: cpp
            :optional:
 
@@ -151,7 +244,7 @@ Coding Practice
                }
            }
 
-.. activecode:: cp_6_AC_4q
+.. activecode:: cp_6_AC_6q
     :language: cpp
     :practice: T
 
@@ -182,4 +275,155 @@ Coding Practice
 
     int main() {
         // Call your function here.
+    }
+
+.. tabbed:: cp_6_7
+
+    .. tab:: Question
+
+        A number is a prime number if its only factors are 1 and itself.
+        Write the function ``isPrime``, which takes an ``int num`` as a parameters.
+        ``isPrime`` is a boolean function that returns ``true`` if ``num`` is a prime
+        number and returns ``false`` otherwise.
+
+        .. activecode:: cp_6_AC_7q
+           :language: cpp
+           :practice: T
+
+           #include <iostream>
+           using namespace std;
+
+           bool isPrime (int num) {
+               // Write your implementation here.
+           }
+
+           int main() {
+               cout << isPrime (1) << endl;     // Should output 0
+               cout << isPrime (13) << endl;    // Should output 1
+               cout << isPrime (24) << endl;    // Should output 0
+           }
+
+
+    .. tab:: Answer
+
+        Below is one way to implement the ``isPrime`` function. First, 
+        we check to see if ``num`` is less than or equal to 1, and return
+        ``false`` if that is the case. Next, we use a ``while`` loop
+        to continuously check if a factor ``n`` divides ``num`` evenly.
+        If it does, we return ``false``. If no value of ``n`` divides ``num``
+        evenly, then we return ``true``. Notice the ``while`` loop only goes up to
+        ``num / 2`` because if 2 doesn't divide evenly, then there isn't a smaller factor.
+
+        .. activecode:: cp_6_AC_7a
+           :language: cpp
+           :optional:
+
+           #include <iostream>
+           using namespace std;
+
+           bool isPrime (int num) {
+               if (num <= 1) {
+                   return false;
+               }
+               int n = 2;
+               while (n < num / 2) {
+                   if (num % n == 0) {
+                       return false;
+                   }
+                   n++;
+               }
+               return true;
+           }
+
+           int main() {
+               cout << isPrime (1) << endl;     // Should output 0
+               cout << isPrime (13) << endl;    // Should output 1
+               cout << isPrime (24) << endl;    // Should output 0
+           }
+
+.. activecode:: cp_6_AC_8q
+    :language: cpp
+    :practice: T
+
+    Write a program that uses a ``while`` loop to print out the alphabet from 'a' to 'z'.
+    ~~~~
+    #include <iostream>
+    using namespace std;
+
+    int main() {
+        // Write your implementation here.
+    }
+
+.. tabbed:: cp_6_9
+
+    .. tab:: Question
+
+        The Fibonacci sequence is a sequence of numbers such that each
+        successive number is the sum of the two previous numbers.
+        This sequence is as follows: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34,
+        and so on. Write a program that prints the first 20 Fibonacci
+        numbers.
+
+        .. activecode:: cp_6_AC_9q
+           :language: cpp
+           :practice: T
+
+           #include <iostream>
+           using namespace std;
+
+           int main() {
+               // Write your implementation here.
+           }
+
+
+    .. tab:: Answer
+
+        Below is one way to implement the program. First, 
+        we check to see if ``num`` is less than or equal to 1, and return
+        ``false`` if that is the case. Next, we use a ``while`` loop
+        to continuously check if a factor ``n`` divides ``num`` evenly.
+        If it does, we return ``false``. If no value of ``n`` divides ``num``
+        evenly, then we return ``true``. Notice the ``while`` loop only goes up to
+        ``num / 2`` because if 2 doesn't divide evenly, then there isn't a smaller factor.
+
+        .. activecode:: cp_6_AC_9a
+           :language: cpp
+           :optional:
+
+           #include <iostream>
+           using namespace std;
+
+           int main() {
+               int first = 0;
+               int second = 1;
+               int third;
+               int n = 2;
+               cout << first << " " << second << " ";
+               while (n < 20) {
+                   third = first + second;
+                   cout << third << " ";
+                   first = second;
+                   second = third;
+                   n++;
+               }
+           }
+
+.. activecode:: cp_6_AC_10q
+    :language: cpp
+    :practice: T
+
+    Write a function called ``factorial`` which takes an ``int n`` as a parameter
+    and returns n factorial. Use a ``while`` loop.
+    ~~~~
+    #include <iostream>
+    using namespace std;
+
+    int factorial (int n) {
+        // Write your implementation here.
+    }
+
+    int main() {
+        cout << factorial (4) << endl;  // Should output 24
+        cout << factorial (6) << endl;  // Should output 720
+        cout << factorial (9) << endl;  // Should output 362880
     }
