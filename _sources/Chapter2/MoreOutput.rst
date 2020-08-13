@@ -55,7 +55,7 @@ all on one line. You can do this by leaving out the first ``endl``:
 
 
 In this case the output appears on a single line as ``Goodbye, cruel
-world!``. Notice that there is a space between the word “Goodbye,” and the
+world!``. Notice in ``main`` that there is a space between “Goodbye,” and the
 second quotation mark. This space appears in the output, so it affects
 the behavior of the program.
 
@@ -106,15 +106,6 @@ useful for organizing your program visually, making it easier to read
 the program and locate syntax errors.
 
 
-.. dragndrop:: more_output_1
-   :feedback: Try again!
-   :match_1: cout<<"Hello"; cout <<"Hello";|||one line
-   :match_2: cout<<"Hello"<< endl; cout<<"Hello";|||two lines
-
-   Match the code snippet to the correct amount of lines that would
-   be printed.
-
-
 .. fillintheblank:: more_output_2
 
    The phrases that appear in quotation marks are called |blank|.
@@ -123,9 +114,69 @@ the program and locate syntax errors.
      :.*: Try again!
 
 
+.. mchoice:: more_output_3.0
+   :answer_a: 1
+   :answer_b: 2
+   :answer_c: 3
+   :answer_d: 4
+   :correct: b
+   :feedback_a: There is an "endl" statement, implying that a new line is created.
+   :feedback_b: "endl" creates one new line. The first line will say 7, while the second will print 777.
+   :feedback_c: In C++, you must make sure to say "endl" every time you'd like to create a new line.
+   :feedback_d: In C++, you must make sure to say "endl" every time you'd like to create a new line.
+
+   On how many separate lines will the 7's be printed?
+
+   ::
+
+       #include <iostream>
+       using namespace std;
+
+       int main () {
+         cout << 7 << endl;
+         cout << 7;
+         cout << 7;
+         cout << 7;
+       }
+
+
 .. parsonsprob:: more_output_3
    :numbered: left
    :adaptive:
+   :noindent:
+
+   Construct a main function that prints "Snap!" on the first line,
+   "Crackle!" on the third line, and "Pop!" on the sixth line.  You
+   might not use all of endl blocks provided.
+
+   -----
+   int main () {
+   =====
+    cout << "Snap!";
+   =====
+    cout << endl; // first endl
+   =====
+    cout << endl; // second endl
+   =====
+    cout << "Crakcle!" << endl;
+   =====
+    cout << endl; // third endl
+   =====
+    cout << endl; // fourth endl
+   =====
+    cout << "Pop!";
+   =====
+    cout << endl; // fifth endl #distractor
+   =====
+    cout << endl; // sixth endl #distractor
+   =====
+   }
+
+
+.. parsonsprob:: more_output_3.1
+   :numbered: left
+   :adaptive:
+   :noindent:
 
    Construct a main function that prints "Hello, world!" so that
    "Hello," and "world!" are printed on two separate lines.

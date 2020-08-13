@@ -57,8 +57,8 @@ and eventually gets back to ``main`` so the program can terminate.
 
    int main () {
        int num = 2;
-       int new = multiplyTwo(num);
-       int newer = addTwo(new);
+       int newNum = multiplyTwo(num);
+       int newerNum = addTwo(newNum);
        return 0;
    }
 

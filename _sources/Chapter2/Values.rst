@@ -41,30 +41,38 @@ soon.
      :.*: Try again!
 
 
-.. mchoice:: values_2
-   :answer_a: 1
-   :answer_b: 2
-   :answer_c: 3
-   :answer_d: 4
-   :correct: b
-   :feedback_a: There is an "endl" statement, implying that a new line is created.
-   :feedback_b: "endl" creates one new line. The first line will say 7, while the second will print 777.
-   :feedback_c: In C++, you must make sure to say "endl" every time you'd like to create a new line.
-   :feedback_d: In C++, you must make sure to say "endl" every time you'd like to create a new line.
+.. clickablearea:: values2.0
+    :question: Click on all integer VALUES.
+    :iscode:
+    :feedback: Try again!
 
-   On how many separate lines will the 7's be printed?
+    :click-incorrect:int main() {:endclick:
+        :click-incorrect:int x:endclick: = :click-correct:7:endclick:;
+        :click-incorrect:char c:endclick: = :click-incorrect:'8':endclick:;
+        while (:click-incorrect:x:endclick: < :click-correct:10:endclick:) {
+            cout << :click-incorrect:c:endclick: << endl;
+            :click-incorrect:x:endclick:++;
+        }
+        :click-incorrect:c:endclick: = :click-incorrect:'9':endclick:;
+        cout << ":click-incorrect:It's the year:endclick: :click-incorrect:3000:endclick:!";
+        cout << :click-incorrect:"Just kidding, it's ":endclick: << :click-correct:2020:endclick: << "!";
+    }
 
-   ::
 
-       #include <iostream>
-       using namespace std;
+.. clickablearea:: values2.1
+    :question: Click on all string VALUES.
+    :iscode:
+    :feedback: Try again!
 
-       int main () {
-         cout << 7 << endl;
-         cout << 7;
-         cout << 7;
-         cout << 7;
-       }
+    int main() {
+        char :click-incorrect:init1:endclick: = :click-incorrect:'R':endclick:;
+        string :click-incorrect:init2:endclick: = :click-correct:"M":endclick:;
+        cout << :click-incorrect:init1:endclick: << :click-correct:"+":endclick: << :click-incorrect:init2:endclick: << endl;
+        string :click-incorrect:init3:endclick: = :click-correct:"R":endclick:;
+        char :click-incorrect:init4:endclick: = :click-incorrect:'P':endclick:;
+        cout << :click-incorrect:init3:endclick: << :click-incorrect:'+':endclick: << :click-incorrect:init4:endclick: << endl;
+        cout << :click-correct:"Carved their initials in a tree!":endclick:;
+    }
 
 
 .. dragndrop:: values_3
