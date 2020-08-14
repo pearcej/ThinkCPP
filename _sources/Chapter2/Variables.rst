@@ -123,9 +123,7 @@ type).
    :numbered: left
    :adaptive:
    
-   Write code that creates the variables name, firstInitial,
-   and numberOfSiblings IN THAT ORDER.  It is up to you to choose
-   the correct types for these variables.
+   Write code that creates the variables name, firstInitial, and numberOfSiblings IN THAT ORDER.  It is up to you to choose the correct types for these variables.
    -----
    string name;
    =====

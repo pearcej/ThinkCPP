@@ -150,13 +150,7 @@ capable of storing fractional values.
    :numbered: left
    :adaptive:
    
-   Construct a code block that prints the total cost of your meal,
-   including the 6.0% sales tax, after you purchase two orders of
-   fries, three burgers, and a milkshake.  Start by initializing
-   the value of sales tax, then the prices of the food.  Once you
-   have initialized the variables, you can perform your calculations
-   and save the result in the price variable.  At the very end, you
-   will print out the total price.
+   Construct a code block that prints the total cost of your meal, including the 6.0% sales tax, after you purchase two orders of fries, three burgers, and a milkshake.  Start by initializing the value of sales tax, then the prices of the food.  Once you have initialized the variables, you can perform your calculations and save the result in the price variable.  At the very end, you will print out the total price.
    -----
    int main () {
    =====

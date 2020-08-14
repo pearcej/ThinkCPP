@@ -9,8 +9,8 @@ assess what you have learned in this chapter.
    :numbered: left
    :adaptive:
 
-   Construct a function that correctly prints the integer conversion
-   of the passed double.
+   Construct a function that correctly prints the integer conversion of the passed double.
+  
    -----
    void printInteger (double d) {
    =====
@@ -31,10 +31,7 @@ assess what you have learned in this chapter.
    :numbered: left
    :adaptive:
 
-   Construct a function called newLine that takes no arguments
-   and prints a blank line.  Then construct another function called
-   divider that prints two blank lines separated by a line of 
-   ". . . . . . . . . . . ."
+   Construct a function called newLine that takes no arguments and prints a blank line.  Then construct another function called divider that prints two blank lines separated by a line of ". . . . . . . . . . . ."
    -----
    void newLine () {
    =====
@@ -63,9 +60,7 @@ assess what you have learned in this chapter.
    :numbered: left
    :adaptive:
 
-   Construct a function that correctly calculates the volume 
-   of a cone with as much precision as possible and prints
-   the value to the terminal.  Use 3.14 for pi.
+   Construct a function that correctly calculates the volume of a cone with as much precision as possible and prints the value to the terminal.  Use 3.14 for pi.
 
    -----
    void volumeCone (double r, double h) {
@@ -89,8 +84,7 @@ assess what you have learned in this chapter.
    :numbered: left
    :adaptive:
 
-   Construct a function that prints the sin of an angle
-   given in degrees. Use 3.14 for pi.
+   Construct a function that prints the sin of an angle given in degrees. Use 3.14 for pi.
    -----
    #include &#60;cmath&#62;
    =====
@@ -105,9 +99,9 @@ assess what you have learned in this chapter.
    =====
     double r = d * 360.0 / (2 * 3.14); #paired
    =====
-    sine = sin(r);
+    double sine = sin(r);
    =====
-    sine = sin(d); #paired
+    double sine = sin(d); #paired
    =====
     cout << sine;
    =====
@@ -116,24 +110,23 @@ assess what you have learned in this chapter.
     #include &#60;math&#62; #distractor
 
 
-.. parsonsprob:: functions_p4
+.. parsonsprob:: functions_p4.0
    :numbered: left
    :adaptive:
 
-   Construct a function that prints the price (with 8% sales
-   tax) of an item with after using a 30% off coupon.
+   Construct a function that prints the price (with 8% sales tax) of an item with after using a 30% off coupon.
    -----
    void finalPrice (double item) {
    =====
    void finalPrice (string item) { #paired
    =====
-    double discount = price * 0.30;
+    double discount = item * 0.30;
    =====
-    double discount = price / 0.30; #paired
+    double final = (item - discount) * 1.08;
    =====
-    double final = (price - discount) * 0.08;
+    double final = (item - discount) * 0.08; #paired
    =====
-    double final = price - discount * 0.08; #paired
+    double final = item - discount * 0.08; #paired
    =====
     cout << final;
    =====
@@ -144,10 +137,7 @@ assess what you have learned in this chapter.
    :numbered: left
    :adaptive:
 
-   Suppose you have already defined a function called sumOfSquares which
-   returns the sum of the squares of two numbers and root which returns the 
-   square root of a number.  Construct a function that calculates the hypotenuse 
-   of the right triangle and prints the three sidelengths.
+   Suppose you have already defined a function called sumOfSquares which returns the sum of the squares of two numbers and root which returns the square root of a number.  Construct a function that calculates the hypotenuse of the right triangle and prints the three sidelengths.
    -----
    int main () {
    =====
@@ -176,14 +166,11 @@ assess what you have learned in this chapter.
    :numbered: left
    :adaptive:
 
-   The chickens from the previous chapter are infuriated.  Donstruct 
-   a function that prints "Eat" on the first line, "More" on the second 
-   line, and the name of the passed animal on the fourth line, followed
-   by an exclamation point.  
+   The chickens from the previous chapter are infuriated.  Construct a function that prints "Eat" on the first line, "More" on the second line, and the name of the passed animal on the fourth line, followed by an exclamation point.  
    -----
-   void frog (string animal) {
+   void eatMore (string animal) {
    =====
-   void toad () { #paired
+   void eatMore () { #paired
    =====
     cout << "Eat";
    =====
@@ -204,9 +191,7 @@ assess what you have learned in this chapter.
    :numbered: left
    :adaptive:
 
-   Construct a function that takes a dollar amount and cent amount 
-   and prints the total amount of money that you have. Hint:
-   the mod operator '%' returns the remainder of a division.
+   Construct a function that takes a dollar amount and cent amount and prints the total amount of money that you have. Hint: the mod operator '%' returns the remainder of a division.
    -----
    void printAmount (int dollars, int cents) {
    =====
@@ -229,20 +214,17 @@ assess what you have learned in this chapter.
    :numbered: left
    :adaptive:
 
-   In Michigan, the probability that it snows on any given day
-   in the winter is about 14%.  The probability of having a snow day
-   on any given day in the winter is about 4%.  The probability that
-   is snows and you have a snow day is 8%.  Construct and call a 
-   function that calculates the probability of a having a snow day, 
-   given the fact that it will snow tonight.
+   In Michigan, the probability that it snows on any given day in the winter is about 14%.  The probability of having a snow day on any given day in the winter is about 4%.  The probability that is snows and you have a snow day is 8%.  
+   Construct and call a function that calculates the probability of a having a snow day, given the fact that it will snow tonight.  
+   For reference, the formula for conditional probability is: P(A|B) = P(B and A) / P(B).
    -----
-   void conditionalProb (double B, double union) {
+   void conditionalProb (double B, double both) {
    =====
-   void conditionalProb (double B, union) { #paired
+   void conditionalProb (double B, both) { #paired
    =====
-    double prob = union / B;
+    double prob = both / B;
    =====
-    double prob = B / union; #paired
+    double prob = B / both; #paired
    =====
     cout << prob;
    =====
@@ -267,14 +249,9 @@ assess what you have learned in this chapter.
    :numbered: left
    :adaptive:
 
-   Your final grade is determined by a midterm component (each midterm
-   is worth 20% of the grade) and a final component. In order to avoid 
-   any discrepancies with students who's grades are on the fence, your 
-   teacher follows this strict grading scale: [0,60) = F, [60, 70) = D, 
-   [70, 80) = C, [80, 90) = B and [90, 100] = A. He does not round until
-   the very end.
-   Construct a function that determines a student's final grade according 
-   to this grading scheme and prints the result.
+   Your final grade is determined by a midterm component (each midterm is worth 20% of the grade) and a final component. In order to avoid any discrepancies with students who's grades are on the fence, your teacher follows this strict grading scale: 
+   [0%,60%) = F, [60%, 70%) = D, [70%, 80%) = C, [80%, 90%) = B and [90%, 100%] = A. He does not round until the very end.  
+   Construct a function that determines a student's final grade percentage according to this grading scheme and prints the result.
    -----
    void finalGrade (double m1, double m2, double f) {
    =====

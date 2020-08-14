@@ -1,19 +1,17 @@
 Activecode Exercises
 --------------------
 
-Answer the following **Activecode** questions to
-assess what you have learned in this chapter.
+Answer the following **Activecode** questions to assess what you have learned in this chapter.
 
 
-.. tabbed:: vars_types_a1
+.. tabbed:: VARS_a1
 
    .. tab:: Question
 
-      .. activecode:: vars_types_a1q
+      .. activecode:: VARS_a1q
          :language: cpp
 
-         Fix the code below so that it runs without errors.  Hint: you might
-         need to change the names of some variables.
+         Fix the code below so that it runs without errors.  Hint: you might need to change the names of some variables.
          ~~~~
          #include <iostream>
          using namespace std;
@@ -21,20 +19,18 @@ assess what you have learned in this chapter.
          int main () {
              char true = 'T';
              char false = 'F';
+
+             // DO NOT MODIFY ANYTHING BELOW THIS LINE.
              cout << true << " is short for true. ";
              cout << false << " is short for false." << endl;
-
-             // Do not modify anything below.
-             return 0;
          }
 
    .. tab:: Answer
 
-      .. activecode:: vars_types_a1a
+      .. activecode:: VARS_a1a
          :language: cpp
 
-         Below is one way to fix the program.  ``true`` and ``false`` are
-         keywords, so they cannot be used as variable names.
+         Below is one way to fix the program.  ``true`` and ``false`` are keywords, so they cannot be used as variable names.
          ~~~~
          #include <iostream>
          using namespace std;
@@ -44,16 +40,13 @@ assess what you have learned in this chapter.
              char f = 'F';
              cout << t << " is short for true. ";
              cout << f << " is short for false." << endl;
-
-             // Do not modify anything below.
-             return 0;
          }    
 
 
-.. activecode:: vars_types_a2
+.. activecode:: VARS_a2
    :language: cpp
 
-   Fix the code below so that it prints "I drive a 2014 Buick Regal".
+   Finish the code below so that it prints "I drive a 2014 Buick Regal".
    ~~~~
    #include <iostream>
    using namespace std;
@@ -62,76 +55,79 @@ assess what you have learned in this chapter.
        string make;
        make = "Buick"
 
-       string model = "Regal";
+       // Finish the rest of the assignment statements by assigning
+       // 2014 and Regal to their respective variables.
 
-       string year = 2014;
-
-       cout << "I drive a";  cout << " ";
-       cout << year << model << make << endl.
+       // DO NOT MODIFY ANYTHING BELOW THIS LINE.
+       cout << "I drive a " << year << " " << make << " ";
+       cout << model << endl.
    }
 
 
-.. tabbed:: vars_types_a3
+.. tabbed:: VARS_a3
 
    .. tab:: Question
 
-      .. activecode:: vars_types_a3q
+      .. activecode:: VARS_a3q
          :language: cpp
 
-         Fix the code below so that it prints "Cady scored 0.9 on the exam."
-         Although this isn't how we'd usually tell people our scores, 0.9 is
-         the C++ way of expressing 90%.
+         Fix the code below so that it prints "Cady scored 90% on the exam." 
          ~~~~
          #include <iostream>
          using namespace std;
+
          int main() {
-             int Cady = (3 * 5) * 6 / 100;
-             cout << "Cady scored" << Cady <<"on the exam.";
+             // Modify the next line so that Cady = 0.9.
+             int Cady = 3 * 5 * (6 / 100);
+
+             // DO NOT MODIFY ANYTHING BELOW THIS LINE.
+             cout << "Cady scored " << Cady * 100 << "% on the exam.";
          }
 
    .. tab:: Answer
 
-      .. activecode:: vars_types_a3a
+      .. activecode:: VARS_a3a
          :language: cpp
 
-         Below is one way to fix the program.  We want to use doubles so that
-         our result isn't rounded down to 0 through integer division.
+         Below is one way to fix the program.  We want to use doubles so that our result isn't rounded down to 0 through integer division.
          ~~~~
+         #include <iostream>
+         using namespace std;
+
          int main() {
              double Cady = (3 * 5) * 6 / 100.0;
-             cout << "Cady scored " << Cady <<" on the exam.";
+             cout << "Cady scored " << Cady * 100 << "% on the exam.";
          }    
 
 
-.. activecode:: vars_types_a4
+.. activecode:: VARS_a4
    :language: cpp
 
-   Finish the code below so that it returns the correct volume of a sphere.  Hint: 
-   think about what happens when you use integer division.
+   Finish the code below so that it returns the correct volume of a sphere.  Hint: think about what happens when you use integer division.
    ~~~~
    #include <iostream>
    using namespace std;
 
    int main () {
        int radius = 5;
+       double pi = 3.14;
 
-       // Complete the line below.
-       volume = ;
+       // Use these variables and the formula for volume to complete the next line.
+       volume = 
 
-       // Do not modify anything below.
-       cout << volume;
+       // DO NOT MODIFY ANYTHING BELOW THIS LINE.
+       cout << "Your solution had volume = " << volume << endl;  cout << "The correct solution has volume = 104.667";
    }
 
 
-.. tabbed:: vars_types_a5
+.. tabbed:: VARS_a5
 
    .. tab:: Question
 
-      .. activecode:: vars_types_a5q
+      .. activecode:: VARS_a5q
          :language: cpp
 
-         Finish the code below so that assigns ``a`` its correct value of ``'a'``.  Hint:
-         use character operations!
+         Fix the code below so that assigns ``a`` its correct value of ``'a'``.  Hint: use character operations!
          ~~~~
          #include <iostream>
          using namespace std;
@@ -139,57 +135,51 @@ assess what you have learned in this chapter.
          int main () {
             char a = 's';
 
-            // Complete the line below.
-            a = ;
+            // Fix the line below.  Do NOT change the numbers!  Instead, 
+            // change the location of the parentheses.
+            a = a - 3 * 4 + (1 + 3);
 
-            // Do not modify anything below.
+            // DO NOT MODIFY ANYTHING BELOW THIS LINE.
             cout << a;
          }
 
    .. tab:: Answer
 
-      .. activecode:: vars_types_a5a
+      .. activecode:: VARS_a5a
          :language: cpp
 
-         Below is one way to complete the program.  There are many creative
-         ways that you could use the order of operations to come up with a complex
-         expression that will bring you to ``'a'``, here is one way.
+         Below is one way to complete the program.  There are many creative ways that you could use the order of operations to come up with a complex expression that will bring you to ``'a'``, here is one way.
          ~~~~
          #include <iostream>
          using namespace std;
       
          int main () {
             char a = 's';
-
-            // Complete the line below.
-            a = a - (3 * 5 + 3);
-
-            // Do not modify anything below.
+            a = a - (3 * (4 + 1) + 3);
             cout << a;
          }
 
 
-.. activecode:: vars_types_a6
+.. activecode:: VARS_a6
    :language: cpp
 
-   Write code that assigns "apples" to oranges, and "oranges" to apples,
-   then swaps their values.  Be sure to inclue any necessary headers.
-   YOU MAY NOT HARDCODE YOUR SOLUTION.
+   Write code that assigns "apples" to the variable oranges, and "oranges" to the variable apples, then swaps their values.  Be sure to inclue any necessary headers.  YOU MAY NOT HARDCODE YOUR SOLUTION.
    ~~~~
    int main () {
-
+       
+       // DO NOT MODIFY ANYTHING BELOW THIS LINE.
+       cout << "Your solution had apples = " << apples << "and oranges = " << oranges << "." << endl; cout << "The correct solution has apples = apples, and oranges = oranges.";
    }
 
 
-.. tabbed:: vars_types_a7
+.. tabbed:: VARS_a7
 
    .. tab:: Question
 
-      .. activecode:: vars_types_a7q
+      .. activecode:: VARS_a7q
          :language: cpp
 
-         Write code that prints "Eat", "More", and "Chicken" on 3 consecutive lines.
-         Be sure to inclue any necessary headers.
+         Write code that prints "Eat", "More", and "Chicken" on 3 consecutive lines. Be sure to inclue any necessary headers.
          ~~~~
          int main () {
 
@@ -197,11 +187,14 @@ assess what you have learned in this chapter.
 
    .. tab:: Answer
 
-      .. activecode:: vars_types_a7a
+      .. activecode:: VARS_a7a
          :language: cpp
 
          Below is one way to implement the solution.
          ~~~~
+         #include <iostream>
+         using namespace std;
+
          int main () {
              cout << "Eat" << endl;
              cout << "More" << endl;
@@ -209,41 +202,43 @@ assess what you have learned in this chapter.
          } 
 
 
-.. activecode:: vars_types_a8
+.. activecode:: VARS_a8
    :language: cpp
 
-   Write code that calculates how much you you will spend after tipping 20% on your
-   $36.25 dinner.  Save the result of this calculation in ``plusTip``.  Be sure to 
-   inclue any necessary headers.
+   Write code that calculates how much you you will spend after tipping 20% on your $36.25 dinner.  Save the result of this calculation in ``plusTip``.  Be sure to include any necessary headers.
    ~~~~
    int main () {
 
+       // DO NOT MODIFY ANYTHING BELOW THIS LINE.
+       cout << "Your solution had plusTip = " << plusTip << endl; cout << "The correct solution has plusTip = 43.5";
    }
 
 
-.. tabbed:: vars_types_a9
+.. tabbed:: VARS_a9
 
    .. tab:: Question
 
-      .. activecode:: vars_types_a9q
+      .. activecode:: VARS_a9q
          :language: cpp
 
-         You have about three hours and fifteen minutes of homework to do today.  Rather
-         than starting it right away, you choose to procrastinate by calculating how many
-         seconds you'll be spending on your work.  Convert the time to seconds and store the
-         result in ``seconds``.  Be sure to inclue any necessary headers.
+         You have about three hours and fifteen minutes of homework to do today.  Rather than starting it right away, you choose to procrastinate by calculating how many seconds you'll be spending on your work.  Convert the time to seconds and store the result in ``seconds``.  Be sure to inclue any necessary headers.
          ~~~~
          int main () {
 
+             // DO NOT MODIFY ANYTHING BELOW THIS LINE.
+             cout << "Your solution had seconds = " << seconds << endl;  cout << "The correct solution has seconds = 11700";
          }
 
    .. tab:: Answer
 
-      .. activecode:: vars_types_a9a
+      .. activecode:: VARS_a9a
          :language: cpp
 
          Below is one way to implement the solution.
          ~~~~
+         #include <iostream>
+         using namespace std;
+
          int main () {
              int hours = 3;
              int minutes = 15;
@@ -252,12 +247,13 @@ assess what you have learned in this chapter.
          }
 
 
-.. activecode:: vars_types_a10
+.. activecode:: VARS_a10
    :language: cpp
 
-   Write code that calculates and prints the average of a and b if a = 3.14, 
-   and b = 1.59.  You may only use one line of code.  Be sure to inclue any necessary headers.
+   Write code that calculates and prints the average of a and b if a = 3.14, and b = 1.59.  You may only use one line of code.  Be sure to inclue any necessary headers.
    ~~~~
    int main () {
 
+       // DO NOT MODIFY ANYTHING BELOW THIS LINE.
+       cout << endl;  cout << "Your program should have printed 2.365";
    }

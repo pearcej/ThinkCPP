@@ -115,6 +115,7 @@ the program and locate syntax errors.
 
 
 .. mchoice:: more_output_3.0
+   :practice: T
    :answer_a: 1
    :answer_b: 2
    :answer_c: 3
@@ -145,9 +146,7 @@ the program and locate syntax errors.
    :adaptive:
    :noindent:
 
-   Construct a main function that prints "Snap!" on the first line,
-   "Crackle!" on the third line, and "Pop!" on the sixth line.  You
-   might not use all of endl blocks provided.
+   Construct a main function that prints "Snap!" on the first line, "Crackle!" on the third line, and "Pop!" on the sixth line.  You might not use all of endl blocks provided.
 
    -----
    int main () {
@@ -178,8 +177,7 @@ the program and locate syntax errors.
    :adaptive:
    :noindent:
 
-   Construct a main function that prints "Hello, world!" so that
-   "Hello," and "world!" are printed on two separate lines.
+   Construct a main function that prints "Hello, world!" so that "Hello," and "world!" are printed on two separate lines.
 
    -----
    int main () {

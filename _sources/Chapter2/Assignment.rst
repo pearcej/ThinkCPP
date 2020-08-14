@@ -71,6 +71,7 @@ assignment is illegal:
 
 
 .. mchoice:: assignment_2
+   :practice: T
    :answer_a: Change the type of variable q from int to char.
    :answer_b: Change the type of both variables (p and q) from int to char.
    :answer_c: Change the type of variable p from int to char.
@@ -101,11 +102,7 @@ assignment is illegal:
    :numbered: left
    :adaptive:
    
-   You love your car, and you decide to keep track of its make, model,
-   and year.  You do so using three assignment statements IN THAT ORDER.
-   Now, I don't know what car you really drive, but for the sake of this 
-   problem, I'm assuming that you drive a 2001 Jeep Cherokee.  Hint: there
-   are a couple ways to write an assignment statement.
+   You love your car, and you decide to keep track of its make, model, and year.  You do so using three assignment statements IN THAT ORDER.  For the sake of this problem, suppose you drive a 2001 Jeep Cherokee.  Hint: there are a couple ways to write an assignment statement.
    -----
    string make;
    make = "Jeep";

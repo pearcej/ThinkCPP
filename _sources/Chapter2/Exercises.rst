@@ -1,11 +1,11 @@
 Multiple Choice Exercises
 -------------------------
 
-Answer the following **Multiple Choice** questions to
-assess what you have learned in this chapter.
+Answer the following **Multiple Choice** questions to assess what you have learned in this chapter.
 
 
-.. mchoice:: vars_types_1
+.. mchoice:: VARS_mc1
+    :practice: T
 
     Take a look at the following program.  How many lines of output will be produced?
 
@@ -31,22 +31,19 @@ assess what you have learned in this chapter.
 
     -   3
 
-        +   Even though there are 6 ``cout`` staments written on 5 lines, there are only 3 lines
-            of output in the terminal.
+        +   Even though there are 6 ``cout`` staments written on 5 lines, there are only 3 lines of output in the terminal.
 
     -   2
 
-        -   There *are* 2 ``endl`` statements.  But what happens when you have more output after
-            the ``endl``?
+        -   There *are* 2 ``endl`` statements.  But what happens when you have more output after the ``endl``?
 
     -   0! There is an error!
 
-        -   Everything is syntacticly legal! You can have ``cout`` statements on *multiple lines of code*
-            that have *one* line of output... or you can have multiple ``cout`` statements on *one* line of
-            code that have *multiple* lines of output!
+        -   Everything is syntacticly legal! You can have ``cout`` statements on *multiple lines of code* that have *one* line of output... or you can have multiple ``cout`` statements on *one* line of code that have *multiple* lines of output!
 
 
-.. mchoice:: vars_types_2
+.. mchoice:: VARS_mc2
+    :practice: T
 
     What is the type of x?
 
@@ -71,7 +68,8 @@ assess what you have learned in this chapter.
         +   Anything in double quotes is a string.
 
 
-.. mchoice:: vars_types_3
+.. mchoice:: VARS_mc3
+    :practice: T
 
     What is the value of ``x``?
 
@@ -96,7 +94,8 @@ assess what you have learned in this chapter.
         -   ``2 + 6 / 3`` is not computed first.
 
 
-.. mchoice:: vars_types_4
+.. mchoice:: VARS_mc4
+    :practice: T
 
     What is printed when the following code is run?
 
@@ -122,19 +121,17 @@ assess what you have learned in this chapter.
 
     -   ``16``
 
-        +   Walking through each line of code and keeping track of variables, 
-            like you just did, is called **tracing**.
+        +   Walking through each line of code and keeping track of variables, like you just did, is called **tracing**.
 
     -   ``yz``
 
-        -   If y and z were characters ``'y'`` and ``'z'``, it would be legal to add
-            them together.  But the result ``243`` might surprise you!
+        -   If y and z were characters ``'y'`` and ``'z'``, it would be legal to add them together.  But the result ``243`` might surprise you!
 
 
-.. mchoice:: vars_types_5
+.. mchoice:: VARS_mc5
+    :practice: T
 
-    **Multiple Response** What could be changed so that the output of
-    the following program is ``34``?
+    **Multiple Response** What could be changed so that the output of the following program is ``34``?
 
     .. code-block:: 
        :linenos:
@@ -168,7 +165,8 @@ assess what you have learned in this chapter.
         +   This clears up the type mismatch on line 4.
 
 
-.. mchoice:: vars_types_6
+.. mchoice:: VARS_mc6
+    :practice: T
 
     What is the output of the following code block?
 
@@ -208,10 +206,10 @@ assess what you have learned in this chapter.
         -   There are no syntax errors that will cause an issue compiling.
 
 
-.. mchoice:: vars_types_7
+.. mchoice:: VARS_mc7
+    :practice: T
 
-    What line does the first error occur in the following program?
-    If there is no error, what is the output?
+    What line does the first error occur in the following program? If there is no error, what is the output?
 
     .. code-block:: 
        :linenos:
@@ -225,38 +223,29 @@ assess what you have learned in this chapter.
 
     -   line 2, a variable cannot have the same name as its value
 
-        -   A variable can have any value... as long as the types are
-            the same.
+        -   A variable can have any value... as long as the types are the same.
 
     -   line 3, you cannot have a variable named friend
 
-        +   ``friend`` is a reserved keyword in C++ and can't be used
-            as a variable name.  What a shame, since Tom and Jerry are
-            the best of friends!
+        +   ``friend`` is a reserved keyword in C++ and can't be used as a variable name.  What a shame, since Tom and Jerry are the best of friends!
 
     -   line 5, you cannot have two statements on the same line
 
-        -   You can have as many statements as you want on one line,
-            as long as you terminate each one with a semicolon.
+        -   You can have as many statements as you want on one line, as long as you terminate each one with a semicolon.
 
     -   No error, ``Tom is friends with Jerry``
 
-        -   If the code runs, C++ doesn't automatically add spaces
-            between consecutive strings.
+        -   If the code runs, C++ doesn't automatically add spaces between consecutive strings.
 
     -   No error, ``Tomis friends withJerry``
 
-        -   If the error was corrected, this would be the output.
-            Unfortunately, there is an error that prevents this line
-            from executing.
+        -   If the error was corrected, this would be the output. Unfortunately, there is an error that prevents this line from executing.
 
 
-.. mchoice:: vars_types_8
+.. mchoice:: VARS_mc8
+    :practice: T
 
-    Your math teacher just gave an exam that had all of the students
-    panicking.  Four students decide to share their scores to see who
-    did the best.  At the end of the program's execution, who has the
-    highest score on the exam?
+    Your math teacher just gave an exam that had all of the students panicking.  Four students decide to share their scores to see who did the best.  At the end of the program's execution, who has the highest score on the exam?
 
     ::
         
@@ -277,26 +266,21 @@ assess what you have learned in this chapter.
 
     -   Karen
 
-        +   ``6 * 3 = 18``, and ``18 + 2 / 100 = 18`` due to integer division.
-            Believe it or not, due to the order of operations and integer division, 
-            Karen ended up with the highest "score" at the end of the program's execution.
+        +   ``6 * 3 = 18``, and ``18 + 2 / 100 = 18`` due to integer division. Believe it or not, due to the order of operations and integer division, Karen ended up with the highest "score" at the end of the program's execution.
 
     -   Cady
 
-        -   Using the order of operations we have Mathlete Cady scoring 90 / 100.
-            This would be the highest score... if it weren't for integer division.
+        -   Using the order of operations we have Mathlete Cady scoring 90 / 100. this would be the highest score... if it weren't for integer division.
 
     -   They all got 0's.
 
-        -   Integer division rounds the quotient down to the nearest integer. Take
-            a closer look at what is being divided on each line, because not everyone
-            recieved a zero!
+        -   Integer division rounds the quotient down to the nearest integer. Take a closer look at what is being divided on each line, because not everyone recieved a zero!
 
 
-.. mchoice:: vars_types_9
+.. mchoice:: VARS_mc9
+    :practice: T
 
-    What line does the first error occur in the following program?
-    If there is no error, what is the output?
+    What line does the first error occur in the following program? If there is no error, what is the output?
 
     .. code-block:: 
        :linenos:
@@ -310,8 +294,7 @@ assess what you have learned in this chapter.
 
     -   line 2, a variable cannot have the same name as its value
 
-        -   A variable can have any value... as long as the types are
-            the same.
+        -   A variable can have any value... as long as the types are the same.
 
     -   line 4, you cannot add an integer to a character
 
@@ -327,16 +310,13 @@ assess what you have learned in this chapter.
 
     -   No error, ``u``
 
-        +   'u' is three letters after 'r', so on line 4, the value of ``u`` becomes
-            the value of ``r``.
+        +   'u' is three letters after 'r', so on line 4, the value of ``u`` becomes the value of ``r``.
 
 
-.. mchoice:: vars_types_10
+.. mchoice:: VARS_mc10
+    :practice: T
 
-    Suppose you want to find the volume of a cone.  For reference,
-    the formula is ``V = 1/3 pi * r^2 * h``.  For the sake of this
-    question, we will use ``pi = 3.14``.  What is wrong with the
-    following code?
+    Suppose you want to find the volume of a cone.  For reference, the formula is ``V = 1/3 pi * r^2 * h``.  For the sake of this question, we will use ``pi = 3.14``.  What is wrong with the following code?
 
     ::
         
@@ -346,9 +326,7 @@ assess what you have learned in this chapter.
 
     -   semantic error
 
-        +   With integer division, ``1 / 3`` becomes 0.  Multiplying 0
-            by the rest of the expression will always return 0, which is
-            not what you want your program to do!
+        +   With integer division, ``1 / 3`` becomes 0.  Multiplying 0 by the rest of the expression will always return 0, which is not what you want your program to do!
 
     -   syntax error
 

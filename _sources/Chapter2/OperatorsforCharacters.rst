@@ -82,8 +82,7 @@ exceptions.
    :adaptive:
    :numbered: left
 
-   Construct a main function that uses character operations to 
-   generate the output 'r'.
+   Construct a main function that uses character operations to generate the output 'r'.
    -----
    int main () {
    =====

@@ -34,8 +34,7 @@ soon.
 
 .. fillintheblank:: values_1
 
-   A |blank| value is a single letter, number, or punctuation enclosed 
-   in single quotes.
+   A |blank| value is a single letter, number, or punctuation enclosed in single quotes.
 
    - :([Cc][Hh][Aa][Rr]|[Cc][Hh][Aa][Rr][Aa][Cc][Tt][Ee][Rr]): Correct!
      :.*: Try again!

@@ -66,7 +66,8 @@ assess what you have learned in this chapter.
     -   Object code can contain simple things like variables and values.  Source code 
         can contain more complex objects like data structures.
 
-        -   Not quite!
+        -   Source code and object code both contain variables, values, and data structures.
+            They're just written in a different way.
 
     -   Object code is the code that your program is written in.  Source code is the
         translated version of this code that the computer can understand.
@@ -192,7 +193,7 @@ assess what you have learned in this chapter.
 
     -   low-level language.
 
-        -   C++ must be translated before the computer can understand!
+        -   The computer doesn't understand C++ until it gets translated!
 
 
 .. mchoice:: programming_8
@@ -206,8 +207,8 @@ assess what you have learned in this chapter.
 
     -   There is no limit the number of statements you can put in ``main``.
 
-        +   You can include as many statments as you want to, but it is good 
-            practice to keep the main as short as possible.
+        +   You can include as many statements as you want to, but it is good 
+            practice to keep the ``main`` as short as possible.
 
     -   Program execution begins at the first line of code.
 

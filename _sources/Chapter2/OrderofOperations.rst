@@ -27,8 +27,7 @@ started:
    :language: cpp
    :caption: The Role of Parentheses
   
-   Observe the output of the code below to see how the placement of parentheses 
-   can change the result of a calculation.
+   Observe the output of the code below to see how the placement of parentheses can change the result of a calculation.
 
    ~~~~
    #include <iostream>
