@@ -20,6 +20,9 @@ function, it is typically on a line by itself, with no assignment:
     nLines (3);
     countdown (n-1);
 
+..	index::
+	  pair: functions; fruitful
+
 In this chapter, we are going to write functions that return things,
 which I will refer to as **fruitful** functions, for want of a better
 name. The first example is area, which takes a double as a parameter,
@@ -54,6 +57,9 @@ complicated, so we could have written this function more concisely:
       return acos(-1.0) * radius * radius;
     }
 
+..	index::
+	  single: temporary variables
+
 On the other hand, **temporary** variables like area often make
 debugging easier. In either case, the type of the expression in the
 return statement must match the return type of the function. In other
@@ -86,6 +92,9 @@ statements.
    If you put return statements inside of a chain of conditionals, then 
    you have to guarantee that *every possible path* through the program 
    hits a return statement.  If you forget, your code will have errors.
+
+..	index::
+    single: dead code
 
 Code that appears after a return statement, or any place else where it
 can never be executed, is called **dead code**. Some compilers warn you

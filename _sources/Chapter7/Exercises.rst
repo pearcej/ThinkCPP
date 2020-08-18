@@ -12,6 +12,7 @@ Multiple Choice Exercises
        int x = 0;
        double y = 4.5;
        string word = "hello";
+       string letter = "a";
        char c = 'c';
        bool isPrime = 1;
      }
@@ -27,6 +28,10 @@ Multiple Choice Exercises
     - ``word``
 
       + ``word`` is a ``string``.
+
+    - ``letter``
+
+      + ``letter`` is a ``string``.
 
     - ``c``
 
@@ -87,11 +92,11 @@ Multiple Choice Exercises
 
     - I
 
-      - In order to access the character 'I', ``z`` would have to be 0.
+      - The value of ``z`` is not 0.
 
     - 0
     
-      - What is the value of ``z``?
+      - The value of ``z`` is not greater than 11.
 
     - o
 
@@ -125,6 +130,10 @@ Multiple Choice Exercises
     - .
 
       - ``x`` is not the index value of the last period.
+
+    - ' '
+
+      - It might be logical to think that memory outside of the ``string`` is empty space, but there could be leftover junk values.
 
     - Error, we are indexing out of bounds.
 
@@ -183,7 +192,7 @@ Multiple Choice Exercises
 
     - 0
     
-      - 'a' is not the first character in ``quote``.
+      - The character at index 0 is 'W'.
 
     - 8
 
@@ -206,6 +215,10 @@ Multiple Choice Exercises
        cout << index;
      }
 
+    - 4
+
+      - Although "wood" appears four times in the ``string``, that is not what the ``find`` function returns.
+    
     - 9
 
       + The index of 'w' in the first "wood" is at index 9.
@@ -220,7 +233,7 @@ Multiple Choice Exercises
 
     - 22
 
-      - The ``find`` function returns the index of the first instance of the input.
+      - The ``find`` function returns the index of the first character of the found string.
 
 .. mchoice:: mce_7_8
     :practice: T
@@ -317,9 +330,9 @@ Multiple Choice Exercises
 
       - Can we concatenate "call" and "response"?
    
-    - Error, we cannot concatenate native C strings.
+    - Error!
 
-      + We cannot concatenate "call" and "response", so this code results in an error.
+      + We cannot concatenate native C strings like "call" and "response", so this code results in an error.
 
 .. mchoice:: mce_7_11
     :practice: T

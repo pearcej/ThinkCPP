@@ -7,7 +7,7 @@ Mixed Up Code Practice
    :noindent:
    :practice: T
 
-   The program below should print out the even numbers between 20 and 40 
+   The program below should print out the even numbers between 20 and 40, inclusive, 
    but the code is mixed up and contains extra blocks. Put the necessary blocks
    in the correct order.
    -----
@@ -97,7 +97,7 @@ Mixed Up Code Practice
    =====
          cout << n << endl;  #distractor
    =====
-         count = count + n;
+         sum = sum + n;
    =====
          n++;
       }

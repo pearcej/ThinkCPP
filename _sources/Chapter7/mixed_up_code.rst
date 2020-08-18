@@ -165,7 +165,7 @@ Mixed Up Code Practice
    =====
       int i = 0;
    =====
-      while (i < tongue_twister.length()) {
+      while (i < (int)tongue_twister.length()) {
    =====
          if (tongue_twister[i] == 't') {
    =====
@@ -220,7 +220,7 @@ Mixed Up Code Practice
    Put the necessary blocks in the correct order.
    -----
    int main() {
-   =====d
+   =====
       string name = “Sorty”; #distractor
    =====
       string suffix = "orty";

@@ -152,8 +152,10 @@ Coding Practice
     :language: cpp
     :practice: T
 
-    Write a function called ``printNumPyramid`` that prints out an ``n``\x``n`` number pyramid. 
+    Write a function called ``printNumPyramid`` that prints out an ``n`` x ``n`` number pyramid. 
     An example is shown below with ``n`` equal to 5. Your code should use while loops.
+    (Hint: similar to the previous question, if you want the output to look nice, using conditionals
+    that print different amounts of spaces.)
 
     :: 
    
@@ -298,9 +300,9 @@ Coding Practice
            }
 
            int main() {
-               cout << isPrime (1) << endl;     // Should output 0
-               cout << isPrime (13) << endl;    // Should output 1
-               cout << isPrime (24) << endl;    // Should output 0
+               cout << "Your output: " << isPrime (1) << ", Correct output: 0" << endl; 
+               cout << "Your output: " << isPrime (13) << ", Correct output: 1" << endl; 
+               cout << "Your output: " << isPrime (24) << ", Correct output: 0" << endl; 
            }
 
 
@@ -336,9 +338,9 @@ Coding Practice
            }
 
            int main() {
-               cout << isPrime (1) << endl;     // Should output 0
-               cout << isPrime (13) << endl;    // Should output 1
-               cout << isPrime (24) << endl;    // Should output 0
+               cout << "Your output: " << isPrime (1) << ", Correct output: 0" << endl; 
+               cout << "Your output: " << isPrime (13) << ", Correct output: 1" << endl; 
+               cout << "Your output: " << isPrime (24) << ", Correct output: 0" << endl; 
            }
 
 .. activecode:: cp_6_AC_8q
@@ -413,7 +415,8 @@ Coding Practice
     :practice: T
 
     Write a function called ``factorial`` which takes an ``int n`` as a parameter
-    and returns n factorial. Use a ``while`` loop.
+    and returns ``n`` factorial. Remembers that a factorial (denoted by !) is the product of all 
+    positive integers less than or equal to ``n``, so 4! is 24. Use a ``while`` loop.
     ~~~~
     #include <iostream>
     using namespace std;
@@ -423,7 +426,7 @@ Coding Practice
     }
 
     int main() {
-        cout << factorial (4) << endl;  // Should output 24
-        cout << factorial (6) << endl;  // Should output 720
-        cout << factorial (9) << endl;  // Should output 362880
+        cout << "Your output: " << factorial (4) << ", Correct output: 24" << endl; 
+        cout << "Your output: " << factorial (6) << ", Correct output: 720" << endl; 
+        cout << "Your output: " << factorial (9) << ", Correct output: 362880" << endl; 
     }

@@ -23,10 +23,10 @@ Coding Practice
            }
 
            int main() {
-               cout << calculator (3, 6, '+') << endl;      // Should output 9
-               cout << calculator (19, 2, '-') << endl;     // Should output 17
-               cout << calculator (5, 8, '*') << endl;      // Should output 40
-               cout << calculator (16, 4, '/') << endl;     // Should output 4
+               cout << "Your output: " << calculator (3, 6, '+') << ", Correct output: 9" << endl;
+               cout << "Your output: " << calculator (19, 2, '-') << ", Correct output: 17" << endl;
+               cout << "Your output: " << calculator (5, 8, '*') << ", Correct output: 40" << endl;
+               cout << "Your output: " << calculator (16, 4, '/') << ", Correct output: 4" << endl;
            }
 
 
@@ -58,10 +58,10 @@ Coding Practice
            }
 
            int main() {
-               cout << calculator (3, 6, '+') << endl;      // Should output 9
-               cout << calculator (19, 2, '-') << endl;     // Should output 17
-               cout << calculator (5, 8, '*') << endl;      // Should output 40
-               cout << calculator (16, 4, '/') << endl;     // Should output 4
+               cout << "Your output: " << calculator (3, 6, '+') << ", Correct output: 9" << endl;
+               cout << "Your output: " << calculator (19, 2, '-') << ", Correct output: 17" << endl;
+               cout << "Your output: " << calculator (5, 8, '*') << ", Correct output: 40" << endl;
+               cout << "Your output: " << calculator (16, 4, '/') << ", Correct output: 4" << endl;
            }
 
 .. activecode:: cp_5_AC_2q
@@ -69,7 +69,7 @@ Coding Practice
     :practice: T
 
     A binary number is one that is expressed in the base-2 numeral system.
-    Write a function ``convertToBinary`` which takes an ``int decimal`` as
+    Write a function ``convertToBinary`` which takes a ``decimal`` as
     a parameter. ``convertToBinary`` takes the number in decimal, converts
     it into a binary number, and returns the binary number. Test your function
     in ``main``.
@@ -82,10 +82,10 @@ Coding Practice
     }
 
     int main() {
-        cout << convertToBinary (1) << endl;      // Should output 1
-        cout << convertToBinary (5) << endl;      // Should output 101
-        cout << convertToBinary (16) << endl;     // Should output 10000
-        cout << convertToBinary (31) << endl;     // Should output 11111
+        cout << "Your output: " << convertToBinary (1) << ", Correct output: 1" << endl;
+        cout << "Your output: " << convertToBinary (5) << ", Correct output: 101" << endl;
+        cout << "Your output: " << convertToBinary (16) << ", Correct output: 10000" << endl;
+        cout << "Your output: " << convertToBinary (31) << ", Correct output: 11111" << endl;
     }
 
 .. tabbed:: cp_5_3
@@ -96,7 +96,7 @@ Coding Practice
         sides of the polygon. Each interior angle in an equilateral triangle
         measures 60 degree, each interior angle in a square measures 90 degrees,
         and in a regular pentagon, each interior angle measures 108 degrees.
-        Write the function ``calculateIntAngle``, which takes an ``int numSides``
+        Write the function ``calculateIntAngle``, which takes a ``numSides``
         as a parameter and returns a ``double``. ``calculateIntAngle`` finds the 
         interior angle of a regular polygon with ``numSides`` sides. The formula
         to find the interior angle of a regular ngon is (n - 2) x 180 / n.
@@ -113,10 +113,10 @@ Coding Practice
            }
 
            int main() {
-               cout << calculateIntAngle (3) << endl;   // Should output 60
-               cout << calculateIntAngle (4) << endl;   // Should output 90
-               cout << calculateIntAngle (5) << endl;   // Should output 108
-               cout << calculateIntAngle (8) << endl;   // Should output 135
+               cout << "Your output: " << calculateIntAngle (3) << ", Correct output: 60" << endl;
+               cout << "Your output: " << calculateIntAngle (4) << ", Correct output: 90" << endl;
+               cout << "Your output: " << calculateIntAngle (5) << ", Correct output: 108" << endl;
+               cout << "Your output: " << calculateIntAngle (8) << ", Correct output: 135" << endl;
            }
 
 
@@ -138,10 +138,10 @@ Coding Practice
            }
 
            int main() {
-               cout << calculateIntAngle (3) << endl;   // Should output 60
-               cout << calculateIntAngle (4) << endl;   // Should output 90
-               cout << calculateIntAngle (5) << endl;   // Should output 108
-               cout << calculateIntAngle (8) << endl;   // Should output 135
+               cout << "Your output: " << calculateIntAngle (3) << ", Correct output: 60" << endl;
+               cout << "Your output: " << calculateIntAngle (4) << ", Correct output: 90" << endl;
+               cout << "Your output: " << calculateIntAngle (5) << ", Correct output: 108" << endl;
+               cout << "Your output: " << calculateIntAngle (8) << ", Correct output: 135" << endl;
            }
 
 .. activecode:: cp_5_AC_4q
@@ -153,7 +153,7 @@ Coding Practice
     remember. However, the meteorological start and end dates are based on the Gregorian calendar
     and is easier to remember. Spring starts on March 1, summer starts on June 1, fall starts on 
     September 1, and winter starts on December 1. Write a function called ``birthSeason``, which takes
-    two ``int``\s as parameters, ``month`` and ``day``. ``birthSeason`` calculates which season
+    two parameters, ``month`` and ``day``. ``birthSeason`` calculates which season
     the birthday falls in according to the meteorological start and returns a ``string`` with the correct season.
     For example, ``birthSeason (7, 5)`` returns "summer" since July 5 is in the summer.
     ~~~~
@@ -165,10 +165,10 @@ Coding Practice
     }
 
     int main() {
-        cout << birthSeason (5, 3) << endl;      // Should output spring
-        cout << birthSeason (7, 5) << endl;      // Should output summer
-        cout << birthSeason (11, 24) << endl;    // Should output fall
-        cout << birthSeason (2, 20) << endl;     // Should output winter
+        cout << "Your output: " << birthSeason (5, 3) << ", Correct output: spring" << endl;
+        cout << "Your output: " << birthSeason (7, 5) << ", Correct output: summer" << endl;
+        cout << "Your output: " << birthSeason (11, 24) << ", Correct output: fall" << endl;
+        cout << "Your output: " << birthSeason (2, 20) << ", Correct output: winter" << endl;
     }
 
 .. tabbed:: cp_5_5
@@ -178,7 +178,7 @@ Coding Practice
         Dog owners will know that figuring out a dog's age is more complicated
         than just counting age directly. Dogs mature faster than humans do,
         so to get a more accurate calculation of a dog's age, write the
-        ``dogToHumanYears`` function, which takes an ``int dogAge`` as a parameter.
+        ``dogToHumanYears`` function, which takes an ``dogAge`` as a parameter.
         ``dogToHumanYears`` converts and returns the dog's age to human years. 
         A one year old dog is 15 years old in human years; a two year old dog is 24 years old in human years. 
         Each year after the second year counts as 4 additional human years. For example, a dog that is
@@ -196,10 +196,10 @@ Coding Practice
            }
 
            int main() {
-               cout << dogToHumanYears (1) << endl;   // Should output 15
-               cout << dogToHumanYears (2) << endl;   // Should output 24
-               cout << dogToHumanYears (3) << endl;   // Should output 28
-               cout << dogToHumanYears (5) << endl;   // Should output 36
+               cout << "Your output: " << dogToHumanYears (1) << ", Correct output: 15" << endl; 
+               cout << "Your output: " << dogToHumanYears (2) << ", Correct output: 24" << endl; 
+               cout << "Your output: " << dogToHumanYears (3) << ", Correct output: 28" << endl; 
+               cout << "Your output: " << dogToHumanYears (5) << ", Correct output: 36" << endl; 
            }
 
 
@@ -224,10 +224,10 @@ Coding Practice
            }
 
            int main() {
-               cout << dogToHumanYears (1) << endl;   // Should output 15
-               cout << dogToHumanYears (2) << endl;   // Should output 24
-               cout << dogToHumanYears (3) << endl;   // Should output 28
-               cout << dogToHumanYears (5) << endl;   // Should output 36
+               cout << "Your output: " << dogToHumanYears (1) << ", Correct output: 15" << endl; 
+               cout << "Your output: " << dogToHumanYears (2) << ", Correct output: 24" << endl; 
+               cout << "Your output: " << dogToHumanYears (3) << ", Correct output: 28" << endl; 
+               cout << "Your output: " << dogToHumanYears (5) << ", Correct output: 36" << endl; 
            }
 
 .. activecode:: cp_5_AC_6q
@@ -236,7 +236,7 @@ Coding Practice
 
     A number is a common factor of two other numbers if it divides evenly into both of the
     other numbers. For example, 2 is a common factor of 4 and 18, because 2 goes evenly into 
-    4 and 18. Write the function ``isCommonFactor``, which takes three ``ints`` as parameters,
+    4 and 18. Write the function ``isCommonFactor``, which takes three parameters,
     ``num1``, ``num2``, and ``factor``. ``isCommonFactor`` returns ``true`` if ``factor`` is a
     factor of both ``num1`` and ``num2``, and returns ``false`` otherwise.
     ~~~~
@@ -248,10 +248,10 @@ Coding Practice
     }
 
     int main() {
-        cout << isCommonFactor (132, 42, 11) << endl;    // Should output 0
-        cout << isCommonFactor (24, 8, 4) << endl;       // Should output 1
-        cout << isCommonFactor (75, 20, 5) << endl;      // Should output 1
-        cout << isCommonFactor (74, 23, 3) << endl;      // Should output 0
+        cout << "Your output: " << isCommonFactor (132, 42, 11) << ", Correct output: 0" << endl; 
+        cout << "Your output: " << isCommonFactor (24, 8, 4) << ", Correct output: 1" << endl; 
+        cout << "Your output: " << isCommonFactor (75, 20, 5) << ", Correct output: 1" << endl; 
+        cout << "Your output: " << isCommonFactor (74, 23, 3) << ", Correct output: 0" << endl; 
     }
 
 .. tabbed:: cp_5_7
@@ -261,7 +261,7 @@ Coding Practice
         If a year is divisible by 4, then it is a leap year. However, if it is also divisible by 100,
         then it is not a leap year. However, if it is also divisible by 400, then it is a leap year.
         Thus, 2001 is not a leap year, 2004 is a leap year, 2100 is not a leap year, and 2000 is a leap year.
-        Write the boolean function ``isLeapYear``, which takes an ``int year`` as a parameter and returns ``true`` 
+        Write the boolean function ``isLeapYear``, which takes a ``year`` as a parameter and returns ``true`` 
         if the year is a leap year and ``false`` otherwise. Test your function in ``main``.
 
         .. activecode:: cp_5_AC_7q
@@ -276,10 +276,10 @@ Coding Practice
            }
 
            int main() {
-               cout << isLeapYear (2001) << endl;   // Should output 0
-               cout << isLeapYear (2004) << endl;   // Should output 1
-               cout << isLeapYear (2100) << endl;   // Should output 0
-               cout << isLeapYear (2000) << endl;   // Should output 1
+               cout << "Your output: " << isLeapYear (2001) << ", Correct output: 0" << endl; 
+               cout << "Your output: " << isLeapYear (2004) << ", Correct output: 1" << endl; 
+               cout << "Your output: " << isLeapYear (2100) << ", Correct output: 0" << endl; 
+               cout << "Your output: " << isLeapYear (2000) << ", Correct output: 1" << endl; 
            }
 
 
@@ -311,10 +311,10 @@ Coding Practice
            }
 
            int main() {
-               cout << isLeapYear (2001) << endl;   // Should output 0
-               cout << isLeapYear (2004) << endl;   // Should output 1
-               cout << isLeapYear (2100) << endl;   // Should output 0
-               cout << isLeapYear (2000) << endl;   // Should output 1
+               cout << "Your output: " << isLeapYear (2001) << ", Correct output: 0" << endl; 
+               cout << "Your output: " << isLeapYear (2004) << ", Correct output: 1" << endl; 
+               cout << "Your output: " << isLeapYear (2100) << ", Correct output: 0" << endl; 
+               cout << "Your output: " << isLeapYear (2000) << ", Correct output: 1" << endl; 
            }
 
 .. activecode:: cp_5_AC_8q
@@ -339,10 +339,10 @@ Coding Practice
     }
 
     int main() {
-        cout << isPoisonous ('S', 10, 0) << endl;    // Should output 1
-        cout << isPoisonous ('S', 2, 1) << endl;     // Should output 1
-        cout << isPoisonous ('L', 1, 1) << endl;     // Should output 1
-        cout << isPoisonous ('L', 4, 1) << endl;     // Should output 0
+        cout << "Your output: " << isPoisonous ('S', 10, 0) << ", Correct output: 1" << endl; 
+        cout << "Your output: " << isPoisonous ('S', 2, 1) << ", Correct output: 1" << endl; 
+        cout << "Your output: " << isPoisonous ('L', 1, 1) << ", Correct output: 1" << endl; 
+        cout << "Your output: " << isPoisonous ('L', 4, 1) << ", Correct output: 0" << endl; 
     }
 
 .. tabbed:: cp_5_9
@@ -369,10 +369,10 @@ Coding Practice
            }
 
            int main() {
-               cout << triangularNum (1) << endl;     // Should output 1
-               cout << triangularNum (3) << endl;     // Should output 6
-               cout << triangularNum (6) << endl;     // Should output 21
-               cout << triangularNum (17) << endl;    // Should output 153
+               cout << "Your output: " << triangularNum (1) << ", Correct output: 1" << endl; 
+               cout << "Your output: " << triangularNum (3) << ", Correct output: 6" << endl; 
+               cout << "Your output: " << triangularNum (6) << ", Correct output: 21" << endl; 
+               cout << "Your output: " << triangularNum (17) << ", Correct output: 153" << endl; 
            }
 
 
@@ -400,10 +400,10 @@ Coding Practice
            }
 
            int main() {
-               cout << triangularNum (1) << endl;     // Should output 1
-               cout << triangularNum (3) << endl;     // Should output 6
-               cout << triangularNum (6) << endl;     // Should output 21
-               cout << triangularNum (17) << endl;    // Should output 153
+               cout << "Your output: " << triangularNum (1) << ", Correct output: 1" << endl; 
+               cout << "Your output: " << triangularNum (3) << ", Correct output: 6" << endl; 
+               cout << "Your output: " << triangularNum (6) << ", Correct output: 21" << endl; 
+               cout << "Your output: " << triangularNum (17) << ", Correct output: 153" << endl; 
            }
 
 .. activecode:: cp_5_AC_10q
@@ -422,8 +422,8 @@ Coding Practice
     }
 
     int main() {
-        cout << digitSum (123) << endl;    // Should output 6
-        cout << digitSum (8739) << endl;   // Should output 27
-        cout << digitSum (440) << endl;    // Should output 8
-        cout << digitSum (2) << endl;      // Should output 2
+        cout << "Your output: " << digitSum (123) << ", Correct output: 6" << endl; 
+        cout << "Your output: " << digitSum (8739) << ", Correct output: 27" << endl; 
+        cout << "Your output: " << digitSum (440) << ", Correct output: 8" << endl; 
+        cout << "Your output: " << digitSum (2) << ", Correct output: 2" << endl; 
     }

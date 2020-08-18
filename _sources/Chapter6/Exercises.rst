@@ -77,9 +77,9 @@ Multiple Choice Exercises
      int main() {
        int i = 6;
        while (i > 2) {
-         x = x + 4;
-         if (x > 8) {
-           x = x - 5;
+         i = i + 4;
+         if (i > 8) {
+           i = i - 5;
        }
      }
 
@@ -129,7 +129,7 @@ Multiple Choice Exercises
     
       - Will "Da" ever be printed?
     
-    - The end condition is never met, so it will result in an infinite loop.
+    - It will result in an infinite loop.
     
       - Since we repeatedly decrement ``n`` inside the while loop, it will eventually be equal to 3 and the while loop will terminate.
 
@@ -162,7 +162,7 @@ Multiple Choice Exercises
     
       - Take a closer look at the while loop.
     
-    - The end condition is never met, so it will result in an infinite loop.
+    - It will result in an infinite loop.
     
       + Since we never change the value of ``n``, 10 will never equal 3 so the code will run forever.
 
@@ -293,7 +293,7 @@ Multiple Choice Exercises
 
       - A ``string`` is any number of characters or words surrounded by double quotes, not just one word.
 
-    - Since ``n`` is declared to be 0, 0 is always less than 5, so the code loops infinitely.
+    - ``n`` is declared to be 0 and 0 is always less than 5.
     
       - The code doesn't loop infinitely because of the value ``n`` was declared to be.
 
@@ -301,7 +301,7 @@ Multiple Choice Exercises
 
       - The initialization of ``n`` occurs outside the ``while`` loop, so the value of ``n`` does not get reset to 0.
 
-    - Since ``n`` is declared to be 0 and we continuously decrement ``n``, it will always be less than 5, so the code loops infinitely.
+    - ``n`` is declared to be 0 and we continuously decrement ``n`` so it will always be less than 5.
 
       + Since ``n`` starts at 0 and gets smaller, the conditional for the ``while`` loop will always be true, and thus the code runs forever.
 
@@ -337,6 +337,6 @@ Multiple Choice Exercises
 
       - ``input`` is also printed.
 
-    - Since ``n`` is declared to be 0, 0 is not greater than 5, so the ``while`` loop does not execute.
+    - The conditional for the ``while`` loop is not met.
 
-      + The ``while`` loop is ignored, and thus nothing is printed.
+      + Since ``n`` is declared to be 0, 0 is not greater than 5, so the ``while`` loop does not execute.
