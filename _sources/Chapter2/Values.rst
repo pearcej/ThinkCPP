@@ -1,23 +1,35 @@
 Values
 ------
 
-A value is one of the fundamental things—like a letter or a number—that
+A **value** is one of the fundamental things—like a letter or a number—that
 a program manipulates. The only values we have manipulated so far are
 the string values we have been outputting, like "Hello, world.". You
 (and the compiler) can identify ``string`` values because they are enclosed
 in quotation marks.
 
-There are other kinds of values, including integers and characters. An
-integer is a whole number like 1 or 17. You can output integer values
+.. index::
+   single: value
+
+There are other kinds of values, called **types**.  This includes integers and characters. An
+**integer** is a whole number like 1 or 17. You can output integer values
 the same way you output strings:
+
+.. index::
+   single: type
+
+.. index::
+   single: integer
 
 ::
 
     cout << 17 << endl;
 
-A character value is a letter or digit or punctuation mark enclosed in
+A **character** value is a letter or digit or punctuation mark enclosed in
 single quotes, like ’a’ or ’5’. You can output character values the same
 way:
+
+.. index::
+   single: character
 
 ::
 

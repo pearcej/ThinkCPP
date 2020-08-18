@@ -10,6 +10,8 @@ ability to take small building blocks and **compose** them. For example,
 we know how to multiply integers and we know how to output values; it
 turns out we can do both at the same time:
 
+.. index::
+   single: composition
 
 .. activecode:: composition_AC_1
    :language: cpp

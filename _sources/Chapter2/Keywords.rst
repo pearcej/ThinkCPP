@@ -8,6 +8,9 @@ structure of your program, and if you use them as variable names, it
 will get confused. These words, called **keywords**, include ``int``, ``char``,
 ``void``, ``endl`` and many more.
 
+.. index::
+   single: keyword
+
 A list of C++ keywords is availiable publically on ``cppreference``.  You can
 take a look for yourself by pasting the following link into your browser.
 

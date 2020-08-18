@@ -7,6 +7,9 @@ C++ do exactly what you would expect them to do, because they are common
 mathematical symbols. For example, the operator for adding two integers
 is ``+``.
 
+.. index::
+   single: operator
+
 The following are all legal C++ expressions whose meaning is more or
 less obvious:
 
@@ -17,9 +20,12 @@ less obvious:
     hour * 60 + minute
     minute / 60
 
-Expressions can contain both variables names and integer values. In each
+**Expressions** can contain both variables names and integer values. In each
 case the name of the variable is replaced with its value before the
 computation is performed.
+
+.. index::
+   single: expression
 
 Addition, subtraction and multiplication all do what you expect, but you
 might be surprised by division. For example, compile the following program around
@@ -52,10 +58,16 @@ value of the variable minute is 59, and 59 divided by 60 is 0.98333, not
 0. The reason for the discrepancy is that C++ is performing **integer
 division**.
 
+.. index::
+   single: integer division
+
 When both of the **operands** are integers (operands are the things
 operators operate on), the result must also be an integer, and by
 definition integer division always rounds *down*, even in cases like
 this where the next integer is so close.
+
+.. index::
+   single: operand
 
 A possible alternative in this case is to calculate a percentage rather
 than a fraction:
@@ -137,9 +149,9 @@ capable of storing fractional values.
 
       int num1 = 7;
       int num2 = 8;
-      cout << "Decimal: " << num1 / num2;
+      cout << "Decimal:" << num1 / num2;
 
-   What is printed after ``Decimal: ``?
+   What is printed after ``Decimal:``?
 
    - :0: Correct!
      :0.875: Remember, this is an integer division!

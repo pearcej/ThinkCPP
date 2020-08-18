@@ -5,6 +5,9 @@ One of the most powerful features of a programming language is the
 ability to manipulate **variables**. A variable is a named location that
 stores a value.
 
+.. index::
+   single: variable
+
 Just as there are different types of values (integer, character, etc.),
 there are different types of variables. When you create a new variable,
 you have to declare what type it is. 
@@ -20,6 +23,9 @@ The following statement creates a new variable named fred that has type ``char``
     char fred;
 
 This kind of statement is called a **declaration**.
+
+.. index::
+   single: declaration
 
 The type of a variable determines what kind of values it can store. A
 ``char`` variable can contain characters, and it should come as no surprise

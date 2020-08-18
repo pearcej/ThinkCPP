@@ -4,6 +4,9 @@ Assignment
 Now that we have created some variables, we would like to store values
 in them. We do that with an **assignment statement**.
 
+.. index::
+   single: assignment
+
 ::
 
     firstLetter = 'a';   // give firstLetter the value 'a'
@@ -24,6 +27,9 @@ inside. This kind of figure is called a **state diagram** because is
 shows what state each of the variables is in (you can think of it as the
 variable’s “state of mind”). This diagram shows the effect of the three
 assignment statements:
+
+.. index::
+   single: state diagram
 
 .. figure:: Images/2.4statediagram.png
    :scale: 50%

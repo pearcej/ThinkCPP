@@ -57,7 +57,7 @@ the next line.
 Like all statements, the output statement ends with a semi-colon (``;``).
 
 .. warning::
-   Forgetting to terminate a statement with a semicolon will result in a compile error.
+   Failure to terminate a statement with a semicolon will result in a syntax (compile) error.
 
 There are a few other things you should notice about the syntax of this
 program. First, C++ uses squiggly-braces (``{`` and ``}``) to group things

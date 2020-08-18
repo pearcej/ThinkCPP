@@ -7,6 +7,9 @@ solving a system of equations or finding the roots of a polynomial, but
 it can also be a symbolic computation, like searching and replacing text
 in a document or (strangely enough) compiling a program.
 
+.. index::
+   single: program
+
 The instructions (or commands, or statements) look different in
 different programming languages, but there are a few basic functions
 that appear in just about every language:

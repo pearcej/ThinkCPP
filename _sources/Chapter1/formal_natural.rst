@@ -7,11 +7,17 @@ Formal and Natural Languages
 Spanish, and French. They were not designed by people (although people
 try to impose some order on them); they evolved naturally.
 
+.. index::
+   single: natural language
+
 **Formal languages** are languages that are designed by people for
 specific applications. For example, the notation that mathematicians use
 is a formal language that is particularly good at denoting relationships
 among numbers and symbols. Chemists use a formal language to represent
 the chemical structure of molecules. And most importantly:
+
+.. index::
+   single: formal language
 
 .. Note::
    Programming languages are **formal languages** that have been designed
@@ -42,6 +48,9 @@ in a natural language you do this unconsciously).
 .. note::
    The process of examining a program and analysing the syntactic structure
    is called **parsing**.
+
+.. index::
+   single: parsing
 
 For example, when you hear the sentence, “The other shoe fell,” you
 understand that “the other shoe” is the subject and “fell” is the verb.

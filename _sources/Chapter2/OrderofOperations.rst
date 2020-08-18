@@ -22,6 +22,8 @@ started:
    to make an expression easier to read, as in ``(minute * 100) / 60``, even 
    though it doesn’t change the result.
 
+.. index::
+   single: precedence
 
 .. activecode:: order_of_operations_AC_1
    :language: cpp
