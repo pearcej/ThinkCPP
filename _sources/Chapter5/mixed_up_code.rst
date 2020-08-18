@@ -9,7 +9,7 @@ Mixed Up Code Practice
 
    Vacation time! But before you go, you need to convert your currency.
    Let's write the code for the ``dollarToYen`` function. ``dollarToYen``
-   takes a ``double dollar`` and returns the equivalent amount of Japanese yen.
+   takes a ``dollar`` as a parameter and returns the equivalent amount of Japanese yen.
    The conversion rate is 1 USD equals 105.42 Japanese yen.
    Put the necessary blocks of code in the correct order.
    -----
@@ -39,8 +39,8 @@ Mixed Up Code Practice
    a nice shirt could be labeled with a price of exactly $20, but when 
    you pay, you actually need to pay $21.20 in a state with 6% sales tax.
    However, different states have different tax rates. Write the function
-   ``priceWithTax``, which takes two ``double``\s, ``price`` and ``percentTax``.
-   ``priceWithTax`` calculates the price after tax and returns a ``double``.
+   ``priceWithTax``, which takes ``price`` and ``percentTax`` as parameters.
+   ``priceWithTax`` calculates the price after tax and returns it.
    For example, ``priceWithTax (20, 6)`` returns 21.2.
    Put the necessary blocks of code in the correct order.
    -----
@@ -68,7 +68,7 @@ Mixed Up Code Practice
    grades are letters. Let's write the code for the ``percentToLetter`` function. 
    ``percentToLetter`` takes a ``double percentage`` and returns the corresponding
    letter grade. A 90 and above is an 'A', an 80 and above is a 'B', a 70 and above
-   is a 'C', a 60 and above is a 'D', and anything under a 60 is an 'F'.
+   is a 'C', and anything under a 70 is an 'F'.
    Put the necessary blocks of code in the correct order.
    -----
    char percentToLetter (double percentage) {
@@ -102,13 +102,6 @@ Mixed Up Code Practice
          return 'C';
       }
    =====
-      else if (percentage >= 60) {
-   =====
-      else if (percentage = 60) {  #paired
-   =====
-         return 'D';
-      }
-   =====
       else {
    =====
          return 'F';
@@ -123,7 +116,7 @@ Mixed Up Code Practice
    :practice: T
 
    Let's write the code for the ``triangleArea`` function. ``triangleArea``
-   takes two ``double`` parameters, ``base`` and ``height``. It returns the 
+   takes two parameters, ``base`` and ``height``. It returns the 
    area of the triangle using the formula 1/2 * base * height.
    Put the necessary blocks of code in the correct order.
    -----
@@ -149,7 +142,7 @@ Mixed Up Code Practice
    :practice: T
 
    Let's write the code for the ``cylinderVolume`` function. ``cylinderVolume``
-   takes two ``double`` parameters, ``radius`` and ``height``. It returns the 
+   takes two parameters, ``radius`` and ``height``. It returns the 
    volume of the cylinder using the formula pi * radius * radius * height.
    Put the necessary blocks of code in the correct order.
    -----
@@ -174,8 +167,8 @@ Mixed Up Code Practice
    an ooseg, or a guinpen might hatch from it. Let's write the function 
    ``birdType`` which returns an ``int`` corresponding to each type of bird
    (1 for kenchic, 2 for ooseg, and 3 for guinpen). If the egg is round, then it is a 
-   guinpen. But if the egg is round and it isn't gray, then it is a kenchic. If
-   the egg isn't round or it is gray, then it's an ooseg. 
+   guinpen. Otherwise, if the egg is round and it isn't gray, then it is a kenchic. If 
+   it isn't a guinpen and it isn't a kenchic, then it's an ooseg. 
    Put the necessary blocks of code in the correct order.
    -----
    int birdType (bool isRound, bool isGray) {

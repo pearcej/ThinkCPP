@@ -58,6 +58,10 @@ Multiple Choice Exercises
 
       - The flow of code would never reach the last return statement.
 
+    - 36
+
+      - Check your order of operations! 
+
     - 37
 
       - Take a closer look at the conditional statements. 
@@ -72,19 +76,19 @@ Multiple Choice Exercises
     If we wanted to create a boolean function called ``isPrime``, which takes an ``int input``
     as a parameter, which of the following would be the correct function header?
 
-    - ``boolean isPrime (int input)``
+    - ``boolean isPrime (int input) {``
 
       - In C++, use the ``bool`` keyword for a boolean. 
 
-    - ``bool isPrime (input)``
+    - ``bool isPrime (input) {``
 
       - In a function header, the type of each variable must be specified in the parameter list.
 
-    - ``bool isPrime (int input)`` 
+    - ``bool isPrime (int input) {`` 
 
       + This is the correct function header for the function.
 
-    - ``int isPrime (bool input)``
+    - ``int isPrime (bool input) {``
 
       - Take a closer look at what the return type is.
 
@@ -98,23 +102,23 @@ Multiple Choice Exercises
 
       int func (double x, bool y);
 
-    - int func (double a, bool b);
+    - ``int func (double a, bool b);``
 
       - Since this function has the same name and parameter types as the given function, it is not allowed.
 
-    - int foo (double x, bool y);
+    - ``int foo (double x, bool y);``
 
       + This function has a different name from the given function, so it is allowed.
 
-    - int func (double x);
+    - ``int func (double x);``
 
       + Although this function has the same name as the given function, it has a different number of parameters, so it is allowed.
 
-    - void func (double x, bool y);
+    - ``void func (double x, bool y);``
 
       - Although this function has a different return type, its parameter list is the same as the given function, so it is not allowed.
 
-    - int func (bool y, double x);
+    - ``int func (bool y, double x);``
 
       + Although this function has the same name as the given function, its parameter list is in a different order, so it is allowed.
 
@@ -167,6 +171,10 @@ Multiple Choice Exercises
     - 0101
 
       + Since the expressions are false, true, false, and true, the output is 0101.
+
+    - 0101
+
+      - Remember that ``true`` outputs to 1 and ``false`` outputs to 0.
 
     - 1101
 
@@ -226,7 +234,7 @@ Multiple Choice Exercises
 
       - We are allowed to use ``cout`` statements in a function.
 
-    - Yes, we cannot return anything in a ``void`` function.
+    - Yes, we cannot return anything.
 
       + ``void`` functions do not have return values, so we cannot return ``moon``.
 
@@ -257,7 +265,7 @@ Multiple Choice Exercises
 
     - ``int``
 
-      + Yes, ``main`` is supposed to return an integer.
+      + Yes, ``main`` is supposed to return an integer, which is why programmers often return 0 at the end of ``main``.
 
 .. mchoice:: mce_5_10
     :practice: T
