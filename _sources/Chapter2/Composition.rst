@@ -10,6 +10,8 @@ ability to take small building blocks and **compose** them. For example,
 we know how to multiply integers and we know how to output values; it
 turns out we can do both at the same time:
 
+.. index::
+   single: composition
 
 .. activecode:: composition_AC_1
    :language: cpp
@@ -35,8 +37,7 @@ used inside an output statement. We’ve already seen one example:
    :language: cpp
    :caption: Variable Output
 
-   This program performs a calculation involving variables and prints
-   the result at the same time.
+   This program performs a calculation involving variables and prints the result at the same time.
    ~~~~
    #include <iostream>
    using namespace std;
@@ -56,8 +57,7 @@ assignment statement:
    :language: cpp
    :caption: Performing Calculations Before Assignment
 
-   This program performs a calculation involving variables and 
-   simultaneously assigns the result to a variable.
+   This program performs a calculation involving variables and simultaneously assigns the result to a variable.
    ~~~~
    #include <iostream>
    using namespace std;
@@ -85,6 +85,7 @@ values. So the following is illegal: ``minute + 1 = hour;``.
 
 
 .. mchoice:: compos_1
+   :practice: T
    :answer_a: Change line 5 to pets = dogs + cats;
    :answer_b: Change line 5 to int pets = dogs + cats;
    :answer_c: Change line 5 to pets == dogs + cats;
@@ -114,8 +115,7 @@ values. So the following is illegal: ``minute + 1 = hour;``.
 
 .. fillintheblank:: compos_2
 
-   The left-hand side of an assignment statement has to be a |blank| 
-   name, not an expression.
+   The left-hand side of an assignment statement has to be a |blank| name, not an expression.
 
    - :[Vv][Aa][Rr][Ii][Aa][Bb][Ll][Ee]: Correct!
      :.*: Try again!
@@ -131,30 +131,17 @@ values. So the following is illegal: ``minute + 1 = hour;``.
 
 .. activecode:: compos_4
    :language: cpp
-   :autograde: unittest
 
-   Finish the code below so that the velocity is calculated
-   and returned on the same line.  Hint: the current velocity
-   results from 1) the initial velocity and 2) the acceleration over
-   a window of time.  Use v0 for initial velocity, a for
-   acceleration, and t for time.
+   Finish the code below so that the velocity is calculated and returned on the same line.  Hint: the current velocity results from 1) the initial velocity and 2) the acceleration over a window of time.  Use ``v0`` for initial velocity, ``a`` for acceleration, and ``t`` for time.
    ~~~~
    int velocity(int v0, int a, int t) {
        // You may only use the next line for your code.
        return ;
    }
-
-   ====
-
-   #define CATCH_CONFIG_MAIN // This tells Catch to provide a main() - only do   this in one cpp file
-   #include <catch.hpp>
-
-   TEST_CASE( "Velocity Check", "[velocity]" ) {
-   REQUIRE( velocity(1,2,3) == 7 );
-   REQUIRE( velocity(-1,2,3) == 5 );
-   REQUIRE( velocity(1,-2,3) == -5 );
-   REQUIRE( velocity(0,2,3) == 6 );
-   REQUIRE( velocity(1,0,3) == 1 );
+   int main () {
+      cout << "Testing..." << endl;
+      cout << "Yours = " << velocity(5,3,4) << endl;;
+      cout << "Correct = 17";
    }
 
 
@@ -162,23 +149,14 @@ values. So the following is illegal: ``minute + 1 = hour;``.
    :language: cpp
    :autograde: unittest
 
-   Finish the code below so that the volume of a cylinder with
-   radius r and height h is calculated and returned on the same line.
-   Use 3.14 for pi.
+   Finish the code below so that the volume of a cylinder with radius ``r`` and height ``h`` is calculated and returned on the same line.  Use 3.14 for ``pi``.
    ~~~~
    double volume(int r, int h) {
        // You may only use the next line for your code.
        return ;
    }
-
-   ====
-
-   #define CATCH_CONFIG_MAIN // This tells Catch to provide a main() - only do   this in one cpp file
-   #include <catch.hpp>
-
-   TEST_CASE( "Volume Check", "[volume]" ) {
-   REQUIRE( volume(6,6) == 678.24 );
-   REQUIRE( volume(3,6) == 169.56 );
-   REQUIRE( volume(0,6) == 0 );
-   REQUIRE( volume(6,0) == 0 );
+   int main () {
+      cout << "Testing..." << endl;
+      cout << "Yours = " << volume(3,4) << endl;;
+      cout << "Correct = 113.04";
    }

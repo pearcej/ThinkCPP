@@ -22,13 +22,14 @@ started:
    to make an expression easier to read, as in ``(minute * 100) / 60``, even 
    though it doesn’t change the result.
 
+.. index::
+   single: precedence
 
 .. activecode:: order_of_operations_AC_1
    :language: cpp
    :caption: The Role of Parentheses
   
-   Observe the output of the code below to see how the placement of parentheses 
-   can change the result of a calculation.
+   Observe the output of the code below to see how the placement of parentheses can change the result of a calculation.
 
    ~~~~
    #include <iostream>

@@ -35,7 +35,7 @@ assess what you have learned in this chapter.
 
     -   ``4.0``
 
-        -   Converting to an int *will* round yor GPA, but not in the direction
+        -   Converting to an int *will* round your GPA, but not in the direction
             that you were hoping for... what else happens when you convert from
             ``int`` to ``double``?
 
@@ -151,7 +151,8 @@ assess what you have learned in this chapter.
 
     -   ``int mult (int a, int b) {``
 
-        +   Correct!
+        +   Correct! The function header has a type, empty parentheses, and
+            a squiggly bracket.
 
     -   ``char shiftThree (char letter)``
 
@@ -159,7 +160,8 @@ assess what you have learned in this chapter.
 
     -   ``void giveCompliment () {``
 
-        +   Correct!
+        +   Correct! The function header has a type, empty parentheses, and
+            a squiggly bracket.
     
     -   ``string friend (string name) {``
 
@@ -228,7 +230,9 @@ assess what you have learned in this chapter.
 
     -   ``"Monica is best friends with Rachel"``
 
-        +   Correct!
+        +   Correct!  Although the function definition has ``a << " is best 
+            friends with " << b``, we call the function with variable ``b``
+            as argument ``a`` and variable ``a`` as argument ``b``.
 
     -   ``"Rachel is best friends with Monica"``
 
@@ -278,7 +282,9 @@ assess what you have learned in this chapter.
 
     -   ``hello, Hannah!!!``
 
-        +   Correct!
+        +   Correct!  The string "Hannah" is assigned to the variable ``louise``,
+            then the value of ``louise`` is assigned to the variable ``anna``.  When
+            ``goodbye (anna)`` runs, ``anna`` has the value "Hannah".
 
     -   ``hello, anna!!!``
 
@@ -295,7 +301,7 @@ assess what you have learned in this chapter.
 
     -   ``hello, Louise!!!``
 
-        -   We assigned the valu eof ``louise`` to ``anna``.  Is ``"Louise"``
+        -   We assigned the value of ``louise`` to ``anna``.  Is ``"Louise"``
             the value of ``louise``?
 
     -   Error!
@@ -327,7 +333,7 @@ assess what you have learned in this chapter.
 
     -   ``orderFood(a, c);``
 
-        +   Correct!
+        +   Correct! ``a`` is a string and ``c`` is an int.
 
     -   ``orderFood(b, d);``
 
@@ -368,20 +374,21 @@ assess what you have learned in this chapter.
 
     -   ``a``
 
-        -   Is ``a`` still the value of a?  Does the function print only
-            the word only once?
+        -   ``'a'`` is no longer the value of ``a``, and the function would
+            print it more than once.  Hint: think about the *type* of ``a``.
 
     -   ``f``
 
-        -   Does the function print only the word only once?
+        -   ``'f'`` is the value of a, but the function would print it more than once.  
+            Hint: think about the *type* of ``a``.
 
     -   ``aa``
 
-        -   Is ``a`` still the value of a?
+        -   ``'a'`` is no longer the value of ``a``.  Hint: think about the *type* of ``a``.
 
     -   ``ff``
 
-        -   Is ``char`` the proper variable type to pass as an argument?
+        -   Hint: think about the *type* of ``a``.
 
 
     -   Error!
@@ -395,7 +402,7 @@ assess what you have learned in this chapter.
 
     ::
 
-        void mult (int a, b, int c) {
+        void mult (int a, int b, int c) {
             int d = 7;
             cout << a * b * c * d;
         }

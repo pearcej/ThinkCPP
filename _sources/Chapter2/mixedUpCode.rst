@@ -1,15 +1,15 @@
 Mixed-Up Code Exercises
 -----------------------
 
-Answer the following **Mixed-Up Code** questions to
-assess what you have learned in this chapter.
+Answer the following **Mixed-Up Code** questions to assess what you have learned in this chapter.
 
-.. parsonsprob:: vars_types_p1
+
+.. parsonsprob:: VARS_p1
    :numbered: left
    :adaptive:
+   :noindent:
 
-   Construct a block of code that prints: "Lions &" one the first line,
-   "Tigers & Bears!" on the second line, and "Oh my!" on the FOURTH line.
+   Construct a block of code that prints: "Lions &" one the first line, "Tigers & Bears!" on the second line, and "Oh my!" on the FOURTH line.
 
    -----
    int main() {
@@ -24,21 +24,21 @@ assess what you have learned in this chapter.
    =====
     cout << " Bears!" << endl;
    =====
-    cout << "Bears!" << endl; # paired
+    cout << "Bears!" << endl; #paired
    =====
     cout << endl;
    =====
-    cout << Oh my!
+    cout << "Oh my!";
    =====
    }
 
 
-.. parsonsprob:: vars_types_p2
+.. parsonsprob:: VARS_p2
    :numbered: left
    :adaptive:
+   :noindent:
 
-   Construct a block of code that swaps the value of integers x 
-   and y, which have values 3 and 6, respectively.
+   Construct a block of code that swaps the value of integers x and y, which have values 3 and 6, respectively.
 
    -----
    int main() {
@@ -52,9 +52,6 @@ assess what you have learned in this chapter.
     int x = 3 #distractor
     int y = 6
    =====
-    x = 3; #distractor
-    y = 6;
-   =====
     int temp = x;
    =====
     x = y;
@@ -66,13 +63,12 @@ assess what you have learned in this chapter.
    }
 
 
-.. parsonsprob:: vars_types_p3
+.. parsonsprob:: VARS_p3
    :numbered: left
    :adaptive:
+   :noindent:
 
-   Dan Humphrey is a 3.98 student at Constance High School.  His crush's
-   first initial is S.  Construct a program that assigns the variables
-    name, GPA, and crush, in that order.
+   Dan Humphrey is a 3.98 student at Constance High School.  His crush's first initial is S.  Construct a program that assigns the variables name, GPA, and crush, in that order.
 
    -----
    int main() {
@@ -82,68 +78,49 @@ assess what you have learned in this chapter.
     string name;  #paired
     name = Dan Humphrey;
    =====
-    char name = 'Dan Humphrey'; #paired
-   =====
     double GPA;
     GPA = 3.98;
    =====
     int GPA = 3.98; #paired
    =====
-    int GPA = 3.98 #paired
-   =====
     char crush = 'S';
    =====
     char crush = "S"; #paired
    =====
-    char crush; #paired
-    crush = "S";
-   =====
    }
 
 
-.. parsonsprob:: vars_types_p4
+.. parsonsprob:: VARS_p4
    :numbered: left
    :adaptive:
 
-   You decide to make homemade Mac 'n' Cheese for you and your
-   roomates.  Whoever wrote the recipe wanted to make things hard
-   for you by stating that it calls for 1% of a gallon of milk.
-   Construct a block of code that converts this to tablespoons.
+   You decide to make homemade Mac 'n' Cheese for you and your roomates.  Whoever wrote the recipe wanted to make things hard for you by stating that it calls for 1% of a gallon of milk.  Construct a block of code that converts this to tablespoons.
 
    -----
    int main() {
    =====
     double gallons = 0.01;
    =====
-    int gallons = 0.01; #paired
-   =====
-    int gallons = 0.01 #paired
+    double gallons = 0.01 #paired
    =====
     double cups = 16 * gallons;
    =====
     double cups; #paired
     16 * gallons = cups;
    =====
-    int cups = 16 * gallons; #paired
-   =====
     double tbsp;
     tbsp = 16 * cups;
    =====
     double tbsp = 16 * cups #paired
    =====
-    int tbsp; #paired
-    tbsp = 16 * cups;
-   =====
    }
 
 
-.. parsonsprob:: vars_types_p5
+.. parsonsprob:: VARS_p5
    :numbered: left
    :adaptive:
 
-   Construct a block of code that takes the volume of the rectangular
-   prism defined by length, width, and height and prints
-   the result to the terminal.
+   Construct a block of code that takes the volume of the rectangular prism defined by length, width, and height and prints the result to the terminal.
 
    -----
    int main() {
@@ -164,20 +141,16 @@ assess what you have learned in this chapter.
    =====
     cout << volume;
    =====
-    print(volume) #distractor
-   =====
-    return volume; #distractor
+    print (volume) #distractor
    =====
    }
 
 
-.. parsonsprob:: vars_types_p6
+.. parsonsprob:: VARS_p6
    :numbered: left
    :adaptive:
 
-   Construct a block of code that converts the character 'a' to 'z'
-   using a complex set of operations.  Hint: Think about how many
-   letters are between 'a' and 'z'.
+   Construct a block of code that changes the value of the variable a from the character 'a' to the character 'z'.
 
    -----
    int main() {
@@ -186,25 +159,20 @@ assess what you have learned in this chapter.
    =====
     char a = "a"; #paired
    =====
-    string a = "a"; #paired
+    a = a + 25;
    =====
-    a = 3 * (9 - 2 * 2) + a + 10;
+    a = a + 26; #paired
    =====
-    a = a + 1 + 5 * 5; #paired
-   =====
-    a = 4 * 5 + a - (2 * -3); #paired
+    a = a + 27; #paired
    =====
    }
 
 
-.. parsonsprob:: vars_types_p7
+.. parsonsprob:: VARS_p7
    :numbered: left
    :adaptive:
 
-   Construct a block of code that outputs the volume of a cylinder
-   with a radius of 3 and a height of 4.  There are many ways to do this using the
-   choices below, but only the correct answer that uses the LEAST lines
-   of code will be accepted.
+   Construct a block of code that outputs the volume of a cylinder with a radius of 3 and a height of 4.  There are many ways to do this using the choices below, but only the correct answer that uses the LEAST lines of code will be accepted.
 
    -----
    int main() {
@@ -227,12 +195,11 @@ assess what you have learned in this chapter.
    =====
    }
 
-.. parsonsprob:: vars_types_p8
+.. parsonsprob:: VARS_p8
    :numbered: left
    :adaptive:
 
-   Construct a block of code that prints "My favorite class is MATH"
-   on the same line.
+   Construct a block of code that prints "My favorite class is MATH" on the same line.
 
    -----
    int main() {
@@ -240,8 +207,6 @@ assess what you have learned in this chapter.
     string favClass = "MATH";
    =====
     string favClass = 'MATH'; #paired
-   =====
-    string favClass = MATH; #paired
    =====
     cout << "My favorite class is ";
     cout << favClass;
@@ -253,13 +218,11 @@ assess what you have learned in this chapter.
    =====
    }
 
-.. parsonsprob:: vars_types_p9
+.. parsonsprob:: VARS_p9
    :numbered: left
    :adaptive:
 
-   It's Black Friday and the game system you'be been saving up for is marked
-   down to 60% of its original price!  Construct a block of code that calculates 
-   how much money you'd be saving if the system originally costed $359.99?
+   It's Black Friday and the Nintendo Switch you'be been saving up for is marked down to 60% of its original price!  Construct a block of code that calculates how much money you'd be saving if the system originally costed $359.99?
 
    -----
    int main() {
@@ -268,29 +231,24 @@ assess what you have learned in this chapter.
    =====
     double game = $359.99; #paired
    =====
-    int game = 359.99; #paired
+    double discount = game * 0.60;
    =====
-    double discountGame = game * 0.60;
+    double discount = game - (0.60 * game); #paired
    =====
-    double discountGame = game / 0.60; #paired
+    double moneySaved = game - discount;
    =====
-    double moneySaved = game - discountGame;
+    double moneySaved = discount; #paired
    =====
-    double moneySaved = discountGame; #paired
-   =====
-    double moneySaved = game + discountGame; #paired
+    double moneySaved = game + discount; #paired
    =====
    }
 
 
-.. parsonsprob:: vars_types_p10
+.. parsonsprob:: VARS_p10
    :numbered: left
    :adaptive:
 
-   Your family just bought a dog and everyone has been fighting over
-   what to name it.  It went from Champ to Copper to Higgins, and after
-   a few days of being Higgins, everyone agreed on Buddy.  Construct
-   a block of code that illustrates this concept.
+   Your family just bought a dog and everyone has been fighting over what to name it.  It went from Champ to Copper to Higgins, and after a few days of being Higgins, everyone agreed on Buddy.  Construct a block of code that illustrates this concept.
 
    -----
    int main() {
@@ -310,8 +268,6 @@ assess what you have learned in this chapter.
    =====
     name = "Buddy";
    =====
-    string name = "Buddy"; #paired
-   =====
-    name = "Buddy": #paired
+    name = "Buddy" #paired
    =====
    }

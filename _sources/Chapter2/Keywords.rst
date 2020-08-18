@@ -8,6 +8,9 @@ structure of your program, and if you use them as variable names, it
 will get confused. These words, called **keywords**, include ``int``, ``char``,
 ``void``, ``endl`` and many more.
 
+.. index::
+   single: keyword
+
 A list of C++ keywords is availiable publically on ``cppreference``.  You can
 take a look for yourself by pasting the following link into your browser.
 
@@ -34,14 +37,14 @@ and other code black.
 
 .. fillintheblank:: keywords_1
 
-   Words that are reserved in C++ because they are used by the compiler 
-   to parse the structure of your program are called |blank|.
+   Words that are reserved in C++ because they are used by the compiler to parse the structure of your program are called |blank|.
 
    - :[Kk][Ee][Yy][Ww][Oo][Rr][Dd][Ss]: Correct!
      :.*: Try again!
 
 
 .. mchoice:: keywords_2
+   :practice: T
    :multiple_answers:
    :answer_a: integer
    :answer_b: cout
@@ -55,9 +58,7 @@ and other code black.
    :feedback_d: string cannot be used as a variable name.
    :feedback_e: char is a keyword and cannot be used as a variable name.
 
-   Multiple Response: Which of the following are keywords or will 
-   otherwise generate some error from the compiler if used as a 
-   variable name?
+   Multiple Response: Which of the following are keywords or will otherwise generate some error from the compiler if used as a variable name?
 
 
 .. clickablearea:: keywords_3
@@ -81,8 +82,7 @@ and other code black.
    :language: cpp
    :autograde: unittest
 
-   Fix the code below so that it runs without errors.  Hint: you might
-   need to change the names of some variables.
+   Fix the code below so that it runs without errors.  Hint: you might need to change the names of some variables.
    ~~~~
    int main () {
        int friend = 4;
@@ -91,13 +91,4 @@ and other code black.
 
        // Do not modify anything below.
        return 0;
-   }
-
-   ====
-
-   #define CATCH_CONFIG_MAIN // This tells Catch to provide a main() - only do   this in one cpp file
-   #include <catch.hpp>
-
-   TEST_CASE( "Compile Check", "[compile]" ) {
-   REQUIRE( main() == 0 );
    }

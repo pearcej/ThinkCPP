@@ -84,6 +84,7 @@ and the special value ``endl``. Very impressive!
 
 
 .. mchoice:: output_vars_1
+   :practice: T
    :answer_a: a
    :answer_b: b
    :answer_c: z
@@ -110,6 +111,7 @@ and the special value ``endl``. Very impressive!
 
 
 .. mchoice:: output_vars_2
+   :practice: T
    :answer_a: a
    :answer_b: b
    :answer_c: z
@@ -136,6 +138,7 @@ and the special value ``endl``. Very impressive!
 
 
 .. mchoice:: output_vars_3
+   :practice: T
    :answer_a: x
    :answer_b: y
    :answer_c: 3
