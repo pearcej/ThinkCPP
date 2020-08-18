@@ -7,6 +7,9 @@ and strings. Although we created a mapping between ranks and integers,
 and between suits and integers, I pointed out that the mapping itself
 does not appear as part of the program.
 
+.. index::
+   single: enumerated type
+
 Actually, C++ provides a feature called an **enumerated type** that
 makes it possible to (1) include a mapping as part of the program, and
 (2) define the set of values that make up the mapping. For example, here

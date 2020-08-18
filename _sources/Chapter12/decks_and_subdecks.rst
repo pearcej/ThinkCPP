@@ -9,10 +9,15 @@ Looking at the interface to ``findBisect``
            int low, int high) {
 
 it might make sense to treat three of the parameters, ``deck``, ``low``
-and ``high``, as a single parameter that specifies a **subdeck**.
+and ``high``, as a single parameter that specifies a *subdeck*.
+
+.. index::
+   single: abstract
+   single: abstraction
+   single: abstract parameter
 
 This kind of thing is quite common, and I sometimes think of it as an
-**abstract parameter**. What I mean by “abstract,” is something that is
+**abstract parameter**. What I mean by **abstract,** is something that is
 not literally part of the program text, but which describes the function
 of the program at a higher level.
 

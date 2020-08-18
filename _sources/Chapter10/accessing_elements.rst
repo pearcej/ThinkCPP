@@ -1,12 +1,14 @@
 ﻿Accessing elements
 ------------------
 
+.. index::
+   single: vector indexing
+
 The ``[]`` operator reads and writes the elements of a vector in much
-the same way it accesses the characters in an ``string``. As with
-``string``\ s, the indices start at zero, so ``count[0]`` refers to
-the “zeroeth” element of the vector, and ``count[1]`` refers to the
-“oneth” element. You can use the ``[]`` operator anywhere in an
-expression:
+the same way it accesses the characters in an ``string``.  This is called
+**vector indexing**. As with ``string``\ s, the indices start at zero, so ``count[0]`` 
+refers to the “zeroeth” element of the vector, and ``count[1]`` refers to the
+“oneth” element. You can use the ``[]`` operator anywhere in an expression:
 
 ::
 
@@ -23,13 +25,16 @@ code fragment:
    :align: center
    :alt: image
 
+.. index::
+   single: index
+
 .. warning::
    Since elements of this vector are numbered from 0 to 3, there is no
    element with the index 4. It is a common error to go beyond the bounds
    of a vector, which causes a run-time error. The program outputs an error
    message like “Illegal vector index”, and then quits.
 
-You can use any expression as an index, as long as it has type ``int``.
+You can use any expression as an **index**, as long as it has type ``int``.
 One of the most common ways to index a vector is with a loop variable.
 For example:
 

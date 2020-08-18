@@ -1,6 +1,9 @@
 The Return Statement
 --------------------
 
+.. index::
+   single: return statement
+
 The ``return`` statement allows you to terminate the execution of a function
 before you reach the end. One reason to use it is if you detect an error
 condition:

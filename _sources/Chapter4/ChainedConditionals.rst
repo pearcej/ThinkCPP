@@ -1,6 +1,10 @@
 Chained Conditionals
 --------------------
 
+.. index::
+   single: chaining
+   single: chained conditionals
+
 Sometimes you want to check for a number of related conditions and
 choose one of several actions. One way to do this is by **chaining** a
 series of ifs and elses:
@@ -36,8 +40,8 @@ Try changing the value of x above to see how the output is impacted.
    If you have a chain of ``if`` statements, the program will go through 
    executing each conditional, regardless if the conditions are met.  
    However, as soon as you add an ``else`` or even an ``else if`` statement,
-   the program will stop executing the chained conditionals **as soon as a 
-   condition is met.**
+   the program will stop executing the chained conditionals as soon as a 
+   condition is met.
 
 
 These chains can be as long as you want, although they can be difficult

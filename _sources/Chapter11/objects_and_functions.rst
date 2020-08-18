@@ -1,7 +1,10 @@
 ﻿Objects and functions
 =====================
 
-C++ is generally considered an object-oriented programming language,
+.. index::
+   single: object-oriented programming
+
+C++ is generally considered an **object-oriented programming** language,
 which means that it provides features that support object-oriented
 programming.
 
@@ -35,8 +38,14 @@ between the structure definition and the function definitions that
 follow. With some examination, it is apparent that every function takes
 at least one ``Time`` structure as a parameter.
 
+.. index::
+   single: member function
+
 This observation is the motivation for **member functions**. Member
 function differ from the other functions we have written in two ways:
+
+.. index::
+   single: invoke
 
 #. When we call the function, we **invoke** it on an object, rather than
    just call it. People sometimes describe this process as “performing
@@ -51,6 +60,9 @@ Chapter `[time] <#time>`__ and transform them into member functions. One
 thing you should realize is that this transformation is purely
 mechanical; in other words, you can do it just by following a sequence
 of steps.
+
+.. index::
+   single: free-standing function
 
 As I said, anything that can be done with a member function can also be
 done with a nonmember function (sometimes called a **free-standing**

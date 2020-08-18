@@ -6,14 +6,23 @@ for functions that operate on objects. For some operations, you will
 have a choice of several possible interfaces, so you should consider the
 pros and cons of each of these:
 
+.. index::
+   single: pure function
+
 pure function:
    Takes objects and/or basic types as arguments but does not modify the
    objects. The return value is either a basic type or a new object
    created inside the function.
 
+.. index::
+   single: modifier
+
 modifier:
    Takes objects as parameters and modifies some or all of them. Often
    returns void.
+
+.. index::
+   single: fill-in function
 
 fill-in function:
    One of the parameters is an “empty” object that gets filled in by the

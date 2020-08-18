@@ -1,6 +1,10 @@
 Nested Conditionals
 -------------------
 
+.. index::
+   single: nesting
+   single: nested conditionals
+
 In addition to chaining, you can also nest one conditional within
 another. We could have written the previous example as:
 

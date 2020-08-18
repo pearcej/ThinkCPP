@@ -1,10 +1,13 @@
 ﻿What is a Programming Language?
 -------------------------------
 
-The programming language you will be learning is C++. It is a **high-level** language.
-
 .. index::
    single: high-level language
+
+The programming language you will be learning is C++. It is a **high-level language**.
+
+.. index::
+   single: low-level language
 
 As you might infer from the name “high-level language,” there are also
 **low-level languages**, sometimes referred to as machine language or
@@ -14,7 +17,7 @@ language have to be translated before they can run. This translation
 takes some time, which is a small disadvantage of high-level languages.
 
 .. index::
-   single: low-level language
+   single: portable
 
 But the advantages are enormous. First, it is *much* easier to program
 in a high-level language; by “easier” I mean that the program takes less
@@ -24,35 +27,27 @@ that they can run on different kinds of computers with few or no
 modifications. Low-level programs can only run on one kind of computer,
 and have to be rewritten to run on another.
 
-.. index::
-   single: portable
-
 Due to these advantages, almost all programs are written in high-level
 languages. Low-level languages are only used for a few special
 applications.
+
+.. index::
+   single: interpreter
+   single: interpret
 
 There are two ways to translate a program; interpreting or
 compiling. An **interpreter** is a program that reads a high-level
 program and does what it says. In effect, it translates the program
 line-by-line, alternately reading lines and carrying out commands.
 
-.. index::
-   single: interpreter
-
 .. figure:: Images/chapter1image1.png
    :scale: 50%
    :align: center
    :alt: image
 
-A **compiler** is a program that reads a high-level program and translates
-it all at once, before executing any of the commands. Often you compile
-the program as a separate step, and then execute the compiled code
-later. In this case, the high-level program is called the **source
-code**, and the translated program is called the **object code** or the
-**executable**.
-
 .. index::
    single: compiler
+   single: compile
 
 .. index::
    single: source code
@@ -62,6 +57,13 @@ code**, and the translated program is called the **object code** or the
 
 .. index::
    single: executable
+
+A **compiler** is a program that reads a high-level program and translates
+it all at once, before executing any of the commands. Often you compile
+the program as a separate step, and then execute the compiled code
+later. In this case, the high-level program is called the **source
+code**, and the translated program is called the **object code** or the
+**executable**.
 
 As an example, suppose you write a program in C++. You might use a text
 editor to write the program (a text editor is a simple word processor).

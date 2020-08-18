@@ -24,6 +24,9 @@ indices, rather than ten different names. Here’s how:
      histogram[i] = count;
    }
 
+.. index::
+   single: histogram
+
 I called the vector **histogram** because that’s a statistical term for
 a vector of numbers that counts the number of appearances of a range of
 values.

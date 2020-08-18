@@ -17,6 +17,9 @@ be. One possibility is ``apstring``\ s, containing things like
 implementation is that it would not be easy to compare cards to see
 which had higher rank or suit.
 
+.. index::
+   single: encode
+
 An alternative is to use integers to **encode** the ranks and suits. By
 “encode,” I do not mean what some people think, which is to encrypt, or
 translate into a secret code. What a computer scientist means by

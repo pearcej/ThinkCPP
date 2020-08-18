@@ -1,16 +1,16 @@
 ﻿What is Debugging?
 ------------------
 
+.. index::
+   single: bug
+
+.. index::
+   single: debug
+
 Programming is a complex process, and since it is done by human beings,
 it often leads to errors. For whimsical reasons, programming errors are
 called **bugs** and the process of tracking them down and correcting
 them is called **debugging**.
-
-.. index::
-   single: bugs
-
-.. index::
-   single: debugging
 
 There are a few different kinds of errors that can occur in a program,
 and it is useful to distinguish between them in order to track them down
@@ -20,18 +20,19 @@ Compile-time errors
 ~~~~~~~~~~~~~~~~~~~
 
 .. index::
-   pair: error; syntax error
+   single: syntax error
+   single: compile error
 
 The compiler can only translate a program if the program is
 syntactically correct; otherwise, the compilation fails and you will not
 be able to run your program.
  
+.. index::
+   single: syntax
+
 .. note::
    **Syntax** refers to the structure of your program and the rules about 
    that structure.
-
-.. index::
-   single: syntax
 
 For example, in English, a sentence must begin with a capital letter and
 end with a period. this sentence contains a syntax error. So does this
@@ -58,7 +59,7 @@ Run-time errors
 ~~~~~~~~~~~~~~~
 
 .. index::
-   pair: error; run-time error
+   single: run-time error
 
 The second type of error is a **run-time error**, so-called because the
 error does not appear until you run the program.
@@ -71,15 +72,16 @@ Logic errors and semantics
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. index::
-   pair: error; logical error
+   single: logical error
+   single: semantic error
 
 The third type of error is the **logical** or **semantic** error. 
 
-.. note::
-   **Semantics** refer to the meaning of the program.
-
 .. index::
    single: semantics
+
+.. note::
+   **Semantics** refer to the meaning of the program.
 
 If there is a semantic error in your program, it will compile and run
 successfully, in the sense that the computer will not generate any error

@@ -9,6 +9,9 @@ if both flags are set then we expect the other four variables to be
 consistent; that is, they should be specifying the same point in two
 different formats.
 
+.. index::
+   single: invariant
+
 These kinds of conditions are called ``invariants``, for the obvious
 reason that they do not vary—they are always supposed to be true. One of
 the ways to write good quality code that contains few bugs is to figure

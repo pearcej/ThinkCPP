@@ -7,6 +7,9 @@ has to traverse the vector :math:`n` times, and each traversal takes an
 amount of time that is proportional to :math:`n`. The total time,
 therefore, is proportional to :math:`n^2`.
 
+.. index::
+   single: mergesort
+
 In this section I will sketch a more efficient algorithm called
 **mergesort**. To sort :math:`n` items, mergesort takes time
 proportional to :math:`n \log n`. That may not seem impressive, but as

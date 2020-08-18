@@ -1,6 +1,10 @@
 Programs with Multiple Functions
 --------------------------------
 
+.. index::
+   single: order of execution
+   single: flow of execution
+
 When you look at a class definition that contains several functions, it
 is tempting to read it from top to bottom, but that is likely to be
 confusing, because that is not the **order of execution** of the
@@ -11,7 +15,7 @@ program.
    are defined!  For example, the last function that you write might be the 
    first one that you call in the ``main`` function.
 
-**Execution always begins at the first statement of** ``main``, **regardless of
+Execution always begins at the first statement of ``main``, regardless of
 where it is in the program** (often it is at the bottom). Statements are
 executed one at a time, in order, until you reach a function call.
 Function calls are like a detour in the flow of execution. Instead of

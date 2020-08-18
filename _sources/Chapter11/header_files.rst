@@ -6,6 +6,9 @@ definition and then define the functions later. Any time you change the
 interface to a function, you have to change it in two places, even if it
 is a small change like declaring one of the parameters ``const``.
 
+.. index::
+   single: header file
+
 There is a reason for the hassle, though, which is that it is now
 possible to separate the structure definition and the functions into two
 files: the **header file**, which contains the structure definition, and
@@ -73,10 +76,8 @@ function definitions, it knows enough about the structure to check the
 code and catch errors.
 
 .. note::
-   Notice that outside of the structure definition, I **do** need to include the
-   prefix ``Time::`` at the beginning of each function name!  This is because I
-   am providing the implementation for member functions of the ``Time`` structure
-   outside of the structure definition. 
+   Notice that *outside* of the structure definition, you **do** need to include the
+   prefix ``Time::`` at the beginning of each function name!
 
 Finally, ``main.cpp`` contains the function ``main`` along with any
 functions we want that are not members of the ``Time`` structure (in

@@ -1,6 +1,9 @@
 Parameters and Arguments
 ------------------------
 
+.. index::
+   single: parameter
+
 Some of the built-in functions we have used have **parameters**, which
 are values that you provide to let the function do its job. For example,
 if you want to find the sine of a number, you have to indicate what the
@@ -35,6 +38,12 @@ we might have a ``main`` function like this:
       printTwice ('a');
       return 0;
     }
+
+.. index::
+   single: argument
+
+.. index::
+   single: pass
 
 The ``char`` value you provide is called an **argument**, and we say that
 the argument is **passed** to the function. In this case the value ’a’

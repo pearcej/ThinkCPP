@@ -6,6 +6,9 @@ To get input from a file or send output to a file, you have to create an
 output files). These objects are defined in the header file ``fstream``,
 which you have to include.
 
+.. index::
+   single: stream
+
 A **stream** is an abstract object that represents the flow of data from
 a source like the keyboard or a file to a destination like the screen or
 a file.

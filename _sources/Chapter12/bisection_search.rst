@@ -6,10 +6,13 @@ that is faster than the linear search. We have to look at every card,
 since otherwise there is no way to be certain the card we want is not
 there.
 
+.. index::
+   single: bisection search
+
 But when you look for a word in a dictionary, you don’t search linearly
 through every word. The reason is that the words are in alphabetical
 order. As a result, you probably use an algorithm that is similar to a
-bisection search:
+**bisection search**:
 
 #. Start in the middle somewhere.
 

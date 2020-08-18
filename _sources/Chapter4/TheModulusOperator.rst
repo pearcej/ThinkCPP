@@ -1,6 +1,9 @@
 The Modulus Operator
 --------------------
 
+.. index::
+   single: modulus operator
+
 The modulus operator works on integers (and integer expressions) and
 yields the *remainder* when the first operand is divided by the second.
 In C++, the modulus operator is a percent sign, ``%``. The syntax is exactly

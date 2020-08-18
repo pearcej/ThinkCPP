@@ -1,6 +1,9 @@
 ``switch`` statement
 --------------------
 
+.. index::
+   single: switch
+
 It’s hard to mention enumerated types without mentioning ``switch``
 statements, because they often go hand in hand. A ``switch`` statement
 is an alternative to a chained conditional that is syntactically

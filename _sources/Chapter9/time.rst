@@ -37,7 +37,10 @@ The state diagram for this object looks like this:
    :align: center
    :alt: image
 
-The word “instance” is sometimes used when we talk about objects,
+.. index::
+   single: instance
+
+The word **instance** is sometimes used when we talk about objects,
 because every object is an instance (or example) of some type. The
 reason that instance variables are so-named is that every instance of a
 type has a copy of the instance variables for that type.

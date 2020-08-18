@@ -1,6 +1,9 @@
 What is a class?
 ----------------
 
+.. index::
+   single: class
+
 In most object-oriented programming languages, a **class** is a
 user-defined type that includes a set of functions. As we have seen,
 structures in C++ meet the general definition of a class.
