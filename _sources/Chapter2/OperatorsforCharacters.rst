@@ -49,8 +49,11 @@ represent the letter ’a’. However, it is generally a good idea to treat
 characters as characters, and integers as integers, and only convert
 from one to the other if there is a good reason.
 
+.. index::
+   single: ASCII
+
 .. note::
-   Characters in C++ hold ASCII values, which range from 0 to 128.  Uppercase
+   Characters in C++ hold **ASCII** values, which range from 0 to 128.  Uppercase
    'A' has an ASCII value of 65, lowercase 'a' has a value of 97, and a space
    has a value of 32.  C++ converts characters to their ASCII values to 
    perform automatic type conversion and character arithmetic.

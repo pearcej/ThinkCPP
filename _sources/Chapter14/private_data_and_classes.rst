@@ -1,10 +1,17 @@
 Private data and classes
 ------------------------
 
-I have used the word “encapsulation” in this book to refer to the
+.. index:: 
+   single: encapsulation
+   single: function encapsulation
+
+I have used the word **encapsulation** in this book to refer to the
 process of wrapping up a sequence of instructions in a function, in
 order to separate the function’s interface (how to use it) from its
 implementation (how it does what it does).
+
+.. index::
+   single: data encapsulation
 
 This kind of encapsulation might be called “functional encapsulation,”
 to distinguish it from “data encapsulation,” which is the topic of this
@@ -49,10 +56,19 @@ For example, we could have written the ``Card`` definition:
      void setSuit (int s) { suit = s; }
    };
 
-There are two sections of this definition, a private part and a public
+.. index::
+   single: private
+
+.. index::
+   single: public
+
+There are two sections of this definition, a **private** part and a **public**
 part. The functions are public, which means that they can be invoked by
 client programs. The instance variables are private, which means that
 they can be read and written only by ``Card`` member functions.
+
+.. index::
+   single: accessor function
 
 It is still possible for client programs to read and write the instance
 variables using the **accessor functions** (the ones beginning with

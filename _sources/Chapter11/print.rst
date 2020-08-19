@@ -31,14 +31,21 @@ the function; together they indicate that this is a function named
 The next step is to eliminate the parameter. Instead of passing an
 object as an argument, we are going to invoke the function on an object.
 
+.. index::
+   single: current object
+   single: this
+
 As a result, inside the function, we no longer have a parameter named
 ``time``. Instead, we have a **current object**, which is the object the
 function is invoked on. We can refer to the current object using the C++
 keyword ``this``.
 
+.. index::
+   single: pointer
+
 One thing that makes life a little difficult is that ``this`` is
-actually a **pointer** to a structure, rather than a structure itself. A
-pointer is similar to a reference, but I don’t want to go into the
+actually a pointer to a structure, rather than a structure itself. A
+**pointer** is similar to a reference, but I don’t want to go into the
 details of using pointers yet. The only pointer operation we need for
 now is the ``*`` operator, which converts a structure pointer into a
 structure. In the following function, we use it to assign the value of
@@ -81,10 +88,19 @@ the new function inside the structure definition:
    *inside* of the structure definition, you define it as you would any other 
    function.
 
+.. index::
+   single: function declaration
+
+.. index::
+   single: function interface
+
 A **function declaration** looks just like the first line of the
 function definition, except that it has a semi-colon at the end. The
 declaration describes the **interface** of the function; that is, the
 number and types of the arguments, and the type of the return value.
+
+.. index::
+   single: function implementation
 
 When you declare a function, you are making a promise to the compiler
 that you will, at some point later on in the program, provide a

@@ -1,15 +1,15 @@
 Keywords
 --------
 
+.. index::
+   single: keyword
+
 A few sections ago, I said that you can make up any name you want for
 your variables, but that’s not quite true. There are certain words that
 are reserved in C++ because they are used by the compiler to parse the
 structure of your program, and if you use them as variable names, it
 will get confused. These words, called **keywords**, include ``int``, ``char``,
 ``void``, ``endl`` and many more.
-
-.. index::
-   single: keyword
 
 A list of C++ keywords is availiable publically on ``cppreference``.  You can
 take a look for yourself by pasting the following link into your browser.

@@ -7,6 +7,10 @@ mention that it is also legal for a function to call itself. It may not
 be obvious why that is a good thing, but it turns out to be one of the
 most magical and interesting things a program can do.
 
+.. index::
+   single: recursion
+   single: recursive function
+
 .. note::
    The process of a function calling itself is called **recursion**, and
    such functions are said to be **recursive**.

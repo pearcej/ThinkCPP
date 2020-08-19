@@ -5,6 +5,9 @@ If you have run the code in this chapter a few times, you might have
 noticed that you are getting the same “random” values every time. That’s
 not very random!
 
+.. index::
+   single: seed
+
 One of the properties of pseudorandom number generators is that if they
 start from the same place they will generate the same sequence of
 values. The starting place is called a **seed**; by default, C++ uses

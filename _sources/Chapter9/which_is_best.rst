@@ -1,6 +1,9 @@
 Which is best?
 --------------
 
+.. index::
+   single: functional programming language
+
 Anything that can be done with modifiers and fill-in functions can also
 be done with pure functions. In fact, there are programming languages,
 called **functional** programming languages, that only allow pure

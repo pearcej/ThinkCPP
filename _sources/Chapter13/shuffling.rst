@@ -37,6 +37,9 @@ like ``randomInt``, which chooses a random integer between the
 parameters ``low`` and ``high``, and ``swapCards`` which takes two
 indices and switches the cards at the indicated positions.
 
+.. index::
+   single: pseudocode
+
 .. note::
    If you are even the slightest bit unsure on how to begin coding
    your program, **pseudocode** is a great place to start!

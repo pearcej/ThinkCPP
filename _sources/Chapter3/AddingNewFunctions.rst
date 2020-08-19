@@ -13,10 +13,13 @@ syntax for ``main`` is the same as for any other function definition:
       STATEMENTS
     }
 
+.. index::
+   single: function call
+
 You can make up any name you want for your function, except that you
 can’t call it ``main`` or any other C++ keyword. The list of parameters
-specifies what information, if any, you have to provide in order to use
-(or **call**) the new function.
+specifies what information -- if any -- you have to provide in order to use, 
+or **call**, the new function.
 
 ``main`` doesn’t take any parameters, as indicated by the empty parentheses
 () in it’s definition. The first couple of functions we are going to

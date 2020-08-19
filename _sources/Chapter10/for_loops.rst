@@ -6,6 +6,9 @@ All of them start by initializing a variable; they have a test, or
 condition, that depends on that variable; and inside the loop they do
 something to that variable, like increment it.
 
+.. index::
+   single: for loop
+
 This type of loop is so common that there is an alternate loop
 statement, called ``for``, that expresses it more concisely. The general
 syntax looks like this:

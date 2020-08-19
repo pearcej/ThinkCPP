@@ -1,6 +1,9 @@
 Pure functions
 --------------
 
+.. index::
+   single: pure function
+
 A function is considered a pure function if the result depends only on
 the arguments, and it has no side effects like modifying an argument or
 outputting something. The only result of calling a pure function is the

@@ -6,7 +6,10 @@ single object. We have seen some examples already, including
 ``string``\ s, which are collections of characters, and
 ``vector``\ s which are collections of any type.
 
-An ordered set is a collection of items with two defining properties:
+.. index::
+   single: ordered set
+
+An **ordered set** is a collection of items with two defining properties:
 
 Ordering:
    The elements of the set have indices associated with them. We can use

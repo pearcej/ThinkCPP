@@ -1,6 +1,9 @@
 ﻿Vectors
 =======
 
+.. index::
+   single: vector
+
 A **vector** is a set of values where each value is identified by a
 number (called an index). An ``string`` is similar to a vector, since it
 is made up of an indexed set of characters. The nice thing about vectors
@@ -34,6 +37,9 @@ the vector in parentheses:
 
      vector<int> count (4);
 
+.. index::
+   single: constructor
+
 The syntax here is a little odd; it looks like a combination of a
 variable declarations and a function call. In fact, that’s exactly what
 it is. The function we are invoking is an ``vector`` constructor. A
@@ -48,6 +54,9 @@ diagrams:
    :scale: 60%
    :align: center
    :alt: image
+
+.. index::
+   single: elements
 
 The large numbers inside the boxes are the **elements** of the vector.
 The small numbers outside the boxes are the indices used to identify

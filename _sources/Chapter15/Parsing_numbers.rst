@@ -33,6 +33,9 @@ digits from the original string, in order.
      return atoi (digitString.c_str());
    }
 
+.. index::
+   single: accumulator
+
 The variable ``digitString`` is an example of an **accumulator**. It is
 similar to the counter we saw in Section `[loopcount] <#loopcount>`__,
 except that instead of getting incremented, it gets accumulates one new

@@ -16,6 +16,9 @@ Another function we wrote in Chapter `[time] <#time>`__ was
      return time;
    }
 
+.. index::
+   single: constructor
+
 Of course, for every new type, we need to be able to create new objects.
 In fact, functions like ``makeTime`` are so common that there is a
 special function syntax for them. These functions are called

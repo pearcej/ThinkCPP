@@ -1,6 +1,10 @@
 Order of Operations
 -------------------
 
+.. index::
+   single: precedence
+   single: order of operations
+
 When more than one operator appears in an expression the order of
 evaluation depends on the rules of **precedence**. A complete
 explanation of precedence can get complicated, but just to get you
@@ -21,9 +25,6 @@ started:
    are evaluated first, so ``2 * (3 - 1) is 4``. You can also use parentheses 
    to make an expression easier to read, as in ``(minute * 100) / 60``, even 
    though it doesn’t change the result.
-
-.. index::
-   single: precedence
 
 .. activecode:: order_of_operations_AC_1
    :language: cpp

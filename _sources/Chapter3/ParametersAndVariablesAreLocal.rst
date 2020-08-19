@@ -6,7 +6,6 @@ the confines of ``main``, there is no such thing as phil. If you try to use
 it, the compiler will complain. Similarly, inside ``printTwice`` there is no
 such thing as argument.
 
-
 .. activecode:: locals_AC_1
    :language: cpp
    :caption: Understanding Parameters
@@ -28,6 +27,12 @@ such thing as argument.
        return 0;
    }
 
+.. index::
+   single: local
+   single: local variable
+
+.. index::
+   single: stack diagram
 
 Variables like this are said to be **local**. In order to keep track of
 parameters and local variables, it is useful to draw a **stack
@@ -41,6 +46,9 @@ For example, the state diagram for ``printTwice`` looks like this:
    :scale: 50%
    :align: center
    :alt: image
+
+.. index::
+   pair: function; instance
 
 Whenever a function is called, it creates a new **instance** of that
 function. Each instance of a function contains the parameters and local

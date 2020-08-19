@@ -7,7 +7,7 @@ have a situation where we input numbers from the user and store them in
 a vector till he inputs ``-1``, and then display them. In such a case,
 we do not know the size of the vector beforehand. So we need wish add
 new values to the end of a vector as the user inputs them. We can use
-then vector function ``push_back()`` for that purpose.
+then vector function ``push_back`` for that purpose.
 
 ::
 

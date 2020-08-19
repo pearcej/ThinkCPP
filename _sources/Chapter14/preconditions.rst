@@ -1,6 +1,9 @@
 Preconditions
 -------------
 
+.. index::
+   single: precondition
+
 Often when you write a function you make implicit assumptions about the
 parameters you receive. If those assumptions turn out to be true, then
 everything is fine; if not, your program might crash.
@@ -31,6 +34,9 @@ about the **precondition**.
      imag = mag * sin (theta);
      cartesian = true;
    }
+
+.. index::
+   single: postcondition
 
 At the same time, I also commented on the **postconditions**, the things
 we know will be true when the function completes.

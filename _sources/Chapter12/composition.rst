@@ -1,7 +1,10 @@
 Composition
 -----------
 
-By now we have seen several examples of composition (the ability to
+.. index::
+   single: composition
+
+By now we have seen several examples of **composition** (the ability to
 combine language features in a variety of arrangements). One of the
 first examples we saw was using a function invocation as part of an
 expression. Another example is the nested structure of statements: you
