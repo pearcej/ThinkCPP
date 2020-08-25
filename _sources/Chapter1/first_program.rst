@@ -30,6 +30,9 @@ reasonably well. Even so, this simple program contains several features
 that are hard to explain to beginning programmers. For now, we will
 ignore some of them, like the first two lines.
 
+.. index::
+   single: comment
+
 The third line begins with ``//``, which indicates that it is a **comment**.
 A comment is a bit of English text that you can put in the middle of a
 program, usually to explain what the program does. When the compiler
@@ -41,12 +44,16 @@ program where execution begins. When the program runs, it starts by
 executing the first statement in ``main`` and it continues, in order, until
 it gets to the last statement, and then it quits.
 
+.. index::
+   single: output
+   single: cout
+
 There is no limit to the number of statements that can be in ``main``, but
 the example contains only one. It is a basic **output** statement,
 meaning that it outputs or displays a message on the screen.
 
 ``cout`` is a special object provided by the system to allow you to send
-output to the screen. The symbol ``<<`` is an **operator** that you apply to
+output to the screen. The symbol ``<<`` is an operator that you apply to
 ``cout`` and a string, and that causes the string to be displayed.
 
 ``endl`` is a special symbol that represents the end of a line. When you

@@ -4,7 +4,7 @@ Math Functions
 In mathematics, you have probably seen functions like :math:`\sin` and
 :math:`\log`, and you have learned to evaluate expressions like
 :math:`\sin(\pi/2)` and :math:`\log(1/x)`. First, you evaluate the
-expression in parentheses, which is called the **argument** of the
+expression in parentheses, which is called the argument of the
 function. For example, :math:`\pi/2` is approximately 1.571, and
 :math:`1/x` is 0.1 (if :math:`x` happens to be 10).
 
@@ -84,8 +84,15 @@ it using the ``acos`` function. The arccosine (or inverse cosine) of -1 is
        return 0;
    }
 
+.. index::
+   single: header file
+
+.. index::
+   single: include
+   single: include statement
+
 Before you can use any of the math functions, you have to include the
-math **header file**. Header files contain information the compiler
+math header file. **Header files** contain information the compiler
 needs about functions that are defined outside your program. For
 example, in the “Hello, world!” program we included a header file named
 iostream using an **include** statement:

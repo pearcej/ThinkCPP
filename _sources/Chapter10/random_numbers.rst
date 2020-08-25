@@ -5,11 +5,17 @@ Random numbers
 
 [pseudorandom]
 
+.. index::
+   single: deterministic
+
 Most computer programs do the same thing every time they are executed,
 so they are said to be **deterministic**. Usually, determinism is a good
 thing, since we expect the same calculation to yield the same result.
 For some applications, though, we would like the computer to be
 unpredictable. Games are an obvious example.
+
+.. index::
+   single: nondeterministic
 
 Making a program truly **nondeterministic** turns out to be not so easy,
 but there are ways to make it at least seem nondeterministic. One of

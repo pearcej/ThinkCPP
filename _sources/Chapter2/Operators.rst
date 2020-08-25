@@ -1,14 +1,14 @@
 Operators
 ---------
 
+.. index::
+   single: operator
+
 **Operators** are special symbols that are used to represent simple
 computations like addition and multiplication. Most of the operators in
 C++ do exactly what you would expect them to do, because they are common
 mathematical symbols. For example, the operator for adding two integers
 is ``+``.
-
-.. index::
-   single: operator
 
 The following are all legal C++ expressions whose meaning is more or
 less obvious:
@@ -20,12 +20,12 @@ less obvious:
     hour * 60 + minute
     minute / 60
 
+.. index::
+   single: expression
+
 **Expressions** can contain both variables names and integer values. In each
 case the name of the variable is replaced with its value before the
 computation is performed.
-
-.. index::
-   single: expression
 
 Addition, subtraction and multiplication all do what you expect, but you
 might be surprised by division. For example, compile the following program around
@@ -53,21 +53,21 @@ observe the output.
        return 0;
    }
 
+.. index::
+   single: integer division
+
 The first line is what we expected, but the second line is odd. The
 value of the variable minute is 59, and 59 divided by 60 is 0.98333, not
 0. The reason for the discrepancy is that C++ is performing **integer
 division**.
 
 .. index::
-   single: integer division
+   single: operand
 
 When both of the **operands** are integers (operands are the things
 operators operate on), the result must also be an integer, and by
 definition integer division always rounds *down*, even in cases like
 this where the next integer is so close.
-
-.. index::
-   single: operand
 
 A possible alternative in this case is to calculate a percentage rather
 than a fraction:
@@ -88,8 +88,12 @@ approximately correct. In order to get an even more accurate answer, we
 could use a different type of variable, called floating-point, that is
 capable of storing fractional values. 
 
+.. index::
+   single: floating-point
+   single: double
+
 .. note::
-   In C++, floating-points are declared as type ``double``. We’ll get 
+   In C++, **floating-points** are declared as type ``double``. We’ll get 
    to that in the next chapter.
 
 

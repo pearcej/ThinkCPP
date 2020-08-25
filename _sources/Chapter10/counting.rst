@@ -1,6 +1,9 @@
 ﻿Counting
 --------
 
+.. index::
+   single: bottom-up design
+
 A good approach to problems like this is to think of simple functions
 that are easy to write, and that might turn out to be useful. Then you
 can combine them into a solution. This approach is sometimes called

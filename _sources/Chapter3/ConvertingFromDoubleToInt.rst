@@ -7,6 +7,9 @@ going from a ``double`` to an ``int`` requires rounding off. C++ doesn’t perfo
 this operation automatically, in order to make sure that you, as the
 programmer, are aware of the loss of the fractional part of the number.
 
+.. index::
+   single: typecast
+
 The simplest way to convert a floating-point value to an integer is to
 use a **typecast**. Typecasting is so called because it allows you to
 take a value that belongs to one type and “cast” it into another type

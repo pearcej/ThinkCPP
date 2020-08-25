@@ -25,11 +25,11 @@ you want in ``main``. For example, to output more than one line:
 As you can see, it is legal to put comments at the end of a line, as
 well as on a line by themselves.
 
-The phrases that appear in quotation marks are called **strings**,
-because they are made up of a sequence (string) of letters.
-
 .. index::
    single: string
+
+The phrases that appear in quotation marks are called **strings**,
+because they are made up of a sequence (string) of letters.
 
 .. note::
    In C++, strings are declared as type ``string``.  We'll explain what that

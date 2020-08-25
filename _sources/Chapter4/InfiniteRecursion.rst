@@ -1,12 +1,18 @@
 Infinite Recursion
 ------------------
 
+.. index::
+   single: base case
+
 In the examples in the previous section, notice that each time the
 functions get called recursively, the argument gets smaller by one, so
 eventually it gets to zero. When the argument is zero, the function
 returns immediately, *without making any recursive calls*. This
 case—when the function completes without making a recursive call—is
 called the **base case**.
+
+.. index::
+   single: infinite recursion
 
 If a recursion never reaches a base case, it will go on making recursive
 calls forever and the program will never terminate. This is known as

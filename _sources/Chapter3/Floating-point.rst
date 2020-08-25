@@ -4,7 +4,7 @@ Floating-point
 In the last chapter we had some problems dealing with numbers that were
 not integers. We worked around the problem by measuring percentages
 instead of fractions, but a more general solution is to use
-floating-point numbers, which can represent fractions as well as
+**floating-point** numbers, which can represent fractions as well as
 integers. In C++, there are two floating-point types, called ``float`` and
 ``double``. In this book we will use doubles exclusively.
 
@@ -24,6 +24,11 @@ same time:
     int x = 1;
     string empty = "";
     double pi = 3.14159;
+
+.. index::
+   single: initialize
+   single: initialization
+   single: initialization statement
 
 In fact, this syntax is quite common. A combined declaration and
 assignment is sometimes called an **initialization**.

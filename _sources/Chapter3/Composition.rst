@@ -1,6 +1,9 @@
 Composition
 -----------
 
+.. index::
+   single: composition
+
 Just as with mathematical functions, C++ functions can be **composed**,
 meaning that you use one expression as part of another. For example, you
 can use any expression as an argument to a function:

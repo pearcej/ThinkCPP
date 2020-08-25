@@ -1,6 +1,9 @@
 Conditional Execution
 ---------------------
 
+.. index::
+   single: conditional statement
+
 In order to write useful programs, we almost always need the ability to
 check certain conditions and change the behavior of the program
 accordingly. **Conditional statements** give us this ability. The
@@ -16,7 +19,10 @@ The expression in parentheses is called the condition. If it is true,
 then the statements in brackets get executed. If the condition is not
 true, nothing happens.
 
-The condition can contain any of the comparison operators:
+.. index::
+   single: comparison operators
+
+The condition can contain any of the **comparison operators**:
 
 ::
 

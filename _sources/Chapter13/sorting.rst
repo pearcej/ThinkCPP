@@ -20,6 +20,9 @@ the index ``i``.
        // swap the ith card and the lowest card
      }
 
+.. index::
+   single: helper function
+
 Again, the pseudocode helps with the design of the **helper functions**.
 
 .. note::
@@ -31,6 +34,9 @@ Again, the pseudocode helps with the design of the **helper functions**.
 In this case we can use ``swapCards`` again, so we only need one new
 one, called ``findLowestCard``, that takes an index where it should start 
 looking in the vector of cards.
+
+.. index::
+   single: top-down design
 
 This process, using pseudocode to figure out what helper functions are
 needed, is sometimes called **top-down design**, in contrast to the

@@ -1,7 +1,10 @@
 Stack Diagrams for Recursive Functions
 --------------------------------------
 
-In the previous chapter we used a stack diagram to represent the state
+.. index::
+   single: stack diagram
+
+In the previous chapter we used a **stack diagram** to represent the state
 of a program during a function call. The same kind of diagram can make
 it easier to interpret a recursive function.
 

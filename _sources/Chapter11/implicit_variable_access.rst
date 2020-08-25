@@ -15,7 +15,10 @@ the current object. So we could have written:
      cout << hour << ":" << minute << ":" << second << endl;
    }
 
-This kind of variable access is called “implicit” because the name of
+.. index::
+   single: implicit variable access
+
+This kind of variable access is called **implicit** because the name of
 the object does not appear explicitly. Features like this are one reason
 member functions are often more concise than nonmember functions.
 

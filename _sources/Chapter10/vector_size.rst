@@ -2,7 +2,7 @@
 -----------
 
 There are a few functions you can invoke on an ``vector``. One of them
-is very useful, though: ``size()``. Not surprisingly, it returns the
+is very useful, though: ``size``. Not surprisingly, it returns the
 size of the vector (the number of elements).
 
 It is a good idea to use this value as the upper bound of a loop, rather
@@ -18,7 +18,7 @@ correctly for any size vector.
      }
 
 .. note::
-   On some machines, comparing an ``int`` to the output from ``size()`` will generate 
+   On some machines, comparing an ``int`` to the output from ``size`` will generate 
    a type error.  This is because the size function returns an unsigned integer type. 
    To keep the variable type consistent, you should use ``size_t`` rather than ``int``
    for the type of iterator ``i``.
@@ -30,7 +30,7 @@ executed, which is a good thing, since it would cause a run-time error.
 One thing that we should notice here is that the size() function is
 called every time the loop is executed. Calling a function again and
 again reduces execution speed, so it would be better to store the size
-in some variable by calling the ``size()`` function before the loop
+in some variable by calling the ``size`` function before the loop
 begins, and use this variable to check for the last element. 
 
 .. activecode:: vector_size_AC_1

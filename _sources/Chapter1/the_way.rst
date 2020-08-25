@@ -10,12 +10,12 @@ things, assembling components into systems and evaluating tradeoffs
 among alternatives. Like scientists, they observe the behavior of
 complex systems, form hypotheses, and test predictions.
 
+.. index::
+   single: problem-solving
+
 The single most important skill for a computer scientist is
 **problem-solving**. By that I mean the ability to formulate problems,
 think creatively about solutions, and express a solution clearly and
 accurately. As it turns out, the process of learning to program is an
 excellent opportunity to practice problem-solving skills. That’s why
 this chapter is called “The way of the program.”
-
-.. index::
-   single: problem-solving
