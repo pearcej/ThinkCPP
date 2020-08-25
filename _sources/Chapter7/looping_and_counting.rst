@@ -26,6 +26,11 @@ Looping and counting
       cout << count << endl;
   }
 
+.. index:: 
+   single: counter
+   single: increment
+   single: decrement
+
 This program demonstrates a common idiom, called a **counter**. The
 variable ``count`` is initialized to zero and then incremented each time
 we find an ``’a’``. (To **increment** is to increase by one; it is the

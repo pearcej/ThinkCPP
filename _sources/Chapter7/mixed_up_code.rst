@@ -7,7 +7,7 @@ Mixed Up Code Practice
    :noindent:
    :practice: T
 
-   Write a program that prints the 4th character of ``string``, 
+   Write a program that prints the 4th character of word, 
    and finds and replaces all instances of 'i' with 'e'.
    Finally, print out the string. Put the necessary blocks in the correct order.
    -----
@@ -30,9 +30,9 @@ Mixed Up Code Practice
       while ((int)word.find('i')) {  #distractor
    =====
          word[word.find('i')] = 'e';
-      }
    =====
          word[word.find('e')] = 'i';  #distractor
+   =====
       }
    =====
       cout << word << endl;
@@ -78,11 +78,11 @@ Mixed Up Code Practice
    :noindent:
    :practice: T
 
-   Let's write the function ``longerString``, which takes two ``strings``
-   as parameters, ``first`` and ``second``. If ``first`` has more letters
-   than ``second``, ``longerString`` prints "``first`` is longer than ``second``",
-   and vice versa. If they have the same number of letters, ``longerString`` 
-   prints "``first`` and ``second`` are the same length".
+   Let's write the function longerString, which takes two parameters, 
+   first and second. If first has more letters
+   than second, longerString prints "first is longer than second",
+   and vice versa. If they have the same number of letters, longerString 
+   prints "first and second are the same length".
    Put the necessary blocks in the correct order.
    -----
    void longerString (string first, string second) {
@@ -94,14 +94,15 @@ Mixed Up Code Practice
       if (first.length() >= second.length()) {  #paired
    =====
          cout << first << " is longer than " << second << endl;
+   =====
       }
    =====
       else if (first.length() < second.length()) {
    =====
          cout << second << " is longer than " << first << endl;
-      }
    =====
          cout << second << " is longer than " << second << endl;  #paired
+   =====
       }
    =====
       else {
@@ -109,6 +110,7 @@ Mixed Up Code Practice
       else (first.length() == second.length()) {  #distractor
    =====
          cout << first << " and " << second << " are the same length" << endl;
+   =====
       }
    =====
    }
@@ -118,10 +120,10 @@ Mixed Up Code Practice
    :adaptive:
    :practice: T
 
-   Let's write the code for the ``cipherText`` function. ``cipherText`` 
-   should be a void function that takes a string input as a parameter,
+   Let's write the code for the cipherText function. cipherText 
+   should be a void function that takes input as a parameter,
    increases the value of each character by 1 (i.e. "bad" turns into "cbe"),
-   and outputs the encrypted string.
+   and prints the encrypted string.
    -----
    void cipherText (string input) {
    =====
@@ -138,12 +140,13 @@ Mixed Up Code Practice
          input[i] = input[i] - 1;  #paired
    =====
          i++;
+   =====
       }
    =====
       cout << input;
-   }
    =====
       return input;  #paired
+   =====
    }
 
 .. parsonsprob:: mucp_7_5
@@ -172,12 +175,15 @@ Mixed Up Code Practice
          if (tongue_twister[i] = 't') {  #paired
    =====
             count++;
+   =====
          }
    =====
          i++;
+   =====
       }
    =====
       cout << count;
+   =====
    }
 
 .. parsonsprob:: mucp_7_6
@@ -204,9 +210,9 @@ Mixed Up Code Practice
       int index = find (quote, 'i', first);  #paired
    =====
       cout << index;
-   }
    =====
       cout << first;  #paired
+   =====
    }
 
 .. parsonsprob:: mucp_7_7
@@ -233,15 +239,16 @@ Mixed Up Code Practice
    =====
          if (letter == 'U') {  #paired
    =====
-         cout << letter + suffix << endl;
+            cout << letter + suffix << endl;
+   =====
          }
    =====
          letter++;
-      }
-   }
    =====
          suffix++;  #paired
+   =====
       }
+   =====
    }
 
 .. parsonsprob:: mucp_7_8
@@ -250,7 +257,7 @@ Mixed Up Code Practice
    :practice: T
 
    On the strange planet of Noes, there's a law that prohibits the usage of the letter "e". 
-   As a result, they hired you to write a function called ``censorE`` that replaces all occurences
+   As a result, they hired you to write a function called censorE that replaces all occurences
    of the letter "e" in a string with an asterisk and returns the censored string. For example, 
    if the input is "hello world", the function returns "h*llo world".
    -----
@@ -271,15 +278,17 @@ Mixed Up Code Practice
          if (input[i] = 'e') {  #paired
    =====
             input[i] = '*';
-         }
    =====
             '*' = input[i];  #paired
+   =====
          }
    =====
          i++;
+   =====
       }
    =====
       return input;
+   =====
    }
 
 .. parsonsprob:: mucp_7_9
@@ -289,7 +298,7 @@ Mixed Up Code Practice
    Your work for the planet of Noes impressed the nearby planets of Noas, Nois, Noos, and Nous.
    They want you to write different functions that censor out each planet's corresponding forbidden letter.
    However, your galaxy brain knows better than to write a different function for each planet.
-   Using generalization, write the function ``censorLetter`` which takes a string input and a char to censor 
+   Using generalization, write the function censorLetter which takes input and a char to censor 
    as parameters and returns a censored string. For example, censorLetter("Bye world", 'o') returns the
    string "Bye w*rld".
    -----
@@ -308,66 +317,50 @@ Mixed Up Code Practice
          if (input[i] == "letter") {  #paired
    =====
             input[i] = '*';
-         }
    =====
             '*' = input[i];  #paired
+   =====
          }
    =====
          i++;
+   =====
       }
    =====
       return input;
+   =====
    }
 
 .. parsonsprob:: mucp_7_10
    :numbered: left
    :adaptive:
 
-   Let's write a function called ``alphabetizer`` which takes
-   three ``string``\s, ``first``, ``second``, and ``third``,
-   and returns a ``string`` which alphabetizes
-   the words and separates them with spaces. For example,
-   ``alphabetizer ("just", "do", "it")`` returns the ``string``
-   "do it just". Put the necessary blocks in the correct order.
-   Use the ``compare`` function from the ``<string>`` library.
+   Let's write a function called alphaCombine which takes
+   two strings, first and second,
+   and returns a string which concatenates first and second in
+   alphabetical order. For example,
+   alphabetizer ("zebra, mega") returns the string
+   "megazebra" since "mega" comes before "zebra" in the alphabet. 
+   Put the necessary blocks in the correct order.
    -----
-   string alphabetizer (string first, string second, string third) {
+   string alphaCombine (string first, string second) {
    =====
-   void alphabetizer (string first, string second, string third) {  #paired
+   void alphaCombine (string first, string second) {  #paired
    =====
-      if (first.compare(second) < 0) {
+      if (first > second) {
    =====
-         if (third.compare(first) < 0) {
+      if ("first" > "second") {  #paired
    =====
-            return third + " " + first + " " + second;
-         }
+         return second + first;
    =====
-         else if (third.compare(second) < 0) {
-   =====
-            return first + " " + third + " " + second;
-         }
-   =====
-         else {
-   =====
-            return first + " " + second + " " + third;
-         }
+         cout << second << first;  #distractor
       }
    =====
       else {
    =====
-         if (third.compare(second) < 0) {
+         return first + second;
    =====
-            return third + " " + second + " " + first;
-         }
+         cout << first << second;
    =====
-         else if (third.compare(first) < 0) {
-   =====
-            return second + " " + third + " " + first;
-         }
-   =====
-         else {
-   =====
-            return second + " " + first + " " + third;
-         }
       }
+   =====
    }

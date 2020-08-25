@@ -1,5 +1,8 @@
 Increment and decrement operators
 ---------------------------------
+.. index::
+   pair: operators; increment operator
+   pair: operators; decrement operator
 
 Incrementing and decrementing are such common operations that C++
 provides special operators for them. The ``++`` operator adds one to the

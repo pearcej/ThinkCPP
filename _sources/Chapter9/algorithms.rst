@@ -1,5 +1,7 @@
 Algorithms
 ----------
+.. index::
+   single: algorithms
 
 When you write a general solution for a class of problems, as opposed to
 a specific solution to a single problem, you have written an

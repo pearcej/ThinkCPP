@@ -1,5 +1,7 @@
 Leap of faith
 -------------
+.. index::
+   single: leap of faith
 
 Following the flow of execution is one way to read programs, but as you
 saw in the previous section, it can quickly become labarynthine. An

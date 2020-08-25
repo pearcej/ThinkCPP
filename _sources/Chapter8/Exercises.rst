@@ -134,7 +134,7 @@ Multiple Choice Exercises
         c.edgeLength = 4;
         c.volume = 64;
         c.mass = 128;
-        cout << c.edgeLength << ", " << c.volume << "," << c.mass << ", ";
+        cout << c.edgeLength << ", " << c.volume << ", " << c.mass << ", ";
         int density = c.mass / c.volume;
         cout << density;
       }
@@ -143,11 +143,11 @@ Multiple Choice Exercises
 
       - Check the ordering of the output statements.
 
-    - 4, 64, 128, 2
+    - 4, 64, 128
 
       - Take a closer look at the output statements. 
 
-    - 4, 64,128, 2
+    - 4, 64, 128, 2
 
       + The code outputs all instance variables and the density in the proper order. 
 
@@ -232,7 +232,7 @@ Multiple Choice Exercises
 
     - 0
 
-      + Since we pass a ``Student`` object by value to ``pourCoffee``, the function makes a copy of the object and does not modify the original. 
+      + Since we pass a ``Student`` object by value to ``pourCoffee``, the function makes a copy of the object and does not modify the original. If you wanted the original value to change, pass it by reference!
 
 .. mchoice:: mce_8_7
     :practice: T
@@ -372,7 +372,7 @@ Multiple Choice Exercises
 
     - Hello, C!
 
-      + Since 'C' is the first ``char`` in the input, this is the correct output.
+      + Since 'C' is the first ``char`` in the input, this is the correct output. The program will ignore everything that comes after the first ``char``.
 
     - Hello, C-3PO!
 

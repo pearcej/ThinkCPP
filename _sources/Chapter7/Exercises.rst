@@ -4,7 +4,7 @@ Multiple Choice Exercises
 .. mchoice:: mce_7_1
     :practice: T
 
-    Which variable below is declared as a ``string`` type?
+    Which variables below is declared as a ``string`` type?
 
     .. code-block:: cpp
 
@@ -28,6 +28,10 @@ Multiple Choice Exercises
     - ``word``
 
       + ``word`` is a ``string``.
+
+    - ``"hello"``
+
+      - "hello" is not a variable.
 
     - ``letter``
 

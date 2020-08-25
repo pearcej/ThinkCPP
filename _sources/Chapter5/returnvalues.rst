@@ -21,7 +21,7 @@ function, it is typically on a line by itself, with no assignment:
     countdown (n-1);
 
 ..	index::
-	  pair: functions; fruitful
+	  pair: functions; fruitful functions
 
 In this chapter, we are going to write functions that return things,
 which I will refer to as **fruitful** functions, for want of a better
@@ -58,7 +58,7 @@ complicated, so we could have written this function more concisely:
     }
 
 ..	index::
-	  single: temporary variables
+	  pair: variables; temporary variables
 
 On the other hand, **temporary** variables like area often make
 debugging easier. In either case, the type of the expression in the
@@ -94,7 +94,7 @@ statements.
    hits a return statement.  If you forget, your code will have errors.
 
 ..	index::
-    single: dead code
+	  pair: code; dead code
 
 Code that appears after a return statement, or any place else where it
 can never be executed, is called **dead code**. Some compilers warn you

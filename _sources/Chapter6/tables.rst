@@ -44,10 +44,16 @@ good example of iteration.
       return 0;
   }
 
+.. index::
+   single: tab
+
 The sequence ``\t`` represents a **tab** character. The sequence ``\n``
 represents a newline character. These sequences can be included anywhere
 in a string, although in these examples the sequence is the whole
 string.
+
+.. index::
+   pair: tab; tab stops
 
 A tab character causes the cursor to shift to the right until it reaches
 one of the **tab stops**, which are normally every eight characters. As
@@ -122,6 +128,9 @@ of other powers of two, we could modify the program like this:
           x = x * 2.0;
       }
   }
+
+.. index::
+   single: geometric sequence
 
 Now instead of adding something to ``x`` each time through the loop,
 which yields an arithmetic sequence, we multiply ``x`` by something,

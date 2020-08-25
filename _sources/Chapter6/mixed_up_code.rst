@@ -26,15 +26,13 @@ Mixed Up Code Practice
          cout << n << endl;
    =====
          n = n + 2;
-      }
-   }
    =====
          n++;                 #distractor
-      }
-   }
    =====
          n = n * 2;                 #distractor
+   =====
       }
+   =====
    }
 
 .. parsonsprob:: mucp_6_2
@@ -62,11 +60,11 @@ Mixed Up Code Practice
          cout << n << endl;
    =====
          n -= 10;
-      }
-   }
    =====
          n += 10;                 #distractor
+   =====
       }
+   =====
    }
 
 .. parsonsprob:: mucp_6_3
@@ -100,6 +98,7 @@ Mixed Up Code Practice
          sum = sum + n;
    =====
          n++;
+   =====
       }
    =====
    }
@@ -109,7 +108,7 @@ Mixed Up Code Practice
    :adaptive:
    :practice: T
 
-   Let's write the code for the ``repeatHello`` function. ``repeatHello`` 
+   Let's write the code for the repeatHello function. repeatHello 
    should be a void function that takes no arguments and uses a while
    loop to print out "hello" three times.  
    -----
@@ -128,16 +127,18 @@ Mixed Up Code Practice
          cout << "hello" << endl;
    =====
          n++;
+   =====
       }
+   =====
    }
 
 .. parsonsprob:: mucp_6_5
    :numbered: left
    :adaptive:
 
-   Now let's generalize the ``repeatHello`` function so that it repeats a given string three times.
-   Let's write the code for the ``repeatString`` function, which is a void function that takes 
-   a string input as a parameter and uses a while loop to print out the string three times.  
+   Now let's generalize the repeatHello function so that it repeats a given string three times.
+   Let's write the code for the repeatString function, which takes 
+   input as a parameter and uses a while loop to print out the string three times.  
    -----
    void repeatString (string input) {
    =====
@@ -154,16 +155,18 @@ Mixed Up Code Practice
          cout << string << endl;                        #paired 
    =====
          n++;
+   =====
       }
+   =====
    }
 
 .. parsonsprob:: mucp_6_6
    :numbered: left
    :adaptive:
 
-   We can further generalize ``repeatString`` so that it repeats a given string a given number of times. 
-   Let's write the code for the new ``repeatString`` function, which is a void function that takes 
-   a string input and an int x as parameters and uses a while loop to print out the string x number of times.  
+   We can further generalize repeatString so that it repeats a given string a given number of times. 
+   Let's write the code for the new repeatString function, which takes 
+   input and x as parameters and uses a while loop to print out the string x number of times.  
    -----
    void repeatString (string input, int x) {
    =====
@@ -180,11 +183,11 @@ Mixed Up Code Practice
          cout << input << endl;
    =====
          n++; 
-      }
-   }
    =====
          x++;                       #paired
+   =====
       }
+   =====
    }
 
 .. parsonsprob:: mucp_6_7
@@ -193,8 +196,8 @@ Mixed Up Code Practice
    :practice: T
 
    On the last day of every year, we count down the seconds before the new year arrives.
-   Write the function ``newYearCountdown``, which prints out a countdown from 10 and the
-   ``string`` "Happy New Year!".
+   Write the function newYearCountdown, which prints out a countdown from 10 and then
+   prints out "Happy New Year!".
    -----
    void newYearCountdown () {
    =====
@@ -211,9 +214,9 @@ Mixed Up Code Practice
          cout << n << " ";
    =====
          n--; 
-      }
    =====
-         n++;  #paired
+         n++;  #
+   =====
       }
    =====
       cout << "Happy New Year!" << endl;
@@ -225,10 +228,10 @@ Mixed Up Code Practice
    :practice: T
 
    Help Goku reach power levels of over 9000! Write the function
-   ``powerUp`` which takes an ``int powerLevel`` as a parameter.
-   ``powerUp`` checks to see if ``powerLevel`` is over 9000. If it 
-   isn't, it repeatedly prints "More power!" and increments ``powerLevel`` by 
-   1000 until ``powerLevel`` is over 9000. Then ``powerUp`` prints "It's over 9000!".
+   powerUp which takes powerLevel as a parameter.
+   powerUp checks to see if powerLevel is over 9000. If it 
+   isn't, it repeatedly prints "More power!" and increments powerLevel by 
+   1000 until powerLevel is over 9000. Then powerUp prints "It's over 9000!".
    Put the necessary blocks in the correct order.
    -----
    void powerUp (int powerLevel) {
@@ -248,7 +251,6 @@ Mixed Up Code Practice
          powerLevel++;  #paired
    =====
          n++;  #distractor
-      }
    =====
       }
    =====
@@ -262,9 +264,9 @@ Mixed Up Code Practice
    :adaptive:
    :practice: T
 
-   Write the function ``summation`` which takes two ``int``\s 
-   as parameters, ``start`` and ``end``. ``summation`` adds
-   all the integers from ``start`` to ``end``, inclusive, together and returns
+   Write the function summation which takes two 
+   parameters, start and end. summation adds
+   all the integers from start to end, inclusive, together and returns
    the sum. Put the necessary blocks in the correct order.
    -----
    int summation (int start, int end) {
@@ -286,12 +288,13 @@ Mixed Up Code Practice
          sum = sum + n; 
    =====
          n++;
+   =====
       }
    =====
       return sum;
-   }
    =====
       return n;  #distractor
+   =====
    }
 
 .. parsonsprob:: mucp_6_10
@@ -299,11 +302,11 @@ Mixed Up Code Practice
    :adaptive:
    :practice: T
 
-   Write the function ``reverseNumber`` which takes an ``int num``
-   as a parameter and returns ``num`` but with its digits reversed.
-   For example, ``reverseNumber (1324)`` returns 4231. 
-   Put the necessary blocks in the correct order, with ``reverse``
-   declared first, then ``temp``, and lastly ``remainder``.
+   Write the function reverseNumber which takes num
+   as a parameter and returns num but with its digits reversed.
+   For example, reverseNumber (1324) returns 4231. 
+   Put the necessary blocks in the correct order, with reverse
+   declared first, then temp, and lastly remainder.
    -----
    int reverseNumber (int num) {
    =====
@@ -326,10 +329,11 @@ Mixed Up Code Practice
          reverse = reverse * 10 + remainder;
    =====
          temp = temp / 10;
+   =====
       }
    =====
       return reverse;
-   }
    =====
       return temp;  #distractor
+   =====
    }

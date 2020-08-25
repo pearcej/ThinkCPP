@@ -1,5 +1,7 @@
 Call by value
 -------------
+.. index::
+   single: call by value
 
 When you pass a structure as an argument, remember that the argument and
 the parameter are not the same variable. Instead, there are two

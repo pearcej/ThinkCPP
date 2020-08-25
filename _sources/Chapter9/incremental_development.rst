@@ -1,5 +1,7 @@
 Incremental development versus planning
 ---------------------------------------
+.. index::
+   single: rapid prototyping with iterative improvement
 
 In this chapter I have demonstrated an approach to program development I
 refer to as **rapid prototyping with iterative improvement**. In each

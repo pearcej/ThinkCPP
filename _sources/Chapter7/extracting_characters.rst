@@ -1,5 +1,7 @@
 Extracting characters from a string
 -----------------------------------
+.. index::
+   pair: string; string extraction
 
 Strings are called “strings” because they are made up of a sequence, or
 string, of characters. The first operation we are going to perform on a

@@ -73,6 +73,9 @@ time:
 
      Rectangle box = { { 0.0, 0.0 }, 100.0, 200.0 };
 
+.. index::
+   pair: structure; nested structure  
+
 The innermost squiggly braces are the coordinates of the corner point;
 together they make up the first of the three values that go into the new
 ``Rectangle``. This statement is an example of **nested structure**.

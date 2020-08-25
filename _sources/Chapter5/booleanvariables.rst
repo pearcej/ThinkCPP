@@ -1,5 +1,7 @@
 Boolean Variables
 -----------------
+..	index::
+	  pair: types; bool types
 
 As usual, for every type of value, there is a corresponding type of
 variable. In C++ the boolean type is called **bool**. Boolean variables
@@ -30,6 +32,9 @@ and then use it as part of a conditional statement later
     if (evenFlag) {
       cout << "n was even when I checked it";
     }
+
+..	index::
+	  single: flag
 
 A variable used in this way is called a **flag**, since it flags the
 presence or absence of some condition.

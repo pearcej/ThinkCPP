@@ -7,9 +7,9 @@ Mixed Up Code Practice
    :noindent:
    :practice: T
 
-   Let's write the code for the ``struct`` definition of ``Song``. 
-   The ``Song`` structure will have the instance variables ``string title``, 
-   ``string artist``, ``string album``, and ``int year`` in that order. 
+   Let's write the code for the struct definition of Song. 
+   The Song structure will have the instance variables string title, 
+   string artist, string album, and int year in that order. 
    Put the necessary blocks of code in the correct order.
    -----
    struct Song {
@@ -39,7 +39,7 @@ Mixed Up Code Practice
    :adaptive:
    :noindent:
 
-   In ``main``, create a ``Song`` object called ``fly`` which holds
+   In main, create a Song object called fly which holds
    the data for Frank Sinatra's "Fly Me to the Moon" from his 1964 album "It Might as Well Be Swing".
    Put the necessary blocks of code in the correct order.
    -----
@@ -70,8 +70,8 @@ Mixed Up Code Practice
    :adaptive:
    :noindent:
 
-   Let's write the code for the ``printSong`` function. ``printSong``
-   takes a ``Song`` as a parameter and prints out the instance variables
+   Let's write the code for the printSong function. printSong
+   takes a Song as a parameter and prints out the instance variables
    in the following format: "title" by artist (album, year). Put the necessary blocks of 
    code in the correct order.
    -----
@@ -87,6 +87,8 @@ Mixed Up Code Practice
    =====
       cout << "\"" << title << "\" by " << artist;  #distractor
    =====
+      cout << """ << s.title << "" by " << s.artist;  #distractor
+   =====
       cout << " (" << album << ", " << year << ")" << endl;  #distractor
    =====
    }
@@ -96,10 +98,10 @@ Mixed Up Code Practice
    :adaptive:
    :practice: T
 
-   Let's write the code for the ``struct`` definition of ``Unicorn``. 
-   The ``Unicorn`` structure will have the instance variables ``string name``, 
-   ``int age``, ``double hornLength``, ``string hairColor``,
-   and ``bool isSparkly`` in that order. 
+   Let's write the code for the struct definition of Unicorn. 
+   The Unicorn structure will have the instance variables name, 
+   age, hornLength, hairColor, and isSparkly in that order. A Unicorn's
+   horn length is measured to the nearest tenth of a unit.
    Put the necessary blocks of code in the correct order.
    -----
    struct Unicorn {
@@ -112,9 +114,9 @@ Mixed Up Code Practice
    =====
       double hornLength;
    =====
-      bool isSparkly;
-   =====
       string hairColor;
+   =====
+      bool isSparkly;
    =====
       int hornLength;  #distractor
    =====
@@ -126,8 +128,8 @@ Mixed Up Code Practice
    :numbered: left
    :adaptive:
 
-   Let's write the code for the ``convertToHumanAge`` function. ``convertToHumanAge``
-   takes a ``Unicorn`` as a parameter and returns the equivalent human age.
+   Let's write the code for the convertToHumanAge function. convertToHumanAge
+   takes a Unicorn as a parameter and returns the equivalent human age.
    If a unicorn is sparkly, then its equivalent human age is three times its age in unicorn years
    plus the length of its horn. If a unicorn is not sparkly, then its equivalent human age is
    four times its age in unicorn years plus twice the length of its horn.
@@ -142,14 +144,17 @@ Mixed Up Code Practice
       if (isSparkly) {  #paired
    =====
          return 3 * u.age + u.hornLength;
-      }
    =====
          return 3 * age + hornLength;  #paired
+   =====
       }
    =====
       else {
    =====
          return 4 * u.age + 2 * u.hornLength;
+   =====
+         return 4 * age + 2 * hornLength;  #distractor
+   =====
       }
    =====
       int humanYears;  #distractor
@@ -160,14 +165,14 @@ Mixed Up Code Practice
    :numbered: left
    :adaptive:
 
-   Let's write the code for the ``unicornPower`` function. ``unicornPower``
-   is a void function that takes a ``Unicorn`` as a parameter and 
-   sets ``isSparkly`` to true and changes the color to rainbow.
+   Let's write the code for the unicornPower function. unicornPower
+   takes a Unicorn as a parameter and 
+   sets isSparkly to true and changes the color to rainbow.
    Put the necessary blocks of code in the correct order.
    -----
    void unicornPower (Unicorn& u) {
    =====
-   &unicornPower (Unicorn u) {  #distractor
+   void &unicornPower (Unicorn u) {  #distractor
    =====
    void unicornPower (Unicorn u) {  #distractor
    =====
@@ -186,12 +191,12 @@ Mixed Up Code Practice
    :adaptive:
    :practice: T
 
-   Let's write the code for the ``struct`` definitions of ``Address`` and ``Employee``. 
-   The ``Address`` structure will have the instance variables ``int houseNumber``, 
-   ``string state`` (abbreviation), and ``int postalAddress`` in that order. The ``Employee`` 
-   structure will be a nested structure with the instance variables ``string name``, 
-   ``int id``, ``double salary``, and ``Address address`` in that order. 
-   Put the necessary blocks of code in the correct order, with ``Address`` defined before ``Employee``.
+   Let's write the code for the struct definitions of Address and Employee. 
+   The Address structure will have the instance variables houseNumber, 
+   state (abbreviation), and postalAddress in that order. The Employee 
+   structure will be a nested structure with the instance variables name 
+   and Address address in that order. 
+   Put the necessary blocks of code in the correct order, with Address defined before Employee.
    -----
    struct Address {
    =====
@@ -213,25 +218,22 @@ Mixed Up Code Practice
    =====
       string name;
    =====
-      int id;
-   =====
-      double salary;
-   =====
       Address address;
+   =====
    };
    =====
       string address;  #distractor
    =====
       Address;  #distractor
    =====
-   }
+   }  #distractor
 
 .. parsonsprob:: mucp_8_8
    :numbered: left
    :adaptive:
 
-   Let's write the code for the ``printAddress`` function. ``printAddress`` takes
-   an ``Employee`` as a parameter and should print out the information of the employee in the 
+   Let's write the code for the printAddress function. printAddress takes
+   an Employee as a parameter and should print out the information of the employee in the 
    following format: name (id) lives at houseNumber in state, postalAddress.
    Put the necessary blocks of code in the correct order.
    -----
@@ -256,8 +258,8 @@ Mixed Up Code Practice
    :adaptive:
 
    Sometimes employees will move around and thus we'll need to update their addresses.
-   Let's write the code for the ``updateAddress`` function. ``updateAddress`` takes an
-   ``Employee`` and a new ``Address`` as parameters and sets the employee's address to the new address.
+   Let's write the code for the updateAddress function. updateAddress takes an
+   Employee and a new Address as parameters and sets the employee's address to the new address.
    Put the necessary blocks of code in the correct order.
    -----
    void updateAddress (Employee& e, Address a) {
@@ -288,7 +290,7 @@ Mixed Up Code Practice
    :numbered: left
    :adaptive:
 
-   Let's write the code for the ``storeEmployeeData`` function. ``storeEmployeeData`` doesn't
+   Let's write the code for the storeEmployeeData function. storeEmployeeData doesn't
    take any parameters and prompts the user for information regarding their
    name, id, salary, and address in that order. It then returns an Employee object with
    the stored data. Declare all variables before prompting the user.
@@ -308,18 +310,6 @@ Mixed Up Code Practice
    =====
       cin >> e.name;  #paired
    =====
-      cout << "What is your id? ";
-   =====
-      cin >> e.id;
-   =====
-      cin << e.id;  #paired
-   =====
-      cout << "What is your salary? ";
-   =====
-      cin >> e.salary;
-   =====
-      cout >> e.salary;  #paired
-   =====
       cout << "What is your house number? ";
    =====
       cin >> e.address.houseNumber;
@@ -337,7 +327,7 @@ Mixed Up Code Practice
       cin >> e.address.postalAddress;
    =====
       return e;
-   }
    =====
       return Employee e;  #paired
+   =====
    }
