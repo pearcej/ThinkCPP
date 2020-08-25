@@ -1,5 +1,7 @@
 Which is best?
 --------------
+.. index::
+   single: functional programming languages
 
 .. index::
    single: functional programming language

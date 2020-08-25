@@ -15,6 +15,7 @@ because it avoids copying the argument. Furthermore, there is a nice
 feature in C++, called ``const``, that can make reference parameters
 just as safe as value parameters.
 
+
 .. index::
    single: constant reference
    single: constant reference parameter

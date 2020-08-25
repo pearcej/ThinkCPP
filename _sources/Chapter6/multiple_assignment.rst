@@ -45,6 +45,9 @@ The output of this program is ``57``, because the first time we print
 However, if we do not print ``fred`` the first time, the output is only 7 because
 the value of ``fred`` is just 7 when it is printed.
 
+.. index::
+   single: multiple assignment
+
 This kind of **multiple assignment** is the reason I described variables
 as a *container* for values. When you assign a value to a variable, you
 change the contents of the container, as shown in the figure:

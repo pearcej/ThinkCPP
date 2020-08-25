@@ -1,5 +1,7 @@
 Bool Functions
 --------------
+.. index::
+   pair: functions; bool functions
 
 Functions can return bool values just like any other type, which is
 often convenient for hiding complicated tests inside functions. For
@@ -7,8 +9,7 @@ example:
 
 ::
 
-    bool isSingleDigit (int x)
-    {
+    bool isSingleDigit (int x) {
       if (x >= 0 && x < 10) {
         return true;
       } 
@@ -29,8 +30,7 @@ the if statement altogether:
 
 ::
 
-    bool isSingleDigit (int x)
-    {
+    bool isSingleDigit (int x) {
       return (x >= 0 && x < 10);
     }
 
@@ -49,13 +49,11 @@ In main you can call this function in the usual ways:
   #include <cmath>
   using namespace std;
 
-   bool isSingleDigit (int x)
-   {
+   bool isSingleDigit (int x) {
      return (x >= 0 && x < 10);
    }
 
-    int main ()
-    {
+    int main () {
       cout << isSingleDigit (2) << endl;
       bool bigFlag = !isSingleDigit (17);
       cout << bigFlag;
@@ -75,7 +73,8 @@ The most common use of bool functions is inside conditional statements
 
       if (isSingleDigit (x)) {
         cout << "x is little" << endl;
-      } else {
+      } 
+      else {
         cout << "x is big" << endl;
       }
 

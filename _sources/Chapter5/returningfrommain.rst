@@ -7,8 +7,7 @@ to return an integer:
 
 ::
 
-    int main ()
-    {
+    int main () {
       return 0;
     }
 

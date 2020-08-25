@@ -7,7 +7,10 @@ have a choice of several possible interfaces, so you should consider the
 pros and cons of each of these:
 
 .. index::
-   single: pure function
+   pair: functions; pure functions
+   single: modifier
+   pair: functions; fill-in functions
+
 
 pure function:
    Takes objects and/or basic types as arguments but does not modify the

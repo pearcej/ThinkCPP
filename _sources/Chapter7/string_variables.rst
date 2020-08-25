@@ -1,5 +1,8 @@
 ``string`` variables
 --------------------
+.. index::
+   pair: variables; string variables
+   pair: string; string variables
 
 You can create a variable with type ``string`` in the usual ways.
 

@@ -1,5 +1,7 @@
 Logical operators
 -----------------
+.. index::
+   single: logical operators 
 
 There are three **logical operators** in C++: AND, OR and NOT, which are
 denoted by the symbols ''&&'', ''\|\|'' and ''!''. The semantics (meaning) of these

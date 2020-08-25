@@ -1,5 +1,7 @@
 More recursion
 --------------
+.. index::
+   pair: programming language; complete programming language
 
 So far we have only learned a small subset of C++, but you might be
 interested to know that this subset is now a **complete** programming
@@ -24,6 +26,9 @@ truly circular definition is typically not very useful:
 
 frabjuous:
     an adjective used to describe something that is frabjuous.
+
+.. index::
+   single: factorial 
 
 If you saw that definition in the dictionary, you might be annoyed. On
 the other hand, if you looked up the definition of the mathematical

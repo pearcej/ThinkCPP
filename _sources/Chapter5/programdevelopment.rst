@@ -1,5 +1,7 @@
 Program Development
 -------------------
+..	index::
+	  pair: development; incremental development
 
 At this point you should be able to look at complete C++ functions and
 tell what they do. But it may not be clear yet how to go about writing
@@ -74,6 +76,9 @@ before proceeding. As I mentioned, I already know that they should be
    If you are ever unsure why a function isn't returning what you
    expect it to, using ``cout`` statements at different steps in
    your function will help you figure it out.
+
+..	index::
+   single: scaffolding
 
 When the function is finished I will remove the output statements. Code
 like that is called **scaffolding**, because it is helpful for building

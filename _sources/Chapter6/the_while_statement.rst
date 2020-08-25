@@ -42,6 +42,10 @@ follows:
 #. If the condition is true, execute each of the statements between the
    squiggly-braces, and then go back to step 1.
 
+.. index::
+   single: loop
+   pair: loop; body
+
 This type of flow is called a **loop** because the third step loops back
 around to the top. Notice that if the condition is false the first time
 through the loop, the statements inside the loop are never executed. The
@@ -58,6 +62,9 @@ an infinite loop.
    Make sure your while loops don't loop forever! If they are
    meant to terminate, make sure to change the value of a variable, like
    incrementing or decrementing a counter.
+
+.. index::
+   single: iteration
 
 In the case of ``countdown``, we can prove that the loop will terminate
 because we know that the value of ``n`` is finite, and we can see that

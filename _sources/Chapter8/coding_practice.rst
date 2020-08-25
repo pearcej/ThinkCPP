@@ -87,20 +87,16 @@ Coding Practice
            #include <iostream>
            using namespace std;
 
-           struct Robot {
-               // Write your implementation here.
-           };
+           // Write your code for the struct Robot here.
 
-           void printRobotData (Robot r) {
-               // Write your implementation here.
-           }
+           // Write your code for the function printRobotData here.
 
            int main() {
                Robot rob = { "Rob", "XLV", 9800, 45, "washing dishes" };
-               
-               // Should output: Rob (XLV 9800) has 45 percent battery 
-               // and is currently executing the task "washing dishes".
-               printRobotData (rob);
+               cout << "Your output:" << endl;
+               printRobotData (rob); 
+               cout << "Correct output:" << endl;
+               cout << "Rob (XLV 9800) has 45 percent battery and is currently executing the task \"washing dishes\"";
            }
 
 
@@ -134,10 +130,10 @@ Coding Practice
 
            int main() {
                Robot rob = { "Rob", "XLV", 9800, 45, "washing dishes" };
-               
-               // Should output: Rob (XLV 9800) has 45 percent battery 
-               // and is currently executing the task "washing dishes".
-               printRobotData (rob);
+               cout << "Your output:" << endl;
+               printRobotData (rob); 
+               cout << "Correct output:" << endl;
+               cout << "Rob (XLV 9800) has 45 percent battery and is currently executing the task \"washing dishes\"";
            }
 
 .. activecode:: cp_8_AC_4q
@@ -161,14 +157,15 @@ Coding Practice
 
     void printRobotData (Robot r);
 
-    void chargeRobot (Robot& r) {
-        // Write your implementation here.
-    }
+    // Write your code for the function chargeRobot here.
 
     int main() {
         Robot bob = { "Bob", "MKZ", 143, 65, "sweeping floors" };
         chargeRobot (bob);
-        printRobotData (bob);  // Bob should now have 100 percent batter
+        cout << "Your output:" << endl;
+        printRobotData (bob); 
+        cout << "Correct output:" << endl;
+        cout << "Bob (MKZ 143) has 100 percent battery and is currently executing the task \"sweeping floors\"";
     }
     ====
     void printRobotData (Robot r) {
@@ -202,14 +199,15 @@ Coding Practice
 
            void printRobotData (Robot r);
 
-           void resetRobot (Robot& r) {
-               // Write your implementation here.
-           }
+           // Write your code for the function resetRobot here.
 
            int main() {
                Robot a = { "Bot", "RSO", 1985, 32, "gardening" };
                resetRobot (a);
-               printRobotData (a);  // Bot should be reset
+               cout << "Your output:" << endl;
+               printRobotData (a); 
+               cout << "Correct output:" << endl;
+               cout << "EnterAName (RSO 1985) has 100 percent battery and is currently executing the task \"Idle\"";
            }
            ====
            void printRobotData (Robot r) {
@@ -252,7 +250,10 @@ Coding Practice
            int main() {
                Robot a = { "Bot", "RSO", 1985, 32, "gardening" };
                resetRobot (a);
-               printRobotData (a);  // Bot should be reset
+               cout << "Your output:" << endl;
+               printRobotData (a); 
+               cout << "Correct output:" << endl;
+               cout << "EnterAName (RSO 1985) has 100 percent battery and is currently executing the task \"Idle\"";
            }
            ====
            void printRobotData (Robot r) {
@@ -274,17 +275,16 @@ Coding Practice
     #include <iostream>
     using namespace std;
 
-    struct Pokemon {
-        // Write your implementation here.
-    };
+    // Write your code for the struct Pokemon here.
 
-    void printPokeInfo (Pokemon p) {
-        // Write your implementation here.
-    }
+    // Write your code for the function printPokeInfo here.
 
     int main() {
         Pokemon magikarp = { "Magikarp", "Water", 12, 100 };
-        printTrainerInfo (magikarp);
+        cout << "Your output:" << endl;
+        printPokeInfo (magikarp); 
+        cout << "Correct output:" << endl;
+        cout << "Magikarp (Lv. 12, 100% HP)";
     }  
 
 .. tabbed:: cp_8_7
@@ -320,15 +320,11 @@ Coding Practice
                int healthPercentage;
            };
 
-           struct Trainer {
-               // Write your implementation here.
-           };
+           // Write your code for the struct Trainer here.
 
            void printPokeInfo(Pokemon p);
 
-           void printTrainerInfo (Trainer t) {
-               // Write your implementation here.
-           }
+           // Write your code for the function printTrainerInfo here.
 
            int main() {
                Pokemon pikachu = { "Pikachu", "Electric", 81, 100 };
@@ -428,9 +424,7 @@ Coding Practice
     void printPokeInfo(Pokemon p);
     void printTrainerInfo(Trainer t);
 
-    void healPokemon(Trainer& t) { 
-        // Write your implementation here.
-    }
+    // Write your code for the function healPokemon here.
 
     int main() {
         Pokemon exeggutor = {"Exeggutor", "Grass & Psychic", 58, 78};
@@ -511,9 +505,7 @@ Coding Practice
            void printTrainerInfo(Trainer t);
            void healPokemon(Trainer& t);
 
-           void pokeCenter(Trainer& t) {
-               // Write your implementation here.
-           }
+           // Write your code for the function pokeCenter here.
 
            int main() {
                Pokemon exeggutor = {"Exeggutor", "Grass & Psychic", 58, 78};
@@ -673,9 +665,7 @@ Coding Practice
     #include <iostream>
     using namespace std;
 
-    double convertWeight (double earthWeight, int planet) {
-        // Write your implementation here.
-    }
+    // Write your code for the function convertWeight here.
 
     int main() {
         // Write your implementation here.

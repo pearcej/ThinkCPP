@@ -23,6 +23,9 @@ or structure. The answer is a ``struct`` definition:
 usually at the beginning of the program (after the ``include``
 statements).
 
+.. index::
+   pair: variables; instance variables
+
 This definition indicates that there are two elements in this structure,
 named ``x`` and ``y``. These elements are called **instance variables**,
 for reasons I will explain a little later.

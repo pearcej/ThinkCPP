@@ -1,5 +1,7 @@
 Local variables
 ---------------
+.. index::
+   pair: variables; local variables
 
 About this time, you might be wondering how we can use the same variable
 ``i`` in both ``printMultiples`` and ``printMultTable``. Didn’t I say

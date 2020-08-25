@@ -21,6 +21,9 @@ different from what we’ve seen before.
       cout << length << endl;
   }
 
+.. index::
+   single: invoking
+
 To describe this function call, we would say that we are **invoking**
 the length function on the string named ``fruit``. This vocabulary may
 seem strange, but we will see many more examples where we invoke a

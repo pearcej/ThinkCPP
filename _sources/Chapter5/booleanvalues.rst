@@ -1,5 +1,7 @@
 Boolean Values
 --------------
+..	index::
+	  pair: types; boolean types
 
 The types we have seen so far are pretty big. There are a lot of
 integers in the world, and even more floating-point numbers. By

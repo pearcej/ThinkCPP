@@ -22,9 +22,9 @@ Coding Practice
            }
 
            int main() {
-               cout << isPalindrome ("racecar") << endl;               // Should output 1
-               cout << isPalindrome ("no lemon, no melon") << endl;    // Should output 1
-               cout << isPalindrome ("kangaroo") << endl;              // Should output 0
+               cout << "Your output: " << isPalindrome ("racecar") << ", Correct output: 1" << endl; 
+               cout << "Your output: " << isPalindrome ("no lemon, no melon") << ", Correct output: 1" << endl; 
+               cout << "Your output: " << isPalindrome ("kangaroo") << ", Correct output: 0" << endl; 
            }
 
 
@@ -63,9 +63,9 @@ Coding Practice
            }
 
            int main() {
-               cout << isPalindrome ("racecar") << endl;               // Should output 1
-               cout << isPalindrome ("no lemon, no melon") << endl;    // Should output 1
-               cout << isPalindrome ("kangaroo") << endl;              // Should output 0
+               cout << "Your output: " << isPalindrome ("racecar") << ", Correct output: 1" << endl; 
+               cout << "Your output: " << isPalindrome ("no lemon, no melon") << ", Correct output: 1" << endl; 
+               cout << "Your output: " << isPalindrome ("kangaroo") << ", Correct output: 0" << endl; 
            }
 
 .. activecode:: cp_7_AC_2q
@@ -104,7 +104,7 @@ Coding Practice
             "pepper shrimp, shrimp soup, shrimp stew, shrimp salad, shrimp and "
             "potatoes, shrimp burger, shrimp sandwich. That- that's about "
             "it.";
-        cout << countWord(quote, "shrimp");    // There should be 14 instances of the word "shrimp"
+        cout << "Your output: " << countWord(quote, "shrimp") << ", Correct output: 14" << endl; 
     }
 
 .. tabbed:: cp_7_3
@@ -221,9 +221,9 @@ Coding Practice
                string original = "Encrypt me then decrypt me!";
                string encrypted = ROT13 (original);
                string decrypted = ROT13 (encrypted);
-               cout << original << endl;
-               cout << encrypted << endl;
-               cout << decrypted << endl;
+               cout << "Original string: " << original << endl;
+               cout << "Encrypted string: " << encrypted << endl;
+               cout << "Decrypted string: " << decrypted << endl;
 
                // Uncomment and run the code below once your function works!
                // string secretMessage = "Pbatenghyngvbaf! Lbh'ir fhpprffshyyl vzcyrzragrq EBG13 naq qrpbqrq gur frperg zrffntr :)";
@@ -266,9 +266,9 @@ Coding Practice
                string original = "Encrypt me then decrypt me!";
                string encrypted = ROT13 (original);
                string decrypted = ROT13 (encrypted);
-               cout << original << endl;
-               cout << encrypted << endl;
-               cout << decrypted << endl;
+               cout << "Original string: " << original << endl;
+               cout << "Encrypted string: " << encrypted << endl;
+               cout << "Decrypted string: " << decrypted << endl;
 
                // Uncomment and run the code below once your function works!
                // string secretMessage = "Pbatenghyngvbaf! Lbh'ir fhpprffshyyl vzcyrzragrq EBG13 naq qrpbqrq gur frperg zrffntr :)";
@@ -290,9 +290,9 @@ Coding Practice
     }
 
     int main() {
-        cout << reverseWord ("hello") << endl;      // Should output "olleh"
-        cout << reverseWord ("world") << endl;      // Should output "dlrow"
-        cout << reverseWord ("racecar") << endl;    // Should output "racecar"
+        cout << "Your output: " << reverseWord ("hello") << ", Correct output: olleh" << endl; 
+        cout << "Your output: " << reverseWord ("world") << ", Correct output: dlrow" << endl; 
+        cout << "Your output: " << reverseWord ("racecar") << ", Correct output: racecar" << endl; 
     }
 
 .. tabbed:: cp_7_7
@@ -359,7 +359,7 @@ Coding Practice
     :practice: T
 
     Write the function ``countVowels`` which takes a ``string input`` and returns
-    the number of vowerls in the ``string``. Remember, 'a', 'e', 'i', 'o', and 'u'
+    the number of vowels in the ``string``. Remember, 'a', 'e', 'i', 'o', and 'u'
     are vowels.
     ~~~~
     #include <iostream>
@@ -370,9 +370,9 @@ Coding Practice
     }
 
     int main() {
-        cout << countVowels ("onomatopoeia") << endl;      // Should output 8
-        cout << countVowels ("cysts") << endl;             // Should output 0
-        cout << countVowels ("vowels") << endl;            // Should output 2
+        cout << "Your output: " << countVowels ("onomatopoeia") << ", Correct output: 8" << endl; 
+        cout << "Your output: " << countVowels ("cysts") << ", Correct output: 0" << endl; 
+        cout << "Your output: " << countVowels ("vowels") << ", Correct output: 2" << endl; 
     }
 
 .. tabbed:: cp_7_9
@@ -395,8 +395,8 @@ Coding Practice
            }
 
            int main() {
-               cout << longestWord ("what is the longest word in this string") << endl;  // Should output "longest"
-               cout << longestWord ("these words are very close in size") << endl;       // Should output "these"
+               cout << "Your output: " << longestWord ("what is the longest word in this string") << ", Correct output: longest" << endl; 
+               cout << "Your output: " << longestWord ("these words are very close in size") << ", Correct output: these" << endl; 
            }
 
 
@@ -436,8 +436,8 @@ Coding Practice
            }
 
            int main() {
-               cout << longestWord ("what is the longest word in this string") << endl;  // Should output "longest"
-               cout << longestWord ("these words are very close in size") << endl;       // Should output "these"
+               cout << "Your output: " << longestWord ("what is the longest word in this string") << ", Correct output: longest" << endl; 
+               cout << "Your output: " << longestWord ("these words are very close in size") << ", Correct output: these" << endl; 
            }
 
 .. activecode:: cp_7_AC_10q
@@ -465,6 +465,6 @@ Coding Practice
     }
 
     int main() {
-        cout << snakeToCamel ("turn_this_into_camel_case") << endl;   // Should output "turnThisIntoCamelCase"
-        cout << camelToSnake ("turnThisIntoSnakeCase") << endl;       // Should output "turn_this_into_snake_case"
+        cout << "Your output: " << snakeToCamel ("turn_this_into_camel_case") << ", Correct output: turnThisIntoCamelCase" << endl; 
+        cout << "Your output: " << camelToSnake ("turnThisIntoSnakeCase") << ", Correct output: turn_this_into_snake_case" << endl; 
     }

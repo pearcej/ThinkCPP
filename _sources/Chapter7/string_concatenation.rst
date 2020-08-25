@@ -1,5 +1,7 @@
 String concatenation
 --------------------
+.. index::
+   pair: string; string concatenation
 
 Interestingly, the ``+`` operator can be used on strings; it performs
 string **concatenation**. To concatenate means to join the two operands

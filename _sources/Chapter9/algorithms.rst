@@ -1,5 +1,7 @@
 Algorithms
 ----------
+.. index::
+   single: algorithms
 
 .. index::
    single: algorithm

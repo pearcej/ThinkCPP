@@ -29,6 +29,9 @@ of 2, all on one line.
       return 0;
   }
 
+.. index::
+   pair: loop; variable
+
 The first line initializes a variable named ``i``, which is going to act
 as a counter, or **loop variable**. As the loop executes, the value of
 ``i`` increases from 1 to 6, and then when ``i`` is 7, the loop
@@ -41,6 +44,10 @@ The output of this program is:
 ::
 
    2   4   6   8   10   12
+
+.. index::
+   single: encapsulate
+   single: generalize
 
 So far, so good. The next step is to **encapsulate** and **generalize**.
 

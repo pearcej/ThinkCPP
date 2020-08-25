@@ -1,5 +1,7 @@
 Call by reference
 -----------------
+.. index:: 
+   single: call by reference
 
 An alternative parameter-passing mechanism that is available in C++ is
 called “pass by reference.” This mechanism makes it possible to pass a

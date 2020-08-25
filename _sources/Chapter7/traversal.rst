@@ -1,5 +1,7 @@
 Traversal
 ---------
+.. index::
+   single: traversal
 
 A common thing to do with a string is start at the beginning, select
 each character in turn, do something to it, and continue until the end.
@@ -33,6 +35,9 @@ itself. Notice that the condition is ``index < lengthfruit``, which
 means that when ``index`` is equal to the length of the string, the
 condition is false and the body of the loop is not executed. The last
 character we access is the one with the index ``fruit.length()-1``.
+
+.. index::
+   single: index
 
 The name of the loop variable is ``index``. An **index** is a variable
 or value used to specify one member of an ordered set, in this case the

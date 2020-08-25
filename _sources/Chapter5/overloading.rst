@@ -9,6 +9,9 @@ we provide two points.
 If two functions do the same thing, it is natural to give them the same
 name. In other words, it would make more sense if ``fred`` were called ``area``.
 
+..	index::
+    single: overloading
+
 Having more than one function with the same name, which is called
 **overloading**, is legal in C++ *as long as each version takes
 different parameters*. So we can go ahead and rename ``fred``:

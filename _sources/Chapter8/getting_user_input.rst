@@ -27,6 +27,9 @@ If the user types something other than an integer, C++ doesn’t report an
 error, or anything sensible like that. Instead, it puts some meaningless
 value in ``x`` and continues.
 
+.. index::
+   single: stream state
+
 Fortunately, there is a way to check and see if an input statement
 succeeds. We can invoke the ``good`` function on ``cin`` to check what
 is called the **stream state**. ``good`` returns a ``bool``: if true,
