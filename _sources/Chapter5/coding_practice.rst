@@ -9,7 +9,7 @@ Coding Practice
         ``second``, and a ``char operation`` as parameters. ``calculator`` performs
         addition, subtraction, multiplication, or division with the two ``double``\s 
         depending on what operation is passed in (+, -, *, /). It then returns the result.
-        Test your function in ``main``.
+        Run and test your code!
 
         .. activecode:: cp_5_AC_1q
            :language: cpp
@@ -21,14 +21,29 @@ Coding Practice
            double calculator (double first, double second, char operation) {
                // Write your implementation here.
            }
+           ====
+           #define CATCH_CONFIG_MAIN
+           #include <catch.hpp>
 
-           int main() {
-               cout << "Your output: " << calculator (3, 6, '+') << ", Correct output: 9" << endl;
-               cout << "Your output: " << calculator (19, 2, '-') << ", Correct output: 17" << endl;
-               cout << "Your output: " << calculator (5, 8, '*') << ", Correct output: 40" << endl;
-               cout << "Your output: " << calculator (16, 4, '/') << ", Correct output: 4" << endl;
+           TEST_CASE("calculator function: addition") {
+               REQUIRE(calculator(3, 6, '+') == 9);
+               REQUIRE(calculator(-2.6, 4, '+') == 1.4);
            }
 
+           TEST_CASE("calculator function: subtraction") {
+               REQUIRE(calculator(19, 2, '-') == 17);
+               REQUIRE(calculator(-2.3, 2, '-') == -4.3);
+           }
+
+           TEST_CASE("calculator function: multiplication") {
+               REQUIRE(calculator(5, 8, '*') == 40);
+               REQUIRE(calculator(0.5, -6, '*') == -3.0);
+           }
+
+           TEST_CASE("calculator function: division") {
+               REQUIRE(calculator(16, 4, '/') == 4);
+               REQUIRE(calculator(3, 8, '/') == 0.375);
+           }
 
     .. tab:: Answer
 
@@ -56,12 +71,28 @@ Coding Practice
                    return first / second;
                }
            }
+           ====
+           #define CATCH_CONFIG_MAIN
+           #include <catch.hpp>
 
-           int main() {
-               cout << "Your output: " << calculator (3, 6, '+') << ", Correct output: 9" << endl;
-               cout << "Your output: " << calculator (19, 2, '-') << ", Correct output: 17" << endl;
-               cout << "Your output: " << calculator (5, 8, '*') << ", Correct output: 40" << endl;
-               cout << "Your output: " << calculator (16, 4, '/') << ", Correct output: 4" << endl;
+           TEST_CASE("calculator function: addition") {
+               REQUIRE(calculator(3, 6, '+') == 9);
+               REQUIRE(calculator(-2.6, 4, '+') == 1.4);
+           }
+
+           TEST_CASE("calculator function: subtraction") {
+               REQUIRE(calculator(19, 2, '-') == 17);
+               REQUIRE(calculator(-2.3, 2, '-') == -4.3);
+           }
+
+           TEST_CASE("calculator function: multiplication") {
+               REQUIRE(calculator(5, 8, '*') == 40);
+               REQUIRE(calculator(0.5, -6, '*') == -3.0);
+           }
+
+           TEST_CASE("calculator function: division") {
+               REQUIRE(calculator(16, 4, '/') == 4);
+               REQUIRE(calculator(3, 8, '/') == 0.375);
            }
 
 .. activecode:: cp_5_AC_2q
@@ -72,7 +103,7 @@ Coding Practice
     Write a function ``convertToBinary`` which takes a ``decimal`` as
     a parameter. ``convertToBinary`` takes the number in decimal, converts
     it into a binary number, and returns the binary number. Test your function
-    in ``main``.
+    in ``main``. Run and test your code!
     ~~~~
     #include <iostream>
     using namespace std;
@@ -80,12 +111,15 @@ Coding Practice
     int convertToBinary (int decimal) {
         // Write your implementation here.
     }
+    ====
+    #define CATCH_CONFIG_MAIN
+    #include <catch.hpp>
 
-    int main() {
-        cout << "Your output: " << convertToBinary (1) << ", Correct output: 1" << endl;
-        cout << "Your output: " << convertToBinary (5) << ", Correct output: 101" << endl;
-        cout << "Your output: " << convertToBinary (16) << ", Correct output: 10000" << endl;
-        cout << "Your output: " << convertToBinary (31) << ", Correct output: 11111" << endl;
+    TEST_CASE("convertToBinary function") {
+        REQUIRE(convertToBinary (1) == 1);
+        REQUIRE(convertToBinary (5) == 101);
+        REQUIRE(convertToBinary (16) == 10000);
+        REQUIRE(convertToBinary (31) == 11111);
     }
 
 .. tabbed:: cp_5_3
@@ -100,6 +134,7 @@ Coding Practice
         as a parameter and returns a ``double``. ``calculateIntAngle`` finds the 
         interior angle of a regular polygon with ``numSides`` sides. The formula
         to find the interior angle of a regular ngon is (n - 2) x 180 / n.
+        Run and test your code!
 
         .. activecode:: cp_5_AC_3q
            :language: cpp
@@ -111,12 +146,15 @@ Coding Practice
            double calculateIntAngle (int numSides) {
                // Write your implementation here.
            }
+           ====
+           #define CATCH_CONFIG_MAIN
+           #include <catch.hpp>
 
-           int main() {
-               cout << "Your output: " << calculateIntAngle (3) << ", Correct output: 60" << endl;
-               cout << "Your output: " << calculateIntAngle (4) << ", Correct output: 90" << endl;
-               cout << "Your output: " << calculateIntAngle (5) << ", Correct output: 108" << endl;
-               cout << "Your output: " << calculateIntAngle (8) << ", Correct output: 135" << endl;
+           TEST_CASE("calculateIntAngle function") {
+               REQUIRE(calculateIntAngle (3) == 60);
+               REQUIRE(calculateIntAngle (4) == 90);
+               REQUIRE(calculateIntAngle (5) == 108);
+               REQUIRE(calculateIntAngle (8) == 135);
            }
 
 
@@ -136,12 +174,15 @@ Coding Practice
            double calculateIntAngle (int numSides) {
                return (numSides - 2) * 180.0 / numSides;
            }
+           ====
+           #define CATCH_CONFIG_MAIN
+           #include <catch.hpp>
 
-           int main() {
-               cout << "Your output: " << calculateIntAngle (3) << ", Correct output: 60" << endl;
-               cout << "Your output: " << calculateIntAngle (4) << ", Correct output: 90" << endl;
-               cout << "Your output: " << calculateIntAngle (5) << ", Correct output: 108" << endl;
-               cout << "Your output: " << calculateIntAngle (8) << ", Correct output: 135" << endl;
+           TEST_CASE("calculateIntAngle function") {
+               REQUIRE(calculateIntAngle (3) == 60);
+               REQUIRE(calculateIntAngle (4) == 90);
+               REQUIRE(calculateIntAngle (5) == 108);
+               REQUIRE(calculateIntAngle (8) == 135);
            }
 
 .. activecode:: cp_5_AC_4q
@@ -156,6 +197,7 @@ Coding Practice
     two parameters, ``month`` and ``day``. ``birthSeason`` calculates which season
     the birthday falls in according to the meteorological start and returns a ``string`` with the correct season.
     For example, ``birthSeason (7, 5)`` returns "summer" since July 5 is in the summer.
+    Run and test your code!
     ~~~~
     #include <iostream>
     using namespace std;
@@ -163,12 +205,32 @@ Coding Practice
     string birthSeason (int month, int day) {
         // Write your implementation here.
     }
+    ====
+    #define CATCH_CONFIG_MAIN
+    #include <catch.hpp>
 
-    int main() {
-        cout << "Your output: " << birthSeason (5, 3) << ", Correct output: spring" << endl;
-        cout << "Your output: " << birthSeason (7, 5) << ", Correct output: summer" << endl;
-        cout << "Your output: " << birthSeason (11, 24) << ", Correct output: fall" << endl;
-        cout << "Your output: " << birthSeason (2, 20) << ", Correct output: winter" << endl;
+    TEST_CASE("birthSeason function: spring") {
+        REQUIRE(birthSeason (5, 3) == "spring");
+        REQUIRE(birthSeason (3, 1) == "spring");
+        REQUIRE(birthSeason (5, 31) == "spring");
+    }
+
+    TEST_CASE("birthSeason function: summer") {
+        REQUIRE(birthSeason (7, 5) == "summer");
+        REQUIRE(birthSeason (6, 1) == "summer");
+        REQUIRE(birthSeason (8, 31) == "summer");
+    }
+
+    TEST_CASE("birthSeason function: fall") {
+        REQUIRE(birthSeason (11, 24) == "fall");
+        REQUIRE(birthSeason (9, 1) == "fall");
+        REQUIRE(birthSeason (11, 30) == "fall");
+    }
+
+    TEST_CASE("birthSeason function: winter") {
+        REQUIRE(birthSeason (2, 20) == "winter");
+        REQUIRE(birthSeason (12, 1) == "winter");
+        REQUIRE(birthSeason (2, 28) == "winter");
     }
 
 .. tabbed:: cp_5_5
@@ -182,7 +244,7 @@ Coding Practice
         ``dogToHumanYears`` converts and returns the dog's age to human years. 
         A one year old dog is 15 years old in human years; a two year old dog is 24 years old in human years. 
         Each year after the second year counts as 4 additional human years. For example, a dog that is
-        3 years old is actually 28 years old in human years.
+        3 years old is actually 28 years old in human years. Run and test your code!
 
         .. activecode:: cp_5_AC_5q
            :language: cpp
@@ -194,12 +256,18 @@ Coding Practice
            int dogToHumanYears (int dogAge) {
                // Write your implementation here.
            }
+           ====
+           #define CATCH_CONFIG_MAIN
+           #include <catch.hpp>
 
-           int main() {
-               cout << "Your output: " << dogToHumanYears (1) << ", Correct output: 15" << endl; 
-               cout << "Your output: " << dogToHumanYears (2) << ", Correct output: 24" << endl; 
-               cout << "Your output: " << dogToHumanYears (3) << ", Correct output: 28" << endl; 
-               cout << "Your output: " << dogToHumanYears (5) << ", Correct output: 36" << endl; 
+           TEST_CASE("dogToHumanYears function for 1 and under") {
+               REQUIRE(dogToHumanYears (1) == 15);
+           }
+
+           TEST_CASE("dogToHumanYears function for >1") {
+               REQUIRE(dogToHumanYears (2) == 24);
+               REQUIRE(dogToHumanYears (3) == 28);
+               REQUIRE(dogToHumanYears (5) == 36);
            }
 
 
@@ -222,12 +290,18 @@ Coding Practice
                }
                return 24 + (dogAge - 2) * 4;
            }
+           ====
+           #define CATCH_CONFIG_MAIN
+           #include <catch.hpp>
 
-           int main() {
-               cout << "Your output: " << dogToHumanYears (1) << ", Correct output: 15" << endl; 
-               cout << "Your output: " << dogToHumanYears (2) << ", Correct output: 24" << endl; 
-               cout << "Your output: " << dogToHumanYears (3) << ", Correct output: 28" << endl; 
-               cout << "Your output: " << dogToHumanYears (5) << ", Correct output: 36" << endl; 
+           TEST_CASE("dogToHumanYears function for 1 and under") {
+               REQUIRE(dogToHumanYears (1) == 15);
+           }
+
+           TEST_CASE("dogToHumanYears function for >1") {
+               REQUIRE(dogToHumanYears (2) == 24);
+               REQUIRE(dogToHumanYears (3) == 28);
+               REQUIRE(dogToHumanYears (5) == 36);
            }
 
 .. activecode:: cp_5_AC_6q
@@ -238,7 +312,7 @@ Coding Practice
     other numbers. For example, 2 is a common factor of 4 and 18, because 2 goes evenly into 
     4 and 18. Write the function ``isCommonFactor``, which takes three parameters,
     ``num1``, ``num2``, and ``factor``. ``isCommonFactor`` returns ``true`` if ``factor`` is a
-    factor of both ``num1`` and ``num2``, and returns ``false`` otherwise.
+    factor of both ``num1`` and ``num2``, and returns ``false`` otherwise. Run and test your code!
     ~~~~
     #include <iostream>
     using namespace std;
@@ -246,12 +320,18 @@ Coding Practice
     bool isCommonFactor (int num1, int num2, int factor) {
         // Write your implementation here.
     }
+    ====
+    #define CATCH_CONFIG_MAIN
+    #include <catch.hpp>
 
-    int main() {
-        cout << "Your output: " << isCommonFactor (132, 42, 11) << ", Correct output: 0" << endl; 
-        cout << "Your output: " << isCommonFactor (24, 8, 4) << ", Correct output: 1" << endl; 
-        cout << "Your output: " << isCommonFactor (75, 20, 5) << ", Correct output: 1" << endl; 
-        cout << "Your output: " << isCommonFactor (74, 23, 3) << ", Correct output: 0" << endl; 
+    TEST_CASE("isCommonFactor function: true cases") {
+        REQUIRE(isCommonFactor (24, 8, 4) == 1); 
+        REQUIRE(isCommonFactor (75, 20, 5) == 1);
+    }
+
+    TEST_CASE("isCommonFactor function: false cases") {
+        REQUIRE(isCommonFactor (132, 42, 11) == 0); 
+        REQUIRE(isCommonFactor (74, 23, 3) == 0);
     }
 
 .. tabbed:: cp_5_7
@@ -262,7 +342,7 @@ Coding Practice
         then it is not a leap year. However, if it is also divisible by 400, then it is a leap year.
         Thus, 2001 is not a leap year, 2004 is a leap year, 2100 is not a leap year, and 2000 is a leap year.
         Write the boolean function ``isLeapYear``, which takes a ``year`` as a parameter and returns ``true`` 
-        if the year is a leap year and ``false`` otherwise. Test your function in ``main``.
+        if the year is a leap year and ``false`` otherwise. Run and test your code!
 
         .. activecode:: cp_5_AC_7q
            :language: cpp
@@ -274,12 +354,28 @@ Coding Practice
            bool isLeapYear (int year) {
                // Write your implementation here.
            }
+           ====
+           #define CATCH_CONFIG_MAIN
+           #include <catch.hpp>
 
-           int main() {
-               cout << "Your output: " << isLeapYear (2001) << ", Correct output: 0" << endl; 
-               cout << "Your output: " << isLeapYear (2004) << ", Correct output: 1" << endl; 
-               cout << "Your output: " << isLeapYear (2100) << ", Correct output: 0" << endl; 
-               cout << "Your output: " << isLeapYear (2000) << ", Correct output: 1" << endl; 
+           TEST_CASE("isLeapYear not divisible by 4") {
+               REQUIRE(isLeapYear (2001) == 0);
+               REQUIRE(isLeapYear (2005) == 0);
+           }
+
+           TEST_CASE("isLeapYear divisible by 4") {
+               REQUIRE(isLeapYear (2004) == 1);
+               REQUIRE(isLeapYear (2008) == 1);
+           }
+
+           TEST_CASE("isLeapYear divisible by 100") {
+               REQUIRE(isLeapYear (2100) == 0);
+               REQUIRE(isLeapYear (1900) == 0);
+           }
+
+           TEST_CASE("isLeapYear divisible by 400") {
+               REQUIRE(isLeapYear (2000) == 1);
+               REQUIRE(isLeapYear (2400) == 1);
            }
 
 
@@ -309,12 +405,28 @@ Coding Practice
                    return false;
                }
            }
+           ====
+           #define CATCH_CONFIG_MAIN
+           #include <catch.hpp>
 
-           int main() {
-               cout << "Your output: " << isLeapYear (2001) << ", Correct output: 0" << endl; 
-               cout << "Your output: " << isLeapYear (2004) << ", Correct output: 1" << endl; 
-               cout << "Your output: " << isLeapYear (2100) << ", Correct output: 0" << endl; 
-               cout << "Your output: " << isLeapYear (2000) << ", Correct output: 1" << endl; 
+           TEST_CASE("isLeapYear not divisible by 4") {
+               REQUIRE(isLeapYear (2001) == 0);
+               REQUIRE(isLeapYear (2005) == 0);
+           }
+
+           TEST_CASE("isLeapYear divisible by 4") {
+               REQUIRE(isLeapYear (2004) == 1);
+               REQUIRE(isLeapYear (2008) == 1);
+           }
+
+           TEST_CASE("isLeapYear divisible by 100") {
+               REQUIRE(isLeapYear (2100) == 0);
+               REQUIRE(isLeapYear (1900) == 0);
+           }
+
+           TEST_CASE("isLeapYear divisible by 400") {
+               REQUIRE(isLeapYear (2000) == 1);
+               REQUIRE(isLeapYear (2400) == 1);
            }
 
 .. activecode:: cp_5_AC_8q
@@ -329,7 +441,7 @@ Coding Practice
     ('L') and has fewer than 3 spots, it is poisonous. If a mushroom is small ('S')
     and is red, it is poisonous. If a mushroom has fewer than 3 spots or is not red,
     it is poisonous. Otherwise, it is not. ``isPoisonous`` should return ``true`` if 
-    the mushroom is poisonous and ``false`` otherwise.
+    the mushroom is poisonous and ``false`` otherwise. Run and test your code!
     ~~~~
     #include <iostream>
     using namespace std;
@@ -337,12 +449,19 @@ Coding Practice
     bool isPoisonous (char size, int numSpots, bool isRed) {
         // Write your implementation here.
     }
+    ====
+    #define CATCH_CONFIG_MAIN
+    #include <catch.hpp>
 
-    int main() {
-        cout << "Your output: " << isPoisonous ('S', 10, 0) << ", Correct output: 1" << endl; 
-        cout << "Your output: " << isPoisonous ('S', 2, 1) << ", Correct output: 1" << endl; 
-        cout << "Your output: " << isPoisonous ('L', 1, 1) << ", Correct output: 1" << endl; 
-        cout << "Your output: " << isPoisonous ('L', 4, 1) << ", Correct output: 0" << endl; 
+    TEST_CASE("isPoisonous function: true cases") {
+        REQUIRE(isPoisonous ('S', 10, 0) == 1); 
+        REQUIRE(isPoisonous ('S', 10, 0) == 1);
+        REQUIRE(isPoisonous ('L', 1, 1) == 1);
+    }
+
+    TEST_CASE("isPoisonous function: false cases") {
+        REQUIRE(isPoisonous ('L', 4, 1) == 0); 
+        REQUIRE(isPoisonous ('L', 9, 1) == 0);
     }
 
 .. tabbed:: cp_5_9
@@ -355,7 +474,7 @@ Coding Practice
         number is 1, the 2nd is 3, the 3rd is 6, the 4th is 10, the 5th is 15, etc. You can imagine 
         rows of dots, where each successive row has one more dot, thus forming a triangular shape.
         Write the ``triangularNum`` function, which takes an ``int n`` as a parameter and returns
-        the ``n``\th triangular number. Use recursion.
+        the ``n``\th triangular number. Use recursion. Run and test your code!
 
         .. activecode:: cp_5_AC_9q
            :language: cpp
@@ -367,12 +486,15 @@ Coding Practice
            int triangularNum (int n) {
                // Write your implementation here.
            }
+           ====
+           #define CATCH_CONFIG_MAIN
+           #include <catch.hpp>
 
-           int main() {
-               cout << "Your output: " << triangularNum (1) << ", Correct output: 1" << endl; 
-               cout << "Your output: " << triangularNum (3) << ", Correct output: 6" << endl; 
-               cout << "Your output: " << triangularNum (6) << ", Correct output: 21" << endl; 
-               cout << "Your output: " << triangularNum (17) << ", Correct output: 153" << endl; 
+           TEST_CASE("triangularNum function") {
+               REQUIRE(triangularNum (1) == 1); 
+               REQUIRE(triangularNum (3) == 6); 
+               REQUIRE(triangularNum (6) == 21); 
+               REQUIRE(triangularNum (17) == 153); 
            }
 
 
@@ -398,12 +520,15 @@ Coding Practice
                    return n + triangularNum(n - 1);
                }
            }
+           ====
+           #define CATCH_CONFIG_MAIN
+           #include <catch.hpp>
 
-           int main() {
-               cout << "Your output: " << triangularNum (1) << ", Correct output: 1" << endl; 
-               cout << "Your output: " << triangularNum (3) << ", Correct output: 6" << endl; 
-               cout << "Your output: " << triangularNum (6) << ", Correct output: 21" << endl; 
-               cout << "Your output: " << triangularNum (17) << ", Correct output: 153" << endl; 
+           TEST_CASE("triangularNum function") {
+               REQUIRE(triangularNum (1) == 1); 
+               REQUIRE(triangularNum (3) == 6); 
+               REQUIRE(triangularNum (6) == 21); 
+               REQUIRE(triangularNum (17) == 153); 
            }
 
 .. activecode:: cp_5_AC_10q
@@ -412,7 +537,7 @@ Coding Practice
 
     Write the function ``digitSum`` which takes an ``int num`` as a parameter
     and returns the sum of all its digits. For example, ``digitSum (1423)``
-    would return 10. Use recursion.
+    would return 10. Use recursion. Run and test your code!
     ~~~~
     #include <iostream>
     using namespace std;
@@ -420,10 +545,13 @@ Coding Practice
     int digitSum (int num) {
         // Write your implementation here.
     }
+    ====
+    #define CATCH_CONFIG_MAIN
+    #include <catch.hpp>
 
-    int main() {
-        cout << "Your output: " << digitSum (123) << ", Correct output: 6" << endl; 
-        cout << "Your output: " << digitSum (8739) << ", Correct output: 27" << endl; 
-        cout << "Your output: " << digitSum (440) << ", Correct output: 8" << endl; 
-        cout << "Your output: " << digitSum (2) << ", Correct output: 2" << endl; 
+    TEST_CASE("digitSum function") {
+        REQUIRE(digitSum (123) == 6); 
+        REQUIRE(digitSum (8739) == 27); 
+        REQUIRE(digitSum (440) == 8); 
+        REQUIRE(digitSum (2) == 2); 
     }

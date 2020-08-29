@@ -7,7 +7,7 @@ Coding Practice
 
         A palindrome is a word, phrase, or sentence that reads the same forwards and backwards.
         Write a function ``isPalindrome`` that takes a ``string input`` as a parameter and returns 
-        a boolean that is true if the input is a palindrome and false otherwise.  
+        a boolean that is true if the input is a palindrome and false otherwise. Run and test your code!
 
         .. activecode:: cp_7_AC_1q
            :language: cpp
@@ -20,11 +20,14 @@ Coding Practice
            bool isPalindrome (string input) {
                // Write your implementation here.
            }
+           ====
+           #define CATCH_CONFIG_MAIN
+           #include <catch.hpp>
 
-           int main() {
-               cout << "Your output: " << isPalindrome ("racecar") << ", Correct output: 1" << endl; 
-               cout << "Your output: " << isPalindrome ("no lemon, no melon") << ", Correct output: 1" << endl; 
-               cout << "Your output: " << isPalindrome ("kangaroo") << ", Correct output: 0" << endl; 
+           TEST_CASE("factorial function") {
+               REQUIRE(isPalindrome ("racecar") == 1); 
+               REQUIRE(isPalindrome ("no lemon, no melon") == 1); 
+               REQUIRE(isPalindrome ("kangaroo") == 0); 
            }
 
 
@@ -61,11 +64,14 @@ Coding Practice
                }
                return true;
            }
+           ====
+           #define CATCH_CONFIG_MAIN
+           #include <catch.hpp>
 
-           int main() {
-               cout << "Your output: " << isPalindrome ("racecar") << ", Correct output: 1" << endl; 
-               cout << "Your output: " << isPalindrome ("no lemon, no melon") << ", Correct output: 1" << endl; 
-               cout << "Your output: " << isPalindrome ("kangaroo") << ", Correct output: 0" << endl; 
+           TEST_CASE("factorial function") {
+               REQUIRE(isPalindrome ("racecar") == 1); 
+               REQUIRE(isPalindrome ("no lemon, no melon") == 1); 
+               REQUIRE(isPalindrome ("kangaroo") == 0); 
            }
 
 .. activecode:: cp_7_AC_2q
@@ -280,7 +286,7 @@ Coding Practice
     :practice: T
 
     Write the function ``reverseString`` which takes a ``string input``, reverses it,
-    and returns the reversed ``string``. Test your function in ``main``.
+    and returns the reversed ``string``. Run and test your code!
     ~~~~
     #include <iostream>
     using namespace std;
@@ -288,12 +294,16 @@ Coding Practice
     string reverseWord (string input) {
         // Write your implementation here.
     }
+    ====
+    #define CATCH_CONFIG_MAIN
+    #include <catch.hpp>
 
-    int main() {
-        cout << "Your output: " << reverseWord ("hello") << ", Correct output: olleh" << endl; 
-        cout << "Your output: " << reverseWord ("world") << ", Correct output: dlrow" << endl; 
-        cout << "Your output: " << reverseWord ("racecar") << ", Correct output: racecar" << endl; 
+    TEST_CASE("reverseWord function") {
+        REQUIRE(reverseWord ("hello") == "olleh"); 
+        REQUIRE(reverseWord ("world") == "dlrow"); 
+        REQUIRE(reverseWord ("racecar") == "racecar"); 
     }
+
 
 .. tabbed:: cp_7_7
 
@@ -301,7 +311,6 @@ Coding Practice
 
         Write the function ``capitalize``, which takes a ``string input`` as a parameter.
         ``capitalize`` capitalizes the first letter of every word, and returns the new ``string``.
-        Test your function in ``main``.
 
         .. activecode:: cp_7_AC_7q
            :language: cpp
@@ -360,7 +369,7 @@ Coding Practice
 
     Write the function ``countVowels`` which takes a ``string input`` and returns
     the number of vowels in the ``string``. Remember, 'a', 'e', 'i', 'o', and 'u'
-    are vowels.
+    are vowels. Run and test your code!
     ~~~~
     #include <iostream>
     using namespace std;
@@ -368,12 +377,16 @@ Coding Practice
     int countVowels (string input) {
         // Write your implementation here.
     }
+    ====
+    #define CATCH_CONFIG_MAIN
+    #include <catch.hpp>
 
-    int main() {
-        cout << "Your output: " << countVowels ("onomatopoeia") << ", Correct output: 8" << endl; 
-        cout << "Your output: " << countVowels ("cysts") << ", Correct output: 0" << endl; 
-        cout << "Your output: " << countVowels ("vowels") << ", Correct output: 2" << endl; 
+    TEST_CASE("countVowels function") {
+        REQUIRE(countVowels ("onomatopoeia") == 8); 
+        REQUIRE(countVowels ("cysts") == 0); 
+        REQUIRE(countVowels ("vowels") == 2); 
     }
+
 
 .. tabbed:: cp_7_9
 
@@ -381,7 +394,7 @@ Coding Practice
 
         Write the function ``longestWord``, which takes a ``string input`` as a parameter.
         ``longestWord`` returns the words with the most letters in ``input``. If there's a tie,
-        return the first word. Use the ``substr`` function. Test your function in ``main``.
+        return the first word. Use the ``substr`` function. Run and test your code!
 
         .. activecode:: cp_7_AC_9q
            :language: cpp
@@ -393,10 +406,14 @@ Coding Practice
            string longestWord (string input) {
                // Write your implementation here.
            }
+           ====
+           #define CATCH_CONFIG_MAIN
+           #include <catch.hpp>
 
-           int main() {
-               cout << "Your output: " << longestWord ("what is the longest word in this string") << ", Correct output: longest" << endl; 
-               cout << "Your output: " << longestWord ("these words are very close in size") << ", Correct output: these" << endl; 
+           TEST_CASE("longestWord function") {
+               REQUIRE(longestWord ("what is the longest word in this string") == "longest"); 
+               REQUIRE(longestWord ("these words are very close in size") == "these"); 
+               REQUIRE(longestWord ("vowels") == "vowels"); 
            }
 
 
@@ -434,10 +451,14 @@ Coding Practice
                }
                return longest;
            }
+           ====
+           #define CATCH_CONFIG_MAIN
+           #include <catch.hpp>
 
-           int main() {
-               cout << "Your output: " << longestWord ("what is the longest word in this string") << ", Correct output: longest" << endl; 
-               cout << "Your output: " << longestWord ("these words are very close in size") << ", Correct output: these" << endl; 
+           TEST_CASE("longestWord function") {
+               REQUIRE(longestWord ("what is the longest word in this string") == "longest"); 
+               REQUIRE(longestWord ("these words are very close in size") == "these"); 
+               REQUIRE(longestWord ("vowels") == "vowels"); 
            }
 
 .. activecode:: cp_7_AC_10q
@@ -450,7 +471,7 @@ Coding Practice
     where each space is replaced by an underscore. For example, "snake case"
     in snake case is "snake_case". Write the functions ``snakeToCamel`` and ``camelToSnake``.
     Each function takes a ``string input`` and returns the input using the other stylization.
-    Test your functions in ``main``. Feel free to use any ``string`` functions you'd like.
+    Feel free to use any ``string`` functions you'd like. Run and test your code!
     ~~~~
     #include <iostream>
     #include "ctype.h"
@@ -463,8 +484,18 @@ Coding Practice
     string camelToSnake (string input) {
         // Write your implementation here.
     }
+    ====
+    #define CATCH_CONFIG_MAIN
+    #include <catch.hpp>
 
-    int main() {
-        cout << "Your output: " << snakeToCamel ("turn_this_into_camel_case") << ", Correct output: turnThisIntoCamelCase" << endl; 
-        cout << "Your output: " << camelToSnake ("turnThisIntoSnakeCase") << ", Correct output: turn_this_into_snake_case" << endl; 
+    TEST_CASE("snakeToCamel function") {
+        REQUIRE(snakeToCamel ("turn_this_into_camel_case") == "turnThisIntoCamelCase"); 
+        REQUIRE(snakeToCamel ("hello_world") == "helloWorld"); 
+        REQUIRE(snakeToCamel ("code") == "code"); 
+    }
+
+    TEST_CASE("camelToSnake function") {
+        REQUIRE(camelToSnake ("turnThisIntoSnakeCase") == "turn_this_into_snake_case"); 
+        REQUIRE(camelToSnake ("helloWorld") == "hello_world"); 
+        REQUIRE(camelToSnake ("code") == "code"); 
     }
