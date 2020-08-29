@@ -286,7 +286,7 @@ Coding Practice
         A number is a prime number if its only factors are 1 and itself.
         Write the function ``isPrime``, which takes an ``int num`` as a parameters.
         ``isPrime`` is a boolean function that returns ``true`` if ``num`` is a prime
-        number and returns ``false`` otherwise.
+        number and returns ``false`` otherwise. Run and test your code!
 
         .. activecode:: cp_6_AC_7q
            :language: cpp
@@ -298,11 +298,18 @@ Coding Practice
            bool isPrime (int num) {
                // Write your implementation here.
            }
+           ====
+           #define CATCH_CONFIG_MAIN
+           #include <catch.hpp>
 
-           int main() {
-               cout << "Your output: " << isPrime (1) << ", Correct output: 0" << endl; 
-               cout << "Your output: " << isPrime (13) << ", Correct output: 1" << endl; 
-               cout << "Your output: " << isPrime (24) << ", Correct output: 0" << endl; 
+           TEST_CASE("isPrime function") {
+               REQUIRE(isPrime (1) == 0); 
+               REQUIRE(isPrime (13) == 1); 
+               REQUIRE(isPrime (24) == 0); 
+           }
+
+           TEST_CASE("isPrime for 0") {
+               REQUIRE(isPrime (0) == 0); 
            }
 
 
@@ -336,11 +343,18 @@ Coding Practice
                }
                return true;
            }
+           ====
+           #define CATCH_CONFIG_MAIN
+           #include <catch.hpp>
 
-           int main() {
-               cout << "Your output: " << isPrime (1) << ", Correct output: 0" << endl; 
-               cout << "Your output: " << isPrime (13) << ", Correct output: 1" << endl; 
-               cout << "Your output: " << isPrime (24) << ", Correct output: 0" << endl; 
+           TEST_CASE("isPrime function") {
+               REQUIRE(isPrime (1) == 0); 
+               REQUIRE(isPrime (13) == 1); 
+               REQUIRE(isPrime (24) == 0); 
+           }
+
+           TEST_CASE("isPrime for 0") {
+               REQUIRE(isPrime (0) == 0); 
            }
 
 .. activecode:: cp_6_AC_8q
@@ -417,6 +431,7 @@ Coding Practice
     Write a function called ``factorial`` which takes an ``int n`` as a parameter
     and returns ``n`` factorial. Remembers that a factorial (denoted by !) is the product of all 
     positive integers less than or equal to ``n``, so 4! is 24. Use a ``while`` loop.
+    Run and test your code!
     ~~~~
     #include <iostream>
     using namespace std;
@@ -424,9 +439,12 @@ Coding Practice
     int factorial (int n) {
         // Write your implementation here.
     }
+    ====
+    #define CATCH_CONFIG_MAIN
+    #include <catch.hpp>
 
-    int main() {
-        cout << "Your output: " << factorial (4) << ", Correct output: 24" << endl; 
-        cout << "Your output: " << factorial (6) << ", Correct output: 720" << endl; 
-        cout << "Your output: " << factorial (9) << ", Correct output: 362880" << endl; 
+    TEST_CASE("factorial function") {
+        REQUIRE(factorial (4) == 24); 
+        REQUIRE(factorial (6) == 720); 
+        REQUIRE(factorial (9) == 362880); 
     }
