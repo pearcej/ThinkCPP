@@ -259,8 +259,11 @@ Answer the following **Activecode** questions to assess what you have learned in
       .. activecode:: vectors_a9q
          :language: cpp
 
-         Write code that
+         Write the function ``mean`` which returns the average of a vector of numbers.
          ~~~~
+         #include <iostream>
+         #include <vector>
+         using namespace std;
 
 
    .. tab:: Answer
@@ -268,8 +271,20 @@ Answer the following **Activecode** questions to assess what you have learned in
       .. activecode:: vectors_a9a
          :language: cpp
 
-         Below is one way to finish the program.
+         Below is one way to finish the program.  First we take the sum, then divide the sum by the number
+         of elements in ``nums``.
          ~~~~
+         #include <iostream>
+         #include <vector>
+         using namespace std;
+
+         double mean (const vector<double> nums) {
+             double sum = 0;
+             for (size_t i = 0; i < nums.size(); ++i) {
+                 sum = sum + nums[i];
+             }
+             return sum/nums.size();
+         }
 
 
 .. activecode::  vectors_a10
