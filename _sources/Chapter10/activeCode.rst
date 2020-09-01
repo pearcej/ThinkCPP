@@ -271,7 +271,8 @@ Answer the following **Activecode** questions to assess what you have learned in
       .. activecode:: vectors_a9a
          :language: cpp
 
-         Below is one way to finish the program.
+         Below is one way to finish the program.  First we take the sum, then divide the sum by the number
+         of elements in ``nums``.
          ~~~~
          #include <iostream>
          #include <vector>
