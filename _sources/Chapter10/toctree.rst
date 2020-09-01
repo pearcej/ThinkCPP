@@ -19,3 +19,6 @@ Vectors
    single-pass_solution.rst
    random_seeds.rst
    glossary.rst
+   Exercises.rst
+   mixedUpCode.rst
+   activeCode.rst

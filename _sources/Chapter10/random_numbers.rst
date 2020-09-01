@@ -88,7 +88,7 @@ including both end points.
 
    int main () {
        int upperBound = 8;
-       cout << "Let's generate some random numbers between 1 and 7!" << endl;
+       cout << "Let's generate some random numbers between 0 and 7!" << endl;
        for (int i = 0; i < 10; i++) {
            int x = random ();
            int y = x % upperBound;
