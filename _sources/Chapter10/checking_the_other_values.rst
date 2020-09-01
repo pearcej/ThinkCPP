@@ -84,4 +84,4 @@ probably uniform.
    :feedback_d: Incorrect! As we continue to increase the size of numValues, the percent by which the number of appearances differes from the expected value approaches 0.
 
 
-   When we increase the size of numValues, which of the following is true:
+   **Multiple Response** When we increase the size of ``numValues``, which of the following is true:

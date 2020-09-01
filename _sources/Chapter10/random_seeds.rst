@@ -28,13 +28,19 @@ reasonably unpredictable and unrepeatable, like the number of
 milliseconds since the last second tick, and use that number as a seed.
 The details of how to do that depend on your development environment.
 
-.. mchoice:: random_seeds_1
-   :answer_a: Calling the random() function with no arguments.
-   :answer_b: Calling srand() on a integer seed.
-   :answer_c: Running the gettimeofday() function, and calling srand() on the result.
-   :correct: c
-   :feedback_a: Incorrect! This always generates the same set of values, using the default seed in C++.
-   :feedback_b: Incorrect! This always generates the same set of values, using the specified seed.
-   :feedback_c: Correct! Get time of day will generate something reasonably random, which you can then use as a random seed.
 
-   Which of the following will generate a different random number every time the programs runs?
+.. mchoice:: random_seeds_1
+
+    If we wanted to generate a random number between 0 and 12, and we have previously declared int ``int x = random ();``, what should be our next line of code?
+
+    -   Calling the ``random()`` function with no arguments.
+
+        -   This always generates the same set of values, using the default seed in C++.
+
+    -   Calling ``srand()`` on a integer seed.
+
+        -   This always generates the same set of values, using the specified seed.
+
+    -   Running the ``gettimeofday()`` function, and calling srand() on the result.
+
+        +   ``gettimeofday()`` will generate something reasonably random, which you can then use as a random seed.
