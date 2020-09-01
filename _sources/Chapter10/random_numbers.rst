@@ -88,7 +88,7 @@ including both end points.
 
    int main () {
        int upperBound = 8;
-       cout << "Let's generate some random numbers between 1 and 7!" << endl;
+       cout << "Let's generate some random numbers between 0 and 7!" << endl;
        for (int i = 0; i < 10; i++) {
            int x = random ();
            int y = x % upperBound;
@@ -157,15 +157,23 @@ between 100.0 and 200.0.
 
    What header file do we need to declare in order to use the ``random`` function?
 
-.. mchoice:: random_numbers_3
-   :answer_a: int y = x / 12
-   :answer_b: int y = x % 12
-   :answer_c: int y = x / 13
-   :answer_d: int y = x % 13
-   :correct: d
-   :feedback_a: Incorrect! This returns some random number between 0 and x / 12, which is out of range.
-   :feedback_b: Incorrect! This returns a random number between 0 and 11.
-   :feedback_c: Incorrect! This returns some random number between 0 and x / 13, which is out of range.
-   :feedback_d: Correct!
 
-   If we wanted to generate a random number between 0 and 12, and we have previously declared int ``int x = random ();``, what should be our next line of code?
+.. mchoice:: random_numbers_3
+
+    If we wanted to generate a random number between 0 and 12, and we have previously declared int ``int x = random ();``, what should be our next line of code?
+
+    -   ``int y = x / 12``
+
+        -   This returns some random number between 0 and x / 12, which is out of range.
+
+    -   ``int y = x % 12``
+
+        -   This returns a random number between 0 and 11.
+
+    -   ``int y = x / 13``
+
+        -   This returns some random number between 0 and x / 13, which is out of range.
+
+    -   ``int y = x % 13``
+
+        +   There are 13 numbers from 0 to 12 (the remainders of a division by 13).

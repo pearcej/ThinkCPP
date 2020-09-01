@@ -75,17 +75,24 @@ This statement creates a vector of four elements and initializes all of
 them to zero. 
 
 .. mchoice:: vectors_1
-   :answer_a: vector&#60;string&#62; words ("", 5);
-   :answer_b: vector&#60;string&#62; words (5);
-   :answer_c: vector&#60;string&#62; words (5, "");
-   :answer_d: vector&#60;char&#62; words (5, '');
-   :correct: c
-   :feedback_a: Incorrect! Vector parameters are in the wrong order.
-   :feedback_b: Incorrect! Vector elements are not initialized to default values.
-   :feedback_c: Correct!
-   :feedback_d: Incorrect! words should be a vector of strings.
 
-   How would you create a vector of five words and initialize all of them to empty strings?
+    How would you create a vector of five words and initialize all of them to empty strings?
+
+    -   ``vector<string> words ("", 5);``
+
+        -   Incorrect! Vector parameters are in the wrong order.
+
+    -   ``vector<string> words (5);``
+
+        -   Incorrect! Vector elements are not initialized to default values.
+
+    -   ``vector<string> words (5, "");``
+
+        +   Correct! We made a vector of strings with 5 elements, initialized to empty strings.
+
+    -   ``vector<char> words (5, '');``
+
+        -   Incorrect! words should be a vector of strings.
 
 .. mchoice:: vectors_2
    :multiple_answers:
@@ -101,7 +108,7 @@ them to zero.
    :feedback_d: Correct!
    :feedback_e: Correct!
 
-   Which of the following could be an element of **words**?
+   **Multiple Response** Which of the following could be an element of **words**?
 
 .. mchoice:: vectors_3
    :answer_a: initializer

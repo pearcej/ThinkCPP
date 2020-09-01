@@ -57,18 +57,25 @@ would expect.
 
 
 .. mchoice:: copying_vectors_1
-   :multiple_answers:
-   :answer_a: vector&#60;double&#62; nums = decimals;
-   :answer_b: vector&#60;double&#62; decimals = nums;
-   :answer_c: vector&#60;double&#62; nums (decimals);
-   :answer_d: vector&#60;double&#62; decimals (nums);
-   :correct: a,c
-   :feedback_a: Correct!
-   :feedback_b: Incorrect! This makes a copy of nums called decimals.
-   :feedback_c: Correct!
-   :feedback_d: Incorrect! This makes a copy of nums called decimals.
 
-   How would you make a copy of ``vector<double> decimals`` called **nums**?
+    **Multiple Response** How would you make a copy of ``vector<double> decimals`` called **nums**?
+
+    -   ``vector<double> nums = decimals;``
+
+        +   This is one way to make a copy.
+
+    -   ``vector<double> decimals = nums;``
+
+        -   This makes a copy of nums called decimals.
+
+    -   ``vector<double> nums (decimals);``
+
+        +   This is one way to make a copy.
+
+    -   ``vector<double> decimals (nums);``
+
+        -   This makes a copy of nums called decimals.
+
 
 .. fillintheblank:: copying_vectors_2
 

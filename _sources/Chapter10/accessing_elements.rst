@@ -84,21 +84,31 @@ Chianti.
        cout << "After we made the above changes, count = "; print_vec(count);
    }
 
-.. mchoice:: accessing_elements_1
-   :multiple_answers:
-   :answer_a: vec[3] = vec[3]++;
-   :answer_b: vec(3) = vec(3) + 1;
-   :answer_c: vec[2] = vec[2]++;
-   :answer_d: vec(2) = vec(2)++;
-   :answer_e: vec[2] = vec[2] + 1;
-   :correct: c,e
-   :feedback_a: Incorrect! This is actually incrementing the 4th element of **vec**, since vectors are zero indexed.
-   :feedback_b: Incorrect! This is not proper syntax.
-   :feedback_c: Correct!
-   :feedback_d: Incorrect! This is not proper syntax.
-   :feedback_e: Correct!
 
-   How would you increment the third element of ``vector<int> vec`` by one?
+.. mchoice:: accessing_elements_1
+
+    **Multiple Response** How would you increment the third element of ``vector<int> vec`` by one?
+
+    -   ``vec[3] = vec[3]++;``
+
+        -   Incorrect! This is actually incrementing the 4th element of **vec**, since vectors are zero indexed.
+
+    -   ``vec(3) = vec(3) + 1;``
+
+        -   Incorrect! This is not proper syntax.
+
+    -   ``vec[2] = vec[2]++;``
+
+        +   ``vec[2]`` is the third element and we increment it by using the ``++`` operator.
+
+    -   ``vec(2) = vec(2)++;``
+
+        -   This is not proper syntax.
+
+    -   ``vec[2] = vec[2] + 1``
+
+        +   ``vec[2]`` is the third element and we increment it by adding 1.
+
 
 .. fillintheblank:: accessing_elements_2
 

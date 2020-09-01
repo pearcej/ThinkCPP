@@ -9,6 +9,11 @@ we do not know the size of the vector beforehand. So we need wish add
 new values to the end of a vector as the user inputs them. We can use
 then vector function ``push_back`` for that purpose.
 
+.. note::
+
+   ``push_back`` adds a specified element to the end of the vector, ``pop_back``
+   removes element from the end of a vector.
+
 ::
 
    #include <iostream>
