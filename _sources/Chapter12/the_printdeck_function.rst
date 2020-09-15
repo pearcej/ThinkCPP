@@ -10,7 +10,7 @@ should be familiar:
 
 ::
 
-   void printDeck (const apvector<Card>& deck) {
+   void printDeck (const vector<Card>& deck) {
      for (size_t i = 0; i < deck.size(); i++) {
        deck[i].print ();
      }
@@ -19,7 +19,7 @@ should be familiar:
 By now it should come as no surprise that we can compose the syntax for
 vector access with the syntax for invoking a function.
 
-Since ``deck`` has type ``apvector<Card>``, an element of ``deck`` has
+Since ``deck`` has type ``vector<Card>``, an element of ``deck`` has
 type ``Card``. Therefore, it is legal to invoke ``print`` on
 ``deck[i]``.
 

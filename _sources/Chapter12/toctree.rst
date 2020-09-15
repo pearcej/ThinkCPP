@@ -15,3 +15,6 @@ Vectors of Objects
    bisection_search.rst
    decks_and_subdecks.rst
    glossary.rst
+   Exercises.rst
+   mixed_up_code.rst
+   coding_practice.rst

@@ -12,7 +12,7 @@ rank of the Ace may be higher than King or lower than 2.
 If we want to define a new object to represent a playing card, it is
 pretty obvious what the instance variables should be: ``rank`` and
 ``suit``. It is not as obvious what type the instance variables should
-be. One possibility is ``apstring``\ s, containing things like
+be. One possibility is ``string``\ s, containing things like
 ``"Spade"`` for suits and ``"Queen"`` for ranks. One problem with this
 implementation is that it would not be easy to compare cards to see
 which had higher rank or suit.
