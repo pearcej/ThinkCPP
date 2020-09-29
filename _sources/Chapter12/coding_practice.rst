@@ -112,3 +112,5 @@ Coding Practice
             "it.";
         cout << "Your output: " << countWord(quote, "shrimp") << ", Correct output: 14" << endl; 
     }
+
+pixels and matrices
