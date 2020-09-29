@@ -4,17 +4,46 @@ Multiple Choice Exercises
 .. mchoice:: mce_12_1
     :practice: T
 
-    You can have a vector that stores a vector of objects.
+    Select all of the true statements.
 
-    - True
+    - You can have a vector that stores a vector of objects.
 
       + C++ allows for a variety of different compositions.
 
-    - False
+    - In order to check to see if two ``Card``\s are equal, we can use the ``==`` operator.
     
-      - Vectors can store objects and vectors can store vectors. Can a vector store a vector that stores objects?
+      - We have to write a function that compares two ``Card``\s.
+
+    - There is no faster way to search through an unsorted vector than using a linear search.
+
+      + If the ``vector`` were sorted, then there are faster search methods.
+
+    - There is no such thing as an empty object.
+
+      + All variables are given default values unless otherwise specified by the user.
 
 .. mchoice:: mce_12_2
+    :practice: T
+
+    What is the correct way to declare a ``vector`` of ``vector``\s of ``int``\s called ``vec``?
+
+    - ``vector<int> vec;``
+
+      - This declares a ``vector`` of ``int``\s.
+
+    - ``vector<int> vec<int>;``
+    
+      - This is not the proper way to declare ``vec``. 
+
+    - ``vector<vector<int> vec;``
+    
+      - Close! Look closely at the answer choices again.
+
+    - ``vector<vector<int> > vec;``
+    
+      + This is the proper way to declare a ``vector`` of ``vector``\s of ``int``\s.
+
+.. mchoice:: mce_12_3
     :practice: T
 
     What is the value of ``card``?
@@ -55,7 +84,7 @@ Multiple Choice Exercises
     
       - We initialized ``card`` with a ``suit`` value of 2 and a ``rank`` value of 8.
 
-.. mchoice:: mce_12_3
+.. mchoice:: mce_12_4
     :practice: T
 
     There is an error with the code below. Can you find it?
@@ -89,19 +118,6 @@ Multiple Choice Exercises
     - There is nothing wrong with the code.
     
       - There is an error with the code. Can you find it?
-
-.. mchoice:: mce_12_4
-    :practice: T
-
-    In order to check to see if two ``Card``\s are equal, we can use the ``==`` operator.
-
-    - True
-
-      - The ``==`` operator does not work for user-defined types like ``Card``.
-
-    - False
-    
-      + We have to write a function that compares two ``Card``\s.
 
 .. mchoice:: mce_12_5
     :practice: T
@@ -190,15 +206,50 @@ Multiple Choice Exercises
 .. mchoice:: mce_12_7
     :practice: T
 
-    There is no faster way to search through an unsorted vector than using a linear search.
+    What is true about ``deck``?
 
-    - True
+    .. code-block:: cpp
 
-      + If the ``vector`` were sorted, then there are faster search methods.
+       struct Card {
+         int suit, rank;
+         Card ();
+         Card (int s, int r);
+         void print () const;
+         bool isGreater (const Card& c2) const;
+       };
 
-    - False
+       vector<Card> createDeck() {
+         vector<Card> deck (12);
+         int i = 0;
+         for (int suit = 0; suit <= 3; suit++) {
+           for (int rank = 1; rank < 4; rank++) {
+             deck[i].suit = suit;
+             deck[i].rank = rank;
+             i++;
+           }
+         }
+         return deck;
+       }
+
+       int main() {
+         vector<Card> deck = createDeck();
+       }
+
+    - It contains 12 ``Card``\s.
+
+      + ``createDeck`` returns a ``vector`` of size 12, corresponding to 12 ``Card``\s.
+
+    - The highest ``rank`` is 4.
     
-      - Since the ``vector`` is unsorted, we must go through the vector and check every element.
+      - The ``rank`` goes up to but does not include 4.
+
+    - There are no spades in the deck.
+    
+      - The ``suit`` goes up to and include the ``suit`` value 3 which corresponds to spades.
+
+    - The ``deck`` has 3 cards in each suit.
+    
+      + Each suit has an Ace, 2, and 3.
 
 .. mchoice:: mce_12_8
     :practice: T
@@ -246,15 +297,51 @@ Multiple Choice Exercises
 .. mchoice:: mce_12_9
     :practice: T
 
-    There is no such thing as an empty object.
+    We want to write the function ``findAllQueens``, which searches through a deck and 
+    prints out the location of all 4 queens in the ``deck``. What should go in the blanks?
 
-    - True
-
-      + All variables are given default values unless otherwise specified by the user.
-
-    - False
+    .. code-block:: cpp
     
-      - All variables have values at all times.
+        struct Card {
+          int suit, rank;
+          Card ();
+          Card (int s, int r);
+          void print () const;
+          bool isGreater (const Card& c2) const;
+        };
+
+        vector<Card> buildDeck();
+        bool equals (const Card& c1, const Card& c2);
+        void printDeck(const vector<Card>& deck);
+
+        void findAllQueens (const vector<Card>& deck) {
+          for (size_t i = 0; i < deck.____; ++i) {
+            if (deck[i].____ == 12) {
+              cout << ____ << " ";
+            }
+          }
+        }
+
+        int main() {
+          vector<Card> deck = buildDeck();
+          findAllQueens (deck);
+        }
+
+    - ``push_back()``, ``suit``, ``i``
+
+      - What value should ``i`` go up to?
+
+    - ``size()``, ``rank``, ``i``
+    
+      + These are the correct variables and functions.
+
+    - ``size``, ``rank``, ``deck[i]``
+    
+      - We want to print the index, not the card.
+
+    - ``front()``, ``suit``, ``deck``
+    
+      - What value should ``i`` go up to?
 
 .. mchoice:: mce_12_10
     :practice: T
