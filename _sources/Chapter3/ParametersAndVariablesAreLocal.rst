@@ -124,3 +124,35 @@ phil.
     
    - :[Ii][Nn][Ss][Tt][Aa][Nn][Cc][Ee]: You could create many instances of one function, each with their own parameters and local variables if you wanted!
      :.*: Try again!
+
+.. mchoice:: locals_4
+   :answer_a: 1 call
+   :answer_b: 4 calls
+   :answer_c: 2 calls
+   :answer_d: 3 calls
+   :correct: b
+   :feedback_a: hi( ) is called from multiple functions.
+   :feedback_b: Correct!
+   :feedback_c: hi( ) is called from multiple functions.
+   :feedback_d: Two calls from one function are indeed two seperate calls.
+
+   How many calls to ``hi`` are made during the exectuion of the entire program?
+
+   ::
+
+       void hi() {
+         cout << "hiii !"<<endl;
+       }
+      
+       void printGreeting(){
+         hi();
+         cout<<"how are you doing today. "<<endl;
+         hi();
+       }
+
+       int main () {
+         hi();
+         printGreeting();
+         hi();
+         return 0;
+       }

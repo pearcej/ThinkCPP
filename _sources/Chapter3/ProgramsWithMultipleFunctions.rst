@@ -125,3 +125,51 @@ read from top to bottom. Instead, **follow the flow of execution**.
     -   ``main, threeLine``
 
         -   Note that ``newLine`` is called inside of ``threeLine``.
+
+.. mchoice:: multiple_fun_3
+
+    Consider the following C++ code.
+
+    .. code-block:: cpp
+       :linenos:
+
+       #include <iostream>
+       using namespace std;
+       
+       void yo () {
+         cout << "yo, ";
+       }
+       
+       void hello () {
+         cout << "hello, ";
+         yo(); yo();
+       }
+
+       void goodbye() {
+         yo(); hello();
+         cout << "goodbye,";
+       }
+
+       int main () {
+         cout << "welcome, ";
+         goodbye();
+         return 0;
+       }
+
+    What is printed when the code is executed?
+
+    -   "welcome, yo, hello, goodbye,"
+
+        -   take into account ``hello`` also calls ``yo`` .
+
+    -   "welcome, goodbye,"
+
+        -   ``goodbye`` calls other functions that print output as well.
+
+    -   "welcome, yo, hello, yo, yo, goodbye,"
+
+        +   The order of calls and composition of ``yo`` in ``hello`` and both of those in ``goodbye`` produce this output.
+    
+    -   "yo, hello, yo, yo, goodbye,"
+
+        -   Note that the ``main`` also prints something directly.

@@ -239,6 +239,42 @@ double—correctly.
          return 0;
        }
 
+.. mchoice:: dead_code_printing_1
+   :answer_a: You get a child discount yay! 
+   :answer_b: Sorry you have to pay full price. 
+   :answer_c: nothing gets printed
+   :answer_d: 9.50
+   :correct: c
+   :feedback_a: The function returns goes to the else block as age is not less than 5.
+   :feedback_b: The function returns 9.50 before reaching the output statment.
+   :feedback_c: The return statement is encountered before the cout statement.
+   :feedback_d: Although 9.50 is returned there is no printing of this value.
+
+   What will print?
+
+   ::
+
+       #include <iostream>
+       using namespace std;
+
+       double ticket_price(int age) {
+          if(age<5){
+              return 5.50;
+              cout<<" You get a child discount yay!"<<endl;
+          }
+
+          else{
+              return 9.50;
+              cout<<" Sorry you have to pay full price."<<endl;
+          }
+          return 0.0; //to avoid compiler error
+       }
+
+       int main () {
+         int years = 5;
+         double price = ticket_price(5);
+         return 0;
+       }
 
 .. fillintheblank:: return_vals_3
 
