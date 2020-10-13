@@ -81,9 +81,37 @@ presence or absence of some condition.
        bool plusFlag = (x > 0);
 
        if (evenFlag) {
-         cout << "n was even when I checked it";
+         cout << "n was even when I checked it ";
        }
 
        if (plusFlag) {
          cout << "x was positive when I checked it";
+       }
+
+.. mchoice:: bool_var_4
+   :answer_a: 50 60 70 80 90 100 .... (infinite loop)
+   :answer_b: 50 60 70 
+   :answer_c: 50 60 70 80 
+   :answer_d: 50 50 50 50 50 50  .... (infinite loop)
+   :answer_e: 50 60 70 80 90 
+   :correct: c
+   :feedback_a: we change the value of ``low_battery`` when we satisfy a certain condition
+   :feedback_b: The value ``80`` is not ``>`` the value ``80``.
+   :feedback_c: Correct! Once ``charge_percent`` is 90 ``low_battery`` is set to false
+   :feedback_d: we change the value of ``low_battery`` when we satisfy a certain condition
+   :feedback_e: Consider if the ``while`` loop will run when ``charge_percent`` is 90
+
+   What will print?
+
+   ::
+
+       int charge_percent = 50;
+       bool low_battery=true;
+
+       while(low_battery){
+          cout<<charge_percent<<" ";
+          charge_percent=charge_percent+10;
+          if(charge_percent > 80){
+            low_battery=false;
+          }
        }

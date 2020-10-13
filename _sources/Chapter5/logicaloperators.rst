@@ -53,3 +53,11 @@ statements.
    :match_6: !(n >= 10)|||true, "not"
 
    Match the conditional statement to the correct boolean and the meaning of the operator in use, given n = 7.
+
+.. fillintheblank:: logical_op_3
+
+   Complete the logical expression to check if x is greater than or equal to 50
+    |blank| ( x < 50 )
+    
+   - :[!]: If the expression checks for the opposite of what you want then just ``!`` the result
+     :.*: Try again!

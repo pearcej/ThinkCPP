@@ -158,3 +158,31 @@ performing floating-point operations.
        cout << e_double;
 
    What is the value of ``e_double`` that is printed to the terminal?
+
+Identifying whether an operation carries out integer division or floating point division
+can get tricky when we have a mix of integers and doubles in our expression.
+The thing to remeber is if either the divisor or the dividend is a double
+then the program will carry out floating point division.
+
+.. activecode:: floating_point_a1
+   :language: cpp
+
+   Run the code below to see what type of division occurs each time.
+   ~~~~
+   #include <iostream>
+   using namespace std;
+
+   int main () {
+       double value = 5.0/2; //(a)
+       cout<<"current value (a) is "<<value<<endl;
+
+       value = 5/2.0; //(b)
+       cout<<"current value (b) is "<<value<<endl;
+
+       value = 5/2; //(c)
+       cout<<"current value (c) is "<<value<<endl;
+
+       value = 5.0/2.0; //(d)
+       cout<<"current value (d) is "<<value<<endl;
+       return 0;
+   }

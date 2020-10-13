@@ -49,3 +49,34 @@ but we are not going to deal with them for a little while.
     - :-1: Correct!
       :.*: Try again!
 
+.. mchoice:: return_main_2
+   :multiple_answers:
+   :answer_a: "its night time Day time"
+   :answer_b: "its night time afternoon"
+   :answer_c: nothing is printed
+   :answer_d: "its night time" 
+   :correct: d
+   :feedback_a: a return statment if encountered before reaching the second ``if``.
+   :feedback_b: a return statment is encountered before and ``sun_set`` is false.
+   :feedback_c: ``sun_set`` is true so the "its night time" gets printed
+   :feedback_d: Correct! Once the ``return`` statement is encountered nothing else is printed
+
+   what gets printed?
+
+   ::
+
+      int main(){
+        bool sun_set=true;
+        if(sun_sunset){
+          cout<<"its night time ";
+          sun_set=false;
+          return 0;
+        }
+        if(!sunset){
+          cout<<"Day time ";
+        }
+        else{
+          cout<<"afternoon ";
+        }
+      }
+      

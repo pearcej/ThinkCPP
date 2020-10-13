@@ -121,3 +121,37 @@ by composing the function calls:
        void printHelloName (string name) {
          cout << "Hello " << name << "!" <<  endl;
        }
+
+Function composition is not limited to a fixed number of calls.
+Multiple calls can be made to the same function as well as to a number of
+different functions.
+
+.. activecode:: multi_comp_1
+   :language: cpp
+   :caption: Function Composition
+
+   This program shows how mutliple calls are made to one function and it
+   also shows that calling two or more different functions is valid.
+   ~~~~
+   #include <iostream>
+   using namespace std;
+
+   int increase_population (int population) {
+       return population*2;
+   }
+
+   void print_population (int population) {
+       cout<<"The current population is "<<population<<endl;
+   }
+
+   void grow_4(int start_size){
+       int new_size = increase_population(start_size);
+       //we will increase population again by doubling new_size
+       new_size = increase_population(new_size);
+       print_population(new_size);
+   }
+
+   int main () {
+       int begin_population=3;
+       grow_4(begin_population);
+   }

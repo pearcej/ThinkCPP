@@ -211,3 +211,24 @@ example only demonstrates two:
        return 0;
    }
 
+.. parsonsprob:: new_functions_1
+   :numbered: left
+   :adaptive:
+
+   Construct a function that correctly prints the perimeter of a rectangle.
+  
+   -----
+   void perimeter (int length,int width) {
+   =====
+   int twice_length = 2*length;
+   =====
+   int twice_width = 2*width; 
+   =====
+   int perimeter_value = twice_length + twice_width;
+   =====
+   cout << perimeter_value<<endl;
+   =====
+   return parameter_value; #distractor
+   =====
+   }
+

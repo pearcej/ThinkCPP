@@ -116,3 +116,21 @@ accordingly.
 
        bool bakeCake (string cakeMix, int eggs, double milk, bool birthday);
        bool bakeCake (string cakeMix, int eggs, double water, bool holiday);
+
+.. mchoice:: overloading_4
+   :answer_a: Yes. Two functions with the same name have different return types which is not permitted.
+   :answer_b: Yes. The parameters are the same types in the same order, so overloading is NOT legal.
+   :answer_c: No. One of the parameters has a different name, so overloading is legal.
+   :answer_d: No. One function returns an integer while the other returns a double, so overloading is legal.
+   :correct: b
+   :feedback_a: Return types are not considered in overloads. Any return type is permitted in all circumstances.
+   :feedback_b: If the parameters are the same types in the same order, overloading is NOT legal.
+   :feedback_c: Variable names don't matter in overloading.
+   :feedback_d: Return type is not considered in resolving function overloads.
+
+   Would adding both of the follwoing function declarations to a program lead to an error?
+
+   ::
+
+       int stockPrice (string currency, int previous_price, double interest_rate );
+       double stockPrice (string currency, int older_price, double interest_rate );
