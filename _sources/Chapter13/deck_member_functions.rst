@@ -157,7 +157,7 @@ One solution is to declare ``Deck`` before ``Card`` and then define
 
    // and then later we provide the definition of Deck
    struct Deck {
-     apvector<Card> cards;
+     vector<Card> cards;
 
      Deck ();
      Deck (int n);
