@@ -15,3 +15,6 @@ Objects of Vectors
    shuffling_and_dealing.rst
    mergesort.rst
    glossary.rst
+   Exercises.rst
+   mixed_up_code.rst
+   coding_practice.rst

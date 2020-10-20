@@ -51,6 +51,12 @@ Coding Practice
     #include <vector>
     using namespace std;
 
+    struct Pixel {
+        int r;
+        int g;
+        int b;
+    };
+
     // Write your code for the struct Image here.
 
 .. tabbed:: cp_12_3
