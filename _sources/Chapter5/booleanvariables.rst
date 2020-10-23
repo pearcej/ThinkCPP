@@ -89,29 +89,44 @@ presence or absence of some condition.
        }
 
 .. mchoice:: bool_var_4
-   :answer_a: 50 60 70 80 90 100 .... (infinite loop)
-   :answer_b: 50 60 70 
-   :answer_c: 50 60 70 80 
-   :answer_d: 50 50 50 50 50 50  .... (infinite loop)
-   :answer_e: 50 60 70 80 90 
-   :correct: c
-   :feedback_a: we change the value of ``low_battery`` when we satisfy a certain condition
-   :feedback_b: The value ``80`` is not ``>`` the value ``80``.
-   :feedback_c: Correct! Once ``charge_percent`` is 90 ``low_battery`` is set to false
-   :feedback_d: we change the value of ``low_battery`` when we satisfy a certain condition
-   :feedback_e: Consider if the ``while`` loop will run when ``charge_percent`` is 90
+   :answer_a: nothing will print
+   :answer_b: "Charging your phone"
+   :answer_c: "Battery is charged" 
+   :answer_d: "There is no power"
+   :correct: b
+   :feedback_a: The value of ``low_battery`` is true so we enter the first ``if`` block.
+   :feedback_b: correct! ``low_battery`` stays true and we set ``power_outage`` to false.
+   :feedback_c: ``low_battery`` is true so we don't reach this ``else``.
+   :feedback_d: We change the value of ``power_outage`` to false before hand.
 
    What will print?
 
    ::
 
-       int charge_percent = 50;
        bool low_battery=true;
+       bool power_outage=true;
 
-       while(low_battery){
-          cout<<charge_percent<<" ";
-          charge_percent=charge_percent+10;
-          if(charge_percent > 80){
-            low_battery=false;
+       if(low_battery){
+
+          if(power_outage){
+              power_outage=!power_outage;
           }
+          else{
+              low_battery=false;
+          }
+
+          if(!power_outage){
+            
+            if(low_battery){
+                cout<<"Charging your phone"<<endl;
+            }
+            else{
+                cout<<"Battery is charged"<<endl;
+            }
+
+          }
+          else{
+            cout<<"There is no power"<<endl>>;
+          }
+
        }
