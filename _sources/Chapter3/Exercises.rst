@@ -429,3 +429,50 @@ assess what you have learned in this chapter.
     -   3 parameters, 4 local variables
 
         -   Remember that local variables are declared *inside* of the function.
+
+.. mchoice:: functions_mc11
+
+    How many calls are made to ``party`` during the entire program?
+
+    ::
+
+        void party (int day_of_month, string address) {
+            cout <<"party on "<<day_of_month<<" at "<<address<<endl;
+        }
+
+        void weekend(bool available){
+            if(available==true){
+               party(21,"Big house"); party(22,"CCTC");
+            }
+
+            else{
+               cout<<"sorry I have to study for ENGR101!"<<endl;
+            }
+        }
+
+        int main(){
+            bool im_free=false;
+            party(25,"North campus");
+            weekend(im_free);
+
+            im_free=true;
+            party(25,"Central campus");
+            weekend(im_free);
+            return 0;
+        }
+        
+    -   6 calls
+
+        -   Take into account that ``weekend`` only calls ``party`` if a conditional is true!
+
+    -   2 calls
+
+        -   ``weekend`` can also call the function ``party``
+
+    -   4 calls
+
+        +  Correct! two calls by ``main`` and two calls by ``weekend``
+
+    -   3 calls
+
+        -  One invocation of ``weekend`` calls ``party`` twice.

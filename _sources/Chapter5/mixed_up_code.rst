@@ -244,6 +244,46 @@ Mixed Up Code Practice
    :adaptive:
    :practice: T
 
+   Let's write the code for the Compare function. Compare
+   takes two integers a, b. Compare returns 1 if 
+   a is greater than b, -1 if a is less than b and 0 if they are equal.
+   Put the necessary blocks of code in the correct order.
+   -----
+   int Compare (int a, int b) {
+   =====
+   bool Compare (int a, int b) {   #paired
+   =====
+      if (a > b) {
+   =====
+      if (a > b && a &lt b) {  #distractor
+   =====
+         return 1;
+   =====
+      }
+   =====
+      else if (a &lt b) {  
+   =====
+      else if (a!=b) {  #distractor
+   =====
+         return -1;
+   =====
+      }
+   =====
+      else if (a > 0){ #distractor
+   =====
+      else {
+   =====
+         return 0;
+   =====
+      }
+   =====
+   }
+
+.. parsonsprob:: mucp_5_9
+   :numbered: left
+   :adaptive:
+   :practice: T
+
    Let's write the code for the isFactor function. isFactor
    takes two parameters, num and factor.
    isFactor returns true if factor is a factor of num 
@@ -274,7 +314,7 @@ Mixed Up Code Practice
    =====
    }
 
-.. parsonsprob:: mucp_5_9
+.. parsonsprob:: mucp_5_10
    :numbered: left
    :adaptive:
    :practice: T
@@ -310,7 +350,7 @@ Mixed Up Code Practice
    =====
    }
 
-.. parsonsprob:: mucp_5_10
+.. parsonsprob:: mucp_5_11
    :numbered: left
    :adaptive:
    :practice: T

@@ -172,7 +172,7 @@ Multiple Choice Exercises
 
       + Since the expressions are false, true, false, and true, the output is 0101.
 
-    - 0101
+    - 1010
 
       - Remember that ``true`` outputs to 1 and ``false`` outputs to 0.
 
@@ -224,6 +224,40 @@ Multiple Choice Exercises
 
     .. code-block:: cpp
 
+      double Free_time (int day) {
+        if (day==1||day==2||day==3||day==4) {
+          cout<<"Better study on weekday!"<<endl;
+          return day*0.25;
+        }
+        else{
+          cout<<"Happy weekend"<<endl;
+          return day;
+        }
+      }
+
+    - Yes, we might not return anything.
+
+      - We have an else clause in which we return a value. 
+
+    - Yes, we cannot return an entire expression like ``day*0.25``.
+
+      - If the result of the expression is compatible with the return type we can return it.
+
+    - Yes, we are returning an ``int`` (in the ``else`` block) where as the return type is ``double``.
+
+      - Implicit conversion from an int to double is ok in c++!
+
+    - There are no issues with the code.
+
+      + Correct! implicit conversion from int to double are ok!
+
+.. mchoice:: mce_5_9
+    :practice: T
+
+    Are there any issues with the code below?
+
+    .. code-block:: cpp
+
       void moonWeight (double earth) {
         double moon = 0.165 * earth;
         cout << "You would weigh " << moon << " pounds on the moon." << endl;
@@ -246,7 +280,7 @@ Multiple Choice Exercises
 
       - There is an issue with the code. Can you find it?
 
-.. mchoice:: mce_5_9
+.. mchoice:: mce_5_10
     :practice: T
 
     What is the return type of main?
@@ -267,7 +301,7 @@ Multiple Choice Exercises
 
       + Yes, ``main`` is supposed to return an integer, which is why programmers often return 0 at the end of ``main``.
 
-.. mchoice:: mce_5_10
+.. mchoice:: mce_5_11
     :practice: T
 
     What is the base case of the ``factorial`` recursive function?
@@ -300,3 +334,43 @@ Multiple Choice Exercises
     - There is no base case.
 
       - If there was no base case, the function would recurse infinitely.
+
+.. mchoice:: mce_5_12
+    :practice: T
+
+    What is printed?
+
+    .. code-block:: cpp
+
+      void print_sequence (int n) {
+        if (n == 0) {
+           cout<<1;
+           return;
+           //we can have an empty return to a void function
+        }
+        else {
+          cout<<n<<" ";
+          print_sequence(n-1);
+        }
+      }
+
+      int main(){
+          int val=6;
+          print_sequence(val);
+      }
+
+    - 6 5 4 3 2 1 0
+
+      - Check what the base case prints.
+
+    - 6 6 6 6 6 6 1
+
+      - What value do we give the recursive call?
+
+    - 6 5 4 3 2 1
+
+      - The base case prints something!
+
+    - 6 5 4 3 2 1 1
+
+      + We print a number and decrement it till we reach 0 then we print 1.
