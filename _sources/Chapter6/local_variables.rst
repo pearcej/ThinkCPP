@@ -18,7 +18,7 @@ the other.
    Remember that variables that are declared inside a function definition
    are local. You cannot access a local variable from outside its “home”
    function, and you are free to have multiple variables with the same
-   name, as long as they are not in the same function.
+   name, as long as they are not in the same function scope.
 
 The stack diagram for this program shows clearly that the two variables
 named ``i`` are not in the same storage location. They can have
@@ -101,6 +101,42 @@ to read.
       while (i <= 6) {
         printMultiples (i);
         i = i + 1;
+      }
+    }
+
+    int main() {
+      printMultTable();
+    }
+
+.. mchoice:: local_variables_3
+   :answer_a: True
+   :answer_b: False
+   :correct: b
+   :feedback_a: The scope of ``j`` does not include ``printMultiples`` function.
+   :feedback_b: Yes, ``j`` is not accessable as the value is merely passes from one function to another. We cannot have a statement such as j++; in ``printMultiples`` as it is out of the scope of ``printMultTable``
+
+
+   Take a look at the code below. The variable ``j`` is accessable in the function ``printMultiples``
+
+   .. code-block:: cpp
+
+    #include <iostream>
+    using namespace std;
+
+    void printMultiples (int n) {
+      int i = 1;
+      while (i <= 6) {
+        cout << n*i << '\t';
+        i = i + 1;
+      }
+      cout << endl;
+    }
+
+    void printMultTable() {
+      int j = 1;
+      while (j <= 6) {
+        printMultiples (j);
+        j = j + 1;
       }
     }
 
