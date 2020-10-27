@@ -126,7 +126,7 @@ has been able to prove it *or* disprove it!
    :answer_c: You cannot compare n to 0 in while loop.  You must compare it to another variable.
    :answer_d: In the while loop body, we must set n to False, and this code does not do that.
    :correct: a
-   :feedback_a: The loop will run as long as n is positive. In this case, we can see that n will never become non-positive.
+   :feedback_a: The loop will run as long as n is positive. In this case, we can see that n will never become non-positive as the while statement condition will never be met.
    :feedback_b: While it is true that answer will always be positive, answer is not considered in the loop condition.
    :feedback_c: It is perfectly valid to compare n to 0. Though indirectly, this is what causes the infinite loop.
    :feedback_d: The loop condition must become False for the loop to terminate, but n by itself is not the condition in this case.
@@ -142,8 +142,31 @@ has been able to prove it *or* disprove it!
        n = n + 1;
      }
      cout << answer;
-
+     
 .. mchoice:: while_statement_3
+   :practice: T
+   :answer_a: n % 2 = 0 and n = n + 1
+   :answer_b: n % 2 != 0 and ++n
+   :answer_c: n % 2 == 0 and n++
+   :answer_d: n == "even" and n = n + 2
+   :correct: c
+   :feedback_a: A single equal sign is the assignment operator, not comparison.
+   :feedback_b: The code is meant to print the **even** numbers from 0-20
+   :feedback_c: The condition checks whether a number is even and increments the variable n
+   :feedback_d: n is an int and here you are comparing it to a string.
+
+   The following code is a program to print the **even numbers from 0 to 20**. The code contains blanks. What is the correct while statement condition and iteration needed in order for the code to run successfully.
+
+   .. code-block:: cpp
+
+     int n = 0;
+     while (_____) {  // while statement condition
+       cout << n << endl;
+       _______; // iteration of the variable
+     }
+
+
+.. mchoice:: while_statement_4
    :practice: T
    :answer_a: 4 7
    :answer_b: 5 7
