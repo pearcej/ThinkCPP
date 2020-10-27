@@ -109,7 +109,7 @@ the function many times with rewriting it each time.
 
 .. mchoice:: functions_1
    :practice: T
-   :answer_a: A named sequence of statements.
+   :answer_a: A named sequence/group of statements that perform a particular task.
    :answer_b: Any sequence of statements.
    :answer_c: A mathematical expression that calculates a value.
    :answer_d: A statement of the form x = 5 + 4.
