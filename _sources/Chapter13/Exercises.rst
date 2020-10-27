@@ -237,6 +237,69 @@ Multiple Choice Exercises
 .. mchoice:: mce_13_8
     :practice: T
 
+    Using pseudocode to figure out what helper functions are needed is a characteristic of what?
+
+    - Encapsulation
+
+      - This is the process of wrapping up a sequence of instructions in a function.
+
+    - Generalization
+    
+      - This is the process of taking something specific and making it more general.
+
+    - Top-down design
+    
+      + This is the process of using pseudocode to sketch solutions to large problems and design the interfaces of helper functions.
+
+    - Bottom-up design
+    
+      - This is the process of writing small, useful functions and then assembling them into larger solutions.
+
+.. mchoice:: mce_13_9
+    :practice: T
+
+    Which of the following can lead to off by one errors?
+
+    - Running a for loop too little or too many times.
+
+      - This can lead to too few iterations or too many iterations.
+
+    - Forgetting that indexing starts at 0.
+    
+      - This can lead you to have values that are shifted by one.
+
+    - Using less than instead of less than or equal to in a while loop.
+    
+      - This can lead to running the while loop one less times than what you wanted.
+
+    - All of the above.
+    
+      + These can all lead to off by one errors.
+
+.. mchoice:: mce_13_10
+    :practice: T
+
+    What is the amount of time that mergeSort takes?
+
+    - n log n
+
+      + This makes mergeSort faster than our previous version of selection sort.
+
+    - n!
+    
+      - mergeSort runs faster than factorial time.
+
+    - logn
+    
+      - mergeSort runs slower than logarithmic time.
+
+    - n^2
+    
+      - This is the time complexity of selection sort.
+
+.. mchoice:: mce_13_11
+    :practice: T
+
     What kind of sorting algorithm is our ``sortDeck`` function? You are encouraged to search up these different sorting algorithms!
 
     - Bubble sort
@@ -254,54 +317,3 @@ Multiple Choice Exercises
     - Quicksort
     
       - Quicksort uses recursive calls to partition a list.
-
-.. mchoice:: mce_13_9
-    :practice: T
-
-    Put the different steps i-iv in the correct order for the implementation of ``mergeSort``.
-
-    .. code-block:: cpp
-
-        Deck Deck::mergeSort () const {
-          i.   divide the deck into two subdecks
-          ii.  merge the two halves and return the result
-          iii. sort the subdecks using sort
-          iv.  find the midpoint of the deck
-        }
-
-    - i, ii, iii, iv
-
-      - What is the first step of ``mergeSort``?
-
-    - iv, i, iii, ii
-    
-      + We find the middle, split the deck, sort the halves, and merge together.
-
-    - iii, i, iv, ii
-    
-      - What is the first step of ``mergeSort``?
-
-    - iv, i, ii, iii
-    
-      - We have to return a sorted deck last.
-
-.. mchoice:: mce_13_10
-    :practice: T
-
-    What is the amount of time that mergeSort takes?
-
-    - nlogn
-
-      + This makes mergeSort faster than our previous version of selection sort.
-
-    - n!
-    
-      - mergeSort runs faster than factorial time.
-
-    - logn
-    
-      - mergeSort runs slower than logarithmic time.
-
-    - n^2
-    
-      - This is the time complexity of selection sort.
