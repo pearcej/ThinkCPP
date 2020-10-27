@@ -169,7 +169,7 @@ bothers you, you can also use tab characters, like below.
    -----
    void powersOfn (int n) {
    =====
-   void powersOfn (int n) {  #paired
+   void powersOfn (string n) {  #paired
    =====
      int x = 1;
    =====
@@ -177,7 +177,7 @@ bothers you, you can also use tab characters, like below.
    =====
        cout << x << "\t" << pow(n, x) << endl;
    =====
-       cout << x << "\t" << pow(2, x) << endl;  #paired
+       cout << x << "\t" << pow(5, x) << endl;  #paired
    =====
        x++;
      }
