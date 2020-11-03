@@ -9,7 +9,7 @@ Mixed Up Code Practice
 
    Below is the enumerated type Days which maps days of the week to integers
    starting at 1. Use a switch statement to determine whether or not day
-   is a weekend or not.
+   is a weekend or not. Check for cases in numerical order.
    -----
    enum Day { MON = 1, TUE, WED, THU, FRI, SAT, SUN };
    =====
@@ -48,7 +48,7 @@ Mixed Up Code Practice
 
    Use a switch statement to check and print out whether a number is divisible by two.
    Prompt and get input from the user. If input isn't valid,
-   print out the default statement "Invalid input."
+   print out the default statement "Invalid input." Check for cases in numerical order.
    -----
    int main () {
    =====
@@ -90,7 +90,7 @@ Mixed Up Code Practice
 
    Use a switch statement to check and print out the maximum between two numbers.
    Prompt and get input from the user for two integers. If input isn't valid,
-   print out the default statement "Invalid input."
+   print out the default statement "Invalid input." Check for cases in numerical order.
    -----
    int main () {
    =====
