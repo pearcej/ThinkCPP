@@ -119,3 +119,46 @@ number of a’s.
    =====
       x = x + 2;
    }
+
+.. mchoice:: looping_counting_4
+   :practice: T
+   :answer_a: The code dosen't reach <code>return 0</code> becuase we index out of bounds in <code>word_2</code>.
+   :answer_b: 2
+   :answer_c: 3
+   :answer_d: 4
+   :correct: d
+   :feedback_a: We set <code>end_1</code> to be the smaller of the two lengths so we don't index out of bounds.
+   :feedback_b: Not all the letters after index 4 differ in the two words.
+   :feedback_c: We decrement the value of counter when we don't have matching letters.
+   :feedback_d: Correct! we have 6 matching letters and 2 differing letters upto the length of <code>word_2</code>.
+
+
+   What is the value of ``counter`` right before main returns 0?
+
+   .. code-block:: cpp
+      :linenos:
+
+      string word_1 = "understand"
+      string word_2 = "underwaa"
+
+      int end_1 = word_1.length();
+      int end_2 = word_2.length();
+
+      if ( end_2 &lt end_1 ){
+         end_1 = end_2;
+      }
+
+      int index = 0;
+      int counter = 0;
+
+      while ( index &lt end_1 ) {
+        if ( word_1[index] == word_2[index] ){
+           counter = counter + 1;
+        }
+
+        else{
+           counter = counter - 1;
+        }
+      }
+      
+      return 0;

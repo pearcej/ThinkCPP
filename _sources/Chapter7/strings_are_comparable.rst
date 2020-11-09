@@ -70,7 +70,8 @@ For the following questions, remember that in C++ ``1`` means true and ``0`` mea
    :feedback_a: Both match up to the g but Dog is shorter than Doghouse so it comes first in the dictionary.
    :feedback_b: Strings are compared character by character.
 
-   Evaluate the following comparison:
+   What would the result of the following comparison be?
+   Where ``1`` means true and ``0`` means false.
 
    .. code-block:: cpp
 
@@ -86,7 +87,8 @@ For the following questions, remember that in C++ ``1`` means true and ``0`` mea
    :feedback_b: Yes, upper case is less than lower case according to the ordinal values of the characters.
    :feedback_c: C++ is case sensitive meaning that upper case and lower case characters are different.
 
-   Evaluate the following comparison:
+   What would the result of the following comparison be?
+   Where ``1`` means true and ``0`` means false.
 
    .. code-block:: cpp
 
@@ -100,8 +102,24 @@ For the following questions, remember that in C++ ``1`` means true and ``0`` mea
    :feedback_a: d is greater than D.
    :feedback_b: The length does not matter.  Lower case d is greater than upper case D.
 
-   Evaluate the following comparison:
+   What would the result of the following comparison be?
+   Where ``1`` means true and ``0`` means false. 
 
    .. code-block:: cpp
 
       "dog" < "Doghouse";
+
+.. mchoice:: strings_comparable_4
+   :practice: T
+   :answer_a: 1
+   :answer_b: 0
+   :correct: b
+   :feedback_a: They are equal so one can't be greater than the other.
+   :feedback_b: Correct! because they are equal. They are equal because all characters match. 
+
+   What would the result of the following comparison be?
+   Where ``1`` means true and ``0`` means false.
+
+   .. code-block:: cpp
+
+      "bread" < "bread";
