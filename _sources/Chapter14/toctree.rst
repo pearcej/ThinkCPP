@@ -15,3 +15,6 @@ Classes and invariants
    preconditions.rst
    private_functions.rst
    glossary.rst
+   Exercises.rst
+   mixed_up_code.rst
+   coding_practice.rst
