@@ -120,3 +120,27 @@ and that outputs the letters backwards, all on one line.
         cout << s[i] << endl;
         i = i + 2;
       }
+
+.. mchoice:: traversal_3
+   :practice: T 
+   :answer_a: e e n r 1
+   :answer_b: e e e e e
+   :answer_c: e e n r
+   :correct: a
+   :feedback_a: Correct! the values of index are 0 0 1 3 6. After this while loop ends.
+   :feedback_b: We are updating the value of of <code>index</code>. Not doing so would make it an infinte loop! 
+   :feedback_c: Recalculate the values of <code>index</code> at each stage and consider which ones are &lt 7. 
+
+
+   What is printed when the code is run?
+
+   .. code-block:: cpp
+
+      string truth = "engr101";
+      int index = 0;
+      int counter = 0;
+      while ( index < truth.length() ) {
+        cout << truth[index] <<" ";
+        index = index + counter;
+        counter = counter + 1;
+      }

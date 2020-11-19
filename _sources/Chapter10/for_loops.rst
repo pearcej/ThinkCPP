@@ -109,7 +109,7 @@ is equivalent to
    :numbered: left
    :adaptive:
 
-   Construct the ``half_life()`` function that prints the first num half lives
+   Construct the <code>half_life()</code> function that prints the first num half lives
    of the initial amount.
    -----
    void half_life(int initial_amount, int num) {
@@ -131,4 +131,21 @@ is equivalent to
       return new_amount;                         #distractor
    =====
       }
+   }
+
+.. activecode:: for_loops_AC_3
+   :language: cpp
+
+   Run the active code below, which uses a ``for`` loop with a negative change in the "INCREMENTOR".
+   ~~~~
+   #include <iostream>
+   #include <vector>
+   using namespace std;
+
+   int main() {
+       vector<int> count = {1,2,3,4};
+       int i;
+       for (i = 3; i > -1; i--){
+          cout << count[i] << endl;
+       }
    }

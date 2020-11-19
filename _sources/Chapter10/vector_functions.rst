@@ -88,7 +88,7 @@ then vector function ``push_back`` for that purpose.
    :numbered: left
    :adaptive:
 
-   Construct the ``make_even`` function that loops through vec, adds 1 to any elements
+   Construct the <code>make_even</code> function that loops through vec, adds 1 to any elements
    that are odd, and returns the new vector.
    -----
    vector&#60;int&#62; make_even(vector&#60;int&#62; vec) {
@@ -117,3 +117,38 @@ then vector function ``push_back`` for that purpose.
    =====
       }
    }
+
+.. mchoice:: vector_functions_3
+   :practice: T
+   :answer_a: 4 3 2 1 0
+   :answer_b: 4 3 2 3 4
+   :answer_c: 0 1 2 3 4
+   :correct: b
+   :feedback_a: we change the numbers in the first half of the vector before we copy them to the second half
+   :feedback_b: when <code>i</code> is 3 we copy from <code>end = 1</code> copying the values we already changed.
+   :feedback_c: we change values in the second loop.
+
+
+   What does the following code print?
+
+   .. code-block:: cpp
+      :linenos:
+
+      vector<int> numbers(5);
+      int size = 5;
+      for (int i = 0; i < size; i++){
+         numbers[i] = i;
+      }
+
+      int end = 4;
+
+      for (int i = 0; i < size; i++){
+         numbers[i] = numbers[end];
+         end--;
+      }
+      
+      for (int i = 0; i < size; i++){
+         cout << numbers[i] << "  ";
+      }
+
+      cout << endl;

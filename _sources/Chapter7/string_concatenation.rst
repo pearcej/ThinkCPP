@@ -126,3 +126,34 @@ very strange result, at least in my development environment.
       cout << "language" + "action" + "adjective" << endl; #distractor
    =====
    }
+
+.. parsonsprob:: string_concatenation_3
+   :numbered: left
+   :adaptive:
+
+   Put together the code below to creater a function <code>greeter</code> that adds "hello" and "goodbye" behind and ahead of a message
+   respectively and then prints the new message.
+   Example: <code>greeter("ssup")</code> will print "hello ssup goodbye";
+
+   -----
+   void greeter(string message) {
+   =====
+   string greeter (string message) { #distractor
+   =====
+      string beginning = "hello "; 
+      string end = " goodbye";
+   =====
+      string beginning = "hello"; #paired
+      string end = "goodbye";
+   =====
+      string new_Word = beginning + message;
+      new_Word = new_Word + end; 
+   =====
+      string new_Word = message + beginning; #paired
+      new_Word = message + end;
+   =====
+      cout << "new_Word"; #distractor
+   =====
+      cout &lt&lt new_Word; 
+   =====
+   }

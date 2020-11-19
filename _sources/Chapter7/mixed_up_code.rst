@@ -364,3 +364,49 @@ Mixed Up Code Practice
       }
    =====
    }
+
+.. parsonsprob:: mucp_7_11
+   :numbered: left
+   :adaptive:
+   :noindent:
+
+   Let's write a function called <code>ispalindrome</code> which takes
+   a <code>string</code> named input
+   and returns a <code>bool</code>
+   The function returns true if the <code>string</code> is a palindrome and false if not.
+   palindromes are symmetrical strings.
+   That is a string that reads the same backwards is palindrome.
+   palindromes:  "hih", "i", "bob", "tenet", "soos", "madam" .
+   not palindromes: "join", "hat", "frat", "supper", "rhythm".
+   The code is mixed up and contains extra blocks.
+   Put the necessary blocks in the correct order.
+   -----
+   bool ispalindrome(string input) {
+   =====
+   string ispalindrome(bool input) {  #paired
+   =====
+      int front = 0 , back = input.length() - 1;
+   =====
+      int front = 0 , back = input.length(); #paired
+   =====
+      while ( front &lt back) {
+   =====
+      while ( front &gt back) { #paired
+   =====
+         if( input[b] != input[e] ) {
+   =====
+         else { #distractor
+   =====
+            return false;
+   =====
+         }
+   =====
+         front = front + 1;
+   =====
+         back = back - 1;
+   =====
+      }
+   =====
+      return true;
+   =====
+   }

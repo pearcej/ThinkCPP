@@ -405,3 +405,72 @@ Multiple Choice Exercises
     - True
 
       - In C++, boolean values are outputted as either a 0 or 1.
+
+.. mchoice:: mce_7_13
+    :practice: T
+
+    What is the output of the code below?
+
+    .. code-block:: cpp
+
+     int main() {
+        string quote = "Suffering builds character";
+        int count = 0;
+        int index = 17;
+        while ( index != quote.length() ){
+          if ( quote[index] == 'a' || quote[index] == 'e' ){
+            count = count + index;
+          }
+          index = index + 1;
+        }
+        cout << count << endl;
+     }
+
+    - 3
+
+      - The code is not counting the number of a's or e's after position 17. Rather adding up their indices.
+
+    - 4
+    
+      - The code is not counting the number of a's or e's. Rather adding up their indices.
+
+    - 64
+
+      + Correct! the occurences of 'a' are 19  and 21, while that of 'e' is 24 (after ``index`` 17). The total is 64.
+
+    - 68
+
+      - The first occurence of 'e' is at index 4 so it is not counted.
+    
+.. mchoice:: mce_7_14
+    :practice: T
+
+    What is the output of the code below?
+
+    .. code-block:: cpp
+
+     int main() {
+        string quote = "Its Bond, James Bond";
+        int index = 1;
+        while( index < quote.length() ){
+          quote[index] = 'M';
+          index = index * 2;
+        }
+        cout << quote << endl;
+     }
+
+    - "IMM MondM James Mond"
+
+      + Correct! We change indices 1,2,4,8,16 to M before ``index`` becomes ``>`` ``quote.length()``.
+
+    - "IMMMMMMMMMMMMMMMMMMM"
+    
+      - We are not increasing ``index`` by 1, instead we are doubling it.
+
+    - "MMM MondM James Mond"
+
+      - We don't start at position 0 this time.
+
+    - "IMsMBMnM,MJMmMsMBMnM"
+
+      - we are not increasing ``index`` by 2, instead we are doubling it.

@@ -84,7 +84,35 @@ the square brackets.
         char letter = bake[?];
       }
 
-.. clickablearea:: extracting_characters_2
+.. mchoice:: extracting_characters_2
+   :practice: T
+   :answer_a: lunch
+   :answer_b: jello
+   :answer_c: lello
+   :answer_d: heljo
+   :correct: c
+   :feedback_a: When we <code>cout</code> a <code>string</code> we print its content not its name.
+   :feedback_b: Carefully check which string(s) we are indexing into.
+   :feedback_c: Correct! We copy the 'l' from position 3 of "hello" to position 0. 
+   :feedback_d: Consider which string(s) we are indexing into. 
+
+
+   What is printed when the code below is run?
+
+   .. code-block:: cpp
+      :linenos:
+
+      #include <iostream>
+      using namespace std;
+
+      int main () {
+        string lunch = "hello";
+        string person = "deejay";
+        lunch[0] = lunch[3];
+        cout << lunch;
+      }
+
+.. clickablearea:: extracting_characters_3
     :question: Click on each spot where a character in a string is accessed.
     :iscode:
     :feedback: Remember, square brackets [] are used to access a character in a string.
@@ -97,7 +125,7 @@ the square brackets.
     }
 
 
-.. parsonsprob:: extracting_characters_3
+.. parsonsprob:: extracting_characters_4
    :numbered: left
    :adaptive:
 

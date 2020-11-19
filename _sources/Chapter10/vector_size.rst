@@ -69,7 +69,7 @@ begins, and use this variable to check for the last element.
    :answer_a: 5
    :answer_b: 4
    :answer_c: 3
-   :answer_d: none of the above
+   :answer_d: none of the above due to runtime error
    :correct: d
    :feedback_a: Incorrect! This is what gets returned by nums.size()
    :feedback_b: Incorrect! This is the element before nums[nums.size()]
