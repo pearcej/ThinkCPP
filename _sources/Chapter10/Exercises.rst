@@ -57,8 +57,40 @@ Answer the following **Multiple Choice** questions to assess what you have learn
 
         -   This is not proper vector indexing.  Also, vectors are zero-indexed.
 
-
 .. mchoice:: vectors_mc3
+
+    What gets printed when the following code is run:
+    
+    .. code-block::
+    
+       vector<string> chant = {"Hail", "to", "the", "victors", "valiant"};
+       chant[0]=chant[3];
+       chant[3]=chant[0];
+       chant[1]=chant[0];
+
+       for ( size_t i = 0; i < chant.size(); i++ ){
+            cout << chant[1][i] << "  ";
+       }
+    
+    -   victors victors the victors valiant
+
+        -   Although this is the final version of ``chant``, we are not printing ``chant``!
+
+    -   error! we run into an error somewhere in the execution due to an out of bounds access.
+
+        -    Remember, ``chant`` at index 1 is no longer "hail".
+
+    -   v i c t o r s 
+
+        -   You are thinking of the correct word but consider upto what index we print.
+
+    -   v i c t o 
+
+        +   Correct! we print the first 5 letters of the string at index 1 which is "victors".
+
+
+
+.. mchoice:: vectors_mc4
 
     Select all of the following statments that correctly make a copy of ``lauren``.
     
@@ -89,7 +121,7 @@ Answer the following **Multiple Choice** questions to assess what you have learn
         +   This is the most common syntax.
 
 
-.. mchoice:: vectors_mc4
+.. mchoice:: vectors_mc5
 
     What is the value of nums after the following code executes?
     
@@ -127,7 +159,7 @@ Answer the following **Multiple Choice** questions to assess what you have learn
         -   Take a closer look at what happens inside of the conditional.
 
 
-.. mchoice:: vectors_mc5
+.. mchoice:: vectors_mc6
 
     **Multiple Response** Select all ways to print out the contents of ``ryan`` without
     going out of bounds.
@@ -177,7 +209,7 @@ Answer the following **Multiple Choice** questions to assess what you have learn
         +   There are 9 elements numbered 0 through 8, and this statement iterates over all of them.
 
 
-.. mchoice:: vectors_mc6
+.. mchoice:: vectors_mc7
 
     Suppose you want ``ryan`` to have the value
 
@@ -213,7 +245,7 @@ Answer the following **Multiple Choice** questions to assess what you have learn
         +   T``push_back`` *pushes* new items onto the end of the vector, and ``pop_back`` *pops* old items off the end of the vector.
 
 
-.. mchoice:: vectors_mc7
+.. mchoice:: vectors_mc8
 
     Suppose you are randomly assigning students to discussions 1-8.  How would you do this correctly?  Assume
     you have alreay implemented the following code.
@@ -250,7 +282,7 @@ Answer the following **Multiple Choice** questions to assess what you have learn
         -   The first part creates a random number between 0 and 8 (9 numbers).  This is too many, and not the numbers we are looking for.
 
 
-.. mchoice:: vectors_mc8
+.. mchoice:: vectors_mc9
 
     Suppose you have defined the ``fizzBuzz`` function as the following
     
@@ -294,7 +326,7 @@ Answer the following **Multiple Choice** questions to assess what you have learn
         +   14, 28, 42, 70, and 98 are all multiples of 7 and 2 and are counted by ``fizzBuzz``.
 
 
-.. mchoice:: vectors_mc9
+.. mchoice:: vectors_mc10
 
     Suppose you have defined the ``startsWith`` function as the following
     
@@ -340,7 +372,7 @@ Answer the following **Multiple Choice** questions to assess what you have learn
         -   Is the function counting how many times ``"M"`` appears in ``names``?
 
 
-.. mchoice:: vectors_mc10
+.. mchoice:: vectors_mc11
 
     Suppose you have defined the ``howMany`` function as the following
     
@@ -388,3 +420,45 @@ Answer the following **Multiple Choice** questions to assess what you have learn
     -   Error!
 
         -   There isn't anything wrong with the code that would cause an error.
+
+.. mchoice:: vectors_mc12
+
+    Suppose you have defined the ``repeater`` function as the following
+    
+    .. code-block::
+
+        int repeater (const vector<int>& vec) {
+            int count = 0;
+            for (size_t i = 0; i < vec.size(); i++) {
+                for (size_t j = 0; j < vec.size(); j++) {
+                    if ((vec[j] == vec[i]) && (i != j)) {
+                        count++;
+                    }
+                }
+            }
+            return count;
+        }
+    
+    What is the value of counter after the following code is run?
+
+    .. code-block::
+
+        vector<int> vals = {1,1,3,2,2,3,3,4,5,6,7,4,4,5};
+        int counter = repeater(vals);
+
+    -   169
+
+        -   What is being counted by ``repeater`` in each iteration of the outer loop? Definitely not everything!
+
+    -   32
+
+        -   ``repeater`` does count repeats but does it consider values at the same indexes repeats?
+
+    -   18
+
+        +   ``repeater`` considers the number of times each index shares a value with any of the other indices.
+    
+    -   13
+
+        -   ``repeater`` dosen't simply count the number of elements.
+

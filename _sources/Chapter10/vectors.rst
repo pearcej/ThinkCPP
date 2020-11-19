@@ -122,3 +122,23 @@ them to zero.
    :feedback_d: Incorrect! Go back and read to find the answer!
 
    What do you call a function that creates an instance of a new object and initializes its instance variables?
+
+.. mchoice:: vectors_4
+
+    What are the values of ``number``'s elements after this declaration?
+    
+    .. code-block::
+    
+       vector<int> numbers(6);
+
+    -   undefined (we don't know the values)
+
+        +   There are 6 integers and are initialized to undefined values
+
+    -   0
+
+        -    Remember, integers are default initialized to undefined values
+
+    -   6
+
+        -   6 is the size we want the vector to be.

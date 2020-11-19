@@ -297,4 +297,56 @@ Answer the following **Activecode** questions to assess what you have learned in
    #include <vector>
    using namespace std;
 
+
+.. tabbed:: vectors_a11
+
+   .. tab:: Question
+
+      .. activecode:: vectors_a11q
+         :language: cpp
+
+         Write the function ``make_odd`` which subtracts 1 from every even number in a vector of integers.
+         We don't want any negative values so don't subtract 1 from 0.
+         ( remember to take in the vector by reference to make changes to the actual vector! )
+         ~~~~
+         #include <iostream>
+         #include <vector>
+         using namespace std;
+
+
+   .. tab:: Answer
+
+      .. activecode:: vectors_a11a
+         :language: cpp
+
+         Below is one way to finish the program.  We us the modulus operator to check for even numbers and decrement them.
+         we keep an extra check for 0 to make sure wew are not decrementing 0.
+         ~~~~
+         #include <iostream>
+         #include <vector>
+         using namespace std;
+
+         void make_odd ( vector<int> &nums) {
+             for (size_t i = 0; i < nums.size(); ++i) {
+
+                 if((nums[i] % 2 == 0) && (nums[i] != 0)){
+                     nums[i]--;
+                 } 
+
+             }
+         }
+
+
+.. activecode::  vectors_a12
+   :language: cpp
+
+   Write the function ``weird_print`` that prints the first half of a vector of integers in reverse order
+   and then prints the second half in the order present in the vector.
+   If we had ``vec = {1,2,3,4,5,6}``
+   we would print ``3 2 1 4 5 6``.
+   You can assume the size of the vector will always be even.
+   ~~~~
+   #include <iostream>
+   #include <vector>
+   using namespace std;
    

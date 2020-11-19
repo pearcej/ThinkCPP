@@ -14,7 +14,7 @@ between 0 and ``upperBound-1``.
 
    vector<int> randomVector (int n, int upperBound) {
      vector<int> vec (n);
-     for (size_t i = 0; i<vec.size(); i++) {
+     for (size_t i = 0; i < vec.size(); i++) {
        vec[i] = random () % upperBound;
      }
      return vec;
@@ -27,7 +27,7 @@ have a function that outputs the contents of a vector.
 ::
 
    void printVector (const vector<int>& vec) {
-     for (size_t i = 0; i<vec.size(); i++) {
+     for (size_t i = 0; i < vec.size(); i++) {
        cout << vec[i] << " ";
      }
    }
@@ -64,7 +64,7 @@ which is pretty random-looking. Your results might be different.
    using namespace std;
 
    vector<int> randomVector (int n, int upperBound);
-   void printVector (const vector<int>& vec);
+   void printVector (const vector<int> & vec);
 
    int main() {
        int numValues = 20;
@@ -121,3 +121,22 @@ times each value appears, and then see what happens when we increase
    :feedback_d: Incorrect! The distribution of random numbers is not related to the normal distribution.
 
    As we store more and more random numbers in a vector, we expect its contents to be __________.
+
+.. mchoice:: vector_of_rand_nums_3
+   :practice: T
+   :answer_a: yes we would get a compile error
+   :answer_b: no we would not because values remain same.
+   :correct: a
+   :feedback_a: Correct! we can't make changes to a vector we take in by constant reference
+   :feedback_b: Even if we keep the values same we are editing a constant which is not allowed.
+
+   Would compiling the following code lead to a compiler error?
+
+   .. code-block:: cpp
+      :linenos:
+
+      void dostuff (const vector<int> & vec) {
+         for (size_t i = 0; i < vec.size(); i++) {
+            vec[i] = vec[i] ;
+         }
+      }
