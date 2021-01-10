@@ -40,7 +40,7 @@ serving_dir = "./build/thinkcpp"
 
 #new 7/2019 changes
 # Change to False when running localhost
-dynamic_pages = False
+dynamic_pages = True
 
 if dynamic_pages:
     dest = './published'
@@ -74,6 +74,7 @@ options(
                        'dynamic_pages': dynamic_pages,
                        'downloads_enabled': 'false',
                        'enable_chatcodes': 'false',
+                       'default_ac_lang' : "cpp",
                        'allow_pairs': 'false'
                         }
     )
