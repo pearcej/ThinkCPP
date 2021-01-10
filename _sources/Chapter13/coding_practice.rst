@@ -35,7 +35,7 @@ Coding Practice
     :language: cpp
 
     How long is a year on other planets? Let's write a program that prints out the number of days
-    in a year on each planet using a switch statement. These values are, in planetary order, 
+    in a year on each planet using a switch statement. These values are, in planetary order,
     88 days, 225 days, 365 days, 687 days, 4333 days, 10759 days, 30687 days, and 60190 days.
     Print out this information in the following format: Planet ``planet`` has ``numDays`` number of days in
     a year!
@@ -89,7 +89,7 @@ Coding Practice
 
            struct BingoBoard {
                vector<vector<Space> > board;
-           }; 
+           };
 
 .. activecode:: cp_13_AC_4q
     :language: cpp
@@ -165,11 +165,11 @@ Coding Practice
     .. tab:: Question
 
         We can now fill our ``BingoBoard`` with values! Write the ``BingoBoard``
-        member function ``makeBoard``. Use the ``generateRandVec`` 
+        member function ``makeBoard``. Use the ``generateRandVec``
         function and select the first 25 values to fill up the board. Make sure
         to create a free space in the middle of the board! Set the value of the
         free space to 0 and ``is_filled`` to ``true``.  All other
-        spaces should have ``is_filled`` set to ``false. 
+        spaces should have ``is_filled`` set to ``false``. 
 
         .. activecode:: cp_13_AC_7q
            :language: cpp
@@ -189,7 +189,7 @@ Coding Practice
            struct BingoBoard {
                vector<vector<Space> > board;
                void makeBoard ();
-           }; 
+           };
 
            int randomInt (int low, int high);
            void swapValues (vector<int> &vec, int index1, int index2);
@@ -222,10 +222,10 @@ Coding Practice
 
     .. tab:: Answer
 
-        Below is one way to implement the program. First we need to initialize 
+        Below is one way to implement the program. First we need to initialize
         the board to the correct dimensions. Then, we use ``generateRandVec``
         to create a ``vector`` of random values from 1 to 75. Afterwards, we set
-        the values of the 25 ``Space``\s to the first 25 values in the 
+        the values of the 25 ``Space``\s to the first 25 values in the
         random ``vector``. Lastly, we set the middle ``Space`` to 0 and
         set its ``is_filled`` to ``true``.
 
@@ -247,7 +247,7 @@ Coding Practice
            struct BingoBoard {
                vector<vector<Space> > board;
                void makeBoard ();
-           }; 
+           };
 
            int randomInt (int low, int high);
            void swapValues (vector<int> &vec, int index1, int index2);
@@ -321,19 +321,19 @@ Coding Practice
         vector<vector<Space> > board;
         void makeBoard ();
         void printBoard ();
-    }; 
+    };
 
     int randomInt (int low, int high);
     void swapValues (vector<int> &vec, int index1, int index2);
     vector<int> generateRandVec ();
-    
+
     // Write your code for the printBoard function here.
 
     int main() {
         BingoBoard bingo;
         bingo.makeBoard ();
         bingo.printBoard ();
-    } 
+    }
     ====
     int randomInt(int low, int high) {
         srand(time(NULL));
@@ -387,12 +387,12 @@ Coding Practice
 
         Bubble sort is a method of sorting that involves repeatedly swapping the
         adjacent elements if they are in the wrong order. For example, let's say
-        we have the ``vector`` with elements {3, 2, 4, 1}. On the first pass, we take 
+        we have the ``vector`` with elements {3, 2, 4, 1}. On the first pass, we take
         a look at the first two elements, 3 and 2. Since 3 is bigger than 2, we swap them.
         Thus, the ``vector`` now looks like {2, 3, 4, 1}. Next, we look at the next two
         elements, 3 and 4. Since 3 is less than 4, we don't swap. Lastly, we look at
         the last two elements, 4 and 1. Since 4 is greater than 1, we swap the.
-        Thus the ``vector`` now looks like {2, 3, 1, 4}. Now we restart and look at the 
+        Thus the ``vector`` now looks like {2, 3, 1, 4}. Now we restart and look at the
         first two elements again and the process continues. This way, the biggest elements
         "bubble" to the back. Write the function ``bubbleSort``,
         which takes a ``vector`` as a parameter and sorts it. Feel free to use the provided
@@ -419,7 +419,7 @@ Coding Practice
                bubbleSort (vec);
                for (size_t i = 0; i < vec.size(); ++i) {
                    cout << vec[i] << " ";
-               } 
+               }
            }
 
     .. tab:: Answer
@@ -450,7 +450,7 @@ Coding Practice
                            swapValues(vec, j, j + 1);
                        }
                    }
-               }      
+               }
            }
 
            int main() {
@@ -458,18 +458,18 @@ Coding Practice
                bubbleSort (vec);
                for (size_t i = 0; i < vec.size(); ++i) {
                    cout << vec[i] << " ";
-               } 
+               }
            }
 
 .. activecode:: cp_13_AC_10q
     :language: cpp
 
-    You may have noticed that in some cases, our version of ``bubbleSort`` does 
+    You may have noticed that in some cases, our version of ``bubbleSort`` does
     an unnecessary amount of work. For example, if our ``vector`` was {1, 2, 3, 5, 4},
     ``bubbleSort`` would swap 4 and 5, but then keep going even though our ``vector``
     is already in order! We can save some work by including a ``bool`` called ``is_changed``.
     If we swap values during a pass, we set ``is_changed`` to true. If nothing has been swapped,
-    then ``is_changed`` stays false, and we know to break out of the loop since our ``vector`` 
+    then ``is_changed`` stays false, and we know to break out of the loop since our ``vector``
     is already sorted. Write the function ``fastBubbleSort``, which is ``bubbleSort`` with this
     modification.
     ~~~~
@@ -490,5 +490,5 @@ Coding Practice
         fastBubbleSort (vec);
         for (size_t i = 0; i < vec.size(); ++i) {
             cout << vec[i] << " ";
-        } 
+        }
     }

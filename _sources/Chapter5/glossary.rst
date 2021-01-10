@@ -62,8 +62,3 @@ logical operator:
    :match_1: boolean|||A value or variable that can take on one of two states, often called true and false.
    :match_2: flag|||A variable that records a condition or status information.
    :match_3: void|||A special return type that does not return a value.
-    
-
-.. [1]
-   There is a way to fix that using the boolalpha flag, but it is too
-   hideous to mention.

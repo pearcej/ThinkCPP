@@ -25,7 +25,7 @@ There are even some parameters that are passed to main by the system,
 but we are not going to deal with them for a little while.
 
 
-.. mchoice:: return_main_1
+.. mchoice:: return_main_mc_1
    :answer_a: string
    :answer_b: integer
    :answer_c: nothing
@@ -39,7 +39,7 @@ but we are not going to deal with them for a little while.
    What data type is the main function supposed to return?
 
 
-.. fillintheblank:: return_main_2
+.. fillintheblank:: fitb_return_main_2
 
     Usually, we return |blank| to exit main.  However, if there are
     any errors that we catch, we might return |blank|.
@@ -49,34 +49,33 @@ but we are not going to deal with them for a little while.
     - :-1: Correct!
       :.*: Try again!
 
-.. mchoice:: return_main_2
+.. mchoice:: return_main_mc_2
    :multiple_answers:
    :answer_a: "its night time Day time"
    :answer_b: "its night time afternoon"
    :answer_c: nothing is printed
-   :answer_d: "its night time" 
+   :answer_d: "its night time"
    :correct: d
-   :feedback_a: a return statment if encountered before reaching the second ``if``.
-   :feedback_b: a return statment is encountered before and ``sun_set`` is false.
+   :feedback_a: a return statement if encountered before reaching the second ``if``.
+   :feedback_b: a return statement is encountered before and ``sun_set`` is false.
    :feedback_c: ``sun_set`` is true so the "its night time" gets printed
    :feedback_d: Correct! Once the ``return`` statement is encountered nothing else is printed
 
-   what gets printed?
+   What gets printed when the following code runs?
 
    ::
 
-      int main(){
-        bool sun_set=true;
-        if(sun_sunset){
-          cout<<"its night time ";
-          sun_set=false;
-          return 0;
-        }
-        if(!sunset){
-          cout<<"Day time ";
-        }
-        else{
-          cout<<"afternoon ";
-        }
+      int main() {
+          bool sun_set=true;
+          if(sun_sunset) {
+              cout << "its night time ";
+              sun_set=false;
+              return 0;
+          }
+          if(!sunset) {
+              cout << "Day time ";
+          }
+          else {
+              cout << "afternoon ";
+          }
       }
-      
