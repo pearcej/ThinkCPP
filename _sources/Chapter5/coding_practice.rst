@@ -5,9 +5,9 @@ Coding Practice
 
     .. tab:: Question
 
-        Write a function called ``calculator`` which takes two ``double``\s, ``first`` and
-        ``second``, and a ``char operation`` as parameters. ``calculator`` performs
-        addition, subtraction, multiplication, or division with the two ``double``\s 
+        Write a function called ``calculator`` which takes two ``doubles``, ``first`` and
+        ``second`` and a ``char operation`` as parameters. ``calculator`` performs
+        addition, subtraction, multiplication, or division with the two ``doubles``
         depending on what operation is passed in (+, -, *, /). It then returns the result.
         Run and test your code!
 
@@ -126,12 +126,12 @@ Coding Practice
 
     .. tab:: Question
 
-        An interior angle of a polygon is the angle between two adjacent 
+        An interior angle of a polygon is the angle between two adjacent
         sides of the polygon. Each interior angle in an equilateral triangle
         measures 60 degree, each interior angle in a square measures 90 degrees,
         and in a regular pentagon, each interior angle measures 108 degrees.
         Write the function ``calculateIntAngle``, which takes a ``numSides``
-        as a parameter and returns a ``double``. ``calculateIntAngle`` finds the 
+        as a parameter and returns a ``double``. ``calculateIntAngle`` finds the
         interior angle of a regular polygon with ``numSides`` sides. The formula
         to find the interior angle of a regular ngon is (n - 2) x 180 / n.
         Run and test your code!
@@ -162,7 +162,7 @@ Coding Practice
 
         Below is one way to implement the program. Using the formula given,
         we can find the interior angle and return it. Notice how we use 180.0
-        instead of 180 to avoid integer division. 
+        instead of 180 to avoid integer division.
 
         .. activecode:: cp_5_AC_3a
            :language: cpp
@@ -192,7 +192,7 @@ Coding Practice
     The astronomical start and end dates of the four seasons are based on the position of
     the Earth relative to the Sun. As a result, it changes every year and can be difficult to
     remember. However, the meteorological start and end dates are based on the Gregorian calendar
-    and is easier to remember. Spring starts on March 1, summer starts on June 1, fall starts on 
+    and is easier to remember. Spring starts on March 1, summer starts on June 1, fall starts on
     September 1, and winter starts on December 1. Write a function called ``birthSeason``, which takes
     two parameters, ``month`` and ``day``. ``birthSeason`` calculates which season
     the birthday falls in according to the meteorological start and returns a ``string`` with the correct season.
@@ -241,8 +241,8 @@ Coding Practice
         than just counting age directly. Dogs mature faster than humans do,
         so to get a more accurate calculation of a dog's age, write the
         ``dogToHumanYears`` function, which takes an ``dogAge`` as a parameter.
-        ``dogToHumanYears`` converts and returns the dog's age to human years. 
-        A one year old dog is 15 years old in human years; a two year old dog is 24 years old in human years. 
+        ``dogToHumanYears`` converts and returns the dog's age to human years.
+        A one year old dog is 15 years old in human years; a two year old dog is 24 years old in human years.
         Each year after the second year counts as 4 additional human years. For example, a dog that is
         3 years old is actually 28 years old in human years. Run and test your code!
 
@@ -273,8 +273,8 @@ Coding Practice
 
     .. tab:: Answer
 
-        Below is one way to implement the program. We can use a conditional to 
-        check to see if the dog is one year old. If it is older than one, then 
+        Below is one way to implement the program. We can use a conditional to
+        check to see if the dog is one year old. If it is older than one, then
         we can use the formula to return the correct age in human years.
 
         .. activecode:: cp_5_AC_5a
@@ -309,7 +309,7 @@ Coding Practice
     :practice: T
 
     A number is a common factor of two other numbers if it divides evenly into both of the
-    other numbers. For example, 2 is a common factor of 4 and 18, because 2 goes evenly into 
+    other numbers. For example, 2 is a common factor of 4 and 18, because 2 goes evenly into
     4 and 18. Write the function ``isCommonFactor``, which takes three parameters,
     ``num1``, ``num2``, and ``factor``. ``isCommonFactor`` returns ``true`` if ``factor`` is a
     factor of both ``num1`` and ``num2``, and returns ``false`` otherwise. Run and test your code!
@@ -325,12 +325,12 @@ Coding Practice
     #include <catch.hpp>
 
     TEST_CASE("isCommonFactor function: true cases") {
-        REQUIRE(isCommonFactor (24, 8, 4) == 1); 
+        REQUIRE(isCommonFactor (24, 8, 4) == 1);
         REQUIRE(isCommonFactor (75, 20, 5) == 1);
     }
 
     TEST_CASE("isCommonFactor function: false cases") {
-        REQUIRE(isCommonFactor (132, 42, 11) == 0); 
+        REQUIRE(isCommonFactor (132, 42, 11) == 0);
         REQUIRE(isCommonFactor (74, 23, 3) == 0);
     }
 
@@ -341,7 +341,7 @@ Coding Practice
         If a year is divisible by 4, then it is a leap year. However, if it is also divisible by 100,
         then it is not a leap year. However, if it is also divisible by 400, then it is a leap year.
         Thus, 2001 is not a leap year, 2004 is a leap year, 2100 is not a leap year, and 2000 is a leap year.
-        Write the boolean function ``isLeapYear``, which takes a ``year`` as a parameter and returns ``true`` 
+        Write the boolean function ``isLeapYear``, which takes a ``year`` as a parameter and returns ``true``
         if the year is a leap year and ``false`` otherwise. Run and test your code!
 
         .. activecode:: cp_5_AC_7q
@@ -433,14 +433,14 @@ Coding Practice
     :language: cpp
     :practice: T
 
-    In the enchanted Mushroom Forest, there are many different types of 
+    In the enchanted Mushroom Forest, there are many different types of
     mushrooms as far as the eye can see. Most of these mushrooms
     can make delicious stews and dishes, but some of them are poisonous.
     Write the function ``isPoisonous``, which takes an ``char size``,
     ``int numSpots``, and ``bool isRed`` as parameters. If a mushroom is large
     ('L') and has fewer than 3 spots, it is poisonous. If a mushroom is small ('S')
     and is red, it is poisonous. If a mushroom has fewer than 3 spots or is not red,
-    it is poisonous. Otherwise, it is not. ``isPoisonous`` should return ``true`` if 
+    it is poisonous. Otherwise, it is not. ``isPoisonous`` should return ``true`` if
     the mushroom is poisonous and ``false`` otherwise. Run and test your code!
     ~~~~
     #include <iostream>
@@ -454,13 +454,13 @@ Coding Practice
     #include <catch.hpp>
 
     TEST_CASE("isPoisonous function: true cases") {
-        REQUIRE(isPoisonous ('S', 10, 0) == 1); 
+        REQUIRE(isPoisonous ('S', 10, 0) == 1);
         REQUIRE(isPoisonous ('S', 10, 0) == 1);
         REQUIRE(isPoisonous ('L', 1, 1) == 1);
     }
 
     TEST_CASE("isPoisonous function: false cases") {
-        REQUIRE(isPoisonous ('L', 4, 1) == 0); 
+        REQUIRE(isPoisonous ('L', 4, 1) == 0);
         REQUIRE(isPoisonous ('L', 9, 1) == 0);
     }
 
@@ -471,7 +471,7 @@ Coding Practice
         We know that a factorial is the product of an integer and all the integers below it.
         For example, four factorial (4!) is 24. A triangular number is the same as a factorial,
         except you add all the numbers instead of multiplying. For example, the 1st triangular
-        number is 1, the 2nd is 3, the 3rd is 6, the 4th is 10, the 5th is 15, etc. You can imagine 
+        number is 1, the 2nd is 3, the 3rd is 6, the 4th is 10, the 5th is 15, etc. You can imagine
         rows of dots, where each successive row has one more dot, thus forming a triangular shape.
         Write the ``triangularNum`` function, which takes an ``int n`` as a parameter and returns
         the ``n``\th triangular number. Use recursion. Run and test your code!
@@ -491,16 +491,16 @@ Coding Practice
            #include <catch.hpp>
 
            TEST_CASE("triangularNum function") {
-               REQUIRE(triangularNum (1) == 1); 
-               REQUIRE(triangularNum (3) == 6); 
-               REQUIRE(triangularNum (6) == 21); 
-               REQUIRE(triangularNum (17) == 153); 
+               REQUIRE(triangularNum (1) == 1);
+               REQUIRE(triangularNum (3) == 6);
+               REQUIRE(triangularNum (6) == 21);
+               REQUIRE(triangularNum (17) == 153);
            }
 
 
     .. tab:: Answer
 
-        Below is one way to implement the program. We can use conditionals to 
+        Below is one way to implement the program. We can use conditionals to
         separate the base case and recursive cases. Our base case is when ``n``
         is 1, and in that case we return 1. Otherwise, we recursively
         call ``triangularNum`` on ``n-1``.
@@ -515,7 +515,7 @@ Coding Practice
            int triangularNum (int n) {
                if (n == 1) {
                    return 1;
-               } 
+               }
                else {
                    return n + triangularNum(n - 1);
                }
@@ -525,10 +525,10 @@ Coding Practice
            #include <catch.hpp>
 
            TEST_CASE("triangularNum function") {
-               REQUIRE(triangularNum (1) == 1); 
-               REQUIRE(triangularNum (3) == 6); 
-               REQUIRE(triangularNum (6) == 21); 
-               REQUIRE(triangularNum (17) == 153); 
+               REQUIRE(triangularNum (1) == 1);
+               REQUIRE(triangularNum (3) == 6);
+               REQUIRE(triangularNum (6) == 21);
+               REQUIRE(triangularNum (17) == 153);
            }
 
 .. activecode:: cp_5_AC_10q
@@ -550,8 +550,8 @@ Coding Practice
     #include <catch.hpp>
 
     TEST_CASE("digitSum function") {
-        REQUIRE(digitSum (123) == 6); 
-        REQUIRE(digitSum (8739) == 27); 
-        REQUIRE(digitSum (440) == 8); 
-        REQUIRE(digitSum (2) == 2); 
+        REQUIRE(digitSum (123) == 6);
+        REQUIRE(digitSum (8739) == 27);
+        REQUIRE(digitSum (440) == 8);
+        REQUIRE(digitSum (2) == 2);
     }

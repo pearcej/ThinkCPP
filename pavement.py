@@ -74,6 +74,7 @@ options(
                        'dynamic_pages': dynamic_pages,
                        'downloads_enabled': 'false',
                        'enable_chatcodes': 'false',
+                       'default_ac_lang' : "cpp",
                        'allow_pairs': 'false'
                         }
     )

@@ -18,7 +18,7 @@ syntax for ``main`` is the same as for any other function definition:
 
 You can make up any name you want for your function, except that you
 can’t call it ``main`` or any other C++ keyword. The list of parameters
-specifies what information -- if any -- you have to provide in order to use, 
+specifies what information -- if any -- you have to provide in order to use,
 or **call**, the new function.
 
 ``main`` doesn’t take any parameters, as indicated by the empty parentheses
@@ -137,7 +137,7 @@ example only demonstrates two:
    new lines?
 
 
-.. mchoice:: new_functions_1
+.. mchoice:: new_functions_mc_1
 
     Which of these statements is false about functions?
 
@@ -169,11 +169,11 @@ example only demonstrates two:
 
    :click-correct:void printVar(int a) {:endclick:
        :click-incorrect:cout << a;:endclick:
-   }  
+   }
 
    :click-correct:int main() {:endclick:
        :click-incorrect:int x = 7;:endclick:
-       :click-incorrect:printVar(x);:endclick: 
+       :click-incorrect:printVar(x);:endclick:
        :click-incorrect:if (x < 10) {:endclick:
            :click-incorrect:x = x - 1;:endclick:
        }
@@ -196,33 +196,33 @@ example only demonstrates two:
 
    :click-incorrect:void printVar(int a) {:endclick:
        :click-incorrect:cout << a;:endclick:
-   }  
+   }
 
    :click-incorrect:int main() {:endclick:
        :click-incorrect:int x = 7;:endclick:
-       :click-correct:printVar(x);:endclick:  
+       :click-correct:printVar(x);:endclick:
        :click-incorrect:if (x < 10) {:endclick:
            :click-incorrect:x = x - 1;:endclick:
        }
-       :click-correct:printX();:endclick:     
+       :click-correct:printX();:endclick:
        :click-incorrect:int y = 3;:endclick:
        :click-incorrect:double result = x / y;:endclick:
        :click-correct:printVar(result);:endclick:
        return 0;
    }
 
-.. parsonsprob:: new_functions_1
+.. parsonsprob:: new_functions_pp_1
    :numbered: left
    :adaptive:
 
    Construct a function that correctly prints the perimeter of a rectangle.
-  
+
    -----
    void perimeter (int length,int width) {
    =====
    int twice_length = 2*length;
    =====
-   int twice_width = 2*width; 
+   int twice_width = 2*width;
    =====
    int perimeter_value = twice_length + twice_width;
    =====
@@ -231,4 +231,3 @@ example only demonstrates two:
    return parameter_value; #distractor
    =====
    }
-

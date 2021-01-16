@@ -13,7 +13,7 @@ using them requires some concepts we have not covered yet, so for the
 most part we are going to avoid them.
 
 The string type we are going to use is called ``string``, which is one
-of the classes that belong to the C++ Standard Library. [1]_
+of the classes that belong to the C++ Standard Library. 
 
 Unfortunately, it is not possible to avoid C strings altogether. In a
 few places in this chapter I will warn you about some problems you might

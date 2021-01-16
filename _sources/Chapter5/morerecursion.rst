@@ -28,7 +28,7 @@ frabjuous:
     an adjective used to describe something that is frabjuous.
 
 .. index::
-   single: factorial 
+   single: factorial
 
 If you saw that definition in the dictionary, you might be annoyed. On
 the other hand, if you looked up the definition of the mathematical
@@ -88,7 +88,7 @@ call to find the factorial of :math:`n-1`, and then multiply it by
    int factorial (int n) {
        if (n == 0) {
            return 1;
-       } 
+       }
        else {
            int recurse = factorial (n-1);
            int result = n * recurse;
@@ -99,7 +99,7 @@ call to find the factorial of :math:`n-1`, and then multiply it by
    int main () {
        cout << factorial(3) << endl;
    }
- 
+
 
 If we look at the flow of execution for this program, it is similar to
 nLines from the previous chapter. If we call factorial with the value 3:
@@ -171,30 +171,32 @@ them does not execute.
     - :1932053504: Correct!
       :x: Try plugging this into the active code!
 
-.. mchoice:: return_main_2
+.. mchoice:: return_print_des_mc
    :multiple_answers:
    :answer_a: "5 4 3 2 1 0"
    :answer_b: "5 5 5 5 5"
    :answer_c: "5 4 3 2 1 0 -1 -2 -3 ...."
-   :answer_d: "5 4 3 2 1" 
+   :answer_d: "5 4 3 2 1"
    :correct: d
    :feedback_a: Consider what the base case is.
    :feedback_b: Does the value of a stay the same after every function call?
    :feedback_c: Consider what the base case is.
    :feedback_d: Correct! we recursively print every value of a till we reach 0.
 
-   what gets printed?
+   What gets printed by the following code?
 
    ::
-      void print_descend(int a){
-        if(a==0){
-           return;
-        }
-        cout<<a<<" ";
-        a=a-1;
-        print_descend(a);
+      void print_descend(int a) {
+          if(a==0) {
+              return;
+          }
+          cout<<a<<" ";
+          a = a - 1;
+          print_descend(a);
       }
-      int main(){
-        print_descend(5);
-        return 0;
+
+      int main() {
+          print_descend(5);
+          return 0;
       }
+      
