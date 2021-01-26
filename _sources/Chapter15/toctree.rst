@@ -15,3 +15,6 @@ File Input/Output and ``matrix``\ es
    A_distance_matrix.rst
    A_proper_distance_matrix.rst
    Glossary.rst
+   Exercises.rst
+   mixed_up_code.rst
+   coding_practice.rst
