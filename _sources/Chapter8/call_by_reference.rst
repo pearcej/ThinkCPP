@@ -1,6 +1,6 @@
 Call by reference
 -----------------
-.. index:: 
+.. index::
    single: call by reference
 
 An alternative parameter-passing mechanism that is available in C++ is
@@ -111,10 +111,10 @@ convention.
    :answer_a: Passing structures by reference is more versatile
    :answer_b: Passing structures by reference is faster, because the system does not have to copy the whole structure
    :answer_c: In C++ programs, almost all structures are passed by reference almost all the time
-   :answer_d: Passing structures by reference is is less safe, since it is harder to keep track of what gets modified where
+   :answer_d: Passing structures by reference is less safe, since it is harder to keep track of what gets modified where
    :correct: d
-   :feedback_a: Try again!
-   :feedback_b: Try again!
+   :feedback_a: Try again! Passing by reference is more versatile.
+   :feedback_b: Try again! Passing by reference does not involve making copies.
    :feedback_c: Try again!
    :feedback_d: Correct!
 
@@ -151,14 +151,14 @@ convention.
 
 .. mchoice:: call_by_reference_4
    :practice: T
-   :answer_a: 6.0, 8.0, 3.0, 4.0
-   :answer_b: 6.0, 8.0, 6.0, 8.0
-   :answer_c: 6.08.03.04.0
-   :answer_d: 6.08.06.08.0
+   :answer_a: (6, 8), 3
+   :answer_b: (6, 8), 6
+   :answer_c: (6.08.0)3.0
+   :answer_d: 686
    :correct: b
    :feedback_a: The ``&`` indicates pass by reference.
    :feedback_b: Correct!
-   :feedback_c: The ``&`` indicates pass by reference.
+   :feedback_c: The ``&`` indicates pass by reference. Take a look at the data type.
    :feedback_d: Take a look at exactly what is being outputted.
 
    What will print?
@@ -166,15 +166,18 @@ convention.
    .. code-block:: cpp
 
       struct Point {
-        double x, y;
+        int x, y;
       };
 
       void timesTwo (Point& p) {
-        cout << "(" << p.x * 2 << ", " << p.y * 2 << ")";
+        p.x = p.x * 2;
+        p.y = p.y * 2;
+        cout << "(" << p.x << ", " << p.y << ")";
       }
 
       int main() {
-        Point blank = { 3.0, 4.0 };
+        Point blank = { 3, 4 };
         timesTwo (blank);
-        cout << ", " << blank << endl;
+        cout << ", " << blank.x << endl;
       }
+

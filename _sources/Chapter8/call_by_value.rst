@@ -25,7 +25,7 @@ function.
 .. activecode:: call_by_value_AC_1
   :language: cpp
 
-  Take a look at the active code below. Notice from the output of the code below how the 
+  Take a look at the active code below. Notice from the output of the code below how the
   function ``addTwo`` changes the instance variables, but not on ``blank`` itself.
   ~~~~
   #include <iostream>
@@ -77,10 +77,10 @@ function.
 
 .. mchoice:: call_by_value_2
    :practice: T
-   :answer_a: 6.0, 8.0, 3.0, 4.0
-   :answer_b: 6.0, 8.0, 6.0, 8.0
-   :answer_c: 6.08.03.04.0
-   :answer_d: 6.08.06.08.0
+   :answer_a: (6, 8), 3
+   :answer_b: (6, 8), 6
+   :answer_c: (68),3
+   :answer_d: 68, 6
    :correct: a
    :feedback_a: Correct!
    :feedback_b: Remember the rules of pass by value.
@@ -92,15 +92,18 @@ function.
    .. code-block:: cpp
 
       struct Point {
-        double x, y;
+        int x, y;
       };
 
       void timesTwo (Point p) {
-        cout << "(" << p.x * 2 << ", " << p.y * 2 << ")";
+        p.x = p.x * 2;
+        p.y = p.y * 2;
+        cout << "(" << p.x << ", " << p.y << ")";
       }
 
       int main() {
-        Point blank = { 3.0, 4.0 };
+        Point blank = { 3, 4 };
         timesTwo (blank);
-        cout << ", " << blank << endl;
+        cout << ", " << blank.x << endl;
       }
+

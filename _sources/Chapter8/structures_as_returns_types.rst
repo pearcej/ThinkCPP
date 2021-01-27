@@ -111,3 +111,4 @@ The output of this program is ``(50, 100)``.
         cout << addTwo (center) << endl;
         printPoint (center);
       }
+

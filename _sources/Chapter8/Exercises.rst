@@ -31,15 +31,15 @@ Multiple Choice Exercises
         
     - ``x``
 
-      + ``x`` is a ``Student`` which is a ``struct``. 
+      + ``x`` is a ``Student`` which is a ``struct``.
 
     - ``y``
 
-      + ``y`` is a ``Student`` which is a ``struct``. 
+      + ``y`` is a ``Student`` which is a ``struct``.
 
     - ``z``
 
-      + ``z`` is a ``Professor`` which is a ``struct``. 
+      + ``z`` is a ``Professor`` which is a ``struct``.
 
     - ``college``
 
@@ -73,11 +73,11 @@ Multiple Choice Exercises
 
     - There needs to be a semicolon after the end curly brace.
 
-      + It is a common error to forgot the semicolon at the end of ``struct`` definitions. 
+      + It is a common error to forgot the semicolon at the end of ``struct`` definitions.
 
     - The ``struct`` cannot have two instance variables that are both named ``eggs``.
 
-      - One is an ``int`` and one is a ``bool`` so this is allowed. 
+      - One is an ``int`` and one is a ``bool`` so this is allowed.
 
     - There is nothing wrong with the ``struct`` definition.
 
@@ -106,11 +106,11 @@ Multiple Choice Exercises
 
     - ``doug.legs = 4;``
 
-      - Check the name of the instance variable in the ``struct`` definition. 
+      - Check the name of the instance variable in the ``struct`` definition.
 
     - ``doug[legs] = 4;``
 
-      - We can assign values to the instance variables of a ``struct`` using dot notation. 
+      - We can assign values to the instance variables of a ``struct`` using dot notation.
 
     - ``doug.numLegs = 4;``
 
@@ -134,22 +134,22 @@ Multiple Choice Exercises
         c.edgeLength = 4;
         c.volume = 64;
         c.mass = 128;
-        cout << c.edgeLength << ", " << c.volume << ", " << c.mass << ", ";
+        cout << c.edgeLength << ", " << c.mass << ", " << c.volume << ", ";
         int density = c.mass / c.volume;
         cout << density;
       }
 
-    - 4, 2, 64, 128
+    - 4, 64, 128, 2
 
       - Check the ordering of the output statements.
 
-    - 4, 64, 128
+    - 4, 128, 64
 
-      - Take a closer look at the output statements. 
+      - Take a closer look at the output statements.
 
-    - 4, 64, 128, 2
+    - 4, 128, 64, 2
 
-      + The code outputs all instance variables and the density in the proper order. 
+      + The code outputs all instance variables and the density in the proper order.
 
     - edgeLength, volume, mass, density
 
@@ -173,7 +173,8 @@ Multiple Choice Exercises
       }
 
       int main() {
-        Cube c = { 2, 8, 4 };
+        Cube c;
+        c = (Cube){ 2, 8, 4 };
         int density = calculateDensity (c);
         cout << density;
       }
@@ -188,7 +189,7 @@ Multiple Choice Exercises
 
     - 0.5
 
-      - Take a closer look at what kind of division we are doing. 
+      - Take a closer look at what kind of division we are doing.
 
     - 1
 
@@ -228,7 +229,7 @@ Multiple Choice Exercises
 
     - 1
 
-      - Take a closer look at the function definition of ``pourCoffee``. 
+      - Take a closer look at the function definition of ``pourCoffee``.
 
     - 0
 
@@ -276,7 +277,7 @@ Multiple Choice Exercises
 
     - 1
 
-      - That is the final value of ``r.isFullyCharged``. 
+      - That is the final value of ``r.isFullyCharged``.
 
 .. mchoice:: mce_8_8
     :practice: T
@@ -381,3 +382,34 @@ Multiple Choice Exercises
     - Error, we cannot read a character from user input.
 
       - We can read characters from user input.
+
+.. mchoice:: mce_8_11
+    :practice: T
+
+    If the user inputted the string "Darth Vader", what is the output of the code below?
+
+    .. code-block:: cpp
+
+      int main() {
+        string quote;
+        getline (cin, quote);
+        cout << quote << " is the epitome of Star Wars!";
+      }
+
+    - quote is the epitome of Star Wars!
+
+      - ``quote`` is not in quotes so the value stored in ``quote`` will be printed.
+
+    - Darth Vader is the epitome of Star Wars!
+
+      + getline reads the entire line until the user hits Return or Enter.
+
+    - Darth is the epitome of Star Wars!
+
+      - Check the manner in which the user input is acquired.
+
+    - D is the epitome of Star Wars!
+
+      - Try Again! Pay attention to the way in which user input is recieved.
+      
+

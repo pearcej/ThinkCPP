@@ -74,7 +74,7 @@ time:
      Rectangle box = { { 0.0, 0.0 }, 100.0, 200.0 };
 
 .. index::
-   pair: structure; nested structure  
+   pair: structure; nested structure
 
 The innermost squiggly braces are the coordinates of the corner point;
 together they make up the first of the three values that go into the new
@@ -107,10 +107,10 @@ together they make up the first of the three values that go into the new
 
 .. mchoice:: rectangles_1
    :practice: T
-   :answer_a: double x = corner.box.x;
-   :answer_b: double x = box.corner.x;
-   :answer_c: double x = corner.x;
-   :answer_d: double x = box.x;
+   :answer_a: double y = corner.box.y;
+   :answer_b: double y = box.corner.y;
+   :answer_c: double y = corner.y;
+   :answer_d: double y = box.y;
    :correct: b
    :feedback_a: Try again.
    :feedback_b: Correct!
@@ -137,3 +137,4 @@ together they make up the first of the three values that go into the new
         :click-correct:Point corner = { 0.0, 0.0 };:endclick:
         :click-correct:Rectangle box = { corner, 100.0, 200.0 };:endclick:
     }
+
