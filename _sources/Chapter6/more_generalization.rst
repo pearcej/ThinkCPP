@@ -42,7 +42,7 @@ name (just like local variables):
    void printMultiples (int n, int high) {
      int i = 1;
      while (i <= high) {
-       cout << n*i << "   ";
+       cout << n * i << "   ";
        i = i + 1;
      }
      cout << endl;
@@ -86,7 +86,7 @@ expected, this program generates a square 7x7 table:
   void printMultiples (int n, int high) {
       int i = 1;
       while (i <= high) {
-          cout << n*i << "\t";
+          cout << n * i << "\t";
           i = i + 1;
       }
       cout << endl;
@@ -140,7 +140,7 @@ I’ll leave it up to you to figure out how it works.
   :caption: Two-dimensional tables
 
   The active code below prints half the multiplication table.
-  We can achieve this by replacing the ``printMultiples (i, high)`` in 
+  We can achieve this by replacing the ``printMultiples (i, high)`` in
   ``printMultTable`` with ``printMultiples (i, i)``.
   Run the active code to see what happens!
   ~~~~
@@ -150,7 +150,7 @@ I’ll leave it up to you to figure out how it works.
   void printMultiples (int n, int high) {
       int i = 1;
       while (i <= high) {
-          cout << n*i << "\t";
+          cout << n * i << "\t";
           i = i + 1;
       }
       cout << endl;
@@ -167,3 +167,4 @@ I’ll leave it up to you to figure out how it works.
   int main() {
       printMultTable(7);
   }
+

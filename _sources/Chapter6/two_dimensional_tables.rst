@@ -22,7 +22,7 @@ of 2, all on one line.
   int main() {
       int i = 1;
       while (i <= 6) {
-          cout << 2*i << "   ";
+          cout << 2 * i << "   ";
           i = i + 1;
       }
       cout << endl;
@@ -72,7 +72,7 @@ So far, so good. The next step is to **encapsulate** and **generalize**.
     int main() {
       int x = 1;
       while (x <= 6) {
-        cout << 2*x << "   ";
+        cout << 2 * x << "   ";
         x = x + 1;
       }
       cout << endl;
@@ -100,9 +100,10 @@ So far, so good. The next step is to **encapsulate** and **generalize**.
     int main() {
       int x = 1;
       while (x <= 6) {
-        cout << 3*x << "  ";
+        cout << 3 * x << "  ";
         x = x + 1;
       }
       cout << endl;
       return 0;
     }
+
