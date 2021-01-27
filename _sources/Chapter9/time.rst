@@ -14,7 +14,7 @@ record fractions of a second.
 .. activecode:: time_AC_1
   :language: cpp
 
-  The active code below shows what the structure definition looks like. 
+  The active code below shows what the structure definition looks like.
   We can create a ``Time`` object in the usual way.
   ~~~~
   #include <iostream>
@@ -52,8 +52,8 @@ type has a copy of the instance variables for that type.
    :answer_c: Price, struct
    :correct: a
    :feedback_a: Correct!
-   :feedback_b: Try again.
-   :feedback_c: Try again.
+   :feedback_b: Try again. We are looking for variable names not instances of a structure.
+   :feedback_c: Try again. ``struct`` and ``Price`` are not variables.
 
    Which of the following words are variables of type ``Price``?
 
@@ -76,7 +76,7 @@ type has a copy of the instance variables for that type.
    :correct: b
    :feedback_a: These are variables of type Price.
    :feedback_b: Correct!
-   :feedback_c: Try again.
+   :feedback_c: Try again. ``struct`` and ``Price`` are not variables.
 
    Which of the following words are instance variables of the ``Price`` structure?
 
@@ -121,7 +121,7 @@ type has a copy of the instance variables for that type.
   Try writing the ``printTime`` function in the commented section
   of the active code below. ``printTime`` should print out the time
   in the HOUR:MINUTE:SECONDS format. If you get stuck, you can reveal the extra problem
-  at the end for help. 
+  at the end for help.
   ~~~~
   #include <iostream>
   using namespace std;
@@ -132,7 +132,7 @@ type has a copy of the instance variables for that type.
   };
 
   void printTime(Time& time) {
-      // ``printTime`` should print out the time in the   
+      // ``printTime`` should print out the time in the
       // HOUR:MINUTE:SECONDS format. Write your implementation here.
   }
 
@@ -151,7 +151,7 @@ type has a copy of the instance variables for that type.
       :numbered: left
       :adaptive:
    
-      Let's write the code for the ``printTime`` function. ``printTime`` 
+      Let's write the code for the ``printTime`` function. ``printTime``
       should print out the time in the HOUR:MINUTE:SECONDS format.
       -----
       void printTime(Time& time) {
@@ -160,5 +160,6 @@ type has a copy of the instance variables for that type.
       =====
          cout << time.hour << ":" << time.minute << ":" << time.second;
       =====
-         cout << hour << ":" << minute << ":" << second;                        #paired 
+         cout << hour << ":" << minute << ":" << second;                        #paired
       }
+
