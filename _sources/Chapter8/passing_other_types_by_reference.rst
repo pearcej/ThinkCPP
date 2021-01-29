@@ -103,8 +103,6 @@ arguments have to be variables.
    -----
    void addNum(int& x, int y) {
    =====
-   void addNum(int x&, int y) { #distractor
-   =====
    void addNum(int x, int y) { #distractor
    =====
    void addNum(int& x, int& y) { #distractor
@@ -114,7 +112,8 @@ arguments have to be variables.
       y = x + y; #distractor
    =====
       cout << x;
-   }
    =====
       return x; #distractor
+   =====
    }
+

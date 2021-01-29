@@ -23,15 +23,15 @@ Multiple Choice Exercises
         
     - ``gatsby``
 
-      + ``gatsby`` is a ``Book``. 
+      + ``gatsby`` is a ``Book``.
 
     - ``frankenstein``
 
-      + ``frankenstein`` is a ``Book``. 
+      + ``frankenstein`` is a ``Book``.
 
     - ``flies``
 
-      - ``flies`` is a ``string``. 
+      - ``flies`` is a ``string``.
 
     - ``year``
 
@@ -59,19 +59,19 @@ Multiple Choice Exercises
         
     - ``gatsby``
 
-      - ``gatsby`` is a ``Book``, not an instance variable of ``Book``. 
+      - ``gatsby`` is a ``Book``, not an instance variable of ``Book``.
 
     - ``title``
 
-      + ``title`` is an instance variable of ``Book``. 
+      + ``title`` is an instance variable of ``Book``.
 
     - ``year``
 
-      - ``year`` is an ``int`` declared in ``main``, not an instance variable of ``Book``. 
+      - ``year`` is an ``int`` declared in ``main``, not an instance variable of ``Book``.
 
     - ``price``
 
-      + ``price`` is an instance variable of ``Book``. 
+      + ``price`` is an instance variable of ``Book``.
 
 .. mchoice:: mce_9_3
     :practice: T
@@ -93,23 +93,23 @@ Multiple Choice Exercises
       int main() {
         Book mockingbird = { "To Kill a Mockingbird", "Harper Lee", 1960, 9.25 };
         double discountedPrice = 7.19;
-        b.price = discountedPrice;
+        mockingbird.price = discountedPrice;
         printBook (mockingbird);
       }
         
     - To Kill a Mockingbird by Harper Lee (1960), $9.25
 
-      - Take a closer look at ``main``. Was the price of the book modified? 
+      - Take a closer look at ``main``. Was the price of the book modified?
 
     - "To Kill a Mockingbird" by Harper Lee (1960), $9.25
 
-      - Take a closer look at ``main``. Was the price of the book modified? 
+      - Take a closer look at ``main``. Was the price of the book modified?
 
     - "To Kill a Mockingbird" by Harper Lee (1960), $7.19
 
-      + The price was changed from $9.25 to $7.19. 
+      + The price was changed from $9.25 to $7.19
 
-    - \"To Kill a Mockingbird\" by Harper Lee (1960), $7.19
+    - \To Kill a Mockingbird\ by Harper Lee (1960), $7.19
 
       - The ``\`` are escape characters. Used in this context, they allow us to print quotation marks.
 
@@ -427,3 +427,4 @@ Multiple Choice Exercises
     - (4.5, 2.25, 3.35)
 
       - Check the arguments passed into ``midpoint``.
+

@@ -67,12 +67,12 @@ object with two named instance variables.
    :answer_a: blank.x = 3.0;
    :answer_b: Point.x = 3.0;
    :answer_c: nice.x = 3.0;
-   :answer_d: nice.x = 3.0
+   :answer_d: nice.x( ) = 3.0;
    :correct: c
    :feedback_a: This declaration would not work for the specific code block below.
    :feedback_b: The specific name of the structure should be used, not its type.
    :feedback_c: Yes, we can access and modify the instance variables using the dot operator.
-   :feedback_d: The semi-colon is missing at the end.
+   :feedback_d: You are not calling a function therefore brackets for an argument list aren't required.
 
    Which of the following would be the correct way to initialize the instance variables
    of the ``Point`` object?
@@ -121,3 +121,4 @@ object with two named instance variables.
    :feedback_d: Yes, structs are usually defined after the include statements and before the main function.
 
    ``struct`` definitions occur...
+

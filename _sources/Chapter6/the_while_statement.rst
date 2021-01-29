@@ -16,7 +16,7 @@ Using a ``while`` statement, we can rewrite ``countdown``:
   void countdown (int n) {
       while (n > 0) {
           cout << n << endl;
-          n = n-1;
+          n = n - 1;
       }
       cout << "Blastoff!" << endl;
   }
@@ -77,10 +77,10 @@ is not so easy to tell:
      void sequence (int n) {
        while (n != 1) {
          cout << n << endl;
-         if (n%2 == 0) {           // n is even
+         if (n % 2 == 0) {           // n is even
            n = n / 2;
          } else {                  // n is odd
-           n = n*3 + 1;
+           n = n * 3 + 1;
          }
        }
      }
@@ -191,3 +191,4 @@ has been able to prove it *or* disprove it!
      }
      cout << n;
      cout << x;
+
