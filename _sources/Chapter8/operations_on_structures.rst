@@ -60,7 +60,9 @@ The output of this program is ``3, 4``.
         :click-incorrect:Point hello;:endclick:
         :click-correct:hello = { 3.0, 4.0 };:endclick:
         :click-incorrect:Point new;:endclick:
+        :click-incorrect:Point p = hello;:endclick:
         :click-incorrect:new = (Point){3.0, 4.0};:endclick:
+        :click-correct:bool check = blank == new;:endclick:
         :click-correct:new = {3.0, 4.0};:endclick:
     }
 
@@ -72,20 +74,22 @@ The output of this program is ``3, 4``.
    -----
    struct Point {
    =====
-      double x, y;
+       double x, y;
+   =====
    };
    =====
    int main() {
    =====
-      Point blank;
+       Point blank;
    =====
-      int blank; #distractor
+       int blank; #distractor
    =====
-      blank = (Point){ 12.0, 3.2 };
+       blank = (Point){ 12.0, 3.2 };
    =====
-      blank = (Point){ 12.0, 3.2 } #distractor
+       blank = (Point){ 12.0, 3.2 } #distractor
    =====
-      blank = { 12.0, 3.2 }; #distractor
+       blank = { 12.0, 3.2 }; #distractor
+   =====
    }
 
 .. mchoice:: operations_structures_3
@@ -103,3 +107,4 @@ The output of this program is ``3, 4``.
    :feedback_e: The addition operator does not work on structures.
 
    Which operators do NOT work on structures. Select all that apply.
+

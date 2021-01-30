@@ -16,7 +16,7 @@ standard format. If you call ``printPoint (blank)``, it will output
 .. activecode:: structures_parameters_AC_1
   :language: cpp
 
-  The active code below uses the ``printPoint`` function. Run the code to 
+  The active code below uses the ``printPoint`` function. Run the code to
   see the output!
   ~~~~
   #include <iostream>
@@ -75,30 +75,30 @@ parameters instead of four ``double``\ s.
 
 .. mchoice:: structures_parameters_1
    :practice: T
-   :answer_a: (-2.0, -7.0)
+   :answer_a: (-2, -7)
    :answer_b: (2.0, 7.0)
-   :answer_c: (-7.0, -2.0)
-   :answer_d: (7.0, 2.0)
+   :answer_c: (-7, -2)
+   :answer_d: (-7.0, -2.0)
    :correct: c
    :feedback_a: Take a close look at the printOppositeCoordinate function.
    :feedback_b: Take a close look at the printOppositeCoordinate function.
    :feedback_c: Yes, this is the correct output.
-   :feedback_d: Take a close look at the printOppositeCoordinate function.
+   :feedback_d: Take a close look at the Coordinate struct.
 
    What will print?
 
    .. code-block:: cpp
 
       struct Coordinate {
-        double x, y;
+        int x, y;
       };
 
-      void printOppositeCoordinate (Point p) {
+      void printOppositeCoordinate (Coordinate p) {
         cout << "(" << -p.y << ", " << -p.x << ")" << endl;
       }
 
       int main() {
-        Coordinate coord = { 2.0, 7.0 };
+        Coordinate coord = { 2, 7 };
         printOppositeCoordinate (coord);
       }
 
@@ -121,3 +121,4 @@ parameters instead of four ``double``\ s.
     cout << "(" << "avgX" << "," << "avgY" << ")"; #distractor
    =====
    }
+

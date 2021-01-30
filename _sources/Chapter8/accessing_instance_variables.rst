@@ -26,8 +26,8 @@ are legal.
 .. activecode:: accessing_instance_variables_AC_1
   :language: cpp
 
-  In the active code below, we access the instance variables of ``Point`` object 
-  ``black`` using dot notation and output their values. Next, we output the 
+  In the active code below, we access the instance variables of ``Point`` object
+  ``black`` using dot notation and output their values. Next, we output the
   distance from the origin.
   ~~~~
   #include <iostream>
@@ -53,11 +53,13 @@ are legal.
    :answer_b: ``x`` is the instance variable, ``thing`` is the object
    :answer_c: ``thing`` is the instance variable, ``cube`` is the object
    :answer_d: ``cube`` is the instance variable, ``thing`` is the object
+   :answer_e: ``cube`` is the instance variable, ``string`` is the object
    :correct: d
    :feedback_a: ``string`` is a data type.
    :feedback_b: ``x`` is the local variable.
    :feedback_c: Consider the placement of ``thing`` -- it is before the ``.``
    :feedback_d: Yes, we access the instance variable ``cube`` of the object ``thing`` using the dot operator.
+   :feedback_e: ``string`` is a data type.
 
    In ``string x = thing.cube;``, what is the object and what is the instance variable we are reading the value of?
 
@@ -65,8 +67,8 @@ are legal.
 .. mchoice:: accessing_instance_variables_2
    :practice: T
    :answer_a: 2.0 7.0 53
-   :answer_b: 2.07.053
-   :answer_c: 7.0, 2.0 53
+   :answer_b: 2753
+   :answer_c: 7253
    :answer_d: 7.02.053
    :correct: b
    :feedback_a: Spaces need to be printed out like any other output.
@@ -103,4 +105,5 @@ are legal.
    :feedback_c: You should be assigning to the local variable x.
    :feedback_d: This is the correct way to assign the value of y to x.
 
-   You want to go to the object named ``circle`` and get the value of ``y``, then assign it to the local variable ``x``. How would you do that?
+   You want to go to the object named ``circle`` and get the integer value of ``y``, then assign it to the local variable ``x``. How would you do that?
+

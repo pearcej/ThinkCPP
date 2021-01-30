@@ -7,7 +7,7 @@ Mixed Up Code Practice
    :noindent:
    :practice: T
 
-   The program below should print out the even numbers between 20 and 40, inclusive, 
+   The program below should print out the even numbers between 20 and 40, inclusive,
    but the code is mixed up and contains extra blocks. Put the necessary blocks
    in the correct order.
    -----
@@ -17,11 +17,11 @@ Mixed Up Code Practice
    =====
       int n = 20;
    =====
-      int n = 0; #distractor 
+      int n = 0; #distractor
    =====
       while (n <= 40) {
    =====
-      while (n < 40) {                        #paired 
+      while (n < 40) {                        #paired
    =====
          cout << n << endl;
    =====
@@ -41,7 +41,7 @@ Mixed Up Code Practice
    :noindent:
    :practice: T
 
-   The program below should count down from 100 to 0 in decrements of 
+   The program below should count down from 100 to 0 in decrements of
    10 but the code is mixed up and contains extra blocks. Put the necessary blocks
    in the correct order.
    -----
@@ -49,7 +49,7 @@ Mixed Up Code Practice
    =====
       int n = 100;
    =====
-      int n = 10; #distractor 
+      int n = 10; #distractor
    =====
       while (n >= 0) {
    =====
@@ -81,7 +81,7 @@ Mixed Up Code Practice
    =====
       int n = 1;
    =====
-      int n = 10; #distractor 
+      int n = 10; #distractor
    =====
       int sum = 0;
    =====
@@ -108,9 +108,9 @@ Mixed Up Code Practice
    :adaptive:
    :practice: T
 
-   Let's write the code for the repeatHello function. repeatHello 
+   Let's write the code for the repeatHello function. repeatHello
    should be a void function that takes no arguments and uses a while
-   loop to print out "hello" three times.  
+   loop to print out "hello" three times.
    -----
    void repeatHello () {
    =====
@@ -118,15 +118,17 @@ Mixed Up Code Practice
    =====
       int n = 0;
    =====
-      int n = 0                        #paired 
+      int n = 0
    =====
       while (n < 3) {
    =====
-      while (n > 3) {                        #paired 
+      while (n > 3) {                        #paired
    =====
          cout << "hello" << endl;
    =====
          n++;
+   =====
+         --n;
    =====
       }
    =====
@@ -137,8 +139,8 @@ Mixed Up Code Practice
    :adaptive:
 
    Now let's generalize the repeatHello function so that it repeats a given string three times.
-   Let's write the code for the repeatString function, which takes 
-   input as a parameter and uses a while loop to print out the string three times.  
+   Let's write the code for the repeatString function, which takes
+   input as a parameter and uses a while loop to print out the string three times.
    -----
    void repeatString (string input) {
    =====
@@ -148,11 +150,11 @@ Mixed Up Code Practice
    =====
       while (n < 3) {
    =====
-      while (3 > n) {                        #paired 
+      while (3 > n) {                        #paired
    =====
          cout << input << endl;
    =====
-         cout << string << endl;                        #paired 
+         cout << string << endl;                        #paired
    =====
          n++;
    =====
@@ -164,9 +166,9 @@ Mixed Up Code Practice
    :numbered: left
    :adaptive:
 
-   We can further generalize repeatString so that it repeats a given string a given number of times. 
-   Let's write the code for the new repeatString function, which takes 
-   input and x as parameters and uses a while loop to print out the string x number of times.  
+   We can further generalize repeatString so that it repeats a given string a given number of times.
+   Let's write the code for the new repeatString function, which takes
+   input and x as parameters and uses a while loop to print out the string x number of times.
    -----
    void repeatString (string input, int x) {
    =====
@@ -178,11 +180,11 @@ Mixed Up Code Practice
    =====
       while (n < x) {
    =====
-      while (x < n) {                        #paired 
+      while (x < n) {                        #paired
    =====
          cout << input << endl;
    =====
-         n++; 
+         n = n + 1;
    =====
          x++;                       #paired
    =====
@@ -209,13 +211,13 @@ Mixed Up Code Practice
    =====
       while (n > 0) {
    =====
-      while (n != 10) {                        #paired 
+      while (n != 10) {                        #paired
    =====
          cout << n << " ";
    =====
-         n--; 
+         n--;
    =====
-         n++;  #
+         n++;                          #paired
    =====
       }
    =====
@@ -229,8 +231,8 @@ Mixed Up Code Practice
 
    Help Goku reach power levels of over 9000! Write the function
    powerUp which takes powerLevel as a parameter.
-   powerUp checks to see if powerLevel is over 9000. If it 
-   isn't, it repeatedly prints "More power!" and increments powerLevel by 
+   powerUp checks to see if powerLevel is over 9000. If it
+   isn't, it repeatedly prints "More power!" and increments powerLevel by
    1000 until powerLevel is over 9000. Then powerUp prints "It's over 9000!".
    Put the necessary blocks in the correct order.
    -----
@@ -244,7 +246,7 @@ Mixed Up Code Practice
    =====
       while (powerLevel > 9000) {  #paired
    =====
-         cout << "More power!" << endl; 
+         cout << "More power!" << endl;
    =====
          powerLevel = powerLevel + 1000;
    =====
@@ -264,7 +266,7 @@ Mixed Up Code Practice
    :adaptive:
    :practice: T
 
-   Write the function summation which takes two 
+   Write the function summation which takes two
    parameters, start and end. summation adds
    all the integers from start to end, inclusive, together and returns
    the sum. Put the necessary blocks in the correct order.
@@ -285,7 +287,7 @@ Mixed Up Code Practice
    =====
       while (n < end) {  #paired
    =====
-         sum = sum + n; 
+         sum = sum + n;
    =====
          n++;
    =====
@@ -304,7 +306,7 @@ Mixed Up Code Practice
 
    Write the function reverseNumber which takes num
    as a parameter and returns num but with its digits reversed.
-   For example, reverseNumber (1324) returns 4231. 
+   For example, reverseNumber (1324) returns 4231.
    Put the necessary blocks in the correct order, with reverse
    declared first, then temp, and lastly remainder.
    -----
@@ -337,3 +339,4 @@ Mixed Up Code Practice
       return temp;  #distractor
    =====
    }
+
