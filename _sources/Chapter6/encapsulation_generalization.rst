@@ -19,7 +19,7 @@ and generalizes it to print multiples of ``n``.
    void printMultiples (int n) {
      int i = 1;
      while (i <= 6) {
-       cout << n*i << "   ";
+       cout << n * i << "   ";
        i = i + 1;
      }
      cout << endl;
@@ -72,7 +72,7 @@ function call.
   void printMultiples (int n) {
       int i = 1;
       while (i <= 6) {
-          cout << n*i << "   ";
+          cout << n * i << "   ";
           i = i + 1;
       }
       cout << endl;
@@ -112,7 +112,7 @@ bothers you, you can also use tab characters, like below.
   void printMultiples (int n) {
       int i = 1;
       while (i <= 6) {
-          cout << n*i << '\t';
+          cout << n * i << '\t';
           i = i + 1;
       }
       cout << endl;
@@ -164,7 +164,7 @@ bothers you, you can also use tab characters, like below.
    :numbered: left
    :adaptive:
 
-   Now let's generalize the function to print out the powers of a parameter n up to :math:`n^{5}`. Create a 
+   Now let's generalize the function to print out the powers of a parameter n up to :math:`n^{5}`. Create a
    function called ``powersOfn`` which takes an int n as a parameter.
    -----
    void powersOfn (int n) {
@@ -182,3 +182,4 @@ bothers you, you can also use tab characters, like below.
        x++;
      }
    }
+

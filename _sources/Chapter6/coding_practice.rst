@@ -5,10 +5,10 @@ Coding Practice
 
     .. tab:: Question
 
-        Write a program that prints out a 5x5 triangle using asterisks. 
+        Write a program that prints out a 5x5 triangle using asterisks.
         An example is shown below. Your code should use while loops.
 
-        :: 
+        ::
    
            *
            **
@@ -62,7 +62,7 @@ Coding Practice
     ``int n`` to generate a nxn triangle. Call your function in main
     with an input of 4, which should result in the following output:
 
-    :: 
+    ::
 
         *
         **
@@ -84,10 +84,10 @@ Coding Practice
 
     .. tab:: Question
 
-        Write a function called ``printPyramid`` that prints out an ``n``\x``n`` pyramid using asterisks. 
+        Write a function called ``printPyramid`` that prints out an ``n``\x``n`` pyramid using asterisks.
         An example is shown below with ``n`` equal to 5. Your code should use while loops.
 
-        :: 
+        ::
    
                *
               ***
@@ -114,7 +114,7 @@ Coding Practice
     .. tab:: Answer
 
         Below is one way to implement the program. We use multiple ``while``
-        loops to print out spaces and asterisks. The outer loop creates the 
+        loops to print out spaces and asterisks. The outer loop creates the
         number of rows, and within the outer loop, the two inner loops
         print out the correct number of spaces and asterisks.
 
@@ -152,12 +152,12 @@ Coding Practice
     :language: cpp
     :practice: T
 
-    Write a function called ``printNumPyramid`` that prints out an ``n`` x ``n`` number pyramid. 
+    Write a function called ``printNumPyramid`` that prints out an ``n`` x ``n`` number pyramid.
     An example is shown below with ``n`` equal to 5. Your code should use while loops.
     (Hint: similar to the previous question, if you want the output to look nice, using conditionals
     that print different amounts of spaces.)
 
-    :: 
+    ::
    
            1
           222
@@ -182,10 +182,10 @@ Coding Practice
 
         A common coding interview question that's also a popular children's game used to teach division is
         FizzBuzz. Write a program that uses a while loop and prints the numbers 1 through 100, but every
-        multiple of 3 is replaced with the word "Fizz," every multiple of 5 is replaced with the word "Buzz," 
+        multiple of 3 is replaced with the word "Fizz," every multiple of 5 is replaced with the word "Buzz,"
         and every multiple of both 3 and 5 is replaced with "FizzBuzz." Your output should be the following:
 
-        :: 
+        ::
    
            1
            2
@@ -217,7 +217,7 @@ Coding Practice
 
         Below is one way to implement the "FizzBuzz" program. We use conditionals
         with modulus operators in a while loop to categorize every number and print
-        the correct output. Feel free to search up on the FizzBuzz coding interview 
+        the correct output. Feel free to search up on the FizzBuzz coding interview
         problem if you are interested in other ways to code this program!
 
         .. activecode:: cp_6_AC_5a
@@ -254,7 +254,7 @@ Coding Practice
     and prints out a nxn addition table. Call your function in ``main`` with
     "10" as the argument. Your output should look like this:
 
-    :: 
+    ::
 
         0       1       2       3       4       5       6       7       8       9       10
         1       2       3       4       5       6       7       8       9       10      11
@@ -303,19 +303,19 @@ Coding Practice
            #include <catch.hpp>
 
            TEST_CASE("isPrime function") {
-               REQUIRE(isPrime (1) == 0); 
-               REQUIRE(isPrime (13) == 1); 
-               REQUIRE(isPrime (24) == 0); 
+               REQUIRE(isPrime (1) == 0);
+               REQUIRE(isPrime (13) == 1);
+               REQUIRE(isPrime (24) == 0);
            }
 
            TEST_CASE("isPrime for 0") {
-               REQUIRE(isPrime (0) == 0); 
+               REQUIRE(isPrime (0) == 0);
            }
 
 
     .. tab:: Answer
 
-        Below is one way to implement the ``isPrime`` function. First, 
+        Below is one way to implement the ``isPrime`` function. First,
         we check to see if ``num`` is less than or equal to 1, and return
         ``false`` if that is the case. Next, we use a ``while`` loop
         to continuously check if a factor ``n`` divides ``num`` evenly.
@@ -348,13 +348,13 @@ Coding Practice
            #include <catch.hpp>
 
            TEST_CASE("isPrime function") {
-               REQUIRE(isPrime (1) == 0); 
-               REQUIRE(isPrime (13) == 1); 
-               REQUIRE(isPrime (24) == 0); 
+               REQUIRE(isPrime (1) == 0);
+               REQUIRE(isPrime (13) == 1);
+               REQUIRE(isPrime (24) == 0);
            }
 
            TEST_CASE("isPrime for 0") {
-               REQUIRE(isPrime (0) == 0); 
+               REQUIRE(isPrime (0) == 0);
            }
 
 .. activecode:: cp_6_AC_8q
@@ -394,7 +394,7 @@ Coding Practice
 
     .. tab:: Answer
 
-        Below is one way to implement the program. First, 
+        Below is one way to implement the program. First,
         we check to see if ``num`` is less than or equal to 1, and return
         ``false`` if that is the case. Next, we use a ``while`` loop
         to continuously check if a factor ``n`` divides ``num`` evenly.
@@ -429,7 +429,7 @@ Coding Practice
     :practice: T
 
     Write a function called ``factorial`` which takes an ``int n`` as a parameter
-    and returns ``n`` factorial. Remembers that a factorial (denoted by !) is the product of all 
+    and returns ``n`` factorial. Remembers that a factorial (denoted by !) is the product of all
     positive integers less than or equal to ``n``, so 4! is 24. Use a ``while`` loop.
     Run and test your code!
     ~~~~
@@ -444,7 +444,9 @@ Coding Practice
     #include <catch.hpp>
 
     TEST_CASE("factorial function") {
-        REQUIRE(factorial (4) == 24); 
-        REQUIRE(factorial (6) == 720); 
-        REQUIRE(factorial (9) == 362880); 
+        REQUIRE(factorial (4) == 24);
+        REQUIRE(factorial (6) == 720);
+        REQUIRE(factorial (9) == 362880);
     }
+
+

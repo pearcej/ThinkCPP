@@ -32,7 +32,8 @@ programming style.
 
 .. fillintheblank:: which_is_best_2
 
-    Anything that can be done with modifiers and fill-in functions can also be done with ____.
+    Anything that can be done with modifiers and purefunctions can also be done with ____.
 
-    - :(?:p|P)ure (?:F|f)unctions: Correct!
+    - :(?:f|F)ill-in (?:F|f)unctions: Correct!
       :.*: Try again!
+

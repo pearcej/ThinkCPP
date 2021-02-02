@@ -24,7 +24,7 @@ Multiple Choice Exercises
     
     - 1
     
-      - When ``i`` is 1, ``x`` is assigned the value of ``i``, so ``x`` is 1. However, the while loop continuously increments i, so the final value of ``x`` is not 1. 
+      - When ``i`` is 1, ``x`` is assigned the value of ``i``, so ``x`` is 1. However, the while loop continuously increments i, so the final value of ``x`` is not 1.
     
     - 9
     
@@ -98,8 +98,47 @@ Multiple Choice Exercises
     - The loop will run infinitely.
     
       + The value of ``i`` will always be greater than 2, resulting in an infinite loop.
-
+      
 .. mchoice:: mce_6_4
+    :practice: T
+
+    What is the output of the code below?
+
+    .. code-block:: cpp
+
+     int main() {
+       int j = 6;
+       int i = j + 4;
+       cout << "People ";
+       i = i % 2;
+       i = i - 1;
+       while (i < 3) {
+         cout << "really ";
+         if (i > 0) {
+           cout << "really ";
+         }
+         i += 2;
+       }
+       cout << "like Joe's Pizza." << endl;
+     }
+
+    - People really like Joe's Pizza.
+    
+      - Take a closer look at the while loop condition.
+    
+    - People really really really like Joe's Pizza.
+    
+      + The code will print out three "really"s, two from evaluating the while loop condition and one from evaluating the if condition before printing out "like Joe's Pizza"
+    
+    - People really really really really really like Joe's Pizza.
+    
+      - Take a closer look at the while loop condition.
+    
+    - The loop will run infinetly.
+    
+      - Take a closer look at the while loop condition and reassignment of ``i``
+
+.. mchoice:: mce_6_5
     :practice: T
 
     What is the output of the code below?
@@ -133,7 +172,7 @@ Multiple Choice Exercises
     
       - Since we repeatedly decrement ``n`` inside the while loop, it will eventually be equal to 3 and the while loop will terminate.
 
-.. mchoice:: mce_6_5
+.. mchoice:: mce_6_6
     :practice: T
 
     What is the output of the code below?
@@ -166,7 +205,7 @@ Multiple Choice Exercises
     
       + Since we never change the value of ``n``, 10 will never equal 3 so the code will run forever.
 
-.. mchoice:: mce_6_6
+.. mchoice:: mce_6_7
     :practice: T
 
     What is the output of the code below?
@@ -197,7 +236,7 @@ Multiple Choice Exercises
     
       - Take a closer look at the mathematical expression inside the while loop.
 
-.. mchoice:: mce_6_7
+.. mchoice:: mce_6_8
     :practice: T
 
     Why are we allowed to use the variable ``x`` in both ``main`` and in the function definition of ``superSecretFunction``?
@@ -230,7 +269,7 @@ Multiple Choice Exercises
 
       - The code does not produce an error.
 
-.. mchoice:: mce_6_8
+.. mchoice:: mce_6_9
     :practice: T
 
     What is the output of the code below?
@@ -266,12 +305,12 @@ Multiple Choice Exercises
 
       - Take a closer look at the ``while`` loop in the function.
 
-.. mchoice:: mce_6_9
+.. mchoice:: mce_6_10
     :practice: T
 
     The super evil villian RePete wants to annoy the city by
     hacking into the city's helper robots and making them repeat
-    everything they say 5 times. However, there's an error in his 
+    everything they say 5 times. However, there's an error in his
     code and now the robots won't stop repeating! Can you find the
     error?
 
@@ -305,7 +344,7 @@ Multiple Choice Exercises
 
       + Since ``n`` starts at 0 and gets smaller, the conditional for the ``while`` loop will always be true, and thus the code runs forever.
 
-.. mchoice:: mce_6_10
+.. mchoice:: mce_6_11
 
     After making some changes to his code, RePete tries again.
     This time, however, the robots don't repeat anything!
@@ -340,3 +379,4 @@ Multiple Choice Exercises
     - The conditional for the ``while`` loop is not met.
 
       + Since ``n`` is declared to be 0, 0 is not greater than 5, so the ``while`` loop does not execute.
+

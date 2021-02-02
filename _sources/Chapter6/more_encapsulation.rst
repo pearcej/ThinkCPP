@@ -35,7 +35,7 @@ approach lets you design as you go along.
   void printMultiples (int n) {
       int i = 1;
       while (i <= 6) {
-          cout << n*i << '\t';
+          cout << n * i << '\t';
           i = i + 1;
       }
       cout << endl;
@@ -52,3 +52,4 @@ approach lets you design as you go along.
   int main() {
       printMultTable();
   }
+
