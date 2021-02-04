@@ -7,11 +7,11 @@ Mixed Up Code Practice
    :noindent:
    :practice: T
 
-   Let's write the class definition for <code>Circle</code>. <code>Circle</code> should have its
+   Let's write the class definition for ``Circle``. ``Circle`` should have its
    radius stored in a private member variable. Also write the constructor 
-   for <code>Circle</code>, which takes a radius as a parameter, in addition to the
-   public member function <code>calculateArea</code>, which returns the area of 
-   the <code>Circle</code>. Make sure to include the <code>private</code> and <code>public</code> keywords!
+   for ``Circle``, which takes a radius as a parameter, in addition to the
+   public member function ``calculateArea``, which returns the area of 
+   the ``Circle``. Make sure to include the ``private`` and ``public`` keywords!
    Use 3.14 for the value of pi. Put the necessary
    blocks of code in the correct order.
    -----
@@ -41,10 +41,10 @@ Mixed Up Code Practice
    :adaptive:
    :noindent:
 
-   Now that we have our <code>Circle</code> class, let's write some accessor
-   functions! Write the <code>Circle</code> member functions <code>getRadius</code> 
-   and <code>setRadius</code>. It doesn't make sense for a <code>Circle</code>'s
-   radius to be negative, so in your <code>setRadius</code> function,
+   Now that we have our ``Circle`` class, let's write some accessor
+   functions! Write the ``Circle`` member functions ``getRadius`` 
+   and ``setRadius``. It doesn't make sense for a ``Circle``'s
+   radius to be negative, so in your ``setRadius`` function,
    output an error message if the given radius is negative.
    Put the necessary blocks of code in the correct order.
    -----
@@ -80,7 +80,7 @@ Mixed Up Code Practice
    :adaptive:
    :noindent:
 
-   Write a <code>main</code>. In <code>main</code>, create a <code>Circle</code> with radius 2.4
+   Write a ``main``. In ``main``, create a ``Circle`` with radius 2.4
    and output the radius. Then change the radius to 3.6 and output
    the new radius. Put the necessary blocks of code in the correct order.
    -----
@@ -110,12 +110,12 @@ Mixed Up Code Practice
    :numbered: left
    :adaptive:
 
-   A <code>Rectangle</code> can be constructed given only two points. First,
-   write the class definition for <code>Point</code>, which stores an x and 
+   A ``Rectangle`` can be constructed given only two points. First,
+   write the class definition for ``Point``, which stores an x and 
    a y value in private member variables. Also write the default constructor, which
    sets x and y to 0, and a constructor that takes in an xVal and yVal. 
    In addition, write its accessor functions, 
-   <code>getX</code>, <code>getY</code>, <code>setX</code>, and <code>setY</code>.
+   ``getX``, ``getY``, ``setX``, and ``setY``.
    Put the necessary blocks of code in the correct order.
    -----
    class Point {   
@@ -144,8 +144,8 @@ Mixed Up Code Practice
    :numbered: left
    :adaptive:
 
-   Now that we've defined the <code>Point</code> class, we can go back to
-   writing the <code>Rectangle</code> class. <code>Rectangle</code> should store 
+   Now that we've defined the ``Point`` class, we can go back to
+   writing the ``Rectangle`` class. ``Rectangle`` should store 
    it's upper-left and lower-right points as private member variables. 
    Write accessor functions for these variables after the constructor.
    It should also have length and height stored as public member variables.
@@ -178,9 +178,9 @@ Mixed Up Code Practice
    :numbered: left
    :adaptive:
 
-   Write the <code>Rectangle</code> member function <code>calculateSides</code>, which finds
-   the length and height of the rectangle using the stored <code>Point</code>s.
-   Afterwards, write the <code>Rectangle</code> member function <code>calculateArea</code>,
+   Write the ``Rectangle`` member function ``calculateSides``, which finds
+   the length and height of the rectangle using the stored ``Point``s.
+   Afterwards, write the ``Rectangle`` member function ``calculateArea``,
    which returns the area of the rectangle.
    -----
    void Rectangle::calculateSides () {
@@ -213,7 +213,7 @@ Mixed Up Code Practice
    :numbered: left
    :adaptive:
 
-   Write a <code>main</code> In <code>main</code>, create a <code>Rectangle</code> with corners
+   Write a ``main`` In ``main``, create a ``Rectangle`` with corners
    at (2.5, 7.5) and (8, 1.5). Print out the length and height, calculate the area,
    and print out the area. Then change the upperLeft corner to be at (4.2, 10.7) and 
    print out the new area.
@@ -252,8 +252,8 @@ Mixed Up Code Practice
    :numbered: left
    :adaptive:
 
-   Let's write the <code>Date</code> class. <code>Date</code> stores information 
-   about the day, month, and year in private variables, in addition to a <code>vector</code>
+   Let's write the ``Date`` class. ``Date`` stores information 
+   about the day, month, and year in private variables, in addition to a ``vector``
    of the number of days in each month. Write accessor functions
    for each variable, keeping in mind the valid values each variable can take. 
    In addition, write the default constructor, which initializes 
@@ -300,7 +300,7 @@ Mixed Up Code Practice
    :numbered: left
    :adaptive:
 
-   Let's write the <code>Date</code> member function, <code>printDate</code>,
+   Let's write the ``Date`` member function, ``printDate``,
    which prints the date out in the following format: month/day/year CE/BCE
    depending on whether the year is negative or not.
    -----
@@ -328,9 +328,9 @@ Mixed Up Code Practice
    :numbered: left
    :adaptive:
 
-   Write the <code>Date</code> member function <code>isLeapYear</code>, which returns true if 
-   the year is a leap year. Then write the <code>Date</code> member function <code>lastDayInMonth</code>,
-   which returns the last day in the <code>Date</code>'s month.
+   Write the ``Date`` member function ``isLeapYear``, which returns true if 
+   the year is a leap year. Then write the ``Date`` member function ``lastDayInMonth``,
+   which returns the last day in the ``Date``'s month.
    -----
    bool Date::isLeapYear () {
    =====

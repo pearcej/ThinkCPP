@@ -73,7 +73,7 @@ Mixed Up Code Practice
 
    Now let's write some output to a file. Write a program that prompts
    a user for a list of 5 integers separated by spaces, calculates the 
-   average of those integers, and outputs "The average is <code>average</code>"
+   average of those integers, and outputs "The average is ``average``"
    to an output file called "average.txt". Put the necessary blocks 
    of code in the correct order. Declare the output file first and 
    check that it is opened correctly.
@@ -83,11 +83,8 @@ Mixed Up Code Practice
       ofstream outfile("average.txt");
    =====
       if (outfile.good() == false) {
-   =====
          cout << "Unable to open the file." << endl;
-   =====
          exit(1);
-   =====
       }
    =====
       vector<int> list;  #distractor
@@ -114,7 +111,7 @@ Mixed Up Code Practice
    :practice: T
 
    We are given a file called "data.txt" with an unknown number of 
-   <code>double</code> values. Write a program that finds the minimum, maximum,
+   ``double`` values. Write a program that finds the minimum, maximum,
    and number of data and outputs these values to a file called 
    "summary.txt". Put the necessary blocks of code in the correct order. 
    Declare the input and output files first, and check to see that 
@@ -128,11 +125,8 @@ Mixed Up Code Practice
       ofstream outfile("summary.txt");
    =====
       if (infile.good() == false || outfile.good() == false) {
-   =====
          cout << "Unable to open a file." << endl;
-   =====
          exit(1);
-   =====
       }
    =====
       vector<int> data;  #distractor
@@ -169,8 +163,8 @@ Mixed Up Code Practice
    You are given a file called "employee_data.txt" and you want to store
    the information from that file into a vector of data. The file contains
    information about an employee's first and last name, age, phone number,
-   and email. Write the definition of an <code>Employee</code> before you write your
-   <code>main</code> function. Open and check the file before working with the data.
+   and email. Write the definition of an ``Employee`` before you write your
+   ``main`` function. Open and check the file before working with the data.
    Put the necessary blocks of code in the correct order. 
    -----
    struct Employee {
@@ -195,11 +189,8 @@ Mixed Up Code Practice
       ifstream infile("employee_data.txt");
    =====
       if (infile.good() == false) {
-   =====
          cout << "Unable to open the file." << endl;
-   =====
          exit(1);
-   =====
       }
    =====
       vector<Employee> data;
@@ -229,7 +220,7 @@ Mixed Up Code Practice
    because everything is in uppercase. Write a program that takes the input from
    the file "UPPER.txt" and converts all the words to lowercase and prints
    out the modified message to a file called "lower.txt". Write the definition
-   of the function <code>toLower</code> first. Separate the words with spaces.
+   of the function ``toLower`` first. Separate the words with spaces.
    Put the necessary blocks of code in the correct order. 
    -----
    string upperToLower(string upper) {
@@ -250,11 +241,8 @@ Mixed Up Code Practice
       ofstream outfile("lower.txt");
    =====
       if (infile.good() == false || outfile.good() == false) {
-   =====
          cout << "Unable to open a file." << endl;
-   =====
          exit(1);
-   =====
       }
    =====
       string word;
@@ -294,11 +282,8 @@ Mixed Up Code Practice
       ofstream outfile("numbers.txt");
    =====
       if (!odds.good() || !evens.good() || !outfile.good()) {
-   =====
          cout << "Unable to open a file." << endl;
-   =====
          exit(1);
-   =====
       }
    =====
       int odd, even;
@@ -316,11 +301,11 @@ Mixed Up Code Practice
    :adaptive:
    :practice: T
 
-   In chapter 15.7 we defined the <code>Set/data structure.
-   Write a function <code>vectorToSet/which takes a <code>vector<code>
-   of data and returns a <code>Set/object with the data.
+   In chapter 15.7 we defined the ``Set`` data structure.
+   Write a function ``vectorToSet`` which takes a ``vector``
+   of data and returns a ``Set`` object with the data.
    Put the necessary blocks of code in the correct order. 
-   Put the <code>Set/definition first in your answer.
+   Put the ``Set`` definition first in your answer.
    -----
    class Set {
       private:
@@ -361,9 +346,9 @@ Mixed Up Code Practice
    :adaptive:
    :practice: T
 
-   Let's write the <code>struct/definition for a <code>Matrix<code>! The underlying
-   data structure is a <code>vector/of <code>vector<code>\s of <code>int<code>\s. Write 
-   the constructor and <code>at/function, which returns the data stored
+   Let's write the ``struct`` definition for a ``Matrix``! The underlying
+   data structure is a ``vector`` of ``vector``\s of ``int``\s. Write 
+   the constructor and ``at`` function, which returns the data stored
    at a given row and column. Put the necessary blocks of code in the correct order. 
    -----
    class Matrix {
@@ -399,11 +384,11 @@ Mixed Up Code Practice
    :adaptive:
    :practice: T
 
-   Now that we have the basic structure of a <code>Matrix<code>, let's write
-   a function that allows us to add data to a matrix. Write the <code>Matrix<code>
-   member function <code>setData/which takes a row and column index as well
-   as a data value and stores the data value in the <code>Matrix/at the 
-   given location. Then read data in from a file called <code>data.txt<code>.
+   Now that we have the basic structure of a ``Matrix``, let's write
+   a function that allows us to add data to a matrix. Write the ``Matrix``
+   member function ``setData`` which takes a row and column index as well
+   as a data value and stores the data value in the ``Matrix`` at the 
+   given location. Then read data in from a file called ``data.txt``.
    The first line contains the number of rows and columns, separated by a space.
    Data values begin on the next line. Put the necessary blocks of code in the correct order. 
    -----
@@ -437,11 +422,8 @@ Mixed Up Code Practice
             for (int j = 0; j < numCols; ++j) {
    =====
                mat.setData(i, j, data);
-   =====
             }
-   =====
          }
-   =====
       }
    =====
    }
