@@ -1,4 +1,4 @@
-﻿Another example
+Another example
 ---------------
 
 Let’s convert ``increment`` to a member function. Again, we are going to
@@ -92,7 +92,7 @@ The output of this program is ``9:22:50``.
 
     Suppose we have previously declared ``Time currentTime = {9, 14, 30.0}``.  What should be printed by ``time.print()`` after calling ``time.increment(645.0)``? Type your response in the form **hh:mm:ss**.
     
-    - :(9:25:15): Correct!
+    - :(9:25:15)|(09:25:15): Correct!
       :.*: Incorrect! Try plugging the given input into the active code above!
 
 .. fillintheblank:: another_example_2
@@ -152,7 +152,7 @@ The output of this program is ``9:22:50``.
     return false;
    }
    =====
-    if (cat.speed * 2 > age * weight) {                          #paired
+    if (cat.speed * 2 > age * weight) {                          #distractor
       return true;
     }
     return false;
@@ -163,4 +163,3 @@ The output of this program is ``9:22:50``.
     }
     return false;
    }
-
