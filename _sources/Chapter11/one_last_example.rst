@@ -1,4 +1,4 @@
-﻿One last example
+One last example
 ----------------
 
 The final example we’ll look at is ``addTime``:
@@ -115,7 +115,7 @@ object.
 
 .. fillintheblank:: one_last_example_2
 
-    We have previously initialized t1 and t1 using constructors ``Time t1 (8, 30, 45.0)``
+    We have previously initialized t1 and t2 using constructors ``Time t1 (8, 30, 45.0)``
     and ``Time t2 (1, 50, 13.0)``. What should be returned by ``t1.add(t2)``?
 
     - :(10:20:58): Correct!

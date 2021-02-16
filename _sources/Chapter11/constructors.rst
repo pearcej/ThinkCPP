@@ -1,4 +1,4 @@
-﻿Constructors
+Constructors
 ------------
 
 Another function we wrote in Chapter `[time] <#time>`__ was
@@ -70,11 +70,13 @@ result is assigned to the variable ``time``.
    :answer_b: They have the same name as the class.
    :answer_c: They return an instance of an object.
    :answer_d: We refer to the objects they initialize implicitly, or using keyword this.
+   :answer_e: They have the same name as the class, no return type and unchanged parameters.
    :correct: c
    :feedback_a: Incorrect! This statement is true!
    :feedback_b: Incorrect! This statement is true!
    :feedback_c: Correct! Constructors do not have a return type.
    :feedback_d: Incorrect! This statment is true!
+   :feedback_e: Incorrect! This statement is true!
 
    Which statment is **false** about constructors?
 

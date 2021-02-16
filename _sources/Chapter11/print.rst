@@ -1,4 +1,4 @@
-﻿``print``
+``print``
 ---------
 
 In Chapter `[time] <#time>`__ we defined a structure named ``Time`` and
@@ -144,10 +144,10 @@ will complain.
 
 .. mchoice:: print_2
    :multiple_answers:
-   :answer_a: change the name of the function to Dog::bark
-   :answer_b: remove the Dog parameter
-   :answer_c: operate on the current Dog object by using *this
-   :answer_d: declare the function inside of the Dog structure definition
+   :answer_a: Change the name of the function to Dog::bark
+   :answer_b: Remove the Dog parameter
+   :answer_c: Operate on the current Dog object by using *this
+   :answer_d: Declare the function inside of the Dog structure definition
    :correct: b,c,d
    :feedback_a: Incorrect! You don't need to rename the function unless you define it outside of the structure definition.
    :feedback_b: Correct! We no longer need to pass a Dog as an argument, since we are going to be invoking the function on a Dog object.
@@ -160,7 +160,7 @@ will complain.
    :numbered: left
    :adaptive:
 
-   Create the ``Dog`` object with member functions ``bark`` and ``is_teacup_dog``.  Write the functions 
+   Create the ``Dog`` object with member functions ``bark`` and ``is_teacup_dog`` (if the weight of the dog is less than 4 pounds)  Write the functions
    in the same order they appear inside the structure.
    -----
    struct Dog {
@@ -189,12 +189,6 @@ will complain.
     Dog dog = *this;                          #distractor
    =====
     if (dog.weight < 4) {
-      return true;
-    }
-    return false;
-   }
-   =====
-    if (dog.weight < 4) {                          #paired
       return true;
     }
     return false;

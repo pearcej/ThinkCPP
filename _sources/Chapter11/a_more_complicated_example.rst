@@ -1,4 +1,4 @@
-﻿A more complicated example
+A more complicated example
 --------------------------
 
 Although the process of transforming functions into member functions is
@@ -82,7 +82,7 @@ after the current-time, then...”
    :answer_d: "hour" and "minute" refer to the hour and minute of the implicit Time object.
    :correct: b,d
    :feedback_a: Incorrect! There are actually two Time parameters, one of them is implicit.
-   :feedback_b: Correct!
+   :feedback_b: Correct! There are two Time objects - the implicit one and time2.
    :feedback_c: Incorrect! The function is invoked on the implicit Time object.
    :feedback_d: Correct!
 
@@ -95,7 +95,7 @@ after the current-time, then...”
    :answer_d: Four
    :correct: c
    :feedback_a: Incorrect! There is One implicit structure.
-   :feedback_b: Incorrect!
+   :feedback_b: Incorrect! Keep in mind there are 4 structures and 1 is implicit.
    :feedback_c: Correct!  There is One implicit structure, and three structures that need to be accessed with dot notation.
    :feedback_d: Incorrect! We shouldn't need to use dot notation for all of them!
 
@@ -131,3 +131,5 @@ after the current-time, then...”
    };                         #paired
    =====
     Dog dog = *this;                         #distractor
+   =====
+   bool Dog::is_older(const Dog& dog2) {                         #distractor
