@@ -50,6 +50,7 @@ displays them on the screen:
 ::
 
     #include <iostream>
+    #include <fstream>
     using namespace std;
 
     int main ()
