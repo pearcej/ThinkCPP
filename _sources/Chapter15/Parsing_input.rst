@@ -118,10 +118,8 @@ we want, but it is a good starting place.
 
 .. fillintheblank:: question15_5_3
 
-    The ``substr()`` takes |blank| |blank| and |blank| as its two arguments.
+    The ``substr()`` takes |blank| and |blank| as its two arguments.
 
-    - :([Ss][Tt][Aa][Rr][Tt][Ii][Nn][Gg]): Correct!
-      :x: Incorrect! Go back and read to find the answer!
     - :([Ii][Nn][Dd][Ee][Xx]): Correct!
       :.*: Incorrect! Go back and read to find the answer!
     - :([Ll][Ee][Nn][Gg][Tt][Hh]): Correct!
