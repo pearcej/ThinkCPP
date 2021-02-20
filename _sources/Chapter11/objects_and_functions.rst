@@ -1,4 +1,4 @@
-﻿Objects and functions
+Objects and functions
 =====================
 
 .. index::
@@ -79,7 +79,7 @@ able to choose the best form for whatever you are doing.
    :correct: a
    :feedback_a: Correct!
    :feedback_b: Incorrect! Data-oriented programming focuses on how data is touched and processed.
-   :feedback_c: Incorrect! Structured programming makes use of structured confrol flow using block structures (if/else, for/while).
+   :feedback_c: Incorrect! Structured programming makes use of structured control flow using block structures (if/else, for/while).
    :feedback_d: Incorrect! This is not one of the types of programming.
 
    What is do we call programming that makes use of data structures and functions that interact with them?

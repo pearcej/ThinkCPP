@@ -15,3 +15,4 @@ Member functions
    one_last_example.rst
    header_files.rst
    glossary.rst
+   Exercises.rst
