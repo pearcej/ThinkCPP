@@ -16,3 +16,4 @@ Member functions
    header_files.rst
    glossary.rst
    Exercises.rst
+   mixedUpCode.rst
