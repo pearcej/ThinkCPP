@@ -17,3 +17,4 @@ Member functions
    glossary.rst
    Exercises.rst
    mixedUpCode.rst
+   coding_practice.rst
