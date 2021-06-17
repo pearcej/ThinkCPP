@@ -370,10 +370,10 @@ Mixed Up Code Practice
    :adaptive:
    :noindent:
 
-   Let's write a function called <code>ispalindrome</code> which takes
-   a <code>string</code> named input
-   and returns a <code>bool</code>
-   The function returns true if the <code>string</code> is a palindrome and false if not.
+   Let's write a function called ispalindrome which takes
+   a string named input
+   and returns a bool
+   The function returns true if the string is a palindrome and false if not.
    palindromes are symmetrical strings.
    That is a string that reads the same backwards is palindrome.
    palindromes:  "hih", "i", "bob", "tenet", "soos", "madam" .
