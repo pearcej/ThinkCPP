@@ -12,7 +12,7 @@ assess what you have learned in this chapter.
            :language: cpp
 
            Vacation time! But before you go, you need to convert your currency.
-           Let's write the code for the dollarToYen function. dollarToYen
+           Let's write the code for the ``dollarToYen`` function. dollarToYen
            takes dollar as a parameter and returns the equivalent amount of Japanese yen.
            The conversion rate is 1 USD equals 105.42 Japanese yen.
            Write the code that performs this conversion.
@@ -22,13 +22,14 @@ assess what you have learned in this chapter.
            // YOUR CODE HERE
 
 
-           // DO NOT MODIFY ANYTHING BELOW THIS LINE
-           int main() {
-               cout << "Testing with dollar amount of 1 USD" << endl;
-               cout << "Your solution calculated a yen amount of ";
-               cout << dollarToYen(1) << endl;
-           }
+           ====
+           #define CATCH_CONFIG_MAIN
+           #include <catch.hpp>
 
+           TEST_CASE("dollarToYen function") {
+              REQUIRE(dollarToYen(1) == 105.42);
+              REQUIRE(dollarToYen(2) == 210.84);
+           }
 
     .. tab:: Answer
 
@@ -56,7 +57,7 @@ assess what you have learned in this chapter.
            a nice shirt could be labeled with a price of exactly $20, but when 
            you pay, you actually need to pay $21.20 in a state with 6% sales tax.
            However, different states have different tax rates. Write the function
-           priceWithTax, which takes price and percentTax as parameters.
+           ``priceWithTax``, which takes price and percentTax as parameters.
            priceWithTax calculates the price after tax and returns it.
            For example, priceWithTax(20,6) returns 21.2.
            ~~~~
@@ -65,11 +66,13 @@ assess what you have learned in this chapter.
            // YOUR CODE HERE
 
 
-           // DO NOT MODIFY ANYTHING BELOW THIS LINE
-           int main() {
-               cout << "Testing with a price of $20 and a tax of 6%" << endl;
-               cout << "Your solution calculated a price with tax of ";
-               cout << priceWithTax(20,6) << endl;
+           ====
+           #define CATCH_CONFIG_MAIN
+           #include <catch.hpp>
+
+           TEST_CASE("priceWithTax function") {
+              REQUIRE(priceWithTax(20,6) == 21.2);
+              REQUIRE(priceWithTax(100,0) == 100);
            }
 
     .. tab:: Answer
@@ -95,7 +98,7 @@ assess what you have learned in this chapter.
             :language: cpp
 
             Most assignments and tests are graded as a percentage, but final
-            grades are letters. Let's write the code for the percentToLetter function. 
+            grades are letters. Let's write the code for the ``percentToLetter`` function. 
             percentToLetter takes a percentage and returns the corresponding
             letter grade. A 90 and above is an 'A', an 80 and above is a 'B', a 70 and above
             is a 'C', and anything under a 70 is an 'F'. Write the necessary code to 
@@ -106,12 +109,14 @@ assess what you have learned in this chapter.
             // YOUR CODE HERE
 
 
-            // DO NO MODIFY ANYTHING BELOW THIS LINE
-            int main() {
-                cout << "Testing with a percent grade of 81.50%" << endl;
-                cout << "Your solution converted the percent to a letter grade of ";
-                cout << percentToLetter(81.50) << endl;
-            }
+            ====
+            #define CATCH_CONFIG_MAIN
+            #include <catch.hpp>
+
+            TEST_CASE("percentToLetter function") {
+               REQUIRE(percentToLetter(0) == 'F');
+               REQUIRE(percentToLetter(90) == 'A');
+            }           
 
     .. tab:: Answer
 
@@ -146,7 +151,7 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_5_4_ac_q
             :language: cpp
 
-            Let's write the code for the triangleArea function. triangleArea
+            Let's write the code for the ``triangleArea`` function. triangleArea
             takes two parameters, base and height. It returns the 
             area of the triangle using the formula 1/2 * base * height.
             Write the necessary code to find the area of a triangle.
@@ -156,14 +161,13 @@ assess what you have learned in this chapter.
             // YOUR CODE HERE
 
 
-            // DO NOT MODIFY ANYTHING BELOW THIS LINE
-            #include <iostream>
-            using namespace std
+            ====
+            #define CATCH_CONFIG_MAIN
+            #include <catch.hpp>
 
-            int main(){
-                cout << "Testing with base of 4.5 and a height of 6.2" << endl;
-                cout << "Your solution found the area to be ";
-                cout << triangleArea(4.5,6.2) << endl;
+            TEST_CASE("triangleArea function") {
+               REQUIRE(triangleArea(4.5,6.2) == 13.95);
+               REQUIRE(triangleArea(4,5) == 10.0);
             }
 
     .. tab:: Answer
@@ -188,7 +192,7 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_5_5_ac_q
             :language: cpp
 
-            Let's write the code for the cylinderVolume function. cylinderVolume
+            Let's write the code for the ``cylinderVolume`` function. cylinderVolume
             takes two parameters, radius and height. It returns the 
             volume of the cylinder using the formula pi * radius * radius * height.
             Write the necessary code to find the volume of a cylinder.
@@ -198,11 +202,14 @@ assess what you have learned in this chapter.
             // YOUR CODE HERE
             
 
-            // DO NOT MODIFY ANYTHING BELOW THIS LINE
-            int main(){
-                cout << "Testing with a radius of 2.5 and a height of 3.0" << endl;
-                cout << "Your solution found the volume to be ";
-                cout << cylinderVolume(2.5,3.0) << endl;
+            ====
+            #define CATCH_CONFIG_MAIN
+            #include <catch.hpp>
+
+            TEST_CASE("cylinderVolume function") {
+               REQUIRE(cylinderVolume(2.5,3.0) == 58.875);
+               REQUIRE(cylinderVolume(11.0,4.5) == 1709.73);
+               REQUIRE(cylinderVolume(6.25,5.0) == 613.28125);
             }
 
     .. tab:: Answer
@@ -220,6 +227,7 @@ assess what you have learned in this chapter.
                 return pi * radius * radius * height;
             }
 
+
 .. tabbed:: mucp_5_6_ac
 
    .. tab:: Question
@@ -229,7 +237,7 @@ assess what you have learned in this chapter.
 
          On a distant planet, depending on the characteristics of an egg, a kenchic,
          an ooseg, or a guinpen might hatch from it. Let's write the function 
-         birdType which returns an int corresponding to each type of bird
+         ``birdType`` which returns an int corresponding to each type of bird
          (1 for kenchic, 2 for ooseg, and 3 for guinpen). If the egg is round, then it is a 
          guinpen. Otherwise, if the egg is round and it isn't gray, then it is a kenchic. If 
          it isn't a guinpen and it isn't a kenchic, then it's an ooseg. Write the necessary
@@ -240,11 +248,14 @@ assess what you have learned in this chapter.
          // YOUR CODE HERE
 
 
-         // DO NOT MODIFY ANYTHING BELOW THIS LINE
-         int main(){
-            cout << "Testing with an egg that is round and gray" << endl;
-            cout << "Your solution found this egg to be ";
-            cout << birdType(1,1) << endl;
+         ====
+         #define CATCH_CONFIG_MAIN
+         #include <catch.hpp>
+
+         TEST_CASE("birdType function") {
+            REQUIRE(birdType(1,1) == 1);
+            REQUIRE(birdType(1,0) == 2);
+            REQUIRE(birdType(0,0) == 3);
          }
 
    .. tab:: Answer
@@ -277,7 +288,7 @@ assess what you have learned in this chapter.
       .. activecode:: mucp_5_7_ac_q
          :language: cpp
 
-         Let's write the code for the isDoubleDigit function. isDoubleDigit
+         Let's write the code for the ``isDoubleDigit`` function. isDoubleDigit
          takes num as a parameter. isDoubleDigit returns true if 
          num is a double digit number and returns false otherwise.
          Write the necessary code to determine if a number is a double digit number.
@@ -287,11 +298,13 @@ assess what you have learned in this chapter.
          // YOUR CODE HERE
 
 
-         // DO NOT MODIFY ANYTHING BELOW THIS LINE
-         int main() {
-            cout << "Testing your code with the number 99" << endl;
-            cout << "Your solution found the number 99 to be ";
-            cout << isDoubleDigit(99) << endl;
+         ====
+         #define CATCH_CONFIG_MAIN
+         #include <catch.hpp>
+
+         TEST_CASE("isDoubleDigit function") {
+            REQUIRE(isDoubleDigit(10) == true);
+            REQUIRE(isDoubleDigit(100) == false);
          }
 
    .. tab:: Answer
@@ -313,6 +326,7 @@ assess what you have learned in this chapter.
             }
          }
 
+
 .. tabbed:: mucp_5_8_ac
 
    .. tab:: Question
@@ -320,7 +334,7 @@ assess what you have learned in this chapter.
       .. activecode:: mucp_5_8_ac_q
          :language: cpp
 
-         Let's write the code for the Compare function. Compare
+         Let's write the code for the ``Compare`` function. Compare
          takes two integers a, b. Compare returns 1 if 
          a is greater than b, -1 if a is less than b and 0 if they are equal.
          Write the necessary code to compare two integers.
@@ -330,11 +344,14 @@ assess what you have learned in this chapter.
          // YOUR CODE HERE
 
 
-         // DO NOT MODIFY ANYTHING BELOW THIS LINE
-         int main(){
-            cout << "Testing your code with the integers 10 and 49" << endl;
-            cout << "Your solution returned an output of ";
-            cout << Compare(10,49) << endl;
+         ====
+         #define CATCH_CONFIG_MAIN
+         #include <catch.hpp>
+
+         TEST_CASE("Compare function") {
+            REQUIRE(Compare(10,49) == -1);
+            REQUIRE(Compare(10,10) == 0);
+            REQUIRE(Compare(10,5) == 1);
          }
 
    .. tab:: Answer
@@ -359,6 +376,7 @@ assess what you have learned in this chapter.
             }
          }
 
+
 .. tabbed:: mucp_5_9_ac
 
    .. tab:: Question
@@ -366,7 +384,7 @@ assess what you have learned in this chapter.
       .. activecode:: mucp_5_9_ac_q
          :language: cpp
 
-         Let's write the code for the isFactor function. isFactor
+         Let's write the code for the ``isFactor`` function. isFactor
          takes two parameters, num and factor.
          isFactor returns true if factor is a factor of num 
          and returns false otherwise. Write the necessary code to deternube is a number
@@ -377,11 +395,14 @@ assess what you have learned in this chapter.
          // YOUR CODE HERE
 
 
-         // DO NOT MODIFY ANYTHING BELOW THIS LINE
-         int main(){
-            cout << "Testing your code with the number 10 and the factor 5." << endl;
-            cout << "Your solution returned an output of ";
-            cout << isFactor(10,5) << endl;
+         ====
+         #define CATCH_CONFIG_MAIN
+         #include <catch.hpp>
+
+         TEST_CASE("isFactor function") {
+            REQUIRE(isFactor(8,2) == true);
+            REQUIRE(isFactor(7,4) == false);
+            REQUIRE(isFactor(9,1) == true);
          }
 
    .. tab:: Answer
@@ -411,7 +432,7 @@ assess what you have learned in this chapter.
       .. activecode:: mucp_5_10_ac_q
          :language: cpp
 
-         Let's write the code for the isPerfectSquare function. isPerfectSquare
+         Let's write the code for the ``isPerfectSquare`` function. isPerfectSquare
          takes input as a parameter and returns true if input is a 
          perfect square and returns false otherwise. Write the necessary code
          to determine if a number is a perfect square.
@@ -421,11 +442,14 @@ assess what you have learned in this chapter.
          // YOUR CODE HERE
 
 
-         // DO NOT MODIFY ANYTHING BELOW THIS LINE
-         int main(){
-            cout << "Testing your code with the number 4." << endl;
-            cout << "Your solution returned an output of ";
-            cout << isPerfectSquare(4) << endl;
+         ====
+         #define CATCH_CONFIG_MAIN
+         #include <catch.hpp>
+
+         TEST_CASE("isPerfectSquare function") {
+            REQUIRE(isPerfectSquare(4) == true);
+            REQUIRE(isPerfectSquare(16) == true);
+            REQUIRE(isPerfectSquare(10) == false);
          }
 
    .. tab:: Answer
@@ -448,6 +472,7 @@ assess what you have learned in this chapter.
             }
          }
 
+
 .. tabbed:: mucp_5_11_ac
 
    .. tab:: Question
@@ -457,7 +482,7 @@ assess what you have learned in this chapter.
 
          Most bacteria cultures grow exponentially. For this problem,
          assume the number of cells in a bacterial culture doubles every hour.
-         Let's write the code for the countBacteria function. countBacteria 
+         Let's write the code for the ``countBacteria`` function. countBacteria 
          takes hour as a parameter and returns the number of bacteria cells
          after hour hours. Assume when hour is 0, there is one cell. When 
          hour is one, the number of cells doubles to two. When hour is two, 
@@ -469,11 +494,12 @@ assess what you have learned in this chapter.
          // YOUR CODE HERE
 
 
-         // DO NOT MODIFY ANYTHING BELOW THIS LINE
-         int main(){
-            cout << "Testing your code with an hour value of 3." << endl;
-            cout << "Your solution returned an output of ";
-            cout << countBacteria(3) << endl;
+         ====
+         #define CATCH_CONFIG_MAIN
+         #include <catch.hpp>
+
+         TEST_CASE("countBacteria function") {
+            REQUIRE(countBacteria(0) == 1);
          }
 
    .. tab:: Answer

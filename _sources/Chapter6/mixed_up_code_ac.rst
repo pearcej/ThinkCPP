@@ -112,7 +112,7 @@ assess what you have learned in this chapter.
       .. activecode:: mucp_6_4_ac_q
          :language: cpp
 
-         Write a function, repreatHello, that is a void function that takes no arguments and uses a while loop to print out "hello" three times.
+         Write a function, ``repreatHello``, that is a void function that takes no arguments and uses a while loop to print out "hello" three times.
          ~~~~
          #include <iostream> 
          using namespace std
@@ -146,7 +146,7 @@ assess what you have learned in this chapter.
          :language: cpp
 
          Now let's generalize the repeatHello function so that it repeats a given string three times.
-         Let's write the code for the repeatString function, which takes
+         Let's write the code for the ``repeatString`` function, which takes
          input as a parameter and uses a while loop to print out the string three times.
          ~~~~
          #include <iostream>
@@ -181,7 +181,7 @@ assess what you have learned in this chapter.
          :language: cpp
 
          We can further generalize repeatString so that it repeats a given string a given number of times.
-         Let's write the code for the new repeatString function, which takes
+         Let's write the code for the new ``repeatString`` function, which takes
          input and x as parameters and uses a while loop to print out the string x number of times.
          ~~~~
          #include <iostream> 
@@ -216,7 +216,7 @@ assess what you have learned in this chapter.
          :language: cpp
 
          On the last day of every year, we count down the seconds before the new year arrives.
-         Write the function newYearCountdown, which prints out a countdown from 10 and then
+         Write the function ``newYearCountdown``, which prints out a countdown from 10 and then
          prints out "Happy New Year!".         
          ~~~~
          #include <iostream>
@@ -252,7 +252,7 @@ assess what you have learned in this chapter.
          :language: cpp
 
          Help Goku reach power levels of over 9000! Write the function
-         powerUp which takes powerLevel as a parameter.
+         ``powerUp`` which takes powerLevel as a parameter.
          powerUp checks to see if powerLevel is over 9000. If it
          isn't, it repeatedly prints "More power!" and increments powerLevel by
          1000 until powerLevel is over 9000. Then powerUp prints "It's over 9000!".         
@@ -289,7 +289,7 @@ assess what you have learned in this chapter.
       .. activecode:: mucp_6_9_ac_q
          :language: cpp
 
-         Write the function summation which takes two
+         Write the function ``summation`` which takes two
          parameters, start and end. summation adds
          all the integers from start to end, inclusive, together and returns
          the sum. Write the necessary code for the summation function.
@@ -298,6 +298,16 @@ assess what you have learned in this chapter.
          using namespace std
          // YOUR CODE HERE
 
+
+         ====
+         #define CATCH_CONFIG_MAIN
+         #include <catch.hpp>
+
+         TEST_CASE("summation function") {
+            REQUIRE(summation(1,5) == 15);
+            REQUIRE(summation(1,9) == 45);
+            REQUIRE(summation(1,20) == 210);
+         }
 
    .. tab:: Answer
 
@@ -327,7 +337,7 @@ assess what you have learned in this chapter.
       .. activecode:: mucp_6_10_ac_q
          :language: cpp
 
-         Write the function reverseNumber which takes num
+         Write the function ``reverseNumber`` which takes num
          as a parameter and returns num but with its digits reversed.
          For example, reverseNumber (1324) returns 4231.
          Write the necessary code, with reverse
@@ -338,6 +348,16 @@ assess what you have learned in this chapter.
          // YOUR CODE HERE
 
 
+         ====
+         #define CATCH_CONFIG_MAIN
+         #include <catch.hpp>
+
+         TEST_CASE("reverseNumber function") {
+            REQUIRE(reverseNumber(1324) == 4231);
+            REQUIRE(reverseNumber(4231) == 1324);
+            REQUIRE(reverseNumber(1) == 1);
+         }
+         
    .. tab:: Answer
 
       .. activecode:: mucp_6_10_ac_a

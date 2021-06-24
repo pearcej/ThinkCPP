@@ -89,7 +89,7 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_7_3_ac_q
             :language: cpp
 
-            Let's write the function longerString, which takes two parameters, 
+            Let's write the function ``longerString``, which takes two parameters, 
             first and second. If first has more letters
             than second, longerString prints "first is longer than second",
             and vice versa. If they have the same number of letters, longerString 
@@ -132,7 +132,7 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_7_4_ac_q
             :language: cpp
 
-            Let's write the code for the cipherText function. cipherText 
+            Let's write the code for the ``cipherText`` function. cipherText 
             should be a void function that takes input as a parameter,
             increases the value of each character by 1 (i.e. "bad" turns into "cbe"),
             and prints the encrypted string.            
@@ -289,7 +289,7 @@ assess what you have learned in this chapter.
             :language: cpp
 
             On the strange planet of Noes, there's a law that prohibits the usage of the letter "e". 
-            As a result, they hired you to write a function called censorE that replaces all occurences
+            As a result, they hired you to write a function called ``censorE`` that replaces all occurences
             of the letter "e" in a string with an asterisk and returns the censored string. For example, 
             if the input is "hello world", the function returns "h*llo world".
             ~~~~
@@ -298,6 +298,16 @@ assess what you have learned in this chapter.
             using namespace std
             // YOUR CODE HERE
 
+
+            ==== 
+            #define CATCH_CONFIG_MAIN
+            #include <catch.hpp>
+
+            TEST_CASE("censorE function") {
+                REQUIRE(censorE("after") == "aft*r");
+                REQUIRE(censorE("hello world") == "h*llo world");
+                REQUIRE(censorE("censor") == "c*nsor");
+            }
 
     .. tab:: Answer
 
@@ -332,7 +342,7 @@ assess what you have learned in this chapter.
             Your work for the planet of Noes impressed the nearby planets of Noas, Nois, Noos, and Nous.
             They want you to write different functions that censor out each planet's corresponding forbidden letter.
             However, your galaxy brain knows better than to write a different function for each planet.
-            Using generalization, write the function censorLetter which takes input and a char to censor 
+            Using generalization, write the function ``censorLetter`` which takes input and a char to censor 
             as parameters and returns a censored string. For example, censorLetter("Bye world", 'o') returns the
             string "Bye w*rld".
             ~~~~
@@ -341,6 +351,16 @@ assess what you have learned in this chapter.
             using namespace std
             // YOUR CODE HERE
 
+
+            ====
+            #define CATCH_CONFIG_MAIN
+            #include <catch.hpp>
+
+            TEST_CASE("censorLetter function") {
+                REQUIRE(censorLetter("Bye world", 'o') == "Bye w*rld");
+                REQUIRE(censorLetter("Hello world", 'l') == "He**o wor*d");
+                REQUIRE(censorLetter("Goodbye world, 'd') == "Goo*bye worl*");
+            }
 
     .. tab:: Answer
 
@@ -372,7 +392,7 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_7_10_ac_q
             :language: cpp
 
-            Let's write a function called alphaCombine which takes
+            Let's write a function called ``alphaCombine`` which takes
             two strings, first and second,
             and returns a string which concatenates first and second in
             alphabetical order. For example,
@@ -384,6 +404,16 @@ assess what you have learned in this chapter.
             using namespace std
             // YOUR CODE HERE
 
+
+            ====
+            #define CATCH_CONFIG_MAIN
+            #include <catch.hpp>
+
+            TEST_CASE("alphaCombine function") {
+                REQUIRE(alphaCombine("zebra","mega") == "megazebra");
+                REQUIRE(alphaCombine("alpha","combine") == "alphacombine");
+                REQUIRE(alphaCombine("combine","alpha") == "alphacombine");
+            }
 
     .. tab:: Answer
 
@@ -414,10 +444,10 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_7_11_ac_q
             :language: cpp
 
-            Let's write a function called <code>ispalindrome</code> which takes
-            a <code>string</code> named input
-            and returns a <code>bool</code>
-            The function returns true if the <code>string</code> is a palindrome and false if not.
+            Let's write a function called ``ispalindrome`` which takes
+            a string named input
+            and returns a bool
+            The function returns true if the string is a palindrome and false if not.
             palindromes are symmetrical strings.
             That is a string that reads the same backwards is palindrome.
             palindromes:  "hih", "i", "bob", "tenet", "soos", "madam" .
@@ -429,6 +459,14 @@ assess what you have learned in this chapter.
             // YOUR CODE HERE
 
 
+            ====
+            #define CATCH_CONFIG_MAIN
+            #include <catch.hpp>
+
+            TEST_CASE("ispalindrome function") {
+                REQUIRE(ispalindrome("madam") == true);
+                REQUIRE(ispalindrome("join") == false);
+            }
     .. tab:: Answer
 
         .. activecode:: mucp_7_11_ac_a
