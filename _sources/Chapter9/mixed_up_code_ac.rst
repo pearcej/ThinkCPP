@@ -11,7 +11,7 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_9_1_ac_q
             :language: cpp
 
-            Let's write the code for the struct definition of Movie. 
+            Let's write the code for the struct definition of ``Movie``. 
             The Movie structure will have the instance variables title, 
             director, and releaseYear in that order. 
             ~~~~
@@ -44,7 +44,7 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_9_2_ac_q
             :language: cpp
         
-            Let's write the code for the printMovie function. 
+            Let's write the code for the ``printMovie`` function. 
             printMovie should print the information about a movie
             in the following format: "title" directed by director (releaseYear).
             ~~~~
@@ -76,7 +76,7 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_9_3_ac_q
             :language: cpp
             
-            Let's write the code for the movieAge function. 
+            Let's write the code for the ``movieAge`` function. 
             movieAge should take a Movie and currentYear as a parameter and
             return how many years it has been since the releaseYear.
             ~~~~
@@ -107,7 +107,7 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_9_4_ac_q
             :language: cpp
             
-            Let's write the code for the struct definition of Date. 
+            Let's write the code for the struct definition of ``Date``.
             The Date structure will have three integer instance variables: day, 
             month, and year in that order. 
             ~~~~
@@ -140,7 +140,7 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_9_5_ac_q
             :language: cpp
 
-            Let's write the code for the printDate function. 
+            Let's write the code for the ``printDate`` function. 
             printDate should print the date in the following format: 
             month/date/year.
             ~~~~
@@ -154,7 +154,7 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_9_5_ac_a
             :language: cpp
 
-            Below is one way to write the printDate function.
+            Below is one way to write the ``printDate`` function.
             ~~~~
             #include <iostream>
             using namespace std
@@ -171,7 +171,7 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_9_6_ac_q
             :language: cpp
 
-            Let's write the code for the nextMonth function. 
+            Let's write the code for the ``nextMonth`` function. 
             nextMonth should change the date to one month later.
             For example, 3/4/2020 gets modified to 4/4/2020, and 12/3/2020
             gets modified to 1/3/2021.
@@ -210,7 +210,7 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_9_7_ac_q
             :language: cpp
 
-            Let's write the code for the struct definition of Length. 
+            Let's write the code for the struct definition of ``Length``. 
             Length should have the instance variables inches, feet, and yard.
             ~~~~
             #include <iostream> 
@@ -223,7 +223,7 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_9_7_ac_a
             :language: cpp
             
-            Below is one way to defiine the Length struct.
+            Below is one way to defiine the ``Length`` struct.
             ~~~~
             #include <iostream>
             using namespace std
@@ -242,7 +242,7 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_9_8_ac_q
             :language: cpp
 
-            Let's write the code for the printLength function. 
+            Let's write the code for the ``printLength`` function. 
             printLength should print the date in the following format: 
             yards yds, feet ft, inches in.
             ~~~~
@@ -256,7 +256,7 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_9_8_ac_a
             :language: cpp
 
-            Below is one way to write the printLength function.
+            Below is one way to write the ``printLength`` function.
             ~~~~
             #include <iostream>
             using namespace std
@@ -273,7 +273,7 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_9_9_ac_q
             :language: cpp
 
-            Let's write the code for the allInches function. 
+            Let's write the code for the ``allInches`` function. 
             printLength should modify a Length object to convert all
             feet and yards to inches. For example, a Length with 1 yard, 2 feet, and 3
             inches is converted into a Length with 0 yards, 0 feet, and 63 inches.
@@ -288,7 +288,7 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_9_9_ac_a
             :language: cpp
 
-            Below is one way to write the allInches function.
+            Below is one way to write the ``allInches`` function.
             ~~~~
             #include <iostream>
             using namespace std
@@ -305,7 +305,7 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_9_10_ac_q
             :language: cpp
 
-            Let's write the code for the addLengths function. 
+            Let's write the code for the ``addLengths`` function. 
             addLengths should take three Lengths as parameters. 
             It should then add the first two Lengths and store the result
             in the third Length. If there is over 12 inches or over 3 feet,
@@ -321,7 +321,7 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_9_10_ac_a
             :language: cpp
 
-            Below is one way to write the addLengths function.
+            Below is one way to write the ``addLengths`` function.
             ~~~~
             #include <iostream> 
             using namespace std

@@ -80,7 +80,7 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_8_3_ac_q
             :language: cpp
 
-            Let's write the code for the printSong function. printSong
+            Let's write the code for the ``printSong`` function. printSong
             takes a Song as a parameter and prints out the instance variables
             in the following format: "title" by artist (album, year). 
             ~~~~
@@ -148,7 +148,7 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_8_5_ac_q
             :language: cpp
 
-            Let's write the code for the convertToHumanAge function. convertToHumanAge
+            Let's write the code for the ``convertToHumanAge`` function. convertToHumanAge
             takes a Unicorn as a parameter and returns the equivalent human age.
             If a unicorn is sparkly, then its equivalent human age is three times its age in unicorn years
             plus the length of its horn. If a unicorn is not sparkly, then its equivalent human age is
@@ -186,7 +186,7 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_8_6_ac_q
             :language: cpp
 
-            Let's write the code for the unicornPower function. unicornPower
+            Let's write the code for the ``unicornPower`` function. unicornPower
             takes a Unicorn as a parameter and 
             sets isSparkly to true and changes the color to rainbow.        
             ~~~~
@@ -257,7 +257,7 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_8_8_ac_q
             :language: cpp
 
-            Let's write the code for the printAddress function. printAddress takes
+            Let's write the code for the ``printAddress`` function. printAddress takes
             an Employee as a parameter and should print out the information of the employee in the 
             following format: name (id) lives at houseNumber in state, postalAddress.    
             ~~~~
@@ -290,7 +290,7 @@ assess what you have learned in this chapter.
             :language: cpp
 
             Sometimes employees will move around and thus we'll need to update their addresses.
-            Let's write the code for the updateAddress function. updateAddress takes an
+            Let's write the code for the ``updateAddress`` function. updateAddress takes an
             Employee and a new Address as parameters and sets the employee's address to the new address.
             ~~~~
             #include <iostream>
@@ -303,7 +303,7 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_8_9_ac_a
             :language: cpp
 
-            Below is one way to write the updateAddress function.
+            Below is one way to write the ``updateAddress`` function.
             ~~~~
             #include <iostream>
             using namespace std
@@ -320,7 +320,7 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_8_10_ac_q
             :language: cpp
 
-            Let's write the code for the storeEmployeeData function. storeEmployeeData doesn't
+            Let's write the code for the ``storeEmployeeData`` function. storeEmployeeData doesn't
             take any parameters and prompts the user for information regarding their
             name, id, salary, and address in that order. It then returns an Employee object with
             the stored data. Declare all variables before prompting the user.         
@@ -334,7 +334,7 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_8_10_ac_a
             :language: cpp
 
-            Below is one way to write the storeEmployeeData function.
+            Below is one way to write the ``storeEmployeeData`` function.
             ~~~~
             #include <iostream> 
             using namespace std
