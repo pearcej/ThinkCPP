@@ -16,7 +16,7 @@ assess what you have learned in this chapter.
             director, and releaseYear in that order. 
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -25,10 +25,10 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_9_1_ac_a
             :language: cpp
 
-            Below is one way to define the Movie struct.
+            Below is one way to define the ``Movie`` struct.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             struct Movie {
                 string title;
@@ -49,7 +49,7 @@ assess what you have learned in this chapter.
             in the following format: "title" directed by director (releaseYear).
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -58,10 +58,16 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_9_2_ac_a
             :language: cpp
 
-            Below is one way to write the printMovie function.
+            Below is one way to write the ``printMovie`` function.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
+
+            struct Movie {
+                string title;
+                string director;
+                int releaseYear;
+            };
 
             void printMovie (const Movie& m) {
                 cout << "\"" << m.title << "\" directed by ";
@@ -81,7 +87,7 @@ assess what you have learned in this chapter.
             return how many years it has been since the releaseYear.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -90,12 +96,18 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_9_3_ac_a
             :language: cpp
             
-            Below is one way to write the movieAge function.
+            Below is one way to write the ``movieAge`` function.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
-            int movieAfe (const Movie& m, int currentYear) {
+            struct Movie {
+                string title;
+                string director;
+                int releaseYear;
+            };
+
+            int movieAge (const Movie& m, int currentYear) {
                 return currentYear - m.releaseYear;
             }
 
@@ -112,7 +124,7 @@ assess what you have learned in this chapter.
             month, and year in that order. 
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
         
@@ -121,16 +133,16 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_9_4_ac_a
             :language: cpp
 
-            Below is one way to define the Date struct.
+            Below is one way to define the ``Date`` structure.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             struct Date {
                 int day;
                 int month;
                 int year;
-            }
+            };
 
 
 .. tabbed:: mucp_9_5_ac
@@ -145,7 +157,7 @@ assess what you have learned in this chapter.
             month/date/year.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -157,7 +169,13 @@ assess what you have learned in this chapter.
             Below is one way to write the ``printDate`` function.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
+
+            struct Date {
+                int day;
+                int month;
+                int year;
+            };
 
             void printDate (const Date& d) {
                 cout << d.month << "/" << d.day << "/" << d.year << endl;
@@ -177,7 +195,7 @@ assess what you have learned in this chapter.
             gets modified to 1/3/2021.
             ~~~~
             #include <iostream> 
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -189,7 +207,13 @@ assess what you have learned in this chapter.
             Below is one way to write the nextMonth function.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
+
+            struct Date {
+                int day;
+                int month;
+                int year;
+            };
 
             void nextMonth (Date& d) {
                 if (d.month == 12) {
@@ -214,7 +238,7 @@ assess what you have learned in this chapter.
             Length should have the instance variables inches, feet, and yard.
             ~~~~
             #include <iostream> 
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -223,10 +247,10 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_9_7_ac_a
             :language: cpp
             
-            Below is one way to defiine the ``Length`` struct.
+            Below is one way to defiine the ``Length`` structure.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             struct Length {
                 double inches;
@@ -247,7 +271,7 @@ assess what you have learned in this chapter.
             yards yds, feet ft, inches in.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -259,7 +283,13 @@ assess what you have learned in this chapter.
             Below is one way to write the ``printLength`` function.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
+
+            struct Length {
+                double inches;
+                double feet;
+                double yards;
+            };
             
             void printLength (const Length& l) {
                 cout << l.yards << " yds, " << l.feet << " feet, " << l.inches << " in" << endl;
@@ -279,7 +309,7 @@ assess what you have learned in this chapter.
             inches is converted into a Length with 0 yards, 0 feet, and 63 inches.
             ~~~~
             #include <iostream> 
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -291,7 +321,13 @@ assess what you have learned in this chapter.
             Below is one way to write the ``allInches`` function.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
+
+            struct Length {
+                double inches;
+                double feet;
+                double yards;
+            };
 
             void allInches (Length& l) {
                 l.inches += 36 * l.yards + 12 * l.feet;
@@ -312,7 +348,7 @@ assess what you have learned in this chapter.
             convert it to the proper amound of feet and yards (13 inches becomes 1 foot and 1 inch).
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
             
@@ -324,7 +360,13 @@ assess what you have learned in this chapter.
             Below is one way to write the ``addLengths`` function.
             ~~~~
             #include <iostream> 
-            using namespace std
+            using namespace std;
+
+            struct Length {
+                double inches;
+                double feet;
+                double yards;
+            };
             
             void addLengths (const Length& first, const Length& second, Length& total) {
                 total.inches = first.inches + second.inches;

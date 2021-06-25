@@ -27,11 +27,12 @@ Answer the following **Activecode** questions to assess what you have learned in
 
 
      .. activecode:: mucp_11_1_q
-        
+        :language: cpp
+
         ~~~~
         #include <iostream>
         #include <string>
-        using namespace std
+        using namespace std;
         // YOUR CODE HERE
 
     .. tab:: Answer
@@ -43,7 +44,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream>
             #include <string>
-            using namespace std
+            using namespace std;
 
             struct Student {
                 int id, year;
@@ -75,7 +76,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             the song was released after 2015.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -87,7 +88,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to define the ``Album`` struct.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             struct Album {
                 string name;
@@ -116,7 +117,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             the ``convertToSeconds`` member function as a part of the ``Time`` struct.
             ~~~~
             #include <iostream> 
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
         
@@ -128,7 +129,13 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to write the ``convertToSeconds`` member function.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
+
+            struct Time {
+                int hour;
+                int minutes;
+                int second;
+            };
 
             double Time::convertToSeconds () const {
                 int minutes = time.hour * 60 + time.minutes;
@@ -150,7 +157,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             current Student.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -162,7 +169,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to create the ``Student::is_older()`` function.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             bool is_older(const Student& stu) const {
                 if (age > stu.age) {return true;}
@@ -182,7 +189,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             initialises the member variables ``days``, ``weeks``, ``years``.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -194,7 +201,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to initialize the constructor.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             Days::Days (int num_days) {
                 years = num_days / 365;
@@ -217,7 +224,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             one with arguments. 
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -229,7 +236,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to write the two constructors.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             Student::Student () {
                 void Student::Student () {
@@ -257,7 +264,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             weight needs to be converted from pounds to kilograms in the second constructor
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -269,13 +276,13 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to implement the two constructors. 
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             struct Penguin {
                 int age; 
                 int weight;
                 Penguin ();
-                Penguin (int age_in; int weight_in);
+                Penguin (int age_in, int weight_in);
             };
 
             Penguin::Penguin () {
@@ -307,7 +314,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             ``AddDays`` function below a member function.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // EDIT THE CODE BELOW
 
             Days AddDays (const Days& d1, const Days& d2) {
@@ -324,7 +331,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to make the ``AddDays`` function a member function.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             Days Days::add (const Days& d2) const {
                 int days = convertToDays () + d2.convertToDays ();
@@ -345,7 +352,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             declare Penguins in main such that both are called.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -357,7 +364,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to creat the ``Penguin`` struct and the 2 constructors.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             struct Penguin {
                 int age;
@@ -393,7 +400,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             a header (.h) file for the struct ``Student``.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
         
@@ -405,7 +412,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to write the header file for the ``Student`` struct.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             struct Student {
                 // instance variables

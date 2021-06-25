@@ -12,12 +12,12 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_8_1_ac_q
             :language: cpp
 
-            Let's write the code for the struct definition of Song. 
+            Let's write the code for the struct definition of ``Song``. 
             The Song structure will have the instance variables string title, 
             string artist, string album, and int year in that order.        
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -26,10 +26,10 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_8_1_ac_a
             :language: cpp
 
-            Below is onee way to define the struct definition of Song.
+            Below is one way to define the struct definition of ``Song``.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             struct Song {
                 string title;
@@ -46,11 +46,11 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_8_2_ac_q
             :language: cpp
 
-            In main, create a Song object called fly which holds
+            In main, create a Song object called ``fly`` which holds
             the data for Frank Sinatra's "Fly Me to the Moon" from his 1964 album "It Might as Well Be Swing".
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -62,7 +62,14 @@ assess what you have learned in this chapter.
             Below is one way to create the object in the main function.
             ~~~~
             #include <iostream> 
-            using namespace std
+            using namespace std;
+
+            struct Song {
+                string title;
+                string artist;
+                string album;
+                int year;
+            };
 
             int main() {
                 Song fly;
@@ -85,7 +92,7 @@ assess what you have learned in this chapter.
             in the following format: "title" by artist (album, year). 
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -97,12 +104,27 @@ assess what you have learned in this chapter.
             Below is one way to write the printSong function.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
+
+            struct Song {
+                string title;
+                string artist;
+                string album;
+                int year;
+            };
 
             void printSong (Song s) {
                 cout << "\"" << s.title << "\" by " << s.artist;
                 cout << " (" << s.album << ", " << s.year << ")" << endl;
             }
+
+            int main() {
+                Song fly;
+                fly.title = "Fly Me to the Moon";
+                fly.artist = "Frank Sinatra";
+                fly.album = "It Might as Well Be Swing";
+                fly.year = 1964;
+            }            
 
 
 .. tabbed:: mucp_8_4_ac
@@ -112,13 +134,13 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_8_4_ac_q
             :language: cpp
 
-            Let's write the code for the struct definition of Unicorn. 
+            Let's write the code for the struct definition of ``Unicorn``. 
             The Unicorn structure will have the instance variables name, 
             age, hornLength, hairColor, and isSparkly in that order. A Unicorn's
             horn length is measured to the nearest tenth of a unit.  
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -127,10 +149,10 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_8_4_ac_a
             :language: cpp
 
-            Below is one way to define the struct Unicorn. 
+            Below is one way to define the struct ``Unicorn``. 
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             struct Unicorn {
                 string name;
@@ -155,7 +177,7 @@ assess what you have learned in this chapter.
             four times its age in unicorn years plus twice the length of its horn.  
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -167,7 +189,15 @@ assess what you have learned in this chapter.
             Below is one way to write the convertToHumanAge function.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
+
+            struct Unicorn {
+                string name;
+                int age;
+                double hornLength;
+                strinf hairColor;
+                bool isSparkly;
+            };
 
             int convertToHumanAge (Unicorn u) {
                 if (u.isSparkly) {
@@ -191,7 +221,7 @@ assess what you have learned in this chapter.
             sets isSparkly to true and changes the color to rainbow.        
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -203,7 +233,15 @@ assess what you have learned in this chapter.
             Below is one way to write the unicornPower function.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
+
+            struct Unicorn {
+                string name;
+                int age;
+                double hornLength;
+                strinf hairColor;
+                bool isSparkly;
+            };
 
             void unicornPower (Unicorn& u) {
                 u.isSparkly = true;
@@ -225,7 +263,7 @@ assess what you have learned in this chapter.
             and Address address in that order.    
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -237,13 +275,14 @@ assess what you have learned in this chapter.
             Below is one way to define the Address and Employee structs.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             struct Address {
                 int houseNumber;
                 string state;
                 int postalAddress;
             };
+
             struct Employee {
                 string name;
                 Address address;
@@ -262,7 +301,7 @@ assess what you have learned in this chapter.
             following format: name (id) lives at houseNumber in state, postalAddress.    
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -274,7 +313,18 @@ assess what you have learned in this chapter.
             Below is one way to write the printAddress function
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
+
+            struct Address {
+                int houseNumber;
+                string state;
+                int postalAddress;
+            };
+
+            struct Employee {
+                string name;
+                Address address;
+            };
 
             void printAddress (Employee e) {
                 cout << e.name << " (" << e.id << ") lives at ";
@@ -294,7 +344,7 @@ assess what you have learned in this chapter.
             Employee and a new Address as parameters and sets the employee's address to the new address.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -306,7 +356,18 @@ assess what you have learned in this chapter.
             Below is one way to write the ``updateAddress`` function.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
+
+            struct Address {
+                int houseNumber;
+                string state;
+                int postalAddress;
+            };
+
+            struct Employee {
+                string name;
+                Address address;
+            };
 
             void updateAdress (Employee& e, Address a) {
                 e.address = a;
@@ -326,7 +387,8 @@ assess what you have learned in this chapter.
             the stored data. Declare all variables before prompting the user.         
             ~~~~
             #include <iostream> 
-            using namespace std
+            using namespace std;
+            // YOUR CODE HERE
 
 
     .. tab:: Answer
@@ -337,7 +399,18 @@ assess what you have learned in this chapter.
             Below is one way to write the ``storeEmployeeData`` function.
             ~~~~
             #include <iostream> 
-            using namespace std
+            using namespace std;
+
+            struct Address {
+                int houseNumber;
+                string state;
+                int postalAddress;
+            };
+
+            struct Employee {
+                string name;
+                Address address;
+            };
 
             void storeEmployeeData() {
                 Employee e;

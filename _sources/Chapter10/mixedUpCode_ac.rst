@@ -16,7 +16,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream>
             #include <vector>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -29,13 +29,14 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream>
             #include <vector>
-            using namespace std
+            using namespace std;
 
             int main() {
-                vector<int> vec = // Define a vector
+                vector<int> vec;
+                vec.assign(1,10);
                 vec[0] = 6;
                 vec[2] = vec[2] * 2;
-                last = vec.size() - 1;
+                int last = vec.size() - 1;
                 vec[last]++;
             }
 
@@ -54,7 +55,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream>
             #include <vector>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -67,7 +68,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream>
             #include <vector>
-            using namespace std
+            using namespace std;
 
             int main() {
                 vector<int> digs = {7, 8, 7, 8};
@@ -89,8 +90,8 @@ Answer the following **Activecode** questions to assess what you have learned in
             digits to ``{1, 2, 3}``.
             ~~~~
             #include <iostream>
-            #include <srting>
-            using namespace std
+            #include <vector>
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -103,7 +104,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream>
             #include <vector>
-            using namespace std
+            using namespace std;
 
             int main() {
                 vector<int> nums (5, 1);
@@ -112,8 +113,6 @@ Answer the following **Activecode** questions to assess what you have learned in
                 digits.pop_back();
                 digits[1]++;
                 digits[2] = digits[2] * 3;
-                digits[2]++; #distractor
-                digits[3] = digits[3] * 3;
             }
 
 
@@ -129,7 +128,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream>
             #include <vectors>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -142,7 +141,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream>
             #include <vector>
-            using namespace std
+            using namespace std;
 
             int main() {
                 vector<int> numbers = {1, 2, 3, 4, 5};
@@ -171,7 +170,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream> 
             #include <vector>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
     
 
@@ -183,8 +182,8 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to construct the code.
             ~~~~
             #include <iostream>
-            #include <vectors>
-            using namespace std
+            #include <vector>
+            using namespace std;
 
             int main() {
                 vector<string> words = {“car”, “cat”, “switch”, “princess”};
@@ -213,7 +212,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream>
             #include <vector>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -226,7 +225,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream> 
             #include <vector>
-            using namespace std
+            using namespace std;
 
             int main() {
                 vector<int> keno = {};
@@ -256,7 +255,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream> 
             #include <vector>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -269,11 +268,11 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream> 
             #include <vector>
-            using namespace std
+            using namespace std;
 
             int main() {
                 vector<string> album = {"imagine", "needy", "NASA", "bloodline", "fake smile", "bad idea", "make up", "ghostin", "in my head", "7 rings", "thank u, next", "break up with your girlfriend, i'm bored"};
-                int count = 0
+                int count = 0;
                 for (size_t i = 0; i < album.size(); i++) {
                     if (album[i][0] == 'b') {
                         ++count;
@@ -302,7 +301,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream>
             #include <vector>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -315,7 +314,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream>
             #include <vector>
-            using namespace std
+            using namespace std;
 
             int main() {
                 vector<double> temps = {82.0, 76.8, 74.3, 58.8, 79.2, 73.4, 80.1};
@@ -346,7 +345,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream>
             #include <vector>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -359,7 +358,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream>
             #include <vector> 
-            using namespace std
+            using namespace std;
 
             int main() {
                 vector<string> nouns = {"cereal", "Cocoa Puffs", "Mario", "luigi", "Aerosmith"};
@@ -402,7 +401,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream>
             #include <vector>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -415,7 +414,19 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream>
             #include <vector>
-            using namespace std
+            using namespace std;
+
+            int howMany (const vector<string>& vec, char let) {
+                int count = 0;
+                for (size_t i = 0; i < vec.size(); i++) {
+                    for (size_t c = 0; c < vec[i].size(); c++) {
+                        if (vec[i][c] == let) {
+                            count++;                                      
+                            }
+                    }
+                }
+                return count;
+            }
 
             int main() {
                 vector<string> excl = {"what?!", "how???", "fine!", "STOP.", "yay!!!!!", "ugh...!"};

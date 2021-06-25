@@ -15,7 +15,7 @@ assess what you have learned in this chapter.
          Write a program that prints out the even numbers between 20 and 40, inclusive.
          ~~~~
          #include <iostream>
-         using namespace std
+         using namespace std;
          // YOUR CODE HERE
 
 
@@ -27,7 +27,7 @@ assess what you have learned in this chapter.
          Below is one way to write the program
          ~~~~
          #include <iostream>
-         using namespace std
+         using namespace std;
 
          int main() {
             int n = 20;
@@ -48,7 +48,7 @@ assess what you have learned in this chapter.
          Write a program that counts down from 100 to 0 in decrements of 10.
          ~~~~
          #include <iostream> 
-         using namespace std
+         using namespace std;
          // YOUR CODE HERE
 
 
@@ -60,7 +60,7 @@ assess what you have learned in this chapter.
          Below is one way to write the program
          ~~~~
          #include <iostream> 
-         using namespace std
+         using namespace std;
 
          int main() {
             int n = 100;
@@ -81,7 +81,7 @@ assess what you have learned in this chapter.
          Write a program that finds the sum of the first 10 natural numbers.
          ~~~~
          #include <iostream>
-         using namespace std
+         using namespace std;
          // YOUR CODE HERE
 
 
@@ -93,14 +93,14 @@ assess what you have learned in this chapter.
          Below is one way to write the program.
          ~~~~
          #include <iostream> 
-         using namespace std
+         using namespace std;
 
          int main() {
             int n = 1;
             int sum = 0;
             while (n <= 10) {
                sum = sum + n;
-               n++
+               n++;
             }
          }
 
@@ -115,10 +115,14 @@ assess what you have learned in this chapter.
          Write a function, ``repreatHello``, that is a void function that takes no arguments and uses a while loop to print out "hello" three times.
          ~~~~
          #include <iostream> 
-         using namespace std
+         using namespace std;
          // YOUR CODE HERE
 
 
+         // DO NOT MODIFY BELOW THIS LINE
+         int main() {
+            repeatHello();
+         }
    .. tab:: Answer
 
       .. activecode:: mucp_6_4_ac_a
@@ -127,7 +131,7 @@ assess what you have learned in this chapter.
          Below is one way to write the function
          ~~~~
          #include <iostream>
-         using namespace
+         using namespace std;
 
          void repeatHello() {
             int n = 0;
@@ -135,6 +139,10 @@ assess what you have learned in this chapter.
                cout << "hello" << endl;
                n++;
             }
+         }
+
+         int main() {
+            repeatHello();
          }
 
 
@@ -150,9 +158,14 @@ assess what you have learned in this chapter.
          input as a parameter and uses a while loop to print out the string three times.
          ~~~~
          #include <iostream>
-         using namespace std
+         using namespace std;
          // YOUR CODE HERE
 
+
+         // DO NOT MODIFY BELOW THIS LINE
+         int main() {
+            repeatString("Hello world");
+         }
 
    .. tab:: Answer
 
@@ -162,7 +175,7 @@ assess what you have learned in this chapter.
          Below is one way to write the function.
          ~~~~
          #include <iostream>
-         using namespace std
+         using namespace std;
 
          void repeatString (string input) {
             int n = 0;
@@ -170,6 +183,10 @@ assess what you have learned in this chapter.
                cout << input << endl;
                n++;
             }
+         }
+
+         int main() {
+            repeatString("Hello world");
          }
             
 
@@ -185,9 +202,14 @@ assess what you have learned in this chapter.
          input and x as parameters and uses a while loop to print out the string x number of times.
          ~~~~
          #include <iostream> 
-         using namespace std
+         using namespace std;
          // YOUR CODE HERE
 
+
+         // DO NOT MODIFY BELOW THIS LINE
+         int main() {
+            repeatString("Hello world!", 5);
+         }
 
    .. tab:: Answer
 
@@ -197,7 +219,7 @@ assess what you have learned in this chapter.
          Below is one way to write the function
          ~~~~
          #include <iostream>
-         using namespace std
+         using namespace std;
 
          void repeatString (string input, int x) {
             int n = 0;
@@ -205,6 +227,10 @@ assess what you have learned in this chapter.
                cout << input << endl;
                n = n + 1;
             }
+         }
+
+         int main() {
+            repeatString("Hello world!", 5);
          }
 
 
@@ -220,9 +246,14 @@ assess what you have learned in this chapter.
          prints out "Happy New Year!".         
          ~~~~
          #include <iostream>
-         using namespace std
+         using namespace std;
          // YOUR CODE HERE
 
+
+         // DO NOT MODIFY BELOW THIS LINE
+         int main() {
+            newYearCountdown();
+         }
 
    .. tab:: Answer
 
@@ -232,7 +263,7 @@ assess what you have learned in this chapter.
          Below is one way to write the function.
          ~~~~
          #include <iostream> 
-         using namespace std
+         using namespace std;
 
          void newYearCountdown() {
             int n = 10;
@@ -241,6 +272,10 @@ assess what you have learned in this chapter.
                n--;
             }
             cout << "Happy New Year!" << endl;
+         }
+
+         int main() {
+            newYearCountdown();
          }
 
 
@@ -259,9 +294,14 @@ assess what you have learned in this chapter.
          Write the necessary code for the powerUp function.
          ~~~~
          #include <iostream> 
-         using namespace std
+         using namespace std;
          // YOUR CODE HERE
 
+
+         // DO NOT MODIFY BELOW THIS LINE
+         int main() {
+            powerUp(5000);
+         }
 
    .. tab:: Answer
 
@@ -271,7 +311,7 @@ assess what you have learned in this chapter.
          Below is one way to write the function
          ~~~~
          #include <iostream>
-         using namespace std
+         using namespace std;
 
          void powerUp (int powerLevel) {
             while (powerLevel < 9000) {
@@ -279,6 +319,10 @@ assess what you have learned in this chapter.
                powerLevel = powerLevel + 1000;
             }
             cout << "It's over 9000!" << endl;
+         }
+
+         int main() {
+            powerUp(5000);
          }
 
 
@@ -295,7 +339,7 @@ assess what you have learned in this chapter.
          the sum. Write the necessary code for the summation function.
          ~~~~
          #include <iostream> 
-         using namespace std
+         using namespace std;
          // YOUR CODE HERE
 
 
@@ -317,7 +361,7 @@ assess what you have learned in this chapter.
          Below is one way to write the function
          ~~~~
          #include <iostream>
-         using namespace std
+         using namespace std;
 
          int summation (int start, int end) {
             int n = start;
@@ -327,7 +371,11 @@ assess what you have learned in this chapter.
                n++;
             }
             return sum;
-         }        
+         } 
+
+         int main() {
+            summation(1,10);
+         }       
 
 
 .. tabbed:: mucp_6_10_ac
@@ -344,7 +392,7 @@ assess what you have learned in this chapter.
          declared first, then temp, and lastly remainder.
          ~~~~
          #include <iostream>
-         using namespace std
+         using namespace std;
          // YOUR CODE HERE
 
 
@@ -366,14 +414,14 @@ assess what you have learned in this chapter.
          Below is one way to write the function
          ~~~~
          #include <iostream> 
-         using namespace std
+         using namespace std;
 
          int reverseNumber (int num) {
             int reverse = 0;
             int temp = num;
             int remainder = 0;
             while (temp > 0) {
-               remainder - temp % 10;
+               remainder = temp % 10;
                reverse = reverse * 10 + remainder;
                temp = temp / 10;
             }
