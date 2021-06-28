@@ -18,7 +18,7 @@ assess what you have learned in this chapter.
            Write the code that performs this conversion.
            ~~~~
            #include <iostream>
-           using namespace std
+           using namespace std;
            // YOUR CODE HERE
 
 
@@ -62,7 +62,7 @@ assess what you have learned in this chapter.
            For example, priceWithTax(20,6) returns 21.2.
            ~~~~
            #include <iostream>
-           using namespace std
+           using namespace std;
            // YOUR CODE HERE
 
 
@@ -83,10 +83,10 @@ assess what you have learned in this chapter.
            Below is one way to write the function. You need to make sure your function returns cent values
            ~~~~
            #include <iostream>
-           using namespace std
+           using namespace std;
            
            double priceWithTax (double price, double percentTax) {
-               reutrn (1 + percentTax / 100) * price;
+               return (1 + percentTax / 100) * price;
            }
 
 
@@ -105,7 +105,7 @@ assess what you have learned in this chapter.
             convert a grade percentage to a letter grade.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -126,10 +126,10 @@ assess what you have learned in this chapter.
             Below is one way to write the function. Your syntax for the letter returns much match the return variable type of the function
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             char percentToLetter (double percentage){
-                if (percent >= 90){
+                if (percentage >= 90){
                     return 'A';
                 }
                 else if (percentage >= 80){
@@ -157,7 +157,7 @@ assess what you have learned in this chapter.
             Write the necessary code to find the area of a triangle.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -178,7 +178,7 @@ assess what you have learned in this chapter.
             Below is one way to write the function. Your function must take in more than integer base and height values and return more than integer area values.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             double triangleArea (double base, double height){
                 return 0.5 * base * height;
@@ -198,7 +198,7 @@ assess what you have learned in this chapter.
             Write the necessary code to find the volume of a cylinder.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
             
 
@@ -220,7 +220,7 @@ assess what you have learned in this chapter.
             Below is one way to write the function. Your function should incorporate the value for pi.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             double cylinderVolume(double radius, double height){
                 double pi = 3.14;
@@ -244,7 +244,7 @@ assess what you have learned in this chapter.
          code to classify these eggs. 
          ~~~~
          #include <iostream>
-         using namespace std
+         using namespace std;
          // YOUR CODE HERE
 
 
@@ -266,10 +266,10 @@ assess what you have learned in this chapter.
          Below is one way to write the function. 
          ~~~~
          #include <iostream>
-         using namespace std
+         using namespace std;
 
          int birdType(bool isRound, bool isGray){
-            if (isROund && isGray){
+            if (isRound && isGray){
                return 1;
             }
             else if(!isRound || isGray){
@@ -294,7 +294,7 @@ assess what you have learned in this chapter.
          Write the necessary code to determine if a number is a double digit number.
          ~~~~
          #include <iostream>
-         using namespace std
+         using namespace std;
          // YOUR CODE HERE
 
 
@@ -315,7 +315,7 @@ assess what you have learned in this chapter.
          Below is one way to write the function. Your function must account for numbers that are greater than 100.
          ~~~~
          #include <iostream>
-         using namespace std
+         using namespace std;
 
          bool isDoubleDigit (int num){
             if(num >= 10 && num < 100){
@@ -340,7 +340,7 @@ assess what you have learned in this chapter.
          Write the necessary code to compare two integers.
          ~~~~
          #include <iostream>
-         using namespace std
+         using namespace std;
          // YOUR CODE HERE
 
 
@@ -362,7 +362,7 @@ assess what you have learned in this chapter.
          Below is one way to write the function. Your function must account for equal integers.
          ~~~~
          #include <iostream>
-         using namespace std
+         using namespace std;
 
          int Compare(int a, int b){
             if (a > b){
@@ -391,7 +391,7 @@ assess what you have learned in this chapter.
          is a factor of another.
          ~~~~
          #include <iostream>
-         using namespace std
+         using namespace std;
          // YOUR CODE HERE
 
 
@@ -413,7 +413,7 @@ assess what you have learned in this chapter.
          Below is one way to write the function. The modulo (%) operator performs the necessary calculation.
          ~~~~
          #include <iostream> 
-         using namespace std
+         using namespace std;
 
          bool isFactor(int num, int factor){
             if (num % factor == 0){
@@ -438,7 +438,8 @@ assess what you have learned in this chapter.
          to determine if a number is a perfect square.
          ~~~~
          #include <iostream>
-         using namespace std
+         #include <math.h>
+         using namespace std;
          // YOUR CODE HERE
 
 
@@ -460,7 +461,8 @@ assess what you have learned in this chapter.
          Below is one way to write the function.
          ~~~~
          #include <iostream>
-         using namespace std
+         #include <math.h>
+         using namespace std;
 
          bool isPerfectSquare(int input){
             int root = sqrt(input);
@@ -490,7 +492,7 @@ assess what you have learned in this chapter.
          necesary code to count the bacteria.
          ~~~~
          #include <iostream>
-         using namespace std
+         using namespace std;
          // YOUR CODE HERE
 
 
@@ -510,7 +512,7 @@ assess what you have learned in this chapter.
          Below is one way to write the function.
          ~~~~
          #include <iostream> 
-         using namespace std
+         using namespace std;
 
          int countBacteria (int hour) {
             if (hour == 0) {

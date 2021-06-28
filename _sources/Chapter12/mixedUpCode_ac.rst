@@ -14,7 +14,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             instance variables title, artist, and numLikes. 
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -26,7 +26,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to define the ``Song`` struct.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             struct Song {
                 string title;
@@ -48,7 +48,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream>
             #include <vector>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -61,7 +61,13 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream>
             #include <vector>
-            using namespace std
+            using namespace std;
+
+            struct Song {
+                string title;
+                string artist;
+                int numLikes;
+            };
 
             struct Album {
                 string name;
@@ -96,6 +102,12 @@ Answer the following **Activecode** questions to assess what you have learned in
             #include <iostream> 
             using namespace std
 
+            struct Song {
+                string title;
+                string artist;
+                int numLikes;
+            };
+
             bool songEqual (const Song& a, const &Song b) {
                 if (a.title == b.title && a.artist == b.artist) { 
                     return true;
@@ -120,7 +132,8 @@ Answer the following **Activecode** questions to assess what you have learned in
             songEqual function we defined earlier!
             ~~~~
             #include <iostream> 
-            using namespace std
+            #include <vector>
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -132,8 +145,21 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to write the ``Album`` member function.
             ~~~~
             #include <iostream> 
-            using namespace std
+            #include <vector>
+            using namespace std;
+
+            struct Song {
+                string title;
+                string artist;
+                int numLikes;
+            };
                     
+            struct Album {
+                string name;
+                int year;
+                vector<Song> songs;
+            };
+
             int Album::searchAlbum (const Song& a) {
                 for (size_t i = 0; i < songs.size(); ++i) { 
                     if (songEqual (songs[i], a)) {
@@ -157,7 +183,8 @@ Answer the following **Activecode** questions to assess what you have learned in
             liked song is title by artist with numLikes likes." 
             ~~~~
             #include <iostream>
-            using namespace std
+            #include <vector>
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -169,7 +196,20 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to write the ``Album`` member function. 
             ~~~~
             #include <iostream>
-            using namespace std
+            #include <vector>
+            using namespace std;
+
+            struct Song {
+                string title;
+                string artist;
+                int numLikes;
+            };
+
+            struct Album {
+                string name;
+                int year;
+                vector<Song> songs;
+            };
 
             void Album::mostLikedSong () {
                 int maxIndex = 0;
@@ -197,7 +237,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             instance variables name and price.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
     
@@ -209,7 +249,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to define the ``Product`` struct.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             struct Product {
                 string name;
@@ -230,7 +270,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream>
             #include <vector>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -243,7 +283,12 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream>
             #include <vector>
-            using namespace std
+            using namespace std;
+
+            struct Product {
+                string name;
+                double price;
+            };
 
             struct List {
                 string type;
@@ -267,7 +312,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream>
             #include <vector> 
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
     
@@ -280,7 +325,12 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream>
             #include <vector>
-            using namespace std
+            using namespace std;
+            
+            struct Product {
+                string name;
+                double price;
+            };
 
             bool productEqual (const Product& a, const &Product b) {
                 if (a.name == b.name && a.price == b.price) {
@@ -290,6 +340,7 @@ Answer the following **Activecode** questions to assess what you have learned in
                     return false;
                 }
             }
+
             int List::searchList (const Product& a) {
                 for (size_t i = 0; i < products.size(); ++i) { 
                     if (productEqual (products[i], a)) {
@@ -312,7 +363,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream>
             #include <vector>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -325,7 +376,17 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream>
             #include <vector>
-            using namespace std
+            using namespace std;
+
+            struct Product {
+                string name;
+                double price;
+            };
+
+            struct List {
+                string type;
+                vector<Product> products;
+            };
 
             double List::totalPrice () {
                 double total = 0;
@@ -351,7 +412,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream>
             #include <vector>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -364,8 +425,18 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream>
             #include <vector>
-            using namespace std
+            using namespace std;
 
+            struct Product {
+                string name;
+                double price;
+            };
+
+            struct List {
+                string type;
+                vector&#60Product&#62 products;
+            };
+            
             void List::removeProduct (int index) {
                 products[index] = products[products.size() - 1];
             }

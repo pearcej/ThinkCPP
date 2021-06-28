@@ -16,7 +16,7 @@ assess what you have learned in this chapter.
             divided by 13.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -28,7 +28,7 @@ assess what you have learned in this chapter.
             Below is one way to write the code to print the remainder of 18 when divided by 13.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             int main () {
                 int x = 18;
@@ -48,7 +48,7 @@ assess what you have learned in this chapter.
             is even.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -67,7 +67,7 @@ assess what you have learned in this chapter.
             Below is one way to construct the ``is_even`` function.
             ~~~~
             #include <iostream> 
-            using namespace std
+            using namespace std;
 
             void is_even (int number) {
                 if (number % 2 == 0) {
@@ -96,7 +96,7 @@ assess what you have learned in this chapter.
             would result in a positive number.  Otherwise, prints -1.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -115,7 +115,7 @@ assess what you have learned in this chapter.
             Below is one way to write the ``difference`` function. 
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             void difference (int a, int b) {
                 if (a - b > 0) {
@@ -145,7 +145,7 @@ assess what you have learned in this chapter.
             "hydromatic" if y is not equal to x.  Check all 3 conditions.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -157,7 +157,7 @@ assess what you have learned in this chapter.
             Below is one way to construct the code.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             int main() {
                 if (x % 2 == 1) {
@@ -181,7 +181,7 @@ assess what you have learned in this chapter.
             if x + y is even.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -193,7 +193,7 @@ assess what you have learned in this chapter.
             Below is one way to construct the code.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             int main() {
                 if (x == y) {
@@ -216,7 +216,7 @@ assess what you have learned in this chapter.
             [0, 70) = F, [70, 80) = C, [80, 90) = B, and [90, 100] = A.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -234,7 +234,7 @@ assess what you have learned in this chapter.
             Below is one way to write the ``printLetterGrade`` function.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             void printLetterGrade (double grade) {
                 if (grade < 70) {
@@ -267,7 +267,7 @@ assess what you have learned in this chapter.
             knight or a knave.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -279,7 +279,7 @@ assess what you have learned in this chapter.
             Below is one way to construct the ``knightKnave`` function.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             void knightKnave (bool truth, bool told) {
                 if (truth == true) {
@@ -312,7 +312,7 @@ assess what you have learned in this chapter.
             mood it woofs.  Construct a function that accomplishes this.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -324,7 +324,7 @@ assess what you have learned in this chapter.
             Below is one way to construct the ``makeVocals`` function.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             void makeVocals (string animal, string mood) {
                 if (mood == "bad") {
@@ -358,7 +358,7 @@ assess what you have learned in this chapter.
             enters a negative number or zero, prompt the user again.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -370,7 +370,7 @@ assess what you have learned in this chapter.
             Below is one way to write the ``takeSum`` recursive function.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             void takeSum () {
                 cout << "Input a positive number!";
@@ -400,7 +400,7 @@ assess what you have learned in this chapter.
             statements.
             ~~~~
             #include <iostream> 
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -412,7 +412,7 @@ assess what you have learned in this chapter.
             Below is one way to write the ``capitalize`` function. 
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             void capitalize () {
                 cout << "Input a lowercase character!";

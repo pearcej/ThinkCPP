@@ -15,7 +15,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             is a weekend or not. Check for cases in numerical order.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -27,9 +27,10 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to use a switch statement to classify a day of the week.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             enum Day { MON = 1, TUE, WED, THU, FRI, SAT, SUN };
+
             int main () {
                 Day day = SUN;
                 switch (day > 5) {
@@ -57,7 +58,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             print out the default statement "Invalid input." Check for cases in numerical order.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -70,7 +71,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             two.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             int main () {
                 int input;
@@ -101,7 +102,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             print out the default statement "Invalid input." Check for cases in numerical order.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -113,7 +114,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to use a switch statement to check and print out the maximum between two numbers.
             ~~~~
             #include <iostream>
-            using namespace std  
+            using namespace std;
 
             int main () {
                 int input1;
@@ -169,11 +170,12 @@ Answer the following **Activecode** questions to assess what you have learned in
             :language: cpp
 
             Let's revisit the Dictionary data structure defined in the previous section.
-            Write the struct definitions for Entry, which has member variables word and page,
-            and for Dictionary, which has a vector of Entries. 
+            Write the struct definitions for ``Entry``, which has member variables word and page,
+            and for ``Dictionary``, which has a vector of Entries. 
             ~~~~
             #include <iostream>
-            using namespace std
+            #include <vector>
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -185,12 +187,14 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to write the struct definition for Entry and for Dictionary. 
             ~~~~
             #include <iostream>
-            using namespace std
+            #include <vector>
+            using namespace std;
 
             struct Entry {
                 string word;
                 int page;
             };
+
             struct Dictionary {
                 vector<Entry> entries;
             };
@@ -202,12 +206,13 @@ Answer the following **Activecode** questions to assess what you have learned in
         .. activecode:: mucp_13_6_ac_q
             :language: cpp
 
-            Assume our dictionary is currently unsorted. Let's write a Dictionary member function find 
+            Assume our dictionary is currently unsorted. Let's write a Dictionary member function ``find``
             that takes a string word as a parameter and returns the index of its corresponding
             entry. If the word isn't in the dictionary, return -1. 
             ~~~~
             #include <iostream>
-            using namespace std
+            #include <vector>
+            using namespace std;
             // YOUR CODE HERE
 
     .. tab:: Answer
@@ -218,7 +223,17 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to write the Dictionary member function.
             ~~~~
             #include <iostream>
-            using namespace std
+            #include <vector>
+            using namespace std;
+
+            struct Entry {
+                string word;
+                int page;
+            };
+
+            struct Dictionary {
+                vector<Entry> entries;
+            };
 
             int Dictionary::find (string word) {
                 for (size_t i = 0; i < entries.size(); ++i) {
@@ -242,7 +257,8 @@ Answer the following **Activecode** questions to assess what you have learned in
             (i.e. the Entry with a word that would come first in the alphabet). 
             ~~~~
             #include <iostream>
-            using namespace std
+            #include <vector>
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -254,7 +270,17 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to write the findFirstWord member function.
             ~~~~
             #include <iostream>
-            using namespace std
+            #include <vector>
+            using namespace std;
+
+            struct Entry {
+                string word;
+                int page;
+            };
+
+            struct Dictionary {
+                vector<Entry> entries;
+            };
 
             int Dictionary::findFirstWord (int start) {
                 int min = start;
@@ -278,7 +304,8 @@ Answer the following **Activecode** questions to assess what you have learned in
             at those indices. 
             ~~~~
             #include <iostream>
-            using namespace std
+            #include <vector>
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -290,7 +317,17 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to write the swap member function
             ~~~~
             #include <iostream>
-            using namespace std
+            #include <vector>
+            using namespace std;
+
+            struct Entry {
+                string word;
+                int page;
+            };
+
+            struct Dictionary {
+                vector<Entry> entries;
+            };
 
             void Dictionary::swap (int a, int b) {
                 Entry temp = entries[a];
@@ -310,7 +347,8 @@ Answer the following **Activecode** questions to assess what you have learned in
             the findFirstWord and swap functions we defined earlier! 
             ~~~~
             #include <iostream>
-            using namespace std
+            #include <vector>
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -322,7 +360,8 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to write the Dictionary member function alphabetize.
             ~~~~
             #include <iostream>
-            using namespace std
+            #include <vector>
+            using namespace std;
 
             void Dictionary::alphabetize () {
                 for (size_t i = 0; i < entries.size(); ++i) {
@@ -343,7 +382,8 @@ Answer the following **Activecode** questions to assess what you have learned in
             Entry.
             ~~~~
             #include <iostream>
-            using namespace std
+            #include <vector>
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -355,7 +395,17 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to write the Dictionary member function printDictionary.
             ~~~~
             #include <iostream>
-            using namespace std
+            #include <vector>
+            using namespace std;
+
+            struct Entry {
+                string word;
+                int page;
+            };
+
+            struct Dictionary {
+                vector<Entry> entries;
+            };
 
             void Dictionary::printDictionary () {
                 for (size_t i = 0; i < entries.size(); ++i) {

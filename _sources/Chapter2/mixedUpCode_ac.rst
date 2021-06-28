@@ -14,7 +14,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             Construct a block of code that prints: "Lions &" one the first line, "Tigers & Bears!" on the second line, and "Oh my!" on the FOURTH line.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -26,7 +26,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to write the code to print one separate lines.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             int main() {
                 cout << "Lions &" << endl;
@@ -47,7 +47,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             Construct a block of code that swaps the value of integers x and y, which have values 3 and 6, respectively.
             ~~~~
             #include <iostream> 
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -69,7 +69,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to write the code to declare and swap these variables. 
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             int main() {
                 int x;
@@ -100,7 +100,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             Dan Humphrey is a 3.98 student at Constance High School.  His crush's first initial is S.  Construct a program that assigns the variables name, GPA, and crush, in that order.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -123,7 +123,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to write the code to assign the variables. 
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             int main() {
                 string name = "Dan Humphrey";
@@ -153,7 +153,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             Use the variable name 'tbsp' for the final tablespoons conversion.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -173,7 +173,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to write the code to convert units to tablespoons.
             ~~~~
             #include <iostream> 
-            using namespace std
+            using namespace std;
 
             int main() {
                 double gallons = 0.01;
@@ -202,7 +202,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             Use a length of 2, width of 3, and height of 4.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -222,7 +222,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to write the code to define variables, find volume and print results to the terminal. 
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             int main() {
                 int length = 2;
@@ -251,7 +251,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             Construct a block of code that changes the value of the variable a from the character 'a' to the character 'z'.
             ~~~~
             #include <iostream> 
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -263,7 +263,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to write the code to change the value of the character variable. 
             ~~~~
             #include <iostream> 
-            using namespace std
+            using namespace std;
 
             int main() {
                 char a = 'a';
@@ -281,7 +281,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             Construct a block of code that outputs the 'volume' of a cylinder with a radius of 3 and a height of 4.  
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -301,7 +301,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to write the code to output the volume of the cylinder with the least amount of lines. 
             ~~~~
             #include <iostream> 
-            using namespace std
+            using namespace std;
 
             int main() {
                 cout << 3.14 * 3 * 3 * 4;
@@ -318,7 +318,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             Construct a block of code that prints "My favorite class is MATH" on the same line.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -330,7 +330,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to write the code to output the string.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             int main() {
                 string favClass = "MATH";
@@ -349,7 +349,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             It's Black Friday and the Nintendo Switch you'be been saving up for is marked down to 60% of its original price!  Construct a block of code that calculates how much money you'd be saving if the system originally costed $359.99?
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -361,7 +361,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to write the code to calculate your savings.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             int main() {
                 double game = 359.99;
@@ -380,7 +380,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             Your family just bought a dog and everyone has been fighting over what to name it.  It went from Champ to Copper to Higgins, and after a few days of being Higgins, everyone agreed on Buddy.  Construct a block of code that illustrates this concept.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -392,7 +392,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to write the code to illustrate the dog's name change process. 
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             int main() {
                 string name = "Champ";

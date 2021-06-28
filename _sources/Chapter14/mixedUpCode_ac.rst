@@ -18,7 +18,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             Use 3.14 for the value of pi. 
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -30,7 +30,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to wrte the class definition and constructor for ``Circle``.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             class Circle {   
                 private:
@@ -54,7 +54,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             output an error message if the given radius is negative.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -66,7 +66,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to write the accessor functions for ``getRadius`` and ``setRadius``.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             class Circle {   
                 private:
@@ -94,7 +94,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             and output the radius. Then change the radius to 3.6 and output
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -106,12 +106,27 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to write the code.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
+
+            class Circle {   
+                private:
+                    double radius;
+                public:
+                    Circle (double r) { radius = r; }
+                    double calculateArea () { return 3.14 * radius * radius; }
+                    double getRadius () {
+                        return radius;
+                    }
+                    void setRadius (double r) {
+                        if (r < 0) { cout << "Error! Cannot have a negative radius!" << endl; }
+                        else { radius = r; }
+                    }
+            };
 
             int main() {
                 Circle c(2.4);
                 cout << "Radius: " << c.getRadius () << endl;
-                s.setRadius (3.6);
+                c.setRadius (3.6);
                 cout << "New radius: " << c.getRadius () << endl;
             }
 
@@ -130,7 +145,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             ``getX``, ``getY``, ``setX``, and ``setY``.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -142,7 +157,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to write the code.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             class Point {   
                 private:
@@ -172,7 +187,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             takes an upper-left point and a lower-right point as parameters. 
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -184,7 +199,19 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to write the ``Rectangle`` class.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
+
+            class Point {   
+                private:
+                    double x, y;
+                public:
+                    Point () { x = 0; y = 0; }
+                    Point (double xVal, double yVal) { x = xVal; y = yVal; }
+                    double getX () { return x; }
+                    double getY () { return y; }
+                    void setX (double xVal) { x = xVal; }
+                    void setY (double yVal) { y = yVal; }
+            };
 
             class Rectangle {   
                 private:
@@ -211,7 +238,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             which returns the area of the rectangle.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
     
@@ -223,7 +250,31 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to write the ``calculateSides`` and ``calculateArea`` member functions.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
+
+            class Point {   
+                private:
+                    double x, y;
+                public:
+                    Point () { x = 0; y = 0; }
+                    Point (double xVal, double yVal) { x = xVal; y = yVal; }
+                    double getX () { return x; }
+                    double getY () { return y; }
+                    void setX (double xVal) { x = xVal; }
+                    void setY (double yVal) { y = yVal; }
+            };
+
+            class Rectangle {   
+                private:
+                    Point upperLeft, lowerRight;
+                public:
+                    double length, height;
+                    Rectangle (Point upLeft, Point lowRight) { upperLeft = upLeft; lowerRight = lowRight; }
+                    Point getUpperLeft () { return upperLeft; }
+                    Point getLowerRight () { return lowerRight; }
+                    void setUpperLeft (Point p) { upperLeft = p; }
+                    void setLowerRight (Point p) { lowerRight = p; }
+            };
 
             void Rectangle::calculateSides () {
                 
@@ -249,7 +300,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             print out the new area.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
     .. tab:: Answer
@@ -260,7 +311,42 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to create this ``Rectangle``.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
+
+            class Point {   
+                private:
+                    double x, y;
+                public:
+                    Point () { x = 0; y = 0; }
+                    Point (double xVal, double yVal) { x = xVal; y = yVal; }
+                    double getX () { return x; }
+                    double getY () { return y; }
+                    void setX (double xVal) { x = xVal; }
+                    void setY (double yVal) { y = yVal; }
+            };
+
+            class Rectangle {   
+                private:
+                    Point upperLeft, lowerRight;
+                public:
+                    double length, height;
+                    Rectangle (Point upLeft, Point lowRight) { upperLeft = upLeft; lowerRight = lowRight; }
+                    Point getUpperLeft () { return upperLeft; }
+                    Point getLowerRight () { return lowerRight; }
+                    void setUpperLeft (Point p) { upperLeft = p; }
+                    void setLowerRight (Point p) { lowerRight = p; }
+            };
+
+            void Rectangle::calculateSides () {
+                
+            double Rectangle::calculateSides () {
+                length = getLowerRight().getX() - getUpperLeft().getX();
+                height = getUpperLeft().getY() - getLowerRight().getY();
+            }
+
+            double Rectangle::calculateArea () {
+                return length * height;
+            }
 
             int main() {
                 Point p1(2.5, 7.5);
@@ -292,7 +378,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream>
             #include <vector>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -305,7 +391,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream>
             #include <vector>
-            using namespace std
+            using namespace std;
 
             class Date {   
                 private:
@@ -334,7 +420,8 @@ Answer the following **Activecode** questions to assess what you have learned in
             depending on whether the year is negative or not.
             ~~~~
             #include <iostream>
-            using namespace std
+            #include <vector>
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -346,7 +433,23 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to write the ``printDate`` member function.
             ~~~~
             #include <iostream>
-            using namespace std
+            #include <vector>
+            using namespace std;
+
+            class Date {   
+                private:
+                    int day, month, year;
+                    vector<int> daysInMonth = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+                public:
+                    Date () { day = 1; month = 1; year = 2000; }
+                    Date (int d, int m, int y) { day = d; month = m; year = y; }
+                    int getDay () { return day; }
+                    int getMonth () { return month; }
+                    int getYear () { return year; }
+                    void setDay (int d) { if (d > 0 && d < 32) day = d; }
+                    void setMonth (int m) { if (m > 0 && m < 13) month = m; }
+                    void setYear (int y) { year = y; }
+            };
 
             void Date::printDate () {
                 if (getYear() < 0) {
@@ -369,7 +472,8 @@ Answer the following **Activecode** questions to assess what you have learned in
             which returns the last day in the ``Date``'s month.
             ~~~~
             #include <iostream>
-            using namespace std
+            #include <vector>
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -381,7 +485,23 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is onne way to write the ``isLeapYear`` and ``lastDayInMonth`` member functions.
             ~~~~
             #include <iostream> 
-            using namespace std
+            #include <vector>
+            using namespace std;
+
+            class Date {   
+                private:
+                    int day, month, year;
+                    vector<int> daysInMonth = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+                public:
+                    Date () { day = 1; month = 1; year = 2000; }
+                    Date (int d, int m, int y) { day = d; month = m; year = y; }
+                    int getDay () { return day; }
+                    int getMonth () { return month; }
+                    int getYear () { return year; }
+                    void setDay (int d) { if (d > 0 && d < 32) day = d; }
+                    void setMonth (int m) { if (m > 0 && m < 13) month = m; }
+                    void setYear (int y) { year = y; }
+            };
 
             bool Date::isLeapYear () {
                 if (getYear() % 4 != 0) { return false; }
