@@ -377,7 +377,7 @@ assess what you have learned in this chapter.
                 int num;
                 cin >> num;
                 if (num < 0) {
-                takesum ();
+                    takesum ();
                 } // END "if"
                 cout << num;
             } // END function

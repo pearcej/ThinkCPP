@@ -77,7 +77,7 @@ assess what you have learned in this chapter.
             void divider () {
                 newLine ();  //first call
                 cout << ". . . . . . . . . . . . " << endl;
-                newline ();  //second call
+                newLine ();  //second call
             }  //divider
 
 
@@ -206,10 +206,21 @@ assess what you have learned in this chapter.
         .. activecode:: functions_p5_ac_q
             :language: cpp
 
-            Suppose you have already defined a function called sumOfSquares which returns the sum of the squares of two numbers and root which returns the square root of a number.  Construct a function that calculates the hypotenuse of the right triangle and prints the three sidelengths.
+            Suppose you have already defined a function called ``sumOfSquares`` which returns the sum of the squares of two numbers and ``root`` which returns the square root of a number.  Construct a function that calculates the hypotenuse of the right triangle and prints the three sidelengths.
             ~~~~
             #include <iostream>
+            #include <math.h>
             using namespace std;
+            // DO NOT MODIFY THIS CODE
+
+            double sumOfSquares ( double s2, double s1) {
+                return (s2 * s2) + (s1 * s1);
+            }
+
+            double root ( double num ) {
+                return sqrt(num);
+            }
+
             // YOUR CODE HERE
 
 
@@ -221,7 +232,16 @@ assess what you have learned in this chapter.
             Below is one way to write the code to calculate the hypotenuse of a right triangle. 
             ~~~~
             #include <iostream> 
+            #include <math.h>
             using namespace std;
+
+            double sumOfSquares ( double s2, double s1) {
+                return (s2 * s2) + (s1 * s1);
+            }
+
+            double root ( double num ) {
+                return sqrt(num);
+            }
 
             int main () {
                 double s1 = 4.8;
