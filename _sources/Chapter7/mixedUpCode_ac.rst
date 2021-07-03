@@ -18,7 +18,7 @@ assess what you have learned in this chapter.
             ~~~~
             #include <iostream> 
             #include <string>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -31,12 +31,12 @@ assess what you have learned in this chapter.
             ~~~~
             #include <iostream>
             #include <string>
-            using namespace std
+            using namespace std;
 
             int main() {
                 string word = "irritating";
                 cout << word[3] << endl;
-                while ((int)word.find('i) != -1) {
+                while ((int)word.find('i') != -1) {
                     word[word.find('i')] = 'e';
                 }
                 cout << word << endl;
@@ -56,7 +56,7 @@ assess what you have learned in this chapter.
             ~~~~
             #inlcude <iostream>
             #include <string>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -69,14 +69,15 @@ assess what you have learned in this chapter.
             ~~~~
             #include <iostream>
             #include <string>
+            using namespace std;
 
             int main() {
-                string original = "night"
-                string anagram = original
+                string original = "night";
+                string anagram = original;
                 anagram[0] = original[original.find('t')];
                 anagram[1] = original[original.find('h')];
                 anagram[2] = original[original.find('i')];
-                anagram[3] = oirignal[original.find('n')];
+                anagram[3] = original[original.find('n')];
                 anagram[4] = original[original.find('g')];
                 cout << anagram;
             }
@@ -97,26 +98,26 @@ assess what you have learned in this chapter.
             ~~~~
             #include <iostream>
             #include <string>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
     .. tab:: Answer
 
         .. activecode:: mucp_7_3_ac_a
-            :language:
+            :language: cpp
 
             Below is one way to write the function longerString.
             ~~~~
             #include <iostream>
             #include <string>
-            using namespace std
+            using namespace std;
 
             void longerString (string first, string second) {
                 if (first.length() > second.length()) {
                     cout << first << " is longer than " << second << endl;
                 }
-                else if (first.lenght() < second.length()) {
+                else if (first.length() < second.length()) {
                     cout << second << " is longer than " << first << endl;
                 }
                 else {
@@ -139,7 +140,7 @@ assess what you have learned in this chapter.
             ~~~~
             #include <iostream>
             #include <string>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -152,11 +153,11 @@ assess what you have learned in this chapter.
             ~~~~
             #include <iostream>
             #include <string>
-            using namespace std
+            using namespace std;
 
             void cipherText (string input) {
-                int i =0;
-                while (i < input.length()) {
+                int i = 0;
+                while ((unsigned)i < input.length()) {
                     input[i] = input[i] + 1;
                     i++;
                 }
@@ -177,7 +178,7 @@ assess what you have learned in this chapter.
             ~~~~
             #include <iostream>
             #include <string>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -190,7 +191,7 @@ assess what you have learned in this chapter.
             ~~~~
             #include <iostream>
             #include <string>
-            using namespace std
+            using namespace std;
 
             int main() {
                 string tongue_twister = "twelve twins twirled twelve twigs";
@@ -200,7 +201,7 @@ assess what you have learned in this chapter.
                     if (tongue_twister[i] == 't') {
                         count++;
                     }
-                    i++
+                    i++;
                 }
                 cout << count;
             }
@@ -214,11 +215,11 @@ assess what you have learned in this chapter.
             :language: cpp
 
             Write a program that prints out the index of the second instance of the 
-            character 'i'. Use 'string quote = "Your time is limited, so don't waste it living someone else's life.'
+            character 'i'. Use ``string quote = "Your time is limited, so don't waste it living someone else's life.``
             ~~~~
             #include <iostream>
             #include <string>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -231,7 +232,7 @@ assess what you have learned in this chapter.
             ~~~~
             #include <iostream>
             #include <string>
-            using namespace std
+            using namespace std;
 
             int main() {
                 string quote = "Your time is limited, so don't waste it living someone else's life.";
@@ -254,7 +255,7 @@ assess what you have learned in this chapter.
             ~~~~
             #include <iostream> 
             #include <string>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -267,7 +268,7 @@ assess what you have learned in this chapter.
             ~~~~
             #include <iostream>
             #include <string>
-            using namespace std
+            using namespace std;
 
             int main() {
                 string suffix = "orty";
@@ -295,7 +296,7 @@ assess what you have learned in this chapter.
             ~~~~
             #include <iostream>
             #include <string>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -318,17 +319,27 @@ assess what you have learned in this chapter.
             ~~~~
             #include <iostream>
             #include <string>
-            using namespace std
+            using namespace std;
 
             string censorE (string input) {
                 int i = 0;
-                while (i < input.length()) {
+                while ((unsigned)i < input.length()) {
                     if (input[i] == 'e') {
                         input[i] = '*';
                     }
-                    i++
+                    i++;
                 }
                 return input;
+            }
+
+            ==== 
+            #define CATCH_CONFIG_MAIN
+            #include <catch.hpp>
+
+            TEST_CASE("censorE function") {
+                REQUIRE(censorE("after") == "aft*r");
+                REQUIRE(censorE("hello world") == "h*llo world");
+                REQUIRE(censorE("censor") == "c*nsor");
             }
 
 
@@ -348,7 +359,7 @@ assess what you have learned in this chapter.
             ~~~~
             #include <iostream> 
             #include <string>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -370,18 +381,28 @@ assess what you have learned in this chapter.
             Below is one way to write the censorLetter function.
             ~~~~
             #include <iostream>
-            #Include <string>
-            using namespace std
+            #include <string>
+            using namespace std;
             
             string censorLetter (string input, char letter) {
                 int i = 0;
-                while (i < input.length()) {
+                while ((unsigned)i < input.length()) {
                     if (input[i] == letter) {
                         input[i] = '*';
                     }
                     i++;
                 }
                 return input;
+            }
+
+            ====
+            #define CATCH_CONFIG_MAIN
+            #include <catch.hpp>
+
+            TEST_CASE("censorLetter function") {
+                REQUIRE(censorLetter("Bye world", 'o') == "Bye w*rld");
+                REQUIRE(censorLetter("Hello world", 'l') == "He**o wor*d");
+                REQUIRE(censorLetter("Goodbye world, 'd') == "Goo*bye worl*");
             }
 
 
@@ -401,7 +422,7 @@ assess what you have learned in this chapter.
             ~~~~
             #include <iostream>
             #include <string>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -424,16 +445,26 @@ assess what you have learned in this chapter.
             ~~~~
             #include <iostream>
             #include <string>
-            using namespace std
+            using namespace std;
 
             string alphaCombine (string first, string second) {
                 if (first > second) {
                     return second + first;
                 }
-                else (
+                else {
                     return first + second;
                     cout << first << second;
-                )
+                }
+            }
+
+            ====
+            #define CATCH_CONFIG_MAIN
+            #include <catch.hpp>
+
+            TEST_CASE("alphaCombine function") {
+                REQUIRE(alphaCombine("zebra","mega") == "megazebra");
+                REQUIRE(alphaCombine("alpha","combine") == "alphacombine");
+                REQUIRE(alphaCombine("combine","alpha") == "alphacombine");
             }
 
 
@@ -455,7 +486,7 @@ assess what you have learned in this chapter.
             ~~~~
             #include <iostream>
             #include <string>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -467,6 +498,7 @@ assess what you have learned in this chapter.
                 REQUIRE(ispalindrome("madam") == true);
                 REQUIRE(ispalindrome("join") == false);
             }
+
     .. tab:: Answer
 
         .. activecode:: mucp_7_11_ac_a
@@ -476,11 +508,12 @@ assess what you have learned in this chapter.
             ~~~~
             #include <iostream>
             #include <string>
-            using namespace std
+            using namespace std;
 
             bool ispalindrome(string input) {
-                int front = 0, back - input.length() - 1;
-                while ( front < back) {
+                int front = 0
+                int back = input.length() - 1;
+                while (front < back) {
                     if( input[b] != input[e] ) {
                         return false;
                     }
@@ -488,4 +521,13 @@ assess what you have learned in this chapter.
                     back = back - 1;
                 }
                 return true;
+            }
+
+            ====
+            #define CATCH_CONFIG_MAIN
+            #include <catch.hpp>
+
+            TEST_CASE("ispalindrome function") {
+                REQUIRE(ispalindrome("madam") == true);
+                REQUIRE(ispalindrome("join") == false);
             }

@@ -15,7 +15,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             display an error message and exit with a status of 1.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -27,13 +27,13 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to write code that makes sure the file was opened properly.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             int main() {   
                 ifstream infile("locations.txt");
                 if (infile.good() == false) {
-                cout << "Unable to open the file." << endl;
-                exit(1);
+                    cout << "Unable to open the file." << endl;
+                    exit(1);
                 }
             }
 
@@ -49,7 +49,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             opens that file. 
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -61,7 +61,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to write the program.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             int main() {   
                 string filename;
@@ -69,8 +69,8 @@ Answer the following **Activecode** questions to assess what you have learned in
                 cin >> filename;
                 ifstream infile(filename.c_str());
                 if (infile.good() == false) {
-                cout << "Unable to open the file." << endl;
-                exit(1);
+                    cout << "Unable to open the file." << endl;
+                    exit(1);
                 }
             }
 
@@ -90,7 +90,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             check that it is opened correctly.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -102,7 +102,7 @@ Answer the following **Activecode** questions to assess what you have learned in
          Below is one way to write the program.
          ~~~~
          #include <iostream>
-         using namespace std
+         using namespace std;
 
          int main() {   
             ofstream outfile("average.txt");
@@ -135,7 +135,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             number of data points before checking for the min and max.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -147,7 +147,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to write the code.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             int main() {   
                 ifstream infile("data.txt");
@@ -185,7 +185,8 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream>
             #include <string>
-            using namespace std
+            #include <vector>
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -198,7 +199,8 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream>
             #include <string>
-            using namespace std
+            #include <vector>
+            using namespace std;
 
             struct Employee {
                 string fname;
@@ -225,7 +227,6 @@ Answer the following **Activecode** questions to assess what you have learned in
                 string fname, lname, email;
                 int age, phone;
                 while (infile >> fname >> lname >> age >> phone >> email) {
-                while (infile) {  #paired
                     Employee e(fname, lname, age, phone, email);
                     data.push_back(e);
                 }
@@ -246,7 +247,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             of the function ``toLower`` first. Separate the words with spaces.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -259,7 +260,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream>
             #include <string>
-            using namespace std
+            using namespace std;
 
             string upperToLower(string upper) {
                 for (size_t i = 0; i < upper.length(); ++i) {
@@ -299,7 +300,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             are guaranteed that there are equal amounts of odd and even numbers.
             ~~~~
             #include <iostream> 
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE 
 
 
@@ -311,7 +312,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             Below is one way to write the prgram.
             ~~~~
             #include <iostream>
-            using namespace std
+            using namespace std;
 
             int main() {   
                 ifstream odds("odds.txt");
@@ -342,7 +343,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream>
             #include <vector>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -355,7 +356,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream>
             #include <vector>
-            using namespace std
+            using namespace std;
 
             class Set {
                 private:
@@ -386,14 +387,14 @@ Answer the following **Activecode** questions to assess what you have learned in
         .. activecode:: mucp_15_9_ac_q
             :language: cpp
 
-            Let's write the ``struct`` definition for a ``Matrix``! The underlying
-            data structure is a ``vector`` of ``vector``\s of ``int``\s. Write 
+            Let's write the struct definition for a ``Matrix``! The underlying
+            data structure is a ``vector`` of vectors of ``int``s. Write 
             the constructor and ``at`` function, which returns the data stored
             at a given row and column. 
             ~~~~
             #include <iostream>
             #include <vector>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -406,7 +407,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream>
             #include <vector>
-            using namespace std
+            using namespace std;
 
             class Matrix {
                 private:
@@ -441,7 +442,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream>
             #include <vector>
-            using namespace std
+            using namespace std;
             // YOUR CODE HERE
 
 
@@ -454,7 +455,22 @@ Answer the following **Activecode** questions to assess what you have learned in
             ~~~~
             #include <iostream>
             #include <vector>
-            using namespace std 
+            using namespace std;
+
+            class Matrix {
+                private:
+                    vector<vector<int> > elements;
+                public:
+                    Matrix (int numRows, int numCols) {
+                        vector<int> row(numCols);
+                        for (int i = 0; i < numRows; ++i) {
+                        elements.push_back(row);
+                        }
+                    }
+                    int at(int row, int col) {
+                        return elements[row][col];
+                    }
+            };
 
             void Matrix::setData (int row, int col, int value) {
                 elements[row][col] = value;
