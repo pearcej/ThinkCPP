@@ -1,4 +1,4 @@
-Selectquestion Exercises
+Mixed-Up Code Exercises
 ------------------------
 
 Answer the following **Mixed-Up Code** or **Activecode** questions to assess what you have learned in this chapter.
