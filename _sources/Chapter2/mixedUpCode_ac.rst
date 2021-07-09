@@ -52,7 +52,6 @@ Answer the following **Activecode** questions to assess what you have learned in
 
 
             ====
-            #define CATCH_CONFIG_MAIN
             #include <catch.hpp>
 
             TEST_CASE("variables swapped correctly") {
@@ -81,7 +80,6 @@ Answer the following **Activecode** questions to assess what you have learned in
                 y = temp;
             }
             ====
-            #define CATCH_CONFIG_MAIN
             #include <catch.hpp>
 
             TEST_CASE("variables swapped correctly") {
@@ -105,7 +103,6 @@ Answer the following **Activecode** questions to assess what you have learned in
 
 
             ====
-            #define CATCH_CONFIG_MAIN
             #include <catch.hpp>
 
             TEST_CASE("variables assigns correctly") {
@@ -132,7 +129,6 @@ Answer the following **Activecode** questions to assess what you have learned in
                 char crush = 'S';
             }
             ====
-            #define CATCH_CONFIG_MAIN
             #include <catch.hpp>
 
             TEST_CASE("variables assigns correctly") {
@@ -158,7 +154,6 @@ Answer the following **Activecode** questions to assess what you have learned in
 
 
             ====
-            #define CATCH_CONFIG_MAIN
             #include <catch.hpp>
 
             TEST_CASE("convert to tbsp") {
@@ -183,7 +178,6 @@ Answer the following **Activecode** questions to assess what you have learned in
             }
 
             ====
-            #define CATCH_CONFIG_MAIN
             #include <catch.hpp>
 
             TEST_CASE("convert to tbsp") {
@@ -207,7 +201,6 @@ Answer the following **Activecode** questions to assess what you have learned in
 
 
             ====
-            #define CATCH_CONFIG_MAIN
             #include <catch.hpp>
 
             TEST_CASE("volume found") {
@@ -233,7 +226,6 @@ Answer the following **Activecode** questions to assess what you have learned in
                 cout << volume;
             }
             ====
-            #define CATCH_CONFIG_MAIN
             #include <catch.hpp>
 
             TEST_CASE("volume found") {
@@ -255,6 +247,13 @@ Answer the following **Activecode** questions to assess what you have learned in
             // YOUR CODE HERE
 
 
+            ====
+            #include <catch.hpp>
+
+            TEST_CASE("a to z") {
+                REQUIRE( a == 'z' );
+            }
+
     .. tab:: Answer
 
         .. activecode:: VARS_p6_ac_a
@@ -270,6 +269,14 @@ Answer the following **Activecode** questions to assess what you have learned in
                 a = a + 25;
             }
 
+            ====
+            #include <catch.hpp>
+
+            TEST_CASE("a to z") {
+                REQUIRE( a == 'z' );
+            }
+
+
 
 .. tabbed:: VARS_p7_ac
 
@@ -278,7 +285,7 @@ Answer the following **Activecode** questions to assess what you have learned in
         .. activecode:: VARS_p7_ac_q
             :language: cpp
 
-            Construct a block of code that outputs the 'volume' of a cylinder with a radius of 3 and a height of 4.  
+            Construct a block of code that outputs the ``volume`` of a cylinder with a radius of 3 and a height of 4. The formula for volume of a cylinder is V = (pi)(r^2)(h). Use 3.14 for pi.
             ~~~~
             #include <iostream>
             using namespace std;
@@ -290,7 +297,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             #include <catch.hpp>
 
             TEST_CASE("cylinder volume found") {
-                REQUIRE( volume == 113.04 );
+                REQUIRE( volume == 113.09734 );
             }
             
     .. tab:: Answer
@@ -298,15 +305,25 @@ Answer the following **Activecode** questions to assess what you have learned in
         .. activecode:: VARS_p7_ac_a
             :language: cpp
 
-            Below is one way to write the code to output the volume of the cylinder with the least amount of lines. 
+            Below is one way to write the code to output the volume of the cylinder. 
             ~~~~
             #include <iostream> 
             using namespace std;
 
             int main() {
-                cout << 3.14 * 3 * 3 * 4;
+                double radius = 3.00;
+                double height = 4.00;
+                double pi = 3.14;
+                double volume = pi * radius * radius * height;
+                cout << volume << endl;
             }
 
+            ====
+            #include <catch.hpp>
+
+            TEST_CASE("cylinder volume found") {
+                REQUIRE( volume == 113.09734 );
+            }
 
 .. tabbed:: VARS_p8_ac
 
@@ -352,6 +369,12 @@ Answer the following **Activecode** questions to assess what you have learned in
             using namespace std;
             // YOUR CODE HERE
 
+            ====
+            #include <catch.hpp>
+
+            TEST_CASE("money saved correctly") {
+                REQUIRE(moneySaved == 143.996);
+            }
 
     .. tab:: Answer
 
@@ -369,6 +392,13 @@ Answer the following **Activecode** questions to assess what you have learned in
                 double moneySaved = game - discount;
             }
 
+            ====
+            #include <catch.hpp>
+
+            TEST_CASE("money saved correctly") {
+                REQUIRE(moneySaved == 143.996);
+            }
+
 
 .. tabbed:: VARS_p10_ac
 
@@ -383,7 +413,13 @@ Answer the following **Activecode** questions to assess what you have learned in
             using namespace std;
             // YOUR CODE HERE
 
+            ====
+            #include <catch.hpp>
 
+            TEST_CASE("final name is Buddy."){
+                REQUIRE(name == "Buddy");
+            }
+            
     .. tab:: Answer
 
         .. activecode:: VARS_p10_ac_a
@@ -400,4 +436,11 @@ Answer the following **Activecode** questions to assess what you have learned in
                 string newName = "Higgins";
                 name = newName;
                 name = "Buddy";
+            }
+
+            ====
+            #include <catch.hpp>
+
+            TEST_CASE("final name is Buddy."){
+                REQUIRE(name == "Buddy");
             }
