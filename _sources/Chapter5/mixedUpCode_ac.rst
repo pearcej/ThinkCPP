@@ -254,7 +254,7 @@ assess what you have learned in this chapter.
 
          TEST_CASE("birdType function") {
             REQUIRE(birdType(1,1) == 1);
-            REQUIRE(birdType(1,0) == 2);
+            REQUIRE(birdType(0,1) == 2);
             REQUIRE(birdType(0,0) == 3);
          }
 
@@ -502,6 +502,7 @@ assess what you have learned in this chapter.
 
          TEST_CASE("countBacteria function") {
             REQUIRE(countBacteria(0) == 1);
+            REQUIRE(countBacteria(5) == 32);
          }
 
    .. tab:: Answer
@@ -521,4 +522,13 @@ assess what you have learned in this chapter.
             else {
                return 2 * countBacteria (hour -1);
             }
+         }
+
+         ====
+         #define CATCH_CONFIG_MAIN
+         #include <catch.hpp>
+
+         TEST_CASE("countBacteria function") {
+            REQUIRE(countBacteria(0) == 1);
+            REQUIRE(countBacteria(5) == 32);
          }
