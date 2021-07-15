@@ -218,7 +218,7 @@ assess what you have learned in this chapter.
             void nextMonth (Date& d) {
                 if (d.month == 12) {
                     d.month = 1;
-                    d.year++
+                    d.year++;
                     d.year = 1;
                 }
                 else {
@@ -253,9 +253,9 @@ assess what you have learned in this chapter.
             using namespace std;
 
             struct Length {
-                double inches;
-                double feet;
-                double yards;
+                int inches;
+                int feet;
+                int yards;
             };
 
 
@@ -286,9 +286,9 @@ assess what you have learned in this chapter.
             using namespace std;
 
             struct Length {
-                double inches;
-                double feet;
-                double yards;
+                int inches;
+                int feet;
+                int yards;
             };
             
             void printLength (const Length& l) {
@@ -324,9 +324,9 @@ assess what you have learned in this chapter.
             using namespace std;
 
             struct Length {
-                double inches;
-                double feet;
-                double yards;
+                int inches;
+                int feet;
+                int yards;
             };
 
             void allInches (Length& l) {
@@ -363,9 +363,9 @@ assess what you have learned in this chapter.
             using namespace std;
 
             struct Length {
-                double inches;
-                double feet;
-                double yards;
+                int inches;
+                int feet;
+                int yards;
             };
             
             void addLengths (const Length& first, const Length& second, Length& total) {

@@ -110,7 +110,7 @@ assess what you have learned in this chapter.
     #include &#60;math&#62; #distractor
 
 
-.. parsonsprob:: functions_p4.0
+.. parsonsprob:: functions_p4
    :numbered: left
    :adaptive:
 

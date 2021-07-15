@@ -10,7 +10,7 @@ Answer the following **Activecode** questions to assess what you have learned in
         .. activecode:: mucp_13_1_ac_q
             :language: cpp
 
-            Write the enumerated type Days which maps days of the week to integers
+            Write the enumerated type ``Days`` which maps days of the week to integers
             starting at 1. Use a switch statement to determine whether or not day
             is a weekend or not. Check for cases in numerical order.
             ~~~~
@@ -142,7 +142,7 @@ Answer the following **Activecode** questions to assess what you have learned in
         .. activecode:: mucp_13_4_ac_q
             :language: cpp
 
-            Write the pseudocode for the implementation of mergeSort. 
+            Write the pseudocode for the implementation of ``mergeSort``. 
             ~~~~
             // YOUR PSEUDOCODE HERE
 
@@ -152,7 +152,7 @@ Answer the following **Activecode** questions to assess what you have learned in
         .. activecode:: mucp_13_4_ac_a
             :language: cpp
 
-            Below is one way to write the pseudocode of mergeSort.
+            Below is one way to write the pseudocode of ``mergeSort``.
             ~~~~
             Deck Deck::mergeSort () const {
                 find the midpoint of the deck
@@ -184,7 +184,7 @@ Answer the following **Activecode** questions to assess what you have learned in
         .. activecode:: mucp_13_5_ac_a
             :language: cpp
 
-            Below is one way to write the struct definition for Entry and for Dictionary. 
+            Below is one way to write the struct definition for ``Entry`` and for ``Dictionary``. 
             ~~~~
             #include <iostream>
             #include <vector>
@@ -252,7 +252,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             :language: cpp
 
             Of course, all dictionaries are in some sort of order. In order to do this, we
-            must first write the Dictionary member function findFirstWord, which takes a starting
+            must first write the Dictionary member function ``findFirstWord``, which takes a starting
             index as a parameter returns the index of the Entry with the highest priority alphabetically
             (i.e. the Entry with a word that would come first in the alphabet). 
             ~~~~
@@ -267,7 +267,7 @@ Answer the following **Activecode** questions to assess what you have learned in
         .. activecode:: mucp_13_7_ac_a
             :language: cpp
 
-            Below is one way to write the findFirstWord member function.
+            Below is one way to write the ``findFirstWord`` member function.
             ~~~~
             #include <iostream>
             #include <vector>
@@ -300,7 +300,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             :language: cpp
 
             We also need a swap function. Write the Dictionary member function
-            swap which takes two indices as parameters and swaps the Entries
+            ``swap`` which takes two indices as parameters and swaps the Entries
             at those indices. 
             ~~~~
             #include <iostream>
@@ -314,7 +314,7 @@ Answer the following **Activecode** questions to assess what you have learned in
         .. activecode:: mucp_13_8_ac_a
             :language: cpp
 
-            Below is one way to write the swap member function
+            Below is one way to write the ``swap`` member function
             ~~~~
             #include <iostream>
             #include <vector>
@@ -342,9 +342,9 @@ Answer the following **Activecode** questions to assess what you have learned in
         .. activecode:: mucp_13_9_ac_q
             :language: cpp
             
-            Now let's write the Dictionary member function alphabetize, which
+            Now let's write the Dictionary member function ``alphabetize``, which
             sorts the Entries in the Dictionary in alphabetical order. Use
-            the findFirstWord and swap functions we defined earlier! 
+            the ``findFirstWord`` and ``swap`` functions we defined earlier! 
             ~~~~
             #include <iostream>
             #include <vector>
@@ -357,7 +357,7 @@ Answer the following **Activecode** questions to assess what you have learned in
         .. activecode:: mucp_13_9_ac_a
             :language: cpp
 
-            Below is one way to write the Dictionary member function alphabetize.
+            Below is one way to write the Dictionary member function ``alphabetize``.
             ~~~~
             #include <iostream>
             #include <vector>
@@ -378,7 +378,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             :language: cpp
 
             Let's check to see if our sorting worked! Write the Dictionary
-            member function printDictionary, which prints out the word in each 
+            member function ``printDictionary``, which prints out the word in each 
             Entry.
             ~~~~
             #include <iostream>
@@ -392,7 +392,7 @@ Answer the following **Activecode** questions to assess what you have learned in
         .. activecode:: mucp_13_10_ac_a
             :language: cpp
 
-            Below is one way to write the Dictionary member function printDictionary.
+            Below is one way to write the Dictionary member function ``printDictionary``.
             ~~~~
             #include <iostream>
             #include <vector>

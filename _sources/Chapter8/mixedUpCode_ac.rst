@@ -158,7 +158,7 @@ assess what you have learned in this chapter.
                 string name;
                 int age;
                 double hornLength;
-                strinf hairColor;
+                string hairColor;
                 bool isSparkly;
             };
 
@@ -195,7 +195,7 @@ assess what you have learned in this chapter.
                 string name;
                 int age;
                 double hornLength;
-                strinf hairColor;
+                string hairColor;
                 bool isSparkly;
             };
 
@@ -239,7 +239,7 @@ assess what you have learned in this chapter.
                 string name;
                 int age;
                 double hornLength;
-                strinf hairColor;
+                string hairColor;
                 bool isSparkly;
             };
 
@@ -256,7 +256,7 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_8_7_ac_q
             :language: cpp
 
-            Let's write the code for the struct definitions of Address and Employee. 
+            Let's write the code for the struct definitions of ``Address`` and ``Employee``. 
             The Address structure will have the instance variables houseNumber, 
             state (abbreviation), and postalAddress in that order. The Employee 
             structure will be a nested structure with the instance variables name 
@@ -272,7 +272,7 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_8_7_ac_a
             :language: cpp
 
-            Below is one way to define the Address and Employee structs.
+            Below is one way to define the ``Address`` and ``Employee`` structs.
             ~~~~
             #include <iostream>
             using namespace std;
@@ -324,6 +324,7 @@ assess what you have learned in this chapter.
             struct Employee {
                 string name;
                 Address address;
+                int id;
             };
 
             void printAddress (Employee e) {

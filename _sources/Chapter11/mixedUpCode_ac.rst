@@ -7,11 +7,17 @@ Answer the following **Activecode** questions to assess what you have learned in
 
     .. tab:: Question
 
-     Construct a block of code that would make the print function into a member function.
-   
-     .. code-block:: cpp
-     
-        struct Student {
+     .. activecode:: mucp_11_1_q
+        :language: cpp
+
+        Suppose you have the following code. Construct a block of code that would make the print function into a member function.
+        ~~~~
+        #include <iostream>
+        #include <string>
+        using namespace std;
+
+        // Edit this code
+                struct Student {
              int id, year;
              string name;
         };
@@ -20,20 +26,10 @@ Answer the following **Activecode** questions to assess what you have learned in
              cout << stu.id << ":" << stu.year << ":" << stu.name << endl;
         }
 
-        int main ( ) {
+        int main () {
               Student s1 = { 56673, 2023, "Bob" };
               printStudent (s1);
         }
-
-
-     .. activecode:: mucp_11_1_q
-        :language: cpp
-
-        ~~~~
-        #include <iostream>
-        #include <string>
-        using namespace std;
-        // YOUR CODE HERE
 
     .. tab:: Answer
 

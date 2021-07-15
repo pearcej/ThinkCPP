@@ -51,15 +51,6 @@ Answer the following **Activecode** questions to assess what you have learned in
             // YOUR CODE HERE
 
 
-            ====
-            #include <catch.hpp>
-
-            TEST_CASE("variables swapped correctly") {
-                REQUIRE( x == 6 );
-                REQUIRE( y == 3 );
-            }
-
-
     .. tab:: Answer
 
         .. activecode:: VARS_p2_ac_a
@@ -79,13 +70,6 @@ Answer the following **Activecode** questions to assess what you have learned in
                 x = y;
                 y = temp;
             }
-            ====
-            #include <catch.hpp>
-
-            TEST_CASE("variables swapped correctly") {
-                REQUIRE( x == 6 );
-                REQUIRE( y == 3 );
-            }
 
 
 .. tabbed:: VARS_p3_ac
@@ -95,21 +79,11 @@ Answer the following **Activecode** questions to assess what you have learned in
         .. activecode:: VARS_p3_ac_q
             :language: cpp
 
-            Dan Humphrey is a 3.98 student at Constance High School.  His crush's first initial is S.  Construct a program that assigns the variables name, GPA, and crush, in that order.
+            Dan Humphrey is a 3.98 student at Constance High School. His crush's first initial is S. Construct a program that assigns the variables name, GPA, and crush, in that order. Output the variables to the terminal to check your code.
             ~~~~
             #include <iostream>
             using namespace std;
             // YOUR CODE HERE
-
-
-            ====
-            #include <catch.hpp>
-
-            TEST_CASE("variables assigns correctly") {
-                REQUIRE( name == "Dan Humphrey" );
-                REQUIRE( GPA == 3.98 );
-                REQUIRE( crush == 'S');
-            }
 
     
     .. tab:: Answer
@@ -128,14 +102,6 @@ Answer the following **Activecode** questions to assess what you have learned in
                 GPA = 3.98;
                 char crush = 'S';
             }
-            ====
-            #include <catch.hpp>
-
-            TEST_CASE("variables assigns correctly") {
-                REQUIRE( name == "Dan Humphrey" );
-                REQUIRE( GPA == 3.98 );
-                REQUIRE( crush == 'S');
-            }
 
 
 .. tabbed:: VARS_p4_ac
@@ -152,13 +118,6 @@ Answer the following **Activecode** questions to assess what you have learned in
             using namespace std;
             // YOUR CODE HERE
 
-
-            ====
-            #include <catch.hpp>
-
-            TEST_CASE("convert to tbsp") {
-                REQUIRE( tbsp == 2.56 );
-            }
 
     .. tab:: Answer
 
@@ -177,13 +136,6 @@ Answer the following **Activecode** questions to assess what you have learned in
                 tbsp = 16 * cups;
             }
 
-            ====
-            #include <catch.hpp>
-
-            TEST_CASE("convert to tbsp") {
-                REQUIRE( tbsp == 2.56 );
-            }
-
 
 .. tabbed:: VARS_p5_ac
 
@@ -192,20 +144,13 @@ Answer the following **Activecode** questions to assess what you have learned in
         .. activecode:: VARS_p5_ac_q
             :language: cpp
 
-            Construct a block of code that takes the 'volume' of the rectangular prism defined by length, width, and height and prints the result to the terminal. 
+            Construct a block of code that takes the 'volume' of the rectangular prism defined by length, width, and height and prints the result to the terminal. The volume of a rectangular prism is given by ``Volume = length * width * height``.
             Use a length of 2, width of 3, and height of 4.
             ~~~~
             #include <iostream>
             using namespace std;
             // YOUR CODE HERE
 
-
-            ====
-            #include <catch.hpp>
-
-            TEST_CASE("volume found") {
-                REQUIRE( volume == 24 );
-            }
 
     .. tab:: Answer
 
@@ -225,12 +170,6 @@ Answer the following **Activecode** questions to assess what you have learned in
                 volume = height * width * length;
                 cout << volume;
             }
-            ====
-            #include <catch.hpp>
-
-            TEST_CASE("volume found") {
-                REQUIRE( volume == 24 );
-            }
 
 
 .. tabbed:: VARS_p6_ac
@@ -240,19 +179,12 @@ Answer the following **Activecode** questions to assess what you have learned in
         .. activecode:: VARS_p6_ac_q
             :language: cpp
 
-            Construct a block of code that changes the value of the variable a from the character 'a' to the character 'z'.
+            Construct a block of code that changes the value of the variable a from the character 'a' to the character 'z'. Remember that number values can be used with characters and operations. 
             ~~~~
             #include <iostream> 
             using namespace std;
             // YOUR CODE HERE
 
-
-            ====
-            #include <catch.hpp>
-
-            TEST_CASE("a to z") {
-                REQUIRE( a == 'z' );
-            }
 
     .. tab:: Answer
 
@@ -269,14 +201,6 @@ Answer the following **Activecode** questions to assess what you have learned in
                 a = a + 25;
             }
 
-            ====
-            #include <catch.hpp>
-
-            TEST_CASE("a to z") {
-                REQUIRE( a == 'z' );
-            }
-
-
 
 .. tabbed:: VARS_p7_ac
 
@@ -292,14 +216,6 @@ Answer the following **Activecode** questions to assess what you have learned in
             // YOUR CODE HERE
 
 
-            ====
-            #define CATCH_CONFIG_MAIN
-            #include <catch.hpp>
-
-            TEST_CASE("cylinder volume found") {
-                REQUIRE( volume == 113.09734 );
-            }
-            
     .. tab:: Answer
 
         .. activecode:: VARS_p7_ac_a
@@ -318,12 +234,6 @@ Answer the following **Activecode** questions to assess what you have learned in
                 cout << volume << endl;
             }
 
-            ====
-            #include <catch.hpp>
-
-            TEST_CASE("cylinder volume found") {
-                REQUIRE( volume == 113.09734 );
-            }
 
 .. tabbed:: VARS_p8_ac
 
@@ -332,7 +242,7 @@ Answer the following **Activecode** questions to assess what you have learned in
         .. activecode:: VARS_p8_ac_q
             :language: cpp
 
-            Construct a block of code that prints "My favorite class is MATH" on the same line.
+            Construct a block of code that assigns the string "MATH" to a variable and prints "My favorite class is MATH" on the same line.
             ~~~~
             #include <iostream>
             using namespace std;
@@ -363,17 +273,17 @@ Answer the following **Activecode** questions to assess what you have learned in
         .. activecode:: VARS_p9_ac_q
             :language: cpp
 
-            It's Black Friday and the Nintendo Switch you'be been saving up for is marked down to 60% of its original price!  Construct a block of code that calculates how much money you'd be saving if the system originally costed $359.99?
+            It's Black Friday and the Nintendo Switch you'be been saving up for is marked down to 60% of its original price!  Construct a block of code that calculates and outputs the variable ``moneySaved``, which is how much money you'd be saving if the system originally costed $359.99?
             ~~~~
             #include <iostream>
             using namespace std;
+
+            int main() {
             // YOUR CODE HERE
 
-            ====
-            #include <catch.hpp>
 
-            TEST_CASE("money saved correctly") {
-                REQUIRE(moneySaved == 143.996);
+                cout << moneySaved << endl;
+                cout << "moneySaved should be $143.99." << endl;
             }
 
     .. tab:: Answer
@@ -392,13 +302,6 @@ Answer the following **Activecode** questions to assess what you have learned in
                 double moneySaved = game - discount;
             }
 
-            ====
-            #include <catch.hpp>
-
-            TEST_CASE("money saved correctly") {
-                REQUIRE(moneySaved == 143.996);
-            }
-
 
 .. tabbed:: VARS_p10_ac
 
@@ -413,12 +316,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             using namespace std;
             // YOUR CODE HERE
 
-            ====
-            #include <catch.hpp>
 
-            TEST_CASE("final name is Buddy."){
-                REQUIRE(name == "Buddy");
-            }
             
     .. tab:: Answer
 
@@ -436,11 +334,4 @@ Answer the following **Activecode** questions to assess what you have learned in
                 string newName = "Higgins";
                 name = newName;
                 name = "Buddy";
-            }
-
-            ====
-            #include <catch.hpp>
-
-            TEST_CASE("final name is Buddy."){
-                REQUIRE(name == "Buddy");
             }

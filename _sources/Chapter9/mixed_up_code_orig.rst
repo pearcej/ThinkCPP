@@ -195,17 +195,17 @@ Mixed Up Code Practice
    =====
    struct Length (  #distractor
    =====
-      double inches;
+      int inches;
    =====
-      double feet;
+      int feet;
    =====
-      double yards;
+      int yards;
    =====
-      int inches;  #distractor
+      double inches;  #distractor
    =====
       string feet;  #distractor
    =====
-      int yards;  #distractor
+      double yards;  #distractor
    =====
    };
    =====
