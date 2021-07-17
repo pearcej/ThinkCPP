@@ -102,12 +102,18 @@ assess what you have learned in this chapter.
             // YOUR CODE HERE
 
 
+            // DO NOT MODIFY BELOW THIS LINE
+            int main() {
+                longerString("longer", "string");
+                longerString("string", "second");
+            }
+
     .. tab:: Answer
 
         .. activecode:: mucp_7_3_ac_a
             :language: cpp
 
-            Below is one way to write the function longerString.
+            Below is one way to write the function ``longerString``.
             ~~~~
             #include <iostream>
             #include <string>
@@ -125,6 +131,11 @@ assess what you have learned in this chapter.
                 }
             }
 
+            int main() {
+                longerString("longer", "string");
+                longerString("string", "second");
+            }
+
 
 .. tabbed:: mucp_7_4_ac
 
@@ -134,7 +145,7 @@ assess what you have learned in this chapter.
             :language: cpp
 
             Let's write the code for the ``cipherText`` function. cipherText 
-            should be a void function that takes input as a parameter,
+            should be a void function that takes the string input as a parameter,
             increases the value of each character by 1 (i.e. "bad" turns into "cbe"),
             and prints the encrypted string.            
             ~~~~
@@ -144,12 +155,17 @@ assess what you have learned in this chapter.
             // YOUR CODE HERE
 
 
+            // DO NOT MODIFY BELOW THIS LINE
+            int main() {
+                cipherText("bad");
+            }
+
     .. tab:: Answer
 
         .. activecode:: mucp_7_4_ac_a
             :language: cpp
 
-            Below is one way to write the function cipherText
+            Below is one way to write the function ``cipherText``.
             ~~~~
             #include <iostream>
             #include <string>
@@ -164,6 +180,10 @@ assess what you have learned in this chapter.
                 cout << input;
             }
 
+            int main() {
+                cipherText("bad");
+            }
+
 
 .. tabbed:: mucp_7_5_ac
 
@@ -173,7 +193,7 @@ assess what you have learned in this chapter.
             :language: cpp
 
             Write a program that prints out the number of occurences of the character 't'
-            in the string tongue_twister, with declaration in the order of tongue_twister, count, and i.
+            in the string tongue_twister, with declaration in the order of ``tongue_twister``, ``count``, and ``i``.
             Declare the string tongue_twister as 'twelve twins twirled twelve twigs.'         
             ~~~~
             #include <iostream>
@@ -370,7 +390,7 @@ assess what you have learned in this chapter.
             TEST_CASE("censorLetter function") {
                 REQUIRE(censorLetter("Bye world", 'o') == "Bye w*rld");
                 REQUIRE(censorLetter("Hello world", 'l') == "He**o wor*d");
-                REQUIRE(censorLetter("Goodbye world, 'd') == "Goo*bye worl*");
+                REQUIRE(censorLetter("Goodbye world", 'd') == "Goo*bye worl*");
             }
 
     .. tab:: Answer
@@ -402,7 +422,7 @@ assess what you have learned in this chapter.
             TEST_CASE("censorLetter function") {
                 REQUIRE(censorLetter("Bye world", 'o') == "Bye w*rld");
                 REQUIRE(censorLetter("Hello world", 'l') == "He**o wor*d");
-                REQUIRE(censorLetter("Goodbye world, 'd') == "Goo*bye worl*");
+                REQUIRE(censorLetter("Goodbye world", 'd') == "Goo*bye worl*");
             }
 
 
@@ -511,7 +531,7 @@ assess what you have learned in this chapter.
             using namespace std;
 
             bool ispalindrome(string input) {
-                int front = 0
+                int front = 0;
                 int back = input.length() - 1;
                 while (front < back) {
                     if( input[b] != input[e] ) {

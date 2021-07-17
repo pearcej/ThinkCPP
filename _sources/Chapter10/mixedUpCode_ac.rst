@@ -155,24 +155,23 @@ Answer the following **Activecode** questions to assess what you have learned in
 
     .. tab:: Question
 
-        .. code-block:: cpp
-
-            // Suppose you have the vector:
-            vector<string> words = {"car", "cat", "switch", "princess"};  
-
-            // Construct a block of code that transforms the vector to:
-            vector<string> words = {"cAr", "cAt", "switch", "mArio"}
-
         .. activecode:: vectors_p5_ac_q
             :language: cpp
 
+            Suppose you have the vector ``words``. 
+            Construct a block of code that transforms the vector to: ``vector<string> words = {"cAr", "cAt", "switch", "mArio"}``.
             Write the necessary code. 
             ~~~~
-            #include <iostream> 
+            #include <iostream>  
             #include <vector>
             using namespace std;
-            // YOUR CODE HERE
-    
+
+            int main() {
+                vector<string> words = {"car", "cat", "switch", "princess"};
+                // YOUR CODE HERE
+            
+
+            }
 
     .. tab:: Answer
 
@@ -186,7 +185,7 @@ Answer the following **Activecode** questions to assess what you have learned in
             using namespace std;
 
             int main() {
-                vector<string> words = {“car”, “cat”, “switch”, “princess”};
+                vector<string> words = {"car", "cat", "switch", "princess"};
                 words.pop_back();
                 words.push_back("mario");
                 for (size_t i = 0; i < words.size(); ++i) {
@@ -241,23 +240,21 @@ Answer the following **Activecode** questions to assess what you have learned in
 
     .. tab:: Question
 
-        .. code-block:: cpp
-
-            //Suppose ``album`` has already been defined as
-            vector<string> album = {"imagine", "needy", "NASA", "bloodline", "fake smile", "bad idea", "make up", "ghostin", "in my head", "7 rings", "thank u, next", "break up with your girlfriend, i'm bored"}
-
-            //Construct a block of code that counts how many songs in ``album`` start with b.
-
         .. activecode:: vectors_p7_ac_q
             :language: cpp
 
-            Write the necessary code. 
+            Suppose you have the defined vector ``album``. Construct a block of code that counts how many songs in ``album`` start with b. Write the necessary code. 
             ~~~~
             #include <iostream> 
             #include <vector>
             using namespace std;
-            // YOUR CODE HERE
 
+            int main() {
+                vector<string> album = {"imagine", "needy", "NASA", "bloodline", "fake smile", "bad idea", "make up", "ghostin", "in my head", "7 rings", "thank u, next", "break up with your girlfriend, i'm bored"};
+                // YOUR CODE HERE
+
+
+            }
 
     .. tab:: Answer
 
@@ -285,25 +282,24 @@ Answer the following **Activecode** questions to assess what you have learned in
 
     .. tab:: Question
 
-        .. code-block:: cpp
-
-            //Suppose you have the following two vectors to describe the weekly forecast
-            vector<double> temps = {82.0, 76.8, 74.3, 58.8, 79.2, 73.4, 80.1} 
-
-            vector<double> precip = {0.00, 0.30, 0.60, 0.90, 0.10, 0.20, 0.80}
-
         .. activecode:: vectors_p8_ac_q
             :language: cpp
 
-            Your family will go to the beach if the temperature at least 75 degrees and the chance
+            Suppose you have the defined vectors, ``temps`` and ``precip``. Your family will go to the beach if the temperature at least 75 degrees and the chance
             of precipitation is less than 50%.  Construct a block of code that counts how many days
             your family can hit the beach on your vacation.
             ~~~~
             #include <iostream>
             #include <vector>
             using namespace std;
-            // YOUR CODE HERE
 
+            int main(){
+                vector<double> temps = {82.0, 76.8, 74.3, 58.8, 79.2, 73.4, 80.1};
+                vector<double> precip = {0.00, 0.30, 0.60, 0.90, 0.10, 0.20, 0.80};
+                // YOUR CODE HERE
+
+            
+            }
 
     .. tab:: Answer
 
@@ -332,22 +328,22 @@ Answer the following **Activecode** questions to assess what you have learned in
 
     .. tab:: Question
 
-        .. code-block:: cpp
-
-            // Suppose you have the following vector nouns
-            vector<string> nouns = {"cereal", "Cocoa Puffs", "Mario", "luigi", "Aerosmith"};
-
         .. activecode:: vectors_p9_ac_q
             :language: cpp
 
-            Construct a block of code that creates a vector of the **proper** nouns in ``nouns``.
+            Suppose you have the defined vector ``nouns``. Construct a block of code that creates a vector of the **proper** nouns in ``nouns``.
             Use the ``isupper`` function to check if a letter is uppercase.
             ~~~~
             #include <iostream>
             #include <vector>
             using namespace std;
-            // YOUR CODE HERE
 
+            int main() {
+                vector<string> nouns = {"cereal", "Cocoa Puffs", "Mario", "luigi", "Aerosmith"};
+                // YOUR CODE HERE
+
+                
+            }
 
     .. tab:: Answer
 
@@ -373,37 +369,36 @@ Answer the following **Activecode** questions to assess what you have learned in
 
 .. tabbed:: vectors_p10_ac
 
-    .. tab:: Question
-
-        .. code-block:: cpp
-
-            // Suppose you have the following function howMany and vector exclamations
-
-                int howMany (const vector<string>& vec, char let) {
-                    int count = 0;
-                    for (size_t i = 0; i < vec.size(); i++) {
-                        for (size_t c = 0; c < vec[i].size(); c++) {
-                            if (vec[i][c] == let) {
-                                count++;                                      
-                                }
-                        }
-                    }
-                    return count;
-                }
-
-                vector<string> excl = {"what?!", "how???", "fine!", "STOP.", "yay!!!!!", "ugh...!"};                
+    .. tab:: Question           
 
         .. activecode:: vectors_p10_ac_q
             :language: cpp
 
-            Construct a block of code that counts how many times ".", "!", and "?" occur in ``exclamations``.
+            Suppose you have the already defined ``howMany`` function and ``excl`` vector. Construct a block of code that counts how many times ".", "!", and "?" occur in ``excl``.
             Save the counts to a vector with "." count as the first element, "!" count as the second, and "?" count as the third.
             ~~~~
             #include <iostream>
             #include <vector>
             using namespace std;
-            // YOUR CODE HERE
 
+            int howMany (const vector<string>& vec, char let) {
+                int count = 0;
+                for (size_t i = 0; i < vec.size(); i++) {
+                    for (size_t c = 0; c < vec[i].size(); c++) {
+                        if (vec[i][c] == let) {
+                            count++;                                      
+                        }
+                    }
+                }
+                return count;
+            }
+
+            int main() {
+                vector<string> excl = {"what?!", "how???", "fine!", "STOP.", "yay!!!!!", "ugh...!"};
+                // YOUR CODE HERE
+                
+
+            }
 
     .. tab:: Answer
 
@@ -432,7 +427,7 @@ Answer the following **Activecode** questions to assess what you have learned in
                 vector<string> excl = {"what?!", "how???", "fine!", "STOP.", "yay!!!!!", "ugh...!"};
                 vector<char> punc = {'.', '!', '?'};
                 vector<int> counts = {};
-                for (int i = 0; i < punc.size(); ++i) {
+                for (int i = 0; (unsigned)i < punc.size(); ++i) {
                     counts.push_back(howMany(excl, punc[i]));
                 }
             }

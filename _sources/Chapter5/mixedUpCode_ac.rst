@@ -45,6 +45,15 @@ assess what you have learned in this chapter.
                return 105.42 * dollar;
            }
 
+           ====
+           #define CATCH_CONFIG_MAIN
+           #include <catch.hpp>
+
+           TEST_CASE("dollarToYen function") {
+              REQUIRE(dollarToYen(1) == 105.42);
+              REQUIRE(dollarToYen(2) == 210.84);
+           }
+
 
 .. tabbed:: mucp_5_2_ac
 
@@ -88,6 +97,16 @@ assess what you have learned in this chapter.
            double priceWithTax (double price, double percentTax) {
                return (1 + percentTax / 100) * price;
            }
+
+           ====
+           #define CATCH_CONFIG_MAIN
+           #include <catch.hpp>
+
+           TEST_CASE("priceWithTax function") {
+              REQUIRE(priceWithTax(20,6) == 21.2);
+              REQUIRE(priceWithTax(100,0) == 100);
+           }
+
 
 
 .. tabbed:: mucp_5_3_ac
@@ -143,6 +162,15 @@ assess what you have learned in this chapter.
                 }
             }
 
+            ====
+            #define CATCH_CONFIG_MAIN
+            #include <catch.hpp>
+
+            TEST_CASE("percentToLetter function") {
+               REQUIRE(percentToLetter(0) == 'F');
+               REQUIRE(percentToLetter(90) == 'A');
+            }     
+
 
 .. tabbed:: mucp_5_4_ac
 
@@ -182,6 +210,15 @@ assess what you have learned in this chapter.
 
             double triangleArea (double base, double height){
                 return 0.5 * base * height;
+            }
+
+            ====
+            #define CATCH_CONFIG_MAIN
+            #include <catch.hpp>
+
+            TEST_CASE("triangleArea function") {
+               REQUIRE(triangleArea(4.5,6.2) == 13.95);
+               REQUIRE(triangleArea(4,5) == 10.0);
             }
 
 
@@ -227,6 +264,16 @@ assess what you have learned in this chapter.
                 return pi * radius * radius * height;
             }
 
+            ====
+            #define CATCH_CONFIG_MAIN
+            #include <catch.hpp>
+
+            TEST_CASE("cylinderVolume function") {
+               REQUIRE(cylinderVolume(2.5,3.0) == 58.875);
+               REQUIRE(cylinderVolume(11.0,4.5) == 1709.73);
+               REQUIRE(cylinderVolume(6.25,5.0) == 613.28125);
+            }
+
 
 .. tabbed:: mucp_5_6_ac
 
@@ -253,9 +300,9 @@ assess what you have learned in this chapter.
          #include <catch.hpp>
 
          TEST_CASE("birdType function") {
-            REQUIRE(birdType(1,1) == 1);
-            REQUIRE(birdType(0,1) == 2);
-            REQUIRE(birdType(0,0) == 3);
+            REQUIRE(birdType(1,1) == 3);
+            REQUIRE(birdType(1,0) == 1);
+            REQUIRE(birdType(0,0) == 2);
          }
 
    .. tab:: Answer
@@ -269,10 +316,10 @@ assess what you have learned in this chapter.
          using namespace std;
 
          int birdType(bool isRound, bool isGray){
-            if (isRound && isGray){
+            if (isRound && !isGray){
                return 1;
             }
-            else if(!isRound || isGray){
+            else if(!isRound && isGray){
                return 2;
             }
             else{
@@ -280,6 +327,15 @@ assess what you have learned in this chapter.
             }
          }
 
+         ====
+         #define CATCH_CONFIG_MAIN
+         #include <catch.hpp>
+
+         TEST_CASE("birdType function") {
+            REQUIRE(birdType(1,1) == 3);
+            REQUIRE(birdType(1,0) == 1);
+            REQUIRE(birdType(0,0) == 2);
+         }
 
 .. tabbed:: mucp_5_7_ac
 
@@ -326,6 +382,15 @@ assess what you have learned in this chapter.
             }
          }
 
+         ====
+         #define CATCH_CONFIG_MAIN
+         #include <catch.hpp>
+
+         TEST_CASE("isDoubleDigit function") {
+            REQUIRE(isDoubleDigit(10) == true);
+            REQUIRE(isDoubleDigit(100) == false);
+         }
+         
 
 .. tabbed:: mucp_5_8_ac
 
@@ -376,6 +441,16 @@ assess what you have learned in this chapter.
             }
          }
 
+         ====
+         #define CATCH_CONFIG_MAIN
+         #include <catch.hpp>
+
+         TEST_CASE("Compare function") {
+            REQUIRE(Compare(10,49) == -1);
+            REQUIRE(Compare(10,10) == 0);
+            REQUIRE(Compare(10,5) == 1);
+         }
+
 
 .. tabbed:: mucp_5_9_ac
 
@@ -422,6 +497,16 @@ assess what you have learned in this chapter.
             else {
                return false;
             }
+         }
+
+         ====
+         #define CATCH_CONFIG_MAIN
+         #include <catch.hpp>
+
+         TEST_CASE("isFactor function") {
+            REQUIRE(isFactor(8,2) == true);
+            REQUIRE(isFactor(7,4) == false);
+            REQUIRE(isFactor(9,1) == true);
          }
 
 
@@ -472,6 +557,16 @@ assess what you have learned in this chapter.
             else{
                return false;
             }
+         }
+
+         ====
+         #define CATCH_CONFIG_MAIN
+         #include <catch.hpp>
+
+         TEST_CASE("isPerfectSquare function") {
+            REQUIRE(isPerfectSquare(4) == true);
+            REQUIRE(isPerfectSquare(16) == true);
+            REQUIRE(isPerfectSquare(10) == false);
          }
 
 
