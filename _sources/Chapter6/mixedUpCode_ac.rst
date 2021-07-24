@@ -377,6 +377,16 @@ assess what you have learned in this chapter.
             summation(1,10);
          }       
 
+         ====
+         #define CATCH_CONFIG_MAIN
+         #include <catch.hpp>
+
+         TEST_CASE("summation function") {
+            REQUIRE(summation(1,5) == 15);
+            REQUIRE(summation(1,9) == 45);
+            REQUIRE(summation(1,20) == 210);
+         }
+         
 
 .. tabbed:: mucp_6_10_ac
 
@@ -426,4 +436,14 @@ assess what you have learned in this chapter.
                temp = temp / 10;
             }
             return reverse;
+         }
+
+         ====
+         #define CATCH_CONFIG_MAIN
+         #include <catch.hpp>
+
+         TEST_CASE("reverseNumber function") {
+            REQUIRE(reverseNumber(1324) == 4231);
+            REQUIRE(reverseNumber(4231) == 1324);
+            REQUIRE(reverseNumber(1) == 1);
          }

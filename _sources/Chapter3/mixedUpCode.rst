@@ -21,7 +21,7 @@ assess what you have learned in this chapter.
    :toggle:
 
 .. selectquestion:: functions_p4.0_sq
-   :fromid: functions_p4.0, functions_p4_ac_q
+   :fromid: functions_p4, functions_p4_ac_q
    :toggle:
 
 .. selectquestion:: functions_p5_sq

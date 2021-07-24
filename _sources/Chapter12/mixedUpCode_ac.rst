@@ -261,7 +261,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
     .. tab:: Question
 
-        .. activecode:: mcup_12_7_ac_q
+        .. activecode:: mucp_12_7_ac_q
             :language: cpp
 
             Let's make a shopping list! Write the struct definition for

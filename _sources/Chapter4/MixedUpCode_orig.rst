@@ -80,27 +80,31 @@ assess what you have learned in this chapter.
    :numbered: left
    :adaptive:
 
-   Construct a block of code that prints "automatic" if x is
+   Construct a function, ``matic``, that takes as inputs 2 integers, x and y, and prints "automatic" if x is
    an odd number, "systematic" if x is greater than y, AND
    "hydromatic" if y is not equal to x.  Check all 3 conditions.
    -----
-   if (x % 2 == 1) {
+   void matic (int x, int y) {
    =====
-   if (x % 2 == 0) { #paired
+   int matic (int x, int y) {    #paired
    =====
-    cout << "automatic"; }
+    if (x % 2 > 0) {
    =====
-   if (x > y) {
+    if (x % 2 == 0) { #paired
    =====
-   else if (x > y) { #paired
+      cout << "automatic"; }
    =====
-    cout << "systematic"; }
+    if (x > y) {
    =====
-   if (y != x) {
+    else if (x > y) { #paired
    =====
-   else { #paired
+      cout << "systematic"; }
    =====
-    cout << "hydromatic"; }
+    if (y != x) {
+   =====
+    else { #paired
+   =====
+      cout << "hydromatic"; }
    
 
 .. parsonsprob:: cond_recc_p5
@@ -253,7 +257,7 @@ assess what you have learned in this chapter.
    =====
     if (num < 0) {
    =====
-     takesum ();
+     takeSum ();
    =====
     } // END "if"
    =====

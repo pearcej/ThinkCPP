@@ -140,7 +140,7 @@ assess what you have learned in this chapter.
         .. activecode:: cond_recc_p4_ac_q
             :language: cpp
 
-            Construct a block of code that prints "automatic" if x is
+            Construct a function, ``matic``, that takes as inputs 2 integers, x and y, and prints "automatic" if x is
             an odd number, "systematic" if x is greater than y, AND
             "hydromatic" if y is not equal to x.  Check all 3 conditions.
             ~~~~
@@ -159,13 +159,17 @@ assess what you have learned in this chapter.
             #include <iostream>
             using namespace std;
 
-            int main() {
-                if (x % 2 == 1) {
+            void matic(int x, int y) {
+                if (x % 2 > 0) {
                     cout << "automatic"; }
                 if (x > y) {
                     cout << "systematic"; }
                 if (y != x) {
                     cout << "hydromatic"; }
+            }
+
+            int main() {
+                matix(5,4);
             }
    
 
@@ -329,20 +333,25 @@ assess what you have learned in this chapter.
             void makeVocals (string animal, string mood) {
                 if (mood == "bad") {
                     if (animal == "dog") {
-                        cout << "Woof!";
+                        cout << "Woof!" << endl;
                     }
                     else {
-                        cout << "Meow!";
+                        cout << "Meow!" << endl;
                     }
                 }
                 else {
                     if (animal == "dog") {
-                        cout << "Bark!";
+                        cout << "Bark!" << endl;
                     }
                     else {
-                        cout << "Purr!";
+                        cout << "Purr!" << endl;
                     }
                 }
+            }
+
+            int main() {
+                makeVocals("dog","good");
+                makeVocals("cat","bad");
             }
 
 
@@ -377,10 +386,14 @@ assess what you have learned in this chapter.
                 int num;
                 cin >> num;
                 if (num < 0) {
-                    takesum ();
+                    takeSum ();
                 } // END "if"
                 cout << num;
             } // END function
+
+            int main() {
+                takeSum();
+            }
 
 
 .. tabbed:: cond_recc_p10_ac
@@ -422,4 +435,8 @@ assess what you have learned in this chapter.
                 capitalize (); }
                 let = let - 32;
                 cout << char(let);
+            }
+
+            int main() {
+                capitalize();
             }

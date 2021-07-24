@@ -187,7 +187,7 @@ Mixed Up Code Practice
    =====
       }
    =====
-      else if (!isRound || isGray) {
+      else if (!isRound && isGray) {
    =====
       else if (!(isRound || isGray)) {  #paired
    =====

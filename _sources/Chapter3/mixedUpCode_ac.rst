@@ -30,7 +30,7 @@ assess what you have learned in this chapter.
         .. activecode:: functions_p9_ac_a
             :language: cpp
 
-            Below is one way to write the function to print the integer conversion of the passed double.
+            Below is one way to write the ``printInteger`` function.
             ~~~~
             #include <iostream>
             using namespace std;
@@ -53,19 +53,25 @@ assess what you have learned in this chapter.
         .. activecode:: functions_p0_ac_q
             :language: cpp
 
-            Construct a function called ``newLine`` that takes no arguments and prints a blank line.  Then construct another function called 'divider' that prints two blank lines separated by a line of ". . . . . . . . . . . ."
+            Construct a function called ``newLine`` that takes no arguments and prints a blank line.  Then construct another function called ``divider`` that prints two blank lines separated by a line of ". . . . . . . . . . . ."
             ~~~~
             #include <iostream> 
             using namespace std;
             // YOUR CODE HERE
 
 
+            // DO NOT MODIFY BELOW THIS LINE
+            int main() { // Implement the two functions
+                newLine();
+                divider();
+            }
+
     .. tab:: Answer
 
         .. activecode:: functions_p0_ac_a
             :language: cpp
 
-            Below is one way to write the two functions, newLine and divider. 
+            Below is one way to write the two functions, ``newLine`` and ``divider``. 
             ~~~~
             #include <iostream>
             using namespace std;
@@ -79,6 +85,11 @@ assess what you have learned in this chapter.
                 cout << ". . . . . . . . . . . . " << endl;
                 newLine ();  //second call
             }  //divider
+
+            int main() { // Use the two functions
+                newLine();
+                divider();
+            }
 
 
 .. tabbed:: functions_p1_ac
@@ -107,7 +118,7 @@ assess what you have learned in this chapter.
         .. activecode:: functions_p1_ac_a
             :language: cpp
 
-            Below is one way to write the functino to calculate the volume of a cone and print it to the terminal. 
+            Below is one way to write the ``volumeCone`` function. 
             ~~~~
             #include <iostream>
             using namespace std;
@@ -144,7 +155,7 @@ assess what you have learned in this chapter.
         .. activecode:: functions_p3_ac_a
             :language: cpp
 
-            Below is one way to write the sineDegrees function.
+            Below is one way to write the ``sineDegrees`` function.
             ~~~~
             #include <iostream>
             #include <cmath>
@@ -187,7 +198,7 @@ assess what you have learned in this chapter.
         .. activecode:: functions_p4_ac_a
             :language: cpp
 
-            Below is one way to write the finalPrice function.
+            Below is one way to write the ``finalPrice`` function.
             ~~~~
             #include <iostream>
             using namespace std;
@@ -229,7 +240,7 @@ assess what you have learned in this chapter.
         .. activecode:: functions_p5_ac_a
             :language: cpp
 
-            Below is one way to write the code to calculate the hypotenuse of a right triangle. 
+            Below is one way to write the ``sumOfSquares`` and ``root`` functions. 
             ~~~~
             #include <iostream> 
             #include <math.h>
@@ -259,7 +270,7 @@ assess what you have learned in this chapter.
         .. activecode:: functions_p6_ac_q
             :language: cpp
 
-            The chickens from the previous chapter are infuriated.  Construct a function, 'eatMore', that prints "Eat" on the first line, "More" on the second line, and the name of the passed animal on the fourth line, followed by an exclamation point.  
+            The chickens from the previous chapter are infuriated.  Construct a function, ``eatMore``, that prints "Eat" on the first line, "More" on the second line, and the name of the passed animal on the fourth line, followed by an exclamation point.  
             ~~~~
             #include <iostream> 
             using namespace std;
@@ -277,7 +288,7 @@ assess what you have learned in this chapter.
         .. activecode:: functions_p6_ac_a
             :language: cpp
 
-            Below is one way to write the eatMore function.
+            Below is one way to write the ``eatMore`` function.
             ~~~~
             #include <iostream> 
             using namespace std;
@@ -321,7 +332,7 @@ assess what you have learned in this chapter.
         .. activecode:: functions_p7_ac_a
             :language: cpp
 
-            Below is onw way to write the printAmount function.
+            Below is onw way to write the ``printAmount`` function.
             ~~~~
             #include <iostream>
             using namespace std;
@@ -360,7 +371,7 @@ assess what you have learned in this chapter.
         .. activecode:: functions_p8_ac_a
             :language: cpp
 
-            Below is one way to write and call the conditionalProb function.
+            Below is one way to write and call the ``conditionalProb`` function.
             ~~~~
             #include <iostream>
             using namespace std;
@@ -372,7 +383,6 @@ assess what you have learned in this chapter.
             
             int main () {
                 double pSnow = 0.14;
-                double pSnowday = 0.04;
                 double pBoth = 0.08;
                 conditionalProb(pSnow, pBoth);
             } //main
@@ -385,7 +395,7 @@ assess what you have learned in this chapter.
         .. activecode:: functions_p2_ac_q
             :language: cpp
 
-            Your final grade is determined by a midterm component (each midterm is worth 20% of the grade) and a final component. In order to avoid any discrepancies with students who's grades are on the fence, your teacher follows this strict grading scale: 
+            Your final grade is determined by a midterm component (each midterm is worth 20% of the grade) and a final component that is worth 60% of the grade. In order to avoid any discrepancies with students who's grades are on the fence, your teacher follows this strict grading scale: 
             [0%,60%) = F, [60%, 70%) = D, [70%, 80%) = C, [80%, 90%) = B and [90%, 100%] = A. He does not round until the very end.  
             Construct a function, ``finalGrade``, that determines a student's final grade percentage according to this grading scheme and prints the result.
             ~~~~
@@ -399,14 +409,18 @@ assess what you have learned in this chapter.
         .. activecode:: functions_p2_ac_a
             :language: cpp
 
-            Below is one way to construct the finalGrade function. 
+            Below is one way to construct the ``finalGrade`` function. 
             ~~~~
             #include <iostream>
             using namespace std;
 
             void finalGrade (double m1, double m2, double f) {
                 double m_comp = m1 * 0.2 + m2 * 0.2;
-                double f_comp = f * 0.06;
+                double f_comp = f * 0.6;
                 double final_grade = m_comp + f_comp;
                 cout << int(final_grade);
+            }
+
+            int main() {
+                finalGrade(80,70,80);
             }
