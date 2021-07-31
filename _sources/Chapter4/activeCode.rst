@@ -17,18 +17,20 @@ assess what you have learned in this chapter.
          ~~~~
          #include <iostream>
          using namespace std;
-
-         x = 8;
-         y = 8;
          
-         if (x % 2 == 0) {
-             cout << "THE TEAM";
-         }
-         else if (x >= y) {
-             cout << "THE TEAM";
-         }
-         else if (y >= x) {
-             cout <<< "THE TEAM";
+         int main() {
+            int x = 8;
+            int y = 8;
+            
+            if (x % 2 == 0) {
+                cout << "THE TEAM";
+            }
+            else if (x >= y) {
+                cout << "THE TEAM";
+            }
+            else if (y >= x) {
+                cout << "THE TEAM";
+            }
          }
 
    .. tab:: Answer
@@ -42,44 +44,25 @@ assess what you have learned in this chapter.
          ~~~~
          #include <iostream>
          using namespace std;
-
-         x = 8;
-         y = 8;
-         
-         if (x % 2 == 0) {
-             cout << "THE TEAM" << endl;
+         int main(){
+            int x = 8;
+            int y = 8;
+            
+            if (x % 2 == 0) {
+                cout << "THE TEAM" << endl;
+            }
+            if (x >= y) {
+                cout << "THE TEAM" << endl;
+            }
+            if (y >= x) {
+                cout <<< "THE TEAM" << endl;
+            }
          }
-         if (x >= y) {
-             cout << "THE TEAM" << endl;
-         }
-         if (y >= x) {
-             cout <<< "THE TEAM" << endl;
-         }
 
 
-.. activecode:: cond_rec_a2
-    :language: cpp
-
-    You are part of a class where everyone passes, but it's very hard
-    to pass with an A.  Fix the function so it prints your letter grade 
-    according to this scheme.  [0, 50) = C, [50, 85) = B, and [85, 100] = A.
-    ~~~~
-    #include <iostream>
-    using namespace std;
-
-    string whichDoor (double grade) {
-        s = "";
-        if (grade < 50) {
-            s = "C";
-        }
-        if (grade < 85) {
-            s = "B";
-        }
-        if (grade >= 85) {
-            s = "A";
-        }
-        cout << s;
-    }
+.. selectquestion:: cond_rec_a2_sq
+    :fromid: cond_rec_a2, cond_rec_a2_pp
+    :toggle:
 
 
 .. tabbed:: cond_rec_a3
@@ -142,20 +125,9 @@ assess what you have learned in this chapter.
          }
 
 
-.. activecode:: cond_rec_4
-    :language: cpp
-
-    Finish the code below so that it prints true if ``x`` is even
-    and false if ``x`` is odd.
-    ~~~~
-    #include <iostream>
-    using namespace std;
-
-    void is_even (int num) {
-        if (num % 2 == 0) {
-            cout << true;
-        }
-    }
+.. selectquestion:: cond_rec_a4_sq
+    :fromid: cond_rec_a4, cond_rec_a4_pp
+    :toggle: 
 
 
 .. tabbed:: cond_rec_a5
@@ -204,17 +176,9 @@ assess what you have learned in this chapter.
          }
 
 
-.. activecode:: cond_rec_a6
-    :language: cpp
-
-    Write the function ``greaterThan`` that prints true
-    if the first ``double`` argument is greater than the 
-    second ``double`` argument.  Be sure to include any
-    necessary headers.
-    ~~~~
-    void greaterThan () {
-        
-    }
+.. selectquestion:: cond_rec_a6_sq
+    :fromid: cond_rec_a6, cond_rec_a6_pp
+    :toggle:
 
 
 .. tabbed:: cond_rec_a7
@@ -229,6 +193,9 @@ assess what you have learned in this chapter.
          should not do anything since it's good vibes only.  Be sure to
          include any necessary headers.
          ~~~~
+         #include <iostream>
+         using namespace std;
+
          void goodVibes (string mood) {
         
          }
@@ -242,6 +209,9 @@ assess what you have learned in this chapter.
          function to exit if there are bad vibes in the room.  Otherise,
          the function prints as directed.
          ~~~~
+         #include <iostream>
+         using namespace std;
+         
          void goodVibes (string mood) {
              if (mood == "bad") {
                  return;
@@ -250,16 +220,9 @@ assess what you have learned in this chapter.
          }
 
 
-.. activecode:: cond_rec_8
-    :language: cpp
-
-    Write the function ``exclusiveOr`` that prints true If
-    either ``a`` OR ``b`` is true, and prints false otherwise.
-    Be sure to include any necessary headers.
-    ~~~~
-    void exclusiveOr (bool a, bool b) {
-
-    }
+.. selectquestion:: cond_rec_a8_sq
+    :fromid: cond_rec_a8, cond_rec_a8_pp
+    :toggle: 
 
 
 .. tabbed:: cond_rec_a9
@@ -273,6 +236,9 @@ assess what you have learned in this chapter.
          and decrements it until eaching zero, printing the number at each 
          step of the way.  Once it reaches zero, it should print "Blastoff!"
          ~~~~
+         #include <iostream>
+         using namespace std;
+
          void countdown (int num) {
         
          }
@@ -284,6 +250,9 @@ assess what you have learned in this chapter.
 
          Below is one way to write the program.
          ~~~~
+         #include <iostream>
+         using namespace std;
+
          void countdown (int num) {
              if (num != 0){
                  cout << num << endl;
@@ -296,14 +265,6 @@ assess what you have learned in this chapter.
          }
 
 
-.. activecode:: cond_rec_a10
-    :language: cpp
-
-    Write the function ``printNegativeNum`` that asks the user
-    for a negative number.  If the user does not provide a negative
-    number, it should contine asking until the user provides one.
-    It should then print the negative number.
-    ~~~~
-    void printNegativeNum () {
-        
-    }
+.. selectquestion:: cond_rec_a10_sq
+    :fromid: cond_rec_a10, cond_rec_a10_pp
+    :toggle:

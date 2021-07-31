@@ -54,31 +54,9 @@ Coding Practice
                }
            }
 
-.. activecode:: cp_6_AC_2q
-    :language: cpp
-
-    Encapsulate the triangle printing program into a function called
-    ``printTriangle``. Generalize it so that it takes a parameter
-    ``int n`` to generate a nxn triangle. Call your function in main
-    with an input of 4, which should result in the following output:
-
-    ::
-
-        *
-        **
-        ***
-        ****
-    ~~~~
-    #include <iostream>
-    using namespace std;
-
-    void printTriangle (int n) {
-        // Write your implementation here.
-    }
-
-    int main() {
-        // Write your implementation here.
-    }
+.. selectquestion:: cp_6_AC_2q_sq
+    :fromid: cp_6_AC_2q, cp_6_AC_2q_pp
+    :toggle:
 
 .. tabbed:: cp_6_3
 
@@ -148,33 +126,9 @@ Coding Practice
                printPyramid (5);
            }
 
-.. activecode:: cp_6_AC_4q
-    :language: cpp
-    :practice: T
-
-    Write a function called ``printNumPyramid`` that prints out an ``n`` x ``n`` number pyramid.
-    An example is shown below with ``n`` equal to 5. Your code should use while loops.
-    (Hint: similar to the previous question, if you want the output to look nice, using conditionals
-    that print different amounts of spaces.)
-
-    ::
-   
-           1
-          222
-         33333
-        4444444
-       555555555
-    ~~~~
-    #include <iostream>
-    using namespace std;
-
-    void printNumPyramid (int n) {
-        // Write your implementation here.
-    }
-
-    int main() {
-        printNumPyramid (5);
-    }
+.. selectquestion:: cp_6_AC_4q_sq
+    :fromid: cp_6_AC_4q, cp_6_AC_4q_pp
+    :toggle:
 
 .. tabbed:: cp_6_5
 
@@ -246,38 +200,9 @@ Coding Practice
                }
            }
 
-.. activecode:: cp_6_AC_6q
-    :language: cpp
-    :practice: T
-
-    Write the function ``printAddTable`` which takes an ``int n`` as a parameter
-    and prints out a nxn addition table. Call your function in ``main`` with
-    "10" as the argument. Your output should look like this:
-
-    ::
-
-        0       1       2       3       4       5       6       7       8       9       10
-        1       2       3       4       5       6       7       8       9       10      11
-        2       3       4       5       6       7       8       9       10      11      12
-        3       4       5       6       7       8       9       10      11      12      13
-        4       5       6       7       8       9       10      11      12      13      14
-        5       6       7       8       9       10      11      12      13      14      15
-        6       7       8       9       10      11      12      13      14      15      16
-        7       8       9       10      11      12      13      14      15      16      17
-        8       9       10      11      12      13      14      15      16      17      18
-        9       10      11      12      13      14      15      16      17      18      19
-        10      11      12      13      14      15      16      17      18      19      20
-    ~~~~
-    #include <iostream>
-    using namespace std;
-
-    void printAddTable (int n) {
-        // Write your implementation here.
-    }
-
-    int main() {
-        // Call your function here.
-    }
+.. selectquestion:: cp_6_AC_6q_sq
+    :fromid: cp_6_AC_6q, cp_6_AC_6q_pp
+    :toggle: 
 
 .. tabbed:: cp_6_7
 
@@ -357,18 +282,9 @@ Coding Practice
                REQUIRE(isPrime (0) == 0);
            }
 
-.. activecode:: cp_6_AC_8q
-    :language: cpp
-    :practice: T
-
-    Write a program that uses a ``while`` loop to print out the alphabet from 'a' to 'z'.
-    ~~~~
-    #include <iostream>
-    using namespace std;
-
-    int main() {
-        // Write your implementation here.
-    }
+.. selectquestion:: cp_6_AC_8q_sq
+    :fromid: cp_6_AC_8q, cp_6_AC_8q_pp
+    :toggle:
 
 .. tabbed:: cp_6_9
 
@@ -424,29 +340,6 @@ Coding Practice
                }
            }
 
-.. activecode:: cp_6_AC_10q
-    :language: cpp
-    :practice: T
-
-    Write a function called ``factorial`` which takes an ``int n`` as a parameter
-    and returns ``n`` factorial. Remembers that a factorial (denoted by !) is the product of all
-    positive integers less than or equal to ``n``, so 4! is 24. Use a ``while`` loop.
-    Run and test your code!
-    ~~~~
-    #include <iostream>
-    using namespace std;
-
-    int factorial (int n) {
-        // Write your implementation here.
-    }
-    ====
-    #define CATCH_CONFIG_MAIN
-    #include <catch.hpp>
-
-    TEST_CASE("factorial function") {
-        REQUIRE(factorial (4) == 24);
-        REQUIRE(factorial (6) == 720);
-        REQUIRE(factorial (9) == 362880);
-    }
-
-
+.. selectquestion:: cp_6_AC_10q_sq
+    :fromid: cp_6_AC_10q, cp_6_AC_10q_pp
+    :toggle:
