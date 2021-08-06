@@ -44,32 +44,9 @@ Coding Practice
                Cake c = { "Mary", "blue", 3.5, false };
            } 
 
-.. activecode:: cp_9_AC_2q
-    :language: cpp
-
-    Write the function ``printCakeInfo``, which prints the cake's information in the format
-    "This is a ``color``, ``diameter`` inch diameter cake with/without icing." If ``name`` does not
-    have the value "n/a", ``printCakeInfo`` prints out "Happy birthdday ``name``! Your cake is ``color``,
-    has a ``diameter`` inch diameter, and comes with/without icing."
-    ~~~~
-    #include <iostream>
-    using namespace std;
-
-    struct Cake {
-        string name;
-        string color;
-        double diameter;
-        bool has_icing;
-    };
-
-    // Write your code for the printCakeInfo function here.
-
-    int main() {
-        Cake c1 = { "n/a", "red", 12.5, true };
-        printCakeInfo (c1);
-        Cake c2 = { "Tom", "white", 10, false };
-        printCakeInfo (c2);
-    }
+.. selectquestion:: cp_9_AC_2q_sq
+    :fromid: cp_9_AC_2q, cp_9_AC_2q_pp
+    :toggle: lock
 
 .. tabbed:: cp_9_3
 
@@ -192,77 +169,9 @@ Coding Practice
                } 
            }
 
-.. activecode:: cp_9_AC_4q
-    :language: cpp
-
-    Write the function ``changeCakeDiameter``, which takes a ``Cake`` and a ``double`` as a parameter. 
-    ``changeCakeDiameter`` then multiplies the original diameter by the double and modifies the cake
-    to have this new diameter.
-    ~~~~
-    #include <iostream>
-    using namespace std;
-
-    struct Cake {
-        string name;
-        string color;
-        double diameter;
-        bool has_icing;
-    };
-
-    void printCakeInfo (Cake c);
-    Cake makeCake ();
-
-    // Write your code for the changeCakeDiameter function here.
-
-    int main() {
-        Cake original = { "John", "green", 8.5, true };
-        changeCakeDiameter (original, 2);
-        printCakeInfo (original);
-    }
-    ====
-    void printCakeInfo (Cake c) {
-        if (c.name == "n/a") {
-            if (c.has_icing) { 
-                cout << "This is a " << c.color << "," << c.diameter << " inch diameter cake with icing." << endl;
-            } 
-            else {
-                cout << "This is a " << c.color << "," << c.diameter << " inch diameter cake without icing." << endl;
-            }
-        } 
-        else {
-            if (c.has_icing) { 
-                cout << "Happy birthday " << c.name << "! Your cake is " << c.color << ", has a " << c.diameter << " inch diameter, and comes with icing." << endl;
-            } 
-            else {
-                cout << "Happy birthday " << c.name << "! Your cake is " << c.color << ", has a " << c.diameter << " inch diameter, and comes without icing." << endl;
-            }
-        } 
-    }
-
-    Cake makeCake () {
-        Cake input;
-        string name, color;
-        double diameter;
-        char icing;
-        cout << "Name: ";
-        cin >> name;
-        input.name = name;
-        cout << "Color: ";
-        cin >> color;
-        input.color = color;
-        cout << "Diameter: ";
-        cin >> diameter;
-        input.diameter = diameter;
-        cout << "Icing? (y/n) ";
-        cin >> icing;
-        if (icing == 'y') {
-            input.has_icing = true;
-        }
-        else {
-            input.has_icing = false; 
-        } 
-        return input;
-    }
+.. selectquestion:: cp_9_AC_4q_sq
+    :fromid: cp_9_AC_4q, cp_9_AC_4q_pp
+    :toggle: lock
 
 .. tabbed:: cp_9_5
 
@@ -421,19 +330,9 @@ Coding Practice
                 return input;
             }
 
-.. activecode:: cp_9_AC_6q
-    :language: cpp
-
-    Write the struct ``Shirt``, which has the instance variables color and size.
-    ~~~~
-    #include <iostream>
-    using namespace std;
-
-    // Write your code for the struct Shirt here.
-
-    int main () {
-        Shirt t = { "blue", 'L' };
-    }
+.. selectquestion:: cp_9_AC_6q_sq
+    :fromid: cp_9_AC_6q, cp_9_AC_6q_pp
+    :toggle: lock
 
 .. tabbed:: cp_9_7
 
@@ -476,21 +375,9 @@ Coding Practice
                Pants p = { 'S', "denim" };
            } 
 
-.. activecode:: cp_9_AC_8q
-    :language: cpp
-
-    Write the struct ``Outfit``, which is a nested structure that has a ``Shirt``, ``Pants``, and has_hat.
-    ~~~~
-    #include <iostream>
-    using namespace std;
-
-    // Write your code for the struct Outfit here.
-
-    int main () {
-        Shirt t = { "blue", 'L' };
-        Pants p = { 'S', "denim" };
-        Outfit o = { t, p, true };
-    }
+.. selectquestion:: cp_9_AC_8q_sq
+    :fromid: cp_9_AC_8q, cp_9_AC_8q_pp
+    :toggle: lock
 
 .. tabbed:: cp_9_AC_9q
 
@@ -578,44 +465,6 @@ Coding Practice
                printOutfit (o);
            } 
 
-.. activecode:: cp_9_AC_10q
-    :language: cpp
-
-    Write the ``changeShirts`` and ``changePants`` functions, which both take an ``Outfit`` as a parameter. ``changeShirts`` also
-    takes a ``Shirt`` as a parameter and ``changePants`` also takes a ``Pants`` as a parameter. Each function modifies the ``Outfit``
-    and changes the shirt or pants to the new input.
-    ~~~~
-    #include <iostream>
-    using namespace std;
-
-    struct Shirt {
-        string color;
-        char size;
-    };
-
-    struct Pants {
-        char size;
-        string material;
-    };
-
-    struct Outfit {
-        Shirt s;
-        Pants p;
-        bool has_hat;
-    }   
-
-    // Write your code for the changeShirts function here.
-
-    // Write your code for the changePants function here.
-
-    int main() {
-        Shirt t = { "blue", 'L' };
-        Pants p = { 'S', "denim" };
-        Outfit o = { t, p, true };
-        printOutfit (o);
-        Shirt newShirt = { "red", 'M' };
-        Pants newPants = { 'M', "khakis" };
-        changeShirts (o, newShirt);
-        changePants (o, newPants);
-        printOutfit (o);
-    } 
+.. selectquestion:: cp_9_AC_10q_sq
+    :fromid: cp_9_AC_10q, cp_9_AC_10q_pp
+    :toggle: lock

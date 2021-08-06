@@ -206,7 +206,7 @@ Coding Practice
             =====
                 if (num1 % factor == 0 && num2 % factor == 0) {
             =====
-                if (num1 % factor == 0 || num2 % factor ==0) { #paired
+                if (num1 % factor == 0 || num2 % factor == 0) { #paired
             =====
                     return true;
             =====
