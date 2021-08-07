@@ -56,7 +56,7 @@ Coding Practice
 
 .. selectquestion:: cp_6_AC_2q_sq
     :fromid: cp_6_AC_2q, cp_6_AC_2q_pp
-    :toggle:
+    :toggle: lock
 
 .. tabbed:: cp_6_3
 
@@ -128,7 +128,7 @@ Coding Practice
 
 .. selectquestion:: cp_6_AC_4q_sq
     :fromid: cp_6_AC_4q, cp_6_AC_4q_pp
-    :toggle:
+    :toggle: lock
 
 .. tabbed:: cp_6_5
 
@@ -202,7 +202,7 @@ Coding Practice
 
 .. selectquestion:: cp_6_AC_6q_sq
     :fromid: cp_6_AC_6q, cp_6_AC_6q_pp
-    :toggle: 
+    :toggle: lock
 
 .. tabbed:: cp_6_7
 
@@ -284,7 +284,7 @@ Coding Practice
 
 .. selectquestion:: cp_6_AC_8q_sq
     :fromid: cp_6_AC_8q, cp_6_AC_8q_pp
-    :toggle:
+    :toggle: lock
 
 .. tabbed:: cp_6_9
 
@@ -342,4 +342,4 @@ Coding Practice
 
 .. selectquestion:: cp_6_AC_10q_sq
     :fromid: cp_6_AC_10q, cp_6_AC_10q_pp
-    :toggle:
+    :toggle: lock

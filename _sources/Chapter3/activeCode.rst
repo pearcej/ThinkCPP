@@ -49,7 +49,7 @@ assess what you have learned in this chapter.
 
 .. selectquestion:: functions_a2_sq
     :fromid: functions_a2, functions_a2_pp
-    :toggle:
+    :toggle: lock
 
 
 .. tabbed:: functions_a3
@@ -99,7 +99,7 @@ assess what you have learned in this chapter.
 
 .. selectquestion:: functions_a4_sq
     :fromid: functions_a4, functions_a4_pp
-    :toggle:
+    :toggle: lock
 
 
 .. tabbed:: functions_a5
@@ -146,7 +146,7 @@ assess what you have learned in this chapter.
 
 .. selectquestion:: functions_a6_sq
     :fromid: functions_a6, functions_a6_pp
-    :toggle:
+    :toggle: lock 
 
 
 .. tabbed:: functions_a7
@@ -189,7 +189,7 @@ assess what you have learned in this chapter.
 
 .. selectquestion:: functions_a8_sq
     :fromid: functions_a8, functions_a8_pp
-    :toggle:
+    :toggle: lock 
 
 
 .. tabbed:: functions_a9
@@ -234,4 +234,4 @@ assess what you have learned in this chapter.
 
 .. selectquestion:: functions_a10_sq
     :fromid: functions_a10, functions_a10_pp
-    :toggle:
+    :toggle: lock

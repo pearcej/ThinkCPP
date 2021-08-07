@@ -62,7 +62,7 @@ assess what you have learned in this chapter.
 
 .. selectquestion:: cond_rec_a2_sq
     :fromid: cond_rec_a2, cond_rec_a2_pp
-    :toggle:
+    :toggle: lock 
 
 
 .. tabbed:: cond_rec_a3
@@ -127,7 +127,7 @@ assess what you have learned in this chapter.
 
 .. selectquestion:: cond_rec_a4_sq
     :fromid: cond_rec_a4, cond_rec_a4_pp
-    :toggle: 
+    :toggle: lock
 
 
 .. tabbed:: cond_rec_a5
@@ -178,7 +178,7 @@ assess what you have learned in this chapter.
 
 .. selectquestion:: cond_rec_a6_sq
     :fromid: cond_rec_a6, cond_rec_a6_pp
-    :toggle:
+    :toggle: lock
 
 
 .. tabbed:: cond_rec_a7
@@ -222,7 +222,7 @@ assess what you have learned in this chapter.
 
 .. selectquestion:: cond_rec_a8_sq
     :fromid: cond_rec_a8, cond_rec_a8_pp
-    :toggle: 
+    :toggle: lock
 
 
 .. tabbed:: cond_rec_a9
@@ -267,4 +267,4 @@ assess what you have learned in this chapter.
 
 .. selectquestion:: cond_rec_a10_sq
     :fromid: cond_rec_a10, cond_rec_a10_pp
-    :toggle:
+    :toggle: lock
