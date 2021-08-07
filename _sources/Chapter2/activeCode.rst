@@ -45,7 +45,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
 .. selectquestion:: VARS_a2_sq
    :fromid: VARS_a2, VARS_a2_p
-   :toggle:
+   :toggle: lock
 
 
 .. tabbed:: VARS_a3
@@ -86,7 +86,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
 .. selectquestion:: VARS_a4_sq
    :fromid: VARS_a4, VARS_a4_p
-   :toggle:
+   :toggle: lock
 
 
 .. tabbed:: VARS_a5
@@ -131,7 +131,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
 .. selectquestion:: VARS_a6_sq
    :fromid: VARS_a6, VARS_a6_p
-   :toggle:
+   :toggle: lock
 
 
 .. tabbed:: VARS_a7
@@ -166,7 +166,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
 .. selectquestion:: VARS_a8_sq
    :fromid: VARS_a8, VARS_a8_p
-   :toggle:
+   :toggle: lock
 
 
 .. tabbed:: VARS_a9
@@ -204,4 +204,4 @@ Answer the following **Activecode** questions to assess what you have learned in
 
 .. selectquestion:: VARS_a10_sq
    :fromid: VARS_a10, VARS_a10_p
-   :toggle:
+   :toggle: lock

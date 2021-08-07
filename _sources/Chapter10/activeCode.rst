@@ -43,23 +43,9 @@ Answer the following **Activecode** questions to assess what you have learned in
          }
 
 
-.. activecode::  vectors_a2
-   :language: cpp
-
-   Fix the function below so that it returns how many even numbers are in ``nums``.
-   ~~~~
-   #include <iostream>
-   #include <vector>
-   using namespace std;
-
-   int evenCount (const vector<int>& vec) {
-       for (int i = 0; i < vec.size(); i++) {
-           if (i % 2 == 0) {
-               count = count + 1;
-           }
-       }
-       return count;
-   }
+.. selectquestion:: vectors_a2_sq
+    :fromid: vectors_a2, vectors_a2_pp
+    :toggle: lock
 
 
 .. tabbed:: vectors_a3
@@ -115,26 +101,9 @@ Answer the following **Activecode** questions to assess what you have learned in
          }
 
 
-.. activecode::  vectors_a4
-   :language: cpp
-
-   Someone could have COVID19 if their temperature is above 99.9 degrees Fahrenheit.  Finish 
-   the code below so that it counts how many students in the class may have been exposed.
-   ~~~~
-   #include <iostream>
-
-
-   using namespace std;
-
-   int main () {
-       vector<double> temps = {98.6, 97.8, 100.3, 97.2, 98.7, 97.8, 99.8, 96.9, 98.2, 99.1, 99.9};
-
-       int covid_count = 0;
-       for (int i = 0; i < temps.size(); i++) {
-           
-
-       }
-   }
+.. selectquestion:: vectors_a4_sq
+    :fromid: vectors_a4, vectors_a4_pp
+    :toggle: lock
 
 
 .. tabbed:: vectors_a5
@@ -183,15 +152,9 @@ Answer the following **Activecode** questions to assess what you have learned in
          }
 
 
-.. activecode::  vectors_a6
-   :language: cpp
-
-   Write the function ``endsEven`` that takes a vector and removes elements from the end of the vector until
-   it ends with an even number.
-   ~~~~
-   #include <iostream>
-   #include <vector>
-   using namespace std;
+.. selectquestion:: vectors_a6_sq
+    :fromid: vectors_a6, vectors_a6_pp
+    :toggle: lock
 
 
 .. tabbed:: vectors_a7
@@ -239,17 +202,9 @@ Answer the following **Activecode** questions to assess what you have learned in
          }
          
 
-.. activecode::  vectors_a8
-   :language: cpp
-
-   Write the function ``randomNums`` that takes two integers: ``num`` which is the number of random numbers
-   you wish to generate, and ``max``, which is the maximum value of random number you wish to generate.  Your
-   function should return a vector of ``num`` integers that are between 1 and ``max``, inclusive.
-   ~~~~
-   #include <iostream>
-   #include <cstdlib>
-   #include <vector>
-   using namespace std;
+.. selectquestion:: vectors_a8_sq
+    :fromid: vectors_a8, vectors_a8_pp
+    :toggle: lock
 
 
 .. tabbed:: vectors_a9
@@ -287,15 +242,9 @@ Answer the following **Activecode** questions to assess what you have learned in
          }
 
 
-.. activecode::  vectors_a10
-   :language: cpp
-
-   Write the function ``hundyBundy`` that returns a count of all numbers in the passed vector
-   ``vec`` that are divisible by 100.
-   ~~~~
-   #include <iostream>
-   #include <vector>
-   using namespace std;
+.. selectquestion:: vectors_a10_sq
+    :fromid: vectors_a10, vectors_a10_pp
+    :toggle: lock
 
 
 .. tabbed:: vectors_a11
@@ -337,16 +286,6 @@ Answer the following **Activecode** questions to assess what you have learned in
          }
 
 
-.. activecode::  vectors_a12
-   :language: cpp
-
-   Write the function ``weird_print`` that prints the first half of a vector of integers in reverse order
-   and then prints the second half in the order present in the vector.
-   If we had ``vec = {1,2,3,4,5,6}``
-   we would print ``3 2 1 4 5 6``.
-   You can assume the size of the vector will always be even.
-   ~~~~
-   #include <iostream>
-   #include <vector>
-   using namespace std;
-   
+.. selectquestion:: vectors_a12_sq
+    :fromid: vectors_a12, vectors_a12_pp
+    :toggle: lock
