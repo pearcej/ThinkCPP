@@ -82,6 +82,7 @@ Coding Practice
 .. datafile:: speech.txt
    :fromfile: speech.txt
    :hide:
+
 .. tabbed:: cp_15_2
 
     .. tab:: Question
@@ -437,6 +438,7 @@ Coding Practice
 .. datafile:: shrimp.txt
    :fromfile: shrimp.txt
    :hide:
+
 .. tabbed:: cp_15_8
 
     .. tab:: Question
