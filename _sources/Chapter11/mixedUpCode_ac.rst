@@ -7,7 +7,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
     .. tab:: Question
 
-     .. activecode:: mucp_11_1_q
+     .. activecode:: mucp_11_1_ac_q
         :language: cpp
 
         Suppose you have the following code. Construct a block of code that would make the print function into a member function.
@@ -33,7 +33,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
     .. tab:: Answer
 
-        .. activecode:: mucp_11_1_a
+        .. activecode:: mucp_11_1_ac_a
             :language: cpp
             
             Below is one way to construct the code block

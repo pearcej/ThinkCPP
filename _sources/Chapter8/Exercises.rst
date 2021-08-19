@@ -411,5 +411,3 @@ Multiple Choice Exercises
     - D is the epitome of Star Wars!
 
       - Try Again! Pay attention to the way in which user input is recieved.
-      
-
