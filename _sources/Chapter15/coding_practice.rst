@@ -83,40 +83,9 @@ Coding Practice
    :fromfile: speech.txt
    :hide:
 
-.. tabbed:: cp_15_2
-
-    .. tab:: Question
-
-        Write a program that prompts a user for the name of an input file
-        and for an integer ``n``. Then open the file and output the first 
-        ``n`` lines of the file with each line reversed. For example,
-        if you read in the line "hello world" you should print out
-        "dlrow olleh" to the terminal. Include proper file error checking.
-
-        .. activecode:: cp_15_AC_2q
-           :language: cpp
-           :practice: T
-           :datafile: poem.txt
-           :stdin: speech.txt
-
-           #include <iostream>
-           #include <fstream>
-           using namespace std;
-
-           // Write your code here.
-
-    .. tab:: Input File
-
-        Below are the contents of the input file.
-
-        ::
-
-            We choose to go to the Moon. We choose to go to the Moon...
-            We choose to go to the Moon in this decade and do the other things, 
-            not because they are easy, but because they are hard; because that goal 
-            will serve to organize and measure the best of our energies and skills, 
-            because that challenge is one that we are willing to accept, one we are 
-            unwilling to postpone, and one we intend to win, and the others, too.
+.. selectquestion:: cp_15_AC_2_sq
+    :fromid: cp_15_AC_2q, cp_15_AC_2q_pp
+    :toggle: lock
 
 .. datafile:: heights.txt
    :fromfile: heights.txt
@@ -200,37 +169,9 @@ Coding Practice
    :fromfile: powers.txt
    :hide:
 
-.. activecode:: cp_15_AC_4q
-    :language: cpp
-    :practice: T
-    :datafile: powers.txt
-
-    Write a program that prompts a user for an integer ``n`` and print the first ``n``
-    powers of 2 to an output file called ``powers.txt``. Include proper file error checking.
-    To simulate what your output file would look like, the contents of your output file 
-    will be displayed on the terminal.
-    ~~~~
-    #include <iostream>
-    #include <fstream>
-    using namespace std;
-
-    int main() { 
-        // Write your code here.
-
-
-
-
-
-        // Do not modify the code below
-        ifstream student_output("powers.txt");
-        if (!student_output.good()) {
-            cout << "Error opening student's output." << endl;
-        }
-        string answer;
-        while (getline(student_output, answer)) {
-            cout << answer << endl;
-        }
-    }
+.. selectquestion:: cp_15_AC_4_sq
+    :fromid: cp_15_AC_4q, cp_15_AC_4q_pp
+    :toggle: lock
 
 .. datafile:: message.txt
    :fromfile: message.txt
@@ -329,37 +270,9 @@ Coding Practice
    :fromfile: dream.txt
    :hide:        
 
-.. tabbed:: cp_15_6
-
-    .. tab:: Question
-
-        Write a program that takes an input file called "dream.txt" and outputs
-        the number of times the string "you" appears in the file to the terminal.
-        Include proper file error checking.
-
-        .. activecode:: cp_15_AC_6q
-           :language: cpp
-           :practice: T
-           :datafile: dream.txt
-
-           #include <iostream>
-           #include <fstream>
-           using namespace std;
-
-           // Write your code here.
-
-    .. tab:: Input File
-
-        Below are the contents of the input file.
-
-        ::
-
-            Have you ever had a dream that you, 
-            um, you had, your, you- you could, 
-            you’ll do, you- you wants, you, you 
-            could do so, you- you’ll do, you could- 
-            you, you want, you want them to do you 
-            so much you could do anything?
+.. selectquestion:: cp_15_AC_6_sq
+    :fromid: cp_15_AC_6q, cp_15_AC_6q_pp
+    :toggle: lock
 
 .. datafile:: class_data.txt
    :fromfile: class_data.txt
@@ -439,35 +352,9 @@ Coding Practice
    :fromfile: shrimp.txt
    :hide:
 
-.. tabbed:: cp_15_8
-
-    .. tab:: Question
-
-        Write a program that takes an input file called "shrimp.txt" and outputs
-        the quote with "shrimp" replaced by a word that the user inputs to the terminal.
-        Include proper file error checking.
-
-        .. activecode:: cp_15_AC_8q
-           :language: cpp
-           :practice: T
-           :datafile: shrimp.txt
-
-           #include <iostream>
-           #include <fstream>
-           using namespace std;
-
-           // Write your code here.
-
-    .. tab:: Input File
-
-        Below are the contents of the input file.
-
-        ::
-
-            There's pineapple shrimp, lemon shrimp, coconut shrimp, 
-            pepper shrimp, shrimp soup, shrimp stew, shrimp salad, 
-            shrimp and potatoes, shrimp burger, shrimp sandwich. 
-            That- that's about it.
+.. selectquestion:: cp_15_AC_8_sq
+    :fromid: cp_15_AC_8q, cp_15_AC_8q_pp
+    :toggle: lock
 
 .. datafile:: mult_table.txt
    :fromfile: mult_table.txt
@@ -535,28 +422,6 @@ Coding Practice
                }
            }
 
-.. activecode:: cp_15_AC_10q
-    :language: cpp
-    :practice: T
-
-    Write a program that computes the product of two matrices.
-    Take a look at the example below. Two find the product of two
-    matrices, take the ith row from the first matrix and the jth column
-    from the second matrix, find the summation of the product of each component,
-    and that's the value that goes into the (i, j) location of the new matrix.
-    The product of an mxn and an nxp matrix is an mxp matrix.
-    ~~~~
-    #include <iostream>
-    #include <fstream>
-    using namespace std;
-
-    int main() { 
-        /*
-          2x3 matrix A  X 3x2 matrix B                2x2 matrix C      
-        [ a    b    c ]    [ g    h ]       [ ag + bi + cl    ah + bj + cm ]
-        [ d    e    f ]    [ i    j ]   =   [ dg + ei + fl    ah + ej + fm ]
-                           [ l    m ]
-        */
-        
-        // Write your code here.
-    }
+.. selectquestion:: cp_15_AC_10_sq
+    :fromid: cp_15_AC_10q, cp_15_AC_10q_pp
+    :toggle: lock
