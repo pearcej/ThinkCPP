@@ -16,3 +16,4 @@ Contributor List
 * Richard Wang - Added interactive questions to the ebook
 * Sravani Battula - Added interactive questions to the ebook
 * Haochen Yu - Added interactive questions to the ebook
+* Charles Alford IV - Added interactive questions to the ebook

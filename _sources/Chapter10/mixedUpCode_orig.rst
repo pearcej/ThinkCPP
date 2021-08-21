@@ -9,9 +9,9 @@ Answer the following **Mixed-Up Code** questions to assess what you have learned
    :adaptive:
    :noindent:
 
-   Construct a block of code that changes the first element of <code>vec</code> to a 6,
-   multiplies the third element of <code>vec</code> by 2, and increments the last element 
-   of <code>vec</code> by 1 (in that order).  This should work no matter what <code>vec</code> is.
+   Construct a block of code that changes the first element of ``vec`` to a 6,
+   multiplies the third element of ``vec`` by 2, and increments the last element 
+   of ``vec`` by 1 (in that order).  This should work no matter what ``vec`` is.
    -----
    vec[0] = 6;
    =====
@@ -30,15 +30,14 @@ Answer the following **Mixed-Up Code** questions to assess what you have learned
    vec[last]++;
 
 
-
 .. parsonsprob:: vectors_p2
    :numbered: left
    :adaptive:
    :noindent:
 
-   Construct a block of code that creates a vector called <code>digs</code> whose elements are
-   7, 8, 7, 8.  Then access elements to change the <code>digs</code> to contain the elements
-   7, 4, 7, 4.  <b>Important</b>: Change the <code>8</code>'s to <code>4</code>'s in order of 
+   Construct a block of code that creates a vector called ``digs`` whose elements are
+   7, 8, 7, 8.  Then access elements to change the ``digs`` to contain the elements
+   7, 4, 7, 4.  **Important**: Change the 8's to 4's in order of 
    increasing index.
 
    -----
@@ -64,9 +63,9 @@ Answer the following **Mixed-Up Code** questions to assess what you have learned
    :adaptive:
    :noindent:
 
-   Construct a block of code that creates a vector called <code>nums</code> whose elements are five <code>1</code>'s.
-   Then make a copy of this vector called <code>digits</code>, and use vector operations to change
-   digits to <code>{1, 2, 3}</code>.
+   Construct a block of code that creates a vector called ``nums`` whose elements are five 1's.
+   Then make a copy of this vector called ``digits``, and use vector operations to change
+   digits to ``{1, 2, 3}``.
 
    -----
    vector<int> nums (5, 1);
@@ -95,7 +94,7 @@ Answer the following **Mixed-Up Code** questions to assess what you have learned
    :adaptive:
    :noindent:
 
-   Construct a block of code that loops over a vector called <code>numbers</code>
+   Construct a block of code that loops over a vector called ``numbers``
    and transforms the vector so each element is doubled.
    -----
    vector<int> numbers = {1, 2, 3, 4, 5};
@@ -120,21 +119,10 @@ Answer the following **Mixed-Up Code** questions to assess what you have learned
    :adaptive:
    :noindent:
 
-   Suppose you have the vector
+   Suppose you have the vector ``vector<string> words = {"car", "cat", "switch", "princess"}``
+   Construct a block of code that transforms the vector to 
+   ``vector<string> words = {"cAr", "cAt", "switch", "mArio"}``
 
-   <pre> <code>
-
-      vector<string> words = {"car", "cat", "switch", "princess"};
-
-   </code> </pre>
-
-   Construct a block of code that transforms the vector to
-
-   <pre> <code>
-
-      vector<string> words = {"cAr", "cAt", "switch", "mArio"}
-
-   </code> </pre>
    -----
    words.pop_back();
    =====
@@ -168,7 +156,7 @@ Answer the following **Mixed-Up Code** questions to assess what you have learned
 
    Suppose you run Club Keno, and you are in charge of picking the 20
    random numbered balls between 1 and 80.  Construct a block of code that
-   chooses these random numbers, then saves them to a vector called <code>keno</code>.
+   chooses these random numbers, then saves them to a vector called ``keno``.
    -----
    vector<int> keno = {};
    =====
@@ -195,13 +183,7 @@ Answer the following **Mixed-Up Code** questions to assess what you have learned
    :noindent:
    
    Suppose <code>album</code> has already been defined as
-
-   <pre> <code>
-
-      vector<string> album = {"imagine", "needy", "NASA", "bloodline", "fake smile", "bad idea", "make up", "ghostin", "in my head", "7 rings", "thank u, next", "break up with your girlfriend, i'm bored"}
-
-   </code> </pre>
-
+   ``vector<string> album = {"imagine", "needy", "NASA", "bloodline", "fake smile", "bad idea", "make up", "ghostin", "in my head", "7 rings", "thank u, next", "break up with your girlfriend, i'm bored"}``
    Construct a block of code that counts how many songs in <code>album</code> start with b.
    -----
    count = 0
@@ -230,14 +212,8 @@ Answer the following **Mixed-Up Code** questions to assess what you have learned
    :noindent:
    
    Suppose you have the following two vectors to describe the weekly forecast
-
-   <pre> <code>
-
-      vector<double> temps = {82.0, 76.8, 74.3, 58.8, 79.2, 73.4, 80.1}
-      vector<double> precip = {0.00, 0.30, 0.60, 0.90, 0.10, 0.20, 0.80}
-
-   </code> </pre>
-
+   ``vector<double> temps = {82.0, 76.8, 74.3, 58.8, 79.2, 73.4, 80.1}``
+   ``vector<double> precip = {0.00, 0.30, 0.60, 0.90, 0.10, 0.20, 0.80}``
    Your family will go to the beach if the temperature at least 75 degrees and the chance
    of precipitation is less than 50%.  Construct a block of code that counts how many days
    your family can hit the beach on your vacation.
@@ -265,16 +241,10 @@ Answer the following **Mixed-Up Code** questions to assess what you have learned
    :adaptive:
    :noindent:
    
-   Suppose you have the following vector <code>nouns</code>
-
-   <pre> <code>
-
-      vector<string> nouns = {"cereal", "Cocoa Puffs", "Mario", "luigi", "Aerosmith"};
-
-   </code> </pre>
-
-   Construct a block of code that creates a vector of the <b>proper</b> nouns in <code>nouns</code>.
-   Use the <code>isupper</code> function to check if a letter is uppercase.
+   Suppose you have the following vector ``nouns``,
+   ``vector<string> nouns = {"cereal", "Cocoa Puffs", "Mario", "luigi", "Aerosmith"}``
+   Construct a block of code that creates a vector of the **proper** nouns in ``nouns``.
+   Use the ``isupper`` function to check if a letter is uppercase.
    -----
    vector<string> proper = {};
    =====
@@ -301,9 +271,12 @@ Answer the following **Mixed-Up Code** questions to assess what you have learned
    :adaptive:
    :noindent:
    
-   Suppose you have the following function <code>howMany</code> and vector <code>exclamations</code>
+   Suppose you have the following function ``howMany`` and vector ``exclamations``
+   Construct a block of code that counts how many times ".", "!", and "?" occur in ``exclamations``.
+   Save the counts to a vector with "." count as the first element, "!" count as the second, and "?" count as the third.
+   Put the necessary blocks of code in the correct order.
 
-   <pre> <code>
+   ::
 
         int howMany (const vector<string>& vec, char let) {
             int count = 0;
@@ -319,10 +292,6 @@ Answer the following **Mixed-Up Code** questions to assess what you have learned
 
         vector<string> excl = {"what?!", "how???", "fine!", "STOP.", "yay!!!!!", "ugh...!"};
 
-   </code> </pre>
-
-   Construct a block of code that counts how many times ".", "!", and "?" occur in <code>exclamations</code>.
-   Save the counts to a vector with "." count as the first element, "!" count as the second, and "?" count as the third.
    -----
    vector<char> punc = {'.', '!', '?'};
    vector<int> counts = {};
