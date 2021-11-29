@@ -151,6 +151,35 @@ capable of storing fractional values.
 
    ::
 
+      int num1 = 10;
+      int num2 = 40.1;
+      cout << num2 / num1;
+
+   What is printed to the terminal?
+
+   - :4: Correct!
+     :4.01: Remember, this is an integer division!
+     :.*: Try again!
+
+
+.. fillintheblank:: operators_3.4
+
+   ::
+
+      int num1 = 10;
+      int num2 = 39.9;
+      cout << num2 / num1;
+
+   What is printed to the terminal?
+
+   - :3: Correct!
+     :3.99: Remember, this is an integer division!
+     :.*: Try again!
+
+.. fillintheblank:: operators_3.5
+
+   ::
+
       int num1 = 7;
       int num2 = 8;
       cout << "Decimal:" << num1 / num2;

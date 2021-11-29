@@ -1,7 +1,7 @@
 Recursion
 ---------
 
-I mentioned in the last chapter that it is legal for one function to
+What mentioned in the last chapter is that it is legal for one function to
 call another, and we have seen several examples of that. I neglected to
 mention that it is also legal for a function to call itself. It may not
 be obvious why that is a good thing, but it turns out to be one of the
@@ -74,11 +74,11 @@ What happens if we call ``countdown`` function like this:
               The execution of ``countdown`` begins with ``n = 0``, and since n is
               zero, it outputs the word “Blastoff!” and then returns.
 
-          The ``countdown`` that got ``n = 1`` returns.
+          The ``countdown`` that get ``n = 1`` returns.
 
-      The ``countdown`` that got ``n = 2`` returns.
+      The ``countdown`` that get ``n = 2`` returns.
 
-  The ``countdown`` that got ``n = 3`` returns.
+  The ``countdown`` that get ``n = 3`` returns.
 
 And then you’re back in ``main`` (what a trip). So the total output looks
 like:
@@ -104,7 +104,7 @@ As a second example, let’s look again at the functions ``newLine`` and
     }
 
 Although these work, they would not be much help if I wanted to output 2
-newlines, or 106. A better alternative would be
+newlines, or 4 newlines. A better alternative would be
 
 ::
 

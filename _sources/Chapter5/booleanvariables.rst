@@ -63,11 +63,11 @@ presence or absence of some condition.
    :answer_c: x was positive when I checked it
    :answer_d: n was even when I checked itx was positive when I checked it
    :answer_e: x was positive when I checked itn was even when I checked it
-   :correct: d
-   :feedback_a: A space is not automatically added.
+   :correct: a
+   :feedback_a: Great!
    :feedback_b: Make sure you follow the correct order of execution.  Also, a space is not automatically added.
    :feedback_c: Take another look at the result from the modulus operator.
-   :feedback_d: Both flags are made, and no space is added.
+   :feedback_d: Both flags are made, But A space is after it.
    :feedback_e: Make sure you follow the correct order of execution.
 
    What will print?

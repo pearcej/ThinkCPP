@@ -1,4 +1,4 @@
-﻿What is Debugging?
+What is Debugging?
 ------------------
 
 .. index::
@@ -150,8 +150,18 @@ programming practices.
 
    Match each term to its definition!
 
+.. dragndrop:: debugging_3
+   :feedback: Try again!
+   :match_1: error|||int x = int y+3;
+   :match_2: error|||doubled x;
+   :match_3: bug|||cout << " Americk ";
+   :match_4: bug|||double x * y = x + y;
 
-.. fillintheblank:: debugging_3
+   Match each term to its type!
+
+
+
+.. fillintheblank:: debugging_4
 
    The structure of your program and the rules it must follow are called the |blank|.
     

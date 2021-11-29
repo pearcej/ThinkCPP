@@ -84,7 +84,7 @@ its argument to the appropriate type.
 
           int final = int((exam1 + exam2 + exam3) / 3);
 
-    Which method would you choose and why?
+    Which method would **you** choose and why?
 
     -   **Method 1:** ``final`` is a ``double``, meaning my final grade will
         have more digits past the decimal, and will be higher than the ``int``

@@ -48,7 +48,7 @@ Strictly speaking, C++ distinguishes the integer value 1 from the
 floating-point value 1.0, even though they seem to be the same number.
 They belong to different types, and strictly speaking, you are not
 allowed to make assignments between types. For example, the following is
-illegal
+illegal:
 
 ::
 

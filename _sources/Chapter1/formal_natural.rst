@@ -1,4 +1,4 @@
-﻿.. _formal:
+.. _formal:
 
 Formal and Natural Languages
 ----------------------------
@@ -142,8 +142,15 @@ languages, can make a big difference in a formal language.
 
    Match each term to an example of it!
 
+.. dragndrop:: formal_natural_4
+   :feedback: Try again!
+   :match_1: ambiguity||| I rode a black horse in red jacket.
+   :match_2: redundancy|||I rode a black horse and I wore a red jacket.
+   :match_3: literalness||| Give me a cup of water.
 
-.. mchoice:: formal_natural_4
+   Match each term to an example of it!
+
+.. mchoice:: formal_natural_5
    :multiple_answers:
    :answer_a: ambiguous
    :answer_b: redundant
