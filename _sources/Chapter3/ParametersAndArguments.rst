@@ -123,8 +123,8 @@ exceptions later.
    What will be printed to the terminal?  If nothing will print, 
    or if the compiler will throw an error, type "error".
     
-   - :error: The type provided does not match the expected parameter type!
-     :ss: The type provided does not match the expected parameter type!
+   - :error: Correct! The type provided does not match the expected parameter type!
+     :ss: Wrong! The type provided does not match the expected parameter type!
      :.*: Try again!
 
 

@@ -94,7 +94,7 @@ and the special value ``endl``. Very impressive!
    :feedback_a: The string, not the variable, a will be printed.
    :feedback_b: b will not be printed.
    :feedback_c: The cout statement prints a, not the value of the variable a.
-   :feedback_d: z is the value of a and will not be printed
+   :feedback_d: z is the value of a and 8 will not be printed
    :feedback_e: There is no type mismatch, so there will not be a compile error.
 
    What prints when the following code is run?
@@ -120,7 +120,7 @@ and the special value ``endl``. Very impressive!
    :correct: d
    :feedback_a: The string a will not be printed.
    :feedback_b: The string b will not be printed.
-   :feedback_c: z is the value of a and will not be printed.
+   :feedback_c: z is the value of a and 3 will not be printed.
    :feedback_d: 8 is the value of b will be printed!
    :feedback_e: There is no type mismatch, so there will not be a compile error.
 

@@ -81,8 +81,8 @@ The most common use of bool functions is inside conditional statements
 
 .. dragndrop:: bool_fun_1
     :feedback: Try again!
-    :match_1:  (x%2 == 1 && x == 7)|||0
-    :match_2: (x%2 == 0 || x + 1 == 4)|||1
+    :match_1:  (x % 2 == 1 && x == 7)|||0
+    :match_2: (x % 2 == 0 || x + 1 == 4)|||1
 
     Match the conditional statement to its output, assuming it is outputted using cout and x = 3.
 
