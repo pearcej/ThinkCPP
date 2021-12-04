@@ -96,7 +96,7 @@ by composing the function calls:
    :feedback_c: Incremental development is useful in function composition, but does not define it.
    :feedback_d: There is only one correct answer here!
 
-   What is function composition?
+   What is the composition of the function ``fred`` ?
 
 
 .. mchoice:: fun_comp_2

@@ -344,13 +344,13 @@ Multiple Choice Exercises
 
       void print_sequence (int n) {
         if (n == 0) {
-           cout<<1;
+           cout << 1;
            return;
            //we can have an empty return to a void function
         }
         else {
-          cout<<n<<" ";
-          print_sequence(n-1);
+          cout << n << " ";
+          print_sequence(n - 1);
         }
       }
 

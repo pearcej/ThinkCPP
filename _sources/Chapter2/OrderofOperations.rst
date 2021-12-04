@@ -89,7 +89,7 @@ Once you've submitted your answer for Question 3A, click on Question 3B below.
    :hidetitle: Hide Content
 
    .. clickablearea:: order_of_operations_3B
-      :question: Click on ALL PARTS of the expression that get evaluated NEXT.  For example, if "1 + 1" gets evaluated first, click on "1", "+", and "1".
+      :question: Click on ALL PARTS of the expression that get evaluated first.  For example, if "1 + 1" gets evaluated first, click on "1", "+", and "1".
       :iscode:
       :feedback: Try again!
 
@@ -104,7 +104,7 @@ Once you've submitted your answer for Question 3B, click on Question 3C below.
    :hidetitle: Hide Content
 
    .. clickablearea:: order_of_operations_3C
-      :question: Click on ALL PARTS of the expression that get evaluated NEXT.  For example, if "1 + 1" gets evaluated first, click on "1", "+", and "1".
+      :question: Click on ALL PARTS of the expression that get evaluated first.  For example, if "1 + 1" gets evaluated first, click on "1", "+", and "1".
       :iscode:
       :feedback: Try again!
 

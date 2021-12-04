@@ -51,45 +51,9 @@ library, you have to include the header file ``<cmath>``.
 Putting ``return 0;`` in your code ends your program. Let's look back at a program from section 4.3. How would your answer change?
 
 
+
+
 .. mchoice:: return_1
-   :answer_a: One! Two! Three!
-   :answer_b: Two! Three!
-   :answer_c: Three!
-   :answer_d: Two!
-   :answer_e: One!
-   :correct: d
-   :feedback_a: Try again! Remember the function of return 0.
-   :feedback_b: Try again! Remember the function of return 0.
-   :feedback_c: Try again! Remember the function of return 0.
-   :feedback_d: 8 is not greater than 8, so the first condition will not be met.
-   :feedback_e: Take a look at the first conditional statement more closely.
-
-   What will print?
-
-   ::
-
-       #include <iostream>
-       using namespace std;
-
-       int main () {
-         int x = 8;
-         if (x > 8) {
-           cout << "One! ";
-           return 0;
-         }
-         if (x > 6) {
-           cout << "Two! ";
-           return 0;
-         }
-         if (x > 3) {
-           cout << "Three!" << endl;
-           return 0;
-         }
-         return 0;
-       }
-
-
-.. mchoice:: return_2
    :answer_a: One! Two! Three!
    :answer_b: Two! Three!
    :answer_c: Three!
@@ -119,6 +83,44 @@ Putting ``return 0;`` in your code ends your program. Let's look back at a progr
          }
          if (x > 3) {
            cout << "Three!" << endl;
+         }
+         return 0;
+       }
+
+
+.. mchoice:: return_2
+   :answer_a: One! Two! Three!
+   :answer_b: Two! Three!
+   :answer_c: Three!
+   :answer_d: Two!
+   :answer_e: One!
+   :correct: d
+   :feedback_a: Try again! 8 is not greater than 8, so the first condition will not be met.
+   :feedback_b: Try again! Remember what "return 0" is for!
+   :feedback_c: Try again! 8 is greater than 6!
+   :feedback_d: Correct!
+   :feedback_e: Take a look at the first conditional statement more closely.
+
+   What will print?
+
+   ::
+
+       #include <iostream>
+       using namespace std;
+
+       int main () {
+         int x = 8;
+         if (x > 8) {
+           cout << "One! ";
+           return 0;
+         }
+         if (x > 6) {
+           cout << "Two! ";
+           return 0;
+         }
+         if (x > 3) {
+           cout << "Three!" << endl;
+           return 0;
          }
          return 0;
        }

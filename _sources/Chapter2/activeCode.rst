@@ -79,7 +79,7 @@ Answer the following **Activecode** questions to assess what you have learned in
          using namespace std;
 
          int main() {
-             double Cady = (3 * 5) * 6 / 100.0;
+             double Cady = 3 * 5 * (6 / 100.0);
              cout << "Cady scored " << Cady * 100 << "% on the exam.";
          }    
 

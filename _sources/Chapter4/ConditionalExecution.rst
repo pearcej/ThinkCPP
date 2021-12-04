@@ -79,18 +79,18 @@ Observe the conditional statement below.
    :answer_b: Change the value of x to 13.
    :answer_c: Change the sign of the last conditional statement to x > 6.
    :answer_d: Change the value of the return from 0 to "Bigger!"
-   :correct: b
+   :correct: c
    :feedback_a: While "Bigger" would now print, the other two statements would not!
    :feedback_b: Now, none of the statements would print!
    :feedback_c: Now, all of the statements would print.
    :feedback_d: main returns an int, so trying to make it return a string will cause an error.
 
-   Observe the code above. "Bigger" never prints! How can you modify this so that all of the statements print?
+   Observe the code above. "Bigger" doesn't print! How can you modify this so that all of the statements print?
 
 
 .. dragndrop:: conditional_execution_2
    :feedback: Try again!
-   :match_1: x != y|||x = 10, y = 2
+   :match_1: x > y|||x = 10, y = 2
    :match_2: x <= y|||x = 5, y = 5
    :match_3: x < y|||x = 2, y = 10
 

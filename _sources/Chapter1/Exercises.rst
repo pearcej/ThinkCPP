@@ -274,3 +274,23 @@ assess what you have learned in this chapter.
     -   You should run your program and check for run-time errors.
 
         -   Parsing doesn't involve run-time errors.
+
+.. fillintheblank:: programming_11
+
+    #include <|blank|>
+    using namespace |blank|
+    int |blank| {
+         cout << "Hello, World."<< endl|blank|
+         return |blank|;
+   }
+    
+   - :(iostream): Correct!
+     :.*: Try again!
+   - :(std;): Correct!
+     :.*: Try again!
+   - :(main): Correct!
+     :.*: Try again!
+   - :(;): Correct!
+     :.*: Try again!
+   - :(0): Correct!
+     :.*: Try again!
