@@ -163,9 +163,9 @@ The output of this code is
    ::
      
      int main() {
-        EuchreDeck = buildEuchreDeck()
+        EuchreDeck = buildEuchreDeck();
         Card card (3, 6);
-        find(card, EuchreDeck)
+        find(card, EuchreDeck);
       }
     
    |blank|.

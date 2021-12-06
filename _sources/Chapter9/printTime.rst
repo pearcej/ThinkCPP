@@ -36,7 +36,7 @@ displays the instance variables in a human-readable form, which you attempted on
 .. mchoice:: printTime_1
    :answer_a: cout << "Price is " << "p.dollar" << " dollars and" << "p.cents" << "cents." << endl;
    :answer_b: cout << "Price is " << p.dollar << " dollars and " << p.cents << " cents." << endl;
-   :answer_c: cout << "Price is " << p.dollar << " dollars and " << p.cents << "cents." << endl
+   :answer_c: cout << "Price is " << p.dollar << " dollars and " << p.cents << "cents." << endl;
    :correct: b
    :feedback_a: Try again. We want to print the values rather than statements.
    :feedback_b: Correct!

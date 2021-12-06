@@ -58,7 +58,7 @@ Thus, getting input from the user might look like this:
       cin >> x;
 
       // check and see if the input statement succeeded
-      if (cin.good() == false) {
+      if (cin.fail()) {
           cout << "That was not an integer." << endl;
           return -1;
       }

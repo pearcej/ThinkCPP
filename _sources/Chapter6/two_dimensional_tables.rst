@@ -72,7 +72,7 @@ So far, so good. The next step is to **encapsulate** and **generalize**.
     int main() {
       int x = 1;
       while (x <= 6) {
-        cout << 2 * x << "   ";
+        cout << 3 * x << "   ";
         x = x + 1;
       }
       cout << endl;
@@ -80,8 +80,8 @@ So far, so good. The next step is to **encapsulate** and **generalize**.
     }
 
 .. mchoice:: 2D_tables_2
-   :answer_a: Change the first output statement to say cout << 3*x << endl;
-   :answer_b: Change the first output statement to say cout << 3*x << \n;
+   :answer_a: Change the first output statement to say cout << 3 * x << endl;
+   :answer_b: Change the first output statement to say cout << 3 * x << \n;
    :answer_c: Change the second output statement to say cout << endl << endl;
    :answer_d: This code already prints each multiple on its own line.
    :correct: a
