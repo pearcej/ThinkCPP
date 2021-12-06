@@ -37,7 +37,7 @@ Multiple Choice Exercises
 .. mchoice:: mce_6_2
     :practice: T
 
-    What is the final value of ``i`` when the code is finished running?
+    What is the final value of ``i`` when the code finished running?
 
     .. code-block:: cpp
 

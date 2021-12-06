@@ -10,7 +10,7 @@ function.
 ::
 
    int find (string s, char c, int i) {
-     while (i<s.length()) {
+     while (i < s.length()) {
        if (s[i] == c) return i;
        i = i + 1;
      }
