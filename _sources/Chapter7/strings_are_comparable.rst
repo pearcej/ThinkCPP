@@ -15,10 +15,11 @@ also work on ``strings``.
   using namespace std;
 
   int main() {
-      word = "banana";
+      string word = "banana";
       if (word == "banana") {
           cout << "Yes, we have no bananas!" << endl;
       }
+      return 0;
   }
 
 The other comparison operations are useful for putting words in

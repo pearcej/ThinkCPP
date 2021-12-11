@@ -80,7 +80,7 @@ to read.
    :feedback_b: Yes, they are not the same variable.
 
 
-   Take a look at the code below. The ``i`` in ``printMultiples`` is the same variable as the ``i`` in ``printMultTable``.
+   Take a look at the code below. Is the ``i`` in ``printMultiples`` the same variable as the ``i`` in ``printMultTable``?
 
    .. code-block:: cpp
 
@@ -116,8 +116,7 @@ to read.
    :feedback_b: Yes, ``j`` is not accessable as the value is merely passes from one function to another. We cannot have a statement such as j++; in ``printMultiples`` as it is out of the scope of ``printMultTable``
 
 
-   Take a look at the code below. The variable ``j`` is accessable in the function ``printMultiples``
-
+   Take a look at the code below. Is the variable ``j`` accessable  in the function ``printMultiples``?
    .. code-block:: cpp
 
     #include <iostream>

@@ -90,7 +90,7 @@ Coding Practice
 
            bool Cake::has_icing() {
                 if (weight > 10) {
-                  return true
+                  return true;
                 }
                 else {
                   return false;
@@ -325,7 +325,7 @@ Coding Practice
 
            bool Cake::has_icing() {
                 if (weight > 10) {
-                  return true
+                  return true;
                 }
                 else {
                   return false;
@@ -558,7 +558,7 @@ Coding Practice
            
            Instrument::Instrument (string name_in, int year_made_in) {
               name = name_in;
-              year_made = year_made_in ;
+              year_made = year_made_in;
            }
            
            int main() {

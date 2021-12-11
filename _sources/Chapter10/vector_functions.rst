@@ -1,4 +1,4 @@
-﻿Vector functions
+Vector functions
 ----------------
 
 The best feature of a vector is its resizeability. A vector, once

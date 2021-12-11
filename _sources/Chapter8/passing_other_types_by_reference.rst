@@ -57,7 +57,7 @@ try to use an expression as a reference argument. For example:
 
      int i = 7;
      int j = 9;
-     swap (i, j+1);         // WRONG!!
+     swap (i, j + 1);         // WRONG!!
 
 This is not legal because the expression ``j+1`` is not a variable—it
 does not occupy a location that the reference can refer to. It is a

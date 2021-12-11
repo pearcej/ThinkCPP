@@ -8,7 +8,7 @@ Multiple Choice Exercises
 
     - In C++, anything done with a member function can also be done by a free-standing function
 
-      + Though sometimes there may be an advantage of one over the other this process is doable and converting from one form to the other is a mechanical process.
+      + Though sometimes there may be an advantage of one over the other this process is doable and converting from one form to the other is a mechanical process
 
     - In a function that operates on 3 structures, 2 are accessed with dot notation
     

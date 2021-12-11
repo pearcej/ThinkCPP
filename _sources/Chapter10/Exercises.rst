@@ -86,7 +86,7 @@ Answer the following **Multiple Choice** questions to assess what you have learn
 
     -   v i c t o 
 
-        +   Correct! we print the first 5 letters of the string at index 1 which is "victors".
+        +   Correct! we print the first 5 letters of the string at index 1 which is "victo".
 
 
 

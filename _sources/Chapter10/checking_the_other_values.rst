@@ -1,4 +1,4 @@
-﻿Checking the other values
+Checking the other values
 -------------------------
 
 ``howMany`` only counts the occurrences of a particular value, and we
@@ -13,7 +13,7 @@ that problem with a loop:
 
      cout << "value\thowMany";
 
-     for (int i = 0; i<upperBound; i++) {
+     for (int i = 0; i < upperBound; i++) {
        cout << i << '\t' << howMany (vector, i) << endl;
      }
 

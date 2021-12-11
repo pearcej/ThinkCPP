@@ -96,7 +96,8 @@ fully-populated vector of ``Card``\ s.
    int main() {
        vector<Card> deck = buildDeck();
        cout << "We just created our deck of 52 cards. We can access an individual card by indexing." << endl;
-       cout << "For example, the first card in the deck is: "; deck[0].print();
+       cout << "For example, the first card in the deck is: "; 
+       deck[0].print();
    }
 
    ====
