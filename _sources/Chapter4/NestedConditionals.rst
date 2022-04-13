@@ -27,11 +27,13 @@ another. We could have written the previous example as:
        else {
            if (x > 0) {
                cout << "x is positive" << endl;
-           } 
+           }
            else {
                cout << "x is negative" << endl;
            }
+       }
        return 0;
+
    }
 
 There is now an outer conditional that contains two branches. The first
@@ -79,7 +81,7 @@ will see it again, so you better get used to it.
          else {
            if (x > 0) {
              cout << "Hi!" << endl;
-           } 
+           }
            else {
              cout << "Hello!" << endl;
            }
@@ -114,7 +116,7 @@ will see it again, so you better get used to it.
          else {
            if (x > 0) {
              cout << "Hi!" << endl;
-           } 
+           }
            else {
              cout << "Hello!" << endl;
            }
@@ -135,7 +137,7 @@ will see it again, so you better get used to it.
    :feedback_d: z > m is true because z comes after m.
    :feedback_e: Character comparisons are legal, and useful in this case!
 
-   Your school uses a system to arrange students in a large stadium using 
+   Your school uses a system to arrange students in a large stadium using
    their initials.  Look at the function definition below.  Where would a
    student with the initials "MZ" be seated?
 
@@ -159,4 +161,3 @@ will see it again, so you better get used to it.
            }
          }
        }
-
