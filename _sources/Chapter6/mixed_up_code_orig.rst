@@ -128,7 +128,7 @@ Mixed Up Code Practice
    =====
          n++;
    =====
-         --n;
+         --n;                                #paired
    =====
       }
    =====
@@ -339,4 +339,3 @@ Mixed Up Code Practice
       return temp;  #distractor
    =====
    }
-
