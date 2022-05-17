@@ -11,7 +11,7 @@ Coding Practice
             Write the function ``printCakeInfo``, which prints the cake's information in the format
             "This is a ``color``, ``diameter`` inch diameter cake with/without icing." If ``name`` does not
             have the value "n/a", ``printCakeInfo`` prints out "Happy birthday ``name``! Your cake is ``color``,
-            has a ``diameter`` inch diameter, and comes with/without icing." Select the Parsonsprob tab for hints 
+            has a ``diameter`` inch diameter, and comes with/without icing." Select the Parsonsprob tab for hints
             for the construction of the code.
             ~~~~
             #include <iostream>
@@ -42,7 +42,7 @@ Coding Practice
             Write the function ``printCakeInfo``, which prints the cake's information in the format
             "This is a ``color``, ``diameter`` inch diameter cake with/without icing." If ``name`` does not
             have the value "n/a", ``printCakeInfo`` prints out "Happy birthday ``name``! Your cake is ``color``,
-            has a ``diameter`` inch diameter, and comes with/without icing." Use the lines to construct the code, 
+            has a ``diameter`` inch diameter, and comes with/without icing." Use the lines to construct the code,
             then go back to complete the Activecode tab.
 
             -----
@@ -52,19 +52,19 @@ Coding Practice
             =====
                 if (c.name == "n/a") {
             =====
-                    if (c.has_icing) { 
+                    if (c.has_icing) {
                         cout << "This is a " << c.color << "," << c.diameter << " inch diameter cake with icing." << endl;
-                    } 
+                    }
             =====
                     else {
                         cout << "This is a " << c.color << "," << c.diameter << " inch diameter cake without icing." << endl;
                     }
             =====
                 }
-            ===== 
+            =====
                 else {
             =====
-                    if (c.has_icing) { 
+                    if (c.has_icing) {
                         cout << "Happy birthday " << c.name << "! Your cake is " << c.color << ", has a " << c.diameter << " inch diameter, and comes with icing." << endl;
                     }
             =====
@@ -72,7 +72,7 @@ Coding Practice
                         cout << "Happy birthday " << c.name << "! Your cake is " << c.color << ", has a " << c.diameter << " inch diameter, and comes without icing." << endl;
                     }
             =====
-                } 
+                }
             }
 
 .. tabbed:: cp_9_AC_4q_q
@@ -82,7 +82,7 @@ Coding Practice
         .. activecode:: cp_9_AC_4q
             :language: cpp
 
-            Write the function ``changeCakeDiameter``, which takes a ``Cake`` and a ``double`` as a parameter. 
+            Write the function ``changeCakeDiameter``, which takes a ``Cake`` and a ``double`` as a parameter.
             ``changeCakeDiameter`` then multiplies the original diameter by the double and modifies the cake
             to have this new diameter. Select the Parsonsprob tab for hints for the construction of the code.
             ~~~~
@@ -109,21 +109,21 @@ Coding Practice
             ====
             void printCakeInfo (Cake c) {
                 if (c.name == "n/a") {
-                    if (c.has_icing) { 
+                    if (c.has_icing) {
                         cout << "This is a " << c.color << "," << c.diameter << " inch diameter cake with icing." << endl;
-                    } 
+                    }
                     else {
                         cout << "This is a " << c.color << "," << c.diameter << " inch diameter cake without icing." << endl;
                     }
-                } 
+                }
                 else {
-                    if (c.has_icing) { 
+                    if (c.has_icing) {
                         cout << "Happy birthday " << c.name << "! Your cake is " << c.color << ", has a " << c.diameter << " inch diameter, and comes with icing." << endl;
-                    } 
+                    }
                     else {
                         cout << "Happy birthday " << c.name << "! Your cake is " << c.color << ", has a " << c.diameter << " inch diameter, and comes without icing." << endl;
                     }
-                } 
+                }
             }
 
             Cake makeCake () {
@@ -146,8 +146,8 @@ Coding Practice
                     input.has_icing = true;
                 }
                 else {
-                    input.has_icing = false; 
-                } 
+                    input.has_icing = false;
+                }
                 return input;
             }
 
@@ -157,7 +157,7 @@ Coding Practice
             :numbered: left
             :adaptive:
 
-            Write the function ``changeCakeDiameter``, which takes a ``Cake`` and a ``double`` as a parameter. 
+            Write the function ``changeCakeDiameter``, which takes a ``Cake`` and a ``double`` as a parameter.
             ``changeCakeDiameter`` then multiplies the original diameter by the double and modifies the cake
             to have this new diameter. Use the lines to construct the code, then go back to complete the Activecode tab.
 
@@ -245,8 +245,8 @@ Coding Practice
                 Shirt t = { "blue", 'L' };
                 Pants p = { 'S', "denim" };
                 Outfit o = { t, p, true };
-            } 
-    
+            }
+
     .. tab:: Parsonsprob
 
         .. parsonsprob:: cp_9_AC_8q_pp
@@ -282,6 +282,8 @@ Coding Practice
             ~~~~
             #include <iostream>
             using namespace std;
+
+            void printOutfit(Outfit o);
 
             struct Shirt {
                 string color;
@@ -324,7 +326,7 @@ Coding Practice
                     cout << "does not have hat" << endl;
                 }
             }
-    
+
     .. tab:: Parsonsprob
 
         .. parsonsprob:: cp_9_AC_10q_pp
