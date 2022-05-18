@@ -199,11 +199,11 @@ assess what you have learned in this chapter.
 
     -   Nothing is printed.
 
-        +   Correct!  ``giveInsult`` doesn't ``cout`` anything.
+        -    ``insult`` data type is not defined.
 
     -   Error!
 
-        -   There are no errors with this program!
+        + Correct! ``insult`` data type is not defined.
 
 
 .. mchoice:: functions_mc6
