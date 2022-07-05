@@ -78,8 +78,8 @@ two integers, so C++ does *integer* division, which yields the integer
 value 0. Converted to floating-point, the result is 0.0.
 
 .. warning::
-   It's crucial that you understand that when given two integers, C++ 
-   performs integer division!  This is a common logic error that can be 
+   It's crucial that you understand that when given two integers, C++
+   performs integer division!  This is a common logic error that can be
    hard to catch, since your program will compile without problems.
 
 One way to solve this problem (once you figure out what it is) is to
@@ -100,9 +100,9 @@ performing floating-point operations.
 
 .. fillintheblank:: floating_point_1
 
-   A(n) |blank| statment consists of a declaration statement and an 
+   A(n) |blank| statment consists of a declaration statement and an
    assignment statement, which are combined.
-    
+
    - :[Ii][Nn][Ii][Tt][Ii][Aa][Ll][Ii][Zz][Aa][Tt][Ii][Oo][Nn]: Correct!
      :.*: Try again!
 
@@ -110,8 +110,8 @@ performing floating-point operations.
 .. fillintheblank:: floating_point_2
 
    It's your birthday and your cake can serve 12.  You want to slice it
-   evenly so that you and each of your 4 friends receive an equal amount.  
-   One of your friends is on a diet and, and wants to know the serving size 
+   evenly so that you and each of your 4 friends receive an equal amount.
+   One of your friends is on a diet and, and wants to know the serving size
    of her slice.  You write the following code in C++ to answer her question.
 
    ::
@@ -124,7 +124,7 @@ performing floating-point operations.
    Based on the value of ``servingSize``, you tell your friend that each
    slice is |blank| servings.  This is |blank| (more, less, the same) than/as
    the actual serving size of her slice.
-    
+
    - :2: Correct! C++ performs integer division.
      :.*: servingSize and people are integer variables!
    - :[Ll][Ee][Ss][Ss]: Correct! You just unintentionally messed up your friend's diet.
@@ -154,7 +154,7 @@ performing floating-point operations.
 
        double e = 2.71828;
        int e_int = e;
-       double e_double = eInt;
+       double e_double = e_int;
        cout << e_double;
 
    What is the value of ``e_double`` that is printed to the terminal?
