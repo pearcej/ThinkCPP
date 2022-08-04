@@ -39,7 +39,3 @@ assess what you have learned in this chapter.
 .. selectquestion:: mucp_8_9_sq
    :fromid: mucp_8_9, mucp_8_9_ac_q
    :toggle:
-
-.. selectquestion:: mucp_8_10_sq
-   :fromid: mucp_8_10, mucp_8_10_ac_q
-   :toggle:
