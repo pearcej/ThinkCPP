@@ -13,7 +13,7 @@ assess what you have learned in this chapter.
             :language: cpp
 
             You are part of a class where everyone passes, but it's very hard
-            to pass with an A.  Fix the function so it prints your letter grade 
+            to pass with an A.  Fix the function so it prints your letter grade
             according to this scheme.  [0, 50) = C, [50, 85) = B, and [85, 100] = A.
             Select the Parsonsprob tab for hints for the construction of the code.
             ~~~~
@@ -37,25 +37,25 @@ assess what you have learned in this chapter.
     .. tab:: Parsonsprob
 
         .. parsonsprob:: cond_rec_a2_pp
-            :numbered: left 
+            :numbered: left
             :adaptive:
 
             You are part of a class where everyone passes, but it's very hard
-            to pass with an A.  Fix the function so it prints your letter grade 
+            to pass with an A.  Fix the function so it prints your letter grade
             according to this scheme.  [0, 50) = C, [50, 85) = B, and [85, 100] = A.
             Use the lines to construct the code, then go back to complete the Activecode tab.
 
             -----
-            void whichDoor (double grade) {
+            string whichDoor (double grade) {
             =====
-            string whichDoor (double grade) { #paired
+            void whichDoor (double grade) { #paired
             =====
                 string s = "";
             =====
                 s = ""; #paired
             =====
                 if (grade < 50) {
-                    s - "C";
+                    s = "C";
                 }
             =====
                 if (grade < 85 && grade >= 50) {
@@ -70,18 +70,19 @@ assess what you have learned in this chapter.
                     s = "A";
                 }
             =====
+                cout << s;
             }
 
 
 .. tabbed:: cond_rec_a4_q
 
     .. tab:: Activecode
-            
+
         .. activecode:: cond_rec_a4
             :language: cpp
 
             Finish the code below so that it prints true if ``x`` is even
-            and false if ``x`` is odd. Select the Parsonsprob tab for hints 
+            and false if ``x`` is odd. Select the Parsonsprob tab for hints
             for the construction of the code.
             ~~~~
             #include <iostream>
@@ -100,7 +101,7 @@ assess what you have learned in this chapter.
             :adaptive:
 
             Finish the code below so that it prints true if ``x`` is even
-            and false if ``x`` is odd. Use the lines to construct the code, 
+            and false if ``x`` is odd. Use the lines to construct the code,
             then go back to complete the Activecode tab.
 
             -----
@@ -133,7 +134,7 @@ assess what you have learned in this chapter.
             :language: cpp
 
             Write the function ``greaterThan`` that prints true
-            if the first ``double`` argument is greater than the 
+            if the first ``double`` argument is greater than the
             second ``double`` argument.  Be sure to include any
             necessary headers. Select the Parsonsprob tab for hints
             for the construction of the code.
@@ -142,7 +143,7 @@ assess what you have learned in this chapter.
             using namespace std;
 
             void greaterThan () {
-                
+
             }
 
     .. tab:: Parsonsprob
@@ -152,10 +153,10 @@ assess what you have learned in this chapter.
             :adaptive:
 
             Write the function ``greaterThan`` that prints true
-            if the first ``double`` argument is greater than the 
+            if the first ``double`` argument is greater than the
             second ``double`` argument.  Be sure to include any
             necessary headers. Use the lines to construct the code,
-            then go back to complete the Activecode tab. 
+            then go back to complete the Activecode tab.
 
             -----
             void greaterThan (double a, double b) {
@@ -208,8 +209,8 @@ assess what you have learned in this chapter.
 
             Write the function ``exclusiveOr`` that prints true If
             either ``a`` OR ``b`` is true, and prints false otherwise.
-            Be sure to include any necessary headers. Use the lines to 
-            construct the code, then go back to complete the Activecode tab.  
+            Be sure to include any necessary headers. Use the lines to
+            construct the code, then go back to complete the Activecode tab.
 
             -----
             void exclusiveOr (bool a, bool b) {
@@ -239,14 +240,14 @@ assess what you have learned in this chapter.
             Write the function ``printNegativeNum`` that asks the user
             for a negative number.  If the user does not provide a negative
             number, it should contine asking until the user provides one.
-            It should then print the negative number. Select the Parsonsprob 
+            It should then print the negative number. Select the Parsonsprob
             tab for hints for the construction of the code.
             ~~~~
             #include <iostream>
             using namespace std;
 
             void printNegativeNum () {
-                
+
             }
 
     .. tab:: Parsonsprob
@@ -258,7 +259,7 @@ assess what you have learned in this chapter.
             Write the function ``printNegativeNum`` that asks the user
             for a negative number.  If the user does not provide a negative
             number, it should contine asking until the user provides one.
-            It should then print the negative number. Use the lines to construct 
+            It should then print the negative number. Use the lines to construct
             the code, then go back to complete the Activecode tab.
 
             -----

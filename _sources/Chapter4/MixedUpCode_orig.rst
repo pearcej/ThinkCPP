@@ -15,7 +15,7 @@ assess what you have learned in this chapter.
    int main () {
    =====
     int x = 18;
-    int y = 13; 
+    int y = 13;
    =====
     cout << x % y;
    =====
@@ -105,14 +105,14 @@ assess what you have learned in this chapter.
     else { #paired
    =====
       cout << "hydromatic"; }
-   
+
 
 .. parsonsprob:: cond_recc_p5
    :numbered: left
    :adaptive:
 
    Construct a block of code that prints "Pick me!" if x is
-   equal to y, "Choose me!" if x is less than y, OR "Love me!" 
+   equal to y, "Choose me!" if x is less than y, OR "Love me!"
    if x + y is even.
    -----
    if (x == y) {
@@ -125,7 +125,7 @@ assess what you have learned in this chapter.
    =====
    if (x < y) { #paired
    =====
-    cout << "Choose me!"; } 
+    cout << "Choose me!"; }
    =====
    else if ((x + y) % 2 == 0) {
    =====
@@ -133,7 +133,7 @@ assess what you have learned in this chapter.
    =====
    else if (x + y % 2 == 0) { #paired
    =====
-    cout << "Love me!"; } 
+    cout << "Love me!"; }
 
 
 .. parsonsprob:: cond_recc_p6
@@ -201,11 +201,11 @@ assess what you have learned in this chapter.
      }
    =====
      else {
-      cout << "Knive";
+      cout << "Knight";
      } }
    =====
    }
-   
+
 
 .. parsonsprob:: cond_recc_p8
    :numbered: left

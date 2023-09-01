@@ -12,9 +12,9 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_8_1_ac_q
             :language: cpp
 
-            Let's write the code for the struct definition of ``Song``. 
-            The Song structure will have the instance variables string title, 
-            string artist, string album, and int year in that order.        
+            Let's write the code for the struct definition of ``Song``.
+            The Song structure will have the instance variables string title,
+            string artist, string album, and int year in that order.
             ~~~~
             #include <iostream>
             using namespace std;
@@ -61,7 +61,7 @@ assess what you have learned in this chapter.
 
             Below is one way to create the object in the main function.
             ~~~~
-            #include <iostream> 
+            #include <iostream>
             using namespace std;
 
             struct Song {
@@ -89,7 +89,7 @@ assess what you have learned in this chapter.
 
             Let's write the code for the ``printSong`` function. printSong
             takes a Song as a parameter and prints out the instance variables
-            in the following format: "title" by artist (album, year). 
+            in the following format: "title" by artist (album, year).
             ~~~~
             #include <iostream>
             using namespace std;
@@ -100,7 +100,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_8_3_ac_a
             :language: cpp
-            
+
             Below is one way to write the printSong function.
             ~~~~
             #include <iostream>
@@ -124,7 +124,7 @@ assess what you have learned in this chapter.
                 fly.artist = "Frank Sinatra";
                 fly.album = "It Might as Well Be Swing";
                 fly.year = 1964;
-            }            
+            }
 
 
 .. tabbed:: mucp_8_4_ac
@@ -134,10 +134,10 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_8_4_ac_q
             :language: cpp
 
-            Let's write the code for the struct definition of ``Unicorn``. 
-            The Unicorn structure will have the instance variables name, 
+            Let's write the code for the struct definition of ``Unicorn``.
+            The Unicorn structure will have the instance variables name,
             age, hornLength, hairColor, and isSparkly in that order. A Unicorn's
-            horn length is measured to the nearest tenth of a unit.  
+            horn length is measured to the nearest tenth of a unit.
             ~~~~
             #include <iostream>
             using namespace std;
@@ -149,7 +149,7 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_8_4_ac_a
             :language: cpp
 
-            Below is one way to define the struct ``Unicorn``. 
+            Below is one way to define the struct ``Unicorn``.
             ~~~~
             #include <iostream>
             using namespace std;
@@ -162,7 +162,7 @@ assess what you have learned in this chapter.
                 bool isSparkly;
             };
 
-        
+
 .. tabbed:: mucp_8_5_ac
 
     .. tab:: Question
@@ -174,7 +174,7 @@ assess what you have learned in this chapter.
             takes a Unicorn as a parameter and returns the equivalent human age.
             If a unicorn is sparkly, then its equivalent human age is three times its age in unicorn years
             plus the length of its horn. If a unicorn is not sparkly, then its equivalent human age is
-            four times its age in unicorn years plus twice the length of its horn.  
+            four times its age in unicorn years plus twice the length of its horn.
             ~~~~
             #include <iostream>
             using namespace std;
@@ -212,13 +212,13 @@ assess what you have learned in this chapter.
 .. tabbed:: mucp_8_6_ac
 
     .. tab:: Question
-        
+
         .. activecode:: mucp_8_6_ac_q
             :language: cpp
 
             Let's write the code for the ``unicornPower`` function. unicornPower
-            takes a Unicorn as a parameter and 
-            sets isSparkly to true and changes the color to rainbow.        
+            takes a Unicorn as a parameter and
+            sets isSparkly to true and changes the color to rainbow.
             ~~~~
             #include <iostream>
             using namespace std;
@@ -256,11 +256,11 @@ assess what you have learned in this chapter.
         .. activecode:: mucp_8_7_ac_q
             :language: cpp
 
-            Let's write the code for the struct definitions of ``Address`` and ``Employee``. 
-            The Address structure will have the instance variables houseNumber, 
-            state (abbreviation), and postalAddress in that order. The Employee 
-            structure will be a nested structure with the instance variables name 
-            and Address address in that order.    
+            Let's write the code for the struct definitions of ``Address`` and ``Employee``.
+            The Address structure will have the instance variables houseNumber,
+            state (abbreviation), and postalAddress in that order. The Employee
+            structure will be a nested structure with the instance variables name
+            and Address address in that order.
             ~~~~
             #include <iostream>
             using namespace std;
@@ -297,8 +297,8 @@ assess what you have learned in this chapter.
             :language: cpp
 
             Let's write the code for the ``printAddress`` function. printAddress takes
-            an Employee as a parameter and should print out the information of the employee in the 
-            following format: name (id) lives at houseNumber in state, postalAddress.    
+            an Employee as a parameter and should print out the information of the employee in the
+            following format: name (id) lives at houseNumber in state, postalAddress.
             ~~~~
             #include <iostream>
             using namespace std;
@@ -384,10 +384,10 @@ assess what you have learned in this chapter.
 
             Let's write the code for the ``storeEmployeeData`` function. storeEmployeeData doesn't
             take any parameters and prompts the user for information regarding their
-            name, id, salary, and address in that order. It then returns an Employee object with
-            the stored data. Declare all variables before prompting the user.         
+            name, house number, state, and postal code. It then returns an Employee object with
+            the stored data. Declare all variables before prompting the user.
             ~~~~
-            #include <iostream> 
+            #include <iostream>
             using namespace std;
             // YOUR CODE HERE
 
@@ -399,13 +399,13 @@ assess what you have learned in this chapter.
 
             Below is one way to write the ``storeEmployeeData`` function.
             ~~~~
-            #include <iostream> 
+            #include <iostream>
             using namespace std;
 
             struct Address {
                 int houseNumber;
                 string state;
-                int postalAddress;
+                int postalCode;
             };
 
             struct Employee {
@@ -421,7 +421,7 @@ assess what you have learned in this chapter.
                 cin >> e.address.houseNumber;
                 cout << "What state do you live in?";
                 cin >> e.address.state;
-                cout << "What is your postal address?";
-                cin >> e.address.postalAddress;
+                cout << "What is your postal code?";
+                cin >> e.address.postalCode;
                 return e;
             }

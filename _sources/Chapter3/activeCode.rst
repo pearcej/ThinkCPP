@@ -73,7 +73,7 @@ assess what you have learned in this chapter.
              int b = 12;
 
              // DO NOT MODIFY ANYTHING BELOW THIS LINE
-             cout << b << " / " << a << " = "; divide (a, b);
+             cout << b << " / " << a << " = "; divide (b, a);
          }
 
    .. tab:: Answer
@@ -120,7 +120,7 @@ assess what you have learned in this chapter.
 
          int main () {
              // Write some code below to call the function appropriately
-         
+
          }
 
    .. tab:: Answer
@@ -146,7 +146,7 @@ assess what you have learned in this chapter.
 
 .. selectquestion:: functions_a6_sq
     :fromid: functions_a6, functions_a6_pp
-    :toggle: lock 
+    :toggle: lock
 
 
 .. tabbed:: functions_a7
@@ -189,7 +189,7 @@ assess what you have learned in this chapter.
 
 .. selectquestion:: functions_a8_sq
     :fromid: functions_a8, functions_a8_pp
-    :toggle: lock 
+    :toggle: lock
 
 
 .. tabbed:: functions_a9

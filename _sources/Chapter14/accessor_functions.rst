@@ -186,7 +186,7 @@ invoking them might modify the instance variables.
          polar = true;
       }
       =====
-         cartesian = true;
+         cartesian = true;                                          #paired
       }
 
 .. reveal:: 14_4_2

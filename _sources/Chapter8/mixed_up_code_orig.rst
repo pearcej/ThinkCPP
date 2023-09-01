@@ -7,9 +7,9 @@ Mixed Up Code Practice
    :noindent:
    :practice: T
 
-   Let's write the code for the struct definition of Song. 
-   The Song structure will have the instance variables string title, 
-   string artist, string album, and int year in that order. 
+   Let's write the code for the struct definition of Song.
+   The Song structure will have the instance variables string title,
+   string artist, string album, and int year in that order.
    Put the necessary blocks of code in the correct order.
    -----
    struct Song {
@@ -72,7 +72,7 @@ Mixed Up Code Practice
 
    Let's write the code for the printSong function. printSong
    takes a Song as a parameter and prints out the instance variables
-   in the following format: "title" by artist (album, year). Put the necessary blocks of 
+   in the following format: "title" by artist (album, year). Put the necessary blocks of
    code in the correct order.
    -----
    void printSong (Song s) {
@@ -98,8 +98,8 @@ Mixed Up Code Practice
    :adaptive:
    :practice: T
 
-   Let's write the code for the struct definition of Unicorn. 
-   The Unicorn structure will have the instance variables name, 
+   Let's write the code for the struct definition of Unicorn.
+   The Unicorn structure will have the instance variables name,
    age, hornLength, hairColor, and isSparkly in that order. A Unicorn's
    horn length is measured to the nearest tenth of a unit.
    Put the necessary blocks of code in the correct order.
@@ -166,7 +166,7 @@ Mixed Up Code Practice
    :adaptive:
 
    Let's write the code for the unicornPower function. unicornPower
-   takes a Unicorn as a parameter and 
+   takes a Unicorn as a parameter and
    sets isSparkly to true and changes the color to rainbow.
    Put the necessary blocks of code in the correct order.
    -----
@@ -191,11 +191,11 @@ Mixed Up Code Practice
    :adaptive:
    :practice: T
 
-   Let's write the code for the struct definitions of Address and Employee. 
-   The Address structure will have the instance variables houseNumber, 
-   state (abbreviation), and postalAddress in that order. The Employee 
-   structure will be a nested structure with the instance variables name 
-   and Address address in that order. 
+   Let's write the code for the struct definitions of Address and Employee.
+   The Address structure will have the instance variables houseNumber,
+   state (abbreviation), and postalAddress in that order. The Employee
+   structure will be a nested structure with the instance variables name
+   and Address address in that order.
    Put the necessary blocks of code in the correct order, with Address defined before Employee.
    -----
    struct Address {
@@ -233,13 +233,13 @@ Mixed Up Code Practice
    :adaptive:
 
    Let's write the code for the printAddress function. printAddress takes
-   an Employee as a parameter and should print out the information of the employee in the 
+   an Employee as a parameter and should print out the information of the employee in the
    following format: name (id) lives at houseNumber in state, postalAddress.
    Put the necessary blocks of code in the correct order.
    -----
    void printAddress (Employee e) {
    =====
-   string printAddress (Employee& e) {  #paired 
+   string printAddress (Employee& e) {  #paired
    =====
       cout << e.name << " (" << e.id << ") lives at ";
    =====
@@ -285,49 +285,3 @@ Mixed Up Code Practice
    }
    =====
    };  #distractor
-
-.. parsonsprob:: mucp_8_10
-   :numbered: left
-   :adaptive:
-
-   Let's write the code for the storeEmployeeData function. storeEmployeeData doesn't
-   take any parameters and prompts the user for information regarding their
-   name, id, salary, and address in that order. It then returns an Employee object with
-   the stored data. Declare all variables before prompting the user.
-   Put the necessary blocks of code in the correct order.
-   -----
-   Employee storeEmployeeData () {
-   =====
-   Employee storeEmployeeData (Employee e) {
-   =====
-   void storeEmployeeData () {
-   =====
-      Employee e;
-   =====
-      cout << "What is your full name? ";
-   =====
-      getline(cin, e.name);
-   =====
-      cin >> e.name;  #paired
-   =====
-      cout << "What is your house number? ";
-   =====
-      cin >> e.address.houseNumber;
-   =====
-      cin >> e.houseNumber;  #paired
-   =====
-      cout << "What state do you live in? ";
-   =====
-      cin >> e.address.state;
-   =====
-      cin >> address.state;  #paired
-   =====
-      cout << "What is your postal address? ";
-   =====
-      cin >> e.address.postalAddress;
-   =====
-      return e;
-   =====
-      return Employee e;  #paired
-   =====
-   }
