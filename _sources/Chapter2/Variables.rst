@@ -91,7 +91,7 @@ type).
         int :click-correct:y:endclick: = :click-incorrect:10:endclick:;
         :click-incorrect:char c:endclick: = :click-incorrect:'8':endclick:;
         while (:click-correct:x:endclick: < :click-correct:y:endclick:) {
-            cout << :click-incorrect:c:endclick: << endl;;
+            cout << :click-incorrect:c:endclick: << endl;
             :click-correct:x:endclick:++;
         }
         double :click-incorrect:d:endclick: = :click-incorrect:9:endclick:;

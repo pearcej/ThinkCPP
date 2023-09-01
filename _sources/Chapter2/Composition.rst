@@ -142,7 +142,7 @@ values. So the following is illegal: ``minute + 1 = hour;``.
    }
    int main () {
       cout << "Testing..." << endl;
-      cout << "Yours = " << velocity(5,3,4) << endl;;
+      cout << "Yours = " << velocity(5,3,4) << endl;
       cout << "Correct = 17";
    }
 
@@ -159,6 +159,6 @@ values. So the following is illegal: ``minute + 1 = hour;``.
    }
    int main () {
       cout << "Testing..." << endl;
-      cout << "Yours = " << volume(3,4) << endl;;
+      cout << "Yours = " << volume(3,4) << endl;
       cout << "Correct = 113.04";
    }
