@@ -134,15 +134,19 @@ values. So the following is illegal: ``minute + 1 = hour;``.
 .. activecode:: compos_4
    :language: cpp
 
-   Finish the code below so that the velocity is calculated and returned on the same line.  Hint: the current velocity results from 1) the initial velocity and 2) the acceleration over a window of time.  Use ``v0`` for initial velocity, ``a`` for acceleration, and ``t`` for time.
+   Finish the code below so that the velocity is calculated completely on a single line.  Hint: the current velocity results from 1) the initial velocity and 2) the acceleration over a window of time.  Use ``v0`` for initial velocity, ``a`` for acceleration, and ``t`` for time.
    ~~~~
-   int velocity(int v0, int a, int t) {
-       // You may only use the next line for your code.
-       return ;
-   }
+   #include <iostream>
+   using namespace std;
+
    int main () {
+      int v0 = 5, a = 3, t = 4, velocity;
+
+      // You may only use the next line for your code.
+      velocity = ;
+ 
       cout << "Testing..." << endl;
-      cout << "Yours = " << velocity(5,3,4) << endl;
+      cout << "Yours = " << velocity << endl;
       cout << "Correct = 17";
    }
 
@@ -151,14 +155,18 @@ values. So the following is illegal: ``minute + 1 = hour;``.
    :language: cpp
    :autograde: unittest
 
-   Finish the code below so that the volume of a cylinder with radius ``r`` and height ``h`` is calculated and returned on the same line.  Use 3.14 for ``pi``.
+   Finish the code below so that the volume of a rectangular prism with length ``l``, width ``w``, and height ``h`` is calculated on a single line.
    ~~~~
-   double volume(int r, int h) {
-       // You may only use the next line for your code.
-       return ;
-   }
+   #include <iostream>
+   using namespace std;
+
    int main () {
+      int l = 2, w = 3, h = 4, volume;
+
+      // You may only use the next line for your code.
+      volume = ;
+
       cout << "Testing..." << endl;
-      cout << "Yours = " << volume(3,4) << endl;
-      cout << "Correct = 113.04";
+      cout << "Yours = " << volume << endl;
+      cout << "Correct = 24";
    }
