@@ -25,7 +25,7 @@ up to you to answer the other two questions by trying them out.
    good way to find out is to ask the compiler.  It will let you answer
    your question by throwing an error... or not!
 
-.. filleintheblank:: fuwresults_1
+.. fillintheblank:: fuwresults_1
 
    What will be **printed** when the following code runs? |blank|
 
