@@ -17,6 +17,7 @@ supports all the same operations as ``cin``, including ``>>`` and
 ::
 
     #include <iostream>
+    #include <fstream>
     using namespace std;
 
     int main ()
@@ -49,6 +50,7 @@ displays them on the screen:
 ::
 
     #include <iostream>
+    #include <fstream>
     using namespace std;
 
     int main ()
