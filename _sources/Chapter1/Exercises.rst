@@ -275,22 +275,26 @@ assess what you have learned in this chapter.
 
         -   Parsing doesn't involve run-time errors.
 
+
 .. fillintheblank:: programming_11
 
-    #include <|blank|>
-    using namespace |blank|
-    int |blank| {
-         cout << "Hello, World."<< endl|blank|
-         return |blank|;
-   }
-    
-   - :(iostream): Correct!
-     :.*: Try again!
-   - :(std;): Correct!
-     :.*: Try again!
-   - :(main): Correct!
-     :.*: Try again!
-   - :(;): Correct!
-     :.*: Try again!
-   - :(0): Correct!
-     :.*: Try again!
+    Fill in the missing pieces.
+
+    | ``#include <`` |blank| ``>``
+    | ``using namespace`` |blank|
+    | ``int`` |blank| ``() {``
+    | ``cout << "Hello, World!" << endl`` |blank|
+    | ``return`` |blank| ``;``
+    | ``}``
+
+    - :(iostream): Correct!
+      :.*: Try again!
+    - :(std;): Correct!
+      :.*: Try again!
+    - :(main): Correct!
+      :.*: Try again!
+    - :(;): Correct!
+      :.*: Try again!         
+    - :0: Correct!
+      :[+-]?\b[0-9]+\b: Try again! 0 is the normal convention
+      :.*: Try again!
