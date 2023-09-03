@@ -131,7 +131,7 @@ Answer the following **Multiple Choice** questions to assess what you have learn
 .. mchoice:: VARS_mc5
     :practice: T
 
-    **Multiple Response** What could be changed so that the output of the following program is ``34``?
+    **Multiple Response** Which of the following changes would, by themselves, would make the output of the following program ``34``?
 
     .. code-block:: 
        :linenos:
@@ -144,23 +144,23 @@ Answer the following **Multiple Choice** questions to assess what you have learn
          cout << c; cout << d;
        }
 
-    -   ``c`` should be declared as an int.
+    -   declaring ``c`` as an int.
 
         -   This will still result in an error.
 
-    -   ``c`` should be declared as a string.
+    -   declaring ``c`` as a string.
 
         +   This clears up the type mismatch on line 4.
 
-    -   ``d`` should be declared as a char.
+    -   declaring ``d`` as a char.
 
         -   Although the code will still run, it won't give correct output.
 
-    -   Line 4 should be replaced with ``c = 3``
+    -   Line 4 is replaced with ``c = 3``
 
         -   Although the code will still run, it won't give correct output.
 
-    -   Line 4 should be replaced with ``c = '3'``
+    -   Line 4 is replaced with ``c = '3'``
 
         +   This clears up the type mismatch on line 4.
 
