@@ -232,7 +232,7 @@ example only demonstrates two:
    =====
    int perimeter_value = twice_length + twice_width;
    =====
-   cout << perimeter_value<<endl;
+   cout << perimeter_value << endl;
    =====
    return parameter_value; #distractor
    =====
