@@ -120,7 +120,7 @@ phil.
 .. fillintheblank:: locals_3
 
    Whenever we make a function call, we create a(n) |blank| of that function,
-   which contiains the parameters and local variables for that function.
+   which contains the parameters and local variables for that function.
     
    - :[Ii][Nn][Ss][Tt][Aa][Nn][Cc][Ee]: You could create many instances of one function, each with their own parameters and local variables if you wanted!
      :.*: Try again!
