@@ -63,6 +63,7 @@ and eventually gets back to ``main`` so the program can terminate.
        int num = 2;
        int newNum = multiplyTwo(num);
        int newerNum = addTwo(newNum);
+       cout << newNum << " " << newerNum;
        return 0;
    }
 
