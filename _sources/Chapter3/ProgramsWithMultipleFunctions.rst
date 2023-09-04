@@ -63,6 +63,7 @@ and eventually gets back to ``main`` so the program can terminate.
        int num = 2;
        int newNum = multiplyTwo(num);
        int newerNum = addTwo(newNum);
+       cout << newNum << " " << newerNum;
        return 0;
    }
 
@@ -145,7 +146,7 @@ read from top to bottom. Instead, **follow the flow of execution**.
          yo(); yo();
        }
 
-       void goodbye() {
+       void goodbye () {
          yo(); hello();
          cout << "goodbye,";
        }

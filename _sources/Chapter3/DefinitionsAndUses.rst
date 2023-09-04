@@ -79,9 +79,9 @@ messages you get.
 
    int addTwo(int x) #distractor
 
-    int new = x + 2;
+    int plustwo = x + 2;
 
-    return new;
+    return plustwo;
 
     return x; #distractor
 
