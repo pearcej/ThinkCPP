@@ -146,7 +146,7 @@ read from top to bottom. Instead, **follow the flow of execution**.
          yo(); yo();
        }
 
-       void goodbye() {
+       void goodbye () {
          yo(); hello();
          cout << "goodbye,";
        }
