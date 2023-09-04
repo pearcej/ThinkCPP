@@ -148,7 +148,7 @@ exceptions later.
    What will be printed to the terminal?  If nothing will print, 
    or if the compiler will throw an error, type "error".
     
-   - :bb: The printTwice fucntion will print the character argument proveided two times.
+   - :bb: The printTwice function will print the character argument proveided two times.
      :error: Something will be printed to the terminal!
      :.*: Try again!
 
