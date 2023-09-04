@@ -151,7 +151,7 @@ example only demonstrates two:
 
         +   You can't name a function the same name as a reserved keyword.
 
-    -   You can have a fucntion with several parameters or a function with none.
+    -   You can have a function with several parameters or a function with none.
 
         -   This is true! However, you must always use parentheses.
 
