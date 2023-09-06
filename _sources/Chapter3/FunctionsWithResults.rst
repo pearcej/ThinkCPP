@@ -31,6 +31,9 @@ up to you to answer the other two questions by trying them out.
 
    .. code-block:: cpp
 
+        #include <iostream>
+        using namespace std;
+
         void multiply (int x, int y) {
           cout << x*y;
         }
@@ -50,8 +53,11 @@ up to you to answer the other two questions by trying them out.
 
    .. code-block:: cpp
 
+        #include <iostream>
+        using namespace std;
+
         void multiply (int x, int y) {
-          out = x * y
+          cout << x * y << endl;
         }
 
         int main() {
@@ -62,7 +68,7 @@ up to you to answer the other two questions by trying them out.
 
    - Yes
 
-     - Can you print the result of a void function
+     - Can you print the result of a void function?
 
    - No
 
