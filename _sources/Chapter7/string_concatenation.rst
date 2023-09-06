@@ -109,7 +109,7 @@ very strange result, at least in my development environment.
    :numbered: left
    :adaptive:
 
-   As an exercise, put together the code below so that it prints ``C++ is so fun!""
+   As an exercise, put together the code below so that it prints ``C++ is so fun!``
    -----
    int main() {
    =====

@@ -186,6 +186,7 @@ them does not execute.
    What gets printed by the following code?
 
    ::
+
       void print_descend(int a) {
           if(a==0) {
               return;
