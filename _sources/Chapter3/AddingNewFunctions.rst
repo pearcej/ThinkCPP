@@ -36,10 +36,10 @@ which outputs a new line character, represented by the special value
 ``endl``.
 
 The first word of the header is the "return type":
-**void: ** returns nothing;
-**int: ** returns an int;
-*double: ** returns a double;
-**string: ** returns a string;
+**void** returns nothing;
+**int** returns an int;
+**double** returns a double;
+**string** returns a string;
 
 In ``main`` we can call this new function using syntax that is similar to
 the way we call the built-in C++ commands:

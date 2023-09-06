@@ -117,6 +117,7 @@ to read.
 
 
    Take a look at the code below. Is the variable ``j`` accessable  in the function ``printMultiples``?
+
    .. code-block:: cpp
 
     #include <iostream>
