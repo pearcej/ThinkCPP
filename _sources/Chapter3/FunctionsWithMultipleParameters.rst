@@ -74,10 +74,6 @@ The correct syntax is printTime (hour, minute).
 
         +   Correct!
 
-    -   ``void totalCost (double cost, double tax)``
-
-        -   This function header is missing a ``{``, which is needed to begin defining the function.
-
 
 .. mchoice::  multiple_params_2
 
