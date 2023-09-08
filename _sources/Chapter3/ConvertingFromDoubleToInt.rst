@@ -70,7 +70,7 @@ its argument to the appropriate type.
 
           double exam1 = 88.8;
           double exam2 = 72.7;
-          double exam2 = 97.9;
+          double exam3 = 97.9;
 
     **Method 1:**
 

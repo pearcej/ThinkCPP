@@ -81,7 +81,8 @@ assess what you have learned in this chapter.
     -   3
 
         -   The value of x *should* be 3, since automatic type conversion will
-            round the value of pi down to the nearest integer.
+            round the value of pi down to the nearest integer. Are you sure
+            this program compiles?
 
     -   Error!
 
