@@ -160,12 +160,12 @@ programs.
 .. mchoice:: question14_1_1
    :answer_a: True
    :answer_b: False
-   :correct: a
+   :correct: b
    :feedback_a: Incorrect! Data encapsulation should hide implementation details.
    :feedback_b: Correct! Data encapsulation prevents unrestricted access to internal representations.
 
    Data encapsulation is based on the idea that each structure definition should provide a set of functions that 
-   apply to the structure, and prevent unrestricted access to the internal representation.
+   apply to the structure, and allow unrestricted access to the internal representation.
 
 .. fillintheblank:: question14_1_2
 
