@@ -90,7 +90,7 @@ best we can do is detect the error, output an error message, and exit.
    :answer_b: The sum of two sides of a ``Triangle`` object must be greater than the third.
    :answer_c: All angles of a ``Triangle`` object must be 60 degrees.
    :answer_d: The greatest angle in a ``Triangle`` object must be less than 90 degrees.
-   :correct: b,d
+   :correct: a,b
    :feedback_a: Correct! 
    :feedback_b: Correct!
    :feedback_c: Incorrect! An equilateral triangle is only one possible kind of triangle.

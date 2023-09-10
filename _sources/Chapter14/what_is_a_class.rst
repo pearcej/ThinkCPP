@@ -57,7 +57,7 @@ Also, it is common to refer to all user-defined types in C++ as
    :answer_b: Change ``struct`` to ``class`` and remove the ``public:`` label.
    :answer_c: Remove the ``public:`` label.
    :answer_d: Change ``struct`` to ``class``.
-   :correct: b
+   :correct: d
    :feedback_a: Incorrect! ``Deck`` is still a ``struct``.
    :feedback_b: Incorrect! We don't want to make the constructors and all member functions private.
    :feedback_c: Incorrect! We don't want to make the constructors and all member functions private.
