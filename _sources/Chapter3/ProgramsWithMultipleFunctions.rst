@@ -60,10 +60,10 @@ and eventually gets back to ``main`` so the program can terminate.
    }
 
    int main () {
-       int num = 2;
+       int num = 3;
        int newNum = multiplyTwo(num);
        int newerNum = addTwo(newNum);
-       cout << newNum << " " << newerNum;
+       printTotal(total);
        return 0;
    }
 
