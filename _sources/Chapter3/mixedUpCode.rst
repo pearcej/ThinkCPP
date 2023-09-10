@@ -20,7 +20,7 @@ assess what you have learned in this chapter.
    :fromid: functions_p3, functions_p3_ac_q
    :toggle:
 
-.. selectquestion:: functions_p4.0_sq
+.. selectquestion:: functions_p4_sq
    :fromid: functions_p4, functions_p4_ac_q
    :toggle:
 
