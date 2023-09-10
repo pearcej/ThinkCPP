@@ -85,13 +85,13 @@ lines:
 
    Here we define the threeLine function, which calls the newLine function
    three times.  The result is a function that prints three lines after it
-   is called.
+   is called (each of those empty lines begins with a "*").
    ~~~~
    #include <iostream>
    using namespace std;
 
    void newLine () {
-       cout << endl;
+       cout << '*' << endl;
    }
 
    void threeLine () {
