@@ -165,7 +165,7 @@ programs.
    :feedback_b: Correct! Data encapsulation prevents unrestricted access to internal representations.
 
    Data encapsulation is based on the idea that each structure definition should provide a set of functions that 
-   apply to the structure, and allow unrestricted access to the internal representation.
+   apply to the structure, and prevent unrestricted access to the internal representation.
 
 .. fillintheblank:: question14_1_2
 
