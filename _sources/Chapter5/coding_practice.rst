@@ -8,10 +8,10 @@ Coding Practice
         Write a function called ``calculator`` which takes two ``doubles``, ``first`` and
         ``second`` and a ``char operation`` as parameters. ``calculator`` performs
         addition, subtraction, multiplication, or division with the two ``doubles``
-        depending on what operation is passed in (+, -, *, /). It then returns the result.
+        depending on what operation is passed in (+, -, \*, /). It then returns the result.
         Run and test your code!
 
-        .. activecode:: cp_5_AC_1q
+        .. activecode:: cp_5_AC_r1q
            :language: cpp
            :practice: T
 
