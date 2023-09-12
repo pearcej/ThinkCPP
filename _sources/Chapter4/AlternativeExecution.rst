@@ -99,7 +99,7 @@ type they are. You should resist the temptation to write things like:
    ::
 
        void weather(int temp) {
-         if temp < 52 {
+         if (temp < 52) {
            cout << "It is cold!";
          }
          else {
