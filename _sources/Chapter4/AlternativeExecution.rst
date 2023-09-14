@@ -97,6 +97,8 @@ type they are. You should resist the temptation to write things like:
    What will be printed after the main is executed?
 
    ::
+       #include <iostream>
+       using namespace std;
 
        void weather(int temp) {
          if (temp < 52) {
