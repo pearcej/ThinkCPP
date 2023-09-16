@@ -437,27 +437,29 @@ assess what you have learned in this chapter.
 
     ::
 
-        void party (int day_of_month, string address) {
-            cout <<"party on "<<day_of_month<<" at "<<address<<endl;
+        #include <iostream>
+        using namespace std;
+        
+        void party(int day_of_month, string address) {
+            cout << "party on "<<day_of_month<<" at "
+                 << address << endl;
         }
 
-        void weekend(bool available){
-            if(available==true){
+        void weekend(bool available) {
+            if(available==true) {
                party(21,"Big house"); party(22,"CCTC");
-            }
-
-            else{
-               cout<<"sorry I have to study for ENGR101!"<<endl;
+            } else {
+               cout << "sorry I have to study for ENGR101!" << endl;
             }
         }
 
-        int main(){
+        int main() {
             bool im_free=false;
-            party(25,"North campus");
+            party(25, "North campus");
             weekend(im_free);
 
             im_free=true;
-            party(25,"Central campus");
+            party(25, "Central campus");
             weekend(im_free);
             return 0;
         }
