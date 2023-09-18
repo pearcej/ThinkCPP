@@ -67,12 +67,12 @@ but we are not going to deal with them for a little while.
 
       int main() {
           bool sun_set=true;
-          if(sun_sunset) {
+          if(sun_set) {
               cout << "its night time ";
               sun_set=false;
               return 0;
           }
-          if(!sunset) {
+          if(!sun_set) {
               cout << "Day time ";
           }
           else {

@@ -53,7 +53,7 @@ logical operator:
 .. dragndrop:: chapter_five_glossary_2
    :feedback: Try again!
    :match_1: dead code|||Part of a program that can never be executed.
-   :match_2: scaffolding|||Codemused during program development but not part of the final version.
+   :match_2: scaffolding|||Code used during program development but not part of the final version.
    :match_3: overloading|||Having more than one function with the same name but different parameters.
 
 
