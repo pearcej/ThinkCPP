@@ -89,24 +89,15 @@ presence or absence of some condition.
        }
 
 .. mchoice:: bool_var_4
-   :answer_a: nothing will print
-   :answer_b: "Charging your phone"
-   :answer_c: "Battery is charged" 
-   :answer_d: "There is no power"
-   :correct: b
-   :feedback_a: The value of ``low_battery`` is true so we enter the first ``if`` block.
-   :feedback_b: correct! ``low_battery`` stays true and we set ``power_outage`` to false.
-   :feedback_c: ``low_battery`` is true so we don't reach this ``else``.
-   :feedback_d: We change the value of ``power_outage`` to false before hand.
 
-   What will print?
+    What will print?
 
-   ::
+    .. code-block::
 
-       bool low_battery=true;
-       bool power_outage=true;
+        bool low_battery=true;
+        bool power_outage=true;
 
-       if(low_battery){
+        if(low_battery){
 
           if(power_outage){
               power_outage=!power_outage;
@@ -128,5 +119,21 @@ presence or absence of some condition.
           else{
             cout<<"There is no power"<<endl>>;
           }
+        }
 
-       }
+
+    -   nothing will print
+
+        -   The value of ``low_battery`` is true so we enter the first ``if`` block.
+
+    -   "Charging your phone"
+
+        +   correct! ``low_battery`` stays true and we set ``power_outage`` to false.
+
+    -   "Battery is charged"
+
+        -   ``low_battery`` is true so we don't reach this ``else``.
+
+    -   "There is no power"
+
+        -   We change the value of ``power_outage`` to false before hand.
