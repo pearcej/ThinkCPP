@@ -91,7 +91,7 @@ The most common use of bool functions is inside conditional statements
    :adaptive:
    :numbered: left
 
-   Construct a block of code that first checks if a number is positive,
+   Construct a block of code that first checks if a number *x* is positive,
    then checks if it's even, and then prints out a message to classify
    the number.  It prints "both" if the number is both positive and even,
    "even" if the number is only even, and finally "positive" if the number
@@ -101,20 +101,21 @@ The most common use of bool functions is inside conditional statements
    =====
    bool positiveFlag = (x < 0); #distractor
    =====
-   bool evenFlag = (n%2 == 0);
+   bool evenFlag = (x % 2 == 0);
    =====
-   bool evenFlag = (n%2 == 1); #distractor
+   bool evenFlag = (x % 2 == 1); #distractor
    =====
    if (evenFlag && positiveFlag) {
    =====
    if (evenFlag || positiveFlag) {  #distractor
    =====
-    cout << "both"; }
+    cout << "both";
    =====
-   else if (evenFlag) {
+   } else if (evenFlag) {
    =====
-    cout << "even"; }
+    cout << "even";
    =====
-   else {
+   } else {
    =====
-    cout << "positive"; }
+    cout << "positive";
+   }
