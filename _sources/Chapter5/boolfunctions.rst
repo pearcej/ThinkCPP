@@ -94,8 +94,8 @@ The most common use of bool functions is inside conditional statements
    Construct a block of code that first checks if a number *x* is positive,
    then checks if it's even, and then prints out a message to classify
    the number.  It prints "both" if the number is both positive and even,
-   "even" if the number is only even, and finally "positive" if the number
-   is only positive.
+   "even" if the number is only even, "positive" if the number
+   is only positive, and finally "neither" if it is neither postive nor even.
    -----
    bool positiveFlag = (x > 0);
    =====
@@ -115,7 +115,12 @@ The most common use of bool functions is inside conditional statements
    =====
     cout << "even";
    =====
-   } else {
+   } else if (positiveFlag) {
    =====
     cout << "positive";
+   =====
+   } else {
+   =====
+    cout << "neither";
+   =====
    }
