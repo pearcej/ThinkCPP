@@ -1,3 +1,6 @@
+
+.. _loopcount:
+
 Looping and counting
 --------------------
 

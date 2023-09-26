@@ -15,7 +15,7 @@ Also, it is not always obvious what sort of things are easy to write,
 but a good approach is to look for subproblems that fit a pattern you
 have seen before.
 
-Back in Section `[loopcount] <#loopcount>`__ we looked at a loop that
+Back in Section :ref:`[loopcount] <loopcount>` we looked at a loop that
 traversed a string and counted the number of times a given letter
 appeared. You can think of this program as an example of a pattern
 called “traverse and count.” The elements of this pattern are:

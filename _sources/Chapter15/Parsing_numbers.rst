@@ -37,7 +37,7 @@ digits from the original string, in order.
    single: accumulator
 
 The variable ``digitString`` is an example of an **accumulator**. It is
-similar to the counter we saw in Section `[loopcount] <#loopcount>`__,
+similar to the counter we saw in Section :ref:`[loopcount] <loopcount>`,
 except that instead of getting incremented, it gets accumulates one new
 character at a time, using string concatentation.
 
