@@ -4,7 +4,7 @@
 Now that we have a ``Deck`` object, it makes sense to put all the
 functions that pertain to ``Deck``\ s in the ``Deck`` structure
 definition. Looking at the functions we have written so far, one obvious
-candidate is ``printDeck`` (Section `[printdeck] <#printdeck>`__).
+candidate is ``printDeck`` (:numref:`printdeck`).
 Here’s how it looks, rewritten as a ``Deck`` member function:
 
 ::

@@ -1,7 +1,7 @@
 Mergesort
 ---------
 
-In Section `1.7 <#sorting>`__, we saw a simple sorting algorithm that
+In :numref:`sorting`, we saw a simple sorting algorithm that
 turns out not to be very efficient. In order to sort :math:`n` items, it
 has to traverse the vector :math:`n` times, and each traversal takes an
 amount of time that is proportional to :math:`n`. The total time,

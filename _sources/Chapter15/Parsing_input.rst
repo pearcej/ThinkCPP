@@ -1,4 +1,6 @@
-﻿Parsing input
+﻿.. _parsing:
+
+Parsing input
 -------------
 
 In Section `[formal] <#formal>`__ I defined “parsing” as the process of

@@ -131,7 +131,7 @@ and ask the user to try again.
 
 To convert a string to an integer you can use the ``atoi`` function
 defined in the header file ``cstdlib``. We will get to that in
-Section `[parsing] <#parsing>`__.
+:numref:`parsing`.
 
 .. mchoice:: getting_user_input_1
    :practice: T

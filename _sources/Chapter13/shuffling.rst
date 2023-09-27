@@ -2,7 +2,7 @@ Shuffling
 ---------
 
 For most card games you need to be able to shuffle the deck; that is,
-put the cards in a random order. In Section `[random] <#random>`__ we
+put the cards in a random order. In :numref:`random` we
 saw how to generate random numbers, but it is not obvious how to use
 them to shuffle a deck.
 
@@ -45,7 +45,7 @@ indices and switches the cards at the indicated positions.
    your program, **pseudocode** is a great place to start!
 
 You can probably figure out how to write ``randomInt`` by looking at
-Section `[random] <#random>`__, although you will have to be careful
+:numref:`random`, although you will have to be careful
 about possibly generating indices that are out of range.
 
 You can also figure out ``swapCards`` yourself. I will leave the

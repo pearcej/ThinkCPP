@@ -1,3 +1,6 @@
+
+.. _objectops:
+
 Functions for objects
 ---------------------
 
