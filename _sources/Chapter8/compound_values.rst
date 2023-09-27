@@ -20,7 +20,7 @@ instance variables). This ambiguity is useful.
 It is also useful to be able to create your own compound values. C++
 provides two mechanisms for doing that: **structures** and **classes**.
 We will start out with structures and get to classes in
-Chapter `[class] <#class>`__ (there is not much difference between
+:numref:`class` (there is not much difference between
 them).
 
 .. fillintheblank:: compound_values_1

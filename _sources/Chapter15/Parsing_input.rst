@@ -3,7 +3,7 @@
 Parsing input
 -------------
 
-In Section `[formal] <#formal>`__ I defined “parsing” as the process of
+In :numref:`formal` I defined “parsing” as the process of
 analyzing the structure of a sentence in a natural language or a
 statement in a formal language. For example, the compiler has to parse
 your program before it can translate it into machine language.

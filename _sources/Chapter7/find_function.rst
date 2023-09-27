@@ -54,7 +54,7 @@ appears in the string.
 
 This example returns the value 2.
 
-You should remember from Section `[overloading] <#overloading>`__ that
+You should remember from :numref:`overloading` that
 there can be more than one function with the same name, as long as they
 take a different number of parameters or different types. In this case,
 C++ knows which version of ``find`` to invoke by looking at the type of

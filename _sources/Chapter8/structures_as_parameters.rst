@@ -36,7 +36,7 @@ standard format. If you call ``printPoint (blank)``, it will output
   }
 
 As a second example, we can rewrite the ``distance`` function from
-Section `[distance] <#distance>`__ so that it takes two ``Point``\ s as
+:numref:`distance` so that it takes two ``Point``\ s as
 parameters instead of four ``double``\ s.
 
 ::

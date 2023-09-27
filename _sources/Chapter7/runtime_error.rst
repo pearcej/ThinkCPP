@@ -1,7 +1,7 @@
 A run-time error
 ----------------
 
-Way back in Section `[run-time] <#run-time>`__ I talked about run-time
+Way back in :numref:`run-time` I talked about run-time
 errors, which are errors that don’t appear until a program has started
 running.
 

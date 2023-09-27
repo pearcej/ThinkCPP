@@ -1,4 +1,7 @@
-﻿File input
+﻿
+.. _finput:
+
+File input
 ----------
 
 To get data from a file, we have to create a stream that flows from the
