@@ -1,7 +1,7 @@
 Shuffling and dealing
 ---------------------
 
-In Section `1.6 <#shuffle>`__ I wrote pseudocode for a shuffling
+In :numref:`shuffling`, I wrote pseudocode for a shuffling
 algorithm. Assuming that we have a function called ``shuffleDeck`` that
 takes a deck as an argument and shuffles it, we can create and shuffle a
 deck:

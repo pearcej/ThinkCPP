@@ -1,4 +1,7 @@
-﻿Counting
+﻿
+.. _counting:
+
+Counting
 --------
 
 .. index::
