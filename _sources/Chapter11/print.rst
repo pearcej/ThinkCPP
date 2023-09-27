@@ -1,7 +1,7 @@
 ``print``
 ---------
 
-In Chapter `[time] <#time>`__ we defined a structure named ``Time`` and
+In :numref:`time` we defined a structure named ``Time`` and
 wrote a function named ``printTime``
 
 ::

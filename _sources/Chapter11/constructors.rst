@@ -1,7 +1,7 @@
 Constructors
 ------------
 
-Another function we wrote in Chapter `[time] <#time>`__ was
+Another function we wrote in :numref:`time` was
 ``makeTime``:
 
 ::
