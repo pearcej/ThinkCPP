@@ -145,26 +145,32 @@ has been able to prove it *or* disprove it!
      cout << answer;
      
 .. mchoice:: while_statement_3
-   :practice: T
-   :answer_a: n % 2 = 0 and n = n + 1
-   :answer_b: n % 2 != 0 and ++n
-   :answer_c: n % 2 == 0 and n++
-   :answer_d: n == "even" and n = n + 2
-   :correct: c
-   :feedback_a: A single equal sign is the assignment operator, not comparison.
-   :feedback_b: The code is meant to print the **even** numbers from 0-20
-   :feedback_c: The condition checks whether a number is even and increments the variable n
-   :feedback_d: n is an int and here you are comparing it to a string.
 
    The following code is a program to print the **even numbers from 0 to 20**. The code contains blanks. What is the correct while statement condition and iteration needed in order for the code to run successfully.
 
-   .. code-block:: cpp
+   .. code-block::
 
-     int n = 0;
-     while (_____) {  // while statement condition
-       cout << n << endl;
-       _______; // iteration of the variable
-     }
+      int n = 0;
+        while (_____) {    // while statement condition
+        cout << n << endl;
+        _______;           // iteration of the variable
+      }
+
+   -  ``n % 2 = 0 && n <= 20`` and ``n = n + 1``
+
+      - A single equal sign is the assignment operator, not comparison.
+
+   - ``n % 2 != 0 && n <= 20`` and ``n = n + 1``
+
+     - The code is meant to print the **even** numbers from 0-20
+
+   - ``n % 2 == 0 && n <= 20`` and ``n = n + 1``
+     
+     + The condition checks whether a number is even and increments the variable ``n``
+
+   - ``n == "even" && n <= 20`` and ``n = n + 2``
+
+     - ``n`` is an ``int`` and here you are comparing it to a ``string``.
 
 
 .. mchoice:: while_statement_4
