@@ -131,9 +131,9 @@ very strange result, at least in my development environment.
    :numbered: left
    :adaptive:
 
-   Put together the code below to creater a function <code>greeter</code> that adds "hello" and "goodbye" behind and ahead of a message
+   Put together the code below to creater a function ``greeter`` that adds "hello" and "goodbye" behind and ahead of a message
    respectively and then prints the new message.
-   Example: <code>greeter("ssup")</code> will print "hello ssup goodbye";
+   Example: ``greeter("ssup")`` will print "hello ssup goodbye"
 
    -----
    void greeter(string message) {
