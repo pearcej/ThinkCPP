@@ -70,10 +70,10 @@ number of a’s.
 
    As an exercise, encapsulate this code in a function named
    ``countLetters``, and generalize it so that it accepts the string and
-   the letter as arguments. In the function, declare length, count, and index in that order.
-   Within the main function, declare city and letter in that order.
+   the letter as arguments. In the function, declare ``length``, ``count``, and ``index`` in that order.
+   Within the main function, declare ``city`` and ``letter`` in that order.
    -----
-   int countLetter(string s, char letter) {
+   int countLetters(string s, char letter) {
    =====
       int length = s.length();
    =====
@@ -100,7 +100,7 @@ number of a’s.
    =====
       char letter = "e";
    =====
-      cout << countLetter(city, letter); 
+      cout << countLetters(city, letter); 
    }
 
 
