@@ -5,7 +5,7 @@ It is often useful to examine a character and test whether it is upper
 or lower case, or whether it is a character or a digit. C++ provides a
 library of functions that perform this kind of character classification.
 In order to use these functions, you have to include the header file
-``ctype.h``.
+``cctype``.
 
 ::
 
@@ -63,7 +63,7 @@ should be ``void``.
   If you get stuck, you can reveal the extra problems at the end for help. 
   ~~~~
   #include <iostream>
-  #include "ctype.h"
+  #include <cctype>
   using namespace std;
 
   void stringToUpper (string &input) {
