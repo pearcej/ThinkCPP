@@ -14,7 +14,7 @@ Coding Practice
            :practice: T
 
            #include <iostream>
-           #include "ctype.h"
+           #include <cctype>
            using namespace std;
 
            bool isPalindrome (string input) {
@@ -43,7 +43,7 @@ Coding Practice
            :optional:
 
            #include <iostream>
-           #include "ctype.h"
+           #include <cctype>
            using namespace std;
 
            bool isPalindrome (string input) {
@@ -159,7 +159,7 @@ Coding Practice
            :practice: T
 
            #include <iostream>
-           #include "ctype.h"
+           #include <cctype>
            using namespace std;
 
            string ROT13 (string input) {
@@ -192,7 +192,7 @@ Coding Practice
            :optional:
 
            #include <iostream>
-           #include "ctype.h"
+           #include <cctype>
            using namespace std;
 
            string ROT13(string input) {
@@ -240,7 +240,7 @@ Coding Practice
            :practice: T
 
            #include <iostream>
-           #include "ctype.h"
+           #include <cctype>
            using namespace std;
 
            string capitalize (string input) {
@@ -264,7 +264,7 @@ Coding Practice
            :optional:
 
            #include <iostream>
-           #include "ctype.h"
+           #include <cctype>
            using namespace std;
 
            string capitalize (string input) {
