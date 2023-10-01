@@ -90,11 +90,11 @@ and that outputs the letters backwards, all on one line.
       =====
           cout << input[x];
       =====
-          x--;
+          x = x - 1;
         }
       }
       =====
-          x++;
+          x = x + 1;
         }
       } #distractor
 
