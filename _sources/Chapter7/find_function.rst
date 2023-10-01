@@ -23,7 +23,7 @@ character appears.
       int index = fruit.find('a');
       cout << index << endl;
       string dessert = "pudding";
-      int another_index = fruit.find('a');
+      int another_index = dessert.find('a');
       cout << another_index << endl;
   }
 
