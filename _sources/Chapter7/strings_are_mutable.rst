@@ -66,18 +66,18 @@ This produces the output ``Jello, world!``.
    :adaptive:
    :noindent:
 
-   Put together the code below to creater a function <code>mixer<\code> that takes in two strings and replaces every even index
+   Put together the code below to create a function ``mixer`` that takes in two strings and replaces every even index
    of the first string by the corresponding index of the second. It returns the modified first string.
    Example:
-   <code>string_a = "food"<\code>  and <code>string_b = "summer"<\code> .
-   <code> mixer(string_a ,string_b )<\code> makes <code>string_a<\code> become "somd".
+   ``string_a = "food"``  and ``string_b = "summer"`` .
+   ``mixer(string_a ,string_b )`` makes ``string_a`` become "somd".
 
    Assume second string is greater than first.
 
    -----
-   string greeter(string s1,string s2) {
+   void mixer(string s1,string s2) {
    =====
-   void mixer(string s1,string s2) { #distractor
+   string greeter(string s1,string s2) { #distractor
    =====
       int size = s1.length();
    =====
