@@ -42,20 +42,11 @@ function.
   int main() {
       Point blank = { 3.0, 4.0 };
       addTwo (blank);
-      cout << "(" << blank.x << "," << blank.y << ")" << endl;
+      cout << "(" << blank.x << ", " << blank.y << ")" << endl;
   }
 
 .. mchoice:: call_by_value_1
    :practice: T
-   :answer_a: 2 4
-   :answer_b: 2 4 2
-   :answer_c: 4 4 2
-   :answer_d: 2 4 4
-   :correct: b
-   :feedback_a: Take a look at exactly what is being outputted.
-   :feedback_b: Correct!
-   :feedback_c: Take a look at exactly what is being outputted.
-   :feedback_d: Remember the rules of pass by value.
 
    What will print?
 
@@ -74,18 +65,25 @@ function.
         cout << num << endl;
       }
 
+   - ``2 4``
+
+     - Take a look at exactly what is being outputted.
+
+   - ``2 4 2``
+
+     + Correct!
+
+   - ``4 4 2``
+
+     - Take a look at exactly what is being outputted.
+
+   - ``2 4 4``
+
+     - Remember the rules of pass by value.
+
 
 .. mchoice:: call_by_value_2
    :practice: T
-   :answer_a: (6, 8), 3
-   :answer_b: (6, 8), 6
-   :answer_c: (68),3
-   :answer_d: 68, 6
-   :correct: a
-   :feedback_a: Correct!
-   :feedback_b: Remember the rules of pass by value.
-   :feedback_c: Take a look at exactly what is being outputted.
-   :feedback_d: Take a look at exactly what is being outputted.
 
    What will print?
 
@@ -106,4 +104,20 @@ function.
         timesTwo (blank);
         cout << ", " << blank.x << endl;
       }
+
+   - ``(6, 8), 3``
+
+     + Correct!
+
+   - ``(6, 8), 6``
+
+     - Remember the rules of pass by value.
+
+   - ``(68),3``
+
+     - Take a look at exactly what is being outputted.
+
+   - ``68, 6``
+
+     - Take a look at exactly what is being outputted.
 
