@@ -75,15 +75,6 @@ parameters instead of four ``double``\ s.
 
 .. mchoice:: structures_parameters_1
    :practice: T
-   :answer_a: (-2, -7)
-   :answer_b: (2.0, 7.0)
-   :answer_c: (-7, -2)
-   :answer_d: (-7.0, -2.0)
-   :correct: c
-   :feedback_a: Take a close look at the printOppositeCoordinate function.
-   :feedback_b: Take a close look at the printOppositeCoordinate function.
-   :feedback_c: Yes, this is the correct output.
-   :feedback_d: Take a close look at the Coordinate struct.
 
    What will print?
 
@@ -101,6 +92,23 @@ parameters instead of four ``double``\ s.
         Coordinate coord = { 2, 7 };
         printOppositeCoordinate (coord);
       }
+
+   - ``(-2, -7)``
+
+     - Take a close look at the printOppositeCoordinate function.
+
+   - ``(2.0, 7.0)``
+
+     - Take a close look at the printOppositeCoordinate function.
+
+   - ``(-7, -2)``
+
+     + Yes, this is the correct output.
+
+   - ``(-7.0, -2.0)``
+
+     - Take a close look at the Coordinate struct.
+
 
 .. parsonsprob:: structures_parameters_2
    :numbered: left
