@@ -59,11 +59,11 @@ The output of this program is ``3, 4``.
         :click-incorrect:Point blank = { 3.0, 4.0 };:endclick:
         :click-incorrect:Point hello;:endclick:
         :click-correct:hello = { 3.0, 4.0 };:endclick:
-        :click-incorrect:Point new;:endclick:
+        :click-incorrect:Point beep;:endclick:
         :click-incorrect:Point p = hello;:endclick:
-        :click-incorrect:new = (Point){3.0, 4.0};:endclick:
-        :click-correct:bool check = blank == new;:endclick:
-        :click-correct:new = {3.0, 4.0};:endclick:
+        :click-incorrect:beep = (Point){3.0, 4.0};:endclick:
+        :click-correct:bool check = blank == beep;:endclick:
+        :click-correct:beep = {3.0, 4.0};:endclick:
     }
 
 .. parsonsprob:: operations_structures_2
