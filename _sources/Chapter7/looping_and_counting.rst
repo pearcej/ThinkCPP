@@ -141,27 +141,28 @@ number of a’s.
    .. code-block:: cpp
       :linenos:
 
-      string word_1 = "understand"
-      string word_2 = "underwaa"
+      string word_1 = "understand";
+      string word_2 = "underwaa";
 
       int end_1 = word_1.length();
       int end_2 = word_2.length();
 
-      if ( end_2 &lt end_1 ){
+      if ( end_2 < end_1 ){
          end_1 = end_2;
       }
 
       int index = 0;
       int counter = 0;
 
-      while ( index &lt end_1 ) {
+      while ( index < end_1 ) {
         if ( word_1[index] == word_2[index] ){
            counter = counter + 1;
         }
 
-        else{
+        else {
            counter = counter - 1;
         }
+        index = index + 1;
       }
       
       return 0;
