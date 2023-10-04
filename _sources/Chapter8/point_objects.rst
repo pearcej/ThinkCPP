@@ -74,8 +74,7 @@ object with two named instance variables.
    :feedback_c: Yes, we can access and modify the instance variables using the dot operator.
    :feedback_d: You are not calling a function therefore brackets for an argument list aren't required.
 
-   Which of the following would be the correct way to initialize the instance variables
-   of the ``Point`` object?
+   Which of the following would be the correct way to initialize the ``x`` instance variable of the ``Point`` object?
 
    .. code-block:: cpp
 
