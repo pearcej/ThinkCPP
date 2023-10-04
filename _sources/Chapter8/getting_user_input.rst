@@ -252,7 +252,7 @@ defined in the header file ``cstdlib``. We will get to that in
 
    - ``John Doe lives at 530 S State St.``
 
-      + Correct!
+     + Correct!
 
    - ``J D lives at 530 S State St.``
 
