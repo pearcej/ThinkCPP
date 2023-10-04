@@ -25,6 +25,7 @@ them).
 
 .. fillintheblank:: compound_values_1
     :casei:
+
     Strings are made up of smaller pieces (the characters). This makes strings an example of a _____ type.
 
     - :compound: Correct!
