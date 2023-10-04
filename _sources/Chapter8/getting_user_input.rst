@@ -135,25 +135,23 @@ defined in the header file ``cstdlib``. We will get to that in
 
 .. mchoice:: getting_user_input_1
    :practice: T
-   :answer_a: getline only takes the first word of input while cin reads the entire line until the user hits Return or Enter.
-   :answer_b: cin only takes the first word of input while getline reads the entire line until the user hits Return or Enter.
-   :answer_c: cin only takes the first two words of input while getline reads the entire line until there is a space.
-   :correct: b
-   :feedback_a: Try again!
-   :feedback_b: Correct!
-   :feedback_c: Try again!
 
    What is the difference between ``cin`` and ``getline`` for a string?
 
+   - ``getline`` only takes the first word of input while ``cin`` reads the entire line until the user hits Return or Enter.
+
+     - Try again!
+
+   - ``cin`` only takes the first word of input while ``getline`` reads the entire line until the user hits Return or Enter.
+
+     + Correct!
+
+   - ``cin`` only takes the first two words of input while ``getline`` reads the entire line until there is a space.
+
+     - Try again!
+
 .. mchoice:: getting_user_input_2
    :practice: T
-   :answer_a: John
-   :answer_b: J
-   :answer_c: John Doe
-   :correct: b
-   :feedback_a: Try again! Pay attention to the data type of name.
-   :feedback_b: Correct!
-   :feedback_c: Try again! Pay attention to the manner of getting user input.
 
    The user types in ``John Doe``. What prints?
 
@@ -166,15 +164,21 @@ defined in the header file ``cstdlib``. We will get to that in
         cout << name << endl;
       }
 
+   - ``John``
+
+     - Try again! Pay attention to the data type of name.
+
+   - ``J``
+
+     + Correct!
+
+   - ``John Doe``
+
+     - Try again! Pay attention to the manner of getting user input.
+
+
 .. mchoice:: getting_user_input_3
    :practice: T
-   :answer_a: John
-   :answer_b: J
-   :answer_c: John Doe
-   :correct: a
-   :feedback_a: Correct!
-   :feedback_b: Try again! Pay attention to the data type of name.
-   :feedback_c: Try again! Pay attention to the manner of getting user input.
 
    The user types in ``John Doe``. What prints?
 
@@ -187,15 +191,21 @@ defined in the header file ``cstdlib``. We will get to that in
         cout << name << endl;
       }
 
+   - ``John``
+
+     + Correct!
+
+   - ``J``
+
+     - Try again! Pay attention to the data type of name.
+
+   - ``John Doe``
+
+     - Try again! Pay attention to the manner of getting user input.
+
+
 .. mchoice:: getting_user_input_4
    :practice: T
-   :answer_a: John
-   :answer_b: J
-   :answer_c: John Doe
-   :correct: c
-   :feedback_a: Try again! Pay attention to the manner of getting user input.
-   :feedback_b: Try again! Pay attention to the manner of getting user input.
-   :feedback_c: Correct!
 
 
    The user types in ``John Doe``. What prints?
@@ -209,16 +219,21 @@ defined in the header file ``cstdlib``. We will get to that in
         cout << name << endl;
       }
 
+   - ``John``
+
+     - Try again! Pay attention to the manner of getting user input.
+
+   - ``J``
+
+     - Try again! Pay attention to the manner of getting user input.
+
+   - ``John Doe``
+
+     + Correct!
+
+
 .. mchoice:: getting_user_input_5
    :practice: T
-   :answer_a: John Doe lives at 530 S State St.
-   :answer_b: J D lives at 530 S State St.
-   :answer_c: John Doe lives at 530
-   :correct: a
-   :feedback_a: Correct!
-   :feedback_b: Try again! Pay attention to the manner of getting user input.
-   :feedback_c: Try again! Pay attention to the manner of getting user input.
-
 
    The user types in ``John Doe`` and then ``530 S State St.``. What prints?
 
@@ -234,4 +249,16 @@ defined in the header file ``cstdlib``. We will get to that in
         getline (cin, address);
         cout << first_name << " " << last_name << " lives at " << address << endl;
       }
+
+   - ``John Doe lives at 530 S State St.``
+
+      + Correct!
+
+   - ``J D lives at 530 S State St.``
+
+     - Try again! Pay attention to the manner of getting user input.
+
+   - ``John Doe lives at 530``
+
+     - Try again! Pay attention to the manner of getting user input.
 
