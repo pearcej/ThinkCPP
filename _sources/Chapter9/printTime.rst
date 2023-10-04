@@ -34,13 +34,6 @@ displays the instance variables in a human-readable form, which you attempted on
   }
 
 .. mchoice:: printTime_1
-   :answer_a: cout << "Price is " << "p.dollar" << " dollars and" << "p.cents" << "cents." << endl;
-   :answer_b: cout << "Price is " << p.dollar << " dollars and " << p.cents << " cents." << endl;
-   :answer_c: cout << "Price is " << p.dollar << " dollars and " << p.cents << "cents." << endl;
-   :correct: b
-   :feedback_a: Try again. We want to print the values rather than statements.
-   :feedback_b: Correct!
-   :feedback_c: This would not compile. There is an important character that ends nearly all statements in C++.
 
    Which of the following would be a correct way to display the price of an object and finish the ``printPrice``, which we saw on the previous page?
 
@@ -60,3 +53,14 @@ displays the instance variables in a human-readable form, which you attempted on
         Price pastry = { 2, 0 };
       }
 
+   - ``cout << "Price is " << "p.dollar" << " dollars and" << "p.cents" << "cents." << endl;``
+
+     - Try again. We want to print the values rather than statements.
+
+   - ``cout << "Price is " << p.dollar << " dollars and " << p.cents << " cents." << endl;``
+
+     + Correct!
+
+   - ``cout << "Price is " << p.dollar << " dollars and " << p.cents << " cents." << endl``
+
+     - This would not compile. There is an important character that ends nearly all statements in C++.
