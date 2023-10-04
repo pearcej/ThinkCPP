@@ -67,16 +67,8 @@ arguments have to be variables.
 
 .. mchoice:: pass_others_reference_1
    :practice: T
-   :answer_a: x, y, z
-   :answer_b: x, y, z, q
-   :answer_c: a, b
-   :correct: a
-   :feedback_a: Correct!
-   :feedback_b: Pay attention to the placement of the ``&``
-   :feedback_c: Pay attention to the placement of the ``&``
 
-
-   What of the parameters in the following code block are pass-by-reference?
+   Which of the parameters in the following code block are pass-by-reference?
 
    .. code-block:: cpp
 
@@ -95,11 +87,24 @@ arguments have to be variables.
         return total;
       }
 
+   - ``x``, ``y``, ``z``
+
+     + Correct!
+
+   - ``x``, ``y``, ``z``, ``q``
+
+     - Pay attention to the placement of the ``&``
+
+   - ``a``, ``b``
+
+     - Pay attention to the placement of the ``&``
+
+
 .. parsonsprob:: pass_others_reference_2
    :numbered: left
    :adaptive:
 
-   Create a function called addNum that takes two parameters, an integer x and an integer y. The function should add y to x, then print x. The variable x should be modified, while the variable y should not.
+   Create a function called ``addNum`` that takes two parameters, an integer ``x`` and an integer ``y``. The function should add ``y`` to ``x``, then print ``x``. The variable ``x`` should be modified, while the variable ``y`` should not.
    -----
    void addNum(int& x, int y) {
    =====
