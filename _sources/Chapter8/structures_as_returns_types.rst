@@ -64,15 +64,6 @@ The output of this program is ``(50, 100)``.
 
 .. mchoice:: structures_return_types_1
    :practice: T
-   :answer_a: addTwo, printPoint, findCenter
-   :answer_b: printPoint, findCenter
-   :answer_c: addTwo, findCenter
-   :answer_d: Point, Rectangle
-   :correct: c
-   :feedback_a: Look at the return type, found before the function name in its definition.
-   :feedback_b: Look at the return type, found before the function name in its definition.
-   :feedback_c: Correct!
-   :feedback_d: These are structures, not functions.
 
    Which functions will return a structure?
 
@@ -112,3 +103,17 @@ The output of this program is ``(50, 100)``.
         printPoint (center);
       }
 
+   - ``addTwo``, ``printPoint``, ``findCenter``
+
+     - Look at the return type, found before the function name in its definition.
+   - ``printPoint``, ``findCenter``
+
+     - Look at the return type, found before the function name in its definition.
+
+   - ``addTwo``, ``findCenter``
+
+     + Correct!
+
+   - ``Point``, ``Rectangle``
+
+     - These are structures, not functions.
