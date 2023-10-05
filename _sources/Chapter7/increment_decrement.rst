@@ -134,11 +134,11 @@ warn you. The effect of this statement is to leave the value of
 
    Print every number from 1-10 in this format: "Number 1". Each number should be on its own line.
    -----
-   int x = 0;
+   int x = 1;
    =====
-   x = 0; #distractor
+   x = 1; #distractor
    =====
-   while (x < 10) {
+   while (x <= 10) {
    =====
        cout << "Number " << x << endl;
    =====
