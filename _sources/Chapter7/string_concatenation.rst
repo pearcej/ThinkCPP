@@ -59,9 +59,14 @@ order:
 
   int main() {
       string suffix = "ack";
+      string u = "u";
       char letter = 'J';
       while (letter <= 'Q') {
-          cout << letter + suffix << endl;
+          if (letter == 'O' || letter == 'Q') {
+              cout << letter + u + suffix << endl;
+          } else {
+              cout << letter + suffix << endl;
+          }
           letter++;
       }
   }
@@ -75,9 +80,9 @@ The output of this program is:
    Lack
    Mack
    Nack
-   Oack
+   Ouack
    Pack
-   Qack
+   Quack
 
 Again, be careful to use string concatenation only with ``string``\ s
 and not with native C strings. Unfortunately, an expression like
