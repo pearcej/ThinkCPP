@@ -125,7 +125,7 @@ number of a’s.
 
 .. mchoice:: looping_counting_4
    :practice: T
-   :answer_a: The code dosen't reach <code>return 0</code> becuase we index out of bounds in <code>word_2</code>.
+   :answer_a: The code dosen't reach <code>return 0</code> because we index out of bounds in <code>word_2</code>.
    :answer_b: 2
    :answer_c: 3
    :answer_d: 4
