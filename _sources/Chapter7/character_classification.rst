@@ -100,11 +100,11 @@ should be ``void``.
       =====
       void stringToUpper (string input) {                         #paired
       =====
-         int i = 0;
+         int i = 0, len = input.length();
       =====
-         while (i < input.length()) {
+         while (i < len) {
       =====
-         while (i < input.length() - 1) {  #paired
+         while (i < len - 1) {  #paired
       =====
             if (isalpha(input[i]) && islower(input[i])) {
       =====
@@ -135,11 +135,11 @@ should be ``void``.
       =====
       void stringToLower (string input) {                         #paired
       =====
-         int i = 0;
+         int i = 0, len = input.length();
       =====
-         while (i < input.length()) {
+         while (i < len) {
       =====
-         while (i > input.length()) {  #paired 
+         while (i > len) {  #paired 
       =====
             if (isalpha(input[i]) && isupper(input[i])) {
       =====
