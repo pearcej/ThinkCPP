@@ -164,5 +164,6 @@ type has a copy of the instance variables for that type.
          cout << time.hour << ":" << time.minute << ":" << time.second;
       =====
          cout << hour << ":" << minute << ":" << second;                        #paired
+      =====
       }
 
