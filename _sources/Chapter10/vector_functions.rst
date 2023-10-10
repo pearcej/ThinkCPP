@@ -113,9 +113,8 @@ then vector function ``push_back`` for that purpose.
             vec[i] -= 1;
          }
    =====
-      return vec;
-   =====
       }
+      return vec;
    }
 
 .. mchoice:: vector_functions_3
