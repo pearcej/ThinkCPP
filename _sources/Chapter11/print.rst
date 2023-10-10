@@ -188,7 +188,7 @@ will complain.
    =====
     Dog dog = *this;                          #distractor
    =====
-    if (dog.weight < 4) {
+    if (weight < 4) {
       return true;
     }
     return false;
