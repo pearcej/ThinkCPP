@@ -120,10 +120,10 @@ return value is the number of times the value appears.
    =====
       for (int i = 0; i &#60; upperbound; i++)                         #paired
    =====
-         if (vec[i] i &#62;= lowerbound && vec[i] i &#60;= upperbound) {
+         if (vec[i] >= lowerbound && vec[i] <= upperbound) {
 	    count++;
    =====
-         if (vec[i] i &#62; lowerbound && vec[i] i &#60; upperbound) {                         #paired
+         if (vec[i] > lowerbound && vec[i] < upperbound) {                         #paired
             count++;
    =====
          }
