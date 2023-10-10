@@ -260,7 +260,7 @@ that we get the right answer!
      Complex c2 (3.0, 4.0);
      Complex product = mult (c1, c2);
      product.printCartesian();
-     // Should output 2 + 2.7i
+     // Should output 1.5 + 2.7i
      product.setCartesian(1.5, 2.7);
      product.printCartesian();
    }
