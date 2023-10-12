@@ -108,17 +108,17 @@ Mixed Up Code Practice
    :adaptive:
    :practice: T
 
-   Let's write the code for the repeatHello function. repeatHello
-   should be a void function that takes no arguments and uses a while
+   Let's write the code for the ``repeatHello`` function. ``repeatHello``
+   should be a ``void`` function that takes no arguments and uses a ``while``
    loop to print out "hello" three times.
    -----
    void repeatHello () {
    =====
-   repeatHello () {                         #paired
+   repeatHello () {                          #paired
    =====
       int n = 0;
    =====
-      int n = 0
+      int n = 0                              #paired
    =====
       while (n < 3) {
    =====
@@ -127,9 +127,9 @@ Mixed Up Code Practice
          cout << "hello" << endl;
    =====
          n++;
+      }
    =====
          --n;                                #paired
-   =====
       }
    =====
    }
@@ -138,9 +138,9 @@ Mixed Up Code Practice
    :numbered: left
    :adaptive:
 
-   Now let's generalize the repeatHello function so that it repeats a given string three times.
-   Let's write the code for the repeatString function, which takes
-   input as a parameter and uses a while loop to print out the string three times.
+   Now let's generalize the ``repeatHello`` function so that it repeats a given string three times.
+   Let's write the code for the ``repeatString`` function, which takes
+   input as a parameter and uses a ``while`` loop to print out the string three times.
    -----
    void repeatString (string input) {
    =====
@@ -150,14 +150,13 @@ Mixed Up Code Practice
    =====
       while (n < 3) {
    =====
-      while (3 > n) {                        #paired
+      while (3 > n) {                             #paired
    =====
          cout << input << endl;
    =====
-         cout << string << endl;                        #paired
+         cout << string << endl;                  #paired
    =====
          n++;
-   =====
       }
    =====
    }
@@ -166,9 +165,9 @@ Mixed Up Code Practice
    :numbered: left
    :adaptive:
 
-   We can further generalize repeatString so that it repeats a given string a given number of times.
-   Let's write the code for the new repeatString function, which takes
-   input and x as parameters and uses a while loop to print out the string x number of times.
+   We can further generalize ``repeatString`` so that it repeats a given string a given number of times.
+   Let's write the code for the new ``repeatString`` function, which takes
+   ``input`` and ``x`` as parameters and uses a ``while`` loop to print out the string ``x`` number of times.
    -----
    void repeatString (string input, int x) {
    =====
@@ -180,14 +179,14 @@ Mixed Up Code Practice
    =====
       while (n < x) {
    =====
-      while (x < n) {                        #paired
+      while (x < n) {                  #paired
    =====
          cout << input << endl;
    =====
          n = n + 1;
+      }
    =====
-         x++;                       #paired
-   =====
+         x++;                          #paired
       }
    =====
    }
@@ -198,7 +197,7 @@ Mixed Up Code Practice
    :practice: T
 
    On the last day of every year, we count down the seconds before the new year arrives.
-   Write the function newYearCountdown, which prints out a countdown from 10 and then
+   Write the function ``newYearCountdown``, which prints out a countdown from 10 and then
    prints out "Happy New Year!".
    -----
    void newYearCountdown () {
@@ -216,9 +215,9 @@ Mixed Up Code Practice
          cout << n << " ";
    =====
          n--;
+      }
    =====
          n++;                          #paired
-   =====
       }
    =====
       cout << "Happy New Year!" << endl;
