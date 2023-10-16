@@ -64,7 +64,6 @@ Multiple Choice Exercises
         string name;
         int numLegs;
         int eggs;
-        bool eggs;
       }
 
     - The word "struct" needs to be capitalized.
@@ -75,9 +74,9 @@ Multiple Choice Exercises
 
       + It is a common error to forgot the semicolon at the end of ``struct`` definitions.
 
-    - The ``struct`` cannot have two instance variables that are both named ``eggs``.
+    - A ``struct`` cannot have two instance variables of both ``string`` and ``int``
 
-      - One is an ``int`` and one is a ``bool`` so this is allowed.
+      - Instance variables of different types in a single struct is fine.
 
     - There is nothing wrong with the ``struct`` definition.
 
