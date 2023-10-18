@@ -101,7 +101,7 @@ convention.
 
 .. fillintheblank:: call_by_reference_1
 
-    Which symbol should you put in front of the data type of the parameter of a function to make it pass by reference?
+    Which symbol is used to cause the compiler to pass a function's parameter by reference?
 
     - :&: Correct!
       :.*: Try again!
