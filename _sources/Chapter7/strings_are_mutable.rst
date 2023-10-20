@@ -75,9 +75,9 @@ This produces the output ``Jello, world!``.
    Assume second string is greater than first.
 
    -----
-   void mixer(string s1,string s2) {
+   string greeter(string s1,string s2) {
    =====
-   string greeter(string s1,string s2) { #distractor
+   void mixer(string s1,string s2) { #paired
    =====
       int size = s1.length();
    =====
