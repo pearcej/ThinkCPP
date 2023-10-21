@@ -67,7 +67,7 @@ should be ``string``.
   #include <cctype>
   using namespace std;
 
-  void stringToUpper(string input) {
+  string stringToUpper(string input) {
       // ``stringToUpper`` should convert a string to uppercase and
       // and return it. Write your implementation here.
   }
