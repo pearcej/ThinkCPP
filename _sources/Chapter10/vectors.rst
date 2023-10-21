@@ -84,7 +84,7 @@ them to zero.
 
     -   ``vector<string> words (5);``
 
-        -   Incorrect! Vector elements are not initialized to default values.
+        +   Correct! Vector elements are default constructed to empty strings.
 
     -   ``vector<string> words (5, "");``
 
@@ -133,11 +133,11 @@ them to zero.
 
     -   undefined (we don't know the values)
 
-        +   There are 6 integers and are initialized to undefined values
+        -   Integers are default constructed to a known value.
 
     -   0
 
-        -    Remember, integers are default initialized to undefined values
+        +    Integers are default constructed to a zero value.
 
     -   6
 
