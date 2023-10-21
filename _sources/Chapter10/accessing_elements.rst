@@ -98,7 +98,7 @@ Chianti.
 
         -   Incorrect! This is not proper syntax.
 
-    -   ``vec[2] = vec[2]++;``
+    -   ``vec[2]++;``
 
         +   ``vec[2]`` is the third element and we increment it by using the ``++`` operator.
 
