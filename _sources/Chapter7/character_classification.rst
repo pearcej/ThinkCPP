@@ -54,6 +54,7 @@ should be ``string``.
 
 .. activecode:: character_classification_AC_1
   :language: cpp
+  :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
   Try writing the ``stringToUpper`` and ``stringToLower`` functions in the 
   commented sections of the active code below. Both functions take a single ``string``
@@ -100,13 +101,13 @@ should be ``string``.
       =====
       void stringToUpper(string input) {                          #paired
       =====
-         int i = 0, len = input.length();
+         int i = 0;
       =====
          string result;
       =====
-         while (i < len) {
+         while (i < input.length()) {
       =====
-         while (i > len) {                                        #paired
+         while (i > input.length()) {                             #paired
       =====
              if (isalpha(input[i]) && islower(input[i])) {
       =====
@@ -118,7 +119,7 @@ should be ``string``.
       =====
                  result = result + input[i];
       =====
-                 result = result + input[0];
+                 result = result + input[0];                       #paired
       =====
              }
              i++;
@@ -144,13 +145,13 @@ should be ``string``.
       =====
       void stringToLower(string input) {                          #paired
       =====
-         int i = 0, len = input.length();
+         int i = 0;
       =====
          string result;
       =====
-         while (i < len) {
+         while (i < input.length()) {
       =====
-         while (i > len) {                                        #paired
+         while (i > input.length()) {                             #paired
       =====
              if (isalpha(input[i]) && isupper(input[i])) {
       =====
@@ -162,7 +163,7 @@ should be ``string``.
       =====
                  result = result + input[i];
       =====
-                 result = result + input[0];
+                 result = result + input[0];                       #paired
       =====
              }
              i++;
