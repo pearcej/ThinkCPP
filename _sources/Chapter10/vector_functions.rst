@@ -37,6 +37,7 @@ then vector function ``push_back`` for that purpose.
 
 .. activecode:: vector_functions_AC_1
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
    The active code below uses the ``push_back`` function to add 
    even numbers less than or equal to 10 to the vector ``values``.

@@ -84,6 +84,7 @@ programs.
 
 .. activecode:: priv_data_AC_1 
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
    Run the active code below. Uncomment the commented out code to see what happens!
    ~~~~

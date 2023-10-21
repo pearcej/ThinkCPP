@@ -15,6 +15,7 @@ standard format. If you call ``printPoint (blank)``, it will output
 
 .. activecode:: structures_parameters_AC_1
   :language: cpp
+  :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
   The active code below uses the ``printPoint`` function. Run the code to
   see the output!
@@ -49,6 +50,7 @@ parameters instead of four ``double``\ s.
    
 .. activecode:: structures_parameters_AC_2
   :language: cpp
+  :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
   The active code below uses the updated version of the ``distance`` function.
   Feel free to modify the code!

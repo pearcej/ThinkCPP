@@ -25,6 +25,7 @@ is. If you really want to know, you can try it.
 
 .. activecode:: increment_decrement_AC_1
   :language: cpp
+  :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
   :caption: Looping and counting
 
   The active code demonstrates how using increment operators
@@ -57,6 +58,7 @@ Using the increment operators, we can rewrite the letter-counter:
 
 .. activecode:: increment_decrement_AC_2
   :language: cpp
+  :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
   :caption: Looping and counting
 
   The active code below adds increment operators to our old letter-counter.

@@ -35,6 +35,7 @@ sample, run this loop:
 
 .. activecode:: random_numbers_AC_1
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
    Take a look at the active code below, which generates 4 random numbers.
    ~~~~
@@ -79,6 +80,7 @@ including both end points.
 
 .. activecode:: random_numbers_AC_2
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
    The active code below generates random numbers between 1 and 7.
    ~~~~
@@ -111,6 +113,7 @@ between 100.0 and 200.0.
 
 .. activecode:: random_numbers_AC_3
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
    The active code below generates random numbers between 0 and 1. Can you modify it 
    to generate random numbers between 100.0 and 200.0? If you're stuck you can 

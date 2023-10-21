@@ -44,6 +44,7 @@ Now we can call the function in the usual way:
 
 .. activecode:: call_by_reference_AC_1
   :language: cpp
+  :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
   Take a look at the active code below. ``reflect`` passes the parameter ``p``
   by reference. Notice that the output of this code matches what we expect it to be.

@@ -25,6 +25,7 @@ are legal.
 
 .. activecode:: accessing_instance_variables_AC_1
   :language: cpp
+  :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
   In the active code below, we access the instance variables of ``Point`` object
   ``black`` using dot notation and output their values. Next, we output the

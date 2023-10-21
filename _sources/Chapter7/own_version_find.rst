@@ -24,6 +24,7 @@ the index where we should start.
 
 .. activecode:: own_version_find_AC_1
   :language: cpp
+  :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
   :caption: Our own find function
 
   In the active code below, we are finding the number of ``'e'`` characters in 

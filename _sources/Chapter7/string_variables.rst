@@ -8,6 +8,7 @@ You can create a variable with type ``string`` in the usual ways.
 
 .. activecode:: string_variables_AC_1
   :language: cpp
+  :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
   :caption: Creating a string variable
 
   In the active code below, the first line creates a ``string`` without 
@@ -41,6 +42,7 @@ depend on your programming environment.
 
 .. activecode:: string_variables_AC_2
   :language: cpp
+  :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
   :caption: Outputting a string variable
 
   Run the active code below!

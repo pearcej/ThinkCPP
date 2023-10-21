@@ -7,6 +7,7 @@ Coding Practice
 
         .. activecode::  vectors_a2
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
             Fix the function below so that it returns how many even numbers are in ``nums``.
             Select the Parsonsprob tab for hints for the construction of the code.
@@ -67,6 +68,7 @@ Coding Practice
 
         .. activecode::  vectors_a4
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
             Someone could have COVID-19 if their temperature is above 99.9 degrees Fahrenheit.  Finish 
             the code below so that it counts and prints how many students in the class may have been exposed.
@@ -127,6 +129,7 @@ Coding Practice
 
         .. activecode::  vectors_a6
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
             Write the function ``endsEven`` that takes a vector and removes elements from the end of the vector until
             it ends with an even number. Select the Parsonsprob tab for hints for the construction of the code.
@@ -176,6 +179,7 @@ Coding Practice
 
         .. activecode::  vectors_a8
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
             Write the function ``randomNums`` that takes two integers: ``num`` which is the number of random numbers
             you wish to generate, and ``max``, which is the maximum value of random number you wish to generate.  Your
@@ -234,6 +238,7 @@ Coding Practice
 
        .. activecode::  vectors_a10
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
             Write the function ``hundyBundy`` that returns a count of all numbers in the passed vector
             ``vec`` that are divisible by 100. Select the Parsonsprob tab for hints for the construction of the code.
@@ -288,6 +293,7 @@ Coding Practice
 
         .. activecode::  vectors_a12
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
             Write the function ``weird_print`` that prints the first half of a vector of integers in reverse order
             and then prints the second half in the order present in the vector.

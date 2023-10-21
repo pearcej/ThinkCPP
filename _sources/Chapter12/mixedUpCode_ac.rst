@@ -9,6 +9,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_12_1_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
             Let's write the struct definition for ``Song``. Song should have
             instance variables title, artist, and numLikes. 
@@ -22,6 +23,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_12_1_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
             Below is one way to define the ``Song`` struct.
             ~~~~
@@ -41,6 +43,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_12_2_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
             Let's make an album! Write the struct definition for
             ``Album``, which should have instance variables name, year and
@@ -56,6 +59,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_12_2_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
             Below is one way to define the ``Album`` struct.
             ~~~~
@@ -82,6 +86,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_12_3_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
             Two Songs are equal if the title and artist of the Songs are equal.
             Write the function ``songEqual``, which takes two Songs as parameters
@@ -96,6 +101,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_12_3_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
             Below is one way to write the ``songEqual`` function.
             ~~~~
@@ -124,6 +130,7 @@ Answer the following **Activecode** questions to assess what you have learned in
         
         .. activecode:: mucp_12_4_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
             What if we'd like to search an album for our favorite song?
             Write the ``Album`` member function searchAlbum which takes a 
@@ -141,6 +148,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_12_4_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
             Below is one way to write the ``Album`` member function.
             ~~~~
@@ -176,6 +184,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_12_5_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
             What's the most popular Song within an Album? Let's write
             the ``Album`` member function mostLikedSong, which prints out
@@ -192,6 +201,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_12_5_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
             Below is one way to write the ``Album`` member function. 
             ~~~~
@@ -232,6 +242,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_12_6_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
             Let's write the struct definition for ``Product``. ``Product`` should have
             instance variables name and price.
@@ -245,6 +256,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_12_6_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
             Below is one way to define the ``Product`` struct.
             ~~~~
@@ -263,6 +275,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_12_7_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
             Let's make a shopping list! Write the struct definition for
             ``List``, which should have instance variables type and
@@ -278,6 +291,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_12_7_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
             Below is one way to define the ``List`` struct.
             ~~~~
@@ -302,6 +316,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_12_8_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
             Two Products are equal if the name and price of the Products are equal.
             Write the function productEqual, which takes two Products as parameters
@@ -320,6 +335,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_12_8_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
             Below is one way to write the ``searchList`` member function.
             ~~~~
@@ -357,6 +373,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_12_9_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
             Time to checkout! Write the List member function ``totalPrice``
             which calculates and returns the total price of all the Products.
@@ -371,6 +388,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_12_9_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
             
             Below is one way to write the ``totalPrice`` member function.
             ~~~~
@@ -403,6 +421,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_12_10_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
             Oops! We made a mistake and grabbed pineapple pizza. 
             What if we want to remove an Product from our List?
@@ -420,6 +439,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_12_10_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
             Below is one way to write the ``removeProduct`` member function.
             ~~~~

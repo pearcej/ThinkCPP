@@ -62,6 +62,7 @@ The output of this program is
 
 .. activecode:: fourteeneight
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
    The active code below uses the ``mult`` and ``setPolar`` functions.
    Feel free to modify the code and experiment around!
@@ -214,6 +215,7 @@ that we get the right answer!
 
 .. activecode:: fourteennine
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
    Now let's try implementing the ``setCartesian`` function. Write your 
    implementation in the commented area of the active code below.

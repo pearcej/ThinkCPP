@@ -7,6 +7,7 @@ Coding Practice
 
         .. activecode:: cp_9_AC_2q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
             Write the function ``printCakeInfo``, which prints the cake's information in the format
             "This is a ``color``, ``diameter`` inch diameter cake with/without icing." If ``name`` does not
@@ -81,6 +82,7 @@ Coding Practice
 
         .. activecode:: cp_9_AC_4q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
             Write the function ``changeCakeDiameter``, which takes a ``Cake`` and a ``double`` as a parameter.
             ``changeCakeDiameter`` then multiplies the original diameter by the double and modifies the cake
@@ -182,6 +184,7 @@ Coding Practice
 
         .. activecode:: cp_9_AC_6q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
             Write the struct ``Shirt``, which has the instance variables color and size.
             Select the Parsonsprob tab for hints for the construction of the code.
@@ -223,6 +226,7 @@ Coding Practice
 
         .. activecode:: cp_9_AC_8q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
             Write the struct ``Outfit``, which is a nested structure that has a ``Shirt``, ``Pants``, and has_hat.
             Select the Parsonsprob tab for hints for the construction of the code.
@@ -275,6 +279,7 @@ Coding Practice
 
         .. activecode:: cp_9_AC_10q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
             Write the ``changeShirts`` and ``changePants`` functions, which both take an ``Outfit`` as a parameter. ``changeShirts`` also
             takes a ``Shirt`` as a parameter and ``changePants`` also takes a ``Pants`` as a parameter. Each function modifies the ``Outfit``

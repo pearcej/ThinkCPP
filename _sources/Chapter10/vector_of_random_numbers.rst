@@ -56,6 +56,7 @@ which is pretty random-looking. Your results might be different.
 
 .. activecode:: vector_of_rand_nums_AC_1
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
    Try running the active code below!
    ~~~~

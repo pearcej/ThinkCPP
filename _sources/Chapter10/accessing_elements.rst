@@ -57,6 +57,7 @@ Chianti.
 
 .. activecode:: accessing_elements_AC_1
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
    Take a look at the active code below. We can modify the vectors by accessing
    its elements.

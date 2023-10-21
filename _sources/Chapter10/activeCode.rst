@@ -10,6 +10,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
       .. activecode:: vectors_a1q
          :language: cpp
+         :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
          Fix the code below so that it creates a vector with 5 elements initialized to 1, and changes
          the third element of that vector to a 2.
@@ -28,6 +29,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
       .. activecode:: vectors_a1a
          :language: cpp
+         :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
          Below is one way to fix the program.  You must always include the ``<vector>`` header when
          dealing with vectors.  Furthermore, to initialize a vector's elements to a certain value, you
@@ -54,6 +56,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
       .. activecode:: vectors_a3q
          :language: cpp
+         :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
          Fix the function below so that it creates a vector of all of the words in ``words`` that end with
          the passed character.
@@ -78,6 +81,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
       .. activecode:: vectors_a3a
          :language: cpp
+         :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
          Below is one way to fix the function.  You must initialize ``count`` to zero.
          You also must initialize ``last`` as an integer.  To access a string *inside* 
@@ -112,6 +116,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
       .. activecode:: vectors_a5q
          :language: cpp
+         :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
          Finish the code below so that it creates removes elements from the end of the vector until
          it ends with ``"stop"``.
@@ -134,6 +139,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
       .. activecode:: vectors_a5a
          :language: cpp
+         :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
          Below is one way to finish the program.  We just use the ``pop_back`` function until the 
          last element of the vector is ``"stop"``.
@@ -163,6 +169,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
       .. activecode:: vectors_a7q
          :language: cpp
+         :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
          Write a function called ``has_char`` that returns a boolean of whether every string in the
          vector ``vec`` contains the character ``let``.  It should return true if all strings contain the ``let``.
@@ -176,6 +183,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
       .. activecode:: vectors_a7a
          :language: cpp
+         :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
          Below is one way to finish the program.  We loop through the vector, and we loop through each string
          inside it.  If the string has the character, it is added to ``count``.  We then check whether ``count``
@@ -213,6 +221,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
       .. activecode:: vectors_a9q
          :language: cpp
+         :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
          Write the function ``mean`` which returns the average of a vector of numbers.
          ~~~~
@@ -225,6 +234,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
       .. activecode:: vectors_a9a
          :language: cpp
+         :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
          Below is one way to finish the program.  First we take the sum, then divide the sum by the number
          of elements in ``nums``.
@@ -253,6 +263,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
       .. activecode:: vectors_a11q
          :language: cpp
+         :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
          Write the function ``make_odd`` which subtracts 1 from every even number in a vector of integers.
          We don't want any negative values so don't subtract 1 from 0.
@@ -267,6 +278,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
       .. activecode:: vectors_a11a
          :language: cpp
+         :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
          Below is one way to finish the program.  We us the modulus operator to check for even numbers and decrement them.
          we keep an extra check for 0 to make sure wew are not decrementing 0.

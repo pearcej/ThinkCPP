@@ -51,6 +51,7 @@ is equivalent to
 
 .. activecode:: for_loops_AC_1
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
    Run the active code below, which uses a ``for`` loop.
    ~~~~
@@ -68,6 +69,7 @@ is equivalent to
 
 .. activecode:: for_loops_AC_2
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
    Run the active code below, which uses a ``while`` loop.
    ~~~~
@@ -135,6 +137,7 @@ is equivalent to
 
 .. activecode:: for_loops_AC_3
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
    Run the active code below, which uses a ``for`` loop with a negative change in the "INCREMENTOR".
    ~~~~

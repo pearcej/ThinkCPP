@@ -35,6 +35,7 @@ begins, and use this variable to check for the last element.
 
 .. activecode:: vector_size_AC_1
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
    Try running the active code below!
    ~~~~

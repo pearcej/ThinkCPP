@@ -37,6 +37,7 @@ after the current-time, then...”
 
 .. activecode:: more_complicated_example_AC_1
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
    The active code below is another practical example using the ``after`` function. 
    Feel free to modify the time that school gets out, and the time that the track meet starts, if you wish!

@@ -46,6 +46,7 @@ return value is the number of times the value appears.
 
 .. activecode:: counting_AC_1
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
    Take a look at the active code below which uses the ``howMany`` function. Run the
    code to see how many times the target appears in the vector! Feel free to 

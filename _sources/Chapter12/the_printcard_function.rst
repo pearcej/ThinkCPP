@@ -79,6 +79,7 @@ is ``Jack of Diamonds``.
 
 .. activecode:: 12_3
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
    The active code below uses the ``Card::print()`` function.  Feel free to modify 
    the values that ``card`` is being initialized to in the constructor:  this will 

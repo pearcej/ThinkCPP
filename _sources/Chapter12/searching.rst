@@ -50,6 +50,7 @@ The output of this code is
 
 .. activecode:: 12_8
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
    The code below searches for a particular card in a standard deck of 52 cards.
    It returns the index that the card was located at.

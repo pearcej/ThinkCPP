@@ -100,6 +100,7 @@ the function name and the contents of the assert statement.
 
 .. activecode:: fourteenten
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
    The active code below uses the updated ``calculateCartesian`` with assert statements.
    Notice how because ``c1`` is not in polar, the assert statement in ``calculateCartesian``

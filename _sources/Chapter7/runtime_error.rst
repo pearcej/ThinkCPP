@@ -19,6 +19,7 @@ Try it in your development environment and see how it looks.
 
 .. activecode:: runtime_error_AC_1 
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
    Running the active code below will result in a runtime error. Can you fix 
    it so that we print out the first letter and last letter of string ``greeting`` instead

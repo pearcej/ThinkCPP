@@ -25,6 +25,7 @@ type ``Card``. Therefore, it is legal to invoke ``print`` on
 
 .. activecode:: 12_7
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
    A Euchre Deck contains 9's, 10's, Jacks, Queens, Kings, and Aces of all four suits.  
    Modify the ``buildDeck`` function below to create a Euchre deck. The ``printDeck``

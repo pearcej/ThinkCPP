@@ -37,6 +37,7 @@ more error-prone? Which version do you think is more efficient?
 
 .. activecode:: subdeck_cards_1
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
    Try writing the ``findBisect`` function in the commented section
    of the active code below. If done correctly, the program should output that

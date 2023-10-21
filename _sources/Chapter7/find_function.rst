@@ -10,6 +10,7 @@ character appears.
 
 .. activecode:: find_function_AC_1
   :language: cpp
+  :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
   :caption: The find function
 
   Take a look at the active code below, which uses the ``find`` function to find
@@ -39,6 +40,7 @@ appears in the string.
 
 .. activecode:: find_function_AC_2
   :language: cpp
+  :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
   :caption: The find function
 
   The active code below finds the starting index of ``"nan"`` in ``fruit``.

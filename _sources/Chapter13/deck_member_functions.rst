@@ -20,6 +20,7 @@ without using dot notation.
 
 .. activecode:: deck_members_AC_1
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
    The active code below prints out the deck of cards like in the previous section. Notice we can just use ``deck.print ()``
    to print out the deck instead of writing a for loop in main.
@@ -209,6 +210,7 @@ One solution is to declare ``Deck`` before ``Card`` and then define
 
 .. activecode:: deck_members_AC_2
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
    The active code below uses the ``find`` function that we just wrote.
    ~~~~

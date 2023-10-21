@@ -28,6 +28,7 @@ standard 52-card deck with the simple declaration ``Deck deck;``
 
 .. activecode:: deck_constructor_AC_1
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
    The active code below prints out the cards in a deck using the loop from the previous section.
    ~~~~

@@ -61,6 +61,7 @@ can choose the interface that works best depending on the circumstance.
 
 .. activecode:: 12_4
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
    Run the active code below to see how the ``equals()`` function works.
    ~~~~

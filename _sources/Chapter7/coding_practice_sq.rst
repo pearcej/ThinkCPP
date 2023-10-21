@@ -7,6 +7,7 @@ Coding Practice
 
         .. activecode:: cp_7_AC_2q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
             :practice: T
 
             How much does Bubba love shrimp? Probably a lot. But how many times does the word "shrimp" come
@@ -90,6 +91,7 @@ Coding Practice
 
         .. activecode:: cp_7_AC_4q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
             :practice: T
 
             Write a void function ``removeWord`` that removes a given word from a given string and prints
@@ -160,6 +162,7 @@ Coding Practice
 
         .. activecode:: cp_7_AC_6q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
             :practice: T
 
             Write the function ``reverseString`` which takes a ``string input``, reverses it,
@@ -216,6 +219,7 @@ Coding Practice
 
         .. activecode:: cp_7_AC_8q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
             :practice: T
 
             Write the function ``countVowels`` which takes a ``string input`` and returns
@@ -275,6 +279,7 @@ Coding Practice
     
         .. activecode:: cp_7_AC_10q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
             :practice: T
 
             Camel case is the practice of writing phrases without spaces or punctuation,

@@ -6,6 +6,7 @@ Looping and counting
 
 .. activecode:: looping_and_counting_AC_1
   :language: cpp
+  :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
   :caption: Looping and counting
 
   The active code below counts the number of times the letter ``'a'``

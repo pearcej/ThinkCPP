@@ -9,6 +9,7 @@ end to end.
 
 .. activecode:: string_concatenation_AC_1
   :language: cpp
+  :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
   :caption: String concatenation
 
   In the active code below, we use the ``+`` operator to concatenate ``fruit`` with
@@ -50,6 +51,7 @@ order:
 
 .. activecode:: string_concatenation_AC_2
   :language: cpp
+  :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
   :caption: String concatenation
 
   The active code below outputs the ducklings names in alphabetical order.

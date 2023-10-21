@@ -51,6 +51,7 @@ The output of this program is ``9:22:50``.
 
 .. activecode:: another_example_AC_1
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
    Feel free to change the input and experiment around with the active
    code below!

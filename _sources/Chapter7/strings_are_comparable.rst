@@ -6,6 +6,7 @@ also work on ``strings``.
 
 .. activecode:: strings_comparable_AC_1
   :language: cpp
+  :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
   :caption: Strings are comparable
 
   Take a look at the active code below, which checks to see if ``word`` is 
@@ -27,6 +28,7 @@ alphabetical order.
 
 .. activecode:: strings_comparable_AC_2
   :language: cpp
+  :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
   :caption: Strings are comparable
 
   The active code below uses comparison operators to determine the ordering

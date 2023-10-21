@@ -63,6 +63,7 @@ fully-populated vector of ``Card``\ s.
 
 .. activecode:: 12_6
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
    Take a look at the active code below, which includes the implementation of
    the ``buildDeck`` function. 

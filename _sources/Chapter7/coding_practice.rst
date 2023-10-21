@@ -11,6 +11,7 @@ Coding Practice
 
         .. activecode:: cp_7_AC_1q
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
            :practice: T
 
            #include <iostream>
@@ -40,6 +41,7 @@ Coding Practice
 
         .. activecode:: cp_7_AC_1a
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
            :optional:
 
            #include <iostream>
@@ -94,6 +96,7 @@ Coding Practice
 
         .. activecode:: cp_7_AC_3q
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
            :practice: T
 
            #include <iostream>
@@ -116,6 +119,7 @@ Coding Practice
 
         .. activecode:: cp_7_AC_3a
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
            :optional:
 
            #include <iostream>
@@ -156,6 +160,7 @@ Coding Practice
 
         .. activecode:: cp_7_AC_5q
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
            :practice: T
 
            #include <iostream>
@@ -189,6 +194,7 @@ Coding Practice
 
         .. activecode:: cp_7_AC_5a
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
            :optional:
 
            #include <iostream>
@@ -237,6 +243,7 @@ Coding Practice
 
         .. activecode:: cp_7_AC_7q
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
            :practice: T
 
            #include <iostream>
@@ -261,6 +268,7 @@ Coding Practice
 
         .. activecode:: cp_7_AC_7a
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
            :optional:
 
            #include <iostream>
@@ -300,6 +308,7 @@ Coding Practice
 
         .. activecode:: cp_7_AC_9q
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
            :practice: T
 
            #include <iostream>
@@ -330,6 +339,7 @@ Coding Practice
 
         .. activecode:: cp_7_AC_9a
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
            :optional:
 
            #include <iostream>

@@ -7,6 +7,7 @@ Coding Practice
 
         .. activecode:: cp_12_AC_2q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
             An image is just a matrix of pixels. Write the ``struct`` definition for ``Image``,
             which should store information about its height and width and contain a matrix 
@@ -55,6 +56,7 @@ Coding Practice
 
         .. activecode:: cp_12_AC_4q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
             Now let's print an ``Image``. Unfortunately we can't print out the actual 
             image to the terminal, but we can print out the ``Pixel``\s in the ``Image``
@@ -132,6 +134,7 @@ Coding Practice
 
         .. activecode:: cp_12_AC_6q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
             Let's write a ``swapPixel`` member function for ``Image``. ``swapPixel``
             takes two pairs of row indices and column indices from a matrix and swaps the two
@@ -224,6 +227,7 @@ Coding Practice
 
         .. activecode:: cp_12_AC_8q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
             Oops! Somehow our image came out upside down. Let's write
             the ``Image`` member function ``flipVertical``, which
@@ -349,6 +353,7 @@ Coding Practice
 
         .. activecode:: cp_12_AC_10q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
 
             Let's return our image to the state of a clean slate. Write the 
             function ``clearImage``, which sets the color of every ``Pixel`` 
