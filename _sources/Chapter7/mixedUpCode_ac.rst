@@ -493,7 +493,6 @@ assess what you have learned in this chapter.
                 }
                 else {
                     return first + second;
-                    cout << first << second;
                 }
             }
 

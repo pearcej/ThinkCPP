@@ -351,16 +351,17 @@ Mixed Up Code Practice
       if ("first" > "second") {  #paired
    =====
          return second + first;
+      }
    =====
-         cout << second << first;  #distractor
+         cout << second << first;  #paired
       }
    =====
       else {
    =====
          return first + second;
+      }
    =====
-         cout << first << second;
-   =====
+         cout << first << second;  #paired
       }
    =====
    }
