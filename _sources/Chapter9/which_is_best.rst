@@ -31,9 +31,12 @@ programming style.
    What is a functional programming style?
 
 .. fillintheblank:: which_is_best_2
+   :casei:
 
-    Anything that can be done with modifiers and purefunctions can also be done with ____.
+   Anything that can be done with modifiers and |blank| functions can also be done with |blank| functions.
 
-    - :(?:f|F)ill-in (?:F|f)unctions: Correct!
-      :.*: Try again!
+   - :fill-in: Correct!
+     :.*: Try again!
+   - :pure: Correct!
+     :.*: Try again!
 
