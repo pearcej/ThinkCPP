@@ -89,16 +89,16 @@ then vector function ``push_back`` for that purpose.
    :numbered: left
    :adaptive:
 
-   Construct the <code>make_even</code> function that loops through vec, adds 1 to any elements
+   Construct the ``make_even`` function that loops through ``vec``, adds 1 to any elements
    that are odd, and returns the new vector.
    -----
-   vector&#60;int&#62; make_even(vector&#60;int&#62; vec) {
+   vector&lt;int&gt; make_even(vector<int> vec) {
    =====
-   void make_even(vector&#60;int&#62; vec) {                         #paired
+   void make_even(vector&lt;int&gt; vec) {                         #paired
    =====
-      for (size_t i = 0; i &#60; vec.size(); i++) {
+      for (size_t i = 0; i &lt; vec.size(); i++) {
    =====
-      for (int i = 0; i &#60; vec.size(); i++) {                         #paired
+      for (int i = 0; i &lt; vec.size(); i++) {                         #paired
    =====
          if (vec[i] % 2 == 1) {
    =====
