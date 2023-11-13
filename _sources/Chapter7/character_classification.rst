@@ -101,9 +101,7 @@ should be ``string``.
       =====
       void stringToUpper(string input) {                          #paired
       =====
-         int i = 0;
-      =====
-         string result;
+         size_t i = 0;
       =====
          while (i < input.length()) {
       =====
@@ -113,13 +111,7 @@ should be ``string``.
       =====
              if (isalpha(input[i]) || islower(input[i])) {        #paired
       =====
-                 result = result + char(toupper(input[i]));
-      =====
-             } else {
-      =====
-                 result = result + input[i];
-      =====
-                 result = result + input[0];                       #paired
+                 input[i] = toupper(input[i]));
       =====
              }
              i++;
@@ -145,9 +137,7 @@ should be ``string``.
       =====
       void stringToLower(string input) {                          #paired
       =====
-         int i = 0;
-      =====
-         string result;
+         size_t i = 0;
       =====
          while (i < input.length()) {
       =====
@@ -157,18 +147,12 @@ should be ``string``.
       =====
              if (isalpha(input[i]) && isupper(input[i])) {        #paired
       =====
-                 result = result + char(tolower(input[i]));
-      =====
-             } else {
-      =====
-                 result = result + input[i];
-      =====
-                 result = result + input[0];                       #paired
+                 input[i] = tolower(input[i]);
       =====
              }
              i++;
          }
       =====
-         return result;
+         return input;
       =====
       }

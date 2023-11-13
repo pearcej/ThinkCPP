@@ -25,7 +25,6 @@ is. If you really want to know, you can try it.
 
 .. activecode:: increment_decrement_AC_1
   :language: cpp
-  :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
   :caption: Looping and counting
 
   The active code demonstrates how using increment operators
@@ -58,7 +57,6 @@ Using the increment operators, we can rewrite the letter-counter:
 
 .. activecode:: increment_decrement_AC_2
   :language: cpp
-  :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
   :caption: Looping and counting
 
   The active code below adds increment operators to our old letter-counter.
@@ -68,11 +66,10 @@ Using the increment operators, we can rewrite the letter-counter:
 
   int main() {
       string fruit = "banana";
-      int length = fruit.length();
       int count = 0;
 
-      int index = 0;
-      while (index < length) {
+      size_t index = 0;
+      while (index < fruit.length()) {
           if (fruit[index] == 'a') {
               count++;
           }
@@ -92,7 +89,7 @@ warn you. The effect of this statement is to leave the value of
 ``index`` unchanged. This is often a difficult bug to track down.
 
 .. warning::
-   Remember, you can write ``index = index +1;``, or you can write
+   Remember, you can write ``index = index + 1;``, or you can write
    ``index++;``, but you shouldn’t mix them.
 
 .. clickablearea:: increment_decrement_1

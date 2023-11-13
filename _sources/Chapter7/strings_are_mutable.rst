@@ -6,7 +6,6 @@ You can change the letters in an ``string`` one at a time using the
 
 .. activecode:: strings_are_mutable_AC_1
   :language: cpp
-  :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
   :caption: String are mutable
 
   The active code below changes the first letter in ``greeting`` to be

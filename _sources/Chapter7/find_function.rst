@@ -10,7 +10,6 @@ character appears.
 
 .. activecode:: find_function_AC_1
   :language: cpp
-  :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
   :caption: The find function
 
   Take a look at the active code below, which uses the ``find`` function to find
@@ -21,18 +20,20 @@ character appears.
 
   int main() {
       string fruit = "banana";
-      int index = fruit.find('a');
+      size_t index = fruit.find('a');
       cout << index << endl;
       string dessert = "pudding";
-      int another_index = dessert.find('a');
-      cout << another_index << endl;
+      size_t another_index = dessert.find('a');
+      cout << another_index << " = " << string::npos << endl;
   }
 
 This example finds the index of the letter ``'a'`` in the string. In
 this case, the letter appears three times, so it is not obvious what
 ``find`` should do. According to the documentation, it returns the index
 of the *first* appearance, so the result is 1. If the given letter does
-not appear in the string, ``find`` returns -1.
+not appear in the string, ``find`` a *very* large integer. We can test
+whether ``find`` found a given letter by checking to see if it equals
+the constant defined by ``string::npos``.
 
 In addition, there is a version of ``find`` that takes another
 ``string`` as an argument and that finds the index where the substring
@@ -50,7 +51,7 @@ appears in the string.
 
   int main() {
       string fruit = "banana";
-      int index = fruit.find("nan");
+      size_t index = fruit.find("nan");
       cout << index;
   }
 
@@ -69,10 +70,10 @@ the argument we provide.
 
     :click-incorrect:def main() {::endclick:
         :click-incorrect:string fruit = "apple";:endclick:
-        int:click-incorrect: index_a :endclick:= fruit.find('e');
-        int:click-correct: index_b :endclick:= fruit.find("app");
-        int:click-correct: index_c :endclick:= fruit.find('a');
-        int:click-incorrect: index_d :endclick:= fruit.find('l');
+        size_t:click-incorrect: index_a :endclick:= fruit.find('e');
+        size_t:click-correct: index_b :endclick:= fruit.find("app");
+        size_t:click-correct: index_c :endclick:= fruit.find('a');
+        size_t:click-incorrect: index_d :endclick:= fruit.find('l');
     }
 
 .. parsonsprob:: find_function_2
@@ -87,7 +88,7 @@ the argument we provide.
 
       string city = "New Baltimore" #distractor
 
-      int index;
+      size_t index;
 
       index = city.find('B');
 
@@ -101,13 +102,6 @@ the argument we provide.
 
 .. mchoice:: find_function_3
    :practice: T 
-   :answer_a: Index to find sea is 29
-   :answer_b: Index to find sea is 5
-   :answer_c: Index to find sea is -1
-   :correct: b
-   :feedback_a: <code>find</code> returns the index of the FIRST occurence of "sea". 
-   :feedback_b: Correct! <code>index</code> only has to look for a sequence arranged as "sea" in the stirng. 
-   :feedback_c: sea is present in the <code>sentence</code>.
 
    What is printed when the code is run?
 
@@ -115,5 +109,17 @@ the argument we provide.
 
       string sentence = "Most seas are rough but this sea is so calm!";
       string target = "sea";
-      int index = sentence.find(target);
+      size_t index = sentence.find(target);
       cout << "Index to find sea is " << index << endl;
+
+   - Index to find sea is 29
+
+     - ``find`` returns the index of the *first* occurence of "sea".
+
+   - Index to find sea is 5
+
+     + Correct! ``index`` only has to look for a sequence arranged as "sea" in the string.
+
+   - Index to find sea is ``string::npos``
+
+     - "sea" is present in the ``sentence`` string.
