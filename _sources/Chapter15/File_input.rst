@@ -128,7 +128,7 @@ we do not output the invalid data in ``line``.
    :feedback_a: Correct!
    :feedback_b: Incorrect! Try reading again!
    :feedback_c: Incorrect! Try reading again!
-   :feedback_d: Incorrect! apstrings are allowed in C++.
+   :feedback_d: Incorrect! strings are allowed in C++.
 
    We need to use the function ``c_str()`` to convert a string to a native C string because...
 

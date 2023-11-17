@@ -60,7 +60,7 @@ this all looks like translated into C++:
 
 ::
 
-   int findBisect (const Card& card, const apvector<Card>& deck,
+   int findBisect (const Card& card, const vector<Card>& deck,
                    int low, int high) {
      int mid = (high + low) / 2;
 
@@ -92,7 +92,7 @@ With that line added, the function works correctly:
 
 ::
 
-   int findBisect (const Card& card, const apvector<Card>& deck,
+   int findBisect (const Card& card, const vector<Card>& deck,
                    int low, int high) {
 
      cout << low << ", " << high << endl;

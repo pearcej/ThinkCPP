@@ -97,12 +97,12 @@ naturally, represents the rank 3.
 
 .. mchoice:: card_objects_2
    :answer_a: To translate each rank / suit into a secret code.
-   :answer_b: To create apstrings to represent each rank / suit.
+   :answer_b: To create strings to represent each rank / suit.
    :answer_c: To define a mapping between each rank / suit and a sequence of numbers.
    :answer_d: To write code describing real objects, like cards, with their respective ranks / suits.
    :correct: c
    :feedback_a: Incorrect! This is called encryption.
-   :feedback_b: Incorrect! We create apstrings before we encode.
+   :feedback_b: Incorrect! We create strings before we encode.
    :feedback_c: Correct! This makes it easier to compare cards.
    :feedback_d: Incorrect! This is how we describe object-oriented programming.
 
