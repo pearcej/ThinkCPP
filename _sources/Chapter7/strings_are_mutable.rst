@@ -98,6 +98,8 @@ This produces the output ``Jello, world!``.
           s1[i] = s2[i];
         }
    =====
+        i++;
+   =====
       }
    =====
       return s1;
