@@ -67,7 +67,7 @@ demonstrates how to traverse the deck and output each card.
       :.*: Try again!
 
 .. mchoice:: decks_2
-   :answer_a: The ranks amd suits of the cards are initialized to the proper ranks and suits in a standard deck of cards.
+   :answer_a: The ranks and suits of the cards are initialized to the proper ranks and suits in a standard deck of cards.
    :answer_b: There will be 52 cards.
    :answer_c: The ranks and suits will be initialized to their default values.
    :answer_d: The only instance variable in the deck is cards.
