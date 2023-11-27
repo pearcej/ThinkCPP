@@ -198,8 +198,6 @@ reader.
       =====
       int randomInt () {                         #paired
       =====
-       srand (time(NULL));
-      =====
        int x = random ();
       =====
        int y = x % (high - low + 1) + low; 
