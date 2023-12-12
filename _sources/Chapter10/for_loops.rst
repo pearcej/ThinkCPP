@@ -111,7 +111,7 @@ is equivalent to
    :numbered: left
    :adaptive:
 
-   Construct the <code>half_life()</code> function that prints the first num half lives
+   Construct the ``half_life()`` function that prints the first num half lives
    of the initial amount.
    -----
    void half_life(int initial_amount, int num) {

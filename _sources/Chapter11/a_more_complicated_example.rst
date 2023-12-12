@@ -106,8 +106,9 @@ after the current-time, then...”
    :numbered: left
    :adaptive:
 
-   Create the Dog::is_older() function as it would be defined INSIDE of the Dog structure definition.  This function
-   checks if the current Dog is older than another Dog.  The function is invoked on the current Dog.
+   Create the ``Dog::is_older()`` function as it would be defined INSIDE of the ``Dog`` structure definition.  This function
+   checks if the current ``Dog`` is older than another ``Dog``.  The function is invoked on the current ``Dog``.
+   
    -----
    bool Dog::is_older(const Dog& dog, const Dog& dog2) {                         #distractor
    =====

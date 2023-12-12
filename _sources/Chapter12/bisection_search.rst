@@ -181,7 +181,8 @@ convince yourself.
    int main() {
        vector<Card> deck = buildDeck();
        Card card (3, 6);
-       cout << findBisect(card, deck, 0, 51);
+       // We need to sort from the first card (0) to the last card (size-1)
+       cout << findBisect(card, deck, 0, deck.size() - 1);
    }
 
    ====

@@ -39,6 +39,6 @@ fill-in function:
     :feedback: Try again.
     :match_1: pure function|||Does not modify objects. The return values is either a basic type or a new object that was create in the function. Takes objects and/or basic types as arguments.
     :match_2: modifier|||Often returns void. Modifies some or all parameters. Takes objects as parameters.
-    :match_3: fill-in function|||Technically a type of modifier. One of the parameters is an "empty" object that gets filled in my the function.
+    :match_3: fill-in function|||Technically a type of modifier. One of the parameters is an "empty" object that gets filled in by the function.
 
     Match the term to its definition.
