@@ -66,7 +66,7 @@ program) that something went wrong.
 
 This kind of error-checking is so common that C++ provides a built-in
 function to check preconditions and print error messages. If you include
-the ``assert.h`` header file, you get a function called ``assert`` that
+the ``cassert`` header file, you get a function called ``assert`` that
 takes a boolean value (or a conditional expression) as an argument. As
 long as the argument is true, ``assert`` does nothing. If the argument
 is false, assert prints an error message and quits. Here’s how to use
