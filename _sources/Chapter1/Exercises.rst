@@ -298,3 +298,12 @@ assess what you have learned in this chapter.
     - :0: Correct!
       :[+-]?\b[0-9]+\b: Try again! 0 is the normal convention
       :.*: Try again!
+
+.. dragndrop:: debugging_3
+   :feedback: Try again!
+   :match_1: error|||int x = int y+3;
+   :match_2: error|||doubled x;
+   :match_3: bug|||cout << " Americk ";
+   :match_4: bug|||double x * y = x + y;
+
+   Match each term to its type!
