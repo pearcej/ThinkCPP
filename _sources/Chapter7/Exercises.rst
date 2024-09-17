@@ -152,7 +152,7 @@ Multiple Choice Exercises
 
      int main() {
        string quote = "With great power comes great responsiblity.";
-       int n = 0;
+       size_t n = 0;
        while (n < quote.length()) {
          if (n % 5 == 0) {
            cout << quote[n];
@@ -186,13 +186,13 @@ Multiple Choice Exercises
 
      int main() {
        string quote = "Why so serious?";
-       int index = quote.find("a");
+       size_t index = quote.find("a");
        cout << index;
      }
 
-    - -1
+    - ``string::npos``
 
-      + Since 'a' is not found in ``quote``, the ``find`` function returns -1.
+      + Since 'a' is not found in ``quote``, the ``find`` function returns ``string::npos``.
 
     - 0
     
@@ -215,7 +215,7 @@ Multiple Choice Exercises
 
      int main() {
        string tongue_twister = "How much wood could a woodchuck chuck if a woodchuck could chuck wood?";
-       int index = quote.find("wood");
+       size_t index = quote.find("wood");
        cout << index;
      }
 
@@ -248,7 +248,7 @@ Multiple Choice Exercises
 
      int main() {
        string tongue_twister = "How much wood could a woodchuck chuck if a woodchuck could chuck wood?";
-       int index = find (quote, 'w', quote.find("wood") + 1);
+       size_t index = find (quote, 'w', quote.find("wood") + 1);
        cout << index;
      }
 
@@ -277,8 +277,8 @@ Multiple Choice Exercises
 
      int main() {
        string quote = "Life is like a box of chocolates. You never know what you’re gonna get.";
-       int i = 0;
-       int count = 0;
+       size_t i = 0;
+       size_t count = 0;
        while (i < quote.length()) {
          if (quote[i] == 'e') {
            count++;
@@ -349,7 +349,7 @@ Multiple Choice Exercises
 
      int main() {
        string question = "Honey? Where'X my Xuper Xuit?";
-       int i = 0;
+       size_t i = 0;
        while (i < question.length()) {
          if (question[i] == 'X') {
            ?????
@@ -415,8 +415,8 @@ Multiple Choice Exercises
 
      int main() {
         string quote = "Suffering builds character";
-        int count = 0;
-        int index = 17;
+        size_t count = 0;
+        size_t index = 17;
         while ( index != quote.length() ){
           if ( quote[index] == 'a' || quote[index] == 'e' ){
             count = count + index;
@@ -451,7 +451,7 @@ Multiple Choice Exercises
 
      int main() {
         string quote = "Its Bond, James Bond";
-        int index = 1;
+        size_t index = 1;
         while( index < quote.length() ){
           quote[index] = 'M';
           index = index * 2;
