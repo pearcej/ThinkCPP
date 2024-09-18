@@ -10,7 +10,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_9_1_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Let's write the code for the struct definition of ``Movie``. 
             The Movie structure will have the instance variables title, 
@@ -25,7 +25,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_9_1_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to define the ``Movie`` struct.
             ~~~~
@@ -45,7 +45,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_9_2_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
         
             Let's write the code for the ``printMovie`` function. 
             printMovie should print the information about a movie
@@ -60,7 +60,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_9_2_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the ``printMovie`` function.
             ~~~~
@@ -85,7 +85,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_9_3_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
             
             Let's write the code for the ``movieAge`` function. 
             movieAge should take a Movie and currentYear as a parameter and
@@ -100,7 +100,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_9_3_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
             
             Below is one way to write the ``movieAge`` function.
             ~~~~
@@ -124,7 +124,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_9_4_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
             
             Let's write the code for the struct definition of ``Date``.
             The Date structure will have three integer instance variables: day, 
@@ -139,7 +139,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_9_4_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to define the ``Date`` structure.
             ~~~~
@@ -159,7 +159,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_9_5_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Let's write the code for the ``printDate`` function. 
             printDate should print the date in the following format: 
@@ -174,7 +174,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_9_5_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the ``printDate`` function.
             ~~~~
@@ -198,7 +198,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_9_6_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Let's write the code for the ``nextMonth`` function. 
             nextMonth should change the date to one month later.
@@ -214,7 +214,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_9_6_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the nextMonth function.
             ~~~~
@@ -245,7 +245,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_9_7_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Let's write the code for the struct definition of ``Length``. 
             Length should have the instance variables inches, feet, and yard.
@@ -259,7 +259,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_9_7_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
             
             Below is one way to defiine the ``Length`` structure.
             ~~~~
@@ -279,7 +279,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_9_8_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Let's write the code for the ``printLength`` function. 
             printLength should print the date in the following format: 
@@ -294,7 +294,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_9_8_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the ``printLength`` function.
             ~~~~
@@ -318,7 +318,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_9_9_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Let's write the code for the ``allInches`` function. 
             printLength should modify a Length object to convert all
@@ -334,7 +334,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_9_9_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the ``allInches`` function.
             ~~~~
@@ -358,7 +358,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_9_10_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Let's write the code for the ``addLengths`` function. 
             addLengths should take three Lengths as parameters. 
@@ -375,7 +375,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_9_10_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the ``addLengths`` function.
             ~~~~
