@@ -7,7 +7,7 @@ different from what we’ve seen before.
 
 .. activecode:: length_AC_1
   :language: cpp
-  :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+  :compileargs: [ '-Wall', '-Werror' ]
   :caption: Finding the length of a string
 
   The active code below outputs the length of string ``fruit``.
@@ -17,7 +17,7 @@ different from what we’ve seen before.
 
   int main() {
       string fruit = "Watermelon";
-      int length;
+      size_t length;
       length = fruit.length();
       cout << length << endl;
   }
@@ -41,7 +41,7 @@ something like
 
 ::
 
-     int length = fruit.length();
+     size_t length = fruit.length();
      char last = fruit[length];       // WRONG!!
 
 That won’t work. The reason is that there is no 6th letter in
@@ -56,7 +56,7 @@ from 0 to 5. To get the last character, you have to subtract 1 from
 
 .. activecode:: length_AC_2
   :language: cpp
-  :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+  :compileargs: [ '-Wall', '-Werror' ]
   :caption: Finding the length of a string and outputting it
 
   The active code below outputs the last character in string ``fruit``
@@ -67,7 +67,7 @@ from 0 to 5. To get the last character, you have to subtract 1 from
 
   int main() {
       string fruit = "Watermelon";
-      int length = fruit.length();
+      size_t length = fruit.length();
       char last = fruit[length-1];
       cout << last;
   }
@@ -120,7 +120,7 @@ from 0 to 5. To get the last character, you have to subtract 1 from
 
       string course = "Programming";
 
-      int num_chars;
+      size_t num_chars;
 
       string num_chars; #distractor
 

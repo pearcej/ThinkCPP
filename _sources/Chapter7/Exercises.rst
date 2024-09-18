@@ -247,8 +247,8 @@ Multiple Choice Exercises
     .. code-block:: cpp
 
      int main() {
-       string tongue_twister = "How much wood could a woodchuck chuck if a woodchuck could chuck wood?";
-       size_t index = find (quote, 'w', quote.find("wood") + 1);
+       string quote = "How much wood could a woodchuck chuck if a woodchuck could chuck wood?";
+       size_t quote = quote.find('w', quote.find("wood") + 1);
        cout << index;
      }
 
@@ -383,7 +383,7 @@ Multiple Choice Exercises
     .. code-block:: cpp
 
      int main() {
-       cout << "butter" < "butterfly";
+       cout << ("butter" < "butterfly");
      }
 
     - butterbutterfly
@@ -436,7 +436,7 @@ Multiple Choice Exercises
 
     - 64
 
-      + Correct! the occurences of 'a' are 19  and 21, while that of 'e' is 24 (after ``index`` 17). The total is 64.
+      + Correct! the occurences of 'a' are 19 and 21, while that of 'e' is 24 (after ``index`` 17). The total is 64.
 
     - 68
 

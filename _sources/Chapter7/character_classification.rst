@@ -54,7 +54,7 @@ should be ``string``.
 
 .. activecode:: character_classification_AC_1
   :language: cpp
-  :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+  :compileargs: [ '-Wall', '-Werror' ]
 
   Try writing the ``stringToUpper`` and ``stringToLower`` functions in the 
   commented sections of the active code below. Both functions take a single ``string``

@@ -75,18 +75,18 @@ This produces the output ``Jello, world!``.
    Assume second string is greater than first.
 
    -----
-   string greeter(string s1,string s2) {
+   string mixer(string s1,string s2) {
    =====
    void mixer(string s1,string s2) { #paired
    =====
-      int size = s1.length();
+      size_t size = s1.length();
    =====
-      int size = s2.length(); #paired
+      size_t size = s2.length(); #paired
    =====
-      index i = 0;
+      size_t i = 0;
       while (i &lt size) {
    =====
-      index i = size - 1; #distractor
+      size_t i = size - 1; #distractor
       while (i &lt size) {
    =====
         if( (i % 2) == 0){

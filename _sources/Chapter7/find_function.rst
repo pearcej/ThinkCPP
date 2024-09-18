@@ -41,7 +41,7 @@ appears in the string.
 
 .. activecode:: find_function_AC_2
   :language: cpp
-  :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+  :compileargs: [ '-Wall', '-Werror' ]
   :caption: The find function
 
   The active code below finds the starting index of ``"nan"`` in ``fruit``.
