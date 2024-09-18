@@ -63,7 +63,7 @@ and eventually gets back to ``main`` so the program can terminate.
        int num = 3;
        int newNum = multiplyTwo(num);
        int newerNum = addTwo(newNum);
-       printTotal(total);
+       printTotal(newerNum);
        return 0;
    }
 

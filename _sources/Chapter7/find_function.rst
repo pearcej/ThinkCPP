@@ -102,6 +102,13 @@ the argument we provide.
 
 .. mchoice:: find_function_3
    :practice: T 
+   :answer_a: Index to find sea is 29
+   :answer_b: Index to find sea is 5
+   :answer_c: Index to find sea is -1
+   :correct: b
+   :feedback_a: <code>find</code> returns the index of the FIRST occurence of "sea". 
+   :feedback_b: Correct! <code>index</code> only has to look for a sequence arranged as "sea" in the string. 
+   :feedback_c: sea is present in the <code>sentence</code>.
 
    What is printed when the code is run?
 

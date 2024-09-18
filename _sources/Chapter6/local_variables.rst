@@ -113,6 +113,7 @@ to read.
     }
 
 .. mchoice:: local_variables_3
+             
     Take a look at the code below. Is the variable ``j`` accessable  in the function ``printMultiples``?
     
     .. code-block:: cpp

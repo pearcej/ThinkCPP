@@ -84,6 +84,9 @@ and other code black.
 
    Fix the code below so that it runs without errors.  Hint: you might need to change the names of some variables.
    ~~~~
+   #include <iostream>
+   using namespace std;
+   
    int main () {
        int friend = 4;
        int enemy = friend * (-1);

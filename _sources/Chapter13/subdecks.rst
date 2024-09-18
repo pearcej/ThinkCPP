@@ -230,23 +230,23 @@ more error-prone? Which version do you think is more efficient?
       =====
       int findBisect (Subdeck subdeck, Card card) {                         #paired
       =====
-       if (subdeck.size() == 1 && !subdeck[0].equals(card)) return -1;
+       if (subdeck.cards.size() == 1 && !subdeck.cards[0].equals(card)) return -1;
       =====
-        int mid = subdeck.size() / 2;
+       int mid = subdeck.cards.size() / 2;
       =====
-        int mid = (high + low) / 2;                         #paired
+       int mid = (high + low) / 2;                         #paired
       =====
-       if (subdeck[mid].equals(card)) return mid;
+       if (subdeck.cards[mid].equals(card)) return mid;
       =====
-       else if (subdeck[mid].isGreater(card)) {
+       else if (subdeck.cards[mid].isGreater(card)) {
         return findBisect (subdeck.subdeck(0, mid - 1), card);
        }  
       =====
-       else if (subdeck[mid].isGreater(card)) {                         #paired
-        return findBisect (subdeck.subdeck(mid + 1, subdeck.size()), card);
+       else if (subdeck.cards[mid].isGreater(card)) {                         #paired
+        return findBisect (subdeck.subdeck(mid + 1, subdeck.cards.size()), card);
        } 
       =====
        else {
-        return findBisect (subdeck.subdeck(mid + 1, subdeck.size()), card);
+        return findBisect (subdeck.subdeck(mid + 1, subdeck.cards.size()), card);
        }
       }
