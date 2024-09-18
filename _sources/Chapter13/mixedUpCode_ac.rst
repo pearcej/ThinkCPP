@@ -9,7 +9,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_13_1_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Write the enumerated type ``Days`` which maps days of the week to integers
             starting at 1. Use a switch statement to determine whether or not day
@@ -24,7 +24,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_13_1_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to use a switch statement to classify a day of the week.
             ~~~~
@@ -54,7 +54,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_13_2_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Use a switch statement to check and print out whether a number is divisible by two.
             Prompt and get input from the user. If input isn't valid,
@@ -69,7 +69,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_13_2_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to use a switch statement to check and print out whether a number is divisible by 
             two.
@@ -100,7 +100,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_13_3_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Use a switch statement to check and print out the maximum between two numbers.
             Prompt and get input from the user for two integers. If input isn't valid,
@@ -115,7 +115,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_13_3_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to use a switch statement to check and print out the maximum between two numbers.
             ~~~~
@@ -147,7 +147,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_13_4_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Write the pseudocode for the implementation of ``mergeSort``. 
             ~~~~
@@ -158,7 +158,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_13_4_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the pseudocode of ``mergeSort``.
             ~~~~
@@ -176,7 +176,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_13_5_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Let's revisit the Dictionary data structure defined in the previous section.
             Write the struct definitions for ``Entry``, which has member variables word and page,
@@ -192,7 +192,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_13_5_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the struct definition for ``Entry`` and for ``Dictionary``. 
             ~~~~
@@ -215,7 +215,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_13_6_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Assume our dictionary is currently unsorted. Let's write a Dictionary member function ``find``
             that takes a string word as a parameter and returns the index of its corresponding
@@ -230,7 +230,7 @@ Answer the following **Activecode** questions to assess what you have learned in
         
         .. activecode:: mucp_13_6_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the Dictionary member function.
             ~~~~
@@ -262,7 +262,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_13_7_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Of course, all dictionaries are in some sort of order. In order to do this, we
             must first write the Dictionary member function ``findFirstWord``, which takes a starting
@@ -279,7 +279,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_13_7_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the ``findFirstWord`` member function.
             ~~~~
@@ -312,7 +312,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_13_8_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             We also need a swap function. Write the Dictionary member function
             ``swap`` which takes two indices as parameters and swaps the Entries
@@ -328,7 +328,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_13_8_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the ``swap`` member function
             ~~~~
@@ -357,7 +357,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_13_9_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
             
             Now let's write the Dictionary member function ``alphabetize``, which
             sorts the Entries in the Dictionary in alphabetical order. Use
@@ -373,7 +373,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_13_9_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the Dictionary member function ``alphabetize``.
             ~~~~
@@ -394,7 +394,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_13_10_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Let's check to see if our sorting worked! Write the Dictionary
             member function ``printDictionary``, which prints out the word in each 
@@ -410,7 +410,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_13_10_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the Dictionary member function ``printDictionary``.
             ~~~~

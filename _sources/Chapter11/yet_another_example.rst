@@ -32,7 +32,7 @@ the implicit parameter is ``const``.
 
 .. activecode:: yet_another_example_AC_1
    :language: cpp
-   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+   :compileargs: [ '-Wall', '-Werror' ]
 
    Feel free to try out the ``convertToSeconds()`` function in the active code below!
    ~~~~

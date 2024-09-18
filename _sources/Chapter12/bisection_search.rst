@@ -149,7 +149,7 @@ convince yourself.
 
 .. activecode:: 12_9
    :language: cpp
-   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+   :compileargs: [ '-Wall', '-Werror' ]
 
    The code below searches finds the same card from the same deck we used on the previous page.
    This time, it uses bisection search to locate the card.

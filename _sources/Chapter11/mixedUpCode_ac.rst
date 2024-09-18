@@ -9,7 +9,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
      .. activecode:: mucp_11_1_ac_q
         :language: cpp
-        :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+        :compileargs: [ '-Wall', '-Werror' ]
 
         Suppose you have the following code. Construct a block of code that would make the print function into a member function.
         ~~~~
@@ -36,7 +36,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_11_1_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
             
             Below is one way to construct the code block
             ~~~~
@@ -67,7 +67,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_11_2_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Let's make an album! Write the struct definition for
             ``Album``, which should have instance variables name and year.
@@ -83,7 +83,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_11_2_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to define the ``Album`` struct.
             ~~~~
@@ -112,7 +112,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_11_3_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Write the necessary of code to establish
             the ``convertToSeconds`` member function as a part of the ``Time`` struct.
@@ -126,7 +126,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_11_3_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the ``convertToSeconds`` member function.
             ~~~~
@@ -152,7 +152,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_11_4_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Create the ``Student::is_older()`` function as it would be defined INSIDE
             of the Student structure definition. This function checks if the current
@@ -168,7 +168,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_11_4_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to create the ``Student::is_older()`` function.
             ~~~~
@@ -187,7 +187,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_11_5_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Write the necessary code to initialise
             a constructor for type ``Days`` that takes in the number of days and
@@ -202,7 +202,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_11_5_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to initialize the constructor.
             ~~~~
@@ -225,7 +225,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_11_6_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Let's write two constructors for ``Student``. One with no arguments and
             one with arguments. 
@@ -239,7 +239,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_11_6_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the two constructors.
             ~~~~
@@ -266,7 +266,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_11_7_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Implement two constructors for the ``Penguin`` structure. One should
             be a default constructor, the other should take arguments. The
@@ -281,7 +281,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_11_7_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to implement the two constructors. 
             ~~~~
@@ -319,7 +319,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_11_8_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Write the necessary blocks of code to make the
             ``AddDays`` function below a member function.
@@ -338,7 +338,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_11_8_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to make the ``AddDays`` function a member function.
             ~~~~
@@ -358,7 +358,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_11_9_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Write the necessary blocks of code to create a struct
             ``Penguin`` that stores name and age. In addition have 2 constructors and
@@ -373,7 +373,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_11_9_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to creat the ``Penguin`` struct and the 2 constructors.
             ~~~~
@@ -409,7 +409,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_11_10_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Write the necessary blocks of code in order to write
             a header (.h) file for the struct ``Student``.
@@ -423,7 +423,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_11_10_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the header file for the ``Student`` struct.
             ~~~~

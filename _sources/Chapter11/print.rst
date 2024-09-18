@@ -112,7 +112,7 @@ will complain.
 
 .. activecode:: print_AC_1
    :language: cpp
-   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+   :compileargs: [ '-Wall', '-Werror' ]
 
    Feel free to mess around with input for ``currentTime`` in the active code below!
    ~~~~
