@@ -24,7 +24,7 @@ function.
 
 .. activecode:: call_by_value_AC_1
   :language: cpp
-  :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+  :compileargs: [ '-Wall', '-Werror' ]
 
   Take a look at the active code below. Notice from the output of the code below how the
   function ``addTwo`` changes the instance variables, but not on ``blank`` itself.

@@ -11,7 +11,7 @@ Coding Practice
 
         .. activecode:: cp_8_AC_1q
            :language: cpp
-           :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+           :compileargs: [ '-Wall', '-Werror' ]
            :practice: T
            :stdin: 4, 6
 
@@ -34,7 +34,7 @@ Coding Practice
 
         .. activecode:: cp_8_AC_1a
            :language: cpp
-           :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+           :compileargs: [ '-Wall', '-Werror' ]
            :optional:
 
            #include <iostream>
@@ -70,7 +70,7 @@ Coding Practice
 
         .. activecode:: cp_8_AC_3q
            :language: cpp
-           :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+           :compileargs: [ '-Wall', '-Werror' ]
            :practice: T
 
            #include <iostream>
@@ -97,7 +97,7 @@ Coding Practice
 
         .. activecode:: cp_8_AC_3a
            :language: cpp
-           :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+           :compileargs: [ '-Wall', '-Werror' ]
            :optional:
 
            #include <iostream>
@@ -140,7 +140,7 @@ Coding Practice
 
         .. activecode:: cp_8_AC_5q
            :language: cpp
-           :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+           :compileargs: [ '-Wall', '-Werror' ]
 
            #include <iostream>
            using namespace std;
@@ -183,7 +183,7 @@ Coding Practice
 
         .. activecode:: cp_8_AC_5a
            :language: cpp
-           :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+           :compileargs: [ '-Wall', '-Werror' ]
            :optional:
 
            #include <iostream>
@@ -246,7 +246,7 @@ Coding Practice
 
         .. activecode:: cp_8_AC_7q
            :language: cpp
-           :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+           :compileargs: [ '-Wall', '-Werror' ]
 
            #include <iostream>
            using namespace std;
@@ -288,7 +288,7 @@ Coding Practice
 
         .. activecode:: cp_8_AC_7a
            :language: cpp
-           :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+           :compileargs: [ '-Wall', '-Werror' ]
            :optional:
 
            #include <iostream>
@@ -368,7 +368,7 @@ Coding Practice
 
         .. activecode:: cp_8_AC_9q
            :language: cpp
-           :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+           :compileargs: [ '-Wall', '-Werror' ]
            :stdin: y
 
            #include <iostream>
@@ -438,7 +438,7 @@ Coding Practice
 
         .. activecode:: cp_8_AC_9a
            :language: cpp
-           :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+           :compileargs: [ '-Wall', '-Werror' ]
            :stdin: y
            :optional:
 
