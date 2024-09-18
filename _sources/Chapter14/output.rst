@@ -50,7 +50,7 @@ The output of this code is:
 
 .. activecode:: fourteensix
    :language: cpp
-   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+   :compileargs: [ '-Wall', '-Werror' ]
 
    The active code below uses the print functions for ``Complex`` objects.
    Feel free to modify the code and experiment around!

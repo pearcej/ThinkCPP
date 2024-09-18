@@ -48,7 +48,7 @@ useful reminder.
 
 .. activecode:: fourteeneleven
    :language: cpp
-   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+   :compileargs: [ '-Wall', '-Werror' ]
 
    The active code below updates ``calculatePolar`` and ``calculateCartesian``
    to be private functions. Notice how we are no longer able to call 
