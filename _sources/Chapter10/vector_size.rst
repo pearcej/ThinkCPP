@@ -12,7 +12,7 @@ correctly for any size vector.
 
 ::
 
-     int i;
+     size_t i;
      for (i = 0; i < count.size(); i++) {
        cout << count[i] << endl;
      }
@@ -35,7 +35,7 @@ begins, and use this variable to check for the last element.
 
 .. activecode:: vector_size_AC_1
    :language: cpp
-   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+   :compileargs: [ '-Wall', '-Werror' ]
 
    Try running the active code below!
    ~~~~

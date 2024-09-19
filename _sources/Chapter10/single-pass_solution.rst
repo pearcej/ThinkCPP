@@ -48,15 +48,15 @@ that takes a vector and the range of values in the vector (in this case
 
    Construct a function called histogram that takes a vector and the range of values in the vector, and that returns a histogram of values in the vector.
    -----
-   vector&#60;int&#62; histogram(const vector&#60;int&#62;& vec, int range) {
+   vector&lt;int&gt; histogram(const vector&lt;int&gt;&amp; vec, int range) {
    =====
-      vector&#60;int&#62; histogram (range, 0);
+      vector&lt;int&gt; histogram (range, 0);
    =====
-      vector&#60;int&#62; histogram (range);                         #paired
+      vector&lt;int&gt; histogram (range);                         #paired
    =====
-      for (int i = 0; i &#60; vec.size(); i++) {
+      for (size_t i = 0; i &lt; vec.size(); i++) {
    =====
-      for (int i = 0; i &#60; range; i++) {                         #paired
+      for (size_t i = 0; i &lt; range; i++) {                         #paired
    =====
          int index = vec[i];
    =====

@@ -56,7 +56,7 @@ which is pretty random-looking. Your results might be different.
 
 .. activecode:: vector_of_rand_nums_AC_1
    :language: cpp
-   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+   :compileargs: [ '-Wall', '-Werror' ]
 
    Try running the active code below!
    ~~~~
@@ -78,14 +78,14 @@ which is pretty random-looking. Your results might be different.
 
    vector<int> randomVector (int n, int upperBound) {
       vector<int> vec (n);
-      for (size_t i = 0; i<vec.size(); i++) {
+      for (size_t i = 0; i < vec.size(); i++) {
          vec[i] = random () % upperBound;
       }
       return vec;
    }
    
    void printVector (const vector<int>& vec) {
-      for (size_t i = 0; i<vec.size(); i++) {
+      for (size_t i = 0; i < vec.size(); i++) {
          cout << vec[i] << " ";
       }
    }
