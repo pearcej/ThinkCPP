@@ -1,0 +1,281 @@
+<?xml version="1.0"?>
+<section xml:id="chapter12_card-objects">
+  <title><c>Card</c> objects</title>
+  <p>If you are not familiar with common playing cards, now would be a good
+            time to get a deck, or else this chapter might not make much sense.
+            There are 52 cards in a deck, each of which belongs to one of four suits
+            and one of 13 ranks. The suits are Spades, Hearts, Diamonds and Clubs
+            (in descending order in Bridge). The ranks are Ace, 2, 3, 4, 5, 6, 7, 8,
+            9, 10, Jack, Queen and King. Depending on what game you are playing, the
+            rank of the Ace may be higher than King or lower than 2.</p>
+  <p>If we want to define a new object to represent a playing card, it is
+            pretty obvious what the instance variables should be: <c>rank</c> and
+            <c>suit</c>. It is not as obvious what type the instance variables should
+            be. One possibility is <c>string</c>s, containing things like
+            <c>"Spade"</c> for suits and <c>"Queen"</c> for ranks. One problem with this
+            implementation is that it would not be easy to compare cards to see
+            which had higher rank or suit.</p>
+  <p>An alternative is to use integers to <term>encode</term> the ranks and suits. By
+            <q>encode,</q> I do not mean what some people think, which is to encrypt, or
+            translate into a secret code. What a computer scientist means by
+            <q>encode</q> is something like <q>define a mapping between a sequence of
+            numbers and the things I want to represent.</q> For example,</p>
+  <table>
+    <tabular>
+      <row>
+        <cell>
+                            Spades
+                        </cell>
+        <cell>
+          <math>\mapsto</math>
+        </cell>
+        <cell>
+                            3
+                        </cell>
+      </row>
+      <row>
+        <cell>
+                            Hearts
+                        </cell>
+        <cell>
+          <math>\mapsto</math>
+        </cell>
+        <cell>
+                            2
+                        </cell>
+      </row>
+      <row>
+        <cell>
+                            Diamonds
+                        </cell>
+        <cell>
+          <math>\mapsto</math>
+        </cell>
+        <cell>
+                            1
+                        </cell>
+      </row>
+      <row>
+        <cell>
+                            Clubs
+                        </cell>
+        <cell>
+          <math>\mapsto</math>
+        </cell>
+        <cell>
+                            0
+                        </cell>
+      </row>
+    </tabular>
+  </table>
+  <p>The symbol <math>\mapsto</math> is mathematical notation for <q>maps to.</q> The
+            obvious feature of this mapping is that the suits map to integers in
+            order, so we can compare suits by comparing integers. The mapping for
+            ranks is fairly obvious; each of the numerical ranks maps to the
+            corresponding integer, and for face cards:</p>
+  <table>
+    <tabular>
+      <row>
+        <cell>
+                            Jack
+                        </cell>
+        <cell>
+          <math>\mapsto</math>
+        </cell>
+        <cell>
+                            11
+                        </cell>
+      </row>
+      <row>
+        <cell>
+                            Queen
+                        </cell>
+        <cell>
+          <math>\mapsto</math>
+        </cell>
+        <cell>
+                            12
+                        </cell>
+      </row>
+      <row>
+        <cell>
+                            King
+                        </cell>
+        <cell>
+          <math>\mapsto</math>
+        </cell>
+        <cell>
+                            13
+                        </cell>
+      </row>
+    </tabular>
+  </table>
+  <p>The reason I am using mathematical notation for these mappings is that
+            they are not part of the C++ program. They are part of the program
+            design, but they never appear explicitly in the code. The class
+            definition for the <c>Card</c> type looks like this:</p>
+  <pre>struct Card {
+  int suit, rank;
+
+  Card ();
+  Card (int s, int r);
+};
+
+Card::Card () {
+  suit = 0;  rank = 0;
+}
+
+Card::Card (int s, int r) {
+  suit = s;  rank = r;
+}</pre>
+  <p>There are two constructors for <c>Card</c>s. You can tell that they are
+            constructors because they have no return type and their name is the same
+            as the name of the structure. The first constructor takes no arguments
+            and initializes the instance variables to a useless value (the zero of
+            clubs).</p>
+  <p>The second constructor is more useful. It takes two parameters, the suit
+            and rank of the card.</p>
+  <p>The following code creates an object named <c>threeOfClubs</c> that
+            represents the 3 of Clubs:</p>
+  <pre>Card threeOfClubs (0, 3);</pre>
+  <p>The first argument, <c>0</c> represents the suit Clubs, the second,
+            naturally, represents the rank 3.</p>
+  <exercise label="card_objects_1">
+    <statement>
+      <p>The instance variables for a playing card are <var/> and <var/>. (Put them in alphabetical order.)</p>
+    </statement>
+    <setup>
+      <var case="insensitive">
+        <condition string="^\s*rank\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*suit\s*$">
+          <feedback>
+            <p>Wrong spot</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect!  Try again!</p>
+          </feedback>
+        </condition>
+      </var>
+      <var case="insensitive">
+        <condition string="^\s*suit\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*rank\s*$">
+          <feedback>
+            <p>Wrong spot</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Incorrect!  Try again!</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="card_objects_2">
+    <statement>
+      <p>What does it mean to <term>encode</term> the ranks and suits?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>To translate each rank / suit into a secret code.</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! This is called encryption.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>To create strings to represent each rank / suit.</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! We create strings before we encode.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>To define a mapping between each rank / suit and a sequence of numbers.</p>
+        </statement>
+        <feedback>
+          <p>Correct! This makes it easier to compare cards.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>To write code describing real objects, like cards, with their respective ranks / suits.</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! This is how we describe object-oriented programming.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="card_objects_3">
+    <statement>
+      <p>The symbol <math>\mapsto</math> means <var/> .  </p>
+    </statement>
+    <setup>
+      <var case="insensitive">
+        <condition string="^\s*maps\s+to)\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Incorrect!  Try again!</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="card_objects_4">
+    <statement>
+      <p>What is the purpose of mapping?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>To have better organization in your code.</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! Mapping helps more with order than with organization.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>To make it possible to compare objects that have non-numerical values.</p>
+        </statement>
+        <feedback>
+          <p>Correct! By mapping non-numerical values to integers, we can compare them!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>To represent complex objects visually.</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! There is nothing visual about mapping.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>To add complexity to your code.</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! Mapping actually simplifies your code.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

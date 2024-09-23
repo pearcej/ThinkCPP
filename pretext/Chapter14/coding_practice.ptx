@@ -1,0 +1,304 @@
+<?xml version="1.0"?>
+<section xml:id="chapter14_coding-practice">
+  <title>Coding Practice</title>
+  <exercise xml:id="empty-93">
+    <statement/>
+    <program interactive="" language="" xml:id="empty-94"/>
+    <solution>
+                Below is the class definition of Room. As you can see, there isn't
+                    a big difference between structs and classes.
+
+    <program xml:id="cp_14_AC_1a" language="cpp"><input><![CDATA[
+#include <iostream>
+using namespace std;
+
+class Room {
+    private:
+        int length;
+        int width;
+        int height;
+
+    public:
+        int calculateArea () {
+            return length * width;
+        }
+
+        int calculateVolume () {
+            return length * width * height;
+        }
+};
+        ]]></input><tests>
+
+
+</tests></program>
+            
+                <p>Below is the <c>class</c> definition of <c>Room</c>. As you can see, there isn't
+                    a big difference between <c>struct</c>s and <c>class</c>es.</p>
+
+    
+            </solution>
+  </exercise>
+  <raw format="html" xml:space="preserve">
+&lt;div class="runestone sqcontainer %(optclass)s"&gt;
+&lt;div data-component="selectquestion" id=cp_14_AC_2_sq data-questionlist='cp_14_AC_2q, cp_14_AC_2q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
+    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cp_14_AC_2q, cp_14_AC_2q_pp&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</raw>
+  <exercise xml:id="empty-95">
+    <statement/>
+    <program interactive="" language="" xml:id="empty-96"/>
+    <solution>
+                Below is one way to implement this. We use the correct conversions
+                    in cToF and fToC and then call these functions in
+                    getFahrenheit and getCelsius if needed.
+
+    <program xml:id="cp_14_AC_3a" language="cpp"><input><![CDATA[
+#include <iostream>
+using namespace std;
+
+class Temp {
+    private:
+        double fahrenheit;
+        double celsius;
+        bool is_fahrenheit;
+        bool is_celsius;
+
+        double cToF() {
+            return celsius * 9/5 + 32;
+        }
+
+        double fToC() {
+            return (fahrenheit - 32) * 5/9;
+        }
+
+    public:
+        double getFahrenheit () {
+            if (is_celsius) { return cToF(); }
+            else { return fahrenheit; }
+        }
+        double getCelsius () {
+            if (is_fahrenheit) { return fToC(); }
+            else { return celsius; }
+        }
+        void setFahrenheit (double f) { fahrenheit = f; is_fahrenheit = true; is_celsius = false; }
+        void setCelsius (double c) { celsius = c; is_celsius = true; is_fahrenheit = false; }
+        void printTemp () {
+            if (is_fahrenheit) {
+                cout << "It is " << getFahrenheit() << " degrees Fahrenheit" << endl;
+            }
+            else {
+                cout << "It is " << getCelsius() << " degrees Celsius" << endl;
+            }
+        }
+};
+        ]]></input><tests>
+
+
+</tests></program>
+            
+                <p>Below is one way to implement this. We use the correct conversions
+                    in <c>cToF</c> and <c>fToC</c> and then call these functions in
+                    <c>getFahrenheit</c> and <c>getCelsius</c> if needed.</p>
+
+    
+            </solution>
+  </exercise>
+  <raw format="html" xml:space="preserve">
+&lt;div class="runestone sqcontainer %(optclass)s"&gt;
+&lt;div data-component="selectquestion" id=cp_14_AC_4_sq data-questionlist='cp_14_AC_4q, cp_14_AC_4q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
+    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cp_14_AC_4q, cp_14_AC_4q_pp&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</raw>
+  <exercise xml:id="empty-97">
+    <statement/>
+    <program interactive="" language="" xml:id="empty-98"/>
+    <solution>
+                Below is the class definition of MyVector. We use the public
+                    and private keywords to separate public and private members of
+                    our class. The default constructor sets size to 0.
+
+    <program xml:id="cp_14_AC_5a" language="cpp"><input><![CDATA[
+#include <iostream>
+#include <vector>
+using namespace std;
+
+class MyVector {
+    private:
+        vector<int> elements;
+
+    public:
+        MyVector() {};
+};
+        ]]></input><tests>
+
+
+</tests></program>
+            
+                <p>Below is the <c>class</c> definition of <c>MyVector</c>. We use the <c>public</c>
+                    and <c>private</c> keywords to separate public and private members of
+                    our class. The default constructor sets size to 0.</p>
+
+    
+            </solution>
+  </exercise>
+  <raw format="html" xml:space="preserve">
+&lt;div class="runestone sqcontainer %(optclass)s"&gt;
+&lt;div data-component="selectquestion" id=cp_14_AC_6_sq data-questionlist='cp_14_AC_6q, cp_14_AC_6q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
+    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cp_14_AC_6q, cp_14_AC_6q_pp&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</raw>
+  <exercise xml:id="empty-99">
+    <statement/>
+    <program interactive="" language="" xml:id="empty-100"/>
+    <solution>
+                Below is one way to implement these functions. Since these
+                    functions are defined for vectors, we can call them
+                    on elements.
+
+    <program xml:id="cp_14_AC_7a" language="cpp"><input><![CDATA[
+#include <iostream>
+#include <vector>
+using namespace std;
+
+class MyVector {
+    private:
+        vector<int> elements;
+
+    public:
+        MyVector() {};
+        MyVector(vector<int> vec);
+
+        int size() { return elements.size(); }
+        void push_back(int value) { elements.push_back(value); }
+        void pop_back() { elements.pop_back(); };
+        int at(int index) { return elements[index]; }
+};
+
+int main() {
+    vector<int> data = { 2, 4, 1, 5, 2, 6 };
+    MyVector myVec(data);
+    cout << "The first element is " << myVec.at(0) << endl;
+    myVec.pop_back();
+    myVec.pop_back();
+    myVec.push_back(12);
+    cout << "The size of myVec is " << myVec.size() << endl;
+    cout << "The last three elements are " << myVec.at(2) << ", "
+         << myVec.at(3) << ", and " << myVec.at(4) << endl;
+}
+        ]]></input><tests>
+MyVector::MyVector (vector&lt;int&gt; vec) {
+    elements = vec;
+}
+</tests></program>
+            
+                <p>Below is one way to implement these functions. Since these
+                    functions are defined for <c>vector</c>s, we can call them
+                    on <c>elements</c>.</p>
+
+    
+            </solution>
+  </exercise>
+  <raw format="html" xml:space="preserve">
+&lt;div class="runestone sqcontainer %(optclass)s"&gt;
+&lt;div data-component="selectquestion" id=cp_14_AC_8_sq data-questionlist='cp_14_AC_8q, cp_14_AC_8q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
+    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cp_14_AC_8q, cp_14_AC_8q_pp&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</raw>
+  <exercise xml:id="empty-101">
+    <statement/>
+    <program interactive="" language="" xml:id="empty-102"/>
+    <solution>
+                Below is one way to implement these functions. For push_front,
+                    we can create a temporary vector and add the new element to the
+                    front before pushing the rest of the old elements to the back.
+                    For pop_front, we can shift all elements up by one index and
+                    pop the last element off.
+
+    <program xml:id="cp_14_AC_9a" language="cpp"><input><![CDATA[
+#include <iostream>
+#include <vector>
+using namespace std;
+
+class MyVector {
+    private:
+        vector<int> elements;
+
+    public:
+        MyVector() {};
+        MyVector(vector<int> vec);
+
+        int size();
+        void push_back(int value);
+        void pop_back();
+        int at(int index);
+        void print();
+};
+
+void MyVector::push_front(int value) {
+    vector<int> temp;
+    temp.push_back(value);
+    for (size_t i = 0; i < elements.size(); ++i) {
+        temp.push_back(elements[i]);
+    }
+    elements = temp;
+}
+
+void MyVector::pop_front() {
+    for (size_t i = 1; i < elements.size(); ++i) {
+        elements[i - 1] = elements[i];
+    }
+    elements.pop_back();
+}
+
+int main() {
+    vector<int> data = { 2, 14, 5 };
+    MyVector myVec(data);
+    myVec.pop_front();
+    myVec.push_front(5);
+    myVec.push_front(10);
+    cout << "The new size is " << myVec.size() << endl;
+    myVec.print();
+}
+        ]]></input><tests>
+MyVector::MyVector (vector&lt;int&gt; vec) {
+    elements = vec;
+}
+
+int MyVector::size() { return elements.size(); }
+
+void MyVector::push_back(int value) { elements.push_back(value); }
+
+void MyVector::pop_back() { elements.pop_back(); };
+
+int MyVector::at(int index) { return elements[index]; }
+
+void MyVector::print() {
+    cout &lt;&lt; "[";
+    for (size_t i = 0; i &lt; elements.size() - 1; ++i) {
+        cout &lt;&lt; elements[i] &lt;&lt; ", ";
+    }
+    cout &lt;&lt; elements[elements.size() - 1] &lt;&lt; "]" &lt;&lt; endl;
+}
+</tests></program>
+            
+                <p>Below is one way to implement these functions. For push_front,
+                    we can create a temporary vector and add the new element to the
+                    front before pushing the rest of the old elements to the back.
+                    For pop_front, we can shift all elements up by one index and
+                    pop the last element off.</p>
+
+    
+            </solution>
+  </exercise>
+  <raw format="html" xml:space="preserve">
+&lt;div class="runestone sqcontainer %(optclass)s"&gt;
+&lt;div data-component="selectquestion" id=cp_14_AC_10_sq data-questionlist='cp_14_AC_10q, cp_14_AC_10q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
+    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cp_14_AC_10q, cp_14_AC_10q_pp&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</raw>
+</section>

@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<section xml:id="chapter12_searching-find">
+  <title>Searching</title>
+  <p>The next function I want to write is <c>find</c>, which searches through a
+            vector of <c>Card</c>s to see whether it contains a certain card. It may
+            not be obvious why this function would be useful, but it gives me a
+            chance to demonstrate two ways to go searching for things, a <c>linear</c>
+            search and a <c>bisection</c> search.</p>
+  <p>Linear search is the more obvious of the two; it involves traversing the
+            deck and comparing each card to the one we are looking for. If we find
+            it we return the index where the card appears. If it is not in the deck,
+            we return -1.</p>
+  <pre>int find (const Card&amp; card, const vector&lt;Card&gt;&amp; deck) {
+  for (size_t i = 0; i &lt; deck.size(); i++) {
+    if (equals (deck[i], card)) return i;
+  }
+  return -1;
+}</pre>
+  <p>The loop here is exactly the same as the loop in <c>printDeck</c>. In fact,
+            when I wrote the program, I copied it, which saved me from having to
+            write and debug it twice.</p>
+  <p>Inside the loop, we compare each element of the deck to <c>card</c>. The
+            function returns as soon as it discovers the card, which means that we
+            do not have to traverse the entire deck if we find the card we are
+            looking for. If the loop terminates without finding the card, we know
+            the card is not in the deck and return <c>-1</c>.</p>
+  <p>To test this function, I wrote the following:</p>
+  <pre>vector&lt;Card&gt; deck = buildDeck ();
+
+int index = card.find (deck[17]);
+cout &lt;&lt; "I found the card at index = " &lt;&lt; index &lt;&lt; endl;</pre>
+  <p>The output of this code is</p>
+  <pre>I found the card at index = 17</pre>
+  <exercise label="12_8">
+    <statement>
+      <p>The code below searches for a particular card in a standard deck of 52 cards.
+            It returns the index that the card was located at.</p>
+    </statement>
+    <program xml:id="c12_8_editor" interactive="activecode" language="cpp">
+      <input><![CDATA[
+#include <iostream>
+#include <string>
+#include <vector>
+using namespace std;
+
+struct Card {
+    int suit, rank;
+
+    Card ();
+    Card (int s, int r);
+    void print () const;
+};
+
+vector<Card> buildDeck();
+
+bool equals (const Card& c1, const Card& c2){
+    return (c1.rank == c2.rank && c1.suit == c2.suit);
+}
+
+void printDeck(const vector<Card>& deck);
+
+int find (const Card& card, const vector<Card>& deck);
+
+int main() {
+    vector<Card> deck = buildDeck();
+    Card card (3, 6);
+    cout << find(card, deck);
+}
+
+        ]]></input>
+      <tests>
+
+Card::Card () {
+   suit = 0;  rank = 0;
+}
+
+Card::Card (int s, int r) {
+   suit = s;  rank = r;
+}
+
+void Card::print () const {
+   vector&lt;string&gt; suits (4);
+   suits[0] = "Clubs";
+   suits[1] = "Diamonds";
+   suits[2] = "Hearts";
+   suits[3] = "Spades";
+
+   vector&lt;string&gt; ranks (14);
+   ranks[1] = "Ace";
+   ranks[2] = "2";
+   ranks[3] = "3";
+   ranks[4] = "4";
+   ranks[5] = "5";
+   ranks[6] = "6";
+   ranks[7] = "7";
+   ranks[8] = "8";
+   ranks[9] = "9";
+   ranks[10] = "10";
+   ranks[11] = "Jack";
+   ranks[12] = "Queen";
+   ranks[13] = "King";
+
+   cout &lt;&lt; ranks[rank] &lt;&lt; " of " &lt;&lt; suits[suit] &lt;&lt; endl;
+ }
+
+ void printDeck (const vector&lt;Card&gt;&amp; deck) {
+   for (size_t i = 0; i &lt; deck.size(); i++) {
+     deck[i].print ();
+   }
+ }
+
+vector&lt;Card&gt; buildDeck() {
+   vector&lt;Card&gt; deck (52);
+   int i = 0;
+   for (int suit = 0; suit &lt;= 3; suit++) {
+      for (int rank = 1; rank &lt;= 13; rank++) {
+         deck[i].suit = suit;
+         deck[i].rank = rank;
+         i++;
+      }
+   }
+   return deck;
+}
+
+int find (const Card&amp; card, const vector&lt;Card&gt;&amp; deck) {
+   for (size_t i = 0; i &lt; deck.size(); i++) {
+    if (equals (deck[i], card)) return i;
+   }
+   return -1;
+}
+</tests>
+    </program>
+  </exercise>
+  <exercise label="searching_1">
+    <statement>
+      <p>Say we have standard deck of cards. According to our <c>find()</c> function, the
+for loop will execute a minimum of <var/> times, and a maximum of <var/>
+times while searching for a particular card. <var/>  <var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <condition number="[1, 1]">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect! What if the card we were searching for was the first one in the deck?</p>
+          </feedback>
+        </condition>
+      </var>
+      <var>
+        <condition number="[52, 52]">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Incorrect! What if the card we were searching for wasn't in the deck? In this case, we'd have looped through all of the cards!</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="searching_2">
+    <statement>
+      <p><c>buildEuchreDeck()</c> returns the deck of Euchre cards defined on the previous page.
+If we run the following code, what is returned? <var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <pre>int main() {
+   EuchreDeck = buildEuchreDeck();
+   Card card (3, 6);
+   find(card, EuchreDeck);
+ }</pre>
+        <p><var/>.</p>
+      </var>
+    </setup>
+  </exercise>
+</section>

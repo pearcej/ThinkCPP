@@ -1,0 +1,313 @@
+<?xml version="1.0"?>
+<section xml:id="chapter9_coding-practice">
+  <title>Coding Practice</title>
+  <exercise xml:id="empty-326">
+    <statement/>
+    <program interactive="" language="" xml:id="empty-327"/>
+    <solution>
+                Below is one way to implement the program. We declare the Cake struct and list the instance
+                    variables in order.
+
+    <program xml:id="cp_9_AC_1a" language="cpp"><input><![CDATA[
+#include <iostream>
+using namespace std;
+
+struct Cake {
+    string name;
+    string color;
+    double diameter;
+    bool has_icing;
+};
+
+int main() {
+    Cake c = { "Mary", "blue", 3.5, false };
+}
+        ]]></input><tests>
+
+
+</tests></program>
+            
+                <p>Below is one way to implement the program. We declare the <c>Cake</c> struct and list the instance
+                    variables in order.</p>
+
+    
+            </solution>
+  </exercise>
+  <raw format="html" xml:space="preserve">
+&lt;div class="runestone sqcontainer %(optclass)s"&gt;
+&lt;div data-component="selectquestion" id=cp_9_AC_2q_sq data-questionlist='cp_9_AC_2q, cp_9_AC_2q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
+    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cp_9_AC_2q, cp_9_AC_2q_pp&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</raw>
+  <exercise xml:id="empty-328">
+    <statement/>
+    <program interactive="" language="" xml:id="empty-329"/>
+    <solution>
+                Below is one way to implement the program. We create a Cake for the user, read in the user's input using cin, and return the Cake.
+
+    <program xml:id="cp_9_AC_3a" language="cpp"><input><![CDATA[
+#include <iostream>
+using namespace std;
+
+struct Cake {
+    string name;
+    string color;
+    double diameter;
+    bool has_icing;
+};
+
+void printCakeInfo (Cake c);
+
+Cake makeCake () {
+    Cake input;
+    string name, color;
+    double diameter;
+    char icing;
+    cout << "Name: ";
+    cin >> name;
+    input.name = name;
+    cout << "Color: ";
+    cin >> color;
+    input.color = color;
+    cout << "Diameter: ";
+    cin >> diameter;
+    input.diameter = diameter;
+    cout << "Icing? (y/n) ";
+    cin >> icing;
+    if (icing == 'y') {
+        input.has_icing = true;
+    }
+    else {
+        input.has_icing = false;
+    }
+    return input;
+}
+
+int main() {
+    Cake input = makeCake ();
+    printCakeInfo (input);
+}
+        ]]></input><tests>
+void printCakeInfo (Cake c) {
+    if (c.name == "n/a") {
+        if (c.has_icing) {
+            cout &lt;&lt; "This is a " &lt;&lt; c.color &lt;&lt; "," &lt;&lt; c.diameter &lt;&lt; " inch diameter cake with icing." &lt;&lt; endl;
+        }
+        else {
+            cout &lt;&lt; "This is a " &lt;&lt; c.color &lt;&lt; "," &lt;&lt; c.diameter &lt;&lt; " inch diameter cake without icing." &lt;&lt; endl;
+        }
+    }
+    else {
+        if (c.has_icing) {
+            cout &lt;&lt; "Happy birthday " &lt;&lt; c.name &lt;&lt; "! Your cake is " &lt;&lt; c.color &lt;&lt; ", has a " &lt;&lt; c.diameter &lt;&lt; " inch diameter, and comes with icing." &lt;&lt; endl;
+        }
+        else {
+            cout &lt;&lt; "Happy birthday " &lt;&lt; c.name &lt;&lt; "! Your cake is " &lt;&lt; c.color &lt;&lt; ", has a " &lt;&lt; c.diameter &lt;&lt; " inch diameter, and comes without icing." &lt;&lt; endl;
+        }
+    }
+}
+</tests></program>
+            
+                <p>Below is one way to implement the program. We create a <c>Cake</c> for the user, read in the user's input using cin, and return the <c>Cake</c>.</p>
+
+    
+            </solution>
+  </exercise>
+  <raw format="html" xml:space="preserve">
+&lt;div class="runestone sqcontainer %(optclass)s"&gt;
+&lt;div data-component="selectquestion" id=cp_9_AC_4q_sq data-questionlist='cp_9_AC_4q, cp_9_AC_4q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
+    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cp_9_AC_4q, cp_9_AC_4q_pp&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</raw>
+  <exercise xml:id="empty-330">
+    <statement/>
+    <program interactive="" language="" xml:id="empty-331"/>
+    <solution>
+                Below is one way to implement the program. We call makeCake in editCake and then set the original cake
+                    equal to the new one.
+
+    <program xml:id="cp_9_AC_5a" language="cpp"><input><![CDATA[
+#include <iostream>
+using namespace std;
+
+struct Cake {
+    string name;
+    string color;
+    double diameter;
+    bool has_icing;
+};
+
+void printCakeInfo (Cake c);
+Cake makeCake ();
+
+void editCake (Cake& c) {
+    Cake newCake = makeCake ();
+    c = newCake;
+}
+
+int main() {
+    Cake original = { "Oops", "orange", 185, true };
+    editCake (original);
+    printCakeInfo (original);
+}
+        ]]></input><tests>
+ void printCakeInfo (Cake c) {
+     if (c.name == "n/a") {
+         if (c.has_icing) {
+             cout &lt;&lt; "This is a " &lt;&lt; c.color &lt;&lt; "," &lt;&lt; c.diameter &lt;&lt; " inch diameter cake with icing." &lt;&lt; endl;
+         }
+         else {
+             cout &lt;&lt; "This is a " &lt;&lt; c.color &lt;&lt; "," &lt;&lt; c.diameter &lt;&lt; " inch diameter cake without icing." &lt;&lt; endl;
+         }
+     }
+     else {
+         if (c.has_icing) {
+             cout &lt;&lt; "Happy birthday " &lt;&lt; c.name &lt;&lt; "! Your cake is " &lt;&lt; c.color &lt;&lt; ", has a " &lt;&lt; c.diameter &lt;&lt; " inch diameter, and comes with icing." &lt;&lt; endl;
+         }
+         else {
+             cout &lt;&lt; "Happy birthday " &lt;&lt; c.name &lt;&lt; "! Your cake is " &lt;&lt; c.color &lt;&lt; ", has a " &lt;&lt; c.diameter &lt;&lt; " inch diameter, and comes without icing." &lt;&lt; endl;
+         }
+     }
+ }
+
+ Cake makeCake () {
+     Cake input;
+     string name, color;
+     double diameter;
+     char icing;
+     cout &lt;&lt; "Name: ";
+     cin &gt;&gt; name;
+     input.name = name;
+     cout &lt;&lt; "Color: ";
+     cin &gt;&gt; color;
+     input.color = color;
+     cout &lt;&lt; "Diameter: ";
+     cin &gt;&gt; diameter;
+     input.diameter = diameter;
+     cout &lt;&lt; "Icing? (y/n) ";
+     cin &gt;&gt; icing;
+     if (icing == 'y') {
+         input.has_icing = true;
+     }
+     else {
+         input.has_icing = false;
+     }
+     return input;
+ }
+</tests></program>
+            
+                <p>Below is one way to implement the program. We call <c>makeCake</c> in <c>editCake</c> and then set the original cake
+                    equal to the new one.</p>
+
+    
+            </solution>
+  </exercise>
+  <raw format="html" xml:space="preserve">
+&lt;div class="runestone sqcontainer %(optclass)s"&gt;
+&lt;div data-component="selectquestion" id=cp_9_AC_6q_sq data-questionlist='cp_9_AC_6q, cp_9_AC_6q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
+    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cp_9_AC_6q, cp_9_AC_6q_pp&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</raw>
+  <exercise xml:id="empty-332">
+    <statement/>
+    <program interactive="" language="" xml:id="empty-333"/>
+    <solution>
+                Below is one way to implement the program. We declare the Pants struct and list the instance
+                    variables in order.
+
+    <program xml:id="cp_9_AC_7a" language="cpp"><input><![CDATA[
+#include <iostream>
+using namespace std;
+
+struct Pants {
+    char size;
+    string material;
+};
+
+int main() {
+    Pants p = { 'S', "denim" };
+}
+        ]]></input><tests>
+
+
+</tests></program>
+            
+                <p>Below is one way to implement the program. We declare the <c>Pants</c> struct and list the instance
+                    variables in order.</p>
+
+    
+            </solution>
+  </exercise>
+  <raw format="html" xml:space="preserve">
+&lt;div class="runestone sqcontainer %(optclass)s"&gt;
+&lt;div data-component="selectquestion" id=cp_9_AC_8q_sq data-questionlist='cp_9_AC_8q, cp_9_AC_8q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
+    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cp_9_AC_8q, cp_9_AC_8q_pp&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</raw>
+  <exercise xml:id="empty-334">
+    <statement/>
+    <program interactive="" language="" xml:id="empty-335"/>
+    <solution>
+                Below is one way to implement the program. We declare the Cake struct and list the instance
+                    variables in order.
+
+    <program xml:id="cp_9_AC_9a" language="cpp"><input><![CDATA[
+#include <iostream>
+using namespace std;
+
+struct Shirt {
+    string color;
+    char size;
+};
+
+struct Pants {
+    char size;
+    string material;
+};
+
+struct Outfit {
+    Shirt s;
+    Pants p;
+    bool has_hat;
+}
+
+void printOutfit (Outfit o) {
+"Shirt: blue and L; Pants: S and denim; has hat"
+    cout << "Shirt: " << o.s.color << " and " << o.s.size << "; Pants:" << o.p.size << " and " << o.p.material << "; ";
+    if (o.has_hat) {
+        cout << "has hat" << endl;
+    }
+    else {
+        cout << "does not have hat" << endl;
+    }
+}
+
+int main() {
+    Shirt t = { "blue", 'L' };
+    Pants p = { 'S', "denim" };
+    Outfit o = { t, p, true };
+    printOutfit (o);
+}
+        ]]></input><tests>
+
+
+</tests></program>
+            
+                <p>Below is one way to implement the program. We declare the <c>Cake</c> struct and list the instance
+                    variables in order.</p>
+
+    
+            </solution>
+  </exercise>
+  <raw format="html" xml:space="preserve">
+&lt;div class="runestone sqcontainer %(optclass)s"&gt;
+&lt;div data-component="selectquestion" id=cp_9_AC_10q_sq data-questionlist='cp_9_AC_10q, cp_9_AC_10q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
+    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cp_9_AC_10q, cp_9_AC_10q_pp&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</raw>
+</section>

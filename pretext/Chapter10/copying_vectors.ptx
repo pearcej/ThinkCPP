@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<section xml:id="chapter10_copying-vectors">
+  <title>Copying vectors</title>
+  <p>There is one more constructor for <c>vector</c>s, which is called a copy
+            constructor because it takes one <c>vector</c> as an argument and creates a
+            new vector that is the same size, with the same elements.</p>
+  <pre>vector&lt;int&gt; copy (count);</pre>
+  <p>Although this syntax is legal, it is almost never used for <c>vector</c>s
+            because there is a better alternative:</p>
+  <pre>vector&lt;int&gt; copy = count;</pre>
+  <p>The <c>=</c> operator works on <c>vector</c>s in pretty much the way you
+            would expect.</p>
+  <exercise label="copying_vectors_AC_1">
+    <statement>
+      <p>Take a look at the active code below, which uses the copy constructor.</p>
+    </statement>
+    <program xml:id="copying_vectors_AC_1_editor" interactive="activecode" language="cpp">
+      <input><![CDATA[
+#include <iostream>
+#include <vector>
+using namespace std;
+
+void print_vec(vector<int> vec);
+
+int main() {
+    vector<int> count = {1,2,3,4};
+    cout << "count = "; print_vec(count);
+
+    vector<int> copy_1 (count);
+    vector<int> copy_2 = count;
+
+    cout << "copy_1 = "; print_vec(copy_1);
+    cout << "copy_2 = "; print_vec(copy_2);
+    cout << "We just made two copies of count.  As you can see, both methods work the same!" << endl;
+}
+
+        ]]></input>
+      <tests>
+
+void print_vec(vector&lt;int&gt; vec) {
+   size_t i = 0;
+   cout &lt;&lt; "[";
+   while (i &lt; vec.size()-1) {
+       cout &lt;&lt; vec[i] &lt;&lt; ",";
+       i++;
+   }
+   cout &lt;&lt; vec[vec.size()-1];
+   cout &lt;&lt; "]" &lt;&lt; endl;
+}
+</tests>
+    </program>
+  </exercise>
+  <exercise label="copying_vectors_1">
+    <statement>
+      <p><term>Multiple Response</term> How would you make a copy of <c><![CDATA[vector<double> decimals]]></c> called <term>nums</term>?</p>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement id="copying_vectors_1_opt_a">
+          <p>
+            <c><![CDATA[vector<double> nums = decimals;]]></c>
+          </p>
+        </statement>
+        <feedback id="copying_vectors_1_opt_a">
+          <p>This is one way to make a copy.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="copying_vectors_1_opt_b">
+          <p>
+            <c><![CDATA[vector<double> decimals = nums;]]></c>
+          </p>
+        </statement>
+        <feedback id="copying_vectors_1_opt_b">
+          <p>This makes a copy of nums called decimals.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="copying_vectors_1_opt_c">
+          <p>
+            <c><![CDATA[vector<double> nums (decimals);]]></c>
+          </p>
+        </statement>
+        <feedback id="copying_vectors_1_opt_c">
+          <p>This is one way to make a copy.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="copying_vectors_1_opt_d">
+          <p>
+            <c><![CDATA[vector<double> decimals (nums);]]></c>
+          </p>
+        </statement>
+        <feedback id="copying_vectors_1_opt_d">
+          <p>This makes a copy of nums called decimals.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="copying_vectors_2">
+    <statement>
+      <p>What is the name of the function that takes a vector as an argument, and
+creates a new vector of the same size and with the same elements? <var/> </p>
+    </statement>
+    <setup>
+      <var case="insensitive">
+        <condition string="^\s*copy\s+constructor\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>incorrect! You can find the answer by re-reading the text above.</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+</section>

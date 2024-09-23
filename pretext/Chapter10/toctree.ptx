@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+        <title>Vectors</title>
+        <xi:include href='./vectors.ptx' />
+        <xi:include href='./accessing_elements.ptx' />
+        <xi:include href='./copying_vectors.ptx' />
+        <xi:include href='./for_loops.ptx' />
+        <xi:include href='./vector_size.ptx' />
+        <xi:include href='./vector_functions.ptx' />
+        <xi:include href='./random_numbers.ptx' />
+        <xi:include href='./statistics.ptx' />
+        <xi:include href='./vector_of_random_numbers.ptx' />
+        <xi:include href='./counting.ptx' />
+        <xi:include href='./checking_the_other_values.ptx' />
+        <xi:include href='./histogram.ptx' />
+        <xi:include href='./single-pass_solution.ptx' />
+        <xi:include href='./random_seeds.ptx' />
+        <xi:include href='./glossary.ptx' />
+        <xi:include href='./Exercises.ptx' />
+        <xi:include href='./mixedUpCode.ptx' />
+        <xi:include href='./activeCode.ptx' />
+    </chapter>

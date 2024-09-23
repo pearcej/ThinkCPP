@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+        <title></title>
+        <xi:include href='./private_data_and_classes.ptx' />
+        <xi:include href='./what_is_a_class.ptx' />
+        <xi:include href='./complex_numbers.ptx' />
+        <xi:include href='./accessor_functions.ptx' />
+        <xi:include href='./output.ptx' />
+        <xi:include href='./a_function_on_complex_numbers.ptx' />
+        <xi:include href='./another_function_on_complex_numbers.ptx' />
+        <xi:include href='./invariants.ptx' />
+        <xi:include href='./preconditions.ptx' />
+        <xi:include href='./private_functions.ptx' />
+        <xi:include href='./glossary.ptx' />
+        <xi:include href='./Exercises.ptx' />
+        <xi:include href='./mixed_up_code.ptx' />
+        <xi:include href='./coding_practice.ptx' />
+    </chapter>

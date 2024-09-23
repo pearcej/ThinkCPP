@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<section xml:id="chapter8_structures-as-return-types">
+  <title>Structures as return types</title>
+  <p>You can write functions that return structures. For example,
+            <c>findCenter</c> takes a <c>Rectangle</c> as an argument and returns a
+            <c>Point</c> that contains the coordinates of the center of the
+            <c>Rectangle</c>:</p>
+  <pre>Point findCenter (Rectangle&amp; box) {
+  double x = box.corner.x + box.width/2;
+  double y = box.corner.y + box.height/2;
+  Point result = {x, y};
+  return result;
+}</pre>
+  <p>To call this function, we have to pass a box as an argument (notice that
+            it is being passed by reference), and assign the return value to a
+            <c>Point</c> variable:</p>
+  <pre>Rectangle box = { {0.0, 0.0}, 100, 200 };
+Point center = findCenter (box);
+printPoint (center);</pre>
+  <exercise label="structures_return_types_AC_1">
+    <statement>
+      <p>The active code below uses the <c>findCenter</c> function. Run the code
+            to see what the output is!</p>
+    </statement>
+    <program xml:id="structures_return_types_AC_1_editor" interactive="activecode" language="cpp">
+      <input><![CDATA[
+#include <iostream>
+using namespace std;
+
+struct Point {
+    double x, y;
+};
+
+struct Rectangle {
+    Point corner;
+    double width, height;
+};
+
+void printPoint (Point p) {
+    cout << "(" << p.x << ", " << p.y << ")" << endl;
+}
+
+Point findCenter (Rectangle& box) {
+    double x = box.corner.x + box.width/2;
+    double y = box.corner.y + box.height/2;
+    Point result = {x, y};
+    return result;
+}
+
+int main() {
+    Rectangle box = { {0.0, 0.0}, 100, 200 };
+    Point center = findCenter (box);
+    printPoint (center);
+}
+        ]]></input>
+      <tests>
+
+
+</tests>
+    </program>
+  </exercise>
+  <p>The output of this program is <c>(50, 100)</c>.</p>
+  <exercise label="structures_return_types_1">
+    <statement>
+      <p>Which functions will return a structure?</p>
+      <program language="cpp">
+        <input><![CDATA[
+struct Point {
+  double x, y;
+};
+
+struct Rectangle {
+  Point corner;
+  double width, height;
+};
+
+Rectangle addTwo (Point& p) {
+  double x = p.x + 2;
+  double y = p.y + 2;
+  Point result = {x, y};
+  return result;
+}
+
+void printPoint (Point p) {
+  cout << "(" << p.x << ", " << p.y << ")" << endl;
+}
+
+Point findCenter (Rectangle& box) {
+  double x = box.corner.x + box.width/2;
+  double y = box.corner.y + box.height/2;
+  Point result = {x, y};
+  return result;
+}
+
+int main() {
+  Rectangle box = { {0.0, 0.0}, 100, 200 };
+  Point center = findCenter (box);
+  cout << addTwo (center) << endl;
+  printPoint (center);
+}
+]]></input>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement id="structures_return_types_1_opt_a">
+          <p><c>addTwo</c>, <c>printPoint</c>, <c>findCenter</c></p>
+        </statement>
+        <feedback id="structures_return_types_1_opt_a">
+          <p>Look at the return type, found before the function name in its definition.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="structures_return_types_1_opt_b">
+          <p><c>printPoint</c>, <c>findCenter</c></p>
+        </statement>
+        <feedback id="structures_return_types_1_opt_b">
+          <p>Look at the return type, found before the function name in its definition.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="structures_return_types_1_opt_c">
+          <p><c>addTwo</c>, <c>findCenter</c></p>
+        </statement>
+        <feedback id="structures_return_types_1_opt_c">
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="structures_return_types_1_opt_d">
+          <p><c>Point</c>, <c>Rectangle</c></p>
+        </statement>
+        <feedback id="structures_return_types_1_opt_d">
+          <p>These are structures, not functions.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

@@ -1,0 +1,239 @@
+<?xml version="1.0"?>
+<section xml:id="chapter10_random-numbers-random">
+  <title>Random numbers</title>
+  <p>[pseudorandom]</p>
+  <p>Most computer programs do the same thing every time they are executed,
+            so they are said to be <term>deterministic</term>. Usually, determinism is a good
+            thing, since we expect the same calculation to yield the same result.
+            For some applications, though, we would like the computer to be
+            unpredictable. Games are an obvious example.</p>
+  <p>Making a program truly <term>nondeterministic</term> turns out to be not so easy,
+            but there are ways to make it at least seem nondeterministic. One of
+            them is to generate pseudorandom numbers and use them to determine the
+            outcome of the program. Pseudorandom numbers are not truly random in the
+            mathematical sense, but for our purposes, they will do.</p>
+  <p>C++ provides a function called <c>random</c> that generates pseudorandom
+            numbers. It is declared in the header file <c>cstdlib</c>, which contains a
+            variety of <q>standard library</q> functions, hence the name.</p>
+  <p>The return value from <c>random</c> is an integer between 0 and
+            <c>RAND_MAX</c>, where <c>RAND_MAX</c> is a large number (about 2 billion on
+            my computer) also defined in the header file. Each time you call
+            <c>random</c> you get a different randomly-generated number. To see a
+            sample, run this loop:</p>
+  <exercise label="random_numbers_AC_1">
+    <statement>
+      <p>Take a look at the active code below, which generates 4 random numbers.</p>
+    </statement>
+    <program xml:id="random_numbers_AC_1_editor" interactive="activecode" language="cpp">
+      <input><![CDATA[
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+
+int main () {
+    for (int i = 0; i < 4; i++) {
+        int x = random ();
+        cout << x << endl;
+    }
+    return 0;
+}
+        ]]></input>
+      <tests>
+
+
+</tests>
+    </program>
+  </exercise>
+  <p>On my machine I got the following output:</p>
+  <pre>1804289383
+846930886
+1681692777
+1714636915</pre>
+  <p>You will probably get something similar, but different, on yours.</p>
+  <p>Of course, we don't always want to work with gigantic integers. More
+            often we want to generate integers between 0 and some upper bound. A
+            simple way to do that is with the modulus operator. For example:</p>
+  <pre>int x = random ();
+int y = x % upperBound;</pre>
+  <p>Since <c>y</c> is the remainder when <c>x</c> is divided by <c>upperBound</c>,
+            the only possible values for <c>y</c> are between 0 and <c>upperBound - 1</c>,
+            including both end points.</p>
+  <note>
+    <p>Keep in mind, though, that <c>y</c> will never be equal to <c>upperBound</c>.</p>
+  </note>
+  <exercise label="random_numbers_AC_2">
+    <statement>
+      <p>The active code below generates random numbers between 1 and 7.</p>
+    </statement>
+    <program xml:id="random_numbers_AC_2_editor" interactive="activecode" language="cpp">
+      <input><![CDATA[
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+
+int main () {
+    int upperBound = 8;
+    cout << "Let's generate some random numbers between 0 and 7!" << endl;
+    for (int i = 0; i < 10; i++) {
+        int x = random ();
+        int y = x % upperBound;
+        cout << y << " ";
+    }
+}
+        ]]></input>
+      <tests>
+
+
+</tests>
+    </program>
+  </exercise>
+  <p>It is also frequently useful to generate random floating-point values. A
+            common way to do that is by dividing by <c>RAND_MAX</c>. For example:</p>
+  <pre>int x = random ();
+double y = double(x) / RAND_MAX;</pre>
+  <p>This code sets <c>y</c> to a random value between 0.0 and 1.0, including
+            both end points. As an exercise, you might want to think about how to
+            generate a random floating-point value in a given range; for example,
+            between 100.0 and 200.0.</p>
+  <exercise label="random_numbers_AC_3">
+    <statement>
+      <p>The active code below generates random numbers between 0 and 1. Can you modify it
+            to generate random numbers between 100.0 and 200.0? If you're stuck you can
+            reveal the hint below!</p>
+    </statement>
+    <program xml:id="random_numbers_AC_3_editor" interactive="activecode" language="cpp">
+      <input><![CDATA[
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+
+int main () {
+    cout << "Let's generate some random numbers between 0 and 1!" << endl;
+    for (int i = 0; i < 10; i++) {
+        int x = random ();
+        double y = double(x) / RAND_MAX;
+        cout << y << " ";
+    }
+}
+        ]]></input>
+      <tests>
+
+
+</tests>
+    </program>
+  </exercise>
+  <hint>
+    <p>The formula to generate random numbers between min and max is
+                min + (max - min) * double(x) / RAND_MAX.</p>
+  </hint>
+  <exercise label="random_numbers_1">
+    <statement>
+      <p>Pseudorandom numbers are said to be <var/>, because different numbers are generated every time the program is executed.</p>
+    </statement>
+    <setup>
+      <var case="insensitive">
+        <condition string="^\s*NONDETERMINISTIC\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*DETERMINISTIC\s*$">
+          <feedback>
+            <p>Incorrect! Deterministic programs do the same thing every time they are executed.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Incorrect!</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="random_numbers_2">
+    <statement>
+      <p>What header file do we need to declare in order to use the <c>random</c> function?</p>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>cstdlib</p>
+        </statement>
+        <feedback>
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>random</p>
+        </statement>
+        <feedback>
+          <p>Incorrect!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>cmath</p>
+        </statement>
+        <feedback>
+          <p>Incorrect!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>iostream</p>
+        </statement>
+        <feedback>
+          <p>Incorrect!</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="random_numbers_3">
+    <statement>
+      <p>If we wanted to generate a random number between 0 and 12, and we have previously declared int <c>int x = random ();</c>, what should be our next line of code?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement id="random_numbers_3_opt_a">
+          <p>
+            <c>int y = x / 12</c>
+          </p>
+        </statement>
+        <feedback id="random_numbers_3_opt_a">
+          <p>This returns some random number between 0 and x / 12, which is out of range.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="random_numbers_3_opt_b">
+          <p>
+            <c>int y = x % 12</c>
+          </p>
+        </statement>
+        <feedback id="random_numbers_3_opt_b">
+          <p>This returns a random number between 0 and 11.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="random_numbers_3_opt_c">
+          <p>
+            <c>int y = x / 13</c>
+          </p>
+        </statement>
+        <feedback id="random_numbers_3_opt_c">
+          <p>This returns some random number between 0 and x / 13, which is out of range.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="random_numbers_3_opt_d">
+          <p>
+            <c>int y = x % 13</c>
+          </p>
+        </statement>
+        <feedback id="random_numbers_3_opt_d">
+          <p>There are 13 numbers from 0 to 12 (the remainders of a division by 13).</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<section xml:id="chapter11_one-last-example">
+  <title>One last example</title>
+  <p>The final example we'll look at is <c>addTime</c>:</p>
+  <pre>Time addTime2 (const Time&amp; t1, const Time&amp; t2) {
+  double seconds = convertToSeconds (t1) + convertToSeconds (t2);
+  return makeTime (seconds);
+}</pre>
+  <p>We have to make several changes to this function, including:</p>
+  <p>
+    <ol label="1">
+      <li>
+        <p>Change the name from <c>addTime</c> to <c>Time::add</c>.</p>
+      </li>
+      <li>
+        <p>Replace the first parameter with an implicit parameter, which should
+                    be declared <c>const</c>.</p>
+      </li>
+      <li>
+        <p>Replace the use of <c>makeTime</c> with a constructor invocation.</p>
+      </li>
+    </ol>
+  </p>
+  <p>Here's the result:</p>
+  <pre>Time Time::add (const Time&amp; t2) const {
+  double seconds = convertToSeconds () + t2.convertToSeconds ();
+  Time time (seconds);
+  return time;
+}</pre>
+  <p>The first time we invoke <c>convertToSeconds</c>, there is no apparent
+            object! Inside a member function, the compiler assumes that we want to
+            invoke the function on the current object. Thus, the first invocation
+            acts on <c>this</c>; the second invocation acts on <c>t2</c>.</p>
+  <p>The next line of the function invokes the constructor that takes a
+            single <c>double</c> as a parameter; the last line returns the resulting
+            object.</p>
+  <exercise label="one_last_example_AC_1">
+    <statement>
+      <p>Feel free to try out the <c>add</c> function in the active code below!</p>
+    </statement>
+    <program xml:id="one_last_example_AC_1_editor" interactive="activecode" language="cpp">
+      <input><![CDATA[
+#include <iostream>
+using namespace std;
+
+struct Time {
+    int hour, minute;
+    double second;
+    Time (double secs);
+    Time (int h, int m, double s);
+    bool after (const Time& time2) const;
+    Time add (const Time& t2) const;
+    double convertToSeconds () const;
+    void print ();
+};
+
+int main() {
+    Time t1 (9, 20, 0.0); cout << "t1 = "; t1.print(); cout << endl;
+    Time t2 (7, 30, 0.0); cout << "t2 = "; t2.print(); cout << endl;
+    Time t3 = t1.add(t2);
+    cout << "Time t1 + Time t2 = "; t3.print(); cout << endl;
+}
+
+        ]]></input>
+      <tests>
+
+Time::Time (double secs) {
+  hour = int (secs / 3600.0);
+  secs -= hour * 3600.0;
+  minute = int (secs / 60.0);
+  secs -= minute * 60.0;
+  second = secs;
+}
+
+Time::Time (int h, int m, double s) {
+  hour = h; minute = m; second = s;
+}
+
+void Time::print () {
+  cout &lt;&lt; hour &lt;&lt; ":" &lt;&lt; minute &lt;&lt; ":" &lt;&lt; second;
+}
+
+double Time::convertToSeconds () const {
+  int minutes = hour * 60 + minute;
+  double seconds = minutes * 60 + second;
+  return seconds;
+}
+
+Time Time::add (const Time &amp;t2) const {
+  double seconds = convertToSeconds () + t2.convertToSeconds ();
+  Time time (seconds);
+  return time;
+}
+
+bool Time::after (const Time&amp; time2) const {
+  if (hour &gt; time2.hour) return true;
+  if (hour &lt; time2.hour) return false;
+
+  if (minute &gt; time2.minute) return true;
+  if (minute &lt; time2.minute) return false;
+
+  if (second &gt; time2.second) return true;
+  return false;
+}
+</tests>
+    </program>
+  </exercise>
+  <exercise label="one_last_example_1">
+    <statement>
+      <p>Inside a member function, the compiler assumes that we want to invoke the function
+on the <var/> object.  </p>
+    </statement>
+    <setup>
+      <var case="insensitive">
+        <condition string="^\s*current\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Incorrect! It may help you to read the section again!</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="one_last_example_2">
+    <statement>
+      <p>We have previously initialized t1 and t2 using constructors <c>Time t1 (8, 30, 45.0)</c>
+and <c>Time t2 (1, 50, 13.0)</c>. What should be returned by <c>t1.add(t2)</c>? <var/>  </p>
+    </statement>
+    <setup>
+      <var case="insensitive">
+        <condition string="^\s*(10:20:58)\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Incorrect! It will help you to modify the code above!</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+</section>

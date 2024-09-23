@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<section xml:id="chapter8_operations-on-structures">
+  <title>Operations on structures</title>
+  <p>Most of the operators we have been using on other types, like
+            mathematical operators ( <c>+</c>, <c>%</c>, etc.) and comparison operators
+            (<c>==</c>, <c>&gt;</c>, etc.), do not work on structures. Actually, it is
+            possible to define the meaning of these operators for the new type, but
+            we won't do that in this book.</p>
+  <p>On the other hand, the assignment operator <em>does</em> work for structures.
+            It can be used in two ways: to initialize the instance variables of a
+            structure or to copy the instance variables from one structure to
+            another. An initialization looks like this:</p>
+  <pre>Point blank = { 3.0, 4.0 };</pre>
+  <p>The values in squiggly braces get assigned to the instance variables of
+            the structure one by one, in order. So in this case, <c>x</c> gets the
+            first value and <c>y</c> gets the second.</p>
+  <p>This syntax can also be used in an assignment statement. So the following is legal.</p>
+  <pre>Point blank;
+blank = { 3.0, 4.0 };</pre>
+  <p>Before C++11 (2011), a cast was required for assignment. This form of
+            assignment was written like the following. Both forms are supported in
+            modern compilers.</p>
+  <pre>Point blank;
+blank = (Point){ 3.0, 4.0 };</pre>
+  <p>It is legal to assign one structure to another. For example:</p>
+  <pre>Point p1 = { 3.0, 4.0 };
+Point p2 = p1;
+cout &lt;&lt; p2.x &lt;&lt; ", " &lt;&lt;  p2.y &lt;&lt; endl;</pre>
+  <p>The output of this program is <c>3, 4</c>.</p>
+  <exercise label="operations_structures_1">
+    <statement>
+      <p>Click on all incorrect statements.</p>
+    </statement>
+    <feedback>
+      <p>Remember, this syntax can be used only in an initialization, not in an assignment statement.</p>
+    </feedback>
+    <areas>
+      <cline>
+        <area correct="no">int main() {</area>
+      </cline>
+      <cline>
+        <area correct="no">Point blank = { 3.0, 4.0 };</area>
+      </cline>
+      <cline>
+        <area correct="no">Point hello;</area>
+      </cline>
+      <cline>
+        <area correct="no">hello = { 3.0, 4.0 };</area>
+      </cline>
+      <cline>
+        <area correct="no">Point beep;</area>
+      </cline>
+      <cline>
+        <area correct="no">Point p = hello;</area>
+      </cline>
+      <cline>
+        <area correct="no">beep = (Point){3.0, 4.0};</area>
+      </cline>
+      <cline>
+        <area correct="yes">bool check = blank == beep;</area>
+      </cline>
+      <cline>
+        <area correct="no">beep = {3.0, 4.0};</area>
+      </cline>
+      <cline>}</cline>
+    </areas>
+  </exercise>
+  <exercise label="operations_structures_2" numbered="yes" adaptive="yes" indentation="hide" language="c++">
+    <statement>
+      <p>Construct a block of code that correctly initializes the instance variables of a structure.</p>
+    </statement>
+    <blocks>
+      <block order="1">
+        <cline>struct Point {</cline>
+      </block>
+      <block order="4">
+        <cline>    double x, y;</cline>
+      </block>
+      <block order="3">
+        <cline>};</cline>
+      </block>
+      <block order="8">
+        <cline>int main() {</cline>
+      </block>
+      <block order="5">
+        <cline>    Point blank;</cline>
+      </block>
+      <block order="10" correct="no">
+        <cline>    int blank; </cline>
+      </block>
+      <block order="9">
+        <cline>    blank = { 12.0, 3.2 };</cline>
+      </block>
+      <block order="2" correct="no">
+        <cline>    blank = { 12.0, 3.2 }               </cline>
+      </block>
+      <block order="7" correct="no">
+        <cline>    blank = 12.0, 3.2;                  </cline>
+      </block>
+      <block order="6">
+        <cline>}</cline>
+      </block>
+    </blocks>
+  </exercise>
+  <exercise label="operations_structures_3">
+    <statement>
+      <p>Which operators do NOT work on structures. Select all that apply.</p>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>%</p>
+        </statement>
+        <feedback>
+          <p>The modulo operator does not work on structures.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>=</p>
+        </statement>
+        <feedback>
+          <p>The assignment operator does work on structures.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>&gt;</p>
+        </statement>
+        <feedback>
+          <p>The greater than operator does not work on structures.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>==</p>
+        </statement>
+        <feedback>
+          <p>The equality operator does not work on structures.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>+</p>
+        </statement>
+        <feedback>
+          <p>The addition operator does not work on structures.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

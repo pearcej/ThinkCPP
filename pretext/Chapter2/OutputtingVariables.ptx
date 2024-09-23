@@ -1,0 +1,306 @@
+<?xml version="1.0"?>
+<section xml:id="chapter2_outputting-variables">
+  <title>Outputting Variables</title>
+  <p>You can output the value of a variable using the same commands we used
+            to output simple values. After observing the output, try inputting your own time!</p>
+  <exercise label="output_vars_AC_1">
+    <statement>
+      <p>This program outputs the current time, according to the values you
+            provide for hour and minute.</p>
+    </statement>
+    <program xml:id="output_vars_AC_1_editor" interactive="activecode" language="cpp">
+      <input><![CDATA[
+#include <iostream>
+using namespace std;
+
+int main () {
+    int hour, minute;
+    char colon;
+
+    hour = 11;
+    minute = 59;
+    colon = ':';
+
+    cout << "The current time is ";
+    cout << hour;
+    cout << colon;
+    cout << minute;
+    cout << endl;
+
+    return 0;
+}
+        ]]></input>
+      <tests>
+
+
+</tests>
+    </program>
+  </exercise>
+  <p>This program creates two integer variables named hour and minute, and a
+            character variable named colon. It assigns appropriate values to each of
+            the variables and then uses a series of output statements to generate
+            the following:</p>
+  <pre>The current time is 11:59</pre>
+  <p>When we talk about <q>outputting a variable,</q> we mean outputting the
+            <em>value</em> of the variable. To output the <em>name</em> of a variable, you have to
+            put it in quotes. For example: <c>cout &lt;&lt; "hour";</c>  The output of this
+            statement is as follows.</p>
+  <pre>hour</pre>
+  <p>As we have seen before, you can include more than one value in a single
+            output statement, which can make the previous program more concise:</p>
+  <exercise label="output_vars_AC_2">
+    <statement>
+      <p>This program does the same thing as the previous, but the print
+            statements have been condensed to one line.  This is better style.</p>
+    </statement>
+    <program xml:id="output_vars_AC_2_editor" interactive="activecode" language="cpp">
+      <input><![CDATA[
+#include <iostream>
+using namespace std;
+
+int main () {
+    int hour, minute;
+    char colon;
+
+    hour = 11;
+    minute = 59;
+    colon = ':';
+
+    cout << "The current time is " << hour << colon << minute << endl;
+
+    return 0;
+}
+        ]]></input>
+      <tests>
+
+
+</tests>
+    </program>
+  </exercise>
+  <p>On one line, this program outputs a string, two integers, a character,
+            and the special value <c>endl</c>. Very impressive!</p>
+  <exercise label="output_vars_1">
+    <statement>
+      <p>What prints when the following code is run?</p>
+      <pre>int main () {
+  char a;
+  char b;
+  a = 'z';
+  b = '8';
+  cout &lt;&lt; "a";
+}</pre>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>a</p>
+        </statement>
+        <feedback>
+          <p>The string, not the variable, a will be printed.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>b</p>
+        </statement>
+        <feedback>
+          <p>b will not be printed.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>z</p>
+        </statement>
+        <feedback>
+          <p>The cout statement prints a, not the value of the variable a.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>8</p>
+        </statement>
+        <feedback>
+          <p>z is the value of a and 8 will not be printed</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Nothing! There will be a compile error!</p>
+        </statement>
+        <feedback>
+          <p>There is no type mismatch, so there will not be a compile error.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="output_vars_2">
+    <statement>
+      <p>Now, what prints?</p>
+      <pre>int main () {
+  char a;
+  char b;
+  a = 'z';
+  b = '8';
+  cout &lt;&lt; b;
+}</pre>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>a</p>
+        </statement>
+        <feedback>
+          <p>The string a will not be printed.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>b</p>
+        </statement>
+        <feedback>
+          <p>The string b will not be printed.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>z</p>
+        </statement>
+        <feedback>
+          <p>z is the value of a and 3 will not be printed.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>8</p>
+        </statement>
+        <feedback>
+          <p>8 is the value of b will be printed!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Nothing! There will be a compile error!</p>
+        </statement>
+        <feedback>
+          <p>There is no type mismatch, so there will not be a compile error.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="output_vars_3">
+    <statement>
+      <p>And now, what prints?</p>
+      <pre>int main () {
+  int x;
+  char y;
+  x = '3';
+  y = 'e';
+  cout &lt;&lt; 'y';
+}</pre>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>x</p>
+        </statement>
+        <feedback>
+          <p>Take a look at the code again.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>y</p>
+        </statement>
+        <feedback>
+          <p>Take a look at the code again.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>3</p>
+        </statement>
+        <feedback>
+          <p>Take a look at the code again.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>e</p>
+        </statement>
+        <feedback>
+          <p>Take a look at the code again.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Nothing! There will be a compile error!</p>
+        </statement>
+        <feedback>
+          <p>There is a type mismatch, so there will be a compile error!</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="output_vars_4">
+    <statement>
+      <p>Match the variable initialization to its correct type.</p>
+    </statement>
+    <feedback>
+      <p>Try again!</p>
+    </feedback>
+    <matches>
+      <match order="1">
+        <premise>x = 2</premise>
+        <response>int</response>
+      </match>
+      <match order="2">
+        <premise>y = "2"</premise>
+        <response>string</response>
+      </match>
+      <match order="3">
+        <premise>z = '2'</premise>
+        <response>char</response>
+      </match>
+    </matches>
+  </exercise>
+  <exercise label="output_vars_5" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
+      <p>Construct a main function that assigns <q>Hello</q> to the variable h, then prints out h's value.</p>
+    </statement>
+    <blocks>
+      <block order="4">
+        <cline>int main () {</cline>
+      </block>
+      <block order="3">
+        <choice correct="yes">
+          <cline> string h;</cline>
+        </choice>
+        <choice>
+          <cline> char h; </cline>
+        </choice>
+      </block>
+      <block order="2">
+        <choice correct="yes">
+          <cline> h = "Hello";</cline>
+        </choice>
+        <choice>
+          <cline> h = Hello; </cline>
+        </choice>
+      </block>
+      <block order="1">
+        <choice correct="yes">
+          <cline> cout &lt;&lt; h;</cline>
+        </choice>
+        <choice>
+          <cline> cout &lt;&lt; "Hello"; </cline>
+        </choice>
+      </block>
+      <block order="7">
+        <cline> cout &lt;&lt; "h"; </cline>
+      </block>
+      <block order="5">
+        <cline>}</cline>
+      </block>
+    </blocks>
+  </exercise>
+</section>

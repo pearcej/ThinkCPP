@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<section xml:id="chapter15_file-output">
+  <title>File output</title>
+  <p>Sending output to a file is similar. For example, we could modify the
+            previous program to copy lines from one file to another.</p>
+  <pre>#include &lt;iostream&gt;
+using namespace std;
+
+int main () {
+ ifstream infile ("input-file");
+ ofstream outfile ("output-file");
+
+ if (infile.good() == false || outfile.good() == false) {
+   cout &lt;&lt; "Unable to open one of the files." &lt;&lt; endl;
+   exit (1);
+ }
+
+ while (true) {
+   getline (infile, line);
+   if (infile.eof()) break;
+   outfile &lt;&lt; line &lt;&lt; endl;
+ }
+}</pre>
+  <exercise label="question15_4_1" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
+      <p>Create a code block that sends output to a file. First, make sure that both the input file and the output file are able to be opened.</p>
+    </statement>
+    <blocks>
+      <block order="8">
+        <cline>int main () {</cline>
+      </block>
+      <block order="5">
+        <cline> ifstream in_file ("input_file_name");</cline>
+        <cline> ofstream out_file ("input_file_name");</cline>
+      </block>
+      <block order="6">
+        <cline> if (in_file.good() == false || out_file.good() == false) {</cline>
+      </block>
+      <block order="4">
+        <cline><![CDATA[   cout << "Unable to open one of the files." << endl;]]></cline>
+      </block>
+      <block order="2">
+        <cline>   exit(1);</cline>
+        <cline> }</cline>
+      </block>
+      <block order="3">
+        <cline> while (true) {</cline>
+      </block>
+      <block order="9">
+        <cline>   getline(in_file, line);</cline>
+      </block>
+      <block order="1">
+        <cline>   if (in_file.eof()) break;</cline>
+      </block>
+      <block order="7">
+        <cline><![CDATA[   outfile << line << endl;]]></cline>
+        <cline> }</cline>
+        <cline>}</cline>
+      </block>
+    </blocks>
+  </exercise>
+  <exercise label="question15_4_2">
+    <statement>
+      <p>The code from the previous problem checks whether the files open or not. It doesn't specify which one, if any, doesn't open. How could you specify which file does not open?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>Create two "for" loops instead of an if-statement so that the statement loops through both conditions once.</p>
+        </statement>
+        <feedback>
+          <p>Try again!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Create a "while" loop instead of an if-statement so that the statement loops through both conditions separately until the body of the loop is reached.</p>
+        </statement>
+        <feedback>
+          <p>Try again!</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Create two "if" statements, one that check whether in_file.good() is false, and another that checks whether out_file.good() is false, instead of putting them together in one "if" statement.</p>
+        </statement>
+        <feedback>
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="question15_4_3">
+    <statement>
+      <p>Finish the statement: <var/> <c>outfile ("output-file");</c>. <var/>  </p>
+    </statement>
+    <setup>
+      <var case="insensitive">
+        <condition string="^\s*(?:o|O)(?:f|f)(?:s|S)(?:t|T)(?:r|R)(?:e|E)(?:A|a)(?:m|M)\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Try again!</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+</section>

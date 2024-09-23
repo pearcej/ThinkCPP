@@ -1,0 +1,432 @@
+<?xml version="1.0"?>
+<section xml:id="chapter4_activecode-exercises">
+  <title>Activecode Exercises</title>
+  <p>Answer the following <term>Activecode</term> questions to
+            assess what you have learned in this chapter.</p>
+  <exercise xml:id="empty-196">
+    <statement>
+      <p>Fix the code below so that it prints <q>THE TEAM</q> <q>THE TEAM</q>
+                    <q>THE TEAM</q> on three separate lines.</p>
+    </statement>
+    <program interactive="activecode" language="cpp" xml:id="cond_rec_a1q_editor">
+      <input><![CDATA[
+#include <iostream>
+using namespace std;
+
+int main() {
+   int x = 8;
+   int y = 8;
+
+   if (x % 2 == 0) {
+       cout << "THE TEAM";
+   }
+   else if (x >= y) {
+       cout << "THE TEAM";
+   }
+   else if (y >= x) {
+       cout << "THE TEAM";
+   }
+}
+        ]]></input>
+      <tests>
+
+
+</tests>
+    </program>
+    <solution>
+
+
+    
+                Below is one way to fix the program.  Since we want <q>THE TEAM</q>
+                    to print three times, we must check all three conditons.  this
+                    means changing the else if statements to if statements.
+
+    
+    <program xml:id="cond_rec_a1_a_editor" language="cpp"><input><![CDATA[
+#include <iostream>
+using namespace std;
+int main(){
+   int x = 8;
+   int y = 8;
+
+   if (x % 2 == 0) {
+       cout << "THE TEAM" << endl;
+   }
+   if (x >= y) {
+       cout << "THE TEAM" << endl;
+   }
+   if (y >= x) {
+       cout <<< "THE TEAM" << endl;
+   }
+}
+        ]]></input><tests>
+
+
+</tests></program>
+
+            
+
+<exercise label="cond_rec_a1_a"><statement><p>Below is one way to fix the program.  Since we want <q>THE TEAM</q>
+                    to print three times, we must check all three conditons.  this
+                    means changing the <c>else if</c> statements to <c>if</c> statements.</p></statement><program xml:id="cond_rec_a1_a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+#include <iostream>
+using namespace std;
+int main(){
+   int x = 8;
+   int y = 8;
+
+   if (x % 2 == 0) {
+       cout << "THE TEAM" << endl;
+   }
+   if (x >= y) {
+       cout << "THE TEAM" << endl;
+   }
+   if (y >= x) {
+       cout <<< "THE TEAM" << endl;
+   }
+}
+        ]]></input><tests>
+
+
+</tests></program></exercise>
+            </solution>
+  </exercise>
+  <raw format="html" xml:space="preserve">
+&lt;div class="runestone sqcontainer %(optclass)s"&gt;
+&lt;div data-component="selectquestion" id=cond_rec_a2_sq data-questionlist='cond_rec_a2, cond_rec_a2_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
+    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cond_rec_a2, cond_rec_a2_pp&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</raw>
+  <exercise xml:id="empty-197">
+    <statement>
+      <p>Fix the infinite recursion in the code below.  The function
+                    should not count any numbers after 10 (the highest numbers
+                    that should print are 9 or 10).  When it is done counting,
+                    the function should print that.</p>
+    </statement>
+    <program interactive="activecode" language="cpp" xml:id="cond_rec_a3q_editor">
+      <input><![CDATA[
+#include <iostream>
+using namespace std;
+
+void countBy2 (int num) {
+    if (num != 10) {
+        cout << num;
+        countBy2 (num + 2);
+    }
+    else {
+        cout << num << endl;
+        cout << "Done counting!";
+    }
+}
+
+int main () {
+    countBy2(6);
+}
+        ]]></input>
+      <tests>
+
+
+</tests>
+    </program>
+    <solution>
+
+
+    
+                Below is one way to fix the program.  The infinite recursion
+                    happens when we use an odd number as an argument.  By checking
+                    that a number is less than 99, the highest numbers to recurse
+                    are 98 and 97.  98 + 2 == 100 and 97 + 2 == 99, so we
+                    never count past 100.
+
+    
+    <program xml:id="cond_rec_a3_a_editor" language="cpp"><input><![CDATA[
+#include <iostream>
+using namespace std;
+
+void countBy2 (int num) {
+    if (num < 9) {
+        cout << num;
+        countBy2 (num + 2);
+    }
+    else {
+        cout << num << endl;
+        cout << "Done counting!";
+    }
+}
+
+int main () {
+    countBy2(6);
+}
+        ]]></input><tests>
+
+
+</tests></program>
+
+            
+
+<exercise label="cond_rec_a3_a"><statement><p>Below is one way to fix the program.  The infinite recursion
+                    happens when we use an odd number as an argument.  By checking
+                    that a number is less than 99, the highest numbers to recurse
+                    are 98 and 97.  <c>98 + 2 == 100</c> and <c>97 + 2 == 99</c>, so we
+                    never count past 100.</p></statement><program xml:id="cond_rec_a3_a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+#include <iostream>
+using namespace std;
+
+void countBy2 (int num) {
+    if (num < 9) {
+        cout << num;
+        countBy2 (num + 2);
+    }
+    else {
+        cout << num << endl;
+        cout << "Done counting!";
+    }
+}
+
+int main () {
+    countBy2(6);
+}
+        ]]></input><tests>
+
+
+</tests></program></exercise>
+            </solution>
+  </exercise>
+  <raw format="html" xml:space="preserve">
+&lt;div class="runestone sqcontainer %(optclass)s"&gt;
+&lt;div data-component="selectquestion" id=cond_rec_a4_sq data-questionlist='cond_rec_a4, cond_rec_a4_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
+    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cond_rec_a4, cond_rec_a4_pp&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</raw>
+  <exercise xml:id="empty-198">
+    <statement>
+      <p>Finish the code below so that the function will continue to
+                    ask for input until the user guesses the word correctly.</p>
+    </statement>
+    <program interactive="activecode" language="cpp" xml:id="cond_rec_a5q_editor">
+      <input><![CDATA[
+#include <iostream>
+using namespace std;
+
+bool guessTheWord (string correct) {
+    cout << "Guess the word!";
+    string guess;
+    cin >> guess;
+    if (guess == correct) {
+        cout << "That's it!";
+    }
+}
+        ]]></input>
+      <tests>
+
+
+</tests>
+    </program>
+    <solution>
+
+
+    
+                Below is one way to complete the program.
+
+    
+    <program xml:id="cond_rec_a5a_editor" language="cpp"><input><![CDATA[
+#include <iostream>
+using namespace std;
+
+bool guessTheWord (string correct) {
+    cout << "Guess the word!";
+    string guess;
+    cin >> guess;
+    if (guess == correct) {
+        cout << "That's it!";
+    }
+    else {
+        guessTheWord(correct);
+    }
+}
+        ]]></input><tests>
+
+
+</tests></program>
+
+            
+
+<exercise label="cond_rec_a5a"><statement><p>Below is one way to complete the program.</p></statement><program xml:id="cond_rec_a5a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+#include <iostream>
+using namespace std;
+
+bool guessTheWord (string correct) {
+    cout << "Guess the word!";
+    string guess;
+    cin >> guess;
+    if (guess == correct) {
+        cout << "That's it!";
+    }
+    else {
+        guessTheWord(correct);
+    }
+}
+        ]]></input><tests>
+
+
+</tests></program></exercise>
+            </solution>
+  </exercise>
+  <raw format="html" xml:space="preserve">
+&lt;div class="runestone sqcontainer %(optclass)s"&gt;
+&lt;div data-component="selectquestion" id=cond_rec_a6_sq data-questionlist='cond_rec_a6, cond_rec_a6_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
+    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cond_rec_a6, cond_rec_a6_pp&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</raw>
+  <exercise xml:id="empty-199">
+    <statement>
+      <p>Write the function <c>goodVibes</c> that prints <q>I'm having a <c>mood</c> day!</q>
+                    depending on the value of <c>mood</c>.  If <c>mood</c> is <q>bad</q>, then the function
+                    should not do anything since it's good vibes only.  Be sure to
+                    include any necessary headers.</p>
+    </statement>
+    <program interactive="activecode" language="cpp" xml:id="cond_rec_a7q_editor">
+      <input><![CDATA[
+#include <iostream>
+using namespace std;
+
+void goodVibes (string mood) {
+
+}
+        ]]></input>
+      <tests>
+
+
+</tests>
+    </program>
+    <solution>
+
+
+    
+                Below is one way to write the program.  The return allows the
+                    function to exit if there are bad vibes in the room.  Otherise,
+                    the function prints as directed.
+
+    
+    <program xml:id="cond_rec_a7a_editor" language="cpp"><input><![CDATA[
+#include <iostream>
+using namespace std;
+
+void goodVibes (string mood) {
+    if (mood == "bad") {
+        return;
+    }
+    cout << "I'm having a " << mood << " day";
+}
+        ]]></input><tests>
+
+
+</tests></program>
+
+            
+
+<exercise label="cond_rec_a7a"><statement><p>Below is one way to write the program.  The return allows the
+                    function to exit if there are bad vibes in the room.  Otherise,
+                    the function prints as directed.</p></statement><program xml:id="cond_rec_a7a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+#include <iostream>
+using namespace std;
+
+void goodVibes (string mood) {
+    if (mood == "bad") {
+        return;
+    }
+    cout << "I'm having a " << mood << " day";
+}
+        ]]></input><tests>
+
+
+</tests></program></exercise>
+            </solution>
+  </exercise>
+  <raw format="html" xml:space="preserve">
+&lt;div class="runestone sqcontainer %(optclass)s"&gt;
+&lt;div data-component="selectquestion" id=cond_rec_a8_sq data-questionlist='cond_rec_a8, cond_rec_a8_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
+    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cond_rec_a8, cond_rec_a8_pp&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</raw>
+  <exercise xml:id="empty-200">
+    <statement>
+      <p>Write the function <c>countdown</c> that takes a positive integer
+                    and decrements it until eaching zero, printing the number at each
+                    step of the way.  Once it reaches zero, it should print <q>Blastoff!</q></p>
+    </statement>
+    <program interactive="activecode" language="cpp" xml:id="cond_rec_a9q_editor">
+      <input><![CDATA[
+#include <iostream>
+using namespace std;
+
+void countdown (int num) {
+
+}
+        ]]></input>
+      <tests>
+
+
+</tests>
+    </program>
+    <solution>
+
+
+    
+                Below is one way to write the program.
+
+    
+    <program xml:id="cond_rec_a9a_editor" language="cpp"><input><![CDATA[
+#include <iostream>
+using namespace std;
+
+void countdown (int num) {
+    if (num != 0){
+        cout << num << endl;
+        num -= 1;
+        countdown (num);
+    }
+    else {
+        cout << "Blastoff!";
+    }
+}
+        ]]></input><tests>
+
+
+</tests></program>
+
+            
+
+<exercise label="cond_rec_a9a"><statement><p>Below is one way to write the program.</p></statement><program xml:id="cond_rec_a9a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+#include <iostream>
+using namespace std;
+
+void countdown (int num) {
+    if (num != 0){
+        cout << num << endl;
+        num -= 1;
+        countdown (num);
+    }
+    else {
+        cout << "Blastoff!";
+    }
+}
+        ]]></input><tests>
+
+
+</tests></program></exercise>
+            </solution>
+  </exercise>
+  <raw format="html" xml:space="preserve">
+&lt;div class="runestone sqcontainer %(optclass)s"&gt;
+&lt;div data-component="selectquestion" id=cond_rec_a10_sq data-questionlist='cond_rec_a10, cond_rec_a10_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
+    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cond_rec_a10, cond_rec_a10_pp&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</raw>
+</section>

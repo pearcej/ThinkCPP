@@ -1,0 +1,272 @@
+<?xml version="1.0"?>
+<section xml:id="chapter4_chained-conditionals">
+  <title>Chained Conditionals</title>
+  <p>Sometimes you want to check for a number of related conditions and
+            choose one of several actions. One way to do this is by <term>chaining</term> a
+            series of ifs and elses:</p>
+  <exercise label="chained_conditionals_AC_1">
+    <statement>
+      <p>The following program classifies a number (x) as positive,
+            negative, or zero.  Feel free to change the value of x to
+            make sure it works.</p>
+    </statement>
+    <program xml:id="chained_conditionals_AC_1_editor" interactive="activecode" language="cpp">
+      <input><![CDATA[
+#include <iostream>
+using namespace std;
+
+int main () {
+    int x = -4;
+    if (x > 0) {
+        cout << "x is positive" << endl;
+    }
+    else if (x < 0) {
+        cout << "x is negative" << endl;
+    }
+    else {
+        cout << "x is zero" << endl;
+    }
+    return 0;
+}
+        ]]></input>
+      <tests>
+
+
+</tests>
+    </program>
+  </exercise>
+  <p>Try changing the value of x above to see how the output is impacted.</p>
+  <note>
+    <p>If you have a chain of <c>if</c> statements, the program will go through
+                executing each conditional, regardless if the conditions are met.
+                However, as soon as you add an <c>else</c> or even an <c>else if</c> statement,
+                the program will stop executing the chained conditionals as soon as a
+                condition is met.</p>
+  </note>
+  <p>These chains can be as long as you want, although they can be difficult
+            to read if they get out of hand. One way to make them easier to read is
+            to use standard indentation, as demonstrated in these examples. If you
+            keep all the statements and squiggly-braces lined up, you are less
+            likely to make syntax errors and you can find them more quickly if you
+            do.</p>
+  <exercise label="chained_conditionals_1">
+    <statement>
+      <p>What will print after the following code is executed?</p>
+      <pre>#include &lt;iostream&gt;
+using namespace std;
+
+int main () {
+  int x = 10;
+  if (x &gt; 8) {
+    cout &lt;&lt; "One! ";
+  }
+  if (x &gt; 6) {
+    cout &lt;&lt; "Two! ";
+  }
+  if (x &gt; 3) {
+    cout &lt;&lt; "Three!" &lt;&lt; endl;
+  }
+  return 0;
+}</pre>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>Three!</p>
+        </statement>
+        <feedback>
+          <p>Make note of the use of "if" instead of "else if" or "else".</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>One!</p>
+        </statement>
+        <feedback>
+          <p>Make note of the use of "if" instead of "else if" or "else".</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>One! Two!</p>
+        </statement>
+        <feedback>
+          <p>Make note of the use of "if" instead of "else if" or "else".</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>One! Two! Three!</p>
+        </statement>
+        <feedback>
+          <p>When we have "if" statments, but no "else if" or "else", every condition will be checked.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="chained_conditionals_2">
+    <statement>
+      <p>What will print after the following code is executed?</p>
+      <pre>#include &lt;iostream&gt;
+using namespace std;
+
+int main () {
+  int x = 10;
+  if (x &gt; 8) {
+    cout &lt;&lt; "One! " ;
+  }
+  else if (x &gt; 6) {
+    cout &lt;&lt; "Two! ";
+  }
+  else {
+    cout &lt;&lt; "Three!" &lt;&lt; endl;
+  }
+  return 0;
+}</pre>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>Three!</p>
+        </statement>
+        <feedback>
+          <p>Remember that only one action will be completed in a chain of "ifs", "else ifs", and "ifs"</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>One!</p>
+        </statement>
+        <feedback>
+          <p>The chain of "ifs", "else ifs", and "elses" results in only one action being completed.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>One! Two!</p>
+        </statement>
+        <feedback>
+          <p>Remember that a chain of "ifs", "else ifs", and "elses" will result in only one action being completed.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>One! Two! Three!</p>
+        </statement>
+        <feedback>
+          <p>Remember that a chain of "ifs", "else ifs", and "elses" will result in only one action being completed.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="chained_conditionals_3">
+    <statement>
+      <p>What will print after the following code is executed?</p>
+      <pre>#include &lt;iostream&gt;
+using namespace std;
+
+int main () {
+  int x = 7;
+  if (x &gt; 8) {
+    cout &lt;&lt; "One! " ;
+  }
+  if (x &gt; 6) {
+    cout &lt;&lt; "Two! ";
+  }
+  if (x &gt; 3) {
+    cout &lt;&lt; "Three!" &lt;&lt; endl;
+  }
+  return 0;
+}</pre>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>Two!</p>
+        </statement>
+        <feedback>
+          <p>Make note of the use of "if" instead of "else if" or "else".</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Two! Three!</p>
+        </statement>
+        <feedback>
+          <p>When we have "if" statments, but no "else if" or "else", every condition will be checked.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>One! Two!</p>
+        </statement>
+        <feedback>
+          <p>The first statement will not be executed because x &gt; 8 is not true.  Also, make note of the use of "if" instead of "else if" or "else".</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>One! Two! Three!</p>
+        </statement>
+        <feedback>
+          <p>The first statement will not be executed because x &gt; 8 is not true.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="chained_conditionals_4">
+    <statement>
+      <p>What will print after the following code is executed?</p>
+      <pre>#include &lt;iostream&gt;
+using namespace std;
+
+int main () {
+  int x = 7;
+  if (x &gt; 8) {
+    cout &lt;&lt; "One! " ;
+  }
+  else if (x &gt; 6) {
+    cout &lt;&lt; "Two! ";
+  }
+  else {
+    cout &lt;&lt; "Three!" &lt;&lt; endl;
+  }
+  return 0;
+}</pre>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>Two!</p>
+        </statement>
+        <feedback>
+          <p>Only one action will is completed in a chain of "ifs", "else ifs", and "ifs";</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Two! Three!</p>
+        </statement>
+        <feedback>
+          <p>Remember that only one action will be completed in a chain of "ifs", "else ifs", and "ifs".</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>One! Two!</p>
+        </statement>
+        <feedback>
+          <p>The first condition will not be satisfied.  Also, a chain of "ifs", "else ifs", and "elses" will result in only one action being completed.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>One! Two! Three!</p>
+        </statement>
+        <feedback>
+          <p>hge first condition will not be satisfied.  Also, a chain of "ifs", "else ifs", and "elses" will result in only one action being completed.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

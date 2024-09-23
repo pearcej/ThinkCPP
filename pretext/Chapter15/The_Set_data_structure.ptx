@@ -1,0 +1,343 @@
+<?xml version="1.0"?>
+<section xml:id="chapter15_the-set-data-structure">
+  <title>The <c>Set</c> data structure</title>
+  <p>A data structure is a container for grouping a collection of data into a
+            single object. We have seen some examples already, including
+            <c>string</c>s, which are collections of characters, and
+            <c>vector</c>s which are collections of any type.</p>
+  <p>An <term>ordered set</term> is a collection of items with two defining properties:</p>
+  <dl>
+    <li>
+      <title>Ordering:</title>
+      <p>The elements of the set have indices associated with them. We can use
+                        these indices to identify elements of the set.</p>
+    </li>
+    <li>
+      <title>Uniqueness:</title>
+      <p>No element appears in the set more than once. If you try to add an
+                        element to a set, and it already exists, there is no effect.</p>
+    </li>
+  </dl>
+  <p>In addition, our implementation of an ordered set will have the
+            following property:</p>
+  <dl>
+    <li>
+      <title>Arbitrary size:</title>
+      <p>As we add elements to the set, it expands to make room for new
+                        elements.</p>
+    </li>
+  </dl>
+  <p>Both <c>string</c>s and <c>vector</c>s have an ordering; every element
+            has an index we can use to identify it. None of the data structures
+            we have seen so far have the properties of uniqueness or arbitrary size.</p>
+  <p>To achieve uniqueness, we have to write an <c>add</c> function that
+            searches the set to see if it already exists. To make the set expand as
+            elements are added, we can take advantage of the <c>resize</c> function on
+            <c>vector</c>s.</p>
+  <p>Here is the beginning of a class definition for a <c>Set</c>.</p>
+  <pre>class Set {
+private:
+  vector&lt;string&gt; elements;
+  int numElements;
+
+public:
+  Set (int n);
+
+  int getNumElements () const;
+  string getElement (int i) const;
+  int find (const string&amp; s) const;
+  int add (const string&amp; s);
+};
+
+Set::Set (int n)
+{
+  vector&lt;string&gt; temp (n);
+  elements = temp;
+  numElements = 0;
+}</pre>
+  <p>The instance variables are a <c>vector</c> of strings and an integer
+            that keeps track of how many elements there are in the set. Keep in mind
+            that the number of elements in the set, <c>numElements</c>, is not the same
+            thing as the size of the <c>vector</c>. Usually it will be smaller.</p>
+  <p>The <c>Set</c> constructor takes a single parameter, which is the initial
+            size of the <c>vector</c>. The initial number of elements is always zero.</p>
+  <p><c>getNumElements</c> and <c>getElement</c> are accessor functions for the
+            instance variables, which are private. <c>numElements</c> is a read-only
+            variable, so we provide a <c>get</c> function but not a <c>set</c> function.</p>
+  <pre>int Set::getNumElements () const
+{
+  return numElements;
+}</pre>
+  <p>Why do we have to prevent client programs from changing
+            <c>getNumElements</c>? What are the invariants for this type, and how could
+            a client program break an invariant. As we look at the rest of the
+            <c>Set</c> member function, see if you can convince yourself that they all
+            maintain the invariants.</p>
+  <p>When we use the <c>[]</c> operator to access the <c>vector</c>, it checks to
+            make sure the index is greater than or equal to zero and less than the
+            length of the <c>vector</c>. To access the elements of a set, though, we
+            need to check a stronger condition. The index has to be less than the
+            number of elements, which might be smaller than the length of the
+            <c>vector</c>.</p>
+  <pre>string Set::getElement (int i) const
+{
+  if (i &lt; numElements) {
+    return elements[i];
+  } else {
+    cout &lt;&lt; "Set index out of range." &lt;&lt; endl;
+    exit (1);
+  }
+}</pre>
+  <p>If <c>getElement</c> gets an index that is out of range, it prints an error
+            message (not the most useful message, I admit), and exits.</p>
+  <p>The interesting functions are <c>find</c> and <c>add</c>. By now, the pattern
+            for traversing and searching should be old hat:</p>
+  <pre>int Set::find (const string&amp; s) const
+{
+  for (int i=0; i&lt;numElements; i++) {
+    if (elements[i] == s) return i;
+  }
+  return -1;
+}</pre>
+  <p>So that leaves us with <c>add</c>. Often the return type for something like
+            <c>add</c> would be void, but in this case it might be useful to make it
+            return the index of the element.</p>
+  <pre>int Set::add (const string&amp; s)
+{
+  // if the element is already in the set, return its index
+  int index = find (s);
+  if (index != -1) return index;
+
+  // if the vector is full, double its size
+  if (numElements == elements.length()) {
+    elements.resize (elements.length() * 2);
+  }
+
+  // add the new elements and return its index
+  index = numElements;
+  elements[index] = s;
+  numElements++;
+  return index;
+}</pre>
+  <p>The tricky thing here is that <c>numElements</c> is used in two ways. It is
+            the number of elements in the set, of course, but it is also the index
+            of the next element to be added.</p>
+  <p>It takes a minute to convince yourself that that works, but consider
+            this: when the number of elements is zero, the index of the next element
+            is 0. When the number of elements is equal to the length of the
+            <c>vector</c>, that means that the vector is full, and we have to
+            allocate more space (using <c>resize</c>) before we can add the new
+            element.</p>
+  <p>Here is a state diagram showing a <c>Set</c> object that initially contains
+            space for 2 elements.</p>
+  <p>Now we can use the <c>Set</c> class to keep track of the cities we find in
+            the file. In <c>main</c> we create the <c>Set</c> with an initial size of 2:</p>
+  <pre>Set cities (2);</pre>
+  <p>Then in <c>processLine</c> we add both cities to the <c>Set</c> and store the
+            index that gets returned.</p>
+  <pre>int index1 = cities.add (city1);
+int index2 = cities.add (city2);</pre>
+  <p>I modified <c>processLine</c> to take the <c>cities</c> object as a second
+            parameter.</p>
+  <program xml:id="c15_7" interactive="activecode" language="cpp">
+    <input><![CDATA[
+#include <iostream>
+#include <string>
+#include <vector>
+using namespace std;
+
+class Set {
+private:
+  vector<string> elements;
+  int numElements;
+
+public:
+  Set (int n);
+
+  int getNumElements () const;
+  string getElement (int i) const;
+  int find (const string& s) const;
+  int add (const string& s);
+};
+
+Set::Set (int n)
+{
+  vector<string> temp (n);
+  elements = temp;
+  numElements = 0;
+}
+
+int main() {
+  Set cities(2);
+  cities.add("Detroit");
+  cities.add("Ann Arbor");
+  cout << cities.getElement(0);
+}
+
+        ]]></input>
+    <tests>
+
+int Set::getNumElements () const {
+  return numElements;
+}
+
+string Set::getElement (int i) const {
+  if (i &lt; numElements) {
+    return elements[i];
+  }
+  else {
+   cout &lt;&lt; "Set index out of range." &lt;&lt; endl;
+   exit (1);
+  }
+}
+
+int Set::find (const string&amp; s) const {
+  for (int i=0; i&lt;numElements; i++) {
+    if (elements[i] == s) return i;
+  }
+  return -1;
+}
+
+int Set::add (const string&amp; s) {
+  int index = find (s);
+  if (index != -1) return index;
+
+  size_t num = numElements;
+
+  if (num == elements.size()) {
+    elements.resize (elements.size() * 2);
+  }
+
+  index = numElements;
+  elements[index] = s;
+  numElements++;
+  return index;
+}
+</tests>
+  </program>
+  <exercise label="question15_7_1">
+    <statement>
+      <p>Which of the following are properties of an ordered set?</p>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>the set grows to accomodate any new elements we add</p>
+        </statement>
+        <feedback>
+          <p>Correct! This is the "arbitrary size" property.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>the set is sorted in an order (ie alphabetically, numerically, e.t.c.)</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! This is not a requirement of a set.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>elements of the set have indices, which can be used to identify them</p>
+        </statement>
+        <feedback>
+          <p>Correct! This is the "ordering" property.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>there is a limit on how large a set can be</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! This is not a requirement of a set... in fact, sets are always expanding with each added element!</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>there are no repeat elements in the set</p>
+        </statement>
+        <feedback>
+          <p>Correct! This is the uniqueness property!</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="question15_7_2">
+    <statement>
+      <p>Why don't we provide a <c>set()</c> function for <c>numElements</c>?</p>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>numElements is a read-only variable.</p>
+        </statement>
+        <feedback>
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>The user might pick a value for numElements that is out of range.</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! While this could happen, it just wouldn't make sense for the uer to interact with numElements at all!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>numElements cannot be modified.</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! numElements is modified, just not by the user.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>We should provide a set function, we just haven't implemented it yet!</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! There is no need for the user to have access to a set function.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="question15_7_3">
+    <statement>
+      <p>If the number of elements is 76, then the index of the next element is <var/>.</p>
+    </statement>
+    <setup>
+      <var>
+        <condition number="[76, 76]">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Incorrect! Go back and read to find the answer!</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="question15_7_4">
+    <statement>
+      <p>Suppose we have implemented the <c>Set</c> data structure as defined above, and we run the following code. <var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <pre>Set cities(10);
+cities.add("Detroit");
+cities.add("Ann Arbor");
+cities.add("Ann Arbor");
+cities.add("East Lansing");
+cities.add("Grand Rapids");
+cities.add("Detroit");
+cities.add("Mackinac");
+cities.add("Mackinaw");
+string element = cities.getElement(4);  cout &lt;&lt; element;</pre>
+        <p>Type the output exactly as it would appear in the terminal.</p>
+      </var>
+    </setup>
+  </exercise>
+</section>

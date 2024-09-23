@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<section xml:id="chapter9_printtime">
+  <title>
+    <c>printTime</c>
+  </title>
+  <p>When we define a new type it is a good idea to write function that
+            displays the instance variables in a human-readable form, which you attempted on the page before. Your solution should have looked something like this.</p>
+  <pre>void printTime (Time&amp; t) {
+  cout &lt;&lt; t.hour &lt;&lt; ":" &lt;&lt; t.minute &lt;&lt; ":" &lt;&lt; t.second &lt;&lt; endl;
+}</pre>
+  <exercise label="printTime_AC_1">
+    <statement>
+      <p>In the active code below, the output of this function, if we pass <c>time</c> an argument, is
+            <c>11:59:3.14159</c>.</p>
+    </statement>
+    <program xml:id="printTime_AC_1_editor" interactive="activecode" language="cpp">
+      <input><![CDATA[
+#include <iostream>
+using namespace std;
+
+struct Time {
+    int hour, minute;
+    double second;
+};
+
+void printTime (Time& t) {
+    cout << t.hour << ":" << t.minute << ":" << t.second << endl;
+}
+
+int main () {
+    Time time = { 11, 59, 3.14159 };
+    printTime(time);
+}
+        ]]></input>
+      <tests>
+
+
+</tests>
+    </program>
+  </exercise>
+  <exercise label="printTime_1">
+    <statement>
+      <p>Which of the following would be a correct way to display the price of an object and finish the <c>printPrice</c>, which we saw on the previous page?</p>
+      <program language="cpp">
+        <input>
+struct Price {
+  int dollar, cents;
+};
+
+void printPrice(Price&amp; p) {
+  // Implementation here
+}
+
+int main() {
+  Price sandwich = { 3, 45 };
+  Price coffee = { 2, 50 };
+  Price pastry = { 2, 0 };
+}
+</input>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement id="printTime_1_opt_a">
+          <p>
+            <c><![CDATA[cout << "Price is " << "p.dollar" << " dollars and" << "p.cents" << "cents." << endl;]]></c>
+          </p>
+        </statement>
+        <feedback id="printTime_1_opt_a">
+          <p>Try again. We want to print the values rather than statements.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="printTime_1_opt_b">
+          <p>
+            <c><![CDATA[cout << "Price is " << p.dollar << " dollars and " << p.cents << " cents." << endl;]]></c>
+          </p>
+        </statement>
+        <feedback id="printTime_1_opt_b">
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="printTime_1_opt_c">
+          <p>
+            <c><![CDATA[cout << "Price is " << p.dollar << " dollars and " << p.cents << " cents." << endl]]></c>
+          </p>
+        </statement>
+        <feedback id="printTime_1_opt_c">
+          <p>This would not compile. There is an important character that ends nearly all statements in C++.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

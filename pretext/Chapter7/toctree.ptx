@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+        <title>Strings and things</title>
+        <xi:include href='./containers_and_strings.ptx' />
+        <xi:include href='./string_variables.ptx' />
+        <xi:include href='./extracting_characters.ptx' />
+        <xi:include href='./length.ptx' />
+        <xi:include href='./traversal.ptx' />
+        <xi:include href='./runtime_error.ptx' />
+        <xi:include href='./find_function.ptx' />
+        <xi:include href='./own_version_find.ptx' />
+        <xi:include href='./looping_and_counting.ptx' />
+        <xi:include href='./increment_decrement.ptx' />
+        <xi:include href='./string_concatenation.ptx' />
+        <xi:include href='./strings_are_mutable.ptx' />
+        <xi:include href='./strings_are_comparable.ptx' />
+        <xi:include href='./character_classification.ptx' />
+        <xi:include href='./other_string_functions.ptx' />
+        <xi:include href='./glossary.ptx' />
+        <xi:include href='./Exercises.ptx' />
+        <xi:include href='./mixed_up_code.ptx' />
+        <xi:include href='./coding_practice.ptx' />
+    </chapter>

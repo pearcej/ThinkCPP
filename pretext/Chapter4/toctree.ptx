@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+        <title>Conditionals and recursion</title>
+        <xi:include href='./TheModulusOperator.ptx' />
+        <xi:include href='./ConditionalExecution.ptx' />
+        <xi:include href='./AlternativeExecution.ptx' />
+        <xi:include href='./ChainedConditionals.ptx' />
+        <xi:include href='./NestedConditionals.ptx' />
+        <xi:include href='./TheReturnStatement.ptx' />
+        <xi:include href='./Recursion.ptx' />
+        <xi:include href='./InfiniteRecursion.ptx' />
+        <xi:include href='./StackDiagrams.ptx' />
+        <xi:include href='./Glossary.ptx' />
+        <xi:include href='./Exercises.ptx' />
+        <xi:include href='./MixedUpCode.ptx' />
+        <xi:include href='./activeCode.ptx' />
+    </chapter>

@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<section xml:id="chapter5_bool-functions-bool">
+  <title>Bool Functions</title>
+  <p>Functions can return bool values just like any other type, which is
+            often convenient for hiding complicated tests inside functions. For
+            example:</p>
+  <pre>bool isSingleDigit (int x) {
+  if (x &gt;= 0 &amp;&amp; x &lt; 10) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}</pre>
+  <p>The name of this function is isSingleDigit. It is common to give boolean
+            functions names that sound like yes/no questions. The return type is
+            bool, which means that every return statement has to provide a bool
+            expression.</p>
+  <p><![CDATA[The code itself is straightforward, although it is a bit longer than it
+            needs to be. Remember that the expression &#8216;'x >= 0 && x < 10'' has type
+            bool, so there is nothing wrong with returning it directly, and avoiding
+            the if statement altogether:]]></p>
+  <pre>bool isSingleDigit (int x) {
+  return (x &gt;= 0 &amp;&amp; x &lt; 10);
+}</pre>
+  <p>In main you can call this function in the usual ways:</p>
+  <pre>cout &lt;&lt; isSingleDigit (2) &lt;&lt; endl;
+bool bigFlag = !isSingleDigit (17);</pre>
+  <program xml:id="bool_fun_AC_1" interactive="activecode" language="cpp">
+    <input><![CDATA[
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+ bool isSingleDigit (int x) {
+   return (x >= 0 && x < 10);
+ }
+
+  int main () {
+    cout << isSingleDigit (2) << endl;
+    bool bigFlag = !isSingleDigit (17);
+    cout << bigFlag;
+    return 0;
+  }
+        ]]></input>
+    <tests>
+
+
+</tests>
+  </program>
+  <p>The first line outputs the value true because 2 is a single-digit
+            number. Unfortunately, when C++ outputs bools, it does not display the
+            words true and false, but rather the integers 1 and 0.</p>
+  <p>The second line assigns the value true to bigFlag only if 17 is <em>not</em> a
+            single-digit number.</p>
+  <p>The most common use of bool functions is inside conditional statements</p>
+  <pre>if (isSingleDigit (x)) {
+  cout &lt;&lt; "x is little" &lt;&lt; endl;
+}
+else {
+  cout &lt;&lt; "x is big" &lt;&lt; endl;
+}</pre>
+  <exercise label="bool_fun_1">
+    <statement>
+      <p>Match the conditional statement to its output, assuming it is outputted using cout and x = 3.</p>
+    </statement>
+    <feedback>
+      <p>Try again!</p>
+    </feedback>
+    <matches>
+      <match order="1">
+        <premise>(x % 2 == 1 &amp;&amp; x == 7)</premise>
+        <response>0</response>
+      </match>
+      <match order="2">
+        <premise>(x % 2 == 0 || x + 1 == 4)</premise>
+        <response>1</response>
+      </match>
+    </matches>
+  </exercise>
+  <exercise label="bool_fun_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
+      <p>Construct a block of code that first checks if a number <em>x</em> is positive,
+            then checks if it's even, and then prints out a message to classify
+            the number.  It prints <q>both</q> if the number is both positive and even,
+            <q>even</q> if the number is only even, <q>positive</q> if the number
+            is only positive, and finally <q>neither</q> if it is neither postive nor even.</p>
+    </statement>
+    <blocks>
+      <block order="1">
+        <cline>bool positiveFlag = (x &gt; 0);</cline>
+      </block>
+      <block order="14" correct="no">
+        <cline><![CDATA[bool positiveFlag = (x < 0); ]]></cline>
+      </block>
+      <block order="2">
+        <cline>bool evenFlag = (x % 2 == 0);</cline>
+      </block>
+      <block order="10" correct="no">
+        <cline>bool evenFlag = (x % 2 == 1); </cline>
+      </block>
+      <block order="11">
+        <cline>if (evenFlag &amp;&amp; positiveFlag) {</cline>
+      </block>
+      <block order="3" correct="no">
+        <cline>if (evenFlag || positiveFlag) {  </cline>
+      </block>
+      <block order="9">
+        <cline> cout &lt;&lt; "both";</cline>
+      </block>
+      <block order="6">
+        <cline>} else if (evenFlag) {</cline>
+      </block>
+      <block order="4">
+        <cline> cout &lt;&lt; "even";</cline>
+      </block>
+      <block order="13">
+        <cline>} else if (positiveFlag) {</cline>
+      </block>
+      <block order="7">
+        <cline><![CDATA[ cout << "positive";]]></cline>
+      </block>
+      <block order="12">
+        <cline>} else {</cline>
+      </block>
+      <block order="8">
+        <cline> cout &lt;&lt; "neither";</cline>
+      </block>
+      <block order="5">
+        <cline>}</cline>
+      </block>
+    </blocks>
+  </exercise>
+</section>

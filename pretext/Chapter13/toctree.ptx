@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+        <title>Objects of Vectors</title>
+        <xi:include href='./enumerated_types.ptx' />
+        <xi:include href='./switch_statement.ptx' />
+        <xi:include href='./decks.ptx' />
+        <xi:include href='./another_constructor.ptx' />
+        <xi:include href='./deck_member_functions.ptx' />
+        <xi:include href='./shuffling.ptx' />
+        <xi:include href='./sorting.ptx' />
+        <xi:include href='./subdecks.ptx' />
+        <xi:include href='./shuffling_and_dealing.ptx' />
+        <xi:include href='./mergesort.ptx' />
+        <xi:include href='./glossary.ptx' />
+        <xi:include href='./Exercises.ptx' />
+        <xi:include href='./mixed_up_code.ptx' />
+        <xi:include href='./coding_practice.ptx' />
+    </chapter>

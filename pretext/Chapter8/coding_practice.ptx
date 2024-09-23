@@ -1,0 +1,323 @@
+<?xml version="1.0"?>
+<section xml:id="chapter8_coding-practice">
+  <title>Coding Practice</title>
+  <exercise xml:id="empty-299">
+    <statement/>
+    <program interactive="" language="" xml:id="empty-300"/>
+    <solution>
+                Below is one way to implement the program. We prompt the user for input
+                    using cin before printing the area and perimeter.
+
+    <program xml:id="cp_8_AC_1a" language="cpp"><input><![CDATA[
+#include <iostream>
+using namespace std;
+
+void rectangleInfo () {
+    int height, width;
+    cout << "Please enter the height and width of a rectangle separated by spaces: ";
+    cin >> height >> width;
+    cout << "The area of the rectangle is " << height * width << endl;
+    cout << "The perimeter of the rectangle is " << 2 * (height + width) << endl;
+}
+
+int main() {
+    rectangleInfo ();
+}
+        ]]></input><tests>
+
+
+</tests></program>
+            
+                <p>Below is one way to implement the program. We prompt the user for input
+                    using <c>cin</c> before printing the area and perimeter.</p>
+
+    
+            </solution>
+  </exercise>
+  <raw format="html" xml:space="preserve">
+&lt;div class="runestone sqcontainer %(optclass)s"&gt;
+&lt;div data-component="selectquestion" id=cp_8_AC_2q_sq data-questionlist='cp_8_AC_2q, cp_8_AC_2q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
+    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cp_8_AC_2q, cp_8_AC_2q_pp&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</raw>
+  <exercise xml:id="empty-301">
+    <statement/>
+    <program interactive="" language="" xml:id="empty-302"/>
+    <solution>
+                Below is one way to implement the program. First we declare the instance variables
+                    in the struct definition. Next, we use dot notation to access
+                    the instance variables and output them using cout.
+
+    <program xml:id="cp_8_AC_3a" language="cpp"><input><![CDATA[
+#include <iostream>
+using namespace std;
+
+struct Robot {
+    string name;
+    string model;
+    int serialNumber;
+    int batteryLevelPercentage;
+    string task;
+};
+
+void printRobotData (Robot r) {
+     cout << r.name << " (" << r.model << " " << r.serialNumber
+          << ") has " << r.batteryLevelPercentage
+          << " percent battery and is currently executing the task \""
+          << r.task << "\"" << endl;
+}
+
+int main() {
+    Robot rob = { "Rob", "XLV", 9800, 45, "washing dishes" };
+    cout << "Your output:" << endl;
+    printRobotData (rob);
+    cout << "Correct output:" << endl;
+    cout << "Rob (XLV 9800) has 45 percent battery and is currently executing the task \"washing dishes\"";
+}
+        ]]></input><tests>
+
+
+</tests></program>
+            
+                <p>Below is one way to implement the program. First we declare the instance variables
+                    in the <c>struct</c> definition. Next, we use dot notation to access
+                    the instance variables and output them using <c>cout</c>.</p>
+
+    
+            </solution>
+  </exercise>
+  <raw format="html" xml:space="preserve">
+&lt;div class="runestone sqcontainer %(optclass)s"&gt;
+&lt;div data-component="selectquestion" id=cp_8_AC_4q_sq data-questionlist='cp_8_AC_4q, cp_8_AC_4q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
+    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cp_8_AC_4q, cp_8_AC_4q_pp&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</raw>
+  <exercise xml:id="empty-303">
+    <statement/>
+    <program interactive="" language="" xml:id="empty-304"/>
+    <solution>
+                Below is one way to implement the program. We can create another Robot
+                    with the settings after being reset. Then we set r equal to the new
+                    Robot we created. Notice we use dot notation to ensure that the
+                    model and serialNumber are the same.
+
+    <program xml:id="cp_8_AC_5a" language="cpp"><input><![CDATA[
+#include <iostream>
+using namespace std;
+
+struct Robot {
+    string name;
+    string model;
+    int serialNumber;
+    int batteryLevelPercentage;
+    string task;
+};
+
+void printRobotData (Robot r);
+
+void resetRobot(Robot& r) {
+    Robot reset = { "EnterAName", r.model, r.serialNumber, 100, "Idle" };
+    r = reset;
+}
+
+int main() {
+    Robot a = { "Bot", "RSO", 1985, 32, "gardening" };
+    resetRobot (a);
+    cout << "Your output:" << endl;
+    printRobotData (a);
+    cout << "Correct output:" << endl;
+    cout << "EnterAName (RSO 1985) has 100 percent battery and is currently executing the task \"Idle\"";
+}
+        ]]></input><tests>
+void printRobotData (Robot r) {
+     cout &lt;&lt; r.name &lt;&lt; " (" &lt;&lt; r.model &lt;&lt; " " &lt;&lt; r.serialNumber
+          &lt;&lt; ") has " &lt;&lt; r.batteryLevelPercentage
+          &lt;&lt; " percent battery and is currently executing the task \""
+          &lt;&lt; r.task &lt;&lt; "\"" &lt;&lt; endl;
+}
+</tests></program>
+            
+                <p>Below is one way to implement the program. We can create another <c>Robot</c>
+                    with the settings after being reset. Then we set <c>r</c> equal to the new
+                    <c>Robot</c> we created. Notice we use dot notation to ensure that the
+                    <c>model</c> and <c>serialNumber</c> are the same.</p>
+
+    
+            </solution>
+  </exercise>
+  <raw format="html" xml:space="preserve">
+&lt;div class="runestone sqcontainer %(optclass)s"&gt;
+&lt;div data-component="selectquestion" id=cp_8_AC_6q_sq data-questionlist='cp_8_AC_6q, cp_8_AC_6q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
+    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cp_8_AC_6q, cp_8_AC_6q_pp&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</raw>
+  <exercise xml:id="empty-305">
+    <statement/>
+    <program interactive="" language="" xml:id="empty-306"/>
+    <solution>
+                Below is one way to implement the program. First we declare the instance variables
+                    in the struct definition. Next, we call printPokeInfo on each Pokemon
+                    in Trainer and output the trainer's info in the correct format.
+
+    <program xml:id="cp_8_AC_7a" language="cpp"><input><![CDATA[
+#include <iostream>
+using namespace std;
+
+struct Pokemon {
+    string pokeName;
+    string type;
+    int level;
+    int healthPercentage;
+};
+
+struct Trainer {
+    string trainerName;
+    char gender;
+    int numBadges;
+    Pokemon first, second, third, fourth, fifth, sixth;
+};
+
+void printPokeInfo(Pokemon p);
+
+void printTrainerInfo(Trainer t) {
+    cout << "Trainer " << t.trainerName << " has " << t.numBadges
+         << " badges and " << t.trainerName << "'s team consists of " << endl;
+    printPokeInfo(t.first);
+    printPokeInfo(t.second);
+    printPokeInfo(t.third);
+    printPokeInfo(t.fourth);
+    printPokeInfo(t.fifth);
+    printPokeInfo(t.sixth);
+}
+
+int main() {
+    Pokemon pikachu = { "Pikachu", "Electric", 81, 100 };
+    Pokemon espeon = { "Espeon", "Psychic", 72, 100 };
+    Pokemon snorlax = { "Snorlax", "Normal", 75, 100 };
+    Pokemon venusaur = { "Venusaur", "Grass & Poison", 77, 100 };
+    Pokemon charizard = { "Charizard", "Fire & Flying", 77, 100 };
+    Pokemon blastoise = { "Blastoise", "Water", 77, 100 };
+    Trainer red = { "Red", 'M', 8, pikachu, espeon, snorlax, venusaur, charizard, blastoise };
+    printTrainerInfo (red);
+}
+        ]]></input><tests>
+void printPokeInfo(Pokemon p) {
+    cout &lt;&lt; p.pokeName &lt;&lt; " (Lv. " &lt;&lt; p.level &lt;&lt; ", " &lt;&lt; p.healthPercentage &lt;&lt; "% HP)" &lt;&lt; endl;
+}
+</tests></program>
+            
+                <p>Below is one way to implement the program. First we declare the instance variables
+                    in the <c>struct</c> definition. Next, we call <c>printPokeInfo</c> on each <c>Pokemon</c>
+                    in <c>Trainer</c> and output the trainer's info in the correct format.</p>
+
+    
+            </solution>
+  </exercise>
+  <raw format="html" xml:space="preserve">
+&lt;div class="runestone sqcontainer %(optclass)s"&gt;
+&lt;div data-component="selectquestion" id=cp_8_AC_8q_sq data-questionlist='cp_8_AC_8q, cp_8_AC_8q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
+    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cp_8_AC_8q, cp_8_AC_8q_pp&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</raw>
+  <exercise xml:id="empty-307">
+    <statement/>
+    <program interactive="" language="" xml:id="empty-308"/>
+    <solution>
+                Below is one way to implement the program. We use conditionals to perform
+                    the correct output and operation depending on the user's input.
+
+    <program xml:id="cp_8_AC_9a" language="cpp"><input><![CDATA[
+#include <iostream>
+using namespace std;
+
+struct Pokemon {
+    string pokeName;
+    string type;
+    int level;
+    int healthPercentage;
+};
+
+struct Trainer {
+    string trainerName;
+    char gender;
+    int numBadges;
+    Pokemon first, second, third, fourth, fifth, sixth;
+};
+
+void printPokeInfo(Pokemon p);
+void printTrainerInfo(Trainer t);
+void healPokemon(Trainer& t);
+
+void pokeCenter(Trainer& t) {
+    char response;
+    cout << "Welcome to the Pok&#233;mon Center. Would you like me to take your Pok&#233;mon? (y/n) ";
+    cin >> response;
+    if (response == 'y') {
+        cout << "Okay, I'll take your Pok&#233;mon for a few seconds." << endl;
+        healPokemon(t);
+        cout << "Your Pok&#233;mon are now healed. We hope to see you again." << endl;
+    }
+    else if (response == 'n') {
+        cout << "We hope to see you again." << endl;
+    }
+    else {
+        cout << "Sorry, not a valid input." << endl;
+    }
+}
+
+int main() {
+    Pokemon exeggutor = {"Exeggutor", "Grass & Psychic", 58, 78};
+    Pokemon alakazam = {"Alakazam", "Psychic", 54, 0};
+    Pokemon arcanine = {"Arcanine", "Fire", 58, 24};
+    Pokemon rhydon = {"Rhydon", "Ground & Rock", 56, 55};
+    Pokemon gyarados = {"Gyarados", "Water & Flying", 58, 100};
+    Pokemon pidgeot = {"Pidgeot", "Normal & Flying", 56, 35};
+    Trainer blue = {"Blue", 'M', 8, exeggutor, alakazam, arcanine, rhydon, gyarados, pidgeot};
+    printTrainerInfo(blue);
+    pokeCenter(blue);
+    printTrainerInfo(blue);  // Pokemon should now all be healed to 100% health
+}
+        ]]></input><tests>
+void printPokeInfo(Pokemon p) {
+    cout &lt;&lt; p.pokeName &lt;&lt; " (Lv. " &lt;&lt; p.level &lt;&lt; ", " &lt;&lt; p.healthPercentage &lt;&lt; "% HP)" &lt;&lt; endl;
+}
+
+void printTrainerInfo(Trainer t) {
+    cout &lt;&lt; "Trainer " &lt;&lt; t.trainerName &lt;&lt; " has " &lt;&lt; t.numBadges
+         &lt;&lt; " badges and " &lt;&lt; t.trainerName &lt;&lt; "'s team consists of " &lt;&lt; endl;
+    printPokeInfo(t.first);
+    printPokeInfo(t.second);
+    printPokeInfo(t.third);
+    printPokeInfo(t.fourth);
+    printPokeInfo(t.fifth);
+    printPokeInfo(t.sixth);
+}
+
+void healPokemon(Trainer&amp; t) {
+    t.first.healthPercentage = 100;
+    t.second.healthPercentage = 100;
+    t.third.healthPercentage = 100;
+    t.fourth.healthPercentage = 100;
+    t.fifth.healthPercentage = 100;
+    t.sixth.healthPercentage = 100;
+}
+</tests></program>
+            
+                <p>Below is one way to implement the program. We use conditionals to perform
+                    the correct output and operation depending on the user's input.</p>
+
+    
+            </solution>
+  </exercise>
+  <raw format="html" xml:space="preserve">
+&lt;div class="runestone sqcontainer %(optclass)s"&gt;
+&lt;div data-component="selectquestion" id=cp_8_AC_10q_sq data-questionlist='cp_8_AC_10q, cp_8_AC_10q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
+    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cp_8_AC_10q, cp_8_AC_10q_pp&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</raw>
+</section>

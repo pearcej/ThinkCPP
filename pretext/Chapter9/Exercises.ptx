@@ -1,0 +1,637 @@
+<?xml version="1.0"?>
+<exercises xml:id="chapter9_multiple-choice-exercises">
+  <title>Multiple Choice Exercises</title>
+  <exercise label="mce_9_1">
+    <statement>
+      <p>Which of the following are variables of type <c>Book</c>?</p>
+      <program language="cpp">
+        <input>
+struct Book {
+  string title, author;
+  int yearPublished;
+  double price;
+};
+
+int main() {
+  Book gatsby = { "The Great Gatsby", "F. Scott Fitzgerald", 1925, 4.75 };
+  Book frankenstein = { "Frankenstein", "Mary Shelley", 1823, 5.99 };
+  string flies = "Lord of the Flies";
+  int year = 1954;
+}
+</input>
+      </program>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement id="mce_9_1_opt_a">
+          <p>
+            <c>gatsby</c>
+          </p>
+        </statement>
+        <feedback id="mce_9_1_opt_a">
+          <p><c>gatsby</c> is a <c>Book</c>.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="mce_9_1_opt_b">
+          <p>
+            <c>frankenstein</c>
+          </p>
+        </statement>
+        <feedback id="mce_9_1_opt_b">
+          <p><c>frankenstein</c> is a <c>Book</c>.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_9_1_opt_c">
+          <p>
+            <c>flies</c>
+          </p>
+        </statement>
+        <feedback id="mce_9_1_opt_c">
+          <p><c>flies</c> is a <c>string</c>.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_9_1_opt_d">
+          <p>
+            <c>year</c>
+          </p>
+        </statement>
+        <feedback id="mce_9_1_opt_d">
+          <p><c>year</c> is an <c>int</c>.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="mce_9_2">
+    <statement>
+      <p>Which of the following are instance variables of type <c>Book</c>?</p>
+      <program language="cpp">
+        <input>
+struct Book {
+  string title, author;
+  int yearPublished;
+  double price;
+};
+
+int main() {
+  Book gatsby = { "The Great Gatsby", "F. Scott Fitzgerald", 1925, 4.75 };
+  Book frankenstein = { "Frankenstein", "Mary Shelley", 1823, 5.99 };
+  string flies = "Lord of the Flies";
+  int year = 1954;
+}
+</input>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement id="mce_9_2_opt_a">
+          <p>
+            <c>gatsby</c>
+          </p>
+        </statement>
+        <feedback id="mce_9_2_opt_a">
+          <p><c>gatsby</c> is a <c>Book</c>, not an instance variable of <c>Book</c>.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="mce_9_2_opt_b">
+          <p>
+            <c>title</c>
+          </p>
+        </statement>
+        <feedback id="mce_9_2_opt_b">
+          <p><c>title</c> is an instance variable of <c>Book</c>.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_9_2_opt_c">
+          <p>
+            <c>year</c>
+          </p>
+        </statement>
+        <feedback id="mce_9_2_opt_c">
+          <p><c>year</c> is an <c>int</c> declared in <c>main</c>, not an instance variable of <c>Book</c>.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="mce_9_2_opt_d">
+          <p>
+            <c>price</c>
+          </p>
+        </statement>
+        <feedback id="mce_9_2_opt_d">
+          <p><c>price</c> is an instance variable of <c>Book</c>.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="mce_9_3">
+    <statement>
+      <p>What is the output of the code below?</p>
+      <program language="cpp">
+        <input><![CDATA[
+struct Book {
+  string title, author;
+  int yearPublished;
+  double price;
+};
+
+void printBook (Book& b) {
+  cout << "\"" << b.title << "\" by " << b.author << " (" << b.yearPublished << "), $" << b.price << endl;
+}
+
+int main() {
+  Book mockingbird = { "To Kill a Mockingbird", "Harper Lee", 1960, 9.25 };
+  double discountedPrice = 7.19;
+  mockingbird.price = discountedPrice;
+  printBook (mockingbird);
+}
+]]></input>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement id="mce_9_3_opt_a">
+          <p>To Kill a Mockingbird by Harper Lee (1960), $9.25</p>
+        </statement>
+        <feedback id="mce_9_3_opt_a">
+          <p>Take a closer look at <c>main</c>. Was the price of the book modified?</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_9_3_opt_b">
+          <p><q>To Kill a Mockingbird</q> by Harper Lee (1960), $9.25</p>
+        </statement>
+        <feedback id="mce_9_3_opt_b">
+          <p>Take a closer look at <c>main</c>. Was the price of the book modified?</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="mce_9_3_opt_c">
+          <p><q>To Kill a Mockingbird</q> by Harper Lee (1960), $7.19</p>
+        </statement>
+        <feedback id="mce_9_3_opt_c">
+          <p>The price was changed from $9.25 to $7.19</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_9_3_opt_d">
+          <p>To Kill a Mockingbirdby Harper Lee (1960), $7.19</p>
+        </statement>
+        <feedback id="mce_9_3_opt_d">
+          <p>The <c>\</c> are escape characters. Used in this context, they allow us to print quotation marks.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="mce_9_4">
+    <statement>
+      <p>What kind of function is <c>printBook</c>?</p>
+      <program language="cpp">
+        <input><![CDATA[
+struct Book {
+  string title, author;
+  int yearPublished;
+  double price;
+};
+
+void printBook (Book& b) {
+  cout << "\"" << b.title << "\" by " << b.author << " (" << b.yearPublished << "), $" << b.price << endl;
+}
+
+int main() {
+  Book dracula = { "Dracula", "Bram Stoker", 1897, 3.95 };
+  printBook (dracula);
+}
+]]></input>
+      </program>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement id="mce_9_4_opt_a">
+          <p>Pure function</p>
+        </statement>
+        <feedback id="mce_9_4_opt_a">
+          <p><c>printBook</c> takes  a <c>Book</c> as an object but it doesn't modify it.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_9_4_opt_b">
+          <p>Modifier function</p>
+        </statement>
+        <feedback id="mce_9_4_opt_b">
+          <p>Does <c>printBook</c> modify the <c>Book</c> object?</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_9_4_opt_c">
+          <p>Fill-in function</p>
+        </statement>
+        <feedback id="mce_9_4_opt_c">
+          <p><c>printBook</c> takes one parameter, and its parameter is not an empty <c>Book</c> object.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_9_4_opt_d">
+          <p>Fruitful function</p>
+        </statement>
+        <feedback id="mce_9_4_opt_d">
+          <p><c>printBook</c> does not return anything.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="mce_9_5">
+    <statement>
+      <p>What is wrong with the code below?</p>
+      <program language="cpp">
+        <input><![CDATA[
+struct Book {
+  string title, author;
+  int yearPublished;
+  double price;
+}
+
+void printBook (Book& b) {
+  cout << "\"" << b.title << "\" by " << b.author << " (" << b.yearPublished << "), $" << b.price << endl;
+}
+
+void applyDiscount (const Book& b, double discount) {
+  b.price -= discount;
+}
+
+int main() {
+  Book godfather = { "The Godfather", "Mario Puzo", 1969, 10.90 };
+  applyDiscount (godfather, 5.40);
+  printBook (godfather);
+}
+]]></input>
+      </program>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement id="mce_9_5_opt_a">
+          <p>The <c>struct</c> definition is missing a semicolon at the end.</p>
+        </statement>
+        <feedback id="mce_9_5_opt_a">
+          <p>It's a common mistake to forget the semicolon at the end of <c>struct</c> definitions.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_9_5_opt_b">
+          <p>We are not allowed to pass in a <c>Book</c> object by reference in <c>printBook</c>.</p>
+        </statement>
+        <feedback id="mce_9_5_opt_b">
+          <p>We are allowed to do this. It's usually a good idea to pass structures by reference since it won't make copies of the structures, thus saving memory space.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="mce_9_5_opt_c">
+          <p>The keyword <c>const</c> needs to be removed in the function definition for <c>applyDiscount</c>.</p>
+        </statement>
+        <feedback id="mce_9_5_opt_c">
+          <p>Since the <c>applyDiscount</c> function modifies the <c>Book</c> passed into it, we don't it to be <c>const</c>.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_9_5_opt_d">
+          <p>There are no errors with the code.</p>
+        </statement>
+        <feedback id="mce_9_5_opt_d">
+          <p>There are a couple errors. Can you find them?</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="mce_9_6">
+    <statement>
+      <p>What kind of function is <c>applyDiscount</c>?</p>
+      <program language="cpp">
+        <input><![CDATA[
+struct Book {
+  string title, author;
+  int yearPublished;
+  double price;
+};
+
+void printBook (Book& b) {
+  cout << "\"" << b.title << "\" by " << b.author << " (" << b.yearPublished << "), $" << b.price << endl;
+}
+
+void applyDiscount (Book& b, double discount) {
+  b.price -= discount;
+}
+
+int main() {
+  Book godfather = { "The Godfather", "Mario Puzo", 1969, 10.90 };
+  applyDiscount (godfather, 5.40);
+  printBook (godfather);
+}
+]]></input>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement id="mce_9_6_opt_a">
+          <p>Pure function</p>
+        </statement>
+        <feedback id="mce_9_6_opt_a">
+          <p>Does <c>applyDiscount</c> modify the <c>Book</c> object?</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="mce_9_6_opt_b">
+          <p>Modifier function</p>
+        </statement>
+        <feedback id="mce_9_6_opt_b">
+          <p><c>applyDiscount</c> modifies the <c>Book</c> object by updating the price.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_9_6_opt_c">
+          <p>Fill-in function</p>
+        </statement>
+        <feedback id="mce_9_6_opt_c">
+          <p><c>applyDiscount</c> does not take an empty <c>Book</c> object as a parameter.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_9_6_opt_d">
+          <p>Fruitful function</p>
+        </statement>
+        <feedback id="mce_9_6_opt_d">
+          <p><c>applyDiscount</c> does not return anything.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="mce_9_7">
+    <statement>
+      <p>What is the output of the code below?</p>
+      <program language="cpp">
+        <input><![CDATA[
+struct Point3D {
+  double x, y, z;
+};
+
+void printPoint3D (const Point3D& p) {
+  cout << "(" << p.x << ", " << p.y << ", " << p.z << ")" << endl;
+}
+
+void midpoint (const Point3D& p1, const Point3D& p2, Point3D p3) {
+  p3.x = (p1.x + p2.x) / 2;
+  p3.y = (p1.y + p2.y) / 2;
+  p3.z = (p1.z + p2.z) / 2;
+}
+
+int main() {
+  Point3D p1 = { 3.0, 5.0, 2.0 };
+  Point3D p2 = { 6.0, 3.5, 9.3 };
+  Point3D p3 = { 0.0, 0.0, 0.0 };
+  midpoint (p1, p2, p3);
+  printPoint3D (p3);
+}
+]]></input>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement id="mce_9_7_opt_a">
+          <p>(4.5, 4.25, 5.65)</p>
+        </statement>
+        <feedback id="mce_9_7_opt_a">
+          <p>Look at the function declaration of <c>midpoint</c> carefully.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_9_7_opt_b">
+          <p>(3.0, 5.0, 2.0)</p>
+        </statement>
+        <feedback id="mce_9_7_opt_b">
+          <p>Look at the function declaration of <c>midpoint</c> carefully.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_9_7_opt_c">
+          <p>(9.0, 8.5, 11.3)</p>
+        </statement>
+        <feedback id="mce_9_7_opt_c">
+          <p>Look at the function declaration of <c>midpoint</c> carefully.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="mce_9_7_opt_d">
+          <p>(0, 0, 0)</p>
+        </statement>
+        <feedback id="mce_9_7_opt_d">
+          <p>The last parameter in <c>midpoint</c> is not passed by reference, so a copy is made and changes are made to the copy, not the original.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="mce_9_8">
+    <statement>
+      <p>What kind of function is <c>midpoint</c>?</p>
+      <program language="cpp">
+        <input><![CDATA[
+struct Point3D {
+  double x, y, z;
+};
+
+void printPoint3D (const Point3D& p) {
+  cout << "(" << p.x << ", " << p.y << ", " << p.z << ")" << endl;
+}
+
+void midpoint (const Point3D& p1, const Point3D& p2, Point3D& p3) {
+  p3.x = (p1.x + p2.x) / 2;
+  p3.y = (p1.y + p2.y) / 2;
+  p3.z = (p1.z + p2.z) / 2;
+}
+
+int main() {
+  Point3D p1 = { 3.0, 5.0, 2.0 };
+  Point3D p2 = { 6.0, 3.5, 9.3 };
+  Point3D p3 = { 0.0, 0.0, 0.0 };
+  midpoint (p1, p2, p3);
+  printPoint3D (p3);
+}
+]]></input>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement id="mce_9_8_opt_a">
+          <p>Pure function</p>
+        </statement>
+        <feedback id="mce_9_8_opt_a">
+          <p>Does <c>midpoint</c> modify a <c>Point3D</c> object?</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="mce_9_8_opt_b">
+          <p>Modifier function</p>
+        </statement>
+        <feedback id="mce_9_8_opt_b">
+          <p><c>midpoint</c> modifies the last <c>Point3D</c> object.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="mce_9_8_opt_c">
+          <p>Fill-in function</p>
+        </statement>
+        <feedback id="mce_9_8_opt_c">
+          <p><c>midpoint</c> takes an <q>empty</q> third <c>Point3D</c> and fills it with the average of the other two <c>Point3D</c> objects.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_9_8_opt_d">
+          <p>Fruitful function</p>
+        </statement>
+        <feedback id="mce_9_8_opt_d">
+          <p><c>midpoint</c> does not return anything.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="mce_9_9">
+    <statement>
+      <p>What is the output of the code below?</p>
+      <program language="cpp">
+        <input><![CDATA[
+struct Point3D {
+  double x, y, z;
+};
+
+void printPoint3D (const Point3D& p) {
+  cout << "(" << p.x << ", " << p.y << ", " << p.z << ")" << endl;
+}
+
+void midpoint (const Point3D& p1, const Point3D& p2, Point3D& p3) {
+  p3.x = (p1.x + p2.x) / 2;
+  p3.y = (p1.y + p2.y) / 2;
+  p3.z = (p1.z + p2.z) / 2;
+}
+
+Point3D reflectXYPlane(const Point3D& p) {
+  Point3D flipped = p;
+  flipped.z = -flipped.z;
+  return flipped;
+}
+
+int main() {
+  Point3D p = { 11.3, 4.5, 2.9 };
+  Point3D pReflected = reflectXYPlane (p);
+  printPoint3D (pReflected);
+}
+]]></input>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement id="mce_9_9_opt_a">
+          <p>(11.3, 4.5, 2.9)</p>
+        </statement>
+        <feedback id="mce_9_9_opt_a">
+          <p>Take a closer look at the implementation of <c>reflectXYPlane</c>.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="mce_9_9_opt_b">
+          <p>(11.3, 4.5, -2.9)</p>
+        </statement>
+        <feedback id="mce_9_9_opt_b">
+          <p>The point is reflected across the XY plane, so the z value is inverted.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_9_9_opt_c">
+          <p>(-11.3, -4.5, 2.9)</p>
+        </statement>
+        <feedback id="mce_9_9_opt_c">
+          <p>Take a closer look at the implementation of <c>reflectXYPlane</c>.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_9_9_opt_d">
+          <p>(5.65, 2.25, 1.45)</p>
+        </statement>
+        <feedback id="mce_9_9_opt_d">
+          <p>Take a closer look at the implementation of <c>reflectXYPlane</c>.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="mce_9_10">
+    <statement>
+      <p>What is the output of the code below?</p>
+      <program language="cpp">
+        <input><![CDATA[
+struct Point3D {
+  double x, y, z;
+};
+
+void printPoint3D (const Point3D& p) {
+  cout << "(" << p.x << ", " << p.y << ", " << p.z << ")" << endl;
+}
+
+void midpoint (const Point3D& p1, const Point3D& p2, Point3D& p3) {
+  p3.x = (p1.x + p2.x) / 2;
+  p3.y = (p1.y + p2.y) / 2;
+  p3.z = (p1.z + p2.z) / 2;
+}
+
+Point3D reflectXYPlane(const Point3D& p) {
+  Point3D flipped = p;
+  flipped.z = -flipped.z;
+  return flipped;
+}
+
+int main() {
+  Point3D p1 = { 7.0, 3.5, 6.7 };
+  Point3D p2 = { 2.0, 1.0, 0.0 };
+  Point3D p3 = { 3.9, 4.5, 10.0 };
+  Point3D p4 = reflectXYPlane (p1);
+  midpoint (p4, p3, p2);
+  printPoint3D (p2);
+}
+]]></input>
+      </program>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement id="mce_9_10_opt_a">
+          <p>(5.45, 4, 1.65)</p>
+        </statement>
+        <feedback id="mce_9_10_opt_a">
+          <p>Take a closer look at the implementation of <c>reflectXYPlane</c>.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_9_10_opt_b">
+          <p>(5.45, 4, 8.35)</p>
+        </statement>
+        <feedback id="mce_9_10_opt_b">
+          <p>Check the arguments passed into <c>midpoint</c>.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_9_10_opt_c">
+          <p>(7.0, 3.5, -6.7)</p>
+        </statement>
+        <feedback id="mce_9_10_opt_c">
+          <p>Take a closer look at which point is being printed.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_9_10_opt_d">
+          <p>(4.5, 2.25, 3.35)</p>
+        </statement>
+        <feedback id="mce_9_10_opt_d">
+          <p>Check the arguments passed into <c>midpoint</c>.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</exercises>

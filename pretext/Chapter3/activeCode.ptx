@@ -1,0 +1,372 @@
+<?xml version="1.0"?>
+<section xml:id="chapter3_activecode-exercises">
+  <title>Activecode Exercises</title>
+  <p>Answer the following <term>Activecode</term> questions to
+            assess what you have learned in this chapter.</p>
+  <exercise xml:id="empty-175">
+    <statement>
+      <p>Fix the errors in the code below so that it prints the area of a circle with radius 5.  Use cmath functions to get an accurate value for pi.</p>
+    </statement>
+    <program interactive="activecode" language="cpp" xml:id="functions_a1q_editor">
+      <input><![CDATA[
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+void printArea(int r) {
+    double pi = acos(1.0);
+    double area = pi * r ^ 2;
+    cout << area;
+}
+
+int main () {
+    // DO NOT MODIFY ANYTHING BELOW THIS LINE
+    cout << "Testing with radius = 5..." << endl; cout << "    Your function had area = "; printArea(5); cout << endl; cout << "    The correct solution has area = 78.5398" << endl; cout << "Testing with radius = 7.5..." << endl; cout << "    Your function had area = "; printArea(7.5); cout << endl; cout << "    The correct solution has area = 176.715";
+}
+        ]]></input>
+      <tests>
+
+
+</tests>
+    </program>
+    <solution>
+
+
+    
+                Below is one way to fix the program.  C++ doesn't use the ^ operator for exponents.  We can get the square of r by multiplying it by itself.  We call the function with an argument of 5.
+
+    
+    <program xml:id="functions_a1a_editor" language="cpp"><input><![CDATA[
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+void printArea(double r) {
+    double pi = acos(-1.0);
+    double area = pi * r * r;
+    cout << area;
+}
+        ]]></input><tests>
+
+
+</tests></program>
+
+            
+
+<exercise label="functions_a1a"><statement><p>Below is one way to fix the program.  C++ doesn't use the <c>^</c> operator for exponents.  We can get the square of <c>r</c> by multiplying it by itself.  We call the function with an argument of <c>5</c>.</p></statement><program xml:id="functions_a1a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+void printArea(double r) {
+    double pi = acos(-1.0);
+    double area = pi * r * r;
+    cout << area;
+}
+        ]]></input><tests>
+
+
+</tests></program></exercise>
+            </solution>
+  </exercise>
+  <raw format="html" xml:space="preserve">
+&lt;div class="runestone sqcontainer %(optclass)s"&gt;
+&lt;div data-component="selectquestion" id=functions_a2_sq data-questionlist='functions_a2, functions_a2_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
+    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: functions_a2, functions_a2_pp&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</raw>
+  <exercise xml:id="empty-176">
+    <statement>
+      <p>Fix the code below so that it prints <c>12 / 8 = 1.5.</c></p>
+    </statement>
+    <program interactive="activecode" language="cpp" xml:id="functions_a3q_editor">
+      <input><![CDATA[
+#include <iostream>
+using namespace std;
+
+void divide (int a, int b) {
+    cout << a / b;
+}
+
+int main () {
+    int a = 8;
+    int b = 12;
+
+    // DO NOT MODIFY ANYTHING BELOW THIS LINE
+    cout << b << " / " << a << " = "; divide (b, a);
+}
+        ]]></input>
+      <tests>
+
+
+</tests>
+    </program>
+    <solution>
+
+
+    
+                Below is one way to fix the program.  It's crucial that you input your arguments in the correct order so as to avoid a semantic error.  Also, it's important that you understand that when you divide two integers&#x2026; you will get an integer as a result.
+
+    
+    <program xml:id="functions_a3a_editor" language="cpp"><input><![CDATA[
+#include <iostream>
+using namespace std;
+
+void divide (double a, double b) {
+    cout << a / b;
+}
+
+int main () {
+    int a = 8;
+    int b = 12;
+    cout << b << " / " << a << " = "; divide (b, a);
+}
+        ]]></input><tests>
+
+
+</tests></program>
+
+            
+
+<exercise label="functions_a3a"><statement><p>Below is one way to fix the program.  It's crucial that you input your arguments in the correct order so as to avoid a semantic error.  Also, it's important that you understand that when you divide two integers&#x2026; you will get an integer as a result.</p></statement><program xml:id="functions_a3a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+#include <iostream>
+using namespace std;
+
+void divide (double a, double b) {
+    cout << a / b;
+}
+
+int main () {
+    int a = 8;
+    int b = 12;
+    cout << b << " / " << a << " = "; divide (b, a);
+}
+        ]]></input><tests>
+
+
+</tests></program></exercise>
+            </solution>
+  </exercise>
+  <raw format="html" xml:space="preserve">
+&lt;div class="runestone sqcontainer %(optclass)s"&gt;
+&lt;div data-component="selectquestion" id=functions_a4_sq data-questionlist='functions_a4, functions_a4_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
+    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: functions_a4, functions_a4_pp&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</raw>
+  <exercise xml:id="empty-177">
+    <statement>
+      <p>Finish the code below so that it prints <q>First Line</q>, a border, and <q>Second Line.</q> on three separate lines.</p>
+    </statement>
+    <program interactive="activecode" language="cpp" xml:id="functions_a5q_editor">
+      <input><![CDATA[
+#include <iostream>
+using namespace std;
+
+void border () {
+    cout << "------------" << endl;
+}
+
+int main () {
+    // Write some code below to call the function appropriately
+
+}
+        ]]></input>
+      <tests>
+
+
+</tests>
+    </program>
+    <solution>
+
+
+    
+                Below is one way to complete the program.
+
+    
+    <program xml:id="functions_a5a_editor" language="cpp"><input><![CDATA[
+#include <iostream>
+using namespace std;
+
+void border () {
+    cout << "------------" << endl;
+}
+
+int main () {
+    cout << "First Line." << endl;
+    border();
+    cout << "Second Line." << endl;
+}
+        ]]></input><tests>
+
+
+</tests></program>
+
+            
+
+<exercise label="functions_a5a"><statement><p>Below is one way to complete the program.</p></statement><program xml:id="functions_a5a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+#include <iostream>
+using namespace std;
+
+void border () {
+    cout << "------------" << endl;
+}
+
+int main () {
+    cout << "First Line." << endl;
+    border();
+    cout << "Second Line." << endl;
+}
+        ]]></input><tests>
+
+
+</tests></program></exercise>
+            </solution>
+  </exercise>
+  <raw format="html" xml:space="preserve">
+&lt;div class="runestone sqcontainer %(optclass)s"&gt;
+&lt;div data-component="selectquestion" id=functions_a6_sq data-questionlist='functions_a6, functions_a6_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
+    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: functions_a6, functions_a6_pp&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</raw>
+  <exercise xml:id="empty-178">
+    <statement>
+      <p>Write a function called gpaBoost that prints your GPA rounded up to the nearest point.  If your GPA is already at the nearest point, there is no rounding.  Be sure to include any necessary headers.</p>
+    </statement>
+    <program interactive="activecode" language="cpp" xml:id="functions_a7q_editor">
+      <input><![CDATA[
+#include <iostream>
+#include <cmath>
+using namespace std;
+void gpaBoost () {
+
+}
+
+int main () {
+    // DO NOT MODIFY ANYTHING BELOW THIS LINE
+    cout << "Testing with GPA = 2.513..." << endl; cout << "    Your solution rounded the GPA to "; gpaBoost(2.513); cout << endl; cout << "    The correct solution rounds the GPA to 3.000" << endl; cout << "Testing with GPA = 4.000..." << endl; cout << "    Your solution rounded the GPA to "; gpaBoost(4.000); cout << endl; cout << "    The correct solution rounds the GPA to 4.000";
+}
+        ]]></input>
+      <tests>
+
+
+</tests>
+    </program>
+    <solution>
+
+
+    
+                Below is one way to complete the program.  I used the ceil function from the cmath library, but you could have solved this problem without using any functions from cmath.
+
+    
+    <program xml:id="functions_a7a_editor" language="cpp"><input><![CDATA[
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+void gpaBoost (double GPA) {
+    int betterGPA = ceil(GPA);
+    cout << betterGPA << ".000";
+}
+        ]]></input><tests>
+
+
+</tests></program>
+
+            
+
+<exercise label="functions_a7a"><statement><p>Below is one way to complete the program.  I used the <c>ceil</c> function from the <c>cmath</c> library, but you could have solved this problem without using any functions from <c>cmath</c>.</p></statement><program xml:id="functions_a7a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+void gpaBoost (double GPA) {
+    int betterGPA = ceil(GPA);
+    cout << betterGPA << ".000";
+}
+        ]]></input><tests>
+
+
+</tests></program></exercise>
+            </solution>
+  </exercise>
+  <raw format="html" xml:space="preserve">
+&lt;div class="runestone sqcontainer %(optclass)s"&gt;
+&lt;div data-component="selectquestion" id=functions_a8_sq data-questionlist='functions_a8, functions_a8_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
+    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: functions_a8, functions_a8_pp&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</raw>
+  <exercise xml:id="empty-179">
+    <statement>
+      <p>Write a function called <c>tanD</c> that prints the tangent of an angle given as a <c>double</c> in degrees. Use 3.14 for pi.  Be sure to include any necessary headers.</p>
+    </statement>
+    <program interactive="activecode" language="cpp" xml:id="functions_a9q_editor">
+      <input><![CDATA[
+#include <iostream>
+#include <cmath>
+using namespace std;
+void tanDegrees () {
+
+}
+
+int main () {
+    // DO NOT MODIFY ANYTHING BELOW THIS LINE
+    cout << "Testing with degrees = 45..." << endl; cout << "    Your solution calculated a tangent of "; tanDegrees(45); cout << endl; cout << "    The correct solution calculates a tangent of 0.999204" << endl; cout << "Testing with degrees = 112.1..." << endl; cout << "    Your solution calculated a tangent of "; tanDegrees(112.1); cout << endl; cout << "    The correct solution calculates a tangent of -2.46973";
+}
+        ]]></input>
+      <tests>
+
+
+</tests>
+    </program>
+    <solution>
+
+
+    
+                Below is one way to complete the program.  You need to make sure to convert your angle to radians before doing any calculations with sinusoidal functions.
+
+    
+    <program xml:id="functions_a9a_editor" language="cpp"><input><![CDATA[
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+void tanDegrees (double degrees) {
+    double radians = degrees * (2 * 3.14) / 360.0;
+    double tangent = tan(radians);
+    cout << tangent;
+}
+        ]]></input><tests>
+
+
+</tests></program>
+
+            
+
+<exercise label="functions_a9a"><statement><p>Below is one way to complete the program.  You need to make sure to convert your angle to radians before doing any calculations with sinusoidal functions.</p></statement><program xml:id="functions_a9a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+void tanDegrees (double degrees) {
+    double radians = degrees * (2 * 3.14) / 360.0;
+    double tangent = tan(radians);
+    cout << tangent;
+}
+        ]]></input><tests>
+
+
+</tests></program></exercise>
+            </solution>
+  </exercise>
+  <raw format="html" xml:space="preserve">
+&lt;div class="runestone sqcontainer %(optclass)s"&gt;
+&lt;div data-component="selectquestion" id=functions_a10_sq data-questionlist='functions_a10, functions_a10_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
+    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: functions_a10, functions_a10_pp&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</raw>
+</section>

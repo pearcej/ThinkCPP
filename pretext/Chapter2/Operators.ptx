@@ -1,0 +1,268 @@
+<?xml version="1.0"?>
+<section xml:id="chapter2_operators">
+  <title>Operators</title>
+  <p><term>Operators</term> are special symbols that are used to represent simple
+            computations like addition and multiplication. Most of the operators in
+            C++ do exactly what you would expect them to do, because they are common
+            mathematical symbols. For example, the operator for adding two integers
+            is <c>+</c>.</p>
+  <p>The following are all legal C++ expressions whose meaning is more or
+            less obvious:</p>
+  <pre>1 + 1
+hour - 1
+hour * 60 + minute
+minute / 60</pre>
+  <p><term>Expressions</term> can contain both variables names and integer values. In each
+            case the name of the variable is replaced with its value before the
+            computation is performed.</p>
+  <p>Addition, subtraction and multiplication all do what you expect, but you
+            might be surprised by division. For example, compile the following program around
+            observe the output.</p>
+  <exercise label="operators_AC_1">
+    <statement>
+      <p>This program is supposed to print the fraction of the hour that has
+            passed since midnight.  You'll notice that the result isn't quite what
+            you expect.  Read on to find out why!</p>
+    </statement>
+    <program xml:id="operators_AC_1_editor" interactive="activecode" language="cpp">
+      <input><![CDATA[
+#include <iostream>
+using namespace std;
+
+int main () {
+    int hour, minute;
+    hour = 12;
+    minute = 59;
+    cout << "Number of minutes since midnight: ";
+    cout << hour * 60 + minute << endl;
+    cout << "Fraction of the hour that has passed: ";
+    cout << minute / 60 << endl;
+    return 0;
+}
+        ]]></input>
+      <tests>
+
+
+</tests>
+    </program>
+  </exercise>
+  <p>The first line is what we expected, but the second line is odd. The
+            value of the variable minute is 59, and 59 divided by 60 is 0.98333, not
+            0. The reason for the discrepancy is that C++ is performing <term>integer
+                division</term>.</p>
+  <p>When both of the <term>operands</term> are integers (operands are the things
+            operators operate on), the result must also be an integer, and by
+            definition integer division always rounds <em>down</em>, even in cases like
+            this where the next integer is so close.</p>
+  <p>A possible alternative in this case is to calculate a percentage rather
+            than a fraction:</p>
+  <pre>cout &lt;&lt; "Percentage of the hour that has passed: ";
+cout &lt;&lt; minute * 100 / 60 &lt;&lt; endl;</pre>
+  <p>The result is:</p>
+  <pre>Percentage of the hour that has passed: 98</pre>
+  <p>Again the result is rounded down, but at least now the answer is
+            approximately correct. In order to get an even more accurate answer, we
+            could use a different type of variable, called floating-point, that is
+            capable of storing fractional values.</p>
+  <note>
+    <p>In C++, <term>floating-points</term> are declared as type <c>double</c>. We'll get
+                to that in the next chapter.</p>
+  </note>
+  <exercise label="operators_1">
+    <statement>
+      <p>Match the statement to the result, given that x = 10.</p>
+    </statement>
+    <feedback>
+      <p>Try again!</p>
+    </feedback>
+    <matches>
+      <match order="1">
+        <premise>x*10</premise>
+        <response>100</response>
+      </match>
+      <match order="2">
+        <premise>x-10</premise>
+        <response>0</response>
+      </match>
+      <match order="3">
+        <premise>100/x</premise>
+        <response>10</response>
+      </match>
+      <match order="4">
+        <premise>(x+x+x+x+x)*20</premise>
+        <response>1000</response>
+      </match>
+    </matches>
+  </exercise>
+  <exercise label="operators_3">
+    <statement>
+      <p>Integer division always rounds <var/> to the nearest <var/>. </p>
+    </statement>
+    <setup>
+      <var case="insensitive">
+        <condition string="^\s*down\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Try again!</p>
+          </feedback>
+        </condition>
+      </var>
+      <var case="insensitive">
+        <condition string="^\s*integer\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Try again!</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="operators_3.1">
+    <statement>
+      <p><var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <pre>int num1 = 12;
+int num2 = 5;
+cout &lt;&lt; num1 / num2;</pre>
+        <p>What is printed to the terminal?</p>
+        <condition number="[2, 2]">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="operators_3.2">
+    <statement>
+      <p><var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <pre>int num1 = 10;
+int num2 = 48;
+cout &lt;&lt; num2 / num1;</pre>
+        <p>What is printed to the terminal?</p>
+        <condition number="[4, 4]">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="operators_3.3">
+    <statement>
+      <p><var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <pre>int num1 = 10;
+int num2 = 40.1;
+cout &lt;&lt; num2 / num1;</pre>
+        <p>What is printed to the terminal?</p>
+        <condition number="[4, 4]">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="operators_3.4">
+    <statement>
+      <p><var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <pre>int num1 = 10;
+int num2 = 39.9;
+cout &lt;&lt; num2 / num1;</pre>
+        <p>What is printed to the terminal?</p>
+        <condition number="[3, 3]">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="operators_3.5">
+    <statement>
+      <p><var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <pre>int num1 = 7;
+int num2 = 8;
+cout &lt;&lt; "Decimal:" &lt;&lt; num1 / num2;</pre>
+        <p>What is printed after <c>Decimal:</c>?</p>
+        <condition number="[0, 0]">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="operators_4" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
+      <p>Construct a code block that prints the total cost of your meal, including the 6.0% sales tax, after you purchase two orders of fries, three burgers, and a milkshake.  Start by initializing the value of sales tax, then the prices of the food.  Once you have initialized the variables, you can perform your calculations and save the result in the price variable.  At the very end, you will print out the total price.</p>
+    </statement>
+    <blocks>
+      <block order="5">
+        <cline>int main () {</cline>
+      </block>
+      <block order="9">
+        <cline> double tax = 0.06;</cline>
+      </block>
+      <block order="10">
+        <choice correct="yes">
+          <cline> double fries, milkshake, burger;</cline>
+        </choice>
+        <choice>
+          <cline> string fries, milkshake, burger; </cline>
+        </choice>
+      </block>
+      <block order="8">
+        <cline> fries = 2.50;</cline>
+        <cline> milkshake = 3.75;</cline>
+        <cline> burger = 3.00;</cline>
+      </block>
+      <block order="7">
+        <cline> double price = 2 * fries + 3 * burger + milkshake;</cline>
+      </block>
+      <block order="1">
+        <choice correct="yes">
+          <cline> double priceWithTax = price + price * tax;</cline>
+        </choice>
+        <choice>
+          <cline> double priceWithTax = price * tax; </cline>
+        </choice>
+      </block>
+      <block order="11">
+        <choice correct="yes">
+          <cline><![CDATA[ cout << "The total cost of your meal is $";]]></cline>
+          <cline><![CDATA[ cout << priceWithTax << "." << endl;]]></cline>
+        </choice>
+        <choice>
+          <cline><![CDATA[ cout << "The total cost of your meal is $"; ]]></cline>
+          <cline><![CDATA[ cout << price << "." << endl;]]></cline>
+        </choice>
+      </block>
+      <block order="6">
+        <cline>}</cline>
+      </block>
+    </blocks>
+  </exercise>
+</section>

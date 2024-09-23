@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<section xml:id="chapter13_enumerated-types">
+  <title>Enumerated types</title>
+  <p>In the previous chapter I talked about mappings between real-world
+            values like rank and suit, and internal representations like integers
+            and strings. Although we created a mapping between ranks and integers,
+            and between suits and integers, I pointed out that the mapping itself
+            does not appear as part of the program.</p>
+  <p>Actually, C++ provides a feature called an <term>enumerated type</term> that
+            makes it possible to (1) include a mapping as part of the program, and
+            (2) define the set of values that make up the mapping. For example, here
+            is the definition of the enumerated types <c>Suit</c> and <c>Rank</c>:</p>
+  <pre>enum Suit { CLUBS, DIAMONDS, HEARTS, SPADES };
+
+enum Rank { ACE = 1, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE,
+TEN, JACK, QUEEN, KING };</pre>
+  <note>
+    <p>By default, the first value in the enumerated type maps to 0, the
+                second to 1, and so on.</p>
+  </note>
+  <p>Within the <c>Suit</c> type, the value <c>CLUBS</c> is represented by the integer
+            0, <c>DIAMONDS</c> is represented by 1, etc.</p>
+  <p>The definition of <c>Rank</c> overrides the default mapping and specifies
+            that <c>ACE</c> should be represented by the integer 1. The other values
+            follow in the usual way.</p>
+  <p>Once we have defined these types, we can use them anywhere. For example,
+            the instance variables <c>rank</c> and <c>suit</c> are can be declared with
+            type <c>Rank</c> and <c>Suit</c>:</p>
+  <pre>struct Card {
+  Rank rank;
+  Suit suit;
+
+  Card (Suit s, Rank r);
+};</pre>
+  <p>The types of the parameters for the constructor have changed, too.
+            Now, to create a card, we can use the values from the enumerated type as
+            arguments:</p>
+  <pre>Card card (DIAMONDS, JACK);</pre>
+  <p>By convention, the values in enumerated types have names with all
+            capital letters. This code is much clearer than the alternative using
+            integers:</p>
+  <pre>Card card (1, 11);</pre>
+  <exercise label="enum_type_AC_1">
+    <statement>
+      <p>The active code below uses the enumerated types created above to construct <c>Card</c> objects.
+            Feel free to modify the values that the cards are being initialized to in the constructor:  this will
+            change the output from the <c>print</c> function. Notice how this is much clearer than using integers.</p>
+    </statement>
+    <program xml:id="enum_type_AC_1_editor" interactive="activecode" language="cpp">
+      <input><![CDATA[
+#include <iostream>
+#include <string>
+#include <vector>
+using namespace std;
+
+enum Suit { CLUBS, DIAMONDS, HEARTS, SPADES };
+
+enum Rank { ACE=1, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE,
+TEN, JACK, QUEEN, KING };
+
+struct Card {
+    Rank rank;
+    Suit suit;
+    Card (Suit s, Rank r);
+    void print () const;
+};
+
+int main() {
+    Card card1 (DIAMONDS, JACK);
+    card1.print ();
+    Card card2 (HEARTS, QUEEN);
+    card2.print ();
+    Card card3 (CLUBS, THREE);
+    card3.print ();
+}
+
+        ]]></input>
+      <tests>
+Card::Card (Suit s, Rank r) {
+    suit = s;  rank = r;
+}
+
+void Card::print () const {
+    vector&lt;string&gt; suits (4);
+    suits[0] = "Clubs";
+    suits[1] = "Diamonds";
+    suits[2] = "Hearts";
+    suits[3] = "Spades";
+
+    vector&lt;string&gt; ranks (14);
+    ranks[1] = "Ace";
+    ranks[2] = "2";
+    ranks[3] = "3";
+    ranks[4] = "4";
+    ranks[5] = "5";
+    ranks[6] = "6";
+    ranks[7] = "7";
+    ranks[8] = "8";
+    ranks[9] = "9";
+    ranks[10] = "10";
+    ranks[11] = "Jack";
+    ranks[12] = "Queen";
+    ranks[13] = "King";
+
+    cout &lt;&lt; ranks[rank] &lt;&lt; " of " &lt;&lt; suits[suit] &lt;&lt; endl;
+}
+</tests>
+    </program>
+  </exercise>
+  <p>Because we know that the values in the enumerated types are represented
+            as integers, we can use them as indices for a vector. Therefore the old
+            <c>print</c> function will work without modification. We have to make some
+            changes in <c>buildDeck</c>, though:</p>
+  <pre>int index = 0;
+for (Suit suit = CLUBS; suit &lt;= SPADES; suit = Suit(suit+1)) {
+  for (Rank rank = ACE; rank &lt;= KING; rank = Rank(rank+1)) {
+    deck[index].suit = suit;
+    deck[index].rank = rank;
+    index++;
+  }
+}</pre>
+  <p>In some ways, using enumerated types makes this code more readable, but
+            there is one complication. Strictly speaking, we are not allowed to do
+            arithmetic with enumerated types, so <c>suit++</c> is not legal. On the
+            other hand, in the expression <c>suit+1</c>, C++ automatically converts the
+            enumerated type to integer. Then we can take the result and typecast it
+            back to the enumerated type:</p>
+  <pre>suit = Suit(suit+1);
+rank = Rank(rank+1);</pre>
+  <p>Actually, there is a better way to do this&#x2014;we can define the <c>++</c>
+            operator for enumerated types&#x2014;but that is beyond the scope of this book.</p>
+  <exercise label="enum_type_1">
+    <statement>
+      <p>Multiple Response: What can we do with enumerated types?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>Perform arithmetic.</p>
+        </statement>
+        <feedback>
+          <p>We are not allowed to do arithmetic with enumerated types.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Include a mapping as part of the program.</p>
+        </statement>
+        <feedback>
+          <p>This is the purpose of an enumerated type.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Use the same set of values in multiple mappings.</p>
+        </statement>
+        <feedback>
+          <p>Variables in one enumeration type cannot be used in another enumeration type.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Define the set of values that make up a mapping.</p>
+        </statement>
+        <feedback>
+          <p>This is the purpose of an enumerated type.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Use them as indices for a vector.</p>
+        </statement>
+        <feedback>
+          <p>Since the values in enumerated types are represented as integers, we can use them as vector indices.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="enum_type_2">
+    <statement>
+      <p>Assume we have the following struct defined by this enumerated
+            type.  What will be printed by the print function?</p>
+      <pre>enum Scoops { SINGLE = 1, DOUBLE, TRIPLE };
+enum Flavor { VANILLA, CHOCOLATE, STRAWBERRY, COOKIESNCREAM, MINTCHIP, COOKIEDOUGH };
+enum Order { CUP, CAKECONE, SUGARCONE, WAFFLECONE }
+
+struct iceCream {
+   Scoops scoops;
+   Flavor flavor;
+   Order order;
+
+   iceCream (Scoops s, Flavor f, Order o);
+   printOrder () {
+     // To save space, I didn't include the mapping.  I'm sure you can still figure it out.
+     cout &lt;&lt; "Who ordered a " &lt;&lt; scoops[scoop] &lt;&lt; " scoop of " &lt;&lt; flavors[flavor] &lt;&lt; " in a " &lt;&lt; orders[order] &lt;&lt; ?;
+   }
+};
+
+int main () {
+  iceCream icecream (2, 3, 2);
+  iceCream.printOrder();
+}</pre>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>Who ordered a triple scoop of Cookies 'n' Cream in a sugar cone?</p>
+        </statement>
+        <feedback>
+          <p>Remember that we performed an override for one of the enumerated types!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Who ordered a double scoop of Strawberry in a cake cone?</p>
+        </statement>
+        <feedback>
+          <p>Remember that the default enumeration starts at 0.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Who ordered a double scoop of Cookies 'n' Cream in a sugar cone?</p>
+        </statement>
+        <feedback>
+          <p>2 corresponds to "double", 3 corresponds to "Cookies 'n' Cream", and 2 corresponds to "sugar cone".</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Who ordered a triple scoop of Strawberry in a cake cone?</p>
+        </statement>
+        <feedback>
+          <p>Remember that we performed an override for one of the enumerated types!  The default enumeration starts at 0.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Who ordered a triple scoop of Mint Chocolate Chip in a Waffle Cone?</p>
+        </statement>
+        <feedback>
+          <p>Take another look at how we defined our enumerated types.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="enum_type_3">
+    <statement>
+      <p>Based on the <c>Rank</c> enumerated type, what integer value does <c>QUEEN</c> have? <var/>  </p>
+    </statement>
+    <setup>
+      <var case="insensitive">
+        <condition string="^\s*12|twelve\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Incorrect! Try again.</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+</section>

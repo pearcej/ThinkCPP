@@ -1,0 +1,525 @@
+<?xml version="1.0"?>
+<exercises xml:id="chapter14_multiple-choice-exercises">
+  <title>Multiple Choice Exercises</title>
+  <exercise label="mce_14_1">
+    <statement>
+      <p>What is one use of data encapsulation?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement id="mce_14_1_opt_a">
+          <p>To wrap up a sequence of code in a function.</p>
+        </statement>
+        <feedback id="mce_14_1_opt_a">
+          <p>This is one use of functional encapsulation, not data encapsulation.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="mce_14_1_opt_b">
+          <p>To hide implementation details from users or programmers that don't need to know them.</p>
+        </statement>
+        <feedback id="mce_14_1_opt_b">
+          <p>Data encapsulation is the separation of the implementation of data from the interface of a structure.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_14_1_opt_c">
+          <p>To keep all data in a container like a vector.</p>
+        </statement>
+        <feedback id="mce_14_1_opt_c">
+          <p>This is not related to encapsulation.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_14_1_opt_d">
+          <p>To make all data public and accessible to everyone.</p>
+        </statement>
+        <feedback id="mce_14_1_opt_d">
+          <p>Data encapsulation is based on the idea that each estructure should prevent unrestricted access to internal representation.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="mce_14_2">
+    <statement>
+      <p>Which of the following are accessor functions?</p>
+      <program language="cpp">
+        <input><![CDATA[
+struct Student {
+  private:
+    int id;
+  public:
+    string name;
+    int year;
+
+    int getID () { return id; }
+    int setID (int i) { id = i; }
+    void printInfo () { cout << "Student: " << name << ", " << year; }
+};
+]]></input>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement id="mce_14_2_opt_a">
+          <p>
+            <c>Student ()</c>
+          </p>
+        </statement>
+        <feedback id="mce_14_2_opt_a">
+          <p>This is the <c>Student</c> constructor.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="mce_14_2_opt_b">
+          <p>
+            <c>getID ()</c>
+          </p>
+        </statement>
+        <feedback id="mce_14_2_opt_b">
+          <p>This is a <q>getter</q> function, which is an accessor function since it accesses and returns a private member variable.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="mce_14_2_opt_c">
+          <p>
+            <c>setID ()</c>
+          </p>
+        </statement>
+        <feedback id="mce_14_2_opt_c">
+          <p>This is a <q>setter</q> function, which is an accessor function since it accesses and modifies a private member variable.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_14_2_opt_d">
+          <p>
+            <c>printInfo ()</c>
+          </p>
+        </statement>
+        <feedback id="mce_14_2_opt_d">
+          <p>This function does not access a private member variable.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="mce_14_3">
+    <statement>
+      <p>Which of the following are true?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement id="mce_14_3_opt_a">
+          <p>By default, <c>struct</c> member variables are private.</p>
+        </statement>
+        <feedback id="mce_14_3_opt_a">
+          <p>By default, <c>struct</c> member variables are public. This is the main difference between a <c>class</c> and a <c>struct</c>.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="mce_14_3_opt_b">
+          <p>By default, <c>class</c> member variables are private.</p>
+        </statement>
+        <feedback id="mce_14_3_opt_b">
+          <p>This is different from a <c>struct</c>, whose member variables default to be public.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="mce_14_3_opt_c">
+          <p>Private member variables can be accessed within the class.</p>
+        </statement>
+        <feedback id="mce_14_3_opt_c">
+          <p>Private member variables are private to things outside of the class.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="mce_14_3_opt_d">
+          <p>Public member variables can be accessed within the class.</p>
+        </statement>
+        <feedback id="mce_14_3_opt_d">
+          <p>Public member variables can be accessed anywhere, including within the class.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="mce_14_4">
+    <statement>
+      <p>What should replace the question marks in the code below? Use accessor functions.</p>
+      <program language="cpp">
+        <input>
+class rightTriangle {
+  int base;
+  int height;
+
+  public:
+    int getBase () { return base; }
+    int getHeight () { return height; }
+    double calculateHypotenuse () {
+      ???
+    }
+};
+</input>
+      </program>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement id="mce_14_4_opt_a">
+          <p>
+            <c>return sqrt(pow(getBase, 2) + pow(getHeight, 2));</c>
+          </p>
+        </statement>
+        <feedback id="mce_14_4_opt_a">
+          <p>We use the Pythagorean Theorem and <c>getBase</c> and <c>getHeight</c> to calculate and return the hypotenuse.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_14_4_opt_b">
+          <p>
+            <c>return pow(getBase, 2) + pow(getHeight, 2);</c>
+          </p>
+        </statement>
+        <feedback id="mce_14_4_opt_b">
+          <p>Use the Pythagorean Theorem!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_14_4_opt_c">
+          <p>
+            <c>return sqrt(pow(base, 2) + pow(height, 2));</c>
+          </p>
+        </statement>
+        <feedback id="mce_14_4_opt_c">
+          <p>Although this would work, we want to use accessor functions.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_14_4_opt_d">
+          <p>
+            <c><![CDATA[cout << sqrt(pow(getBase, 2) + pow(getHeight, 2));]]></c>
+          </p>
+        </statement>
+        <feedback id="mce_14_4_opt_d">
+          <p>Take a look at the return type of <c>calculateHypotenuse</c>.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="mce_14_5">
+    <statement>
+      <p>What is wrong with the code below?</p>
+      <program language="cpp">
+        <input><![CDATA[
+class Plane {
+  int flightNumber;
+  string model;
+  string origin;
+  string destination;
+
+  public:
+    void printInfo () {
+      cout << "Flight " << flightNumber << " (" << model
+           << ") from " << origin << " to " << destination << endl;
+    }
+};
+
+int main() {
+  Plane p;
+  p.flightNumber = 1846;
+  p.model = "Boeing 787";
+  p.origin = "Los Angeles";
+  p.destination = "Detroit";
+  p.printInfo ();
+}
+]]></input>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement id="mce_14_5_opt_a">
+          <p>The <c>Plane</c> class is missing the keyword <c>private:</c>.</p>
+        </statement>
+        <feedback id="mce_14_5_opt_a">
+          <p>By default, <c>class</c> member variables are private, so we don't need to explicitly write <c>private:</c>.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_14_5_opt_b">
+          <p><c>printInfo</c> cannot access <c>Plane</c>'s private member variables.</p>
+        </statement>
+        <feedback id="mce_14_5_opt_b">
+          <p>The private member variables of <c>Plane</c> are only inaccessible to those outside of the class.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="mce_14_5_opt_c">
+          <p>We cannot assign the private member variables of <c>p</c> in <c>main</c>.</p>
+        </statement>
+        <feedback id="mce_14_5_opt_c">
+          <p>We are trying to access the private member variables of a <c>Plane</c> object outside of the <c>Plane</c> class.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_14_5_opt_d">
+          <p>We cannot call <c>printInfo</c> in <c>main</c>.</p>
+        </statement>
+        <feedback id="mce_14_5_opt_d">
+          <p><c>printInfo</c> is a public member function, so we are allowed to call it in <c>main</c>.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="mce_14_6">
+    <statement>
+      <p>What is the output of the code below?</p>
+      <program language="cpp">
+        <input><![CDATA[
+class Temp {
+  private:
+    double fahrenheit;
+    double celsius;
+    bool is_fahrenheit;
+    bool is_celsius;
+
+  public:
+    double getFahrenheit () { return fahrenheit; }
+    double getCelsius () { return celsius; }
+    void setFahrenheit (double f) { fahrenheit = f; is_fahrenheit = true; is_celsius = false; }
+    void setCelsius (double c) { celsius = c; is_celsius = true; is_fahrenheit = false; }
+    void printTemp () {
+      if (is_fahrenheit) {
+        cout << "It is " << getFahrenheit() << " degrees Fahrenheit" << endl;
+      }
+      else {
+        cout << "It is " << getCelsius() << " degrees Celsius" << endl;
+      }
+    }
+};
+
+int main() {
+  Temp t;
+  t.setFahrenheit (125);
+  t.setCelsius (30);
+  t.printTemp ();
+}
+]]></input>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement id="mce_14_6_opt_a">
+          <p>It is 125 degrees Fahrenheit</p>
+        </statement>
+        <feedback id="mce_14_6_opt_a">
+          <p>Since we called <c>setCelsius</c> last, <c>is_celsius</c> is <c>true</c> and <c>is_fahrenheit</c> is false.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_14_6_opt_b">
+          <p>It is 30 degrees Fahrenheit</p>
+        </statement>
+        <feedback id="mce_14_6_opt_b">
+          <p>Since we called <c>setCelsius</c> last, <c>is_celsius</c> is <c>true</c> and <c>is_fahrenheit</c> is false.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_14_6_opt_c">
+          <p>It is 125 degrees Celsius</p>
+        </statement>
+        <feedback id="mce_14_6_opt_c">
+          <p>What was the value that we set <c>celsius</c> equal to?</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="mce_14_6_opt_d">
+          <p>It is 30 degrees Celsius</p>
+        </statement>
+        <feedback id="mce_14_6_opt_d">
+          <p>Since we called <c>setCelsius</c> last, we print out 30 degrees Celsius.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="mce_14_7">
+    <statement>
+      <p>Which of the following are true about invariants?</p>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement id="mce_14_7_opt_a">
+          <p>Data encapsulation helps enforce invariants by preventing unrestricted access to private member variables.</p>
+        </statement>
+        <feedback id="mce_14_7_opt_a">
+          <p>By limiting access to private member variables, data encapsulation can control what values these variables can take on.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_14_7_opt_b">
+          <p>If an invariant is true at the start of a function, it can be false at the end.</p>
+        </statement>
+        <feedback id="mce_14_7_opt_b">
+          <p>If an invariant is true at the start of a function, it must also be true at the end.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_14_7_opt_c">
+          <p>An invariant cannot be false in the middle of a function, even if it is true at the start and the end.</p>
+        </statement>
+        <feedback id="mce_14_7_opt_c">
+          <p>An invariant can be false in the middle of a function, and it is sometimes unavoidable.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="mce_14_7_opt_d">
+          <p>Maintaining invariants can reduce the number of bugs in a program.</p>
+        </statement>
+        <feedback id="mce_14_7_opt_d">
+          <p>By maintaining invariants, you can guarantee that all values are what they should be.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="mce_14_8">
+    <statement>
+      <p>Take a look at the class definition of <c>Date</c>. What are some invariants we must maintain?</p>
+      <program language="cpp">
+        <input>
+class Date {
+  private:
+    int day;
+    int month;
+    int year;
+    bool is_birthday;
+    string message;
+
+  public:
+    Date (int hour, int d, int m, int y, bool b, string m) {
+      day = d;
+      month = m;
+      year = y;
+      is_birthday = b;
+      message = m;
+    }
+};
+</input>
+      </program>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement id="mce_14_8_opt_a">
+          <p><c>day</c> must be between 1 and 31.</p>
+        </statement>
+        <feedback id="mce_14_8_opt_a">
+          <p>There is a maximum of 31 possible days in a month.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="mce_14_8_opt_b">
+          <p><c>month</c> must be between 1 and 12.</p>
+        </statement>
+        <feedback id="mce_14_8_opt_b">
+          <p>There are 12 months in a year.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_14_8_opt_c">
+          <p><c>is_birthday</c> must be <c>true</c> or <c>false</c>.</p>
+        </statement>
+        <feedback id="mce_14_8_opt_c">
+          <p>This isn't an invariant since <c>is_birthday</c> being a <c>bool</c> isn't really a condition.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_14_8_opt_d">
+          <p><c>year</c> must be greater than 2000.</p>
+        </statement>
+        <feedback id="mce_14_8_opt_d">
+          <p><c>year</c> can be less than 2000, so this isn't a correct invariant to maintain.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="mce_14_9">
+    <statement>
+      <p>Take a look at the function below. What are its preconditions and postconditions?</p>
+      <program language="cpp">
+        <input>
+int calculateRectangleArea (int length, int width) {
+  return length * width;
+}
+</input>
+      </program>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement id="mce_14_9_opt_a">
+          <p>Precondition: <c>length</c> and <c>width</c> must both be positive.</p>
+        </statement>
+        <feedback id="mce_14_9_opt_a">
+          <p>A rectangle can't have negative dimensions, or dimensions of 0.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_14_9_opt_b">
+          <p>Precondition: <c>length</c> must be greater than <c>width</c>.</p>
+        </statement>
+        <feedback id="mce_14_9_opt_b">
+          <p>A rectangle can be wider than it is long.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="mce_14_9_opt_c">
+          <p>Postcondition: <c>calculateRectangleArea</c> must return a positive number.</p>
+        </statement>
+        <feedback id="mce_14_9_opt_c">
+          <p>Since <c>length</c> and <c>width</c> must both be positive, their product muast also be positive.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_14_9_opt_d">
+          <p>Postcondition: <c>calculateRectangleArea</c> must return a nonnegative number.</p>
+        </statement>
+        <feedback id="mce_14_9_opt_d">
+          <p><c>calculateRectangleArea</c> cannot return 0, which is a nonnegative number but not a valid area.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="mce_14_10">
+    <statement>
+      <p>What are private functions and what do they do?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement id="mce_14_10_opt_a">
+          <p>Functions that return the type <c>private</c>.</p>
+        </statement>
+        <feedback id="mce_14_10_opt_a">
+          <p>There is no return type of <c>private</c>.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_14_10_opt_b">
+          <p>Functions that are used to retrieve and modify private member variables.</p>
+        </statement>
+        <feedback id="mce_14_10_opt_b">
+          <p>These are called accessor functions, not private functions.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mce_14_10_opt_c">
+          <p>Functions written outside of a class that accesses a class's private member variables.</p>
+        </statement>
+        <feedback id="mce_14_10_opt_c">
+          <p>No function outside of a class can access that class's private member variables.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="mce_14_10_opt_d">
+          <p>Functions that are declared private which cannot be invoked by client programs.</p>
+        </statement>
+        <feedback id="mce_14_10_opt_d">
+          <p>We would make functions private if we wanted to restrict their usage outside of the class.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</exercises>

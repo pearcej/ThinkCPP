@@ -1,0 +1,234 @@
+<?xml version="1.0"?>
+<section xml:id="chapter12_the-isgreater-function">
+  <title>The <c>isGreater</c> function</title>
+  <p>For basic types like <c>int</c> and <c>double</c>, there are comparison
+            operators that compare values and determine when one is greater or less
+            than another. These operators (<c>&lt;</c> and <c>&gt;</c> and the others) don't
+            work for user-defined types. Just as we did for the <c>==</c> operator, we
+            will write a comparison function that plays the role of the <c>&gt;</c>
+            operator. Later, we will use this function to sort a deck of cards.</p>
+  <p>Some sets are totally ordered, which means that you can compare any two
+            elements and tell which is bigger. For example, the integers and the
+            floating-point numbers are totally ordered. Some sets are unordered,
+            which means that there is no meaningful way to say that one element is
+            bigger than another. For example, the fruits are unordered, which is why
+            we cannot compare apples and oranges. As another example, the <c>bool</c>
+            type is unordered; we cannot say that <c>true</c> is greater than
+            <c>false</c>.</p>
+  <p>The set of playing cards is partially ordered, which means that
+            sometimes we can compare cards and sometimes not. For example, I know
+            that the 3 of Clubs is higher than the 2 of Clubs because it has higher
+            rank, and the 3 of Diamonds is higher than the 3 of Clubs because it has
+            higher suit. But which is better, the 3 of Clubs or the 2 of Diamonds?
+            One has a higher rank, but the other has a higher suit.</p>
+  <p>In order to make cards comparable, we have to decide which is more
+            important, rank or suit. To be honest, the choice is completely
+            arbitrary. For the sake of choosing, I will say that suit is more
+            important, because when you buy a new deck of cards, it comes sorted
+            with all the Clubs together, followed by all the Diamonds, and so on.</p>
+  <p>With that decided, we can write <c>isGreater</c>. Again, the arguments (two
+            <c>Card</c>s) and the return type (boolean) are obvious, and again we
+            have to choose between a member function and a nonmember function. This
+            time, the arguments are not symmetric. It matters whether we want to
+            know <q>Is A greater than B?</q> or <q>Is B greater than A?</q> Therefore I think
+            it makes more sense to write <c>isGreater</c> as a member function:</p>
+  <pre>bool Card::isGreater (const Card&amp; c2) const {
+  // first check the suits
+  if (suit &gt; c2.suit) return true;
+  if (suit &lt; c2.suit) return false;
+
+  // if the suits are equal, check the ranks
+  if (rank &gt; c2.rank) return true;
+  if (rank &lt; c2.rank) return false;
+
+  // if the ranks are also equal, return false
+  return false;
+}</pre>
+  <p>Then when we invoke it, it is obvious from the syntax which of the two
+            possible questions we are asking:</p>
+  <pre>Card card1 (2, 10);
+Card card2 (2, 4);
+
+if (card1.isGreater (card2)) {
+  card1.print ();
+  cout &lt;&lt; "is greater than" &lt;&lt; endl;
+  card2.print ();
+}</pre>
+  <p>You can almost read it like English: <q>If card1 isGreater card2 &#x2026;</q> The
+            output of this program is</p>
+  <pre>10 of Hearts
+is greater than
+4 of Hearts</pre>
+  <p>According to <c>isGreater</c>, aces are less than deuces (2s). As an
+            exercise, fix it so that aces are ranked higher than Kings, as they are
+            in most card games.</p>
+  <exercise label="12_5">
+    <statement>
+      <p>Take a look at the active code below, which uses the <c>isGreater</c> function.
+            Feel free to change the values of the cards.</p>
+    </statement>
+    <program xml:id="c12_5_editor" interactive="activecode" language="cpp">
+      <input><![CDATA[
+#include <iostream>
+#include <string>
+#include <vector>
+using namespace std;
+
+struct Card {
+    int suit, rank;
+
+    Card ();
+    Card (int s, int r);
+    void print () const;
+    bool equals (const Card& c2) const;
+    bool isGreater (const Card& c2) const;
+};
+
+int main() {
+    Card card1 (2,10);
+    Card card2 (2,4);
+    if (card1.isGreater (card2)) {
+        card1.print ();
+        cout << "is greater than" << endl;
+        card2.print ();
+    }
+    else {
+        card2.print ();
+        cout << "is greater than" << endl;
+        card1.print ();
+    }
+}
+
+        ]]></input>
+      <tests>
+
+Card::Card () {
+  suit = 0;  rank = 0;
+}
+
+Card::Card (int s, int r) {
+  suit = s;  rank = r;
+}
+
+bool Card::equals (const Card&amp; c2) const {
+  bool boolean = (rank == c2.rank &amp;&amp; suit == c2.suit);
+  if (boolean == true) {
+    cout &lt;&lt; "Yup, that's the same card." &lt;&lt; endl;
+  }
+  else {
+    cout &lt;&lt; "Nope, those cards are different." &lt;&lt; endl;
+  }
+  return boolean;
+}
+
+bool Card::isGreater (const Card&amp; c2) const {
+  if (suit &gt; c2.suit) return true;
+  if (suit &lt; c2.suit) return false;
+
+  if (rank &gt; c2.rank) return true;
+  if (rank &lt; c2.rank) return false;
+
+  return false;
+}
+
+void Card::print () const {
+  vector&lt;string&gt; suits (4);
+  suits[0] = "Clubs";
+  suits[1] = "Diamonds";
+  suits[2] = "Hearts";
+  suits[3] = "Spades";
+
+  vector&lt;string&gt; ranks (14);
+  ranks[1] = "Ace";
+  ranks[2] = "2";
+  ranks[3] = "3";
+  ranks[4] = "4";
+  ranks[5] = "5";
+  ranks[6] = "6";
+  ranks[7] = "7";
+  ranks[8] = "8";
+  ranks[9] = "9";
+  ranks[10] = "10";
+  ranks[11] = "Jack";
+  ranks[12] = "Queen";
+  ranks[13] = "King";
+
+   cout &lt;&lt; ranks[rank] &lt;&lt; " of " &lt;&lt; suits[suit] &lt;&lt; endl;
+}
+</tests>
+    </program>
+  </exercise>
+  <exercise label="isGreater_function_1">
+    <statement>
+      <p>Select all <term>totally ordered</term> sets.</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>bool</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! We cannot say true is greater than false, or vice versa.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>string</p>
+        </statement>
+        <feedback>
+          <p>Correct! Strings are ordered lexiographically.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>int</p>
+        </statement>
+        <feedback>
+          <p>Correct! It is quite obvious how integers are ordered.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Animal</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! We cannot say that one animal is greater than another.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Card</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! Cards are partially ordered.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="isGreater_function_2">
+    <statement>
+      <p><var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <pre>Card card1 (2,12);
+Card card2 (1,12);
+if (card1.isGreater (card2)) {
+   card1.print ();
+   cout &lt;&lt; "is greater than" &lt;&lt; endl;
+   card2.print ();
+}
+else {
+   card2.print ();
+   cout &lt;&lt; "is greater than" &lt;&lt; endl;
+   card1.print ();
+}</pre>
+        <p>If the above code is run, the terminal will print:
+<q>Queen of Hearts</q>
+<var/>
+<q>Queen of Diamonds</q>
+Type your answer exactly as it would appear in the terminal.</p>
+      </var>
+    </setup>
+  </exercise>
+</section>

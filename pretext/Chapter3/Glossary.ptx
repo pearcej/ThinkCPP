@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<section xml:id="chapter3_glossary">
+  <title>Glossary</title>
+  <dl>
+    <li>
+      <title>floating-point:</title>
+      <p>A type of variable (or value) that can contain fractions as well as
+                        integers. There are a few floating-point types in C++; the one we
+                        use in this book is double.</p>
+    </li>
+    <li>
+      <title>initialization:</title>
+      <p>A statement that declares a new variable and assigns a value to it
+                        at the same time.</p>
+    </li>
+    <li>
+      <title>function:</title>
+      <p>A named sequence of statements that performs some useful function.
+                        Functions may or may not take parameters, and may or may not produce
+                        a result.</p>
+    </li>
+    <li>
+      <title>parameter:</title>
+      <p>A piece of information you provide in order to call a function.
+                        Parameters are like variables in the sense that they contain values
+                        and have types.</p>
+    </li>
+    <li>
+      <title>argument:</title>
+      <p>A value that you provide when you call a function. This value must
+                        have the same type as the corresponding parameter.</p>
+    </li>
+    <li>
+      <title>call:</title>
+      <p>Cause a function to be executed.</p>
+    </li>
+  </dl>
+  <exercise label="chapter_three_glossary_one">
+    <statement>
+      <p>
+</p>
+    </statement>
+    <feedback>
+      <p>Try again!</p>
+    </feedback>
+    <matches>
+      <match order="1">
+        <premise>floating-point</premise>
+        <response>A type of value that can contain fractions as well as integers.</response>
+      </match>
+      <match order="2">
+        <premise>initialization</premise>
+        <response>A statement that declares a new variable and assigns a value to it.</response>
+      </match>
+      <match order="3">
+        <premise>call</premise>
+        <response>Causes a function to be executed.</response>
+      </match>
+    </matches>
+  </exercise>
+  <exercise label="chapter_three_glossary_two">
+    <statement>
+      <p>
+</p>
+    </statement>
+    <feedback>
+      <p>Try again!</p>
+    </feedback>
+    <matches>
+      <match order="1">
+        <premise>function</premise>
+        <response>A named sequence of statements that performs some useful function.</response>
+      </match>
+      <match order="2">
+        <premise>parameter</premise>
+        <response>A piece of information you provide in order to call a function.</response>
+      </match>
+      <match order="3">
+        <premise>argument</premise>
+        <response>A value that you provide when you call a function.</response>
+      </match>
+    </matches>
+  </exercise>
+</section>

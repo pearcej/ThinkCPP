@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<section xml:id="chapter11_yet-another-example">
+  <title>Yet another example</title>
+  <p>The original version of <c>convertToSeconds</c> looked like this:</p>
+  <pre>double convertToSeconds (const Time&amp; time) {
+  int minutes = time.hour * 60 + time.minute;
+  double seconds = minutes * 60 + time.second;
+  return seconds;
+}</pre>
+  <p>It is straightforward to convert this to a member function:</p>
+  <pre>double Time::convertToSeconds () const {
+  int minutes = hour * 60 + minute;
+  double seconds = minutes * 60 + second;
+  return seconds;
+}</pre>
+  <p>The interesting thing here is that the implicit parameter should be
+            declared <c>const</c>, since we don't modify it in this function. But it is
+            not obvious where we should put information about a parameter that
+            doesn't exist. The answer, as you can see in the example, is after the
+            parameter list (which is empty in this case).</p>
+  <p>The <c>print</c> function in the previous section should also declare that
+            the implicit parameter is <c>const</c>.</p>
+  <exercise label="yet_another_example_AC_1">
+    <statement>
+      <p>Feel free to try out the <c>convertToSeconds()</c> function in the active code below!</p>
+    </statement>
+    <program xml:id="yet_another_example_AC_1_editor" interactive="activecode" language="cpp">
+      <input><![CDATA[
+#include <iostream>
+using namespace std;
+
+struct Time {
+    int hour, minute;
+    double second;
+    double convertToSeconds () const;
+    void print ();
+};
+
+int main() {
+    Time currentTime = { 9, 14, 30.0 };
+    double secs = currentTime.convertToSeconds();
+
+    cout << "The current time is "; currentTime.print(); cout << "." << endl;
+    cout << "This time in seconds is " << secs << "." << endl;
+}
+
+        ]]></input>
+      <tests>
+
+void Time::print () {
+  cout &lt;&lt; hour &lt;&lt; ":" &lt;&lt; minute &lt;&lt; ":" &lt;&lt; second;
+}
+
+double Time::convertToSeconds () const {
+  int minutes = hour * 60 + minute;
+  double seconds = minutes * 60 + second;
+  return seconds;
+}
+</tests>
+    </program>
+  </exercise>
+  <exercise label="yet_another_example_1">
+    <statement>
+      <p>When writing a member function, where should you declare the implicit parameter to be <c>const</c>?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>Before the parameter list.</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! Try again!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Inside the parameter list.</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! This would be correct if we were talking about a free-standing function.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>After the parameter list.</p>
+        </statement>
+        <feedback>
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Implicit parameters are always const and don't need to be declared.</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! Parameters are only const if they are not modified inside the function, implicit parameters are no exception.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

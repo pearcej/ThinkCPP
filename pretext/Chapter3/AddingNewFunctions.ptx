@@ -1,0 +1,312 @@
+<?xml version="1.0"?>
+<section xml:id="chapter3_adding-new-functions">
+  <title>Adding New Functions</title>
+  <p>So far we have only been using the functions that are built into C++,
+            but it is also possible to add new functions. Actually, we have already
+            seen one function definition: <c>main</c>. The function named <c>main</c> is special
+            because it indicates where the execution of the program begins, but the
+            syntax for <c>main</c> is the same as for any other function definition:</p>
+  <pre>void NAME ( LIST OF PARAMETERS ) {
+  STATEMENTS
+}</pre>
+  <p>You can make up any name you want for your function, except that you
+            can't call it <c>main</c> or any other C++ keyword. The list of parameters
+            specifies what information &#x2013; if any &#x2013; you have to provide in order to use,
+            or <term>call</term>, the new function.</p>
+  <p><c>main</c> doesn't take any parameters, as indicated by the empty parentheses
+            () in it's definition. The first couple of functions we are going to
+            write also have no parameters, so the syntax looks like this:</p>
+  <pre>void newLine () {
+  cout &lt;&lt; endl;
+}</pre>
+  <p>This function is named <c>newLine</c>; it contains only a single statement,
+            which outputs a new line character, represented by the special value
+            <c>endl</c>.</p>
+  <p>The first word of the header is the <q>return type</q>:
+            <term>void</term> returns nothing;
+            <term>int</term> returns an int;
+            <term>double</term> returns a double;
+            <term>string</term> returns a string;</p>
+  <p>In <c>main</c> we can call this new function using syntax that is similar to
+            the way we call the built-in C++ commands:</p>
+  <pre>int main () {
+  cout &lt;&lt; "First Line." &lt;&lt; endl;
+  newLine ();
+  cout &lt;&lt; "Second Line." &lt;&lt; endl;
+  return 0;
+}</pre>
+  <p>The output of this program is</p>
+  <pre>First line.
+
+Second line.</pre>
+  <p>Notice the extra space between the two lines. What if we wanted more
+            space between the lines? We could call the same function repeatedly:</p>
+  <pre>int main () {
+  cout &lt;&lt; "First Line." &lt;&lt; endl;
+  newLine ();
+  newLine ();
+  newLine ();
+  cout &lt;&lt; "Second Line." &lt;&lt; endl;
+  return 0;
+}</pre>
+  <p>Or we could write a new function, named <c>threeLine</c>, that prints three new
+            lines:</p>
+  <exercise label="new_functions_AC_1">
+    <statement>
+      <p>Here we define the threeLine function, which calls the newLine function
+            three times.  The result is a function that prints three lines after it
+            is called (each of those empty lines begins with a <q>*</q>).</p>
+    </statement>
+    <program xml:id="new_functions_AC_1_editor" interactive="activecode" language="cpp">
+      <input><![CDATA[
+#include <iostream>
+using namespace std;
+
+void newLine () {
+    cout << '*' << endl;
+}
+
+void threeLine () {
+    newLine ();  newLine ();  newLine ();
+}
+
+int main () {
+    cout << "First Line." << endl;
+    threeLine ();
+    cout << "Second Line." << endl;
+    return 0;
+}
+        ]]></input>
+      <tests>
+
+
+</tests>
+    </program>
+  </exercise>
+  <p>You should notice a few things about this program:</p>
+  <p>
+    <ul>
+      <li>
+        <p>You can call the same procedure repeatedly. In fact, it is quite
+                    common and useful to do so.</p>
+      </li>
+      <li>
+        <p>You can have one function call another function. In this case, <c>main</c>
+                    calls <c>threeLine</c> and threeLine calls <c>newLine</c>. Again, this is common
+                    and useful.</p>
+      </li>
+      <li>
+        <p>In <c>threeLine</c> I wrote three statements all on the same line, which is
+                    syntactically legal (remember that spaces and new lines usually don't
+                    change the meaning of a program). On the other hand, <term>it is usually a
+                        better idea to put each statement on a line by itself</term>, to make your
+                    program easy to read. I sometimes break that rule in this book to
+                    save space.</p>
+      </li>
+    </ul>
+  </p>
+  <note>
+    <p>In general, you'll want to write your code so that it is easy for others
+                to follow.  This is especially important if you choose computer science
+                as a career!</p>
+  </note>
+  <p>So far, it may not be clear why it is worth the trouble to create all
+            these new functions. Actually, there are a lot of reasons, but this
+            example only demonstrates two:</p>
+  <p>
+    <ol label="1">
+      <li>
+        <p>Creating a new function gives you an opportunity to give a name to a
+                    group of statements. Functions can simplify a program by hiding a
+                    complex computation behind a single command, and by using English
+                    words in place of arcane code. Which is clearer, <c>newLine</c> or <c>cout &lt;&lt;
+endl</c>?</p>
+      </li>
+      <li>
+        <p>Creating a new function can make a program smaller by eliminating
+                    repetitive code. For example, a short way to print nine consecutive
+                    new lines is to call threeLine three times. How would you print 27
+                    new lines?</p>
+      </li>
+    </ol>
+  </p>
+  <exercise label="new_functions_mc_1">
+    <statement>
+      <p>Which of these statements is false about functions?</p>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement id="new_functions_mc_1_opt_a">
+          <p>You can name a function anything you want.</p>
+        </statement>
+        <feedback id="new_functions_mc_1_opt_a">
+          <p>You can't name a function the same name as a reserved keyword.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="new_functions_mc_1_opt_b">
+          <p>You can have a function with several parameters or a function with none.</p>
+        </statement>
+        <feedback id="new_functions_mc_1_opt_b">
+          <p>This is true! However, you must always use parentheses.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="new_functions_mc_1_opt_c">
+          <p>You can call a function inside of another function.</p>
+        </statement>
+        <feedback id="new_functions_mc_1_opt_c">
+          <p>This is true! It is common and useful.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="new_functions_mc_1_opt_d">
+          <p>You can write multiple statements on one line of a function.</p>
+        </statement>
+        <feedback id="new_functions_mc_1_opt_d">
+          <p>This is true! As long as each statement ends with a semicolon.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="new_functions_2">
+    <statement>
+      <p>Click on all function HEADERS.</p>
+    </statement>
+    <feedback>
+      <p>Remember, the operator '=' is used for assignment.</p>
+    </feedback>
+    <areas>
+      <cline>
+        <area correct="yes">void printX() {</area>
+      </cline>
+      <cline>
+        <area correct="no">cout &lt;&lt; "X";</area>
+      </cline>
+      <cline>}</cline>
+      <cline/>
+      <cline>
+        <area correct="yes">void printVar(int a) {</area>
+      </cline>
+      <cline>
+        <area correct="no">cout &lt;&lt; a;</area>
+      </cline>
+      <cline>}</cline>
+      <cline/>
+      <cline>
+        <area correct="yes">int main() {</area>
+      </cline>
+      <cline>
+        <area correct="no">int x = 7;</area>
+      </cline>
+      <cline>
+        <area correct="no">printVar(x);</area>
+      </cline>
+      <cline>
+        <area correct="no">if (x &lt; 10) {</area>
+      </cline>
+      <cline>
+        <area correct="no">x = x - 1;</area>
+      </cline>
+      <cline>    }</cline>
+      <cline>
+        <area correct="no">printX();</area>
+      </cline>
+      <cline>
+        <area correct="no">int y = 3;</area>
+      </cline>
+      <cline>
+        <area correct="no">double result = x / y;</area>
+      </cline>
+      <cline>
+        <area correct="no">printVar(result);</area>
+      </cline>
+      <cline>    return 0;</cline>
+      <cline>}</cline>
+    </areas>
+  </exercise>
+  <exercise label="new_functions_3">
+    <statement>
+      <p>Click on all function CALLS.</p>
+    </statement>
+    <feedback>
+      <p>Remember, the operator '=' is used for assignment.</p>
+    </feedback>
+    <areas>
+      <cline>
+        <area correct="no">void printX() {</area>
+      </cline>
+      <cline>
+        <area correct="no">cout &lt;&lt; "X";</area>
+      </cline>
+      <cline>}</cline>
+      <cline/>
+      <cline>
+        <area correct="no">void printVar(int a) {</area>
+      </cline>
+      <cline>
+        <area correct="no">cout &lt;&lt; a;</area>
+      </cline>
+      <cline>}</cline>
+      <cline/>
+      <cline>
+        <area correct="no">int main() {</area>
+      </cline>
+      <cline>
+        <area correct="no">int x = 7;</area>
+      </cline>
+      <cline>
+        <area correct="yes">printVar(x);</area>
+      </cline>
+      <cline>
+        <area correct="no">if (x &lt; 10) {</area>
+      </cline>
+      <cline>
+        <area correct="no">x = x - 1;</area>
+      </cline>
+      <cline>    }</cline>
+      <cline>
+        <area correct="yes">printX();</area>
+      </cline>
+      <cline>
+        <area correct="no">int y = 3;</area>
+      </cline>
+      <cline>
+        <area correct="no">double result = x / y;</area>
+      </cline>
+      <cline>
+        <area correct="yes">printVar(result);</area>
+      </cline>
+      <cline>    return 0;</cline>
+      <cline>}</cline>
+    </areas>
+  </exercise>
+  <exercise label="new_functions_pp_1" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
+      <p>Construct a function that correctly prints the perimeter of a rectangle.</p>
+    </statement>
+    <blocks>
+      <block order="3">
+        <cline>void perimeter (int length,int width) {</cline>
+      </block>
+      <block order="7">
+        <cline>int twice_length = 2*length;</cline>
+      </block>
+      <block order="4">
+        <cline>int twice_width = 2*width;</cline>
+      </block>
+      <block order="6">
+        <cline>int perimeter_value = twice_length + twice_width;</cline>
+      </block>
+      <block order="5">
+        <cline><![CDATA[cout << perimeter_value << endl;]]></cline>
+      </block>
+      <block order="2" correct="no">
+        <cline>return parameter_value; </cline>
+      </block>
+      <block order="1">
+        <cline>}</cline>
+      </block>
+    </blocks>
+  </exercise>
+</section>

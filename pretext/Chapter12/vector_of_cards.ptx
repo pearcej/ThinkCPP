@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<section xml:id="chapter12_vectors-of-cards">
+  <title>Vectors of cards</title>
+  <p>The reason I chose <c>Cards</c> as the objects for this chapter is that
+            there is an obvious use for a vector of cards&#x2014;a deck. Here is some code
+            that creates a new deck of 52 cards:</p>
+  <pre>vector&lt;Card&gt; deck (52);</pre>
+  <p>Here is the state diagram for this object:</p>
+  <figure align="center" xml:id="empty-66">
+    <image source="Chapter12/Images/12.6deck_state_diagram.png" width="50%" alt="image"/>
+  </figure>
+  <p>The three dots represent the 48 cards I didn't feel like drawing. Keep
+            in mind that we haven't initialized the instance variables of the cards
+            yet. In some environments, they will get initialized to zero, as shown
+            in the figure, but in others they could contain any possible value.</p>
+  <p>One way to initialize them would be to pass a <c>Card</c> as a second
+            argument to the constructor:</p>
+  <pre>Card aceOfSpades (3, 1);
+vector&lt;Card&gt; deck (52, aceOfSpades);</pre>
+  <p>This code builds a deck with 52 identical cards, like a special deck for
+            a magic trick. Of course, it makes more sense to build a deck with 52
+            different cards in it. To do that we use a nested loop.</p>
+  <p>The outer loop enumerates the suits, from 0 to 3. For each suit, the
+            inner loop enumerates the ranks, from 1 to 13. Since the outer loop
+            iterates 4 times, and the inner loop iterates 13 times, the total number
+            of times the body is executed is 52 (13 times 4).</p>
+  <pre>int i = 0;
+for (int suit = 0; suit &lt;= 3; suit++) {
+  for (int rank = 1; rank &lt;= 13; rank++) {
+    deck[i].suit = suit;
+    deck[i].rank = rank;
+    i++;
+  }
+}</pre>
+  <p>I used the variable <c>i</c> to keep track of where in the deck the next
+            card should go.</p>
+  <p>Notice that we can compose the syntax for selecting an element from an
+            array (the <c>[]</c> operator) with the syntax for selecting an instance
+            variable from an object (the dot operator). The expression
+            <c>deck[i].suit</c> means <q>the suit of the ith card in the deck</q>.</p>
+  <p>This deck-building code is encapsulated in a function called
+            <c>buildDeck</c> that takes no parameters and that returns a
+            fully-populated vector of <c>Card</c>s.</p>
+  <exercise label="12_6">
+    <statement>
+      <p>Take a look at the active code below, which includes the implementation of
+            the <c>buildDeck</c> function.</p>
+    </statement>
+    <program xml:id="c12_6_editor" interactive="activecode" language="cpp">
+      <input><![CDATA[
+#include <iostream>
+#include <string>
+#include <vector>
+using namespace std;
+
+struct Card {
+    int suit, rank;
+
+    Card ();
+    Card (int s, int r);
+    void print () const;
+};
+
+vector<Card> buildDeck() {
+    vector<Card> deck (52);
+    int i = 0;
+    for (int suit = 0; suit <= 3; suit++) {
+        for (int rank = 1; rank <= 13; rank++) {
+            deck[i].suit = suit;
+            deck[i].rank = rank;
+            i++;
+        }
+    }
+    return deck;
+}
+
+int main() {
+    vector<Card> deck = buildDeck();
+    cout << "We just created our deck of 52 cards. We can access an individual card by indexing." << endl;
+    cout << "For example, the first card in the deck is: ";
+    deck[0].print();
+}
+
+        ]]></input>
+      <tests>
+
+Card::Card () {
+   suit = 0;  rank = 0;
+}
+
+Card::Card (int s, int r) {
+   suit = s;  rank = r;
+}
+
+void Card::print () const {
+   vector&lt;string&gt; suits (4);
+   suits[0] = "Clubs";
+   suits[1] = "Diamonds";
+   suits[2] = "Hearts";
+   suits[3] = "Spades";
+
+   vector&lt;string&gt; ranks (14);
+   ranks[1] = "Ace";
+   ranks[2] = "2";
+   ranks[3] = "3";
+   ranks[4] = "4";
+   ranks[5] = "5";
+   ranks[6] = "6";
+   ranks[7] = "7";
+   ranks[8] = "8";
+   ranks[9] = "9";
+   ranks[10] = "10";
+   ranks[11] = "Jack";
+   ranks[12] = "Queen";
+   ranks[13] = "King";
+
+   cout &lt;&lt; ranks[rank] &lt;&lt; " of " &lt;&lt; suits[suit] &lt;&lt; endl;
+}
+</tests>
+    </program>
+  </exercise>
+  <exercise label="vector_of_cards_1">
+    <statement>
+      <p>Take a look at the code below. What can we say about the deck that is created?</p>
+      <pre>vector&lt;Card&gt; createDeck() {
+   vector&lt;Card&gt; deck (16);
+   int i = 0;
+   for (int suit = 0; suit &lt;= 1; suit++) {
+      for (int rank = 4; rank &lt;= 11; rank++) {
+         deck[i].suit = suit;
+         deck[i].rank = rank;
+         i++;
+      }
+   }
+   return deck;
+}</pre>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>There are 16 cards in the deck.</p>
+        </statement>
+        <feedback>
+          <p>Correct! You can verify this by checking how many times the for loops execute.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>The deck is single-suited.</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! Look at the conditions of the outer for loop, you'll find that there are two suits in this deck.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>There are no face cards in the deck.</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! Look at the conditions of the inner for loop, you'll find that this deck contains face cards.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>The deck does not contain any Hearts.</p>
+        </statement>
+        <feedback>
+          <p>Correct! The two suits in this deck are Clubs and Diamonds.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>There are two Jacks in the deck.</p>
+        </statement>
+        <feedback>
+          <p>Correct! The deck contains the Jack of Clubs and the Jack of Diamonds.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="vector_of_cards_2">
+    <statement>
+      <p>If we actually created the deck in the previous question, what is printed after the following code runs? <var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <pre>deck[11].print();</pre>
+        <p>Type your answer exactly as it would appear in the terminal!</p>
+      </var>
+    </setup>
+  </exercise>
+</section>

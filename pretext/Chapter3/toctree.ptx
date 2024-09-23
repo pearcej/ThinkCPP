@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+        <title>Functions</title>
+        <xi:include href='./Floating-point.ptx' />
+        <xi:include href='./ConvertingFromDoubleToInt.ptx' />
+        <xi:include href='./MathFunctions.ptx' />
+        <xi:include href='./Composition.ptx' />
+        <xi:include href='./AddingNewFunctions.ptx' />
+        <xi:include href='./DefinitionsAndUses.ptx' />
+        <xi:include href='./ProgramsWithMultipleFunctions.ptx' />
+        <xi:include href='./ParametersAndArguments.ptx' />
+        <xi:include href='./ParametersAndVariablesAreLocal.ptx' />
+        <xi:include href='./FunctionsWithMultipleParameters.ptx' />
+        <xi:include href='./FunctionsWithResults.ptx' />
+        <xi:include href='./Glossary.ptx' />
+        <xi:include href='./Exercises.ptx' />
+        <xi:include href='./mixedUpCode.ptx' />
+        <xi:include href='./activeCode.ptx' />
+    </chapter>

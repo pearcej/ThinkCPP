@@ -1,0 +1,227 @@
+<?xml version="1.0"?>
+<section xml:id="chapter3_parameters-and-variables-are-local">
+  <title>Parameters and Variables are Local</title>
+  <p>Parameters and variables only exist inside their own functions. Within
+            the confines of <c>main</c>, there is no such thing as phil. If you try to use
+            it, the compiler will complain. Similarly, inside <c>printTwice</c> there is no
+            such thing as argument.</p>
+  <exercise label="locals_AC_1">
+    <statement>
+      <p>The following code will show the output of the printTwice function.
+            Notice that it is the argument &#x2018;b' that is outputted, not the
+            variable &#x2018;phil'.</p>
+    </statement>
+    <program xml:id="locals_AC_1_editor" interactive="activecode" language="cpp">
+      <input><![CDATA[
+#include <iostream>
+using namespace std;
+
+void printTwice (char phil) {
+    cout << phil << phil << endl;
+}
+
+int main () {
+    char argument = 'b';
+    printTwice (argument);
+    return 0;
+}
+        ]]></input>
+      <tests>
+
+
+</tests>
+    </program>
+  </exercise>
+  <p>Variables like this are said to be <term>local</term>. In order to keep track of
+            parameters and local variables, it is useful to draw a <term>stack
+                diagram</term>. Like state diagrams, stack diagrams show the value of each
+            variable, but the variables are contained in larger boxes that indicate
+            which function they belong to.</p>
+  <p>For example, the state diagram for <c>printTwice</c> looks like this:</p>
+  <figure align="center" xml:id="empty-195">
+    <image source="Chapter3/Images/3.9stackdiagram.png" width="50%" alt="image"/>
+  </figure>
+  <p>Whenever a function is called, it creates a new <term>instance</term> of that
+            function. Each instance of a function contains the parameters and local
+            variables for that function. In the diagram an instance of a function is
+            represented by a box with the name of the function on the outside and
+            the variables and parameters inside.</p>
+  <p>In the example, <c>main</c> has one local variable, argument, and no
+            parameters. <c>printTwice</c> has no local variables and one parameter, named
+            phil.</p>
+  <exercise label="locals_1">
+    <statement>
+      <p>How many local variables and parameters does <c>main</c> have?</p>
+      <pre>void printHelloName (string name) {
+  cout &lt;&lt; "Hello " &lt;&lt; name &lt;&lt; "!";
+}
+
+int main () {
+  string name1 = "Phil";
+  printHelloName(name1);
+  string name2 = "Joe";
+  printHelloName(name2);
+  return 0;
+}</pre>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>1 local variable, 1 parameter</p>
+        </statement>
+        <feedback>
+          <p>A parameter would be located within the parentheses next to the function's name.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>0 local variables, 1 parameter</p>
+        </statement>
+        <feedback>
+          <p>A parameter would be located within the parentheses next to the function's name.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>2 local variables, 0 parameters</p>
+        </statement>
+        <feedback>
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>2 local variables, 1 parameter</p>
+        </statement>
+        <feedback>
+          <p>A parameter would be located within the parentheses next to the function's name.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="locals_2">
+    <statement>
+      <p>How many local variables and parameters does <c>printHelloName</c> have?</p>
+      <pre>void printHelloName (string name) {
+  cout &lt;&lt; "Hello " &lt;&lt; name &lt;&lt; "!";
+}
+
+int main () {
+  string name1 = "Phil";
+  printHelloName(name1);
+  string name2 = "Joe";
+  printHelloName(name2);
+  return 0;
+}</pre>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>1 local variable, 1 parameter</p>
+        </statement>
+        <feedback>
+          <p>A local variable exists when a variable is declared within a function.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>0 local variables, 1 parameter</p>
+        </statement>
+        <feedback>
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>2 local variables, 0 parameters</p>
+        </statement>
+        <feedback>
+          <p>A local variable exists when a variable is declared within a function.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>2 local variables, 1 parameter</p>
+        </statement>
+        <feedback>
+          <p>A local variable exists when a variable is declared within a function.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="locals_3">
+    <statement>
+      <p>Whenever we make a function call, we create a(n) <var/> of that function,
+which contains the parameters and local variables for that function. </p>
+    </statement>
+    <setup>
+      <var case="insensitive">
+        <condition string="^\s*instance\s*$">
+          <feedback>
+            <p>You could create many instances of one function, each with their own parameters and local variables if you wanted!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Try again!</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="locals_4">
+    <statement>
+      <p>How many calls to <c>hi</c> are made during the exectuion of the entire program?</p>
+      <pre>void hi() {
+  cout &lt;&lt; "hiii !"&lt;&lt;endl;
+}
+
+void printGreeting(){
+  hi();
+  cout&lt;&lt;"how are you doing today. "&lt;&lt;endl;
+  hi();
+}
+
+int main () {
+  hi();
+  printGreeting();
+  hi();
+  return 0;
+}</pre>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>1 call</p>
+        </statement>
+        <feedback>
+          <p>hi( ) is called from multiple functions.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>4 calls</p>
+        </statement>
+        <feedback>
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>2 calls</p>
+        </statement>
+        <feedback>
+          <p>hi( ) is called from multiple functions.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>3 calls</p>
+        </statement>
+        <feedback>
+          <p>Two calls from one function are indeed two seperate calls.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

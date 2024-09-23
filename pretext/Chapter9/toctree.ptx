@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+        <title>More structures</title>
+        <xi:include href='./time.ptx' />
+        <xi:include href='./printTime.ptx' />
+        <xi:include href='./functions_for_objects.ptx' />
+        <xi:include href='./pure_functions.ptx' />
+        <xi:include href='./const_parameters.ptx' />
+        <xi:include href='./modifiers.ptx' />
+        <xi:include href='./fillin_functions.ptx' />
+        <xi:include href='./which_is_best.ptx' />
+        <xi:include href='./incremental_development.ptx' />
+        <xi:include href='./generalization.ptx' />
+        <xi:include href='./algorithms.ptx' />
+        <xi:include href='./glossary.ptx' />
+        <xi:include href='./Exercises.ptx' />
+        <xi:include href='./mixed_up_code.ptx' />
+        <xi:include href='./coding_practice.ptx' />
+    </chapter>

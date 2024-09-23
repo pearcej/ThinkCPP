@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<section xml:id="chapter14_output">
+  <title>Output</title>
+  <p>As usual when we define a new class, we want to be able to output
+            objects in a human-readable form. For <c>Complex</c> objects, we could use
+            two functions:</p>
+  <pre>void Complex::printCartesian ()
+{
+  cout &lt;&lt; getReal() &lt;&lt; " + " &lt;&lt; getImag() &lt;&lt; "i" &lt;&lt; endl;
+}
+
+void Complex::printPolar ()
+{
+  cout &lt;&lt; getMag() &lt;&lt; " e^ " &lt;&lt; getTheta() &lt;&lt; "i" &lt;&lt; endl;
+}</pre>
+  <p>The nice thing here is that we can output any <c>Complex</c> object in
+            either format without having to worry about the representation. Since
+            the output functions use the accessor functions, the program will
+            compute automatically any values that are needed.</p>
+  <p>The following code creates a <c>Complex</c> object using the second
+            constructor. Initially, it is in Cartesian format only. When we invoke
+            <c>printCartesian</c> it accesses <c>real</c> and <c>imag</c> without having to
+            do any conversions.</p>
+  <pre>Complex c1 (2.0, 3.0);
+
+c1.printCartesian();
+c1.printPolar();</pre>
+  <p>When we invoke <c>printPolar</c>, and <c>printPolar</c> invokes <c>getMag</c>,
+            the program is forced to convert to polar coordinates and store the
+            results in the instance variables. The good news is that we only have to
+            do the conversion once. When <c>printPolar</c> invokes <c>getTheta</c>, it
+            will see that the polar coordinates are valid and return <c>theta</c>
+            immediately.</p>
+  <p>The output of this code is:</p>
+  <pre>2 + 3i
+3.60555 e^ 0.982794i</pre>
+  <exercise label="fourteensix">
+    <statement>
+      <p>The active code below uses the print functions for <c>Complex</c> objects.
+            Feel free to modify the code and experiment around!</p>
+    </statement>
+    <program xml:id="fourteensix_editor" interactive="activecode" language="cpp">
+      <input><![CDATA[
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+class Complex
+{
+  double real, imag;
+  double mag, theta;
+  bool cartesian, polar;
+
+public:
+  Complex ();
+  Complex (double r, double i);
+  void calculateCartesian ();
+  double getReal ();
+  double getImag ();
+  void calculatePolar ();
+  double getMag ();
+  double getTheta ();
+  void printCartesian ();
+  void printPolar ();
+};
+
+int main() {
+  Complex c1 (2.0, 3.0);
+  c1.printCartesian();
+  c1.printPolar();
+}
+        ]]></input>
+      <tests>
+Complex::Complex () { cartesian = false;  polar = false; }
+
+Complex::Complex (double r, double i) {
+  real = r;  imag = i;
+  cartesian = true;  polar = false;
+}
+
+void Complex::calculateCartesian () {
+  real = mag * cos (theta);
+  imag = mag * sin (theta);
+  cartesian = true;
+}
+
+double Complex::getReal () {
+  if (cartesian == false) calculateCartesian ();
+  return real;
+}
+
+double Complex::getImag () {
+  if (cartesian == false) calculateCartesian ();
+  return imag;
+}
+
+void Complex::calculatePolar () {
+  mag = sqrt(pow(real, 2) + pow(imag, 2));
+  theta = atan(imag / real);
+  polar = true;
+}
+
+double Complex::getMag () {
+  if (polar == false) {
+    calculatePolar ();
+  }
+  return mag;
+}
+
+double Complex::getTheta () {
+  if (polar == false) {
+    calculatePolar ();
+  }
+  return theta;
+}
+
+void Complex::printCartesian () {
+  cout &lt;&lt; getReal() &lt;&lt; " + " &lt;&lt; getImag() &lt;&lt; "i" &lt;&lt; endl;
+}
+
+void Complex::printPolar () {
+  cout &lt;&lt; getMag() &lt;&lt; " e^ " &lt;&lt; getTheta() &lt;&lt; "i" &lt;&lt; endl;
+}
+</tests>
+    </program>
+  </exercise>
+  <exercise label="question14_5_1">
+    <statement>
+      <p>What is the correct output of the code below?</p>
+      <program language="cpp">
+        <input>
+int main() {
+  Complex c1 (3.0, 4.0);
+  // c1.printCartesian();
+  c1.printPolar();
+}
+</input>
+      </program>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>5 e^ 0.927295i</p>
+        </statement>
+        <feedback>
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>3 + 4i</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! Try using the active code above.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>2 + 3i</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! Try using the active code above.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>5 e^ 1</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! Try using the active code above.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

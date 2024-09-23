@@ -1,0 +1,259 @@
+<?xml version="1.0"?>
+<section xml:id="chapter4_infinite-recursion">
+  <title>Infinite Recursion</title>
+  <p>In the examples in the previous section, notice that each time the
+            functions get called recursively, the argument gets smaller by one, so
+            eventually it gets to zero. When the argument is zero, the function
+            returns immediately, <em>without making any recursive calls</em>. This
+            case&#x2014;when the function completes without making a recursive call&#x2014;is
+            called the <term>base case</term>.</p>
+  <p>If a recursion never reaches a base case, it will go on making recursive
+            calls forever and the program will never terminate. This is known as
+            <term>infinite recursion</term>, and it is generally not considered a good idea.</p>
+  <p>In most programming environments, a program with an infinite recursion
+            will not really run forever. Eventually, something will break and the
+            program will report an error.</p>
+  <warning>
+    <p>Infinite recursion is the first example we have seen of a run-time
+                error (an error that does not appear until you run the program).</p>
+  </warning>
+  <p>You should write a small program that recurses forever and run it to see
+            what happens. Below is an example. The function adds to the number <term>n</term>
+            instead of subtracting, which means it is always larger than 0. Therefore,
+            the function executes <q>forever.</q> Unfortunately, if there was a snip of live
+            code put in below, the ebook's page would extend down forever because a new
+            line is being created infinitely.</p>
+  <pre>#include &lt;iostream&gt;
+#include &lt;cmath&gt;
+using namespace std;
+
+void nLines(int n) {
+  if (n &gt; 0) {
+    cout &lt;&lt; endl;
+    nLines(n + 1);
+  }
+}
+
+int main() {
+  void nLines(10);
+}</pre>
+  <exercise label="unbounded_recursion_1">
+    <statement>
+      <p>If a recursive function never reaches its <var/> <var/>, then the function
+will continue executing indefinitely.  This is called <var/> <var/>. </p>
+    </statement>
+    <setup>
+      <var case="insensitive">
+        <condition string="^\s*base\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Try again!</p>
+          </feedback>
+        </condition>
+      </var>
+      <var case="insensitive">
+        <condition string="^\s*base\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Try again!</p>
+          </feedback>
+        </condition>
+      </var>
+      <var case="insensitive">
+        <condition string="^\s*infinite\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Try again!</p>
+          </feedback>
+        </condition>
+      </var>
+      <var case="insensitive">
+        <condition string="^\s*recursion\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Try again!</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="unbounded_recursion_2">
+    <statement>
+      <p>Take a look at the code below.  What will happen if you were to run it on
+            your machine?</p>
+      <pre>#include &lt;iostream&gt;
+using namespace std;
+
+void isNegative(int n) {
+  if (n &gt;= 0) {
+    cout &lt;&lt; "Not Negative!";
+    isNegative(n - 1);
+  }
+  cout &lt;&lt; "Negative!";
+}
+
+int main() {
+  isNegative(-10);
+}</pre>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>The function will print "Not Negative!"</p>
+        </statement>
+        <feedback>
+          <p>The function will never print "Not Negative!" since we start with a negative number!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>The function will print "Not Negative!" more than once.  Then it will print "Negative!" and will stop executing.</p>
+        </statement>
+        <feedback>
+          <p>The function will never print "Not Negative!" since we start with a negative number!</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>The function will print "Negative!"</p>
+        </statement>
+        <feedback>
+          <p>We start with a negative number, so the function will reach the base case.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>The function will never stop executing, there will be infinite recursion.</p>
+        </statement>
+        <feedback>
+          <p>We start with a negative number, so the function will reach the base case.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="unbounded_recursion_3">
+    <statement>
+      <p><c>isNegative</c> is defined exactly as it was above, but we have changed the
+            call to it in <c>main</c>.
+            What will happen if we run the code with this input?</p>
+      <pre>#include &lt;iostream&gt;
+using namespace std;
+
+void isNegative(int n) {
+  if (n &gt;= 0) {
+    cout &lt;&lt; "Not Negative!";
+    isNegative(n - 1);
+  }
+  cout &lt;&lt; "Negative!";
+}
+
+int main() {
+  isNegative(10);
+}</pre>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>The function will print "Not Negative!"</p>
+        </statement>
+        <feedback>
+          <p>The function will print "Not Negative!", but it won't stop there!</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>The function will print "Not Negative!" more than once.  Then it will print "Negative!" and will stop executing.</p>
+        </statement>
+        <feedback>
+          <p>The function will print "Not Negative!" until it reaches a negative number.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>The function will print "Negative!"</p>
+        </statement>
+        <feedback>
+          <p>The function will eventually print "Not Negative!", but that's not all!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>The function will never stop executing, there will be infinite recursion.</p>
+        </statement>
+        <feedback>
+          <p>Since we decrement each time, the base case will be reached.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="unbounded_recursion_4">
+    <statement>
+      <p>The <c>isNegative</c> function has been <term>edited</term> as shown below.  What will
+            happen now when we run the code?</p>
+      <pre>#include &lt;iostream&gt;
+using namespace std;
+
+void isNegative(int n) {
+  if (n &gt;= 0) {
+    cout &lt;&lt; "Not Negative!";
+    isNegative(n + 1);
+  }
+  cout &lt;&lt; "Negative!";
+}
+
+int main() {
+  isNegative(10);
+}</pre>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>The function will print "Not Negative!"</p>
+        </statement>
+        <feedback>
+          <p>The function will print "Not Negative!" but it won't stop there!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>The function will print "Not Negative!" more than once.  Then it will print "Negative!" and will stop executing.</p>
+        </statement>
+        <feedback>
+          <p>The function will print "Not Negative!" more than once.  But will it print "Negative"?</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>The function will print "Negative!"</p>
+        </statement>
+        <feedback>
+          <p>We start with a positive number, so the function simply won't print "Not Negative!"</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>The function will never stop executing, there will be infinite recursion.</p>
+        </statement>
+        <feedback>
+          <p>Our input is incremented with every recursive call, so if we start with a positive number, we will never reach the base case.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

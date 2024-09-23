@@ -1,0 +1,217 @@
+<?xml version="1.0"?>
+<section xml:id="chapter11_print">
+  <title>
+    <c>print</c>
+  </title>
+  <p>In <number_reference internal="True" refuri="../Chapter9/time#time" title="Section %s"><inline classes="std std-numref">Section 9.1</inline></number_reference> we defined a structure named <c>Time</c> and
+            wrote a function named <c>printTime</c></p>
+  <pre>struct Time {
+  int hour, minute;
+  double second;
+};
+
+void printTime (const Time&amp; time) {
+  cout &lt;&lt; time.hour &lt;&lt; ":" &lt;&lt; time.minute &lt;&lt; ":" &lt;&lt; time.second &lt;&lt; endl;
+}</pre>
+  <p>To call this function, we had to pass a <c>Time</c> object as a parameter.</p>
+  <pre>Time currentTime = { 9, 14, 30.0 };
+printTime (currentTime);</pre>
+  <p>To make <c>printTime</c> into a member function, the first step is to
+            change the name of the function from <c>printTime</c> to <c>Time::print</c>.
+            The <c>::</c> operator separates the name of the structure from the name of
+            the function; together they indicate that this is a function named
+            <c>print</c> that can be invoked on a <c>Time</c> structure.</p>
+  <p>The next step is to eliminate the parameter. Instead of passing an
+            object as an argument, we are going to invoke the function on an object.</p>
+  <p>As a result, inside the function, we no longer have a parameter named
+            <c>time</c>. Instead, we have a <term>current object</term>, which is the object the
+            function is invoked on. We can refer to the current object using the C++
+            keyword <c>this</c>.</p>
+  <p>One thing that makes life a little difficult is that <c>this</c> is
+            actually a pointer to a structure, rather than a structure itself. A
+            <term>pointer</term> is similar to a reference, but I don't want to go into the
+            details of using pointers yet. The only pointer operation we need for
+            now is the <c>*</c> operator, which converts a structure pointer into a
+            structure. In the following function, we use it to assign the value of
+            <c>this</c> to a local variable named <c>time</c>.</p>
+  <pre>void Time::print () {
+  Time time = *this;
+  cout &lt;&lt; time.hour &lt;&lt; ":" &lt;&lt; time.minute &lt;&lt; ":" &lt;&lt; time.second &lt;&lt; endl;
+}</pre>
+  <p>The first two lines of this function changed quite a bit as we
+            transformed it into a member function, but notice that the output
+            statement itself did not change at all.</p>
+  <p>In order to invoke the new version of <c>print</c>, we have to invoke it on
+            a <c>Time</c> object:</p>
+  <pre>Time currentTime = { 9, 14, 30.0 };
+currentTime.print ();</pre>
+  <p>The last step of the transformation process is that we have to declare
+            the new function inside the structure definition:</p>
+  <pre>struct Time {
+  int hour, minute;
+  double second;
+
+  void print ();
+};</pre>
+  <note>
+    <p>You should only use the scope resolution operator <c>::</c> if you define a
+                member function outside of its structure definition.  If you define a function
+                <em>inside</em> of the structure definition, you define it as you would any other
+                function.</p>
+  </note>
+  <p>A <term>function declaration</term> looks just like the first line of the
+            function definition, except that it has a semi-colon at the end. The
+            declaration describes the <term>interface</term> of the function; that is, the
+            number and types of the arguments, and the type of the return value.</p>
+  <p>When you declare a function, you are making a promise to the compiler
+            that you will, at some point later on in the program, provide a
+            definition for the function. This definition is sometimes called the
+            <term>implementation</term> of the function, since it contains the details of how
+            the function works. If you omit the definition, or provide a definition
+            that has an interface different from what you promised, the compiler
+            will complain.</p>
+  <exercise label="print_AC_1">
+    <statement>
+      <p>Feel free to mess around with input for <c>currentTime</c> in the active code below!</p>
+    </statement>
+    <program xml:id="print_AC_1_editor" interactive="activecode" language="cpp">
+      <input><![CDATA[
+#include <iostream>
+using namespace std;
+
+struct Time {
+    int hour, minute;
+    double second;
+
+    void print ();
+};
+
+int main() {
+    Time currentTime = { 9, 14, 30.0 };
+    currentTime.print ();
+}
+
+        ]]></input>
+      <tests>
+void Time::print () {
+  cout &lt;&lt; hour &lt;&lt; ":" &lt;&lt; minute &lt;&lt; ":" &lt;&lt; second &lt;&lt; endl;
+}
+</tests>
+    </program>
+  </exercise>
+  <exercise label="print_1">
+    <statement>
+      <p>What keyword do we use to refer to the current object? <var/> </p>
+    </statement>
+    <setup>
+      <var case="insensitive">
+        <condition string="^\s*this\s*$">
+          <feedback>
+            <p>Correct! But be careful: this is actually a pointer to the current object!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Incorrect!</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="print_2">
+    <statement>
+      <p>We have a free-standing function called <term>dog_bark</term> which takes a <term>Dog</term> object as a parameter.  What step(s) do we need to take to convert <c>dog_bark(const Dog&amp; dog)</c> to a member function of the <c>Dog</c> class?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>Change the name of the function to Dog::bark</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! You don't need to rename the function unless you define it outside of the structure definition.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Remove the Dog parameter</p>
+        </statement>
+        <feedback>
+          <p>Correct! We no longer need to pass a Dog as an argument, since we are going to be invoking the function on a Dog object.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Operate on the current Dog object by using *this</p>
+        </statement>
+        <feedback>
+          <p>Correct! To get the current object, we need to dereference the this pointer using *.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Declare the function inside of the Dog structure definition</p>
+        </statement>
+        <feedback>
+          <p>Correct! Member functions are declared inside of structure definitions.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="print_3" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
+      <p>Create the <c>Dog</c> object with member functions <c>bark</c> and <c>is_teacup_dog</c> (if the weight of the dog is less than 4 pounds)  Write the functions
+            in the same order they appear inside the structure.</p>
+    </statement>
+    <blocks>
+      <block order="2">
+        <cline>struct Dog {</cline>
+      </block>
+      <block order="5">
+        <cline> int age, weight;</cline>
+        <cline> string breed;</cline>
+      </block>
+      <block order="3">
+        <cline> void bark();</cline>
+        <cline> bool is_teacup_dog();</cline>
+      </block>
+      <block order="9">
+        <choice correct="yes">
+          <cline>};</cline>
+        </choice>
+        <choice>
+          <cline>}                         </cline>
+        </choice>
+      </block>
+      <block order="6">
+        <choice correct="yes">
+          <cline>void Dog::bark() {</cline>
+        </choice>
+        <choice>
+          <cline>void bark() {                         </cline>
+        </choice>
+      </block>
+      <block order="1">
+        <cline><![CDATA[ cout << "RUFF!" << endl;]]></cline>
+        <cline>}</cline>
+      </block>
+      <block order="12">
+        <choice correct="yes">
+          <cline>bool Dog::is_teacup_dog() {</cline>
+        </choice>
+        <choice>
+          <cline>bool is_teacup_dog() {                          </cline>
+        </choice>
+      </block>
+      <block order="10" correct="no">
+        <cline> Dog dog = *this;                          </cline>
+      </block>
+      <block order="7">
+        <cline> if (weight &lt; 4) {</cline>
+        <cline>   return true;</cline>
+        <cline> }</cline>
+        <cline> return false;</cline>
+        <cline>}</cline>
+      </block>
+    </blocks>
+  </exercise>
+</section>

@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<section xml:id="chapter10_vector-size">
+  <title>Vector size</title>
+  <p>There are a few functions you can invoke on an <c>vector</c>. One of them
+            is very useful, though: <c>size</c>. Not surprisingly, it returns the
+            size of the vector (the number of elements).</p>
+  <p>It is a good idea to use this value as the upper bound of a loop, rather
+            than a constant. That way, if the size of the vector changes, you won't
+            have to go through the program changing all the loops; they will work
+            correctly for any size vector.</p>
+  <pre>int i;
+for (i = 0; i &lt; count.size(); i++) {
+  cout &lt;&lt; count[i] &lt;&lt; endl;
+}</pre>
+  <note>
+    <p>On some machines, comparing an <c>int</c> to the output from <c>size</c> will generate
+                a type error.  This is because the size function returns an unsigned integer type.
+                To keep the variable type consistent, you should use <c>size_t</c> rather than <c>int</c>
+                for the type of iterator <c>i</c>.</p>
+  </note>
+  <p>The last time the body of the loop gets executed, the value of <c>i</c> is
+            <c>count.size() - 1</c>, which is the index of the last element. When <c>i</c>
+            is equal to <c>count.size()</c>, the condition fails and the body is not
+            executed, which is a good thing, since it would cause a run-time error.
+            One thing that we should notice here is that the size() function is
+            called every time the loop is executed. Calling a function again and
+            again reduces execution speed, so it would be better to store the size
+            in some variable by calling the <c>size</c> function before the loop
+            begins, and use this variable to check for the last element.</p>
+  <exercise label="vector_size_AC_1">
+    <statement>
+      <p>Try running the active code below!</p>
+    </statement>
+    <program xml:id="vector_size_AC_1_editor" interactive="activecode" language="cpp">
+      <input><![CDATA[
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    vector<int> count = {1,2,3,4};
+    size_t i;
+    for (i = 0; i < count.size(); i++) {
+        cout << count[i] << endl;
+    }
+}
+        ]]></input>
+      <tests>
+
+
+</tests>
+    </program>
+  </exercise>
+  <exercise label="vector_size_1">
+    <statement>
+      <p>Let <term>nums</term> be the vector { 0, 1, 2, 3, 4 }. What is the variable type <em>of</em> <c>nums.size()</c>? <var/>  </p>
+    </statement>
+    <setup>
+      <var case="insensitive">
+        <condition string="^\s*size_t\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*int\s*$">
+          <feedback>
+            <p>Incorrect! Remember, the size function returns an unsigned integer type.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Incorrect, Try again!</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="vector_size_2">
+    <statement>
+      <p>Let <term>nums</term> be the vector { 0, 1, 2, 3, 4 }. What is the value <em>of</em> <c>nums.size()</c>? <var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <condition number="[5, 5]">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Incorrect, Try again!</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="vector_size_3">
+    <statement>
+      <p>Let <term>nums</term> be the vector { 0, 1, 2, 3, 4 }. What is the value <em>at</em> <c>nums[nums.size()]</c>?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>5</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! This is what gets returned by nums.size()</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>4</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! This is the element before nums[nums.size()]</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>3</p>
+        </statement>
+        <feedback>
+          <p>Incorrect!</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>none of the above due to runtime error</p>
+        </statement>
+        <feedback>
+          <p>Correct! This would be indexing out of bounds and would cause a runtime error.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

@@ -1,0 +1,177 @@
+<?xml version="1.0"?>
+<section xml:id="chapter8_call-by-value">
+  <title>Call by value</title>
+  <p>When you pass a structure as an argument, remember that the argument and
+            the parameter are not the same variable. Instead, there are two
+            variables (one in the caller and one in the callee) that have the same
+            value, at least initially. For example, when we call <c>printPoint</c>, the stack diagram looks like this:</p>
+  <figure align="center" xml:id="empty-298">
+    <image source="Chapter8/Images/8.6stackdiagram.png" width="50%" alt="image"/>
+  </figure>
+  <p>If <c>printPoint</c> happened to change one of the instance variables of
+            <c>p</c>, it would have no effect on <c>blank</c>. Of course, there is no
+            reason for <c>printPoint</c> to modify its parameter, so this isolation
+            between the two functions is appropriate.</p>
+  <p>This kind of parameter-passing is called <q>pass by value</q> because it is
+            the value of the structure (or other type) that gets passed to the
+            function.</p>
+  <exercise label="call_by_value_AC_1">
+    <statement>
+      <p>Take a look at the active code below. Notice from the output of the code below how the
+            function <c>addTwo</c> changes the instance variables, but not on <c>blank</c> itself.</p>
+    </statement>
+    <program xml:id="call_by_value_AC_1_editor" interactive="activecode" language="cpp">
+      <input><![CDATA[
+#include <iostream>
+using namespace std;
+
+struct Point {
+    double x, y;
+};
+
+void addTwo (Point p) {
+    cout << "(" << p.x + 2 << ", " << p.y + 2 << ")" << endl;
+}
+
+int main() {
+    Point blank = { 3.0, 4.0 };
+    addTwo (blank);
+    cout << "(" << blank.x << ", " << blank.y << ")" << endl;
+}
+        ]]></input>
+      <tests>
+
+
+</tests>
+    </program>
+  </exercise>
+  <exercise label="call_by_value_1">
+    <statement>
+      <p>What will print?</p>
+      <program language="cpp">
+        <input><![CDATA[
+int addTwo(int x) {
+  cout << x << " ";
+  x = x + 2;
+  cout << x << " ";
+  return x;
+}
+
+int main() {
+  int num = 2;
+  addTwo(num);
+  cout << num << endl;
+}
+]]></input>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement id="call_by_value_1_opt_a">
+          <p>
+            <c>2 4</c>
+          </p>
+        </statement>
+        <feedback id="call_by_value_1_opt_a">
+          <p>Take a look at exactly what is being outputted.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="call_by_value_1_opt_b">
+          <p>
+            <c>2 4 2</c>
+          </p>
+        </statement>
+        <feedback id="call_by_value_1_opt_b">
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="call_by_value_1_opt_c">
+          <p>
+            <c>4 4 2</c>
+          </p>
+        </statement>
+        <feedback id="call_by_value_1_opt_c">
+          <p>Take a look at exactly what is being outputted.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="call_by_value_1_opt_d">
+          <p>
+            <c>2 4 4</c>
+          </p>
+        </statement>
+        <feedback id="call_by_value_1_opt_d">
+          <p>Remember the rules of pass by value.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="call_by_value_2">
+    <statement>
+      <p>What will print?</p>
+      <program language="cpp">
+        <input><![CDATA[
+struct Point {
+  int x, y;
+};
+
+void timesTwo (Point p) {
+  p.x = p.x * 2;
+  p.y = p.y * 2;
+  cout << "(" << p.x << ", " << p.y << ")";
+}
+
+int main() {
+  Point blank = { 3, 4 };
+  timesTwo (blank);
+  cout << ", " << blank.x << endl;
+}
+]]></input>
+      </program>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement id="call_by_value_2_opt_a">
+          <p>
+            <c>(6, 8), 3</c>
+          </p>
+        </statement>
+        <feedback id="call_by_value_2_opt_a">
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="call_by_value_2_opt_b">
+          <p>
+            <c>(6, 8), 6</c>
+          </p>
+        </statement>
+        <feedback id="call_by_value_2_opt_b">
+          <p>Remember the rules of pass by value.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="call_by_value_2_opt_c">
+          <p>
+            <c>(68),3</c>
+          </p>
+        </statement>
+        <feedback id="call_by_value_2_opt_c">
+          <p>Take a look at exactly what is being outputted.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="call_by_value_2_opt_d">
+          <p>
+            <c>68, 6</c>
+          </p>
+        </statement>
+        <feedback id="call_by_value_2_opt_d">
+          <p>Take a look at exactly what is being outputted.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

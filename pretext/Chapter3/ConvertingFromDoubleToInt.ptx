@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<section xml:id="chapter3_converting-from-double-to-int">
+  <title>Converting from <c>double</c> to <c>int</c></title>
+  <p>As I mentioned, C++ converts <c>int</c> s to <c>double</c> s automatically if necessary,
+            because no information is lost in the translation. On the other hand,
+            going from a <c>double</c> to an <c>int</c> requires rounding off. C++ doesn't perform
+            this operation automatically, in order to make sure that you, as the
+            programmer, are aware of the loss of the fractional part of the number.</p>
+  <p>The simplest way to convert a floating-point value to an integer is to
+            use a <term>typecast</term>. Typecasting is so called because it allows you to
+            take a value that belongs to one type and <q>cast</q> it into another type
+            (in the sense of molding or reforming, not throwing).</p>
+  <p>The syntax for typecasting is like the syntax for a function call. For
+            example:</p>
+  <pre>double pi = 3.14159;
+int x = int (pi);</pre>
+  <p>The int function returns an integer, so x gets the value 3. Converting
+            to an integer always rounds down, even if the fraction part is
+            0.99999999.</p>
+  <p>For every type in C++, there is a corresponding function that typecasts
+            its argument to the appropriate type.</p>
+  <exercise label="double_to_int_1">
+    <statement>
+      <p>In the lab, we measured a temperature of 7.99999999 degrees C, using
+            an extremely precise measuring device.  Now we are writing a program
+            to perform some calculations with our data.  Consider the following C++
+            code.</p>
+      <pre>int main () {
+  double temp = 7.99999999;
+  int roundedTemp = int (temp);
+  cout &lt;&lt; roundedTemp;
+}</pre>
+      <p>What is the value of roundedTemp?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>temp</p>
+        </statement>
+        <feedback>
+          <p>This is the name of a variable. Only the value of a variable will print with cout.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>8</p>
+        </statement>
+        <feedback>
+          <p>Remember that converting to an integer always rounds down.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>7</p>
+        </statement>
+        <feedback>
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>8.0</p>
+        </statement>
+        <feedback>
+          <p>This is not an integer data type, and it's not the right number.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>7.0</p>
+        </statement>
+        <feedback>
+          <p>This is not an integer data type.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="double_to_int_2">
+    <statement>
+      <p>Your final grade consists of your average performance on exam 1 and exam 2.
+            Your professor is using C++ to grade the exams and allows you to choose which
+            method you'd like your exam to be graded.</p>
+      <pre>double exam1 = 88.8;
+double exam2 = 72.7;
+double exam3 = 97.9;</pre>
+      <p>
+        <term>Method 1:</term>
+      </p>
+      <pre>double final = (int(exam1) + int(exam2) + int(exam3)) / 3;</pre>
+      <p>
+        <term>Method 2:</term>
+      </p>
+      <pre>int final = int((exam1 + exam2 + exam3) / 3);</pre>
+      <p>Which method would <term>you</term> choose and why?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement id="double_to_int_2_opt_a">
+          <p><term>Method 1:</term><c>final</c> is a <c>double</c>, meaning my final grade will
+            have more digits past the decimal, and will be higher than the <c>int</c>
+            in Method 2.</p>
+        </statement>
+        <feedback id="double_to_int_2_opt_a">
+          <p>Although <c>final</c> is a <c>double</c>, it doesn't have any digits past
+            the decimal due to the integer division.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="double_to_int_2_opt_b">
+          <p><term>Method 1:</term> the rounding happens at the beginning, so all three of my
+            test scores will be rounded to the nearest <c>int</c>, which in my case, will
+            round all of them up.</p>
+        </statement>
+        <feedback id="double_to_int_2_opt_b">
+          <p>Converting to an <c>int</c> always rounds <em>down</em>, even if your <c>double</c> is very
+            close to the next integer.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="double_to_int_2_opt_c">
+          <p><term>Method 2:</term><c>final</c> is an <c>int</c>, so it gets rounded up.</p>
+        </statement>
+        <feedback id="double_to_int_2_opt_c">
+          <p>Converting to an <c>int</c> always rounds <em>down</em>, even if your <c>double</c> is very
+            close to the next integer.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="double_to_int_2_opt_d">
+          <p><term>Method 2:</term> the rounding happens at the very end, so my grade will be higher!</p>
+        </statement>
+        <feedback id="double_to_int_2_opt_d">
+          <p>Always save your rounding until the end!</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

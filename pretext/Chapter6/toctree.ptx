@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+        <title>Iteration</title>
+        <xi:include href='./multiple_assignment.ptx' />
+        <xi:include href='./iteration.ptx' />
+        <xi:include href='./the_while_statement.ptx' />
+        <xi:include href='./tables.ptx' />
+        <xi:include href='./two_dimensional_tables.ptx' />
+        <xi:include href='./encapsulation_generalization.ptx' />
+        <xi:include href='./functions.ptx' />
+        <xi:include href='./more_encapsulation.ptx' />
+        <xi:include href='./local_variables.ptx' />
+        <xi:include href='./more_generalization.ptx' />
+        <xi:include href='./glossary.ptx' />
+        <xi:include href='./Exercises.ptx' />
+        <xi:include href='./mixed_up_code.ptx' />
+        <xi:include href='./coding_practice.ptx' />
+    </chapter>

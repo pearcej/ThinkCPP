@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+<section xml:id="chapter1_glossary">
+  <title>Chapter Glossary</title>
+  <dl>
+    <li>
+      <title>problem-solving:</title>
+      <p>The process of formulating a problem, finding a solution, and
+        expressing the solution.</p>
+    </li>
+    <li>
+      <title>high-level language:</title>
+      <p>A programming language like C++ that is designed to be easy for
+        humans to read and write.</p>
+    </li>
+    <li>
+      <title>low-level language:</title>
+      <p>A programming language that is designed to be easy for a computer to execute. Also called <q>machine
+        language</q> or <q>assembly language.</q></p>
+    </li>
+    <li>
+      <title>portability:</title>
+      <p>A property of a program that can run on more than one kind of
+        computer.</p>
+    </li>
+    <li>
+      <title>formal language:</title>
+      <p>Any of the languages people have designed for specific purposes,
+        like representing mathematical ideas or computer programs. All
+        programming languages are formal languages.</p>
+    </li>
+    <li>
+      <title>natural language:</title>
+      <p>Any of the languages people speak that have evolved naturally.</p>
+    </li>
+    <li>
+      <title>interpret:</title>
+      <p>To execute a program in a high-level language by translating it one
+        line at a time.</p>
+    </li>
+    <li>
+      <title>compile:</title>
+      <p>To translate a program in a high-level language into a low-level
+        language, all at once, in preparation for later execution.</p>
+    </li>
+    <li>
+      <title>source code:</title>
+      <p>A program in a high-level language, before being compiled.</p>
+    </li>
+    <li>
+      <title>object code:</title>
+      <p>The output of the compiler, after translating the program.</p>
+    </li>
+    <li>
+      <title>executable:</title>
+      <p>Another name for object code that is ready to be executed.</p>
+    </li>
+    <li>
+      <title>algorithm:</title>
+      <p>A general process for solving a category of problems.</p>
+    </li>
+    <li>
+      <title>bug:</title>
+      <p>An error in a program.</p>
+    </li>
+    <li>
+      <title>syntax:</title>
+      <p>The structure of a program.</p>
+    </li>
+    <li>
+      <title>semantics:</title>
+      <p>The meaning of a program.</p>
+    </li>
+    <li>
+      <title>parse:</title>
+      <p>To examine a program and analyze the syntactic structure.</p>
+    </li>
+    <li>
+      <title>syntax error:</title>
+      <p>An error in a program that makes it impossible to parse (and
+        therefore impossible to compile).</p>
+    </li>
+    <li>
+      <title>run-time error:</title>
+      <p>An error in a program that makes it fail at run-time.</p>
+    </li>
+    <li>
+      <title>logical error:</title>
+      <p>An error in a program that makes it do something other than what the
+        programmer intended.</p>
+    </li>
+    <li>
+      <title>debugging:</title>
+      <p>The process of finding and removing any of the three kinds of errors.</p>
+    </li>
+  </dl>
+  <exercise label="chapter_one_glossary_1">
+    <statement>
+      <p>Match each phrase with the corresponding definition by dragging the phrase into the
+        appropriate box.</p>
+    </statement>
+    <feedback>
+      <p>Try again!</p>
+    </feedback>
+    <matches>
+      <match order="1">
+        <premise>natural language</premise>
+        <response>Any of the languages people speak that have evolved naturally.</response>
+      </match>
+      <match order="2">
+        <premise>high-level language</premise>
+        <response>A programming language like C++ that is easy for humans to read and write.</response>
+      </match>
+      <match order="3">
+        <premise>low-level language</premise>
+        <response>A programming language that is easy for a computer to execute.</response>
+      </match>
+      <match order="4">
+        <premise>formal language</premise>
+        <response>Any of the languages people have designed for specific purposes.</response>
+      </match>
+    </matches>
+  </exercise>
+  <exercise label="chapter_one_glossary_2">
+    <statement>
+      <p>Match each phrase with the corresponding definition by dragging the phrase into the
+        appropriate box.</p>
+    </statement>
+    <feedback>
+      <p>Try again!</p>
+    </feedback>
+    <matches>
+      <match order="1">
+        <premise>interpret</premise>
+        <response>To execute a program in a high-level language by translating it one line at a
+          time.</response>
+      </match>
+      <match order="2">
+        <premise>compile</premise>
+        <response>To execute a program in a high-level language by translating it all at once.</response>
+      </match>
+      <match order="3">
+        <premise>source code</premise>
+        <response>A program in a high-level language, before being compiled.</response>
+      </match>
+      <match order="4">
+        <premise>object code</premise>
+        <response>The output of the compiler, after translating the program.</response>
+      </match>
+    </matches>
+  </exercise>
+  <exercise label="chapter_one_glossary_3">
+    <statement>
+      <p>Match each phrase with the corresponding definition by dragging the phrase into the
+        appropriate box.</p>
+    </statement>
+    <feedback>
+      <p>Try again!</p>
+    </feedback>
+    <matches>
+      <match order="1">
+        <premise>portability</premise>
+        <response>A property of a program that can run on more than one kind of computer.</response>
+      </match>
+      <match order="2">
+        <premise>executable</premise>
+        <response>Another name for object code that is ready to be executed.</response>
+      </match>
+      <match order="3">
+        <premise>algorithm</premise>
+        <response>A general process for solving a category of problems.</response>
+      </match>
+      <match order="4">
+        <premise>bug</premise>
+        <response>An error in a program.</response>
+      </match>
+    </matches>
+  </exercise>
+  <exercise label="chapter_one_glossary_4">
+    <statement>
+      <p>Match each phrase with the corresponding definition by dragging the phrase into the
+        appropriate box.</p>
+    </statement>
+    <feedback>
+      <p>Try again!</p>
+    </feedback>
+    <matches>
+      <match order="1">
+        <premise>problem-solving</premise>
+        <response>The process of formulating a problem, finding a solution, and expressing the
+          solution.</response>
+      </match>
+      <match order="2">
+        <premise>syntax</premise>
+        <response>The structure of a program.</response>
+      </match>
+      <match order="3">
+        <premise>semantics</premise>
+        <response>The meaning of a program.</response>
+      </match>
+      <match order="4">
+        <premise>parse</premise>
+        <response>To examine a program and analyze the syntactic structure.</response>
+      </match>
+    </matches>
+  </exercise>
+  <exercise label="chapter_one_glossary_5">
+    <statement>
+      <p>Match each phrase with the corresponding definition by dragging the phrase into the
+        appropriate box.</p>
+    </statement>
+    <matches>
+      <match order="1">
+        <premise>syntax error</premise>
+        <response>An error in a program that makes it impossible to parse and compile.</response>
+      </match>
+      <match order="2">
+        <premise>run-time error</premise>
+        <response>An error in a program that makes it fail upon execution.</response>
+      </match>
+      <match order="3">
+        <premise>logical error</premise>
+        <response>An error in a program that makes it do something other than what the programmer
+          intended.</response>
+      </match>
+      <match order="4">
+        <premise>debugging</premise>
+        <response>The process of finding and removing any of the three kinds of errors.</response>
+      </match>
+    </matches>
+  </exercise>
+</section>

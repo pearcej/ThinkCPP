@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<section xml:id="chapter3_floating-point">
+  <title>Floating-point</title>
+  <p>In the last chapter we had some problems dealing with numbers that were
+            not integers. We worked around the problem by measuring percentages
+            instead of fractions, but a more general solution is to use
+            <term>floating-point</term> numbers, which can represent fractions as well as
+            integers. In C++, there are two floating-point types, called <c>float</c> and
+            <c>double</c>. In this book we will use doubles exclusively.</p>
+  <p>You can create floating-point variables and assign values to them using
+            the same syntax we used for the other types. For example:</p>
+  <pre>double pi;
+pi = 3.14159;</pre>
+  <p>It is also legal to declare a variable and assign a value to it at the
+            same time:</p>
+  <pre>int x = 1;
+string empty = "";
+double pi = 3.14159;</pre>
+  <p>In fact, this syntax is quite common. A combined declaration and
+            assignment is sometimes called an <term>initialization</term>.</p>
+  <warning>
+    <p>It is important that you <term>initialize</term> any and all variables that you
+                declare.  Failure to do so will generate an error (if you're lucky), or
+                C++ will initialize the variable to leftover memory, which could lead to
+                undefined behavior.</p>
+  </warning>
+  <p>Although floating-point numbers are useful, they are often a source of
+            confusion because there seems to be an overlap between integers and
+            floating-point numbers. For example, if you have the value 1, is that an
+            integer, a floating-point number, or both?</p>
+  <p>Strictly speaking, C++ distinguishes the integer value 1 from the
+            floating-point value 1.0, even though they seem to be the same number.
+            They belong to different types, and strictly speaking, you are not
+            allowed to make assignments between types. For example, the following is
+            illegal:</p>
+  <pre>int x = 1.1;</pre>
+  <p>because the variable on the left is an <c>int</c> and the value on the right is
+            a <c>double</c>. But it is easy to forget this rule, especially because there
+            are places where C++ automatically converts from one type to another.
+            For example,</p>
+  <pre>double y = 1;</pre>
+  <p>should technically not be legal, but C++ allows it by converting the <c>int</c>
+            to a <c>double</c> automatically. This leniency is convenient, but it can cause
+            problems; for example:</p>
+  <pre>double y = 1 / 3;</pre>
+  <p>You might expect the variable y to be given the value 0.333333, which is
+            a legal floating-point value, but in fact it will get the value 0.0. The
+            reason is that the expression on the right appears to be the ratio of
+            two integers, so C++ does <em>integer</em> division, which yields the integer
+            value 0. Converted to floating-point, the result is 0.0.</p>
+  <warning>
+    <p>It's crucial that you understand that when given two integers, C++
+                performs integer division!  This is a common logic error that can be
+                hard to catch, since your program will compile without problems.</p>
+  </warning>
+  <p>One way to solve this problem (once you figure out what it is) is to
+            make the right-hand side a floating-point expression:</p>
+  <pre>double y = 1.0 / 3.0;</pre>
+  <p>This sets y to 0.333333, as expected.</p>
+  <p>All the operations we have seen&#x2014;addition, subtraction, multiplication,
+            and division&#x2014;work on floating-point values, although you might be
+            interested to know that the underlying mechanism is completely
+            different. In fact, most processors have special hardware just for
+            performing floating-point operations.</p>
+  <exercise label="floating_point_1">
+    <statement>
+      <p>A(n) <var/> statment consists of a declaration statement and an
+assignment statement, which are combined. </p>
+    </statement>
+    <setup>
+      <var case="insensitive">
+        <condition string="^\s*initialization\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Try again!</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="floating_point_2">
+    <statement>
+      <p>It's your birthday and your cake can serve 12.  You want to slice it
+evenly so that you and each of your 4 friends receive an equal amount.
+One of your friends is on a diet and, and wants to know the serving size
+of her slice.  You write the following code in C++ to answer her question. <var/>  <var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <pre>int servings = 12;
+int people = 5;
+
+double servingSize = servings / people;</pre>
+        <p>Based on the value of <c>servingSize</c>, you tell your friend that each
+slice is <var/> servings.  This is <var/> (more, less, the same) than/as
+the actual serving size of her slice.</p>
+      </var>
+      <var>
+        <condition number="[2, 2]">
+          <feedback>
+            <p>Correct! C++ performs integer division.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>servingSize and people are integer variables!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*less\s*$">
+          <feedback>
+            <p>Correct! You just unintentionally messed up your friend's diet.</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="floating_point_3">
+    <statement>
+      <p>In the lab, we measured a temperature of 7.99999999 degrees C, using
+            an extremely precise measuring device.  Now we are writing a program
+            to perform some calculations with our data.  Consider the following C++
+            code.</p>
+      <pre>double e = 2.71828;
+int e_int = e;
+double e_double = e_int;
+cout &lt;&lt; e_double;</pre>
+      <p>What is the value of <c>e_double</c> that is printed to the terminal?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>e</p>
+        </statement>
+        <feedback>
+          <p>This is the name of a variable. Only the value of a variable will print with cout.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>3</p>
+        </statement>
+        <feedback>
+          <p>Converting to an int always rounds down.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>2</p>
+        </statement>
+        <feedback>
+          <p>When we converted e to an int, e was rounded down to 2. When we converted e_nt to e_double, the decimal places from e were lost, and the value of e_double is 2.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>3.0</p>
+        </statement>
+        <feedback>
+          <p>Converting to an int always rounds down.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>2.71828</p>
+        </statement>
+        <feedback>
+          <p>When we converted e to an int, e was rounded down to 2. When we converted e_nt to e_double, the decimal places from e were lost.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <p>Identifying whether an operation carries out integer division or floating point division
+            can get tricky when we have a mix of integers and doubles in our expression.
+            The thing to remeber is if either the divisor or the dividend is a double
+            then the program will carry out floating point division.</p>
+  <exercise label="floating_point_a1">
+    <statement>
+      <p>Run the code below to see what type of division occurs each time.</p>
+    </statement>
+    <program xml:id="floating_point_a1_editor" interactive="activecode" language="cpp">
+      <input><![CDATA[
+#include <iostream>
+using namespace std;
+
+int main () {
+    double value = 5.0/2; //(a)
+    cout<<"current value (a) is "<<value<<endl;
+
+    value = 5/2.0; //(b)
+    cout<<"current value (b) is "<<value<<endl;
+
+    value = 5/2; //(c)
+    cout<<"current value (c) is "<<value<<endl;
+
+    value = 5.0/2.0; //(d)
+    cout<<"current value (d) is "<<value<<endl;
+    return 0;
+}
+        ]]></input>
+      <tests>
+
+
+</tests>
+    </program>
+  </exercise>
+</section>
