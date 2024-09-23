@@ -76,9 +76,9 @@ Coding Practice
                         }
                         k++;
             =====
-                    if (m == word.length()) {
-                        count++;
-                    }
+                        if (j == word.length()) {
+                            count++;
+                        }
             =====
                     }
                 }
