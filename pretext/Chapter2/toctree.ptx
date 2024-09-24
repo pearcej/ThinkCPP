@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-        <title>Variables and types</title>
-        <xi:include href='./MoreOutput.ptx' />
-        <xi:include href='./Values.ptx' />
-        <xi:include href='./Variables.ptx' />
-        <xi:include href='./Assignment.ptx' />
-        <xi:include href='./OutputtingVariables.ptx' />
-        <xi:include href='./Keywords.ptx' />
-        <xi:include href='./Operators.ptx' />
-        <xi:include href='./OrderofOperations.ptx' />
-        <xi:include href='./OperatorsforCharacters.ptx' />
-        <xi:include href='./Composition.ptx' />
-        <xi:include href='./Glossary.ptx' />
-        <xi:include href='./Exercises.ptx' />
-        <xi:include href='./mixedUpCode.ptx' />
-        <xi:include href='./activeCode.ptx' />
-    </chapter>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"
+         xml:lang="en-US"
+         xml:id="variables-types">
+  <title>Variables and Types</title>
+  <xi:include href='./more-output.ptx'/>
+  <xi:include href='./values.ptx'/>
+  <xi:include href='./variables.ptx'/>
+  <xi:include href='./assignment.ptx'/>
+  <xi:include href='./outputting-variables.ptx'/>
+  <xi:include href='./keywords.ptx'/>
+  <xi:include href='./operators.ptx'/>
+  <xi:include href='./order-of-operations.ptx'/>
+  <xi:include href='./operators-for-characters.ptx'/>
+  <xi:include href='./composition.ptx'/>
+  <xi:include href='./glossary.ptx'/>
+  <xi:include href='./exercises.ptx'/>
+  <xi:include href='./mixed-up-code.ptx'/>
+  <xi:include href='./active-code.ptx'/>
+</chapter>
