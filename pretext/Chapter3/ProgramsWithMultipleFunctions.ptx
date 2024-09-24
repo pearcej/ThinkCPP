@@ -25,11 +25,11 @@
   <p>Fortunately, C++ is adept at keeping track of where it is, so each time
             <c>newLine</c> completes, the program picks up where it left off in <c>threeLine</c>,
             and eventually gets back to <c>main</c> so the program can terminate.</p>
-  <exercise label="multiple_functions_AC_1">
-    <statement>
+  <listing label="multiple_functions_AC_1">
+    <caption>
       <p>This program calls the multiplyTwo and addTwo functions in the
             main.  See if you can follow the order of execution.</p>
-    </statement>
+    </caption>
     <program xml:id="multiple_functions_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -59,13 +59,13 @@ int main () {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>What's the moral of this sordid tale? When you read a program, don't
             read from top to bottom. Instead, <term>follow the flow of execution</term>.</p>
-  <exercise label="multiple_fun_1">
-    <statement>
+  <listing label="multiple_fun_1">
+    <caption>
       <p>Match the function to the order it is executed in the program above.</p>
-    </statement>
+    </caption>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -87,9 +87,9 @@ int main () {
         <response> executes last</response>
       </match>
     </matches>
-  </exercise>
-  <exercise label="multiple_fun_2">
-    <statement>
+  </listing>
+  <listing label="multiple_fun_2">
+    <caption>
       <p>Consider the following C++ code. Note that line numbers are included
             on the left.</p>
       <program language="cpp" line-numbers="yes">
@@ -115,14 +115,14 @@ int main () {
       </program>
       <p>Which of the following reflects the order in which these functions
             are executed in C++?</p>
-    </statement>
+    </caption>
     <choices>
       <choice>
         <statement id="multiple_fun_2_opt_a">
           <p>
             <c>newLine, threeLine, main</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="multiple_fun_2_opt_a">
           <p>Remember to follow the order of execution, which is not necessarily the order the program is written.</p>
         </feedback>
@@ -132,7 +132,7 @@ int main () {
           <p>
             <c>newLine, threeLine, newLine, newLine, newLine, main</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="multiple_fun_2_opt_b">
           <p>Remember to follow the order of execution, which is not necessarily the order the program is written.</p>
         </feedback>
@@ -142,7 +142,7 @@ int main () {
           <p>
             <c>main, threeLine, newLine, newLine, newLine</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="multiple_fun_2_opt_c">
           <p>Execution begins in the main, then functions are executed as they are called.</p>
         </feedback>
@@ -152,15 +152,15 @@ int main () {
           <p>
             <c>main, threeLine</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="multiple_fun_2_opt_d">
           <p>Note that <c>newLine</c> is called inside of <c>threeLine</c>.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="multiple_fun_3">
-    <statement>
+  </listing>
+  <listing label="multiple_fun_3">
+    <caption>
       <p>Consider the following C++ code.</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -189,14 +189,14 @@ int main () {
 ]]></input>
       </program>
       <p>What is printed when the code is executed?</p>
-    </statement>
+    </caption>
     <choices>
       <choice>
         <statement id="multiple_fun_3_opt_a">
           <p>
             <q>welcome, yo, hello, goodbye,</q>
           </p>
-        </statement>
+        </caption>
         <feedback id="multiple_fun_3_opt_a">
           <p>take into account <c>hello</c> also calls <c>yo</c> .</p>
         </feedback>
@@ -206,7 +206,7 @@ int main () {
           <p>
             <q>welcome, goodbye,</q>
           </p>
-        </statement>
+        </caption>
         <feedback id="multiple_fun_3_opt_b">
           <p><c>goodbye</c> calls other functions that print output as well.</p>
         </feedback>
@@ -216,7 +216,7 @@ int main () {
           <p>
             <q>welcome, yo, hello, yo, yo, goodbye,</q>
           </p>
-        </statement>
+        </caption>
         <feedback id="multiple_fun_3_opt_c">
           <p>The order of calls and composition of <c>yo</c> in <c>hello</c> and both of those in <c>goodbye</c> produce this output.</p>
         </feedback>
@@ -226,11 +226,11 @@ int main () {
           <p>
             <q>yo, hello, yo, yo, goodbye,</q>
           </p>
-        </statement>
+        </caption>
         <feedback id="multiple_fun_3_opt_d">
           <p>Note that the <c>main</c> also prints something directly.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
+  </listing>
 </section>

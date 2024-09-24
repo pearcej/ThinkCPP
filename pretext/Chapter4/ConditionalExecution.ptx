@@ -31,11 +31,11 @@ x &lt;= y               // x is less than or equal to y</pre>
             at all! There is a way to compare them, but we won't get to it for a couple of
             chapters.</p>
   <p>Observe the conditional statement below.</p>
-  <exercise label="conditional_execution_AC_1">
-    <statement>
+  <listing label="conditional_execution_AC_1">
+    <caption>
       <p>This program shows how you can use conditional statements to
             assess true/false situations.</p>
-    </statement>
+    </caption>
     <program xml:id="conditional_execution_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -56,50 +56,50 @@ int main () {
 }
         ]]></input>
     </program>
-  </exercise>
-  <exercise label="conditional_execution_1">
-    <statement>
+  </listing>
+  <listing label="conditional_execution_1">
+    <caption>
       <p>Observe the code above. <q>Bigger</q> doesn't print! How can you modify this so that all of the statements print?</p>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>Change the value of x to be anything less than 6.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>While "Bigger" would now print, the other two statements would not!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>Change the value of x to 13.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Now, none of the statements would print!</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>Change the sign of the last conditional statement to x &gt; 6.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Now, all of the statements would print.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>Change the value of the return from 0 to "Bigger!"</p>
-        </statement>
+        </caption>
         <feedback>
           <p>main returns an int, so trying to make it return a string will cause an error.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="conditional_execution_2">
-    <statement>
+  </listing>
+  <listing label="conditional_execution_2">
+    <caption>
       <p>Match the operator to values of x and y that would return true.</p>
-    </statement>
+    </caption>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -117,11 +117,11 @@ int main () {
         <response>x = 2, y = 10</response>
       </match>
     </matches>
-  </exercise>
-  <exercise label="conditional_execution_3">
-    <statement>
+  </listing>
+  <listing label="conditional_execution_3">
+    <caption>
       <p>Match the operator to values of x and y that would return true.</p>
-    </statement>
+    </caption>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -139,5 +139,5 @@ int main () {
         <response>x = 2, y = 6</response>
       </match>
     </matches>
-  </exercise>
+  </listing>
 </section>

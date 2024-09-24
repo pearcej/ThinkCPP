@@ -15,11 +15,11 @@
             removes a piece of data from the input stream.</p>
   <p>Similarly, when the program uses the <c>&lt;&lt;</c> operator on an <c>ostream</c>,
             it adds a datum to the outgoing stream.</p>
-  <exercise label="question15_2_1">
-    <statement>
+  <listing label="question15_2_1">
+    <caption>
       <p>You create an <var/> object to write data to a file, and a <var/> object to read data from a file.
 In order to define objects to input from a file or send output to a file, you must include the <c>&lt;</c> <var/> <c>&gt;</c> header file. <var/>  <var/>  <var/>  </p>
-    </statement>
+    </caption>
     <setup>
       <var case="insensitive">
         <condition string="^\s*(?:o|O)(?:f|F)(?:s|S)(?:t|T)(?:r|R)(?:e|E)(?:a|A)(?:m|M)\s*$">
@@ -58,50 +58,50 @@ In order to define objects to input from a file or send output to a file, you mu
         </condition>
       </var>
     </setup>
-  </exercise>
-  <exercise label="question15_2_2">
-    <statement>
+  </listing>
+  <listing label="question15_2_2">
+    <caption>
       <p>What is a stream object?</p>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>an abstract object that works exclusively with cin and cout statements</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! Stream objects do work with cin and cout, but that is not all that they do!</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>an abstract object on which input and ouput operations are performed</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>an abstract object that works only with file data</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! Stream objects do work with file data, but they do other things too.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>an abstract object that controls the flow of statements</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! This is not at all what stream objects do, you should try re-reading to get a better understanding!</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="question15_1_3">
-    <statement>
+  </listing>
+  <listing label="question15_1_3">
+    <caption>
       <p>Match the stream to its type.</p>
-    </statement>
+    </caption>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -115,5 +115,5 @@ In order to define objects to input from a file or send output to a file, you mu
         <response>ofstream</response>
       </match>
     </matches>
-  </exercise>
+  </listing>
 </section>

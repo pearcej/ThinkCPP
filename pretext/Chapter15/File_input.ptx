@@ -72,8 +72,8 @@ int main ()
   <p>It is important to exit the loop between the input statement and the
             output statement, so that when <c>getline</c> fails at the end of the file,
             we do not output the invalid data in <c>line</c>.</p>
-  <exercise label="question15_3_1">
-    <statement>
+  <listing label="question15_3_1">
+    <caption>
       <p>Consider this code snippet:
 
 ::
@@ -81,7 +81,7 @@ int main ()
    ifstream infile ("file-name");
 
 Finish each sentence.</p>
-    </statement>
+    </caption>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -103,12 +103,12 @@ Finish each sentence.</p>
         <response>cin.</response>
       </match>
     </matches>
-  </exercise>
-  <exercise label="question15_3_2">
-    <statement>
+  </listing>
+  <listing label="question15_3_2">
+    <caption>
       <p>The <c>ifstream</c> member function called <var/> makes sure the file was opened successfully, and
 member function <var/> detects the end of the file. <var/>  <var/>  </p>
-    </statement>
+    </caption>
     <setup>
       <var case="insensitive">
         <condition string="^\s*(?:g|G)(?:o|O)(?:o|O)(?:d|D)\s*$">
@@ -135,50 +135,50 @@ member function <var/> detects the end of the file. <var/>  <var/>  </p>
         </condition>
       </var>
     </setup>
-  </exercise>
-  <exercise label="question15_3_3">
-    <statement>
+  </listing>
+  <listing label="question15_3_3">
+    <caption>
       <p>We need to use the function <c>c_str()</c> to convert a string to a native C string because&#x2026;</p>
-    </statement>
+    </caption>
     <choices>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>the ifstream constructor expects a C string as an argument.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>you need to make sure you have permission to read to/from the file.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! Try reading again!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>it will check whether you have an infinite loop or not.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! Try reading again!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>strings are not supported by C++.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! strings are allowed in C++.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="question15_3_4">
-    <statement>
+  </listing>
+  <listing label="question15_3_4">
+    <caption>
       <p>The __________ statement allows us to exit the loop as soon as we detect the end of the file. <var/>  </p>
-    </statement>
+    </caption>
     <setup>
       <var case="insensitive">
         <condition string="^\s*(?:b|B)(?:r|R)(?:e|E)(?:a|A)(?:k|K)\s*$">
@@ -193,11 +193,11 @@ member function <var/> detects the end of the file. <var/>  <var/>  </p>
         </condition>
       </var>
     </setup>
-  </exercise>
-  <exercise label="question15_3_5" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="question15_3_5" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>Create a code block that reads lines from <q>filename</q> and prints them out. First, make sure that the file is able to be opened.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="6">
         <cline>int main () {</cline>
@@ -233,5 +233,5 @@ member function <var/> detects the end of the file. <var/>  <var/>  </p>
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
+  </listing>
 </section>

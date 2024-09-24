@@ -25,14 +25,14 @@ Complex sum = add (c1, c2);
 sum.printCartesian();</pre>
   <p>The output of this program is</p>
   <pre>5 + 7i</pre>
-  <exercise label="fourteenseven">
-    <statement>
+  <listing label="fourteenseven">
+    <caption>
       <p>The active code below uses the <c>add</c> function for <c>Complex</c> objects.
             As an exercise, write the <c>subtract</c> function for <c>Complex</c> objects
             in the commented area of the active code. If you get stuck, you can reveal
             the extra problem at the end for help. Once you are finished, feel
             free to modify the code and experiment around!</p>
-    </statement>
+    </caption>
     <program xml:id="fourteenseven_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -137,13 +137,13 @@ Complex add (Complex&amp; a, Complex&amp; b) {
 }
 </tests>
     </program>
-  </exercise>
-  <exercises line="151" runestone_options="{'showtitle': 'data-showtitle=&quot;Reveal Problem&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'a_function_on_complex_numbers', 'chapter': 'Chapter14', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': '14_6_1', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter14/a_function_on_complex_numbers.rst">
-    <exercise label="question14_6_1" numbered="yes" adaptive="yes" indentation="hide" language="python">
-      <statement>
+  </listing>
+  <listings line="151" runestone_options="{'showtitle': 'data-showtitle=&quot;Reveal Problem&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'a_function_on_complex_numbers', 'chapter': 'Chapter14', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': '14_6_1', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter14/a_function_on_complex_numbers.rst">
+    <listing label="question14_6_1" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <caption>
         <p>Let's write the code for the <c>subtract</c> function,
                 which should return the difference of two <c>Complex</c> objects.</p>
-      </statement>
+      </caption>
       <blocks>
         <block order="2">
           <choice correct="yes">
@@ -183,10 +183,10 @@ Complex add (Complex&amp; a, Complex&amp; b) {
           </choice>
         </block>
       </blocks>
-    </exercise>
-  </exercises>
-  <exercise label="question14_6_2">
-    <statement>
+    </listing>
+  </listings>
+  <listing label="question14_6_2">
+    <caption>
       <p>What is the correct output of the code below?</p>
       <program language="cpp" line-numbers="yes">
         <input>
@@ -200,40 +200,40 @@ int main() {
 }
 </input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>3.1i + 1.9i</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! Try using the active code above.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>1.9i + 3.1</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! Try using the active code above.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>3.0 + 1.9i</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! Try using the active code above.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>3.1 + 1.9i</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
+  </listing>
 </section>

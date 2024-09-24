@@ -28,11 +28,11 @@
             needed, is sometimes called <term>top-down design</term>, in contrast to the
             bottom-up design I discussed in <number_reference internal="True" refuri="../Chapter10/counting#counting" title="Section %s"><inline classes="std std-numref">Section 10.10</inline></number_reference>.</p>
   <p>Once again, I am going to leave the implementation up to the reader.</p>
-  <exercise label="sorting_deck_1">
-    <statement>
+  <listing label="sorting_deck_1">
+    <caption>
       <p>If I'm writing a long, complex function with many steps, a(n) <var/> <var/>
 would help me condense the function's code and make it easier to understand.  </p>
-    </statement>
+    </caption>
     <setup>
       <var case="insensitive">
         <condition string="^\s*helper\s*$">
@@ -59,16 +59,16 @@ would help me condense the function's code and make it easier to understand.  </
         </condition>
       </var>
     </setup>
-  </exercise>
-  <exercise label="sorting_deck_2">
-    <statement>
+  </listing>
+  <listing label="sorting_deck_2">
+    <caption>
       <p>Try writing the <c>findLowestCard</c> function in the commented section
             of the active code below. Once you're done with <c>findLowestCard</c>,
             try using it along with <c>swapCards</c> to implement the <c>Deck</c> member
             function <c>sortDeck</c>. If done correctly, the program should output a
             sorted deck of cards. If you get stuck, you can reveal the extra problems
             at the end for help.</p>
-    </statement>
+    </caption>
     <program xml:id="sorting_deck_2_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -207,13 +207,13 @@ void Deck::shuffleDeck () {
 }
 </tests>
     </program>
-  </exercise>
-  <exercises line="208" runestone_options="{'showtitle': 'data-showtitle=&quot;findLowestCard Help&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'sorting', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': 'sorting_reveal_1', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter13/sorting.rst">
-    <exercise label="sorting_help_1" numbered="yes" adaptive="yes" indentation="hide" language="python">
-      <statement>
+  </listing>
+  <listings line="208" runestone_options="{'showtitle': 'data-showtitle=&quot;findLowestCard Help&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'sorting', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': 'sorting_reveal_1', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter13/sorting.rst">
+    <listing label="sorting_help_1" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <caption>
         <p>Let's write the code for the findLowestCard function. findLowestCard
                 should take an index as a parameter and return an int.</p>
-      </statement>
+      </caption>
       <blocks>
         <block order="4">
           <choice correct="yes">
@@ -258,14 +258,14 @@ void Deck::shuffleDeck () {
           </choice>
         </block>
       </blocks>
-    </exercise>
-  </exercises>
-  <exercises line="243" runestone_options="{'showtitle': 'data-showtitle=&quot;sortDeck Help&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'sorting', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': 'sorting_reveal_2', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter13/sorting.rst">
-    <exercise label="sorting_help_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
-      <statement>
+    </listing>
+  </listings>
+  <listings line="243" runestone_options="{'showtitle': 'data-showtitle=&quot;sortDeck Help&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'sorting', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': 'sorting_reveal_2', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter13/sorting.rst">
+    <listing label="sorting_help_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <caption>
         <p>Let's write the code for the sortDeck function. We'll use findLowestCard
                 and swapCards in our implementation of sortDeck.</p>
-      </statement>
+      </caption>
       <blocks>
         <block order="4">
           <choice correct="yes">
@@ -292,6 +292,6 @@ void Deck::shuffleDeck () {
           <cline>}</cline>
         </block>
       </blocks>
-    </exercise>
-  </exercises>
+    </listing>
+  </listings>
 </section>

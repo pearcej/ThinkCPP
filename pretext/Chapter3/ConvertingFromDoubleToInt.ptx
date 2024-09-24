@@ -19,8 +19,8 @@ int x = int (pi);</pre>
             0.99999999.</p>
   <p>For every type in C++, there is a corresponding function that typecasts
             its argument to the appropriate type.</p>
-  <exercise label="double_to_int_1">
-    <statement>
+  <listing label="double_to_int_1">
+    <caption>
       <p>In the lab, we measured a temperature of 7.99999999 degrees C, using
             an extremely precise measuring device.  Now we are writing a program
             to perform some calculations with our data.  Consider the following C++
@@ -31,52 +31,52 @@ int x = int (pi);</pre>
   cout &lt;&lt; roundedTemp;
 }</pre>
       <p>What is the value of roundedTemp?</p>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>temp</p>
-        </statement>
+        </caption>
         <feedback>
           <p>This is the name of a variable. Only the value of a variable will print with cout.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>8</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Remember that converting to an integer always rounds down.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>7</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>8.0</p>
-        </statement>
+        </caption>
         <feedback>
           <p>This is not an integer data type, and it's not the right number.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>7.0</p>
-        </statement>
+        </caption>
         <feedback>
           <p>This is not an integer data type.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="double_to_int_2">
-    <statement>
+  </listing>
+  <listing label="double_to_int_2">
+    <caption>
       <p>Your final grade consists of your average performance on exam 1 and exam 2.
             Your professor is using C++ to grade the exams and allows you to choose which
             method you'd like your exam to be graded.</p>
@@ -92,14 +92,14 @@ double exam3 = 97.9;</pre>
       </p>
       <pre>int final = int((exam1 + exam2 + exam3) / 3);</pre>
       <p>Which method would <term>you</term> choose and why?</p>
-    </statement>
+    </caption>
     <choices>
       <choice>
         <statement id="double_to_int_2_opt_a">
           <p><term>Method 1:</term><c>final</c> is a <c>double</c>, meaning my final grade will
             have more digits past the decimal, and will be higher than the <c>int</c>
             in Method 2.</p>
-        </statement>
+        </caption>
         <feedback id="double_to_int_2_opt_a">
           <p>Although <c>final</c> is a <c>double</c>, it doesn't have any digits past
             the decimal due to the integer division.</p>
@@ -110,7 +110,7 @@ double exam3 = 97.9;</pre>
           <p><term>Method 1:</term> the rounding happens at the beginning, so all three of my
             test scores will be rounded to the nearest <c>int</c>, which in my case, will
             round all of them up.</p>
-        </statement>
+        </caption>
         <feedback id="double_to_int_2_opt_b">
           <p>Converting to an <c>int</c> always rounds <em>down</em>, even if your <c>double</c> is very
             close to the next integer.</p>
@@ -119,7 +119,7 @@ double exam3 = 97.9;</pre>
       <choice>
         <statement id="double_to_int_2_opt_c">
           <p><term>Method 2:</term><c>final</c> is an <c>int</c>, so it gets rounded up.</p>
-        </statement>
+        </caption>
         <feedback id="double_to_int_2_opt_c">
           <p>Converting to an <c>int</c> always rounds <em>down</em>, even if your <c>double</c> is very
             close to the next integer.</p>
@@ -128,11 +128,11 @@ double exam3 = 97.9;</pre>
       <choice correct="yes">
         <statement id="double_to_int_2_opt_d">
           <p><term>Method 2:</term> the rounding happens at the very end, so my grade will be higher!</p>
-        </statement>
+        </caption>
         <feedback id="double_to_int_2_opt_d">
           <p>Always save your rounding until the end!</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
+  </listing>
 </section>

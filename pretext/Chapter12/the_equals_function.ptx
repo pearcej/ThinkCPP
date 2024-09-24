@@ -40,10 +40,10 @@ if (card1.equals(card2)) {
   <p>Of course, this is a matter of taste. My point here is that you should
             be comfortable writing both member and nonmember functions, so that you
             can choose the interface that works best depending on the circumstance.</p>
-  <exercise label="12_4">
-    <statement>
+  <listing label="12_4">
+    <caption>
       <p>Run the active code below to see how the <c>equals()</c> function works.</p>
-    </statement>
+    </caption>
     <program xml:id="c12_4_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -116,55 +116,55 @@ void Card::print () const {
 }
 </tests>
     </program>
-  </exercise>
-  <exercise label="equals_function_1">
-    <statement>
+  </listing>
+  <listing label="equals_function_1">
+    <caption>
       <p>How can we compare two <c>Card</c> objects?</p>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>Directly, using the build in == operator.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! We have to create our own method to compare two Card objects, the == operator won't work.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>Compare their ranks and suits separately using the == operator. If either comparison is true, then they are equal.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! This would return true if two cards have the same rank, but different suits OR the same suit, but different ranks.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>Compare their ranks and suits separately using the == operator. If either comparison is false, then they are NOT equal.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct! Both ranks and suits must be the same for two cards to be equal.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>They cannot be compared because they are non-numerical objects.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! Card objects can be compared, but we must create our own method.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="equals_function_2">
-    <statement>
+  </listing>
+  <listing label="equals_function_2">
+    <caption>
       <p>Should we write the <c>equals()</c> function as a free-standing function, or as a member function of <c>Card</c>?</p>
-    </statement>
+    </caption>
     <choices>
       <choice>
         <statement id="equals_function_2_opt_a">
           <p>A free-standing function, because we shouldn't <q>invoke</q> the function on just one <c>Card</c>.</p>
-        </statement>
+        </caption>
         <feedback id="equals_function_2_opt_a">
           <p>Incorrect! We can invoke the function on a <c>Card</c>!</p>
         </feedback>
@@ -172,7 +172,7 @@ void Card::print () const {
       <choice>
         <statement id="equals_function_2_opt_b">
           <p>A member function, because the <c>equals()</c> operation is part of the <c>Card</c> data structure.</p>
-        </statement>
+        </caption>
         <feedback id="equals_function_2_opt_b">
           <p>Incorrect! The <c>equals()</c> operation is not necessarily part of the <c>Card</c> data structure.</p>
         </feedback>
@@ -180,21 +180,21 @@ void Card::print () const {
       <choice correct="yes">
         <statement id="equals_function_2_opt_c">
           <p>Both are viable.</p>
-        </statement>
+        </caption>
         <feedback id="equals_function_2_opt_c">
           <p>Correct! This is a matter of preference!</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="equals_function_3" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="equals_function_3" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>In a card game called Euchre, the highest ranked suit is called the trump suit.  The trump suit contains
             all of the cards of that suit, and the Jack of the other suit of the same color.  For example, if Hearts
             was trump, the trump suit would contain all Hearts, and the Jack of Diamonds.  Implement the is_trump()
             function that returns true of a Card is part of the trump suit.  Assume we have a helper function same_color()
             that returns the other suit of the same color.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="7">
         <cline>bool Card::is_trump (string trump_suit) {</cline>
@@ -237,5 +237,5 @@ void Card::print () const {
         </choice>
       </block>
     </blocks>
-  </exercise>
+  </listing>
 </section>

@@ -20,10 +20,10 @@
             my computer) also defined in the header file. Each time you call
             <c>random</c> you get a different randomly-generated number. To see a
             sample, run this loop:</p>
-  <exercise label="random_numbers_AC_1">
-    <statement>
+  <listing label="random_numbers_AC_1">
+    <caption>
       <p>Take a look at the active code below, which generates 4 random numbers.</p>
-    </statement>
+    </caption>
     <program xml:id="random_numbers_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -39,7 +39,7 @@ int main () {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>On my machine I got the following output:</p>
   <pre>1804289383
 846930886
@@ -57,10 +57,10 @@ int y = x % upperBound;</pre>
   <note>
     <p>Keep in mind, though, that <c>y</c> will never be equal to <c>upperBound</c>.</p>
   </note>
-  <exercise label="random_numbers_AC_2">
-    <statement>
+  <listing label="random_numbers_AC_2">
+    <caption>
       <p>The active code below generates random numbers between 1 and 7.</p>
-    </statement>
+    </caption>
     <program xml:id="random_numbers_AC_2_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -78,7 +78,7 @@ int main () {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>It is also frequently useful to generate random floating-point values. A
             common way to do that is by dividing by <c>RAND_MAX</c>. For example:</p>
   <pre>int x = random ();
@@ -87,12 +87,12 @@ double y = double(x) / RAND_MAX;</pre>
             both end points. As an exercise, you might want to think about how to
             generate a random floating-point value in a given range; for example,
             between 100.0 and 200.0.</p>
-  <exercise label="random_numbers_AC_3">
-    <statement>
+  <listing label="random_numbers_AC_3">
+    <caption>
       <p>The active code below generates random numbers between 0 and 1. Can you modify it
             to generate random numbers between 100.0 and 200.0? If you're stuck you can
             reveal the hint below!</p>
-    </statement>
+    </caption>
     <program xml:id="random_numbers_AC_3_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -109,15 +109,15 @@ int main () {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <hint>
     <p>The formula to generate random numbers between min and max is
                 min + (max - min) * double(x) / RAND_MAX.</p>
   </hint>
-  <exercise label="random_numbers_1">
-    <statement>
+  <listing label="random_numbers_1">
+    <caption>
       <p>Pseudorandom numbers are said to be <var/>, because different numbers are generated every time the program is executed.</p>
-    </statement>
+    </caption>
     <setup>
       <var case="insensitive">
         <condition string="^\s*NONDETERMINISTIC\s*$">
@@ -137,57 +137,57 @@ int main () {
         </condition>
       </var>
     </setup>
-  </exercise>
-  <exercise label="random_numbers_2">
-    <statement>
+  </listing>
+  <listing label="random_numbers_2">
+    <caption>
       <p>What header file do we need to declare in order to use the <c>random</c> function?</p>
-    </statement>
+    </caption>
     <choices>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>cstdlib</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>random</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>cmath</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>iostream</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect!</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="random_numbers_3">
-    <statement>
+  </listing>
+  <listing label="random_numbers_3">
+    <caption>
       <p>If we wanted to generate a random number between 0 and 12, and we have previously declared int <c>int x = random ();</c>, what should be our next line of code?</p>
-    </statement>
+    </caption>
     <choices>
       <choice>
         <statement id="random_numbers_3_opt_a">
           <p>
             <c>int y = x / 12</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="random_numbers_3_opt_a">
           <p>This returns some random number between 0 and x / 12, which is out of range.</p>
         </feedback>
@@ -197,7 +197,7 @@ int main () {
           <p>
             <c>int y = x % 12</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="random_numbers_3_opt_b">
           <p>This returns a random number between 0 and 11.</p>
         </feedback>
@@ -207,7 +207,7 @@ int main () {
           <p>
             <c>int y = x / 13</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="random_numbers_3_opt_c">
           <p>This returns some random number between 0 and x / 13, which is out of range.</p>
         </feedback>
@@ -217,11 +217,11 @@ int main () {
           <p>
             <c>int y = x % 13</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="random_numbers_3_opt_d">
           <p>There are 13 numbers from 0 to 12 (the remainders of a division by 13).</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
+  </listing>
 </section>

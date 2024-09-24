@@ -14,11 +14,11 @@
             tend to be confusing, I would discourage you from using them. In fact,
             to discourage you even more, I'm not going to tell you what the result
             is. If you really want to know, you can try it.</p>
-  <exercise label="increment_decrement_AC_1">
-    <statement>
+  <listing label="increment_decrement_AC_1">
+    <caption>
       <p>The active code demonstrates how using increment operators
             with <c>cout</c> statements can be confusing.</p>
-    </statement>
+    </caption>
     <program xml:id="increment_decrement_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -31,7 +31,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>If you're curious about this, feel free to search up about prefix and postfix
             increment operators. But for now, just avoid incrementing a variable
             and using it in an expression at the same time.</p>
@@ -43,10 +43,10 @@ while (index &lt; length) {
   }
   index++;
 }</pre>
-  <exercise label="increment_decrement_AC_2">
-    <statement>
+  <listing label="increment_decrement_AC_2">
+    <caption>
       <p>The active code below adds increment operators to our old letter-counter.</p>
-    </statement>
+    </caption>
     <program xml:id="increment_decrement_AC_2_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -67,7 +67,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>It is a common error to write something like</p>
   <pre>index = index++;             // WRONG!!</pre>
   <p>Unfortunately, this is syntactically legal, so the compiler will not
@@ -77,10 +77,10 @@ int main() {
     <p>Remember, you can write <c>index = index + 1;</c>, or you can write
                 <c>index++;</c>, but you shouldn't mix them.</p>
   </warning>
-  <exercise label="increment_decrement_1">
-    <statement>
+  <listing label="increment_decrement_1">
+    <caption>
       <p>Click on the incorrect or not suggested increment statements.</p>
-    </statement>
+    </caption>
     <feedback>
       <p>Re-read the text above and try again.</p>
     </feedback>
@@ -105,9 +105,9 @@ int main() {
       </cline>
       <cline>}</cline>
     </areas>
-  </exercise>
-  <exercise label="increment_decrement_2">
-    <statement>
+  </listing>
+  <listing label="increment_decrement_2">
+    <caption>
       <p>What does the following code print?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -118,38 +118,38 @@ while (x < 0) {
 }
 ]]></input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>5 4 3 2 1</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Notice that x is negative.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>-5 -4 -3 -2 -1</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Notice that the value of x is incremented before it is printed.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>-4 -3 -2 -1 0</p>
-        </statement>
+        </caption>
         <feedback>
           <p>The value of x is incremented before it is printed so the first value printed is -4.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="increment_decrement_3" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="increment_decrement_3" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>Print every number from 1-10 in this format: <q>Number 1</q>. Each number should be on its own line.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="5">
         <cline>int x = 1;</cline>
@@ -174,5 +174,5 @@ while (x < 0) {
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
+  </listing>
 </section>

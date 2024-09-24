@@ -45,17 +45,17 @@ vector&lt;double&gt; doubleVector;</pre>
   <pre>vector&lt;int&gt; count (4, 0);</pre>
   <p>This statement creates a vector of four elements and initializes all of
             them to zero.</p>
-  <exercise label="vectors_1">
-    <statement>
+  <listing label="vectors_1">
+    <caption>
       <p>How would you create a vector of five words and initialize all of them to empty strings?</p>
-    </statement>
+    </caption>
     <choices>
       <choice>
         <statement id="vectors_1_opt_a">
           <p>
             <c><![CDATA[vector<string> words ("", 5);]]></c>
           </p>
-        </statement>
+        </caption>
         <feedback id="vectors_1_opt_a">
           <p>Incorrect! Vector parameters are in the wrong order.</p>
         </feedback>
@@ -65,7 +65,7 @@ vector&lt;double&gt; doubleVector;</pre>
           <p>
             <c><![CDATA[vector<string> words (5);]]></c>
           </p>
-        </statement>
+        </caption>
         <feedback id="vectors_1_opt_b">
           <p>Correct! Vector elements are default constructed to empty strings.</p>
         </feedback>
@@ -75,7 +75,7 @@ vector&lt;double&gt; doubleVector;</pre>
           <p>
             <c><![CDATA[vector<string> words (5, "");]]></c>
           </p>
-        </statement>
+        </caption>
         <feedback id="vectors_1_opt_c">
           <p>Correct! We made a vector of strings with 5 elements, initialized to empty strings.</p>
         </feedback>
@@ -85,109 +85,109 @@ vector&lt;double&gt; doubleVector;</pre>
           <p>
             <c><![CDATA[vector<char> words (5, '');]]></c>
           </p>
-        </statement>
+        </caption>
         <feedback id="vectors_1_opt_d">
           <p>Incorrect! words should be a vector of strings.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="vectors_2">
-    <statement>
+  </listing>
+  <listing label="vectors_2">
+    <caption>
       <p><term>Multiple Response</term> Which of the following could be an element of <term>words</term>?</p>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>1</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! This is an integer, not a string.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>"a"</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>'a'</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! This is a character, not a string.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>"word"</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>"1"</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="vectors_3">
-    <statement>
+  </listing>
+  <listing label="vectors_3">
+    <caption>
       <p>What do you call a function that creates an instance of a new object and initializes its instance variables?</p>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>initializer</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! Go back and read to find the answer!</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>constructor</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>creator</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! Go back and read to find the answer!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>instance function</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! Go back and read to find the answer!</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="vectors_4">
-    <statement>
+  </listing>
+  <listing label="vectors_4">
+    <caption>
       <p>What are the values of <c>number</c>'s elements after this declaration?</p>
       <pre>vector&lt;int&gt; numbers(6);</pre>
-    </statement>
+    </caption>
     <choices>
       <choice>
         <statement id="vectors_4_opt_a">
           <p>undefined (we don't know the values)</p>
-        </statement>
+        </caption>
         <feedback id="vectors_4_opt_a">
           <p>Integers are default constructed to a known value.</p>
         </feedback>
@@ -195,7 +195,7 @@ vector&lt;double&gt; doubleVector;</pre>
       <choice correct="yes">
         <statement id="vectors_4_opt_b">
           <p>0</p>
-        </statement>
+        </caption>
         <feedback id="vectors_4_opt_b">
           <p>Integers are default constructed to a zero value.</p>
         </feedback>
@@ -203,11 +203,11 @@ vector&lt;double&gt; doubleVector;</pre>
       <choice>
         <statement id="vectors_4_opt_c">
           <p>6</p>
-        </statement>
+        </caption>
         <feedback id="vectors_4_opt_c">
           <p>6 is the size we want the vector to be.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
+  </listing>
 </section>

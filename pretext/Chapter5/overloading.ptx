@@ -39,169 +39,169 @@
             think you are. To check, stick in an output statement (it doesn't matter
             what it says) and make sure the behavior of the program changes
             accordingly.</p>
-  <exercise label="overloading_1">
-    <statement>
+  <listing label="overloading_1">
+    <caption>
       <p>Which of the following function declarations would be legal if it was added to the program below?</p>
       <pre>double price (int x, int y);
 double price (double a, int b, string c);</pre>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>double price(int a, int b);</p>
-        </statement>
+        </caption>
         <feedback>
           <p>This function has the same parameters as the first function below.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>double price(int a, string b, string c);</p>
-        </statement>
+        </caption>
         <feedback>
           <p>While this function has the same number of parameters as the second function, it takes different types of parameters.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>double price(double x, int y, string z);</p>
-        </statement>
+        </caption>
         <feedback>
           <p>This function has the same parameters as the second function below.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>all of the above</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Take another look at the numbers and types of parameters.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="overloading_2">
-    <statement>
+  </listing>
+  <listing label="overloading_2">
+    <caption>
       <p>What are the following functions an example of?</p>
       <pre>double price(int x, int y);
 double price(double a, int b, string c);</pre>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>recursion</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Recursion is when a function calls itself.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>debugging</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Debugging is what we do after implementing a function.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>overloading</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Overloading is when we have two functions with the same name that take different parameters.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>overriding</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Overriding is when an inherited class uses a different method than the base class... more on this later!</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="overloading_3">
-    <statement>
+  </listing>
+  <listing label="overloading_3">
+    <caption>
       <p>Suppose you have written the following functions for baking cake.
             Is there anything wrong with how <c>bakeCake</c> was overloaded?</p>
       <pre>bool bakeCake (string cakeMix, int eggs, double milk, bool birthday);
 bool bakeCake (string cakeMix, int eggs, double water, bool holiday);</pre>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>Yes. Some of the parameters have the same names, so overloading is NOT legal.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Variable names don't matter in overloading.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>Yes. The parameters are the same types in the same order, so overloading is NOT legal.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>If the parameters are the same types in the same order, overloading is NOT legal.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>No. Some of the parameters have different names, so overloading is legal.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Variable names don't matter in overloading.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>No. The parameters are the same types in the same order, so overloading is legal.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>If the parameters are the same types in the same order, overloading is NOT legal.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="overloading_4">
-    <statement>
+  </listing>
+  <listing label="overloading_4">
+    <caption>
       <p>Would adding both of the following function declarations to a program lead to an error?</p>
       <pre>int stockPrice (string currency, int previous_price, double interest_rate );
 double stockPrice (string currency, int older_price, double interest_rate );</pre>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>Yes. Two functions with the same name have different return types which is not permitted.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Return types are not considered in overloads. Any return type is permitted in all circumstances.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>Yes. The parameters are the same types in the same order, so overloading is NOT legal.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>If the parameters are the same types in the same order, overloading is NOT legal.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>No. One of the parameters has a different name, so overloading is legal.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Variable names don't matter in overloading.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>No. One function returns an integer while the other returns a double, so overloading is legal.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Return type is not considered in resolving function overloads.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
+  </listing>
 </section>

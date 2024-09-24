@@ -62,113 +62,113 @@
             function). But sometimes there is an advantage to one over the other. If
             you are comfortable converting from one form to another, you will be
             able to choose the best form for whatever you are doing.</p>
-  <exercise label="objects_and_functions_1">
-    <statement>
+  <listing label="objects_and_functions_1">
+    <caption>
       <p>What is do we call programming that makes use of data structures and functions that interact with them?</p>
-    </statement>
+    </caption>
     <choices>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>object-oriented programming</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>data-oriented programming</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! Data-oriented programming focuses on how data is touched and processed.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>structured programming</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! Structured programming makes use of structured control flow using block structures (if/else, for/while).</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>structural programming</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! This is not one of the types of programming.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="objects_and_functions_2">
-    <statement>
+  </listing>
+  <listing label="objects_and_functions_2">
+    <caption>
       <p>Free-standing functions can perform __________ of the operation(s) that a member function can.</p>
-    </statement>
+    </caption>
     <choices>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>all</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct! But sometimes there is an advantage to using one over the other!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>some</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! The answer might surprise you!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>none</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! Quite the opposite, actually!</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="objects_and_functions_3">
-    <statement>
+  </listing>
+  <listing label="objects_and_functions_3">
+    <caption>
       <p>Member functions are declared __________.</p>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>before the structure definition</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! You're very close!</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>inside of the structure definition</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>after the structure definition</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! You're very close!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>anywhere in the program</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! The purpose of a member function is to establish a relationship between the structure and the function.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
+  </listing>
 </section>

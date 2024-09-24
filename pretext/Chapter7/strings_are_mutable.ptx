@@ -3,11 +3,11 @@
   <title><c>string</c>s are mutable</title>
   <p>You can change the letters in an <c>string</c> one at a time using the
             <c>[]</c> operator on the left side of an assignment.</p>
-  <exercise label="strings_are_mutable_AC_1">
-    <statement>
+  <listing label="strings_are_mutable_AC_1">
+    <caption>
       <p>The active code below changes the first letter in <c>greeting</c> to be
             <c>'J'</c>.</p>
-    </statement>
+    </caption>
     <program xml:id="strings_are_mutable_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -20,10 +20,10 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>This produces the output <c>Jello, world!</c>.</p>
-  <exercise label="string_mutable_1">
-    <statement>
+  <listing label="string_mutable_1">
+    <caption>
       <p>What is printed by the following statements?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -32,95 +32,95 @@ fav_food[3] = "d";
 cout << fav_food << endl;
 ]]></input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>icd cream</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Remember that indexing begins at 0, not 1.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>icedcream</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Index 3 was a space and now it is "d".</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>ice cream</p>
-        </statement>
+        </caption>
         <feedback>
           <p>The character at index 3 should be changed to "d".</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>iced</p>
-        </statement>
+        </caption>
         <feedback>
           <p>The character at index 3 should be changed to "d", and the rest stays the same.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="string_mutable_2">
-    <statement>
+  </listing>
+  <listing label="string_mutable_2">
+    <caption>
       <p>How can we fix the message to be <q>You're a wizard Harry</q>?</p>
       <program language="cpp" line-numbers="yes">
         <input>
 string message = "You're a lizard Harry";
 </input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>message[9] = "w";</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Since "l" is at index 9, replacing it with "w" fixes the message.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>message[10] = "w";</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Remember indexing starts at 0.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>"w" = message[9];</p>
-        </statement>
+        </caption>
         <feedback>
           <p>In order to change a letter in a string, the ``[]`` operator must be on the left of the assignment.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>message[8] = "w";</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Remember indexing starts at 0.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="string_mutable_3" numbered="yes" adaptive="yes" indentation="show" language="python">
-    <statement>
+  </listing>
+  <listing label="string_mutable_3" numbered="yes" adaptive="yes" indentation="show" language="python">
+    <caption>
       <p>Put together the code below to create a function <c>mixer</c> that takes in two strings and replaces every even index
             of the first string by the corresponding index of the second. It returns the modified first string.
             Example:
             <c>string_a = "food"</c>  and <c>string_b = "summer"</c> .
             <c>mixer(string_a ,string_b )</c> makes <c>string_a</c> become <q>somd</q>.</p>
       <p>Assume second string is greater than first.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="13">
         <choice correct="yes">
@@ -176,5 +176,5 @@ string message = "You're a lizard Harry";
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
+  </listing>
 </section>

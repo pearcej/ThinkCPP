@@ -4,10 +4,10 @@
   <p>To find the length of a string (number of characters), we can use the
             <c>length</c> function. The syntax for calling this function is a little
             different from what we've seen before.</p>
-  <exercise label="length_AC_1">
-    <statement>
+  <listing label="length_AC_1">
+    <caption>
       <p>The active code below outputs the length of string <c>fruit</c>.</p>
-    </statement>
+    </caption>
     <program xml:id="length_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -21,7 +21,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>To describe this function call, we would say that we are <term>invoking</term>
             the length function on the string named <c>fruit</c>. This vocabulary may
             seem strange, but we will see many more examples where we invoke a
@@ -44,11 +44,11 @@ char last = fruit[length];       // WRONG!!</pre>
                 out of bounds. This is usually the result of forgetting to subtract 1 from
                 <c>length</c>.</p>
   </warning>
-  <exercise label="length_AC_2">
-    <statement>
+  <listing label="length_AC_2">
+    <caption>
       <p>The active code below outputs the last character in string <c>fruit</c>
             using the <c>length</c> function.</p>
-    </statement>
+    </caption>
     <program xml:id="length_AC_2_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -62,9 +62,9 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
-  <exercise label="length_1">
-    <statement>
+  </listing>
+  <listing label="length_1">
+    <caption>
       <p>What is printed by the following statements?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -72,28 +72,28 @@ string s = "coding rocks";
 cout << s.length() << endl;
 ]]></input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>11</p>
-        </statement>
+        </caption>
         <feedback>
           <p>The space counts as a character.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>12</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Yes, there are 12 characters in the string.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="length_2">
-    <statement>
+  </listing>
+  <listing label="length_2">
+    <caption>
       <p>What is printed by the following statements?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -101,46 +101,46 @@ string s = "coding rocks";
 cout << (s[s.length()-5]) << endl;
 ]]></input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>o</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Take a look at the index calculation again, s.length()-5.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>r</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Yes, s.length() is 12 and 12-5 is 7.  Use 7 as index and remember to start counting with 0.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>s</p>
-        </statement>
+        </caption>
         <feedback>
           <p>s is at index 11.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>Error, s.length() is 12 and there is no index 12.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>You subtract 5 before using the index operator so it will work.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="length_3" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="length_3" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>Construct a block of code that correctly implements the accumulator pattern, with <c>course</c> being the first variable initialized.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="1" correct="no">
         <cline>int main() {</cline>
@@ -153,5 +153,5 @@ cout << (s[s.length()-5]) << endl;
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
+  </listing>
 </section>

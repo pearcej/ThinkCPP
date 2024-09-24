@@ -38,13 +38,13 @@ else {
             perform addition, and then perform multiplication, and then print the
             error message. Occasionally this feature is useful, but most of the time
             it is a source of errors when people forget the <c>break</c> statements.</p>
-  <exercise label="switch_AC_1">
-    <statement>
+  <listing label="switch_AC_1">
+    <caption>
       <p>Take a look at the active code below that allows you to choose your starter Pokemon.
             If you change the value of <c>type</c>, it will change the Pokemon you choose. Notice how
             if you don't assign <c>type</c> to a valid type, it outputs the default message. Try taking out
             the <c>break</c> statements in each case. What happens if you run the code with <c>type</c> as &#x2018;g' afterwards?</p>
-    </statement>
+    </caption>
     <program xml:id="switch_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -71,7 +71,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p><c>switch</c> statements work with integers, characters, and enumerated
             types. For example, to convert a <c>Suit</c> to the corresponding string,
             we could use something like:</p>
@@ -87,10 +87,10 @@ default:        return "Not a valid suit";
             of falling through to the next case.</p>
   <p>In general it is good style to include a <c>default</c> case in every
             <c>switch</c> statement, to handle errors or unexpected values.</p>
-  <exercise label="switch_1">
-    <statement>
+  <listing label="switch_1">
+    <caption>
       <p>A(n) <var/> statement is necessary for each branch in a <c>switch</c> statement. <var/>  </p>
-    </statement>
+    </caption>
     <setup>
       <var case="insensitive">
         <condition string="^\s*break\s*$">
@@ -105,48 +105,48 @@ default:        return "Not a valid suit";
         </condition>
       </var>
     </setup>
-  </exercise>
-  <exercise label="switch_2">
-    <statement>
+  </listing>
+  <listing label="switch_2">
+    <caption>
       <p>Which one of the following types do NOT work with <c>switch</c> statement?</p>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>ints</p>
-        </statement>
+        </caption>
         <feedback>
           <p>We can use ints with switch statements.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>chars</p>
-        </statement>
+        </caption>
         <feedback>
           <p>We can use chars with switch statements.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>strings</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Switch statements only work on integral values, so we cannot use strings with switch statements!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>enumerated types</p>
-        </statement>
+        </caption>
         <feedback>
           <p>We can use enumerated types with switch statements.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="switch_3">
-    <statement>
+  </listing>
+  <listing label="switch_3">
+    <caption>
       <p>What is the correct output of the code below?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -169,52 +169,52 @@ int main() {
 }
 ]]></input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>4</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! Try running it with the active code.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>49</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Case 2 doesn't end with a break statement, so case 3 also runs!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>49Invalid num! Please try again.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Where do we encounter a break statement?</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>Invalid num! Please try again.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Is 2 one of the invalid numbers?</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>Code will not run.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>There is no reason why the code wouldn't run.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="switch_4">
-    <statement>
+  </listing>
+  <listing label="switch_4">
+    <caption>
       <p>What is the correct output <term>this time</term>?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -235,52 +235,52 @@ int main() {
 }
 ]]></input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>1</p>
-        </statement>
+        </caption>
         <feedback>
           <p>The first statement ends with a break, so only 1 will print!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>149</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Where do we encounter a break statement?</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>149Invalid num! Please try again.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Is 1 one of the valid numbers?  Where do we encounter a break statement?</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>Invalid num! Please try again.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Is 1 one of the invalid numbers?</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>Code will not run.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>There is no reason why the code wouldn't run.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="switch_5">
-    <statement>
+  </listing>
+  <listing label="switch_5">
+    <caption>
       <p>And finally, what about <term>this time</term>?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -301,48 +301,48 @@ int main() {
 }
 ]]></input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>4</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Where do we / don't we encounter a break statement?</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>49</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Where do we / don't we encounter a break statement?</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>49Invalid num! Please try again.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Notice that 2 is not an invalid number, but since we are missing break statements, multiple branches execute.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>Invalid num! Please try again.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Is 2 one of the invalid numbers?</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>Code will not run.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>There is no reason why the code wouldn't run.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
+  </listing>
 </section>

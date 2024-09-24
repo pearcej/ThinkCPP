@@ -46,10 +46,10 @@
                         that fall into a certain range.</p>
     </li>
   </dl>
-  <exercise label="glossary_1">
-    <statement>
+  <listing label="glossary_1">
+    <caption>
       <p>Match the vocabulary word with its definition.</p>
-    </statement>
+    </caption>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -67,11 +67,11 @@
         <response>An integer variable or value used to indicate an element of a vector.</response>
       </match>
     </matches>
-  </exercise>
-  <exercise label="glossary_2">
-    <statement>
+  </listing>
+  <listing label="glossary_2">
+    <caption>
       <p>Match the vocabulary word with its definition.</p>
-    </statement>
+    </caption>
     <matches>
       <match order="1">
         <premise>constructor</premise>
@@ -86,11 +86,11 @@
         <response>A value used to initialize a random number sequence.</response>
       </match>
     </matches>
-  </exercise>
-  <exercise label="glossary_3">
-    <statement>
+  </listing>
+  <listing label="glossary_3">
+    <caption>
       <p>Match the vocabulary word with its definition.</p>
-    </statement>
+    </caption>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -108,5 +108,5 @@
         <response>A vector of integers where each integer counts the number of values that fall into a certain range.</response>
       </match>
     </matches>
-  </exercise>
+  </listing>
 </section>

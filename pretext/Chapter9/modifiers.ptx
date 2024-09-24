@@ -24,11 +24,11 @@
             greater than 60? In that case, it is not enough to subtract 60 once; we
             have to keep doing it until <c>second</c> is below 60. We can do that by
             replacing the <c>if</c> statements with <c>while</c> statements:</p>
-  <exercise label="modifiers_AC_1">
-    <statement>
+  <listing label="modifiers_AC_1">
+    <caption>
       <p>The active code below uses the <c>increment</c> function. Run the active code to
             see what the output is!</p>
-    </statement>
+    </caption>
     <program xml:id="modifiers_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -62,14 +62,14 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
-  <exercise label="modifiers_AC_2">
-    <statement>
+  </listing>
+  <listing label="modifiers_AC_2">
+    <caption>
       <p>The solution above is correct, but not very efficient. Can you think of a
             solution that does not require iteration? Try writing a more efficient version
             of <c>increment</c> in the commented section of the active code below. If you get stuck,
             you can reveal the extra problem at the end for help.</p>
-    </statement>
+    </caption>
     <program xml:id="modifiers_AC_2_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -101,14 +101,14 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
-  <exercises line="109" runestone_options="{'showtitle': 'data-showtitle=&quot;Reveal Problem&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'modifiers', 'chapter': 'Chapter9', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': '9_6_1', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter9/modifiers.rst">
-    <exercise label="modifiers_1" numbered="yes" adaptive="yes" indentation="hide" language="python">
-      <statement>
+  </listing>
+  <listings line="109" runestone_options="{'showtitle': 'data-showtitle=&quot;Reveal Problem&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'modifiers', 'chapter': 'Chapter9', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': '9_6_1', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter9/modifiers.rst">
+    <listing label="modifiers_1" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <caption>
         <p>Let's write the code for the <c>increment</c> function. <c>increment</c>
                 adds a number of seconds to a <c>Time</c> object and updates the values
                 of the object.</p>
-      </statement>
+      </caption>
       <blocks>
         <block order="4">
           <choice correct="yes">
@@ -155,6 +155,6 @@ int main() {
           <cline>}</cline>
         </block>
       </blocks>
-    </exercise>
-  </exercises>
+    </listing>
+  </listings>
 </section>

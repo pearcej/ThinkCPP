@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="chapter9_coding-practice">
   <title>Coding Practice</title>
-  <exercise xml:id="empty-326">
+  <listing xml:id="empty-326">
     <statement/>
     <program interactive="" language="" xml:id="empty-327"/>
     <solution>
@@ -29,7 +29,7 @@ int main() {
 
     
             </solution>
-  </exercise>
+  </listing>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
 &lt;div data-component="selectquestion" id=cp_9_AC_2q_sq data-questionlist='cp_9_AC_2q, cp_9_AC_2q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
@@ -37,7 +37,7 @@ int main() {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <exercise xml:id="empty-328">
+  <listing xml:id="empty-328">
     <statement/>
     <program interactive="" language="" xml:id="empty-329"/>
     <solution>
@@ -110,7 +110,7 @@ void printCakeInfo (Cake c) {
 
     
             </solution>
-  </exercise>
+  </listing>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
 &lt;div data-component="selectquestion" id=cp_9_AC_4q_sq data-questionlist='cp_9_AC_4q, cp_9_AC_4q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
@@ -118,7 +118,7 @@ void printCakeInfo (Cake c) {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <exercise xml:id="empty-330">
+  <listing xml:id="empty-330">
     <statement/>
     <program interactive="" language="" xml:id="empty-331"/>
     <solution>
@@ -200,7 +200,7 @@ int main() {
 
     
             </solution>
-  </exercise>
+  </listing>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
 &lt;div data-component="selectquestion" id=cp_9_AC_6q_sq data-questionlist='cp_9_AC_6q, cp_9_AC_6q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
@@ -208,7 +208,7 @@ int main() {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <exercise xml:id="empty-332">
+  <listing xml:id="empty-332">
     <statement/>
     <program interactive="" language="" xml:id="empty-333"/>
     <solution>
@@ -234,7 +234,7 @@ int main() {
 
     
             </solution>
-  </exercise>
+  </listing>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
 &lt;div data-component="selectquestion" id=cp_9_AC_8q_sq data-questionlist='cp_9_AC_8q, cp_9_AC_8q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
@@ -242,7 +242,7 @@ int main() {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <exercise xml:id="empty-334">
+  <listing xml:id="empty-334">
     <statement/>
     <program interactive="" language="" xml:id="empty-335"/>
     <solution>
@@ -293,7 +293,7 @@ int main() {
 
     
             </solution>
-  </exercise>
+  </listing>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
 &lt;div data-component="selectquestion" id=cp_9_AC_10q_sq data-questionlist='cp_9_AC_10q, cp_9_AC_10q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;

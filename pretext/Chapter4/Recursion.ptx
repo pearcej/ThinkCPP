@@ -24,11 +24,11 @@
             parameter. If the parameter is zero, it outputs the word <q>Blastoff.</q>
             Otherwise, it outputs the parameter and then calls a function named
             <c>countdown</c> &#x2014;itself&#x2014; passing <c>n - 1</c> as an argument.</p>
-  <exercise label="recursion_AC_1">
-    <statement>
+  <listing label="recursion_AC_1">
+    <caption>
       <p>Watch how the countdown function works when we start with a value
             of 3.</p>
-    </statement>
+    </caption>
     <program xml:id="recursion_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -51,7 +51,7 @@ int main () {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>What happens if we call <c>countdown</c> function like this:</p>
   <blockquote>
     <p>The execution of <c>countdown</c> begins with <c>n = 3</c>, and since n is not zero, it
@@ -99,10 +99,10 @@ void threeLine () {
             it outputs one newline, and then calls itself to output <c>n-1</c> additional
             newlines. Thus, the total number of newlines is <c>1 + (n - 1)</c>, which usually
             comes out to roughly n.</p>
-  <exercise label="recursion_AC_2">
-    <statement>
+  <listing label="recursion_AC_2">
+    <caption>
       <p>You can have a little bit of fun with recursion.  Try this guessing game below!</p>
-    </statement>
+    </caption>
     <program xml:id="recursion_AC_2_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -135,9 +135,9 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
-  <exercise label="recursion_1">
-    <statement>
+  </listing>
+  <listing label="recursion_1">
+    <caption>
       <p>What will print?</p>
       <pre>#include &lt;iostream&gt;
 using namespace std;
@@ -152,44 +152,44 @@ void exclamationPoint(int n) {
 int main () {
   exclamationPoint(3);
 }</pre>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>!</p>
-        </statement>
+        </caption>
         <feedback>
           <p>The function keeps executing while n is greater than 0.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>!!</p>
-        </statement>
+        </caption>
         <feedback>
           <p>The function keeps executing while n is greater than 0.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>!!!</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct! First, the program enters the if statement within exclamationPoint because n is greater than 0. Then the function prints a "!" and calls itself again, but with n-1, which is 2. This repeats until n is 0, which is when the program exits the function.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>!!!!</p>
-        </statement>
+        </caption>
         <feedback>
           <p>The function keeps executing while n is greater than 0. Therefore, when n is 0, it will not print a "!"</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="recursion_2">
-    <statement>
+  </listing>
+  <listing label="recursion_2">
+    <caption>
       <p>What will print?</p>
       <pre>#include &lt;iostream&gt;
 using namespace std;
@@ -204,46 +204,46 @@ void exclamationPoint(int n) {
 int main () {
   exclamationPoint(0);
 }</pre>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>!!</p>
-        </statement>
+        </caption>
         <feedback>
           <p>If we start at zero, will the function ever call itself?</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>!</p>
-        </statement>
+        </caption>
         <feedback>
           <p>If we start at zero, will the function ever call itself?</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>0</p>
-        </statement>
+        </caption>
         <feedback>
           <p>The only output statement in this program prints a "!", therefore "0" would never print.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>Nothing prints.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct! The program never enters the "if" statement within the function because n is never greater than 0.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="recursion_3">
-    <statement>
+  </listing>
+  <listing label="recursion_3">
+    <caption>
       <p>A function that calls itself is said to be <var/>.</p>
-    </statement>
+    </caption>
     <setup>
       <var case="insensitive">
         <condition string="^\s*recursive\s*$">
@@ -258,5 +258,5 @@ int main () {
         </condition>
       </var>
     </setup>
-  </exercise>
+  </listing>
 </section>

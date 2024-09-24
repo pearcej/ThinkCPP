@@ -3,11 +3,11 @@
   <title>Outputting Variables</title>
   <p>You can output the value of a variable using the same commands we used
             to output simple values. After observing the output, try inputting your own time!</p>
-  <exercise label="output_vars_AC_1">
-    <statement>
+  <listing label="output_vars_AC_1">
+    <caption>
       <p>This program outputs the current time, according to the values you
             provide for hour and minute.</p>
-    </statement>
+    </caption>
     <program xml:id="output_vars_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -31,7 +31,7 @@ int main () {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>This program creates two integer variables named hour and minute, and a
             character variable named colon. It assigns appropriate values to each of
             the variables and then uses a series of output statements to generate
@@ -44,11 +44,11 @@ int main () {
   <pre>hour</pre>
   <p>As we have seen before, you can include more than one value in a single
             output statement, which can make the previous program more concise:</p>
-  <exercise label="output_vars_AC_2">
-    <statement>
+  <listing label="output_vars_AC_2">
+    <caption>
       <p>This program does the same thing as the previous, but the print
             statements have been condensed to one line.  This is better style.</p>
-    </statement>
+    </caption>
     <program xml:id="output_vars_AC_2_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -68,11 +68,11 @@ int main () {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>On one line, this program outputs a string, two integers, a character,
             and the special value <c>endl</c>. Very impressive!</p>
-  <exercise label="output_vars_1">
-    <statement>
+  <listing label="output_vars_1">
+    <caption>
       <p>What prints when the following code is run?</p>
       <pre>int main () {
   char a;
@@ -81,52 +81,52 @@ int main () {
   b = '8';
   cout &lt;&lt; "a";
 }</pre>
-    </statement>
+    </caption>
     <choices>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>a</p>
-        </statement>
+        </caption>
         <feedback>
           <p>The string, not the variable, a will be printed.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>b</p>
-        </statement>
+        </caption>
         <feedback>
           <p>b will not be printed.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>z</p>
-        </statement>
+        </caption>
         <feedback>
           <p>The cout statement prints a, not the value of the variable a.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>8</p>
-        </statement>
+        </caption>
         <feedback>
           <p>z is the value of a and 8 will not be printed</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>Nothing! There will be a compile error!</p>
-        </statement>
+        </caption>
         <feedback>
           <p>There is no type mismatch, so there will not be a compile error.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="output_vars_2">
-    <statement>
+  </listing>
+  <listing label="output_vars_2">
+    <caption>
       <p>Now, what prints?</p>
       <pre>int main () {
   char a;
@@ -135,52 +135,52 @@ int main () {
   b = '8';
   cout &lt;&lt; b;
 }</pre>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>a</p>
-        </statement>
+        </caption>
         <feedback>
           <p>The string a will not be printed.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>b</p>
-        </statement>
+        </caption>
         <feedback>
           <p>The string b will not be printed.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>z</p>
-        </statement>
+        </caption>
         <feedback>
           <p>z is the value of a and 3 will not be printed.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>8</p>
-        </statement>
+        </caption>
         <feedback>
           <p>8 is the value of b will be printed!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>Nothing! There will be a compile error!</p>
-        </statement>
+        </caption>
         <feedback>
           <p>There is no type mismatch, so there will not be a compile error.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="output_vars_3">
-    <statement>
+  </listing>
+  <listing label="output_vars_3">
+    <caption>
       <p>And now, what prints?</p>
       <pre>int main () {
   int x;
@@ -189,54 +189,54 @@ int main () {
   y = 'e';
   cout &lt;&lt; 'y';
 }</pre>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>x</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Take a look at the code again.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>y</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Take a look at the code again.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>3</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Take a look at the code again.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>e</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Take a look at the code again.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>Nothing! There will be a compile error!</p>
-        </statement>
+        </caption>
         <feedback>
           <p>There is a type mismatch, so there will be a compile error!</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="output_vars_4">
-    <statement>
+  </listing>
+  <listing label="output_vars_4">
+    <caption>
       <p>Match the variable initialization to its correct type.</p>
-    </statement>
+    </caption>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -254,11 +254,11 @@ int main () {
         <response>char</response>
       </match>
     </matches>
-  </exercise>
-  <exercise label="output_vars_5" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="output_vars_5" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>Construct a main function that assigns <q>Hello</q> to the variable h, then prints out h's value.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="4">
         <cline>int main () {</cline>
@@ -294,5 +294,5 @@ int main () {
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
+  </listing>
 </section>

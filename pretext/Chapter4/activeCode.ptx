@@ -4,10 +4,10 @@
   <p>Answer the following <term>Activecode</term> questions to
             assess what you have learned in this chapter.</p>
   <exercise xml:id="empty-196">
-    <statement>
+    <caption>
       <p>Fix the code below so that it prints <q>THE TEAM</q> <q>THE TEAM</q>
                     <q>THE TEAM</q> on three separate lines.</p>
-    </statement>
+    </caption>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="cond_rec_a1q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -59,9 +59,9 @@ int main(){
 
             
 
-<exercise label="cond_rec_a1_a"><statement><p>Below is one way to fix the program.  Since we want <q>THE TEAM</q>
+<exercise label="cond_rec_a1_a"><caption><p>Below is one way to fix the program.  Since we want <q>THE TEAM</q>
                     to print three times, we must check all three conditons.  this
-                    means changing the <c>else if</c> statements to <c>if</c> statements.</p></statement><program xml:id="cond_rec_a1_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+                    means changing the <c>else if</c> statements to <c>if</c> statements.</p></caption><program xml:id="cond_rec_a1_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 int main(){
@@ -89,12 +89,12 @@ int main(){
 &lt;/div&gt;
 </raw>
   <exercise xml:id="empty-197">
-    <statement>
+    <caption>
       <p>Fix the infinite recursion in the code below.  The function
                     should not count any numbers after 10 (the highest numbers
                     that should print are 9 or 10).  When it is done counting,
                     the function should print that.</p>
-    </statement>
+    </caption>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="cond_rec_a3q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -149,11 +149,11 @@ int main () {
 
             
 
-<exercise label="cond_rec_a3_a"><statement><p>Below is one way to fix the program.  The infinite recursion
+<exercise label="cond_rec_a3_a"><caption><p>Below is one way to fix the program.  The infinite recursion
                     happens when we use an odd number as an argument.  By checking
                     that a number is less than 99, the highest numbers to recurse
                     are 98 and 97.  <c>98 + 2 == 100</c> and <c>97 + 2 == 99</c>, so we
-                    never count past 100.</p></statement><program xml:id="cond_rec_a3_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+                    never count past 100.</p></caption><program xml:id="cond_rec_a3_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -182,10 +182,10 @@ int main () {
 &lt;/div&gt;
 </raw>
   <exercise xml:id="empty-198">
-    <statement>
+    <caption>
       <p>Finish the code below so that the function will continue to
                     ask for input until the user guesses the word correctly.</p>
-    </statement>
+    </caption>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="cond_rec_a5q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -227,7 +227,7 @@ bool guessTheWord (string correct) {
 
             
 
-<exercise label="cond_rec_a5a"><statement><p>Below is one way to complete the program.</p></statement><program xml:id="cond_rec_a5a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="cond_rec_a5a"><caption><p>Below is one way to complete the program.</p></caption><program xml:id="cond_rec_a5a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -253,12 +253,12 @@ bool guessTheWord (string correct) {
 &lt;/div&gt;
 </raw>
   <exercise xml:id="empty-199">
-    <statement>
+    <caption>
       <p>Write the function <c>goodVibes</c> that prints <q>I'm having a <c>mood</c> day!</q>
                     depending on the value of <c>mood</c>.  If <c>mood</c> is <q>bad</q>, then the function
                     should not do anything since it's good vibes only.  Be sure to
                     include any necessary headers.</p>
-    </statement>
+    </caption>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="cond_rec_a7q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -292,9 +292,9 @@ void goodVibes (string mood) {
 
             
 
-<exercise label="cond_rec_a7a"><statement><p>Below is one way to write the program.  The return allows the
+<exercise label="cond_rec_a7a"><caption><p>Below is one way to write the program.  The return allows the
                     function to exit if there are bad vibes in the room.  Otherise,
-                    the function prints as directed.</p></statement><program xml:id="cond_rec_a7a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+                    the function prints as directed.</p></caption><program xml:id="cond_rec_a7a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -315,11 +315,11 @@ void goodVibes (string mood) {
 &lt;/div&gt;
 </raw>
   <exercise xml:id="empty-200">
-    <statement>
+    <caption>
       <p>Write the function <c>countdown</c> that takes a positive integer
                     and decrements it until eaching zero, printing the number at each
                     step of the way.  Once it reaches zero, it should print <q>Blastoff!</q></p>
-    </statement>
+    </caption>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="cond_rec_a9q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -355,7 +355,7 @@ void countdown (int num) {
 
             
 
-<exercise label="cond_rec_a9a"><statement><p>Below is one way to write the program.</p></statement><program xml:id="cond_rec_a9a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="cond_rec_a9a"><caption><p>Below is one way to write the program.</p></caption><program xml:id="cond_rec_a9a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 

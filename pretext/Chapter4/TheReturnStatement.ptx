@@ -4,12 +4,12 @@
   <p>The <c>return</c> statement allows you to terminate the execution of a function
             before you reach the end. One reason to use it is if you detect an error
             condition:</p>
-  <exercise label="return_AC_1">
-    <statement>
+  <listing label="return_AC_1">
+    <caption>
       <p>This program will terminate with a return statement if the argument
             provided is not positive.  Try running the code as is.  If you get
             an error message, try changing the value of x.</p>
-    </statement>
+    </caption>
     <program xml:id="return_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -32,7 +32,7 @@ void printLogarithm (double x) {
  }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>This defines a function named <c>printLogarithm</c> that takes a <c>double</c> named x
             as a parameter. The first thing it does is check whether x is less than
             or equal to zero, in which case it displays an error message and then
@@ -44,8 +44,8 @@ void printLogarithm (double x) {
   <p>Remember that any time you want to use one a function from the math
             library, you have to include the header file <c>&lt;cmath&gt;</c>.</p>
   <p>Putting <c>return 0;</c> in your code ends your program. Let's look back at a program from section 4.3. How would your answer change?</p>
-  <exercise label="return_1">
-    <statement>
+  <listing label="return_1">
+    <caption>
       <p>What will print?</p>
       <pre>#include &lt;iostream&gt;
 using namespace std;
@@ -63,52 +63,52 @@ int main () {
   }
   return 0;
 }</pre>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>One! Two! Three!</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Take a look at the first conditional statement more closely.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>Two! Three!</p>
-        </statement>
+        </caption>
         <feedback>
           <p>8 is not greater than 8, so it doesn't meet the first condition.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>Three!</p>
-        </statement>
+        </caption>
         <feedback>
           <p>All of the following are "if" statements, with no return. There are no "else" statements.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>Two!</p>
-        </statement>
+        </caption>
         <feedback>
           <p>All of the following are "if" statements, with no return. There are no "else" statements.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>One!</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Take a look at the first conditional statement more closely.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="return_2">
-    <statement>
+  </listing>
+  <listing label="return_2">
+    <caption>
       <p>What will print?</p>
       <pre>#include &lt;iostream&gt;
 using namespace std;
@@ -129,48 +129,48 @@ int main () {
   }
   return 0;
 }</pre>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>One! Two! Three!</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Try again! 8 is not greater than 8, so the first condition will not be met.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>Two! Three!</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Try again! Remember what "return 0" is for!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>Three!</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Try again! 8 is greater than 6!</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>Two!</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>One!</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Take a look at the first conditional statement more closely.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
+  </listing>
 </section>

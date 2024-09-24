@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<exercises xml:id="chapter7_multiple-choice-exercises">
+<listings xml:id="chapter7_multiple-choice-exercises">
   <title>Multiple Choice Exercises</title>
-  <exercise label="mce_7_1">
-    <statement>
+  <listing label="mce_7_1">
+    <caption>
       <p>Which variables below is declared as a <c>string</c> type?</p>
       <program language="cpp" line-numbers="yes">
         <input>
@@ -16,14 +16,14 @@ int main() {
 }
 </input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice>
         <statement id="mce_7_1_opt_a">
           <p>
             <c>x</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="mce_7_1_opt_a">
           <p><c>x</c> is an <c>int</c>.</p>
         </feedback>
@@ -33,7 +33,7 @@ int main() {
           <p>
             <c>y</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="mce_7_1_opt_b">
           <p><c>y</c> is a <c>double</c>.</p>
         </feedback>
@@ -43,7 +43,7 @@ int main() {
           <p>
             <c>word</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="mce_7_1_opt_c">
           <p><c>word</c> is a <c>string</c>.</p>
         </feedback>
@@ -53,7 +53,7 @@ int main() {
           <p>
             <c>"hello"</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="mce_7_1_opt_d">
           <p><q>hello</q> is not a variable.</p>
         </feedback>
@@ -63,7 +63,7 @@ int main() {
           <p>
             <c>letter</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="mce_7_1_opt_e">
           <p><c>letter</c> is a <c>string</c>.</p>
         </feedback>
@@ -73,7 +73,7 @@ int main() {
           <p>
             <c>c</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="mce_7_1_opt_f">
           <p><c>c</c> is a <c>char</c>.</p>
         </feedback>
@@ -83,15 +83,15 @@ int main() {
           <p>
             <c>isPrime</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="mce_7_1_opt_g">
           <p><c>isPrime</c> is a <c>bool</c>.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="mce_7_2">
-    <statement>
+  </listing>
+  <listing label="mce_7_2">
+    <caption>
       <p>What value should replace the question mark to output the character &#x2018;p'?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -101,12 +101,12 @@ int main() {
 }
 ]]></input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice>
         <statement id="mce_7_2_opt_a">
           <p>11</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_2_opt_a">
           <p>Remember that indexing begins at 0 in C++.</p>
         </feedback>
@@ -114,7 +114,7 @@ int main() {
       <choice correct="yes">
         <statement id="mce_7_2_opt_b">
           <p>10</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_2_opt_b">
           <p>&#x2018;p' is located at index 10 in quote.</p>
         </feedback>
@@ -122,7 +122,7 @@ int main() {
       <choice>
         <statement id="mce_7_2_opt_c">
           <p>4</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_2_opt_c">
           <p>The character &#x2018;m' is located at index 4.</p>
         </feedback>
@@ -130,15 +130,15 @@ int main() {
       <choice>
         <statement id="mce_7_2_opt_d">
           <p>0</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_2_opt_d">
           <p>The character <q>N</q> is located at index 0.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="mce_7_3">
-    <statement>
+  </listing>
+  <listing label="mce_7_3">
+    <caption>
       <p>What is the output of the code below?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -157,12 +157,12 @@ int main() {
 }
 ]]></input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice>
         <statement id="mce_7_3_opt_a">
           <p>I</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_3_opt_a">
           <p>The value of <c>z</c> is not 0.</p>
         </feedback>
@@ -170,7 +170,7 @@ int main() {
       <choice>
         <statement id="mce_7_3_opt_b">
           <p>0</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_3_opt_b">
           <p>The value of <c>z</c> is not greater than 11.</p>
         </feedback>
@@ -178,7 +178,7 @@ int main() {
       <choice>
         <statement id="mce_7_3_opt_c">
           <p>o</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_3_opt_c">
           <p>The value of <c>z</c> is not 3.</p>
         </feedback>
@@ -186,15 +186,15 @@ int main() {
       <choice correct="yes">
         <statement id="mce_7_3_opt_d">
           <p>y</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_3_opt_d">
           <p>The final value of <c>z</c> is 7, and &#x2018;y' is at index 7 of <c>quote</c>.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="mce_7_4">
-    <statement>
+  </listing>
+  <listing label="mce_7_4">
+    <caption>
       <p>What is the output of the code below?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -205,12 +205,12 @@ int main() {
 }
 ]]></input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice>
         <statement id="mce_7_4_opt_a">
           <p>-1</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_4_opt_a">
           <p>-1 is not in <c>quote</c>.</p>
         </feedback>
@@ -218,7 +218,7 @@ int main() {
       <choice>
         <statement id="mce_7_4_opt_b">
           <p>w</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_4_opt_b">
           <p><c>x</c> is not the index value of the character &#x2018;w'.</p>
         </feedback>
@@ -226,7 +226,7 @@ int main() {
       <choice>
         <statement id="mce_7_4_opt_c">
           <p>.</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_4_opt_c">
           <p><c>x</c> is not the index value of the last period.</p>
         </feedback>
@@ -234,7 +234,7 @@ int main() {
       <choice>
         <statement id="mce_7_4_opt_d">
           <p>&#x2018; &#x2018;</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_4_opt_d">
           <p>It might be logical to think that memory outside of the <c>string</c> is empty space, but there could be leftover junk values.</p>
         </feedback>
@@ -242,15 +242,15 @@ int main() {
       <choice correct="yes">
         <statement id="mce_7_4_opt_e">
           <p>Error, we are indexing out of bounds.</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_4_opt_e">
           <p><c>x</c> has a value of 32 and there is no index 32 in <c>quote</c>.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="mce_7_5">
-    <statement>
+  </listing>
+  <listing label="mce_7_5">
+    <caption>
       <p>What is the output of the code below?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -266,12 +266,12 @@ int main() {
 }
 ]]></input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice>
         <statement id="mce_7_5_opt_a">
           <p>teeest</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_5_opt_a">
           <p>Remember that indexing begins at 0 in C++.</p>
         </feedback>
@@ -279,7 +279,7 @@ int main() {
       <choice correct="yes">
         <statement id="mce_7_5_opt_b">
           <p>Wg reeest</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_5_opt_b">
           <p>If we print out every fifth character, including the first, this is the answer.</p>
         </feedback>
@@ -287,7 +287,7 @@ int main() {
       <choice>
         <statement id="mce_7_5_opt_c">
           <p>ith reatpowe coms grat rsponibliy.</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_5_opt_c">
           <p>This is what we would get if we removed every fifth character.</p>
         </feedback>
@@ -295,15 +295,15 @@ int main() {
       <choice>
         <statement id="mce_7_5_opt_d">
           <p>With great power comes great responsiblity.</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_5_opt_d">
           <p>Take a look at the conditional in the while loop.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="mce_7_6">
-    <statement>
+  </listing>
+  <listing label="mce_7_6">
+    <caption>
       <p>What is the output of the code below?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -314,14 +314,14 @@ int main() {
 }
 ]]></input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice correct="yes">
         <statement id="mce_7_6_opt_a">
           <p>
             <c>string::npos</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="mce_7_6_opt_a">
           <p>Since &#x2018;a' is not found in <c>quote</c>, the <c>find</c> function returns <c>string::npos</c>.</p>
         </feedback>
@@ -329,7 +329,7 @@ int main() {
       <choice>
         <statement id="mce_7_6_opt_b">
           <p>0</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_6_opt_b">
           <p>The character at index 0 is &#x2018;W'.</p>
         </feedback>
@@ -337,7 +337,7 @@ int main() {
       <choice>
         <statement id="mce_7_6_opt_c">
           <p>8</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_6_opt_c">
           <p>The character at index 8 is &#x2018;e'.</p>
         </feedback>
@@ -345,15 +345,15 @@ int main() {
       <choice>
         <statement id="mce_7_6_opt_d">
           <p>15</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_6_opt_d">
           <p>There is no index <c>15</c> in quote.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="mce_7_7">
-    <statement>
+  </listing>
+  <listing label="mce_7_7">
+    <caption>
       <p>What is the output of the code below?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -364,12 +364,12 @@ int main() {
 }
 ]]></input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice>
         <statement id="mce_7_7_opt_a">
           <p>4</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_7_opt_a">
           <p>Although <q>wood</q> appears four times in the <c>string</c>, that is not what the <c>find</c> function returns.</p>
         </feedback>
@@ -377,7 +377,7 @@ int main() {
       <choice correct="yes">
         <statement id="mce_7_7_opt_b">
           <p>9</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_7_opt_b">
           <p>The index of &#x2018;w' in the first <q>wood</q> is at index 9.</p>
         </feedback>
@@ -385,7 +385,7 @@ int main() {
       <choice>
         <statement id="mce_7_7_opt_c">
           <p>10</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_7_opt_c">
           <p>Remember indexing begins at 0 in C++.</p>
         </feedback>
@@ -393,7 +393,7 @@ int main() {
       <choice>
         <statement id="mce_7_7_opt_d">
           <p>12</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_7_opt_d">
           <p>The <c>find</c> function returns the index of the first character of the found string.</p>
         </feedback>
@@ -401,15 +401,15 @@ int main() {
       <choice>
         <statement id="mce_7_7_opt_e">
           <p>22</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_7_opt_e">
           <p>The <c>find</c> function returns the index of the first character of the found string.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="mce_7_8">
-    <statement>
+  </listing>
+  <listing label="mce_7_8">
+    <caption>
       <p>What is the output of the code below?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -420,12 +420,12 @@ int main() {
 }
 ]]></input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice>
         <statement id="mce_7_8_opt_a">
           <p>9</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_8_opt_a">
           <p>Take a closer look at the starting index for where we should start looking.</p>
         </feedback>
@@ -433,7 +433,7 @@ int main() {
       <choice correct="yes">
         <statement id="mce_7_8_opt_b">
           <p>22</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_8_opt_b">
           <p>After the first &#x2018;w', the second &#x2018;w' appears at index 22.</p>
         </feedback>
@@ -441,7 +441,7 @@ int main() {
       <choice>
         <statement id="mce_7_8_opt_c">
           <p>43</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_8_opt_c">
           <p>Take a closer look at the <c>find</c> function and its arguments.</p>
         </feedback>
@@ -449,15 +449,15 @@ int main() {
       <choice>
         <statement id="mce_7_8_opt_d">
           <p>65</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_8_opt_d">
           <p>Take a closer look at the <c>find</c> function and its arguments.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="mce_7_9">
-    <statement>
+  </listing>
+  <listing label="mce_7_9">
+    <caption>
       <p>What is the output of the code below?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -475,12 +475,12 @@ int main() {
 }
 ]]></input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice>
         <statement id="mce_7_9_opt_a">
           <p>0</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_9_opt_a">
           <p>Are there any occurences of the letter &#x2018;e' in <c>quote</c>?</p>
         </feedback>
@@ -488,7 +488,7 @@ int main() {
       <choice>
         <statement id="mce_7_9_opt_b">
           <p>6</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_9_opt_b">
           <p>Count the number of &#x2018;e's in <c>quote</c>.</p>
         </feedback>
@@ -496,7 +496,7 @@ int main() {
       <choice correct="yes">
         <statement id="mce_7_9_opt_c">
           <p>7</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_9_opt_c">
           <p>There are 7 occurences of the letter &#x2018;e' in <c>quote</c>.</p>
         </feedback>
@@ -504,15 +504,15 @@ int main() {
       <choice>
         <statement id="mce_7_9_opt_d">
           <p>12</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_9_opt_d">
           <p>Count the number of &#x2018;e's in <c>quote</c>.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="mce_7_10">
-    <statement>
+  </listing>
+  <listing label="mce_7_10">
+    <caption>
       <p>What is the output of the code below?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -524,12 +524,12 @@ int main() {
 }
 ]]></input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice>
         <statement id="mce_7_10_opt_a">
           <p>Marco! Polo!</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_10_opt_a">
           <p>Take a closer look at the initialization of <c>output</c>.</p>
         </feedback>
@@ -537,7 +537,7 @@ int main() {
       <choice>
         <statement id="mce_7_10_opt_b">
           <p>Marco!Polo!</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_10_opt_b">
           <p>Take a closer look at the initialization of <c>output</c>.</p>
         </feedback>
@@ -545,7 +545,7 @@ int main() {
       <choice>
         <statement id="mce_7_10_opt_c">
           <p>call response</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_10_opt_c">
           <p>Can we concatenate <q>call</q> and <q>response</q>?</p>
         </feedback>
@@ -553,7 +553,7 @@ int main() {
       <choice>
         <statement id="mce_7_10_opt_d">
           <p>callresponse</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_10_opt_d">
           <p>Can we concatenate <q>call</q> and <q>response</q>?</p>
         </feedback>
@@ -561,15 +561,15 @@ int main() {
       <choice correct="yes">
         <statement id="mce_7_10_opt_e">
           <p>Error!</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_10_opt_e">
           <p>We cannot concatenate native C strings like <q>call</q> and <q>response</q>, so this code results in an error.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="mce_7_11">
-    <statement>
+  </listing>
+  <listing label="mce_7_11">
+    <caption>
       <p>An error occured while delivering a message. All instances of the letter &#x2018;s'
             got replaced by &#x2018;X's. Can you complete the code below to fix this error by selecting
             the correct line of code to replace the question marks?</p>
@@ -588,14 +588,14 @@ int main() {
 }
 ]]></input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice>
         <statement id="mce_7_11_opt_a">
           <p>
             <c>question['X'] = 's';</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="mce_7_11_opt_a">
           <p>The argument in the <c>[]</c> operator should be a position in the string.</p>
         </feedback>
@@ -605,7 +605,7 @@ int main() {
           <p>
             <c>'s' = question[i];</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="mce_7_11_opt_b">
           <p>Check the order of your assignment.</p>
         </feedback>
@@ -615,7 +615,7 @@ int main() {
           <p>
             <c>'X' = 's';</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="mce_7_11_opt_c">
           <p>We cannot assign the value of &#x2018;s' to &#x2018;X'.</p>
         </feedback>
@@ -625,15 +625,15 @@ int main() {
           <p>
             <c>question[i] = 's';</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="mce_7_11_opt_d">
           <p>This will successfully replace all instances of &#x2018;X' with &#x2018;s'.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="mce_7_12">
-    <statement>
+  </listing>
+  <listing label="mce_7_12">
+    <caption>
       <p>What is the output of the code below?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -642,12 +642,12 @@ int main() {
 }
 ]]></input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice>
         <statement id="mce_7_12_opt_a">
           <p>butterbutterfly</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_12_opt_a">
           <p>The operator between <q>butter</q> and <q>butterfly</q> is the <c>&lt;</c> operator, not <c>&lt;&lt;</c>.</p>
         </feedback>
@@ -655,7 +655,7 @@ int main() {
       <choice>
         <statement id="mce_7_12_opt_b">
           <p>0</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_12_opt_b">
           <p>Does <q>butter</q> come before or after <q>butterfly</q>?</p>
         </feedback>
@@ -663,7 +663,7 @@ int main() {
       <choice correct="yes">
         <statement id="mce_7_12_opt_c">
           <p>1</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_12_opt_c">
           <p><q>butter</q> comes before <q>butterfly</q> in the dictionary.</p>
         </feedback>
@@ -671,7 +671,7 @@ int main() {
       <choice>
         <statement id="mce_7_12_opt_d">
           <p>False</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_12_opt_d">
           <p>In C++, boolean values are outputted as either a 0 or 1.</p>
         </feedback>
@@ -679,15 +679,15 @@ int main() {
       <choice>
         <statement id="mce_7_12_opt_e">
           <p>True</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_12_opt_e">
           <p>In C++, boolean values are outputted as either a 0 or 1.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="mce_7_13">
-    <statement>
+  </listing>
+  <listing label="mce_7_13">
+    <caption>
       <p>What is the output of the code below?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -705,12 +705,12 @@ int main() {
 }
 ]]></input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice>
         <statement id="mce_7_13_opt_a">
           <p>3</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_13_opt_a">
           <p>The code is not counting the number of a's or e's after position 17. Rather adding up their indices.</p>
         </feedback>
@@ -718,7 +718,7 @@ int main() {
       <choice>
         <statement id="mce_7_13_opt_b">
           <p>4</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_13_opt_b">
           <p>The code is not counting the number of a's or e's. Rather adding up their indices.</p>
         </feedback>
@@ -726,7 +726,7 @@ int main() {
       <choice correct="yes">
         <statement id="mce_7_13_opt_c">
           <p>64</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_13_opt_c">
           <p>Correct! the occurences of &#x2018;a' are 19  and 21, while that of &#x2018;e' is 24 (after <c>index</c> 17). The total is 64.</p>
         </feedback>
@@ -734,15 +734,15 @@ int main() {
       <choice>
         <statement id="mce_7_13_opt_d">
           <p>68</p>
-        </statement>
+        </caption>
         <feedback id="mce_7_13_opt_d">
           <p>The first occurence of &#x2018;e' is at index 4 so it is not counted.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="mce_7_14">
-    <statement>
+  </listing>
+  <listing label="mce_7_14">
+    <caption>
       <p>What is the output of the code below?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -757,14 +757,14 @@ int main() {
 }
 ]]></input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice correct="yes">
         <statement id="mce_7_14_opt_a">
           <p>
             <q>IMM MondM James Mond</q>
           </p>
-        </statement>
+        </caption>
         <feedback id="mce_7_14_opt_a">
           <p>Correct! We change indices 1,2,4,8,16 to M before <c>index</c> becomes <c>&gt;</c> <c>quote.length()</c>.</p>
         </feedback>
@@ -774,7 +774,7 @@ int main() {
           <p>
             <q>IMMMMMMMMMMMMMMMMMMM</q>
           </p>
-        </statement>
+        </caption>
         <feedback id="mce_7_14_opt_b">
           <p>We are not increasing <c>index</c> by 1, instead we are doubling it.</p>
         </feedback>
@@ -784,7 +784,7 @@ int main() {
           <p>
             <q>MMM MondM James Mond</q>
           </p>
-        </statement>
+        </caption>
         <feedback id="mce_7_14_opt_c">
           <p>We don't start at position 0 this time.</p>
         </feedback>
@@ -794,11 +794,11 @@ int main() {
           <p>
             <q>IMsMBMnM,MJMmMsMBMnM</q>
           </p>
-        </statement>
+        </caption>
         <feedback id="mce_7_14_opt_d">
           <p>we are not increasing <c>index</c> by 2, instead we are doubling it.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-</exercises>
+  </listing>
+</listings>

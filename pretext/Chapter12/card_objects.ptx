@@ -140,10 +140,10 @@ Card::Card (int s, int r) {
   <pre>Card threeOfClubs (0, 3);</pre>
   <p>The first argument, <c>0</c> represents the suit Clubs, the second,
             naturally, represents the rank 3.</p>
-  <exercise label="card_objects_1">
-    <statement>
+  <listing label="card_objects_1">
+    <caption>
       <p>The instance variables for a playing card are <var/> and <var/>. (Put them in alphabetical order.)</p>
-    </statement>
+    </caption>
     <setup>
       <var case="insensitive">
         <condition string="^\s*rank\s*$">
@@ -180,50 +180,50 @@ Card::Card (int s, int r) {
         </condition>
       </var>
     </setup>
-  </exercise>
-  <exercise label="card_objects_2">
-    <statement>
+  </listing>
+  <listing label="card_objects_2">
+    <caption>
       <p>What does it mean to <term>encode</term> the ranks and suits?</p>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>To translate each rank / suit into a secret code.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! This is called encryption.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>To create strings to represent each rank / suit.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! We create strings before we encode.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>To define a mapping between each rank / suit and a sequence of numbers.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct! This makes it easier to compare cards.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>To write code describing real objects, like cards, with their respective ranks / suits.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! This is how we describe object-oriented programming.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="card_objects_3">
-    <statement>
+  </listing>
+  <listing label="card_objects_3">
+    <caption>
       <p>The symbol <math>\mapsto</math> means <var/> .  </p>
-    </statement>
+    </caption>
     <setup>
       <var case="insensitive">
         <condition string="^\s*maps\s+to)\s*$">
@@ -238,44 +238,44 @@ Card::Card (int s, int r) {
         </condition>
       </var>
     </setup>
-  </exercise>
-  <exercise label="card_objects_4">
-    <statement>
+  </listing>
+  <listing label="card_objects_4">
+    <caption>
       <p>What is the purpose of mapping?</p>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>To have better organization in your code.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! Mapping helps more with order than with organization.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>To make it possible to compare objects that have non-numerical values.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct! By mapping non-numerical values to integers, we can compare them!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>To represent complex objects visually.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! There is nothing visual about mapping.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>To add complexity to your code.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! Mapping actually simplifies your code.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
+  </listing>
 </section>

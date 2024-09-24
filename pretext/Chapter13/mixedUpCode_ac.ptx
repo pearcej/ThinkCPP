@@ -2,12 +2,12 @@
 <section xml:id="chapter13_activecode-exercises">
   <title>Activecode Exercises</title>
   <p>Answer the following <term>Activecode</term> questions to assess what you have learned in this chapter.</p>
-  <exercise xml:id="empty-83">
-    <statement>
+  <listing xml:id="empty-83">
+    <caption>
       <p>Write the enumerated type <c>Days</c> which maps days of the week to integers
                     starting at 1. Use a switch statement to determine whether or not day
                     is a weekend or not. Check for cases in numerical order.</p>
-    </statement>
+    </caption>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_13_1_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -46,7 +46,7 @@ int main () {
 
             
 
-<exercise label="mucp_13_1_ac_a"><statement><p>Below is one way to use a switch statement to classify a day of the week.</p></statement><program xml:id="mucp_13_1_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<listing label="mucp_13_1_ac_a"><caption><p>Below is one way to use a switch statement to classify a day of the week.</p></caption><program xml:id="mucp_13_1_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -66,15 +66,15 @@ int main () {
             break;
     }
 }
-        ]]></input></program></exercise>
+        ]]></input></program></listing>
             </solution>
-  </exercise>
-  <exercise xml:id="empty-84">
-    <statement>
+  </listing>
+  <listing xml:id="empty-84">
+    <caption>
       <p>Use a switch statement to check and print out whether a number is divisible by two.
                     Prompt and get input from the user. If input isn't valid,
                     print out the default statement <q>Invalid input.</q> Check for cases in numerical order.</p>
-    </statement>
+    </caption>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_13_2_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -114,8 +114,8 @@ int main () {
 
             
 
-<exercise label="mucp_13_2_ac_a"><statement><p>Below is one way to use a switch statement to check and print out whether a number is divisible by
-                    two.</p></statement><program xml:id="mucp_13_2_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<listing label="mucp_13_2_ac_a"><caption><p>Below is one way to use a switch statement to check and print out whether a number is divisible by
+                    two.</p></caption><program xml:id="mucp_13_2_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -135,15 +135,15 @@ int main () {
             break;
     }
 }
-        ]]></input></program></exercise>
+        ]]></input></program></listing>
             </solution>
-  </exercise>
-  <exercise xml:id="empty-85">
-    <statement>
+  </listing>
+  <listing xml:id="empty-85">
+    <caption>
       <p>Use a switch statement to check and print out the maximum between two numbers.
                     Prompt and get input from the user for two integers. If input isn't valid,
                     print out the default statement <q>Invalid input.</q> Check for cases in numerical order.</p>
-    </statement>
+    </caption>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_13_3_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -184,7 +184,7 @@ int main () {
 
             
 
-<exercise label="mucp_13_3_ac_a"><statement><p>Below is one way to use a switch statement to check and print out the maximum between two numbers.</p></statement><program xml:id="mucp_13_3_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<listing label="mucp_13_3_ac_a"><caption><p>Below is one way to use a switch statement to check and print out the maximum between two numbers.</p></caption><program xml:id="mucp_13_3_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -206,13 +206,13 @@ int main () {
             break;
     }
 }
-        ]]></input></program></exercise>
+        ]]></input></program></listing>
             </solution>
-  </exercise>
-  <exercise xml:id="empty-86">
-    <statement>
+  </listing>
+  <listing xml:id="empty-86">
+    <caption>
       <p>Write the pseudocode for the implementation of <c>mergeSort</c>.</p>
-    </statement>
+    </caption>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_13_4_ac_q_editor">
       <input>
 // YOUR PSEUDOCODE HERE
@@ -237,7 +237,7 @@ Deck Deck::mergeSort () const {
 
             
 
-<exercise label="mucp_13_4_ac_a"><statement><p>Below is one way to write the pseudocode of <c>mergeSort</c>.</p></statement><program xml:id="mucp_13_4_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input>
+<listing label="mucp_13_4_ac_a"><caption><p>Below is one way to write the pseudocode of <c>mergeSort</c>.</p></caption><program xml:id="mucp_13_4_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input>
 Deck Deck::mergeSort () const {
     find the midpoint of the deck
     divide the deck into two subdecks
@@ -245,15 +245,15 @@ Deck Deck::mergeSort () const {
     merge the two halves and return the result
     divide each subdeck into two more subdecks
 }
-        </input></program></exercise>
+        </input></program></listing>
             </solution>
-  </exercise>
-  <exercise xml:id="empty-87">
-    <statement>
+  </listing>
+  <listing xml:id="empty-87">
+    <caption>
       <p>Let's revisit the Dictionary data structure defined in the previous section.
                     Write the struct definitions for <c>Entry</c>, which has member variables word and page,
                     and for <c>Dictionary</c>, which has a vector of Entries.</p>
-    </statement>
+    </caption>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_13_5_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -286,7 +286,7 @@ struct Dictionary {
 
             
 
-<exercise label="mucp_13_5_ac_a"><statement><p>Below is one way to write the struct definition for <c>Entry</c> and for <c>Dictionary</c>.</p></statement><program xml:id="mucp_13_5_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<listing label="mucp_13_5_ac_a"><caption><p>Below is one way to write the struct definition for <c>Entry</c> and for <c>Dictionary</c>.</p></caption><program xml:id="mucp_13_5_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -299,15 +299,15 @@ struct Entry {
 struct Dictionary {
     vector<Entry> entries;
 };
-        ]]></input></program></exercise>
+        ]]></input></program></listing>
             </solution>
-  </exercise>
-  <exercise xml:id="empty-88">
-    <statement>
+  </listing>
+  <listing xml:id="empty-88">
+    <caption>
       <p>Assume our dictionary is currently unsorted. Let's write a Dictionary member function <c>find</c>
                     that takes a string word as a parameter and returns the index of its corresponding
                     entry. If the word isn't in the dictionary, return -1.</p>
-    </statement>
+    </caption>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_13_6_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -349,7 +349,7 @@ int Dictionary::find (string word) {
 
             
 
-<exercise label="mucp_13_6_ac_a"><statement><p>Below is one way to write the Dictionary member function.</p></statement><program xml:id="mucp_13_6_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<listing label="mucp_13_6_ac_a"><caption><p>Below is one way to write the Dictionary member function.</p></caption><program xml:id="mucp_13_6_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -371,16 +371,16 @@ int Dictionary::find (string word) {
     }
     return -1;
 }
-        ]]></input></program></exercise>
+        ]]></input></program></listing>
             </solution>
-  </exercise>
-  <exercise xml:id="empty-89">
-    <statement>
+  </listing>
+  <listing xml:id="empty-89">
+    <caption>
       <p>Of course, all dictionaries are in some sort of order. In order to do this, we
                     must first write the Dictionary member function <c>findFirstWord</c>, which takes a starting
                     index as a parameter returns the index of the Entry with the highest priority alphabetically
                     (i.e. the Entry with a word that would come first in the alphabet).</p>
-    </statement>
+    </caption>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_13_7_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -423,7 +423,7 @@ int Dictionary::findFirstWord (int start) {
 
             
 
-<exercise label="mucp_13_7_ac_a"><statement><p>Below is one way to write the <c>findFirstWord</c> member function.</p></statement><program xml:id="mucp_13_7_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<listing label="mucp_13_7_ac_a"><caption><p>Below is one way to write the <c>findFirstWord</c> member function.</p></caption><program xml:id="mucp_13_7_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -446,15 +446,15 @@ int Dictionary::findFirstWord (int start) {
     }
     return min;
 }
-        ]]></input></program></exercise>
+        ]]></input></program></listing>
             </solution>
-  </exercise>
-  <exercise xml:id="empty-90">
-    <statement>
+  </listing>
+  <listing xml:id="empty-90">
+    <caption>
       <p>We also need a swap function. Write the Dictionary member function
                     <c>swap</c> which takes two indices as parameters and swaps the Entries
                     at those indices.</p>
-    </statement>
+    </caption>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_13_8_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -493,7 +493,7 @@ void Dictionary::swap (int a, int b) {
 
             
 
-<exercise label="mucp_13_8_ac_a"><statement><p>Below is one way to write the <c>swap</c> member function</p></statement><program xml:id="mucp_13_8_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<listing label="mucp_13_8_ac_a"><caption><p>Below is one way to write the <c>swap</c> member function</p></caption><program xml:id="mucp_13_8_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -512,15 +512,15 @@ void Dictionary::swap (int a, int b) {
     entries[a] = entries[b];
     entries[b] = temp;
 }
-        ]]></input></program></exercise>
+        ]]></input></program></listing>
             </solution>
-  </exercise>
-  <exercise xml:id="empty-91">
-    <statement>
+  </listing>
+  <listing xml:id="empty-91">
+    <caption>
       <p>Now let's write the Dictionary member function <c>alphabetize</c>, which
                     sorts the Entries in the Dictionary in alphabetical order. Use
                     the <c>findFirstWord</c> and <c>swap</c> functions we defined earlier!</p>
-    </statement>
+    </caption>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_13_9_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -551,7 +551,7 @@ void Dictionary::alphabetize () {
 
             
 
-<exercise label="mucp_13_9_ac_a"><statement><p>Below is one way to write the Dictionary member function <c>alphabetize</c>.</p></statement><program xml:id="mucp_13_9_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<listing label="mucp_13_9_ac_a"><caption><p>Below is one way to write the Dictionary member function <c>alphabetize</c>.</p></caption><program xml:id="mucp_13_9_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -562,15 +562,15 @@ void Dictionary::alphabetize () {
         swap (i, min);
     }
 }
-        ]]></input></program></exercise>
+        ]]></input></program></listing>
             </solution>
-  </exercise>
-  <exercise xml:id="empty-92">
-    <statement>
+  </listing>
+  <listing xml:id="empty-92">
+    <caption>
       <p>Let's check to see if our sorting worked! Write the Dictionary
                     member function <c>printDictionary</c>, which prints out the word in each
                     Entry.</p>
-    </statement>
+    </caption>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_13_10_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -609,7 +609,7 @@ void Dictionary::printDictionary () {
 
             
 
-<exercise label="mucp_13_10_ac_a"><statement><p>Below is one way to write the Dictionary member function <c>printDictionary</c>.</p></statement><program xml:id="mucp_13_10_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<listing label="mucp_13_10_ac_a"><caption><p>Below is one way to write the Dictionary member function <c>printDictionary</c>.</p></caption><program xml:id="mucp_13_10_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -628,7 +628,7 @@ void Dictionary::printDictionary () {
         cout << entries[i].word << endl;
     }
 }
-        ]]></input></program></exercise>
+        ]]></input></program></listing>
             </solution>
-  </exercise>
+  </listing>
 </section>

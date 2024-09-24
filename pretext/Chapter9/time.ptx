@@ -9,11 +9,11 @@
             It seems clear that <c>hour</c> and <c>minute</c> should be integers. Just to
             keep things interesting, let's make <c>second</c> a <c>double</c>, so we can
             record fractions of a second.</p>
-  <exercise label="time_AC_1">
-    <statement>
+  <listing label="time_AC_1">
+    <caption>
       <p>The active code below shows what the structure definition looks like.
             We can create a <c>Time</c> object in the usual way.</p>
-    </statement>
+    </caption>
     <program xml:id="time_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -30,7 +30,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>The state diagram for this object looks like this:</p>
   <figure align="center" xml:id="empty-351">
     <image source="Chapter9/Images/9.1stackdiagram.png" width="50%" alt="image"/>
@@ -39,8 +39,8 @@ int main() {
             because every object is an instance (or example) of some type. The
             reason that instance variables are so-named is that every instance of a
             type has a copy of the instance variables for that type.</p>
-  <exercise label="time_1">
-    <statement>
+  <listing label="time_1">
+    <caption>
       <p>Which of the following words are variables of type <c>Price</c>?</p>
       <program language="cpp" line-numbers="yes">
         <input>
@@ -55,36 +55,36 @@ int main() {
 }
 </input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>sandwich, coffee, pastry</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>dollar, cents</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Try again. We are looking for variable names not instances of a structure.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>Price, struct</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Try again. ``struct`` and ``Price`` are not variables.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="time_2">
-    <statement>
+  </listing>
+  <listing label="time_2">
+    <caption>
       <p>Which of the following words are instance variables of the <c>Price</c> structure?</p>
       <program language="cpp" line-numbers="yes">
         <input>
@@ -99,36 +99,36 @@ int main() {
 }
 </input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>sandwich, coffee, pastry</p>
-        </statement>
+        </caption>
         <feedback>
           <p>These are variables of type Price.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>dollar, cents</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>Price, struct</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Try again. ``struct`` and ``Price`` are not variables.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="time_3">
-    <statement>
+  </listing>
+  <listing label="time_3">
+    <caption>
       <p>Which of the following words are a user-defined structure?</p>
       <program language="cpp" line-numbers="yes">
         <input>
@@ -143,41 +143,41 @@ int main() {
 }
 </input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>sandwich, coffee, pastry</p>
-        </statement>
+        </caption>
         <feedback>
           <p>These are variables of type Price.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>dollar, cents</p>
-        </statement>
+        </caption>
         <feedback>
           <p>These are instance variables of the Price structure.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>Price</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="time_AC_2">
-    <statement>
+  </listing>
+  <listing label="time_AC_2">
+    <caption>
       <p>Try writing the <c>printTime</c> function in the commented section
             of the active code below. <c>printTime</c> should print out the time
             in the HOUR:MINUTE:SECONDS format. If you get stuck, you can reveal the extra problem
             at the end for help.</p>
-    </statement>
+    </caption>
     <program xml:id="time_AC_2_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -201,13 +201,13 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
-  <exercises line="151" runestone_options="{'showtitle': 'data-showtitle=&quot;Reveal Problem&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'time', 'chapter': 'Chapter9', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': '9_1_1', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter9/time.rst">
-    <exercise label="time_4" numbered="yes" adaptive="yes" indentation="hide" language="python">
-      <statement>
+  </listing>
+  <listings line="151" runestone_options="{'showtitle': 'data-showtitle=&quot;Reveal Problem&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'time', 'chapter': 'Chapter9', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': '9_1_1', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter9/time.rst">
+    <listing label="time_4" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <caption>
         <p>Let's write the code for the <c>printTime</c> function. <c>printTime</c>
                 should print out the time in the HOUR:MINUTE:SECONDS format.</p>
-      </statement>
+      </caption>
       <blocks>
         <block order="3">
           <choice correct="yes">
@@ -229,6 +229,6 @@ int main() {
           <cline>}</cline>
         </block>
       </blocks>
-    </exercise>
-  </exercises>
+    </listing>
+  </listings>
 </section>

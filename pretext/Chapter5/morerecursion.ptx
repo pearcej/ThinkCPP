@@ -56,11 +56,11 @@
   <p>Otherwise, and this is the interesting part, we have to make a recursive
             call to find the factorial of <math>n-1</math>, and then multiply it by
             <math>n</math>.</p>
-  <exercise label="more_recursion_AC_1">
-    <statement>
+  <listing label="more_recursion_AC_1">
+    <caption>
       <p>This program uses recursion to calculate the factorial of
             the passed argument.</p>
-    </statement>
+    </caption>
     <program xml:id="more_recursion_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -82,7 +82,7 @@ int main () {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>If we look at the flow of execution for this program, it is similar to
             nLines from the previous chapter. If we call factorial with the value 3:</p>
   <p>Since 3 is not zero, we take the second branch and calculate the
@@ -114,51 +114,51 @@ int main () {
   <p>Notice that in the last instance of factorial, the local variables
             recurse and result do not exist because when n=0 the branch that creates
             them does not execute.</p>
-  <exercise label="more_recursion_1">
-    <statement>
+  <listing label="more_recursion_1">
+    <caption>
       <p>In the example above, how many times was the <c>factorial</c> function
             called?</p>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>1</p>
-        </statement>
+        </caption>
         <feedback>
           <p>As the programmer, we explicitly call this function one time... but remember, recursive functions call themselves!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>2</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Not quite! Maybe you were thinking of the two possible branches of the function call.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>3</p>
-        </statement>
+        </caption>
         <feedback>
           <p>You're close! But what happens when n = 0?</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>4</p>
-        </statement>
+        </caption>
         <feedback>
           <p>The function is called four times total.  Three of those times, the function recurses.  The last time, the function reaches its base case and returns 1.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="more_recursion_2">
-    <statement>
+  </listing>
+  <listing label="more_recursion_2">
+    <caption>
       <p><term>Complete the circular definition:</term> unreal - a word used to describe
 something that is <var/>.</p>
-    </statement>
+    </caption>
     <setup>
       <var case="insensitive">
         <condition string="^\s*unreal\s*$">
@@ -173,11 +173,11 @@ something that is <var/>.</p>
         </condition>
       </var>
     </setup>
-  </exercise>
-  <exercise label="more_recursion_3">
-    <statement>
+  </listing>
+  <listing label="more_recursion_3">
+    <caption>
       <p>The factorial of 12 is <var/>.</p>
-    </statement>
+    </caption>
     <setup>
       <var>
         <condition number="[479001600, 479001600]">
@@ -192,9 +192,9 @@ something that is <var/>.</p>
         </condition>
       </var>
     </setup>
-  </exercise>
-  <exercise label="return_print_des_mc">
-    <statement>
+  </listing>
+  <listing label="return_print_des_mc">
+    <caption>
       <p>What gets printed by the following code?</p>
       <pre>void print_descend(int a) {
     if(a==0) {
@@ -209,40 +209,40 @@ int main() {
     print_descend(5);
     return 0;
 }</pre>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>"5 4 3 2 1 0"</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Consider what the base case is.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>"5 5 5 5 5"</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Does the value of a stay the same after every function call?</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>"5 4 3 2 1 0 -1 -2 -3 ...."</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Consider what the base case is.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>"5 4 3 2 1"</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct! we recursively print every value of a till we reach 0.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
+  </listing>
 </section>

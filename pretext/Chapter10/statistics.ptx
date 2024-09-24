@@ -8,10 +8,10 @@
             number of values.</p>
   <p>In the next few sections, we will write programs that generate a
             sequence of random numbers and check whether this property holds true.</p>
-  <exercise label="statistics_1">
-    <statement>
+  <listing label="statistics_1">
+    <caption>
       <p>Random numbers are distributed <var/>. </p>
-    </statement>
+    </caption>
     <setup>
       <var case="insensitive">
         <condition string="^\s*UNIFORMLY\s*$">
@@ -26,5 +26,5 @@
         </condition>
       </var>
     </setup>
-  </exercise>
+  </listing>
 </section>

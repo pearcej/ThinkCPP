@@ -21,10 +21,10 @@
   <p>Notice how similar this function is to <c>buildDeck</c>, except that we had
             to change the syntax to make it a constructor. Now we can create a
             standard 52-card deck with the simple declaration <c>Deck deck;</c></p>
-  <exercise label="deck_constructor_AC_1">
-    <statement>
+  <listing label="deck_constructor_AC_1">
+    <caption>
       <p>The active code below prints out the cards in a deck using the loop from the previous section.</p>
-    </statement>
+    </caption>
     <program xml:id="deck_constructor_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -107,53 +107,53 @@ Deck::Deck () {
 }
 </tests>
     </program>
-  </exercise>
-  <exercise label="deck_constructor_1">
-    <statement>
+  </listing>
+  <listing label="deck_constructor_1">
+    <caption>
       <p>Based on your observations from the active code above, the cards in <c>deck</c> are initialized
             to the correct suits and ranks of a standard deck of 52 cards.</p>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>True - we used the buildDeck function with a few modifications to do this.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>How do we create the deck?</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>True - we wrote a Deck constructor to do this.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>The for loops in the Deck constructor initialize each card to its proper value.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>False - we used the buildDeck function with a few modifications to do this.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Look at the active code.  How do we create the deck?</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>False - we wrote a Deck constructor to do this.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Look at the active code.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="deck_constructor_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="deck_constructor_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>Let's write a constructor for a deck of cards that uses 40 cards.
             This deck uses all 4 suits and ranks Ace through 10, omitting all
             face cards.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="2">
         <cline>Deck::Deck () {</cline>
@@ -203,5 +203,5 @@ Deck::Deck () {
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
+  </listing>
 </section>

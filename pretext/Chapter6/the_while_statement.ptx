@@ -2,11 +2,11 @@
 <section xml:id="chapter6_the-while-statement">
   <title>The while statement</title>
   <p>Using a <c>while</c> statement, we can rewrite <c>countdown</c>:</p>
-  <exercise label="the_while_statement_AC_1">
-    <statement>
+  <listing label="the_while_statement_AC_1">
+    <caption>
       <p>Try running the active code below! Afterwards, try changing 9 to a different
             integer to see how the function works!</p>
-    </statement>
+    </caption>
     <program xml:id="the_while_statement_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -25,7 +25,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>You can almost read a <c>while</c> statement as if it were English. What
             this means is, <q>While <c>n</c> is greater than zero, continue displaying
             the value of <c>n</c> and then reducing the value of <c>n</c> by 1. When you
@@ -96,39 +96,39 @@ int main() {
   <p>Particular values aside, the interesting question is whether we can
             prove that this program terminates for <em>all</em> values of n. So far, no one
             has been able to prove it <em>or</em> disprove it!</p>
-  <exercise label="while_statement_1">
-    <statement>
+  <listing label="while_statement_1">
+    <caption>
       <p>Which of the following is NOT a valid condition for a while statement?</p>
-    </statement>
+    </caption>
     <choices>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>n = 2</p>
-        </statement>
+        </caption>
         <feedback>
           <p>A single equal sign is the assignment operator, not comparison.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>n != 0</p>
-        </statement>
+        </caption>
         <feedback>
           <p>This would be valid because it means the loop would run while n is not equal to 0.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>n % 2 == 1</p>
-        </statement>
+        </caption>
         <feedback>
           <p>This would be valid because it mean the loop would run until n was an even number.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="while_statement_2">
-    <statement>
+  </listing>
+  <listing label="while_statement_2">
+    <caption>
       <p>The following code contains an infinite loop.  Which is the best explanation for why the loop does not terminate?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -141,56 +141,56 @@ while (n > 0) {
 cout << answer;
 ]]></input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>n starts at 10 and is incremented by 1 each time through the loop, so it will always be positive.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>The loop will run as long as n is positive. In this case, we can see that n will never become non-positive as the while statement condition will never be met.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>The answer starts at 1 and is incremented by n each time, so it will always be positive.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>While it is true that answer will always be positive, answer is not considered in the loop condition.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>You cannot compare n to 0 in while loop.  You must compare it to another variable.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>It is perfectly valid to compare n to 0. Though indirectly, this is what causes the infinite loop.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>In the while loop body, we must set n to False, and this code does not do that.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>The loop condition must become False for the loop to terminate, but n by itself is not the condition in this case.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="while_statement_3">
-    <statement>
+  </listing>
+  <listing label="while_statement_3">
+    <caption>
       <p>The following code is a program to print the <term>even numbers from 0 to 20</term>. The code contains blanks. What is the correct while statement condition and iteration needed in order for the code to run successfully.</p>
       <pre>int n = 0;
   while (_____) {    // while statement condition
   cout &lt;&lt; n &lt;&lt; endl;
   _______;           // iteration of the variable
 }</pre>
-    </statement>
+    </caption>
     <choices>
       <choice>
         <statement id="while_statement_3_opt_a">
           <p><c><![CDATA[n % 2 = 0 && n <= 20]]></c> and <c>n = n + 1</c></p>
-        </statement>
+        </caption>
         <feedback id="while_statement_3_opt_a">
           <p>A single equal sign is the assignment operator, not comparison.</p>
         </feedback>
@@ -198,7 +198,7 @@ cout << answer;
       <choice>
         <statement id="while_statement_3_opt_b">
           <p><c><![CDATA[n % 2 != 0 && n <= 20]]></c> and <c>n = n + 1</c></p>
-        </statement>
+        </caption>
         <feedback id="while_statement_3_opt_b">
           <p>The code is meant to print the <term>even</term> numbers from 0-20</p>
         </feedback>
@@ -206,7 +206,7 @@ cout << answer;
       <choice correct="yes">
         <statement id="while_statement_3_opt_c">
           <p><c><![CDATA[n % 2 == 0 && n <= 20]]></c> and <c>n = n + 1</c></p>
-        </statement>
+        </caption>
         <feedback id="while_statement_3_opt_c">
           <p>The condition checks whether a number is even and increments the variable <c>n</c></p>
         </feedback>
@@ -214,15 +214,15 @@ cout << answer;
       <choice>
         <statement id="while_statement_3_opt_d">
           <p><c><![CDATA[n == "even" && n <= 20]]></c> and <c>n = n + 2</c></p>
-        </statement>
+        </caption>
         <feedback id="while_statement_3_opt_d">
           <p><c>n</c> is an <c>int</c> and here you are comparing it to a <c>string</c>.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="while_statement_4">
-    <statement>
+  </listing>
+  <listing label="while_statement_4">
+    <caption>
       <p>What is printed by this code?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -238,32 +238,32 @@ cout << n;
 cout << x;
 ]]></input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>4 7</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Setting a variable so the loop condition would be false in the middle of the loop body does not keep the variable from actually being set.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>5 7</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Setting a variable so the loop condition would be false in the middle of the loop body does not stop execution of statements in the rest of the loop body.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>7 15</p>
-        </statement>
+        </caption>
         <feedback>
           <p>After n becomes 5 and the test would be False, but the test does not actually come until after the end of the loop - only then stopping execution of the repetition of the loop.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
+  </listing>
 </section>

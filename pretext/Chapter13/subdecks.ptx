@@ -27,13 +27,13 @@
   <p>As an exercise, write a version of <c>findBisect</c> that takes a subdeck
             as an argument, rather than a deck and an index range. Which version is
             more error-prone? Which version do you think is more efficient?</p>
-  <exercise label="subdeck_cards_1">
-    <statement>
+  <listing label="subdeck_cards_1">
+    <caption>
       <p>Try writing the <c>findBisect</c> function in the commented section
             of the active code below. If done correctly, the program should output that
             the Seven of Clubs is at index 6 and the King of Diamonds is at index -1.
             If you get stuck, you can reveal the extra problem at the end for help.</p>
-    </statement>
+    </caption>
     <program xml:id="subdeck_cards_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -208,14 +208,14 @@ Deck Deck::subdeck (int low, int high) const {
 }
 </tests>
     </program>
-  </exercise>
-  <exercises line="217" runestone_options="{'showtitle': 'data-showtitle=&quot;findBisect Help&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'subdecks', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': 'subdecks_reveal_1', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter13/subdecks.rst">
-    <exercise label="subdecks_help_1" numbered="yes" adaptive="yes" indentation="hide" language="python">
-      <statement>
+  </listing>
+  <listings line="217" runestone_options="{'showtitle': 'data-showtitle=&quot;findBisect Help&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'subdecks', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': 'subdecks_reveal_1', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter13/subdecks.rst">
+    <listing label="subdecks_help_1" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <caption>
         <p>Let's write the code for this version of the findBisect function.
                 findBisect should take a subdeck and a card as parameters and
                 return the index of the card in the subdeck or -1 if it's not found.</p>
-      </statement>
+      </caption>
       <blocks>
         <block order="5">
           <choice correct="yes">
@@ -258,6 +258,6 @@ Deck Deck::subdeck (int low, int high) const {
           <cline>}</cline>
         </block>
       </blocks>
-    </exercise>
-  </exercises>
+    </listing>
+  </listings>
 </section>

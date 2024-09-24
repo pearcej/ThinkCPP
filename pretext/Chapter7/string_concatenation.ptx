@@ -4,11 +4,11 @@
   <p>Interestingly, the <c>+</c> operator can be used on strings; it performs
             string <term>concatenation</term>. To concatenate means to join the two operands
             end to end.</p>
-  <exercise label="string_concatenation_AC_1">
-    <statement>
+  <listing label="string_concatenation_AC_1">
+    <caption>
       <p>In the active code below, we use the <c>+</c> operator to concatenate <c>fruit</c> with
             <c>bakedGood</c> to create <c>dessert</c>.</p>
-    </statement>
+    </caption>
     <program xml:id="string_concatenation_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -22,7 +22,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>The output of this program is <c>banana nut bread</c>.</p>
   <warning>
     <p>Unfortunately, the <c>+</c> operator does not work on native C strings.</p>
@@ -39,10 +39,10 @@ int main() {
                 for Ducklings</em>, the names of the ducklings are Jack, Kack, Lack, Mack,
             Nack, Ouack, Pack and Quack. Here is a loop that outputs these names in
             order:</p>
-  <exercise label="string_concatenation_AC_2">
-    <statement>
+  <listing label="string_concatenation_AC_2">
+    <caption>
       <p>The active code below outputs the ducklings names in alphabetical order.</p>
-    </statement>
+    </caption>
     <program xml:id="string_concatenation_AC_2_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -63,7 +63,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>The output of this program is:</p>
   <pre>Jack
 Kack
@@ -77,8 +77,8 @@ Quack</pre>
             and not with native C strings. Unfortunately, an expression like
             <c>letter + "ack"</c> is syntactically legal in C++, although it produces a
             very strange result, at least in my development environment.</p>
-  <exercise label="string_concatenation_1">
-    <statement>
+  <listing label="string_concatenation_1">
+    <caption>
       <p>What is printed by the following statements?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -87,46 +87,46 @@ string t = "rocks";
 cout << s + t << endl;
 ]]></input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>C++ rocks</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Concatenation does not automatically add a space.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>C++</p>
-        </statement>
+        </caption>
         <feedback>
           <p>The expression s+t is evaluated first, then the resulting string is printed.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>C++rocks</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Yes, the two strings are glued end to end.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>Error, you cannot add two strings together.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>The + operator has different meanings depending on the operands, in this case, two strings.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="string_concatenation_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="string_concatenation_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>As an exercise, put together the code below so that it prints <c>C++ is so fun!</c></p>
-    </statement>
+    </caption>
     <blocks>
       <block order="5">
         <cline>int main() {</cline>
@@ -151,13 +151,13 @@ cout << s + t << endl;
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
-  <exercise label="string_concatenation_3" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="string_concatenation_3" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>Put together the code below to creater a function <c>greeter</c> that adds <q>hello</q> and <q>goodbye</q> behind and ahead of a message
             respectively and then prints the new message.
             Example: <c>greeter("ssup")</c> will print <q>hello ssup goodbye</q></p>
-    </statement>
+    </caption>
     <blocks>
       <block order="1">
         <cline>void greeter(string message) {</cline>
@@ -195,5 +195,5 @@ cout << s + t << endl;
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
+  </listing>
 </section>

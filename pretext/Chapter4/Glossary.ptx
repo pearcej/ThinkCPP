@@ -34,11 +34,11 @@
                         error.</p>
     </li>
   </dl>
-  <exercise label="chapter_four_glossary_1">
-    <statement>
+  <listing label="chapter_four_glossary_1">
+    <caption>
       <p>
 </p>
-    </statement>
+    </caption>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -56,12 +56,12 @@
         <response>Putting a conditional statement inside one or both branches of another conditional statement.</response>
       </match>
     </matches>
-  </exercise>
-  <exercise label="chapter_four_glossary_2">
-    <statement>
+  </listing>
+  <listing label="chapter_four_glossary_2">
+    <caption>
       <p>
 </p>
-    </statement>
+    </caption>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -79,5 +79,5 @@
         <response>The process of making recursive calls without every reaching the base case.</response>
       </match>
     </matches>
-  </exercise>
+  </listing>
 </section>

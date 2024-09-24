@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <section xml:id="chapter6_mixed-up-code-practice">
   <title>Mixed Up Code Practice</title>
-  <exercise label="mucp_6_1" numbered="yes" adaptive="yes" indentation="show" language="python">
-    <statement>
+  <listing label="mucp_6_1" numbered="yes" adaptive="yes" indentation="show" language="python">
+    <caption>
       <p>The program below should print out the even numbers between 20 and 40, inclusive,
             but the code is mixed up and contains extra blocks. Put the necessary blocks
             in the correct order.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="2">
         <choice correct="yes">
@@ -49,13 +49,13 @@
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
-  <exercise label="mucp_6_2" numbered="yes" adaptive="yes" indentation="show" language="python">
-    <statement>
+  </listing>
+  <listing label="mucp_6_2" numbered="yes" adaptive="yes" indentation="show" language="python">
+    <caption>
       <p>The program below should count down from 100 to 0 in decrements of
             10 but the code is mixed up and contains extra blocks. Put the necessary blocks
             in the correct order.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="6">
         <cline>int main() {</cline>
@@ -91,13 +91,13 @@
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
-  <exercise label="mucp_6_3" numbered="yes" adaptive="yes" indentation="show" language="python">
-    <statement>
+  </listing>
+  <listing label="mucp_6_3" numbered="yes" adaptive="yes" indentation="show" language="python">
+    <caption>
       <p>The program below should find the sum of the first 10 natural numbers,
             but the code is mixed up and contains extra blocks. Put the necessary blocks
             in the correct order.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="7">
         <cline>int main() {</cline>
@@ -139,13 +139,13 @@
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
-  <exercise label="mucp_6_4" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="mucp_6_4" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>Let's write the code for the <c>repeatHello</c> function. <c>repeatHello</c>
             should be a <c>void</c> function that takes no arguments and uses a <c>while</c>
             loop to print out <q>hello</q> three times.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="4">
         <choice correct="yes">
@@ -188,13 +188,13 @@
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
-  <exercise label="mucp_6_5" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="mucp_6_5" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>Now let's generalize the <c>repeatHello</c> function so that it repeats a given string three times.
             Let's write the code for the <c>repeatString</c> function, which takes
             input as a parameter and uses a <c>while</c> loop to print out the string three times.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="6">
         <choice correct="yes">
@@ -231,13 +231,13 @@
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
-  <exercise label="mucp_6_6" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="mucp_6_6" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>We can further generalize <c>repeatString</c> so that it repeats a given string a given number of times.
             Let's write the code for the new <c>repeatString</c> function, which takes
             <c>input</c> and <c>x</c> as parameters and uses a <c>while</c> loop to print out the string <c>x</c> number of times.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="7">
         <choice correct="yes">
@@ -280,13 +280,13 @@
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
-  <exercise label="mucp_6_7" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="mucp_6_7" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>On the last day of every year, we count down the seconds before the new year arrives.
             Write the function <c>newYearCountdown</c>, which prints out a countdown from 10 and then
             prints out <q>Happy New Year!</q>.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="10">
         <choice correct="yes">
@@ -330,16 +330,16 @@
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
-  <exercise label="mucp_6_8" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="mucp_6_8" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>Help Goku reach power levels of over 9000! Write the function
             powerUp which takes powerLevel as a parameter.
             powerUp checks to see if powerLevel is over 9000. If it
             isn't, it repeatedly prints <q>More power!</q> and increments powerLevel by
             1000 until powerLevel is over 9000. Then powerUp prints <q>It's over 9000!</q>.
             Put the necessary blocks in the correct order.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="11">
         <choice correct="yes">
@@ -385,14 +385,14 @@
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
-  <exercise label="mucp_6_9" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="mucp_6_9" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>Write the function summation which takes two
             parameters, start and end. summation adds
             all the integers from start to end, inclusive, together and returns
             the sum. Put the necessary blocks in the correct order.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="2">
         <cline>int summation (int start, int end) {</cline>
@@ -439,15 +439,15 @@
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
-  <exercise label="mucp_6_10" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="mucp_6_10" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>Write the function reverseNumber which takes num
             as a parameter and returns num but with its digits reversed.
             For example, reverseNumber (1324) returns 4231.
             Put the necessary blocks in the correct order, with reverse
             declared first, then temp, and lastly remainder.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="9">
         <cline>int reverseNumber (int num) {</cline>
@@ -495,5 +495,5 @@
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
+  </listing>
 </section>

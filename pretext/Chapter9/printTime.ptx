@@ -8,11 +8,11 @@
   <pre>void printTime (Time&amp; t) {
   cout &lt;&lt; t.hour &lt;&lt; ":" &lt;&lt; t.minute &lt;&lt; ":" &lt;&lt; t.second &lt;&lt; endl;
 }</pre>
-  <exercise label="printTime_AC_1">
-    <statement>
+  <listing label="printTime_AC_1">
+    <caption>
       <p>In the active code below, the output of this function, if we pass <c>time</c> an argument, is
             <c>11:59:3.14159</c>.</p>
-    </statement>
+    </caption>
     <program xml:id="printTime_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -33,9 +33,9 @@ int main () {
 }
         ]]></input>
     </program>
-  </exercise>
-  <exercise label="printTime_1">
-    <statement>
+  </listing>
+  <listing label="printTime_1">
+    <caption>
       <p>Which of the following would be a correct way to display the price of an object and finish the <c>printPrice</c>, which we saw on the previous page?</p>
       <program language="cpp" line-numbers="yes">
         <input>
@@ -54,14 +54,14 @@ int main() {
 }
 </input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice>
         <statement id="printTime_1_opt_a">
           <p>
             <c><![CDATA[cout << "Price is " << "p.dollar" << " dollars and" << "p.cents" << "cents." << endl;]]></c>
           </p>
-        </statement>
+        </caption>
         <feedback id="printTime_1_opt_a">
           <p>Try again. We want to print the values rather than statements.</p>
         </feedback>
@@ -71,7 +71,7 @@ int main() {
           <p>
             <c><![CDATA[cout << "Price is " << p.dollar << " dollars and " << p.cents << " cents." << endl;]]></c>
           </p>
-        </statement>
+        </caption>
         <feedback id="printTime_1_opt_b">
           <p>Correct!</p>
         </feedback>
@@ -81,11 +81,11 @@ int main() {
           <p>
             <c><![CDATA[cout << "Price is " << p.dollar << " dollars and " << p.cents << " cents." << endl]]></c>
           </p>
-        </statement>
+        </caption>
         <feedback id="printTime_1_opt_c">
           <p>This would not compile. There is an important character that ends nearly all statements in C++.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
+  </listing>
 </section>

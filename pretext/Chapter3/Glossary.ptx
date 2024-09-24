@@ -35,11 +35,11 @@
       <p>Cause a function to be executed.</p>
     </li>
   </dl>
-  <exercise label="chapter_three_glossary_one">
-    <statement>
+  <listing label="chapter_three_glossary_one">
+    <caption>
       <p>
 </p>
-    </statement>
+    </caption>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -57,12 +57,12 @@
         <response>Causes a function to be executed.</response>
       </match>
     </matches>
-  </exercise>
-  <exercise label="chapter_three_glossary_two">
-    <statement>
+  </listing>
+  <listing label="chapter_three_glossary_two">
+    <caption>
       <p>
 </p>
-    </statement>
+    </caption>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -80,5 +80,5 @@
         <response>A value that you provide when you call a function.</response>
       </match>
     </matches>
-  </exercise>
+  </listing>
 </section>

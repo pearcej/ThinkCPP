@@ -28,10 +28,10 @@
       </li>
     </ul>
   </p>
-  <exercise label="order_of_operations_AC_1">
-    <statement>
+  <listing label="order_of_operations_AC_1">
+    <caption>
       <p>Observe the output of the code below to see how the placement of parentheses can change the result of a calculation.</p>
-    </statement>
+    </caption>
     <program xml:id="order_of_operations_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -45,12 +45,12 @@ int main () {
 }
         ]]></input>
     </program>
-  </exercise>
-  <exercise label="order_of_operations_1">
-    <statement>
+  </listing>
+  <listing label="order_of_operations_1">
+    <caption>
       <p>Match the expression to its correct output. Don't forget to consider integer
 division!</p>
-    </statement>
+    </caption>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -72,11 +72,11 @@ division!</p>
         <response>1</response>
       </match>
     </matches>
-  </exercise>
-  <exercise label="order_of_operations_2">
-    <statement>
+  </listing>
+  <listing label="order_of_operations_2">
+    <caption>
       <p>Any time you want to override the rules of precedence, you can use <var/>.</p>
-    </statement>
+    </caption>
     <setup>
       <var case="insensitive">
         <condition string="^\s*parentheses\s*$">
@@ -91,31 +91,31 @@ division!</p>
         </condition>
       </var>
     </setup>
-  </exercise>
+  </listing>
   <note>
     <p>The following module will walk you through an example of the rules of
                 precedence.  Answer the questions in order to check what you remember
                 about the order of operations!</p>
   </note>
-  <exercises line="72" runestone_options="{'showtitle': 'data-showtitle=&quot;Question 3A&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Content&quot;', 'subchapter': 'OrderofOperations', 'chapter': 'Chapter2', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': 'reveal0', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter2/OrderofOperations.rst">
-    <exercise label="order_of_operations_3A">
-      <statement>
+  <listings line="72" runestone_options="{'showtitle': 'data-showtitle=&quot;Question 3A&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Content&quot;', 'subchapter': 'OrderofOperations', 'chapter': 'Chapter2', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': 'reveal0', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter2/OrderofOperations.rst">
+    <listing label="order_of_operations_3A">
+      <caption>
         <p>Click on ALL PARTS of the expression that get evaluated first.  For example, if "1 + 1" gets evaluated first, click on "1", "+", and "1".</p>
-      </statement>
+      </caption>
       <feedback>
         <p>Try again!</p>
       </feedback>
       <areas>
         <cline><area correct="no">1</area><area correct="no">+</area><area correct="no">2</area><area correct="no">*</area> ( <area correct="yes">10</area> <area correct="yes">-</area> <area correct="yes">2</area> ) <area correct="no">/</area> <area correct="no">4</area></cline>
       </areas>
-    </exercise>
-  </exercises>
+    </listing>
+  </listings>
   <p>Once you've submitted your answer for Question 3A, click on Question 3B below.</p>
-  <exercises line="87" runestone_options="{'showtitle': 'data-showtitle=&quot;Question 3B&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Content&quot;', 'subchapter': 'OrderofOperations', 'chapter': 'Chapter2', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': 'reveal1', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter2/OrderofOperations.rst">
-    <exercise label="order_of_operations_3B">
-      <statement>
+  <listings line="87" runestone_options="{'showtitle': 'data-showtitle=&quot;Question 3B&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Content&quot;', 'subchapter': 'OrderofOperations', 'chapter': 'Chapter2', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': 'reveal1', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter2/OrderofOperations.rst">
+    <listing label="order_of_operations_3B">
+      <caption>
         <p>Click on ALL PARTS of the expression that get evaluated first.  For example, if "1 + 1" gets evaluated first, click on "1", "+", and "1".</p>
-      </statement>
+      </caption>
       <feedback>
         <p>Try again!</p>
       </feedback>
@@ -130,14 +130,14 @@ division!</p>
           <area correct="no">4</area>
         </cline>
       </areas>
-    </exercise>
-  </exercises>
+    </listing>
+  </listings>
   <p>Once you've submitted your answer for Question 3B, click on Question 3C below.</p>
-  <exercises line="102" runestone_options="{'showtitle': 'data-showtitle=&quot;Question 3C&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Content&quot;', 'subchapter': 'OrderofOperations', 'chapter': 'Chapter2', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': 'reveal2', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter2/OrderofOperations.rst">
-    <exercise label="order_of_operations_3C">
-      <statement>
+  <listings line="102" runestone_options="{'showtitle': 'data-showtitle=&quot;Question 3C&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Content&quot;', 'subchapter': 'OrderofOperations', 'chapter': 'Chapter2', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': 'reveal2', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter2/OrderofOperations.rst">
+    <listing label="order_of_operations_3C">
+      <caption>
         <p>Click on ALL PARTS of the expression that get evaluated first.  For example, if "1 + 1" gets evaluated first, click on "1", "+", and "1".</p>
-      </statement>
+      </caption>
       <feedback>
         <p>Try again!</p>
       </feedback>
@@ -150,8 +150,8 @@ division!</p>
           <area correct="yes">4</area>
         </cline>
       </areas>
-    </exercise>
-  </exercises>
+    </listing>
+  </listings>
   <p>Once you've submitted your answer for Question 3C, click on Question 3D below.</p>
   <hint>
     <pre>1 + 5</pre>

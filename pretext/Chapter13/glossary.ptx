@@ -25,10 +25,10 @@
                         large collections.</p>
     </li>
   </dl>
-  <exercise label="glossary_13">
-    <statement>
+  <listing label="glossary_13">
+    <caption>
       <p>Match the vocabulary word with its definition.</p>
-    </statement>
+    </caption>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -50,5 +50,5 @@
         <response>An algorithm for sorting a collection of values. It is faster than the simple algorithm in the previous chapter, especially for large collections.</response>
       </match>
     </matches>
-  </exercise>
+  </listing>
 </section>

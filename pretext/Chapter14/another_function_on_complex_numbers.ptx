@@ -41,11 +41,11 @@ Complex product = mult (c1, c2);
 product.printCartesian();</pre>
   <p>The output of this program is</p>
   <pre>-6 + 17i</pre>
-  <exercise label="fourteeneight">
-    <statement>
+  <listing label="fourteeneight">
+    <caption>
       <p>The active code below uses the <c>mult</c> and <c>setPolar</c> functions.
             Feel free to modify the code and experiment around!</p>
-    </statement>
+    </caption>
     <program xml:id="fourteeneight_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -163,14 +163,14 @@ Complex mult (Complex&amp; a, Complex&amp; b) {
 }
 </tests>
     </program>
-  </exercise>
+  </listing>
   <p>There is a lot of conversion going on in this program behind the scenes.
             When we call <c>mult</c>, both arguments get converted to polar
             coordinates. The result is also in polar format, so when we invoke
             <c>printCartesian</c> it has to get converted back. Really, it's amazing
             that we get the right answer!</p>
-  <exercise label="question14_7_1">
-    <statement>
+  <listing label="question14_7_1">
+    <caption>
       <p>What is the correct output of the code below?</p>
       <program language="cpp" line-numbers="yes">
         <input>
@@ -186,49 +186,49 @@ int main() {
 }
 </input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>3.5 + 19.5i</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! Try using the active code above.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>-3.5 + 19.5i</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>-3.5 - 19.5i</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! Try using the active code above.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>-3.5 + 19.5</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! Try using the active code above.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="fourteennine">
-    <statement>
+  </listing>
+  <listing label="fourteennine">
+    <caption>
       <p>Now let's try implementing the <c>setCartesian</c> function. Write your
             implementation in the commented area of the active code below.
             Read the comments in <c>main</c> to test out your code! If you get stuck,
             you can reveal the extra problem at the end for help.</p>
-    </statement>
+    </caption>
     <program xml:id="fourteennine_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -356,12 +356,12 @@ Complex mult (Complex&amp; a, Complex&amp; b) {
 }
 </tests>
     </program>
-  </exercise>
-  <exercises line="348" runestone_options="{'showtitle': 'data-showtitle=&quot;Reveal Problem&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'another_function_on_complex_numbers', 'chapter': 'Chapter14', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': '14_7_1', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter14/another_function_on_complex_numbers.rst">
-    <exercise label="question14_7_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
-      <statement>
+  </listing>
+  <listings line="348" runestone_options="{'showtitle': 'data-showtitle=&quot;Reveal Problem&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'another_function_on_complex_numbers', 'chapter': 'Chapter14', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': '14_7_1', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter14/another_function_on_complex_numbers.rst">
+    <listing label="question14_7_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <caption>
         <p>Let's write the code for the <c>setCartesian</c> function.</p>
-      </statement>
+      </caption>
       <blocks>
         <block order="7">
           <choice correct="yes">
@@ -391,6 +391,6 @@ Complex mult (Complex&amp; a, Complex&amp; b) {
           <cline>}</cline>
         </block>
       </blocks>
-    </exercise>
-  </exercises>
+    </listing>
+  </listings>
 </section>

@@ -27,10 +27,10 @@
                         function. Technically, this is a type of modifier.</p>
     </li>
   </dl>
-  <exercise label="dnd9_1">
-    <statement>
+  <listing label="dnd9_1">
+    <caption>
       <p>Match the term to its definition.</p>
-    </statement>
+    </caption>
     <feedback>
       <p>Try again.</p>
     </feedback>
@@ -48,5 +48,5 @@
         <response>Technically a type of modifier. One of the parameters is an "empty" object that gets filled in by the function.</response>
       </match>
     </matches>
-  </exercise>
+  </listing>
 </section>

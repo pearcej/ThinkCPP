@@ -3,12 +3,12 @@
   <title>Activecode Exercises</title>
   <p>Answer the following <term>Activecode</term> questions to
             assess what you have learned in this chapter.</p>
-  <exercise xml:id="empty-341">
-    <statement>
+  <listing xml:id="empty-341">
+    <caption>
       <p>Let's write the code for the struct definition of <c>Movie</c>.
                     The Movie structure will have the instance variables title,
                     director, and releaseYear in that order.</p>
-    </statement>
+    </caption>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_9_1_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -36,7 +36,7 @@ struct Movie {
 
             
 
-<exercise label="mucp_9_1_ac_a"><statement><p>Below is one way to define the <c>Movie</c> struct.</p></statement><program xml:id="mucp_9_1_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<listing label="mucp_9_1_ac_a"><caption><p>Below is one way to define the <c>Movie</c> struct.</p></caption><program xml:id="mucp_9_1_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -45,15 +45,15 @@ struct Movie {
     string director;
     int releaseYear;
 };
-        ]]></input></program></exercise>
+        ]]></input></program></listing>
             </solution>
-  </exercise>
-  <exercise xml:id="empty-342">
-    <statement>
+  </listing>
+  <listing xml:id="empty-342">
+    <caption>
       <p>Let's write the code for the <c>printMovie</c> function.
                     printMovie should print the information about a movie
                     in the following format: <q>title</q> directed by director (releaseYear).</p>
-    </statement>
+    </caption>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_9_2_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -86,7 +86,7 @@ void printMovie (const Movie& m) {
 
             
 
-<exercise label="mucp_9_2_ac_a"><statement><p>Below is one way to write the <c>printMovie</c> function.</p></statement><program xml:id="mucp_9_2_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<listing label="mucp_9_2_ac_a"><caption><p>Below is one way to write the <c>printMovie</c> function.</p></caption><program xml:id="mucp_9_2_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -100,15 +100,15 @@ void printMovie (const Movie& m) {
     cout << "\"" << m.title << "\" directed by ";
     cout << m.director << " (" << m.releaseYear << ")" << endl;
 }
-        ]]></input></program></exercise>
+        ]]></input></program></listing>
             </solution>
-  </exercise>
-  <exercise xml:id="empty-343">
-    <statement>
+  </listing>
+  <listing xml:id="empty-343">
+    <caption>
       <p>Let's write the code for the <c>movieAge</c> function.
                     movieAge should take a Movie and currentYear as a parameter and
                     return how many years it has been since the releaseYear.</p>
-    </statement>
+    </caption>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_9_3_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -140,7 +140,7 @@ int movieAge (const Movie& m, int currentYear) {
 
             
 
-<exercise label="mucp_9_3_ac_a"><statement><p>Below is one way to write the <c>movieAge</c> function.</p></statement><program xml:id="mucp_9_3_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<listing label="mucp_9_3_ac_a"><caption><p>Below is one way to write the <c>movieAge</c> function.</p></caption><program xml:id="mucp_9_3_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -153,15 +153,15 @@ struct Movie {
 int movieAge (const Movie& m, int currentYear) {
     return currentYear - m.releaseYear;
 }
-        ]]></input></program></exercise>
+        ]]></input></program></listing>
             </solution>
-  </exercise>
-  <exercise xml:id="empty-344">
-    <statement>
+  </listing>
+  <listing xml:id="empty-344">
+    <caption>
       <p>Let's write the code for the struct definition of <c>Date</c>.
                     The Date structure will have three integer instance variables: day,
                     month, and year in that order.</p>
-    </statement>
+    </caption>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_9_4_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -189,7 +189,7 @@ struct Date {
 
             
 
-<exercise label="mucp_9_4_ac_a"><statement><p>Below is one way to define the <c>Date</c> structure.</p></statement><program xml:id="mucp_9_4_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<listing label="mucp_9_4_ac_a"><caption><p>Below is one way to define the <c>Date</c> structure.</p></caption><program xml:id="mucp_9_4_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -198,15 +198,15 @@ struct Date {
     int month;
     int year;
 };
-        ]]></input></program></exercise>
+        ]]></input></program></listing>
             </solution>
-  </exercise>
-  <exercise xml:id="empty-345">
-    <statement>
+  </listing>
+  <listing xml:id="empty-345">
+    <caption>
       <p>Let's write the code for the <c>printDate</c> function.
                     printDate should print the date in the following format:
                     month/date/year.</p>
-    </statement>
+    </caption>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_9_5_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -238,7 +238,7 @@ void printDate (const Date& d) {
 
             
 
-<exercise label="mucp_9_5_ac_a"><statement><p>Below is one way to write the <c>printDate</c> function.</p></statement><program xml:id="mucp_9_5_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<listing label="mucp_9_5_ac_a"><caption><p>Below is one way to write the <c>printDate</c> function.</p></caption><program xml:id="mucp_9_5_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -251,16 +251,16 @@ struct Date {
 void printDate (const Date& d) {
     cout << d.month << "/" << d.day << "/" << d.year << endl;
 }
-        ]]></input></program></exercise>
+        ]]></input></program></listing>
             </solution>
-  </exercise>
-  <exercise xml:id="empty-346">
-    <statement>
+  </listing>
+  <listing xml:id="empty-346">
+    <caption>
       <p>Let's write the code for the <c>nextMonth</c> function.
                     nextMonth should change the date to one month later.
                     For example, 3/4/2020 gets modified to 4/4/2020, and 12/3/2020
                     gets modified to 1/3/2021.</p>
-    </statement>
+    </caption>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_9_6_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -299,7 +299,7 @@ void nextMonth (Date& d) {
 
             
 
-<exercise label="mucp_9_6_ac_a"><statement><p>Below is one way to write the nextMonth function.</p></statement><program xml:id="mucp_9_6_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<listing label="mucp_9_6_ac_a"><caption><p>Below is one way to write the nextMonth function.</p></caption><program xml:id="mucp_9_6_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -319,14 +319,14 @@ void nextMonth (Date& d) {
         d.month++;
     }
 }
-        ]]></input></program></exercise>
+        ]]></input></program></listing>
             </solution>
-  </exercise>
-  <exercise xml:id="empty-347">
-    <statement>
+  </listing>
+  <listing xml:id="empty-347">
+    <caption>
       <p>Let's write the code for the struct definition of <c>Length</c>.
                     Length should have the instance variables inches, feet, and yard.</p>
-    </statement>
+    </caption>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_9_7_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -354,7 +354,7 @@ struct Length {
 
             
 
-<exercise label="mucp_9_7_ac_a"><statement><p>Below is one way to defiine the <c>Length</c> structure.</p></statement><program xml:id="mucp_9_7_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<listing label="mucp_9_7_ac_a"><caption><p>Below is one way to defiine the <c>Length</c> structure.</p></caption><program xml:id="mucp_9_7_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -363,15 +363,15 @@ struct Length {
     int feet;
     int yards;
 };
-        ]]></input></program></exercise>
+        ]]></input></program></listing>
             </solution>
-  </exercise>
-  <exercise xml:id="empty-348">
-    <statement>
+  </listing>
+  <listing xml:id="empty-348">
+    <caption>
       <p>Let's write the code for the <c>printLength</c> function.
                     printLength should print the date in the following format:
                     yards yds, feet ft, inches in.</p>
-    </statement>
+    </caption>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_9_8_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -403,7 +403,7 @@ void printLength (const Length& l) {
 
             
 
-<exercise label="mucp_9_8_ac_a"><statement><p>Below is one way to write the <c>printLength</c> function.</p></statement><program xml:id="mucp_9_8_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<listing label="mucp_9_8_ac_a"><caption><p>Below is one way to write the <c>printLength</c> function.</p></caption><program xml:id="mucp_9_8_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -416,16 +416,16 @@ struct Length {
 void printLength (const Length& l) {
     cout << l.yards << " yds, " << l.feet << " feet, " << l.inches << " in" << endl;
 }
-        ]]></input></program></exercise>
+        ]]></input></program></listing>
             </solution>
-  </exercise>
-  <exercise xml:id="empty-349">
-    <statement>
+  </listing>
+  <listing xml:id="empty-349">
+    <caption>
       <p>Let's write the code for the <c>allInches</c> function.
                     printLength should modify a Length object to convert all
                     feet and yards to inches. For example, a Length with 1 yard, 2 feet, and 3
                     inches is converted into a Length with 0 yards, 0 feet, and 63 inches.</p>
-    </statement>
+    </caption>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_9_9_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -457,7 +457,7 @@ void allInches (Length& l) {
 
             
 
-<exercise label="mucp_9_9_ac_a"><statement><p>Below is one way to write the <c>allInches</c> function.</p></statement><program xml:id="mucp_9_9_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<listing label="mucp_9_9_ac_a"><caption><p>Below is one way to write the <c>allInches</c> function.</p></caption><program xml:id="mucp_9_9_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -470,17 +470,17 @@ struct Length {
 void allInches (Length& l) {
     l.inches += 36 * l.yards + 12 * l.feet;
 }
-        ]]></input></program></exercise>
+        ]]></input></program></listing>
             </solution>
-  </exercise>
-  <exercise xml:id="empty-350">
-    <statement>
+  </listing>
+  <listing xml:id="empty-350">
+    <caption>
       <p>Let's write the code for the <c>addLengths</c> function.
                     addLengths should take three Lengths as parameters.
                     It should then add the first two Lengths and store the result
                     in the third Length. If there is over 12 inches or over 3 feet,
                     convert it to the proper amound of feet and yards (13 inches becomes 1 foot and 1 inch).</p>
-    </statement>
+    </caption>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_9_10_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -524,7 +524,7 @@ void addLengths (const Length& first, const Length& second, Length& total) {
 
             
 
-<exercise label="mucp_9_10_ac_a"><statement><p>Below is one way to write the <c>addLengths</c> function.</p></statement><program xml:id="mucp_9_10_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<listing label="mucp_9_10_ac_a"><caption><p>Below is one way to write the <c>addLengths</c> function.</p></caption><program xml:id="mucp_9_10_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -549,7 +549,7 @@ void addLengths (const Length& first, const Length& second, Length& total) {
         total.feet = total.feet - addYards * 3;
     }
 }
-        ]]></input></program></exercise>
+        ]]></input></program></listing>
             </solution>
-  </exercise>
+  </listing>
 </section>

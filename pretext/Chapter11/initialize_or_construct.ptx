@@ -29,12 +29,12 @@ Time breadTime = { 3, 35, 0.0 };</pre>
   <p>To invoke this constructor, we use the same funny syntax as before,
             except that the arguments have to be two integers and a <c>double</c>:</p>
   <pre>Time currentTime (9, 14, 30.0);</pre>
-  <exercise label="initialize_or_construct_AC_1">
-    <statement>
+  <listing label="initialize_or_construct_AC_1">
+    <caption>
       <p>In the active code below, you can experiment passing values into the two
             different constructors that we have defined on this page and the previous
             page.</p>
-    </statement>
+    </caption>
     <program xml:id="initialize_or_construct_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -75,91 +75,91 @@ void Time::print () {
 }
 </tests>
     </program>
-  </exercise>
-  <exercise label="initialize_or_construct_1">
-    <statement>
+  </listing>
+  <listing label="initialize_or_construct_1">
+    <caption>
       <p>Which statement is <term>false</term> about constructors?</p>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>When we initialize a new object, the compiler automatically finds the correct constructor to use.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! This statement is true!</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>You can always initialize an object using squiggly-braces.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct! Once you define a constructor, you can no longer use squiggly-braces to initialize an object.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>You can have many constructors with the same name.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! This statement is true, as long as the constructors take different parameters.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>Once you define a constructor for a structure, you MUST use it to initialize any new structures of that type.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! This statement is true!</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="initialize_or_construct_2">
-    <statement>
+  </listing>
+  <listing label="initialize_or_construct_2">
+    <caption>
       <p>What is the term for having multiple constructors with the same <q>name</q> that take different parameters?</p>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>friend constructors</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! "Friend" constructors are constructors that are private except to the friend class.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>overriding</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! Overriding is the ability of an inherited class to rewrite the methods of the base class at runtime, not what we're looking for here.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>overloading</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>friend class</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! A friend class is a class that can access private members of another class, not what we're looking for here.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="initialize_or_construct_3" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="initialize_or_construct_3" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>Implement two constructors for the <c>Dog</c> structure. One should be a default constructor, the other should take
             arguments. The weight needs to be converted from pounds to kilograms in the second constructor (for
             reference, 1 kilogram is approximately 2.2 pounds).</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="2">
         <cline>struct Dog {</cline>
@@ -204,5 +204,5 @@ void Time::print () {
         </choice>
       </block>
     </blocks>
-  </exercise>
+  </listing>
 </section>

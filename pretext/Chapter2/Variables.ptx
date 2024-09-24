@@ -32,11 +32,11 @@ int hour, minute;</pre>
             them. This example also demonstrates the syntax for declaring multiple
             variables with the same type: hour and minute are both integers (<c>int</c>
             type).</p>
-  <exercise label="variables_3">
-    <statement>
+  <listing label="variables_3">
+    <caption>
       <p>A(n) <var/> is a name given to a location in memory used to keep
 track of a value. </p>
-    </statement>
+    </caption>
     <setup>
       <var case="insensitive">
         <condition string="^\s*variable\s*$">
@@ -51,22 +51,22 @@ track of a value. </p>
         </condition>
       </var>
     </setup>
-  </exercise>
-  <exercise label="variables_1">
-    <statement>
+  </listing>
+  <listing label="variables_1">
+    <caption>
       <p>Take a look at the code block below: <var/>  </p>
-    </statement>
+    </caption>
     <setup>
       <var>
         <pre>char tom;</pre>
         <p>It's an example of a(n) <var/> statement.</p>
       </var>
     </setup>
-  </exercise>
-  <exercise label="variables2.0">
-    <statement>
+  </listing>
+  <listing label="variables2.0">
+    <caption>
       <p>Click on all instances of integer VARIABLES.</p>
-    </statement>
+    </caption>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -86,11 +86,11 @@ track of a value. </p>
       <cline><![CDATA[    cout << "It's the year " << ]]><area correct="no">2000</area> + <area correct="yes">z</area> &lt;&lt; "!";</cline>
       <cline>}</cline>
     </areas>
-  </exercise>
-  <exercise label="variables2.1">
-    <statement>
+  </listing>
+  <listing label="variables2.1">
+    <caption>
       <p>Click on all instances of character VARIABLES.</p>
-    </statement>
+    </caption>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -106,11 +106,11 @@ track of a value. </p>
       <cline>    cout &lt;&lt; <area correct="no">c</area>;</cline>
       <cline>}</cline>
     </areas>
-  </exercise>
-  <exercise label="variables_2">
-    <statement>
+  </listing>
+  <listing label="variables_2">
+    <caption>
       <p>Match the variable to the kind of value it can store.</p>
-    </statement>
+    </caption>
     <feedback>
       <p>Ideally, you want your variables to be named according to what they represent.  Not the case here!  Try again!</p>
     </feedback>
@@ -128,11 +128,11 @@ track of a value. </p>
         <response>10</response>
       </match>
     </matches>
-  </exercise>
-  <exercise label="variables_4" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="variables_4" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>Write code that creates the variables name, firstInitial, and numberOfSiblings IN THAT ORDER.  It is up to you to choose the correct types for these variables.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="7">
         <choice correct="yes">
@@ -175,5 +175,5 @@ track of a value. </p>
         </choice>
       </block>
     </blocks>
-  </exercise>
+  </listing>
 </section>

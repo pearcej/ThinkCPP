@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <section xml:id="chapter12_coding-practice">
   <title>Coding Practice</title>
-  <exercise xml:id="empty-46">
-    <statement>
+  <listing xml:id="empty-46">
+    <caption>
       <p>A pixel is the smallest controllable element of a picture represented on the screen. Images
                     are comprised of numerous individual pixels, and each pixel's color sample has three numerical
                     RGB (red, green, blue) components to represent the color of that pixel. The intensity value of
                     each RGB component ranges from 0 to 255, where 0 is no intensity and 255 is highest intensity.
                     Write the <c>struct</c> definition for <c>Pixel</c>, which has values for each component r, g, and b.</p>
-    </statement>
+    </caption>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="cp_12_AC_1q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -40,8 +40,8 @@ struct Pixel {
 
             
 
-<exercise label="cp_12_AC_1a"><statement><p>Below is one way to implement the program. We declare the <c>Pixel</c> struct
-                    and create the instance variables in order.</p></statement><program xml:id="cp_12_AC_1a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<listing label="cp_12_AC_1a"><caption><p>Below is one way to implement the program. We declare the <c>Pixel</c> struct
+                    and create the instance variables in order.</p></caption><program xml:id="cp_12_AC_1a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -51,9 +51,9 @@ struct Pixel {
     int g;
     int b;
 };
-        ]]></input></program></exercise>
+        ]]></input></program></listing>
             </solution>
-  </exercise>
+  </listing>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
 &lt;div data-component="selectquestion" id=cp_12_AC_2_sq data-questionlist='cp_12_AC_2q, cp_12_AC_2_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
@@ -61,11 +61,11 @@ struct Pixel {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <exercise xml:id="empty-47">
-    <statement>
+  <listing xml:id="empty-47">
+    <caption>
       <p>Let's print out a <c>Pixel</c>! Write the <c>Pixel</c> member function <c>printPixel</c>,
                     which prints out the values of the <c>Pixel</c> in this form: (r, g, b).</p>
-    </statement>
+    </caption>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="cp_12_AC_3q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -119,8 +119,8 @@ int main() {
 
             
 
-<exercise label="cp_12_AC_3a"><statement><p>Below is one way to implement the program. We use the scope resolution
-                    operator to make <c>printPixel</c> a <c>Pixel</c> member function.</p></statement><program xml:id="cp_12_AC_3a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<listing label="cp_12_AC_3a"><caption><p>Below is one way to implement the program. We use the scope resolution
+                    operator to make <c>printPixel</c> a <c>Pixel</c> member function.</p></caption><program xml:id="cp_12_AC_3a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -140,9 +140,9 @@ int main() {
     Pixel p = {0, 0, 0};
     p.printPixel();
 }
-        ]]></input></program></exercise>
+        ]]></input></program></listing>
             </solution>
-  </exercise>
+  </listing>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
 &lt;div data-component="selectquestion" id=cp_12_AC_4_sq data-questionlist='cp_12_AC_4q, cp_12_AC_4_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
@@ -150,13 +150,13 @@ int main() {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <exercise xml:id="empty-48">
-    <statement>
+  <listing xml:id="empty-48">
+    <caption>
       <p>Somebody photobombed our image! What if we wanted to crop the photobomber out?
                     Let's write the <c>Image</c> member function <c>cropImage</c>, which takes four paramenters,
                     a start and stop row and a start and stop column. It then modifies the matrix to the
                     cropped matrix.</p>
-    </statement>
+    </caption>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="cp_12_AC_5q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -280,11 +280,11 @@ void Image::printImage() {
 
             
 
-<exercise label="cp_12_AC_5a"><statement><p>Below is one way to implement the program. First we make a new matrix
+<listing label="cp_12_AC_5a"><caption><p>Below is one way to implement the program. First we make a new matrix
                     with the correct amount of rows. Then we push back the pixels we want
                     into the new matrix. Afterwards, we must update the height and width
                     of the <c>Image</c> and set the <c>Image</c>'s matrix equal to the new one
-                    we created.</p></statement><program xml:id="cp_12_AC_5a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+                    we created.</p></caption><program xml:id="cp_12_AC_5a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -341,9 +341,9 @@ void Image::printImage() {
     cout &lt;&lt; endl;
     }
 }
-</tests></program></exercise>
+</tests></program></listing>
             </solution>
-  </exercise>
+  </listing>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
 &lt;div data-component="selectquestion" id=cp_12_AC_6_sq data-questionlist='cp_12_AC_6q, cp_12_AC_6_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
@@ -351,14 +351,14 @@ void Image::printImage() {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <exercise xml:id="empty-49">
-    <statement>
+  <listing xml:id="empty-49">
+    <caption>
       <p>When you take a selfie on your phone, the image is mirrored.
                     We can do the same to an image by flipping it horizontally.
                     Write the <c>Image</c> member function <c>flipHorizontal</c>,
                     which flips an image horizontally. Use the <c>swapPixel</c>
                     function we created previously.</p>
-    </statement>
+    </caption>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="cp_12_AC_7q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -521,10 +521,10 @@ void Image::swapPixel(int row1, int col1, int row2, int col2) {
 
             
 
-<exercise label="cp_12_AC_7a"><statement><p>Below is one way to implement the program. We loop through
+<listing label="cp_12_AC_7a"><caption><p>Below is one way to implement the program. We loop through
                     each row in the matrix. We create start and end indices and
                     repeatedly swap pixels, moving both indices toward the middle.
-                    Once they meet in the middle, we have finished flipping the image.</p></statement><program xml:id="cp_12_AC_7a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+                    Once they meet in the middle, we have finished flipping the image.</p></caption><program xml:id="cp_12_AC_7a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -601,9 +601,9 @@ void Image::swapPixel(int row1, int col1, int row2, int col2) {
     matrix[row1][col1] = matrix[row2][col2];
     matrix[row2][col2] = temp;
 }
-</tests></program></exercise>
+</tests></program></listing>
             </solution>
-  </exercise>
+  </listing>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
 &lt;div data-component="selectquestion" id=cp_12_AC_8_sq data-questionlist='cp_12_AC_8q, cp_12_AC_8_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
@@ -611,12 +611,12 @@ void Image::swapPixel(int row1, int col1, int row2, int col2) {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <exercise xml:id="empty-50">
-    <statement>
+  <listing xml:id="empty-50">
+    <caption>
       <p>Let's write the <c>Image</c> member function called <c>createBorder</c>,
                     which sets the <c>Pixel</c>s on the edge of an <c>Image</c> to a given
                     <c>Pixel</c>.</p>
-    </statement>
+    </caption>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="cp_12_AC_9q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -833,9 +833,9 @@ void Image::flipVertical() {
 
             
 
-<exercise label="cp_12_AC_9a"><statement><p>Below is one way to implement the program. We set the first and last
+<listing label="cp_12_AC_9a"><caption><p>Below is one way to implement the program. We set the first and last
                     row and first and last column of <c>Pixel</c>s in the <c>Image</c> to the
-                    given <c>Pixel</c>.</p></statement><program xml:id="cp_12_AC_9a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+                    given <c>Pixel</c>.</p></caption><program xml:id="cp_12_AC_9a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -939,9 +939,9 @@ void Image::flipVertical() {
         }
     }
 }
-</tests></program></exercise>
+</tests></program></listing>
             </solution>
-  </exercise>
+  </listing>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
 &lt;div data-component="selectquestion" id=cp_12_AC_10_sq data-questionlist='cp_12_AC_10q, cp_12_AC_10_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;

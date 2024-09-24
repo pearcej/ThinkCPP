@@ -13,82 +13,82 @@
   <p>This kind of variable access is called <term>implicit</term> because the name of
             the object does not appear explicitly. Features like this are one reason
             member functions are often more concise than nonmember functions.</p>
-  <exercise label="implicit_variable_access_1">
-    <statement>
+  <listing label="implicit_variable_access_1">
+    <caption>
       <p>Implicit variable access in member functions allows us to access member variables __________.</p>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>after being granted permission</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! You don't need "permission" to access member variables inside a member function.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>only inside of that specific member function</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! You can access member variables implicitly inside any and all member functions.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>using dot notation</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! You don't need to use dot notation to access variables implicitly.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>directly, without dot notation</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct! Implicit variable access allows us to access variables directly-- without using dot notation.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="implicit_variable_access_2">
-    <statement>
+  </listing>
+  <listing label="implicit_variable_access_2">
+    <caption>
       <p>When should you use the scope resolution operator <c>::</c>?</p>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>Every time you are working with data structures!</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! The scope resolution operator is not always necessary!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>When you implement member functions inside of the structure definition.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! When you write member functions inside of the structure definition, you do not need to specify the scope.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>When you implement member functions outside of the structure definition.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct!  When you write member functions outside of the structure definition, you need to specify the scope, hence the :: operator!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>Never! It is bad practice!</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! The scope resolution operator is good practice when used correctly!</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
+  </listing>
 </section>

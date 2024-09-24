@@ -20,10 +20,10 @@
             first is a string, the second is a character and the third is an
             integer. The reason this distinction is important should become clear
             soon.</p>
-  <exercise label="values_1">
-    <statement>
+  <listing label="values_1">
+    <caption>
       <p>A <var/> value is a single letter, number, or punctuation enclosed in single quotes. </p>
-    </statement>
+    </caption>
     <setup>
       <var case="insensitive">
         <condition string="^\s*(char)|(character)\s*$">
@@ -38,11 +38,11 @@
         </condition>
       </var>
     </setup>
-  </exercise>
-  <exercise label="values2.0">
-    <statement>
+  </listing>
+  <listing label="values2.0">
+    <caption>
       <p>Click on all integer VALUES.</p>
-    </statement>
+    </caption>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -61,11 +61,11 @@
       <cline>    cout &lt;&lt; <area correct="no">"Just kidding, it's "</area> &lt;&lt; <area correct="yes">2020</area> &lt;&lt; "!";</cline>
       <cline>}</cline>
     </areas>
-  </exercise>
-  <exercise label="values2.1">
-    <statement>
+  </listing>
+  <listing label="values2.1">
+    <caption>
       <p>Click on all string VALUES.</p>
-    </statement>
+    </caption>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -80,11 +80,11 @@
       <cline>    cout &lt;&lt; <area correct="yes">"Carved their initials in a tree!"</area>;</cline>
       <cline>}</cline>
     </areas>
-  </exercise>
-  <exercise label="values_3">
-    <statement>
+  </listing>
+  <listing label="values_3">
+    <caption>
       <p>Match the value to its data type.</p>
-    </statement>
+    </caption>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -102,5 +102,5 @@
         <response>character</response>
       </match>
     </matches>
-  </exercise>
+  </listing>
 </section>

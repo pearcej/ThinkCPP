@@ -49,10 +49,10 @@ hour = "Hello.";       // WRONG !!</pre>
             characters 1, 2 and 3, is not the same thing as the <em>number</em> 123. This
             assignment is illegal:</p>
   <pre>int minute = "59";         // WRONG!</pre>
-  <exercise label="assignment_1">
-    <statement>
+  <listing label="assignment_1">
+    <caption>
       <p>A(n) <var/> statement gives a value to a variable.  </p>
-    </statement>
+    </caption>
     <setup>
       <var case="insensitive">
         <condition string="^\s*assignment\s*$">
@@ -67,9 +67,9 @@ hour = "Hello.";       // WRONG !!</pre>
         </condition>
       </var>
     </setup>
-  </exercise>
-  <exercise label="assignment_2">
-    <statement>
+  </listing>
+  <listing label="assignment_2">
+    <caption>
       <p>What must be changed in order for this code block to work?</p>
       <pre>#include &lt;iostream&gt;
 using namespace std;
@@ -81,46 +81,46 @@ int main () {
   p = "h";
   q = "9";
 }</pre>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>Change the type of variable q from int to string.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Yes, but take a look at variable p.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>Change the type of both variables (p and q) from int to string.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Both variables are a character surrounded by double quotes, so they should be type string.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>Change the type of variable p from int to char.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Yes, but take a look at variable q.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>Nothing needs to change! The code will work just fine!</p>
-        </statement>
+        </caption>
         <feedback>
           <p>No! There will be a compile error.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="assignment_3" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="assignment_3" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>You love your car, and you decide to keep track of its make, model, and year.  You do so using three assignment statements IN THAT ORDER.  For the sake of this problem, suppose you drive a 2001 Jeep Cherokee.  Hint: there are a couple ways to write an assignment statement.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="1">
         <choice correct="yes">
@@ -160,5 +160,5 @@ int main () {
         <cline>year = 2001</cline>
       </block>
     </blocks>
-  </exercise>
+  </listing>
 </section>

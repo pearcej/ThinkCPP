@@ -14,49 +14,49 @@
             have objects that contain objects, and so on.</p>
   <p>In the next two chapters we will look at some examples of these
             combinations, using <c>Card</c> objects as a case study.</p>
-  <exercise label="composition_1">
-    <statement>
+  <listing label="composition_1">
+    <caption>
       <p>Which of the following statements is correct?</p>
-    </statement>
+    </caption>
     <choices>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>You can have vectors that contain other vectors and objects that contain other objects.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>This is called composition!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>You can have vectors that contain other vectors, but you can never have objects that contain other objects.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>In this chapter you will see how you can have objects that contain other objects.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>You can never have vectors that contain other vectors, but you can have objects that contain other objects.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>In this chapter you will see how you can have vectors that contain other vectors.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>You can never have vectors that contain other vectors, nor objects that contain other objects.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Vectors and objects can have nested compositons!</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="composition_2">
-    <statement>
+  </listing>
+  <listing label="composition_2">
+    <caption>
       <p>There are many different arrangements to combine language features.  This is called <var/>.</p>
-    </statement>
+    </caption>
     <setup>
       <var case="insensitive">
         <condition string="^\s*COMPOSITION\s*$">
@@ -71,5 +71,5 @@
         </condition>
       </var>
     </setup>
-  </exercise>
+  </listing>
 </section>

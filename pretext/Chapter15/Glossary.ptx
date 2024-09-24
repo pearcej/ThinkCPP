@@ -19,10 +19,10 @@
                         getting something added or concatenated during each iteration.</p>
     </li>
   </dl>
-  <exercise label="glossary15">
-    <statement>
+  <listing label="glossary15">
+    <caption>
       <p>Match the vocabulary word with its definition.</p>
-    </statement>
+    </caption>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -40,5 +40,5 @@
         <response>a variable used inside a loop to accumulate a result, often by getting something added or concatenated during each iteration.</response>
       </match>
     </matches>
-  </exercise>
+  </listing>
 </section>

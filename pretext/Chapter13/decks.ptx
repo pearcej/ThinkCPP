@@ -38,12 +38,12 @@ Deck::Deck (int size) {
   deck.cards[i].print();
 }</pre>
   <p>demonstrates how to traverse the deck and output each card.</p>
-  <exercise label="decks_1">
-    <statement>
+  <listing label="decks_1">
+    <caption>
       <p>A euchre deck consists of 9's, 10's, Jacks, Queens, Kings, and Aces.
 If we wanted to create a deck that is the size of the euchre deck, we
 would type: <c>Deck euchre_deck</c> <var/> <c>;</c> <var/>  </p>
-    </statement>
+    </caption>
     <setup>
       <var case="insensitive">
         <condition string="^\s*\(24\)\s*$">
@@ -58,92 +58,92 @@ would type: <c>Deck euchre_deck</c> <var/> <c>;</c> <var/>  </p>
         </condition>
       </var>
     </setup>
-  </exercise>
-  <exercise label="decks_2">
-    <statement>
+  </listing>
+  <listing label="decks_2">
+    <caption>
       <p>Take a look at the state diagram above. When we create a deck of cards using <c>Deck deck (52)</c>,
             what is true about our new deck?</p>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>The ranks and suits of the cards are initialized to the proper ranks and suits in a standard deck of cards.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Unless you the programmer tell it to, the computer won't do it.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>There will be 52 cards.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>We initialized cards with a value of 52.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>The ranks and suits will be initialized to their default values.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>In our case is, the default values are zero.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>The only instance variable in the deck is cards.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>cards is a vector of Cards!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>You can't access individual cards in the deck.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>You can access any card by indexing, for example: deck.cards[n].</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="decks_3">
-    <statement>
+  </listing>
+  <listing label="decks_3">
+    <caption>
       <p><c>ACE</c> corresponds to a rank of value <c>0</c>.</p>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>True - because this is the default mapping of enumerated types.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>The default mapping begins with 0.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>True - because our definition of rank overrides the default mapping.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Our definition doesn't use the default mapping, which begins with 0.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>False - because this is the default mapping of enumerated types.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>The default mapping begins with 0.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>False - because our definition of rank overrides the default mapping.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>If we wanted to, we could have set the rank of ace to 7, and the rest of the cards would still be ranked in order.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
+  </listing>
 </section>

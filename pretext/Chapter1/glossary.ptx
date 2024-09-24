@@ -93,11 +93,11 @@
       <p>The process of finding and removing any of the three kinds of errors.</p>
     </li>
   </dl>
-  <exercise label="chapter_one_glossary_1">
-    <statement>
+  <listing label="chapter_one_glossary_1">
+    <caption>
       <p>Match each phrase with the corresponding definition by dragging the phrase into the
         appropriate box.</p>
-    </statement>
+    </caption>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -119,12 +119,12 @@
         <response>Any of the languages people have designed for specific purposes.</response>
       </match>
     </matches>
-  </exercise>
-  <exercise label="chapter_one_glossary_2">
-    <statement>
+  </listing>
+  <listing label="chapter_one_glossary_2">
+    <caption>
       <p>Match each phrase with the corresponding definition by dragging the phrase into the
         appropriate box.</p>
-    </statement>
+    </caption>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -147,12 +147,12 @@
         <response>The output of the compiler, after translating the program.</response>
       </match>
     </matches>
-  </exercise>
-  <exercise label="chapter_one_glossary_3">
-    <statement>
+  </listing>
+  <listing label="chapter_one_glossary_3">
+    <caption>
       <p>Match each phrase with the corresponding definition by dragging the phrase into the
         appropriate box.</p>
-    </statement>
+    </caption>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -174,12 +174,12 @@
         <response>An error in a program.</response>
       </match>
     </matches>
-  </exercise>
-  <exercise label="chapter_one_glossary_4">
-    <statement>
+  </listing>
+  <listing label="chapter_one_glossary_4">
+    <caption>
       <p>Match each phrase with the corresponding definition by dragging the phrase into the
         appropriate box.</p>
-    </statement>
+    </caption>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -202,12 +202,12 @@
         <response>To examine a program and analyze the syntactic structure.</response>
       </match>
     </matches>
-  </exercise>
-  <exercise label="chapter_one_glossary_5">
-    <statement>
+  </listing>
+  <listing label="chapter_one_glossary_5">
+    <caption>
       <p>Match each phrase with the corresponding definition by dragging the phrase into the
         appropriate box.</p>
-    </statement>
+    </caption>
     <matches>
       <match order="1">
         <premise>syntax error</premise>
@@ -227,5 +227,5 @@
         <response>The process of finding and removing any of the three kinds of errors.</response>
       </match>
     </matches>
-  </exercise>
+  </listing>
 </section>

@@ -7,11 +7,11 @@
             values from 1 to 6.</p>
   <p>A good way to start is to write a simple loop that prints the multiples
             of 2, all on one line.</p>
-  <exercise label="TwoD_tables_AC_1">
-    <statement>
+  <listing label="TwoD_tables_AC_1">
+    <caption>
       <p>Run the active code below, which uses a simple loop that prints the multiples
             of 2, all on one line.</p>
-    </statement>
+    </caption>
     <program xml:id="TwoD_tables_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -28,7 +28,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>The first line initializes a variable named <c>i</c>, which is going to act
             as a counter, or <term>loop variable</term>. As the loop executes, the value of
             <c>i</c> increases from 1 to 6, and then when <c>i</c> is 7, the loop
@@ -38,8 +38,8 @@ int main() {
   <p>The output of this program is:</p>
   <pre>2   4   6   8   10   12</pre>
   <p>So far, so good. The next step is to <term>encapsulate</term> and <term>generalize</term>.</p>
-  <exercise label="2D_tables_1">
-    <statement>
+  <listing label="2D_tables_1">
+    <caption>
       <p>What is a good name for the variable x, found in the code block below?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -57,44 +57,44 @@ int main() {
 }
 ]]></input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>counter</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Try again!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>loop variable</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Try again!</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>Both a and b</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>None of the above</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Try again!</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="2D_tables_2">
-    <statement>
+  </listing>
+  <listing label="2D_tables_2">
+    <caption>
       <p>Currently, the code below prints all of the multiples of three on one line. How can you change the output so that each multiple prints on its own line?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -112,40 +112,40 @@ int main() {
 }
 ]]></input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p><![CDATA[Change the first output statement to say cout << 3 * x << endl;]]></p>
-        </statement>
+        </caption>
         <feedback>
           <p>The addition of the endl will print the multiples of three on separate lines.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p><![CDATA[Change the first output statement to say cout << 3 * x << \n;]]></p>
-        </statement>
+        </caption>
         <feedback>
           <p>A newline character must be used in conjunction with a string. In this case, we are outputting an integer. To use a newline character in this scenario you must use quotes around it. (ex. "\n")</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p><![CDATA[Change the second output statement to say cout << endl << endl;]]></p>
-        </statement>
+        </caption>
         <feedback>
           <p>This would simply print out two new lines after all of the multiples have already printed on one line.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>This code already prints each multiple on its own line.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>This code prints all multiples out on one line.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
+  </listing>
 </section>

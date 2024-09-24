@@ -51,12 +51,12 @@ Second line.</pre>
 }</pre>
   <p>Or we could write a new function, named <c>threeLine</c>, that prints three new
             lines:</p>
-  <exercise label="new_functions_AC_1">
-    <statement>
+  <listing label="new_functions_AC_1">
+    <caption>
       <p>Here we define the threeLine function, which calls the newLine function
             three times.  The result is a function that prints three lines after it
             is called (each of those empty lines begins with a <q>*</q>).</p>
-    </statement>
+    </caption>
     <program xml:id="new_functions_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -78,7 +78,7 @@ int main () {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>You should notice a few things about this program:</p>
   <p>
     <ul>
@@ -126,15 +126,15 @@ endl</c>?</p>
       </li>
     </ol>
   </p>
-  <exercise label="new_functions_mc_1">
-    <statement>
+  <listing label="new_functions_mc_1">
+    <caption>
       <p>Which of these statements is false about functions?</p>
-    </statement>
+    </caption>
     <choices>
       <choice correct="yes">
         <statement id="new_functions_mc_1_opt_a">
           <p>You can name a function anything you want.</p>
-        </statement>
+        </caption>
         <feedback id="new_functions_mc_1_opt_a">
           <p>You can't name a function the same name as a reserved keyword.</p>
         </feedback>
@@ -142,7 +142,7 @@ endl</c>?</p>
       <choice>
         <statement id="new_functions_mc_1_opt_b">
           <p>You can have a function with several parameters or a function with none.</p>
-        </statement>
+        </caption>
         <feedback id="new_functions_mc_1_opt_b">
           <p>This is true! However, you must always use parentheses.</p>
         </feedback>
@@ -150,7 +150,7 @@ endl</c>?</p>
       <choice>
         <statement id="new_functions_mc_1_opt_c">
           <p>You can call a function inside of another function.</p>
-        </statement>
+        </caption>
         <feedback id="new_functions_mc_1_opt_c">
           <p>This is true! It is common and useful.</p>
         </feedback>
@@ -158,17 +158,17 @@ endl</c>?</p>
       <choice>
         <statement id="new_functions_mc_1_opt_d">
           <p>You can write multiple statements on one line of a function.</p>
-        </statement>
+        </caption>
         <feedback id="new_functions_mc_1_opt_d">
           <p>This is true! As long as each statement ends with a semicolon.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="new_functions_2">
-    <statement>
+  </listing>
+  <listing label="new_functions_2">
+    <caption>
       <p>Click on all function HEADERS.</p>
-    </statement>
+    </caption>
     <feedback>
       <p>Remember, the operator '=' is used for assignment.</p>
     </feedback>
@@ -220,11 +220,11 @@ endl</c>?</p>
       <cline>    return 0;</cline>
       <cline>}</cline>
     </areas>
-  </exercise>
-  <exercise label="new_functions_3">
-    <statement>
+  </listing>
+  <listing label="new_functions_3">
+    <caption>
       <p>Click on all function CALLS.</p>
-    </statement>
+    </caption>
     <feedback>
       <p>Remember, the operator '=' is used for assignment.</p>
     </feedback>
@@ -276,11 +276,11 @@ endl</c>?</p>
       <cline>    return 0;</cline>
       <cline>}</cline>
     </areas>
-  </exercise>
-  <exercise label="new_functions_pp_1" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="new_functions_pp_1" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>Construct a function that correctly prints the perimeter of a rectangle.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="3">
         <cline>void perimeter (int length,int width) {</cline>
@@ -304,5 +304,5 @@ endl</c>?</p>
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
+  </listing>
 </section>

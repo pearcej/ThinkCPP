@@ -103,62 +103,62 @@
   <p>Well, actually you have to give some thought to getting the base case
             right and making sure that you reach it eventually, but other than that,
             writing the recursive version should be no problem. Good luck!</p>
-  <exercise label="mergesort_1">
-    <statement>
+  <listing label="mergesort_1">
+    <caption>
       <p>The efficiency of a simple sorting algorithm is __________.  The
             efficiency of mergesort is __________.  Mergesort is __________ than
             the simple sorting algorithm.</p>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>n, nlogn, more efficient</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Simple sort traverses the vector n times, and each traversal takes additional time.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>n^2, nlogn, more efficient</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Simple sort takes time proporitonal to n^2, mergesort takes time proportional to nlogn (which is more efficient).</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>nlogn, n, less efficient</p>
-        </statement>
+        </caption>
         <feedback>
           <p>You might be confused about which algorithm is which.  Also, what is the efficiency of simple sort?</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>nlogn, n^2, less efficient</p>
-        </statement>
+        </caption>
         <feedback>
           <p>You might be confused about which algorithm is which.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>n^2, nlogn, less efficient</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Which algorithm is more efficient? (Which function grows more slowly?)</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="mergesort_2">
-    <statement>
+  </listing>
+  <listing label="mergesort_2">
+    <caption>
       <p>Write your implementation of <c>merge</c> in the commented area of the active
             code below. Read the comments in <c>main</c> to see how we'll test if your
             <c>merge</c> function works. If you get stuck, you can reveal the extra problem
             at the end for help.</p>
-    </statement>
+    </caption>
     <program xml:id="mergesort_2_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -361,13 +361,13 @@ void Deck::sortDeck () {
 }
 </tests>
     </program>
-  </exercise>
-  <exercises line="351" runestone_options="{'showtitle': 'data-showtitle=&quot;merge Help&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'mergesort', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': 'mergesort_reveal_1', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter13/mergesort.rst">
-    <exercise label="mergesort_help_1" numbered="yes" adaptive="yes" indentation="hide" language="python">
-      <statement>
+  </listing>
+  <listings line="351" runestone_options="{'showtitle': 'data-showtitle=&quot;merge Help&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'mergesort', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': 'mergesort_reveal_1', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter13/mergesort.rst">
+    <listing label="mergesort_help_1" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <caption>
         <p>First, let's write the code for the merge function. merge should
                 take two decks as parameters and return a deck with the deck merged.</p>
-      </statement>
+      </caption>
       <blocks>
         <block order="13">
           <choice correct="yes">
@@ -443,15 +443,15 @@ void Deck::sortDeck () {
           <cline>}</cline>
         </block>
       </blocks>
-    </exercise>
-  </exercises>
-  <exercise label="mergesort_3">
-    <statement>
+    </listing>
+  </listings>
+  <listing label="mergesort_3">
+    <caption>
       <p>Now that we've written <c>merge</c>, it's time to write the <c>mergeSort</c> function. Try writing
             the non-recursive version of <c>mergeSort</c> first before writing the recursive version. Follow the
             comments in <c>main</c> to test your functions. If done correctly, the program should output a sorted
             deck of cards. If you get stuck, you can reveal the extra problems at the end for help.</p>
-    </statement>
+    </caption>
     <program xml:id="mergesort_3_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -686,13 +686,13 @@ Deck merge (const Deck&amp; d1, const Deck&amp; d2) {
 }
 </tests>
     </program>
-  </exercise>
-  <exercises line="654" runestone_options="{'showtitle': 'data-showtitle=&quot;mergeSort Help&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'mergesort', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': 'mergesort_reveal_2', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter13/mergesort.rst">
-    <exercise label="mergesort_help_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
-      <statement>
+  </listing>
+  <listings line="654" runestone_options="{'showtitle': 'data-showtitle=&quot;mergeSort Help&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'mergesort', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': 'mergesort_reveal_2', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter13/mergesort.rst">
+    <listing label="mergesort_help_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <caption>
         <p>Let's write the code for the mergeSort function. mergeSort
                 should be a Deck member function that returns a sorted deck.</p>
-      </statement>
+      </caption>
       <blocks>
         <block order="1">
           <choice correct="yes">
@@ -718,14 +718,14 @@ Deck merge (const Deck&amp; d1, const Deck&amp; d2) {
           <cline>}</cline>
         </block>
       </blocks>
-    </exercise>
-  </exercises>
-  <exercises line="680" runestone_options="{'showtitle': 'data-showtitle=&quot;mergeSort Recursion Help&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'mergesort', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': 'mergesort_reveal_3', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter13/mergesort.rst">
-    <exercise label="mergesort_help_3" numbered="yes" adaptive="yes" indentation="hide" language="python">
-      <statement>
+    </listing>
+  </listings>
+  <listings line="680" runestone_options="{'showtitle': 'data-showtitle=&quot;mergeSort Recursion Help&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'mergesort', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': 'mergesort_reveal_3', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter13/mergesort.rst">
+    <listing label="mergesort_help_3" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <caption>
         <p>Let's take it one step further and rewrite <c>mergeSort</c> as a
                 recursive function.</p>
-      </statement>
+      </caption>
       <blocks>
         <block order="1">
           <cline>Deck Deck::mergeSort (Deck deck) const {</cline>
@@ -751,6 +751,6 @@ Deck merge (const Deck&amp; d1, const Deck&amp; d2) {
           <cline>}</cline>
         </block>
       </blocks>
-    </exercise>
-  </exercises>
+    </listing>
+  </listings>
 </section>

@@ -39,10 +39,10 @@
       <p>To join two operands end-to-end.</p>
     </li>
   </dl>
-  <exercise label="chapter_seven_glossary">
-    <statement>
+  <listing label="chapter_seven_glossary">
+    <caption>
       <p>Match the definition to the term.</p>
-    </statement>
+    </caption>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -76,5 +76,5 @@
         <response>To join two operands end-to-end.</response>
       </match>
     </matches>
-  </exercise>
+  </listing>
 </section>

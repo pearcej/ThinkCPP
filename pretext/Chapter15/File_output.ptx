@@ -21,10 +21,10 @@ int main () {
    outfile &lt;&lt; line &lt;&lt; endl;
  }
 }</pre>
-  <exercise label="question15_4_1" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  <listing label="question15_4_1" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>Create a code block that sends output to a file. First, make sure that both the input file and the output file are able to be opened.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="8">
         <cline>int main () {</cline>
@@ -58,42 +58,42 @@ int main () {
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
-  <exercise label="question15_4_2">
-    <statement>
+  </listing>
+  <listing label="question15_4_2">
+    <caption>
       <p>The code from the previous problem checks whether the files open or not. It doesn't specify which one, if any, doesn't open. How could you specify which file does not open?</p>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>Create two "for" loops instead of an if-statement so that the statement loops through both conditions once.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Try again!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>Create a "while" loop instead of an if-statement so that the statement loops through both conditions separately until the body of the loop is reached.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Try again!</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>Create two "if" statements, one that check whether in_file.good() is false, and another that checks whether out_file.good() is false, instead of putting them together in one "if" statement.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="question15_4_3">
-    <statement>
+  </listing>
+  <listing label="question15_4_3">
+    <caption>
       <p>Finish the statement: <var/> <c>outfile ("output-file");</c>. <var/>  </p>
-    </statement>
+    </caption>
     <setup>
       <var case="insensitive">
         <condition string="^\s*(?:o|O)(?:f|f)(?:s|S)(?:t|T)(?:r|R)(?:e|E)(?:A|a)(?:m|M)\s*$">
@@ -108,5 +108,5 @@ int main () {
         </condition>
       </var>
     </setup>
-  </exercise>
+  </listing>
 </section>

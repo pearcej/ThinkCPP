@@ -35,11 +35,11 @@
 currentTime.increment (500.0);
 currentTime.print ();</pre>
   <p>The output of this program is <c>9:22:50</c>.</p>
-  <exercise label="another_example_AC_1">
-    <statement>
+  <listing label="another_example_AC_1">
+    <caption>
       <p>Feel free to change the input and experiment around with the active
             code below!</p>
-    </statement>
+    </caption>
     <program xml:id="another_example_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -77,11 +77,11 @@ void Time::increment (double secs) {
 }
 </tests>
     </program>
-  </exercise>
-  <exercise label="another_example_1">
-    <statement>
+  </listing>
+  <listing label="another_example_1">
+    <caption>
       <p>Suppose we have previously declared <c>Time currentTime = {9, 14, 30.0}</c>.  What should be printed by <c>time.print()</c> after calling <c>time.increment(645.0)</c>? Type your response in the form <term>hh:mm:ss</term>. <var/>  </p>
-    </statement>
+    </caption>
     <setup>
       <var case="insensitive">
         <condition string="^\s*(9:25:15)|(09:25:15)\s*$">
@@ -96,11 +96,11 @@ void Time::increment (double secs) {
         </condition>
       </var>
     </setup>
-  </exercise>
-  <exercise label="another_example_2">
-    <statement>
+  </listing>
+  <listing label="another_example_2">
+    <caption>
       <p>When we call a member function, we <var/> the function on the data structure.   </p>
-    </statement>
+    </caption>
     <setup>
       <var case="insensitive">
         <condition string="^\s*invoke\s*$">
@@ -115,15 +115,15 @@ void Time::increment (double secs) {
         </condition>
       </var>
     </setup>
-  </exercise>
-  <exercise label="another_example_3" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="another_example_3" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>Create the <c>Cat</c> object with member functions <c>make_noise</c> and <c>catch_mouse</c>.
             The <c>make_noise</c> function should print different noises depending on the cat's mood.
             The <c>catch_mouse</c> function returns true if the product of the cat's weight and age is
             less than twice the speed of the mouse.  Write the functions in the same order they appear
             inside the structure. Use implicit variable access.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="6">
         <cline>struct Cat {</cline>
@@ -194,5 +194,5 @@ void Time::increment (double secs) {
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
+  </listing>
 </section>

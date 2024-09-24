@@ -37,11 +37,11 @@ void nLines(int n) {
 int main() {
   void nLines(10);
 }</pre>
-  <exercise label="unbounded_recursion_1">
-    <statement>
+  <listing label="unbounded_recursion_1">
+    <caption>
       <p>If a recursive function never reaches its <var/> <var/>, then the function
 will continue executing indefinitely.  This is called <var/> <var/>. </p>
-    </statement>
+    </caption>
     <setup>
       <var case="insensitive">
         <condition string="^\s*base\s*$">
@@ -92,9 +92,9 @@ will continue executing indefinitely.  This is called <var/> <var/>. </p>
         </condition>
       </var>
     </setup>
-  </exercise>
-  <exercise label="unbounded_recursion_2">
-    <statement>
+  </listing>
+  <listing label="unbounded_recursion_2">
+    <caption>
       <p>Take a look at the code below.  What will happen if you were to run it on
             your machine?</p>
       <pre>#include &lt;iostream&gt;
@@ -111,44 +111,44 @@ void isNegative(int n) {
 int main() {
   isNegative(-10);
 }</pre>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>The function will print "Not Negative!"</p>
-        </statement>
+        </caption>
         <feedback>
           <p>The function will never print "Not Negative!" since we start with a negative number!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>The function will print "Not Negative!" more than once.  Then it will print "Negative!" and will stop executing.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>The function will never print "Not Negative!" since we start with a negative number!</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>The function will print "Negative!"</p>
-        </statement>
+        </caption>
         <feedback>
           <p>We start with a negative number, so the function will reach the base case.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>The function will never stop executing, there will be infinite recursion.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>We start with a negative number, so the function will reach the base case.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="unbounded_recursion_3">
-    <statement>
+  </listing>
+  <listing label="unbounded_recursion_3">
+    <caption>
       <p><c>isNegative</c> is defined exactly as it was above, but we have changed the
             call to it in <c>main</c>.
             What will happen if we run the code with this input?</p>
@@ -166,44 +166,44 @@ void isNegative(int n) {
 int main() {
   isNegative(10);
 }</pre>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>The function will print "Not Negative!"</p>
-        </statement>
+        </caption>
         <feedback>
           <p>The function will print "Not Negative!", but it won't stop there!</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>The function will print "Not Negative!" more than once.  Then it will print "Negative!" and will stop executing.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>The function will print "Not Negative!" until it reaches a negative number.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>The function will print "Negative!"</p>
-        </statement>
+        </caption>
         <feedback>
           <p>The function will eventually print "Not Negative!", but that's not all!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>The function will never stop executing, there will be infinite recursion.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Since we decrement each time, the base case will be reached.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="unbounded_recursion_4">
-    <statement>
+  </listing>
+  <listing label="unbounded_recursion_4">
+    <caption>
       <p>The <c>isNegative</c> function has been <term>edited</term> as shown below.  What will
             happen now when we run the code?</p>
       <pre>#include &lt;iostream&gt;
@@ -220,40 +220,40 @@ void isNegative(int n) {
 int main() {
   isNegative(10);
 }</pre>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>The function will print "Not Negative!"</p>
-        </statement>
+        </caption>
         <feedback>
           <p>The function will print "Not Negative!" but it won't stop there!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>The function will print "Not Negative!" more than once.  Then it will print "Negative!" and will stop executing.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>The function will print "Not Negative!" more than once.  But will it print "Negative"?</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>The function will print "Negative!"</p>
-        </statement>
+        </caption>
         <feedback>
           <p>We start with a positive number, so the function simply won't print "Not Negative!"</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>The function will never stop executing, there will be infinite recursion.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Our input is incremented with every recursive call, so if we start with a positive number, we will never reach the base case.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
+  </listing>
 </section>

@@ -18,12 +18,12 @@ minute / 60</pre>
   <p>Addition, subtraction and multiplication all do what you expect, but you
             might be surprised by division. For example, compile the following program around
             observe the output.</p>
-  <exercise label="operators_AC_1">
-    <statement>
+  <listing label="operators_AC_1">
+    <caption>
       <p>This program is supposed to print the fraction of the hour that has
             passed since midnight.  You'll notice that the result isn't quite what
             you expect.  Read on to find out why!</p>
-    </statement>
+    </caption>
     <program xml:id="operators_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -41,7 +41,7 @@ int main () {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>The first line is what we expected, but the second line is odd. The
             value of the variable minute is 59, and 59 divided by 60 is 0.98333, not
             0. The reason for the discrepancy is that C++ is performing <term>integer
@@ -64,10 +64,10 @@ cout &lt;&lt; minute * 100 / 60 &lt;&lt; endl;</pre>
     <p>In C++, <term>floating-points</term> are declared as type <c>double</c>. We'll get
                 to that in the next chapter.</p>
   </note>
-  <exercise label="operators_1">
-    <statement>
+  <listing label="operators_1">
+    <caption>
       <p>Match the statement to the result, given that x = 10.</p>
-    </statement>
+    </caption>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -89,11 +89,11 @@ cout &lt;&lt; minute * 100 / 60 &lt;&lt; endl;</pre>
         <response>1000</response>
       </match>
     </matches>
-  </exercise>
-  <exercise label="operators_3">
-    <statement>
+  </listing>
+  <listing label="operators_3">
+    <caption>
       <p>Integer division always rounds <var/> to the nearest <var/>. </p>
-    </statement>
+    </caption>
     <setup>
       <var case="insensitive">
         <condition string="^\s*down\s*$">
@@ -120,11 +120,11 @@ cout &lt;&lt; minute * 100 / 60 &lt;&lt; endl;</pre>
         </condition>
       </var>
     </setup>
-  </exercise>
-  <exercise label="operators_3.1">
-    <statement>
+  </listing>
+  <listing label="operators_3.1">
+    <caption>
       <p><var/>  </p>
-    </statement>
+    </caption>
     <setup>
       <var>
         <pre>int num1 = 12;
@@ -138,11 +138,11 @@ cout &lt;&lt; num1 / num2;</pre>
         </condition>
       </var>
     </setup>
-  </exercise>
-  <exercise label="operators_3.2">
-    <statement>
+  </listing>
+  <listing label="operators_3.2">
+    <caption>
       <p><var/>  </p>
-    </statement>
+    </caption>
     <setup>
       <var>
         <pre>int num1 = 10;
@@ -156,11 +156,11 @@ cout &lt;&lt; num2 / num1;</pre>
         </condition>
       </var>
     </setup>
-  </exercise>
-  <exercise label="operators_3.3">
-    <statement>
+  </listing>
+  <listing label="operators_3.3">
+    <caption>
       <p><var/>  </p>
-    </statement>
+    </caption>
     <setup>
       <var>
         <pre>int num1 = 10;
@@ -174,11 +174,11 @@ cout &lt;&lt; num2 / num1;</pre>
         </condition>
       </var>
     </setup>
-  </exercise>
-  <exercise label="operators_3.4">
-    <statement>
+  </listing>
+  <listing label="operators_3.4">
+    <caption>
       <p><var/>  </p>
-    </statement>
+    </caption>
     <setup>
       <var>
         <pre>int num1 = 10;
@@ -192,11 +192,11 @@ cout &lt;&lt; num2 / num1;</pre>
         </condition>
       </var>
     </setup>
-  </exercise>
-  <exercise label="operators_3.5">
-    <statement>
+  </listing>
+  <listing label="operators_3.5">
+    <caption>
       <p><var/>  </p>
-    </statement>
+    </caption>
     <setup>
       <var>
         <pre>int num1 = 7;
@@ -210,11 +210,11 @@ cout &lt;&lt; "Decimal:" &lt;&lt; num1 / num2;</pre>
         </condition>
       </var>
     </setup>
-  </exercise>
-  <exercise label="operators_4" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="operators_4" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>Construct a code block that prints the total cost of your meal, including the 6.0% sales tax, after you purchase two orders of fries, three burgers, and a milkshake.  Start by initializing the value of sales tax, then the prices of the food.  Once you have initialized the variables, you can perform your calculations and save the result in the price variable.  At the very end, you will print out the total price.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="5">
         <cline>int main () {</cline>
@@ -260,5 +260,5 @@ cout &lt;&lt; "Decimal:" &lt;&lt; num1 / num2;</pre>
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
+  </listing>
 </section>

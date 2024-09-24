@@ -26,43 +26,43 @@ for (int i = 0; i &lt; upperBound; i++) {
             different ways. First, it is an argument to <c>howMany</c>, specifying
             which value I am interested in. Second, it is an index into the
             histogram, specifying which location I should store the result in.</p>
-  <exercise label="histogram_1">
-    <statement>
+  <listing label="histogram_1">
+    <caption>
       <p>Which of the following statements are true about using vectors to store data?</p>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>Vectors require more typing than using individual variables to store data.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! Vectors require less typing than using individual varaibles to store data.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>Vectors create multiple storage locations at once under the same name.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>Once you store something in a vector, you cannot change its value.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! The values of vector elements can always be changed.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>Each storage location of a vector is accessed by indexing.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
+  </listing>
 </section>

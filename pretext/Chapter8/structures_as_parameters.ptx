@@ -8,11 +8,11 @@
   <p><c>printPoint</c> takes a point as an argument and outputs it in the
             standard format. If you call <c>printPoint (blank)</c>, it will output
             <c>(3, 4)</c>.</p>
-  <exercise label="structures_parameters_AC_1">
-    <statement>
+  <listing label="structures_parameters_AC_1">
+    <caption>
       <p>The active code below uses the <c>printPoint</c> function. Run the code to
             see the output!</p>
-    </statement>
+    </caption>
     <program xml:id="structures_parameters_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -32,7 +32,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>As a second example, we can rewrite the <c>distance</c> function from
             <number_reference internal="True" refuri="../Chapter5/programdevelopment#distance" title="Section %s"><inline classes="std std-numref">Section 5.2</inline></number_reference> so that it takes two <c>Point</c>s as
             parameters instead of four <c>double</c>s.</p>
@@ -41,11 +41,11 @@ int main() {
   double dy = p2.y - p1.y;
   return sqrt (dx*dx + dy*dy);
 }</pre>
-  <exercise label="structures_parameters_AC_2">
-    <statement>
+  <listing label="structures_parameters_AC_2">
+    <caption>
       <p>The active code below uses the updated version of the <c>distance</c> function.
             Feel free to modify the code!</p>
-    </statement>
+    </caption>
     <program xml:id="structures_parameters_AC_2_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -69,9 +69,9 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
-  <exercise label="structures_parameters_1">
-    <statement>
+  </listing>
+  <listing label="structures_parameters_1">
+    <caption>
       <p>What will print?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -89,14 +89,14 @@ int main() {
 }
 ]]></input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice>
         <statement id="structures_parameters_1_opt_a">
           <p>
             <c>(-2, -7)</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="structures_parameters_1_opt_a">
           <p>Take a close look at the printOppositeCoordinate function.</p>
         </feedback>
@@ -106,7 +106,7 @@ int main() {
           <p>
             <c>(2.0, 7.0)</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="structures_parameters_1_opt_b">
           <p>Take a close look at the printOppositeCoordinate function.</p>
         </feedback>
@@ -116,7 +116,7 @@ int main() {
           <p>
             <c>(-7, -2)</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="structures_parameters_1_opt_c">
           <p>Yes, this is the correct output.</p>
         </feedback>
@@ -126,17 +126,17 @@ int main() {
           <p>
             <c>(-7.0, -2.0)</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="structures_parameters_1_opt_d">
           <p>Take a close look at the Coordinate struct.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="structures_parameters_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="structures_parameters_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>Construct a function that takes in three Point structures and prints the average of the x coordinates and the average of the y coordinates as a coordinate. Find the x average before the y average.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="4">
         <cline>void printAveragePoint(Point p1, Point p2, Point p3) {</cline>
@@ -160,5 +160,5 @@ int main() {
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
+  </listing>
 </section>

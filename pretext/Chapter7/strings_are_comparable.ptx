@@ -3,11 +3,11 @@
   <title><c>string</c>s are comparable</title>
   <p>All the comparison operators that work on <c>int</c>s and <c>double</c>s
             also work on <c>strings</c>.</p>
-  <exercise label="strings_comparable_AC_1">
-    <statement>
+  <listing label="strings_comparable_AC_1">
+    <caption>
       <p>Take a look at the active code below, which checks to see if <c>word</c> is
             equal to <c>"banana"</c>.</p>
-    </statement>
+    </caption>
     <program xml:id="strings_comparable_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -22,14 +22,14 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>The other comparison operations are useful for putting words in
             alphabetical order.</p>
-  <exercise label="strings_comparable_AC_2">
-    <statement>
+  <listing label="strings_comparable_AC_2">
+    <caption>
       <p>The active code below uses comparison operators to determine the ordering
             of <c>word</c> relative to <c>"banana"</c>.</p>
-    </statement>
+    </caption>
     <program xml:id="strings_comparable_AC_2_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -49,7 +49,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>You should be aware, though, that the <c>string</c> class does not handle
             upper and lower case letters the same way that people do. All the upper
             case letters come before all the lower case letters. As a result,</p>
@@ -59,8 +59,8 @@ int main() {
             sections explains how. I will not address the more difficult problem,
             which is making the program realize that zebras are not fruit.</p>
   <p>For the following questions, remember that in C++ <c>1</c> means true and <c>0</c> means false.</p>
-  <exercise label="strings_comparable_1">
-    <statement>
+  <listing label="strings_comparable_1">
+    <caption>
       <p>What would the result of the following comparison be?
             Where <c>1</c> means true and <c>0</c> means false.</p>
       <program language="cpp" line-numbers="yes">
@@ -68,28 +68,28 @@ int main() {
 "Dog" < "Doghouse";
 ]]></input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>1</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Both match up to the g but Dog is shorter than Doghouse so it comes first in the dictionary.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>0</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Strings are compared character by character.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="strings_comparable_2">
-    <statement>
+  </listing>
+  <listing label="strings_comparable_2">
+    <caption>
       <p>What would the result of the following comparison be?
             Where <c>1</c> means true and <c>0</c> means false.</p>
       <program language="cpp" line-numbers="yes">
@@ -97,36 +97,36 @@ int main() {
 "dog" &lt; "Dog";
 </input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>1</p>
-        </statement>
+        </caption>
         <feedback>
           <p>d is greater than D</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>0</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Yes, upper case is less than lower case according to the ordinal values of the characters.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>They are the same word</p>
-        </statement>
+        </caption>
         <feedback>
           <p>C++ is case sensitive meaning that upper case and lower case characters are different.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="strings_comparable_3">
-    <statement>
+  </listing>
+  <listing label="strings_comparable_3">
+    <caption>
       <p>What would the result of the following comparison be?
             Where <c>1</c> means true and <c>0</c> means false.</p>
       <program language="cpp" line-numbers="yes">
@@ -134,28 +134,28 @@ int main() {
 "dog" < "Doghouse";
 ]]></input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>1</p>
-        </statement>
+        </caption>
         <feedback>
           <p>d is greater than D.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>0</p>
-        </statement>
+        </caption>
         <feedback>
           <p>The length does not matter.  Lower case d is greater than upper case D.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="strings_comparable_4">
-    <statement>
+  </listing>
+  <listing label="strings_comparable_4">
+    <caption>
       <p>What would the result of the following comparison be?
             Where <c>1</c> means true and <c>0</c> means false.</p>
       <program language="cpp" line-numbers="yes">
@@ -163,24 +163,24 @@ int main() {
 "bread" < "bread";
 ]]></input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>1</p>
-        </statement>
+        </caption>
         <feedback>
           <p>They are equal so one can't be greater than the other.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>0</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct! because they are equal. They are equal because all characters match.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
+  </listing>
 </section>

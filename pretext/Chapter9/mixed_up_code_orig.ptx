@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <section xml:id="chapter9_mixed-up-code-practice">
   <title>Mixed Up Code Practice</title>
-  <exercise label="mucp_9_1" numbered="yes" adaptive="yes" indentation="show" language="python">
-    <statement>
+  <listing label="mucp_9_1" numbered="yes" adaptive="yes" indentation="show" language="python">
+    <caption>
       <p>Let's write the code for the struct definition of Movie.
             The Movie structure will have the instance variables title,
             director, and releaseYear in that order.
             Put the necessary blocks of code in the correct order.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="3">
         <cline>struct Movie {</cline>
@@ -43,14 +43,14 @@
         <cline>) </cline>
       </block>
     </blocks>
-  </exercise>
-  <exercise label="mucp_9_2" numbered="yes" adaptive="yes" indentation="show" language="python">
-    <statement>
+  </listing>
+  <listing label="mucp_9_2" numbered="yes" adaptive="yes" indentation="show" language="python">
+    <caption>
       <p>Let's write the code for the printMovie function.
             printMovie should print the information about a movie
             in the following format: <q>title</q> directed by director (releaseYear).
             Put the necessary blocks of code in the correct order.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="9">
         <choice correct="yes">
@@ -85,14 +85,14 @@
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
-  <exercise label="mucp_9_3" numbered="yes" adaptive="yes" indentation="show" language="python">
-    <statement>
+  </listing>
+  <listing label="mucp_9_3" numbered="yes" adaptive="yes" indentation="show" language="python">
+    <caption>
       <p>Let's write the code for the movieAge function.
             movieAge should take a Movie and currentYear as a parameter and
             return how many years it has been since the releaseYear.
             Put the necessary blocks of code in the correct order.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="4">
         <cline>int movieAge (const Movie&amp; m, int currentYear) {</cline>
@@ -113,14 +113,14 @@
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
-  <exercise label="mucp_9_4" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="mucp_9_4" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>Let's write the code for the struct definition of Date.
             The Date structure will have three integer instance variables: day,
             month, and year in that order.
             Put the necessary blocks of code in the correct order.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="9">
         <cline>struct Date {</cline>
@@ -159,14 +159,14 @@
         <cline>) </cline>
       </block>
     </blocks>
-  </exercise>
-  <exercise label="mucp_9_5" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="mucp_9_5" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>Let's write the code for the printDate function.
             printDate should print the date in the following format:
             month/date/year.
             Put the necessary blocks of code in the correct order.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="6">
         <choice correct="yes">
@@ -192,15 +192,15 @@
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
-  <exercise label="mucp_9_6" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="mucp_9_6" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>Let's write the code for the nextMonth function.
             nextMonth should change the date to one month later.
             For example, 3/4/2020 gets modified to 4/4/2020, and 12/3/2020
             gets modified to 1/3/2021.
             Put the necessary blocks of code in the correct order.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="7">
         <choice correct="yes">
@@ -247,13 +247,13 @@
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
-  <exercise label="mucp_9_7" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="mucp_9_7" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>Let's write the code for the struct definition of Length.
             Length should have the instance variables inches, feet, and yard.
             Put the necessary blocks of code in the correct order.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="12">
         <cline>struct Length {</cline>
@@ -292,14 +292,14 @@
         <cline>) </cline>
       </block>
     </blocks>
-  </exercise>
-  <exercise label="mucp_9_8" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="mucp_9_8" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>Let's write the code for the printLength function.
             printLength should print the date in the following format:
             yards yds, feet ft, inches in.
             Put the necessary blocks of code in the correct order.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="3">
         <choice correct="yes">
@@ -325,15 +325,15 @@
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
-  <exercise label="mucp_9_9" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="mucp_9_9" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>Let's write the code for the allInches function.
             printLength should modify a Length object to convert all
             feet and yards to inches. For example, a Length with 1 yard, 2 feet, and 3
             inches is converted into a Length with 0 yards, 0 feet, and 63 inches.
             Put the necessary blocks of code in the correct order.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="3">
         <choice correct="yes">
@@ -362,16 +362,16 @@
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
-  <exercise label="mucp_9_10" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="mucp_9_10" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>Let's write the code for the addLengths function.
             addLengths should take three Lengths as parameters.
             It should then add the first two Lengths and store the result
             in the third Length. If there is over 12 inches or over 3 feet,
             convert it to the proper amound of feet and yards (13 inches becomes 1 foot and 1 inch).
             Put the necessary blocks of code in the correct order.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="10">
         <choice correct="yes">
@@ -430,5 +430,5 @@
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
+  </listing>
 </section>

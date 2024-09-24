@@ -12,10 +12,10 @@
       <p>A set of parameters that act together as a single parameter.</p>
     </li>
   </dl>
-  <exercise label="glossary12">
-    <statement>
+  <listing label="glossary12">
+    <caption>
       <p>Match the vocabulary word with its definition.</p>
-    </statement>
+    </caption>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -29,5 +29,5 @@
         <response>A set of parameters that act together as a single parameter.</response>
       </match>
     </matches>
-  </exercise>
+  </listing>
 </section>

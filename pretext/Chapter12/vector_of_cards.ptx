@@ -41,11 +41,11 @@ for (int suit = 0; suit &lt;= 3; suit++) {
   <p>This deck-building code is encapsulated in a function called
             <c>buildDeck</c> that takes no parameters and that returns a
             fully-populated vector of <c>Card</c>s.</p>
-  <exercise label="12_6">
-    <statement>
+  <listing label="12_6">
+    <caption>
       <p>Take a look at the active code below, which includes the implementation of
             the <c>buildDeck</c> function.</p>
-    </statement>
+    </caption>
     <program xml:id="c12_6_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -118,9 +118,9 @@ void Card::print () const {
 }
 </tests>
     </program>
-  </exercise>
-  <exercise label="vector_of_cards_1">
-    <statement>
+  </listing>
+  <listing label="vector_of_cards_1">
+    <caption>
       <p>Take a look at the code below. What can we say about the deck that is created?</p>
       <pre>vector&lt;Card&gt; createDeck() {
    vector&lt;Card&gt; deck (16);
@@ -134,59 +134,59 @@ void Card::print () const {
    }
    return deck;
 }</pre>
-    </statement>
+    </caption>
     <choices>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>There are 16 cards in the deck.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct! You can verify this by checking how many times the for loops execute.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>The deck is single-suited.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! Look at the conditions of the outer for loop, you'll find that there are two suits in this deck.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>There are no face cards in the deck.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! Look at the conditions of the inner for loop, you'll find that this deck contains face cards.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>The deck does not contain any Hearts.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct! The two suits in this deck are Clubs and Diamonds.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>There are two Jacks in the deck.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct! The deck contains the Jack of Clubs and the Jack of Diamonds.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="vector_of_cards_2">
-    <statement>
+  </listing>
+  <listing label="vector_of_cards_2">
+    <caption>
       <p>If we actually created the deck in the previous question, what is printed after the following code runs? <var/>  </p>
-    </statement>
+    </caption>
     <setup>
       <var>
         <pre>deck[11].print();</pre>
         <p>Type your answer exactly as it would appear in the terminal!</p>
       </var>
     </setup>
-  </exercise>
+  </listing>
 </section>

@@ -17,50 +17,50 @@
             all the other functions.</p>
   <p>There are even some parameters that are passed to main by the system,
             but we are not going to deal with them for a little while.</p>
-  <exercise label="return_main_mc_1">
-    <statement>
+  <listing label="return_main_mc_1">
+    <caption>
       <p>What data type is the main function supposed to return?</p>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>string</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Look at the function definition for main.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>integer</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct!  You should always return an integer to avoid issues down the road.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>nothing</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Main is supposed to return something!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>anything</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Main has a return type, check its function definition.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="fitb_return_main_2">
-    <statement>
+  </listing>
+  <listing label="fitb_return_main_2">
+    <caption>
       <p>Usually, we return <var/> to exit main.  However, if there are
 any errors that we catch, we might return <var/>. <var/>  <var/>  </p>
-    </statement>
+    </caption>
     <setup>
       <var case="insensitive">
         <condition string="^\s*[0]\s*$">
@@ -87,9 +87,9 @@ any errors that we catch, we might return <var/>. <var/>  <var/>  </p>
         </condition>
       </var>
     </setup>
-  </exercise>
-  <exercise label="return_main_mc_2">
-    <statement>
+  </listing>
+  <listing label="return_main_mc_2">
+    <caption>
       <p>What gets printed when the following code runs?</p>
       <pre>int main() {
     bool sun_set=true;
@@ -105,40 +105,40 @@ any errors that we catch, we might return <var/>. <var/>  <var/>  </p>
         cout &lt;&lt; "afternoon ";
     }
 }</pre>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>"its night time Day time"</p>
-        </statement>
+        </caption>
         <feedback>
           <p>a return statement if encountered before reaching the second ``if``.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>"its night time afternoon"</p>
-        </statement>
+        </caption>
         <feedback>
           <p>a return statement is encountered before and ``sun_set`` is false.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>nothing is printed</p>
-        </statement>
+        </caption>
         <feedback>
           <p>``sun_set`` is true so the "its night time" gets printed</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>"its night time"</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct! Once the ``return`` statement is encountered nothing else is printed</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
+  </listing>
 </section>

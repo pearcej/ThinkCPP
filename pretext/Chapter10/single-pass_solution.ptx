@@ -21,49 +21,49 @@ for (int i = 0; i &lt; numValues; i++) {
   <p>As an exercise, encapsulate this code in a function called <c>histogram</c>
             that takes a vector and the range of values in the vector (in this case
             0 through 10), and that returns a histogram of the values in the vector.</p>
-  <exercise label="single_pass_solution_1">
-    <statement>
+  <listing label="single_pass_solution_1">
+    <caption>
       <p>What happens if you don't initialize a counter?</p>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>Your code runs without a problem because counters are automatically initialized to zero.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! Variables are not automatically initialized.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>Your code might run, but it probably won't produce the output you desire.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct! C++ might assign unused memory to the uninitialized variable, which will allow the code to run, but counts may be off.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>You might get an error for using an uninitialized variable.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct! Depening on your compiler, you might be lucky enough to get an error message.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>Your program will crash.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! You might get a compile error, but your program will not crash.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="single_pass_solution_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="single_pass_solution_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>Construct a function called histogram that takes a vector and the range of values in the vector, and that returns a histogram of values in the vector.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="2">
         <cline>vector&amp;#60;int&amp;#62; histogram(const vector&amp;#60;int&amp;#62;&amp; vec, int range) {</cline>
@@ -101,5 +101,5 @@ for (int i = 0; i &lt; numValues; i++) {
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
+  </listing>
 </section>

@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <section xml:id="chapter12_coding-practice-1">
   <title>Coding Practice</title>
-  <exercise xml:id="empty-51">
+  <listing xml:id="empty-51">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter12', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
-      <exercise label="cp_12_AC_2q">
-        <statement>
+      <listing label="cp_12_AC_2q">
+        <caption>
           <p>An image is just a matrix of pixels. Write the <c>struct</c> definition for <c>Image</c>,
                     which should store information about its height and width and contain a matrix
                     of <c>Pixel</c>s. Select the Parsonsprob tab for hints for the construction of the code.</p>
-        </statement>
+        </caption>
         <program xml:id="cp_12_AC_2q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
@@ -24,15 +24,15 @@ struct Pixel {
 // Write your code for the struct Image here.
         ]]></input>
         </program>
-      </exercise>
+      </listing>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter12', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_12_AC_2_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
-        <statement>
+      <listing label="cp_12_AC_2_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+        <caption>
           <p>An image is just a matrix of pixels. Write the <c>struct</c> definition for <c>Image</c>,
                     which should store information about its height and width and contain a matrix
                     of <c>Pixel</c>s. Use the lines to construct the code, then go back to complete the Activecode tab.</p>
-        </statement>
+        </caption>
         <blocks>
           <block order="2">
             <cline>struct Image {</cline>
@@ -56,20 +56,20 @@ struct Pixel {
             <cline>};</cline>
           </block>
         </blocks>
-      </exercise>
+      </listing>
     </TabNode>
-  </exercise>
-  <exercise xml:id="empty-52">
+  </listing>
+  <listing xml:id="empty-52">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter12', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
-      <exercise label="cp_12_AC_4q">
-        <statement>
+      <listing label="cp_12_AC_4q">
+        <caption>
           <p>Now let's print an <c>Image</c>. Unfortunately we can't print out the actual
                     image to the terminal, but we can print out the <c>Pixel</c>s in the <c>Image</c>
                     matrix. Write the <c>Image</c> member function <c>printImage</c>.
                     Separate pixels in the same row with a space and add a new line
                     at the end of each row. Use the <c>printPixel</c> function we created previously.
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
-        </statement>
+        </caption>
         <program xml:id="cp_12_AC_4q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
@@ -105,18 +105,18 @@ void Pixel::printPixel() {
 }
 </tests>
         </program>
-      </exercise>
+      </listing>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter12', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_12_AC_4_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
-        <statement>
+      <listing label="cp_12_AC_4_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+        <caption>
           <p>Now let's print an <c>Image</c>. Unfortunately we can't print out the actual
                     image to the terminal, but we can print out the <c>Pixel</c>s in the <c>Image</c>
                     matrix. Write the <c>Image</c> member function <c>printImage</c>.
                     Separate pixels in the same row with a space and add a new line
                     at the end of each row. Use the <c>printPixel</c> function we created previously.
                     Use the lines to construct the code, then go back to complete the Activecode tab.</p>
-        </statement>
+        </caption>
         <blocks>
           <block order="8">
             <cline>void Image::printImage() {</cline>
@@ -146,18 +146,18 @@ void Pixel::printPixel() {
             <cline>}</cline>
           </block>
         </blocks>
-      </exercise>
+      </listing>
     </TabNode>
-  </exercise>
-  <exercise xml:id="empty-53">
+  </listing>
+  <listing xml:id="empty-53">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter12', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
-      <exercise label="cp_12_AC_6q">
-        <statement>
+      <listing label="cp_12_AC_6q">
+        <caption>
           <p>Let's write a <c>swapPixel</c> member function for <c>Image</c>. <c>swapPixel</c>
                     takes two pairs of row indices and column indices from a matrix and swaps the two
                     <c>Pixel</c>s at those locations. Note that these indices are 0-indexed, unlike the
                     previous <c>cropIndex</c> parameters. Select the Parsonsprob tab for hints for the construction of the code.</p>
-        </statement>
+        </caption>
         <program xml:id="cp_12_AC_6q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
@@ -219,17 +219,17 @@ void Image::cropImage(int startRow, int stopRow, int startCol, int stopCol) {
 }
 </tests>
         </program>
-      </exercise>
+      </listing>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter12', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_12_AC_6_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
-        <statement>
+      <listing label="cp_12_AC_6_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+        <caption>
           <p>Let's write a <c>swapPixel</c> member function for <c>Image</c>. <c>swapPixel</c>
                     takes two pairs of row indices and column indices from a matrix and swaps the two
                     <c>Pixel</c>s at those locations. Note that these indices are 0-indexed, unlike the
                     previous <c>cropIndex</c> parameters.
                     Use the lines to construct the code, then go back to complete the Activecode tab.</p>
-        </statement>
+        </caption>
         <blocks>
           <block order="5">
             <cline>void Image::swapPixel(int row1, int col1, int row2, int col2) {</cline>
@@ -247,18 +247,18 @@ void Image::cropImage(int startRow, int stopRow, int startCol, int stopCol) {
             <cline>}</cline>
           </block>
         </blocks>
-      </exercise>
+      </listing>
     </TabNode>
-  </exercise>
-  <exercise xml:id="empty-54">
+  </listing>
+  <listing xml:id="empty-54">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter12', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
-      <exercise label="cp_12_AC_8q">
-        <statement>
+      <listing label="cp_12_AC_8q">
+        <caption>
           <p>Oops! Somehow our image came out upside down. Let's write
                     the <c>Image</c> member function <c>flipVertical</c>, which
                     reverts an image to be right side up.
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
-        </statement>
+        </caption>
         <program xml:id="cp_12_AC_8q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
@@ -343,16 +343,16 @@ void Image::flipHorizontal() {
 }
 </tests>
         </program>
-      </exercise>
+      </listing>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter12', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_12_AC_8_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
-        <statement>
+      <listing label="cp_12_AC_8_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+        <caption>
           <p>Oops! Somehow our image came out upside down. Let's write
                     the <c>Image</c> member function <c>flipVertical</c>, which
                     reverts an image to be right side up.
                     Use the lines to construct the code, then go back to complete the Activecode tab.</p>
-        </statement>
+        </caption>
         <blocks>
           <block order="3">
             <cline>void Image::flipVertical() {</cline>
@@ -386,17 +386,17 @@ void Image::flipHorizontal() {
             <cline>}</cline>
           </block>
         </blocks>
-      </exercise>
+      </listing>
     </TabNode>
-  </exercise>
-  <exercise xml:id="empty-55">
+  </listing>
+  <listing xml:id="empty-55">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter12', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
-      <exercise label="cp_12_AC_10q">
-        <statement>
+      <listing label="cp_12_AC_10q">
+        <caption>
           <p>Let's return our image to the state of a clean slate. Write the
                     function <c>clearImage</c>, which sets the color of every <c>Pixel</c>
                     to white. Select the Parsonsprob tab for hints for the construction of the code.</p>
-        </statement>
+        </caption>
         <program xml:id="cp_12_AC_10q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
@@ -505,16 +505,16 @@ void Image::createBorder(Pixel p) {
 }
 </tests>
         </program>
-      </exercise>
+      </listing>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter12', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_12_AC_10_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
-        <statement>
+      <listing label="cp_12_AC_10_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+        <caption>
           <p>Let's return our image to the state of a clean slate. Write the
                     function <c>clearImage</c>, which sets the color of every <c>Pixel</c>
                     to white.
                     Use the lines to construct the code, then go back to complete the Activecode tab.</p>
-        </statement>
+        </caption>
         <blocks>
           <block order="1">
             <cline>void Image::clearImage () {</cline>
@@ -544,7 +544,7 @@ void Image::createBorder(Pixel p) {
             <cline>}</cline>
           </block>
         </blocks>
-      </exercise>
+      </listing>
     </TabNode>
-  </exercise>
+  </listing>
 </section>

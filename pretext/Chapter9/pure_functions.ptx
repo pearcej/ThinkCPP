@@ -5,12 +5,12 @@
             the arguments, and it has no side effects like modifying an argument or
             outputting something. The only result of calling a pure function is the
             return value.</p>
-  <exercise label="pure_function_AC_1">
-    <statement>
+  <listing label="pure_function_AC_1">
+    <caption>
       <p>One example is the function <c>after</c>, which compares two <c>Time</c>s and returns a
             <c>bool</c> that indicates whether the first operand comes after the second. Take a look
             at the active code below.</p>
-    </statement>
+    </caption>
     <program xml:id="pure_function_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -37,7 +37,7 @@ int main () {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>What is the result of this function if the two times are equal? Does
             that seem like the appropriate result for this function? If you were
             writing the documentation for this function, would you mention that case
@@ -54,13 +54,13 @@ int main () {
   sum.second = t1.second + t2.second;
   return sum;
 }</pre>
-  <exercise label="pure_function_AC_2">
-    <statement>
+  <listing label="pure_function_AC_2">
+    <caption>
       <p>Take a look at the active code below. If <c>currentTime</c>
             contains the current time and <c>breadTime</c> contains the amount of time
             it takes for your breadmaker to make bread, then you could use
             <c>addTime</c> to figure out when the bread will be done.</p>
-    </statement>
+    </caption>
     <program xml:id="pure_function_AC_2_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -91,7 +91,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>The output of this program is <c>12:49:30</c>, which is correct. On the
             other hand, there are cases where the result is not correct. Can you
             think of one?</p>
@@ -100,10 +100,10 @@ int main() {
             we have to <q>carry</q> the extra seconds into the minutes column, or extra
             minutes into the hours column.</p>
   <p>Here's a second, corrected version of this function.</p>
-  <exercise label="pure_function_AC_3">
-    <statement>
+  <listing label="pure_function_AC_3">
+    <caption>
       <p>The active code below is the corrected version of <c>addTime</c>.</p>
-    </statement>
+    </caption>
     <program xml:id="pure_function_AC_3_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -142,17 +142,17 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>Although it's correct, it's starting to get big. Later, I will suggest
             an alternate approach to this problem that will be much shorter.</p>
   <p>This code demonstrates two operators we have not seen before, <c>+=</c> and
             <c>-=</c>. These operators provide a concise way to increment and decrement
             variables. For example, the statement <c>sum.second -= 60.0;</c> is
             equivalent to <c>sum.second = sum.second - 60;</c></p>
-  <exercise label="pure_functions_1">
-    <statement>
+  <listing label="pure_functions_1">
+    <caption>
       <p>Match the statement to its equivalent.</p>
-    </statement>
+    </caption>
     <feedback>
       <p>Try again.</p>
     </feedback>
@@ -174,5 +174,5 @@ int main() {
         <response>x.cents = x.cents + 2;</response>
       </match>
     </matches>
-  </exercise>
+  </listing>
 </section>

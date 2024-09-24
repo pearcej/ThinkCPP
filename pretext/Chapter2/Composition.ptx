@@ -8,10 +8,10 @@
             ability to take small building blocks and <term>compose</term> them. For example,
             we know how to multiply integers and we know how to output values; it
             turns out we can do both at the same time:</p>
-  <exercise label="composition_AC_1">
-    <statement>
+  <listing label="composition_AC_1">
+    <caption>
       <p>This program performs multiplication and prints the result simultaneously.</p>
-    </statement>
+    </caption>
     <program xml:id="composition_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -22,15 +22,15 @@ int main () {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>Actually, I shouldn't say <q>at the same time,</q> since in reality the
             multiplication has to happen before the output, but the point is that
             any expression, involving numbers, characters, and variables, can be
             used inside an output statement. We've already seen one example:</p>
-  <exercise label="composition_AC_2">
-    <statement>
+  <listing label="composition_AC_2">
+    <caption>
       <p>This program performs a calculation involving variables and prints the result at the same time.</p>
-    </statement>
+    </caption>
     <program xml:id="composition_AC_2_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -43,13 +43,13 @@ int main () {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>You can also put arbitrary expressions on the right-hand side of an
             assignment statement:</p>
-  <exercise label="composition_AC_3">
-    <statement>
+  <listing label="composition_AC_3">
+    <caption>
       <p>This program performs a calculation involving variables and simultaneously assigns the result to a variable.</p>
-    </statement>
+    </caption>
     <program xml:id="composition_AC_3_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -63,7 +63,7 @@ int main () {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>This ability may not seem so impressive now, but we will see other
             examples where composition makes it possible to express complex
             computations neatly and concisely.</p>
@@ -75,8 +75,8 @@ int main () {
   <p>That's because the left side indicates the storage location where the
             result will go. Expressions do not represent storage locations, only
             values. So the following is illegal: <c>minute + 1 = hour;</c>.</p>
-  <exercise label="compos_1">
-    <statement>
+  <listing label="compos_1">
+    <caption>
       <p>What must be changed in order for this code block to work?</p>
       <pre>int main () {
   int dogs = 3;
@@ -86,54 +86,54 @@ int main () {
   cout &lt;&lt; "I have " &lt;&lt; pets &lt;&lt; " pets!";
   return 0;
 }</pre>
-    </statement>
+    </caption>
     <choices>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>Change line 5 to pets = dogs + cats;</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Assignment statements operate such that the evaluated expression on the right is assigned to the variable on the left.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>Change line 5 to int pets = dogs + cats;</p>
-        </statement>
+        </caption>
         <feedback>
           <p>pets has already been declared as an int.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>Change line 5 to pets == dogs + cats;</p>
-        </statement>
+        </caption>
         <feedback>
           <p>The == operator checks if the left side EQUALS the right side.  It is not the correct operator here.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>Change line 5 to int pets == dogs + cats;</p>
-        </statement>
+        </caption>
         <feedback>
           <p>pets has already been declared as an int.  Also, the == operator is not the proper choice here.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>No change, the code runs fine as is.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Assignment statements assign the value on the right to the variable on the left.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="compos_2">
-    <statement>
+  </listing>
+  <listing label="compos_2">
+    <caption>
       <p>The left-hand side of an assignment statement has to be a <var/> name, not an expression.  </p>
-    </statement>
+    </caption>
     <setup>
       <var case="insensitive">
         <condition string="^\s*variable\s*$">
@@ -148,11 +148,11 @@ int main () {
         </condition>
       </var>
     </setup>
-  </exercise>
-  <exercise label="compos_3">
-    <statement>
+  </listing>
+  <listing label="compos_3">
+    <caption>
       <p>In programming, another word for <term>combine</term> is <var/>.  </p>
-    </statement>
+    </caption>
     <setup>
       <var case="insensitive">
         <condition string="^\s*(compose)|(composition)\s*$">
@@ -167,11 +167,11 @@ int main () {
         </condition>
       </var>
     </setup>
-  </exercise>
-  <exercise label="compos_4">
-    <statement>
+  </listing>
+  <listing label="compos_4">
+    <caption>
       <p>Finish the code below so that the velocity is calculated completely on a single line.  Hint: the current velocity results from 1) the initial velocity and 2) the acceleration over a window of time.  Use <c>v0</c> for initial velocity, <c>a</c> for acceleration, and <c>t</c> for time.</p>
-    </statement>
+    </caption>
     <program xml:id="compos_4_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -189,11 +189,11 @@ int main () {
 }
         ]]></input>
     </program>
-  </exercise>
-  <exercise label="compos_5">
-    <statement>
+  </listing>
+  <listing label="compos_5">
+    <caption>
       <p>Finish the code below so that the volume of a rectangular prism with length <c>l</c>, width <c>w</c>, and height <c>h</c> is calculated on a single line.</p>
-    </statement>
+    </caption>
     <program xml:id="compos_5_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -211,5 +211,5 @@ int main () {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
 </section>

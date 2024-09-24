@@ -25,10 +25,10 @@
                 Also, a anything written in quotes, for example <c>"string"</c> is not considered
                 a keyword in C++, even if it is spelt the same.</p>
   </note>
-  <exercise label="keywords_1">
-    <statement>
+  <listing label="keywords_1">
+    <caption>
       <p>Words that are reserved in C++ because they are used by the compiler to parse the structure of your program are called <var/>.</p>
-    </statement>
+    </caption>
     <setup>
       <var case="insensitive">
         <condition string="^\s*keywords\s*$">
@@ -43,58 +43,58 @@
         </condition>
       </var>
     </setup>
-  </exercise>
-  <exercise label="keywords_2">
-    <statement>
+  </listing>
+  <listing label="keywords_2">
+    <caption>
       <p>Multiple Response: Which of the following are keywords or will otherwise generate some error from the compiler if used as a variable name?</p>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>integer</p>
-        </statement>
+        </caption>
         <feedback>
           <p>integer is not a keyword, but int is.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>cout</p>
-        </statement>
+        </caption>
         <feedback>
           <p>cout cannot be used as a variable name!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>variable</p>
-        </statement>
+        </caption>
         <feedback>
           <p>variable is fair game to use to name a variable.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>string</p>
-        </statement>
+        </caption>
         <feedback>
           <p>string cannot be used as a variable name.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>char</p>
-        </statement>
+        </caption>
         <feedback>
           <p>char is a keyword and cannot be used as a variable name.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="keywords_3">
-    <statement>
+  </listing>
+  <listing label="keywords_3">
+    <caption>
       <p>Click on all keywords.</p>
-    </statement>
+    </caption>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -110,11 +110,11 @@
       <cline><area correct="no">cout</area> &lt;&lt; <area correct="no">Bool</area> &lt;&lt; <area correct="yes">endl</area>;</cline>
       <cline>}</cline>
     </areas>
-  </exercise>
-  <exercise label="keywords_4">
-    <statement>
+  </listing>
+  <listing label="keywords_4">
+    <caption>
       <p>Fix the code below so that it runs without errors.  Hint: you might need to change the names of some variables.</p>
-    </statement>
+    </caption>
     <program xml:id="keywords_4_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -130,5 +130,5 @@ int main () {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
 </section>

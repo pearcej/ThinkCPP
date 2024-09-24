@@ -25,11 +25,11 @@
             This can be slightly more efficient, although it can be confusing enough
             to cause subtle errors. For the vast majority of programming, it is
             worth a spending a little run time to avoid a lot of debugging time.</p>
-  <exercise label="fillin_functions_AC_1">
-    <statement>
+  <listing label="fillin_functions_AC_1">
+    <caption>
       <p>The active code below uses the fill-in version of the <c>addTime</c> function.
             Feel free to modify the code!</p>
-    </statement>
+    </caption>
     <program xml:id="fillin_functions_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -69,9 +69,9 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
-  <exercise label="fillin_functions_1">
-    <statement>
+  </listing>
+  <listing label="fillin_functions_1">
+    <caption>
       <p>Which parameter is not declared as a <c>const</c>?</p>
       <program language="cpp" line-numbers="yes">
         <input>
@@ -91,32 +91,32 @@ void addTimeFill (const Time&amp; t1, const Time&amp; t2, Time&amp; sum) {
 }
 </input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>Time&amp; t1</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Try again.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>Time&amp; t2</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Try again.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>Time&amp; sum</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
+  </listing>
 </section>

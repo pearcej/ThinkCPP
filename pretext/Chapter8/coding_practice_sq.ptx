@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <section xml:id="chapter8_coding-practice-1">
   <title>Coding Practice</title>
-  <exercise xml:id="empty-309">
+  <listing xml:id="empty-309">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter8', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
-      <exercise label="cp_8_AC_2q">
-        <statement>
+      <listing label="cp_8_AC_2q">
+        <caption>
           <p>Write a simple function called <c>greetUser</c> which prompts the user
                     for their full name. Then the function outputs <q>Hello <c>fullName</c>!</q>.
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
-        </statement>
+        </caption>
         <program xml:id="cp_8_AC_2q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
@@ -23,15 +23,15 @@ int main() {
 }
         ]]></input>
         </program>
-      </exercise>
+      </listing>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter8', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_8_AC_2q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
-        <statement>
+      <listing label="cp_8_AC_2q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+        <caption>
           <p>Write a simple function called <c>greetUser</c> which prompts the user
                     for their full name. Then the function outputs <q>Hello <c>fullName</c>!</q>.
                     Use the lines to construct the code, then go back to complete the Activecode tab.</p>
-        </statement>
+        </caption>
         <blocks>
           <block order="4">
             <cline>void greetUser () {</cline>
@@ -60,19 +60,19 @@ int main() {
             <cline>}</cline>
           </block>
         </blocks>
-      </exercise>
+      </listing>
     </TabNode>
-  </exercise>
-  <exercise xml:id="empty-310">
+  </listing>
+  <listing xml:id="empty-310">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter8', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
-      <exercise label="cp_8_AC_4q">
-        <statement>
+      <listing label="cp_8_AC_4q">
+        <caption>
           <p>Robots will naturally deplete their charge as they carry out tasks.
                     Write a function called <c>chargeRobot</c> which takes a <c>Robot</c> as
                     a parameter and charges the robot to 100 percent. Then output the statement
                     <q>Robot <c>name</c> is fully charged!</q>. Select the Parsonsprob tab for hints for
                     the construction of the code.</p>
-        </statement>
+        </caption>
         <program xml:id="cp_8_AC_4q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
@@ -108,17 +108,17 @@ void printRobotData (Robot r) {
 }
 </tests>
         </program>
-      </exercise>
+      </listing>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter8', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_8_AC_4q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
-        <statement>
+      <listing label="cp_8_AC_4q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+        <caption>
           <p>Robots will naturally deplete their charge as they carry out tasks.
                     Write a function called <c>chargeRobot</c> which takes a <c>Robot</c> as
                     a parameter and charges the robot to 100 percent. Then output the statement
                     <q>Robot <c>name</c> is fully charged!</q>. Use the lines to construct the code, then
                     go back to complete the Activecode tab.</p>
-        </statement>
+        </caption>
         <blocks>
           <block order="3">
             <choice correct="yes">
@@ -141,19 +141,19 @@ void printRobotData (Robot r) {
             <cline>}</cline>
           </block>
         </blocks>
-      </exercise>
+      </listing>
     </TabNode>
-  </exercise>
-  <exercise xml:id="empty-311">
+  </listing>
+  <listing xml:id="empty-311">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter8', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
-      <exercise label="cp_8_AC_6q">
-        <statement>
+      <listing label="cp_8_AC_6q">
+        <caption>
           <p>Write the <c>Pokemon</c> structure, which has instance variables <c>string pokeName</c>,
                     <c>string type</c>, <c>int level</c>, and <c>int healthPercentage</c> in that order.
                     Next, write the function <c>printPokeInfo</c>, which takes a <c>Pokemon</c> as a parameter and outputs the
                     Pokemon's info in the following format: <c>pokeName</c> (Lv. <c>level</c>, <c>healthPercentage</c>% HP).
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
-        </statement>
+        </caption>
         <program xml:id="cp_8_AC_6q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
@@ -172,17 +172,17 @@ int main() {
 }
         ]]></input>
         </program>
-      </exercise>
+      </listing>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter8', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_8_AC_6q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
-        <statement>
+      <listing label="cp_8_AC_6q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+        <caption>
           <p>Write the <c>Pokemon</c> structure, which has instance variables <c>string pokeName</c>,
                     <c>string type</c>, <c>int level</c>, and <c>int healthPercentage</c> in that order.
                     Next, write the function <c>printPokeInfo</c>, which takes a <c>Pokemon</c> as a parameter and outputs the
                     Pokemon's info in the following format: <c>pokeName</c> (Lv. <c>level</c>, <c>healthPercentage</c>% HP).
                     Use the lines to construct the code, then go back to complete the Activecode tab.</p>
-        </statement>
+        </caption>
         <blocks>
           <block order="7">
             <cline>// Pokemon struct creation</cline>
@@ -219,18 +219,18 @@ int main() {
             <cline>}</cline>
           </block>
         </blocks>
-      </exercise>
+      </listing>
     </TabNode>
-  </exercise>
-  <exercise xml:id="empty-312">
+  </listing>
+  <listing xml:id="empty-312">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter8', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
-      <exercise label="cp_8_AC_8q">
-        <statement>
+      <listing label="cp_8_AC_8q">
+        <caption>
           <p>When Pokemon are injured, they can be healed up at the Pokemon Center.
                     Write the function <c>healPokemon</c>, which takes a <c>Trainer</c> as a parameter
                     and heals the Trainer's Pokemon to 100 percent health. Select the Parsonsprob
                     tab for hints for the construction of the code.</p>
-        </statement>
+        </caption>
         <program xml:id="cp_8_AC_8q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
@@ -285,16 +285,16 @@ void printTrainerInfo(Trainer t) {
 }
 </tests>
         </program>
-      </exercise>
+      </listing>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter8', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_8_AC_8q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
-        <statement>
+      <listing label="cp_8_AC_8q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+        <caption>
           <p>When Pokemon are injured, they can be healed up at the Pokemon Center.
                     Write the function <c>healPokemon</c>, which takes a <c>Trainer</c> as a parameter
                     and heals the Trainer's Pokemon to 100 percent health. Use the lines to construct
                     the code, then go back to complete the Activecode tab.</p>
-        </statement>
+        </caption>
         <blocks>
           <block order="3">
             <choice correct="yes">
@@ -326,13 +326,13 @@ void printTrainerInfo(Trainer t) {
             <cline>}</cline>
           </block>
         </blocks>
-      </exercise>
+      </listing>
     </TabNode>
-  </exercise>
-  <exercise xml:id="empty-313">
+  </listing>
+  <listing xml:id="empty-313">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter8', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
-      <exercise label="cp_8_AC_10q">
-        <statement>
+      <listing label="cp_8_AC_10q">
+        <caption>
           <p>Ever wanted to know how much you'd weigh on each planet? Write the <c>convertWeight</c>
                     function, which takes a <c>double earthWeight</c> and <c>int planet</c> as parameters. First,
                     in <c>main</c>, prompt the user to enter their weight in pounds and a number corresponding to
@@ -358,7 +358,7 @@ or
 Please enter your weight in pounds: 170
 Please select a planet: 23
 Error, not a valid planet.</pre>
-        </statement>
+        </caption>
         <program xml:id="cp_8_AC_10q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
@@ -371,11 +371,11 @@ int main() {
 }
         ]]></input>
         </program>
-      </exercise>
+      </listing>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter8', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_8_AC_10q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
-        <statement>
+      <listing label="cp_8_AC_10q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+        <caption>
           <p>Ever wanted to know how much you'd weigh on each planet? Write the <c>convertWeight</c>
                     function, which takes a <c>double earthWeight</c> and <c>int planet</c> as parameters. First,
                     in <c>main</c>, prompt the user to enter their weight in pounds and a number corresponding to
@@ -401,7 +401,7 @@ or
 Please enter your weight in pounds: 170
 Please select a planet: 23
 Error, not a valid planet.</pre>
-        </statement>
+        </caption>
         <blocks>
           <block order="9">
             <cline>// convertWeight function creation</cline>
@@ -482,7 +482,7 @@ Error, not a valid planet.</pre>
             <cline>}</cline>
           </block>
         </blocks>
-      </exercise>
+      </listing>
     </TabNode>
-  </exercise>
+  </listing>
 </section>

@@ -30,10 +30,10 @@ int main () {
             before (above) the first use of the function. You should try compiling
             this program with the functions in a different order and see what error
             messages you get.</p>
-  <exercise label="defns_uses_1">
-    <statement>
+  <listing label="defns_uses_1">
+    <caption>
       <p>The function definition must be written <var/> the first use of the function.  </p>
-    </statement>
+    </caption>
     <setup>
       <var case="insensitive">
         <condition string="^\s*(before)|(above)\s*$">
@@ -48,19 +48,19 @@ int main () {
         </condition>
       </var>
     </setup>
-  </exercise>
-  <exercise label="defns_uses_2">
-    <statement>
+  </listing>
+  <listing label="defns_uses_2">
+    <caption>
       <p>Which of the following is a correct function header (first line of
             a function definition)?</p>
-    </statement>
+    </caption>
     <choices>
       <choice>
         <statement id="defns_uses_2_opt_a">
           <p>
             <c>void printName()</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="defns_uses_2_opt_a">
           <p>This function header is missing a <c>{</c>, which is needed to begin defining the function.</p>
         </feedback>
@@ -70,7 +70,7 @@ int main () {
           <p>
             <c>totalCostAfterTax () {</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="defns_uses_2_opt_b">
           <p>This function header is missing a return type.</p>
         </feedback>
@@ -80,7 +80,7 @@ int main () {
           <p>
             <c>void todaysWeather () {</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="defns_uses_2_opt_c">
           <p>Correct!</p>
         </feedback>
@@ -90,17 +90,17 @@ int main () {
           <p>
             <c>void finalGrade {</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="defns_uses_2_opt_d">
           <p>This function header is missing parentheses. Even if a function does not take in any parameters, empty parentheses should be used.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="defns_uses_3" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="defns_uses_3" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>Construct a block of code that correctly defines a the addTwo function.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="1" correct="no">
         <cline>void addTwo(int x) {</cline>
@@ -111,5 +111,5 @@ int main () {
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
+  </listing>
 </section>

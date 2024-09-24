@@ -56,12 +56,12 @@ suits[3] = "Spades";</pre>
   <pre>Card card (1, 11);
 card.print ();</pre>
   <p>is <c>Jack of Diamonds</c>.</p>
-  <exercise label="12_3">
-    <statement>
+  <listing label="12_3">
+    <caption>
       <p>The active code below uses the <c>Card::print()</c> function.  Feel free to modify
             the values that <c>card</c> is being initialized to in the constructor:  this will
             change the output from the <c>Card::print()</c> function.</p>
-    </statement>
+    </caption>
     <program xml:id="c12_3_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -119,7 +119,7 @@ void Card::print () const {
 }
 </tests>
     </program>
-  </exercise>
+  </listing>
   <p>You might notice that we are not using the zeroeth element of the
             <c>ranks</c> vector. That's because the only valid ranks are 1&#x2013;13. By
             leaving an unused element at the beginning of the vector, we get an
@@ -127,49 +127,49 @@ void Card::print () const {
             of the user, it doesn't matter what the encoding is, since all input and
             output uses human-readable formats. On the other hand, it is often
             helpful for the programmer if the mappings are easy to remember.</p>
-  <exercise label="printCard_function_1">
-    <statement>
+  <listing label="printCard_function_1">
+    <caption>
       <p>How would we select the appropriate string for the instance variable <c>rank</c>?</p>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>rank.ranks</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! Remember, ranks is a vector!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>ranks.rank</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! Remember, ranks is a vector!</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>ranks[rank]</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct! This is an example of how we use mapping!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>rank[ranks]</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! This is using the vector "ranks" as an index to a single "rank".</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="printCard_function_2">
-    <statement>
+  </listing>
+  <listing label="printCard_function_2">
+    <caption>
       <p><var/>  </p>
-    </statement>
+    </caption>
     <setup>
       <var>
         <pre>Card card (3, 1);
@@ -177,44 +177,44 @@ card.print ();</pre>
         <p>What is printed by card.print()? Type your answer exactly as it would appear in the terminal.</p>
       </var>
     </setup>
-  </exercise>
-  <exercise label="printCard_function_3">
-    <statement>
+  </listing>
+  <listing label="printCard_function_3">
+    <caption>
       <p>Does it matter how we encode a mapping?</p>
-    </statement>
+    </caption>
     <choices>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>Yes, because the mappings should be easy for the programmer to remember.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct! The programmer should uses mappings that are easy to remember (even if this means we don't use the zeroeth element of the ranks vector).</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>Yes, because the mappings should be easy for the user to remember.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! The user doesn't need to know how things are mapped.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>No! All input and output uses human-readable formats, so the programmer doesn't need to understand what is going on behind the scenes.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! The programmer should always know what is going on with their code.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>No! All input and output uses human-readable formats, so the user doesn't need to understand what is going on behind the scenes.</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct! The user doesn't need to know how the programmer coded things.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
+  </listing>
 </section>

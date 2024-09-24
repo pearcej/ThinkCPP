@@ -38,15 +38,15 @@ cout &lt;&lt; letter &lt;&lt; endl;</pre>
             take a single <c>string</c> as a parameter, and return a string with all the
             characters converted to upper or lower case. The return type
             should be <c>string</c>.</p>
-  <exercise label="character_classification_AC_1">
-    <statement>
+  <listing label="character_classification_AC_1">
+    <caption>
       <p>Try writing the <c>stringToUpper</c> and <c>stringToLower</c> functions in the
             commented sections of the active code below. Both functions take a single <c>string</c>
             as a parameter and have return type <c>void</c>. <c>stringToUpper</c> should convert the string
             to uppercase, and <c>stringToLower</c> should convert the string to lowercase. Some functions that
             you might find useful include <c>isalpha</c>, <c>isupper</c>, <c>islower</c>, <c>toupper</c>, and <c>tolower</c>.
             If you get stuck, you can reveal the extra problems at the end for help.</p>
-    </statement>
+    </caption>
     <program xml:id="character_classification_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -73,13 +73,13 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
-  <exercises line="89" runestone_options="{'showtitle': 'data-showtitle=&quot;Reveal Problem&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'character_classification', 'chapter': 'Chapter7', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': '7_14_1', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter7/character_classification.rst">
-    <exercise label="character_classification_1" numbered="yes" adaptive="yes" indentation="hide" language="python">
-      <statement>
+  </listing>
+  <listings line="89" runestone_options="{'showtitle': 'data-showtitle=&quot;Reveal Problem&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'character_classification', 'chapter': 'Chapter7', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': '7_14_1', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter7/character_classification.rst">
+    <listing label="character_classification_1" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <caption>
         <p>Let's write the code for the <c>stringToUpper</c> function. <c>stringToUpper</c>
                 should convert a string to uppercase.</p>
-      </statement>
+      </caption>
       <blocks>
         <block order="7">
           <choice correct="yes">
@@ -123,14 +123,14 @@ int main() {
           <cline>}</cline>
         </block>
       </blocks>
-    </exercise>
-  </exercises>
-  <exercises line="125" runestone_options="{'showtitle': 'data-showtitle=&quot;Reveal Problem&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'character_classification', 'chapter': 'Chapter7', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': '7_14_2', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter7/character_classification.rst">
-    <exercise label="character_classification_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
-      <statement>
+    </listing>
+  </listings>
+  <listings line="125" runestone_options="{'showtitle': 'data-showtitle=&quot;Reveal Problem&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'character_classification', 'chapter': 'Chapter7', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': '7_14_2', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter7/character_classification.rst">
+    <listing label="character_classification_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <caption>
         <p>Let's write the code for the <c>stringToLower</c> function. <c>stringToLower</c>
                 should convert a string to lowercase.</p>
-      </statement>
+      </caption>
       <blocks>
         <block order="1">
           <choice correct="yes">
@@ -174,6 +174,6 @@ int main() {
           <cline>}</cline>
         </block>
       </blocks>
-    </exercise>
-  </exercises>
+    </listing>
+  </listings>
 </section>

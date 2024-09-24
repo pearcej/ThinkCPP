@@ -27,10 +27,10 @@ blank = (Point){ 3.0, 4.0 };</pre>
 Point p2 = p1;
 cout &lt;&lt; p2.x &lt;&lt; ", " &lt;&lt;  p2.y &lt;&lt; endl;</pre>
   <p>The output of this program is <c>3, 4</c>.</p>
-  <exercise label="operations_structures_1">
-    <statement>
+  <listing label="operations_structures_1">
+    <caption>
       <p>Click on all incorrect statements.</p>
-    </statement>
+    </caption>
     <feedback>
       <p>Remember, this syntax can be used only in an initialization, not in an assignment statement.</p>
     </feedback>
@@ -64,11 +64,11 @@ cout &lt;&lt; p2.x &lt;&lt; ", " &lt;&lt;  p2.y &lt;&lt; endl;</pre>
       </cline>
       <cline>}</cline>
     </areas>
-  </exercise>
-  <exercise label="operations_structures_2" numbered="yes" adaptive="yes" indentation="hide" language="c++">
-    <statement>
+  </listing>
+  <listing label="operations_structures_2" numbered="yes" adaptive="yes" indentation="hide" language="c++">
+    <caption>
       <p>Construct a block of code that correctly initializes the instance variables of a structure.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="1">
         <cline>struct Point {</cline>
@@ -101,52 +101,52 @@ cout &lt;&lt; p2.x &lt;&lt; ", " &lt;&lt;  p2.y &lt;&lt; endl;</pre>
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
-  <exercise label="operations_structures_3">
-    <statement>
+  </listing>
+  <listing label="operations_structures_3">
+    <caption>
       <p>Which operators do NOT work on structures. Select all that apply.</p>
-    </statement>
+    </caption>
     <choices>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>%</p>
-        </statement>
+        </caption>
         <feedback>
           <p>The modulo operator does not work on structures.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>=</p>
-        </statement>
+        </caption>
         <feedback>
           <p>The assignment operator does work on structures.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>&gt;</p>
-        </statement>
+        </caption>
         <feedback>
           <p>The greater than operator does not work on structures.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>==</p>
-        </statement>
+        </caption>
         <feedback>
           <p>The equality operator does not work on structures.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>+</p>
-        </statement>
+        </caption>
         <feedback>
           <p>The addition operator does not work on structures.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
+  </listing>
 </section>

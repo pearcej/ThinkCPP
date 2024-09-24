@@ -56,10 +56,10 @@ using namespace std;
 else {
   cout &lt;&lt; "x is big" &lt;&lt; endl;
 }</pre>
-  <exercise label="bool_fun_1">
-    <statement>
+  <listing label="bool_fun_1">
+    <caption>
       <p>Match the conditional statement to its output, assuming it is outputted using cout and x = 3.</p>
-    </statement>
+    </caption>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -73,15 +73,15 @@ else {
         <response>1</response>
       </match>
     </matches>
-  </exercise>
-  <exercise label="bool_fun_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="bool_fun_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>Construct a block of code that first checks if a number <em>x</em> is positive,
             then checks if it's even, and then prints out a message to classify
             the number.  It prints <q>both</q> if the number is both positive and even,
             <q>even</q> if the number is only even, <q>positive</q> if the number
             is only positive, and finally <q>neither</q> if it is neither postive nor even.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="1">
         <cline>bool positiveFlag = (x &gt; 0);</cline>
@@ -126,5 +126,5 @@ else {
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
+  </listing>
 </section>

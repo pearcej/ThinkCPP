@@ -1,20 +1,20 @@
 <?xml version="1.0"?>
-<exercises xml:id="chapter4_multiple-choice-exercises">
+<listings xml:id="chapter4_multiple-choice-exercises">
   <title>Multiple Choice Exercises</title>
   <p>Answer the following <term>Multiple Choice</term> questions to
             assess what you have learned in this chapter.</p>
-  <exercise label="cond_rec_mc1">
-    <statement>
+  <listing label="cond_rec_mc1">
+    <caption>
       <p>Say you run the following code.  What is the value of <c>mod</c>?</p>
       <pre>int x = 4;
 int y = 7;
 int mod = y % x;</pre>
-    </statement>
+    </caption>
     <choices>
       <choice>
         <statement id="cond_rec_mc1_opt_a">
           <p>0</p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc1_opt_a">
           <p>There <em>is</em> a remainder.</p>
         </feedback>
@@ -22,7 +22,7 @@ int mod = y % x;</pre>
       <choice>
         <statement id="cond_rec_mc1_opt_b">
           <p>1</p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc1_opt_b">
           <p>Incorrect!</p>
         </feedback>
@@ -30,7 +30,7 @@ int mod = y % x;</pre>
       <choice>
         <statement id="cond_rec_mc1_opt_c">
           <p>2</p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc1_opt_c">
           <p>Incorrect!</p>
         </feedback>
@@ -38,7 +38,7 @@ int mod = y % x;</pre>
       <choice correct="yes">
         <statement id="cond_rec_mc1_opt_d">
           <p>3</p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc1_opt_d">
           <p>The remainder of <c>7 / 4</c> is 3.</p>
         </feedback>
@@ -46,15 +46,15 @@ int mod = y % x;</pre>
       <choice>
         <statement id="cond_rec_mc1_opt_e">
           <p>4</p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc1_opt_e">
           <p>We can't have a remainder of 4, since 4 is the divisor.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="cond_rec_mc2">
-    <statement>
+  </listing>
+  <listing label="cond_rec_mc2">
+    <caption>
       <p>What is printed when the following code executes?</p>
       <pre>int x = 8;
 
@@ -70,12 +70,12 @@ else if (x % 2 == 0) {
 else {
     cout &lt;&lt; "bye!" &lt;&lt; endl;
 }</pre>
-    </statement>
+    </caption>
     <choices>
       <choice correct="yes">
         <statement id="cond_rec_mc2_opt_a">
           <pre>hey!</pre>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc2_opt_a">
           <p>Since the first conditon is met, the rest of the chained
             conditional does not execute.</p>
@@ -84,7 +84,7 @@ else {
       <choice>
         <statement id="cond_rec_mc2_opt_b">
           <pre>hi!</pre>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc2_opt_b">
           <p>It's true that <c>8 != 7</c>, but <q>hi!</q> is not printed here.</p>
         </feedback>
@@ -92,7 +92,7 @@ else {
       <choice>
         <statement id="cond_rec_mc2_opt_c">
           <pre>hi!</pre>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc2_opt_c">
           <p>It's true that <c>8 % 2 == 0</c>, but <q>hello!</q> is not printed!</p>
         </feedback>
@@ -102,7 +102,7 @@ else {
           <pre>hey!
 hi!
 hello!</pre>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc2_opt_d">
           <p>All of these conditons are met, but only one expression is
             printed!</p>
@@ -111,16 +111,16 @@ hello!</pre>
       <choice>
         <statement id="cond_rec_mc2_opt_e">
           <pre>bye!</pre>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc2_opt_e">
           <p>At least one of the conditons is met, so the <c>else</c> will not
             execute!</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="cond_rec_mc3">
-    <statement>
+  </listing>
+  <listing label="cond_rec_mc3">
+    <caption>
       <p>What is printed when the following code executes?</p>
       <pre>int x = 34;
 
@@ -136,12 +136,12 @@ if (x &gt; 65) {
 else {
     cout &lt;&lt; "It's Hot!";
 }</pre>
-    </statement>
+    </caption>
     <choices>
       <choice>
         <statement id="cond_rec_mc3_opt_a">
           <pre>It's Freezing!</pre>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc3_opt_a">
           <p>Take a closer look at the conditions and the way they
             are written in the program.</p>
@@ -150,7 +150,7 @@ else {
       <choice>
         <statement id="cond_rec_mc3_opt_b">
           <pre>It's Cold!</pre>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc3_opt_b">
           <p>Take a closer look at the conditions and the way they
             are written in the program.</p>
@@ -160,7 +160,7 @@ else {
         <statement id="cond_rec_mc3_opt_c">
           <pre>It's Freezing!
 It's Cold!</pre>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc3_opt_c">
           <p>You've identified some of the conditons that are met!
             Take another look at the <em>chain</em> of conditionals at the
@@ -172,7 +172,7 @@ It's Cold!</pre>
           <pre>It's Freezing!
 It's Cold!
 It's Hot!</pre>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc3_opt_d">
           <p>These statements are quite contradicting, but that's exactly
             what the output would be if we ran this code.</p>
@@ -181,16 +181,16 @@ It's Hot!</pre>
       <choice>
         <statement id="cond_rec_mc3_opt_e">
           <pre>It's Hot!</pre>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc3_opt_e">
           <p>Take a closer look at the conditions and the way they
             are written in the program.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="cond_rec_mc4">
-    <statement>
+  </listing>
+  <listing label="cond_rec_mc4">
+    <caption>
       <p>Suppose you have defined the following function:</p>
       <pre>void practicingReturns (int a, int b) {
     if (a &lt; b) {
@@ -203,12 +203,12 @@ It's Hot!</pre>
 }</pre>
       <p>What is printed when we run the following code?</p>
       <pre>int x = practicingReturns(2, 3);</pre>
-    </statement>
+    </caption>
     <choices>
       <choice>
         <statement id="cond_rec_mc4_opt_a">
           <p>5</p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc4_opt_a">
           <p>This is what <c>a + b</c> would be before the first conditonal.</p>
         </feedback>
@@ -216,7 +216,7 @@ It's Hot!</pre>
       <choice>
         <statement id="cond_rec_mc4_opt_b">
           <p>7</p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc4_opt_b">
           <p>This is the value of <c>a + b</c> after the first conditional, but it
             doesn't print.</p>
@@ -225,7 +225,7 @@ It's Hot!</pre>
       <choice>
         <statement id="cond_rec_mc4_opt_c">
           <p>23</p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc4_opt_c">
           <p>This is not the value of <c>a + b</c>.</p>
         </feedback>
@@ -233,15 +233,15 @@ It's Hot!</pre>
       <choice correct="yes">
         <statement id="cond_rec_mc4_opt_d">
           <p>Nothing.</p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc4_opt_d">
           <p>The function exits with a return before anything is printed.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="cond_rec_mc5">
-    <statement>
+  </listing>
+  <listing label="cond_rec_mc5">
+    <caption>
       <p>Suppose you have defined the following function:</p>
       <pre>void fortuneCookie (int a, bool b, char c) {
     if (c &lt; 'm') {
@@ -266,14 +266,14 @@ It's Hot!</pre>
 }</pre>
       <p>What will be your fortune if you run the following code?</p>
       <pre>fortuneCookie(14, false, 'm'');</pre>
-    </statement>
+    </caption>
     <choices>
       <choice>
         <statement id="cond_rec_mc5_opt_a">
           <p>
             <c>An alien of some sort will be appearing to you shortly.</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc5_opt_a">
           <p><c>'m'</c> is NOT less than <c>'m'</c>, so you don't even enter the <c>if</c> block.</p>
         </feedback>
@@ -283,7 +283,7 @@ It's Hot!</pre>
           <p>
             <c>The fortune you seek is in another cookie.</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc5_opt_b">
           <p><c>'m'</c> is NOT less than <c>'m'</c>, so you don't even enter the <c>if</c> block.</p>
         </feedback>
@@ -293,7 +293,7 @@ It's Hot!</pre>
           <p>
             <c>He who laughs at himself never runs out of things to laugh at.</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc5_opt_c">
           <p><c>if (b)</c> really means <c>if (b == true)</c>.</p>
         </feedback>
@@ -303,7 +303,7 @@ It's Hot!</pre>
           <p>
             <c>You will be hungry again in one hour.</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc5_opt_d">
           <p><c>'m' &lt; 'r'</c> is true and <c>b == false</c>, so this is the fortune that will print.</p>
         </feedback>
@@ -313,15 +313,15 @@ It's Hot!</pre>
           <p>
             <c>Fortune not found? Abort, retry, ignore.</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc5_opt_e">
           <p><c>'m'</c> is less than <c>'r'</c> so you would enter the <c>else if</c> block, not the <c>else</c>.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="cond_rec_mc6">
-    <statement>
+  </listing>
+  <listing label="cond_rec_mc6">
+    <caption>
       <p>Suppose you have defined the following function:</p>
       <pre>void fortuneCookie (int a, bool b, char c) {
     if (c &lt; 'm') {
@@ -346,14 +346,14 @@ It's Hot!</pre>
 }</pre>
       <p>What will be your fortune if you run the following code?</p>
       <pre>fortuneCookie(22, true, 'b');</pre>
-    </statement>
+    </caption>
     <choices>
       <choice correct="yes">
         <statement id="cond_rec_mc6_opt_a">
           <p>
             <c>An alien of some sort will be appearing to you shortly.</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc6_opt_a">
           <p><c>'b' &lt; 'm'</c> and <c>22 % 2 == 0</c>, so this is the fortune that will print.</p>
         </feedback>
@@ -363,7 +363,7 @@ It's Hot!</pre>
           <p>
             <c>The fortune you seek is in another cookie.</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc6_opt_b">
           <p><c>22 % 2 == 0</c>, so you enter the <c>if</c> block, not the else.</p>
         </feedback>
@@ -373,7 +373,7 @@ It's Hot!</pre>
           <p>
             <c>He who laughs at himself never runs out of things to laugh at.</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc6_opt_c">
           <p><c>'b'</c> is less than <c>'m'</c>, so you would enter the <c>if</c> block, not the <c>else if</c>.</p>
         </feedback>
@@ -383,7 +383,7 @@ It's Hot!</pre>
           <p>
             <c>You will be hungry again in one hour.</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc6_opt_d">
           <p><c>'b'</c> is less than <c>'m'</c>, so you would enter the <c>if</c> block, not the <c>else if</c>.</p>
         </feedback>
@@ -393,15 +393,15 @@ It's Hot!</pre>
           <p>
             <c>Fortune not found? Abort, retry, ignore.</c>
           </p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc6_opt_e">
           <p><c>'b'</c> is less than <c>'m'</c>, so you would enter the <c>if</c> block, not the <c>else</c>.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="cond_rec_mc7">
-    <statement>
+  </listing>
+  <listing label="cond_rec_mc7">
+    <caption>
       <p>Suppose you have defined the following function:</p>
       <pre>void theThing (int m, int n, bool b) {
     if (b) {
@@ -428,12 +428,12 @@ It's Hot!</pre>
 }</pre>
       <p>What is printed when we run the following code?</p>
       <pre>theThing (5, 10, false);</pre>
-    </statement>
+    </caption>
     <choices>
       <choice>
         <statement id="cond_rec_mc7_opt_a">
           <p>5</p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc7_opt_a">
           <p>The outer <c>if</c> condition is not met, the block does not execute.</p>
         </feedback>
@@ -441,7 +441,7 @@ It's Hot!</pre>
       <choice>
         <statement id="cond_rec_mc7_opt_b">
           <p>15</p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc7_opt_b">
           <p>The outer <c>if</c> condition is not met, the block does not execute.</p>
         </feedback>
@@ -449,7 +449,7 @@ It's Hot!</pre>
       <choice correct="yes">
         <statement id="cond_rec_mc7_opt_c">
           <p>-5</p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc7_opt_c">
           <p><c>m &gt; n</c> evaluates to false, so the <c>else if</c> block executes.</p>
         </feedback>
@@ -457,7 +457,7 @@ It's Hot!</pre>
       <choice>
         <statement id="cond_rec_mc7_opt_d">
           <p>10</p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc7_opt_d">
           <p>The condition for <c>else if</c> is met, so the function never enters the <c>else</c>.</p>
         </feedback>
@@ -465,15 +465,15 @@ It's Hot!</pre>
       <choice>
         <statement id="cond_rec_mc7_opt_e">
           <p>-1</p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc7_opt_e">
           <p>The function has returned.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="cond_rec_mc8">
-    <statement>
+  </listing>
+  <listing label="cond_rec_mc8">
+    <caption>
       <p>Suppose you have defined the following function:</p>
       <pre>void theThing (int m, int n, bool b) {
     if (b) {
@@ -500,12 +500,12 @@ It's Hot!</pre>
 }</pre>
       <p>What is printed when we run the following code?</p>
       <pre>theThing (6, 4, true);</pre>
-    </statement>
+    </caption>
     <choices>
       <choice>
         <statement id="cond_rec_mc8_opt_a">
           <p>6</p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc8_opt_a">
           <p><c>5 % 4 != 0</c> in the <c>if</c> block, so the function doesn't print 6.</p>
         </feedback>
@@ -513,7 +513,7 @@ It's Hot!</pre>
       <choice>
         <statement id="cond_rec_mc8_opt_b">
           <p>10</p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc8_opt_b">
           <p><c>m + n !&gt; 10</c> in the <c>if</c> block, so the function doesn't print 10.</p>
         </feedback>
@@ -521,7 +521,7 @@ It's Hot!</pre>
       <choice>
         <statement id="cond_rec_mc8_opt_c">
           <p>2</p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc8_opt_c">
           <p>The condition for <c>if</c> is met, so the function never enters the <c>else if</c>.</p>
         </feedback>
@@ -529,7 +529,7 @@ It's Hot!</pre>
       <choice>
         <statement id="cond_rec_mc8_opt_d">
           <p>4</p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc8_opt_d">
           <p>The condition for <c>if</c> is met, so the function never enters the <c>else</c>.</p>
         </feedback>
@@ -537,15 +537,15 @@ It's Hot!</pre>
       <choice correct="yes">
         <statement id="cond_rec_mc8_opt_e">
           <p>-1</p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc8_opt_e">
           <p>None of the conditions were met, so we reach the default cout -1.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="cond_rec_mc9">
-    <statement>
+  </listing>
+  <listing label="cond_rec_mc9">
+    <caption>
       <p>Suppose you have defined the following function:</p>
       <pre>void moo (int m, int n) {
     if (m != n) {
@@ -559,12 +559,12 @@ It's Hot!</pre>
 }</pre>
       <p>How many times does <q>Moo!</q> print when we run the following?</p>
       <pre>moo (4, 8);</pre>
-    </statement>
+    </caption>
     <choices>
       <choice>
         <statement id="cond_rec_mc9_opt_a">
           <p>0</p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc9_opt_a">
           <p>When we call the function <c>4 != 8</c>, so <q>Moo!</q> is printed at least
             once.</p>
@@ -573,7 +573,7 @@ It's Hot!</pre>
       <choice>
         <statement id="cond_rec_mc9_opt_b">
           <p>1</p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc9_opt_b">
           <p>The function calls itself inside of the <c>if</c> loop, so <q>Moo!</q> is printed
             more than once.</p>
@@ -582,7 +582,7 @@ It's Hot!</pre>
       <choice correct="yes">
         <statement id="cond_rec_mc9_opt_c">
           <p>2</p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc9_opt_c">
           <p><c>m</c> is incremented by two each with each function call, so after two
             <c>m == n</c> and the recursion stops.</p>
@@ -591,7 +591,7 @@ It's Hot!</pre>
       <choice>
         <statement id="cond_rec_mc9_opt_d">
           <p>3</p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc9_opt_d">
           <p>Take a look at how <c>m</c> is incremented with each function call.</p>
         </feedback>
@@ -599,15 +599,15 @@ It's Hot!</pre>
       <choice>
         <statement id="cond_rec_mc9_opt_e">
           <p>infinite recursion</p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc9_opt_e">
           <p>The function stops printing <q>Moo!</q> when <c>m == n</c>.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="cond_rec_mc10">
-    <statement>
+  </listing>
+  <listing label="cond_rec_mc10">
+    <caption>
       <p>Suppose you have defined the following function:</p>
       <pre>void moo (int m, int n) {
     if (m != n) {
@@ -621,12 +621,12 @@ It's Hot!</pre>
 }</pre>
       <p>How many times does <q>Moo!</q> print when we run the following?</p>
       <pre>moo (5, 10);</pre>
-    </statement>
+    </caption>
     <choices>
       <choice>
         <statement id="cond_rec_mc10_opt_a">
           <p>0</p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc10_opt_a">
           <p>When we call the function <c>5 != 10</c>, so <q>Moo!</q> is printed at least
             once.</p>
@@ -635,7 +635,7 @@ It's Hot!</pre>
       <choice>
         <statement id="cond_rec_mc10_opt_b">
           <p>1</p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc10_opt_b">
           <p>The function calls itself inside of the <c>if</c> loop, so <q>Moo!</q> is printed
             more than once.</p>
@@ -644,7 +644,7 @@ It's Hot!</pre>
       <choice>
         <statement id="cond_rec_mc10_opt_c">
           <p>2</p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc10_opt_c">
           <p>After two function calls, <c>m == 9</c> and <c>n == 10</c>.  The function is not
             done printing.</p>
@@ -653,7 +653,7 @@ It's Hot!</pre>
       <choice>
         <statement id="cond_rec_mc10_opt_d">
           <p>3</p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc10_opt_d">
           <p>After three function calls, <c>m == 11</c> and <c>n == 10</c>.  The function is not
             done printing</p>
@@ -662,12 +662,12 @@ It's Hot!</pre>
       <choice correct="yes">
         <statement id="cond_rec_mc10_opt_e">
           <p>infinite recursion</p>
-        </statement>
+        </caption>
         <feedback id="cond_rec_mc10_opt_e">
           <p>The function stops printing <q>Moo!</q> when <c>m == n</c>, but since <c>m</c> is odd
             and <c>n</c> is even, they will never be equal as long as we increment by two.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-</exercises>
+  </listing>
+</listings>

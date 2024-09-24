@@ -27,10 +27,10 @@ for (i = 0; i &lt; count.size(); i++) {
             again reduces execution speed, so it would be better to store the size
             in some variable by calling the <c>size</c> function before the loop
             begins, and use this variable to check for the last element.</p>
-  <exercise label="vector_size_AC_1">
-    <statement>
+  <listing label="vector_size_AC_1">
+    <caption>
       <p>Try running the active code below!</p>
-    </statement>
+    </caption>
     <program xml:id="vector_size_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -46,11 +46,11 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
-  <exercise label="vector_size_1">
-    <statement>
+  </listing>
+  <listing label="vector_size_1">
+    <caption>
       <p>Let <term>nums</term> be the vector { 0, 1, 2, 3, 4 }. What is the variable type <em>of</em> <c>nums.size()</c>? <var/>  </p>
-    </statement>
+    </caption>
     <setup>
       <var case="insensitive">
         <condition string="^\s*size_t\s*$">
@@ -70,11 +70,11 @@ int main() {
         </condition>
       </var>
     </setup>
-  </exercise>
-  <exercise label="vector_size_2">
-    <statement>
+  </listing>
+  <listing label="vector_size_2">
+    <caption>
       <p>Let <term>nums</term> be the vector { 0, 1, 2, 3, 4 }. What is the value <em>of</em> <c>nums.size()</c>? <var/>  </p>
-    </statement>
+    </caption>
     <setup>
       <var>
         <condition number="[5, 5]">
@@ -89,44 +89,44 @@ int main() {
         </condition>
       </var>
     </setup>
-  </exercise>
-  <exercise label="vector_size_3">
-    <statement>
+  </listing>
+  <listing label="vector_size_3">
+    <caption>
       <p>Let <term>nums</term> be the vector { 0, 1, 2, 3, 4 }. What is the value <em>at</em> <c>nums[nums.size()]</c>?</p>
-    </statement>
+    </caption>
     <choices>
       <choice>
-        <statement>
+        <caption>
           <p>5</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! This is what gets returned by nums.size()</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>4</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect! This is the element before nums[nums.size()]</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>3</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Incorrect!</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>none of the above due to runtime error</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Correct! This would be indexing out of bounds and would cause a runtime error.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
+  </listing>
 </section>

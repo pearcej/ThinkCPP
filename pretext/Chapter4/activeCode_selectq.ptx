@@ -6,12 +6,12 @@
   <exercise xml:id="empty-201">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter4', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cond_rec_a2">
-        <statement>
+        <caption>
           <p>You are part of a class where everyone passes, but it's very hard
                     to pass with an A.  Fix the function so it prints your letter grade
                     according to this scheme.  [0, 50) = C, [50, 85) = B, and [85, 100] = A.
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
-        </statement>
+        </caption>
         <program xml:id="cond_rec_a2_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
@@ -36,12 +36,12 @@ string whichDoor (double grade) {
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter4', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
       <exercise label="cond_rec_a2_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
-        <statement>
+        <caption>
           <p>You are part of a class where everyone passes, but it's very hard
                     to pass with an A.  Fix the function so it prints your letter grade
                     according to this scheme.  [0, 50) = C, [50, 85) = B, and [85, 100] = A.
                     Use the lines to construct the code, then go back to complete the Activecode tab.</p>
-        </statement>
+        </caption>
         <blocks>
           <block order="7">
             <choice correct="yes">
@@ -92,11 +92,11 @@ string whichDoor (double grade) {
   <exercise xml:id="empty-202">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter4', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cond_rec_a4">
-        <statement>
+        <caption>
           <p>Finish the code below so that it prints true if <c>x</c> is even
                     and false if <c>x</c> is odd. Select the Parsonsprob tab for hints
                     for the construction of the code.</p>
-        </statement>
+        </caption>
         <program xml:id="cond_rec_a4_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
@@ -113,11 +113,11 @@ void is_even (int num) {
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter4', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
       <exercise label="cond_rec_a4_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
-        <statement>
+        <caption>
           <p>Finish the code below so that it prints true if <c>x</c> is even
                     and false if <c>x</c> is odd. Use the lines to construct the code,
                     then go back to complete the Activecode tab.</p>
-        </statement>
+        </caption>
         <blocks>
           <block order="3">
             <cline>void is_even (int num) {</cline>
@@ -156,13 +156,13 @@ void is_even (int num) {
   <exercise xml:id="empty-203">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter4', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cond_rec_a6">
-        <statement>
+        <caption>
           <p>Write the function <c>greaterThan</c> that prints true
                     if the first <c>double</c> argument is greater than the
                     second <c>double</c> argument.  Be sure to include any
                     necessary headers. Select the Parsonsprob tab for hints
                     for the construction of the code.</p>
-        </statement>
+        </caption>
         <program xml:id="cond_rec_a6_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
@@ -177,13 +177,13 @@ void greaterThan () {
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter4', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
       <exercise label="cond_rec_a6_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
-        <statement>
+        <caption>
           <p>Write the function <c>greaterThan</c> that prints true
                     if the first <c>double</c> argument is greater than the
                     second <c>double</c> argument.  Be sure to include any
                     necessary headers. Use the lines to construct the code,
                     then go back to complete the Activecode tab.</p>
-        </statement>
+        </caption>
         <blocks>
           <block order="3">
             <choice correct="yes">
@@ -223,12 +223,12 @@ void greaterThan () {
   <exercise xml:id="empty-204">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter4', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cond_rec_a8">
-        <statement>
+        <caption>
           <p>Write the function <c>exclusiveOr</c> that prints true If
                     either <c>a</c> OR <c>b</c> is true, and prints false otherwise.
                     Be sure to include any necessary headers. Select the Parsonsprob
                     tab for hints for the construction of the code.</p>
-        </statement>
+        </caption>
         <program xml:id="cond_rec_a8_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
@@ -243,12 +243,12 @@ void exclusiveOr (bool a, bool b) {
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter4', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
       <exercise label="cond_rec_a8_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
-        <statement>
+        <caption>
           <p>Write the function <c>exclusiveOr</c> that prints true If
                     either <c>a</c> OR <c>b</c> is true, and prints false otherwise.
                     Be sure to include any necessary headers. Use the lines to
                     construct the code, then go back to complete the Activecode tab.</p>
-        </statement>
+        </caption>
         <blocks>
           <block order="2">
             <cline>void exclusiveOr (bool a, bool b) {</cline>
@@ -280,13 +280,13 @@ void exclusiveOr (bool a, bool b) {
   <exercise xml:id="empty-205">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter4', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cond_rec_a10">
-        <statement>
+        <caption>
           <p>Write the function <c>printNegativeNum</c> that asks the user
                     for a negative number.  If the user does not provide a negative
                     number, it should contine asking until the user provides one.
                     It should then print the negative number. Select the Parsonsprob
                     tab for hints for the construction of the code.</p>
-        </statement>
+        </caption>
         <program xml:id="cond_rec_a10_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
@@ -301,13 +301,13 @@ void printNegativeNum () {
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter4', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
       <exercise label="cond_rec_a10_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
-        <statement>
+        <caption>
           <p>Write the function <c>printNegativeNum</c> that asks the user
                     for a negative number.  If the user does not provide a negative
                     number, it should contine asking until the user provides one.
                     It should then print the negative number. Use the lines to construct
                     the code, then go back to complete the Activecode tab.</p>
-        </statement>
+        </caption>
         <blocks>
           <block order="3">
             <cline>void printNegativeNum () {</cline>

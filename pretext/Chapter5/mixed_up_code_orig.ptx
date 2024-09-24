@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <section xml:id="chapter5_mixed-up-code-practice">
   <title>Mixed Up Code Practice</title>
-  <exercise label="mucp_5_1" numbered="yes" adaptive="yes" indentation="show" language="python">
-    <statement>
+  <listing label="mucp_5_1" numbered="yes" adaptive="yes" indentation="show" language="python">
+    <caption>
       <p>Vacation time! But before you go, you need to convert your currency.
             Let's write the code for the dollarToYen function. dollarToYen
             takes dollar as a parameter and returns the equivalent amount of Japanese yen.
             The conversion rate is 1 USD equals 105.42 Japanese yen.
             Put the necessary blocks of code in the correct order.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="1">
         <cline>double dollarToYen (double dollar) {</cline>
@@ -35,9 +35,9 @@
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
-  <exercise label="mucp_5_2" numbered="yes" adaptive="yes" indentation="show" language="python">
-    <statement>
+  </listing>
+  <listing label="mucp_5_2" numbered="yes" adaptive="yes" indentation="show" language="python">
+    <caption>
       <p>When you buy something, you also need to pay sales tax. For example,
             a nice shirt could be labeled with a price of exactly $20, but when
             you pay, you actually need to pay $21.20 in a state with 6% sales tax.
@@ -46,7 +46,7 @@
             priceWithTax calculates the price after tax and returns it.
             For example, priceWithTax (20, 6) returns 21.2.
             Put the necessary blocks of code in the correct order.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="5">
         <cline>double priceWithTax (double price, double percentTax) {</cline>
@@ -70,16 +70,16 @@
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
-  <exercise label="mucp_5_3" numbered="yes" adaptive="yes" indentation="show" language="python">
-    <statement>
+  </listing>
+  <listing label="mucp_5_3" numbered="yes" adaptive="yes" indentation="show" language="python">
+    <caption>
       <p>Most assignments and tests are graded as a percentage, but final
             grades are letters. Let's write the code for the percentToLetter function.
             percentToLetter takes a percentage and returns the corresponding
             letter grade. A 90 and above is an &#x2018;A', an 80 and above is a &#x2018;B', a 70 and above
             is a &#x2018;C', and anything under a 70 is an &#x2018;F'.
             Put the necessary blocks of code in the correct order.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="5">
         <cline>char percentToLetter (double percentage) {</cline>
@@ -148,14 +148,14 @@
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
-  <exercise label="mucp_5_4" numbered="yes" adaptive="yes" indentation="show" language="python">
-    <statement>
+  </listing>
+  <listing label="mucp_5_4" numbered="yes" adaptive="yes" indentation="show" language="python">
+    <caption>
       <p>Let's write the code for the triangleArea function. triangleArea
             takes two parameters, base and height. It returns the
             area of the triangle using the formula 1/2 * base * height.
             Put the necessary blocks of code in the correct order.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="2">
         <cline>double triangleArea (double base, double height) {</cline>
@@ -182,14 +182,14 @@
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
-  <exercise label="mucp_5_5" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="mucp_5_5" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>Let's write the code for the cylinderVolume function. cylinderVolume
             takes two parameters, radius and height. It returns the
             volume of the cylinder using the formula pi * radius * radius * height.
             Put the necessary blocks of code in the correct order.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="2">
         <cline>double cylinderVolume (double radius, double height) {</cline>
@@ -210,9 +210,9 @@
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
-  <exercise label="mucp_5_6" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="mucp_5_6" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>On a distant planet, depending on the characteristics of an egg, a kenchic,
             an ooseg, or a guinpen might hatch from it. Let's write the function
             birdType which returns an int corresponding to each type of bird
@@ -220,7 +220,7 @@
             guinpen. Otherwise, if the egg is round and it isn't gray, then it is a kenchic. If
             it isn't a guinpen and it isn't a kenchic, then it's an ooseg.
             Put the necessary blocks of code in the correct order.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="10">
         <cline>int birdType (bool isRound, bool isGray) {</cline>
@@ -275,14 +275,14 @@
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
-  <exercise label="mucp_5_7" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="mucp_5_7" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>Let's write the code for the isDoubleDigit function. isDoubleDigit
             takes num as a parameter. isDoubleDigit returns true if
             num is a double digit number and returns false otherwise.
             Put the necessary blocks of code in the correct order.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="2">
         <choice correct="yes">
@@ -323,14 +323,14 @@
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
-  <exercise label="mucp_5_8" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="mucp_5_8" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>Let's write the code for the Compare function. Compare
             takes two integers a, b. Compare returns 1 if
             a is greater than b, -1 if a is less than b and 0 if they are equal.
             Put the necessary blocks of code in the correct order.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="13">
         <choice correct="yes">
@@ -380,15 +380,15 @@
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
-  <exercise label="mucp_5_9" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="mucp_5_9" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>Let's write the code for the isFactor function. isFactor
             takes two parameters, num and factor.
             isFactor returns true if factor is a factor of num
             and returns false otherwise.
             Put the necessary blocks of code in the correct order.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="8">
         <choice correct="yes">
@@ -429,14 +429,14 @@
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
-  <exercise label="mucp_5_10" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="mucp_5_10" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>Let's write the code for the isPerfectSquare function. isPerfectSquare
             takes input as a parameter and returns true if input is a
             perfect square and returns false otherwise.
             Put the necessary blocks of code in the correct order.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="11">
         <cline>bool isPerfectSquare (int input) {</cline>
@@ -478,9 +478,9 @@
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
-  <exercise label="mucp_5_11" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <statement>
+  </listing>
+  <listing label="mucp_5_11" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <caption>
       <p>Most bacteria cultures grow exponentially. For this problem,
             assume the number of cells in a bacterial culture doubles every hour.
             Let's write the code for the countBacteria function. countBacteria
@@ -489,7 +489,7 @@
             hour is one, the number of cells doubles to two. When hour is two,
             the number of cells doubles to four. Use recursion.
             Put the necessary blocks of code in the correct order.</p>
-    </statement>
+    </caption>
     <blocks>
       <block order="6">
         <cline>int countBacteria (int hour) {</cline>
@@ -536,5 +536,5 @@
         <cline>}</cline>
       </block>
     </blocks>
-  </exercise>
+  </listing>
 </section>

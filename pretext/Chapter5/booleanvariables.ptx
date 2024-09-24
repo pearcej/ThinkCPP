@@ -20,10 +20,10 @@ bool plusFlag = (x &gt; 0);    // true if x is positive</pre>
 }</pre>
   <p>A variable used in this way is called a <term>flag</term>, since it flags the
             presence or absence of some condition.</p>
-  <exercise label="bool_var_1">
-    <statement>
+  <listing label="bool_var_1">
+    <caption>
       <p>Match the conditional statement to the correct boolean, given x = 2.</p>
-    </statement>
+    </caption>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -37,11 +37,11 @@ bool plusFlag = (x &gt; 0);    // true if x is positive</pre>
         <response>true</response>
       </match>
     </matches>
-  </exercise>
-  <exercise label="bool_var_2">
-    <statement>
+  </listing>
+  <listing label="bool_var_2">
+    <caption>
       <p>Match the statement to the word that describes it best.</p>
-    </statement>
+    </caption>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -59,9 +59,9 @@ bool plusFlag = (x &gt; 0);    // true if x is positive</pre>
         <response>initialization</response>
       </match>
     </matches>
-  </exercise>
-  <exercise label="bool_var_3">
-    <statement>
+  </listing>
+  <listing label="bool_var_3">
+    <caption>
       <p>What will print?</p>
       <pre>int n = 16;
 int x = 4;
@@ -76,52 +76,52 @@ if (evenFlag) {
 if (plusFlag) {
   cout &lt;&lt; "x was positive when I checked it";
 }</pre>
-    </statement>
+    </caption>
     <choices>
       <choice correct="yes">
-        <statement>
+        <caption>
           <p>n was even when I checked it x was positive when I checked it</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Great!</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>x was positive when I checked it n was even when I checked it</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Make sure you follow the correct order of execution.  Also, a space is not automatically added.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>x was positive when I checked it</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Take another look at the result from the modulus operator.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>n was even when I checked itx was positive when I checked it</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Both flags are made, But A space is after it.</p>
         </feedback>
       </choice>
       <choice>
-        <statement>
+        <caption>
           <p>x was positive when I checked itn was even when I checked it</p>
-        </statement>
+        </caption>
         <feedback>
           <p>Make sure you follow the correct order of execution.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="bool_var_4">
-    <statement>
+  </listing>
+  <listing label="bool_var_4">
+    <caption>
       <p>What will print?</p>
       <pre>bool low_battery=true;
 bool power_outage=true;
@@ -149,12 +149,12 @@ if(low_battery){
     cout&lt;&lt;"There is no power"&lt;&lt;endl&gt;&gt;;
   }
 }</pre>
-    </statement>
+    </caption>
     <choices>
       <choice>
         <statement id="bool_var_4_opt_a">
           <p>nothing will print</p>
-        </statement>
+        </caption>
         <feedback id="bool_var_4_opt_a">
           <p>The value of <c>low_battery</c> is true so we enter the first <c>if</c> block.</p>
         </feedback>
@@ -164,7 +164,7 @@ if(low_battery){
           <p>
             <q>Charging your phone</q>
           </p>
-        </statement>
+        </caption>
         <feedback id="bool_var_4_opt_b">
           <p>correct! <c>low_battery</c> stays true and we set <c>power_outage</c> to false.</p>
         </feedback>
@@ -174,7 +174,7 @@ if(low_battery){
           <p>
             <q>Battery is charged</q>
           </p>
-        </statement>
+        </caption>
         <feedback id="bool_var_4_opt_c">
           <p><c>low_battery</c> is true so we don't reach this <c>else</c>.</p>
         </feedback>
@@ -184,11 +184,11 @@ if(low_battery){
           <p>
             <q>There is no power</q>
           </p>
-        </statement>
+        </caption>
         <feedback id="bool_var_4_opt_d">
           <p>We change the value of <c>power_outage</c> to false before hand.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
+  </listing>
 </section>

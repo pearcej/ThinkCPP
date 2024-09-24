@@ -50,10 +50,10 @@
                         newly-created object.</p>
     </li>
   </dl>
-  <exercise label="glossary11_1">
-    <statement>
+  <listing label="glossary11_1">
+    <caption>
       <p>Match the vocabulary word with its definition.</p>
-    </statement>
+    </caption>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -71,11 +71,11 @@
         <response>The object on which a member function is invoked.</response>
       </match>
     </matches>
-  </exercise>
-  <exercise label="glossary11_2">
-    <statement>
+  </listing>
+  <listing label="glossary11_2">
+    <caption>
       <p>Match the vocabulary word with its definition.</p>
-    </statement>
+    </caption>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -93,11 +93,11 @@
         <response>A description of how a function is used.</response>
       </match>
     </matches>
-  </exercise>
-  <exercise label="glossary11_3">
-    <statement>
+  </listing>
+  <listing label="glossary11_3">
+    <caption>
       <p>Match the vocabulary word with its definition.</p>
-    </statement>
+    </caption>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -115,5 +115,5 @@
         <response>A special function that initializes the instance variables of a newly-created object.</response>
       </match>
     </matches>
-  </exercise>
+  </listing>
 </section>

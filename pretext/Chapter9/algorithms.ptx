@@ -36,10 +36,10 @@
             Computer Science sequence, Data Structures, you will see some of the
             most interesting, clever, and useful algorithms computer science has
             produced.</p>
-  <exercise label="algorithms_1">
-    <statement>
+  <listing label="algorithms_1">
+    <caption>
       <p>When you write a general solution for a class of problems, as opposed to a specific solution to a single problem, you have written an ____. <var/>  </p>
-    </statement>
+    </caption>
     <setup>
       <var case="insensitive">
         <condition string="^\s*(?:a|A)lgorithm\s*$">
@@ -54,5 +54,5 @@
         </condition>
       </var>
     </setup>
-  </exercise>
+  </listing>
 </section>
