@@ -4,12 +4,12 @@
          xml:id="way-of-the-program"
          >
   <title>The way of the program</title>
-  <xi:include href='./the_way.ptx'/>
-  <xi:include href='./programming_language.ptx'/>
+  <xi:include href='./the-way.ptx'/>
+  <xi:include href='./programming-language.ptx'/>
   <xi:include href='./program.ptx'/>
   <xi:include href='./debugging.ptx'/>
-  <xi:include href='./formal_natural.ptx'/>
-  <xi:include href='./first_program.ptx'/>
+  <xi:include href='./formal-natural.ptx'/>
+  <xi:include href='./first-program.ptx'/>
   <xi:include href='./glossary.ptx'/>
   <xi:include href='./exercises.ptx'/>
 </chapter>
