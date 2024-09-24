@@ -33,7 +33,7 @@ sum.printCartesian();</pre>
             the extra problem at the end for help. Once you are finished, feel
             free to modify the code and experiment around!</p>
     </statement>
-    <program xml:id="fourteenseven_editor" interactive="activecode" language="cpp">
+    <program xml:id="fourteenseven_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <cmath>
@@ -188,7 +188,7 @@ Complex add (Complex&amp; a, Complex&amp; b) {
   <exercise label="question14_6_2">
     <statement>
       <p>What is the correct output of the code below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input>
 int main() {
   Complex c1 (2.5, 1.3);

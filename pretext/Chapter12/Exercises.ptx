@@ -90,7 +90,7 @@
   <exercise label="mce_12_3">
     <statement>
       <p>What is the value of <c>card</c>?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input>
 struct Card {
   int suit, rank;
@@ -150,7 +150,7 @@ int main() {
   <exercise label="mce_12_4">
     <statement>
       <p>There is an error with the code below. Can you find it?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input>
 struct Card {
   int suit, rank;
@@ -204,7 +204,7 @@ int main() {
   <exercise label="mce_12_5">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 struct Card {
   int suit, rank;
@@ -260,7 +260,7 @@ int main() {
   <exercise label="mce_12_6">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 struct Card {
   int suit, rank;
@@ -326,7 +326,7 @@ int main() {
   <exercise label="mce_12_7">
     <statement>
       <p>What is true about <c>deck</c>?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 struct Card {
   int suit, rank;
@@ -393,7 +393,7 @@ int main() {
   <exercise label="mce_12_8">
     <statement>
       <p>How many times does <c>findBisect</c> need to call itself in order to find the King of Diamonds?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 struct Card {
   int suit, rank;
@@ -456,7 +456,7 @@ int main() {
     <statement>
       <p>We want to write the function <c>findAllQueens</c>, which searches through a deck and
             prints out the location of all 4 queens in the <c>deck</c>. What should go in the blanks?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 struct Card {
   int suit, rank;

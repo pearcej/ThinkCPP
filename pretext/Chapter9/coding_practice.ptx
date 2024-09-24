@@ -8,7 +8,7 @@
                 Below is one way to implement the program. We declare the Cake struct and list the instance
                     variables in order.
 
-    <program xml:id="cp_9_AC_1a" language="cpp"><input><![CDATA[
+    <program xml:id="cp_9_AC_1a" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -43,7 +43,7 @@ int main() {
     <solution>
                 Below is one way to implement the program. We create a Cake for the user, read in the user's input using cin, and return the Cake.
 
-    <program xml:id="cp_9_AC_3a" language="cpp"><input><![CDATA[
+    <program xml:id="cp_9_AC_3a" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -125,7 +125,7 @@ void printCakeInfo (Cake c) {
                 Below is one way to implement the program. We call makeCake in editCake and then set the original cake
                     equal to the new one.
 
-    <program xml:id="cp_9_AC_5a" language="cpp"><input><![CDATA[
+    <program xml:id="cp_9_AC_5a" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -215,7 +215,7 @@ int main() {
                 Below is one way to implement the program. We declare the Pants struct and list the instance
                     variables in order.
 
-    <program xml:id="cp_9_AC_7a" language="cpp"><input><![CDATA[
+    <program xml:id="cp_9_AC_7a" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -249,7 +249,7 @@ int main() {
                 Below is one way to implement the program. We declare the Cake struct and list the instance
                     variables in order.
 
-    <program xml:id="cp_9_AC_9a" language="cpp"><input><![CDATA[
+    <program xml:id="cp_9_AC_9a" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 

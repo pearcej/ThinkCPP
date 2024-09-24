@@ -46,7 +46,7 @@ product.printCartesian();</pre>
       <p>The active code below uses the <c>mult</c> and <c>setPolar</c> functions.
             Feel free to modify the code and experiment around!</p>
     </statement>
-    <program xml:id="fourteeneight_editor" interactive="activecode" language="cpp">
+    <program xml:id="fourteeneight_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <cmath>
@@ -172,7 +172,7 @@ Complex mult (Complex&amp; a, Complex&amp; b) {
   <exercise label="question14_7_1">
     <statement>
       <p>What is the correct output of the code below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input>
 int main() {
   Complex c1 (2.0, 3.0);
@@ -229,7 +229,7 @@ int main() {
             Read the comments in <c>main</c> to test out your code! If you get stuck,
             you can reveal the extra problem at the end for help.</p>
     </statement>
-    <program xml:id="fourteennine_editor" interactive="activecode" language="cpp">
+    <program xml:id="fourteennine_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <cmath>

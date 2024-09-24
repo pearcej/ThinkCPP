@@ -15,7 +15,7 @@
 ***
 ****</pre>
         </statement>
-        <program xml:id="cp_6_AC_2q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_6_AC_2q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -124,7 +124,7 @@ int main() {
  4444444
 555555555</pre>
         </statement>
-        <program xml:id="cp_6_AC_4q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_6_AC_4q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -230,7 +230,7 @@ int main() {
 9       10      11      12      13      14      15      16      17      18      19
 10      11      12      13      14      15      16      17      18      19      20</pre>
         </statement>
-        <program xml:id="cp_6_AC_6q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_6_AC_6q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -309,7 +309,7 @@ int main() {
           <p>Write a program that uses a <c>while</c> loop to print out the alphabet from &#x2018;a' to &#x2018;z'.
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_6_AC_8q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_6_AC_8q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -367,7 +367,7 @@ int main() {
                     positive integers less than or equal to <c>n</c>, so 4! is 24. Use a <c>while</c> loop.
                     Run and test your code! Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_6_AC_10q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_6_AC_10q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;

@@ -90,7 +90,7 @@
   <exercise label="mce_11_3">
     <statement>
       <p>Which of the following options should replace the blank in the following code?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input>
 struct StarWars {
   string name;
@@ -163,7 +163,7 @@ int main () {
   <exercise label="mce_11_4">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 struct Cube {
   int mass;
@@ -231,7 +231,7 @@ int main() {
   <exercise label="mce_11_5">
     <statement>
       <p>What are the values stored in the p1 object below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input>
 struct Penguin {
   int age;
@@ -289,7 +289,7 @@ int main() {
   <exercise label="mce_11_6">
     <statement>
       <p> Will the following program run and if so, what does this program aptly depict?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input>
 struct Penguin {
   int age;
@@ -354,7 +354,7 @@ int main() {
   <exercise label="mce_11_7">
     <statement>
       <p>What statements are true based on the following  <c>Stundent.h</c> header file?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input>
 struct Student {
   // Instance variables
@@ -414,7 +414,7 @@ struct Student {
   <exercise label="mce_11_8">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 struct Penguin {
   int age;
@@ -480,7 +480,7 @@ int main() {
   <exercise label="mce_11_9">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 struct Point3D {
   int x, y, z;

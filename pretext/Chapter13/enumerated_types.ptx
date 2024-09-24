@@ -46,7 +46,7 @@ TEN, JACK, QUEEN, KING };</pre>
             Feel free to modify the values that the cards are being initialized to in the constructor:  this will
             change the output from the <c>print</c> function. Notice how this is much clearer than using integers.</p>
     </statement>
-    <program xml:id="enum_type_AC_1_editor" interactive="activecode" language="cpp">
+    <program xml:id="enum_type_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <string>

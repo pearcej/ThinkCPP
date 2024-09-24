@@ -26,7 +26,7 @@
   <p>In main you can call this function in the usual ways:</p>
   <pre>cout &lt;&lt; isSingleDigit (2) &lt;&lt; endl;
 bool bigFlag = !isSingleDigit (17);</pre>
-  <program xml:id="bool_fun_AC_1" interactive="activecode" language="cpp">
+  <program xml:id="bool_fun_AC_1" interactive="activecode" language="cpp" line-numbers="yes">
     <input><![CDATA[
 #include <iostream>
 #include <cmath>

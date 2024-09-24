@@ -58,7 +58,7 @@
       <p>The following code will show the output of the printTwice function.
             Try modifying the value of argument to change the output.</p>
     </statement>
-    <program xml:id="params_args_AC_1_editor" interactive="activecode" language="cpp">
+    <program xml:id="params_args_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;

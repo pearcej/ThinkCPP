@@ -43,7 +43,7 @@
   <exercise label="mce_14_2">
     <statement>
       <p>Which of the following are accessor functions?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 struct Student {
   private:
@@ -144,7 +144,7 @@ struct Student {
   <exercise label="mce_14_4">
     <statement>
       <p>What should replace the question marks in the code below? Use accessor functions.</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input>
 class rightTriangle {
   int base;
@@ -206,7 +206,7 @@ class rightTriangle {
   <exercise label="mce_14_5">
     <statement>
       <p>What is wrong with the code below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 class Plane {
   int flightNumber;
@@ -270,7 +270,7 @@ int main() {
   <exercise label="mce_14_6">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 class Temp {
   private:
@@ -380,7 +380,7 @@ int main() {
   <exercise label="mce_14_8">
     <statement>
       <p>Take a look at the class definition of <c>Date</c>. What are some invariants we must maintain?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input>
 class Date {
   private:
@@ -440,7 +440,7 @@ class Date {
   <exercise label="mce_14_9">
     <statement>
       <p>Take a look at the function below. What are its preconditions and postconditions?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input>
 int calculateRectangleArea (int length, int width) {
   return length * width;

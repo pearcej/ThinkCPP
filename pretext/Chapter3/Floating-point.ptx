@@ -181,7 +181,7 @@ cout &lt;&lt; e_double;</pre>
     <statement>
       <p>Run the code below to see what type of division occurs each time.</p>
     </statement>
-    <program xml:id="floating_point_a1_editor" interactive="activecode" language="cpp">
+    <program xml:id="floating_point_a1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;

@@ -11,7 +11,7 @@
             Notice that it is the argument &#x2018;b' that is outputted, not the
             variable &#x2018;phil'.</p>
     </statement>
-    <program xml:id="locals_AC_1_editor" interactive="activecode" language="cpp">
+    <program xml:id="locals_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;

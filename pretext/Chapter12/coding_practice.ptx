@@ -9,7 +9,7 @@
                     each RGB component ranges from 0 to 255, where 0 is no intensity and 255 is highest intensity.
                     Write the <c>struct</c> definition for <c>Pixel</c>, which has values for each component r, g, and b.</p>
     </statement>
-    <program interactive="activecode" language="cpp" xml:id="cp_12_AC_1q_editor">
+    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="cp_12_AC_1q_editor">
       <input><![CDATA[
 #include <iostream>
 #include <vector>
@@ -26,7 +26,7 @@ using namespace std;
                     and create the instance variables in order.
 
     
-    <program xml:id="cp_12_AC_1a_editor" language="cpp"><input><![CDATA[
+    <program xml:id="cp_12_AC_1a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -41,7 +41,7 @@ struct Pixel {
             
 
 <exercise label="cp_12_AC_1a"><statement><p>Below is one way to implement the program. We declare the <c>Pixel</c> struct
-                    and create the instance variables in order.</p></statement><program xml:id="cp_12_AC_1a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+                    and create the instance variables in order.</p></statement><program xml:id="cp_12_AC_1a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -66,7 +66,7 @@ struct Pixel {
       <p>Let's print out a <c>Pixel</c>! Write the <c>Pixel</c> member function <c>printPixel</c>,
                     which prints out the values of the <c>Pixel</c> in this form: (r, g, b).</p>
     </statement>
-    <program interactive="activecode" language="cpp" xml:id="cp_12_AC_3q_editor">
+    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="cp_12_AC_3q_editor">
       <input><![CDATA[
 #include <iostream>
 #include <vector>
@@ -95,7 +95,7 @@ int main() {
                     operator to make printPixel a Pixel member function.
 
     
-    <program xml:id="cp_12_AC_3a_editor" language="cpp"><input><![CDATA[
+    <program xml:id="cp_12_AC_3a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -120,7 +120,7 @@ int main() {
             
 
 <exercise label="cp_12_AC_3a"><statement><p>Below is one way to implement the program. We use the scope resolution
-                    operator to make <c>printPixel</c> a <c>Pixel</c> member function.</p></statement><program xml:id="cp_12_AC_3a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+                    operator to make <c>printPixel</c> a <c>Pixel</c> member function.</p></statement><program xml:id="cp_12_AC_3a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -157,7 +157,7 @@ int main() {
                     a start and stop row and a start and stop column. It then modifies the matrix to the
                     cropped matrix.</p>
     </statement>
-    <program interactive="activecode" language="cpp" xml:id="cp_12_AC_5q_editor">
+    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="cp_12_AC_5q_editor">
       <input><![CDATA[
 #include <iostream>
 #include <vector>
@@ -219,7 +219,7 @@ void Image::printImage() {
                     we created.
 
     
-    <program xml:id="cp_12_AC_5a_editor" language="cpp"><input><![CDATA[
+    <program xml:id="cp_12_AC_5a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -284,7 +284,7 @@ void Image::printImage() {
                     with the correct amount of rows. Then we push back the pixels we want
                     into the new matrix. Afterwards, we must update the height and width
                     of the <c>Image</c> and set the <c>Image</c>'s matrix equal to the new one
-                    we created.</p></statement><program xml:id="cp_12_AC_5a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+                    we created.</p></statement><program xml:id="cp_12_AC_5a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -359,7 +359,7 @@ void Image::printImage() {
                     which flips an image horizontally. Use the <c>swapPixel</c>
                     function we created previously.</p>
     </statement>
-    <program interactive="activecode" language="cpp" xml:id="cp_12_AC_7q_editor">
+    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="cp_12_AC_7q_editor">
       <input><![CDATA[
 #include <iostream>
 #include <vector>
@@ -440,7 +440,7 @@ void Image::swapPixel(int row1, int col1, int row2, int col2) {
                     Once they meet in the middle, we have finished flipping the image.
 
     
-    <program xml:id="cp_12_AC_7a_editor" language="cpp"><input><![CDATA[
+    <program xml:id="cp_12_AC_7a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -524,7 +524,7 @@ void Image::swapPixel(int row1, int col1, int row2, int col2) {
 <exercise label="cp_12_AC_7a"><statement><p>Below is one way to implement the program. We loop through
                     each row in the matrix. We create start and end indices and
                     repeatedly swap pixels, moving both indices toward the middle.
-                    Once they meet in the middle, we have finished flipping the image.</p></statement><program xml:id="cp_12_AC_7a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+                    Once they meet in the middle, we have finished flipping the image.</p></statement><program xml:id="cp_12_AC_7a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -617,7 +617,7 @@ void Image::swapPixel(int row1, int col1, int row2, int col2) {
                     which sets the <c>Pixel</c>s on the edge of an <c>Image</c> to a given
                     <c>Pixel</c>.</p>
     </statement>
-    <program interactive="activecode" language="cpp" xml:id="cp_12_AC_9q_editor">
+    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="cp_12_AC_9q_editor">
       <input><![CDATA[
 #include <iostream>
 #include <vector>
@@ -725,7 +725,7 @@ void Image::flipVertical() {
                     given Pixel.
 
     
-    <program xml:id="cp_12_AC_9a_editor" language="cpp"><input><![CDATA[
+    <program xml:id="cp_12_AC_9a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -835,7 +835,7 @@ void Image::flipVertical() {
 
 <exercise label="cp_12_AC_9a"><statement><p>Below is one way to implement the program. We set the first and last
                     row and first and last column of <c>Pixel</c>s in the <c>Image</c> to the
-                    given <c>Pixel</c>.</p></statement><program xml:id="cp_12_AC_9a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+                    given <c>Pixel</c>.</p></statement><program xml:id="cp_12_AC_9a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;

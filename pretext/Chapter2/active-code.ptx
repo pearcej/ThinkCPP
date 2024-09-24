@@ -6,7 +6,7 @@
     <statement>
       <p>Fix the code below so that it runs without errors.  Hint: you might need to change the names of some variables.</p>
     </statement>
-    <program interactive="activecode" language="cpp" xml:id="VARS_a1q_editor">
+    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="VARS_a1q_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -27,7 +27,7 @@ int main () {
                 Below is one way to fix the program.  true and false are keywords, so they cannot be used as variable names.
 
     
-    <program xml:id="VARS_a1a_editor" language="cpp"><input><![CDATA[
+    <program xml:id="VARS_a1a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -41,7 +41,7 @@ int main () {
 
             
 
-<exercise label="VARS_a1a"><statement><p>Below is one way to fix the program.  <c>true</c> and <c>false</c> are keywords, so they cannot be used as variable names.</p></statement><program xml:id="VARS_a1a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+<exercise label="VARS_a1a"><statement><p>Below is one way to fix the program.  <c>true</c> and <c>false</c> are keywords, so they cannot be used as variable names.</p></statement><program xml:id="VARS_a1a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -65,7 +65,7 @@ int main () {
     <statement>
       <p>Fix the code below so that it prints <q>Cady scored 90% on the exam.</q></p>
     </statement>
-    <program interactive="activecode" language="cpp" xml:id="VARS_a3q_editor">
+    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="VARS_a3q_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -86,7 +86,7 @@ int main() {
                 Below is one way to fix the program.  We want to use doubles so that our result isn't rounded down to 0 through integer division.
 
     
-    <program xml:id="VARS_a3a_editor" language="cpp"><input><![CDATA[
+    <program xml:id="VARS_a3a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -98,7 +98,7 @@ int main() {
 
             
 
-<exercise label="VARS_a3a"><statement><p>Below is one way to fix the program.  We want to use doubles so that our result isn't rounded down to 0 through integer division.</p></statement><program xml:id="VARS_a3a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+<exercise label="VARS_a3a"><statement><p>Below is one way to fix the program.  We want to use doubles so that our result isn't rounded down to 0 through integer division.</p></statement><program xml:id="VARS_a3a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -120,7 +120,7 @@ int main() {
     <statement>
       <p>Fix the code below so that assigns <c>a</c> its correct value of <c>'a'</c>.  Hint: use character operations!</p>
     </statement>
-    <program interactive="activecode" language="cpp" xml:id="VARS_a5q_editor">
+    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="VARS_a5q_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -144,7 +144,7 @@ int main () {
                 Below is one way to complete the program.  There are many creative ways that you could use the order of operations to come up with a complex expression that will bring you to 'a', here is one way.
 
     
-    <program xml:id="VARS_a5a_editor" language="cpp"><input><![CDATA[
+    <program xml:id="VARS_a5a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -157,7 +157,7 @@ int main () {
 
             
 
-<exercise label="VARS_a5a"><statement><p>Below is one way to complete the program.  There are many creative ways that you could use the order of operations to come up with a complex expression that will bring you to <c>'a'</c>, here is one way.</p></statement><program xml:id="VARS_a5a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+<exercise label="VARS_a5a"><statement><p>Below is one way to complete the program.  There are many creative ways that you could use the order of operations to come up with a complex expression that will bring you to <c>'a'</c>, here is one way.</p></statement><program xml:id="VARS_a5a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -180,7 +180,7 @@ int main () {
     <statement>
       <p>Write code that prints <q>Eat</q>, <q>More</q>, and <q>Chicken</q> on 3 consecutive lines. Be sure to inclue any necessary headers.</p>
     </statement>
-    <program interactive="activecode" language="cpp" xml:id="VARS_a7q_editor">
+    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="VARS_a7q_editor">
       <input>
 int main () {
 
@@ -194,7 +194,7 @@ int main () {
                 Below is one way to implement the solution.
 
     
-    <program xml:id="VARS_a7a_editor" language="cpp"><input><![CDATA[
+    <program xml:id="VARS_a7a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -207,7 +207,7 @@ int main () {
 
             
 
-<exercise label="VARS_a7a"><statement><p>Below is one way to implement the solution.</p></statement><program xml:id="VARS_a7a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+<exercise label="VARS_a7a"><statement><p>Below is one way to implement the solution.</p></statement><program xml:id="VARS_a7a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -230,7 +230,7 @@ int main () {
     <statement>
       <p>You have about three hours and fifteen minutes of homework to do today.  Rather than starting it right away, you choose to procrastinate by calculating how many seconds you'll be spending on your work.  Convert the time to seconds and store the result in <c>seconds</c>.  Be sure to inclue any necessary headers.</p>
     </statement>
-    <program interactive="activecode" language="cpp" xml:id="VARS_a9q_editor">
+    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="VARS_a9q_editor">
       <input><![CDATA[
 int main () {
 
@@ -246,7 +246,7 @@ int main () {
                 Below is one way to implement the solution.
 
     
-    <program xml:id="VARS_a9a_editor" language="cpp"><input><![CDATA[
+    <program xml:id="VARS_a9a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -260,7 +260,7 @@ int main () {
 
             
 
-<exercise label="VARS_a9a"><statement><p>Below is one way to implement the solution.</p></statement><program xml:id="VARS_a9a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+<exercise label="VARS_a9a"><statement><p>Below is one way to implement the solution.</p></statement><program xml:id="VARS_a9a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 

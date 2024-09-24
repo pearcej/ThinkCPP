@@ -86,7 +86,7 @@
             the program should output a shuffled deck of cards. If you stuck, you can reveal the
             extra problems at the end for help.</p>
     </statement>
-    <program xml:id="shuffling_2_editor" interactive="activecode" language="cpp">
+    <program xml:id="shuffling_2_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <string>

@@ -4,7 +4,7 @@
   <exercise label="mce_13_1">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 enum Month { JAN = 1, FEB, MAR, APR,
 MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC };
@@ -55,7 +55,7 @@ int main() {
   <exercise label="mce_13_2">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 int main() {
   string s = "summer";
@@ -116,7 +116,7 @@ int main() {
   <exercise label="mce_13_3">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 enum Season { SPRING, SUMMER, FALL, WINTER };
 
@@ -181,7 +181,7 @@ int main() {
       <p>Take a look at the <c>struct</c> definition of <c>Entry</c>. If we wanted to make a
             <c>struct</c> called <c>Dictionary</c>, how can we create a <c>vector</c> of <c>Entry</c>s
             as a member variable?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input>
 struct Entry {
   string word;
@@ -234,7 +234,7 @@ struct Entry {
   <exercise label="mce_13_5">
     <statement>
       <p>What is wrong with the code below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 struct Card {
   int suit, rank;

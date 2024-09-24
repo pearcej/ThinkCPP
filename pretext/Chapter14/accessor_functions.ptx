@@ -34,7 +34,7 @@
       <p>Take a look at the active code below, which uses the <c>getReal</c>
             accessor function.</p>
     </statement>
-    <program xml:id="fourteenfour_editor" interactive="activecode" language="cpp">
+    <program xml:id="fourteenfour_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <cmath>
@@ -85,7 +85,7 @@ int main() {
             accessor functions. Read the comments in <c>main</c> to see how we'll test if your
             functions works. If you get stuck, you can reveal the extra problem at the end for help.</p>
     </statement>
-    <program xml:id="fourteenfive_editor" interactive="activecode" language="cpp">
+    <program xml:id="fourteenfive_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <cmath>

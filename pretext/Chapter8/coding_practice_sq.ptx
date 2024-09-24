@@ -9,7 +9,7 @@
                     for their full name. Then the function outputs <q>Hello <c>fullName</c>!</q>.
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_8_AC_2q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_8_AC_2q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -73,7 +73,7 @@ int main() {
                     <q>Robot <c>name</c> is fully charged!</q>. Select the Parsonsprob tab for hints for
                     the construction of the code.</p>
         </statement>
-        <program xml:id="cp_8_AC_4q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_8_AC_4q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -154,7 +154,7 @@ void printRobotData (Robot r) {
                     Pokemon's info in the following format: <c>pokeName</c> (Lv. <c>level</c>, <c>healthPercentage</c>% HP).
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_8_AC_6q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_8_AC_6q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -231,7 +231,7 @@ int main() {
                     and heals the Trainer's Pokemon to 100 percent health. Select the Parsonsprob
                     tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_8_AC_8q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_8_AC_8q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -359,7 +359,7 @@ Please enter your weight in pounds: 170
 Please select a planet: 23
 Error, not a valid planet.</pre>
         </statement>
-        <program xml:id="cp_8_AC_10q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_8_AC_10q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;

@@ -8,7 +8,7 @@
                 Below is one way to implement the program. We prompt the user for input
                     using cin before printing the area and perimeter.
 
-    <program xml:id="cp_8_AC_1a" language="cpp"><input><![CDATA[
+    <program xml:id="cp_8_AC_1a" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -46,7 +46,7 @@ int main() {
                     in the struct definition. Next, we use dot notation to access
                     the instance variables and output them using cout.
 
-    <program xml:id="cp_8_AC_3a" language="cpp"><input><![CDATA[
+    <program xml:id="cp_8_AC_3a" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -97,7 +97,7 @@ int main() {
                     Robot we created. Notice we use dot notation to ensure that the
                     model and serialNumber are the same.
 
-    <program xml:id="cp_8_AC_5a" language="cpp"><input><![CDATA[
+    <program xml:id="cp_8_AC_5a" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -156,7 +156,7 @@ void printRobotData (Robot r) {
                     in the struct definition. Next, we call printPokeInfo on each Pokemon
                     in Trainer and output the trainer's info in the correct format.
 
-    <program xml:id="cp_8_AC_7a" language="cpp"><input><![CDATA[
+    <program xml:id="cp_8_AC_7a" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -224,7 +224,7 @@ void printPokeInfo(Pokemon p) {
                 Below is one way to implement the program. We use conditionals to perform
                     the correct output and operation depending on the user's input.
 
-    <program xml:id="cp_8_AC_9a" language="cpp"><input><![CDATA[
+    <program xml:id="cp_8_AC_9a" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 

@@ -8,7 +8,7 @@
           <p>There are errors in the code below. Modify the code so that <c>main</c> runs
                     successfully. Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_14_AC_2q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_14_AC_2q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -137,7 +137,7 @@ int main() {
                     what 100 degrees Celsius is in Fahrenheit.
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_14_AC_4q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_14_AC_4q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -224,7 +224,7 @@ int main() {
                     and copies the data into the <c>elements</c> vector.
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_14_AC_6q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_14_AC_6q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 #include <vector>
@@ -278,7 +278,7 @@ class MyVector {
                     [2, 5, 1, 8] followed by a newline.
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_14_AC_8q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_14_AC_8q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 #include <vector>
@@ -378,7 +378,7 @@ int MyVector::at(int index) { return elements[index]; }
                     and return the max and min values. Select the Parsonsprob tab for hints
                     for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_14_AC_10q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_14_AC_10q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 #include <vector>

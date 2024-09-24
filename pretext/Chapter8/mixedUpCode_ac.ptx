@@ -9,7 +9,7 @@
                     The Song structure will have the instance variables string title,
                     string artist, string album, and int year in that order.</p>
     </statement>
-    <program interactive="activecode" language="cpp" xml:id="mucp_8_1_ac_q_editor">
+    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_8_1_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -23,7 +23,7 @@ using namespace std;
                 Below is one way to define the struct definition of Song.
 
     
-    <program xml:id="mucp_8_1_ac_a_editor" language="cpp"><input><![CDATA[
+    <program xml:id="mucp_8_1_ac_a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -37,7 +37,7 @@ struct Song {
 
             
 
-<exercise label="mucp_8_1_ac_a"><statement><p>Below is one way to define the struct definition of <c>Song</c>.</p></statement><program xml:id="mucp_8_1_ac_a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+<exercise label="mucp_8_1_ac_a"><statement><p>Below is one way to define the struct definition of <c>Song</c>.</p></statement><program xml:id="mucp_8_1_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -55,7 +55,7 @@ struct Song {
       <p>In main, create a Song object called <c>fly</c> which holds
                     the data for Frank Sinatra's <q>Fly Me to the Moon</q> from his 1964 album <q>It Might as Well Be Swing</q>.</p>
     </statement>
-    <program interactive="activecode" language="cpp" xml:id="mucp_8_2_ac_q_editor">
+    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_8_2_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -69,7 +69,7 @@ using namespace std;
                 Below is one way to create the object in the main function.
 
     
-    <program xml:id="mucp_8_2_ac_a_editor" language="cpp"><input><![CDATA[
+    <program xml:id="mucp_8_2_ac_a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -91,7 +91,7 @@ int main() {
 
             
 
-<exercise label="mucp_8_2_ac_a"><statement><p>Below is one way to create the object in the main function.</p></statement><program xml:id="mucp_8_2_ac_a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+<exercise label="mucp_8_2_ac_a"><statement><p>Below is one way to create the object in the main function.</p></statement><program xml:id="mucp_8_2_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -118,7 +118,7 @@ int main() {
                     takes a Song as a parameter and prints out the instance variables
                     in the following format: <q>title</q> by artist (album, year).</p>
     </statement>
-    <program interactive="activecode" language="cpp" xml:id="mucp_8_3_ac_q_editor">
+    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_8_3_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -132,7 +132,7 @@ using namespace std;
                 Below is one way to write the printSong function.
 
     
-    <program xml:id="mucp_8_3_ac_a_editor" language="cpp"><input><![CDATA[
+    <program xml:id="mucp_8_3_ac_a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -159,7 +159,7 @@ int main() {
 
             
 
-<exercise label="mucp_8_3_ac_a"><statement><p>Below is one way to write the printSong function.</p></statement><program xml:id="mucp_8_3_ac_a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+<exercise label="mucp_8_3_ac_a"><statement><p>Below is one way to write the printSong function.</p></statement><program xml:id="mucp_8_3_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -192,7 +192,7 @@ int main() {
                     age, hornLength, hairColor, and isSparkly in that order. A Unicorn's
                     horn length is measured to the nearest tenth of a unit.</p>
     </statement>
-    <program interactive="activecode" language="cpp" xml:id="mucp_8_4_ac_q_editor">
+    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_8_4_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -206,7 +206,7 @@ using namespace std;
                 Below is one way to define the struct Unicorn.
 
     
-    <program xml:id="mucp_8_4_ac_a_editor" language="cpp"><input><![CDATA[
+    <program xml:id="mucp_8_4_ac_a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -221,7 +221,7 @@ struct Unicorn {
 
             
 
-<exercise label="mucp_8_4_ac_a"><statement><p>Below is one way to define the struct <c>Unicorn</c>.</p></statement><program xml:id="mucp_8_4_ac_a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+<exercise label="mucp_8_4_ac_a"><statement><p>Below is one way to define the struct <c>Unicorn</c>.</p></statement><program xml:id="mucp_8_4_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -243,7 +243,7 @@ struct Unicorn {
                     plus the length of its horn. If a unicorn is not sparkly, then its equivalent human age is
                     four times its age in unicorn years plus twice the length of its horn.</p>
     </statement>
-    <program interactive="activecode" language="cpp" xml:id="mucp_8_5_ac_q_editor">
+    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_8_5_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -257,7 +257,7 @@ using namespace std;
                 Below is one way to write the convertToHumanAge function.
 
     
-    <program xml:id="mucp_8_5_ac_a_editor" language="cpp"><input><![CDATA[
+    <program xml:id="mucp_8_5_ac_a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -281,7 +281,7 @@ int convertToHumanAge (Unicorn u) {
 
             
 
-<exercise label="mucp_8_5_ac_a"><statement><p>Below is one way to write the convertToHumanAge function.</p></statement><program xml:id="mucp_8_5_ac_a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+<exercise label="mucp_8_5_ac_a"><statement><p>Below is one way to write the convertToHumanAge function.</p></statement><program xml:id="mucp_8_5_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -310,7 +310,7 @@ int convertToHumanAge (Unicorn u) {
                     takes a Unicorn as a parameter and
                     sets isSparkly to true and changes the color to rainbow.</p>
     </statement>
-    <program interactive="activecode" language="cpp" xml:id="mucp_8_6_ac_q_editor">
+    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_8_6_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -324,7 +324,7 @@ using namespace std;
                 Below is one way to write the unicornPower function.
 
     
-    <program xml:id="mucp_8_6_ac_a_editor" language="cpp"><input><![CDATA[
+    <program xml:id="mucp_8_6_ac_a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -344,7 +344,7 @@ void unicornPower (Unicorn& u) {
 
             
 
-<exercise label="mucp_8_6_ac_a"><statement><p>Below is one way to write the unicornPower function.</p></statement><program xml:id="mucp_8_6_ac_a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+<exercise label="mucp_8_6_ac_a"><statement><p>Below is one way to write the unicornPower function.</p></statement><program xml:id="mucp_8_6_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -371,7 +371,7 @@ void unicornPower (Unicorn& u) {
                     structure will be a nested structure with the instance variables name
                     and Address address in that order.</p>
     </statement>
-    <program interactive="activecode" language="cpp" xml:id="mucp_8_7_ac_q_editor">
+    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_8_7_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -385,7 +385,7 @@ using namespace std;
                 Below is one way to define the Address and Employee structs.
 
     
-    <program xml:id="mucp_8_7_ac_a_editor" language="cpp"><input><![CDATA[
+    <program xml:id="mucp_8_7_ac_a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -403,7 +403,7 @@ struct Employee {
 
             
 
-<exercise label="mucp_8_7_ac_a"><statement><p>Below is one way to define the <c>Address</c> and <c>Employee</c> structs.</p></statement><program xml:id="mucp_8_7_ac_a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+<exercise label="mucp_8_7_ac_a"><statement><p>Below is one way to define the <c>Address</c> and <c>Employee</c> structs.</p></statement><program xml:id="mucp_8_7_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -426,7 +426,7 @@ struct Employee {
                     an Employee as a parameter and should print out the information of the employee in the
                     following format: name (id) lives at houseNumber in state, postalAddress.</p>
     </statement>
-    <program interactive="activecode" language="cpp" xml:id="mucp_8_8_ac_q_editor">
+    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_8_8_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -440,7 +440,7 @@ using namespace std;
                 Below is one way to write the printAddress function
 
     
-    <program xml:id="mucp_8_8_ac_a_editor" language="cpp"><input><![CDATA[
+    <program xml:id="mucp_8_8_ac_a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -464,7 +464,7 @@ void printAddress (Employee e) {
 
             
 
-<exercise label="mucp_8_8_ac_a"><statement><p>Below is one way to write the printAddress function</p></statement><program xml:id="mucp_8_8_ac_a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+<exercise label="mucp_8_8_ac_a"><statement><p>Below is one way to write the printAddress function</p></statement><program xml:id="mucp_8_8_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -493,7 +493,7 @@ void printAddress (Employee e) {
                     Let's write the code for the <c>updateAddress</c> function. updateAddress takes an
                     Employee and a new Address as parameters and sets the employee's address to the new address.</p>
     </statement>
-    <program interactive="activecode" language="cpp" xml:id="mucp_8_9_ac_q_editor">
+    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_8_9_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -507,7 +507,7 @@ using namespace std;
                 Below is one way to write the updateAddress function.
 
     
-    <program xml:id="mucp_8_9_ac_a_editor" language="cpp"><input><![CDATA[
+    <program xml:id="mucp_8_9_ac_a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -529,7 +529,7 @@ void updateAdress (Employee& e, Address a) {
 
             
 
-<exercise label="mucp_8_9_ac_a"><statement><p>Below is one way to write the <c>updateAddress</c> function.</p></statement><program xml:id="mucp_8_9_ac_a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+<exercise label="mucp_8_9_ac_a"><statement><p>Below is one way to write the <c>updateAddress</c> function.</p></statement><program xml:id="mucp_8_9_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -557,7 +557,7 @@ void updateAdress (Employee& e, Address a) {
                     name, house number, state, and postal code. It then returns an Employee object with
                     the stored data. Declare all variables before prompting the user.</p>
     </statement>
-    <program interactive="activecode" language="cpp" xml:id="mucp_8_10_ac_q_editor">
+    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_8_10_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -571,7 +571,7 @@ using namespace std;
                 Below is one way to write the storeEmployeeData function.
 
     
-    <program xml:id="mucp_8_10_ac_a_editor" language="cpp"><input><![CDATA[
+    <program xml:id="mucp_8_10_ac_a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -602,7 +602,7 @@ void storeEmployeeData() {
 
             
 
-<exercise label="mucp_8_10_ac_a"><statement><p>Below is one way to write the <c>storeEmployeeData</c> function.</p></statement><program xml:id="mucp_8_10_ac_a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+<exercise label="mucp_8_10_ac_a"><statement><p>Below is one way to write the <c>storeEmployeeData</c> function.</p></statement><program xml:id="mucp_8_10_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 

@@ -12,7 +12,7 @@
                     in <c>main</c>. Run and test your code! Select the Parsonsprob tab for hints
                     for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_5_AC_2q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_5_AC_2q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 #include <bits/stdc++.h>
@@ -88,7 +88,7 @@ TEST_CASE("convertToBinary function") {
                     For example, <c>birthSeason (7, 5)</c> returns <q>summer</q> since July 5 is in the summer. Select the Parsonsprob tab
                     for hints for the construction of the code. Run and test your code!</p>
         </statement>
-        <program xml:id="cp_5_AC_4q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_5_AC_4q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -183,7 +183,7 @@ TEST_CASE("birthSeason function: winter") {
                     factor of both <c>num1</c> and <c>num2</c>, and returns <c>false</c> otherwise. Run and test your code!
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_5_AC_6q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_5_AC_6q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -264,7 +264,7 @@ TEST_CASE("isCommonFactor function: false cases") {
                     the mushroom is poisonous and <c>false</c> otherwise. Run and test your code!
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_5_AC_8q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_5_AC_8q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -357,7 +357,7 @@ TEST_CASE("isPoisonous function: false cases") {
                     would return 10. Use recursion. Run and test your code! Select the Parsonsprob
                     tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_5_AC_10q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_5_AC_10q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;

@@ -11,7 +11,7 @@
                     The conversion rate is 1 USD equals 105.42 Japanese yen.
                     Write the code that performs this conversion.</p>
     </statement>
-    <program interactive="activecode" language="cpp" xml:id="mucp_5_1_ac_q_editor">
+    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_5_1_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -36,7 +36,7 @@ TEST_CASE("dollarToYen function") {
                 Below is one way to write the function. You need to make sure your function's output accounts for decimal values.
 
     
-    <program xml:id="mucp_5_1_ac_a_editor" language="cpp"><input><![CDATA[
+    <program xml:id="mucp_5_1_ac_a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -56,7 +56,7 @@ TEST_CASE("dollarToYen function") {
 
             
 
-<exercise label="mucp_5_1_ac_a"><statement><p>Below is one way to write the function. You need to make sure your function's output accounts for decimal values.</p></statement><program xml:id="mucp_5_1_ac_a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+<exercise label="mucp_5_1_ac_a"><statement><p>Below is one way to write the function. You need to make sure your function's output accounts for decimal values.</p></statement><program xml:id="mucp_5_1_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -85,7 +85,7 @@ TEST_CASE("dollarToYen function") {
                     priceWithTax calculates the price after tax and returns it.
                     For example, priceWithTax(20,6) returns 21.2.</p>
     </statement>
-    <program interactive="activecode" language="cpp" xml:id="mucp_5_2_ac_q_editor">
+    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_5_2_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -110,7 +110,7 @@ TEST_CASE("priceWithTax function") {
                 Below is one way to write the function. You need to make sure your function returns cent values
 
     
-    <program xml:id="mucp_5_2_ac_a_editor" language="cpp"><input><![CDATA[
+    <program xml:id="mucp_5_2_ac_a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -130,7 +130,7 @@ TEST_CASE("priceWithTax function") {
 
             
 
-<exercise label="mucp_5_2_ac_a"><statement><p>Below is one way to write the function. You need to make sure your function returns cent values</p></statement><program xml:id="mucp_5_2_ac_a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+<exercise label="mucp_5_2_ac_a"><statement><p>Below is one way to write the function. You need to make sure your function returns cent values</p></statement><program xml:id="mucp_5_2_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -158,7 +158,7 @@ TEST_CASE("priceWithTax function") {
                     is a &#x2018;C', and anything under a 70 is an &#x2018;F'. Write the necessary code to
                     convert a grade percentage to a letter grade.</p>
     </statement>
-    <program interactive="activecode" language="cpp" xml:id="mucp_5_3_ac_q_editor">
+    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_5_3_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -183,7 +183,7 @@ TEST_CASE("percentToLetter function") {
                 Below is one way to write the function. Your syntax for the letter returns much match the return variable type of the function
 
     
-    <program xml:id="mucp_5_3_ac_a_editor" language="cpp"><input><![CDATA[
+    <program xml:id="mucp_5_3_ac_a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -214,7 +214,7 @@ TEST_CASE("percentToLetter function") {
 
             
 
-<exercise label="mucp_5_3_ac_a"><statement><p>Below is one way to write the function. Your syntax for the letter returns much match the return variable type of the function</p></statement><program xml:id="mucp_5_3_ac_a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+<exercise label="mucp_5_3_ac_a"><statement><p>Below is one way to write the function. Your syntax for the letter returns much match the return variable type of the function</p></statement><program xml:id="mucp_5_3_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -251,7 +251,7 @@ TEST_CASE("percentToLetter function") {
                     area of the triangle using the formula 1/2 * base * height.
                     Write the necessary code to find the area of a triangle.</p>
     </statement>
-    <program interactive="activecode" language="cpp" xml:id="mucp_5_4_ac_q_editor">
+    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_5_4_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -276,7 +276,7 @@ TEST_CASE("triangleArea function") {
                 Below is one way to write the function. Your function must take in more than integer base and height values and return more than integer area values.
 
     
-    <program xml:id="mucp_5_4_ac_a_editor" language="cpp"><input><![CDATA[
+    <program xml:id="mucp_5_4_ac_a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -296,7 +296,7 @@ TEST_CASE("triangleArea function") {
 
             
 
-<exercise label="mucp_5_4_ac_a"><statement><p>Below is one way to write the function. Your function must take in more than integer base and height values and return more than integer area values.</p></statement><program xml:id="mucp_5_4_ac_a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+<exercise label="mucp_5_4_ac_a"><statement><p>Below is one way to write the function. Your function must take in more than integer base and height values and return more than integer area values.</p></statement><program xml:id="mucp_5_4_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -322,7 +322,7 @@ TEST_CASE("triangleArea function") {
                     volume of the cylinder using the formula pi * radius * radius * height.
                     Write the necessary code to find the volume of a cylinder.</p>
     </statement>
-    <program interactive="activecode" language="cpp" xml:id="mucp_5_5_ac_q_editor">
+    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_5_5_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -348,7 +348,7 @@ TEST_CASE("cylinderVolume function") {
                 Below is one way to write the function. Your function should incorporate the value for pi.
 
     
-    <program xml:id="mucp_5_5_ac_a_editor" language="cpp"><input><![CDATA[
+    <program xml:id="mucp_5_5_ac_a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -370,7 +370,7 @@ TEST_CASE("cylinderVolume function") {
 
             
 
-<exercise label="mucp_5_5_ac_a"><statement><p>Below is one way to write the function. Your function should incorporate the value for pi.</p></statement><program xml:id="mucp_5_5_ac_a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+<exercise label="mucp_5_5_ac_a"><statement><p>Below is one way to write the function. Your function should incorporate the value for pi.</p></statement><program xml:id="mucp_5_5_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -401,7 +401,7 @@ TEST_CASE("cylinderVolume function") {
                     it isn't a guinpen and it isn't a kenchic, then it's an ooseg. Write the necessary
                     code to classify these eggs.</p>
     </statement>
-    <program interactive="activecode" language="cpp" xml:id="mucp_5_6_ac_q_editor">
+    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_5_6_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -427,7 +427,7 @@ TEST_CASE("birdType function") {
                 Below is one way to write the function.
 
     
-    <program xml:id="mucp_5_6_ac_a_editor" language="cpp"><input><![CDATA[
+    <program xml:id="mucp_5_6_ac_a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -456,7 +456,7 @@ TEST_CASE("birdType function") {
 
             
 
-<exercise label="mucp_5_6_ac_a"><statement><p>Below is one way to write the function.</p></statement><program xml:id="mucp_5_6_ac_a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+<exercise label="mucp_5_6_ac_a"><statement><p>Below is one way to write the function.</p></statement><program xml:id="mucp_5_6_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -491,7 +491,7 @@ TEST_CASE("birdType function") {
                     num is a double digit number and returns false otherwise.
                     Write the necessary code to determine if a number is a double digit number.</p>
     </statement>
-    <program interactive="activecode" language="cpp" xml:id="mucp_5_7_ac_q_editor">
+    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_5_7_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -516,7 +516,7 @@ TEST_CASE("isDoubleDigit function") {
                 Below is one way to write the function. Your function must account for numbers that are greater than 100.
 
     
-    <program xml:id="mucp_5_7_ac_a_editor" language="cpp"><input><![CDATA[
+    <program xml:id="mucp_5_7_ac_a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -541,7 +541,7 @@ TEST_CASE("isDoubleDigit function") {
 
             
 
-<exercise label="mucp_5_7_ac_a"><statement><p>Below is one way to write the function. Your function must account for numbers that are greater than 100.</p></statement><program xml:id="mucp_5_7_ac_a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+<exercise label="mucp_5_7_ac_a"><statement><p>Below is one way to write the function. Your function must account for numbers that are greater than 100.</p></statement><program xml:id="mucp_5_7_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -572,7 +572,7 @@ TEST_CASE("isDoubleDigit function") {
                     a is greater than b, -1 if a is less than b and 0 if they are equal.
                     Write the necessary code to compare two integers.</p>
     </statement>
-    <program interactive="activecode" language="cpp" xml:id="mucp_5_8_ac_q_editor">
+    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_5_8_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -598,7 +598,7 @@ TEST_CASE("Compare function") {
                 Below is one way to write the function. Your function must account for equal integers.
 
     
-    <program xml:id="mucp_5_8_ac_a_editor" language="cpp"><input><![CDATA[
+    <program xml:id="mucp_5_8_ac_a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -627,7 +627,7 @@ TEST_CASE("Compare function") {
 
             
 
-<exercise label="mucp_5_8_ac_a"><statement><p>Below is one way to write the function. Your function must account for equal integers.</p></statement><program xml:id="mucp_5_8_ac_a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+<exercise label="mucp_5_8_ac_a"><statement><p>Below is one way to write the function. Your function must account for equal integers.</p></statement><program xml:id="mucp_5_8_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -663,7 +663,7 @@ TEST_CASE("Compare function") {
                     and returns false otherwise. Write the necessary code to deternube is a number
                     is a factor of another.</p>
     </statement>
-    <program interactive="activecode" language="cpp" xml:id="mucp_5_9_ac_q_editor">
+    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_5_9_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -689,7 +689,7 @@ TEST_CASE("isFactor function") {
                 Below is one way to write the function. The modulo (%) operator performs the necessary calculation.
 
     
-    <program xml:id="mucp_5_9_ac_a_editor" language="cpp"><input><![CDATA[
+    <program xml:id="mucp_5_9_ac_a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -715,7 +715,7 @@ TEST_CASE("isFactor function") {
 
             
 
-<exercise label="mucp_5_9_ac_a"><statement><p>Below is one way to write the function. The modulo (%) operator performs the necessary calculation.</p></statement><program xml:id="mucp_5_9_ac_a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+<exercise label="mucp_5_9_ac_a"><statement><p>Below is one way to write the function. The modulo (%) operator performs the necessary calculation.</p></statement><program xml:id="mucp_5_9_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -747,7 +747,7 @@ TEST_CASE("isFactor function") {
                     perfect square and returns false otherwise. Write the necessary code
                     to determine if a number is a perfect square.</p>
     </statement>
-    <program interactive="activecode" language="cpp" xml:id="mucp_5_10_ac_q_editor">
+    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_5_10_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
 #include <math.h>
@@ -774,7 +774,7 @@ TEST_CASE("isPerfectSquare function") {
                 Below is one way to write the function.
 
     
-    <program xml:id="mucp_5_10_ac_a_editor" language="cpp"><input><![CDATA[
+    <program xml:id="mucp_5_10_ac_a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <math.h>
 using namespace std;
@@ -802,7 +802,7 @@ TEST_CASE("isPerfectSquare function") {
 
             
 
-<exercise label="mucp_5_10_ac_a"><statement><p>Below is one way to write the function.</p></statement><program xml:id="mucp_5_10_ac_a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+<exercise label="mucp_5_10_ac_a"><statement><p>Below is one way to write the function.</p></statement><program xml:id="mucp_5_10_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <math.h>
 using namespace std;
@@ -840,7 +840,7 @@ TEST_CASE("isPerfectSquare function") {
                     the number of cells doubles to four. Use recursion. Write the
                     necesary code to count the bacteria.</p>
     </statement>
-    <program interactive="activecode" language="cpp" xml:id="mucp_5_11_ac_q_editor">
+    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_5_11_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -865,7 +865,7 @@ TEST_CASE("countBacteria function") {
                 Below is one way to write the function.
 
     
-    <program xml:id="mucp_5_11_ac_a_editor" language="cpp"><input><![CDATA[
+    <program xml:id="mucp_5_11_ac_a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -890,7 +890,7 @@ TEST_CASE("countBacteria function") {
 
             
 
-<exercise label="mucp_5_11_ac_a"><statement><p>Below is one way to write the function.</p></statement><program xml:id="mucp_5_11_ac_a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+<exercise label="mucp_5_11_ac_a"><statement><p>Below is one way to write the function.</p></statement><program xml:id="mucp_5_11_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 

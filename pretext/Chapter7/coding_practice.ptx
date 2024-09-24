@@ -10,7 +10,7 @@
                     if the letters in the front are equal to the ones in the back until we reach the
                     middle of the string.
 
-    <program xml:id="cp_7_AC_1a" language="cpp"><input><![CDATA[
+    <program xml:id="cp_7_AC_1a" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <cctype>
 using namespace std;
@@ -67,7 +67,7 @@ TEST_CASE("factorial function") {
                     repeatedly search for instances of word in input. Once found, we replace
                     the length of the word with asterisks.
 
-    <program xml:id="cp_7_AC_3a" language="cpp"><input><![CDATA[
+    <program xml:id="cp_7_AC_3a" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -112,7 +112,7 @@ int main() {
                     &#x2018;A' and &#x2018;N', we use character operations to add 13 to each letter. Otherwise,
                     we subtract 13 from each letter. We return the encrypted message at the end.
 
-    <program xml:id="cp_7_AC_5a" language="cpp"><input><![CDATA[
+    <program xml:id="cp_7_AC_5a" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <cctype>
 using namespace std;
@@ -170,7 +170,7 @@ int main() {
                     go through all the chars in the string. We capitalize the first character
                     and all characters following a space using toupper. At the end, we return the string.
 
-    <program xml:id="cp_7_AC_7a" language="cpp"><input><![CDATA[
+    <program xml:id="cp_7_AC_7a" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <cctype>
 using namespace std;
@@ -220,7 +220,7 @@ int main() {
                     If the length is greater than the max, length becomes the new max and we update the longest word.
                     This keeps repeating until we reach the end of the string, and the longest word is returned.
 
-    <program xml:id="cp_7_AC_9a" language="cpp"><input><![CDATA[
+    <program xml:id="cp_7_AC_9a" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 

@@ -139,7 +139,7 @@ Set::Set (int n)
 int index2 = cities.add (city2);</pre>
   <p>I modified <c>processLine</c> to take the <c>cities</c> object as a second
             parameter.</p>
-  <program xml:id="c15_7" interactive="activecode" language="cpp">
+  <program xml:id="c15_7" interactive="activecode" language="cpp" line-numbers="yes">
     <input><![CDATA[
 #include <iostream>
 #include <string>

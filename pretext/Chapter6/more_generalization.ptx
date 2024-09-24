@@ -61,7 +61,7 @@ void printMultTable (int high) {
             multiple sizes by simply changing the parameter passed into <c>printMultTable</c>.
             Run the active code to see what happens!</p>
     </statement>
-    <program xml:id="more_generalization_AC_1_editor" interactive="activecode" language="cpp">
+    <program xml:id="more_generalization_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -114,7 +114,7 @@ int main() {
             <c>printMultTable</c> with <c>printMultiples (i, i)</c>.
             Run the active code to see what happens!</p>
     </statement>
-    <program xml:id="more_generalization_AC_2_editor" interactive="activecode" language="cpp">
+    <program xml:id="more_generalization_AC_2_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;

@@ -10,7 +10,7 @@
                     appears in a given string. <c>countWord</c> should take two strings <c>input</c> and <c>word</c> as parameters and return an <c>int</c>.
                     Feel free to use the <c>stringToLower</c> function we wrote earlier. Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_7_AC_2q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_7_AC_2q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 #include "ctype.h"
@@ -109,7 +109,7 @@ int main() {
                     The output should be:</p>
           <pre>Gucci , Gucci , Gucci , Gucci</pre>
         </statement>
-        <program xml:id="cp_7_AC_4q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_7_AC_4q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 #include <string>
@@ -182,7 +182,7 @@ int main() {
                     and returns the reversed <c>string</c>. Run and test your code! Select the Parsonsprob
                     tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_7_AC_6q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_7_AC_6q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -252,7 +252,7 @@ TEST_CASE("reverseWord function") {
                     are vowels. Run and test your code! Select the Parsonsprob tab for hints for
                     the construction of the code.</p>
         </statement>
-        <program xml:id="cp_7_AC_8q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_7_AC_8q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -329,7 +329,7 @@ TEST_CASE("countVowels function") {
                     Feel free to use any <c>string</c> functions you'd like. Run and test your code!
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_7_AC_10q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_7_AC_10q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 #include <string>

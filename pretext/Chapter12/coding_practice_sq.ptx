@@ -9,7 +9,7 @@
                     which should store information about its height and width and contain a matrix
                     of <c>Pixel</c>s. Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_12_AC_2q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_12_AC_2q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 #include <vector>
@@ -70,7 +70,7 @@ struct Pixel {
                     at the end of each row. Use the <c>printPixel</c> function we created previously.
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_12_AC_4q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_12_AC_4q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 #include <vector>
@@ -158,7 +158,7 @@ void Pixel::printPixel() {
                     <c>Pixel</c>s at those locations. Note that these indices are 0-indexed, unlike the
                     previous <c>cropIndex</c> parameters. Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_12_AC_6q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_12_AC_6q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 #include <vector>
@@ -259,7 +259,7 @@ void Image::cropImage(int startRow, int stopRow, int startCol, int stopCol) {
                     reverts an image to be right side up.
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_12_AC_8q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_12_AC_8q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 #include <vector>
@@ -397,7 +397,7 @@ void Image::flipHorizontal() {
                     function <c>clearImage</c>, which sets the color of every <c>Pixel</c>
                     to white. Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_12_AC_10q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_12_AC_10q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 #include <vector>

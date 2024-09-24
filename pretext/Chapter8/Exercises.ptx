@@ -4,7 +4,7 @@
   <exercise label="mce_8_1">
     <statement>
       <p>Which of the following are compound values?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input>
 struct Student {
   string firstName, lastName;
@@ -95,7 +95,7 @@ int main() {
   <exercise label="mce_8_2">
     <statement>
       <p>What is wrong with the following <c>struct</c> definition?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input>
 struct Chicken {
   string name;
@@ -143,7 +143,7 @@ struct Chicken {
   <exercise label="mce_8_3">
     <statement>
       <p>How do we assign the value of 4 to the instance variable <c>numLegs</c> of the <c>Dog</c> object?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input>
 struct Dog {
   string name;
@@ -203,7 +203,7 @@ int main() {
   <exercise label="mce_8_4">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 struct Cube {
   int edgeLength;
@@ -269,7 +269,7 @@ int main() {
   <exercise label="mce_8_5">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 struct Cube {
   int edgeLength;
@@ -328,7 +328,7 @@ int main() {
   <exercise label="mce_8_6">
     <statement>
       <p>What is the value of <c>s.coffeeCupFull</c> when the code is done running?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input>
 struct Student {
   string name;
@@ -387,7 +387,7 @@ int main() {
   <exercise label="mce_8_7">
     <statement>
       <p>What is the value of <c>r.batteryLevelPercentage</c> when the code is done running?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input>
 struct Robot {
   string name;
@@ -450,7 +450,7 @@ int main() {
   <exercise label="mce_8_8">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 void foo (int& x, int y) {
   x = x + 4;
@@ -515,7 +515,7 @@ int main() {
   <exercise label="mce_8_9">
     <statement>
       <p>If the user inputted the string <q>R2-D2</q>, what is the output of the code below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 int main() {
   string name;
@@ -563,7 +563,7 @@ int main() {
   <exercise label="mce_8_10">
     <statement>
       <p>If the user inputted the string <q>C-3PO</q>, what is the output of the code below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 int main() {
   char name;
@@ -611,7 +611,7 @@ int main() {
   <exercise label="mce_8_11">
     <statement>
       <p>If the user inputted the string <q>Darth Vader</q>, what is the output of the code below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 int main() {
   string quote;

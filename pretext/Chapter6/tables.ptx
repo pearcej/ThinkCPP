@@ -25,7 +25,7 @@
       <p>The active code below outputs a sequence of values in the left column
             and their logarithms in the right column.</p>
     </statement>
-    <program xml:id="tables_AC_1_editor" interactive="activecode" language="cpp">
+    <program xml:id="tables_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <cmath>
@@ -91,7 +91,7 @@ int main() {
       <p>If we wanted to find the logarithms of other powers of two,
             we could modify the program like this. Run the active code below.</p>
     </statement>
-    <program xml:id="tables_AC_2_editor" interactive="activecode" language="cpp">
+    <program xml:id="tables_AC_2_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <cmath>
@@ -130,7 +130,7 @@ int main() {
             up to 65536, which is <math>2^{16}</math>. If you get stuck, you can
             reveal the extra problem at the end for help.</p>
     </statement>
-    <program xml:id="tables_AC_3_editor" interactive="activecode" language="cpp">
+    <program xml:id="tables_AC_3_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <cmath>
@@ -223,7 +223,7 @@ int main() {
   <exercise label="tables_4">
     <statement>
       <p>How can we modify the code below to print out a table of the first five odd numbers and their perfect cubes?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 int main() {
   int x = 1;

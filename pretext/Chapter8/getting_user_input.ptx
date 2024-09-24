@@ -30,7 +30,7 @@ cin &gt;&gt; x;</pre>
       <p>The active code below is an example of what getting input from the
             user might look like. Feel free to change 42 to other values!</p>
     </statement>
-    <program xml:id="getting_user_input_AC_1_editor" interactive="activecode" language="cpp">
+    <program xml:id="getting_user_input_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -86,7 +86,7 @@ cout &lt;&lt; name &lt;&lt; endl;</pre>
             user might look like using <c>getline</c>. Feel free to change <q>Harry Potter</q>
             to other values!</p>
     </statement>
-    <program xml:id="getting_user_input_AC_2_editor" interactive="activecode" language="cpp">
+    <program xml:id="getting_user_input_AC_2_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <string>
@@ -144,7 +144,7 @@ int main () {
   <exercise label="getting_user_input_2">
     <statement>
       <p>The user types in <c>John Doe</c>. What prints?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 int main() {
   char name;
@@ -191,7 +191,7 @@ int main() {
   <exercise label="getting_user_input_3">
     <statement>
       <p>The user types in <c>John Doe</c>. What prints?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 int main() {
   string name;
@@ -238,7 +238,7 @@ int main() {
   <exercise label="getting_user_input_4">
     <statement>
       <p>The user types in <c>John Doe</c>. What prints?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 int main() {
   string name;
@@ -285,7 +285,7 @@ int main() {
   <exercise label="getting_user_input_5">
     <statement>
       <p>The user types in <c>John Doe</c> and then <c>530 S State St.</c>. What prints?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 int main() {
   string first_name;

@@ -52,7 +52,7 @@
   <exercise label="mce_15_2">
     <statement>
       <p>The code below reads data from a file called <c>input.txt</c>. What is wrong with the following code?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 #include <iostream>
 #include <fstream>
@@ -192,7 +192,7 @@ int main() {
   <exercise label="mce_15_5">
     <statement>
       <p>What are the contents of the output file <c>output.txt</c> after running the code below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 #include <iostream>
 #include <fstream>
@@ -251,7 +251,7 @@ int main() {
       <p>The file <c>scores.txt</c> contains data about the roster number and test scores of students in a class.
             The output file <c>averages.txt</c> should store each student's roster number and average test score.
             What should replace the question marks?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 #include <iostream>
 #include <fstream>
@@ -325,7 +325,7 @@ int main() {
   <exercise label="mce_15_7">
     <statement>
       <p>What does the following code do?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 #include <iostream>
 #include <string>
@@ -469,7 +469,7 @@ int main() {
   <exercise label="mce_15_10">
     <statement>
       <p>What is the output of the following code?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 #include <iostream>
 #include <vector>

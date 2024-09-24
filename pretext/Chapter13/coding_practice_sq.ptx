@@ -11,7 +11,7 @@
                     Print out this information in the following format: Planet <c>planet</c> has <c>numDays</c> number of days in
                     a year! Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_13_AC_2q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_13_AC_2q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -110,7 +110,7 @@ int main() {
                     generates a random value between low and high, inclusive. Be sure to include the relevant libraries!
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_13_AC_4q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_13_AC_4q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 // Add any relevant libraries here.
@@ -164,7 +164,7 @@ using namespace std;
                     shuffles it using <c>randomInt</c> and <c>swapValues</c>, and returns the shuffled <c>vector</c>.
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_13_AC_6q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_13_AC_6q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 #include <vector>
@@ -225,7 +225,7 @@ using namespace std;
                     <c>printBoard</c>. Insert tabs between each value in each row to make the board
                     print out neater. Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_13_AC_8q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_13_AC_8q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 #include <vector>
@@ -355,7 +355,7 @@ void BingoBoard::makeBoard() {
                     is already sorted. Write the function <c>fastBubbleSort</c>, which is <c>bubbleSort</c> with this
                     modification. Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_13_AC_10q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_13_AC_10q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 #include <vector>

@@ -8,7 +8,7 @@
                 Below is one way to implement the program. The planets in our solar system
                     are Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune.
 
-    <program xml:id="cp_13_AC_1a" language="cpp"><input><![CDATA[
+    <program xml:id="cp_13_AC_1a" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -35,7 +35,7 @@ enum Planet { MERCURY = 1, VENUS, EARTH, MARS, JUPITER, SATURN, URANUS, NEPTUNE 
                 Below is one way to implement the program. We declare the Space and BingoBoard struct
                     and create the instance variables in order. Make sure to set is_filled to false!
 
-    <program xml:id="cp_13_AC_3a" language="cpp"><input><![CDATA[
+    <program xml:id="cp_13_AC_3a" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -72,7 +72,7 @@ struct BingoBoard {
                     replace the value at index2 with the value of temp. Make sure to pass
                     vec by reference!
 
-    <program xml:id="cp_13_AC_5a" language="cpp"><input><![CDATA[
+    <program xml:id="cp_13_AC_5a" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -110,7 +110,7 @@ void swapValues (vector<int> &vec, int index1, int index2) {
                     random vector. Lastly, we set the middle Space to 0 and
                     set its is_filled to true.
 
-    <program xml:id="cp_13_AC_7a" language="cpp"><input><![CDATA[
+    <program xml:id="cp_13_AC_7a" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <vector>
 #include <cstdlib>
@@ -204,7 +204,7 @@ vector&lt;int&gt; generateRandVec() {
                     our inner loop only goes up to vec.size() - 1 - i. If the next element
                     is greater than the current element, we swap the two elements.
 
-    <program xml:id="cp_13_AC_9a" language="cpp"><input><![CDATA[
+    <program xml:id="cp_13_AC_9a" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;

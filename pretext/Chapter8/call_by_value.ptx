@@ -20,7 +20,7 @@
       <p>Take a look at the active code below. Notice from the output of the code below how the
             function <c>addTwo</c> changes the instance variables, but not on <c>blank</c> itself.</p>
     </statement>
-    <program xml:id="call_by_value_AC_1_editor" interactive="activecode" language="cpp">
+    <program xml:id="call_by_value_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -44,7 +44,7 @@ int main() {
   <exercise label="call_by_value_1">
     <statement>
       <p>What will print?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 int addTwo(int x) {
   cout << x << " ";
@@ -107,7 +107,7 @@ int main() {
   <exercise label="call_by_value_2">
     <statement>
       <p>What will print?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 struct Point {
   int x, y;

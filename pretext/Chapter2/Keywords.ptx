@@ -115,7 +115,7 @@
     <statement>
       <p>Fix the code below so that it runs without errors.  Hint: you might need to change the names of some variables.</p>
     </statement>
-    <program xml:id="keywords_4_editor" interactive="activecode" language="cpp">
+    <program xml:id="keywords_4_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -129,10 +129,6 @@ int main () {
     return 0;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
 </section>

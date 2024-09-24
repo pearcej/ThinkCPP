@@ -25,7 +25,7 @@
     <statement>
       <p>The active code below prints out the cards in a deck using the loop from the previous section.</p>
     </statement>
-    <program xml:id="deck_constructor_AC_1_editor" interactive="activecode" language="cpp">
+    <program xml:id="deck_constructor_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <string>

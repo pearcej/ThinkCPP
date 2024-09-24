@@ -8,7 +8,7 @@
       <p>This program outputs the current time, according to the values you
             provide for hour and minute.</p>
     </statement>
-    <program xml:id="output_vars_AC_1_editor" interactive="activecode" language="cpp">
+    <program xml:id="output_vars_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -49,7 +49,7 @@ int main () {
       <p>This program does the same thing as the previous, but the print
             statements have been condensed to one line.  This is better style.</p>
     </statement>
-    <program xml:id="output_vars_AC_2_editor" interactive="activecode" language="cpp">
+    <program xml:id="output_vars_AC_2_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;

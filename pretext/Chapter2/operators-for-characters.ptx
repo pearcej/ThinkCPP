@@ -9,7 +9,7 @@
             the character &#x2018;a' to ASCII, adding 1 to this value, then converting the
             result from ASCIIs back to a character.</p>
     </statement>
-    <program xml:id="char_operations_AC_1_editor" interactive="activecode" language="cpp">
+    <program xml:id="char_operations_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -33,7 +33,7 @@ int main () {
       <p>This program performs automatic type converstion.  It converts &#x2018;a'
             to its ASCII value.</p>
     </statement>
-    <program xml:id="char_operations_AC_2_editor" interactive="activecode" language="cpp">
+    <program xml:id="char_operations_AC_2_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;

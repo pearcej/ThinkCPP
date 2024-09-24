@@ -9,7 +9,7 @@
         <statement>
           <p>Fix the code below so that it prints <q>2 elephants</q>. Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="functions_a2_editor" interactive="activecode" language="cpp">
+        <program xml:id="functions_a2_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -74,7 +74,7 @@ int main () {
           <p>Finish the code below so that it calculates the common log of <c>a</c> minus the <em>natural</em> log of <c>a</c> and prints the difference. You will need to use cmath functions.
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="functions_a4_editor" interactive="activecode" language="cpp">
+        <program xml:id="functions_a4_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 #include <cmath>
@@ -136,7 +136,7 @@ int main () {
           <p>Write a function called <c>intDivision</c> that takes two doubles as parameters and prints the quotient of the <term>integer division</term> of the first number divided by the second.  Be sure to include any necessary headers.
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="functions_a6_editor" interactive="activecode" language="cpp">
+        <program xml:id="functions_a6_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -199,7 +199,7 @@ int main () {
           <p>Write a function called <c>volumePrism</c> that takes three <c>double</c> sidelengths as parameters, and calculates and prints the volume of a the rectangular prism.  Be sure to include any necessary headers.
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="functions_a8_editor" interactive="activecode" language="cpp">
+        <program xml:id="functions_a8_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -257,7 +257,7 @@ int main () {
           <p>Write a function called <c>volumeSphere</c> that takes a <c>double</c> radius as a parameter, and calculates and prints the volume of a sphere with that radius.  Use 3.14 for <c>pi</c>.  Be sure to include any necessary headers.
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="functions_a10_editor" interactive="activecode" language="cpp">
+        <program xml:id="functions_a10_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;

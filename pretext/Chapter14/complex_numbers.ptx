@@ -99,7 +99,7 @@ public:
             object which is represented by three sides. In <c>main</c>, we print out the perimeter of
             the triangle, which should be 12.</p>
     </statement>
-    <program xml:id="fourteentwo_editor" interactive="activecode" language="cpp">
+    <program xml:id="fourteentwo_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -134,7 +134,7 @@ int main() {
             the interface the same. Now, <c>Triangle</c> is represented by two sides and the
             angle between them. Notice how our <c>main</c> function is the exact same as before.</p>
     </statement>
-    <program xml:id="fourteenthree_editor" interactive="activecode" language="cpp">
+    <program xml:id="fourteenthree_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <cmath>

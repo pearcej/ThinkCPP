@@ -12,7 +12,7 @@
                     <q>dlrow olleh</q> to the terminal. Include proper file error checking.
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_15_AC_2q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_15_AC_2q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 #include <fstream>
@@ -102,7 +102,7 @@ unwilling to postpone, and one we intend to win, and the others, too.</pre>
                     To simulate what your output file would look like, the contents of your output file
                     will be displayed on the terminal. Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_15_AC_4q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_15_AC_4q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 #include <fstream>
@@ -211,7 +211,7 @@ int main() {
                     Include proper file error checking.
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_15_AC_6q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_15_AC_6q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 #include <fstream>
@@ -313,7 +313,7 @@ so much you could do anything?</pre>
                     Include proper file error checking.
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_15_AC_8q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_15_AC_8q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 #include <fstream>
@@ -413,7 +413,7 @@ That- that's about it.</pre>
                     The product of an mxn and an nxp matrix is an mxp matrix.
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_15_AC_10q_editor" interactive="activecode" language="cpp">
+        <program xml:id="cp_15_AC_10q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 #include <fstream>

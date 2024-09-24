@@ -34,7 +34,7 @@
             the Seven of Clubs is at index 6 and the King of Diamonds is at index -1.
             If you get stuck, you can reveal the extra problem at the end for help.</p>
     </statement>
-    <program xml:id="subdeck_cards_1_editor" interactive="activecode" language="cpp">
+    <program xml:id="subdeck_cards_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <string>

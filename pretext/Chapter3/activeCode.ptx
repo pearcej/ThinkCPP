@@ -7,7 +7,7 @@
     <statement>
       <p>Fix the errors in the code below so that it prints the area of a circle with radius 5.  Use cmath functions to get an accurate value for pi.</p>
     </statement>
-    <program interactive="activecode" language="cpp" xml:id="functions_a1q_editor">
+    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="functions_a1q_editor">
       <input><![CDATA[
 #include <iostream>
 #include <cmath>
@@ -32,7 +32,7 @@ int main () {
                 Below is one way to fix the program.  C++ doesn't use the ^ operator for exponents.  We can get the square of r by multiplying it by itself.  We call the function with an argument of 5.
 
     
-    <program xml:id="functions_a1a_editor" language="cpp"><input><![CDATA[
+    <program xml:id="functions_a1a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -46,7 +46,7 @@ void printArea(double r) {
 
             
 
-<exercise label="functions_a1a"><statement><p>Below is one way to fix the program.  C++ doesn't use the <c>^</c> operator for exponents.  We can get the square of <c>r</c> by multiplying it by itself.  We call the function with an argument of <c>5</c>.</p></statement><program xml:id="functions_a1a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+<exercise label="functions_a1a"><statement><p>Below is one way to fix the program.  C++ doesn't use the <c>^</c> operator for exponents.  We can get the square of <c>r</c> by multiplying it by itself.  We call the function with an argument of <c>5</c>.</p></statement><program xml:id="functions_a1a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -70,7 +70,7 @@ void printArea(double r) {
     <statement>
       <p>Fix the code below so that it prints <c>12 / 8 = 1.5.</c></p>
     </statement>
-    <program interactive="activecode" language="cpp" xml:id="functions_a3q_editor">
+    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="functions_a3q_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -95,7 +95,7 @@ int main () {
                 Below is one way to fix the program.  It's crucial that you input your arguments in the correct order so as to avoid a semantic error.  Also, it's important that you understand that when you divide two integers&#x2026; you will get an integer as a result.
 
     
-    <program xml:id="functions_a3a_editor" language="cpp"><input><![CDATA[
+    <program xml:id="functions_a3a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -112,7 +112,7 @@ int main () {
 
             
 
-<exercise label="functions_a3a"><statement><p>Below is one way to fix the program.  It's crucial that you input your arguments in the correct order so as to avoid a semantic error.  Also, it's important that you understand that when you divide two integers&#x2026; you will get an integer as a result.</p></statement><program xml:id="functions_a3a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+<exercise label="functions_a3a"><statement><p>Below is one way to fix the program.  It's crucial that you input your arguments in the correct order so as to avoid a semantic error.  Also, it's important that you understand that when you divide two integers&#x2026; you will get an integer as a result.</p></statement><program xml:id="functions_a3a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -139,7 +139,7 @@ int main () {
     <statement>
       <p>Finish the code below so that it prints <q>First Line</q>, a border, and <q>Second Line.</q> on three separate lines.</p>
     </statement>
-    <program interactive="activecode" language="cpp" xml:id="functions_a5q_editor">
+    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="functions_a5q_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -161,7 +161,7 @@ int main () {
                 Below is one way to complete the program.
 
     
-    <program xml:id="functions_a5a_editor" language="cpp"><input><![CDATA[
+    <program xml:id="functions_a5a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -178,7 +178,7 @@ int main () {
 
             
 
-<exercise label="functions_a5a"><statement><p>Below is one way to complete the program.</p></statement><program xml:id="functions_a5a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+<exercise label="functions_a5a"><statement><p>Below is one way to complete the program.</p></statement><program xml:id="functions_a5a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -205,7 +205,7 @@ int main () {
     <statement>
       <p>Write a function called gpaBoost that prints your GPA rounded up to the nearest point.  If your GPA is already at the nearest point, there is no rounding.  Be sure to include any necessary headers.</p>
     </statement>
-    <program interactive="activecode" language="cpp" xml:id="functions_a7q_editor">
+    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="functions_a7q_editor">
       <input><![CDATA[
 #include <iostream>
 #include <cmath>
@@ -227,7 +227,7 @@ int main () {
                 Below is one way to complete the program.  I used the ceil function from the cmath library, but you could have solved this problem without using any functions from cmath.
 
     
-    <program xml:id="functions_a7a_editor" language="cpp"><input><![CDATA[
+    <program xml:id="functions_a7a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -240,7 +240,7 @@ void gpaBoost (double GPA) {
 
             
 
-<exercise label="functions_a7a"><statement><p>Below is one way to complete the program.  I used the <c>ceil</c> function from the <c>cmath</c> library, but you could have solved this problem without using any functions from <c>cmath</c>.</p></statement><program xml:id="functions_a7a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+<exercise label="functions_a7a"><statement><p>Below is one way to complete the program.  I used the <c>ceil</c> function from the <c>cmath</c> library, but you could have solved this problem without using any functions from <c>cmath</c>.</p></statement><program xml:id="functions_a7a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -263,7 +263,7 @@ void gpaBoost (double GPA) {
     <statement>
       <p>Write a function called <c>tanD</c> that prints the tangent of an angle given as a <c>double</c> in degrees. Use 3.14 for pi.  Be sure to include any necessary headers.</p>
     </statement>
-    <program interactive="activecode" language="cpp" xml:id="functions_a9q_editor">
+    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="functions_a9q_editor">
       <input><![CDATA[
 #include <iostream>
 #include <cmath>
@@ -285,7 +285,7 @@ int main () {
                 Below is one way to complete the program.  You need to make sure to convert your angle to radians before doing any calculations with sinusoidal functions.
 
     
-    <program xml:id="functions_a9a_editor" language="cpp"><input><![CDATA[
+    <program xml:id="functions_a9a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -299,7 +299,7 @@ void tanDegrees (double degrees) {
 
             
 
-<exercise label="functions_a9a"><statement><p>Below is one way to complete the program.  You need to make sure to convert your angle to radians before doing any calculations with sinusoidal functions.</p></statement><program xml:id="functions_a9a_editor-1" interactive="activecode" language="cpp"><input><![CDATA[
+<exercise label="functions_a9a"><statement><p>Below is one way to complete the program.  You need to make sure to convert your angle to radians before doing any calculations with sinusoidal functions.</p></statement><program xml:id="functions_a9a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <cmath>
 using namespace std;

@@ -67,7 +67,7 @@ is greater than
       <p>Take a look at the active code below, which uses the <c>isGreater</c> function.
             Feel free to change the values of the cards.</p>
     </statement>
-    <program xml:id="c12_5_editor" interactive="activecode" language="cpp">
+    <program xml:id="c12_5_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <string>

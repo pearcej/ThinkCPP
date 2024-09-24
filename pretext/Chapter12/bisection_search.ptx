@@ -138,7 +138,7 @@ I found the card at index = -1</pre>
       <p>The code below searches finds the same card from the same deck we used on the previous page.
             This time, it uses bisection search to locate the card.</p>
     </statement>
-    <program xml:id="c12_9_editor" interactive="activecode" language="cpp">
+    <program xml:id="c12_9_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <string>

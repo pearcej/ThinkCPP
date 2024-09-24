@@ -4,7 +4,7 @@
   <exercise label="mce_7_1">
     <statement>
       <p>Which variables below is declared as a <c>string</c> type?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input>
 int main() {
   int x = 0;
@@ -93,7 +93,7 @@ int main() {
   <exercise label="mce_7_2">
     <statement>
       <p>What value should replace the question mark to output the character &#x2018;p'?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 int main() {
   string quote = "Not my tempo.";
@@ -140,7 +140,7 @@ int main() {
   <exercise label="mce_7_3">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 int main() {
   string quote = "I love you 3000.";
@@ -196,7 +196,7 @@ int main() {
   <exercise label="mce_7_4">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 int main() {
   string quote = "Look at me. I'm the captain now.";
@@ -252,7 +252,7 @@ int main() {
   <exercise label="mce_7_5">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 int main() {
   string quote = "With great power comes great responsiblity.";
@@ -305,7 +305,7 @@ int main() {
   <exercise label="mce_7_6">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 int main() {
   string quote = "Why so serious?";
@@ -355,7 +355,7 @@ int main() {
   <exercise label="mce_7_7">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 int main() {
   string tongue_twister = "How much wood could a woodchuck chuck if a woodchuck could chuck wood?";
@@ -411,7 +411,7 @@ int main() {
   <exercise label="mce_7_8">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 int main() {
   string tongue_twister = "How much wood could a woodchuck chuck if a woodchuck could chuck wood?";
@@ -459,7 +459,7 @@ int main() {
   <exercise label="mce_7_9">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 int main() {
   string quote = "Life is like a box of chocolates. You never know what you're gonna get.";
@@ -514,7 +514,7 @@ int main() {
   <exercise label="mce_7_10">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 int main() {
   string call = "Marco!";
@@ -573,7 +573,7 @@ int main() {
       <p>An error occured while delivering a message. All instances of the letter &#x2018;s'
             got replaced by &#x2018;X's. Can you complete the code below to fix this error by selecting
             the correct line of code to replace the question marks?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 int main() {
   string question = "Honey? Where'X my Xuper Xuit?";
@@ -635,7 +635,7 @@ int main() {
   <exercise label="mce_7_12">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 int main() {
   cout << "butter" < "butterfly";
@@ -689,7 +689,7 @@ int main() {
   <exercise label="mce_7_13">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 int main() {
    string quote = "Suffering builds character";
@@ -744,7 +744,7 @@ int main() {
   <exercise label="mce_7_14">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 int main() {
    string quote = "Its Bond, James Bond";

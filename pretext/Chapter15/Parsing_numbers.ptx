@@ -42,7 +42,7 @@ int convertToInt (const string&amp; s)
             <c>digitString</c> to a C string before passing it as an argument.</p>
   <p>Try the function out for yourself! As you can see, this function can also be used
             to parse phone numbers!</p>
-  <program xml:id="c15_6" interactive="activecode" language="cpp">
+  <program xml:id="c15_6" interactive="activecode" language="cpp" line-numbers="yes">
     <input><![CDATA[
 #include <iostream>
 #include <string>

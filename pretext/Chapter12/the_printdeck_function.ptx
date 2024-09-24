@@ -21,7 +21,7 @@
             Modify the <c>buildDeck</c> function below to create a Euchre deck. The <c>printDeck</c>
             function will allow you to verify that you have done this correctly.</p>
     </statement>
-    <program xml:id="c12_7_editor" interactive="activecode" language="cpp">
+    <program xml:id="c12_7_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <string>

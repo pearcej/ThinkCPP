@@ -57,7 +57,7 @@ public:
   <exercise label="question14_2_2">
     <statement>
       <p>How can we change <c>Deck</c>, which is currently a <c>struct</c>, into a <c>class</c>?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 struct Deck {
 private:

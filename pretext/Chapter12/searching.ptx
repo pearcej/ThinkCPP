@@ -36,7 +36,7 @@ cout &lt;&lt; "I found the card at index = " &lt;&lt; index &lt;&lt; endl;</pre>
       <p>The code below searches for a particular card in a standard deck of 52 cards.
             It returns the index that the card was located at.</p>
     </statement>
-    <program xml:id="c12_8_editor" interactive="activecode" language="cpp">
+    <program xml:id="c12_8_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <string>

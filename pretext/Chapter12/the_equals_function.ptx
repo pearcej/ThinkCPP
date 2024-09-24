@@ -44,7 +44,7 @@ if (card1.equals(card2)) {
     <statement>
       <p>Run the active code below to see how the <c>equals()</c> function works.</p>
     </statement>
-    <program xml:id="c12_4_editor" interactive="activecode" language="cpp">
+    <program xml:id="c12_4_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <string>

@@ -35,7 +35,7 @@ Time breadTime = { 3, 35, 0.0 };</pre>
             different constructors that we have defined on this page and the previous
             page.</p>
     </statement>
-    <program xml:id="initialize_or_construct_AC_1_editor" interactive="activecode" language="cpp">
+    <program xml:id="initialize_or_construct_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;

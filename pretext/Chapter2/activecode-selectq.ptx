@@ -8,7 +8,7 @@
         <statement>
           <p>Finish the code below so that it prints <q>I drive a 2014 Buick Regal</q>. Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="VARS_a2_editor" interactive="activecode" language="cpp">
+        <program xml:id="VARS_a2_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -81,7 +81,7 @@ int main () {
         <statement>
           <p>Finish the code below so that it returns the correct volume of a sphere. Select the Parsonsprob tab for hints for the construction of the code. Hint: think about what happens when you use integer division. The volume of a sphere is given by V = (4/3)(pi)(r^3).</p>
         </statement>
-        <program xml:id="VARS_a4_editor" interactive="activecode" language="cpp">
+        <program xml:id="VARS_a4_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -153,7 +153,7 @@ int main () {
         <statement>
           <p>Write code that assigns <q>apples</q> to the variable oranges, and <q>oranges</q> to the variable apples, then swaps their values.  Be sure to inclue any necessary headers.  YOU MAY NOT HARDCODE YOUR SOLUTION. Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="VARS_a6_editor" interactive="activecode" language="cpp">
+        <program xml:id="VARS_a6_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 int main () {
 
@@ -226,7 +226,7 @@ int main () {
         <statement>
           <p>Write code that calculates how much you you will spend after tipping 20% on your $36.25 dinner.  Save the result of this calculation in <c>plusTip</c>.  Be sure to include any necessary headers. Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="VARS_a8_editor" interactive="activecode" language="cpp">
+        <program xml:id="VARS_a8_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 int main () {
 
@@ -287,7 +287,7 @@ int main () {
         <statement>
           <p>Write code that calculates and prints the average of a and b if a = 3.14, and b = 1.59.  You may only use one line of code.  Be sure to inclue any necessary headers. Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="VARS_a10_editor" interactive="activecode" language="cpp">
+        <program xml:id="VARS_a10_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 int main () {
 

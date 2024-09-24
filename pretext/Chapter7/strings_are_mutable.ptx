@@ -8,7 +8,7 @@
       <p>The active code below changes the first letter in <c>greeting</c> to be
             <c>'J'</c>.</p>
     </statement>
-    <program xml:id="strings_are_mutable_AC_1_editor" interactive="activecode" language="cpp">
+    <program xml:id="strings_are_mutable_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -25,7 +25,7 @@ int main() {
   <exercise label="string_mutable_1">
     <statement>
       <p>What is printed by the following statements?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 string fav_food = "ice cream";
 fav_food[3] = "d";
@@ -71,7 +71,7 @@ cout << fav_food << endl;
   <exercise label="string_mutable_2">
     <statement>
       <p>How can we fix the message to be <q>You're a wizard Harry</q>?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input>
 string message = "You're a lizard Harry";
 </input>

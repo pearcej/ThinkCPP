@@ -13,7 +13,7 @@
       <p>The active code below uses the <c>printPoint</c> function. Run the code to
             see the output!</p>
     </statement>
-    <program xml:id="structures_parameters_AC_1_editor" interactive="activecode" language="cpp">
+    <program xml:id="structures_parameters_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -46,7 +46,7 @@ int main() {
       <p>The active code below uses the updated version of the <c>distance</c> function.
             Feel free to modify the code!</p>
     </statement>
-    <program xml:id="structures_parameters_AC_2_editor" interactive="activecode" language="cpp">
+    <program xml:id="structures_parameters_AC_2_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <cmath>
@@ -73,7 +73,7 @@ int main() {
   <exercise label="structures_parameters_1">
     <statement>
       <p>What will print?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 struct Coordinate {
   int x, y;

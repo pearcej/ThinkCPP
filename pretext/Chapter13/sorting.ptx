@@ -69,7 +69,7 @@ would help me condense the function's code and make it easier to understand.  </
             sorted deck of cards. If you get stuck, you can reveal the extra problems
             at the end for help.</p>
     </statement>
-    <program xml:id="sorting_deck_2_editor" interactive="activecode" language="cpp">
+    <program xml:id="sorting_deck_2_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <string>

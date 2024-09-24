@@ -4,7 +4,7 @@
   <exercise label="mce_9_1">
     <statement>
       <p>Which of the following are variables of type <c>Book</c>?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input>
 struct Book {
   string title, author;
@@ -67,7 +67,7 @@ int main() {
   <exercise label="mce_9_2">
     <statement>
       <p>Which of the following are instance variables of type <c>Book</c>?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input>
 struct Book {
   string title, author;
@@ -130,7 +130,7 @@ int main() {
   <exercise label="mce_9_3">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 struct Book {
   string title, author;
@@ -189,7 +189,7 @@ int main() {
   <exercise label="mce_9_4">
     <statement>
       <p>What kind of function is <c>printBook</c>?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 struct Book {
   string title, author;
@@ -246,7 +246,7 @@ int main() {
   <exercise label="mce_9_5">
     <statement>
       <p>What is wrong with the code below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 struct Book {
   string title, author;
@@ -308,7 +308,7 @@ int main() {
   <exercise label="mce_9_6">
     <statement>
       <p>What kind of function is <c>applyDiscount</c>?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 struct Book {
   string title, author;
@@ -370,7 +370,7 @@ int main() {
   <exercise label="mce_9_7">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 struct Point3D {
   double x, y, z;
@@ -434,7 +434,7 @@ int main() {
   <exercise label="mce_9_8">
     <statement>
       <p>What kind of function is <c>midpoint</c>?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 struct Point3D {
   double x, y, z;
@@ -498,7 +498,7 @@ int main() {
   <exercise label="mce_9_9">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 struct Point3D {
   double x, y, z;
@@ -566,7 +566,7 @@ int main() {
   <exercise label="mce_9_10">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 struct Point3D {
   double x, y, z;

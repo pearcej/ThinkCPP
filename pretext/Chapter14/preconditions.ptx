@@ -75,7 +75,7 @@ Abort</pre>
             Notice how because <c>c1</c> is not in polar, the assert statement in <c>calculateCartesian</c>
             fails and thus we get an error.</p>
     </statement>
-    <program xml:id="fourteenten_editor" interactive="activecode" language="cpp">
+    <program xml:id="fourteenten_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <cmath>

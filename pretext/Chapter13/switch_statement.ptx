@@ -45,7 +45,7 @@ else {
             if you don't assign <c>type</c> to a valid type, it outputs the default message. Try taking out
             the <c>break</c> statements in each case. What happens if you run the code with <c>type</c> as &#x2018;g' afterwards?</p>
     </statement>
-    <program xml:id="switch_AC_1_editor" interactive="activecode" language="cpp">
+    <program xml:id="switch_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <string>
@@ -148,7 +148,7 @@ default:        return "Not a valid suit";
   <exercise label="switch_3">
     <statement>
       <p>What is the correct output of the code below?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 int main() {
   int num = 2;
@@ -216,7 +216,7 @@ int main() {
   <exercise label="switch_4">
     <statement>
       <p>What is the correct output <term>this time</term>?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 int main() {
   int num = 1;
@@ -282,7 +282,7 @@ int main() {
   <exercise label="switch_5">
     <statement>
       <p>And finally, what about <term>this time</term>?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input><![CDATA[
 int main() {
   int num = 2;

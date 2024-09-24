@@ -14,7 +14,7 @@
       <p>The active code below shows what the structure definition looks like.
             We can create a <c>Time</c> object in the usual way.</p>
     </statement>
-    <program xml:id="time_AC_1_editor" interactive="activecode" language="cpp">
+    <program xml:id="time_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -42,7 +42,7 @@ int main() {
   <exercise label="time_1">
     <statement>
       <p>Which of the following words are variables of type <c>Price</c>?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input>
 struct Price {
   int dollar, cents;
@@ -86,7 +86,7 @@ int main() {
   <exercise label="time_2">
     <statement>
       <p>Which of the following words are instance variables of the <c>Price</c> structure?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input>
 struct Price {
   int dollar, cents;
@@ -130,7 +130,7 @@ int main() {
   <exercise label="time_3">
     <statement>
       <p>Which of the following words are a user-defined structure?</p>
-      <program language="cpp">
+      <program language="cpp" line-numbers="yes">
         <input>
 struct Price {
   int dollar, cents;
@@ -178,7 +178,7 @@ int main() {
             in the HOUR:MINUTE:SECONDS format. If you get stuck, you can reveal the extra problem
             at the end for help.</p>
     </statement>
-    <program xml:id="time_AC_2_editor" interactive="activecode" language="cpp">
+    <program xml:id="time_AC_2_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
