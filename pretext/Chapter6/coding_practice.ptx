@@ -25,10 +25,7 @@ int main() {
         row++;
     }
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
             
                 <p>Below is one way to implement the program. We use nested loops
                     similar to the last version of the <c>printMultTable</c> function
@@ -79,10 +76,7 @@ void printPyramid(int n) {
 int main() {
     printPyramid (5);
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
             
                 <p>Below is one way to implement the program. We use multiple <c>while</c>
                     loops to print out spaces and asterisks. The outer loop creates the
@@ -130,10 +124,7 @@ int main() {
         n++;
     }
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
             
                 <p>Below is one way to implement the <q>FizzBuzz</q> program. We use conditionals
                     with modulus operators in a while loop to categorize every number and print
@@ -242,10 +233,7 @@ int main() {
         n++;
     }
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
             
                 <p>Below is one way to implement the program. First,
                     we check to see if <c>num</c> is less than or equal to 1, and return

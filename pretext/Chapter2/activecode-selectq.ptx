@@ -25,10 +25,6 @@ int main () {
    cout << model << endl;
 }
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>
@@ -101,10 +97,6 @@ int main () {
    cout << "Your solution had volume = " << volume << endl;  cout << "The correct solution has volume = 523.333";
 }
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>
@@ -169,10 +161,6 @@ int main () {
    cout << "Your solution had apples = " << apples << "and oranges = " << oranges << "." << endl; cout << "The correct solution has apples = apples, and oranges = oranges.";
 }
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>
@@ -246,10 +234,6 @@ int main () {
    cout << "Your solution had plusTip = " << plusTip << endl; cout << "The correct solution has plusTip = 43.5";
 }
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>
@@ -311,10 +295,6 @@ int main () {
    cout << "Your program should have printed 2.365";
 }
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>

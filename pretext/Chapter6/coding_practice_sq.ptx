@@ -28,10 +28,6 @@ int main() {
     // Write your implementation here.
 }
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>
@@ -141,10 +137,6 @@ int main() {
     printNumPyramid (5);
 }
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>
@@ -251,10 +243,6 @@ int main() {
     // Call your function here.
 }
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>
@@ -330,10 +318,6 @@ int main() {
     // Write your implementation here.
 }
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>

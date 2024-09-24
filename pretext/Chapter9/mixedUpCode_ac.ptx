@@ -15,10 +15,6 @@
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -36,10 +32,7 @@ struct Movie {
     string director;
     int releaseYear;
 };
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -52,10 +45,7 @@ struct Movie {
     string director;
     int releaseYear;
 };
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-342">
@@ -70,10 +60,6 @@ struct Movie {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -96,10 +82,7 @@ void printMovie (const Movie& m) {
     cout << "\"" << m.title << "\" directed by ";
     cout << m.director << " (" << m.releaseYear << ")" << endl;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -117,10 +100,7 @@ void printMovie (const Movie& m) {
     cout << "\"" << m.title << "\" directed by ";
     cout << m.director << " (" << m.releaseYear << ")" << endl;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-343">
@@ -135,10 +115,6 @@ void printMovie (const Movie& m) {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -160,10 +136,7 @@ struct Movie {
 int movieAge (const Movie& m, int currentYear) {
     return currentYear - m.releaseYear;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -180,10 +153,7 @@ struct Movie {
 int movieAge (const Movie& m, int currentYear) {
     return currentYear - m.releaseYear;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-344">
@@ -198,10 +168,6 @@ int movieAge (const Movie& m, int currentYear) {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -219,10 +185,7 @@ struct Date {
     int month;
     int year;
 };
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -235,10 +198,7 @@ struct Date {
     int month;
     int year;
 };
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-345">
@@ -253,10 +213,6 @@ struct Date {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -278,10 +234,7 @@ struct Date {
 void printDate (const Date& d) {
     cout << d.month << "/" << d.day << "/" << d.year << endl;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -298,10 +251,7 @@ struct Date {
 void printDate (const Date& d) {
     cout << d.month << "/" << d.day << "/" << d.year << endl;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-346">
@@ -317,10 +267,6 @@ void printDate (const Date& d) {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -349,10 +295,7 @@ void nextMonth (Date& d) {
         d.month++;
     }
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -376,10 +319,7 @@ void nextMonth (Date& d) {
         d.month++;
     }
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-347">
@@ -393,10 +333,6 @@ void nextMonth (Date& d) {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -414,10 +350,7 @@ struct Length {
     int feet;
     int yards;
 };
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -430,10 +363,7 @@ struct Length {
     int feet;
     int yards;
 };
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-348">
@@ -448,10 +378,6 @@ struct Length {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -473,10 +399,7 @@ struct Length {
 void printLength (const Length& l) {
     cout << l.yards << " yds, " << l.feet << " feet, " << l.inches << " in" << endl;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -493,10 +416,7 @@ struct Length {
 void printLength (const Length& l) {
     cout << l.yards << " yds, " << l.feet << " feet, " << l.inches << " in" << endl;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-349">
@@ -512,10 +432,6 @@ void printLength (const Length& l) {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -537,10 +453,7 @@ struct Length {
 void allInches (Length& l) {
     l.inches += 36 * l.yards + 12 * l.feet;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -557,10 +470,7 @@ struct Length {
 void allInches (Length& l) {
     l.inches += 36 * l.yards + 12 * l.feet;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-350">
@@ -577,10 +487,6 @@ void allInches (Length& l) {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -614,10 +520,7 @@ void addLengths (const Length& first, const Length& second, Length& total) {
         total.feet = total.feet - addYards * 3;
     }
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -646,10 +549,7 @@ void addLengths (const Length& first, const Length& second, Length& total) {
         total.feet = total.feet - addYards * 3;
     }
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
 </section>

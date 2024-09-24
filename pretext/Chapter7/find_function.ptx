@@ -25,10 +25,6 @@ int main() {
     cout << another_index << " = " << string::npos << endl;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>This example finds the index of the letter <c>'a'</c> in the string. In
@@ -56,10 +52,6 @@ int main() {
     cout << index;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>This example returns the value 2.</p>

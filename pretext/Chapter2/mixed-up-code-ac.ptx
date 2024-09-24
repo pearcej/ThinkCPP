@@ -12,10 +12,6 @@
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -35,10 +31,7 @@ int main() {
     cout << endl;
     cout << "Oh my!";
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -53,10 +46,7 @@ int main() {
     cout << endl;
     cout << "Oh my!";
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-166">
@@ -69,10 +59,6 @@ int main() {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -94,10 +80,7 @@ int main() {
     x = y;
     y = temp;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -114,10 +97,7 @@ int main() {
     x = y;
     y = temp;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-167">
@@ -130,10 +110,6 @@ int main() {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -152,10 +128,7 @@ int main() {
     GPA = 3.98;
     char crush = 'S';
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -169,10 +142,7 @@ int main() {
     GPA = 3.98;
     char crush = 'S';
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-168">
@@ -186,10 +156,6 @@ int main() {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -208,10 +174,7 @@ int main() {
     double tbsp;
     tbsp = 16 * cups;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -225,10 +188,7 @@ int main() {
     double tbsp;
     tbsp = 16 * cups;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-169">
@@ -242,10 +202,6 @@ int main() {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -266,10 +222,7 @@ int main() {
     volume = height * width * length;
     cout << volume;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -285,10 +238,7 @@ int main() {
     volume = height * width * length;
     cout << volume;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-170">
@@ -301,10 +251,6 @@ int main() {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -321,10 +267,7 @@ int main() {
     char a = 'a';
     a = a + 25;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -336,10 +279,7 @@ int main() {
     char a = 'a';
     a = a + 25;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-171">
@@ -352,10 +292,6 @@ int main() {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -375,10 +311,7 @@ int main() {
     double volume = pi * radius * radius * height;
     cout << volume << endl;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -393,10 +326,7 @@ int main() {
     double volume = pi * radius * radius * height;
     cout << volume << endl;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-172">
@@ -409,10 +339,6 @@ int main() {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -430,10 +356,7 @@ int main() {
     cout << "My favorite class is ";
     cout << favClass;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -446,10 +369,7 @@ int main() {
     cout << "My favorite class is ";
     cout << favClass;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-173">
@@ -469,10 +389,6 @@ int main() {
     cout << "moneySaved should be $143.99." << endl;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -490,10 +406,7 @@ int main() {
     double discount = game * 0.60;
     double moneySaved = game - discount;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -506,10 +419,7 @@ int main() {
     double discount = game * 0.60;
     double moneySaved = game - discount;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-174">
@@ -522,10 +432,6 @@ int main() {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -545,10 +451,7 @@ int main() {
     name = newName;
     name = "Buddy";
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -563,10 +466,7 @@ int main() {
     name = newName;
     name = "Buddy";
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
 </section>

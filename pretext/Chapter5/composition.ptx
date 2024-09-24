@@ -65,10 +65,6 @@ int main () {
     return 0;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <exercise label="fun_comp_1">
@@ -195,10 +191,6 @@ int main () {
     grow_4(begin_population);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
 </section>

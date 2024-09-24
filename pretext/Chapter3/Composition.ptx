@@ -26,10 +26,6 @@ int main () {
     cout << x;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <exercise label="function_comp_1">

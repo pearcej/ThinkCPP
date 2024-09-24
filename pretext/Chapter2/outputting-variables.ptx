@@ -30,10 +30,6 @@ int main () {
     return 0;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>This program creates two integer variables named hour and minute, and a
@@ -71,10 +67,6 @@ int main () {
     return 0;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>On one line, this program outputs a string, two integers, a character,

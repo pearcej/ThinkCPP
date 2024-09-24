@@ -52,10 +52,7 @@ int main() {
         cout << input << endl;
     }
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
             
                 <p>Below is one way to implement this program. We create an <c>ifstream</c> object
                     to open our file. We check to make sure the file is opened correctly before
@@ -121,10 +118,7 @@ int main() {
     }
     cout << "The median height is: " << median << " inches" << endl;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
             
                 <p>Below is one way to implement this program. We create an <c>ifstream</c> object
                     to open our file. We check to make sure the file is opened correctly before
@@ -201,10 +195,7 @@ int main() {
         cout << ROT13(message) << endl;
     }
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
             
                 <p>Below is one way to implement this program. We create an <c>ifstream</c> object
                     to open our file. We check to make sure the file is opened correctly before
@@ -267,10 +258,7 @@ int main() {
         }
     }
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
             
                 <p>Below is one way to implement this program. We create an <c>ifstream</c> object
                     to open our file. We check to make sure the file is opened correctly before
@@ -328,10 +316,7 @@ int main() {
         cout << endl;
     }
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
             
                 <p>Below is one way to implement this program. We create a 10x10 matrix
                     and fill in the products. Then we traverse through the matrix and output

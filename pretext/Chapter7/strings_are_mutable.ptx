@@ -19,10 +19,6 @@ int main() {
     cout << greeting << endl;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>This produces the output <c>Jello, world!</c>.</p>

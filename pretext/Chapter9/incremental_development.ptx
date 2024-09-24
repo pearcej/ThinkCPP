@@ -90,10 +90,6 @@ int main() {
     printTime (doneTime);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>This is much shorter than the original version, and it is much easier to
@@ -157,10 +153,6 @@ int main() {
     printTime (t2);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <exercises line="174" runestone_options="{'showtitle': 'data-showtitle=&quot;Reveal Problem&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'incremental_development', 'chapter': 'Chapter9', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': '9_9_1', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter9/incremental_development.rst">

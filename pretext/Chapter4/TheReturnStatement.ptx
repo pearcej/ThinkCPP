@@ -31,10 +31,6 @@ void printLogarithm (double x) {
      return 0;
  }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>This defines a function named <c>printLogarithm</c> that takes a <c>double</c> named x

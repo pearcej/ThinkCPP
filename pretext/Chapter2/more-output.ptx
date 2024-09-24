@@ -1,14 +1,17 @@
 <?xml version="1.0"?>
 <section xml:id="chapter2_more-output">
   <title>More Output</title>
-  <p>As I mentioned in the last chapter, you can put as many statements as
-            you want in <c>main</c>. For example, to output more than one line:</p>
-  <exercise label="more_output_AC_1">
+  <p>As I mentioned in the last chapter, you can put as many statements as you want in <c>main</c>. For
+    example, to output more than one line:</p>
+  <listing label="more_output_AC_1">
     <statement>
-      <p>This program prints two different statements on two different lines
-            using <c>endl</c>.</p>
+      <p>This program prints two different statements on two different lines using <c>endl</c>.</p>
     </statement>
-    <program xml:id="more_output_AC_1_editor" interactive="activecode" language="cpp">
+    <program xml:id="more_output_AC_1_editor"
+             interactive="activecode"
+             language="cpp"
+             line-numbers="yes"
+             highlight-lines="5-6">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -19,29 +22,29 @@ int main () {
     cout << "How are you?" << endl;      // output another
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
-  </exercise>
+  </listing>
   <p>As you can see, it is legal to put comments at the end of a line, as
-            well as on a line by themselves.</p>
-  <p>The phrases that appear in quotation marks are called <term>strings</term>,
-            because they are made up of a sequence (string) of letters.</p>
+    well as on a line by themselves.</p>
+  <p>The phrases that appear in quotation marks are called <term>strings</term>, because they are
+    made up of a sequence (string) of letters.</p>
   <note>
-    <p>In C++, strings are declared as type <c>string</c>.  We'll explain what that
-                means in the next few pages.</p>
+    <p>In C++, strings are declared as type <c>string</c>. We'll explain what that means in the next few
+      pages.</p>
   </note>
   <p>Actually, strings can contain any combination of letters, numbers,
-            punctuation marks, and other special characters.</p>
-  <p>Often it is useful to display the output from multiple output statements
-            all on one line. You can do this by leaving out the first <c>endl</c>:</p>
-  <exercise label="more_output_AC_2">
+    punctuation marks, and other special characters.</p>
+  <p>Often it is useful to display the output from multiple output statements all on one line. You
+    can do this by leaving out the first <c>endl</c>:</p>
+  <listing label="more_output_AC_2">
     <statement>
       <p>This program prints two different statements on the same line.</p>
     </statement>
-    <program xml:id="more_output_AC_2_editor" interactive="activecode" language="cpp">
+    <program xml:id="more_output_AC_2_editor"
+             interactive="activecode"
+             language="cpp"
+             line-numbers="yes"
+             highlight-lines="5-6">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -50,26 +53,24 @@ int main () {
     cout << "Goodbye, ";
     cout << "cruel world!" << endl;
 }
-        ]]></input>
-      <tests>
-
-
-</tests>
+]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>In this case the output appears on a single line as <c>Goodbye, cruel
-world!</c>. Notice in <c>main</c> that there is a space between <q>Goodbye,</q> and the
-            second quotation mark. This space appears in the output, so it affects
-            the behavior of the program.</p>
+world!</c>. Notice in <c>main</c> that there is a
+    space between <q>Goodbye,</q> and the second quotation mark. This space appears in the output,
+    so it affects the behavior of the program.</p>
   <p>Spaces that appear outside of quotation marks generally do not affect
-            the behavior of the program. For example, I could have written:</p>
+    the behavior of the program. For example, I could have written:</p>
   <exercise label="more_output_AC_3">
     <statement>
-      <p>This program accomplishes the same thing as the one above.  The
-            difference is that there are no spaces separating the different
-            components of each line.  This is a matter of personal preference.</p>
+      <p>This program accomplishes the same thing as the one above. The
+        difference is that there are no spaces separating the different
+        components of each line. This is a matter of personal preference.</p>
     </statement>
-    <program xml:id="more_output_AC_3_editor" interactive="activecode" language="cpp">
+    <program xml:id="more_output_AC_3_editor"
+             interactive="activecode"
+             language="cpp">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -79,39 +80,33 @@ int main () {
     cout<<"cruel world!"<<endl;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>This program would compile and run just as well as the original. The
-            breaks at the ends of lines (newlines) do not affect the program's
-            behavior either, so I could have written:</p>
+    breaks at the ends of lines (newlines) do not affect the program's
+    behavior either, so I could have written:</p>
   <exercise label="more_output_AC_4">
     <statement>
       <p>This program accomplishes the same thing as the two above, but
-            it only uses one line.  Once again, this is a matter of personal
-            preference.  However, this format is pretty messy and relatively
-            hard to follow.</p>
+        it only uses one line. Once again, this is a matter of personal
+        preference. However, this format is pretty messy and relatively
+        hard to follow.</p>
     </statement>
-    <program xml:id="more_output_AC_4_editor" interactive="activecode" language="cpp">
+    <program xml:id="more_output_AC_4_editor"
+             interactive="activecode"
+             language="cpp">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
 
 int main(){cout<<"Goodbye, ";cout<<"cruel world!"<<endl;}
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>That would work, too, although you have probably noticed that the
-            program is getting harder and harder to read. Newlines and spaces are
-            useful for organizing your program visually, making it easier to read
-            the program and locate syntax errors.</p>
+    program is getting harder and harder to read. Newlines and spaces are
+    useful for organizing your program visually, making it easier to read
+    the program and locate syntax errors.</p>
   <exercise label="more_output_2">
     <statement>
       <p>A phrase that appears in quotation marks is called a(n)<var/>.</p>
@@ -158,7 +153,8 @@ int main () {
           <p>2</p>
         </statement>
         <feedback>
-          <p>"endl" creates one new line. The first line will say 7, while the second will print 777.</p>
+          <p>"endl" creates one new line. The first line will say 7, while the second will print
+            777.</p>
         </feedback>
       </choice>
       <choice>
@@ -179,9 +175,15 @@ int main () {
       </choice>
     </choices>
   </exercise>
-  <exercise label="more_output_3" numbered="yes" adaptive="yes" indentation="show" language="python">
+  <exercise label="more_output_3"
+            numbered="yes"
+            adaptive="yes"
+            indentation="show"
+            language="python">
     <statement>
-      <p>Construct a main function that prints <q>Snap!</q> on the first line, <q>Crackle!</q> on the third line, and <q>Pop!</q> on the sixth line.  You might not use all of endl blocks provided.</p>
+      <p>Construct a main function that prints <q>Snap!</q> on the first line, <q>Crackle!</q> on
+        the third line, and <q>Pop!</q> on the sixth line. You might not use all of endl blocks
+        provided.</p>
     </statement>
     <blocks>
       <block order="3">
@@ -208,10 +210,12 @@ int main () {
       <block order="9">
         <cline> cout &lt;&lt; "Pop!";</cline>
       </block>
-      <block order="5" correct="no">
+      <block order="5"
+             correct="no">
         <cline><![CDATA[ cout << endl; // fifth endl ]]></cline>
       </block>
-      <block order="10" correct="no">
+      <block order="10"
+             correct="no">
         <cline><![CDATA[ cout << endl; // sixth endl ]]></cline>
       </block>
       <block order="1">
@@ -219,9 +223,14 @@ int main () {
       </block>
     </blocks>
   </exercise>
-  <exercise label="more_output_3.1" numbered="yes" adaptive="yes" indentation="show" language="python">
+  <exercise label="more_output_3.1"
+            numbered="yes"
+            adaptive="yes"
+            indentation="show"
+            language="python">
     <statement>
-      <p>Construct a main function that prints <q>Hello, world!</q> so that <q>Hello,</q> and <q>world!</q> are printed on two separate lines.</p>
+      <p>Construct a main function that prints <q>Hello, world!</q> so that <q>Hello,</q> and <q>
+        world!</q> are printed on two separate lines.</p>
     </statement>
     <blocks>
       <block order="6">
@@ -230,13 +239,16 @@ int main () {
       <block order="4">
         <cline><![CDATA[ cout << "Hello," << endl; cout << "world!";]]></cline>
       </block>
-      <block order="5" correct="no">
+      <block order="5"
+             correct="no">
         <cline><![CDATA[ cout << "Hello," << "world!" << endl; ]]></cline>
       </block>
-      <block order="1" correct="no">
+      <block order="1"
+             correct="no">
         <cline> cout &gt;&gt; "Hello," &gt;&gt; endl; cout &gt;&gt; "world!"; </cline>
       </block>
-      <block order="2" correct="no">
+      <block order="2"
+             correct="no">
         <cline> cout &gt;&gt; "Hello," &gt;&gt; "world!" &gt;&gt; endl; </cline>
       </block>
       <block order="3">

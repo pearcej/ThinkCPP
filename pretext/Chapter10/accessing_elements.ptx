@@ -66,10 +66,6 @@ int main() {
     cout << "After we made the above changes, count = "; print_vec(count);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <exercise label="accessing_elements_1">

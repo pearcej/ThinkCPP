@@ -28,10 +28,6 @@ int main() {
    }
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -59,10 +55,7 @@ int main(){
        cout <<< "THE TEAM" << endl;
    }
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -85,10 +78,7 @@ int main(){
        cout <<< "THE TEAM" << endl;
    }
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <raw format="html" xml:space="preserve">
@@ -125,10 +115,6 @@ int main () {
     countBy2(6);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -159,10 +145,7 @@ void countBy2 (int num) {
 int main () {
     countBy2(6);
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -188,10 +171,7 @@ void countBy2 (int num) {
 int main () {
     countBy2(6);
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <raw format="html" xml:space="preserve">
@@ -220,10 +200,6 @@ bool guessTheWord (string correct) {
     }
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -247,10 +223,7 @@ bool guessTheWord (string correct) {
         guessTheWord(correct);
     }
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -269,10 +242,7 @@ bool guessTheWord (string correct) {
         guessTheWord(correct);
     }
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <raw format="html" xml:space="preserve">
@@ -298,10 +268,6 @@ void goodVibes (string mood) {
 
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -322,10 +288,7 @@ void goodVibes (string mood) {
     }
     cout << "I'm having a " << mood << " day";
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -341,10 +304,7 @@ void goodVibes (string mood) {
     }
     cout << "I'm having a " << mood << " day";
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <raw format="html" xml:space="preserve">
@@ -369,10 +329,6 @@ void countdown (int num) {
 
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -395,10 +351,7 @@ void countdown (int num) {
         cout << "Blastoff!";
     }
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -416,10 +369,7 @@ void countdown (int num) {
         cout << "Blastoff!";
     }
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <raw format="html" xml:space="preserve">

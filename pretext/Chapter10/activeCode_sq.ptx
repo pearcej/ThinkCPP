@@ -28,10 +28,6 @@ int main() {
     cout << evenCount(vec) << endl;
 }
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>
@@ -106,10 +102,6 @@ int main () {
     }
 }
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>
@@ -184,10 +176,6 @@ int main() {
     }
 }
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>
@@ -253,10 +241,6 @@ int main() {
     }
 }
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>
@@ -323,10 +307,6 @@ int main() {
     cout << hundyBundy(vec) << endl;
 }
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>
@@ -401,10 +381,6 @@ int main() {
     weird_print(vec);
 }
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>

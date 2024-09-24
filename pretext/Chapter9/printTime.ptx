@@ -32,10 +32,6 @@ int main () {
     printTime(time);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <exercise label="printTime_1">

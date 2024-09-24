@@ -40,10 +40,6 @@ int main() {
     return 0;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>The sequence <c>\t</c> represents a <term>tab</term> character. The sequence <c>\n</c>
@@ -109,10 +105,6 @@ int main() {
     }
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>Now instead of adding something to <c>x</c> each time through the loop,
@@ -152,10 +144,6 @@ int main() {
     }
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <exercises line="178" runestone_options="{'showtitle': 'data-showtitle=&quot;Reveal Problem&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'tables', 'chapter': 'Chapter6', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': '6_4_1', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter6/tables.rst">

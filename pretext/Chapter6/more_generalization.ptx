@@ -87,10 +87,6 @@ int main() {
     printMultTable(7);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>When you generalize a function appropriately, you often find that the
@@ -144,10 +140,6 @@ int main() {
     printMultTable(7);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
 </section>

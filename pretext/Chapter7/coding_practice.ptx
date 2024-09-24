@@ -87,10 +87,7 @@ void censorWord(string input, string word) {
 int main() {
     censorWord ("I really, really, really, really, really, really like you", "really");
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
             
                 <p>Below is one way to implement the program. We use a while loop to
                     repeatedly search for instances of word in input. Once found, we replace
@@ -148,10 +145,7 @@ int main() {
     // string secretMessage = "Pbatenghyngvbaf! Lbh'ir fhpprffshyyl vzcyrzragrq EBG13 naq qrpbqrq gur frperg zrffntr :)";
     // cout << ROT13 (secretMessage) << endl;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
             
                 <p>Below is one way to implement the <c>ROT13</c> function. We use a <c>while</c> loop to
                     go through all the letters in the <c>string</c>. If the letter is between &#x2018;a' and &#x2018;n' or
@@ -199,10 +193,7 @@ int main() {
     cout << capitalize ("every word in this string should be capitalized!") << endl;
     cout << capitalize ("this String As well") << endl;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
             
                 <p>Below is one way to implement the <c>capitalize</c> function. We use a <c>while</c> loop to
                     go through all the <c>char</c>s in the <c>string</c>. We capitalize the first character

@@ -53,10 +53,6 @@ int main() {
     printPoint (center);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>The output of this program is <c>(50, 100)</c>.</p>

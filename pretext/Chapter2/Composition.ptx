@@ -21,10 +21,6 @@ int main () {
     cout << 17 * 3;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>Actually, I shouldn't say <q>at the same time,</q> since in reality the
@@ -46,10 +42,6 @@ int main () {
     cout << hour * 60 + minute << endl;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>You can also put arbitrary expressions on the right-hand side of an
@@ -70,10 +62,6 @@ int main () {
     cout << percentage;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>This ability may not seem so impressive now, but we will see other
@@ -200,10 +188,6 @@ int main () {
    cout << "Correct = 17";
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <exercise label="compos_5">
@@ -226,10 +210,6 @@ int main () {
    cout << "Correct = 24";
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
 </section>

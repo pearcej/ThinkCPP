@@ -21,10 +21,6 @@ int main() {
     cout << letter << endl;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>The expression <c>fruit[1]</c> indicates that I want character number 1
@@ -57,10 +53,6 @@ int main() {
     cout << letter << endl;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <exercise label="extracting_characters_1">

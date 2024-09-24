@@ -19,10 +19,6 @@ int main () {
     nums[3] = 2;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -42,10 +38,7 @@ int main () {
     vector<int> nums (5, 1);
     nums[2] = 2;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -60,10 +53,7 @@ int main () {
     vector<int> nums (5, 1);
     nums[2] = 2;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <raw format="html" xml:space="preserve">
@@ -96,10 +86,6 @@ int endsWith (const vector<string>& vec, char c) {
     return count;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -127,10 +113,7 @@ int endsWith (const vector<string>& vec, char c) {
     }
     return count;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -153,10 +136,7 @@ int endsWith (const vector<string>& vec, char c) {
     }
     return count;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <raw format="html" xml:space="preserve">
@@ -187,10 +167,6 @@ int main () {
 
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -213,10 +189,7 @@ int main () {
         words.pop_back();
     }
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -234,10 +207,7 @@ int main () {
         words.pop_back();
     }
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <raw format="html" xml:space="preserve">
@@ -258,10 +228,6 @@ int main () {
 #include <vector>
 using namespace std;
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -292,10 +258,7 @@ int has_char (const vector<string>& vec, char let) {
     }
     return false;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -321,10 +284,7 @@ int has_char (const vector<string>& vec, char let) {
     }
     return false;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <raw format="html" xml:space="preserve">
@@ -344,10 +304,6 @@ int has_char (const vector<string>& vec, char let) {
 #include <vector>
 using namespace std;
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -369,10 +325,7 @@ double mean (const vector<double> nums) {
     }
     return sum/nums.size();
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -389,10 +342,7 @@ double mean (const vector<double> nums) {
     }
     return sum/nums.size();
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <raw format="html" xml:space="preserve">
@@ -414,10 +364,6 @@ double mean (const vector<double> nums) {
 #include <vector>
 using namespace std;
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -441,10 +387,7 @@ void make_odd ( vector<int> &nums) {
 
     }
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -463,10 +406,7 @@ void make_odd ( vector<int> &nums) {
 
     }
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <raw format="html" xml:space="preserve">

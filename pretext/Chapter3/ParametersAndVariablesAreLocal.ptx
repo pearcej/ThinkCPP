@@ -26,10 +26,6 @@ int main () {
     return 0;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>Variables like this are said to be <term>local</term>. In order to keep track of

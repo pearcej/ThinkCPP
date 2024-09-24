@@ -39,10 +39,6 @@ int main() {
     cout << "(" << blank.x << ", " << blank.y << ")" << endl;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <exercise label="call_by_value_1">

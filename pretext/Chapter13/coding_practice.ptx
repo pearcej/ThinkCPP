@@ -13,10 +13,7 @@
 using namespace std;
 
 enum Planet { MERCURY = 1, VENUS, EARTH, MARS, JUPITER, SATURN, URANUS, NEPTUNE };
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
             
                 <p>Below is one way to implement the program. The planets in our solar system
                     are Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune.</p>
@@ -51,10 +48,7 @@ struct Space {
 struct BingoBoard {
     vector<vector<Space> > board;
 };
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
             
                 <p>Below is one way to implement the program. We declare the <c>Space</c> and <c>BingoBoard</c> struct
                     and create the instance variables in order. Make sure to set <c>is_filled</c> to <c>false</c>!</p>
@@ -88,10 +82,7 @@ void swapValues (vector<int> &vec, int index1, int index2) {
     vec[index1] = vec[index2];
     vec[index2] = temp;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
             
                 <p>Below is one way to implement the program. We store the value at <c>index1</c> in a <c>temp</c>
                     variable, replace the value at <c>index1</c> with the value at <c>index2</c>, and then finally
@@ -241,10 +232,7 @@ int main() {
         cout << vec[i] << " ";
     }
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
             
                 <p>Below is one way to implement the program. We must loop through all elements
                     in the vector. Since we know the last <c>i</c> elements are already in place,

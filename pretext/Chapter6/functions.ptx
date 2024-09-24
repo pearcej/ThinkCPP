@@ -81,10 +81,6 @@ int main() {
     cout << x << endl;
 }
         ]]></input>
-    <tests>
-
-
-</tests>
   </program>
   <p>..you would reduce it to the 21 lines of code below, making it easier to read, debug, and use
             the function many times with rewriting it each time.</p>
@@ -112,10 +108,6 @@ int main() {
     all_operators(254);
 }
         ]]></input>
-    <tests>
-
-
-</tests>
   </program>
   <exercise label="functions_1">
     <statement>

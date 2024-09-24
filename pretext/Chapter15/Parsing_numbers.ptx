@@ -65,10 +65,6 @@ int main() {
    cout << num << endl;
 }
         ]]></input>
-    <tests>
-
-
-</tests>
   </program>
   <exercise label="question15_6_1">
     <statement>

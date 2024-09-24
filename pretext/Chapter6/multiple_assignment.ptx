@@ -21,10 +21,6 @@ int main () {
     return 0;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>The output of this program is <c>57</c>, because the first time we print
@@ -46,10 +42,6 @@ int main () {
     return 0;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>However, if we do not print <c>fred</c> the first time, the output is only 7 because

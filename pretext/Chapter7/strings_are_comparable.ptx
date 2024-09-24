@@ -21,10 +21,6 @@ int main() {
     return 0;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>The other comparison operations are useful for putting words in
@@ -52,10 +48,6 @@ int main() {
   }
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>You should be aware, though, that the <c>string</c> class does not handle

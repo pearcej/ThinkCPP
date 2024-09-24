@@ -23,10 +23,6 @@ int main() {
     // Write your code here.
 }
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>
@@ -122,10 +118,6 @@ using namespace std;
 
 // Write your code for the randomInt function here.
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>
@@ -182,10 +174,6 @@ using namespace std;
 
 // Write your code for the generateRandVec function here.
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>
@@ -389,10 +377,6 @@ int main() {
     }
 }
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>

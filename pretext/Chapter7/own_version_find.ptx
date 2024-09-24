@@ -46,10 +46,6 @@ int main() {
     cout << dog.find('e') << endl;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <exercise label="own_version_find_1">

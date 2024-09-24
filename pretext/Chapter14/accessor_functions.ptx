@@ -76,10 +76,6 @@ int main() {
   cout << c1.getReal() << ", " << c1.getImag() << endl;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <exercise label="fourteenfive">

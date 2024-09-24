@@ -17,10 +17,6 @@
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -40,10 +36,7 @@ class Circle {
         Circle (double r) { radius = r; }
         double calculateArea () { return 3.14 * radius * radius; }
 };
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -58,10 +51,7 @@ class Circle {
         Circle (double r) { radius = r; }
         double calculateArea () { return 3.14 * radius * radius; }
 };
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-110">
@@ -78,10 +68,6 @@ class Circle {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -108,10 +94,7 @@ class Circle {
             else { radius = r; }
         }
 };
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -133,10 +116,7 @@ class Circle {
             else { radius = r; }
         }
 };
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-111">
@@ -150,10 +130,6 @@ class Circle {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -187,10 +163,7 @@ int main() {
     c.setRadius (3.6);
     cout << "New radius: " << c.getRadius () << endl;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -219,10 +192,7 @@ int main() {
     c.setRadius (3.6);
     cout << "New radius: " << c.getRadius () << endl;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-112">
@@ -240,10 +210,6 @@ int main() {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -267,10 +233,7 @@ class Point {
         void setX (double xVal) { x = xVal; }
         void setY (double yVal) { y = yVal; }
 };
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -289,10 +252,7 @@ class Point {
         void setX (double xVal) { x = xVal; }
         void setY (double yVal) { y = yVal; }
 };
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-113">
@@ -311,10 +271,6 @@ class Point {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -350,10 +306,7 @@ class Rectangle {
         void setUpperLeft (Point p) { upperLeft = p; }
         void setLowerRight (Point p) { lowerRight = p; }
 };
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -384,10 +337,7 @@ class Rectangle {
         void setUpperLeft (Point p) { upperLeft = p; }
         void setLowerRight (Point p) { lowerRight = p; }
 };
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-114">
@@ -403,10 +353,6 @@ Afterwards, write the ``Rectangle</c> member function <c>calculateArea</c>,
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -453,10 +399,7 @@ double Rectangle::calculateSides () {
 double Rectangle::calculateArea () {
     return length * height;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -498,10 +441,7 @@ double Rectangle::calculateSides () {
 double Rectangle::calculateArea () {
     return length * height;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-115">
@@ -517,10 +457,6 @@ double Rectangle::calculateArea () {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -580,10 +516,7 @@ int main() {
     r.calculateSides();
     cout << "New area: " << r.calculateArea() << endl;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -638,10 +571,7 @@ int main() {
     r.calculateSides();
     cout << "New area: " << r.calculateArea() << endl;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-116">
@@ -661,10 +591,6 @@ int main() {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -692,10 +618,7 @@ class Date {
         void setMonth (int m) { if (m > 0 && m < 13) month = m; }
         void setYear (int y) { year = y; }
 };
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -718,10 +641,7 @@ class Date {
         void setMonth (int m) { if (m > 0 && m < 13) month = m; }
         void setYear (int y) { year = y; }
 };
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-117">
@@ -737,10 +657,6 @@ class Date {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -777,10 +693,7 @@ void Date::printDate () {
         cout << getMonth() << "/" << getDay() << "/" << getYear() << " CE" << endl;
     }
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -812,10 +725,7 @@ void Date::printDate () {
         cout << getMonth() << "/" << getDay() << "/" << getYear() << " CE" << endl;
     }
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-118">
@@ -831,10 +741,6 @@ void Date::printDate () {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -877,10 +783,7 @@ int Date::lastDayInMonth () {
         return daysInMonth[getMonth() - 1];
     }
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -918,10 +821,7 @@ int Date::lastDayInMonth () {
         return daysInMonth[getMonth() - 1];
     }
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
 </section>

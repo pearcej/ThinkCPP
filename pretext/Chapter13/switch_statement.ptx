@@ -70,10 +70,6 @@ int main() {
     }
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p><c>switch</c> statements work with integers, characters, and enumerated

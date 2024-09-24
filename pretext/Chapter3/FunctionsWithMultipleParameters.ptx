@@ -44,10 +44,6 @@ int main () {
     return 0;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <exercise label="multiple_params_1">

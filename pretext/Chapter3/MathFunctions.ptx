@@ -39,10 +39,6 @@ int main () {
     return 0;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>The first example sets log to the logarithm of 17, base <math>e</math>. There
@@ -80,10 +76,6 @@ int main () {
     return 0;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>Before you can use any of the math functions, you have to include the

@@ -68,10 +68,6 @@ int main() {
     printTime (finishedTime);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <exercise label="fillin_functions_1">

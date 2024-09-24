@@ -47,10 +47,6 @@ int main() {
     }
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <exercise label="for_loops_AC_2">
@@ -72,10 +68,6 @@ int main() {
     }
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <exercise label="for_loops_1">
@@ -204,10 +196,6 @@ int main() {
     }
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
 </section>

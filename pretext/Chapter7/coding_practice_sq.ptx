@@ -42,10 +42,6 @@ int main() {
     cout << "Your output: " << countWord(quote, "shrimp") << ", Correct output: 14" << endl;
 }
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>
@@ -127,10 +123,6 @@ int main() {
     removeWord ("Gucci gang, Gucci gang, Gucci gang, Gucci gang", "gang");
 }
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>

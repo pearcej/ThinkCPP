@@ -31,10 +31,6 @@ int main() {
     printPoint (blank);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>As a second example, we can rewrite the <c>distance</c> function from
@@ -72,10 +68,6 @@ int main() {
     cout << "The distance from the point to the origin is " << distance (origin, point) << endl;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <exercise label="structures_parameters_1">

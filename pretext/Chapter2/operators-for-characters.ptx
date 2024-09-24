@@ -20,10 +20,6 @@ int main () {
     cout << letter << endl;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>Although it is syntactically legal to multiply characters, it is almost never
@@ -48,10 +44,6 @@ int main () {
     cout << number << endl;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>The result is 97, which is the number that is used internally by C++ to

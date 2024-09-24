@@ -22,10 +22,6 @@ int main() {
     greetUser ();
 }
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>
@@ -175,10 +171,6 @@ int main() {
     cout << "Magikarp (Lv. 12, 100% HP)";
 }
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>
@@ -378,10 +370,6 @@ int main() {
     // Write your implementation here.
 }
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>

@@ -19,10 +19,6 @@ int main() {
     string second = "world.";
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>Normally when string values like <c>"Hello, "</c> or <c>"world."</c> appear,
@@ -51,10 +47,6 @@ int main() {
     cout << first << second << endl;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <exercise label="string_variables_1" numbered="yes" adaptive="yes" indentation="hide" language="python">

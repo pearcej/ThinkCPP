@@ -13,10 +13,6 @@
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -34,10 +30,7 @@ struct Song {
     string artist;
     int numLikes;
 };
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -50,10 +43,7 @@ struct Song {
     string artist;
     int numLikes;
 };
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-57">
@@ -69,10 +59,6 @@ struct Song {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -97,10 +83,7 @@ struct Album {
     int year;
     vector&#60Song&#62 songs;
 };
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -120,10 +103,7 @@ struct Album {
     int year;
     vector&#60Song&#62 songs;
 };
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-58">
@@ -138,10 +118,6 @@ struct Album {
 using namespace std
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -168,10 +144,7 @@ bool songEqual (const Song& a, const &Song b) {
         return false;
     }
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -193,10 +166,7 @@ bool songEqual (const Song& a, const &Song b) {
         return false;
     }
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-59">
@@ -214,10 +184,6 @@ bool songEqual (const Song& a, const &Song b) {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -251,10 +217,7 @@ int Album::searchAlbum (const Song& a) {
     }
     return -1;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -283,10 +246,7 @@ int Album::searchAlbum (const Song& a) {
     }
     return -1;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-60">
@@ -303,10 +263,6 @@ int Album::searchAlbum (const Song& a) {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -345,10 +301,7 @@ void Album::mostLikedSong () {
     cout << " by " << songs[maxIndex].artist << " with ";
     cout << songs[maxIndex].numLikes << " likes." << endl;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -382,10 +335,7 @@ void Album::mostLikedSong () {
     cout << " by " << songs[maxIndex].artist << " with ";
     cout << songs[maxIndex].numLikes << " likes." << endl;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-61">
@@ -399,10 +349,6 @@ void Album::mostLikedSong () {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -419,10 +365,7 @@ struct Product {
     string name;
     double price;
 };
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -434,10 +377,7 @@ struct Product {
     string name;
     double price;
 };
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-62">
@@ -453,10 +393,6 @@ struct Product {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -479,10 +415,7 @@ struct List {
     string type;
     vector&#60Product&#62 products;
 };
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -500,10 +433,7 @@ struct List {
     string type;
     vector&#60Product&#62 products;
 };
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-63">
@@ -522,10 +452,6 @@ struct List {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -561,10 +487,7 @@ int List::searchList (const Product& a) {
     }
     return -1;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -595,10 +518,7 @@ int List::searchList (const Product& a) {
     }
     return -1;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-64">
@@ -613,10 +533,6 @@ int List::searchList (const Product& a) {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -647,10 +563,7 @@ double List::totalPrice () {
     }
     return total;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -676,10 +589,7 @@ double List::totalPrice () {
     }
     return total;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-65">
@@ -697,10 +607,6 @@ double List::totalPrice () {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -727,10 +633,7 @@ struct List {
 void List::removeProduct (int index) {
     products[index] = products[products.size() - 1];
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -752,10 +655,7 @@ struct List {
 void List::removeProduct (int index) {
     products[index] = products[products.size() - 1];
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
 </section>

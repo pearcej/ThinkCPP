@@ -32,10 +32,6 @@ int main() {
     printCakeInfo (c2);
 }
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>
@@ -226,10 +222,6 @@ int main () {
     Shirt t = { "blue", 'L' };
 }
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>
@@ -291,10 +283,6 @@ int main () {
     Outfit o = { t, p, true };
 }
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>

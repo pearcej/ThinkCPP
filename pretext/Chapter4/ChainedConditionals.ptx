@@ -29,10 +29,6 @@ int main () {
     return 0;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>Try changing the value of x above to see how the output is impacted.</p>

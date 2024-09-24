@@ -72,10 +72,6 @@ int main() {
     cout << box.width << endl;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <exercise label="rectangles_1">

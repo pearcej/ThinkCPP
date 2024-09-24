@@ -15,10 +15,6 @@
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -37,10 +33,7 @@ struct Song {
     string album;
     int year;
 };
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -54,10 +47,7 @@ struct Song {
     string album;
     int year;
 };
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-315">
@@ -71,10 +61,6 @@ struct Song {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -101,10 +87,7 @@ int main() {
     fly.album = "It Might as Well Be Swing";
     fly.year = 1964;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -126,10 +109,7 @@ int main() {
     fly.album = "It Might as Well Be Swing";
     fly.year = 1964;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-316">
@@ -144,10 +124,6 @@ int main() {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -179,10 +155,7 @@ int main() {
     fly.album = "It Might as Well Be Swing";
     fly.year = 1964;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -209,10 +182,7 @@ int main() {
     fly.album = "It Might as Well Be Swing";
     fly.year = 1964;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-317">
@@ -228,10 +198,6 @@ int main() {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -251,10 +217,7 @@ struct Unicorn {
     string hairColor;
     bool isSparkly;
 };
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -269,10 +232,7 @@ struct Unicorn {
     string hairColor;
     bool isSparkly;
 };
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-318">
@@ -289,10 +249,6 @@ struct Unicorn {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -321,10 +277,7 @@ int convertToHumanAge (Unicorn u) {
         return 4 * u.age + 2 * u.hornLength;
     }
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -348,10 +301,7 @@ int convertToHumanAge (Unicorn u) {
         return 4 * u.age + 2 * u.hornLength;
     }
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-319">
@@ -366,10 +316,6 @@ int convertToHumanAge (Unicorn u) {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -394,10 +340,7 @@ void unicornPower (Unicorn& u) {
     u.isSparkly = true;
     u.color = "rainbow";
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -417,10 +360,7 @@ void unicornPower (Unicorn& u) {
     u.isSparkly = true;
     u.color = "rainbow";
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-320">
@@ -437,10 +377,6 @@ void unicornPower (Unicorn& u) {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -463,10 +399,7 @@ struct Employee {
     string name;
     Address address;
 };
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -484,10 +417,7 @@ struct Employee {
     string name;
     Address address;
 };
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-321">
@@ -502,10 +432,6 @@ struct Employee {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -534,10 +460,7 @@ void printAddress (Employee e) {
     cout << e.name << " (" << e.id << ") lives at ";
     cout << e.address.houseNumber << " in" << e.address.state << " ," << e.address.postalAddress << endl;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -561,10 +484,7 @@ void printAddress (Employee e) {
     cout << e.name << " (" << e.id << ") lives at ";
     cout << e.address.houseNumber << " in" << e.address.state << " ," << e.address.postalAddress << endl;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-322">
@@ -579,10 +499,6 @@ void printAddress (Employee e) {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -609,10 +525,7 @@ struct Employee {
 void updateAdress (Employee& e, Address a) {
     e.address = a;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -634,10 +547,7 @@ struct Employee {
 void updateAdress (Employee& e, Address a) {
     e.address = a;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-323">
@@ -653,10 +563,6 @@ void updateAdress (Employee& e, Address a) {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -692,10 +598,7 @@ void storeEmployeeData() {
     cin >> e.address.postalCode;
     return e;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -726,10 +629,7 @@ void storeEmployeeData() {
     cin >> e.address.postalCode;
     return e;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
 </section>

@@ -14,10 +14,6 @@
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -46,10 +42,7 @@ int main () {
             break;
     }
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -73,10 +66,7 @@ int main () {
             break;
     }
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-84">
@@ -91,10 +81,6 @@ int main () {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -124,10 +110,7 @@ int main () {
             break;
     }
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -152,10 +135,7 @@ int main () {
             break;
     }
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-85">
@@ -170,10 +150,6 @@ int main () {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -204,10 +180,7 @@ int main () {
             break;
     }
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -233,10 +206,7 @@ int main () {
             break;
     }
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-86">
@@ -247,10 +217,6 @@ int main () {
       <input>
 // YOUR PSEUDOCODE HERE
         </input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -267,10 +233,7 @@ Deck Deck::mergeSort () const {
     merge the two halves and return the result
     divide each subdeck into two more subdecks
 }
-        </input><tests>
-
-
-</tests></program>
+        </input></program>
 
             
 
@@ -282,10 +245,7 @@ Deck Deck::mergeSort () const {
     merge the two halves and return the result
     divide each subdeck into two more subdecks
 }
-        </input><tests>
-
-
-</tests></program></exercise>
+        </input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-87">
@@ -301,10 +261,6 @@ Deck Deck::mergeSort () const {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -326,10 +282,7 @@ struct Entry {
 struct Dictionary {
     vector<Entry> entries;
 };
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -346,10 +299,7 @@ struct Entry {
 struct Dictionary {
     vector<Entry> entries;
 };
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-88">
@@ -365,10 +315,6 @@ struct Dictionary {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -399,10 +345,7 @@ int Dictionary::find (string word) {
     }
     return -1;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -428,10 +371,7 @@ int Dictionary::find (string word) {
     }
     return -1;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-89">
@@ -448,10 +388,6 @@ int Dictionary::find (string word) {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -483,10 +419,7 @@ int Dictionary::findFirstWord (int start) {
     }
     return min;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -513,10 +446,7 @@ int Dictionary::findFirstWord (int start) {
     }
     return min;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-90">
@@ -532,10 +462,6 @@ int Dictionary::findFirstWord (int start) {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -563,10 +489,7 @@ void Dictionary::swap (int a, int b) {
     entries[a] = entries[b];
     entries[b] = temp;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -589,10 +512,7 @@ void Dictionary::swap (int a, int b) {
     entries[a] = entries[b];
     entries[b] = temp;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-91">
@@ -608,10 +528,6 @@ void Dictionary::swap (int a, int b) {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -631,10 +547,7 @@ void Dictionary::alphabetize () {
         swap (i, min);
     }
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -649,10 +562,7 @@ void Dictionary::alphabetize () {
         swap (i, min);
     }
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-92">
@@ -668,10 +578,6 @@ void Dictionary::alphabetize () {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -699,10 +605,7 @@ void Dictionary::printDictionary () {
         cout << entries[i].word << endl;
     }
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -725,10 +628,7 @@ void Dictionary::printDictionary () {
         cout << entries[i].word << endl;
     }
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
 </section>

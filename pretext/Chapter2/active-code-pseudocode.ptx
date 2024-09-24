@@ -19,10 +19,6 @@ int main () {
     cout << false << " is short for false." << endl;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -41,10 +37,7 @@ int main () {
     cout << t << " is short for true. ";
     cout << f << " is short for false." << endl;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -58,10 +51,7 @@ int main () {
     cout << t << " is short for true. ";
     cout << f << " is short for false." << endl;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-150">
@@ -87,10 +77,6 @@ int main () {
    cout << model << endl;
 }
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>
@@ -161,10 +147,6 @@ int main() {
     cout << "Cady scored " << Cady * 100 << "% on the exam.";
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -181,10 +163,7 @@ int main() {
     double Cady = (3 * 5) * 6 / 100.0;
     cout << "Cady scored " << Cady * 100 << "% on the exam.";
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -196,10 +175,7 @@ int main() {
     double Cady = (3 * 5) * 6 / 100.0;
     cout << "Cady scored " << Cady * 100 << "% on the exam.";
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-152">
@@ -225,10 +201,6 @@ int main () {
    cout << "Your solution had volume = " << volume << endl;  cout << "The correct solution has volume = 104.667";
 }
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>
@@ -289,10 +261,6 @@ int main () {
    cout << a;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -310,10 +278,7 @@ int main () {
    a = a - (3 * (4 + 1) + 3);
    cout << a;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -326,10 +291,7 @@ int main () {
    a = a - (3 * (4 + 1) + 3);
    cout << a;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-154">
@@ -346,10 +308,6 @@ int main () {
    cout << "Your solution had apples = " << apples << "and oranges = " << oranges << "." << endl; cout << "The correct solution has apples = apples, and oranges = oranges.";
 }
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>
@@ -403,10 +361,6 @@ int main () {
 
 }
         </input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -424,10 +378,7 @@ int main () {
     cout << "More" << endl;
     cout << "Chicken" << endl;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -440,10 +391,7 @@ int main () {
     cout << "More" << endl;
     cout << "Chicken" << endl;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-156">
@@ -460,10 +408,6 @@ int main () {
    cout << "Your solution had plusTip = " << plusTip << endl; cout << "The correct solution has plusTip = 43.5";
 }
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>
@@ -513,10 +457,6 @@ int main () {
     cout << "Your solution had seconds = " << seconds << endl;  cout << "The correct solution has seconds = 11700";
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -535,10 +475,7 @@ int main () {
     int totalMinutes = minutes + 60 * hours;
     int seconds = totalMinutes * 60;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -552,10 +489,7 @@ int main () {
     int totalMinutes = minutes + 60 * hours;
     int seconds = totalMinutes * 60;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-158">
@@ -572,10 +506,6 @@ int main () {
    cout << endl;  cout << "Your program should have printed 2.365";
 }
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>

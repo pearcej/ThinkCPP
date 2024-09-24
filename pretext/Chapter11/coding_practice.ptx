@@ -17,10 +17,6 @@ int main() {
     // Write your code to invoke the has_icing function here
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -44,10 +40,7 @@ int main() {
      Cake c = { "Choco lava", 3.5};
      cout << c.has_icing() << endl;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -66,10 +59,7 @@ int main() {
      Cake c = { "Choco lava", 3.5};
      cout << c.has_icing() << endl;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-27">
@@ -93,10 +83,6 @@ int main() {
      Cake c = {"Choco lava", 3.5};
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -127,10 +113,7 @@ bool Cake::has_icing() {
 int main() {
      Cake c ("Choco lava", 3.5);
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -156,10 +139,7 @@ bool Cake::has_icing() {
 int main() {
      Cake c ("Choco lava", 3.5);
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-28">
@@ -179,10 +159,6 @@ int main() {
     Music m = {4, 2013};
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -218,10 +194,7 @@ bool Music:: is_new (int year) {
 int main() {
     Music m = {4, 2013};
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -252,10 +225,7 @@ bool Music:: is_new (int year) {
 int main() {
     Music m = {4, 2013};
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-29">
@@ -277,10 +247,6 @@ int main() {
     bool is_newer = m.latest(m_other);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -313,10 +279,7 @@ int main() {
     Music m_other = {198, 2009};
     bool is_newer = m.latest(m_other);
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -344,10 +307,7 @@ int main() {
     Music m_other = {198, 2009};
     bool is_newer = m.latest(m_other);
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-30">
@@ -375,10 +335,6 @@ int main() {
     printInfo (m2);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -417,10 +373,7 @@ int main() {
     Music m2 = { "Drake", 2016, false };
     printInfo (m2);
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -454,10 +407,7 @@ int main() {
     Music m2 = { "Drake", 2016, false };
     printInfo (m2);
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-31">
@@ -481,10 +431,6 @@ int main() {
      Cake c = {"Choco lava", 3.5};
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -515,10 +461,7 @@ bool Cake::has_icing() {
 int main() {
      Cake c ("Choco lava", 3.5);
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -544,10 +487,7 @@ bool Cake::has_icing() {
 int main() {
      Cake c ("Choco lava", 3.5);
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-32">
@@ -568,10 +508,6 @@ int main() {
     Pants p1;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -600,10 +536,7 @@ int main() {
     Pants p = { 'S', "denim" };
     Pants p1;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -627,10 +560,7 @@ int main() {
     Pants p = { 'S', "denim" };
     Pants p1;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-33">
@@ -659,10 +589,6 @@ int main() {
     Book b2 ("Kane and Abel", 1979);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -697,10 +623,7 @@ int main() {
     Book b1;
     Book b2 ("Kane and Abel", 1979);
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -730,10 +653,7 @@ int main() {
     Book b1;
     Book b2 ("Kane and Abel", 1979);
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-34">
@@ -761,10 +681,6 @@ int main() {
     Book b2 ("Kane and Abel", 1979);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -794,10 +710,7 @@ int main() {
     Book b1;
     Book b2 ("Kane and Abel", 1979);
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -822,10 +735,7 @@ int main() {
     Book b1;
     Book b2 ("Kane and Abel", 1979);
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-35">
@@ -844,10 +754,6 @@ int main() {
     Instrument second ("ukulele", 2012);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -882,10 +788,7 @@ int main() {
     Instrument first;
     Instrument second ("ukulele", 2012);
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -915,10 +818,7 @@ int main() {
     Instrument first;
     Instrument second ("ukulele", 2012);
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
 </section>

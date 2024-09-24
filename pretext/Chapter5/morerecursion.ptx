@@ -81,10 +81,6 @@ int main () {
     cout << factorial(3) << endl;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>If we look at the flow of execution for this program, it is similar to

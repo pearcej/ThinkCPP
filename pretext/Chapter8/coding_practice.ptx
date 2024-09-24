@@ -23,10 +23,7 @@ void rectangleInfo () {
 int main() {
     rectangleInfo ();
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
             
                 <p>Below is one way to implement the program. We prompt the user for input
                     using <c>cin</c> before printing the area and perimeter.</p>
@@ -75,10 +72,7 @@ int main() {
     cout << "Correct output:" << endl;
     cout << "Rob (XLV 9800) has 45 percent battery and is currently executing the task \"washing dishes\"";
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
             
                 <p>Below is one way to implement the program. First we declare the instance variables
                     in the <c>struct</c> definition. Next, we use dot notation to access

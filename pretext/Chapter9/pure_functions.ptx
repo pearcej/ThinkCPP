@@ -36,10 +36,6 @@ int main () {
     cout << after(time, time2);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>What is the result of this function if the two times are equal? Does
@@ -94,10 +90,6 @@ int main() {
     printTime (doneTime);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>The output of this program is <c>12:49:30</c>, which is correct. On the
@@ -149,10 +141,6 @@ int main() {
     printTime (doneTime);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>Although it's correct, it's starting to get big. Later, I will suggest

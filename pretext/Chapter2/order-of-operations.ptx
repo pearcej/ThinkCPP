@@ -44,10 +44,6 @@ int main () {
     cout << 2 / (3 -1) << endl;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <exercise label="order_of_operations_1">

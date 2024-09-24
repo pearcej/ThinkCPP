@@ -22,10 +22,7 @@ struct Cake {
 int main() {
     Cake c = { "Mary", "blue", 3.5, false };
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
             
                 <p>Below is one way to implement the program. We declare the <c>Cake</c> struct and list the instance
                     variables in order.</p>
@@ -230,10 +227,7 @@ struct Pants {
 int main() {
     Pants p = { 'S', "denim" };
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
             
                 <p>Below is one way to implement the program. We declare the <c>Pants</c> struct and list the instance
                     variables in order.</p>
@@ -292,10 +286,7 @@ int main() {
     Outfit o = { t, p, true };
     printOutfit (o);
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
             
                 <p>Below is one way to implement the program. We declare the <c>Cake</c> struct and list the instance
                     variables in order.</p>

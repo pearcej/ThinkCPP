@@ -61,10 +61,6 @@ int main() {
     printTime (currentTime);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <exercise label="modifiers_AC_2">
@@ -104,10 +100,6 @@ int main() {
     printTime (t2);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <exercises line="109" runestone_options="{'showtitle': 'data-showtitle=&quot;Reveal Problem&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'modifiers', 'chapter': 'Chapter9', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': '9_6_1', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter9/modifiers.rst">

@@ -29,10 +29,6 @@ int main() {
     cout << time.hour << ":" << time.minute << ":" << time.second;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>The state diagram for this object looks like this:</p>
@@ -204,10 +200,6 @@ int main() {
     printTime(time);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <exercises line="151" runestone_options="{'showtitle': 'data-showtitle=&quot;Reveal Problem&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'time', 'chapter': 'Chapter9', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': '9_1_1', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter9/time.rst">

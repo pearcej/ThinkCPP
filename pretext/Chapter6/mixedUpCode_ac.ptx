@@ -13,10 +13,6 @@
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -36,10 +32,7 @@ int main() {
       n = n + 2;
    }
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -54,10 +47,7 @@ int main() {
       n = n + 2;
    }
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-261">
@@ -70,10 +60,6 @@ int main() {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -93,10 +79,7 @@ int main() {
       n -= 10;
    }
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -111,10 +94,7 @@ int main() {
       n -= 10;
    }
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-262">
@@ -127,10 +107,6 @@ int main() {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -151,10 +127,7 @@ int main() {
       n++;
    }
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -170,10 +143,7 @@ int main() {
       n++;
    }
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-263">
@@ -192,10 +162,6 @@ int main() {
    repeatHello();
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -219,10 +185,7 @@ void repeatHello() {
 int main() {
    repeatHello();
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -241,10 +204,7 @@ void repeatHello() {
 int main() {
    repeatHello();
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-264">
@@ -265,10 +225,6 @@ int main() {
    repeatString("Hello world");
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -292,10 +248,7 @@ void repeatString (string input) {
 int main() {
    repeatString("Hello world");
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -314,10 +267,7 @@ void repeatString (string input) {
 int main() {
    repeatString("Hello world");
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-265">
@@ -338,10 +288,6 @@ int main() {
    repeatString("Hello world!", 5);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -365,10 +311,7 @@ void repeatString (string input, int x) {
 int main() {
    repeatString("Hello world!", 5);
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -387,10 +330,7 @@ void repeatString (string input, int x) {
 int main() {
    repeatString("Hello world!", 5);
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-266">
@@ -411,10 +351,6 @@ int main() {
    newYearCountdown();
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -439,10 +375,7 @@ void newYearCountdown() {
 int main() {
    newYearCountdown();
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -462,10 +395,7 @@ void newYearCountdown() {
 int main() {
    newYearCountdown();
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-267">
@@ -489,10 +419,6 @@ int main() {
    powerUp(5000);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -516,10 +442,7 @@ void powerUp (int powerLevel) {
 int main() {
    powerUp(5000);
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -538,10 +461,7 @@ void powerUp (int powerLevel) {
 int main() {
    powerUp(5000);
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-268">

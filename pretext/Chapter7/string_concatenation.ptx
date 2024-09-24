@@ -21,10 +21,6 @@ int main() {
     cout << dessert << endl;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>The output of this program is <c>banana nut bread</c>.</p>
@@ -66,10 +62,6 @@ int main() {
     }
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>The output of this program is:</p>

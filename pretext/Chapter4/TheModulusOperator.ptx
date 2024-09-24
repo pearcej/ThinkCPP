@@ -23,10 +23,6 @@ int main () {
     return 0;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>The first operator, integer division, yields 2. The second operator

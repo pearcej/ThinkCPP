@@ -20,10 +20,6 @@ using namespace std;
 
 // Write your code here.
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>
@@ -131,10 +127,6 @@ int main() {
    }
 }
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>
@@ -227,10 +219,6 @@ using namespace std;
 
 // Write your code here.
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>
@@ -333,10 +321,6 @@ using namespace std;
 
 // Write your code here.
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>
@@ -446,10 +430,6 @@ int main() {
    // Write your code here.
 }
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>

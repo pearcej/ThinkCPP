@@ -24,10 +24,6 @@ int main() {
     countdown (9);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>You can almost read a <c>while</c> statement as if it were English. What

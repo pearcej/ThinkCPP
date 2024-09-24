@@ -58,10 +58,6 @@ int main () {
     return 0;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>What's the moral of this sordid tale? When you read a program, don't

@@ -27,10 +27,6 @@ int main () {
       printStudent (s1);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -59,10 +55,7 @@ int main () {
     Student s1 = { 56673, 2023, "Bob" };
     s1.print();
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -86,10 +79,7 @@ int main () {
     Student s1 = { 56673, 2023, "Bob" };
     s1.print();
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-37">
@@ -105,10 +95,6 @@ int main () {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -135,10 +121,7 @@ bool Album::check () {
         return false;
     }
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -160,10 +143,7 @@ bool Album::check () {
         return false;
     }
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-38">
@@ -177,10 +157,6 @@ bool Album::check () {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -204,10 +180,7 @@ double Time::convertToSeconds () const {
     double seconds = minutes * 60 + time.second;
     return seconds;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -226,10 +199,7 @@ double Time::convertToSeconds () const {
     double seconds = minutes * 60 + time.second;
     return seconds;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-39">
@@ -245,10 +215,6 @@ double Time::convertToSeconds () const {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -265,10 +231,7 @@ bool is_older(const Student& stu) const {
     if (age > stu.age) {return true;}
         else {return false;}
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -280,10 +243,7 @@ bool is_older(const Student& stu) const {
     if (age > stu.age) {return true;}
         else {return false;}
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-40">
@@ -298,10 +258,6 @@ bool is_older(const Student& stu) const {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -322,10 +278,7 @@ Days::Days (int num_days) {
     num_days -= weeks * 60.0;
     days = num_days;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -341,10 +294,7 @@ Days::Days (int num_days) {
     num_days -= weeks * 60.0;
     days = num_days;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-41">
@@ -358,10 +308,6 @@ Days::Days (int num_days) {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -386,10 +332,7 @@ Student::Student () {
             year = year_in;
             name = name_in;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -409,10 +352,7 @@ Student::Student () {
             year = year_in;
             name = name_in;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-42">
@@ -427,10 +367,6 @@ Student::Student () {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -459,10 +395,7 @@ Penguin::Penguin (int age_in, int weight_in) {
     age = age_in;
     weight = weight_in;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -486,10 +419,7 @@ Penguin::Penguin (int age_in, int weight_in) {
     age = age_in;
     weight = weight_in;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-43">
@@ -508,10 +438,6 @@ Days AddDays (const Days& d1, const Days& d2) {
     return makeDays (days);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -529,10 +455,7 @@ Days Days::add (const Days& d2) const {
     Days day (days);
     return day;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -545,10 +468,7 @@ Days Days::add (const Days& d2) const {
     Days day (days);
     return day;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-44">
@@ -563,10 +483,6 @@ Days Days::add (const Days& d2) const {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -600,10 +516,7 @@ int main () {
     Penguin p1 ();
     Penguin p2 (3, "Bob");
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -632,10 +545,7 @@ int main () {
     Penguin p1 ();
     Penguin p2 (3, "Bob");
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-45">
@@ -649,10 +559,6 @@ int main () {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -676,10 +582,7 @@ struct Student {
     void print () const;
     bool after (const Student& stu) const;
 };
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -698,10 +601,7 @@ struct Student {
     void print () const;
     bool after (const Student& stu) const;
 };
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
 </section>

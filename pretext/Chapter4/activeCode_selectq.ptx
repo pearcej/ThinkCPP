@@ -31,10 +31,6 @@ string whichDoor (double grade) {
     cout << s;
 }
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>
@@ -112,10 +108,6 @@ void is_even (int num) {
     }
 }
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>
@@ -180,10 +172,6 @@ void greaterThan () {
 
 }
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>
@@ -250,10 +238,6 @@ void exclusiveOr (bool a, bool b) {
 
 }
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>
@@ -312,10 +296,6 @@ void printNegativeNum () {
 
 }
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>

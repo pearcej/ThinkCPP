@@ -31,10 +31,6 @@ int main () {
 
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>There is now an outer conditional that contains two branches. The first

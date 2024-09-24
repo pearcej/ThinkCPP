@@ -14,10 +14,6 @@
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -37,10 +33,7 @@ int main() {
         exit(1);
     }
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -55,10 +48,7 @@ int main() {
         exit(1);
     }
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-135">
@@ -72,10 +62,6 @@ int main() {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -98,10 +84,7 @@ int main() {
         exit(1);
     }
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -119,10 +102,7 @@ int main() {
         exit(1);
     }
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-136">
@@ -140,10 +120,6 @@ int main() {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -169,10 +145,7 @@ int main() {
    sum = n1 + n2 + n3 + n4 + n5;
    outfile << "The average is " << sum / 5.0 << endl;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -193,10 +166,7 @@ int main() {
    sum = n1 + n2 + n3 + n4 + n5;
    outfile << "The average is " << sum / 5.0 << endl;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-137">
@@ -215,10 +185,6 @@ int main() {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -250,10 +216,7 @@ int main() {
     }
     outfile << "Number of data: " << numData << ", min: " << min << ", max: " << max << endl;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -280,10 +243,7 @@ int main() {
     }
     outfile << "Number of data: " << numData << ", min: " << min << ", max: " << max << endl;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-138">
@@ -302,10 +262,6 @@ int main() {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -349,10 +305,7 @@ int main() {
         data.push_back(e);
     }
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -391,10 +344,7 @@ int main() {
         data.push_back(e);
     }
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-139">
@@ -411,10 +361,6 @@ int main() {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -448,10 +394,7 @@ int main() {
         outfile << upper << " ";
     }
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -480,10 +423,7 @@ int main() {
         outfile << upper << " ";
     }
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-140">
@@ -502,10 +442,6 @@ int main() {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -531,10 +467,7 @@ int main() {
         outfile << odd << " " << even << " ";
     }
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -555,10 +488,7 @@ int main() {
         outfile << odd << " " << even << " ";
     }
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-141">
@@ -575,10 +505,6 @@ int main() {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -612,10 +538,7 @@ Set vectorToSet(vector<string> data) {
         s.add(data[i]);
     }
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -644,10 +567,7 @@ Set vectorToSet(vector<string> data) {
         s.add(data[i]);
     }
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-142">
@@ -664,10 +584,6 @@ the constructor and ``at</c> function, which returns the data stored
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -695,10 +611,7 @@ class Matrix {
             return elements[row][col];
         }
 };
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -721,10 +634,7 @@ class Matrix {
             return elements[row][col];
         }
 };
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-143">
@@ -744,10 +654,6 @@ class Matrix {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -797,10 +703,7 @@ int main() {
         }
     }
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -845,10 +748,7 @@ int main() {
         }
     }
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
 </section>

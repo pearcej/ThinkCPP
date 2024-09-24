@@ -28,10 +28,6 @@ int main () {
     cout << factorial(3) << endl;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>From now on I will tend to use the more concise version, but I recommend
@@ -68,10 +64,6 @@ int main () {
     cout << fibonacci(3) << endl;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>If you try to follow the flow of execution here, even for fairly small

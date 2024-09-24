@@ -30,10 +30,6 @@ int main() {
     cout << x++ << endl; // Weird, x is still 0?
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>If you're curious about this, feel free to search up about prefix and postfix
@@ -70,10 +66,6 @@ int main() {
     cout << count << endl;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>It is a common error to write something like</p>

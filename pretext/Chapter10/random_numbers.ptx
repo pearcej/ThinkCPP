@@ -38,10 +38,6 @@ int main () {
     return 0;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>On my machine I got the following output:</p>
@@ -81,10 +77,6 @@ int main () {
     }
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>It is also frequently useful to generate random floating-point values. A
@@ -116,10 +108,6 @@ int main () {
     }
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <hint>

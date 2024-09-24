@@ -28,10 +28,6 @@ int main() {
     cout << "The last letter is " << greeting[greeting.length()] << endl;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <exercise label="runtime_error_1">

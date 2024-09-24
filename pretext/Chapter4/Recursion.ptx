@@ -50,10 +50,6 @@ int main () {
     return 0;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>What happens if we call <c>countdown</c> function like this:</p>
@@ -138,10 +134,6 @@ int main() {
     guessTheNumber(randomNumber);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <exercise label="recursion_1">

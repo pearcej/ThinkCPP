@@ -27,10 +27,7 @@ class Room {
             return length * width * height;
         }
 };
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
             
                 <p>Below is the <c>class</c> definition of <c>Room</c>. As you can see, there isn't
                     a big difference between <c>struct</c>s and <c>class</c>es.</p>
@@ -92,10 +89,7 @@ class Temp {
             }
         }
 };
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
             
                 <p>Below is one way to implement this. We use the correct conversions
                     in <c>cToF</c> and <c>fToC</c> and then call these functions in
@@ -131,10 +125,7 @@ class MyVector {
     public:
         MyVector() {};
 };
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
             
                 <p>Below is the <c>class</c> definition of <c>MyVector</c>. We use the <c>public</c>
                     and <c>private</c> keywords to separate public and private members of

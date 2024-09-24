@@ -23,10 +23,6 @@ struct Pixel {
 
 // Write your code for the struct Image here.
         ]]></input>
-          <tests>
-
-
-</tests>
         </program>
       </exercise>
     </TabNode>

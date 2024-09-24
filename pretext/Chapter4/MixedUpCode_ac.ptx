@@ -14,10 +14,6 @@
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -35,10 +31,7 @@ int main () {
     int y = 13;
     cout << x % y;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -51,10 +44,7 @@ int main () {
     int y = 13;
     cout << x % y;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-207">
@@ -76,10 +66,6 @@ int main() {
     is_even(0);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -106,10 +92,7 @@ int main() {
     is_even(3);
     is_even(0);
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -131,10 +114,7 @@ int main() {
     is_even(3);
     is_even(0);
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-208">
@@ -156,10 +136,6 @@ int main() {
     difference(a,b);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -186,10 +162,7 @@ int main() {
     int b = 10;
     difference(a,b);
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -211,10 +184,7 @@ int main() {
     int b = 10;
     difference(a,b);
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-209">
@@ -229,10 +199,6 @@ int main() {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -257,10 +223,7 @@ void matic(int x, int y) {
 int main() {
     matix(5,4);
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -280,10 +243,7 @@ void matic(int x, int y) {
 int main() {
     matix(5,4);
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-210">
@@ -298,10 +258,6 @@ int main() {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -322,10 +278,7 @@ int main() {
     else if ((x + y) % 2 == 0) {
         cout << "Love me!"; }
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -341,10 +294,7 @@ int main() {
     else if ((x + y) % 2 == 0) {
         cout << "Love me!"; }
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-211">
@@ -365,10 +315,6 @@ int main() {
     printLetterGrade(grade);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -396,10 +342,7 @@ int main() {
     double grade = 90.0;
     printLetterGrade(grade);
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -422,10 +365,7 @@ int main() {
     double grade = 90.0;
     printLetterGrade(grade);
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-212">
@@ -442,10 +382,6 @@ int main() {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -475,10 +411,7 @@ void knightKnave (bool truth, bool told) {
         }
         }
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -503,10 +436,7 @@ void knightKnave (bool truth, bool told) {
         }
         }
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-213">
@@ -521,10 +451,6 @@ void knightKnave (bool truth, bool told) {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -560,10 +486,7 @@ int main() {
     makeVocals("dog","good");
     makeVocals("cat","bad");
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -594,10 +517,7 @@ int main() {
     makeVocals("dog","good");
     makeVocals("cat","bad");
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-214">
@@ -612,10 +532,6 @@ int main() {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -641,10 +557,7 @@ void takeSum () {
 int main() {
     takeSum();
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -665,10 +578,7 @@ void takeSum () {
 int main() {
     takeSum();
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-215">
@@ -688,10 +598,6 @@ int main() {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -717,10 +623,7 @@ void capitalize () {
 int main() {
     capitalize();
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -741,10 +644,7 @@ void capitalize () {
 int main() {
     capitalize();
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
 </section>

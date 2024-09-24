@@ -24,10 +24,6 @@ int main () {
     cout << "Testing with radius = 5..." << endl; cout << "    Your function had area = "; printArea(5); cout << endl; cout << "    The correct solution has area = 78.5398" << endl; cout << "Testing with radius = 7.5..." << endl; cout << "    Your function had area = "; printArea(7.5); cout << endl; cout << "    The correct solution has area = 176.715";
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -46,10 +42,7 @@ void printArea(double r) {
     double area = pi * r * r;
     cout << area;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -63,10 +56,7 @@ void printArea(double r) {
     double area = pi * r * r;
     cout << area;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <raw format="html" xml:space="preserve">
@@ -97,10 +87,6 @@ int main () {
     cout << b << " / " << a << " = "; divide (b, a);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -122,10 +108,7 @@ int main () {
     int b = 12;
     cout << b << " / " << a << " = "; divide (b, a);
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -142,10 +125,7 @@ int main () {
     int b = 12;
     cout << b << " / " << a << " = "; divide (b, a);
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <raw format="html" xml:space="preserve">
@@ -173,10 +153,6 @@ int main () {
 
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -198,10 +174,7 @@ int main () {
     border();
     cout << "Second Line." << endl;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -218,10 +191,7 @@ int main () {
     border();
     cout << "Second Line." << endl;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <raw format="html" xml:space="preserve">
@@ -249,10 +219,6 @@ int main () {
     cout << "Testing with GPA = 2.513..." << endl; cout << "    Your solution rounded the GPA to "; gpaBoost(2.513); cout << endl; cout << "    The correct solution rounds the GPA to 3.000" << endl; cout << "Testing with GPA = 4.000..." << endl; cout << "    Your solution rounded the GPA to "; gpaBoost(4.000); cout << endl; cout << "    The correct solution rounds the GPA to 4.000";
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -270,10 +236,7 @@ void gpaBoost (double GPA) {
     int betterGPA = ceil(GPA);
     cout << betterGPA << ".000";
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -286,10 +249,7 @@ void gpaBoost (double GPA) {
     int betterGPA = ceil(GPA);
     cout << betterGPA << ".000";
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <raw format="html" xml:space="preserve">
@@ -317,10 +277,6 @@ int main () {
     cout << "Testing with degrees = 45..." << endl; cout << "    Your solution calculated a tangent of "; tanDegrees(45); cout << endl; cout << "    The correct solution calculates a tangent of 0.999204" << endl; cout << "Testing with degrees = 112.1..." << endl; cout << "    Your solution calculated a tangent of "; tanDegrees(112.1); cout << endl; cout << "    The correct solution calculates a tangent of -2.46973";
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -339,10 +295,7 @@ void tanDegrees (double degrees) {
     double tangent = tan(radians);
     cout << tangent;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -356,10 +309,7 @@ void tanDegrees (double degrees) {
     double tangent = tan(radians);
     cout << tangent;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <raw format="html" xml:space="preserve">

@@ -39,10 +39,6 @@ int main() {
     cout << distance << endl;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <exercise label="accessing_instance_variables_1">

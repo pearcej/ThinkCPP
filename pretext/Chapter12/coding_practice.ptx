@@ -17,10 +17,6 @@ using namespace std;
 
 // Write your code for the struct Pixel here.
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -40,10 +36,7 @@ struct Pixel {
     int g;
     int b;
 };
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -58,10 +51,7 @@ struct Pixel {
     int g;
     int b;
 };
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <raw format="html" xml:space="preserve">
@@ -96,10 +86,6 @@ int main() {
     p.printPixel();
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -129,10 +115,7 @@ int main() {
     Pixel p = {0, 0, 0};
     p.printPixel();
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -157,10 +140,7 @@ int main() {
     Pixel p = {0, 0, 0};
     p.printPixel();
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <raw format="html" xml:space="preserve">

@@ -45,10 +45,6 @@ int main() {
     }
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <exercise label="vector_size_1">

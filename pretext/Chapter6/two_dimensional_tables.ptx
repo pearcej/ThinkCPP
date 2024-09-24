@@ -27,10 +27,6 @@ int main() {
     return 0;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <p>The first line initializes a variable named <c>i</c>, which is going to act

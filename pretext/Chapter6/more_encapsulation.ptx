@@ -47,10 +47,6 @@ int main() {
     printMultTable();
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
 </section>

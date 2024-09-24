@@ -43,10 +43,6 @@ using namespace std;
     return 0;
   }
         ]]></input>
-    <tests>
-
-
-</tests>
   </program>
   <p>The first line outputs the value true because 2 is a single-digit
             number. Unfortunately, when C++ outputs bools, it does not display the

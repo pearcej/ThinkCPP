@@ -124,10 +124,6 @@ int main() {
   cout << t1.perimeter();
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <exercise label="fourteenthree">
@@ -168,10 +164,6 @@ int main() {
   cout << t1.perimeter();
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <exercise label="question14_3_1" numbered="yes" adaptive="yes" indentation="hide" language="python">

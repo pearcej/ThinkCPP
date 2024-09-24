@@ -20,10 +20,6 @@ int main() {
     printInteger(x);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -45,10 +41,7 @@ int main() {
     double x = 3.14159265;
     printInteger(x);
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -65,10 +58,7 @@ int main() {
     double x = 3.14159265;
     printInteger(x);
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-186">
@@ -88,10 +78,6 @@ int main() { // Implement the two functions
     divider();
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -118,10 +104,7 @@ int main() { // Use the two functions
     newLine();
     divider();
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -143,10 +126,7 @@ int main() { // Use the two functions
     newLine();
     divider();
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-187">
@@ -167,10 +147,6 @@ int main() {
     volumeCone(r,h);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -187,10 +163,7 @@ void volumeCone (double r, double h) {
     double vol = 1/3.0 * 3.14 * r * r * h;
     cout << vol;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -202,10 +175,7 @@ void volumeCone (double r, double h) {
     double vol = 1/3.0 * 3.14 * r * r * h;
     cout << vol;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-188">
@@ -226,10 +196,6 @@ int main() {
     sineDegrees(degrees);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -253,10 +219,7 @@ int main() {
     double degrees = 25.00;
     sineDegrees(degrees);
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -275,10 +238,7 @@ int main() {
     double degrees = 25.00;
     sineDegrees(degrees);
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-189">
@@ -298,10 +258,6 @@ int main() {
     finalPrice(item);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -319,10 +275,7 @@ void finalPrice (double item) {
     double final = (item - discount) * 1.08;
     cout << final;
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -335,10 +288,7 @@ void finalPrice (double item) {
     double final = (item - discount) * 1.08;
     cout << final;
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-190">
@@ -362,10 +312,6 @@ double root ( double num ) {
 
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <statement>
       <p>Below is one way to write the <c>sumOfSquares</c> and <c>root</c> functions.</p>
@@ -392,10 +338,6 @@ int main () {
     cout << "The sides of the triangle are: " << s1 << ", " << s2 << ", " << hyp;
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
   </exercise>
   <exercise xml:id="empty-191">
@@ -415,10 +357,6 @@ int main() {
     eatMore(animal);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -442,10 +380,7 @@ int main() {
     string animal = "Chicken";
     eatMore(animal);
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -464,10 +399,7 @@ int main() {
     string animal = "Chicken";
     eatMore(animal);
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-192">
@@ -488,10 +420,6 @@ int main() {
     printAmount(dollars, cents);
 }
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -515,10 +443,7 @@ int main() {
     int cents = 56;
     printAmount(dollars, cents);
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -537,10 +462,7 @@ int main() {
     int cents = 56;
     printAmount(dollars, cents);
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-193">
@@ -555,10 +477,6 @@ int main() {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -581,10 +499,7 @@ int main () {
     double pBoth = 0.08;
     conditionalProb(pSnow, pBoth);
 } //main
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -602,10 +517,7 @@ int main () {
     double pBoth = 0.08;
     conditionalProb(pSnow, pBoth);
 } //main
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
   <exercise xml:id="empty-194">
@@ -620,10 +532,6 @@ int main () {
 using namespace std;
 // YOUR CODE HERE
         ]]></input>
-      <tests>
-
-
-</tests>
     </program>
     <solution>
 
@@ -646,10 +554,7 @@ void finalGrade (double m1, double m2, double f) {
 int main() {
     finalGrade(80,70,80);
 }
-        ]]></input><tests>
-
-
-</tests></program>
+        ]]></input></program>
 
             
 
@@ -667,10 +572,7 @@ void finalGrade (double m1, double m2, double f) {
 int main() {
     finalGrade(80,70,80);
 }
-        ]]></input><tests>
-
-
-</tests></program></exercise>
+        ]]></input></program></exercise>
             </solution>
   </exercise>
 </section>
