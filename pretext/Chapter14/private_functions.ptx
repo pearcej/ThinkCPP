@@ -41,12 +41,12 @@ public:
 };</program>
   <p>The <c>private</c> label at the beginning is not necessary, but it is a
             useful reminder.</p>
-  <listing label="fourteeneleven">
-    <caption>
+  <exercise label="fourteeneleven">
+    <statement>
       <p>The active code below updates <c>calculatePolar</c> and <c>calculateCartesian</c>
             to be private functions. Notice how we are no longer able to call
             <c>calculateCartesian</c> in main. Feel free to modify the code and experiment around!</p>
-    </caption>
+    </statement>
     <program xml:id="fourteeneleven_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -174,5 +174,5 @@ void Complex::setCartesian (double r, double i) {
 }
 </tests>
     </program>
-  </listing>
+  </exercise>
 </section>

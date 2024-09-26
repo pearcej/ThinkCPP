@@ -62,11 +62,11 @@ is greater than
   <p>According to <c>isGreater</c>, aces are less than deuces (2s). As an
             exercise, fix it so that aces are ranked higher than Kings, as they are
             in most card games.</p>
-  <listing label="12_5">
-    <caption>
+  <exercise label="12_5">
+    <statement>
       <p>Take a look at the active code below, which uses the <c>isGreater</c> function.
             Feel free to change the values of the cards.</p>
-    </caption>
+    </statement>
     <program xml:id="c12_5_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -157,58 +157,58 @@ void Card::print () const {
 }
 </tests>
     </program>
-  </listing>
-  <listing label="isGreater_function_1">
-    <caption>
+  </exercise>
+  <exercise label="isGreater_function_1">
+    <statement>
       <p>Select all <term>totally ordered</term> sets.</p>
-    </caption>
+    </statement>
     <choices>
       <choice>
-        <caption>
+        <statement>
           <p>bool</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! We cannot say true is greater than false, or vice versa.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>string</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct! Strings are ordered lexiographically.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>int</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct! It is quite obvious how integers are ordered.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>Animal</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! We cannot say that one animal is greater than another.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>Card</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! Cards are partially ordered.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="isGreater_function_2">
-    <caption>
+  </exercise>
+  <exercise label="isGreater_function_2">
+    <statement>
       <p><var/>  </p>
-    </caption>
+    </statement>
     <setup>
       <var>
         <program>Card card1 (2,12);
@@ -230,5 +230,5 @@ else {
 Type your answer exactly as it would appear in the terminal.</p>
       </var>
     </setup>
-  </listing>
+  </exercise>
 </section>

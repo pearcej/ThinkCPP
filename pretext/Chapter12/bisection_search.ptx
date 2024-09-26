@@ -133,11 +133,11 @@ I found the card at index = -1</program>
             of testing can prove that a program is correct. On the other hand, by
             looking at a few cases and examining the code, you might be able to
             convince yourself.</p>
-  <listing label="12_9">
-    <caption>
+  <exercise label="12_9">
+    <statement>
       <p>The code below searches finds the same card from the same deck we used on the previous page.
             This time, it uses bisection search to locate the card.</p>
-    </caption>
+    </statement>
     <program xml:id="c12_9_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -260,7 +260,7 @@ bool Card::isGreater (const Card&amp; c2) const {
 }
 </tests>
     </program>
-  </listing>
+  </exercise>
   <p>The number of recursive calls is fairly small, typically 6 or 7. That
             means we only had to call <c>equals</c> and <c>isGreater</c> 6 or 7 times,
             compared to up to 52 times if we did a linear search. In general,
@@ -270,129 +270,129 @@ bool Card::isGreater (const Card&amp; c2) const {
             case and writing the recursive call so that the base case is never
             reached. Either error will cause an infinite recursion, in which case
             C++ will (eventually) generate a run-time error.</p>
-  <listing label="bisection_search_1">
-    <caption>
+  <exercise label="bisection_search_1">
+    <statement>
       <p>You are given a list of spelling words where the words are <term>not sorted</term> in any way.
             What search method should you use?</p>
-    </caption>
+    </statement>
     <choices>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>linear search</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct! No search is faster than linear search when elements are not sorted.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>bisection search</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! Bisection sort does not work on unsorted elements.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>both methods will work, but linear search is more efficient</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! Bisection sort does not work on unsorted elements.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>both methods will work, but bisection search is more efficient</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! Bisection sort does not work on unsorted elements.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="bisection_search_2">
-    <caption>
+  </exercise>
+  <exercise label="bisection_search_2">
+    <statement>
       <p>You are given the same list of spelling words, but this time the words are <term>sorted alphabetically</term>.
             What search method should you use this time?</p>
-    </caption>
+    </statement>
     <choices>
       <choice>
-        <caption>
+        <statement>
           <p>linear search</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! You could use linear search, but it is not the only option.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>bisection search</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! You could use bisection search, but it is not the only option.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>both methods will work, but linear search is more efficient</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! Both methods will work, but linear search is not the most efficient method.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>both methods will work, but bisection search is more efficient</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct! When elements are sorted, bisection search is much quicker.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="bisection_search_3">
-    <caption>
+  </exercise>
+  <exercise label="bisection_search_3">
+    <statement>
       <p>When writing a recursive function, which of the following will result in infinite recursion?</p>
-    </caption>
+    </statement>
     <choices>
       <choice>
-        <caption>
+        <statement>
           <p>having more than one recursive call</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! You are allowed to make multiple recursive calls inside of a function! You might do this if there is more than one condition.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>not including a base case</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct! You always need a base case!</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>writing recursive calls such that the base case is never reached</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct! If you never reach the base case, the program will never stop making recursive calls.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>having more than one base case</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! You are allowed to have multiple base cases. This is often necessary!</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="bisection_search_4">
-    <caption>
+  </exercise>
+  <exercise label="bisection_search_4">
+    <statement>
       <p>How many recursive calls are used to locate the King of Hearts? (Hearts = suit 2, King = rank 13). <var/>  </p>
-    </caption>
+    </statement>
     <setup>
       <var>
         <condition number="[2, 2]">
@@ -407,5 +407,5 @@ bool Card::isGreater (const Card&amp; c2) const {
         </condition>
       </var>
     </setup>
-  </listing>
+  </exercise>
 </section>

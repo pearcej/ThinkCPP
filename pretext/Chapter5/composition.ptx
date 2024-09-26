@@ -29,13 +29,13 @@ return result;</program>
   <program>double fred (double xc, double yc, double xp, double yp) {
   return area (distance (xc, yc, xp, yp));
 }</program>
-  <listing label="fun_comp_AC_1">
-    <caption>
+  <exercise label="fun_comp_AC_1">
+    <statement>
       <p>This program shows you how the distance and area functions are
             composed in the fred function to calculate the area of a circle
             if we only know the coordinates of the center, and one other point
             of the circle.</p>
-    </caption>
+    </statement>
     <program xml:id="fun_comp_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -66,106 +66,106 @@ int main () {
 }
         ]]></input>
     </program>
-  </listing>
-  <listing label="fun_comp_1">
-    <caption>
+  </exercise>
+  <exercise label="fun_comp_1">
+    <statement>
       <p>What is the composition of the function <c>fred</c> ?</p>
-    </caption>
+    </statement>
     <choices>
       <choice>
-        <caption>
+        <statement>
           <p>the types and quantities of variables that make up the function</p>
-        </caption>
+        </statement>
         <feedback>
           <p>This would tell us what variables the function is composed of, but this is not what function composition means.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>the process of combining one or more functions into more complicated ones</p>
-        </caption>
+        </statement>
         <feedback>
           <p>This is what we did inside of the fred function.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>the process of creating a function using incremental development</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incremental development is useful in function composition, but does not define it.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>all of the above</p>
-        </caption>
+        </statement>
         <feedback>
           <p>There is only one correct answer here!</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="fun_comp_2">
-    <caption>
+  </exercise>
+  <exercise label="fun_comp_2">
+    <statement>
       <p>It turns out you already have a function called <c>printHelloName</c>
             so you must rename this one.  Which of the following could be the
             new name for your function?</p>
       <program>void printHelloName (string name) {
   cout &lt;&lt; "Hello " &lt;&lt; name &lt;&lt; "!" &lt;&lt;  endl;
 }</program>
-    </caption>
+    </statement>
     <choices>
       <choice>
-        <caption>
+        <statement>
           <p>print_hello_name</p>
-        </caption>
+        </statement>
         <feedback>
           <p>This function name isn't much of a change from our original, and would be a good choice, but what about the other options?</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>fluffy_cat</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Although unconventional, there is nothing wrong about this name, but what about eat_pizza?</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>eat_pizza</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Although unconventional, there is nothing wrong about this name, but what about fluffy_cat?</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>all of the above</p>
-        </caption>
+        </statement>
         <feedback>
           <p>All of these function names are technically legal, but in general, it's good practice to name your functions something that describes what they do.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>none of the above</p>
-        </caption>
+        </statement>
         <feedback>
           <p>There's nothing wrong with any of these function names, although some of them are weird.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
+  </exercise>
   <p>Function composition is not limited to a fixed number of calls.
             Multiple calls can be made to the same function as well as to a number of
             different functions.</p>
-  <listing label="multi_comp_1">
-    <caption>
+  <exercise label="multi_comp_1">
+    <statement>
       <p>This program shows how mutliple calls are made to one function and it
             also shows that calling two or more different functions is valid.</p>
-    </caption>
+    </statement>
     <program xml:id="multi_comp_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -192,5 +192,5 @@ int main () {
 }
         ]]></input>
     </program>
-  </listing>
+  </exercise>
 </section>

@@ -126,56 +126,56 @@ using namespace std;</program>
             automatically. The nice thing is that you don't have to recompile the
             library every time you compile a program. For the most part the library
             doesn't change, so there is no reason to recompile it.</p>
-  <listing label="header_files_1">
-    <caption>
+  <exercise label="header_files_1">
+    <statement>
       <p>What is a header file?</p>
-    </caption>
+    </statement>
     <choices>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>the file that contains structure/function definitions</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>the file that contains structure/function implementation</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! This is called the implementation file.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>the file that contains int main()</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! Header files are compiled separately and later linked to int main().</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>the first file that you write for any given project</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! You are not required to write your programs in any specific order.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="header_files_2">
-    <caption>
+  </exercise>
+  <exercise label="header_files_2">
+    <statement>
       <p>If I have defined a structure in <c>header.h</c>, how would I include it in the implementation file?</p>
-    </caption>
+    </statement>
     <choices>
       <choice>
         <statement id="header_files_2_opt_a">
           <p>
             <c>#include &lt;header.h&gt;</c>
           </p>
-        </caption>
+        </statement>
         <feedback id="header_files_2_opt_a">
           <p>Incorrect! This is how we include standard library headers.</p>
         </feedback>
@@ -185,7 +185,7 @@ using namespace std;</program>
           <p>
             <c><![CDATA[#include <"header.h">]]></c>
           </p>
-        </caption>
+        </statement>
         <feedback id="header_files_2_opt_b">
           <p>Incorrect! You should get rid of those brackets!</p>
         </feedback>
@@ -195,7 +195,7 @@ using namespace std;</program>
           <p>
             <c>#include header.h</c>
           </p>
-        </caption>
+        </statement>
         <feedback id="header_files_2_opt_c">
           <p>Incorrect! You're missing quotes!</p>
         </feedback>
@@ -205,50 +205,50 @@ using namespace std;</program>
           <p>
             <c>#include "header.h"</c>
           </p>
-        </caption>
+        </statement>
         <feedback id="header_files_2_opt_d">
           <p>Correct!</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="header_files_3">
-    <caption>
+  </exercise>
+  <exercise label="header_files_3">
+    <statement>
       <p>Which is <term>false</term> about breaking a program into three pieces?</p>
-    </caption>
+    </statement>
     <choices>
       <choice>
-        <caption>
+        <statement>
           <p>Files can be compiled separately and linked to a single program later.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! This is actually true!</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>Separate compilation can be time-consuming, since you're working with more files.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct! Separate compilation actually saves time, since you only need to compile a few files at a time!</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>It minimizes interactions between components.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! This is actually true!</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>It's easier to include your implementation in other program, besides your main.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! This is actually true!</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
+  </exercise>
 </section>

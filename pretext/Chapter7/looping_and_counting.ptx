@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <section xml:id="chapter7_looping-and-counting-loopcount">
   <title>Looping and counting</title>
-  <listing label="looping_and_counting_AC_1">
-    <caption>
+  <exercise label="looping_and_counting_AC_1">
+    <statement>
       <p>The active code below counts the number of times the letter <c>'a'</c>
             appears in a string <c>fruit</c>.</p>
-    </caption>
+    </statement>
     <program xml:id="looping_and_counting_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -26,15 +26,15 @@ int main() {
 }
         ]]></input>
     </program>
-  </listing>
+  </exercise>
   <p>This program demonstrates a common idiom, called a <term>counter</term>. The
             variable <c>count</c> is initialized to zero and then incremented each time
             we find an <c>'a'</c>. (To <term>increment</term> is to increase by one; it is the
             opposite of <term>decrement</term>, and unrelated to <term>excrement</term>, which is a
             noun.) When we exit the loop, <c>count</c> contains the result: the total
             number of a's.</p>
-  <listing label="looping_counting_1">
-    <caption>
+  <exercise label="looping_counting_1">
+    <statement>
       <p>What does the following code print?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -45,41 +45,41 @@ while (x < 0) {
 }
 ]]></input>
       </program>
-    </caption>
+    </statement>
     <choices>
       <choice>
-        <caption>
+        <statement>
           <p>5 4 3 2 1</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Notice that x is negative.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>-5 -4 -3 -2 -1</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Notice that the value of x is incremented before it is printed.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>-4 -3 -2 -1 0</p>
-        </caption>
+        </statement>
         <feedback>
           <p>The value of x is incremented before it is printed so the first value printed is -4.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="looping_counting_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <caption>
+  </exercise>
+  <exercise label="looping_counting_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
       <p>As an exercise, encapsulate this code in a function named
             <c>countLetters</c>, and generalize it so that it accepts the string and
             the letter as arguments. In the function, declare <c>length</c>, <c>count</c>, and <c>index</c> in that order.
             Within the main function, declare <c>city</c> and <c>letter</c> in that order.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="4">
         <cline>size_t countLetters(string s, char letter) {</cline>
@@ -125,11 +125,11 @@ while (x < 0) {
         <cline>}</cline>
       </block>
     </blocks>
-  </listing>
-  <listing label="looping_counting_3" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <caption>
+  </exercise>
+  <exercise label="looping_counting_3" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
       <p>The following is the correct code for printing the even numbers from 0 to 10, but it also includes some extra code that you won't need. Drag the needed blocks from the left and put them in the correct order on the right.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="4" correct="no">
         <cline>x = x + 1; </cline>
@@ -151,9 +151,9 @@ while (x < 0) {
         <cline>}</cline>
       </block>
     </blocks>
-  </listing>
-  <listing label="looping_counting_4">
-    <caption>
+  </exercise>
+  <exercise label="looping_counting_4">
+    <statement>
       <p>What is the value of <c>counter</c> right before main returns 0?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -183,12 +183,12 @@ while ( index < end_1 ) {
 return 0;
 ]]></input>
       </program>
-    </caption>
+    </statement>
     <choices>
       <choice>
         <statement id="looping_counting_4_opt_a">
           <p>The code dosen't reach <c>return 0</c> because we index out of bounds in <c>word_2</c>.</p>
-        </caption>
+        </statement>
         <feedback id="looping_counting_4_opt_a">
           <p>We set <c>end_1</c> to be the smaller of the two lengths so we don't index out of bounds.</p>
         </feedback>
@@ -196,7 +196,7 @@ return 0;
       <choice>
         <statement id="looping_counting_4_opt_b">
           <p>2</p>
-        </caption>
+        </statement>
         <feedback id="looping_counting_4_opt_b">
           <p>Not all the letters after index 4 differ in the two words.</p>
         </feedback>
@@ -204,7 +204,7 @@ return 0;
       <choice>
         <statement id="looping_counting_4_opt_c">
           <p>3</p>
-        </caption>
+        </statement>
         <feedback id="looping_counting_4_opt_c">
           <p>We decrement the value of counter when we don't have matching letters.</p>
         </feedback>
@@ -212,11 +212,11 @@ return 0;
       <choice correct="yes">
         <statement id="looping_counting_4_opt_d">
           <p>4</p>
-        </caption>
+        </statement>
         <feedback id="looping_counting_4_opt_d">
           <p>Correct! we have 6 matching letters and 2 differing letters upto the length of <c>word_2</c>.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
+  </exercise>
 </section>

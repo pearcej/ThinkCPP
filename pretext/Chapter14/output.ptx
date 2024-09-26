@@ -34,11 +34,11 @@ c1.printPolar();</program>
   <p>The output of this code is:</p>
   <program>2 + 3i
 3.60555 e^ 0.982794i</program>
-  <listing label="fourteensix">
-    <caption>
+  <exercise label="fourteensix">
+    <statement>
       <p>The active code below uses the print functions for <c>Complex</c> objects.
             Feel free to modify the code and experiment around!</p>
-    </caption>
+    </statement>
     <program xml:id="fourteensix_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -123,9 +123,9 @@ void Complex::printPolar () {
 }
 </tests>
     </program>
-  </listing>
-  <listing label="question14_5_1">
-    <caption>
+  </exercise>
+  <exercise label="question14_5_1">
+    <statement>
       <p>What is the correct output of the code below?</p>
       <program language="cpp" line-numbers="yes">
         <input>
@@ -136,40 +136,40 @@ int main() {
 }
 </input>
       </program>
-    </caption>
+    </statement>
     <choices>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>5 e^ 0.927295i</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>3 + 4i</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! Try using the active code above.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>2 + 3i</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! Try using the active code above.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>5 e^ 1</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! Try using the active code above.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
+  </exercise>
 </section>

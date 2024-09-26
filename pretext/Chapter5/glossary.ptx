@@ -53,11 +53,11 @@
                         conditions.</p>
     </li>
   </dl>
-  <listing label="chapter_five_glossary_1">
-    <caption>
+  <exercise label="chapter_five_glossary_1">
+    <statement>
       <p>
 </p>
-    </caption>
+    </statement>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -79,12 +79,12 @@
         <response>An operator that combines boolean values in order to test compound conditions.</response>
       </match>
     </matches>
-  </listing>
-  <listing label="chapter_five_glossary_2">
-    <caption>
+  </exercise>
+  <exercise label="chapter_five_glossary_2">
+    <statement>
       <p>
 </p>
-    </caption>
+    </statement>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -102,12 +102,12 @@
         <response>Having more than one function with the same name but different parameters.</response>
       </match>
     </matches>
-  </listing>
-  <listing label="chapter_five_glossary_3">
-    <caption>
+  </exercise>
+  <exercise label="chapter_five_glossary_3">
+    <statement>
       <p>
 </p>
-    </caption>
+    </statement>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -125,5 +125,5 @@
         <response>A special return type that does not return a value.</response>
       </match>
     </matches>
-  </listing>
+  </exercise>
 </section>

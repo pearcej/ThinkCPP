@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <section xml:id="chapter14_coding-practice-1">
   <title>Coding Practice</title>
-  <listing xml:id="empty-103">
+  <exercise xml:id="empty-103">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter14', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
-      <listing label="cp_14_AC_2q">
-        <caption>
+      <exercise label="cp_14_AC_2q">
+        <statement>
           <p>There are errors in the code below. Modify the code so that <c>main</c> runs
                     successfully. Select the Parsonsprob tab for hints for the construction of the code.</p>
-        </caption>
+        </statement>
         <program xml:id="cp_14_AC_2q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
@@ -42,14 +42,14 @@ int main() {
 }
         ]]></input>
         </program>
-      </listing>
+      </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter14', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <listing label="cp_14_AC_2q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
-        <caption>
+      <exercise label="cp_14_AC_2q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+        <statement>
           <p>There are errors in the code below. Modify the code so that <c>main</c> runs
                     successfully. Use the lines to construct the code, then go back to complete the Activecode tab.</p>
-        </caption>
+        </statement>
         <blocks>
           <block order="14">
             <cline>class Room {</cline>
@@ -126,17 +126,17 @@ int main() {
             <cline>}</cline>
           </block>
         </blocks>
-      </listing>
+      </exercise>
     </TabNode>
-  </listing>
-  <listing xml:id="empty-104">
+  </exercise>
+  <exercise xml:id="empty-104">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter14', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
-      <listing label="cp_14_AC_4q">
-        <caption>
+      <exercise label="cp_14_AC_4q">
+        <statement>
           <p>In <c>main</c> create a <c>Temp</c> object to calculate
                     what 100 degrees Celsius is in Fahrenheit.
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
-        </caption>
+        </statement>
         <program xml:id="cp_14_AC_4q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
@@ -183,15 +183,15 @@ int main() {
 }
         ]]></input>
         </program>
-      </listing>
+      </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter14', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <listing label="cp_14_AC_4q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
-        <caption>
+      <exercise label="cp_14_AC_4q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+        <statement>
           <p>In <c>main</c> create a <c>Temp</c> object to calculate
                     what 100 degrees Celsius is in Fahrenheit.
                     Use the lines to construct the code, then go back to complete the Activecode tab.</p>
-        </caption>
+        </statement>
         <blocks>
           <block order="5">
             <cline>int main() {</cline>
@@ -212,18 +212,18 @@ int main() {
             <cline>}</cline>
           </block>
         </blocks>
-      </listing>
+      </exercise>
     </TabNode>
-  </listing>
-  <listing xml:id="empty-105">
+  </exercise>
+  <exercise xml:id="empty-105">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter14', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
-      <listing label="cp_14_AC_6q">
-        <caption>
+      <exercise label="cp_14_AC_6q">
+        <statement>
           <p>What if we had an existing <c>vector</c> with data that we want to copy
                     into our <c>MyVector</c>? Write a constructor that takes a <c>vector</c>
                     and copies the data into the <c>elements</c> vector.
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
-        </caption>
+        </statement>
         <program xml:id="cp_14_AC_6q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
@@ -240,16 +240,16 @@ class MyVector {
 };
         ]]></input>
         </program>
-      </listing>
+      </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter14', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <listing label="cp_14_AC_6q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
-        <caption>
+      <exercise label="cp_14_AC_6q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+        <statement>
           <p>What if we had an existing <c>vector</c> with data that we want to copy
                     into our <c>MyVector</c>? Write a constructor that takes a <c>vector</c>
                     and copies the data into the <c>elements</c> vector.
                     Use the lines to construct the code, then go back to complete the Activecode tab.</p>
-        </caption>
+        </statement>
         <blocks>
           <block order="1">
             <cline><![CDATA[MyVector (vector<int> vec) {]]></cline>
@@ -261,13 +261,13 @@ class MyVector {
             <cline>}</cline>
           </block>
         </blocks>
-      </listing>
+      </exercise>
     </TabNode>
-  </listing>
-  <listing xml:id="empty-106">
+  </exercise>
+  <exercise xml:id="empty-106">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter14', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
-      <listing label="cp_14_AC_8q">
-        <caption>
+      <exercise label="cp_14_AC_8q">
+        <statement>
           <p>Now we can write some of our own fun functions! No longer
                     do we need to write <c>for</c> loops every time we want to
                     print out a <c>vector</c>. With <c>MyVector</c>, we can just
@@ -277,7 +277,7 @@ class MyVector {
                     the elements 2, 5, 1, and 8, <c>print</c> should print out
                     [2, 5, 1, 8] followed by a newline.
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
-        </caption>
+        </statement>
         <program xml:id="cp_14_AC_8q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
@@ -325,11 +325,11 @@ void MyVector::pop_back() { elements.pop_back(); };
 int MyVector::at(int index) { return elements[index]; }
 </tests>
         </program>
-      </listing>
+      </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter14', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <listing label="cp_14_AC_8q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
-        <caption>
+      <exercise label="cp_14_AC_8q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+        <statement>
           <p>Now we can write some of our own fun functions! No longer
                     do we need to write <c>for</c> loops every time we want to
                     print out a <c>vector</c>. With <c>MyVector</c>, we can just
@@ -339,7 +339,7 @@ int MyVector::at(int index) { return elements[index]; }
                     the elements 2, 5, 1, and 8, <c>print</c> should print out
                     [2, 5, 1, 8] followed by a newline. Use the lines to construct
                     the code, then go back to complete the Activecode tab.</p>
-        </caption>
+        </statement>
         <blocks>
           <block order="5">
             <cline>void print() {</cline>
@@ -363,13 +363,13 @@ int MyVector::at(int index) { return elements[index]; }
             <cline>}</cline>
           </block>
         </blocks>
-      </listing>
+      </exercise>
     </TabNode>
-  </listing>
-  <listing xml:id="empty-107">
+  </exercise>
+  <exercise xml:id="empty-107">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter14', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
-      <listing label="cp_14_AC_10q">
-        <caption>
+      <exercise label="cp_14_AC_10q">
+        <statement>
           <p>What if we wanted to return the largest and smallest elements in our
                     <c>MyVector</c>? Write the public member functions <c>max</c> and <c>min</c>
                     which calls the private member functions <c>findMax</c> and <c>findMin</c>.
@@ -377,7 +377,7 @@ int MyVector::at(int index) { return elements[index]; }
                     values, and <c>max</c> and <c>min</c> call these private member functions
                     and return the max and min values. Select the Parsonsprob tab for hints
                     for the construction of the code.</p>
-        </caption>
+        </statement>
         <program xml:id="cp_14_AC_10q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
@@ -454,11 +454,11 @@ void MyVector::pop_front() {
 }
 </tests>
         </program>
-      </listing>
+      </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter14', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <listing label="cp_14_AC_10q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
-        <caption>
+      <exercise label="cp_14_AC_10q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+        <statement>
           <p>What if we wanted to return the largest and smallest elements in our
                     <c>MyVector</c>? Write the public member functions <c>max</c> and <c>min</c>
                     which calls the private member functions <c>findMax</c> and <c>findMin</c>.
@@ -467,7 +467,7 @@ void MyVector::pop_front() {
                     and return the max and min values. Use the lines to construct the code,
                     then go back to complete the Activecode tab. Be sure to declare the <c>max</c> and <c>min</c>
                     functions in <c>public</c> when you complete the Activecode.</p>
-        </caption>
+        </statement>
         <blocks>
           <block order="3">
             <cline>// findMax private member function</cline>
@@ -558,7 +558,7 @@ void MyVector::pop_front() {
             <cline>}</cline>
           </block>
         </blocks>
-      </listing>
+      </exercise>
     </TabNode>
-  </listing>
+  </exercise>
 </section>

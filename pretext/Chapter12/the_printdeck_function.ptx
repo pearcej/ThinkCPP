@@ -15,12 +15,12 @@
   <p>Since <c>deck</c> has type <c>vector&lt;Card&gt;</c>, an element of <c>deck</c> has
             type <c>Card</c>. Therefore, it is legal to invoke <c>print</c> on
             <c>deck[i]</c>.</p>
-  <listing label="12_7">
-    <caption>
+  <exercise label="12_7">
+    <statement>
       <p>A Euchre Deck contains 9's, 10's, Jacks, Queens, Kings, and Aces of all four suits.
             Modify the <c>buildDeck</c> function below to create a Euchre deck. The <c>printDeck</c>
             function will allow you to verify that you have done this correctly.</p>
-    </caption>
+    </statement>
     <program xml:id="c12_7_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -99,7 +99,7 @@ void Card::print () const {
  }
 </tests>
     </program>
-  </listing>
+  </exercise>
   <p>Hopefully you took some time to try and figure out the code yourself.  The solution
             below is just one of several correct solutions for creating the Euchre deck:</p>
   <program>vector&lt;Card&gt; buildEuchreDeck() {

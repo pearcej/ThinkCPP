@@ -12,41 +12,41 @@
             reasonable to do so, and resort to modifiers only if there is a
             compelling advantage. This approach might be called a functional
             programming style.</p>
-  <listing label="which_is_best_1">
-    <caption>
+  <exercise label="which_is_best_1">
+    <statement>
       <p>What is a functional programming style?</p>
-    </caption>
+    </statement>
     <choices>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>Writing modifiers only if there is a compelling advantage. Otherwise, write pure functions.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>Writing fill-in functions only if there is a compelling advantage. Otherwise, write modifiers.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Try again.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>Writing pure functions only if there is a compelling advantage. Otherwise, write modifiers.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Try again.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="which_is_best_2">
-    <caption>
+  </exercise>
+  <exercise label="which_is_best_2">
+    <statement>
       <p>Anything that can be done with modifiers and <var/> functions can also be done with <var/> functions. <var/>  <var/>  </p>
-    </caption>
+    </statement>
     <setup>
       <var case="insensitive">
         <condition string="^\s*fill-in\s*$">
@@ -73,5 +73,5 @@
         </condition>
       </var>
     </setup>
-  </listing>
+  </exercise>
 </section>

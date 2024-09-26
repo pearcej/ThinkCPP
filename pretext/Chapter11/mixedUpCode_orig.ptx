@@ -2,8 +2,8 @@
 <section xml:id="chapter11_mixed-up-code-practice">
   <title>Mixed Up Code Practice</title>
   <p>Answer the following <term>Mixed-Up Code</term> questions to assess what you have learned in this chapter.</p>
-  <listing label="mucp_11_1" numbered="yes" adaptive="yes" indentation="show" language="python">
-    <caption>
+  <exercise label="mucp_11_1" numbered="yes" adaptive="yes" indentation="show" language="python">
+    <statement>
       <blockquote>
         <p>Construct a block of code that would make the print function into a member function.</p>
         <program language="cpp" line-numbers="yes">
@@ -24,7 +24,7 @@ int main ( ) {
 ]]></input>
         </program>
       </blockquote>
-    </caption>
+    </statement>
     <blocks>
       <block order="7">
         <cline>struct Student {</cline>
@@ -69,14 +69,14 @@ int main ( ) {
         <cline>}</cline>
       </block>
     </blocks>
-  </listing>
-  <listing label="mucp_11_2" numbered="yes" adaptive="yes" indentation="show" language="python">
-    <caption>
+  </exercise>
+  <exercise label="mucp_11_2" numbered="yes" adaptive="yes" indentation="show" language="python">
+    <statement>
       <p>Let's make an album! Write the struct definition for
             Album, which should have instance variables name and year.
             Include a member function called check that returns true if
             the song was released after 2015.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="9">
         <cline>struct Album {</cline>
@@ -119,12 +119,12 @@ int main ( ) {
         <cline>}</cline>
       </block>
     </blocks>
-  </listing>
-  <listing label="mucp_11_3" numbered="yes" adaptive="yes" indentation="show" language="python">
-    <caption>
+  </exercise>
+  <exercise label="mucp_11_3" numbered="yes" adaptive="yes" indentation="show" language="python">
+    <statement>
       <p>Put the necessary blocks of code in the correct order to establish
             the convertToSeconds member function.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="5" correct="no">
         <cline>double convertToSeconds (const Time&amp; time) { </cline>
@@ -150,14 +150,14 @@ int main ( ) {
         <cline>}</cline>
       </block>
     </blocks>
-  </listing>
-  <listing label="mucp_11_4" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <caption>
+  </exercise>
+  <exercise label="mucp_11_4" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
       <p>Create the Student::is_older() function as it would be defined INSIDE
             of the Student structure definition. This function checks if the current
             Student is older than another Student. The function is invoked on the
             current Student.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="7">
         <cline>bool is_older(const Student&amp; stu) const {</cline>
@@ -192,13 +192,13 @@ int main ( ) {
         <cline>}</cline>
       </block>
     </blocks>
-  </listing>
-  <listing label="mucp_11_5" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <caption>
+  </exercise>
+  <exercise label="mucp_11_5" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
       <p>Put the necessary blocks of code in the correct order to initialise
             a constructor for type Days that takes in the number of days and
             initialises the member variables days, weeks, years.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="4">
         <cline>Days::Days (int num_days) {</cline>
@@ -237,13 +237,13 @@ int main ( ) {
         <cline>}</cline>
       </block>
     </blocks>
-  </listing>
-  <listing label="mucp_11_6" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <caption>
+  </exercise>
+  <exercise label="mucp_11_6" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
       <p>Let's write two constructors for Student. One with no arguments and
             one with arguments. Put the necessary blocks of code in
             the correct order.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="3">
         <cline>Student::Student () {</cline>
@@ -285,13 +285,13 @@ int main ( ) {
         <cline>}</cline>
       </block>
     </blocks>
-  </listing>
-  <listing label="mucp_11_7" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <caption>
+  </exercise>
+  <exercise label="mucp_11_7" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
       <p>Implement two constructors for the Penguin structure. One should
             be a default constructor, the other should take arguments. The
             weight needs to be converted from pounds to kilograms in the second constructor</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="1">
         <cline>struct Penguin {</cline>
@@ -342,16 +342,16 @@ int main ( ) {
         <cline>}</cline>
       </block>
     </blocks>
-  </listing>
-  <listing label="mucp_11_8" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <caption>
+  </exercise>
+  <exercise label="mucp_11_8" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
       <p>Put the necessary blocks of code in the correct order to make the
             AddDays function below a member function a member function.</p>
       <p>Days AddDays (const Days&amp; d1, const Days&amp; d2) {
             int days = convertToDays (d1) + convertToDays(d2);
             return makeDays (days);
             }</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="6">
         <cline>Days Days::add (const Days&amp; d2) const {</cline>
@@ -376,13 +376,13 @@ int main ( ) {
         <cline>}</cline>
       </block>
     </blocks>
-  </listing>
-  <listing label="mucp_11_9" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <caption>
+  </exercise>
+  <exercise label="mucp_11_9" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
       <p>Put the necessary blocks of code in the correct order to create a struct
             Penguin that stores name and age. In addition have 2 constructors and
             declare Penguins in main such that both are called.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="12">
         <cline>struct Penguin {</cline>
@@ -444,12 +444,12 @@ int main ( ) {
         <cline>}</cline>
       </block>
     </blocks>
-  </listing>
-  <listing label="mucp_11_10" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <caption>
+  </exercise>
+  <exercise label="mucp_11_10" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
       <p>Put the necessary blocks of code in the correct order in order to write
             a header (.h) file for the struct Student.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="2">
         <cline>struct Student {</cline>
@@ -487,5 +487,5 @@ int main ( ) {
         <cline>};</cline>
       </block>
     </blocks>
-  </listing>
+  </exercise>
 </section>

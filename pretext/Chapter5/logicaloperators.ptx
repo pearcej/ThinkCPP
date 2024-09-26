@@ -12,62 +12,62 @@
             number is odd.</p>
   <p>Logical operators often provide a way to simplify nested conditional
             statements.</p>
-  <listing label="logical_op_1">
-    <caption>
+  <exercise label="logical_op_1">
+    <statement>
       <p>Multiple Response: How could you re-write the following code using a single conditional?</p>
       <program>if (x &gt; 0) {
   if (x &lt; 10) {
     cout &lt;&lt; "x is a positive single digit" &lt;&lt; endl;
   }
 }</program>
-    </caption>
+    </statement>
     <choices>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p><![CDATA[if (x > 0 && x < 10) {...]]></p>
-        </caption>
+        </statement>
         <feedback>
           <p>This is exactly what the nested conditionals are saying.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p><![CDATA[if (x > 0 || x < 10) {...]]></p>
-        </caption>
+        </statement>
         <feedback>
           <p>|| represents "or", but we need both sides of the conditional to be true.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p><![CDATA[if (x > 0 ! x < 10) {...]]></p>
-        </caption>
+        </statement>
         <feedback>
           <p>The ! operator cannot be used to compare two sides of a conditional.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p><![CDATA[if ( !(x < 0) && !(x > 10) ) {...]]></p>
-        </caption>
+        </statement>
         <feedback>
           <p>If x = 0 or if x = 10, this expression will return true when it shouldn't.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p><![CDATA[if ( !(x <= 0) && !(x >= 10) ) {...]]></p>
-        </caption>
+        </statement>
         <feedback>
           <p>If it IS NOT what we don't want, then it IS what we want!</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="logical_op_2">
-    <caption>
+  </exercise>
+  <exercise label="logical_op_2">
+    <statement>
       <p>Match the conditional statement to the correct boolean and the meaning of the operator in use, given n = 7.</p>
-    </caption>
+    </statement>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -97,16 +97,16 @@
         <response>true, "not"</response>
       </match>
     </matches>
-  </listing>
-  <listing label="logical_op_3">
-    <caption>
+  </exercise>
+  <exercise label="logical_op_3">
+    <statement>
       <dl>
         <li>
           <title>Add a single logical operator to make the expression check if x is greater than or equal to 50</title>
           <p><var/> ( x &lt; 50 ) <var/>  </p>
         </li>
       </dl>
-    </caption>
+    </statement>
     <setup>
       <var case="insensitive">
         <condition string="^\s*[!]\s*$">
@@ -121,5 +121,5 @@
         </condition>
       </var>
     </setup>
-  </listing>
+  </exercise>
 </section>

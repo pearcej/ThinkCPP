@@ -2,12 +2,12 @@
 <section xml:id="chapter7_string-variables">
   <title><c>string</c> variables</title>
   <p>You can create a variable with type <c>string</c> in the usual ways.</p>
-  <listing label="string_variables_AC_1">
-    <caption>
+  <exercise label="string_variables_AC_1">
+    <statement>
       <p>In the active code below, the first line creates a <c>string</c> without
             giving it a value. The second line assigns it the string value <c>"Hello,"</c>.
             The third line is a combined declaration and assignment, also called an initialization.</p>
-    </caption>
+    </statement>
     <program xml:id="string_variables_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -20,7 +20,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </listing>
+  </exercise>
   <p>Normally when string values like <c>"Hello, "</c> or <c>"world."</c> appear,
             they are treated as C strings. In this case, when we assign them to an
             <c>string</c> variable, they are converted automatically to <c>string</c>
@@ -31,10 +31,10 @@ int main() {
             for the <c>string</c> class, and you will have to add the file <c>string</c>
             to the list of files you want to compile. The details of how to do this
             depend on your programming environment.</p>
-  <listing label="string_variables_AC_2">
-    <caption>
+  <exercise label="string_variables_AC_2">
+    <statement>
       <p>Run the active code below!</p>
-    </caption>
+    </statement>
     <program xml:id="string_variables_AC_2_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -48,11 +48,11 @@ int main() {
 }
         ]]></input>
     </program>
-  </listing>
-  <listing label="string_variables_1" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <caption>
+  </exercise>
+  <exercise label="string_variables_1" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
       <p>Construct a block of code that correctly prints out a string variable.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="1">
         <cline>string x;</cline>
@@ -61,42 +61,42 @@ int main() {
         <cline>cout &lt;&lt; x &lt;&lt; endl;</cline>
       </block>
     </blocks>
-  </listing>
-  <listing label="string_variables_2">
-    <caption>
+  </exercise>
+  <exercise label="string_variables_2">
+    <statement>
       <p>How would you initialize a string?</p>
-    </caption>
+    </statement>
     <choices>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>string x = "Hello";</p>
-        </caption>
+        </statement>
         <feedback>
           <p>This is the correct way to initialize a string.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>x = "Hello";</p>
-        </caption>
+        </statement>
         <feedback>
           <p>This is an assignment.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>string x;</p>
-        </caption>
+        </statement>
         <feedback>
           <p>This is a declaration.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="string_variables_3">
-    <caption>
+  </exercise>
+  <exercise label="string_variables_3">
+    <statement>
       <p>Click on each spot where a string assignment occurs.</p>
-    </caption>
+    </statement>
     <feedback>
       <p>Remember, square brackets [] are used to access a character in a string.</p>
     </feedback>
@@ -121,5 +121,5 @@ int main() {
       </cline>
       <cline>}</cline>
     </areas>
-  </listing>
+  </exercise>
 </section>

@@ -3,10 +3,10 @@
   <title>Activecode Exercises</title>
   <p>Answer the following <term>Activecode</term> questions to
             assess what you have learned in this chapter.</p>
-  <listing xml:id="empty-185">
-    <caption>
+  <exercise xml:id="empty-185">
+    <statement>
       <p>Construct a function <c>printInteger</c> that correctly prints the integer conversion of the passed double.</p>
-    </caption>
+    </statement>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="functions_p9_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -45,7 +45,7 @@ int main() {
 
             
 
-<listing label="functions_p9_ac_a"><caption><p>Below is one way to write the <c>printInteger</c> function.</p></caption><program xml:id="functions_p9_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="functions_p9_ac_a"><statement><p>Below is one way to write the <c>printInteger</c> function.</p></statement><program xml:id="functions_p9_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -58,13 +58,13 @@ int main() {
     double x = 3.14159265;
     printInteger(x);
 }
-        ]]></input></program></listing>
+        ]]></input></program></exercise>
             </solution>
-  </listing>
-  <listing xml:id="empty-186">
-    <caption>
+  </exercise>
+  <exercise xml:id="empty-186">
+    <statement>
       <p>Construct a function called <c>newLine</c> that takes no arguments and prints a blank line.  Then construct another function called <c>divider</c> that prints two blank lines separated by a line of <q>&#x2026; &#x2026; &#x2026; &#x2026;</q></p>
-    </caption>
+    </statement>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="functions_p0_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -108,7 +108,7 @@ int main() { // Use the two functions
 
             
 
-<listing label="functions_p0_ac_a"><caption><p>Below is one way to write the two functions, <c>newLine</c> and <c>divider</c>.</p></caption><program xml:id="functions_p0_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="functions_p0_ac_a"><statement><p>Below is one way to write the two functions, <c>newLine</c> and <c>divider</c>.</p></statement><program xml:id="functions_p0_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -126,13 +126,13 @@ int main() { // Use the two functions
     newLine();
     divider();
 }
-        ]]></input></program></listing>
+        ]]></input></program></exercise>
             </solution>
-  </listing>
-  <listing xml:id="empty-187">
-    <caption>
+  </exercise>
+  <exercise xml:id="empty-187">
+    <statement>
       <p>Construct a function, <c>volumeCone</c>, that takes as inputs the radius then the height and correctly calculates the volume of a cone with as much precision as possible and prints the value to the terminal.  Use 3.14 for pi.</p>
-    </caption>
+    </statement>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="functions_p1_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -167,7 +167,7 @@ void volumeCone (double r, double h) {
 
             
 
-<listing label="functions_p1_ac_a"><caption><p>Below is one way to write the <c>volumeCone</c> function.</p></caption><program xml:id="functions_p1_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="functions_p1_ac_a"><statement><p>Below is one way to write the <c>volumeCone</c> function.</p></statement><program xml:id="functions_p1_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -175,13 +175,13 @@ void volumeCone (double r, double h) {
     double vol = 1/3.0 * 3.14 * r * r * h;
     cout << vol;
 }
-        ]]></input></program></listing>
+        ]]></input></program></exercise>
             </solution>
-  </listing>
-  <listing xml:id="empty-188">
-    <caption>
+  </exercise>
+  <exercise xml:id="empty-188">
+    <statement>
       <p>Construct a function, <c>sineDegrees</c>, that prints the sin of an angle given in degrees. Use 3.14 for pi.</p>
-    </caption>
+    </statement>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="functions_p3_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -223,7 +223,7 @@ int main() {
 
             
 
-<listing label="functions_p3_ac_a"><caption><p>Below is one way to write the <c>sineDegrees</c> function.</p></caption><program xml:id="functions_p3_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="functions_p3_ac_a"><statement><p>Below is one way to write the <c>sineDegrees</c> function.</p></statement><program xml:id="functions_p3_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -238,13 +238,13 @@ int main() {
     double degrees = 25.00;
     sineDegrees(degrees);
 }
-        ]]></input></program></listing>
+        ]]></input></program></exercise>
             </solution>
-  </listing>
-  <listing xml:id="empty-189">
-    <caption>
+  </exercise>
+  <exercise xml:id="empty-189">
+    <statement>
       <p>Construct a function, <c>finalPrice</c>, that prints the price (with 8% sales tax) of an item with after using a 30% off coupon.</p>
-    </caption>
+    </statement>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="functions_p4_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -279,7 +279,7 @@ void finalPrice (double item) {
 
             
 
-<listing label="functions_p4_ac_a"><caption><p>Below is one way to write the <c>finalPrice</c> function.</p></caption><program xml:id="functions_p4_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="functions_p4_ac_a"><statement><p>Below is one way to write the <c>finalPrice</c> function.</p></statement><program xml:id="functions_p4_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -288,13 +288,13 @@ void finalPrice (double item) {
     double final = (item - discount) * 1.08;
     cout << final;
 }
-        ]]></input></program></listing>
+        ]]></input></program></exercise>
             </solution>
-  </listing>
-  <listing xml:id="empty-190">
-    <caption>
+  </exercise>
+  <exercise xml:id="empty-190">
+    <statement>
       <p>Suppose you have already defined a function called <c>sumOfSquares</c> which returns the sum of the squares of two numbers and <c>root</c> which returns the square root of a number.  Construct a function that calculates the hypotenuse of the right triangle and prints the three sidelengths.</p>
-    </caption>
+    </statement>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="functions_p5_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -313,9 +313,9 @@ double root ( double num ) {
 // YOUR CODE HERE
         ]]></input>
     </program>
-    <caption>
+    <statement>
       <p>Below is one way to write the <c>sumOfSquares</c> and <c>root</c> functions.</p>
-    </caption>
+    </statement>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="functions_p5_ac_a_editor">
       <input><![CDATA[
 #include <iostream>
@@ -339,11 +339,11 @@ int main () {
 }
         ]]></input>
     </program>
-  </listing>
-  <listing xml:id="empty-191">
-    <caption>
+  </exercise>
+  <exercise xml:id="empty-191">
+    <statement>
       <p>The chickens from the previous chapter are infuriated.  Construct a function, <c>eatMore</c>, that prints <q>Eat</q> on the first line, <q>More</q> on the second line, and the name of the passed animal on the fourth line, followed by an exclamation point.</p>
-    </caption>
+    </statement>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="functions_p6_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -384,7 +384,7 @@ int main() {
 
             
 
-<listing label="functions_p6_ac_a"><caption><p>Below is one way to write the <c>eatMore</c> function.</p></caption><program xml:id="functions_p6_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="functions_p6_ac_a"><statement><p>Below is one way to write the <c>eatMore</c> function.</p></statement><program xml:id="functions_p6_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -399,13 +399,13 @@ int main() {
     string animal = "Chicken";
     eatMore(animal);
 }
-        ]]></input></program></listing>
+        ]]></input></program></exercise>
             </solution>
-  </listing>
-  <listing xml:id="empty-192">
-    <caption>
+  </exercise>
+  <exercise xml:id="empty-192">
+    <statement>
       <p>Construct a function, <c>printAmount</c>, that takes a dollar amount and cent amount and prints the total amount of money that you have. Hint: the mod operator &#x2018;%' returns the remainder of a division.</p>
-    </caption>
+    </statement>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="functions_p7_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -447,7 +447,7 @@ int main() {
 
             
 
-<listing label="functions_p7_ac_a"><caption><p>Below is onw way to write the <c>printAmount</c> function.</p></caption><program xml:id="functions_p7_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="functions_p7_ac_a"><statement><p>Below is onw way to write the <c>printAmount</c> function.</p></statement><program xml:id="functions_p7_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -462,15 +462,15 @@ int main() {
     int cents = 56;
     printAmount(dollars, cents);
 }
-        ]]></input></program></listing>
+        ]]></input></program></exercise>
             </solution>
-  </listing>
-  <listing xml:id="empty-193">
-    <caption>
+  </exercise>
+  <exercise xml:id="empty-193">
+    <statement>
       <p>In Michigan, the probability that it snows on any given day in the winter is about 14%.  The probability of having a snow day on any given day in the winter is about 4%.  The probability that is snows and you have a snow day is 8%.
                     Construct and call a function, <c>conditionalProb</c>, that calculates the probability of a having a snow day, given the fact that it will snow tonight.
                     For reference, the formula for conditional probability is: P(A|B) = P(B and A) / P(B).</p>
-    </caption>
+    </statement>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="functions_p8_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -503,7 +503,7 @@ int main () {
 
             
 
-<listing label="functions_p8_ac_a"><caption><p>Below is one way to write and call the <c>conditionalProb</c> function.</p></caption><program xml:id="functions_p8_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="functions_p8_ac_a"><statement><p>Below is one way to write and call the <c>conditionalProb</c> function.</p></statement><program xml:id="functions_p8_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -517,15 +517,15 @@ int main () {
     double pBoth = 0.08;
     conditionalProb(pSnow, pBoth);
 } //main
-        ]]></input></program></listing>
+        ]]></input></program></exercise>
             </solution>
-  </listing>
-  <listing xml:id="empty-194">
-    <caption>
+  </exercise>
+  <exercise xml:id="empty-194">
+    <statement>
       <p>Your final grade is determined by a midterm component (each midterm is worth 20% of the grade) and a final component that is worth 60% of the grade. In order to avoid any discrepancies with students who's grades are on the fence, your teacher follows this strict grading scale:
                     [0%,60%) = F, [60%, 70%) = D, [70%, 80%) = C, [80%, 90%) = B and [90%, 100%] = A. He does not round until the very end.
                     Construct a function, <c>finalGrade</c>, that determines a student's final grade percentage according to this grading scheme and prints the result.</p>
-    </caption>
+    </statement>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="functions_p2_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -558,7 +558,7 @@ int main() {
 
             
 
-<listing label="functions_p2_ac_a"><caption><p>Below is one way to construct the <c>finalGrade</c> function.</p></caption><program xml:id="functions_p2_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="functions_p2_ac_a"><statement><p>Below is one way to construct the <c>finalGrade</c> function.</p></statement><program xml:id="functions_p2_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -572,7 +572,7 @@ void finalGrade (double m1, double m2, double f) {
 int main() {
     finalGrade(80,70,80);
 }
-        ]]></input></program></listing>
+        ]]></input></program></exercise>
             </solution>
-  </listing>
+  </exercise>
 </section>

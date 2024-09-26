@@ -5,12 +5,12 @@
             the confines of <c>main</c>, there is no such thing as phil. If you try to use
             it, the compiler will complain. Similarly, inside <c>printTwice</c> there is no
             such thing as argument.</p>
-  <listing label="locals_AC_1">
-    <caption>
+  <exercise label="locals_AC_1">
+    <statement>
       <p>The following code will show the output of the printTwice function.
             Notice that it is the argument &#x2018;b' that is outputted, not the
             variable &#x2018;phil'.</p>
-    </caption>
+    </statement>
     <program xml:id="locals_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -27,7 +27,7 @@ int main () {
 }
         ]]></input>
     </program>
-  </listing>
+  </exercise>
   <p>Variables like this are said to be <term>local</term>. In order to keep track of
             parameters and local variables, it is useful to draw a <term>stack
                 diagram</term>. Like state diagrams, stack diagrams show the value of each
@@ -45,8 +45,8 @@ int main () {
   <p>In the example, <c>main</c> has one local variable, argument, and no
             parameters. <c>printTwice</c> has no local variables and one parameter, named
             phil.</p>
-  <listing label="locals_1">
-    <caption>
+  <exercise label="locals_1">
+    <statement>
       <p>How many local variables and parameters does <c>main</c> have?</p>
       <program>void printHelloName (string name) {
   cout &lt;&lt; "Hello " &lt;&lt; name &lt;&lt; "!";
@@ -59,44 +59,44 @@ int main () {
   printHelloName(name2);
   return 0;
 }</program>
-    </caption>
+    </statement>
     <choices>
       <choice>
-        <caption>
+        <statement>
           <p>1 local variable, 1 parameter</p>
-        </caption>
+        </statement>
         <feedback>
           <p>A parameter would be located within the parentheses next to the function's name.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>0 local variables, 1 parameter</p>
-        </caption>
+        </statement>
         <feedback>
           <p>A parameter would be located within the parentheses next to the function's name.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>2 local variables, 0 parameters</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>2 local variables, 1 parameter</p>
-        </caption>
+        </statement>
         <feedback>
           <p>A parameter would be located within the parentheses next to the function's name.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="locals_2">
-    <caption>
+  </exercise>
+  <exercise label="locals_2">
+    <statement>
       <p>How many local variables and parameters does <c>printHelloName</c> have?</p>
       <program>void printHelloName (string name) {
   cout &lt;&lt; "Hello " &lt;&lt; name &lt;&lt; "!";
@@ -109,47 +109,47 @@ int main () {
   printHelloName(name2);
   return 0;
 }</program>
-    </caption>
+    </statement>
     <choices>
       <choice>
-        <caption>
+        <statement>
           <p>1 local variable, 1 parameter</p>
-        </caption>
+        </statement>
         <feedback>
           <p>A local variable exists when a variable is declared within a function.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>0 local variables, 1 parameter</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>2 local variables, 0 parameters</p>
-        </caption>
+        </statement>
         <feedback>
           <p>A local variable exists when a variable is declared within a function.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>2 local variables, 1 parameter</p>
-        </caption>
+        </statement>
         <feedback>
           <p>A local variable exists when a variable is declared within a function.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="locals_3">
-    <caption>
+  </exercise>
+  <exercise label="locals_3">
+    <statement>
       <p>Whenever we make a function call, we create a(n) <var/> of that function,
 which contains the parameters and local variables for that function. </p>
-    </caption>
+    </statement>
     <setup>
       <var case="insensitive">
         <condition string="^\s*instance\s*$">
@@ -164,9 +164,9 @@ which contains the parameters and local variables for that function. </p>
         </condition>
       </var>
     </setup>
-  </listing>
-  <listing label="locals_4">
-    <caption>
+  </exercise>
+  <exercise label="locals_4">
+    <statement>
       <p>How many calls to <c>hi</c> are made during the exectuion of the entire program?</p>
       <program>void hi() {
   cout &lt;&lt; "hiii !"&lt;&lt;endl;
@@ -184,40 +184,40 @@ int main () {
   hi();
   return 0;
 }</program>
-    </caption>
+    </statement>
     <choices>
       <choice>
-        <caption>
+        <statement>
           <p>1 call</p>
-        </caption>
+        </statement>
         <feedback>
           <p>hi( ) is called from multiple functions.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>4 calls</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>2 calls</p>
-        </caption>
+        </statement>
         <feedback>
           <p>hi( ) is called from multiple functions.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>3 calls</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Two calls from one function are indeed two seperate calls.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
+  </exercise>
 </section>

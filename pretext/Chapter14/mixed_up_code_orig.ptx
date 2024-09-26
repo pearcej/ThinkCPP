@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <section xml:id="chapter14_mixed-up-code-practice">
   <title>Mixed Up Code Practice</title>
-  <listing label="mucp_14_1" numbered="yes" adaptive="yes" indentation="show" language="python">
-    <caption>
+  <exercise label="mucp_14_1" numbered="yes" adaptive="yes" indentation="show" language="python">
+    <statement>
       <p>Let's write the class definition for <c>Circle</c>. <c>Circle</c> should have its
             radius stored in a private member variable. Also write the constructor
             for <c>Circle</c>, which takes a radius as a parameter, in addition to the
@@ -10,7 +10,7 @@
             the <c>Circle</c>. Make sure to include the <c>private</c> and <c>public</c> keywords!
             Use 3.14 for the value of pi. Put the necessary
             blocks of code in the correct order.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="3">
         <cline>class Circle {</cline>
@@ -44,16 +44,16 @@
         <cline>};</cline>
       </block>
     </blocks>
-  </listing>
-  <listing label="mucp_14_2" numbered="yes" adaptive="yes" indentation="show" language="python">
-    <caption>
+  </exercise>
+  <exercise label="mucp_14_2" numbered="yes" adaptive="yes" indentation="show" language="python">
+    <statement>
       <p>Now that we have our <c>Circle</c> class, let's write some accessor
             functions! Write the <c>Circle</c> member functions <c>getRadius</c>
             and <c>setRadius</c>. It doesn't make sense for a <c>Circle</c>'s
             radius to be negative, so in your <c>setRadius</c> function,
             output an error message if the given radius is negative.
             Put the necessary blocks of code in the correct order.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="9">
         <cline>class Circle {</cline>
@@ -94,13 +94,13 @@
         <cline>};</cline>
       </block>
     </blocks>
-  </listing>
-  <listing label="mucp_14_3" numbered="yes" adaptive="yes" indentation="show" language="python">
-    <caption>
+  </exercise>
+  <exercise label="mucp_14_3" numbered="yes" adaptive="yes" indentation="show" language="python">
+    <statement>
       <p>Write a <c>main</c>. In <c>main</c>, create a <c>Circle</c> with radius 2.4
             and output the radius. Then change the radius to 3.6 and output
             the new radius. Put the necessary blocks of code in the correct order.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="3">
         <cline>int main() {</cline>
@@ -136,9 +136,9 @@
         <cline>}</cline>
       </block>
     </blocks>
-  </listing>
-  <listing label="mucp_14_4" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <caption>
+  </exercise>
+  <exercise label="mucp_14_4" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
       <p>A <c>Rectangle</c> can be constructed given only two points. First,
             write the class definition for <c>Point</c>, which stores an x and
             a y value in private member variables. Also write the default constructor, which
@@ -146,7 +146,7 @@
             In addition, write its accessor functions,
             <c>getX</c>, <c>getY</c>, <c>setX</c>, and <c>setY</c>.
             Put the necessary blocks of code in the correct order.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="6">
         <cline>class Point {</cline>
@@ -182,9 +182,9 @@
         <cline>};</cline>
       </block>
     </blocks>
-  </listing>
-  <listing label="mucp_14_5" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <caption>
+  </exercise>
+  <exercise label="mucp_14_5" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
       <p>Now that we've defined the <c>Point</c> class, we can go back to
             writing the <c>Rectangle</c> class. <c>Rectangle</c> should store
             it's upper-left and lower-right points as private member variables.
@@ -192,7 +192,7 @@
             It should also have length and height stored as public member variables.
             Also write a constructor that
             takes an upper-left point and a lower-right point as parameters.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="8">
         <cline>class Rectangle {</cline>
@@ -228,14 +228,14 @@
         <cline>};</cline>
       </block>
     </blocks>
-  </listing>
-  <listing label="mucp_14_6" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <caption>
+  </exercise>
+  <exercise label="mucp_14_6" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
       <p>Write the <c>Rectangle</c> member function <c>calculateSides</c>, which finds
             the length and height of the rectangle using the stored <c>Point``s.
 Afterwards, write the ``Rectangle</c> member function <c>calculateArea</c>,
             which returns the area of the rectangle.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="7">
         <cline>void Rectangle::calculateSides () {</cline>
@@ -277,14 +277,14 @@ Afterwards, write the ``Rectangle</c> member function <c>calculateArea</c>,
         <cline>}</cline>
       </block>
     </blocks>
-  </listing>
-  <listing label="mucp_14_7" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <caption>
+  </exercise>
+  <exercise label="mucp_14_7" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
       <p>Write a <c>main</c> In <c>main</c>, create a <c>Rectangle</c> with corners
             at (2.5, 7.5) and (8, 1.5). Print out the length and height, calculate the area,
             and print out the area. Then change the upperLeft corner to be at (4.2, 10.7) and
             print out the new area.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="5">
         <cline>int main() {</cline>
@@ -332,9 +332,9 @@ Afterwards, write the ``Rectangle</c> member function <c>calculateArea</c>,
         <cline>}</cline>
       </block>
     </blocks>
-  </listing>
-  <listing label="mucp_14_8" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <caption>
+  </exercise>
+  <exercise label="mucp_14_8" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
       <p>Let's write the <c>Date</c> class. <c>Date</c> stores information
             about the day, month, and year in private variables, in addition to a <c>vector</c>
             of the number of days in each month. Write accessor functions
@@ -342,7 +342,7 @@ Afterwards, write the ``Rectangle</c> member function <c>calculateArea</c>,
             In addition, write the default constructor, which initializes
             the date to January 1, 2000. Write another constructor which takes in a day,
             month, and year in that order.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="13">
         <cline>class Date {</cline>
@@ -399,13 +399,13 @@ Afterwards, write the ``Rectangle</c> member function <c>calculateArea</c>,
         <cline>};</cline>
       </block>
     </blocks>
-  </listing>
-  <listing label="mucp_14_9" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <caption>
+  </exercise>
+  <exercise label="mucp_14_9" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
       <p>Let's write the <c>Date</c> member function, <c>printDate</c>,
             which prints the date out in the following format: month/day/year CE/BCE
             depending on whether the year is negative or not.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="7">
         <cline>void Date::printDate () {</cline>
@@ -438,13 +438,13 @@ Afterwards, write the ``Rectangle</c> member function <c>calculateArea</c>,
         <cline>}</cline>
       </block>
     </blocks>
-  </listing>
-  <listing label="mucp_14_10" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <caption>
+  </exercise>
+  <exercise label="mucp_14_10" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
       <p>Write the <c>Date</c> member function <c>isLeapYear</c>, which returns true if
             the year is a leap year. Then write the <c>Date</c> member function <c>lastDayInMonth</c>,
             which returns the last day in the <c>Date</c>'s month.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="13">
         <cline>bool Date::isLeapYear () {</cline>
@@ -498,5 +498,5 @@ Afterwards, write the ``Rectangle</c> member function <c>calculateArea</c>,
         <cline>}</cline>
       </block>
     </blocks>
-  </listing>
+  </exercise>
 </section>

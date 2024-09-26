@@ -54,13 +54,13 @@ void printMultTable (int high) {
 5   10   15   20   25   30   35
 6   12   18   24   30   36   42
 7   14   21   28   35   42   49</program>
-  <listing label="more_generalization_AC_1">
-    <caption>
+  <exercise label="more_generalization_AC_1">
+    <statement>
       <p>The active code below uses the updated <c>printMultTable</c> function.
             Notice that with generalization, we can create multiplication tables of
             multiple sizes by simply changing the parameter passed into <c>printMultTable</c>.
             Run the active code to see what happens!</p>
-    </caption>
+    </statement>
     <program xml:id="more_generalization_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -88,7 +88,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </listing>
+  </exercise>
   <p>When you generalize a function appropriately, you often find that the
             resulting program has capabilities you did not intend. For example, you
             might notice that the multiplication table is symmetric, because
@@ -107,13 +107,13 @@ int main() {
 6   12   18   24   30   36
 7   14   21   28   35   42   49</program>
   <p>I'll leave it up to you to figure out how it works.</p>
-  <listing label="more_generalization_AC_2">
-    <caption>
+  <exercise label="more_generalization_AC_2">
+    <statement>
       <p>The active code below prints half the multiplication table.
             We can achieve this by replacing the <c>printMultiples (i, high)</c> in
             <c>printMultTable</c> with <c>printMultiples (i, i)</c>.
             Run the active code to see what happens!</p>
-    </caption>
+    </statement>
     <program xml:id="more_generalization_AC_2_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -141,5 +141,5 @@ int main() {
 }
         ]]></input>
     </program>
-  </listing>
+  </exercise>
 </section>

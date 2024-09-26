@@ -62,11 +62,11 @@ double pi = 3.14159;</program>
             interested to know that the underlying mechanism is completely
             different. In fact, most processors have special hardware just for
             performing floating-point operations.</p>
-  <listing label="floating_point_1">
-    <caption>
+  <exercise label="floating_point_1">
+    <statement>
       <p>A(n) <var/> statment consists of a declaration statement and an
 assignment statement, which are combined. </p>
-    </caption>
+    </statement>
     <setup>
       <var case="insensitive">
         <condition string="^\s*initialization\s*$">
@@ -81,14 +81,14 @@ assignment statement, which are combined. </p>
         </condition>
       </var>
     </setup>
-  </listing>
-  <listing label="floating_point_2">
-    <caption>
+  </exercise>
+  <exercise label="floating_point_2">
+    <statement>
       <p>It's your birthday and your cake can serve 12.  You want to slice it
 evenly so that you and each of your 4 friends receive an equal amount.
 One of your friends is on a diet and, and wants to know the serving size
 of her slice.  You write the following code in C++ to answer her question. <var/>  <var/>  </p>
-    </caption>
+    </statement>
     <setup>
       <var>
         <program>int servings = 12;
@@ -117,9 +117,9 @@ the actual serving size of her slice.</p>
         </condition>
       </var>
     </setup>
-  </listing>
-  <listing label="floating_point_3">
-    <caption>
+  </exercise>
+  <exercise label="floating_point_3">
+    <statement>
       <p>In the lab, we measured a temperature of 7.99999999 degrees C, using
             an extremely precise measuring device.  Now we are writing a program
             to perform some calculations with our data.  Consider the following C++
@@ -129,58 +129,58 @@ int e_int = e;
 double e_double = e_int;
 cout &lt;&lt; e_double;</program>
       <p>What is the value of <c>e_double</c> that is printed to the terminal?</p>
-    </caption>
+    </statement>
     <choices>
       <choice>
-        <caption>
+        <statement>
           <p>e</p>
-        </caption>
+        </statement>
         <feedback>
           <p>This is the name of a variable. Only the value of a variable will print with cout.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>3</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Converting to an int always rounds down.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>2</p>
-        </caption>
+        </statement>
         <feedback>
           <p>When we converted e to an int, e was rounded down to 2. When we converted e_nt to e_double, the decimal places from e were lost, and the value of e_double is 2.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>3.0</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Converting to an int always rounds down.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>2.71828</p>
-        </caption>
+        </statement>
         <feedback>
           <p>When we converted e to an int, e was rounded down to 2. When we converted e_nt to e_double, the decimal places from e were lost.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
+  </exercise>
   <p>Identifying whether an operation carries out integer division or floating point division
             can get tricky when we have a mix of integers and doubles in our expression.
             The thing to remeber is if either the divisor or the dividend is a double
             then the program will carry out floating point division.</p>
-  <listing label="floating_point_a1">
-    <caption>
+  <exercise label="floating_point_a1">
+    <statement>
       <p>Run the code below to see what type of division occurs each time.</p>
-    </caption>
+    </statement>
     <program xml:id="floating_point_a1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -202,5 +202,5 @@ int main () {
 }
         ]]></input>
     </program>
-  </listing>
+  </exercise>
 </section>

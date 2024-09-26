@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="chapter5_coding-practice">
   <title>Coding Practice</title>
-  <listing xml:id="empty-217">
+  <exercise xml:id="empty-217">
     <statement/>
     <program interactive="" language="" xml:id="empty-218"/>
     <solution>
@@ -56,7 +56,7 @@ TEST_CASE("calculator function: division") {
 
     
             </solution>
-  </listing>
+  </exercise>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
 &lt;div data-component="selectquestion" id=cp_5_AC_2q_sq data-questionlist='cp_5_AC_2q, cp_5_AC_2q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
@@ -64,7 +64,7 @@ TEST_CASE("calculator function: division") {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <listing xml:id="empty-219">
+  <exercise xml:id="empty-219">
     <statement/>
     <program interactive="" language="" xml:id="empty-220"/>
     <solution>
@@ -97,7 +97,7 @@ TEST_CASE("calculateIntAngle function") {
 
     
             </solution>
-  </listing>
+  </exercise>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
 &lt;div data-component="selectquestion" id=cp_5_AC_4q_sq data-questionlist='cp_5_AC_4q, cp_5_AC_4q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
@@ -105,7 +105,7 @@ TEST_CASE("calculateIntAngle function") {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <listing xml:id="empty-221">
+  <exercise xml:id="empty-221">
     <statement/>
     <program interactive="" language="" xml:id="empty-222"/>
     <solution>
@@ -144,7 +144,7 @@ TEST_CASE("dogToHumanYears function for &gt;1") {
 
     
             </solution>
-  </listing>
+  </exercise>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
 &lt;div data-component="selectquestion" id=cp_5_AC_6q_sq data-questionlist='cp_5_AC_6q, cp_5_AC_6q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
@@ -152,7 +152,7 @@ TEST_CASE("dogToHumanYears function for &gt;1") {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <listing xml:id="empty-223">
+  <exercise xml:id="empty-223">
     <statement/>
     <program interactive="" language="" xml:id="empty-224"/>
     <solution>
@@ -207,7 +207,7 @@ TEST_CASE("isLeapYear divisible by 400") {
 
     
             </solution>
-  </listing>
+  </exercise>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
 &lt;div data-component="selectquestion" id=cp_5_AC_8q_sq data-questionlist='cp_5_AC_8q, cp_5_AC_8q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
@@ -215,7 +215,7 @@ TEST_CASE("isLeapYear divisible by 400") {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <listing xml:id="empty-225">
+  <exercise xml:id="empty-225">
     <statement/>
     <program interactive="" language="" xml:id="empty-226"/>
     <solution>
@@ -255,7 +255,7 @@ TEST_CASE("triangularNum function") {
 
     
             </solution>
-  </listing>
+  </exercise>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
 &lt;div data-component="selectquestion" id=cp_5_AC_10q_sq data-questionlist='cp_5_AC_10q, cp_5_AC_10q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;

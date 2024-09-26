@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
 <section xml:id="chapter5_coding-practice-1">
   <title>Coding Practice</title>
-  <listing xml:id="empty-227">
+  <exercise xml:id="empty-227">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter5', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
-      <listing label="cp_5_AC_2q">
-        <caption>
+      <exercise label="cp_5_AC_2q">
+        <statement>
           <p>A binary number is one that is expressed in the base-2 numeral system.
                     Write a function <c>convertToBinary</c> which takes a <c>decimal</c> as
                     a parameter. <c>convertToBinary</c> takes the number in decimal, converts
                     it into a binary number, and returns the binary number. Test your function
                     in <c>main</c>. Run and test your code! Select the Parsonsprob tab for hints
                     for the construction of the code.</p>
-        </caption>
+        </statement>
         <program xml:id="cp_5_AC_2q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
@@ -34,18 +34,18 @@ TEST_CASE("convertToBinary function") {
 }
 </tests>
         </program>
-      </listing>
+      </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter5', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <listing label="cp_5_AC_2q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
-        <caption>
+      <exercise label="cp_5_AC_2q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+        <statement>
           <p>A binary number is one that is expressed in the base-2 numeral system.
                     Write a function <c>convertToBinary</c> which takes a <c>decimal</c> as
                     a parameter. <c>convertToBinary</c> takes the number in decimal, converts
                     it into a binary number, and returns the binary number. Test your function
                     in <c>main</c>. Use the lines to construct the code, then go back to complete
                     the Activecode tab.</p>
-        </caption>
+        </statement>
         <blocks>
           <block order="2">
             <cline>int convertToBinary (int decimal) {</cline>
@@ -71,13 +71,13 @@ TEST_CASE("convertToBinary function") {
             <cline>}</cline>
           </block>
         </blocks>
-      </listing>
+      </exercise>
     </TabNode>
-  </listing>
-  <listing xml:id="empty-228">
+  </exercise>
+  <exercise xml:id="empty-228">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter5', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
-      <listing label="cp_5_AC_4q">
-        <caption>
+      <exercise label="cp_5_AC_4q">
+        <statement>
           <p>The astronomical start and end dates of the four seasons are based on the position of
                     the Earth relative to the Sun. As a result, it changes every year and can be difficult to
                     remember. However, the meteorological start and end dates are based on the Gregorian calendar
@@ -87,7 +87,7 @@ TEST_CASE("convertToBinary function") {
                     the birthday falls in according to the meteorological start and returns a <c>string</c> with the correct season.
                     For example, <c>birthSeason (7, 5)</c> returns <q>summer</q> since July 5 is in the summer. Select the Parsonsprob tab
                     for hints for the construction of the code. Run and test your code!</p>
-        </caption>
+        </statement>
         <program xml:id="cp_5_AC_4q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
@@ -126,11 +126,11 @@ TEST_CASE("birthSeason function: winter") {
 }
 </tests>
         </program>
-      </listing>
+      </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter5', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <listing label="cp_5_AC_4q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
-        <caption>
+      <exercise label="cp_5_AC_4q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+        <statement>
           <p>The astronomical start and end dates of the four seasons are based on the position of
                     the Earth relative to the Sun. As a result, it changes every year and can be difficult to
                     remember. However, the meteorological start and end dates are based on the Gregorian calendar
@@ -140,7 +140,7 @@ TEST_CASE("birthSeason function: winter") {
                     the birthday falls in according to the meteorological start and returns a <c>string</c> with the correct season.
                     For example, <c>birthSeason (7, 5)</c> returns <q>summer</q> since July 5 is in the summer. Use the lines to construct
                     the code, then go back to complete the Activecode tab.</p>
-        </caption>
+        </statement>
         <blocks>
           <block order="5">
             <cline>string birthSeason (int month, int day) {</cline>
@@ -169,20 +169,20 @@ TEST_CASE("birthSeason function: winter") {
             <cline>}</cline>
           </block>
         </blocks>
-      </listing>
+      </exercise>
     </TabNode>
-  </listing>
-  <listing xml:id="empty-229">
+  </exercise>
+  <exercise xml:id="empty-229">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter5', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
-      <listing label="cp_5_AC_6q">
-        <caption>
+      <exercise label="cp_5_AC_6q">
+        <statement>
           <p>A number is a common factor of two other numbers if it divides evenly into both of the
                     other numbers. For example, 2 is a common factor of 4 and 18, because 2 goes evenly into
                     4 and 18. Write the function <c>isCommonFactor</c>, which takes three parameters,
                     <c>num1</c>, <c>num2</c>, and <c>factor</c>. <c>isCommonFactor</c> returns <c>true</c> if <c>factor</c> is a
                     factor of both <c>num1</c> and <c>num2</c>, and returns <c>false</c> otherwise. Run and test your code!
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
-        </caption>
+        </statement>
         <program xml:id="cp_5_AC_6q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
@@ -207,18 +207,18 @@ TEST_CASE("isCommonFactor function: false cases") {
 }
 </tests>
         </program>
-      </listing>
+      </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter5', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <listing label="cp_5_AC_6q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
-        <caption>
+      <exercise label="cp_5_AC_6q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+        <statement>
           <p>A number is a common factor of two other numbers if it divides evenly into both of the
                     other numbers. For example, 2 is a common factor of 4 and 18, because 2 goes evenly into
                     4 and 18. Write the function <c>isCommonFactor</c>, which takes three parameters,
                     <c>num1</c>, <c>num2</c>, and <c>factor</c>. <c>isCommonFactor</c> returns <c>true</c> if <c>factor</c> is a
                     factor of both <c>num1</c> and <c>num2</c>, and returns <c>false</c> otherwise. Run and test your code!
                     Use the lines to construct the code, then go back to complete the Activecode tab.</p>
-        </caption>
+        </statement>
         <blocks>
           <block order="5">
             <cline>bool isCommonFactor (int num1, int num2, int factor) {</cline>
@@ -246,13 +246,13 @@ TEST_CASE("isCommonFactor function: false cases") {
             <cline>}</cline>
           </block>
         </blocks>
-      </listing>
+      </exercise>
     </TabNode>
-  </listing>
-  <listing xml:id="empty-230">
+  </exercise>
+  <exercise xml:id="empty-230">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter5', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
-      <listing label="cp_5_AC_8q">
-        <caption>
+      <exercise label="cp_5_AC_8q">
+        <statement>
           <p>In the enchanted Mushroom Forest, there are many different types of
                     mushrooms as far as the eye can see. Most of these mushrooms
                     can make delicious stews and dishes, but some of them are poisonous.
@@ -263,7 +263,7 @@ TEST_CASE("isCommonFactor function: false cases") {
                     it is poisonous. Otherwise, it is not. <c>isPoisonous</c> should return <c>true</c> if
                     the mushroom is poisonous and <c>false</c> otherwise. Run and test your code!
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
-        </caption>
+        </statement>
         <program xml:id="cp_5_AC_8q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
@@ -289,11 +289,11 @@ TEST_CASE("isPoisonous function: false cases") {
 }
 </tests>
         </program>
-      </listing>
+      </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter5', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <listing label="cp_5_AC_8q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
-        <caption>
+      <exercise label="cp_5_AC_8q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+        <statement>
           <p>In the enchanted Mushroom Forest, there are many different types of
                     mushrooms as far as the eye can see. Most of these mushrooms
                     can make delicious stews and dishes, but some of them are poisonous.
@@ -304,7 +304,7 @@ TEST_CASE("isPoisonous function: false cases") {
                     it is poisonous. Otherwise, it is not. <c>isPoisonous</c> should return <c>true</c> if
                     the mushroom is poisonous and <c>false</c> otherwise. Use the lines to construct the
                     code, then go back to complete the Activecode tab.</p>
-        </caption>
+        </statement>
         <blocks>
           <block order="4">
             <cline>bool isPoisonous (char size, int numSpots, bool isRed) {</cline>
@@ -345,18 +345,18 @@ TEST_CASE("isPoisonous function: false cases") {
             <cline>}</cline>
           </block>
         </blocks>
-      </listing>
+      </exercise>
     </TabNode>
-  </listing>
-  <listing xml:id="empty-231">
+  </exercise>
+  <exercise xml:id="empty-231">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter5', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
-      <listing label="cp_5_AC_10q">
-        <caption>
+      <exercise label="cp_5_AC_10q">
+        <statement>
           <p>Write the function <c>digitSum</c> which takes an <c>int num</c> as a parameter
                     and returns the sum of all its digits. For example, <c>digitSum (1423)</c>
                     would return 10. Use recursion. Run and test your code! Select the Parsonsprob
                     tab for hints for the construction of the code.</p>
-        </caption>
+        </statement>
         <program xml:id="cp_5_AC_10q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
@@ -378,16 +378,16 @@ TEST_CASE("digitSum function") {
 }
 </tests>
         </program>
-      </listing>
+      </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter5', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <listing label="cp_5_AC_10q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
-        <caption>
+      <exercise label="cp_5_AC_10q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+        <statement>
           <p>Write the function <c>digitSum</c> which takes an <c>int num</c> as a parameter
                     and returns the sum of all its digits. For example, <c>digitSum (1423)</c>
                     would return 10. Use recursion. Use the lines to construct the code, then
                     go back to complete the Activecode tab.</p>
-        </caption>
+        </statement>
         <blocks>
           <block order="4">
             <cline>int digitSum (int num) {</cline>
@@ -419,7 +419,7 @@ TEST_CASE("digitSum function") {
             <cline>}</cline>
           </block>
         </blocks>
-      </listing>
+      </exercise>
     </TabNode>
-  </listing>
+  </exercise>
 </section>

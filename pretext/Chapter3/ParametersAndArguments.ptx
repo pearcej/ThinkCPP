@@ -53,11 +53,11 @@
             sometimes converts arguments from one type to another automatically.
             For now you should learn the general rule, and we will deal with
             exceptions later.</p>
-  <listing label="params_args_AC_1">
-    <caption>
+  <exercise label="params_args_AC_1">
+    <statement>
       <p>The following code will show the output of the printTwice function.
             Try modifying the value of argument to change the output.</p>
-    </caption>
+    </statement>
     <program xml:id="params_args_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -74,11 +74,11 @@ int main () {
 }
         ]]></input>
     </program>
-  </listing>
-  <listing label="params_args_1">
-    <caption>
+  </exercise>
+  <exercise label="params_args_1">
+    <statement>
       <p><var/>  </p>
-    </caption>
+    </statement>
     <setup>
       <var>
         <program>#include &lt;iostream&gt;
@@ -102,11 +102,11 @@ or if the compiler will throw an error, type <q>error</q>.</p>
         </condition>
       </var>
     </setup>
-  </listing>
-  <listing label="params_args_2">
-    <caption>
+  </exercise>
+  <exercise label="params_args_2">
+    <statement>
       <p><var/>  </p>
-    </caption>
+    </statement>
     <setup>
       <var>
         <program>#include &lt;iostream&gt;
@@ -130,11 +130,11 @@ or if the compiler will throw an error, type <q>error</q>.</p>
         </condition>
       </var>
     </setup>
-  </listing>
-  <listing label="params_args_4">
-    <caption>
+  </exercise>
+  <exercise label="params_args_4">
+    <statement>
       <p>Match the function declaration to an example of its function call.</p>
-    </caption>
+    </statement>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -156,5 +156,5 @@ or if the compiler will throw an error, type <q>error</q>.</p>
         <response>timesTwo("hello", "hi");</response>
       </match>
     </matches>
-  </listing>
+  </exercise>
 </section>

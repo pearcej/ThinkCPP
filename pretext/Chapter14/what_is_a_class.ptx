@@ -31,31 +31,31 @@ public:
   <p>Also, it is common to refer to all user-defined types in C++ as
             <q>classes,</q> regardless of whether they are defined as a <c>struct</c> or a
             <c>class</c>.</p>
-  <listing label="question14_2_1">
-    <caption>
+  <exercise label="question14_2_1">
+    <statement>
       <p>By default, the data members of a <c>class</c> are private.</p>
-    </caption>
+    </statement>
     <choices>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>True</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct! We can omit the ``private:`` label because the data members are private by default</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>False</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! Try again.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="question14_2_2">
-    <caption>
+  </exercise>
+  <exercise label="question14_2_2">
+    <statement>
       <p>How can we change <c>Deck</c>, which is currently a <c>struct</c>, into a <c>class</c>?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -78,63 +78,63 @@ public:
 };
 ]]></input>
       </program>
-    </caption>
+    </statement>
     <choices>
       <choice>
-        <caption>
+        <statement>
           <p>Remove the ``private:`` label.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! ``Deck`` is still a ``struct``.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>Change ``struct`` to ``class`` and remove the ``public:`` label.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! We don't want to make the constructors and all member functions private.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>Remove the ``public:`` label.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! We don't want to make the constructors and all member functions private.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>Change ``struct`` to ``class``.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct! ``Deck`` is now a ``class`` and it's okay that we kept the ``private:`` label.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="question14_2_3">
-    <caption>
+  </exercise>
+  <exercise label="question14_2_3">
+    <statement>
       <p>Private data members can be accessed within the class.</p>
-    </caption>
+    </statement>
     <choices>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>True</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct! However, they cannot be accessed outside of the class.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>False</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! We can access private data members as long as we are in the class.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
+  </exercise>
 </section>

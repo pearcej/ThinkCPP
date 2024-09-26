@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<listings xml:id="chapter13_multiple-choice-exercises">
+<exercises xml:id="chapter13_multiple-choice-exercises">
   <title>Multiple Choice Exercises</title>
-  <listing label="mce_13_1">
-    <caption>
+  <exercise label="mce_13_1">
+    <statement>
       <p>What is the output of the code below?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -16,12 +16,12 @@ int main() {
 }
 ]]></input>
       </program>
-    </caption>
+    </statement>
     <choices>
       <choice>
         <statement id="mce_13_1_opt_a">
           <p>JULY NOVEMBER</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_1_opt_a">
           <p>What are the actual values of <c>JUL</c> and <c>NOV</c>?</p>
         </feedback>
@@ -29,7 +29,7 @@ int main() {
       <choice>
         <statement id="mce_13_1_opt_b">
           <p>JUL NOV</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_1_opt_b">
           <p>What do the values of enumerated types map to?</p>
         </feedback>
@@ -37,7 +37,7 @@ int main() {
       <choice correct="yes">
         <statement id="mce_13_1_opt_c">
           <p>7 11</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_1_opt_c">
           <p>Since we defined <c>JAN</c> to start at 1, <c>JUL</c> and <c>NOV</c> map to 7 and 11.</p>
         </feedback>
@@ -45,15 +45,15 @@ int main() {
       <choice>
         <statement id="mce_13_1_opt_d">
           <p>6 10</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_1_opt_d">
           <p>Take a closer look at our enumerated type definition.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="mce_13_2">
-    <caption>
+  </exercise>
+  <exercise label="mce_13_2">
+    <statement>
       <p>What is the output of the code below?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -77,12 +77,12 @@ int main() {
 }
 ]]></input>
       </program>
-    </caption>
+    </statement>
     <choices>
       <choice>
         <statement id="mce_13_2_opt_a">
           <p>summer</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_2_opt_a">
           <p>Although that is the value of <c>s</c>, is that printed?</p>
         </feedback>
@@ -90,7 +90,7 @@ int main() {
       <choice>
         <statement id="mce_13_2_opt_b">
           <p>It's summer!It's fall!</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_2_opt_b">
           <p>This would be the correct answer if this <c>switch</c> statement worked.</p>
         </feedback>
@@ -98,7 +98,7 @@ int main() {
       <choice>
         <statement id="mce_13_2_opt_c">
           <p>It's summer!It's fall!It's winter!Invalid season!</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_2_opt_c">
           <p>Where are the <c>break</c> statements?</p>
         </feedback>
@@ -106,15 +106,15 @@ int main() {
       <choice correct="yes">
         <statement id="mce_13_2_opt_d">
           <p>Compile error.</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_2_opt_d">
           <p><c>switch</c> statements can't be used on <c>string</c>s.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="mce_13_3">
-    <caption>
+  </exercise>
+  <exercise label="mce_13_3">
+    <statement>
       <p>What is the output of the code below?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -140,12 +140,12 @@ int main() {
 }
 ]]></input>
       </program>
-    </caption>
+    </statement>
     <choices>
       <choice>
         <statement id="mce_13_3_opt_a">
           <p>SUMMER</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_3_opt_a">
           <p>Although that is the value of <c>s</c>, is that printed?</p>
         </feedback>
@@ -153,7 +153,7 @@ int main() {
       <choice correct="yes">
         <statement id="mce_13_3_opt_b">
           <p>It's summer!It's fall!</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_3_opt_b">
           <p>Since there is no <c>break</c> statement after the case for summer but there is one after fall, this is correct.</p>
         </feedback>
@@ -161,7 +161,7 @@ int main() {
       <choice>
         <statement id="mce_13_3_opt_c">
           <p>It's summer!It's fall!It's winter!Invalid season!</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_3_opt_c">
           <p>Where are the <c>break</c> statements?</p>
         </feedback>
@@ -169,15 +169,15 @@ int main() {
       <choice>
         <statement id="mce_13_3_opt_d">
           <p>Compile error.</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_3_opt_d">
           <p>Since <c>s</c> is an enumerated type, the <c>Season</c>s are mapped to <c>int</c>s, which are valid for <c>switch</c> statements.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="mce_13_4">
-    <caption>
+  </exercise>
+  <exercise label="mce_13_4">
+    <statement>
       <p>Take a look at the <c>struct</c> definition of <c>Entry</c>. If we wanted to make a
             <c>struct</c> called <c>Dictionary</c>, how can we create a <c>vector</c> of <c>Entry</c>s
             as a member variable?</p>
@@ -189,14 +189,14 @@ struct Entry {
 }
 </input>
       </program>
-    </caption>
+    </statement>
     <choices>
       <choice correct="yes">
         <statement id="mce_13_4_opt_a">
           <p>
             <c><![CDATA[vector<Entry> entries;]]></c>
           </p>
-        </caption>
+        </statement>
         <feedback id="mce_13_4_opt_a">
           <p>We create a <c>vector</c> with type <c>Entry</c>.</p>
         </feedback>
@@ -206,7 +206,7 @@ struct Entry {
           <p>
             <c>Entry entries</c>
           </p>
-        </caption>
+        </statement>
         <feedback id="mce_13_4_opt_b">
           <p>This only creates one <c>Entry</c>.</p>
         </feedback>
@@ -216,7 +216,7 @@ struct Entry {
           <p>
             <c><![CDATA[vector<Dictionary> Entry]]></c>
           </p>
-        </caption>
+        </statement>
         <feedback id="mce_13_4_opt_c">
           <p>This creates a <c>vector</c> of <c>Dictionary</c>s called <c>Entry</c>.</p>
         </feedback>
@@ -224,15 +224,15 @@ struct Entry {
       <choice>
         <statement id="mce_13_4_opt_d">
           <p>We can't make an object that contains a <c>vector</c>.</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_4_opt_d">
           <p>We can have <c>vector</c>s inside objects.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="mce_13_5">
-    <caption>
+  </exercise>
+  <exercise label="mce_13_5">
+    <statement>
       <p>What is wrong with the code below?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -257,12 +257,12 @@ struct Deck {
 };
 ]]></input>
       </program>
-    </caption>
+    </statement>
     <choices>
       <choice>
         <statement id="mce_13_5_opt_a">
           <p>We can't have a <c>vector</c> in <c>Deck</c>.</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_5_opt_a">
           <p>We are allowed to have <c>vector</c>s in objects.</p>
         </feedback>
@@ -270,7 +270,7 @@ struct Deck {
       <choice correct="yes">
         <statement id="mce_13_5_opt_b">
           <p>The definition of <c>Card::find()</c> is invalid.</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_5_opt_b">
           <p>The definition references <c>Deck</c>, but <c>Deck</c> is defined after <c>Card</c>.</p>
         </feedback>
@@ -278,7 +278,7 @@ struct Deck {
       <choice>
         <statement id="mce_13_5_opt_c">
           <p>We can't define <c>print()</c> in both <c>Card</c> and in <c>Deck</c>.</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_5_opt_c">
           <p>Although they have the same name, these are two different <c>print()</c> functions.</p>
         </feedback>
@@ -286,22 +286,22 @@ struct Deck {
       <choice>
         <statement id="mce_13_5_opt_d">
           <p>Nothing is wrong with the code.</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_5_opt_d">
           <p>There is an error in the code. Can you find it?</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="mce_13_6">
-    <caption>
+  </exercise>
+  <exercise label="mce_13_6">
+    <statement>
       <p>Why can't we code our <c>shuffle</c> function to work the exact same way humans shuffle cards?</p>
-    </caption>
+    </statement>
     <choices>
       <choice>
         <statement id="mce_13_6_opt_a">
           <p>Our code can't split the deck exactly in half.</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_6_opt_a">
           <p>We can split the deck exactly in half.</p>
         </feedback>
@@ -309,7 +309,7 @@ struct Deck {
       <choice>
         <statement id="mce_13_6_opt_b">
           <p>The way our code would shuffle cards would be unpredictable.</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_6_opt_b">
           <p>Part of the problem is that the cards would be shuffled in a predictable manner.</p>
         </feedback>
@@ -317,7 +317,7 @@ struct Deck {
       <choice>
         <statement id="mce_13_6_opt_c">
           <p>Our code would result in an infinite loop.</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_6_opt_c">
           <p>There's no reason to loop infinitely.</p>
         </feedback>
@@ -325,22 +325,22 @@ struct Deck {
       <choice correct="yes">
         <statement id="mce_13_6_opt_d">
           <p>Our code would perform a perfect shuffle.</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_6_opt_d">
           <p>Because the cards are shuffled perfectly, the exact ordering of the cards is predictable and thus the cards aren't really shuffled.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="mce_13_7">
-    <caption>
+  </exercise>
+  <exercise label="mce_13_7">
+    <statement>
       <p>What is true about helper functions?</p>
-    </caption>
+    </statement>
     <choices>
       <choice>
         <statement id="mce_13_7_opt_a">
           <p>They are longer than the bigger functions since they do all the work.</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_7_opt_a">
           <p>Most helper functions are shorter than the bigger function.</p>
         </feedback>
@@ -348,7 +348,7 @@ struct Deck {
       <choice correct="yes">
         <statement id="mce_13_7_opt_b">
           <p>They are simpler functions that help the bigger function.</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_7_opt_b">
           <p>As the name implies, they help a bigger function.</p>
         </feedback>
@@ -356,7 +356,7 @@ struct Deck {
       <choice correct="yes">
         <statement id="mce_13_7_opt_c">
           <p>They shorten the code used in bigger functions.</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_7_opt_c">
           <p>Usually the bigger function has repetitive code, which is then put into a helper function to help shorten the bigger function.</p>
         </feedback>
@@ -364,22 +364,22 @@ struct Deck {
       <choice correct="yes">
         <statement id="mce_13_7_opt_d">
           <p>They make debugging easier.</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_7_opt_d">
           <p>Since helper functions break down the bigger function into smaller parts, it's easier to isolate and identify issues.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="mce_13_8">
-    <caption>
+  </exercise>
+  <exercise label="mce_13_8">
+    <statement>
       <p>Using pseudocode to figure out what helper functions are needed is a characteristic of what?</p>
-    </caption>
+    </statement>
     <choices>
       <choice>
         <statement id="mce_13_8_opt_a">
           <p>Encapsulation</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_8_opt_a">
           <p>This is the process of wrapping up a sequence of instructions in a function.</p>
         </feedback>
@@ -387,7 +387,7 @@ struct Deck {
       <choice>
         <statement id="mce_13_8_opt_b">
           <p>Generalization</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_8_opt_b">
           <p>This is the process of taking something specific and making it more general.</p>
         </feedback>
@@ -395,7 +395,7 @@ struct Deck {
       <choice correct="yes">
         <statement id="mce_13_8_opt_c">
           <p>Top-down design</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_8_opt_c">
           <p>This is the process of using pseudocode to sketch solutions to large problems and design the interfaces of helper functions.</p>
         </feedback>
@@ -403,22 +403,22 @@ struct Deck {
       <choice>
         <statement id="mce_13_8_opt_d">
           <p>Bottom-up design</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_8_opt_d">
           <p>This is the process of writing small, useful functions and then assembling them into larger solutions.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="mce_13_9">
-    <caption>
+  </exercise>
+  <exercise label="mce_13_9">
+    <statement>
       <p>Which of the following can lead to off by one errors?</p>
-    </caption>
+    </statement>
     <choices>
       <choice>
         <statement id="mce_13_9_opt_a">
           <p>Running a for loop too little or too many times.</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_9_opt_a">
           <p>This can lead to too few iterations or too many iterations.</p>
         </feedback>
@@ -426,7 +426,7 @@ struct Deck {
       <choice>
         <statement id="mce_13_9_opt_b">
           <p>Forgetting that indexing starts at 0.</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_9_opt_b">
           <p>This can lead you to have values that are shifted by one.</p>
         </feedback>
@@ -434,7 +434,7 @@ struct Deck {
       <choice>
         <statement id="mce_13_9_opt_c">
           <p>Using less than instead of less than or equal to in a while loop.</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_9_opt_c">
           <p>This can lead to running the while loop one less times than what you wanted.</p>
         </feedback>
@@ -442,22 +442,22 @@ struct Deck {
       <choice correct="yes">
         <statement id="mce_13_9_opt_d">
           <p>All of the above.</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_9_opt_d">
           <p>These can all lead to off by one errors.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="mce_13_10">
-    <caption>
+  </exercise>
+  <exercise label="mce_13_10">
+    <statement>
       <p>What is the amount of time that mergeSort takes?</p>
-    </caption>
+    </statement>
     <choices>
       <choice correct="yes">
         <statement id="mce_13_10_opt_a">
           <p>n log n</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_10_opt_a">
           <p>This makes mergeSort faster than our previous version of selection sort.</p>
         </feedback>
@@ -465,7 +465,7 @@ struct Deck {
       <choice>
         <statement id="mce_13_10_opt_b">
           <p>n!</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_10_opt_b">
           <p>mergeSort runs faster than factorial time.</p>
         </feedback>
@@ -473,7 +473,7 @@ struct Deck {
       <choice>
         <statement id="mce_13_10_opt_c">
           <p>logn</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_10_opt_c">
           <p>mergeSort runs slower than logarithmic time.</p>
         </feedback>
@@ -481,22 +481,22 @@ struct Deck {
       <choice>
         <statement id="mce_13_10_opt_d">
           <p>n^2</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_10_opt_d">
           <p>This is the time complexity of selection sort.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="mce_13_11">
-    <caption>
+  </exercise>
+  <exercise label="mce_13_11">
+    <statement>
       <p>What kind of sorting algorithm is our <c>sortDeck</c> function? You are encouraged to search up these different sorting algorithms!</p>
-    </caption>
+    </statement>
     <choices>
       <choice>
         <statement id="mce_13_11_opt_a">
           <p>Bubble sort</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_11_opt_a">
           <p>Bubble sort swaps adjacent items and <q>bubbles</q> the lightest items to the top.</p>
         </feedback>
@@ -504,7 +504,7 @@ struct Deck {
       <choice>
         <statement id="mce_13_11_opt_b">
           <p>Insertion sort</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_11_opt_b">
           <p>Insertion sort selects an item from the unsorted section and puts it in the right location in the sorted section.</p>
         </feedback>
@@ -512,7 +512,7 @@ struct Deck {
       <choice correct="yes">
         <statement id="mce_13_11_opt_c">
           <p>Selection sort</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_11_opt_c">
           <p>Selection sort finds the smallest item at each iteration i and puts it at the ith location.</p>
         </feedback>
@@ -520,11 +520,11 @@ struct Deck {
       <choice>
         <statement id="mce_13_11_opt_d">
           <p>Quicksort</p>
-        </caption>
+        </statement>
         <feedback id="mce_13_11_opt_d">
           <p>Quicksort uses recursive calls to partition a list.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-</listings>
+  </exercise>
+</exercises>

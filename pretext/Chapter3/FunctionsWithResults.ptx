@@ -29,10 +29,10 @@
                 good way to find out is to ask the compiler.  It will let you answer
                 your question by throwing an error&#x2026; or not!</p>
   </note>
-  <listing label="fuwresults_1">
-    <caption>
+  <exercise label="fuwresults_1">
+    <statement>
       <p>What will be <term>printed</term> when the following code runs? <var/> <var/>  </p>
-    </caption>
+    </statement>
     <setup>
       <var>
         <program language="cpp" line-numbers="yes">
@@ -58,9 +58,9 @@ int main() {
         </condition>
       </var>
     </setup>
-  </listing>
-  <listing label="fuwresults_2">
-    <caption>
+  </exercise>
+  <exercise label="fuwresults_2">
+    <statement>
       <p>Will the following code compile?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -78,12 +78,12 @@ int main() {
 }
 ]]></input>
       </program>
-    </caption>
+    </statement>
     <choices>
       <choice>
         <statement id="fuwresults_2_opt_a">
           <p>Yes</p>
-        </caption>
+        </statement>
         <feedback id="fuwresults_2_opt_a">
           <p>Can you print the result of a void function?</p>
         </feedback>
@@ -91,11 +91,11 @@ int main() {
       <choice correct="yes">
         <statement id="fuwresults_2_opt_b">
           <p>No</p>
-        </caption>
+        </statement>
         <feedback id="fuwresults_2_opt_b">
           <p>Correct! You can't print the result of a void function</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
+  </exercise>
 </section>

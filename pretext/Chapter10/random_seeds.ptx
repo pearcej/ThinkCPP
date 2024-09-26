@@ -20,15 +20,15 @@
             reasonably unpredictable and unrepeatable, like the number of
             milliseconds since the last second tick, and use that number as a seed.
             The details of how to do that depend on your development environment.</p>
-  <listing label="random_seeds_1">
-    <caption>
+  <exercise label="random_seeds_1">
+    <statement>
       <p>If we wanted to generate a random number between 0 and 12, and we have previously declared int <c>int x = random ();</c>, what should be our next line of code?</p>
-    </caption>
+    </statement>
     <choices>
       <choice>
         <statement id="random_seeds_1_opt_a">
           <p>Calling the <c>random()</c> function with no arguments.</p>
-        </caption>
+        </statement>
         <feedback id="random_seeds_1_opt_a">
           <p>This always generates the same set of values, using the default seed in C++.</p>
         </feedback>
@@ -36,7 +36,7 @@
       <choice>
         <statement id="random_seeds_1_opt_b">
           <p>Calling <c>srand()</c> on a integer seed.</p>
-        </caption>
+        </statement>
         <feedback id="random_seeds_1_opt_b">
           <p>This always generates the same set of values, using the specified seed.</p>
         </feedback>
@@ -44,11 +44,11 @@
       <choice correct="yes">
         <statement id="random_seeds_1_opt_c">
           <p>Running the <c>gettimeofday()</c> function, and calling srand() on the result.</p>
-        </caption>
+        </statement>
         <feedback id="random_seeds_1_opt_c">
           <p><c>gettimeofday()</c> will generate something reasonably random, which you can then use as a random seed.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
+  </exercise>
 </section>

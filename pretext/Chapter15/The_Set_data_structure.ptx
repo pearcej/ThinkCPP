@@ -215,96 +215,96 @@ int Set::add (const string&amp; s) {
 }
 </tests>
   </program>
-  <listing label="question15_7_1">
-    <caption>
+  <exercise label="question15_7_1">
+    <statement>
       <p>Which of the following are properties of an ordered set?</p>
-    </caption>
+    </statement>
     <choices>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>the set grows to accomodate any new elements we add</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct! This is the "arbitrary size" property.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>the set is sorted in an order (ie alphabetically, numerically, e.t.c.)</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! This is not a requirement of a set.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>elements of the set have indices, which can be used to identify them</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct! This is the "ordering" property.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>there is a limit on how large a set can be</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! This is not a requirement of a set... in fact, sets are always expanding with each added element!</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>there are no repeat elements in the set</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct! This is the uniqueness property!</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="question15_7_2">
-    <caption>
+  </exercise>
+  <exercise label="question15_7_2">
+    <statement>
       <p>Why don't we provide a <c>set()</c> function for <c>numElements</c>?</p>
-    </caption>
+    </statement>
     <choices>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>numElements is a read-only variable.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>The user might pick a value for numElements that is out of range.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! While this could happen, it just wouldn't make sense for the uer to interact with numElements at all!</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>numElements cannot be modified.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! numElements is modified, just not by the user.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>We should provide a set function, we just haven't implemented it yet!</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! There is no need for the user to have access to a set function.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="question15_7_3">
-    <caption>
+  </exercise>
+  <exercise label="question15_7_3">
+    <statement>
       <p>If the number of elements is 76, then the index of the next element is <var/>.</p>
-    </caption>
+    </statement>
     <setup>
       <var>
         <condition number="[76, 76]">
@@ -319,11 +319,11 @@ int Set::add (const string&amp; s) {
         </condition>
       </var>
     </setup>
-  </listing>
-  <listing label="question15_7_4">
-    <caption>
+  </exercise>
+  <exercise label="question15_7_4">
+    <statement>
       <p>Suppose we have implemented the <c>Set</c> data structure as defined above, and we run the following code. <var/>  </p>
-    </caption>
+    </statement>
     <setup>
       <var>
         <program>Set cities(10);
@@ -339,5 +339,5 @@ string element = cities.getElement(4);  cout &lt;&lt; element;</program>
         <p>Type the output exactly as it would appear in the terminal.</p>
       </var>
     </setup>
-  </listing>
+  </exercise>
 </section>

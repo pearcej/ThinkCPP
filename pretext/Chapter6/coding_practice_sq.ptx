@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <section xml:id="chapter6_coding-practice-1">
   <title>Coding Practice</title>
-  <listing xml:id="empty-254">
+  <exercise xml:id="empty-254">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter6', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
-      <listing label="cp_6_AC_2q">
-        <caption>
+      <exercise label="cp_6_AC_2q">
+        <statement>
           <p>Encapsulate the triangle printing program into a function called
                     <c>printTriangle</c>. Generalize it so that it takes a parameter
                     <c>int n</c> to generate a nxn triangle. Select the Parsonsprob tab
@@ -14,7 +14,7 @@
 **
 ***
 ****</program>
-        </caption>
+        </statement>
         <program xml:id="cp_6_AC_2q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
@@ -29,11 +29,11 @@ int main() {
 }
         ]]></input>
         </program>
-      </listing>
+      </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter6', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <listing label="cp_6_AC_2q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
-        <caption>
+      <exercise label="cp_6_AC_2q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+        <statement>
           <p>Encapsulate the triangle printing program into a function called
                     <c>printTriangle</c>. Generalize it so that it takes a parameter
                     <c>int n</c> to generate a nxn triangle. Use the lines to construct the
@@ -43,7 +43,7 @@ int main() {
 **
 ***
 ****</program>
-        </caption>
+        </statement>
         <blocks>
           <block order="7">
             <cline>// Create function</cline>
@@ -107,13 +107,13 @@ int main() {
             <cline>}</cline>
           </block>
         </blocks>
-      </listing>
+      </exercise>
     </TabNode>
-  </listing>
-  <listing xml:id="empty-255">
+  </exercise>
+  <exercise xml:id="empty-255">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter6', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
-      <listing label="cp_6_AC_4q">
-        <caption>
+      <exercise label="cp_6_AC_4q">
+        <statement>
           <p>Write a function called <c>printNumPyramid</c> that prints out an <c>n</c> x <c>n</c> number pyramid.
                     An example is shown below with <c>n</c> equal to 5. Your code should use while loops. Select the
                     Parsonsprob tab for hints for the construction of the code. (Hint: similar to the previous
@@ -123,7 +123,7 @@ int main() {
   33333
  4444444
 555555555</program>
-        </caption>
+        </statement>
         <program xml:id="cp_6_AC_4q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
@@ -138,11 +138,11 @@ int main() {
 }
         ]]></input>
         </program>
-      </listing>
+      </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter6', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <listing label="cp_6_AC_4q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
-        <caption>
+      <exercise label="cp_6_AC_4q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+        <statement>
           <p>Write a function called <c>printNumPyramid</c> that prints out an <c>n</c> x <c>n</c> number pyramid.
                     An example is shown below with <c>n</c> equal to 5. Your code should use while loops. Use the lines to
                     construct the code, then go back to complete the Activecode tab. (Hint: similar to the previous
@@ -152,7 +152,7 @@ int main() {
   33333
  4444444
 555555555</program>
-        </caption>
+        </statement>
         <blocks>
           <block order="6">
             <cline>void printNumPyramid (int n) {</cline>
@@ -207,13 +207,13 @@ int main() {
             <cline>}</cline>
           </block>
         </blocks>
-      </listing>
+      </exercise>
     </TabNode>
-  </listing>
-  <listing xml:id="empty-256">
+  </exercise>
+  <exercise xml:id="empty-256">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter6', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
-      <listing label="cp_6_AC_6q">
-        <caption>
+      <exercise label="cp_6_AC_6q">
+        <statement>
           <p>Write the function <c>printAddTable</c> which takes an <c>int n</c> as a parameter
                     and prints out a nxn addition table. Call your function in <c>main</c> with
                     <q>10</q> as the argument. Select the Parsonsprob tab for hints for the construction of the code.
@@ -229,7 +229,7 @@ int main() {
 8       9       10      11      12      13      14      15      16      17      18
 9       10      11      12      13      14      15      16      17      18      19
 10      11      12      13      14      15      16      17      18      19      20</program>
-        </caption>
+        </statement>
         <program xml:id="cp_6_AC_6q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
@@ -244,11 +244,11 @@ int main() {
 }
         ]]></input>
         </program>
-      </listing>
+      </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter6', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <listing label="cp_6_AC_6q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
-        <caption>
+      <exercise label="cp_6_AC_6q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+        <statement>
           <p>Write the function <c>printAddTable</c> which takes an <c>int n</c> as a parameter
                     and prints out a nxn addition table. Call your function in <c>main</c> with
                     <q>10</q> as the argument. Use the lines to construct the code, then go back to complete
@@ -264,7 +264,7 @@ int main() {
 8       9       10      11      12      13      14      15      16      17      18
 9       10      11      12      13      14      15      16      17      18      19
 10      11      12      13      14      15      16      17      18      19      20</program>
-        </caption>
+        </statement>
         <blocks>
           <block order="1">
             <cline>void printAddTable (int n) {</cline>
@@ -299,16 +299,16 @@ int main() {
             <cline>}</cline>
           </block>
         </blocks>
-      </listing>
+      </exercise>
     </TabNode>
-  </listing>
-  <listing xml:id="empty-257">
+  </exercise>
+  <exercise xml:id="empty-257">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter6', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
-      <listing label="cp_6_AC_8q">
-        <caption>
+      <exercise label="cp_6_AC_8q">
+        <statement>
           <p>Write a program that uses a <c>while</c> loop to print out the alphabet from &#x2018;a' to &#x2018;z'.
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
-        </caption>
+        </statement>
         <program xml:id="cp_6_AC_8q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
@@ -319,14 +319,14 @@ int main() {
 }
         ]]></input>
         </program>
-      </listing>
+      </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter6', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <listing label="cp_6_AC_8q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
-        <caption>
+      <exercise label="cp_6_AC_8q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+        <statement>
           <p>Write a program that uses a <c>while</c> loop to print out the alphabet from &#x2018;a' to &#x2018;z'.
                     Use the lines to construct the code, then go back to complete the Activecode tab.</p>
-        </caption>
+        </statement>
         <blocks>
           <block order="5">
             <cline>int main() {</cline>
@@ -355,18 +355,18 @@ int main() {
             <cline>}</cline>
           </block>
         </blocks>
-      </listing>
+      </exercise>
     </TabNode>
-  </listing>
-  <listing xml:id="empty-258">
+  </exercise>
+  <exercise xml:id="empty-258">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter6', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
-      <listing label="cp_6_AC_10q">
-        <caption>
+      <exercise label="cp_6_AC_10q">
+        <statement>
           <p>Write a function called <c>factorial</c> which takes an <c>int n</c> as a parameter
                     and returns <c>n</c> factorial. Remembers that a factorial (denoted by !) is the product of all
                     positive integers less than or equal to <c>n</c>, so 4! is 24. Use a <c>while</c> loop.
                     Run and test your code! Select the Parsonsprob tab for hints for the construction of the code.</p>
-        </caption>
+        </statement>
         <program xml:id="cp_6_AC_10q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
@@ -387,16 +387,16 @@ TEST_CASE("factorial function") {
 }
 </tests>
         </program>
-      </listing>
+      </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter6', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <listing label="cp_6_AC_10q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
-        <caption>
+      <exercise label="cp_6_AC_10q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+        <statement>
           <p>Write a function called <c>factorial</c> which takes an <c>int n</c> as a parameter
                     and returns <c>n</c> factorial. Remembers that a factorial (denoted by !) is the product of all
                     positive integers less than or equal to <c>n</c>, so 4! is 24. Use a <c>while</c> loop.
                     Run and test your code! Use the lines to construct the code, then go back to complete the Activecode tab.</p>
-        </caption>
+        </statement>
         <blocks>
           <block order="10">
             <cline>int factorial (int n) {</cline>
@@ -434,7 +434,7 @@ TEST_CASE("factorial function") {
             <cline>}</cline>
           </block>
         </blocks>
-      </listing>
+      </exercise>
     </TabNode>
-  </listing>
+  </exercise>
 </section>

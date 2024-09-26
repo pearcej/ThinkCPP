@@ -30,11 +30,11 @@ int main() {
     cout &lt;&lt; values[i] &lt;&lt; endl;
   }
 }</program>
-  <listing label="vector_functions_AC_1">
-    <caption>
+  <exercise label="vector_functions_AC_1">
+    <statement>
       <p>The active code below uses the <c>push_back</c> function to add
             even numbers less than or equal to 10 to the vector <c>values</c>.</p>
-    </caption>
+    </statement>
     <program xml:id="vector_functions_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -69,51 +69,51 @@ void print_vec(vector&lt;int&gt; vec) {
 }
 </tests>
     </program>
-  </listing>
-  <listing label="vector_functions_1">
-    <caption>
+  </exercise>
+  <exercise label="vector_functions_1">
+    <statement>
       <p>Let <term>nums</term> be the vector { 0, 1, 2, 3, 4 }. If we run the command <c>nums.push_back(3)</c>, what will be returned by <c>nums.size()</c>?</p>
-    </caption>
+    </statement>
     <choices>
       <choice>
-        <caption>
+        <statement>
           <p>5</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! This is the size of the vector before we ran the command.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>6</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>7</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect!</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>8</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! We are adding the element 3 to the end of the vector, not 3 elements!</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="vector_functions_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <caption>
+  </exercise>
+  <exercise label="vector_functions_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
       <p>Construct the <c>make_even</c> function that loops through <c>vec</c>, adds 1 to any elements
             that are odd, and returns the new vector.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="10">
         <choice correct="yes">
@@ -160,9 +160,9 @@ void print_vec(vector&lt;int&gt; vec) {
         <cline>}</cline>
       </block>
     </blocks>
-  </listing>
-  <listing label="vector_functions_3">
-    <caption>
+  </exercise>
+  <exercise label="vector_functions_3">
+    <statement>
       <p>What does the following code print?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -186,32 +186,32 @@ for (int i = 0; i < size; i++){
 cout << endl;
 ]]></input>
       </program>
-    </caption>
+    </statement>
     <choices>
       <choice>
-        <caption>
+        <statement>
           <p>4 3 2 1 0</p>
-        </caption>
+        </statement>
         <feedback>
           <p>we change the numbers in the first half of the vector before we copy them to the second half</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>4 3 2 3 4</p>
-        </caption>
+        </statement>
         <feedback>
           <p>when <code>i</code> is 3 we copy from <code>end = 1</code> copying the values we already changed.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>0 1 2 3 4</p>
-        </caption>
+        </statement>
         <feedback>
           <p>we change values in the second loop.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
+  </exercise>
 </section>

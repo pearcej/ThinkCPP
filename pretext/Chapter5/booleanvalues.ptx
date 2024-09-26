@@ -21,11 +21,11 @@
 }</program>
   <p>is a standard idiom for a loop that should run forever (or until it
             reaches a return or break statement).</p>
-  <listing label="bool_vals_1">
-    <caption>
+  <exercise label="bool_vals_1">
+    <statement>
       <p>The boolean type has two values <var/> and <var/>.  The <var/>
 operator is used to check if two boolean values are equal. <var/>  <var/>  <var/>  </p>
-    </caption>
+    </statement>
     <setup>
       <var case="insensitive">
         <condition string="^\s*(true)|(false)\s*$">
@@ -64,12 +64,12 @@ operator is used to check if two boolean values are equal. <var/>  <var/>  <var/
         </condition>
       </var>
     </setup>
-  </listing>
-  <listing label="bool_vals_2" indentation="hide" language="python">
-    <caption>
+  </exercise>
+  <exercise label="bool_vals_2" indentation="hide" language="python">
+    <statement>
       <p>Put the following blocks in order of how large the set is.  Put the largest
             set at the top.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="1">
         <cline>double</cline>
@@ -78,5 +78,5 @@ operator is used to check if two boolean values are equal. <var/>  <var/>  <var/
         <cline>bool</cline>
       </block>
     </blocks>
-  </listing>
+  </exercise>
 </section>

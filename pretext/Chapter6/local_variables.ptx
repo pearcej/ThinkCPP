@@ -33,8 +33,8 @@
             as loop variables. If you avoid using them in one function just because
             you used them somewhere else, you will probably make the program harder
             to read.</p>
-  <listing label="local_variables_1">
-    <caption>
+  <exercise label="local_variables_1">
+    <statement>
       <p>Are there any issues with the code below?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -55,52 +55,52 @@ int main() {
 }
 ]]></input>
       </program>
-    </caption>
+    </statement>
     <choices>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>Yes, we cannot output the value of j outside of the loop.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>The scope of i is restricted to the loop, so we cannot change the value of i outside of the loop.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>Yes, we cannot output anything before the loop.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>This is allowed.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>Yes, we cannot reassign j to 20 outside of the loop.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>The scope of i is restricted to the loop, so we cannot output the value of i outside of the loop.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>Yes, we cannot let i start at 1 in the loop.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>We are allowed to initialize i to any value.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>No, there are no issues with the code below.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>There are issues with the code. Can you find them?</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="local_variables_2">
-    <caption>
+  </exercise>
+  <exercise label="local_variables_2">
+    <statement>
       <p>Take a look at the code below. Is the <c>i</c> in <c>printMultiples</c> the same variable as the <c>i</c> in <c>printMultTable</c>?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -129,28 +129,28 @@ int main() {
 }
 ]]></input>
       </program>
-    </caption>
+    </statement>
     <choices>
       <choice>
-        <caption>
+        <statement>
           <p>Yes</p>
-        </caption>
+        </statement>
         <feedback>
           <p>They are two different variables in two different scopes, but they do have the same name.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>No</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct! They are not the same variable.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="local_variables_3">
-    <caption>
+  </exercise>
+  <exercise label="local_variables_3">
+    <statement>
       <p>Take a look at the code below. Is the variable <c>j</c> accessable  in the function <c>printMultiples</c>?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -179,12 +179,12 @@ int main() {
 }
 ]]></input>
       </program>
-    </caption>
+    </statement>
     <choices>
       <choice>
         <statement id="local_variables_3_opt_a">
           <p>Yes</p>
-        </caption>
+        </statement>
         <feedback id="local_variables_3_opt_a">
           <p>The scope of <c>j</c> does not include <c>printMultiples</c> function.</p>
         </feedback>
@@ -192,11 +192,11 @@ int main() {
       <choice correct="yes">
         <statement id="local_variables_3_opt_b">
           <p>No</p>
-        </caption>
+        </statement>
         <feedback id="local_variables_3_opt_b">
           <p>Correct! <c>j</c> is not accessable as the value is merely passes from one function to another. We cannot have a statement such as j++; in <c>printMultiples</c> as it is out of the scope of <c>printMultTable</c></p>
         </feedback>
       </choice>
     </choices>
-  </listing>
+  </exercise>
 </section>

@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<listings xml:id="chapter5_multiple-choice-exercises">
+<exercises xml:id="chapter5_multiple-choice-exercises">
   <title>Multiple Choice Exercises</title>
-  <listing label="mce_5_1">
-    <caption>
+  <exercise label="mce_5_1">
+    <statement>
       <p>What should be the return type of the function <c>convertToCelsius</c>?</p>
       <program language="cpp" line-numbers="yes">
         <input>
@@ -13,14 +13,14 @@ ______ convertToCelsius (double fahrenheit) {
 }
 </input>
       </program>
-    </caption>
+    </statement>
     <choices>
       <choice>
         <statement id="mce_5_1_opt_a">
           <p>
             <c>int</c>
           </p>
-        </caption>
+        </statement>
         <feedback id="mce_5_1_opt_a">
           <p>What variable are we returning in the function, and what is the variable's type?</p>
         </feedback>
@@ -30,7 +30,7 @@ ______ convertToCelsius (double fahrenheit) {
           <p>
             <c>double</c>
           </p>
-        </caption>
+        </statement>
         <feedback id="mce_5_1_opt_b">
           <p>The function returns <c>celsius</c>, which is a <c>double</c>.</p>
         </feedback>
@@ -40,7 +40,7 @@ ______ convertToCelsius (double fahrenheit) {
           <p>
             <c>string</c>
           </p>
-        </caption>
+        </statement>
         <feedback id="mce_5_1_opt_c">
           <p>What variable are we returning in the function, and what is the variable's type?</p>
         </feedback>
@@ -50,15 +50,15 @@ ______ convertToCelsius (double fahrenheit) {
           <p>
             <c>void</c>
           </p>
-        </caption>
+        </statement>
         <feedback id="mce_5_1_opt_d">
           <p>Since we are returning something in the function, the function is not <c>void</c>.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="mce_5_2">
-    <caption>
+  </exercise>
+  <exercise label="mce_5_2">
+    <statement>
       <p>What would be returned by <c>secretFunction</c> if the input was 14?</p>
       <program language="cpp" line-numbers="yes">
         <input>
@@ -76,12 +76,12 @@ int secretFunction (int input) {
 }
 </input>
       </program>
-    </caption>
+    </statement>
     <choices>
       <choice>
         <statement id="mce_5_2_opt_a">
           <p>14</p>
-        </caption>
+        </statement>
         <feedback id="mce_5_2_opt_a">
           <p>Although 14 is divisible by 7, take another look at the conditionals.</p>
         </feedback>
@@ -89,7 +89,7 @@ int secretFunction (int input) {
       <choice>
         <statement id="mce_5_2_opt_b">
           <p>18</p>
-        </caption>
+        </statement>
         <feedback id="mce_5_2_opt_b">
           <p>The flow of code would never reach the last return statement.</p>
         </feedback>
@@ -97,7 +97,7 @@ int secretFunction (int input) {
       <choice>
         <statement id="mce_5_2_opt_c">
           <p>36</p>
-        </caption>
+        </statement>
         <feedback id="mce_5_2_opt_c">
           <p>Check your order of operations!</p>
         </feedback>
@@ -105,7 +105,7 @@ int secretFunction (int input) {
       <choice>
         <statement id="mce_5_2_opt_d">
           <p>37</p>
-        </caption>
+        </statement>
         <feedback id="mce_5_2_opt_d">
           <p>Take a closer look at the conditional statements.</p>
         </feedback>
@@ -113,25 +113,25 @@ int secretFunction (int input) {
       <choice correct="yes">
         <statement id="mce_5_2_opt_e">
           <p>40</p>
-        </caption>
+        </statement>
         <feedback id="mce_5_2_opt_e">
           <p>Since 14 is divisible by 2, the function returns two less than three times 14.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="mce_5_3">
-    <caption>
+  </exercise>
+  <exercise label="mce_5_3">
+    <statement>
       <p>If we wanted to create a boolean function called <c>isPrime</c>, which takes an <c>int input</c>
             as a parameter, which of the following would be the correct function header?</p>
-    </caption>
+    </statement>
     <choices>
       <choice>
         <statement id="mce_5_3_opt_a">
           <p>
             <c>boolean isPrime (int input) {</c>
           </p>
-        </caption>
+        </statement>
         <feedback id="mce_5_3_opt_a">
           <p>In C++, use the <c>bool</c> keyword for a boolean.</p>
         </feedback>
@@ -141,7 +141,7 @@ int secretFunction (int input) {
           <p>
             <c>bool isPrime (input) {</c>
           </p>
-        </caption>
+        </statement>
         <feedback id="mce_5_3_opt_b">
           <p>In a function header, the type of each variable must be specified in the parameter list.</p>
         </feedback>
@@ -151,7 +151,7 @@ int secretFunction (int input) {
           <p>
             <c>bool isPrime (int input) {</c>
           </p>
-        </caption>
+        </statement>
         <feedback id="mce_5_3_opt_c">
           <p>This is the correct function header for the function.</p>
         </feedback>
@@ -161,15 +161,15 @@ int secretFunction (int input) {
           <p>
             <c>int isPrime (bool input) {</c>
           </p>
-        </caption>
+        </statement>
         <feedback id="mce_5_3_opt_d">
           <p>Take a closer look at what the return type is.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="mce_5_4">
-    <caption>
+  </exercise>
+  <exercise label="mce_5_4">
+    <statement>
       <p>If we wrote the following function, which of the other functions below can we also legally write
             and add to the program?</p>
       <program language="cpp" line-numbers="yes">
@@ -177,14 +177,14 @@ int secretFunction (int input) {
 int func (double x, bool y);
 </input>
       </program>
-    </caption>
+    </statement>
     <choices>
       <choice>
         <statement id="mce_5_4_opt_a">
           <p>
             <c>int func (double a, bool b);</c>
           </p>
-        </caption>
+        </statement>
         <feedback id="mce_5_4_opt_a">
           <p>Since this function has the same name and parameter types as the given function, it is not allowed.</p>
         </feedback>
@@ -194,7 +194,7 @@ int func (double x, bool y);
           <p>
             <c>int foo (double x, bool y);</c>
           </p>
-        </caption>
+        </statement>
         <feedback id="mce_5_4_opt_b">
           <p>This function has a different name from the given function, so it is allowed.</p>
         </feedback>
@@ -204,7 +204,7 @@ int func (double x, bool y);
           <p>
             <c>int func (double x);</c>
           </p>
-        </caption>
+        </statement>
         <feedback id="mce_5_4_opt_c">
           <p>Although this function has the same name as the given function, it has a different number of parameters, so it is allowed.</p>
         </feedback>
@@ -214,7 +214,7 @@ int func (double x, bool y);
           <p>
             <c>void func (double x, bool y);</c>
           </p>
-        </caption>
+        </statement>
         <feedback id="mce_5_4_opt_d">
           <p>Although this function has a different return type, its parameter list is the same as the given function, so it is not allowed.</p>
         </feedback>
@@ -224,15 +224,15 @@ int func (double x, bool y);
           <p>
             <c>int func (bool y, double x);</c>
           </p>
-        </caption>
+        </statement>
         <feedback id="mce_5_4_opt_e">
           <p>Although this function has the same name as the given function, its parameter list is in a different order, so it is allowed.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="mce_5_5">
-    <caption>
+  </exercise>
+  <exercise label="mce_5_5">
+    <statement>
       <p>What is the output of the code below?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -245,12 +245,12 @@ int main() {
 }
 ]]></input>
       </program>
-    </caption>
+    </statement>
     <choices>
       <choice correct="yes">
         <statement id="mce_5_5_opt_a">
           <p>1001</p>
-        </caption>
+        </statement>
         <feedback id="mce_5_5_opt_a">
           <p>Since the first and last statements are true and the middle two are false, this is the correct output.</p>
         </feedback>
@@ -258,7 +258,7 @@ int main() {
       <choice>
         <statement id="mce_5_5_opt_b">
           <p>truefalsefalsetrue</p>
-        </caption>
+        </statement>
         <feedback id="mce_5_5_opt_b">
           <p>In C++, boolean values are outputted as 0 or 1.</p>
         </feedback>
@@ -266,7 +266,7 @@ int main() {
       <choice>
         <statement id="mce_5_5_opt_c">
           <p>1false01</p>
-        </caption>
+        </statement>
         <feedback id="mce_5_5_opt_c">
           <p>Since the second <c>cout</c> statement doesn't have quotes around the word <q>false</q>, the value of 0 is outputted.</p>
         </feedback>
@@ -274,15 +274,15 @@ int main() {
       <choice>
         <statement id="mce_5_5_opt_d">
           <p>0110</p>
-        </caption>
+        </statement>
         <feedback id="mce_5_5_opt_d">
           <p>Remember that if a boolean expression is true, it has a value of 1.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="mce_5_6">
-    <caption>
+  </exercise>
+  <exercise label="mce_5_6">
+    <statement>
       <p>What is the output of the code below?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -295,12 +295,12 @@ int main() {
 }
 ]]></input>
       </program>
-    </caption>
+    </statement>
     <choices>
       <choice correct="yes">
         <statement id="mce_5_6_opt_a">
           <p>0101</p>
-        </caption>
+        </statement>
         <feedback id="mce_5_6_opt_a">
           <p>Since the expressions are false, true, false, and true, the output is 0101.</p>
         </feedback>
@@ -308,7 +308,7 @@ int main() {
       <choice>
         <statement id="mce_5_6_opt_b">
           <p>1010</p>
-        </caption>
+        </statement>
         <feedback id="mce_5_6_opt_b">
           <p>Remember that <c>true</c> outputs to 1 and <c>false</c> outputs to 0.</p>
         </feedback>
@@ -316,7 +316,7 @@ int main() {
       <choice>
         <statement id="mce_5_6_opt_c">
           <p>1101</p>
-        </caption>
+        </statement>
         <feedback id="mce_5_6_opt_c">
           <p>Remember the NOT operator (!) inverts the value of a boolean.</p>
         </feedback>
@@ -324,7 +324,7 @@ int main() {
       <choice>
         <statement id="mce_5_6_opt_d">
           <p>0100</p>
-        </caption>
+        </statement>
         <feedback id="mce_5_6_opt_d">
           <p>Take a closer look at the order of operations.</p>
         </feedback>
@@ -332,15 +332,15 @@ int main() {
       <choice>
         <statement id="mce_5_6_opt_e">
           <p>0110</p>
-        </caption>
+        </statement>
         <feedback id="mce_5_6_opt_e">
           <p>Take a closer look at the expressions.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="mce_5_7">
-    <caption>
+  </exercise>
+  <exercise label="mce_5_7">
+    <statement>
       <p>Are there any issues with the code below?</p>
       <program language="cpp" line-numbers="yes">
         <input>
@@ -351,12 +351,12 @@ bool isEven (int num) {
 }
 </input>
       </program>
-    </caption>
+    </statement>
     <choices>
       <choice>
         <statement id="mce_5_7_opt_a">
           <p>Yes, we have to return either 0 or 1.</p>
-        </caption>
+        </statement>
         <feedback id="mce_5_7_opt_a">
           <p>Returning a 0 or 1 would be returning an <c>int</c>, even though booleans evaluate to 0 or 1.</p>
         </feedback>
@@ -364,7 +364,7 @@ bool isEven (int num) {
       <choice>
         <statement id="mce_5_7_opt_b">
           <p>Yes, we cannot pass an <c>int</c> into a <c>bool</c> function.</p>
-        </caption>
+        </statement>
         <feedback id="mce_5_7_opt_b">
           <p>The type of variables in the parameter list do not affect the return type.</p>
         </feedback>
@@ -372,7 +372,7 @@ bool isEven (int num) {
       <choice correct="yes">
         <statement id="mce_5_7_opt_c">
           <p>Yes, there is no case for odd numbers.</p>
-        </caption>
+        </statement>
         <feedback id="mce_5_7_opt_c">
           <p>Since we never established an else clause, if the input was an odd number, the function would not return anything despite not being a void function.</p>
         </feedback>
@@ -380,15 +380,15 @@ bool isEven (int num) {
       <choice>
         <statement id="mce_5_7_opt_d">
           <p>There are no issues with the code.</p>
-        </caption>
+        </statement>
         <feedback id="mce_5_7_opt_d">
           <p>There is an issue with the code. Can you find it?</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="mce_5_8">
-    <caption>
+  </exercise>
+  <exercise label="mce_5_8">
+    <statement>
       <p>Are there any issues with the code below?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -404,12 +404,12 @@ double Free_time (int day) {
 }
 ]]></input>
       </program>
-    </caption>
+    </statement>
     <choices>
       <choice>
         <statement id="mce_5_8_opt_a">
           <p>Yes, we might not return anything.</p>
-        </caption>
+        </statement>
         <feedback id="mce_5_8_opt_a">
           <p>We have an else clause in which we return a value.</p>
         </feedback>
@@ -417,7 +417,7 @@ double Free_time (int day) {
       <choice>
         <statement id="mce_5_8_opt_b">
           <p>Yes, we cannot return an entire expression like <c>day*0.25</c>.</p>
-        </caption>
+        </statement>
         <feedback id="mce_5_8_opt_b">
           <p>If the result of the expression is compatible with the return type we can return it.</p>
         </feedback>
@@ -425,7 +425,7 @@ double Free_time (int day) {
       <choice>
         <statement id="mce_5_8_opt_c">
           <p>Yes, we are returning an <c>int</c> (in the <c>else</c> block) where as the return type is <c>double</c>.</p>
-        </caption>
+        </statement>
         <feedback id="mce_5_8_opt_c">
           <p>Implicit conversion from an int to double is ok in c++!</p>
         </feedback>
@@ -433,15 +433,15 @@ double Free_time (int day) {
       <choice correct="yes">
         <statement id="mce_5_8_opt_d">
           <p>There are no issues with the code.</p>
-        </caption>
+        </statement>
         <feedback id="mce_5_8_opt_d">
           <p>Correct! implicit conversion from int to double are ok!</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="mce_5_9">
-    <caption>
+  </exercise>
+  <exercise label="mce_5_9">
+    <statement>
       <p>Are there any issues with the code below?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -452,12 +452,12 @@ void moonWeight (double earth) {
 }
 ]]></input>
       </program>
-    </caption>
+    </statement>
     <choices>
       <choice>
         <statement id="mce_5_9_opt_a">
           <p>Yes, we cannot have <c>cout</c> statements in a function.</p>
-        </caption>
+        </statement>
         <feedback id="mce_5_9_opt_a">
           <p>We are allowed to use <c>cout</c> statements in a function.</p>
         </feedback>
@@ -465,7 +465,7 @@ void moonWeight (double earth) {
       <choice correct="yes">
         <statement id="mce_5_9_opt_b">
           <p>Yes, we cannot return anything.</p>
-        </caption>
+        </statement>
         <feedback id="mce_5_9_opt_b">
           <p><c>void</c> functions do not have return values, so we cannot return <c>moon</c>.</p>
         </feedback>
@@ -473,7 +473,7 @@ void moonWeight (double earth) {
       <choice>
         <statement id="mce_5_9_opt_c">
           <p>Yes, we need to return the output statement.</p>
-        </caption>
+        </statement>
         <feedback id="mce_5_9_opt_c">
           <p><c>void</c> functions do not have return values.</p>
         </feedback>
@@ -481,24 +481,24 @@ void moonWeight (double earth) {
       <choice>
         <statement id="mce_5_9_opt_d">
           <p>There are no issues with the code.</p>
-        </caption>
+        </statement>
         <feedback id="mce_5_9_opt_d">
           <p>There is an issue with the code. Can you find it?</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="mce_5_10">
-    <caption>
+  </exercise>
+  <exercise label="mce_5_10">
+    <statement>
       <p>What is the return type of main?</p>
-    </caption>
+    </statement>
     <choices>
       <choice>
         <statement id="mce_5_10_opt_a">
           <p>
             <c>void</c>
           </p>
-        </caption>
+        </statement>
         <feedback id="mce_5_10_opt_a">
           <p>What keyword do we use before <c>main()</c> in every program?</p>
         </feedback>
@@ -508,7 +508,7 @@ void moonWeight (double earth) {
           <p>
             <c>bool</c>
           </p>
-        </caption>
+        </statement>
         <feedback id="mce_5_10_opt_b">
           <p>What keyword do we use before <c>main()</c> in every program?</p>
         </feedback>
@@ -518,7 +518,7 @@ void moonWeight (double earth) {
           <p>
             <c>double</c>
           </p>
-        </caption>
+        </statement>
         <feedback id="mce_5_10_opt_c">
           <p>What keyword do we use before <c>main()</c> in every program?</p>
         </feedback>
@@ -528,15 +528,15 @@ void moonWeight (double earth) {
           <p>
             <c>int</c>
           </p>
-        </caption>
+        </statement>
         <feedback id="mce_5_10_opt_d">
           <p>Yes, <c>main</c> is supposed to return an integer, which is why programmers often return 0 at the end of <c>main</c>.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="mce_5_11">
-    <caption>
+  </exercise>
+  <exercise label="mce_5_11">
+    <statement>
       <p>What is the base case of the <c>factorial</c> recursive function?</p>
       <program language="cpp" line-numbers="yes">
         <input>
@@ -552,14 +552,14 @@ int factorial (int n) {
 }
 </input>
       </program>
-    </caption>
+    </statement>
     <choices>
       <choice correct="yes">
         <statement id="mce_5_11_opt_a">
           <p>
             <c>n = 0</c>
           </p>
-        </caption>
+        </statement>
         <feedback id="mce_5_11_opt_a">
           <p>When <c>n</c> is 0, the function returns the value 1 without making a recursive call.</p>
         </feedback>
@@ -569,7 +569,7 @@ int factorial (int n) {
           <p>
             <c>n = 1</c>
           </p>
-        </caption>
+        </statement>
         <feedback id="mce_5_11_opt_b">
           <p>When <c>n</c> is 1, the function makes a recursive call in the else statement.</p>
         </feedback>
@@ -579,7 +579,7 @@ int factorial (int n) {
           <p>
             <c>n = -1</c>
           </p>
-        </caption>
+        </statement>
         <feedback id="mce_5_11_opt_c">
           <p><c>n</c> never becomes -1.</p>
         </feedback>
@@ -587,15 +587,15 @@ int factorial (int n) {
       <choice>
         <statement id="mce_5_11_opt_d">
           <p>There is no base case.</p>
-        </caption>
+        </statement>
         <feedback id="mce_5_11_opt_d">
           <p>If there was no base case, the function would recurse infinitely.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="mce_5_12">
-    <caption>
+  </exercise>
+  <exercise label="mce_5_12">
+    <statement>
       <p>What is printed?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -617,12 +617,12 @@ int main(){
 }
 ]]></input>
       </program>
-    </caption>
+    </statement>
     <choices>
       <choice>
         <statement id="mce_5_12_opt_a">
           <p>6 5 4 3 2 1 0</p>
-        </caption>
+        </statement>
         <feedback id="mce_5_12_opt_a">
           <p>Check what the base case prints.</p>
         </feedback>
@@ -630,7 +630,7 @@ int main(){
       <choice>
         <statement id="mce_5_12_opt_b">
           <p>6 6 6 6 6 6 1</p>
-        </caption>
+        </statement>
         <feedback id="mce_5_12_opt_b">
           <p>What value do we give the recursive call?</p>
         </feedback>
@@ -638,7 +638,7 @@ int main(){
       <choice>
         <statement id="mce_5_12_opt_c">
           <p>6 5 4 3 2 1</p>
-        </caption>
+        </statement>
         <feedback id="mce_5_12_opt_c">
           <p>The base case prints something!</p>
         </feedback>
@@ -646,11 +646,11 @@ int main(){
       <choice correct="yes">
         <statement id="mce_5_12_opt_d">
           <p>6 5 4 3 2 1 1</p>
-        </caption>
+        </statement>
         <feedback id="mce_5_12_opt_d">
           <p>We print a number and decrement it till we reach 0 then we print 1.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-</listings>
+  </exercise>
+</exercises>

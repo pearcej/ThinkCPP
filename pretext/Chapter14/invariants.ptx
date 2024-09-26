@@ -40,128 +40,128 @@ setPolar</program>
             was true at the beginning of the function. Otherwise, all bets are off.
             If the invariant was violated somewhere else in the program, usually the
             best we can do is detect the error, output an error message, and exit.</p>
-  <listing label="question14_8_1">
-    <caption>
+  <exercise label="question14_8_1">
+    <statement>
       <p>How does data encapsulation help us enforce invariants?</p>
-    </caption>
+    </statement>
     <choices>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>It prevents unrestricted access to the instance variables by making them private.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct! Users must instead use accessor functions to access them.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>It allows users to directly modify private member variables.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! Try again.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>It makes it so that private data members can never be modified by any function.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! Try again.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>It eliminates the need for invariants.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! Try again.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="question14_8_2">
-    <caption>
+  </exercise>
+  <exercise label="question14_8_2">
+    <statement>
       <p>An invariant can be false in the middle of a function as long as it is true at the start and end.</p>
-    </caption>
+    </statement>
     <choices>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>True</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct! The invariant just has to be true when the function is complete, given that it's true at the start.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>False</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! Try again.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="question14_8_3">
-    <caption>
+  </exercise>
+  <exercise label="question14_8_3">
+    <statement>
       <p>If an invariant is false at the start of the function, the function must fix it to be true by the end.</p>
-    </caption>
+    </statement>
     <choices>
       <choice>
-        <caption>
+        <statement>
           <p>True</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! Try again.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>False</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct! We only have to maintain the invariant if it was true at the start. If it's false, all bets are off.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="question14_8_4">
-    <caption>
+  </exercise>
+  <exercise label="question14_8_4">
+    <statement>
       <p>If we create a <c>Triangle</c> class, which of the following are invariants we must maintain?</p>
-    </caption>
+    </statement>
     <choices>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>The interior angles of a ``Triangle`` object must add up to 180 degrees.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>The sum of two sides of a ``Triangle`` object must be greater than the third.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>All angles of a ``Triangle`` object must be 60 degrees.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! An equilateral triangle is only one possible kind of triangle.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>The greatest angle in a ``Triangle`` object must be less than 90 degrees.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! We are allowed to have obtuse triangles.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
+  </exercise>
 </section>

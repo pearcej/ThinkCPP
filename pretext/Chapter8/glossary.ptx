@@ -28,10 +28,10 @@
                         argument variable.</p>
     </li>
   </dl>
-  <listing label="chapter_eight_glossary">
-    <caption>
+  <exercise label="chapter_eight_glossary">
+    <statement>
       <p>Match the definition to the term.</p>
-    </caption>
+    </statement>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -57,5 +57,5 @@
         <response>A method of parameter-passing in which the parameter is a reference to the argument variable. Changes to the parameter also affect the argument variable.</response>
       </match>
     </matches>
-  </listing>
+  </exercise>
 </section>

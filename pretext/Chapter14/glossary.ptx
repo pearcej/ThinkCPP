@@ -30,10 +30,10 @@
       <p>A condition that is true at the end of a function.</p>
     </li>
   </dl>
-  <listing label="glossary_14">
-    <caption>
+  <exercise label="glossary_14">
+    <statement>
       <p>Match the vocabulary word with its definition.</p>
-    </caption>
+    </statement>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -59,5 +59,5 @@
         <response>A condition that is true at the end of a function.</response>
       </match>
     </matches>
-  </listing>
+  </exercise>
 </section>

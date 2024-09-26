@@ -74,49 +74,49 @@
 }</program>
   <p>Of course, just displaying the extracted information is not exactly what
             we want, but it is a good starting place.</p>
-  <listing label="question15_5_1">
-    <caption>
+  <exercise label="question15_5_1">
+    <statement>
       <p>What does <term>parsing</term> mean in the programming sense?</p>
-    </caption>
+    </statement>
     <choices>
       <choice>
-        <caption>
+        <statement>
           <p>to scan an entire program for errors</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! This is included in the debugging process.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>to run a program start to finish and record the run time</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! This is included in the debugging process.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>to analyze the structure of a statement in a formal language</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct! The compiler has to parse the program before it can translate it into machine language!</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>to search an entire program for a statement</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! You can use control (command) + F to find a particular statement.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="question15_5_2">
-    <caption>
+  </exercise>
+  <exercise label="question15_5_2">
+    <statement>
       <p>The <var/> character indicates that we want to match the next character literally.   </p>
-    </caption>
+    </statement>
     <setup>
       <var case="insensitive">
         <condition string="^\s*(\\)|(backslash)\s*$">
@@ -131,11 +131,11 @@
         </condition>
       </var>
     </setup>
-  </listing>
-  <listing label="question15_5_3">
-    <caption>
+  </exercise>
+  <exercise label="question15_5_3">
+    <statement>
       <p>The <c>substr()</c> takes <var/> and <var/> as its two arguments. </p>
-    </caption>
+    </statement>
     <setup>
       <var case="insensitive">
         <condition string="^\s*(index)\s*$">
@@ -162,14 +162,14 @@
         </condition>
       </var>
     </setup>
-  </listing>
-  <listing label="question15_5_4" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <caption>
+  </exercise>
+  <exercise label="question15_5_4" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
       <p>Create a block of code that takes a date written in the format <q>mm/dd/yyyyy</q>
             as an argument, and that separates it into three separate integers: day,
             month, and year. Find the respective parts in this order: month, first slash,
             day, second slash, year.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="1">
         <cline>int main () {</cline>
@@ -219,5 +219,5 @@
         <cline>}</cline>
       </block>
     </blocks>
-  </listing>
+  </exercise>
 </section>

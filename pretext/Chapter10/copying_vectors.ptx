@@ -10,10 +10,10 @@
   <program>vector&lt;int&gt; copy = count;</program>
   <p>The <c>=</c> operator works on <c>vector</c>s in pretty much the way you
             would expect.</p>
-  <listing label="copying_vectors_AC_1">
-    <caption>
+  <exercise label="copying_vectors_AC_1">
+    <statement>
       <p>Take a look at the active code below, which uses the copy constructor.</p>
-    </caption>
+    </statement>
     <program xml:id="copying_vectors_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -49,18 +49,18 @@ void print_vec(vector&lt;int&gt; vec) {
 }
 </tests>
     </program>
-  </listing>
-  <listing label="copying_vectors_1">
-    <caption>
+  </exercise>
+  <exercise label="copying_vectors_1">
+    <statement>
       <p><term>Multiple Response</term> How would you make a copy of <c><![CDATA[vector<double> decimals]]></c> called <term>nums</term>?</p>
-    </caption>
+    </statement>
     <choices>
       <choice correct="yes">
         <statement id="copying_vectors_1_opt_a">
           <p>
             <c><![CDATA[vector<double> nums = decimals;]]></c>
           </p>
-        </caption>
+        </statement>
         <feedback id="copying_vectors_1_opt_a">
           <p>This is one way to make a copy.</p>
         </feedback>
@@ -70,7 +70,7 @@ void print_vec(vector&lt;int&gt; vec) {
           <p>
             <c><![CDATA[vector<double> decimals = nums;]]></c>
           </p>
-        </caption>
+        </statement>
         <feedback id="copying_vectors_1_opt_b">
           <p>This makes a copy of nums called decimals.</p>
         </feedback>
@@ -80,7 +80,7 @@ void print_vec(vector&lt;int&gt; vec) {
           <p>
             <c><![CDATA[vector<double> nums (decimals);]]></c>
           </p>
-        </caption>
+        </statement>
         <feedback id="copying_vectors_1_opt_c">
           <p>This is one way to make a copy.</p>
         </feedback>
@@ -90,18 +90,18 @@ void print_vec(vector&lt;int&gt; vec) {
           <p>
             <c><![CDATA[vector<double> decimals (nums);]]></c>
           </p>
-        </caption>
+        </statement>
         <feedback id="copying_vectors_1_opt_d">
           <p>This makes a copy of nums called decimals.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="copying_vectors_2">
-    <caption>
+  </exercise>
+  <exercise label="copying_vectors_2">
+    <statement>
       <p>What is the name of the function that takes a vector as an argument, and
 creates a new vector of the same size and with the same elements? <var/> </p>
-    </caption>
+    </statement>
     <setup>
       <var case="insensitive">
         <condition string="^\s*copy\s+constructor\s*$">
@@ -116,5 +116,5 @@ creates a new vector of the same size and with the same elements? <var/> </p>
         </condition>
       </var>
     </setup>
-  </listing>
+  </exercise>
 </section>

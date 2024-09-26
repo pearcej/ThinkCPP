@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <section xml:id="chapter11_coding-practice">
   <title>Coding Practice</title>
-  <listing xml:id="empty-26">
-    <caption>
+  <exercise xml:id="empty-26">
+    <statement>
       <p>Write the <c>Cake</c> structure, which has instance variables name, weight and member function has_icing function that returns a bool. Use the <c>Cake</c> object initialised below to invoke the has_icing function.</p>
-    </caption>
+    </statement>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="cp_11_AC_1q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -44,8 +44,8 @@ int main() {
 
             
 
-<listing label="cp_11_AC_1a"><caption><p>Below is one way to implement the program. We declare the <c>Cake</c> struct and list the instance
-                    variables in order.</p></caption><program xml:id="cp_11_AC_1a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="cp_11_AC_1a"><statement><p>Below is one way to implement the program. We declare the <c>Cake</c> struct and list the instance
+                    variables in order.</p></statement><program xml:id="cp_11_AC_1a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -59,13 +59,13 @@ int main() {
      Cake c = { "Choco lava", 3.5};
      cout << c.has_icing() << endl;
 }
-        ]]></input></program></listing>
+        ]]></input></program></exercise>
             </solution>
-  </listing>
-  <listing xml:id="empty-27">
-    <caption>
+  </exercise>
+  <exercise xml:id="empty-27">
+    <statement>
       <p>The <c>Cake</c> structure has instance variables name, weight and member function has_icing. Write the has_icing function which returns true when the weight is greater than 10.</p>
-    </caption>
+    </statement>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="cp_11_AC_2q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -117,7 +117,7 @@ int main() {
 
             
 
-<listing label="cp_9_AC_2a"><caption><p>Below is one way to implement the program.</p></caption><program xml:id="cp_9_AC_2a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="cp_9_AC_2a"><statement><p>Below is one way to implement the program.</p></statement><program xml:id="cp_9_AC_2a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -139,13 +139,13 @@ bool Cake::has_icing() {
 int main() {
      Cake c ("Choco lava", 3.5);
 }
-        ]]></input></program></listing>
+        ]]></input></program></exercise>
             </solution>
-  </listing>
-  <listing xml:id="empty-28">
-    <caption>
+  </exercise>
+  <exercise xml:id="empty-28">
+    <statement>
       <p>Create the <c>Music</c> structure, with member variables num_sold and year, and member functions <c>sold</c> and <c>is_new</c>. The <c>sold</c> function should print twice the num_sold while the <c>is_new</c> function should return true if the year is greater than 2012.</p>
-    </caption>
+    </statement>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="cp_11_AC_3q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -198,7 +198,7 @@ int main() {
 
             
 
-<listing label="cp_11_AC_3a"><caption><p>Below is one way to implement the program.</p></caption><program xml:id="cp_11_AC_3a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="cp_11_AC_3a"><statement><p>Below is one way to implement the program.</p></statement><program xml:id="cp_11_AC_3a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -225,13 +225,13 @@ bool Music:: is_new (int year) {
 int main() {
     Music m = {4, 2013};
 }
-        ]]></input></program></listing>
+        ]]></input></program></exercise>
             </solution>
-  </listing>
-  <listing xml:id="empty-29">
-    <caption>
+  </exercise>
+  <exercise xml:id="empty-29">
+    <statement>
       <p>Create the <c>Music</c> structure, with member variables num_sold and year, and member function <c>latest</c>. The <c>latest</c> function operates on two <c>Music</c> objects, and returns true if the current object's year is greater than the other's.</p>
-    </caption>
+    </statement>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="cp_11_AC_4q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -283,7 +283,7 @@ int main() {
 
             
 
-<listing label="cp_11_AC_4a"><caption><p>Below is one way to implement the program.</p></caption><program xml:id="cp_11_AC_4a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="cp_11_AC_4a"><statement><p>Below is one way to implement the program.</p></statement><program xml:id="cp_11_AC_4a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -307,14 +307,14 @@ int main() {
     Music m_other = {198, 2009};
     bool is_newer = m.latest(m_other);
 }
-        ]]></input></program></listing>
+        ]]></input></program></exercise>
             </solution>
-  </listing>
-  <listing xml:id="empty-30">
-    <caption>
+  </exercise>
+  <exercise xml:id="empty-30">
+    <statement>
       <p>Write the function <c>printInfo</c>, which prints the music album's information in the format
                     <q>This is a <c>artist</c>, <c>year</c> album with/without featured artists.</q> If <c>artist</c> has the value <q>n/a</q>, <c>printInfo</c> prints out <q>Unknown <c>artist</c>! Your album is from <c>year</c>.</q></p>
-    </caption>
+    </statement>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="cp_11_AC_5q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -377,7 +377,7 @@ int main() {
 
             
 
-<listing label="cp_11_AC_5a"><caption><p>Below is one way to implement the program.</p></caption><program xml:id="cp_11_AC_5a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="cp_11_AC_5a"><statement><p>Below is one way to implement the program.</p></statement><program xml:id="cp_11_AC_5a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -407,13 +407,13 @@ int main() {
     Music m2 = { "Drake", 2016, false };
     printInfo (m2);
 }
-        ]]></input></program></listing>
+        ]]></input></program></exercise>
             </solution>
-  </listing>
-  <listing xml:id="empty-31">
-    <caption>
+  </exercise>
+  <exercise xml:id="empty-31">
+    <statement>
       <p>The <c>Music</c> structure has instance variables name, weight and member function has_icing. Write the has_icing function which returns true when the weight is greater than 10.</p>
-    </caption>
+    </statement>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="cp_11_AC_6q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -465,7 +465,7 @@ int main() {
 
             
 
-<listing label="cp_11_AC_6a"><caption><p>Below is one way to implement the program.</p></caption><program xml:id="cp_11_AC_6a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="cp_11_AC_6a"><statement><p>Below is one way to implement the program.</p></statement><program xml:id="cp_11_AC_6a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -487,13 +487,13 @@ bool Cake::has_icing() {
 int main() {
      Cake c ("Choco lava", 3.5);
 }
-        ]]></input></program></listing>
+        ]]></input></program></exercise>
             </solution>
-  </listing>
-  <listing xml:id="empty-32">
-    <caption>
+  </exercise>
+  <exercise xml:id="empty-32">
+    <statement>
       <p>Write the <c>Pants</c> structure, which has instance variables size and material. Also write a constructor for <c>Pants</c> that would be called when p1 is declred. The constructor sets the size to L and material to cotton.</p>
-    </caption>
+    </statement>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="cp_11_AC_7q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -540,8 +540,8 @@ int main() {
 
             
 
-<listing label="cp_11_AC_7a"><caption><p>Below is one way to implement the program. We declare the <c>Pants</c> struct and list the instance
-                    variables in order. In addition, we write a default constructor.</p></caption><program xml:id="cp_11_AC_7a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="cp_11_AC_7a"><statement><p>Below is one way to implement the program. We declare the <c>Pants</c> struct and list the instance
+                    variables in order. In addition, we write a default constructor.</p></statement><program xml:id="cp_11_AC_7a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -560,13 +560,13 @@ int main() {
     Pants p = { 'S', "denim" };
     Pants p1;
 }
-        ]]></input></program></listing>
+        ]]></input></program></exercise>
             </solution>
-  </listing>
-  <listing xml:id="empty-33">
-    <caption>
+  </exercise>
+  <exercise xml:id="empty-33">
+    <statement>
       <p>Implement 2 constructors for the struct <c>Book</c>, which has the instance variables name and publish_year. One should be a default constructor  that sets name to N/A and publish_year to 0. The other constructor should take arguments</p>
-    </caption>
+    </statement>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="cp_11_AC_8q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -627,7 +627,7 @@ int main() {
 
             
 
-<listing label="cp_11_AC_8a"><caption><p>Below is one way to implement the program.</p></caption><program xml:id="cp_11_AC_8a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="cp_11_AC_8a"><statement><p>Below is one way to implement the program.</p></statement><program xml:id="cp_11_AC_8a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -653,13 +653,13 @@ int main() {
     Book b1;
     Book b2 ("Kane and Abel", 1979);
 }
-        ]]></input></program></listing>
+        ]]></input></program></exercise>
             </solution>
-  </listing>
-  <listing xml:id="empty-34">
-    <caption>
+  </exercise>
+  <exercise xml:id="empty-34">
+    <statement>
       <p>Implement the struct <c>Book</c> as would appear in the Book.h header file and the following necessary statement in main.cpp in order for thr program to run</p>
-    </caption>
+    </statement>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="cp_11_AC_9q_editor">
       <input><![CDATA[
 struct Book {
@@ -714,7 +714,7 @@ int main() {
 
             
 
-<listing label="cp_11_AC_9a"><caption><p>Below is one way to implement the program.</p></caption><program xml:id="cp_11_AC_9a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="cp_11_AC_9a"><statement><p>Below is one way to implement the program.</p></statement><program xml:id="cp_11_AC_9a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 struct Book {
     // Instance variables
     string name;
@@ -735,13 +735,13 @@ int main() {
     Book b1;
     Book b2 ("Kane and Abel", 1979);
 }
-        ]]></input></program></listing>
+        ]]></input></program></exercise>
             </solution>
-  </listing>
-  <listing xml:id="empty-35">
-    <caption>
+  </exercise>
+  <exercise xml:id="empty-35">
+    <statement>
       <p>Implement the struct <c>Instrument</c> struct along with 2 constructors for the same (default and one that takes parameters). <c>Instrument</c> has the instance variables name, year_made and function is_popular(). The default constructor sets name to guitar and year_made to 2000.</p>
-    </caption>
+    </statement>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="cp_11_AC_10q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -792,7 +792,7 @@ int main() {
 
             
 
-<listing label="cp_11_AC_10a"><caption><p>Below is one way to implement the program.</p></caption><program xml:id="cp_11_AC_10a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="cp_11_AC_10a"><statement><p>Below is one way to implement the program.</p></statement><program xml:id="cp_11_AC_10a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -818,7 +818,7 @@ int main() {
     Instrument first;
     Instrument second ("ukulele", 2012);
 }
-        ]]></input></program></listing>
+        ]]></input></program></exercise>
             </solution>
-  </listing>
+  </exercise>
 </section>

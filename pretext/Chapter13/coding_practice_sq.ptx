@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <section xml:id="chapter13_coding-practice-1">
   <title>Coding Practice</title>
-  <listing xml:id="empty-77">
+  <exercise xml:id="empty-77">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
-      <listing label="cp_13_AC_2q">
-        <caption>
+      <exercise label="cp_13_AC_2q">
+        <statement>
           <p>How long is a year on other planets? Let's write a program that prints out the number of days
                     in a year on each planet using a switch statement. These values are, in planetary order,
                     88 days, 225 days, 365 days, 687 days, 4333 days, 10759 days, 30687 days, and 60190 days.
                     Print out this information in the following format: Planet <c>planet</c> has <c>numDays</c> number of days in
                     a year! Select the Parsonsprob tab for hints for the construction of the code.</p>
-        </caption>
+        </statement>
         <program xml:id="cp_13_AC_2q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
@@ -24,17 +24,17 @@ int main() {
 }
         ]]></input>
         </program>
-      </listing>
+      </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <listing label="cp_13_AC_2_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
-        <caption>
+      <exercise label="cp_13_AC_2_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+        <statement>
           <p>How long is a year on other planets? Let's write a program that prints out the number of days
                     in a year on each planet using a switch statement. These values are, in planetary order,
                     88 days, 225 days, 365 days, 687 days, 4333 days, 10759 days, 30687 days, and 60190 days.
                     Print out this information in the following format: Planet <c>planet</c> has <c>numDays</c> number of days in
                     a year! Use the lines to construct the code, then go back to complete the Activecode tab.</p>
-        </caption>
+        </statement>
         <blocks>
           <block order="14">
             <cline>enum Planet { MERCURY = 1, VENUS, EARTH, MARS, JUPITER, SATURN, URANUS, NEPTUNE };</cline>
@@ -95,13 +95,13 @@ int main() {
             <cline>}</cline>
           </block>
         </blocks>
-      </listing>
+      </exercise>
     </TabNode>
-  </listing>
-  <listing xml:id="empty-78">
+  </exercise>
+  <exercise xml:id="empty-78">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
-      <listing label="cp_13_AC_4q">
-        <caption>
+      <exercise label="cp_13_AC_4q">
+        <statement>
           <p>Now let's generate a <c>BingoBoard</c>! We want to fill the 25 <c>Space</c>s on the <c>BingoBoard</c> with
                     random values from 1 to 75 without repititon. To do this, we'll make a <c>vector</c>
                     of numbers from 1 to 75 and shuffle it using the same method as shown in this chapter. Then
@@ -109,7 +109,7 @@ int main() {
                     do this entire process in multiple steps. First, write the function <c>randomInt</c>, which
                     generates a random value between low and high, inclusive. Be sure to include the relevant libraries!
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
-        </caption>
+        </statement>
         <program xml:id="cp_13_AC_4q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
@@ -119,11 +119,11 @@ using namespace std;
 // Write your code for the randomInt function here.
         ]]></input>
         </program>
-      </listing>
+      </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <listing label="cp_13_AC_4_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
-        <caption>
+      <exercise label="cp_13_AC_4_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+        <statement>
           <p>Now let's generate a <c>BingoBoard</c>! We want to fill the 25 <c>Space</c>s on the <c>BingoBoard</c> with
                     random values from 1 to 75 without repititon. To do this, we'll make a <c>vector</c>
                     of numbers from 1 to 75 and shuffle it using the same method as shown in this chapter. Then
@@ -131,7 +131,7 @@ using namespace std;
                     do this entire process in multiple steps. First, write the function <c>randomInt</c>, which
                     generates a random value between low and high, inclusive. Be sure to include the relevant libraries!
                     Use the lines to construct the code, then go back to complete the Activecode tab.</p>
-        </caption>
+        </statement>
         <blocks>
           <block order="2">
             <cline>int randomInt(int low, int high) {</cline>
@@ -152,18 +152,18 @@ using namespace std;
             <cline>}</cline>
           </block>
         </blocks>
-      </listing>
+      </exercise>
     </TabNode>
-  </listing>
-  <listing xml:id="empty-79">
+  </exercise>
+  <exercise xml:id="empty-79">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
-      <listing label="cp_13_AC_6q">
-        <caption>
+      <exercise label="cp_13_AC_6q">
+        <statement>
           <p>Now that we have the functions <c>randomInt</c> and <c>swapValues</c>, we can write the function
                     <c>generateRandVec</c>. <c>generateRandVec</c> creates a <c>vector</c> with values from 1 to 75,
                     shuffles it using <c>randomInt</c> and <c>swapValues</c>, and returns the shuffled <c>vector</c>.
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
-        </caption>
+        </statement>
         <program xml:id="cp_13_AC_6q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
@@ -175,16 +175,16 @@ using namespace std;
 // Write your code for the generateRandVec function here.
         ]]></input>
         </program>
-      </listing>
+      </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <listing label="cp_13_AC_6_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
-        <caption>
+      <exercise label="cp_13_AC_6_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+        <statement>
           <p>Now that we have the functions <c>randomInt</c> and <c>swapValues</c>, we can write the function
                     <c>generateRandVec</c>. <c>generateRandVec</c> creates a <c>vector</c> with values from 1 to 75,
                     shuffles it using <c>randomInt</c> and <c>swapValues</c>, and returns the shuffled <c>vector</c>.
                     Use the lines to construct the code, then go back to complete the Activecode tab.</p>
-        </caption>
+        </statement>
         <blocks>
           <block order="4">
             <cline><![CDATA[vector<int> generateRandVec() {]]></cline>
@@ -214,17 +214,17 @@ using namespace std;
             <cline>}</cline>
           </block>
         </blocks>
-      </listing>
+      </exercise>
     </TabNode>
-  </listing>
-  <listing xml:id="empty-80">
+  </exercise>
+  <exercise xml:id="empty-80">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
-      <listing label="cp_13_AC_8q">
-        <caption>
+      <exercise label="cp_13_AC_8q">
+        <statement>
           <p>Let's print out our <c>BingoBoard</c>! Write the <c>BingoBoard</c> member function
                     <c>printBoard</c>. Insert tabs between each value in each row to make the board
                     print out neater. Select the Parsonsprob tab for hints for the construction of the code.</p>
-        </caption>
+        </statement>
         <program xml:id="cp_13_AC_8q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
@@ -304,15 +304,15 @@ void BingoBoard::makeBoard() {
 }
 </tests>
         </program>
-      </listing>
+      </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <listing label="cp_13_AC_8_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
-        <caption>
+      <exercise label="cp_13_AC_8_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+        <statement>
           <p>Let's print out our <c>BingoBoard</c>! Write the <c>BingoBoard</c> member function
                     <c>printBoard</c>. Insert tabs between each value in each row to make the board
                     print out neater. Use the lines to construct the code, then go back to complete the Activecode tab.</p>
-        </caption>
+        </statement>
         <blocks>
           <block order="6">
             <cline>void BingoBoard::printBoard () {</cline>
@@ -339,13 +339,13 @@ void BingoBoard::makeBoard() {
             <cline>}</cline>
           </block>
         </blocks>
-      </listing>
+      </exercise>
     </TabNode>
-  </listing>
-  <listing xml:id="empty-81">
+  </exercise>
+  <exercise xml:id="empty-81">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
-      <listing label="cp_13_AC_10q">
-        <caption>
+      <exercise label="cp_13_AC_10q">
+        <statement>
           <p>You may have noticed that in some cases, our version of <c>bubbleSort</c> does
                     an unnecessary amount of work. For example, if our <c>vector</c> was {1, 2, 3, 5, 4},
                     <c>bubbleSort</c> would swap 4 and 5, but then keep going even though our <c>vector</c>
@@ -354,7 +354,7 @@ void BingoBoard::makeBoard() {
                     then <c>is_changed</c> stays false, and we know to break out of the loop since our <c>vector</c>
                     is already sorted. Write the function <c>fastBubbleSort</c>, which is <c>bubbleSort</c> with this
                     modification. Select the Parsonsprob tab for hints for the construction of the code.</p>
-        </caption>
+        </statement>
         <program xml:id="cp_13_AC_10q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
@@ -378,11 +378,11 @@ int main() {
 }
         ]]></input>
         </program>
-      </listing>
+      </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <listing label="cp_13_AC_10_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
-        <caption>
+      <exercise label="cp_13_AC_10_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+        <statement>
           <p>You may have noticed that in some cases, our version of <c>bubbleSort</c> does
                     an unnecessary amount of work. For example, if our <c>vector</c> was {1, 2, 3, 5, 4},
                     <c>bubbleSort</c> would swap 4 and 5, but then keep going even though our <c>vector</c>
@@ -391,7 +391,7 @@ int main() {
                     then <c>is_changed</c> stays false, and we know to break out of the loop since our <c>vector</c>
                     is already sorted. Write the function <c>fastBubbleSort</c>, which is <c>bubbleSort</c> with this
                     modification. Use the lines to construct the code, then go back to complete the Activecode tab.</p>
-        </caption>
+        </statement>
         <blocks>
           <block order="13">
             <cline><![CDATA[void fastBubbleSort(vector<int> &vec) {]]></cline>
@@ -436,7 +436,7 @@ int main() {
             <cline>}</cline>
           </block>
         </blocks>
-      </listing>
+      </exercise>
     </TabNode>
-  </listing>
+  </exercise>
 </section>

@@ -21,10 +21,10 @@ Time addTime (const Time&amp; t1, const Time&amp; t2) ...</program>
             compiler that you don't intend to change a parameter, it can help remind
             you. If you try to change one, you should get a compiler error, or at
             least a warning.</p>
-  <listing label="const_parameters_1">
-    <caption>
+  <exercise label="const_parameters_1">
+    <statement>
       <p>Match the action to a benefit of its use.</p>
-    </caption>
+    </statement>
     <feedback>
       <p>Try again.</p>
     </feedback>
@@ -38,36 +38,36 @@ Time addTime (const Time&amp; t1, const Time&amp; t2) ...</program>
         <response>more efficient, because it avoids copying the argument</response>
       </match>
     </matches>
-  </listing>
-  <listing label="const_parameters_2">
-    <caption>
+  </exercise>
+  <exercise label="const_parameters_2">
+    <statement>
       <p>Which statement does NOT describe the <c>const</c> as a parameter feature in C++?</p>
-    </caption>
+    </statement>
     <choices>
       <choice>
-        <caption>
+        <statement>
           <p>Makes reference parameters just as safe as value parameters.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>This is true.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>Can be used when you intend to modify a parameter.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>It is used when you are writing a function and you do not intend to modify a parameter.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>The syntax can look like this: void printTime (const Time&amp; time)...</p>
-        </caption>
+        </statement>
         <feedback>
           <p>This is true</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
+  </exercise>
 </section>

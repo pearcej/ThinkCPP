@@ -51,11 +51,11 @@
                         things, and then encapsulating and generalizing.</p>
     </li>
   </dl>
-  <listing label="chapter_six_glossary_one">
-    <caption>
+  <exercise label="chapter_six_glossary_one">
+    <statement>
       <p>
 </p>
-    </caption>
+    </statement>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -81,12 +81,12 @@
         <response>A special character, written as \t in C++, that causes the cursor to move to the next tab stop on the current line.</response>
       </match>
     </matches>
-  </listing>
-  <listing label="chapter_six_glossary_two">
-    <caption>
+  </exercise>
+  <exercise label="chapter_six_glossary_two">
+    <statement>
       <p>
 </p>
-    </caption>
+    </statement>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -108,5 +108,5 @@
         <response>A process for developing a program.</response>
       </match>
     </matches>
-  </listing>
+  </exercise>
 </section>

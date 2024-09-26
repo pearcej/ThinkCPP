@@ -54,10 +54,10 @@ public:
   <p>Another advantage of using accessor functions is that we can change the
             internal representations of cards without having to change any client
             programs.</p>
-  <listing label="priv_data_AC_1">
-    <caption>
+  <exercise label="priv_data_AC_1">
+    <statement>
       <p>Run the active code below. Uncomment the commented out code to see what happens!</p>
-    </caption>
+    </statement>
     <program xml:id="priv_data_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -132,35 +132,35 @@ void Card::print () const {
 }
 </tests>
     </program>
-  </listing>
-  <listing label="question14_1_1">
-    <caption>
+  </exercise>
+  <exercise label="question14_1_1">
+    <statement>
       <p>Data encapsulation is based on the idea that each structure definition should provide a set of functions that
             apply to the structure, and allow unrestricted access to the internal representation.</p>
-    </caption>
+    </statement>
     <choices>
       <choice>
-        <caption>
+        <statement>
           <p>True</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! Data encapsulation should hide implementation details.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>False</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct! Data encapsulation prevents unrestricted access to internal representations.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="question14_1_2">
-    <caption>
+  </exercise>
+  <exercise label="question14_1_2">
+    <statement>
       <p>What type of data member cannot be directly accessed outside of the structure? <var/>  </p>
-    </caption>
+    </statement>
     <setup>
       <var case="insensitive">
         <condition string="^\s*(Pp)rivate||((Pp)rivate\s+(Dd)ata\s+(Mm)ember)\s*$">
@@ -175,44 +175,44 @@ void Card::print () const {
         </condition>
       </var>
     </setup>
-  </listing>
-  <listing label="question14_1_3">
-    <caption>
+  </exercise>
+  <exercise label="question14_1_3">
+    <statement>
       <p>Multiple Response: Which of the following are examples of accessor functions?</p>
-    </caption>
+    </statement>
     <choices>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>getSuit</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>setRank</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct! "Setter" functions are also known as "mutator" functions.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>print</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect!</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>getRank</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
+  </exercise>
 </section>

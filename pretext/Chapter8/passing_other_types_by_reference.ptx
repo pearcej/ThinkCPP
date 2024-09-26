@@ -19,11 +19,11 @@ cout &lt;&lt; i &lt;&lt; j &lt;&lt; endl;</program>
             <c>y</c> were declared as regular parameters (without the <c>&amp;</c>s),
             <c>swap</c> would not work. It would modify <c>x</c> and <c>y</c> and have no
             effect on <c>i</c> and <c>j</c>.</p>
-  <listing label="pass_others_reference_AC_1">
-    <caption>
+  <exercise label="pass_others_reference_AC_1">
+    <statement>
       <p>The active code below uses the <c>swap</c> function. Run the active code
             for the output!</p>
-    </caption>
+    </statement>
     <program xml:id="pass_others_reference_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -43,7 +43,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </listing>
+  </exercise>
   <p>When people start passing things like integers by reference, they often
             try to use an expression as a reference argument. For example:</p>
   <program>int i = 7;
@@ -54,8 +54,8 @@ swap (i, j + 1);         // WRONG!!</program>
             little tricky to figure out exactly what kinds of expressions can be
             passed by reference. For now a good rule of thumb is that reference
             arguments have to be variables.</p>
-  <listing label="pass_others_reference_1">
-    <caption>
+  <exercise label="pass_others_reference_1">
+    <statement>
       <p>Which of the parameters in the following code block are pass-by-reference?</p>
       <program language="cpp" line-numbers="yes">
         <input>
@@ -75,12 +75,12 @@ int multiply (int a, int b) {
 }
 </input>
       </program>
-    </caption>
+    </statement>
     <choices>
       <choice correct="yes">
         <statement id="pass_others_reference_1_opt_a">
           <p><c>x</c>, <c>y</c>, <c>z</c></p>
-        </caption>
+        </statement>
         <feedback id="pass_others_reference_1_opt_a">
           <p>Correct!</p>
         </feedback>
@@ -88,7 +88,7 @@ int multiply (int a, int b) {
       <choice>
         <statement id="pass_others_reference_1_opt_b">
           <p><c>x</c>, <c>y</c>, <c>z</c>, <c>q</c></p>
-        </caption>
+        </statement>
         <feedback id="pass_others_reference_1_opt_b">
           <p>Pay attention to the placement of the <c>&amp;</c></p>
         </feedback>
@@ -96,17 +96,17 @@ int multiply (int a, int b) {
       <choice>
         <statement id="pass_others_reference_1_opt_c">
           <p><c>a</c>, <c>b</c></p>
-        </caption>
+        </statement>
         <feedback id="pass_others_reference_1_opt_c">
           <p>Pay attention to the placement of the <c>&amp;</c></p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="pass_others_reference_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <caption>
+  </exercise>
+  <exercise label="pass_others_reference_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
       <p>Create a function called <c>addNum</c> that takes two parameters, an integer <c>x</c> and an integer <c>y</c>. The function should add <c>y</c> to <c>x</c>, then print <c>x</c>. The variable <c>x</c> should be modified, while the variable <c>y</c> should not.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="4">
         <cline>void addNum(int&amp; x, int y) {</cline>
@@ -133,5 +133,5 @@ int multiply (int a, int b) {
         <cline>}</cline>
       </block>
     </blocks>
-  </listing>
+  </exercise>
 </section>

@@ -13,11 +13,11 @@
 }</program>
   <p>As usual, we can refer to the instance variables of the current object
             without using dot notation.</p>
-  <listing label="deck_members_AC_1">
-    <caption>
+  <exercise label="deck_members_AC_1">
+    <statement>
       <p>The active code below prints out the deck of cards like in the previous section. Notice we can just use <c>deck.print ()</c>
             to print out the deck instead of writing a for loop in main.</p>
-    </caption>
+    </statement>
     <program xml:id="deck_members_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -105,7 +105,7 @@ void Deck::print () const {
 }
 </tests>
     </program>
-  </listing>
+  </exercise>
   <p>For some of the other functions, it is not obvious whether they should
             be member functions of <c>Card</c>, member functions of <c>Deck</c>, or
             nonmember functions that take <c>Card</c>s and <c>Deck</c>s as parameters.
@@ -153,49 +153,49 @@ struct Deck {
   void print () const;
   int find (const Card&amp; card) const;
 };</program>
-  <listing label="deck_members_1">
-    <caption>
+  <exercise label="deck_members_1">
+    <statement>
       <p>Multiple Response: What are some tricks we can use to write <c>find</c> as a <c>Card</c> member function?</p>
-    </caption>
+    </statement>
     <choices>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>Use the keyword this.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>We use this to refer to the Card that the function is invoked on.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>Define Deck before Card.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>We don't have to define Deck before Card.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>Pass a Card parameter in the Card member function find.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>What do we pass as a parameter in find?</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>Declare Deck before Card and then define Deck afterwards.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>This is how we implemented our code!</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="deck_members_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <caption>
+  </exercise>
+  <exercise label="deck_members_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
       <p>Write find as a Deck member function that takes a Card as a parameter.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="2">
         <choice correct="yes">
@@ -231,11 +231,11 @@ struct Deck {
         <cline>}</cline>
       </block>
     </blocks>
-  </listing>
-  <listing label="deck_members_AC_2">
-    <caption>
+  </exercise>
+  <exercise label="deck_members_AC_2">
+    <statement>
       <p>The active code below uses the <c>find</c> function that we just wrote.</p>
-    </caption>
+    </statement>
     <program xml:id="deck_members_AC_2_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -342,5 +342,5 @@ bool Card::equals (const Card&amp; c2) const {
 }
 </tests>
     </program>
-  </listing>
+  </exercise>
 </section>

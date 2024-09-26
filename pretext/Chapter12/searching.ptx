@@ -31,11 +31,11 @@ int index = card.find (deck[17]);
 cout &lt;&lt; "I found the card at index = " &lt;&lt; index &lt;&lt; endl;</program>
   <p>The output of this code is</p>
   <program>I found the card at index = 17</program>
-  <listing label="12_8">
-    <caption>
+  <exercise label="12_8">
+    <statement>
       <p>The code below searches for a particular card in a standard deck of 52 cards.
             It returns the index that the card was located at.</p>
-    </caption>
+    </statement>
     <program xml:id="c12_8_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -130,13 +130,13 @@ int find (const Card&amp; card, const vector&lt;Card&gt;&amp; deck) {
 }
 </tests>
     </program>
-  </listing>
-  <listing label="searching_1">
-    <caption>
+  </exercise>
+  <exercise label="searching_1">
+    <statement>
       <p>Say we have standard deck of cards. According to our <c>find()</c> function, the
 for loop will execute a minimum of <var/> times, and a maximum of <var/>
 times while searching for a particular card. <var/>  <var/>  </p>
-    </caption>
+    </statement>
     <setup>
       <var>
         <condition number="[1, 1]">
@@ -163,12 +163,12 @@ times while searching for a particular card. <var/>  <var/>  </p>
         </condition>
       </var>
     </setup>
-  </listing>
-  <listing label="searching_2">
-    <caption>
+  </exercise>
+  <exercise label="searching_2">
+    <statement>
       <p><c>buildEuchreDeck()</c> returns the deck of Euchre cards defined on the previous page.
 If we run the following code, what is returned? <var/>  </p>
-    </caption>
+    </statement>
     <setup>
       <var>
         <program>int main() {
@@ -179,5 +179,5 @@ If we run the following code, what is returned? <var/>  </p>
         <p><var/>.</p>
       </var>
     </setup>
-  </listing>
+  </exercise>
 </section>

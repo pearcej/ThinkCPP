@@ -10,11 +10,11 @@
             the <c>cos</c> function.</p>
   <p>You can also take the result of one function and pass it as an argument
             to another:</p>
-  <listing label="function_comp_AC_1">
-    <caption>
+  <exercise label="function_comp_AC_1">
+    <statement>
       <p>This program finds the log base e of 10 and raises e to that power.  The
             result of this computation is assigned to x.</p>
-    </caption>
+    </statement>
     <program xml:id="function_comp_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -27,18 +27,18 @@ int main () {
 }
         ]]></input>
     </program>
-  </listing>
-  <listing label="function_comp_1">
-    <caption>
+  </exercise>
+  <exercise label="function_comp_1">
+    <statement>
       <p>Which of these statements has proper syntax?</p>
-    </caption>
+    </statement>
     <choices>
       <choice>
         <statement id="function_comp_1_opt_a">
           <p>
             <c>double x = log6 (12);</c>
           </p>
-        </caption>
+        </statement>
         <feedback id="function_comp_1_opt_a">
           <p><c>log6</c> is not a built in cmath function, but you could write an implementation for it if you wanted!</p>
         </feedback>
@@ -48,7 +48,7 @@ int main () {
           <p>
             <c>double val = abs (tan (1.57));</c>
           </p>
-        </caption>
+        </statement>
         <feedback id="function_comp_1_opt_b">
           <p>This correctly uses cmath functions!</p>
         </feedback>
@@ -58,7 +58,7 @@ int main () {
           <p>
             <c>double num = exp (cosine (0.86667));</c>
           </p>
-        </caption>
+        </statement>
         <feedback id="function_comp_1_opt_c">
           <p><c>cosine</c> is not a built in cmath function, but <c>cos</c> is!</p>
         </feedback>
@@ -68,25 +68,25 @@ int main () {
           <p>
             <c>double y = exp (cos (1.047)) + exp (tan (2.094))</c>
           </p>
-        </caption>
+        </statement>
         <feedback id="function_comp_1_opt_d">
           <p>This would be correct if it ended in a semi-colon.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="function_comp_2">
-    <caption>
+  </exercise>
+  <exercise label="function_comp_2">
+    <statement>
       <p>Which of these statements returns the y-component of the unit
             vector at 330 degrees?</p>
-    </caption>
+    </statement>
     <choices>
       <choice>
         <statement id="function_comp_2_opt_a">
           <p>
             <c>y = cos(330);</c>
           </p>
-        </caption>
+        </statement>
         <feedback id="function_comp_2_opt_a">
           <p>You must always convert to radians before using sinusoidal functions.</p>
         </feedback>
@@ -96,7 +96,7 @@ int main () {
           <p>
             <c>y = cos(330 * 2 * pi / 360);</c>
           </p>
-        </caption>
+        </statement>
         <feedback id="function_comp_2_opt_b">
           <p><c>cos</c> will return the x-component.</p>
         </feedback>
@@ -106,7 +106,7 @@ int main () {
           <p>
             <c>y = sin(330);</c>
           </p>
-        </caption>
+        </statement>
         <feedback id="function_comp_2_opt_c">
           <p>You must always convert to radians before using sinusoidal functions.</p>
         </feedback>
@@ -116,7 +116,7 @@ int main () {
           <p>
             <c>y = sin(330 * 2 * pi / 360);</c>
           </p>
-        </caption>
+        </statement>
         <feedback id="function_comp_2_opt_d">
           <p><c>sin</c> returns the y-component, <c>cos</c> returns the x-component.</p>
         </feedback>
@@ -126,11 +126,11 @@ int main () {
           <p>
             <c>y = tan(330 * 2 * pi / 360);</c>
           </p>
-        </caption>
+        </statement>
         <feedback id="function_comp_2_opt_e">
           <p><c>tan</c> is not the proper function to use here.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
+  </exercise>
 </section>

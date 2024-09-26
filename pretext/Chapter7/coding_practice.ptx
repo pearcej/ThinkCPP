@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="chapter7_coding-practice">
   <title>Coding Practice</title>
-  <listing xml:id="empty-271">
+  <exercise xml:id="empty-271">
     <statement/>
     <program interactive="" language="" xml:id="empty-272"/>
     <solution>
@@ -51,7 +51,7 @@ TEST_CASE("factorial function") {
 
     
             </solution>
-  </listing>
+  </exercise>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
 &lt;div data-component="selectquestion" id=cp_7_AC_2q_sq data-questionlist='cp_7_AC_2q, cp_7_AC_2q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
@@ -59,7 +59,7 @@ TEST_CASE("factorial function") {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <listing xml:id="empty-273">
+  <exercise xml:id="empty-273">
     <statement/>
     <program interactive="" language="" xml:id="empty-274"/>
     <solution>
@@ -95,7 +95,7 @@ int main() {
 
     
             </solution>
-  </listing>
+  </exercise>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
 &lt;div data-component="selectquestion" id=cp_7_AC_4q_sq data-questionlist='cp_7_AC_4q, cp_7_AC_4q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
@@ -103,7 +103,7 @@ int main() {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <listing xml:id="empty-275">
+  <exercise xml:id="empty-275">
     <statement/>
     <program interactive="" language="" xml:id="empty-276"/>
     <solution>
@@ -154,7 +154,7 @@ int main() {
 
     
             </solution>
-  </listing>
+  </exercise>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
 &lt;div data-component="selectquestion" id=cp_7_AC_6q_sq data-questionlist='cp_7_AC_6q, cp_7_AC_6q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
@@ -162,7 +162,7 @@ int main() {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <listing xml:id="empty-277">
+  <exercise xml:id="empty-277">
     <statement/>
     <program interactive="" language="" xml:id="empty-278"/>
     <solution>
@@ -201,7 +201,7 @@ int main() {
 
     
             </solution>
-  </listing>
+  </exercise>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
 &lt;div data-component="selectquestion" id=cp_7_AC_8q_sq data-questionlist='cp_7_AC_8q, cp_7_AC_8q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
@@ -209,7 +209,7 @@ int main() {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <listing xml:id="empty-279">
+  <exercise xml:id="empty-279">
     <statement/>
     <program interactive="" language="" xml:id="empty-280"/>
     <solution>
@@ -262,7 +262,7 @@ TEST_CASE("longestWord function") {
 
     
             </solution>
-  </listing>
+  </exercise>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
 &lt;div data-component="selectquestion" id=cp_7_AC_10q_sq data-questionlist='cp_7_AC_10q, cp_7_AC_10q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;

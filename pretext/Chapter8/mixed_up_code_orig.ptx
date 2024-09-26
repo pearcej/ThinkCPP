@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <section xml:id="chapter8_mixed-up-code-practice">
   <title>Mixed Up Code Practice</title>
-  <listing label="mucp_8_1" numbered="yes" adaptive="yes" indentation="show" language="python">
-    <caption>
+  <exercise label="mucp_8_1" numbered="yes" adaptive="yes" indentation="show" language="python">
+    <statement>
       <p>Let's write the code for the struct definition of Song.
             The Song structure will have the instance variables string title,
             string artist, string album, and int year in that order.
             Put the necessary blocks of code in the correct order.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="1">
         <cline>struct Song {</cline>
@@ -43,13 +43,13 @@
         <cline>) </cline>
       </block>
     </blocks>
-  </listing>
-  <listing label="mucp_8_2" numbered="yes" adaptive="yes" indentation="show" language="python">
-    <caption>
+  </exercise>
+  <exercise label="mucp_8_2" numbered="yes" adaptive="yes" indentation="show" language="python">
+    <statement>
       <p>In main, create a Song object called fly which holds
             the data for Frank Sinatra's <q>Fly Me to the Moon</q> from his 1964 album <q>It Might as Well Be Swing</q>.
             Put the necessary blocks of code in the correct order.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="10">
         <cline>int main() {</cline>
@@ -87,14 +87,14 @@
         <cline>}</cline>
       </block>
     </blocks>
-  </listing>
-  <listing label="mucp_8_3" numbered="yes" adaptive="yes" indentation="show" language="python">
-    <caption>
+  </exercise>
+  <exercise label="mucp_8_3" numbered="yes" adaptive="yes" indentation="show" language="python">
+    <statement>
       <p>Let's write the code for the printSong function. printSong
             takes a Song as a parameter and prints out the instance variables
             in the following format: <q>title</q> by artist (album, year). Put the necessary blocks of
             code in the correct order.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="6">
         <choice correct="yes">
@@ -126,15 +126,15 @@
         <cline>}</cline>
       </block>
     </blocks>
-  </listing>
-  <listing label="mucp_8_4" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <caption>
+  </exercise>
+  <exercise label="mucp_8_4" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
       <p>Let's write the code for the struct definition of Unicorn.
             The Unicorn structure will have the instance variables name,
             age, hornLength, hairColor, and isSparkly in that order. A Unicorn's
             horn length is measured to the nearest tenth of a unit.
             Put the necessary blocks of code in the correct order.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="7">
         <cline>struct Unicorn {</cline>
@@ -167,16 +167,16 @@
         <cline>} </cline>
       </block>
     </blocks>
-  </listing>
-  <listing label="mucp_8_5" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <caption>
+  </exercise>
+  <exercise label="mucp_8_5" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
       <p>Let's write the code for the convertToHumanAge function. convertToHumanAge
             takes a Unicorn as a parameter and returns the equivalent human age.
             If a unicorn is sparkly, then its equivalent human age is three times its age in unicorn years
             plus the length of its horn. If a unicorn is not sparkly, then its equivalent human age is
             four times its age in unicorn years plus twice the length of its horn.
             Put the necessary blocks of code in the correct order.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="4">
         <choice correct="yes">
@@ -224,14 +224,14 @@
         <cline>}</cline>
       </block>
     </blocks>
-  </listing>
-  <listing label="mucp_8_6" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <caption>
+  </exercise>
+  <exercise label="mucp_8_6" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
       <p>Let's write the code for the unicornPower function. unicornPower
             takes a Unicorn as a parameter and
             sets isSparkly to true and changes the color to rainbow.
             Put the necessary blocks of code in the correct order.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="1">
         <cline>void unicornPower (Unicorn&amp; u) {</cline>
@@ -262,16 +262,16 @@
         <cline>}</cline>
       </block>
     </blocks>
-  </listing>
-  <listing label="mucp_8_7" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <caption>
+  </exercise>
+  <exercise label="mucp_8_7" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
       <p>Let's write the code for the struct definitions of Address and Employee.
             The Address structure will have the instance variables houseNumber,
             state (abbreviation), and postalAddress in that order. The Employee
             structure will be a nested structure with the instance variables name
             and Address address in that order.
             Put the necessary blocks of code in the correct order, with Address defined before Employee.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="12">
         <cline>struct Address {</cline>
@@ -319,14 +319,14 @@
         <cline>}  </cline>
       </block>
     </blocks>
-  </listing>
-  <listing label="mucp_8_8" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <caption>
+  </exercise>
+  <exercise label="mucp_8_8" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
       <p>Let's write the code for the printAddress function. printAddress takes
             an Employee as a parameter and should print out the information of the employee in the
             following format: name (id) lives at houseNumber in state, postalAddress.
             Put the necessary blocks of code in the correct order.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="8">
         <choice correct="yes">
@@ -355,14 +355,14 @@
         <cline>}</cline>
       </block>
     </blocks>
-  </listing>
-  <listing label="mucp_8_9" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <caption>
+  </exercise>
+  <exercise label="mucp_8_9" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
       <p>Sometimes employees will move around and thus we'll need to update their addresses.
             Let's write the code for the updateAddress function. updateAddress takes an
             Employee and a new Address as parameters and sets the employee's address to the new address.
             Put the necessary blocks of code in the correct order.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="11">
         <cline>void updateAddress (Employee&amp; e, Address a) {</cline>
@@ -401,5 +401,5 @@
         <cline>};  </cline>
       </block>
     </blocks>
-  </listing>
+  </exercise>
 </section>

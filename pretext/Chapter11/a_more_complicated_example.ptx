@@ -25,11 +25,11 @@
 }</program>
   <p>You can almost read the invocation like English: <q>If the done-time is
             after the current-time, then&#x2026;</q></p>
-  <listing label="more_complicated_example_AC_1">
-    <caption>
+  <exercise label="more_complicated_example_AC_1">
+    <statement>
       <p>The active code below is another practical example using the <c>after</c> function.
             Feel free to modify the time that school gets out, and the time that the track meet starts, if you wish!</p>
-    </caption>
+    </statement>
     <program xml:id="more_complicated_example_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -67,90 +67,90 @@ bool Time::after (const Time&amp; time2) const {
 }
 </tests>
     </program>
-  </listing>
-  <listing label="more_complicated_example_1">
-    <caption>
+  </exercise>
+  <exercise label="more_complicated_example_1">
+    <statement>
       <p>Which is/are true about the <c>Time::after</c> member function?</p>
-    </caption>
+    </statement>
     <choices>
       <choice>
-        <caption>
+        <statement>
           <p>There is only one Time parameter.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! There are actually two Time parameters, one of them is implicit.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>The function operates on two Time objects.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct! There are two Time objects - the implicit one and time2.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>The function is invoked on time2.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! The function is invoked on the implicit Time object.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>"hour" and "minute" refer to the hour and minute of the implicit Time object.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="more_complicated_example_2">
-    <caption>
+  </exercise>
+  <exercise label="more_complicated_example_2">
+    <statement>
       <p>In a function that operates on <term>four</term> structures, how many of them are accessed with dot notation?</p>
-    </caption>
+    </statement>
     <choices>
       <choice>
-        <caption>
+        <statement>
           <p>One</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! There is One implicit structure.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>Two</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! Keep in mind there are 4 structures and 1 is implicit.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>Three</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct!  There is One implicit structure, and three structures that need to be accessed with dot notation.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>Four</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! We shouldn't need to use dot notation for all of them!</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="more_complicated_example_3" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <caption>
+  </exercise>
+  <exercise label="more_complicated_example_3" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
       <p>Create the <c>Dog::is_older()</c> function as it would be defined INSIDE of the <c>Dog</c> structure definition.  This function
             checks if the current <c>Dog</c> is older than another <c>Dog</c>.  The function is invoked on the current <c>Dog</c>.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="3" correct="no">
         <cline>bool Dog::is_older(const Dog&amp; dog, const Dog&amp; dog2) {                         </cline>
@@ -195,5 +195,5 @@ bool Time::after (const Time&amp; time2) const {
         <cline>bool Dog::is_older(const Dog&amp; dog2) {                         </cline>
       </block>
     </blocks>
-  </listing>
+  </exercise>
 </section>

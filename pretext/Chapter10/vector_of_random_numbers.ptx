@@ -35,10 +35,10 @@ printVector (vector);</program>
   <p>On my machine the output is</p>
   <program>3 6 7 5 3 5 6 2 9 1 2 7 0 9 3 6 0 6 2 6</program>
   <p>which is pretty random-looking. Your results might be different.</p>
-  <listing label="vector_of_rand_nums_AC_1">
-    <caption>
+  <exercise label="vector_of_rand_nums_AC_1">
+    <statement>
       <p>Try running the active code below!</p>
-    </caption>
+    </statement>
     <program xml:id="vector_of_rand_nums_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -73,7 +73,7 @@ void printVector (const vector&lt;int&gt;&amp; vec) {
 }
 </tests>
     </program>
-  </listing>
+  </exercise>
   <p>If these numbers are really random, we expect each digit to appear the
             same number of times&#x2014;twice each. In fact, the number 6 appears five
             times, and the numbers 4 and 8 never appear at all.</p>
@@ -84,10 +84,10 @@ void printVector (const vector&lt;int&gt;&amp; vec) {
   <p>To test this theory, we'll write some programs that count the number of
             times each value appears, and then see what happens when we increase
             <c>numValues</c>.</p>
-  <listing label="vector_of_rand_nums_1">
-    <caption>
+  <exercise label="vector_of_rand_nums_1">
+    <statement>
       <p>How should we declare the parameter, <term>vector</term>, if we don't intend to make any changes to it? <var/>  </p>
-    </caption>
+    </statement>
     <setup>
       <var case="insensitive">
         <condition string="^\s*CONST\s*$">
@@ -102,48 +102,48 @@ void printVector (const vector&lt;int&gt;&amp; vec) {
         </condition>
       </var>
     </setup>
-  </listing>
-  <listing label="vector_of_rand_nums_2">
-    <caption>
+  </exercise>
+  <exercise label="vector_of_rand_nums_2">
+    <statement>
       <p>As we store more and more random numbers in a vector, we expect its contents to be __________.</p>
-    </caption>
+    </statement>
     <choices>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>more uniform</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>less uniform</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! As we store more random numbers in a vector, we see that the frequencies of each number are approximately equal.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>more normal</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! The distribution of random numbers is not related to the normal distribution.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>less normal</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! The distribution of random numbers is not related to the normal distribution.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="vector_of_rand_nums_3">
-    <caption>
+  </exercise>
+  <exercise label="vector_of_rand_nums_3">
+    <statement>
       <p>Would compiling the following code lead to a compiler error?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -154,24 +154,24 @@ void dostuff (const vector<int> & vec) {
 }
 ]]></input>
       </program>
-    </caption>
+    </statement>
     <choices>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>yes we would get a compile error</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct! we can't make changes to a vector we take in by constant reference</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>no we would not because values remain same.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Even if we keep the values same we are editing a constant which is not allowed.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
+  </exercise>
 </section>

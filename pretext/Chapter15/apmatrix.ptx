@@ -46,58 +46,58 @@ m3[1][2] = 10.0 * m2[0][0];</program>
   }
   cout &lt;&lt; endl;
 }</program>
-  <listing label="question15_8_1">
-    <caption>
+  <exercise label="question15_8_1">
+    <statement>
       <p>Which of the following data types are supported by matrix?</p>
-    </caption>
+    </statement>
     <choices>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>int</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>string</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>vector&lt;int&gt;</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>vector&lt;vector&lt;int&gt;&gt;</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct! This is a technically type of matrix!</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>matrix</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct! Matrices can be made of matrices.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="question15_8_2">
-    <caption>
+  </exercise>
+  <exercise label="question15_8_2">
+    <statement>
       <p>Suppose we have matrix <c>mat</c>.  Then <c>mat[9][17]</c> would be accessing
 column <var/> and row <var/> of our matrix. <var/>  <var/>  </p>
-    </caption>
+    </statement>
     <setup>
       <var>
         <condition number="[18, 18]">
@@ -124,5 +124,5 @@ column <var/> and row <var/> of our matrix. <var/>  <var/>  </p>
         </condition>
       </var>
     </setup>
-  </listing>
+  </exercise>
 </section>

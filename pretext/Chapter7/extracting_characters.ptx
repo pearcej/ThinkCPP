@@ -5,11 +5,11 @@
             string, of characters. The first operation we are going to perform on a
             string is to extract one of the characters. C++ uses square brackets
             (<c>[</c> and <c>]</c>) for this operation.</p>
-  <listing label="extracting_characters_AC_1">
-    <caption>
+  <exercise label="extracting_characters_AC_1">
+    <statement>
       <p>Take a look at the active code below. We extract the character
             at index 1 from string <c>fruit</c> using <c>[</c> and <c>]</c>.</p>
-    </caption>
+    </statement>
     <program xml:id="extracting_characters_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -22,7 +22,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </listing>
+  </exercise>
   <p>The expression <c>fruit[1]</c> indicates that I want character number 1
             from the string named <c>fruit</c>. The result is stored in a <c>char</c>
             named <c>letter</c>. When I output the value of <c>letter</c>, I get a
@@ -38,10 +38,10 @@ int main() {
   </note>
   <p>If you want the the zereoth letter of a string, you have to put zero in
             the square brackets.</p>
-  <listing label="extracting_characters_AC_2">
-    <caption>
+  <exercise label="extracting_characters_AC_2">
+    <statement>
       <p>The active code below accesses the first character in string <c>fruit</c>.</p>
-    </caption>
+    </statement>
     <program xml:id="extracting_characters_AC_2_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -54,9 +54,9 @@ int main() {
 }
         ]]></input>
     </program>
-  </listing>
-  <listing label="extracting_characters_1">
-    <caption>
+  </exercise>
+  <exercise label="extracting_characters_1">
+    <statement>
       <p>What would replace the <q>?</q> in order to access the letter <q>b</q> in the string below?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -69,36 +69,36 @@ int main () {
 }
 ]]></input>
       </program>
-    </caption>
+    </statement>
     <choices>
       <choice>
-        <caption>
+        <statement>
           <p>1</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Don't forget that computer scientists do not start counting at 1!</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>0</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Yes, this would access the letter "b".</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>2</p>
-        </caption>
+        </statement>
         <feedback>
           <p>This would access the letter "k".</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="extracting_characters_2">
-    <caption>
+  </exercise>
+  <exercise label="extracting_characters_2">
+    <statement>
       <p>What is printed when the code below is run?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
@@ -113,46 +113,46 @@ int main () {
 }
 ]]></input>
       </program>
-    </caption>
+    </statement>
     <choices>
       <choice>
-        <caption>
+        <statement>
           <p>lunch</p>
-        </caption>
+        </statement>
         <feedback>
           <p>When we <code>cout</code> a <code>string</code> we print its content not its name.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>jello</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Carefully check which string(s) we are indexing into.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>lello</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct! We copy the 'l' from position 3 of "hello" to position 0.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>heljo</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Consider which string(s) we are indexing into.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="extracting_characters_3">
-    <caption>
+  </exercise>
+  <exercise label="extracting_characters_3">
+    <statement>
       <p>Click on each spot where a character in a string is accessed.</p>
-    </caption>
+    </statement>
     <feedback>
       <p>Remember, square brackets [] are used to access a character in a string.</p>
     </feedback>
@@ -170,11 +170,11 @@ int main () {
       <cline>    cout &lt;&lt;  <area correct="yes">fruit[4]</area>  &lt;&lt; endl;</cline>
       <cline>}</cline>
     </areas>
-  </listing>
-  <listing label="extracting_characters_4" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <caption>
+  </exercise>
+  <exercise label="extracting_characters_4" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
       <p>Construct a block of code that correctly prints the letter <q>a</q>.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="1" correct="no">
         <cline>string x;</cline>
@@ -184,5 +184,5 @@ int main () {
         <cline><![CDATA[cout << x[8] << endl; ]]></cline>
       </block>
     </blocks>
-  </listing>
+  </exercise>
 </section>

@@ -29,43 +29,43 @@
   <p>Of course, it is a bit strange to assume that the function works
             correctly when you have not even finished writing it, but that's why
             it's called a leap of faith!</p>
-  <listing label="recursive_leap_1">
-    <caption>
+  <exercise label="recursive_leap_1">
+    <statement>
       <p>Which of the following is an example of the recursive leap of faith?</p>
-    </caption>
+    </statement>
     <choices>
       <choice>
-        <caption>
+        <statement>
           <p>Since you can find the factorial of the first 3 numbers in a list, you must also be able to find the factorial of the first 2.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>There is no leap of faith here.  In fact, it's quite flip-flopped.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>You assume that the log function works, without examining the implementation.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>This is a leap of faith, but it is not recursive.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>Since you can take the sum of the first 7 numbers in a list, you assume that you can also take the sum of the first 8.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Recursive leaps of faith always assume that the recursive call will work.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>You write a function and assume that it will work.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>This is a leap of faith, but it is not recursive.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
+  </exercise>
 </section>

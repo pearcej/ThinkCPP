@@ -46,74 +46,74 @@ for (int i = 0; i &lt; upperBound; i++) {
   <p>In each case, the number of appearances is within about 1% of the
             expected value (10,000), so we conclude that the random numbers are
             probably uniform.</p>
-  <listing label="checking_values_1">
-    <caption>
+  <exercise label="checking_values_1">
+    <statement>
       <p>If you declare a variable inside a <c>for</c> statement, where can it exist?</p>
-    </caption>
+    </statement>
     <choices>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>inside of the for loop.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>outside of the for loop, but inside of the function it's used in.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! The variable goes out of scope as soon as the for loop terminates!</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>outside of the function, and everywhere else in the program.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! The variable goes out of scope as soon as the for loop terminates!</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="checking_values_2">
-    <caption>
+  </exercise>
+  <exercise label="checking_values_2">
+    <statement>
       <p><term>Multiple Response</term> When we increase the size of <c>numValues</c>, which of the following is true:</p>
-    </caption>
+    </statement>
     <choices>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>the difference between actual and expected number of appearances increases</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct! The numbers go from being off by less than 5 to more than 100.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>the difference between actual and expected number of appearances decreases</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! Take a look at the numbers again!</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>the percent by which the number of appearances differs from the expected number increases</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! Take a look at the numbers again!</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>the percent by which the number of appearances differs from the expected number decreases</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! As we continue to increase the size of numValues, the percent by which the number of appearances differes from the expected value approaches 0.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
+  </exercise>
 </section>

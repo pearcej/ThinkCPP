@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="chapter14_coding-practice">
   <title>Coding Practice</title>
-  <listing xml:id="empty-93">
+  <exercise xml:id="empty-93">
     <statement/>
     <program interactive="" language="" xml:id="empty-94"/>
     <solution>
@@ -34,7 +34,7 @@ class Room {
 
     
             </solution>
-  </listing>
+  </exercise>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
 &lt;div data-component="selectquestion" id=cp_14_AC_2_sq data-questionlist='cp_14_AC_2q, cp_14_AC_2q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
@@ -42,7 +42,7 @@ class Room {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <listing xml:id="empty-95">
+  <exercise xml:id="empty-95">
     <statement/>
     <program interactive="" language="" xml:id="empty-96"/>
     <solution>
@@ -97,7 +97,7 @@ class Temp {
 
     
             </solution>
-  </listing>
+  </exercise>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
 &lt;div data-component="selectquestion" id=cp_14_AC_4_sq data-questionlist='cp_14_AC_4q, cp_14_AC_4q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
@@ -105,7 +105,7 @@ class Temp {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <listing xml:id="empty-97">
+  <exercise xml:id="empty-97">
     <statement/>
     <program interactive="" language="" xml:id="empty-98"/>
     <solution>
@@ -133,7 +133,7 @@ class MyVector {
 
     
             </solution>
-  </listing>
+  </exercise>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
 &lt;div data-component="selectquestion" id=cp_14_AC_6_sq data-questionlist='cp_14_AC_6q, cp_14_AC_6q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
@@ -141,7 +141,7 @@ class MyVector {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <listing xml:id="empty-99">
+  <exercise xml:id="empty-99">
     <statement/>
     <program interactive="" language="" xml:id="empty-100"/>
     <solution>
@@ -191,7 +191,7 @@ MyVector::MyVector (vector&lt;int&gt; vec) {
 
     
             </solution>
-  </listing>
+  </exercise>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
 &lt;div data-component="selectquestion" id=cp_14_AC_8_sq data-questionlist='cp_14_AC_8q, cp_14_AC_8q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
@@ -199,7 +199,7 @@ MyVector::MyVector (vector&lt;int&gt; vec) {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <listing xml:id="empty-101">
+  <exercise xml:id="empty-101">
     <statement/>
     <program interactive="" language="" xml:id="empty-102"/>
     <solution>
@@ -284,7 +284,7 @@ void MyVector::print() {
 
     
             </solution>
-  </listing>
+  </exercise>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
 &lt;div data-component="selectquestion" id=cp_14_AC_10_sq data-questionlist='cp_14_AC_10q, cp_14_AC_10q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;

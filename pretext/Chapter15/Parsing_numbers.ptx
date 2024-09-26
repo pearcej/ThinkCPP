@@ -66,98 +66,98 @@ int main() {
 }
         ]]></input>
   </program>
-  <listing label="question15_6_1">
-    <caption>
+  <exercise label="question15_6_1">
+    <statement>
       <p>What does the <c>atoi()</c> function do?</p>
-    </caption>
+    </statement>
     <choices>
       <choice>
-        <caption>
+        <statement>
           <p>takes the absolute value of a number</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! Go back and read for the answer.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>converts a double to an int</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! Go back and read for the answer.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>converts a string to an int</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct! This is very helpful when we read numbers from a file (where they are strings).</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>converts an int to a string</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! Go back and read for the answer.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="question15_6_2">
-    <caption>
+  </exercise>
+  <exercise label="question15_6_2">
+    <statement>
       <p>Which of the following strings will return <q>2020</q> when passed into <c>convertToInt()</c>?</p>
-    </caption>
+    </statement>
     <choices>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>2020</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct! This one is quite simple.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>ab,jkl2!!moo0?huh2mth0haha.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct! This long, confusing string will clean up nicely!</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>2,00!!!!!!!!2</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect!</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>2OOO020OOOOO</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct! You have to look closely to see that some of these are 0's!</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>we2love0parsing2numbersO!</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! Although we do love parsing numbers, this is incorrect.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="question15_6_3" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <caption>
+  </exercise>
+  <exercise label="question15_6_3" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
       <p>Create the replace_with() function that takes a string <q>str</q>, a character to get rid of <q>olc_char</q>,
             and a character to replace it with <q>new_char</q>.  It should return a new string that has replaces any
             occurances of old_char with new_char.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="10">
         <choice correct="yes">
@@ -213,5 +213,5 @@ int main() {
         </choice>
       </block>
     </blocks>
-  </listing>
+  </exercise>
 </section>

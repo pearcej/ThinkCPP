@@ -34,10 +34,10 @@
   <p>The next line of the function invokes the constructor that takes a
             single <c>double</c> as a parameter; the last line returns the resulting
             object.</p>
-  <listing label="one_last_example_AC_1">
-    <caption>
+  <exercise label="one_last_example_AC_1">
+    <statement>
       <p>Feel free to try out the <c>add</c> function in the active code below!</p>
-    </caption>
+    </statement>
     <program xml:id="one_last_example_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -104,12 +104,12 @@ bool Time::after (const Time&amp; time2) const {
 }
 </tests>
     </program>
-  </listing>
-  <listing label="one_last_example_1">
-    <caption>
+  </exercise>
+  <exercise label="one_last_example_1">
+    <statement>
       <p>Inside a member function, the compiler assumes that we want to invoke the function
 on the <var/> object.  </p>
-    </caption>
+    </statement>
     <setup>
       <var case="insensitive">
         <condition string="^\s*current\s*$">
@@ -124,12 +124,12 @@ on the <var/> object.  </p>
         </condition>
       </var>
     </setup>
-  </listing>
-  <listing label="one_last_example_2">
-    <caption>
+  </exercise>
+  <exercise label="one_last_example_2">
+    <statement>
       <p>We have previously initialized t1 and t2 using constructors <c>Time t1 (8, 30, 45.0)</c>
 and <c>Time t2 (1, 50, 13.0)</c>. What should be returned by <c>t1.add(t2)</c>? <var/>  </p>
-    </caption>
+    </statement>
     <setup>
       <var case="insensitive">
         <condition string="^\s*(10:20:58)\s*$">
@@ -144,5 +144,5 @@ and <c>Time t2 (1, 50, 13.0)</c>. What should be returned by <c>t1.add(t2)</c>? 
         </condition>
       </var>
     </setup>
-  </listing>
+  </exercise>
 </section>

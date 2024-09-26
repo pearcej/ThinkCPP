@@ -2,10 +2,10 @@
 <section xml:id="chapter11_activecode-exercises">
   <title>Activecode Exercises</title>
   <p>Answer the following <term>Activecode</term> questions to assess what you have learned in this chapter.</p>
-  <listing xml:id="empty-36">
-    <caption>
+  <exercise xml:id="empty-36">
+    <statement>
       <p>Suppose you have the following code. Construct a block of code that would make the print function into a member function.</p>
-    </caption>
+    </statement>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_11_1_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -59,7 +59,7 @@ int main () {
 
             
 
-<listing label="mucp_11_1_ac_a"><caption><p>Below is one way to construct the code block</p></caption><program xml:id="mucp_11_1_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_11_1_ac_a"><statement><p>Below is one way to construct the code block</p></statement><program xml:id="mucp_11_1_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
@@ -79,16 +79,16 @@ int main () {
     Student s1 = { 56673, 2023, "Bob" };
     s1.print();
 }
-        ]]></input></program></listing>
+        ]]></input></program></exercise>
             </solution>
-  </listing>
-  <listing xml:id="empty-37">
-    <caption>
+  </exercise>
+  <exercise xml:id="empty-37">
+    <statement>
       <p>Let's make an album! Write the struct definition for
                     <c>Album</c>, which should have instance variables name and year.
                     Include a member function called check that returns true if
                     the song was released after 2015.</p>
-    </caption>
+    </statement>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_11_2_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -125,7 +125,7 @@ bool Album::check () {
 
             
 
-<listing label="mucp_11_2_ac_a"><caption><p>Below is one way to define the <c>Album</c> struct.</p></caption><program xml:id="mucp_11_2_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_11_2_ac_a"><statement><p>Below is one way to define the <c>Album</c> struct.</p></statement><program xml:id="mucp_11_2_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -143,14 +143,14 @@ bool Album::check () {
         return false;
     }
 }
-        ]]></input></program></listing>
+        ]]></input></program></exercise>
             </solution>
-  </listing>
-  <listing xml:id="empty-38">
-    <caption>
+  </exercise>
+  <exercise xml:id="empty-38">
+    <statement>
       <p>Write the necessary of code to establish
                     the <c>convertToSeconds</c> member function as a part of the <c>Time</c> struct.</p>
-    </caption>
+    </statement>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_11_3_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -184,7 +184,7 @@ double Time::convertToSeconds () const {
 
             
 
-<listing label="mucp_11_3_ac_a"><caption><p>Below is one way to write the <c>convertToSeconds</c> member function.</p></caption><program xml:id="mucp_11_3_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_11_3_ac_a"><statement><p>Below is one way to write the <c>convertToSeconds</c> member function.</p></statement><program xml:id="mucp_11_3_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -199,16 +199,16 @@ double Time::convertToSeconds () const {
     double seconds = minutes * 60 + time.second;
     return seconds;
 }
-        ]]></input></program></listing>
+        ]]></input></program></exercise>
             </solution>
-  </listing>
-  <listing xml:id="empty-39">
-    <caption>
+  </exercise>
+  <exercise xml:id="empty-39">
+    <statement>
       <p>Create the <c>Student::is_older()</c> function as it would be defined INSIDE
                     of the Student structure definition. This function checks if the current
                     Student is older than another Student. The function is invoked on the
                     current Student.</p>
-    </caption>
+    </statement>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_11_4_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -235,7 +235,7 @@ bool is_older(const Student& stu) const {
 
             
 
-<listing label="mucp_11_4_ac_a"><caption><p>Below is one way to create the <c>Student::is_older()</c> function.</p></caption><program xml:id="mucp_11_4_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_11_4_ac_a"><statement><p>Below is one way to create the <c>Student::is_older()</c> function.</p></statement><program xml:id="mucp_11_4_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -243,15 +243,15 @@ bool is_older(const Student& stu) const {
     if (age > stu.age) {return true;}
         else {return false;}
 }
-        ]]></input></program></listing>
+        ]]></input></program></exercise>
             </solution>
-  </listing>
-  <listing xml:id="empty-40">
-    <caption>
+  </exercise>
+  <exercise xml:id="empty-40">
+    <statement>
       <p>Write the necessary code to initialise
                     a constructor for type <c>Days</c> that takes in the number of days and
                     initialises the member variables <c>days</c>, <c>weeks</c>, <c>years</c>.</p>
-    </caption>
+    </statement>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_11_5_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -282,7 +282,7 @@ Days::Days (int num_days) {
 
             
 
-<listing label="mucp_11_5_ac_a"><caption><p>Below is one way to initialize the constructor.</p></caption><program xml:id="mucp_11_5_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_11_5_ac_a"><statement><p>Below is one way to initialize the constructor.</p></statement><program xml:id="mucp_11_5_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -294,14 +294,14 @@ Days::Days (int num_days) {
     num_days -= weeks * 60.0;
     days = num_days;
 }
-        ]]></input></program></listing>
+        ]]></input></program></exercise>
             </solution>
-  </listing>
-  <listing xml:id="empty-41">
-    <caption>
+  </exercise>
+  <exercise xml:id="empty-41">
+    <statement>
       <p>Let's write two constructors for <c>Student</c>. One with no arguments and
                     one with arguments.</p>
-    </caption>
+    </statement>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_11_6_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -336,7 +336,7 @@ Student::Student () {
 
             
 
-<listing label="mucp_11_6_ac_a"><caption><p>Below is one way to write the two constructors.</p></caption><program xml:id="mucp_11_6_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_11_6_ac_a"><statement><p>Below is one way to write the two constructors.</p></statement><program xml:id="mucp_11_6_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -352,15 +352,15 @@ Student::Student () {
             year = year_in;
             name = name_in;
 }
-        ]]></input></program></listing>
+        ]]></input></program></exercise>
             </solution>
-  </listing>
-  <listing xml:id="empty-42">
-    <caption>
+  </exercise>
+  <exercise xml:id="empty-42">
+    <statement>
       <p>Implement two constructors for the <c>Penguin</c> structure. One should
                     be a default constructor, the other should take arguments. The
                     weight needs to be converted from pounds to kilograms in the second constructor</p>
-    </caption>
+    </statement>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_11_7_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -399,7 +399,7 @@ Penguin::Penguin (int age_in, int weight_in) {
 
             
 
-<listing label="mucp_11_7_ac_a"><caption><p>Below is one way to implement the two constructors.</p></caption><program xml:id="mucp_11_7_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_11_7_ac_a"><statement><p>Below is one way to implement the two constructors.</p></statement><program xml:id="mucp_11_7_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -419,14 +419,14 @@ Penguin::Penguin (int age_in, int weight_in) {
     age = age_in;
     weight = weight_in;
 }
-        ]]></input></program></listing>
+        ]]></input></program></exercise>
             </solution>
-  </listing>
-  <listing xml:id="empty-43">
-    <caption>
+  </exercise>
+  <exercise xml:id="empty-43">
+    <statement>
       <p>Write the necessary blocks of code to make the
                     <c>AddDays</c> function below a member function.</p>
-    </caption>
+    </statement>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_11_8_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -459,7 +459,7 @@ Days Days::add (const Days& d2) const {
 
             
 
-<listing label="mucp_11_8_ac_a"><caption><p>Below is one way to make the <c>AddDays</c> function a member function.</p></caption><program xml:id="mucp_11_8_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_11_8_ac_a"><statement><p>Below is one way to make the <c>AddDays</c> function a member function.</p></statement><program xml:id="mucp_11_8_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -468,15 +468,15 @@ Days Days::add (const Days& d2) const {
     Days day (days);
     return day;
 }
-        ]]></input></program></listing>
+        ]]></input></program></exercise>
             </solution>
-  </listing>
-  <listing xml:id="empty-44">
-    <caption>
+  </exercise>
+  <exercise xml:id="empty-44">
+    <statement>
       <p>Write the necessary blocks of code to create a struct
                     <c>Penguin</c> that stores name and age. In addition have 2 constructors and
                     declare Penguins in main such that both are called.</p>
-    </caption>
+    </statement>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_11_9_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -520,7 +520,7 @@ int main () {
 
             
 
-<listing label="mucp_11_9_ac_a"><caption><p>Below is one way to creat the <c>Penguin</c> struct and the 2 constructors.</p></caption><program xml:id="mucp_11_9_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_11_9_ac_a"><statement><p>Below is one way to creat the <c>Penguin</c> struct and the 2 constructors.</p></statement><program xml:id="mucp_11_9_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -545,14 +545,14 @@ int main () {
     Penguin p1 ();
     Penguin p2 (3, "Bob");
 }
-        ]]></input></program></listing>
+        ]]></input></program></exercise>
             </solution>
-  </listing>
-  <listing xml:id="empty-45">
-    <caption>
+  </exercise>
+  <exercise xml:id="empty-45">
+    <statement>
       <p>Write the necessary blocks of code in order to write
                     a header (.h) file for the struct <c>Student</c>.</p>
-    </caption>
+    </statement>
     <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_11_10_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -586,7 +586,7 @@ struct Student {
 
             
 
-<listing label="mucp_11_10_ac_a"><caption><p>Below is one way to write the header file for the <c>Student</c> struct.</p></caption><program xml:id="mucp_11_10_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_11_10_ac_a"><statement><p>Below is one way to write the header file for the <c>Student</c> struct.</p></statement><program xml:id="mucp_11_10_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -601,7 +601,7 @@ struct Student {
     void print () const;
     bool after (const Student& stu) const;
 };
-        ]]></input></program></listing>
+        ]]></input></program></exercise>
             </solution>
-  </listing>
+  </exercise>
 </section>

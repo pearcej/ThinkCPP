@@ -5,11 +5,11 @@
             yields the <em>remainder</em> when the first operand is divided by the second.
             In C++, the modulus operator is a percent sign, <c>%</c>. The syntax is exactly
             the same as for other operators:</p>
-  <listing label="mod_operator_AC_1">
-    <caption>
+  <exercise label="mod_operator_AC_1">
+    <statement>
       <p>This program shows the difference between the division operator
             and the modulus operator.</p>
-    </caption>
+    </statement>
     <program xml:id="mod_operator_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -24,7 +24,7 @@ int main () {
 }
         ]]></input>
     </program>
-  </listing>
+  </exercise>
   <p>The first operator, integer division, yields 2. The second operator
             yields 1. Thus, 7 divided by 3 is 2 with 1 left over.</p>
   <p>The modulus operator turns out to be surprisingly useful. For example,
@@ -33,49 +33,49 @@ int main () {
   <p>Also, you can use the modulus operator to extract the rightmost digit or
             digits from a number. For example, <c>x % 10</c> yields the rightmost digit of
             x (in base 10). Similarly <c>x % 100</c> yields the last two digits.</p>
-  <listing label="mod_operator_1">
-    <caption>
+  <exercise label="mod_operator_1">
+    <statement>
       <p>How do you know whether the variable x is odd?</p>
-    </caption>
+    </statement>
     <choices>
       <choice>
-        <caption>
+        <statement>
           <p>Use x % 2, and if the result is 0, it is odd.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>If you divide a number by two and it has no remainder, that means it is an even number!</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>Use x % 2, and if the result is  1, it is odd.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>If you divide a number by two and it has a remainder of one, that means it is an odd number!</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>Use x / 2, and if the result is 0, it is odd.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Dividing a number by two won't give us the information we want.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>Use x / 2, and if the result is  1, it is odd.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Dividing a number by two won't give us the information we want.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="mod_operator_2">
-    <caption>
+  </exercise>
+  <exercise label="mod_operator_2">
+    <statement>
       <p>Match the modulo expression to its result.</p>
-    </caption>
+    </statement>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -97,5 +97,5 @@ int main () {
         <response>3</response>
       </match>
     </matches>
-  </listing>
+  </exercise>
 </section>

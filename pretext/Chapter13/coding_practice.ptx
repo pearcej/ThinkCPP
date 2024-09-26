@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="chapter13_coding-practice">
   <title>Coding Practice</title>
-  <listing xml:id="empty-67">
+  <exercise xml:id="empty-67">
     <statement/>
     <program interactive="" language="" xml:id="empty-68"/>
     <solution>
@@ -20,7 +20,7 @@ enum Planet { MERCURY = 1, VENUS, EARTH, MARS, JUPITER, SATURN, URANUS, NEPTUNE 
 
     
             </solution>
-  </listing>
+  </exercise>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
 &lt;div data-component="selectquestion" id=cp_13_AC_2_sq data-questionlist='cp_13_AC_2q, cp_13_AC_2_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
@@ -28,7 +28,7 @@ enum Planet { MERCURY = 1, VENUS, EARTH, MARS, JUPITER, SATURN, URANUS, NEPTUNE 
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <listing xml:id="empty-69">
+  <exercise xml:id="empty-69">
     <statement/>
     <program interactive="" language="" xml:id="empty-70"/>
     <solution>
@@ -55,7 +55,7 @@ struct BingoBoard {
 
     
             </solution>
-  </listing>
+  </exercise>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
 &lt;div data-component="selectquestion" id=cp_13_AC_4_sq data-questionlist='cp_13_AC_4q, cp_13_AC_4_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
@@ -63,7 +63,7 @@ struct BingoBoard {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <listing xml:id="empty-71">
+  <exercise xml:id="empty-71">
     <statement/>
     <program interactive="" language="" xml:id="empty-72"/>
     <solution>
@@ -91,7 +91,7 @@ void swapValues (vector<int> &vec, int index1, int index2) {
 
     
             </solution>
-  </listing>
+  </exercise>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
 &lt;div data-component="selectquestion" id=cp_13_AC_6_sq data-questionlist='cp_13_AC_6q, cp_13_AC_6_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
@@ -99,7 +99,7 @@ void swapValues (vector<int> &vec, int index1, int index2) {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <listing xml:id="empty-73">
+  <exercise xml:id="empty-73">
     <statement/>
     <program interactive="" language="" xml:id="empty-74"/>
     <solution>
@@ -187,7 +187,7 @@ vector&lt;int&gt; generateRandVec() {
 
     
             </solution>
-  </listing>
+  </exercise>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
 &lt;div data-component="selectquestion" id=cp_13_AC_8_sq data-questionlist='cp_13_AC_8q, cp_13_AC_8_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
@@ -195,7 +195,7 @@ vector&lt;int&gt; generateRandVec() {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <listing xml:id="empty-75">
+  <exercise xml:id="empty-75">
     <statement/>
     <program interactive="" language="" xml:id="empty-76"/>
     <solution>
@@ -241,7 +241,7 @@ int main() {
 
     
             </solution>
-  </listing>
+  </exercise>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
 &lt;div data-component="selectquestion" id=cp_13_AC_10_sq data-questionlist='cp_13_AC_10q, cp_13_AC_10_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;

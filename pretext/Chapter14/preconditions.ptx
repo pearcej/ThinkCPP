@@ -69,12 +69,12 @@ Abort</program>
   <p>There is a lot of information here to help me track down the error,
             including the file name and line number of the assertion that failed,
             the function name and the contents of the assert statement.</p>
-  <listing label="fourteenten">
-    <caption>
+  <exercise label="fourteenten">
+    <statement>
       <p>The active code below uses the updated <c>calculateCartesian</c> with assert statements.
             Notice how because <c>c1</c> is not in polar, the assert statement in <c>calculateCartesian</c>
             fails and thus we get an error.</p>
-    </caption>
+    </statement>
     <program xml:id="fourteenten_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -201,50 +201,50 @@ void Complex::setCartesian (double r, double i) {
 }
 </tests>
     </program>
-  </listing>
-  <listing label="question14_9_1">
-    <caption>
+  </exercise>
+  <exercise label="question14_9_1">
+    <statement>
       <p>Which of the following are ways that we can make our code more robust?</p>
-    </caption>
+    </statement>
     <choices>
       <choice>
-        <caption>
+        <statement>
           <p>Assume assumptions are always true.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! Assumptions can turn out to be true or false.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>Only check the preconditions.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! In order to maintain invariance, we must ensure that postconditions are met as well.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>Document assumptions explicitly as part of the program.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>Write code that checks assumptions, like using assert statements.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct!</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="question14_9_2">
-    <caption>
+  </exercise>
+  <exercise label="question14_9_2">
+    <statement>
       <p>What function causes the program to quit immediately? <var/>  </p>
-    </caption>
+    </statement>
     <setup>
       <var case="insensitive">
         <condition string="^\s*Exit|exit\s*$">
@@ -259,5 +259,5 @@ void Complex::setCartesian (double r, double i) {
         </condition>
       </var>
     </setup>
-  </listing>
+  </exercise>
 </section>

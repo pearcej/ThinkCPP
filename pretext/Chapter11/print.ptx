@@ -70,10 +70,10 @@ currentTime.print ();</program>
             the function works. If you omit the definition, or provide a definition
             that has an interface different from what you promised, the compiler
             will complain.</p>
-  <listing label="print_AC_1">
-    <caption>
+  <exercise label="print_AC_1">
+    <statement>
       <p>Feel free to mess around with input for <c>currentTime</c> in the active code below!</p>
-    </caption>
+    </statement>
     <program xml:id="print_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -98,11 +98,11 @@ void Time::print () {
 }
 </tests>
     </program>
-  </listing>
-  <listing label="print_1">
-    <caption>
+  </exercise>
+  <exercise label="print_1">
+    <statement>
       <p>What keyword do we use to refer to the current object? <var/> </p>
-    </caption>
+    </statement>
     <setup>
       <var case="insensitive">
         <condition string="^\s*this\s*$">
@@ -117,51 +117,51 @@ void Time::print () {
         </condition>
       </var>
     </setup>
-  </listing>
-  <listing label="print_2">
-    <caption>
+  </exercise>
+  <exercise label="print_2">
+    <statement>
       <p>We have a free-standing function called <term>dog_bark</term> which takes a <term>Dog</term> object as a parameter.  What step(s) do we need to take to convert <c>dog_bark(const Dog&amp; dog)</c> to a member function of the <c>Dog</c> class?</p>
-    </caption>
+    </statement>
     <choices>
       <choice>
-        <caption>
+        <statement>
           <p>Change the name of the function to Dog::bark</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Incorrect! You don't need to rename the function unless you define it outside of the structure definition.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>Remove the Dog parameter</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct! We no longer need to pass a Dog as an argument, since we are going to be invoking the function on a Dog object.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>Operate on the current Dog object by using *this</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct! To get the current object, we need to dereference the this pointer using *.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>Declare the function inside of the Dog structure definition</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Correct! Member functions are declared inside of structure definitions.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="print_3" numbered="yes" adaptive="yes" indentation="hide" language="python">
-    <caption>
+  </exercise>
+  <exercise label="print_3" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
       <p>Create the <c>Dog</c> object with member functions <c>bark</c> and <c>is_teacup_dog</c> (if the weight of the dog is less than 4 pounds)  Write the functions
             in the same order they appear inside the structure.</p>
-    </caption>
+    </statement>
     <blocks>
       <block order="2">
         <cline>struct Dog {</cline>
@@ -213,5 +213,5 @@ void Time::print () {
         <cline>}</cline>
       </block>
     </blocks>
-  </listing>
+  </exercise>
 </section>

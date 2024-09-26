@@ -40,12 +40,12 @@ TEN, JACK, QUEEN, KING };</program>
             capital letters. This code is much clearer than the alternative using
             integers:</p>
   <program>Card card (1, 11);</program>
-  <listing label="enum_type_AC_1">
-    <caption>
+  <exercise label="enum_type_AC_1">
+    <statement>
       <p>The active code below uses the enumerated types created above to construct <c>Card</c> objects.
             Feel free to modify the values that the cards are being initialized to in the constructor:  this will
             change the output from the <c>print</c> function. Notice how this is much clearer than using integers.</p>
-    </caption>
+    </statement>
     <program xml:id="enum_type_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -106,7 +106,7 @@ void Card::print () const {
 }
 </tests>
     </program>
-  </listing>
+  </exercise>
   <p>Because we know that the values in the enumerated types are represented
             as integers, we can use them as indices for a vector. Therefore the old
             <c>print</c> function will work without modification. We have to make some
@@ -129,55 +129,55 @@ for (Suit suit = CLUBS; suit &lt;= SPADES; suit = Suit(suit+1)) {
 rank = Rank(rank+1);</program>
   <p>Actually, there is a better way to do this&#x2014;we can define the <c>++</c>
             operator for enumerated types&#x2014;but that is beyond the scope of this book.</p>
-  <listing label="enum_type_1">
-    <caption>
+  <exercise label="enum_type_1">
+    <statement>
       <p>Multiple Response: What can we do with enumerated types?</p>
-    </caption>
+    </statement>
     <choices>
       <choice>
-        <caption>
+        <statement>
           <p>Perform arithmetic.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>We are not allowed to do arithmetic with enumerated types.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>Include a mapping as part of the program.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>This is the purpose of an enumerated type.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>Use the same set of values in multiple mappings.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Variables in one enumeration type cannot be used in another enumeration type.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>Define the set of values that make up a mapping.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>This is the purpose of an enumerated type.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>Use them as indices for a vector.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Since the values in enumerated types are represented as integers, we can use them as vector indices.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="enum_type_2">
-    <caption>
+  </exercise>
+  <exercise label="enum_type_2">
+    <statement>
       <p>Assume we have the following struct defined by this enumerated
             type.  What will be printed by the print function?</p>
       <program>enum Scoops { SINGLE = 1, DOUBLE, TRIPLE };
@@ -200,54 +200,54 @@ int main () {
   iceCream icecream (2, 3, 2);
   iceCream.printOrder();
 }</program>
-    </caption>
+    </statement>
     <choices>
       <choice>
-        <caption>
+        <statement>
           <p>Who ordered a triple scoop of Cookies 'n' Cream in a sugar cone?</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Remember that we performed an override for one of the enumerated types!</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>Who ordered a double scoop of Strawberry in a cake cone?</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Remember that the default enumeration starts at 0.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>Who ordered a double scoop of Cookies 'n' Cream in a sugar cone?</p>
-        </caption>
+        </statement>
         <feedback>
           <p>2 corresponds to "double", 3 corresponds to "Cookies 'n' Cream", and 2 corresponds to "sugar cone".</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>Who ordered a triple scoop of Strawberry in a cake cone?</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Remember that we performed an override for one of the enumerated types!  The default enumeration starts at 0.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>Who ordered a triple scoop of Mint Chocolate Chip in a Waffle Cone?</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Take another look at how we defined our enumerated types.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="enum_type_3">
-    <caption>
+  </exercise>
+  <exercise label="enum_type_3">
+    <statement>
       <p>Based on the <c>Rank</c> enumerated type, what integer value does <c>QUEEN</c> have? <var/>  </p>
-    </caption>
+    </statement>
     <setup>
       <var case="insensitive">
         <condition string="^\s*12|twelve\s*$">
@@ -262,5 +262,5 @@ int main () {
         </condition>
       </var>
     </setup>
-  </listing>
+  </exercise>
 </section>
