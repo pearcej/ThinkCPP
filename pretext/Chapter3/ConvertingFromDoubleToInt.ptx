@@ -12,8 +12,8 @@
             (in the sense of molding or reforming, not throwing).</p>
   <p>The syntax for typecasting is like the syntax for a function call. For
             example:</p>
-  <pre>double pi = 3.14159;
-int x = int (pi);</pre>
+  <program>double pi = 3.14159;
+int x = int (pi);</program>
   <p>The int function returns an integer, so x gets the value 3. Converting
             to an integer always rounds down, even if the fraction part is
             0.99999999.</p>
@@ -25,11 +25,11 @@ int x = int (pi);</pre>
             an extremely precise measuring device.  Now we are writing a program
             to perform some calculations with our data.  Consider the following C++
             code.</p>
-      <pre>int main () {
+      <program>int main () {
   double temp = 7.99999999;
   int roundedTemp = int (temp);
   cout &lt;&lt; roundedTemp;
-}</pre>
+}</program>
       <p>What is the value of roundedTemp?</p>
     </caption>
     <choices>
@@ -80,17 +80,17 @@ int x = int (pi);</pre>
       <p>Your final grade consists of your average performance on exam 1 and exam 2.
             Your professor is using C++ to grade the exams and allows you to choose which
             method you'd like your exam to be graded.</p>
-      <pre>double exam1 = 88.8;
+      <program>double exam1 = 88.8;
 double exam2 = 72.7;
-double exam3 = 97.9;</pre>
+double exam3 = 97.9;</program>
       <p>
         <term>Method 1:</term>
       </p>
-      <pre>double final = (int(exam1) + int(exam2) + int(exam3)) / 3;</pre>
+      <program>double final = (int(exam1) + int(exam2) + int(exam3)) / 3;</program>
       <p>
         <term>Method 2:</term>
       </p>
-      <pre>int final = int((exam1 + exam2 + exam3) / 3);</pre>
+      <program>int final = int((exam1 + exam2 + exam3) / 3);</program>
       <p>Which method would <term>you</term> choose and why?</p>
     </caption>
     <choices>

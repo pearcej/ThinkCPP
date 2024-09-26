@@ -6,7 +6,7 @@
             as an instance variable. In this chapter I am going to create a new
             object, called a <c>Deck</c>, that contains a vector of <c>Card</c>s.</p>
   <p>The structure definition looks like this</p>
-  <pre>struct Deck {
+  <program>struct Deck {
   vector&lt;Card&gt; cards;
 
   Deck (int n);
@@ -15,7 +15,7 @@
 Deck::Deck (int size) {
   vector&lt;Card&gt; temp (size);
   cards = temp;
-}</pre>
+}</program>
   <p>The name of the instance variable is <c>cards</c> to help distinguish the
             <c>Deck</c> object from the vector of <c>Card</c>s that it contains.</p>
   <p>For now there is only one constructor. It creates a local variable named
@@ -23,7 +23,7 @@ Deck::Deck (int size) {
             <c>vector</c> class, passing the size as a parameter. Then it copies the
             vector from <c>temp</c> into the instance variable <c>cards</c>.</p>
   <p>Now we can create a deck of cards like this:</p>
-  <pre>Deck deck (52);</pre>
+  <program>Deck deck (52);</program>
   <p>Here is a state diagram showing what a <c>Deck</c> object looks like:</p>
   <figure align="center" xml:id="empty-82">
     <image source="Chapter13/Images/13.3stackdiagram.png" width="50%" alt="image"/>
@@ -34,9 +34,9 @@ Deck::Deck (int size) {
             and the syntax for selecting an element from an array. For example, the
             expression <c>deck.cards[i]</c> is the ith card in the deck, and
             <c>deck.cards[i].suit</c> is its suit. The following loop</p>
-  <pre>for (int i = 0; i&lt;52; i++) {
+  <program>for (int i = 0; i&lt;52; i++) {
   deck.cards[i].print();
-}</pre>
+}</program>
   <p>demonstrates how to traverse the deck and output each card.</p>
   <listing label="decks_1">
     <caption>

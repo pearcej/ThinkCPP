@@ -10,7 +10,7 @@
   <p>A better solution is to use a vector with size 10. That way we can
             create all ten storage locations at once and we can access them using
             indices, rather than ten different names. Here's how:</p>
-  <pre>int numValues = 100000;
+  <program>int numValues = 100000;
 int upperBound = 10;
 vector&lt;int&gt; vector = randomVector (numValues, upperBound);
 vector&lt;int&gt; histogram (upperBound);
@@ -18,7 +18,7 @@ vector&lt;int&gt; histogram (upperBound);
 for (int i = 0; i &lt; upperBound; i++) {
   int count = howMany (vector, i);
   histogram[i] = count;
-}</pre>
+}</program>
   <p>I called the vector <term>histogram</term> because that's a statistical term for
             a vector of numbers that counts the number of appearances of a range of
             values.</p>

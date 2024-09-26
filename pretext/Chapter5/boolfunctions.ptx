@@ -4,14 +4,14 @@
   <p>Functions can return bool values just like any other type, which is
             often convenient for hiding complicated tests inside functions. For
             example:</p>
-  <pre>bool isSingleDigit (int x) {
+  <program>bool isSingleDigit (int x) {
   if (x &gt;= 0 &amp;&amp; x &lt; 10) {
     return true;
   }
   else {
     return false;
   }
-}</pre>
+}</program>
   <p>The name of this function is isSingleDigit. It is common to give boolean
             functions names that sound like yes/no questions. The return type is
             bool, which means that every return statement has to provide a bool
@@ -20,12 +20,12 @@
             needs to be. Remember that the expression &#8216;'x >= 0 && x < 10'' has type
             bool, so there is nothing wrong with returning it directly, and avoiding
             the if statement altogether:]]></p>
-  <pre>bool isSingleDigit (int x) {
+  <program>bool isSingleDigit (int x) {
   return (x &gt;= 0 &amp;&amp; x &lt; 10);
-}</pre>
+}</program>
   <p>In main you can call this function in the usual ways:</p>
-  <pre>cout &lt;&lt; isSingleDigit (2) &lt;&lt; endl;
-bool bigFlag = !isSingleDigit (17);</pre>
+  <program>cout &lt;&lt; isSingleDigit (2) &lt;&lt; endl;
+bool bigFlag = !isSingleDigit (17);</program>
   <program xml:id="bool_fun_AC_1" interactive="activecode" language="cpp" line-numbers="yes">
     <input><![CDATA[
 #include <iostream>
@@ -50,12 +50,12 @@ using namespace std;
   <p>The second line assigns the value true to bigFlag only if 17 is <em>not</em> a
             single-digit number.</p>
   <p>The most common use of bool functions is inside conditional statements</p>
-  <pre>if (isSingleDigit (x)) {
+  <program>if (isSingleDigit (x)) {
   cout &lt;&lt; "x is little" &lt;&lt; endl;
 }
 else {
   cout &lt;&lt; "x is big" &lt;&lt; endl;
-}</pre>
+}</program>
   <listing label="bool_fun_1">
     <caption>
       <p>Match the conditional statement to its output, assuming it is outputted using cout and x = 3.</p>

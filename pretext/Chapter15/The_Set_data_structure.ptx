@@ -35,7 +35,7 @@
             elements are added, we can take advantage of the <c>resize</c> function on
             <c>vector</c>s.</p>
   <p>Here is the beginning of a class definition for a <c>Set</c>.</p>
-  <pre>class Set {
+  <program>class Set {
 private:
   vector&lt;string&gt; elements;
   int numElements;
@@ -54,7 +54,7 @@ Set::Set (int n)
   vector&lt;string&gt; temp (n);
   elements = temp;
   numElements = 0;
-}</pre>
+}</program>
   <p>The instance variables are a <c>vector</c> of strings and an integer
             that keeps track of how many elements there are in the set. Keep in mind
             that the number of elements in the set, <c>numElements</c>, is not the same
@@ -64,10 +64,10 @@ Set::Set (int n)
   <p><c>getNumElements</c> and <c>getElement</c> are accessor functions for the
             instance variables, which are private. <c>numElements</c> is a read-only
             variable, so we provide a <c>get</c> function but not a <c>set</c> function.</p>
-  <pre>int Set::getNumElements () const
+  <program>int Set::getNumElements () const
 {
   return numElements;
-}</pre>
+}</program>
   <p>Why do we have to prevent client programs from changing
             <c>getNumElements</c>? What are the invariants for this type, and how could
             a client program break an invariant. As we look at the rest of the
@@ -79,7 +79,7 @@ Set::Set (int n)
             need to check a stronger condition. The index has to be less than the
             number of elements, which might be smaller than the length of the
             <c>vector</c>.</p>
-  <pre>string Set::getElement (int i) const
+  <program>string Set::getElement (int i) const
 {
   if (i &lt; numElements) {
     return elements[i];
@@ -87,22 +87,22 @@ Set::Set (int n)
     cout &lt;&lt; "Set index out of range." &lt;&lt; endl;
     exit (1);
   }
-}</pre>
+}</program>
   <p>If <c>getElement</c> gets an index that is out of range, it prints an error
             message (not the most useful message, I admit), and exits.</p>
   <p>The interesting functions are <c>find</c> and <c>add</c>. By now, the pattern
             for traversing and searching should be old hat:</p>
-  <pre>int Set::find (const string&amp; s) const
+  <program>int Set::find (const string&amp; s) const
 {
   for (int i=0; i&lt;numElements; i++) {
     if (elements[i] == s) return i;
   }
   return -1;
-}</pre>
+}</program>
   <p>So that leaves us with <c>add</c>. Often the return type for something like
             <c>add</c> would be void, but in this case it might be useful to make it
             return the index of the element.</p>
-  <pre>int Set::add (const string&amp; s)
+  <program>int Set::add (const string&amp; s)
 {
   // if the element is already in the set, return its index
   int index = find (s);
@@ -118,7 +118,7 @@ Set::Set (int n)
   elements[index] = s;
   numElements++;
   return index;
-}</pre>
+}</program>
   <p>The tricky thing here is that <c>numElements</c> is used in two ways. It is
             the number of elements in the set, of course, but it is also the index
             of the next element to be added.</p>
@@ -132,11 +132,11 @@ Set::Set (int n)
             space for 2 elements.</p>
   <p>Now we can use the <c>Set</c> class to keep track of the cities we find in
             the file. In <c>main</c> we create the <c>Set</c> with an initial size of 2:</p>
-  <pre>Set cities (2);</pre>
+  <program>Set cities (2);</program>
   <p>Then in <c>processLine</c> we add both cities to the <c>Set</c> and store the
             index that gets returned.</p>
-  <pre>int index1 = cities.add (city1);
-int index2 = cities.add (city2);</pre>
+  <program>int index1 = cities.add (city1);
+int index2 = cities.add (city2);</program>
   <p>I modified <c>processLine</c> to take the <c>cities</c> object as a second
             parameter.</p>
   <program xml:id="c15_7" interactive="activecode" language="cpp" line-numbers="yes">
@@ -326,7 +326,7 @@ int Set::add (const string&amp; s) {
     </caption>
     <setup>
       <var>
-        <pre>Set cities(10);
+        <program>Set cities(10);
 cities.add("Detroit");
 cities.add("Ann Arbor");
 cities.add("Ann Arbor");
@@ -335,7 +335,7 @@ cities.add("Grand Rapids");
 cities.add("Detroit");
 cities.add("Mackinac");
 cities.add("Mackinaw");
-string element = cities.getElement(4);  cout &lt;&lt; element;</pre>
+string element = cities.getElement(4);  cout &lt;&lt; element;</program>
         <p>Type the output exactly as it would appear in the terminal.</p>
       </var>
     </setup>

@@ -47,7 +47,7 @@ void printLogarithm (double x) {
   <listing label="return_1">
     <caption>
       <p>What will print?</p>
-      <pre>#include &lt;iostream&gt;
+      <program>#include &lt;iostream&gt;
 using namespace std;
 
 int main () {
@@ -62,7 +62,7 @@ int main () {
     cout &lt;&lt; "Three!" &lt;&lt; endl;
   }
   return 0;
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice>
@@ -110,7 +110,7 @@ int main () {
   <listing label="return_2">
     <caption>
       <p>What will print?</p>
-      <pre>#include &lt;iostream&gt;
+      <program>#include &lt;iostream&gt;
 using namespace std;
 
 int main () {
@@ -128,7 +128,7 @@ int main () {
     return 0;
   }
   return 0;
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice>

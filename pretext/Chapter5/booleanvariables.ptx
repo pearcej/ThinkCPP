@@ -4,20 +4,20 @@
   <p>As usual, for every type of value, there is a corresponding type of
             variable. In C++ the boolean type is called <term>bool</term>. Boolean variables
             work just like the other types:</p>
-  <pre>bool fred;
+  <program>bool fred;
 fred = true;
-bool testResult = false;</pre>
+bool testResult = false;</program>
   <p>The first line is a simple variable declaration; the second line is an
             assignment, and the third line is a combination of a declaration and as
             assignment, called an initialization.</p>
   <p>As I mentioned, the result of a comparison operator is a boolean, so you
             can store it in a bool variable</p>
-  <pre>bool evenFlag = (n % 2 == 0);     // true if n is even
-bool plusFlag = (x &gt; 0);    // true if x is positive</pre>
+  <program>bool evenFlag = (n % 2 == 0);     // true if n is even
+bool plusFlag = (x &gt; 0);    // true if x is positive</program>
   <p>and then use it as part of a conditional statement later</p>
-  <pre>if (evenFlag) {
+  <program>if (evenFlag) {
   cout &lt;&lt; "n was even when I checked it";
-}</pre>
+}</program>
   <p>A variable used in this way is called a <term>flag</term>, since it flags the
             presence or absence of some condition.</p>
   <listing label="bool_var_1">
@@ -63,7 +63,7 @@ bool plusFlag = (x &gt; 0);    // true if x is positive</pre>
   <listing label="bool_var_3">
     <caption>
       <p>What will print?</p>
-      <pre>int n = 16;
+      <program>int n = 16;
 int x = 4;
 
 bool evenFlag = (n % 2 == 0);
@@ -75,7 +75,7 @@ if (evenFlag) {
 
 if (plusFlag) {
   cout &lt;&lt; "x was positive when I checked it";
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice correct="yes">
@@ -123,7 +123,7 @@ if (plusFlag) {
   <listing label="bool_var_4">
     <caption>
       <p>What will print?</p>
-      <pre>bool low_battery=true;
+      <program>bool low_battery=true;
 bool power_outage=true;
 
 if(low_battery){
@@ -148,7 +148,7 @@ if(low_battery){
   else{
     cout&lt;&lt;"There is no power"&lt;&lt;endl&gt;&gt;;
   }
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice>

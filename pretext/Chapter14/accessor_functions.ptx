@@ -7,20 +7,20 @@
   <p>In this case, the accessor functions give us an opportunity to make sure
             that the value of the variable is valid before we return it. Here's what
             <c>getReal</c> looks like:</p>
-  <pre>double Complex::getReal ()
+  <program>double Complex::getReal ()
 {
   if (cartesian == false) calculateCartesian ();
   return real;
-}</pre>
+}</program>
   <p>If the <c>cartesian</c> flag is true then <c>real</c> contains valid data, and
             we can just return it. Otherwise, we have to call <c>calculateCartesian</c>
             to convert from polar coordinates to Cartesian coordinates:</p>
-  <pre>void Complex::calculateCartesian ()
+  <program>void Complex::calculateCartesian ()
 {
   real = mag * cos (theta);
   imag = mag * sin (theta);
   cartesian = true;
-}</pre>
+}</program>
   <p>Assuming that the polar coordinates are valid, we can calculate the
             Cartesian coordinates using the formulas from the previous section. Then
             we set the <c>cartesian</c> flag, indicating that <c>real</c> and <c>imag</c> now

@@ -3,13 +3,13 @@
   <title>More encapsulation</title>
   <p>To demonstrate encapsulation again, I'll take the code from the previous
             section and wrap it up in a function:</p>
-  <pre>void printMultTable () {
+  <program>void printMultTable () {
   int i = 1;
   while (i &lt;= 6) {
     printMultiples (i);
     i = i + 1;
   }
-}</pre>
+}</program>
   <p>The process I am demonstrating is a common development plan. You develop
             code gradually by adding lines to <c>main</c> or someplace else, and then
             when you get it working, you extract it and wrap it up in a function.</p>

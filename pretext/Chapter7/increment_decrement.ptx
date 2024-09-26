@@ -8,7 +8,7 @@
             used on <c>bool</c>s.</p>
   <p>Technically, it is legal to increment a variable and use it in an
             expression at the same time. For example, you might see something like:</p>
-  <pre>cout &lt;&lt; i++ &lt;&lt; endl;</pre>
+  <program>cout &lt;&lt; i++ &lt;&lt; endl;</program>
   <p>Looking at this, it is not clear whether the increment will take effect
             before or after the value is displayed. Because expressions like this
             tend to be confusing, I would discourage you from using them. In fact,
@@ -36,13 +36,13 @@ int main() {
             increment operators. But for now, just avoid incrementing a variable
             and using it in an expression at the same time.</p>
   <p>Using the increment operators, we can rewrite the letter-counter:</p>
-  <pre>int index = 0;
+  <program>int index = 0;
 while (index &lt; length) {
   if (fruit[index] == 'a') {
     count++;
   }
   index++;
-}</pre>
+}</program>
   <listing label="increment_decrement_AC_2">
     <caption>
       <p>The active code below adds increment operators to our old letter-counter.</p>
@@ -69,7 +69,7 @@ int main() {
     </program>
   </listing>
   <p>It is a common error to write something like</p>
-  <pre>index = index++;             // WRONG!!</pre>
+  <program>index = index++;             // WRONG!!</program>
   <p>Unfortunately, this is syntactically legal, so the compiler will not
             warn you. The effect of this statement is to leave the value of
             <c>index</c> unchanged. This is often a difficult bug to track down.</p>

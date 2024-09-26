@@ -6,14 +6,14 @@
   <p>We might want a function, <c>subdeck</c>, that takes a vector of cards and
             a range of indices, and that returns a new vector of cards that contains
             the specified subset of the deck:</p>
-  <pre>Deck Deck::subdeck (int low, int high) const {
+  <program>Deck Deck::subdeck (int low, int high) const {
   Deck sub (high - low + 1);
 
   for (size_t i = 0; i &lt; sub.cards.size(); i++) {
     sub.cards[i] = cards[low + i];
   }
   return sub;
-}</pre>
+}</program>
   <p>To create the local variable named <c>subdeck</c> we are using the <c>Deck</c>
             constructor that takes the size of the deck as an argument and that does
             not initialize the cards. The cards get initialized when they are copied

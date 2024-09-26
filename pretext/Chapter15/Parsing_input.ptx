@@ -11,16 +11,16 @@
   <p>For example, I have a file called <c>distances</c> that contains
             information about the distances between major cities in the United
             States. I got this information from a randomly-chosen web page</p>
-  <pre>http://www.jaring.my/usiskl/usa/distance.html</pre>
+  <program>http://www.jaring.my/usiskl/usa/distance.html</program>
   <p>so it may be wildly inaccurate, but that doesn't matter. The format of
             the file looks like this:</p>
-  <pre>"Atlanta"       "Chicago"       700
+  <program>"Atlanta"       "Chicago"       700
 "Atlanta"       "Boston"        1,100
 "Atlanta"       "Chicago"       700
 "Atlanta"       "Dallas"        800
 "Atlanta"       "Denver"        1,450
 "Atlanta"       "Detroit"       750
-"Atlanta"       "Orlando"       400</pre>
+"Atlanta"       "Orlando"       400</program>
   <p>Each line of the file contains the names of two cities in quotation
             marks and the distance between them in miles. The quotation marks are
             useful because they make it easy to deal with names that have more than
@@ -32,7 +32,7 @@
             values.</p>
   <p>If we want to find the first appearance of a quotation mark, we have to
             write something like:</p>
-  <pre>int index = line.find ('\"');</pre>
+  <program>int index = line.find ('\"');</program>
   <p>The argument here looks like a mess, but it represents a single
             character, a double quotation mark. The outermost single-quotes indicate
             that this is a character value, as usual. The backslash (<c>\</c>)
@@ -45,7 +45,7 @@
             city name and using the <c>substr</c> function to extract the cities and
             distance. <c>substr</c> is a <c>string</c> member function; it takes two
             arguments, the starting index of the substring and the length.</p>
-  <pre>void processLine (const string&amp; line)
+  <program>void processLine (const string&amp; line)
 {
   // the character we are looking for is a quotation mark
   char quote = '\"';
@@ -71,7 +71,7 @@
 
   // output the extracted information
   cout &lt;&lt; city1 &lt;&lt; "\t" &lt;&lt; city2 &lt;&lt; "\t" &lt;&lt; distString &lt;&lt; endl;
-}</pre>
+}</program>
   <p>Of course, just displaying the extracted information is not exactly what
             we want, but it is a good starting place.</p>
   <listing label="question15_5_1">

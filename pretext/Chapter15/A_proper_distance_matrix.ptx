@@ -26,7 +26,7 @@
     </ol>
   </p>
   <p>Here is a draft of what the header for a <c>DistMatrix</c> might look like:</p>
-  <pre>class DistMatrix {
+  <program>class DistMatrix {
 private:
   Set cities;
   matrix&lt;int&gt; distances;
@@ -40,9 +40,9 @@ public:
   string cityName (int i) const;
   int numCities () const;
   void print ();
-};</pre>
+};</program>
   <p>Using this interface simplifies <c>main</c>:</p>
-  <pre>#include &lt;iostream&gt;
+  <program>#include &lt;iostream&gt;
 #include &lt;fstream&gt;
 using namespace std;
 
@@ -61,9 +61,9 @@ int main ()
 
   distances.print ();
   return 0;
-}</pre>
+}</program>
   <p>It also simplifies <c>processLine</c>:</p>
-  <pre>void processLine (const string&amp; line, DistMatrix&amp; distances)
+  <program>void processLine (const string&amp; line, DistMatrix&amp; distances)
 {
   char quote = '\"';
   vector&lt;int&gt; quoteIndex (4);
@@ -83,7 +83,7 @@ int main ()
 
   // add the new datum to the distances matrix
   distances.add (city1, city2, distance);
-}</pre>
+}</program>
   <p>I will leave it as an exercise to you to implement the member functions
             of <c>DistMatrix</c>.</p>
 </section>

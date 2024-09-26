@@ -5,19 +5,19 @@
             check certain conditions and change the behavior of the program
             accordingly. <term>Conditional statements</term> give us this ability. The
             simplest form is the if statement:</p>
-  <pre>if (x &gt; 0) {
+  <program>if (x &gt; 0) {
   cout &lt;&lt; "x is positive" &lt;&lt; endl;
-}</pre>
+}</program>
   <p>The expression in parentheses is called the condition. If it is true,
             then the statements in brackets get executed. If the condition is not
             true, nothing happens.</p>
   <p>The condition can contain any of the <term>comparison operators</term>:</p>
-  <pre>x == y               // x equals y
+  <program>x == y               // x equals y
 x != y               // x is not equal to y
 x &gt; y                // x is greater than y
 x &lt; y                // x is less than y
 x &gt;= y               // x is greater than or equal to y
-x &lt;= y               // x is less than or equal to y</pre>
+x &lt;= y               // x is less than or equal to y</program>
   <p>Although these operations are probably familiar to you, the syntax C++
             uses is a little different from mathematical symbols like <math>=</math>,
             <math>\neq</math> and <math>\le</math>. A common error is to use a single <c>=</c>

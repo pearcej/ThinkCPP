@@ -33,8 +33,8 @@ int main() {
             is legal to have a variable with the same name as a function.</p>
   <p>To find the last letter of a string, you might be tempted to try
             something like</p>
-  <pre>int length = fruit.length();
-char last = fruit[length];       // WRONG!!</pre>
+  <program>int length = fruit.length();
+char last = fruit[length];       // WRONG!!</program>
   <p>That won't work. The reason is that there is no 6th letter in
             <c>"banana"</c>. Since we started counting at 0, the 6 letters are numbered
             from 0 to 5. To get the last character, you have to subtract 1 from

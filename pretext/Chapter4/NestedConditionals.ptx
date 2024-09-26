@@ -51,7 +51,7 @@ int main () {
   <listing label="nested_conditionals_1">
     <caption>
       <p>What will print?</p>
-      <pre>#include &lt;iostream&gt;
+      <program>#include &lt;iostream&gt;
 using namespace std;
 
 int main () {
@@ -68,7 +68,7 @@ int main () {
     }
   }
   return 0;
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice correct="yes">
@@ -108,7 +108,7 @@ int main () {
   <listing label="nested_conditionals_2">
     <caption>
       <p>What will print?</p>
-      <pre>#include &lt;iostream&gt;
+      <program>#include &lt;iostream&gt;
 using namespace std;
 
 int main () {
@@ -125,7 +125,7 @@ int main () {
     }
   }
   return 0;
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice>
@@ -167,7 +167,7 @@ int main () {
       <p>Your school uses a system to arrange students in a large stadium using
             their initials.  Look at the function definition below.  Where would a
             student with the initials <q>MZ</q> be seated?</p>
-      <pre>string seatingArrangement(char first, char last) {
+      <program>string seatingArrangement(char first, char last) {
   if (last &gt; m) {
     if (first &gt; m) {
       return "Back Left!";
@@ -184,7 +184,7 @@ int main () {
       return "Front Right!";
     }
   }
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice>

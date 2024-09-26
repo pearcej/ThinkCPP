@@ -4,10 +4,10 @@
   <p>There is one more constructor for <c>vector</c>s, which is called a copy
             constructor because it takes one <c>vector</c> as an argument and creates a
             new vector that is the same size, with the same elements.</p>
-  <pre>vector&lt;int&gt; copy (count);</pre>
+  <program>vector&lt;int&gt; copy (count);</program>
   <p>Although this syntax is legal, it is almost never used for <c>vector</c>s
             because there is a better alternative:</p>
-  <pre>vector&lt;int&gt; copy = count;</pre>
+  <program>vector&lt;int&gt; copy = count;</program>
   <p>The <c>=</c> operator works on <c>vector</c>s in pretty much the way you
             would expect.</p>
   <listing label="copying_vectors_AC_1">

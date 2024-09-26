@@ -2,17 +2,17 @@
 <section xml:id="chapter11_yet-another-example">
   <title>Yet another example</title>
   <p>The original version of <c>convertToSeconds</c> looked like this:</p>
-  <pre>double convertToSeconds (const Time&amp; time) {
+  <program>double convertToSeconds (const Time&amp; time) {
   int minutes = time.hour * 60 + time.minute;
   double seconds = minutes * 60 + time.second;
   return seconds;
-}</pre>
+}</program>
   <p>It is straightforward to convert this to a member function:</p>
-  <pre>double Time::convertToSeconds () const {
+  <program>double Time::convertToSeconds () const {
   int minutes = hour * 60 + minute;
   double seconds = minutes * 60 + second;
   return seconds;
-}</pre>
+}</program>
   <p>The interesting thing here is that the implicit parameter should be
             declared <c>const</c>, since we don't modify it in this function. But it is
             not obvious where we should put information about a parameter that

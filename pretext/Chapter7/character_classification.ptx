@@ -6,10 +6,10 @@
             library of functions that perform this kind of character classification.
             In order to use these functions, you have to include the header file
             <c>cctype</c>.</p>
-  <pre>char letter = 'a';
+  <program>char letter = 'a';
 if (isalpha(letter)) {
   cout &lt;&lt; "The character " &lt;&lt; letter &lt;&lt; " is a letter." &lt;&lt; endl;
-}</pre>
+}</program>
   <p>You might expect the return value from <c>isalpha</c> to be a <c>bool</c>, but
             for reasons I don't even want to think about, it is actually an integer
             that is 0 if the argument is not a letter, and some non-zero value if it
@@ -29,9 +29,9 @@ if (isalpha(letter)) {
   <p>Finally, there are two functions that convert letters from one case to
             the other, called <c>toupper</c> and <c>tolower</c>. Both take a single
             character as a parameter and return a (possibly converted) character.</p>
-  <pre>char letter = 'a';
+  <program>char letter = 'a';
 letter = toupper (letter);
-cout &lt;&lt; letter &lt;&lt; endl;</pre>
+cout &lt;&lt; letter &lt;&lt; endl;</program>
   <p>The output of this code is <c>A</c>.</p>
   <p>As an exercise, use the character classification and conversion library
             to write functions named <c>stringToUpper</c> and <c>stringToLower</c> that

@@ -11,9 +11,9 @@
             parameters there are, but also what type they are. So it shouldn't
             surprise you that when you write a class definition, the parameter list
             indicates the type of each parameter. For example:</p>
-  <pre>void printTwice (char phil) {
+  <program>void printTwice (char phil) {
   cout &lt;&lt; phil &lt;&lt; phil &lt;&lt; endl;
-}</pre>
+}</program>
   <p>This function takes a single parameter, named phil, that has type <c>char</c>.
             Whatever that parameter is (and at this point we have no idea what it
             is), it gets printed twice, followed by a new line. I chose the name phil
@@ -21,20 +21,20 @@
             general you want to choose something more illustrative than phil.</p>
   <p>In order to call this function, we have to provide a <c>char</c>. For example,
             we might have a <c>main</c> function like this:</p>
-  <pre>int main () {
+  <program>int main () {
   printTwice ('a');
   return 0;
-}</pre>
+}</program>
   <p>The <c>char</c> value you provide is called an <term>argument</term>, and we say that
             the argument is <term>passed</term> to the function. In this case the value 'a'
             is passed as an argument to printTwice where it will get printed twice.</p>
   <p>Alternatively, if we had a <c>char</c> variable, we could use it as an argument
             instead:</p>
-  <pre>int main () {
+  <program>int main () {
   char argument = 'b';
   printTwice (argument);
   return 0;
-}</pre>
+}</program>
   <p>Notice something very important here: the name of the variable we pass
             as an argument (argument) has nothing to do with the name of the
             parameter (phil). Let me say that again:</p>
@@ -81,7 +81,7 @@ int main () {
     </caption>
     <setup>
       <var>
-        <pre>#include &lt;iostream&gt;
+        <program>#include &lt;iostream&gt;
 using namespace std;
 
 void printTwice (char phil) {
@@ -92,7 +92,7 @@ int main () {
   string argument = "s";
   printTwice (argument);
   return 0;
-}</pre>
+}</program>
         <p>What will be printed to the terminal?  If nothing will print,
 or if the compiler will throw an error, type <q>error</q>.</p>
         <condition string="^\s*error\s*$">
@@ -109,7 +109,7 @@ or if the compiler will throw an error, type <q>error</q>.</p>
     </caption>
     <setup>
       <var>
-        <pre>#include &lt;iostream&gt;
+        <program>#include &lt;iostream&gt;
 using namespace std;
 
 void printTwice (char phil) {
@@ -120,7 +120,7 @@ int main () {
   char argument = 'b';
   printTwice (argument);
   return 0;
-}</pre>
+}</program>
         <p>What will be printed to the terminal?  If nothing will print,
 or if the compiler will throw an error, type <q>error</q>.</p>
         <condition string="^\s*bb\s*$">

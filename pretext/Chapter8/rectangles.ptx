@@ -13,36 +13,36 @@
   <p>The most common choice in existing programs is to specify the upper left
             corner of the rectangle and the size. To do that in C++, we will define
             a structure that contains a <c>Point</c> and two doubles.</p>
-  <pre>struct Rectangle {
+  <program>struct Rectangle {
   Point corner;
   double width, height;
-};</pre>
+};</program>
   <p>Notice that one structure can contain another. In fact, this sort of
             thing is quite common. Of course, this means that in order to create a
             <c>Rectangle</c>, we have to create a <c>Point</c> first:</p>
-  <pre>Point corner = { 0.0, 0.0 };
-Rectangle box = { corner, 100.0, 200.0 };</pre>
+  <program>Point corner = { 0.0, 0.0 };
+Rectangle box = { corner, 100.0, 200.0 };</program>
   <p>This code creates a new <c>Rectangle</c> structure and initializes the
             instance variables. The figure shows the effect of this assignment.</p>
   <figure align="center" xml:id="empty-325">
     <image source="Chapter8/Images/8.8stackdiagram.png" width="50%" alt="image"/>
   </figure>
   <p>We can access the <c>width</c> and <c>height</c> in the usual way:</p>
-  <pre>box.width += 50.0;
-cout &lt;&lt; box.height &lt;&lt; endl;</pre>
+  <program>box.width += 50.0;
+cout &lt;&lt; box.height &lt;&lt; endl;</program>
   <p>In order to access the instance variables of <c>corner</c>, we can use a
             temporary variable:</p>
-  <pre>Point temp = box.corner;
-double x = temp.x;</pre>
+  <program>Point temp = box.corner;
+double x = temp.x;</program>
   <p>Alternatively, we can compose the two statements:</p>
-  <pre>double x = box.corner.x;</pre>
+  <program>double x = box.corner.x;</program>
   <p>It makes the most sense to read this statement from right to left:
             <q>Extract <c>x</c> from the <c>corner</c> of the <c>box</c>, and assign it to the
             local variable <c>x</c>.</q></p>
   <p>While we are on the subject of composition, I should point out that you
             can, in fact, create the <c>Point</c> and the <c>Rectangle</c> at the same
             time:</p>
-  <pre>Rectangle box = { { 0.0, 0.0 }, 100.0, 200.0 };</pre>
+  <program>Rectangle box = { { 0.0, 0.0 }, 100.0, 200.0 };</program>
   <p>The innermost squiggly braces are the coordinates of the corner point;
             together they make up the first of the three values that go into the new
             <c>Rectangle</c>. This statement is an example of <term>nested structure</term>.</p>

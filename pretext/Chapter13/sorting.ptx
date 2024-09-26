@@ -10,10 +10,10 @@
             remaining in the deck.</p>
   <p>By <q>remaining in the deck,</q> I mean cards that are at or to the right of
             the index <c>i</c>.</p>
-  <pre>for (size_t i = 0; i &lt; cards.size(); i++) {
+  <program>for (size_t i = 0; i &lt; cards.size(); i++) {
   // find the lowest card at or to the right of i
   // swap the ith card and the lowest card
-}</pre>
+}</program>
   <p>Again, the pseudocode helps with the design of the <term>helper functions</term>.</p>
   <note>
     <p><term>Helper functions</term> do exactly what it seems like they would do.  They

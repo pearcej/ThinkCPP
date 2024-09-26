@@ -10,10 +10,10 @@
             makes it possible to (1) include a mapping as part of the program, and
             (2) define the set of values that make up the mapping. For example, here
             is the definition of the enumerated types <c>Suit</c> and <c>Rank</c>:</p>
-  <pre>enum Suit { CLUBS, DIAMONDS, HEARTS, SPADES };
+  <program>enum Suit { CLUBS, DIAMONDS, HEARTS, SPADES };
 
 enum Rank { ACE = 1, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE,
-TEN, JACK, QUEEN, KING };</pre>
+TEN, JACK, QUEEN, KING };</program>
   <note>
     <p>By default, the first value in the enumerated type maps to 0, the
                 second to 1, and so on.</p>
@@ -26,20 +26,20 @@ TEN, JACK, QUEEN, KING };</pre>
   <p>Once we have defined these types, we can use them anywhere. For example,
             the instance variables <c>rank</c> and <c>suit</c> are can be declared with
             type <c>Rank</c> and <c>Suit</c>:</p>
-  <pre>struct Card {
+  <program>struct Card {
   Rank rank;
   Suit suit;
 
   Card (Suit s, Rank r);
-};</pre>
+};</program>
   <p>The types of the parameters for the constructor have changed, too.
             Now, to create a card, we can use the values from the enumerated type as
             arguments:</p>
-  <pre>Card card (DIAMONDS, JACK);</pre>
+  <program>Card card (DIAMONDS, JACK);</program>
   <p>By convention, the values in enumerated types have names with all
             capital letters. This code is much clearer than the alternative using
             integers:</p>
-  <pre>Card card (1, 11);</pre>
+  <program>Card card (1, 11);</program>
   <listing label="enum_type_AC_1">
     <caption>
       <p>The active code below uses the enumerated types created above to construct <c>Card</c> objects.
@@ -111,22 +111,22 @@ void Card::print () const {
             as integers, we can use them as indices for a vector. Therefore the old
             <c>print</c> function will work without modification. We have to make some
             changes in <c>buildDeck</c>, though:</p>
-  <pre>int index = 0;
+  <program>int index = 0;
 for (Suit suit = CLUBS; suit &lt;= SPADES; suit = Suit(suit+1)) {
   for (Rank rank = ACE; rank &lt;= KING; rank = Rank(rank+1)) {
     deck[index].suit = suit;
     deck[index].rank = rank;
     index++;
   }
-}</pre>
+}</program>
   <p>In some ways, using enumerated types makes this code more readable, but
             there is one complication. Strictly speaking, we are not allowed to do
             arithmetic with enumerated types, so <c>suit++</c> is not legal. On the
             other hand, in the expression <c>suit+1</c>, C++ automatically converts the
             enumerated type to integer. Then we can take the result and typecast it
             back to the enumerated type:</p>
-  <pre>suit = Suit(suit+1);
-rank = Rank(rank+1);</pre>
+  <program>suit = Suit(suit+1);
+rank = Rank(rank+1);</program>
   <p>Actually, there is a better way to do this&#x2014;we can define the <c>++</c>
             operator for enumerated types&#x2014;but that is beyond the scope of this book.</p>
   <listing label="enum_type_1">
@@ -180,7 +180,7 @@ rank = Rank(rank+1);</pre>
     <caption>
       <p>Assume we have the following struct defined by this enumerated
             type.  What will be printed by the print function?</p>
-      <pre>enum Scoops { SINGLE = 1, DOUBLE, TRIPLE };
+      <program>enum Scoops { SINGLE = 1, DOUBLE, TRIPLE };
 enum Flavor { VANILLA, CHOCOLATE, STRAWBERRY, COOKIESNCREAM, MINTCHIP, COOKIEDOUGH };
 enum Order { CUP, CAKECONE, SUGARCONE, WAFFLECONE }
 
@@ -199,7 +199,7 @@ struct iceCream {
 int main () {
   iceCream icecream (2, 3, 2);
   iceCream.printOrder();
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice>

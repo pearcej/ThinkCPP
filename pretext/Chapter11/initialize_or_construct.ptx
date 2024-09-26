@@ -3,11 +3,11 @@
   <title>Initialize or construct?</title>
   <p>Earlier we declared and initialized some <c>Time</c> structures using
             squiggly-braces:</p>
-  <pre>Time currentTime = { 9, 14, 30.0 };
-Time breadTime = { 3, 35, 0.0 };</pre>
+  <program>Time currentTime = { 9, 14, 30.0 };
+Time breadTime = { 3, 35, 0.0 };</program>
   <p>Now, using constructors, we have a different way to declare and
             initialize:</p>
-  <pre>Time time (seconds);</pre>
+  <program>Time time (seconds);</program>
   <p>These two functions represent different programming styles, and
             different points in the history of C++. Maybe for that reason, the C++
             compiler requires that you use one or the other, and not both in the
@@ -23,12 +23,12 @@ Time breadTime = { 3, 35, 0.0 };</pre>
   <p>For example, it is common to have a constructor that takes one parameter
             for each instance variable, and that assigns the values of the
             parameters to the instance variables:</p>
-  <pre>Time::Time (int h, int m, double s) {
+  <program>Time::Time (int h, int m, double s) {
   hour = h;  minute = m;  second = s;
-}</pre>
+}</program>
   <p>To invoke this constructor, we use the same funny syntax as before,
             except that the arguments have to be two integers and a <c>double</c>:</p>
-  <pre>Time currentTime (9, 14, 30.0);</pre>
+  <program>Time currentTime (9, 14, 30.0);</program>
   <listing label="initialize_or_construct_AC_1">
     <caption>
       <p>In the active code below, you can experiment passing values into the two

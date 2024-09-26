@@ -2,10 +2,10 @@
 <section xml:id="chapter11_one-last-example">
   <title>One last example</title>
   <p>The final example we'll look at is <c>addTime</c>:</p>
-  <pre>Time addTime2 (const Time&amp; t1, const Time&amp; t2) {
+  <program>Time addTime2 (const Time&amp; t1, const Time&amp; t2) {
   double seconds = convertToSeconds (t1) + convertToSeconds (t2);
   return makeTime (seconds);
-}</pre>
+}</program>
   <p>We have to make several changes to this function, including:</p>
   <p>
     <ol label="1">
@@ -22,11 +22,11 @@
     </ol>
   </p>
   <p>Here's the result:</p>
-  <pre>Time Time::add (const Time&amp; t2) const {
+  <program>Time Time::add (const Time&amp; t2) const {
   double seconds = convertToSeconds () + t2.convertToSeconds ();
   Time time (seconds);
   return time;
-}</pre>
+}</program>
   <p>The first time we invoke <c>convertToSeconds</c>, there is no apparent
             object! Inside a member function, the compiler assumes that we want to
             invoke the function on the current object. Thus, the first invocation

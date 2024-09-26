@@ -8,23 +8,23 @@
             to Cartesian coordinates and then add them.</p>
   <p>Again, it is easy to deal with these cases if we use the accessor
             functions:</p>
-  <pre>Complex add (Complex&amp; a, Complex&amp; b)
+  <program>Complex add (Complex&amp; a, Complex&amp; b)
 {
   double real = a.getReal() + b.getReal();
   double imag = a.getImag() + b.getImag();
   Complex sum (real, imag);
   return sum;
-}</pre>
+}</program>
   <p>Notice that the arguments to <c>add</c> are not <c>const</c> because they
             might be modified when we invoke the accessors. To invoke this function,
             we would pass both operands as arguments:</p>
-  <pre>Complex c1 (2.0, 3.0);
+  <program>Complex c1 (2.0, 3.0);
 Complex c2 (3.0, 4.0);
 
 Complex sum = add (c1, c2);
-sum.printCartesian();</pre>
+sum.printCartesian();</program>
   <p>The output of this program is</p>
-  <pre>5 + 7i</pre>
+  <program>5 + 7i</program>
   <listing label="fourteenseven">
     <caption>
       <p>The active code below uses the <c>add</c> function for <c>Complex</c> objects.

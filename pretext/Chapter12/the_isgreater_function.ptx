@@ -32,7 +32,7 @@
             time, the arguments are not symmetric. It matters whether we want to
             know <q>Is A greater than B?</q> or <q>Is B greater than A?</q> Therefore I think
             it makes more sense to write <c>isGreater</c> as a member function:</p>
-  <pre>bool Card::isGreater (const Card&amp; c2) const {
+  <program>bool Card::isGreater (const Card&amp; c2) const {
   // first check the suits
   if (suit &gt; c2.suit) return true;
   if (suit &lt; c2.suit) return false;
@@ -43,22 +43,22 @@
 
   // if the ranks are also equal, return false
   return false;
-}</pre>
+}</program>
   <p>Then when we invoke it, it is obvious from the syntax which of the two
             possible questions we are asking:</p>
-  <pre>Card card1 (2, 10);
+  <program>Card card1 (2, 10);
 Card card2 (2, 4);
 
 if (card1.isGreater (card2)) {
   card1.print ();
   cout &lt;&lt; "is greater than" &lt;&lt; endl;
   card2.print ();
-}</pre>
+}</program>
   <p>You can almost read it like English: <q>If card1 isGreater card2 &#x2026;</q> The
             output of this program is</p>
-  <pre>10 of Hearts
+  <program>10 of Hearts
 is greater than
-4 of Hearts</pre>
+4 of Hearts</program>
   <p>According to <c>isGreater</c>, aces are less than deuces (2s). As an
             exercise, fix it so that aces are ranked higher than Kings, as they are
             in most card games.</p>
@@ -211,7 +211,7 @@ void Card::print () const {
     </caption>
     <setup>
       <var>
-        <pre>Card card1 (2,12);
+        <program>Card card1 (2,12);
 Card card2 (1,12);
 if (card1.isGreater (card2)) {
    card1.print ();
@@ -222,7 +222,7 @@ else {
    card2.print ();
    cout &lt;&lt; "is greater than" &lt;&lt; endl;
    card1.print ();
-}</pre>
+}</program>
         <p>If the above code is run, the terminal will print:
 <q>Queen of Hearts</q>
 <var/>

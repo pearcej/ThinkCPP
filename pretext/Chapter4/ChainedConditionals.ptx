@@ -48,7 +48,7 @@ int main () {
   <listing label="chained_conditionals_1">
     <caption>
       <p>What will print after the following code is executed?</p>
-      <pre>#include &lt;iostream&gt;
+      <program>#include &lt;iostream&gt;
 using namespace std;
 
 int main () {
@@ -63,7 +63,7 @@ int main () {
     cout &lt;&lt; "Three!" &lt;&lt; endl;
   }
   return 0;
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice>
@@ -103,7 +103,7 @@ int main () {
   <listing label="chained_conditionals_2">
     <caption>
       <p>What will print after the following code is executed?</p>
-      <pre>#include &lt;iostream&gt;
+      <program>#include &lt;iostream&gt;
 using namespace std;
 
 int main () {
@@ -118,7 +118,7 @@ int main () {
     cout &lt;&lt; "Three!" &lt;&lt; endl;
   }
   return 0;
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice>
@@ -158,7 +158,7 @@ int main () {
   <listing label="chained_conditionals_3">
     <caption>
       <p>What will print after the following code is executed?</p>
-      <pre>#include &lt;iostream&gt;
+      <program>#include &lt;iostream&gt;
 using namespace std;
 
 int main () {
@@ -173,7 +173,7 @@ int main () {
     cout &lt;&lt; "Three!" &lt;&lt; endl;
   }
   return 0;
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice>
@@ -213,7 +213,7 @@ int main () {
   <listing label="chained_conditionals_4">
     <caption>
       <p>What will print after the following code is executed?</p>
-      <pre>#include &lt;iostream&gt;
+      <program>#include &lt;iostream&gt;
 using namespace std;
 
 int main () {
@@ -228,7 +228,7 @@ int main () {
     cout &lt;&lt; "Three!" &lt;&lt; endl;
   }
   return 0;
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice correct="yes">

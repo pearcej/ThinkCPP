@@ -27,7 +27,7 @@ int main() {
             from the string named <c>fruit</c>. The result is stored in a <c>char</c>
             named <c>letter</c>. When I output the value of <c>letter</c>, I get a
             surprise:</p>
-  <pre>a</pre>
+  <program>a</program>
   <p><c>a</c> is not the first letter of <c>"banana"</c>. Unless you are a computer
             scientist. For perverse reasons, computer scientists always start
             counting from zero. The 0th letter (<q>zeroeth</q>) of <c>"banana"</c> is <c>b</c>.

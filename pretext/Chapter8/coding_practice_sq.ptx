@@ -343,7 +343,7 @@ void printTrainerInfo(Trainer t) {
                     Mercury - 0.38, Venus - 0.91, Earth - 1.00, Mars - 0.38, Jupiter - 2.34, Saturn - 1.06, Uranus - 0.92, and Neptune - 1.19.
                     Select the Parsonsprob tab for hints for the construction of the code.
                     Below are some examples.</p>
-          <pre>Please enter your weight in pounds: 145.6
+          <program>Please enter your weight in pounds: 145.6
 Please select a planet: 3
 Your weight on Earth is 145.6 pounds.
 
@@ -357,7 +357,7 @@ or
 
 Please enter your weight in pounds: 170
 Please select a planet: 23
-Error, not a valid planet.</pre>
+Error, not a valid planet.</program>
         </caption>
         <program xml:id="cp_8_AC_10q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
@@ -386,7 +386,7 @@ int main() {
                     Mercury - 0.38, Venus - 0.91, Earth - 1.00, Mars - 0.38, Jupiter - 2.34, Saturn - 1.06, Uranus - 0.92, and Neptune - 1.19.
                     Use the lines to construct the code, then go back to complete the Activecode tab.
                     Below are some examples.</p>
-          <pre>Please enter your weight in pounds: 145.6
+          <program>Please enter your weight in pounds: 145.6
 Please select a planet: 3
 Your weight on Earth is 145.6 pounds.
 
@@ -400,7 +400,7 @@ or
 
 Please enter your weight in pounds: 170
 Please select a planet: 23
-Error, not a valid planet.</pre>
+Error, not a valid planet.</program>
         </caption>
         <blocks>
           <block order="9">

@@ -10,17 +10,17 @@
   <p>Having more than one function with the same name, which is called
             <term>overloading</term>, is legal in C++ <em>as long as each version takes
                 different parameters</em>. So we can go ahead and rename <c>fred</c>:</p>
-  <pre>double area (double xc, double yc, double xp, double yp) {
+  <program>double area (double xc, double yc, double xp, double yp) {
   return area (distance (xc, yc, xp, yp));
-}</pre>
+}</program>
   <p>This looks like a recursive function, but it is not. Actually, this
             version of <c>area</c> is calling the other version. When you call an
             overloaded function, C++ knows which version you want by looking at the
             arguments that you provide. If you write:</p>
-  <pre>double x = area (3.0);</pre>
+  <program>double x = area (3.0);</program>
   <p>C++ goes looking for a function named <c>area</c> that takes a double as an
             argument, and so it uses the first version. If you write</p>
-  <pre>double x = area (1.0, 2.0, 4.0, 6.0);</pre>
+  <program>double x = area (1.0, 2.0, 4.0, 6.0);</program>
   <p>C++ uses the second version of <c>area</c>.</p>
   <p>Many of the built-in C++ commands are overloaded, meaning that there are
             different versions that accept different numbers or types of parameters.</p>
@@ -42,8 +42,8 @@
   <listing label="overloading_1">
     <caption>
       <p>Which of the following function declarations would be legal if it was added to the program below?</p>
-      <pre>double price (int x, int y);
-double price (double a, int b, string c);</pre>
+      <program>double price (int x, int y);
+double price (double a, int b, string c);</program>
     </caption>
     <choices>
       <choice>
@@ -83,8 +83,8 @@ double price (double a, int b, string c);</pre>
   <listing label="overloading_2">
     <caption>
       <p>What are the following functions an example of?</p>
-      <pre>double price(int x, int y);
-double price(double a, int b, string c);</pre>
+      <program>double price(int x, int y);
+double price(double a, int b, string c);</program>
     </caption>
     <choices>
       <choice>
@@ -125,8 +125,8 @@ double price(double a, int b, string c);</pre>
     <caption>
       <p>Suppose you have written the following functions for baking cake.
             Is there anything wrong with how <c>bakeCake</c> was overloaded?</p>
-      <pre>bool bakeCake (string cakeMix, int eggs, double milk, bool birthday);
-bool bakeCake (string cakeMix, int eggs, double water, bool holiday);</pre>
+      <program>bool bakeCake (string cakeMix, int eggs, double milk, bool birthday);
+bool bakeCake (string cakeMix, int eggs, double water, bool holiday);</program>
     </caption>
     <choices>
       <choice>
@@ -166,8 +166,8 @@ bool bakeCake (string cakeMix, int eggs, double water, bool holiday);</pre>
   <listing label="overloading_4">
     <caption>
       <p>Would adding both of the following function declarations to a program lead to an error?</p>
-      <pre>int stockPrice (string currency, int previous_price, double interest_rate );
-double stockPrice (string currency, int older_price, double interest_rate );</pre>
+      <program>int stockPrice (string currency, int previous_price, double interest_rate );
+double stockPrice (string currency, int older_price, double interest_rate );</program>
     </caption>
     <choices>
       <choice>

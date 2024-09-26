@@ -8,7 +8,7 @@
             confusingly, it is called a <c>class</c>. In C++, a class is just a
             structure whose instance variables are private by default. For example,
             I could have written the <c>Card</c> definition:</p>
-  <pre>class Card
+  <program>class Card
 {
   int suit, rank;
 
@@ -20,7 +20,7 @@ public:
   int getSuit () const { return suit; }
   int setRank (int r) { rank = r; }
   int setSuit (int s) { suit = s; }
-};</pre>
+};</program>
   <p>I replaced the word <c>struct</c> with the word <c>class</c> and removed the
             <c>private:</c> label. This result of the two definitions is exactly the
             same.</p>

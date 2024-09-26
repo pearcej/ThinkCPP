@@ -7,25 +7,25 @@
   <p>For example, you can reflect a point around the 45-degree line by
             swapping the two coordinates. The most obvious (but incorrect) way to
             write a <c>reflect</c> function is something like this:</p>
-  <pre>void reflect (Point p) {      // WRONG !!
+  <program>void reflect (Point p) {      // WRONG !!
   double temp = p.x;
   p.x = p.y;
   p.y = temp;
-}</pre>
+}</program>
   <p>But this won't work, because the changes we make in <c>reflect</c> will
             have no effect on the caller.</p>
   <p>Instead, we have to specify that we want to pass the parameter by
             reference. We do that by adding an ampersand (<c>&amp;</c>) to the parameter
             declaration:</p>
-  <pre>void reflect (Point&amp; p) {
+  <program>void reflect (Point&amp; p) {
   double temp = p.x;
   p.x = p.y;
   p.y = temp;
-}</pre>
+}</program>
   <p>Now we can call the function in the usual way:</p>
-  <pre>printPoint (blank);
+  <program>printPoint (blank);
 reflect (blank);
-printPoint (blank);</pre>
+printPoint (blank);</program>
   <listing label="call_by_reference_AC_1">
     <caption>
       <p>Take a look at the active code below. <c>reflect</c> passes the parameter <c>p</c>
@@ -59,8 +59,8 @@ int main() {
         ]]></input>
     </program>
   </listing>
-  <pre>(3, 4)
-(4, 3)</pre>
+  <program>(3, 4)
+(4, 3)</program>
   <p>Here's how we would draw a stack diagram for this program:</p>
   <figure align="center" xml:id="empty-297">
     <image source="Chapter8/Images/8.7stackdiagram.png" width="50%" alt="image"/>

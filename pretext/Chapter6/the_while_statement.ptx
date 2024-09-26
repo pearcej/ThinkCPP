@@ -68,7 +68,7 @@ int main() {
             the value of <c>n</c> gets smaller each time through the loop (each
             <term>iteration</term>), so eventually we have to get to zero. In other cases it
             is not so easy to tell:</p>
-  <pre>void sequence (int n) {
+  <program>void sequence (int n) {
   while (n != 1) {
     cout &lt;&lt; n &lt;&lt; endl;
     if (n % 2 == 0) {           // n is even
@@ -78,7 +78,7 @@ int main() {
       n = n * 3 + 1;
     }
   }
-}</pre>
+}</program>
   <p>The condition for this loop is <c>n != 1</c>, so the loop will continue
             until <c>n</c> is 1, which will make the condition false.</p>
   <p>At each iteration, the program outputs the value of <c>n</c> and then
@@ -180,11 +180,11 @@ cout << answer;
   <listing label="while_statement_3">
     <caption>
       <p>The following code is a program to print the <term>even numbers from 0 to 20</term>. The code contains blanks. What is the correct while statement condition and iteration needed in order for the code to run successfully.</p>
-      <pre>int n = 0;
+      <program>int n = 0;
   while (_____) {    // while statement condition
   cout &lt;&lt; n &lt;&lt; endl;
   _______;           // iteration of the variable
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice>

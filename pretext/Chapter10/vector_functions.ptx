@@ -12,7 +12,7 @@
     <p><c>push_back</c> adds a specified element to the end of the vector, <c>pop_back</c>
                 removes element from the end of a vector.</p>
   </note>
-  <pre>#include &lt;iostream&gt;
+  <program>#include &lt;iostream&gt;
 #include &lt;vector&gt;
 using namespace std;
 
@@ -29,7 +29,7 @@ int main() {
   for (i = 0; i &lt; len; i++) {
     cout &lt;&lt; values[i] &lt;&lt; endl;
   }
-}</pre>
+}</program>
   <listing label="vector_functions_AC_1">
     <caption>
       <p>The active code below uses the <c>push_back</c> function to add

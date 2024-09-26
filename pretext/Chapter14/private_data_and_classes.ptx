@@ -26,7 +26,7 @@
             client programs from accessing the instance variables of an object. The
             keyword <c>private</c> is used to protect parts of a structure definition.
             For example, we could have written the <c>Card</c> definition:</p>
-  <pre>struct Card
+  <program>struct Card
 {
 private:
   int suit, rank;
@@ -39,7 +39,7 @@ public:
   int getSuit () const { return suit; }
   void setRank (int r) { rank = r; }
   void setSuit (int s) { suit = s; }
-};</pre>
+};</program>
   <p>There are two sections of this definition, a <term>private</term> part and a <term>public</term>
             part. The functions are public, which means that they can be invoked by
             client programs. The instance variables are private, which means that

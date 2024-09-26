@@ -4,12 +4,12 @@
   <p>A second form of conditional execution is alternative execution, in
             which there are two possibilities, and the condition determines which
             one gets executed. The syntax looks like:</p>
-  <pre>if (x % 2 == 0) {
+  <program>if (x % 2 == 0) {
   cout &lt;&lt; "x is even" &lt;&lt; endl;
 }
 else {
   cout &lt;&lt; "x is odd" &lt;&lt; endl;
-}</pre>
+}</program>
   <p>If the remainder when x is divided by 2 is zero, then we know that x is
             even, and this code displays a message to that effect. If the condition
             is false, the second set of statements is executed. Since the condition
@@ -17,23 +17,23 @@ else {
   <p>As an aside, if you think you might want to check the parity (evenness
             or oddness) of numbers often, you might want to <q>wrap</q> this code up in a
             function, as follows:</p>
-  <pre>void printParity (int x) {
+  <program>void printParity (int x) {
   if (x % 2 == 0) {
     cout &lt;&lt; "x is even" &lt;&lt; endl;
   }
   else {
     cout &lt;&lt; "x is odd" &lt;&lt; endl;
   }
-}</pre>
+}</program>
   <p>Now you have a function named <c>printParity</c> that will display an
             appropriate message for any integer you care to provide. In main you
             would call this function as follows:</p>
-  <pre>printParity (17);</pre>
+  <program>printParity (17);</program>
   <p>Always remember that when you <em>call</em> a function, you do not have to
             declare the types of the arguments you provide. C++ can figure out what
             type they are. You should resist the temptation to write things like:</p>
-  <pre>int number = 17;
-printParity (int number);         // WRONG!!!</pre>
+  <program>int number = 17;
+printParity (int number);         // WRONG!!!</program>
   <listing label="alt_execution_AC_1">
     <caption>
       <p>This program shows you how the print parity function works.
@@ -67,7 +67,7 @@ int main () {
   <listing label="alt_execution_1">
     <caption>
       <p>What will be printed after <c>main</c> is executed?</p>
-      <pre>#include &lt;iostream&gt;
+      <program>#include &lt;iostream&gt;
 using namespace std;
 
 void weather(int temp) {
@@ -82,7 +82,7 @@ void weather(int temp) {
 int main() {
   int degrees = 52;
   weather(degrees);
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice>

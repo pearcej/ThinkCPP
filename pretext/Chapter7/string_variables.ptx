@@ -26,7 +26,7 @@ int main() {
             <c>string</c> variable, they are converted automatically to <c>string</c>
             values.</p>
   <p>We can output strings in the usual way:</p>
-  <pre>cout &lt;&lt; first &lt;&lt; second &lt;&lt; endl;</pre>
+  <program>cout &lt;&lt; first &lt;&lt; second &lt;&lt; endl;</program>
   <p>In order to compile this code, you will have to include the header file
             for the <c>string</c> class, and you will have to add the file <c>string</c>
             to the list of files you want to compile. The details of how to do this

@@ -15,11 +15,11 @@
   <listing label="logical_op_1">
     <caption>
       <p>Multiple Response: How could you re-write the following code using a single conditional?</p>
-      <pre>if (x &gt; 0) {
+      <program>if (x &gt; 0) {
   if (x &lt; 10) {
     cout &lt;&lt; "x is a positive single digit" &lt;&lt; endl;
   }
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice correct="yes">

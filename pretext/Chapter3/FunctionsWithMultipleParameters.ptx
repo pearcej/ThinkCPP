@@ -4,18 +4,18 @@
   <p>The syntax for declaring and invoking functions with multiple parameters
             is a common source of errors. First, remember that you have to declare
             the type of every parameter. For example</p>
-  <pre>void printTime (int hour, int minute) {
+  <program>void printTime (int hour, int minute) {
   cout &lt;&lt; hour;
   cout &lt;&lt; ":";
   cout &lt;&lt; minute;
-}</pre>
+}</program>
   <p>It might be tempting to write <c>(int hour, minute)</c>, but that format is
             only legal for variable declarations, not for parameters.</p>
   <p>Another common source of confusion is that you do not have to declare
             the types of arguments. The following is wrong!</p>
-  <pre>int hour = 11;
+  <program>int hour = 11;
 int minute = 59;
-printTime (int hour, int minute);   // WRONG!</pre>
+printTime (int hour, int minute);   // WRONG!</program>
   <p>In this case, the compiler can tell the type of hour and minute by
             looking at their declarations.</p>
   <warning>
@@ -87,7 +87,7 @@ int main () {
   <listing label="multiple_params_2">
     <caption>
       <p>Which of the following is a legal function call of the function below?</p>
-      <pre>void multiplyTwo (int num, string name) {
+      <program>void multiplyTwo (int num, string name) {
   int total = num * 2;
   cout &lt;&lt; "Hi " &lt;&lt; name &lt;&lt; ", your total is " &lt;&lt; total &lt;&lt; "!" &lt;&lt; endl;
 }
@@ -95,7 +95,7 @@ int main () {
 int main() {
   int x = 2;
   string phil = "Phil";
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice>

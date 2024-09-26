@@ -66,7 +66,7 @@
   </p>
   <p>Steps 3 and 4 look suspiciously like recursive invocations. Here's what
             this all looks like translated into C++:</p>
-  <pre>int findBisect (const Card&amp; card, const vector&lt;Card&gt;&amp; deck,
+  <program>int findBisect (const Card&amp; card, const vector&lt;Card&gt;&amp; deck,
                 int low, int high) {
   int mid = (high + low) / 2;
 
@@ -81,7 +81,7 @@
     // search the second half of the deck
     return findBisect (card, deck, mid+1, high);
   }
-}</pre>
+}</program>
   <p>Although this code contains the kernel of a bisection search, it is
             still missing a piece. As it is currently written, if the card is not in
             the deck, it will recurse forever. We need a way to detect this
@@ -92,7 +92,7 @@
             mean is that there are no cards in the segment of the deck indicated by
             <c>low</c> and <c>high</c>.</p>
   <p>With that line added, the function works correctly:</p>
-  <pre>int findBisect (const Card&amp; card, const vector&lt;Card&gt;&amp; deck,
+  <program>int findBisect (const Card&amp; card, const vector&lt;Card&gt;&amp; deck,
                 int low, int high) {
 
   cout &lt;&lt; low &lt;&lt; ", " &lt;&lt; high &lt;&lt; endl;
@@ -108,27 +108,27 @@
   } else {
     return findBisect (card, deck, mid+1, high);
   }
-}</pre>
+}</program>
   <p>I added an output statement at the beginning so I could watch the
             sequence of recursive calls and convince myself that it would eventually
             reach the base case. I tried out the following code:</p>
-  <pre>cout &lt;&lt; findBisect (deck[23], deck, 0, 51);</pre>
+  <program>cout &lt;&lt; findBisect (deck[23], deck, 0, 51);</program>
   <p>And got the following output:</p>
-  <pre>0, 51
+  <program>0, 51
 0, 24
 13, 24
 19, 24
 22, 24
-I found the card at index = 23</pre>
+I found the card at index = 23</program>
   <p>Then I made up a card that is not in the deck (the 15 of Diamonds), and
             tried to find it. I got the following:</p>
-  <pre>0, 51
+  <program>0, 51
 0, 24
 13, 24
 13, 17
 13, 14
 13, 12
-I found the card at index = -1</pre>
+I found the card at index = -1</program>
   <p>These tests don't prove that this program is correct. In fact, no amount
             of testing can prove that a program is correct. On the other hand, by
             looking at a few cases and examining the code, you might be able to

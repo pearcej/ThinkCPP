@@ -8,27 +8,27 @@
   <p>This type of loop is so common that there is an alternate loop
             statement, called <c>for</c>, that expresses it more concisely. The general
             syntax looks like this:</p>
-  <pre>for (INITIALIZER; CONDITION; INCREMENTOR) {
+  <program>for (INITIALIZER; CONDITION; INCREMENTOR) {
   BODY
-}</pre>
+}</program>
   <p>This statement is exactly equivalent to</p>
-  <pre>INITIALIZER;
+  <program>INITIALIZER;
 while (CONDITION) {
   BODY
   INCREMENTOR
-}</pre>
+}</program>
   <p>except that it is more concise and, since it puts all the loop-related
             statements in one place, it is easier to read. For example:</p>
-  <pre>int i;
+  <program>int i;
 for (i = 0; i &lt; 4; i++) {
   cout &lt;&lt; count[i] &lt;&lt; endl;
-}</pre>
+}</program>
   <p>is equivalent to</p>
-  <pre>int i = 0;
+  <program>int i = 0;
 while (i &lt; 4) {
   cout &lt;&lt; count[i] &lt;&lt; endl;
   i++;
-}</pre>
+}</program>
   <listing label="for_loops_AC_1">
     <caption>
       <p>Run the active code below, which uses a <c>for</c> loop.</p>

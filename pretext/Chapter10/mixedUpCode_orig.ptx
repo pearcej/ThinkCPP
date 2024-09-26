@@ -335,7 +335,7 @@
             Construct a block of code that counts how many times <q>.</q>, <q>!</q>, and <q>?</q> occur in <c>exclamations</c>.
             Save the counts to a vector with <q>.</q> count as the first element, <q>!</q> count as the second, and <q>?</q> count as the third.
             Put the necessary blocks of code in the correct order.</p>
-      <pre>int howMany (const vector&lt;string&gt;&amp; vec, char let) {
+      <program>int howMany (const vector&lt;string&gt;&amp; vec, char let) {
     int count = 0;
     for (size_t i = 0; i &lt; vec.size(); i++) {
         for (size_t c = 0; c &lt; vec[i].size(); c++) {
@@ -347,7 +347,7 @@
     return count;
 }
 
-vector&lt;string&gt; excl = {"what?!", "how???", "fine!", "STOP.", "yay!!!!!", "ugh...!"};</pre>
+vector&lt;string&gt; excl = {"what?!", "how???", "fine!", "STOP.", "yay!!!!!", "ugh...!"};</program>
     </caption>
     <blocks>
       <block order="3">

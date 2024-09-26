@@ -10,15 +10,15 @@
             last couple of chapters. The condition inside an if statement or a while
             statement is a boolean expression. Also, the result of a comparison
             operator is a boolean value. For example:</p>
-  <pre>if (x == 5) {
+  <program>if (x == 5) {
   // do something
-}</pre>
+}</program>
   <p>The operator <c>==</c> compares two integers and produces a boolean value.</p>
   <p>The values true and false are keywords in C++, and can be used anywhere
             a boolean expression is called for. For example,</p>
-  <pre>while (true) {
+  <program>while (true) {
   // loop forever
-}</pre>
+}</program>
   <p>is a standard idiom for a loop that should run forever (or until it
             reaches a return or break statement).</p>
   <listing label="bool_vals_1">

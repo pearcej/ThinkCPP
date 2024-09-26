@@ -4,12 +4,12 @@
   <p>To get data from a file, we have to create a stream that flows from the
             file into the program. We can do that using the <c>ifstream</c>
             constructor.</p>
-  <pre>ifstream infile ("file-name");</pre>
+  <program>ifstream infile ("file-name");</program>
   <p>The argument for this constructor is a string that contains the name of
             the file you want to open. The result is an object named <c>infile</c> that
             supports all the same operations as <c>cin</c>, including <c>&gt;&gt;</c> and
             <c>getline</c>.</p>
-  <pre>#include &lt;iostream&gt;
+  <program>#include &lt;iostream&gt;
 #include &lt;fstream&gt;
 using namespace std;
 
@@ -21,7 +21,7 @@ int main ()
  ifstream infile ("file-name");
  infile &gt;&gt; x;               // get a single integer and store in x
  getline (infile, line);    // get a whole line and store in line
-}</pre>
+}</program>
   <p>If we know ahead of time how much data is in a file, it is
             straightforward to write a loop that reads the entire file and then
             stops. More often, though, we want to read the entire file, but don't
@@ -35,7 +35,7 @@ int main ()
             <c>true</c> then we have reached the end of the file and we know that the
             last attempt failed. Here is a program that reads lines from a file and
             displays them on the screen:</p>
-  <pre>#include &lt;iostream&gt;
+  <program>#include &lt;iostream&gt;
 #include &lt;fstream&gt;
 using namespace std;
 
@@ -56,7 +56,7 @@ int main ()
    }
    cout &lt;&lt; line &lt;&lt; endl;
  }
-}</pre>
+}</program>
   <p>The function <c>c_str</c> converts an <c>string</c> to a native C string.
             Because the <c>ifstream</c> constructor expects a C string as an argument,
             we have to convert the <c>string</c>.</p>

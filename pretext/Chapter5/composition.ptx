@@ -10,25 +10,25 @@
             perimeter point is in <c>xp</c> and <c>yp</c>. The first step is to find the radius of
             the circle, which is the distance between the two points. Fortunately,
             we have a function, <c>distance</c>, that does that.</p>
-  <pre>double radius = distance (xc, yc, xp, yp);</pre>
+  <program>double radius = distance (xc, yc, xp, yp);</program>
   <p>The second step is to find the area of a circle with that radius, and
             return it.</p>
-  <pre>double result = area (radius);
-return result;</pre>
+  <program>double result = area (radius);
+return result;</program>
   <p>Wrapping that all up in a function, we get:</p>
-  <pre>double fred (double xc, double yc, double xp, double yp) {
+  <program>double fred (double xc, double yc, double xp, double yp) {
   double radius = distance (xc, yc, xp, yp);
   double result = area (radius);
   return result;
-}</pre>
+}</program>
   <p>The name of this function is <c>fred</c>, which may seem odd. I will explain
             why in the next section.</p>
   <p>The temporary variables radius and area are useful for development and
             debugging, but once the program is working we can make it more concise
             by composing the function calls:</p>
-  <pre>double fred (double xc, double yc, double xp, double yp) {
+  <program>double fred (double xc, double yc, double xp, double yp) {
   return area (distance (xc, yc, xp, yp));
-}</pre>
+}</program>
   <listing label="fun_comp_AC_1">
     <caption>
       <p>This program shows you how the distance and area functions are
@@ -111,9 +111,9 @@ int main () {
       <p>It turns out you already have a function called <c>printHelloName</c>
             so you must rename this one.  Which of the following could be the
             new name for your function?</p>
-      <pre>void printHelloName (string name) {
+      <program>void printHelloName (string name) {
   cout &lt;&lt; "Hello " &lt;&lt; name &lt;&lt; "!" &lt;&lt;  endl;
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice>

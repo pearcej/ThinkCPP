@@ -18,9 +18,9 @@
             represent them using four doubles. The return value is the distance,
             which will have type double.</p>
   <p>Already we can write an outline of the function:</p>
-  <pre>double distance (double x1, double y1, double x2, double y2) {
+  <program>double distance (double x1, double y1, double x2, double y2) {
   return 0.0;
-}</pre>
+}</program>
   <p>The return statement is a placekeeper so that the function will compile
             and return something, even though it is not the right answer. At this
             stage the function doesn't do anything useful, but it is worthwhile to
@@ -28,8 +28,8 @@
             more complicated.</p>
   <p>In order to test the new function, we have to call it with sample
             values. Somewhere in main I would add:</p>
-  <pre>double dist = distance (1.0, 2.0, 4.0, 6.0);
-cout &lt;&lt; dist &lt;&lt; endl;</pre>
+  <program>double dist = distance (1.0, 2.0, 4.0, 6.0);
+cout &lt;&lt; dist &lt;&lt; endl;</program>
   <p>I chose these values so that the horizontal distance is 3 and the
             vertical distance is 4; that way, the result will be 5 (the hypotenuse
             of a 3-4-5 triangle). When you are testing a function, it is useful to
@@ -41,13 +41,13 @@ cout &lt;&lt; dist &lt;&lt; endl;</pre>
   <p>The next step in the computation is to find the differences
             <math>x_2 - x_1</math> and <math>y_2 - y_1</math>. I will store those values in
             temporary variables named dx and dy.</p>
-  <pre>double distance (double x1, double y1, double x2, double y2) {
+  <program>double distance (double x1, double y1, double x2, double y2) {
   double dx = x2 - x1;
   double dy = y2 - y1;
   cout &lt;&lt; "dx is " &lt;&lt; dx &lt;&lt; endl;
   cout &lt;&lt; "dy is " &lt;&lt; dy &lt;&lt; endl;
   return 0.0;
-}</pre>
+}</program>
   <p>I added output statements that will let me check the intermediate values
             before proceeding. As I mentioned, I already know that they should be
             3.0 and 4.0.</p>
@@ -64,23 +64,23 @@ cout &lt;&lt; dist &lt;&lt; endl;</pre>
   <p>The next step in the development is to square dx and dy. We could use
             the pow function, but it is simpler and faster to just multiply each
             term by itself.</p>
-  <pre>double distance (double x1, double y1, double x2, double y2) {
+  <program>double distance (double x1, double y1, double x2, double y2) {
   double dx = x2 - x1;
   double dy = y2 - y1;
   double dsquared = dx*dx + dy*dy;
   cout &lt;&lt; "dsquared is " &lt;&lt; dsquared;
   return 0.0;
-}</pre>
+}</program>
   <p>Again, I would compile and run the program at this stage and check the
             intermediate value (which should be 25.0).</p>
   <p>Finally, we can use the sqrt function to compute and return the result.</p>
-  <pre>double distance (double x1, double y1, double x2, double y2) {
+  <program>double distance (double x1, double y1, double x2, double y2) {
   double dx = x2 - x1;
   double dy = y2 - y1;
   double dsquared = dx*dx + dy*dy;
   double result = sqrt (dsquared);
   return result;
-}</pre>
+}</program>
   <p>Then in main, we should output and check the value of the result.</p>
   <listing label="program_dvlmt_AC_1">
     <caption>
@@ -213,7 +213,7 @@ int main () {
   <listing label="program_dvlmt_3">
     <caption>
       <p>The print statements in the distance function will be removed after testing. What is this called, and what is its purpose?</p>
-      <pre>#include &lt;iostream&gt;
+      <program>#include &lt;iostream&gt;
 using namespace std;
 
 double distance (double x1, double y1, double x2, double y2) {
@@ -222,7 +222,7 @@ double distance (double x1, double y1, double x2, double y2) {
   cout &lt;&lt; "dx is " &lt;&lt; dx &lt;&lt; endl;
   cout &lt;&lt; "dy is " &lt;&lt; dy &lt;&lt; endl;
   return 0.0;
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice>

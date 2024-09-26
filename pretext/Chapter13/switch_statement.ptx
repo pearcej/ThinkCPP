@@ -5,7 +5,7 @@
             statements, because they often go hand in hand. A <c>switch</c> statement
             is an alternative to a chained conditional that is syntactically
             prettier and often more efficient. It looks like this:</p>
-  <pre>switch (symbol) {
+  <program>switch (symbol) {
 case '+':
   perform_addition ();
   break;
@@ -15,10 +15,10 @@ case '*':
 default:
   cout &lt;&lt; "I only know how to perform addition and multiplication" &lt;&lt; endl;
   break;
-}</pre>
+}</program>
   <p>This <c>switch</c> statement is equivalent to the following chained
             conditional:</p>
-  <pre>if (symbol == '+') {
+  <program>if (symbol == '+') {
   perform_addition ();
 }
 else if (symbol == '*') {
@@ -26,7 +26,7 @@ else if (symbol == '*') {
 }
 else {
   cout &lt;&lt; "I only know how to perform addition and multiplication" &lt;&lt; endl;
-}</pre>
+}</program>
   <p>The <c>break</c> statements are necessary in each branch in a <c>switch</c>
             statement because otherwise the flow of execution <q>falls through</q> to the
             next case.</p>
@@ -75,13 +75,13 @@ int main() {
   <p><c>switch</c> statements work with integers, characters, and enumerated
             types. For example, to convert a <c>Suit</c> to the corresponding string,
             we could use something like:</p>
-  <pre>switch (suit) {
+  <program>switch (suit) {
 case CLUBS:     return "Clubs";
 case DIAMONDS:  return "Diamonds";
 case HEARTS:    return "Hearts";
 case SPADES:    return "Spades";
 default:        return "Not a valid suit";
-}</pre>
+}</program>
   <p>In this case we don't need <c>break</c> statements because the <c>return</c>
             statements cause the flow of execution to return to the caller instead
             of falling through to the next case.</p>

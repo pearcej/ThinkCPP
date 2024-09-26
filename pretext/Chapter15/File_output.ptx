@@ -3,7 +3,7 @@
   <title>File output</title>
   <p>Sending output to a file is similar. For example, we could modify the
             previous program to copy lines from one file to another.</p>
-  <pre>#include &lt;iostream&gt;
+  <program>#include &lt;iostream&gt;
 using namespace std;
 
 int main () {
@@ -20,7 +20,7 @@ int main () {
    if (infile.eof()) break;
    outfile &lt;&lt; line &lt;&lt; endl;
  }
-}</pre>
+}</program>
   <listing label="question15_4_1" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <caption>
       <p>Create a code block that sends output to a file. First, make sure that both the input file and the output file are able to be opened.</p>

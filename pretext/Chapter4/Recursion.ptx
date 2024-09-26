@@ -11,7 +11,7 @@
                 such functions are said to be <term>recursive</term>.</p>
   </note>
   <p>For example, look at the following function:</p>
-  <pre>void countdown (int n) {
+  <program>void countdown (int n) {
   if (n == 0) {
     cout &lt;&lt; "Blastoff!" &lt;&lt; endl;
   }
@@ -19,7 +19,7 @@
     cout &lt;&lt; n &lt;&lt; endl;
     countdown (n - 1);
   }
-}</pre>
+}</program>
   <p>The name of the function is <c>countdown</c> and it takes a single integer as a
             parameter. If the parameter is zero, it outputs the word <q>Blastoff.</q>
             Otherwise, it outputs the parameter and then calls a function named
@@ -74,27 +74,27 @@ int main () {
   </blockquote>
   <p>And then you're back in <c>main</c> (what a trip). So the total output looks
             like:</p>
-  <pre>3
+  <program>3
 2
 1
-Blastoff!</pre>
+Blastoff!</program>
   <p>As a second example, let's look again at the functions <c>newLine</c> and
             <c>threeLine</c>.</p>
-  <pre>void newLine () {
+  <program>void newLine () {
   cout &lt;&lt; endl;
 }
 
 void threeLine () {
   newLine ();  newLine ();  newLine ();
-}</pre>
+}</program>
   <p>Although these work, they would not be much help if I wanted to output 2
             newlines, or 4 newlines. A better alternative would be</p>
-  <pre>void nLines (int n) {
+  <program>void nLines (int n) {
   if (n &gt; 0) {
     cout &lt;&lt; endl;
     nLines (n - 1);
   }
-}</pre>
+}</program>
   <p>This program is similar to countdown; as long as n is greater than zero,
             it outputs one newline, and then calls itself to output <c>n-1</c> additional
             newlines. Thus, the total number of newlines is <c>1 + (n - 1)</c>, which usually
@@ -139,7 +139,7 @@ int main() {
   <listing label="recursion_1">
     <caption>
       <p>What will print?</p>
-      <pre>#include &lt;iostream&gt;
+      <program>#include &lt;iostream&gt;
 using namespace std;
 
 void exclamationPoint(int n) {
@@ -151,7 +151,7 @@ void exclamationPoint(int n) {
 
 int main () {
   exclamationPoint(3);
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice>
@@ -191,7 +191,7 @@ int main () {
   <listing label="recursion_2">
     <caption>
       <p>What will print?</p>
-      <pre>#include &lt;iostream&gt;
+      <program>#include &lt;iostream&gt;
 using namespace std;
 
 void exclamationPoint(int n) {
@@ -203,7 +203,7 @@ void exclamationPoint(int n) {
 
 int main () {
   exclamationPoint(0);
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice>

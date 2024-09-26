@@ -9,7 +9,7 @@
             you use the <c>[]</c> operator and you provide an index that is negative or
             greater than <c>length-1</c>, you will get a run-time error and a message
             something like this:</p>
-  <pre>index out of range: 6, string: banana</pre>
+  <program>index out of range: 6, string: banana</program>
   <p>Try it in your development environment and see how it looks.</p>
   <listing label="runtime_error_AC_1">
     <caption>

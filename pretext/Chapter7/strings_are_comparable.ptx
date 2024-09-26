@@ -53,7 +53,7 @@ int main() {
   <p>You should be aware, though, that the <c>string</c> class does not handle
             upper and lower case letters the same way that people do. All the upper
             case letters come before all the lower case letters. As a result,</p>
-  <pre>Your word, Zebra, comes before banana.</pre>
+  <program>Your word, Zebra, comes before banana.</program>
   <p>A common way to address this problem is to convert strings to a standard
             format, like all lower-case, before performing the comparison. The next
             sections explains how. I will not address the more difficult problem,

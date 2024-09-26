@@ -83,14 +83,14 @@ int main () {
             needs about functions that are defined outside your program. For
             example, in the <q>Hello, world!</q> program we included a header file named
             iostream using an <term>include</term> statement:</p>
-  <pre>#include &lt;iostream&gt;
-using namespace std;</pre>
+  <program>#include &lt;iostream&gt;
+using namespace std;</program>
   <p>iostream contains information about input and output (I/O) streams,
             including the object named <c>cout</c>. C++ has a powerful feature called
             namespaces, that allow you to write your own implementation of cout. But
             in most cases, we would need to use the standard implementation. To
             convey this to the compiler, we use the line</p>
-  <pre>using namespace std;</pre>
+  <program>using namespace std;</program>
   <note>
     <p>As a rule of the thumb, you should write <c>using namespace std;</c> whenever
                 you use iostream.</p>
@@ -98,7 +98,7 @@ using namespace std;</pre>
   <p>Similarly, the math header file contains information about the math
             functions. You can include it at the beginning of your program along
             with iostream:</p>
-  <pre>#include &lt;cmath&gt;</pre>
+  <program>#include &lt;cmath&gt;</program>
   <p>Such header files have an initial &#x2018;c' to signify that these header files
             have been derived from the <term>C</term> language.</p>
   <listing label="dnd1">

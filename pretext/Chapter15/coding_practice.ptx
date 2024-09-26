@@ -8,7 +8,7 @@
     <program interactive="" language="" xml:id="empty-120"/>
     <TabNode tabname="Input File" tabnode_options="{'subchapter': 'coding_practice', 'chapter': 'Chapter15', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Input File'}">
       <p>Below are the contents of the input file.</p>
-      <pre>Two roads diverged in a yellow wood,
+      <program>Two roads diverged in a yellow wood,
 And sorry I could not travel both
 And be one traveler, long I stood
 And looked down one as far as I could
@@ -27,7 +27,7 @@ I shall be telling this with a sigh
 Somewhere ages and ages hence:
 Two roads diverged in a wood, and I,
 I took the one less traveled by,
-And that has made all the difference.</pre>
+And that has made all the difference.</program>
     </TabNode>
     <solution>
                 Below is one way to implement this program. We create an ifstream object
@@ -78,10 +78,10 @@ int main() {
     <program interactive="" language="" xml:id="empty-122"/>
     <TabNode tabname="Input File" tabnode_options="{'subchapter': 'coding_practice', 'chapter': 'Chapter15', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Input File'}">
       <p>Below are the contents of the input file.</p>
-      <pre>62  67      75      68      65
+      <program>62  67      75      68      65
 67  70      72      74      66
 72  66      66      73      69
-61  60      73      72      60</pre>
+61  60      73      72      60</program>
     </TabNode>
     <solution>
                 Below is one way to implement this program. We create an ifstream object
@@ -145,8 +145,8 @@ int main() {
     <program interactive="" language="" xml:id="empty-124"/>
     <TabNode tabname="Input File" tabnode_options="{'subchapter': 'coding_practice', 'chapter': 'Chapter15', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Input File'}">
       <p>Below are the contents of the input file.</p>
-      <pre>Can you encrypt this message and decrypt the message below?
-Pbatenghyngvbaf! Lbh'ir qrpelcgrq guvf zrffntr.</pre>
+      <program>Can you encrypt this message and decrypt the message below?
+Pbatenghyngvbaf! Lbh'ir qrpelcgrq guvf zrffntr.</program>
     </TabNode>
     <solution>
                 Below is one way to implement this program. We create an ifstream object
@@ -221,14 +221,14 @@ int main() {
     <program interactive="" language="" xml:id="empty-126"/>
     <TabNode tabname="Input File" tabnode_options="{'subchapter': 'coding_practice', 'chapter': 'Chapter15', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Input File'}">
       <p>Below are the contents of the input file.</p>
-      <pre>First    Last       Grade    GPA    Age
+      <program>First    Last       Grade    GPA    Age
 Alex     Jones      9        3.4    14
 Beth     Hamilton   12       3.7    18
 Charles  White      11       3.5    16
 Daniel   Kim        10       3.8    16
 Ethan    Brooks     11       3.9    17
 Faith    Flemmings  10       3.0    15
-Gina     Zhou       9        3.2    14</pre>
+Gina     Zhou       9        3.2    14</program>
     </TabNode>
     <solution>
                 Below is one way to implement this program. We create an ifstream object

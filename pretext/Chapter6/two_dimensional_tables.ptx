@@ -36,7 +36,7 @@ int main() {
             followed by three spaces. By omitting the <c>endl</c> from the first output
             statement, we get all the output on a single line.</p>
   <p>The output of this program is:</p>
-  <pre>2   4   6   8   10   12</pre>
+  <program>2   4   6   8   10   12</program>
   <p>So far, so good. The next step is to <term>encapsulate</term> and <term>generalize</term>.</p>
   <listing label="2D_tables_1">
     <caption>

@@ -31,13 +31,13 @@
             the number of elements in a vector that equal a given value. The
             parameters are the vector and the integer value we are looking for. The
             return value is the number of times the value appears.</p>
-  <pre>int howMany (const vector&lt;int&gt;&amp; vec, int value) {
+  <program>int howMany (const vector&lt;int&gt;&amp; vec, int value) {
   int count = 0;
   for (size_t i = 0; i &lt; vec.size(); i++) {
     if (vec[i] == value) count++;
   }
   return count;
-}</pre>
+}</program>
   <listing label="counting_AC_1">
     <caption>
       <p>Take a look at the active code below which uses the <c>howMany</c> function. Run the

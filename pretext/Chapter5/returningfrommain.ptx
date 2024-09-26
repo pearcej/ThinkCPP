@@ -4,9 +4,9 @@
   <p>Now that we have functions that return values, I can let you in on a
             secret. main is not really supposed to be a void function. It's supposed
             to return an integer:</p>
-  <pre>int main () {
+  <program>int main () {
   return 0;
-}</pre>
+}</program>
   <p>The usual return value from main is 0, which indicates that the program
             succeeded at whatever it was supposed to do. If something goes wrong, it
             is common to return -1, or some other value that indicates what kind of
@@ -91,7 +91,7 @@ any errors that we catch, we might return <var/>. <var/>  <var/>  </p>
   <listing label="return_main_mc_2">
     <caption>
       <p>What gets printed when the following code runs?</p>
-      <pre>int main() {
+      <program>int main() {
     bool sun_set=true;
     if(sun_set) {
         cout &lt;&lt; "its night time ";
@@ -104,7 +104,7 @@ any errors that we catch, we might return <var/>. <var/>  <var/>  </p>
     else {
         cout &lt;&lt; "afternoon ";
     }
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice>

@@ -11,8 +11,8 @@
   <p>In the header file <c>iostream</c>, C++ defines an object named <c>cin</c>
             that handles input in much the same way that <c>cout</c> handles output. To
             get an integer value from the user:</p>
-  <pre>int x;
-cin &gt;&gt; x;</pre>
+  <program>int x;
+cin &gt;&gt; x;</program>
   <p>The <c>&gt;&gt;</c> operator causes the program to stop executing and wait for
             the user to type something. If the user types a valid integer, the
             program converts it into an integer value and stores it in <c>x</c>.</p>
@@ -58,11 +58,11 @@ int main () {
     </program>
   </listing>
   <p><c>cin</c> can also be used to input a <c>string</c>:</p>
-  <pre>string name;
+  <program>string name;
 
 cout &lt;&lt; "What is your name? ";
 cin &gt;&gt; name;
-cout &lt;&lt; name &lt;&lt; endl;</pre>
+cout &lt;&lt; name &lt;&lt; endl;</program>
   <p>Unfortunately, this statement only takes the first word of input, and
             leaves the rest for the next input statement. So, if you run this
             program and type your full name, it will only output your first name.</p>
@@ -70,11 +70,11 @@ cout &lt;&lt; name &lt;&lt; endl;</pre>
             behavior), I avoid using the <c>&gt;&gt;</c> operator altogether, unless I am
             reading data from a source that is known to be error-free.</p>
   <p>Instead, I use a function in the header <c>string</c> called <c>getline</c>.</p>
-  <pre>string name;
+  <program>string name;
 
 cout &lt;&lt; "What is your name? ";
 getline (cin, name);
-cout &lt;&lt; name &lt;&lt; endl;</pre>
+cout &lt;&lt; name &lt;&lt; endl;</program>
   <p>The first argument to <c>getline</c> is <c>cin</c>, which is where the input
             is coming from. The second argument is the name of the <c>string</c> where
             you want the result to be stored.</p>

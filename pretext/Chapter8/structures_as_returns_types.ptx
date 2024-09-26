@@ -5,18 +5,18 @@
             <c>findCenter</c> takes a <c>Rectangle</c> as an argument and returns a
             <c>Point</c> that contains the coordinates of the center of the
             <c>Rectangle</c>:</p>
-  <pre>Point findCenter (Rectangle&amp; box) {
+  <program>Point findCenter (Rectangle&amp; box) {
   double x = box.corner.x + box.width/2;
   double y = box.corner.y + box.height/2;
   Point result = {x, y};
   return result;
-}</pre>
+}</program>
   <p>To call this function, we have to pass a box as an argument (notice that
             it is being passed by reference), and assign the return value to a
             <c>Point</c> variable:</p>
-  <pre>Rectangle box = { {0.0, 0.0}, 100, 200 };
+  <program>Rectangle box = { {0.0, 0.0}, 100, 200 };
 Point center = findCenter (box);
-printPoint (center);</pre>
+printPoint (center);</program>
   <listing label="structures_return_types_AC_1">
     <caption>
       <p>The active code below uses the <c>findCenter</c> function. Run the code

@@ -6,11 +6,11 @@
             definition. Looking at the functions we have written so far, one obvious
             candidate is <c>printDeck</c> (<number_reference internal="True" refuri="../Chapter12/the_printdeck_function#printdeck" title="Section %s"><inline classes="std std-numref">Section 12.7</inline></number_reference>).
             Here's how it looks, rewritten as a <c>Deck</c> member function:</p>
-  <pre>void Deck::print () const {
+  <program>void Deck::print () const {
   for (size_t i = 0; i &lt; cards.size(); i++) {
     cards[i].print ();
   }
-}</pre>
+}</program>
   <p>As usual, we can refer to the instance variables of the current object
             without using dot notation.</p>
   <listing label="deck_members_AC_1">
@@ -115,12 +115,12 @@ void Deck::print () const {
             <c>Deck</c> member function that takes a <c>Card</c> as a parameter.</p>
   <p>Writing <c>find</c> as a <c>Card</c> member function is a little tricky.
             Here's my version:</p>
-  <pre>int Card::find (const Deck&amp; deck) const {
+  <program>int Card::find (const Deck&amp; deck) const {
   for (size_t i = 0; i &lt; deck.cards.size(); i++) {
     if (equals (deck.cards[i], *this)) return i;
   }
   return -1;
-}</pre>
+}</program>
   <p>The first trick is that we have to use the keyword <c>this</c> to refer to
             the <c>Card</c> the function is invoked on.</p>
   <p>The second trick is that C++ does not make it easy to write structure
@@ -129,7 +129,7 @@ void Deck::print () const {
             about the second one yet.</p>
   <p>One solution is to declare <c>Deck</c> before <c>Card</c> and then define
             <c>Deck</c> afterwards:</p>
-  <pre>// declare that Deck is a structure, without defining it
+  <program>// declare that Deck is a structure, without defining it
 struct Deck;
 
 // that way we can refer to it in the definition of Card
@@ -152,7 +152,7 @@ struct Deck {
   Deck (int n);
   void print () const;
   int find (const Card&amp; card) const;
-};</pre>
+};</program>
   <listing label="deck_members_1">
     <caption>
       <p>Multiple Response: What are some tricks we can use to write <c>find</c> as a <c>Card</c> member function?</p>

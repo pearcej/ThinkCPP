@@ -45,14 +45,14 @@
             parameters are for this function, and what the return type is. With a
             little thought, you should conclude that factorial takes an integer as a
             parameter and returns an integer:</p>
-  <pre>int factorial (int n) {
-}</pre>
+  <program>int factorial (int n) {
+}</program>
   <p>If the argument happens to be zero, all we have to do is return 1:</p>
-  <pre>int factorial (int n) {
+  <program>int factorial (int n) {
   if (n == 0) {
     return 1;
   }
-}</pre>
+}</program>
   <p>Otherwise, and this is the interesting part, we have to make a recursive
             call to find the factorial of <math>n-1</math>, and then multiply it by
             <math>n</math>.</p>
@@ -196,7 +196,7 @@ something that is <var/>.</p>
   <listing label="return_print_des_mc">
     <caption>
       <p>What gets printed by the following code?</p>
-      <pre>void print_descend(int a) {
+      <program>void print_descend(int a) {
     if(a==0) {
         return;
     }
@@ -208,7 +208,7 @@ something that is <var/>.</p>
 int main() {
     print_descend(5);
     return 0;
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice>

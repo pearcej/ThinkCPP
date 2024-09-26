@@ -8,12 +8,12 @@
             value in the vector we could find the corresponding counter and
             increment it. In other words, we can use the value from the vector as an
             index into the histogram. Here's what that looks like:</p>
-  <pre>vector&lt;int&gt; histogram (upperBound, 0);
+  <program>vector&lt;int&gt; histogram (upperBound, 0);
 
 for (int i = 0; i &lt; numValues; i++) {
   int index = vector[i];
   histogram[index]++;
-}</pre>
+}</program>
   <p>The first line initializes the elements of the histogram to zeroes. That
             way, when we use the increment operator (<c>++</c>) inside the loop, we
             know we are starting from zero. Forgetting to initialize counters is a

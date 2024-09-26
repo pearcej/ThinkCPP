@@ -20,10 +20,10 @@
   <p>Here is an outline of how this algorithm works. To sketch the program, I
             am using a combination of C++ statements and English words that is
             sometimes called <term>pseudocode</term>:</p>
-  <pre>for (size_t i = 0; i &lt; cards.size(); i++) {
+  <program>for (size_t i = 0; i &lt; cards.size(); i++) {
   // choose a random number between i and cards.size()
   // swap the ith card and the randomly-chosen card
-}</pre>
+}</program>
   <p>The nice thing about using pseudocode is that it often makes it clear
             what functions you are going to need. In this case, we need something
             like <c>randomInt</c>, which chooses a random integer between the

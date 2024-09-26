@@ -8,14 +8,14 @@
       <p>You want to spice up your resume before the career fair, so you decide to
             update your GPA using the program below. What is the GPA that you will
             have on display for future employers?</p>
-      <pre>#include &lt;iostream&gt;
+      <program>#include &lt;iostream&gt;
 using namespace std;
 
 int main() {
   double GPA = 3.52;
   int updatedGPA = int(GPA);
   cout &lt;&lt; "GPA: " &lt;&lt; updatedGPA;
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice>
@@ -77,12 +77,12 @@ int main() {
   <listing label="functions_mc2">
     <caption>
       <p>What is the value of x after the program executes?</p>
-      <pre>#include &lt;iostream&gt;
+      <program>#include &lt;iostream&gt;
 using namespace std;
 
 int main() {
   int x = acos(-1);
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice>
@@ -137,7 +137,7 @@ int main() {
     <caption>
       <p><term>Multiple Response</term> Select all variables that have a <em>non-zero</em> value after the decimal place.
             (3.1 has a <em>non-zero</em> value, while 3.0 does not)</p>
-      <pre>#include &lt;iostream&gt;
+      <program>#include &lt;iostream&gt;
 using namespace std;
 
 int main() {
@@ -147,7 +147,7 @@ int main() {
   double d = 1/5;
   int e = c * c;
   double f = int(c);
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice>
@@ -289,7 +289,7 @@ int main() {
   <listing label="functions_mc5">
     <caption>
       <p>What is printed when the following code runs?  Are there any errors?</p>
-      <pre>#include &lt;iostream&gt;
+      <program>#include &lt;iostream&gt;
 using namespace std;
 
 void giveCompliment () {
@@ -302,7 +302,7 @@ void giveInsult () {
 
 int main () {
     giveInsult ();
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice>
@@ -349,7 +349,7 @@ int main () {
             called <c>bestFriends</c> so that they announce this fact to the
             rest of their friends.  What is printed when they run the code
             below? Are there any errors?</p>
-      <pre>#include &lt;iostream&gt;
+      <program>#include &lt;iostream&gt;
 using namespace std;
 
 void bestFriends (string a, string b) {
@@ -360,7 +360,7 @@ int main () {
     string a = "Rachel";
     string b = "Monica";
     bestFriends(b, a);
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice correct="yes">
@@ -420,7 +420,7 @@ friends with " << b]]></c>, we call the function with variable <c>b</c>
   <listing label="functions_mc7">
     <caption>
       <p>What is printed when the following code runs?  Are there any errors?</p>
-      <pre>#include &lt;iostream&gt;
+      <program>#include &lt;iostream&gt;
 using namespace std;
 
 void greeting (string name) {
@@ -439,7 +439,7 @@ int main () {
     hannah = anna;
     anna = louise;
     goodbye (anna);
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice correct="yes">
@@ -510,7 +510,7 @@ int main () {
     <caption>
       <p><term>Multiple Response</term> Which of the following are legal function
             calls of <c>orderFood</c>?</p>
-      <pre>#include &lt;iostream&gt;
+      <program>#include &lt;iostream&gt;
 using namespace std;
 
 void orderFood (string food, int quantity) {
@@ -523,7 +523,7 @@ int main () {
     int c = 3;
     double d = 8.64;
     char e = 'p';
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice correct="yes">
@@ -583,7 +583,7 @@ int main () {
   <listing label="functions_mc9">
     <caption>
       <p>What is printed when the following code runs?  Are there any errors?</p>
-      <pre>#include &lt;iostream&gt;
+      <program>#include &lt;iostream&gt;
 using namespace std;
 
 void printWord (string w) {
@@ -593,7 +593,7 @@ void printWord (string w) {
 int main () {
     char a = 'a' + 5;
     printWord (a);
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice>
@@ -651,10 +651,10 @@ int main () {
   <listing label="functions_mc10">
     <caption>
       <p>How many local variables and parameters does <c>mult</c> have?</p>
-      <pre>void mult (int a, int b, int c) {
+      <program>void mult (int a, int b, int c) {
     int d = 7;
     cout &lt;&lt; a * b * c * d;
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice>
@@ -705,7 +705,7 @@ int main () {
   <listing label="functions_mc11">
     <caption>
       <p>How many calls are made to <c>party</c> during the entire program?</p>
-      <pre>#include &lt;iostream&gt;
+      <program>#include &lt;iostream&gt;
 using namespace std;
 
 void party(int day_of_month, string address) {
@@ -730,7 +730,7 @@ int main() {
     party(25, "Central campus");
     weekend(im_free);
     return 0;
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice>

@@ -10,10 +10,10 @@
                     <c>int n</c> to generate a nxn triangle. Select the Parsonsprob tab
                     for hints for the construction of the code. Call your function in main
                     with an input of 4, which should result in the following output:</p>
-          <pre>*
+          <program>*
 **
 ***
-****</pre>
+****</program>
         </caption>
         <program xml:id="cp_6_AC_2q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
@@ -39,10 +39,10 @@ int main() {
                     <c>int n</c> to generate a nxn triangle. Use the lines to construct the
                     code, then go back to complete the Activecode tab. Call your function in main
                     with an input of 4, which should result in the following output:</p>
-          <pre>*
+          <program>*
 **
 ***
-****</pre>
+****</program>
         </caption>
         <blocks>
           <block order="7">
@@ -118,11 +118,11 @@ int main() {
                     An example is shown below with <c>n</c> equal to 5. Your code should use while loops. Select the
                     Parsonsprob tab for hints for the construction of the code. (Hint: similar to the previous
                     question, if you want the output to look nice, using conditionals that print different amounts of spaces.)</p>
-          <pre>    1
+          <program>    1
    222
   33333
  4444444
-555555555</pre>
+555555555</program>
         </caption>
         <program xml:id="cp_6_AC_4q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
@@ -147,11 +147,11 @@ int main() {
                     An example is shown below with <c>n</c> equal to 5. Your code should use while loops. Use the lines to
                     construct the code, then go back to complete the Activecode tab. (Hint: similar to the previous
                     question, if you want the output to look nice, using conditionals that print different amounts of spaces.)</p>
-          <pre>    1
+          <program>    1
    222
   33333
  4444444
-555555555</pre>
+555555555</program>
         </caption>
         <blocks>
           <block order="6">
@@ -218,7 +218,7 @@ int main() {
                     and prints out a nxn addition table. Call your function in <c>main</c> with
                     <q>10</q> as the argument. Select the Parsonsprob tab for hints for the construction of the code.
                     Your output should look like this:</p>
-          <pre>0       1       2       3       4       5       6       7       8       9       10
+          <program>0       1       2       3       4       5       6       7       8       9       10
 1       2       3       4       5       6       7       8       9       10      11
 2       3       4       5       6       7       8       9       10      11      12
 3       4       5       6       7       8       9       10      11      12      13
@@ -228,7 +228,7 @@ int main() {
 7       8       9       10      11      12      13      14      15      16      17
 8       9       10      11      12      13      14      15      16      17      18
 9       10      11      12      13      14      15      16      17      18      19
-10      11      12      13      14      15      16      17      18      19      20</pre>
+10      11      12      13      14      15      16      17      18      19      20</program>
         </caption>
         <program xml:id="cp_6_AC_6q_editor" interactive="activecode" language="cpp" line-numbers="yes">
           <input><![CDATA[
@@ -253,7 +253,7 @@ int main() {
                     and prints out a nxn addition table. Call your function in <c>main</c> with
                     <q>10</q> as the argument. Use the lines to construct the code, then go back to complete
                     the Activecode tab. Your output should look like this:</p>
-          <pre>0       1       2       3       4       5       6       7       8       9       10
+          <program>0       1       2       3       4       5       6       7       8       9       10
 1       2       3       4       5       6       7       8       9       10      11
 2       3       4       5       6       7       8       9       10      11      12
 3       4       5       6       7       8       9       10      11      12      13
@@ -263,7 +263,7 @@ int main() {
 7       8       9       10      11      12      13      14      15      16      17
 8       9       10      11      12      13      14      15      16      17      18
 9       10      11      12      13      14      15      16      17      18      19
-10      11      12      13      14      15      16      17      18      19      20</pre>
+10      11      12      13      14      15      16      17      18      19      20</program>
         </caption>
         <blocks>
           <block order="1">

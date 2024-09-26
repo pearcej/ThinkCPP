@@ -22,11 +22,11 @@
             impossible for an invariant to be violated.</p>
   <p>Looking at the <c>Complex</c> class, we can list the functions that make
             assignments to one or more instance variables:</p>
-  <pre>the second constructor
+  <program>the second constructor
 calculateCartesian
 calculatePolar
 setCartesian
-setPolar</pre>
+setPolar</program>
   <p>In each case, it is straightforward to show that the function maintains
             each of the invariants I listed. We have to be a little careful, though.
             Notice that I said <q>maintain</q> the invariant. What that means is <q>If the

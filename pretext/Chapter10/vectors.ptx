@@ -15,15 +15,15 @@
             <c>vector</c>; again, the details of how to do that depend on your
             programming environment.</p>
   <p>You can create a vector the same way you create other variable types:</p>
-  <pre>vector&lt;int&gt; count;
-vector&lt;double&gt; doubleVector;</pre>
+  <program>vector&lt;int&gt; count;
+vector&lt;double&gt; doubleVector;</program>
   <p>The type that makes up the vector appears in angle brackets (<c>&lt;</c> and
             <c>&gt;</c>). The first line creates a vector of integers named <c>count</c>; the
             second creates a vector of <c>double</c>s. Although these statements are
             legal, they are not very useful because they create vectors that have no
             elements (their size is zero). It is more common to specify the size of
             the vector in parentheses:</p>
-  <pre>vector&lt;int&gt; count (4);</pre>
+  <program>vector&lt;int&gt; count (4);</program>
   <p>The syntax here is a little odd; it looks like a combination of a
             variable declarations and a function call. In fact, that's exactly what
             it is. The function we are invoking is an <c>vector</c> constructor. A
@@ -42,7 +42,7 @@ vector&lt;double&gt; doubleVector;</pre>
   <p>There is another constructor for <c>vector</c>s that takes two
             parameters; the second is a <q>fill value,</q> the value that will be
             assigned to each of the elements.</p>
-  <pre>vector&lt;int&gt; count (4, 0);</pre>
+  <program>vector&lt;int&gt; count (4, 0);</program>
   <p>This statement creates a vector of four elements and initializes all of
             them to zero.</p>
   <listing label="vectors_1">
@@ -181,7 +181,7 @@ vector&lt;double&gt; doubleVector;</pre>
   <listing label="vectors_4">
     <caption>
       <p>What are the values of <c>number</c>'s elements after this declaration?</p>
-      <pre>vector&lt;int&gt; numbers(6);</pre>
+      <program>vector&lt;int&gt; numbers(6);</program>
     </caption>
     <choices>
       <choice>

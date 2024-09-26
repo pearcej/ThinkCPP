@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="xml_data-for-chapter-15-distances">
   <title>Data for Chapter 15</title>
-  <pre>"Atlanta"   "Chicago"   700
+  <program>"Atlanta"   "Chicago"   700
 "Atlanta"   "Boston"    1,100
 "Atlanta"   "Chicago"   700
 "Atlanta"   "Dallas"    800
@@ -37,5 +37,5 @@
 "Detroit"   "Seattle"   2,300
 "Orlando"   "Phoenix"   2,100
 "Orlando"   "Seattle"   3,100
-"Phoenix"   "Seattle"   1,450</pre>
+"Phoenix"   "Seattle"   1,450</program>
 </section>

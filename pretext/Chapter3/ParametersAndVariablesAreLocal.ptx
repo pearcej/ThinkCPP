@@ -48,7 +48,7 @@ int main () {
   <listing label="locals_1">
     <caption>
       <p>How many local variables and parameters does <c>main</c> have?</p>
-      <pre>void printHelloName (string name) {
+      <program>void printHelloName (string name) {
   cout &lt;&lt; "Hello " &lt;&lt; name &lt;&lt; "!";
 }
 
@@ -58,7 +58,7 @@ int main () {
   string name2 = "Joe";
   printHelloName(name2);
   return 0;
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice>
@@ -98,7 +98,7 @@ int main () {
   <listing label="locals_2">
     <caption>
       <p>How many local variables and parameters does <c>printHelloName</c> have?</p>
-      <pre>void printHelloName (string name) {
+      <program>void printHelloName (string name) {
   cout &lt;&lt; "Hello " &lt;&lt; name &lt;&lt; "!";
 }
 
@@ -108,7 +108,7 @@ int main () {
   string name2 = "Joe";
   printHelloName(name2);
   return 0;
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice>
@@ -168,7 +168,7 @@ which contains the parameters and local variables for that function. </p>
   <listing label="locals_4">
     <caption>
       <p>How many calls to <c>hi</c> are made during the exectuion of the entire program?</p>
-      <pre>void hi() {
+      <program>void hi() {
   cout &lt;&lt; "hiii !"&lt;&lt;endl;
 }
 
@@ -183,7 +183,7 @@ int main () {
   printGreeting();
   hi();
   return 0;
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice>

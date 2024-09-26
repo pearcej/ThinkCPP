@@ -85,12 +85,12 @@ using namespace std;
     </TabNode>
     <TabNode tabname="Input File" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter15', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Input File'}">
       <p>Below are the contents of the input file.</p>
-      <pre>We choose to go to the Moon. We choose to go to the Moon...
+      <program>We choose to go to the Moon. We choose to go to the Moon...
 We choose to go to the Moon in this decade and do the other things,
 not because they are easy, but because they are hard; because that goal
 will serve to organize and measure the best of our energies and skills,
 because that challenge is one that we are willing to accept, one we are
-unwilling to postpone, and one we intend to win, and the others, too.</pre>
+unwilling to postpone, and one we intend to win, and the others, too.</program>
     </TabNode>
   </listing>
   <listing xml:id="empty-130">
@@ -296,12 +296,12 @@ using namespace std;
     </TabNode>
     <TabNode tabname="Input File" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter15', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Input File'}">
       <p>Below are the contents of the input file.</p>
-      <pre>Have you ever had a dream that you,
+      <program>Have you ever had a dream that you,
 um, you had, your, you- you could,
 you'll do, you- you wants, you, you
 could do so, you- you'll do, you could-
 you, you want, you want them to do you
-so much you could do anything?</pre>
+so much you could do anything?</program>
     </TabNode>
   </listing>
   <listing xml:id="empty-132">
@@ -395,10 +395,10 @@ using namespace std;
     </TabNode>
     <TabNode tabname="Input File" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter15', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Input File'}">
       <p>Below are the contents of the input file.</p>
-      <pre>There's pineapple shrimp, lemon shrimp, coconut shrimp,
+      <program>There's pineapple shrimp, lemon shrimp, coconut shrimp,
 pepper shrimp, shrimp soup, shrimp stew, shrimp salad,
 shrimp and potatoes, shrimp burger, shrimp sandwich.
-That- that's about it.</pre>
+That- that's about it.</program>
     </TabNode>
   </listing>
   <listing xml:id="empty-133">

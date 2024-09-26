@@ -6,9 +6,9 @@
             seen one function definition: <c>main</c>. The function named <c>main</c> is special
             because it indicates where the execution of the program begins, but the
             syntax for <c>main</c> is the same as for any other function definition:</p>
-  <pre>void NAME ( LIST OF PARAMETERS ) {
+  <program>void NAME ( LIST OF PARAMETERS ) {
   STATEMENTS
-}</pre>
+}</program>
   <p>You can make up any name you want for your function, except that you
             can't call it <c>main</c> or any other C++ keyword. The list of parameters
             specifies what information &#x2013; if any &#x2013; you have to provide in order to use,
@@ -16,9 +16,9 @@
   <p><c>main</c> doesn't take any parameters, as indicated by the empty parentheses
             () in it's definition. The first couple of functions we are going to
             write also have no parameters, so the syntax looks like this:</p>
-  <pre>void newLine () {
+  <program>void newLine () {
   cout &lt;&lt; endl;
-}</pre>
+}</program>
   <p>This function is named <c>newLine</c>; it contains only a single statement,
             which outputs a new line character, represented by the special value
             <c>endl</c>.</p>
@@ -29,26 +29,26 @@
             <term>string</term> returns a string;</p>
   <p>In <c>main</c> we can call this new function using syntax that is similar to
             the way we call the built-in C++ commands:</p>
-  <pre>int main () {
+  <program>int main () {
   cout &lt;&lt; "First Line." &lt;&lt; endl;
   newLine ();
   cout &lt;&lt; "Second Line." &lt;&lt; endl;
   return 0;
-}</pre>
+}</program>
   <p>The output of this program is</p>
-  <pre>First line.
+  <program>First line.
 
-Second line.</pre>
+Second line.</program>
   <p>Notice the extra space between the two lines. What if we wanted more
             space between the lines? We could call the same function repeatedly:</p>
-  <pre>int main () {
+  <program>int main () {
   cout &lt;&lt; "First Line." &lt;&lt; endl;
   newLine ();
   newLine ();
   newLine ();
   cout &lt;&lt; "Second Line." &lt;&lt; endl;
   return 0;
-}</pre>
+}</program>
   <p>Or we could write a new function, named <c>threeLine</c>, that prints three new
             lines:</p>
   <listing label="new_functions_AC_1">

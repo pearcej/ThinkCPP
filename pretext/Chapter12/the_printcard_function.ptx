@@ -9,21 +9,21 @@
             natural way to do that is with a vector of <c>string</c>s. You can
             create a vector of <c>string</c>s the same way you create an vector of
             other types:</p>
-  <pre>vector&lt;string&gt; suits (4);</pre>
+  <program>vector&lt;string&gt; suits (4);</program>
   <p>Of course, in order to use <c>vector</c>s and <c>string</c>s, you will
             have to include the header files for both.</p>
   <p>To initialize the elements of the vector, we can use a series of
             assignment statements.</p>
-  <pre>suits[0] = "Clubs";
+  <program>suits[0] = "Clubs";
 suits[1] = "Diamonds";
 suits[2] = "Hearts";
-suits[3] = "Spades";</pre>
+suits[3] = "Spades";</program>
   <p>A state diagram for this vector looks like this:</p>
   <p>We can build a similar vector to decode the ranks. Then we can select
             the appropriate elements using the <c>suit</c> and <c>rank</c> as indices.
             Finally, we can write a function called <c>print</c> that outputs the card
             on which it is invoked:</p>
-  <pre>void Card::print () const {
+  <program>void Card::print () const {
   vector&lt;string&gt; suits (4);
   suits[0] = "Clubs";
   suits[1] = "Diamonds";
@@ -46,15 +46,15 @@ suits[3] = "Spades";</pre>
   ranks[13] = "King";
 
   cout &lt;&lt; ranks[rank] &lt;&lt; " of " &lt;&lt; suits[suit] &lt;&lt; endl;
-}</pre>
+}</program>
   <p>The expression <c>suits[suit]</c> means <q>use the instance variable <c>suit</c>
             from the current object as an index into the vector named <c>suits</c>, and
             select the appropriate string.</q></p>
   <p>Because <c>print</c> is a <c>Card</c> member function, it can refer to the
             instance variables of the current object implicitly (without having to
             use dot notation to specify the object). The output of this code</p>
-  <pre>Card card (1, 11);
-card.print ();</pre>
+  <program>Card card (1, 11);
+card.print ();</program>
   <p>is <c>Jack of Diamonds</c>.</p>
   <listing label="12_3">
     <caption>
@@ -172,8 +172,8 @@ void Card::print () const {
     </caption>
     <setup>
       <var>
-        <pre>Card card (3, 1);
-card.print ();</pre>
+        <program>Card card (3, 1);
+card.print ();</program>
         <p>What is printed by card.print()? Type your answer exactly as it would appear in the terminal.</p>
       </var>
     </setup>

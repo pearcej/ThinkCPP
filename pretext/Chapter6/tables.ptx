@@ -55,7 +55,7 @@ int main() {
             appears by itself, I use <c>endl</c>, but if it appears as part of a
             string, I use <c>\n</c>.</p>
   <p>The output of this program is</p>
-  <pre>1      0
+  <program>1      0
 2      0.693147
 3      1.09861
 4      1.38629
@@ -63,7 +63,7 @@ int main() {
 6      1.79176
 7      1.94591
 8      2.07944
-9      2.19722</pre>
+9      2.19722</program>
   <p>If these values seem odd, remember that the <c>log</c> function uses base
             <math>e</math>. Since powers of two are so important in computer science, we
             often want to find logarithms with respect to base 2. To do that, we can
@@ -72,9 +72,9 @@ int main() {
 
 </math_block>
   <p>Changing the output statement to</p>
-  <pre>cout &lt;&lt; x &lt;&lt; "\t" &lt;&lt; log(x) / log(2.0) &lt;&lt; endl;</pre>
+  <program>cout &lt;&lt; x &lt;&lt; "\t" &lt;&lt; log(x) / log(2.0) &lt;&lt; endl;</program>
   <p>yields</p>
-  <pre>1      0
+  <program>1      0
 2      1
 3      1.58496
 4      2
@@ -82,7 +82,7 @@ int main() {
 6      2.58496
 7      2.80735
 8      3
-9      3.16993</pre>
+9      3.16993</program>
   <p>We can see that 1, 2, 4 and 8 are powers of two, because their
             logarithms base 2 are round numbers. If we wanted to find the logarithms
             of other powers of two, we could modify the program like this:</p>
@@ -110,13 +110,13 @@ int main() {
   <p>Now instead of adding something to <c>x</c> each time through the loop,
             which yields an arithmetic sequence, we multiply <c>x</c> by something,
             yielding a <term>geometric</term> sequence. The result is:</p>
-  <pre>1      0
+  <program>1      0
 2      1
 4      2
 8      3
 16     4
 32     5
-64     6</pre>
+64     6</program>
   <p>Because we are using tab characters between the columns, the position of
             the second column does not depend on the number of digits in the first
             column.</p>

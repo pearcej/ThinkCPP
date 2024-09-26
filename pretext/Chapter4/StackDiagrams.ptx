@@ -22,12 +22,12 @@
       <p>Refer to the <c>nLines</c> function below.  It is the same as the <c>nLines</c>
             function defined on the previous page.  How many instances of <c>nLines</c>
             would there be in the stack diagram if we begin with n = 4?</p>
-      <pre>void nLines(int n) {
+      <program>void nLines(int n) {
   if (n &gt; 0) {
     cout &lt;&lt; endl;
     nLines(n + 1);
   }
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice>

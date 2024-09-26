@@ -2,7 +2,7 @@
 <section xml:id="xml_quick-reference-for-ap-classes">
   <title>Quick reference for AP classes</title>
   <p>These class definitions are copied from the College Board web page,</p>
-  <pre>http://www.collegeboard.org/ap/computer-science/html/quick_ref.htm</pre>
+  <url>http://www.collegeboard.org/ap/computer-science/html/quick_ref.htm</url>
   <p>with minor formatting changes. This is probably a good time to repeat
             the following text, also from the College Board web page.</p>
   <blockquote>
@@ -20,7 +20,7 @@
     <title>
       <c>apstring</c>
     </title>
-    <pre>extern const int npos;  // used to indicate not a position in the string
+    <program>extern const int npos;  // used to indicate not a position in the string
 
 // public member functions
 
@@ -69,13 +69,13 @@
   // concatenation operator +
   apstring operator+ ( const apstring &amp; lhs, const apstring &amp; rhs );
   apstring operator+ ( char ch, const apstring &amp; str );
-  apstring operator+ ( const apstring &amp; str, char ch );</pre>
+  apstring operator+ ( const apstring &amp; str, char ch );</program>
   </subsection>
   <subsection xml:id="xml_apvector">
     <title>
       <c>apvector</c>
     </title>
-    <pre>template &lt;class itemType&gt;
+    <program>template &lt;class itemType&gt;
 class apvector
 
 // public member functions
@@ -100,13 +100,13 @@ class apvector
 
   // modifiers
   void resize(int newSize);               // change size dynamically
-                                          //can result in losing values</pre>
+                                          //can result in losing values</program>
   </subsection>
   <subsection xml:id="xml_apmatrix">
     <title>
       <c>apmatrix</c>
     </title>
-    <pre>template &lt;class itemType&gt;
+    <program>template &lt;class itemType&gt;
 class apmatrix
 
 // public member functions
@@ -133,6 +133,6 @@ class apmatrix
 
   // modifiers
   void resize(int newRows, int newCols); // resizes matrix to newRows x newCols
-                                         // (can result in losing values)</pre>
+                                         // (can result in losing values)</program>
   </subsection>
 </section>

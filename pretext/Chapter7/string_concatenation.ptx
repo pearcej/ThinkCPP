@@ -28,7 +28,7 @@ int main() {
     <p>Unfortunately, the <c>+</c> operator does not work on native C strings.</p>
   </warning>
   <p>Thus, you cannot write something like</p>
-  <pre>string dessert = "banana" + " nut bread";</pre>
+  <program>string dessert = "banana" + " nut bread";</program>
   <p>because both operands are C strings. As long as one of the operands is
             a <c>string</c>, though, C++ will automatically convert the other.</p>
   <p>It is also possible to concatenate a character onto the beginning or end
@@ -65,14 +65,14 @@ int main() {
     </program>
   </listing>
   <p>The output of this program is:</p>
-  <pre>Jack
+  <program>Jack
 Kack
 Lack
 Mack
 Nack
 Ouack
 Pack
-Quack</pre>
+Quack</program>
   <p>Again, be careful to use string concatenation only with <c>string</c>s
             and not with native C strings. Unfortunately, an expression like
             <c>letter + "ack"</c> is syntactically legal in C++, although it produces a

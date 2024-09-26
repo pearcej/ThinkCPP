@@ -10,14 +10,14 @@
             imaginary part, and <math>i</math> represents the square root of -1.</p>
   <p>The following is a class definition for a user-defined type called
             <c>Complex</c>:</p>
-  <pre>class Complex
+  <program>class Complex
 {
   double real, imag;
 
 public:
   Complex () { }
   Complex (double r, double i) { real = r;  imag = i; }
-};</pre>
+};</program>
   <p>Because this is a <c>class</c> definition, the instance variables <c>real</c>
             and <c>imag</c> are private, and we have to include the label <c>public:</c>
             to allow client code to invoke the constructors.</p>
@@ -57,7 +57,7 @@ y       &amp; = &amp;  r \sin \theta\end{aligned}</math_block>
             coordinates (like multiplication). One option is that we can write a
             class definition that uses <em>both</em> representations, and that converts
             between them automatically, as needed.</p>
-  <pre>class Complex
+  <program>class Complex
 {
   double real, imag;
   double mag, theta;
@@ -71,7 +71,7 @@ public:
     real = r;  imag = i;
     cartesian = true;  polar = false;
   }
-};</pre>
+};</program>
   <p>There are now six instance variables, which means that this
             representation will take up more space than either of the others, but we
             will see that it is very versatile.</p>

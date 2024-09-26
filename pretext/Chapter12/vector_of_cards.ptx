@@ -4,7 +4,7 @@
   <p>The reason I chose <c>Cards</c> as the objects for this chapter is that
             there is an obvious use for a vector of cards&#x2014;a deck. Here is some code
             that creates a new deck of 52 cards:</p>
-  <pre>vector&lt;Card&gt; deck (52);</pre>
+  <program>vector&lt;Card&gt; deck (52);</program>
   <p>Here is the state diagram for this object:</p>
   <figure align="center" xml:id="empty-66">
     <image source="Chapter12/Images/12.6deck_state_diagram.png" width="50%" alt="image"/>
@@ -15,8 +15,8 @@
             in the figure, but in others they could contain any possible value.</p>
   <p>One way to initialize them would be to pass a <c>Card</c> as a second
             argument to the constructor:</p>
-  <pre>Card aceOfSpades (3, 1);
-vector&lt;Card&gt; deck (52, aceOfSpades);</pre>
+  <program>Card aceOfSpades (3, 1);
+vector&lt;Card&gt; deck (52, aceOfSpades);</program>
   <p>This code builds a deck with 52 identical cards, like a special deck for
             a magic trick. Of course, it makes more sense to build a deck with 52
             different cards in it. To do that we use a nested loop.</p>
@@ -24,14 +24,14 @@ vector&lt;Card&gt; deck (52, aceOfSpades);</pre>
             inner loop enumerates the ranks, from 1 to 13. Since the outer loop
             iterates 4 times, and the inner loop iterates 13 times, the total number
             of times the body is executed is 52 (13 times 4).</p>
-  <pre>int i = 0;
+  <program>int i = 0;
 for (int suit = 0; suit &lt;= 3; suit++) {
   for (int rank = 1; rank &lt;= 13; rank++) {
     deck[i].suit = suit;
     deck[i].rank = rank;
     i++;
   }
-}</pre>
+}</program>
   <p>I used the variable <c>i</c> to keep track of where in the deck the next
             card should go.</p>
   <p>Notice that we can compose the syntax for selecting an element from an
@@ -122,7 +122,7 @@ void Card::print () const {
   <listing label="vector_of_cards_1">
     <caption>
       <p>Take a look at the code below. What can we say about the deck that is created?</p>
-      <pre>vector&lt;Card&gt; createDeck() {
+      <program>vector&lt;Card&gt; createDeck() {
    vector&lt;Card&gt; deck (16);
    int i = 0;
    for (int suit = 0; suit &lt;= 1; suit++) {
@@ -133,7 +133,7 @@ void Card::print () const {
       }
    }
    return deck;
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice correct="yes">
@@ -184,7 +184,7 @@ void Card::print () const {
     </caption>
     <setup>
       <var>
-        <pre>deck[11].print();</pre>
+        <program>deck[11].print();</program>
         <p>Type your answer exactly as it would appear in the terminal!</p>
       </var>
     </setup>

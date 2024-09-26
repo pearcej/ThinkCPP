@@ -55,7 +55,7 @@ int main () {
   <p>As I mentioned, the C++ compiler is a real stickler for syntax. If you make any errors when you
     type in the program, chances are that it will not compile successfully. For example, if you
     misspell <c>iostream</c>, you might get an error message like the following:</p>
-  <pre>hello.cpp:1: oistream.h: No such file or directory</pre>
+  <program>hello.cpp:1: oistream.h: No such file or directory</program>
   <p>There is a lot of information on this line, but it is presented in a
     dense format that is not easy to interpret. A more friendly compiler
     might say something like:</p>

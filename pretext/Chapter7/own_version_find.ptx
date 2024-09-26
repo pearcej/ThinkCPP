@@ -6,13 +6,13 @@
             function is to write a version that takes an additional parameter&#x2014;the
             index where we should start looking. Here is an implementation of this
             function.</p>
-  <pre>size_t find (string s, char c, size_t i) {
+  <program>size_t find (string s, char c, size_t i) {
   while (i &lt; s.length()) {
     if (s[i] == c) return i;
     i = i + 1;
   }
   return string::npos;
-}</pre>
+}</program>
   <p>Instead of invoking this function on an <c>string</c>, like the first
             version of <c>find</c>, we have to pass the <c>string</c> as the first
             argument. The other arguments are the character we are looking for and

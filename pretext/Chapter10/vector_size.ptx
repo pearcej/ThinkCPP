@@ -8,10 +8,10 @@
             than a constant. That way, if the size of the vector changes, you won't
             have to go through the program changing all the loops; they will work
             correctly for any size vector.</p>
-  <pre>int i;
+  <program>int i;
 for (i = 0; i &lt; count.size(); i++) {
   cout &lt;&lt; count[i] &lt;&lt; endl;
-}</pre>
+}</program>
   <note>
     <p>On some machines, comparing an <c>int</c> to the output from <c>size</c> will generate
                 a type error.  This is because the size function returns an unsigned integer type.

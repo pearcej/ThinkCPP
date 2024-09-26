@@ -9,7 +9,7 @@
   <p>Inside the function, we can refer to one of the them implicitly, but to
             access the instance variables of the other we continue to use dot
             notation.</p>
-  <pre>bool Time::after (const Time&amp; time2) const {
+  <program>bool Time::after (const Time&amp; time2) const {
   if (hour &gt; time2.hour) return true;
   if (hour &lt; time2.hour) return false;
 
@@ -18,11 +18,11 @@
 
   if (second &gt; time2.second) return true;
   return false;
-}</pre>
+}</program>
   <p>To invoke this function:</p>
-  <pre>if (doneTime.after (currentTime)) {
+  <program>if (doneTime.after (currentTime)) {
   cout &lt;&lt; "The bread will be done after it starts." &lt;&lt; endl;
-}</pre>
+}</program>
   <p>You can almost read the invocation like English: <q>If the done-time is
             after the current-time, then&#x2026;</q></p>
   <listing label="more_complicated_example_AC_1">

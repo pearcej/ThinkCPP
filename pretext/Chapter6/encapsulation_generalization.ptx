@@ -11,31 +11,31 @@
             integer.</p>
   <p>Here's a function that encapsulates the loop from the previous section
             and generalizes it to print multiples of <c>n</c>.</p>
-  <pre>void printMultiples (int n) {
+  <program>void printMultiples (int n) {
   int i = 1;
   while (i &lt;= 6) {
     cout &lt;&lt; n * i &lt;&lt; "   ";
     i = i + 1;
   }
   cout &lt;&lt; endl;
-}</pre>
+}</program>
   <p>To encapsulate, all I had to do was add the first line, which declares
             the name, parameter, and return type. To generalize, all I had to do was
             replace the value 2 with the parameter <c>n</c>.</p>
   <p>If we call this function with the argument 2, we get the same output as
             before. With argument 3, the output is:</p>
-  <pre>3   6   9   12   15   18</pre>
+  <program>3   6   9   12   15   18</program>
   <p>and with argument 4, the output is</p>
-  <pre>4   8   12   16   20   24</pre>
+  <program>4   8   12   16   20   24</program>
   <p>By now you can probably guess how we are going to print a multiplication
             table: we'll call <c>printMultiples</c> repeatedly with different
             arguments. In fact, we are going to use another loop to iterate through
             the rows.</p>
-  <pre>int i = 1;
+  <program>int i = 1;
 while (i &lt;= 6) {
   printMultiples (i);
   i = i + 1;
-}</pre>
+}</program>
   <p>First of all, notice how similar this loop is to the one inside
             <c>printMultiples</c>. All I did was replace the print statement with a
             function call.</p>
@@ -68,12 +68,12 @@ int main() {
     </program>
   </listing>
   <p>The output of this program is</p>
-  <pre>1   2   3   4   5   6
+  <program>1   2   3   4   5   6
 2   4   6   8   10   12
 3   6   9   12   15   18
 4   8   12   16   20   24
 5   10   15   20   25   30
-6   12   18   24   30   36</pre>
+6   12   18   24   30   36</program>
   <p>which is a (slightly sloppy) multiplication table. If the sloppiness
             bothers you, you can also use tab characters, like below.</p>
   <listing label="encapsulation_generalization_AC_2">

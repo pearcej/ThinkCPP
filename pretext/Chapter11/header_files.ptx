@@ -13,7 +13,7 @@
             with the suffix <c>.h</c> instead of <c>.cpp</c>. For the example we have been
             looking at, the header file is called <c>Time.h</c>, and it contains the
             following:</p>
-  <pre>struct Time {
+  <program>struct Time {
   // instance variables
   int hour, minute;
   double second;
@@ -30,13 +30,13 @@
   bool after (const Time&amp; time2) const;
   Time add (const Time&amp; t2) const;
   double convertToSeconds () const;
-};</pre>
+};</program>
   <p>Notice that in the structure definition I don't include the prefix <c>Time::</c>
             at the beginning of every function name. The compiler knows that we are declaring
             functions that are members of the <c>Time</c> structure.</p>
   <p><c>Time.cpp</c> contains the definitions of the member functions (I have
             elided the function bodies to save space):</p>
-  <pre>#include &lt;iostream&gt;
+  <program>#include &lt;iostream&gt;
 using namespace std;
 #include "Time.h"
 
@@ -52,7 +52,7 @@ bool Time::after (const Time&amp; time2) const ...
 
 Time Time::add (const Time&amp; t2) const ...
 
-double Time::convertToSeconds () const ...</pre>
+double Time::convertToSeconds () const ...</program>
   <p>In this case the definitions in <c>Time.cpp</c> appear in the same order as
             the declarations in <c>Time.h</c>, although it is not necessary.</p>
   <p>On the other hand, it is necessary to include the header file using an
@@ -66,7 +66,7 @@ double Time::convertToSeconds () const ...</pre>
   <p>Finally, <c>main.cpp</c> contains the function <c>main</c> along with any
             functions we want that are not members of the <c>Time</c> structure (in
             this case there are none):</p>
-  <pre>#include &lt;iostream&gt;
+  <program>#include &lt;iostream&gt;
 using namespace std;
 #include "Time.h"
 
@@ -83,7 +83,7 @@ int main () {
     cout &lt;&lt; "The bread will be done after it starts." &lt;&lt; endl;
   }
   return 0;
-}</pre>
+}</program>
   <p>Again, <c>main.cpp</c> has to include the header file.</p>
   <p>It may not be obvious why it is useful to break such a small program
             into three pieces. In fact, most of the advantages come when we are
@@ -116,8 +116,8 @@ int main () {
             advantage to splitting up programs. But it is good for you to know about
             this feature, especially since it explains one of the statements that
             appeared in the first program we wrote:</p>
-  <pre>#include &lt;iostream&gt;
-using namespace std;</pre>
+  <program>#include &lt;iostream&gt;
+using namespace std;</program>
   <p><c>iostream</c> is the header file that contains declarations for <c>cin</c>
             and <c>cout</c> and the functions that operate on them. When you compile
             your program, you need the information in that header file.</p>

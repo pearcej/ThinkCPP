@@ -11,9 +11,9 @@
   <p>A natural way to represent a point in C++ is with two <c>double</c>s. The
             question, then, is how to group these two values into a compound object,
             or structure. The answer is a <c>struct</c> definition:</p>
-  <pre>struct Point {
+  <program>struct Point {
   double x, y;
-};</pre>
+};</program>
   <p><c>struct</c> definitions appear outside of any function definition,
             usually at the beginning of the program (after the <c>include</c>
             statements).</p>
@@ -27,9 +27,9 @@
   </warning>
   <p>Once you have defined the new structure, you can create variables with
             that type:</p>
-  <pre>Point blank;
+  <program>Point blank;
 blank.x = 3.0;
-blank.y = 4.0;</pre>
+blank.y = 4.0;</program>
   <p>The first line is a conventional variable declaration: <c>blank</c> has
             type <c>Point</c>. The next two lines initialize the instance variables of
             the structure. The <q>dot notation</q> used here is similar to the syntax for

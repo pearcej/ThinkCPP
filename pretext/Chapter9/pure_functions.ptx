@@ -47,13 +47,13 @@ int main () {
             35 minutes, you could use <c>addTime</c> to figure out when the bread will
             be done.</p>
   <p>Here is a rough draft of this function that is not quite right:</p>
-  <pre>Time addTime (Time&amp; t1, Time&amp; t2) {
+  <program>Time addTime (Time&amp; t1, Time&amp; t2) {
   Time sum;
   sum.hour = t1.hour + t2.hour;
   sum.minute = t1.minute + t2.minute;
   sum.second = t1.second + t2.second;
   return sum;
-}</pre>
+}</program>
   <listing label="pure_function_AC_2">
     <caption>
       <p>Take a look at the active code below. If <c>currentTime</c>

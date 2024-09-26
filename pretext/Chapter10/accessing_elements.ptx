@@ -6,10 +6,10 @@
             <term>vector indexing</term>. As with <c>string</c>s, the indices start at zero, so <c>count[0]</c>
             refers to the <q>zeroeth</q> element of the vector, and <c>count[1]</c> refers to the
             <q>oneth</q> element. You can use the <c>[]</c> operator anywhere in an expression:</p>
-  <pre>count[0] = 7;
+  <program>count[0] = 7;
 count[1] = count[0] * 2;
 count[2]++;
-count[3] -= 60;</pre>
+count[3] -= 60;</program>
   <p>All of these are legal assignment statements. Here is the effect of this
             code fragment:</p>
   <figure align="center" xml:id="empty-2">
@@ -24,11 +24,11 @@ count[3] -= 60;</pre>
   <p>You can use any expression as an <term>index</term>, as long as it has type <c>int</c>.
             One of the most common ways to index a vector is with a loop variable.
             For example:</p>
-  <pre>int i = 0;
+  <program>int i = 0;
 while (i &lt; 4) {
   cout &lt;&lt; count[i] &lt;&lt; endl;
   i++;
-}</pre>
+}</program>
   <p>This <c>while</c> loop counts from 0 to 4; when the loop variable <c>i</c> is
             4, the condition fails and the loop terminates. Thus, the body of the
             loop is only executed when <c>i</c> is 0, 1, 2 and 3.</p>

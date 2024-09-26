@@ -3,7 +3,7 @@
   <title>Definitions and Uses</title>
   <p>Pulling together all the code fragments from the previous section, the
             whole program looks like this:</p>
-  <pre>#include &lt;iostream&gt;
+  <program>#include &lt;iostream&gt;
 using namespace std;
 
 void newLine () {
@@ -19,7 +19,7 @@ int main () {
   threeLine ();
   cout &lt;&lt; "Second Line." &lt;&lt; endl;
   return 0;
-}</pre>
+}</program>
   <p>This program contains three function definitions: <c>newLine</c>, <c>threeLine</c>,
             and <c>main</c>.</p>
   <p>Inside the definition of <c>main</c>, there is a statement that uses or calls

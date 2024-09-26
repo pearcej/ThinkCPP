@@ -6,7 +6,7 @@
   <p>As an example of a modifier, consider <c>increment</c>, which adds a given
             number of seconds to a <c>Time</c> object. Again, a rough draft of this
             function looks like:</p>
-  <pre>void increment (Time&amp; time, double secs) {
+  <program>void increment (Time&amp; time, double secs) {
   time.second += secs;
 
   if (time.second &gt;= 60.0) {
@@ -17,7 +17,7 @@
     time.minute -= 60;
     time.hour += 1;
   }
-}</pre>
+}</program>
   <p>The first line performs the basic operation; the remainder deals with
             the special cases we saw before.</p>
   <p>Is this function correct? What happens if the argument <c>secs</c> is much

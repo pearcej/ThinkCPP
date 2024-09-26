@@ -41,16 +41,16 @@ int main () {
     </program>
   </listing>
   <p>On my machine I got the following output:</p>
-  <pre>1804289383
+  <program>1804289383
 846930886
 1681692777
-1714636915</pre>
+1714636915</program>
   <p>You will probably get something similar, but different, on yours.</p>
   <p>Of course, we don't always want to work with gigantic integers. More
             often we want to generate integers between 0 and some upper bound. A
             simple way to do that is with the modulus operator. For example:</p>
-  <pre>int x = random ();
-int y = x % upperBound;</pre>
+  <program>int x = random ();
+int y = x % upperBound;</program>
   <p>Since <c>y</c> is the remainder when <c>x</c> is divided by <c>upperBound</c>,
             the only possible values for <c>y</c> are between 0 and <c>upperBound - 1</c>,
             including both end points.</p>
@@ -81,8 +81,8 @@ int main () {
   </listing>
   <p>It is also frequently useful to generate random floating-point values. A
             common way to do that is by dividing by <c>RAND_MAX</c>. For example:</p>
-  <pre>int x = random ();
-double y = double(x) / RAND_MAX;</pre>
+  <program>int x = random ();
+double y = double(x) / RAND_MAX;</program>
   <p>This code sets <c>y</c> to a random value between 0.0 and 1.0, including
             both end points. As an exercise, you might want to think about how to
             generate a random floating-point value in a given range; for example,

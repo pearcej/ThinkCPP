@@ -6,7 +6,7 @@
             creating a new object every time <c>addTime</c> is called, we could require
             the caller to provide an <q>empty</q> object where <c>addTime</c> can store the
             result. Compare the following with the previous version:</p>
-  <pre>void addTimeFill (const Time&amp; t1, const Time&amp; t2, Time&amp; sum) {
+  <program>void addTimeFill (const Time&amp; t1, const Time&amp; t2, Time&amp; sum) {
   sum.hour = t1.hour + t2.hour;
   sum.minute = t1.minute + t2.minute;
   sum.second = t1.second + t2.second;
@@ -19,7 +19,7 @@
     sum.minute -= 60;
     sum.hour += 1;
   }
-}</pre>
+}</program>
   <p>One advantage of this approach is that the caller has the option of
             reusing the same object repeatedly to perform a series of additions.
             This can be slightly more efficient, although it can be confusing enough

@@ -4,22 +4,22 @@
   <p>As another example of generalization, imagine you wanted a program that
             would print a multiplication table of any size, not just the 6x6 table.
             You could add a parameter to <c>printMultTable</c>:</p>
-  <pre>void printMultTable (int high) {
+  <program>void printMultTable (int high) {
   int i = 1;
   while (i &lt;= high) {
     printMultiples (i);
     i = i + 1;
   }
-}</pre>
+}</program>
   <p>I replaced the value 6 with the parameter <c>high</c>. If I call
             <c>printMultTable</c> with the argument 7, I get</p>
-  <pre>1   2   3   4   5   6
+  <program>1   2   3   4   5   6
 2   4   6   8   10   12
 3   6   9   12   15   18
 4   8   12   16   20   24
 5   10   15   20   25   30
 6   12   18   24   30   36
-7   14   21   28   35   42</pre>
+7   14   21   28   35   42</program>
   <p>which is fine, except that I probably want the table to be square (same
             number of rows and columns), which means I have to add another parameter
             to <c>printMultiples</c>, to specify how many columns the table should
@@ -27,7 +27,7 @@
   <p>Just to be annoying, I will also call this parameter <c>high</c>,
             demonstrating that different functions can have parameters with the same
             name (just like local variables):</p>
-  <pre>void printMultiples (int n, int high) {
+  <program>void printMultiples (int n, int high) {
   int i = 1;
   while (i &lt;= high) {
     cout &lt;&lt; n * i &lt;&lt; "   ";
@@ -42,18 +42,18 @@ void printMultTable (int high) {
     printMultiples (i, high);
     i = i + 1;
   }
-}</pre>
+}</program>
   <p>Notice that when I added a new parameter, I had to change the first line
             of the function (the interface or prototype), and I also had to change
             the place where the function is called in <c>printMultTable</c>. As
             expected, this program generates a square 7x7 table:</p>
-  <pre>1   2   3   4   5   6   7
+  <program>1   2   3   4   5   6   7
 2   4   6   8   10   12   14
 3   6   9   12   15   18   21
 4   8   12   16   20   24   28
 5   10   15   20   25   30   35
 6   12   18   24   30   36   42
-7   14   21   28   35   42   49</pre>
+7   14   21   28   35   42   49</program>
   <listing label="more_generalization_AC_1">
     <caption>
       <p>The active code below uses the updated <c>printMultTable</c> function.
@@ -95,17 +95,17 @@ int main() {
             <math>ab = ba</math>, so all the entries in the table appear twice. You could
             save ink by printing only half the table. To do that, you only have to
             change one line of <c>printMultTable</c>. Change</p>
-  <pre>printMultiples (i, high);</pre>
+  <program>printMultiples (i, high);</program>
   <p>to</p>
-  <pre>printMultiples (i, i);</pre>
+  <program>printMultiples (i, i);</program>
   <p>and you get</p>
-  <pre>1
+  <program>1
 2   4
 3   6   9
 4   8   12   16
 5   10   15   20   25
 6   12   18   24   30   36
-7   14   21   28   35   42   49</pre>
+7   14   21   28   35   42   49</program>
   <p>I'll leave it up to you to figure out how it works.</p>
   <listing label="more_generalization_AC_2">
     <caption>

@@ -114,7 +114,7 @@
             they are not part of the C++ program. They are part of the program
             design, but they never appear explicitly in the code. The class
             definition for the <c>Card</c> type looks like this:</p>
-  <pre>struct Card {
+  <program>struct Card {
   int suit, rank;
 
   Card ();
@@ -127,7 +127,7 @@ Card::Card () {
 
 Card::Card (int s, int r) {
   suit = s;  rank = r;
-}</pre>
+}</program>
   <p>There are two constructors for <c>Card</c>s. You can tell that they are
             constructors because they have no return type and their name is the same
             as the name of the structure. The first constructor takes no arguments
@@ -137,7 +137,7 @@ Card::Card (int s, int r) {
             and rank of the card.</p>
   <p>The following code creates an object named <c>threeOfClubs</c> that
             represents the 3 of Clubs:</p>
-  <pre>Card threeOfClubs (0, 3);</pre>
+  <program>Card threeOfClubs (0, 3);</program>
   <p>The first argument, <c>0</c> represents the suit Clubs, the second,
             naturally, represents the rank 3.</p>
   <listing label="card_objects_1">

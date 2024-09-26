@@ -9,7 +9,7 @@
             these functions, we could declare them <c>private</c> the same way we do
             with instance variables. In that case the complete class definition for
             <c>Complex</c> would look like:</p>
-  <pre>class Complex
+  <program>class Complex
 {
 private:
   double real, imag;
@@ -38,7 +38,7 @@ public:
 
   void setCartesian (double r, double i);
   void setPolar (double m, double t);
-};</pre>
+};</program>
   <p>The <c>private</c> label at the beginning is not necessary, but it is a
             useful reminder.</p>
   <listing label="fourteeneleven">

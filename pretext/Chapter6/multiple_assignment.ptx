@@ -70,9 +70,9 @@ int main () {
             time. If <math>a = b</math> now, then <math>a</math> will always equal <math>b</math>.
             In C++, an assignment statement can make two variables equal, but they
             don't have to stay that way!</p>
-  <pre>int a = 5;
+  <program>int a = 5;
 int b = a;     // a and b are now equal
-a = 3;         // a and b are no longer equal</pre>
+a = 3;         // a and b are no longer equal</program>
   <p>The third line changes the value of <c>a</c> but it does not change the
             value of <c>b</c>, and so they are no longer equal. In many programming
             languages an alternate symbol is used for assignment, such as <c>&lt;-</c> or

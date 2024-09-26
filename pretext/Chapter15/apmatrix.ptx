@@ -10,10 +10,10 @@
   <p>Each element in the matrix is indentified by two indices; one specifies
             the row number, the other the column number.</p>
   <p>To create a matrix, there are four constructors:</p>
-  <pre>matrix&lt;char&gt; m1;
+  <program>matrix&lt;char&gt; m1;
 matrix&lt;int&gt; m2 (3, 4);
 matrix&lt;double&gt; m3 (rows, cols, 0.0);
-matrix&lt;double&gt; m4 (m3);</pre>
+matrix&lt;double&gt; m4 (m3);</program>
   <p>The first is a do-nothing constructor that makes a matrix with both
             dimensions 0. The second takes two integers, which are the initial
             number of rows and columns, in that order. The third is the same as the
@@ -24,8 +24,8 @@ matrix&lt;double&gt; m4 (m3);</pre>
             of elements (including <c>vector</c>s, and even <c>matrix</c>es).</p>
   <p>To access the elements of a matrix, we use the <c>[]</c> operator to
             specify the row and column:</p>
-  <pre>m2[0][0] = 1;
-m3[1][2] = 10.0 * m2[0][0];</pre>
+  <program>m2[0][0] = 1;
+m3[1][2] = 10.0 * m2[0][0];</program>
   <p>If we try to access an element that is out of range, the program prints
             an error message and quits.</p>
   <p>The <c>numrows</c> and <c>numcols</c> functions get the number of rows and
@@ -33,19 +33,19 @@ m3[1][2] = 10.0 * m2[0][0];</pre>
             and the column indices run from 0 to <c>numcols() -1</c>.</p>
   <p>The usual way to traverse a matrix is with a nested loop. This loop sets
             each element of the matrix to the sum of its two indices:</p>
-  <pre>for (int row=0; row &lt; m2.numrows(); row++) {
+  <program>for (int row=0; row &lt; m2.numrows(); row++) {
   for (int col=0; col &lt; m2.numcols(); col++) {
     m2[row][col] = row + col;
   }
-}</pre>
+}</program>
   <p>This loop prints each row of the matrix with tabs between the elements
             and newlines between the rows:</p>
-  <pre>for (int row=0; row &lt; m2.numrows(); row++) {
+  <program>for (int row=0; row &lt; m2.numrows(); row++) {
   for (int col=0; col &lt; m2.numcols(); col++) {
     cout &lt;&lt; m2[row][col] &lt;&lt; "\t";
   }
   cout &lt;&lt; endl;
-}</pre>
+}</program>
   <listing label="question15_8_1">
     <caption>
       <p>Which of the following data types are supported by matrix?</p>

@@ -6,9 +6,9 @@
   <listing label="cond_rec_mc1">
     <caption>
       <p>Say you run the following code.  What is the value of <c>mod</c>?</p>
-      <pre>int x = 4;
+      <program>int x = 4;
 int y = 7;
-int mod = y % x;</pre>
+int mod = y % x;</program>
     </caption>
     <choices>
       <choice>
@@ -56,7 +56,7 @@ int mod = y % x;</pre>
   <listing label="cond_rec_mc2">
     <caption>
       <p>What is printed when the following code executes?</p>
-      <pre>int x = 8;
+      <program>int x = 8;
 
 if (x % 3 == 2) {
     cout &lt;&lt; "hey!" &lt;&lt; endl;
@@ -69,12 +69,12 @@ else if (x % 2 == 0) {
 }
 else {
     cout &lt;&lt; "bye!" &lt;&lt; endl;
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice correct="yes">
         <statement id="cond_rec_mc2_opt_a">
-          <pre>hey!</pre>
+          <program>hey!</program>
         </caption>
         <feedback id="cond_rec_mc2_opt_a">
           <p>Since the first conditon is met, the rest of the chained
@@ -83,7 +83,7 @@ else {
       </choice>
       <choice>
         <statement id="cond_rec_mc2_opt_b">
-          <pre>hi!</pre>
+          <program>hi!</program>
         </caption>
         <feedback id="cond_rec_mc2_opt_b">
           <p>It's true that <c>8 != 7</c>, but <q>hi!</q> is not printed here.</p>
@@ -91,7 +91,7 @@ else {
       </choice>
       <choice>
         <statement id="cond_rec_mc2_opt_c">
-          <pre>hi!</pre>
+          <program>hi!</program>
         </caption>
         <feedback id="cond_rec_mc2_opt_c">
           <p>It's true that <c>8 % 2 == 0</c>, but <q>hello!</q> is not printed!</p>
@@ -99,9 +99,9 @@ else {
       </choice>
       <choice>
         <statement id="cond_rec_mc2_opt_d">
-          <pre>hey!
+          <program>hey!
 hi!
-hello!</pre>
+hello!</program>
         </caption>
         <feedback id="cond_rec_mc2_opt_d">
           <p>All of these conditons are met, but only one expression is
@@ -110,7 +110,7 @@ hello!</pre>
       </choice>
       <choice>
         <statement id="cond_rec_mc2_opt_e">
-          <pre>bye!</pre>
+          <program>bye!</program>
         </caption>
         <feedback id="cond_rec_mc2_opt_e">
           <p>At least one of the conditons is met, so the <c>else</c> will not
@@ -122,7 +122,7 @@ hello!</pre>
   <listing label="cond_rec_mc3">
     <caption>
       <p>What is printed when the following code executes?</p>
-      <pre>int x = 34;
+      <program>int x = 34;
 
 if (32 &lt; x) {
     cout &lt;&lt; "It's Freezing!";
@@ -135,12 +135,12 @@ if (x &gt; 65) {
 }
 else {
     cout &lt;&lt; "It's Hot!";
-}</pre>
+}</program>
     </caption>
     <choices>
       <choice>
         <statement id="cond_rec_mc3_opt_a">
-          <pre>It's Freezing!</pre>
+          <program>It's Freezing!</program>
         </caption>
         <feedback id="cond_rec_mc3_opt_a">
           <p>Take a closer look at the conditions and the way they
@@ -149,7 +149,7 @@ else {
       </choice>
       <choice>
         <statement id="cond_rec_mc3_opt_b">
-          <pre>It's Cold!</pre>
+          <program>It's Cold!</program>
         </caption>
         <feedback id="cond_rec_mc3_opt_b">
           <p>Take a closer look at the conditions and the way they
@@ -158,8 +158,8 @@ else {
       </choice>
       <choice>
         <statement id="cond_rec_mc3_opt_c">
-          <pre>It's Freezing!
-It's Cold!</pre>
+          <program>It's Freezing!
+It's Cold!</program>
         </caption>
         <feedback id="cond_rec_mc3_opt_c">
           <p>You've identified some of the conditons that are met!
@@ -169,9 +169,9 @@ It's Cold!</pre>
       </choice>
       <choice correct="yes">
         <statement id="cond_rec_mc3_opt_d">
-          <pre>It's Freezing!
+          <program>It's Freezing!
 It's Cold!
-It's Hot!</pre>
+It's Hot!</program>
         </caption>
         <feedback id="cond_rec_mc3_opt_d">
           <p>These statements are quite contradicting, but that's exactly
@@ -180,7 +180,7 @@ It's Hot!</pre>
       </choice>
       <choice>
         <statement id="cond_rec_mc3_opt_e">
-          <pre>It's Hot!</pre>
+          <program>It's Hot!</program>
         </caption>
         <feedback id="cond_rec_mc3_opt_e">
           <p>Take a closer look at the conditions and the way they
@@ -192,7 +192,7 @@ It's Hot!</pre>
   <listing label="cond_rec_mc4">
     <caption>
       <p>Suppose you have defined the following function:</p>
-      <pre>void practicingReturns (int a, int b) {
+      <program>void practicingReturns (int a, int b) {
     if (a &lt; b) {
         a += 2;
     }
@@ -200,9 +200,9 @@ It's Hot!</pre>
         return;
     }
     cout &lt;&lt; a + b;
-}</pre>
+}</program>
       <p>What is printed when we run the following code?</p>
-      <pre>int x = practicingReturns(2, 3);</pre>
+      <program>int x = practicingReturns(2, 3);</program>
     </caption>
     <choices>
       <choice>
@@ -243,7 +243,7 @@ It's Hot!</pre>
   <listing label="cond_rec_mc5">
     <caption>
       <p>Suppose you have defined the following function:</p>
-      <pre>void fortuneCookie (int a, bool b, char c) {
+      <program>void fortuneCookie (int a, bool b, char c) {
     if (c &lt; 'm') {
         if (a % 2 == 0) {
             cout &lt;&lt; "An alien of some sort will be appearing to you shortly.";
@@ -263,9 +263,9 @@ It's Hot!</pre>
     else {
         cout &lt;&lt; "Fortune not found? Abort, retry, ignore.";
     }
-}</pre>
+}</program>
       <p>What will be your fortune if you run the following code?</p>
-      <pre>fortuneCookie(14, false, 'm'');</pre>
+      <program>fortuneCookie(14, false, 'm'');</program>
     </caption>
     <choices>
       <choice>
@@ -323,7 +323,7 @@ It's Hot!</pre>
   <listing label="cond_rec_mc6">
     <caption>
       <p>Suppose you have defined the following function:</p>
-      <pre>void fortuneCookie (int a, bool b, char c) {
+      <program>void fortuneCookie (int a, bool b, char c) {
     if (c &lt; 'm') {
         if (a % 2 == 0) {
             cout &lt;&lt; "An alien of some sort will be appearing to you shortly.";
@@ -343,9 +343,9 @@ It's Hot!</pre>
     else {
         cout &lt;&lt; "Fortune not found? Abort, retry, ignore.";
     }
-}</pre>
+}</program>
       <p>What will be your fortune if you run the following code?</p>
-      <pre>fortuneCookie(22, true, 'b');</pre>
+      <program>fortuneCookie(22, true, 'b');</program>
     </caption>
     <choices>
       <choice correct="yes">
@@ -403,7 +403,7 @@ It's Hot!</pre>
   <listing label="cond_rec_mc7">
     <caption>
       <p>Suppose you have defined the following function:</p>
-      <pre>void theThing (int m, int n, bool b) {
+      <program>void theThing (int m, int n, bool b) {
     if (b) {
         if (m % 4 == 0) {
             cout &lt;&lt; m;
@@ -425,9 +425,9 @@ It's Hot!</pre>
         }
     }
     cout &lt;&lt; -1;
-}</pre>
+}</program>
       <p>What is printed when we run the following code?</p>
-      <pre>theThing (5, 10, false);</pre>
+      <program>theThing (5, 10, false);</program>
     </caption>
     <choices>
       <choice>
@@ -475,7 +475,7 @@ It's Hot!</pre>
   <listing label="cond_rec_mc8">
     <caption>
       <p>Suppose you have defined the following function:</p>
-      <pre>void theThing (int m, int n, bool b) {
+      <program>void theThing (int m, int n, bool b) {
     if (b) {
         if (m % 4 == 0) {
             cout &lt;&lt; m;
@@ -497,9 +497,9 @@ It's Hot!</pre>
         }
     }
     cout &lt;&lt; -1;
-}</pre>
+}</program>
       <p>What is printed when we run the following code?</p>
-      <pre>theThing (6, 4, true);</pre>
+      <program>theThing (6, 4, true);</program>
     </caption>
     <choices>
       <choice>
@@ -547,7 +547,7 @@ It's Hot!</pre>
   <listing label="cond_rec_mc9">
     <caption>
       <p>Suppose you have defined the following function:</p>
-      <pre>void moo (int m, int n) {
+      <program>void moo (int m, int n) {
     if (m != n) {
         m += 2;
         cout &lt;&lt; "Moo!";
@@ -556,9 +556,9 @@ It's Hot!</pre>
     else {
         cout &lt;&lt; "Got Milk?";
     }
-}</pre>
+}</program>
       <p>How many times does <q>Moo!</q> print when we run the following?</p>
-      <pre>moo (4, 8);</pre>
+      <program>moo (4, 8);</program>
     </caption>
     <choices>
       <choice>
@@ -609,7 +609,7 @@ It's Hot!</pre>
   <listing label="cond_rec_mc10">
     <caption>
       <p>Suppose you have defined the following function:</p>
-      <pre>void moo (int m, int n) {
+      <program>void moo (int m, int n) {
     if (m != n) {
         m += 2;
         cout &lt;&lt; "Moo!";
@@ -618,9 +618,9 @@ It's Hot!</pre>
     else {
         cout &lt;&lt; "Got Milk?";
     }
-}</pre>
+}</program>
       <p>How many times does <q>Moo!</q> print when we run the following?</p>
-      <pre>moo (5, 10);</pre>
+      <program>moo (5, 10);</program>
     </caption>
     <choices>
       <choice>

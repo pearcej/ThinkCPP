@@ -5,17 +5,17 @@
   </title>
   <p>In <number_reference internal="True" refuri="../Chapter9/time#time" title="Section %s"><inline classes="std std-numref">Section 9.1</inline></number_reference> we defined a structure named <c>Time</c> and
             wrote a function named <c>printTime</c></p>
-  <pre>struct Time {
+  <program>struct Time {
   int hour, minute;
   double second;
 };
 
 void printTime (const Time&amp; time) {
   cout &lt;&lt; time.hour &lt;&lt; ":" &lt;&lt; time.minute &lt;&lt; ":" &lt;&lt; time.second &lt;&lt; endl;
-}</pre>
+}</program>
   <p>To call this function, we had to pass a <c>Time</c> object as a parameter.</p>
-  <pre>Time currentTime = { 9, 14, 30.0 };
-printTime (currentTime);</pre>
+  <program>Time currentTime = { 9, 14, 30.0 };
+printTime (currentTime);</program>
   <p>To make <c>printTime</c> into a member function, the first step is to
             change the name of the function from <c>printTime</c> to <c>Time::print</c>.
             The <c>::</c> operator separates the name of the structure from the name of
@@ -34,25 +34,25 @@ printTime (currentTime);</pre>
             now is the <c>*</c> operator, which converts a structure pointer into a
             structure. In the following function, we use it to assign the value of
             <c>this</c> to a local variable named <c>time</c>.</p>
-  <pre>void Time::print () {
+  <program>void Time::print () {
   Time time = *this;
   cout &lt;&lt; time.hour &lt;&lt; ":" &lt;&lt; time.minute &lt;&lt; ":" &lt;&lt; time.second &lt;&lt; endl;
-}</pre>
+}</program>
   <p>The first two lines of this function changed quite a bit as we
             transformed it into a member function, but notice that the output
             statement itself did not change at all.</p>
   <p>In order to invoke the new version of <c>print</c>, we have to invoke it on
             a <c>Time</c> object:</p>
-  <pre>Time currentTime = { 9, 14, 30.0 };
-currentTime.print ();</pre>
+  <program>Time currentTime = { 9, 14, 30.0 };
+currentTime.print ();</program>
   <p>The last step of the transformation process is that we have to declare
             the new function inside the structure definition:</p>
-  <pre>struct Time {
+  <program>struct Time {
   int hour, minute;
   double second;
 
   void print ();
-};</pre>
+};</program>
   <note>
     <p>You should only use the scope resolution operator <c>::</c> if you define a
                 member function outside of its structure definition.  If you define a function
