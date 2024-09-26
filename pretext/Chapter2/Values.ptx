@@ -1,29 +1,26 @@
 <?xml version="1.0"?>
 <section xml:id="chapter2_values">
   <title>Values</title>
-  <p>A <term>value</term> is one of the fundamental things&#x2014;like a letter or a number&#x2014;that
-            a program manipulates. The only values we have manipulated so far are
-            the string values we have been outputting, like <q>Hello, world.</q>. You
-            (and the compiler) can identify <c>string</c> values because they are enclosed
-            in quotation marks.</p>
-  <p>There many different kinds of values, called <term>types</term>.  This includes integers and characters. An
-            <term>integer</term> is a whole number like 1 or 17. You can output integer values
-            the same way you output strings:</p>
-  <pre>cout &lt;&lt; 17 &lt;&lt; endl;</pre>
-  <p>A <term>character</term> value is a letter or digit or punctuation mark enclosed in
-            single quotes, like 'a' or '5'. You can output character values the same
-            way:</p>
-  <pre>cout &lt;&lt; '}' &lt;&lt; endl;</pre>
+  <p>A <term>value</term> is one of the fundamental things&#x2014;like a letter or a
+    number&#x2014;that a program manipulates. The only values we have manipulated so far are the
+    string values we have been outputting, like <q>Hello, world.</q>. You (and the compiler) can
+    identify <c>string</c> values because they are enclosed in quotation marks.</p>
+  <p>There many different kinds of values, called <term>types</term>. This includes integers and
+    characters. An <term>integer</term> is a whole number like 1 or 17. You can output integer
+    values the same way you output strings:</p>
+  <program language="cpp">cout &lt;&lt; 17 &lt;&lt; endl;</program>
+  <p>A <term>character</term> value is a letter or digit or punctuation mark enclosed in single
+    quotes, like 'a' or '5'. You can output character values the same way:</p>
+  <program language="cpp">cout &lt;&lt; '}' &lt;&lt; endl;</program>
   <p>This example outputs a single close squiggly-brace on a line by itself.</p>
-  <p>It is easy to confuse different types of values, like <q>5</q>, '5' and 5,
-            but if you pay attention to the punctuation, it should be clear that the
-            first is a string, the second is a character and the third is an
-            integer. The reason this distinction is important should become clear
-            soon.</p>
-  <listing label="values_1">
-    <caption>
+  <p>It is easy to confuse different types of values, like <c>"5"</c>, <c>'5'</c>, and <c>5</c>, but if you pay
+    attention to the punctuation, it should be clear that the first is a string, the second is a
+    character and the third is an integer. The reason this distinction is important should become
+    clear soon.</p>
+  <exercise label="values_1">
+    <statement>
       <p>A <var/> value is a single letter, number, or punctuation enclosed in single quotes. </p>
-    </caption>
+    </statement>
     <setup>
       <var case="insensitive">
         <condition string="^\s*(char)|(character)\s*$">
@@ -38,69 +35,67 @@
         </condition>
       </var>
     </setup>
-  </listing>
-  <listing label="values2.0">
-    <caption>
+  </exercise>
+  <exercise label="values2.0">
+    <statement>
       <p>Click on all integer VALUES.</p>
-    </caption>
+    </statement>
     <feedback>
       <p>Try again!</p>
     </feedback>
     <areas>
-      <cline>
-        <area correct="no">int main() {</area>
-      </cline>
-      <cline><area correct="no">int x</area> = <area correct="yes">7</area>;</cline>
-      <cline><area correct="no">char c</area> = <area correct="no">'8'</area>;</cline>
+      <cline><area correct="no">int main() {</area></cline>
+      <cline>    <area correct="no">int x</area> = <area correct="yes">7</area>;</cline>
+      <cline>    <area correct="no">char c</area> = <area correct="no">'8'</area>;</cline>
       <cline>    while (<area correct="no">x</area> &lt; <area correct="yes">10</area>) {</cline>
       <cline>        cout &lt;&lt; <area correct="no">c</area> &lt;&lt; endl;</cline>
-      <cline><area correct="no">x</area>++;</cline>
+      <cline>        <area correct="no">x</area>++;</cline>
       <cline>    }</cline>
-      <cline><area correct="no">c</area> = <area correct="no">'9'</area>;</cline>
+      <cline>    <area correct="no">c</area> = <area correct="no">'9'</area>;</cline>
       <cline>    cout &lt;&lt; "<area correct="no">It's the year</area> <area correct="no">3000</area>!";</cline>
       <cline>    cout &lt;&lt; <area correct="no">"Just kidding, it's "</area> &lt;&lt; <area correct="yes">2020</area> &lt;&lt; "!";</cline>
       <cline>}</cline>
     </areas>
-  </listing>
-  <listing label="values2.1">
-    <caption>
+  </exercise>
+  <exercise label="values2.1">
+    <statement>
       <p>Click on all string VALUES.</p>
-    </caption>
+    </statement>
     <feedback>
       <p>Try again!</p>
     </feedback>
     <areas>
       <cline>int main() {</cline>
-      <cline>    char <area correct="no">init1</area> = <area correct="no">'R'</area>;</cline>
+      <cline>    char <area correct="no">init1</area> = <area correct="no">'<c>R</c>'</area>;</cline>
       <cline>    string <area correct="no">init2</area> = <area correct="yes">"M"</area>;</cline>
       <cline>    cout &lt;&lt; <area correct="no">init1</area> &lt;&lt; <area correct="yes">"+"</area> &lt;&lt; <area correct="no">init2</area> &lt;&lt; endl;</cline>
       <cline>    string <area correct="no">init3</area> = <area correct="yes">"R"</area>;</cline>
-      <cline>    char <area correct="no">init4</area> = <area correct="no">'P'</area>;</cline>
+      <cline>    char <area correct="no">init4</area> = '<area correct="no">P</area>';</cline>
       <cline>    cout &lt;&lt; <area correct="no">init3</area> &lt;&lt; <area correct="no">'+'</area> &lt;&lt; <area correct="no">init4</area> &lt;&lt; endl;</cline>
       <cline>    cout &lt;&lt; <area correct="yes">"Carved their initials in a tree!"</area>;</cline>
       <cline>}</cline>
     </areas>
-  </listing>
-  <listing label="values_3">
-    <caption>
-      <p>Match the value to its data type.</p>
-    </caption>
+  </exercise>
+  <exercise label="values_3">
+    <statement>
+      <p>Match the value to its data type by dragging items on the left to the boxes on the right.</p>
+    </statement>
     <feedback>
       <p>Try again!</p>
     </feedback>
     <matches>
       <match order="1">
-        <premise>1</premise>
+        <premise><c>1</c></premise>
         <response>integer</response>
       </match>
       <match order="2">
-        <premise>"1"</premise>
+        <premise><c>"1"</c></premise>
         <response>string</response>
       </match>
       <match order="3">
-        <premise>'1'</premise>
+        <premise><c>'1'</c></premise>
         <response>character</response>
       </match>
     </matches>
-  </listing>
+  </exercise>
 </section>

@@ -14,7 +14,7 @@
   <xi:include href='./operators-for-characters.ptx'/>
   <xi:include href='./composition.ptx'/>
   <xi:include href='./glossary.ptx'/>
-  <xi:include href='./exercises.ptx'/>
+  <xi:include href='./multiplechoice.ptx'/>
   <xi:include href='./mixed-up-code.ptx'/>
   <xi:include href='./active-code.ptx'/>
 </chapter>

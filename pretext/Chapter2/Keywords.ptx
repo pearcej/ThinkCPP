@@ -1,34 +1,32 @@
 <?xml version="1.0"?>
 <section xml:id="chapter2_keywords">
   <title>Keywords</title>
-  <p>A few sections ago, I said that you can make up any name you want for
-            your variables, but that's not quite true. There are certain words that
-            are reserved in C++ because they are used by the compiler to parse the
-            structure of your program, and if you use them as variable names, it
-            will get confused. These words, called <term>keywords</term>, include <c>int</c>, <c>char</c>,
-            <c>void</c>, <c>endl</c> and many more.</p>
-  <p>A list of C++ keywords is availiable publically on <c>cppreference</c>.  You can
-            take a look for yourself by pasting the following link into your browser.</p>
-  <pre>https://en.cppreference.com/w/cpp/keyword</pre>
+  <p>A few sections ago, I said that you can make up any name you want for your variables, but
+    that's not quite true. There are certain words that are reserved in C++ because they are used by
+    the compiler to parse the structure of your program, and if you use them as variable names, it
+    will get confused. These words, called <term>keywords</term>, include <c>int</c>, <c>char</c>, <c>void</c>, <c>endl</c>
+    and many more.</p>
+  <p>A list of C++ keywords is availiable publically on <url href="https://en.cppreference.com/w/cpp/keyword">
+    cppreference</url>.</p>
   <p>Rather than memorize the list, I would suggest that you take advantage
-            of a feature provided in many development environments: code
-            highlighting. As you type, different parts of your program should appear
-            in different colors. For example, keywords might be blue, strings red,
-            and other code black.</p>
+    of a feature provided in many development environments: code
+    highlighting. As you type, different parts of your program should appear
+    in different colors. For example, keywords might be blue, strings red,
+    and other code black.</p>
   <warning>
     <p>If you type a variable name and it turns blue, watch out! You might get
-                some strange behavior from the compiler.</p>
+      some strange behavior from the compiler.</p>
   </warning>
   <note>
-    <p>Case matters!  You can name a <c>string</c> variable <c>String</c> without an issue
-                because C++ does not consider <c>String</c> to be the same as keyword <c>string</c>.
-                Also, a anything written in quotes, for example <c>"string"</c> is not considered
-                a keyword in C++, even if it is spelt the same.</p>
+    <p>Case matters! You can name a <c>string</c> variable <c>String</c> without an issue because C++ does not
+      consider <c>String</c> to be the same as keyword <c>string</c>. Also, a anything written in quotes, for
+      example <c>"string"</c> is not considered a keyword in C++, even if it is spelt the same.</p>
   </note>
-  <listing label="keywords_1">
-    <caption>
-      <p>Words that are reserved in C++ because they are used by the compiler to parse the structure of your program are called <var/>.</p>
-    </caption>
+  <exercise label="keywords_1">
+    <statement>
+      <p>Words that are reserved in C++ because they are used by the compiler to parse the structure
+        of your program are called <var/>.</p>
+    </statement>
     <setup>
       <var case="insensitive">
         <condition string="^\s*keywords\s*$">
@@ -43,79 +41,84 @@
         </condition>
       </var>
     </setup>
-  </listing>
-  <listing label="keywords_2">
-    <caption>
-      <p>Multiple Response: Which of the following are keywords or will otherwise generate some error from the compiler if used as a variable name?</p>
-    </caption>
+  </exercise>
+  <exercise label="keywords_2">
+    <statement>
+      <p>Multiple Response: Which of the following are keywords or will otherwise generate some
+        error from the compiler if used as a variable name?</p>
+    </statement>
     <choices>
       <choice>
-        <caption>
+        <statement>
           <p>integer</p>
-        </caption>
+        </statement>
         <feedback>
           <p>integer is not a keyword, but int is.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>cout</p>
-        </caption>
+        </statement>
         <feedback>
           <p>cout cannot be used as a variable name!</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>variable</p>
-        </caption>
+        </statement>
         <feedback>
           <p>variable is fair game to use to name a variable.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>string</p>
-        </caption>
+        </statement>
         <feedback>
           <p>string cannot be used as a variable name.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>char</p>
-        </caption>
+        </statement>
         <feedback>
           <p>char is a keyword and cannot be used as a variable name.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="keywords_3">
-    <caption>
+  </exercise>
+  <exercise label="keywords_3">
+    <statement>
       <p>Click on all keywords.</p>
-    </caption>
+    </statement>
     <feedback>
       <p>Try again!</p>
     </feedback>
     <areas>
       <cline><area correct="yes">int</area> main() {</cline>
-      <cline><area correct="yes">double</area><area correct="no">x</area> = 1.0;</cline>
-      <cline><area correct="yes">int</area><area correct="no">y</area> = <area correct="no">x</area> + 5;</cline>
-      <cline><area correct="yes">bool</area><area correct="no">Bool</area>;</cline>
-      <cline><area correct="yes">string</area><area correct="no">s</area> = <area correct="no">"void"</area>;</cline>
-      <cline><area correct="yes">if</area> (<area correct="no">y</area> &gt; <area correct="no">x</area>) {</cline>
-      <cline><area correct="no">Bool</area> = <area correct="yes">true</area>;</cline>
+      <cline>    <area correct="yes">double</area><area correct="no">x</area> = 1.0;</cline>
+      <cline>    <area correct="yes">int</area><area correct="no">y</area> = <area correct="no">x</area> + 5;</cline>
+      <cline>    <area correct="yes">bool</area><area correct="no">Bool</area>;</cline>
+      <cline>    <area correct="yes">string</area><area correct="no">s</area> = <area correct="no">"void"</area>;</cline>
+      <cline>    <area correct="yes">if</area> (<area correct="no">y</area> &gt; <area correct="no">x</area>) {</cline>
+      <cline>        <area correct="no">Bool</area> = <area correct="yes">true</area>;</cline>
       <cline>    }</cline>
-      <cline><area correct="no">cout</area> &lt;&lt; <area correct="no">Bool</area> &lt;&lt; <area correct="yes">endl</area>;</cline>
+      <cline>    <area correct="no">cout</area> &lt;&lt; <area correct="no">Bool</area> &lt;&lt; <area correct="yes">endl</area>;</cline>
       <cline>}</cline>
     </areas>
-  </listing>
-  <listing label="keywords_4">
-    <caption>
-      <p>Fix the code below so that it runs without errors.  Hint: you might need to change the names of some variables.</p>
-    </caption>
-    <program xml:id="keywords_4_editor" interactive="activecode" language="cpp" line-numbers="yes">
+  </exercise>
+  <exercise label="keywords_4">
+    <statement>
+      <p>Fix the code below so that it runs without errors and produces the intended output. Hint: you might need to change the names
+        of some variables so they do not conflict with C++ keywords.</p>
+    </statement>
+    <program xml:id="keywords_4_editor"
+             interactive="activecode"
+             language="cpp"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -129,6 +132,9 @@ int main () {
     return 0;
 }
         ]]></input>
+        <tests>
+          
+        </tests>
     </program>
-  </listing>
+  </exercise>
 </section>
