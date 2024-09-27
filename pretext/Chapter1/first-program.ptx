@@ -47,7 +47,10 @@ int main () {
   <warning>
     <p>Failure to terminate a statement with a semicolon will result in a syntax (compile) error.</p>
   </warning>
-  <p>The statement <c>return 0;</c>at the end fulfills the promise made by <c>int main</c> to return a value. You will learn more about it in Chapter 5. For now, you just need to know that it is optional. If you do not have that line at the end of <c>main</c>, it is automatically added. You will see many code samples that take advantage of this in the coming chapters and omit that <c>return 0;</c>.</p>
+  <p>The statement <c>return 0;</c>at the end fulfills the promise made by <c>int main</c> to return a value. You
+    will learn more about it in Chapter 5. For now, you just need to know that it is optional. If
+    you do not have that line at the end of <c>main</c>, it is automatically added. You will see many
+    code samples that take advantage of this in the coming chapters and omit that <c>return 0;</c>.</p>
   <p>There are a few other things you should notice about the syntax of this program. First, C++
     uses squiggly-braces (<c>{</c> and <c>}</c>) to group things together. In this case, the output
     statement is enclosed in squiggly-braces, indicating that it is <em>inside</em> the definition
@@ -150,8 +153,7 @@ int main () {
   <listing label="first_program_3">
     <caption>
       <p><var/> is an object that allows you to send output to the terminal. It requires you to use
-        the <var/> operator.
-      </p>
+        the <var/> operator. </p>
     </caption>
     <setup>
       <var case="insensitive">
