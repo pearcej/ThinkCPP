@@ -11,8 +11,8 @@
             table. In effect, you memorized 100 specific solutions. That kind of
             knowledge is not really algorithmic.</p>
   <p>But if you were <q>lazy,</q> you probably cheated by learning a few tricks.
-            For example, to find the product of <math>n</math> and 9, you can write
-            <math>n-1</math> as the first digit and <math>10-n</math> as the second digit.
+            For example, to find the product of <m>n</m> and 9, you can write
+            <m>n-1</m> as the first digit and <m>10-n</m> as the second digit.
             This trick is a general solution for multiplying any single-digit number
             by 9. That's an algorithm!</p>
   <p>Similarly, the techniques you learned for addition with carrying,

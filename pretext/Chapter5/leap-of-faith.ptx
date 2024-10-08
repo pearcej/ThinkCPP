@@ -23,9 +23,9 @@
   <p>The same is true of recursive programs. When you get to the recursive
             call, instead of following the flow of execution, you should <em>assume</em>
             that the recursive call works (yields the correct result), and then ask
-            yourself, <q>Assuming that I can find the factorial of <math>n-1</math>, can I
-            compute the factorial of <math>n</math>?</q> In this case, it is clear that you
-            can, by multiplying by <math>n</math>.</p>
+            yourself, <q>Assuming that I can find the factorial of <m>n-1</m>, can I
+            compute the factorial of <m>n</m>?</q> In this case, it is clear that you
+            can, by multiplying by <m>n</m>.</p>
   <p>Of course, it is a bit strange to assume that the function works
             correctly when you have not even finished writing it, but that's why
             it's called a leap of faith!</p>

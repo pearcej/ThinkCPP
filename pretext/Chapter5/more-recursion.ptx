@@ -32,14 +32,14 @@
 &amp;&amp;  0! = 1 \\
 &amp;&amp;  n! = n \cdot (n-1)!\end{aligned}</math_block>
   <note>
-    <p>Factorial is usually denoted with the symbol <math>!</math>, which is not to
+    <p>Factorial is usually denoted with the symbol <m>!</m>, which is not to
                 be confused with the C++ logical operator ! which means NOT.</p>
   </note>
   <p>This definition says that the factorial of 0 is 1, and the factorial of any
-            other value, <math>n</math>, is <math>n</math> multiplied by the factorial of
-            <math>n-1</math>. So <math>3!</math> is 3 times <math>2!</math>, which is 2 times
-            <math>1!</math>, which is 1 times 0!. Putting it all together, we get
-            <math>3!</math> equal to 3 times 2 times 1 times 1, which is 6.</p>
+            other value, <m>n</m>, is <m>n</m> multiplied by the factorial of
+            <m>n-1</m>. So <m>3!</m> is 3 times <m>2!</m>, which is 2 times
+            <m>1!</m>, which is 1 times 0!. Putting it all together, we get
+            <m>3!</m> equal to 3 times 2 times 1 times 1, which is 6.</p>
   <p>If you can write a recursive definition of something, you can usually
             write a C++ program to evaluate it. The first step is to decide what the
             parameters are for this function, and what the return type is. With a
@@ -54,8 +54,8 @@
   }
 }</program>
   <p>Otherwise, and this is the interesting part, we have to make a recursive
-            call to find the factorial of <math>n-1</math>, and then multiply it by
-            <math>n</math>.</p>
+            call to find the factorial of <m>n-1</m>, and then multiply it by
+            <m>n</m>.</p>
   <exercise label="more_recursion_AC_1">
     <statement>
       <p>This program uses recursion to calculate the factorial of
@@ -86,13 +86,13 @@ int main () {
   <p>If we look at the flow of execution for this program, it is similar to
             nLines from the previous chapter. If we call factorial with the value 3:</p>
   <p>Since 3 is not zero, we take the second branch and calculate the
-            factorial of <math>n-1</math>&#x2026;</p>
+            factorial of <m>n-1</m>&#x2026;</p>
   <blockquote>
     <p>Since 2 is not zero, we take the second branch and calculate the
-                factorial of <math>n-1</math>&#x2026;</p>
+                factorial of <m>n-1</m>&#x2026;</p>
     <blockquote>
       <p>Since 1 is not zero, we take the second branch and calculate the
-                    factorial of <math>n-1</math>&#x2026;</p>
+                    factorial of <m>n-1</m>&#x2026;</p>
       <blockquote>
         <p>Since 0 <em>is</em> zero, we take the first branch and return the
                         value 1 immediately without making any more recursive calls.</p>

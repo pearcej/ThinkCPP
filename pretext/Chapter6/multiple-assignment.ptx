@@ -64,10 +64,10 @@ int main () {
                 to true if <c>x</c> is equal to 3 and evaluates to false otherwise.</p>
   </warning>
   <p>First of all, equality is commutative, and assignment is not. For
-            example, in mathematics if <math>a = 7</math> then <math>7 = a</math>. But in C++
+            example, in mathematics if <m>a = 7</m> then <m>7 = a</m>. But in C++
             the statement <c>a = 7;</c> is legal, and <c>7 = a;</c> is not.</p>
   <p>Furthermore, in mathematics, a statement of equality is true for all
-            time. If <math>a = b</math> now, then <math>a</math> will always equal <math>b</math>.
+            time. If <m>a = b</m> now, then <m>a</m> will always equal <m>b</m>.
             In C++, an assignment statement can make two variables equal, but they
             don't have to stay that way!</p>
   <program>int a = 5;

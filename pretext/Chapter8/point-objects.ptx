@@ -5,9 +5,9 @@
             mathematical point. At one level, a point is two numbers (coordinates)
             that we treat collectively as a single object. In mathematical notation,
             points are often written in parentheses, with a comma separating the
-            coordinates. For example, <math>(0, 0)</math> indicates the origin, and
-            <math>(x, y)</math> indicates the point <math>x</math> units to the right and
-            <math>y</math> units up from the origin.</p>
+            coordinates. For example, <m>(0, 0)</m> indicates the origin, and
+            <m>(x, y)</m> indicates the point <m>x</m> units to the right and
+            <m>y</m> units up from the origin.</p>
   <p>A natural way to represent a point in C++ is with two <c>double</c>s. The
             question, then, is how to group these two values into a compound object,
             or structure. The answer is a <c>struct</c> definition:</p>

@@ -65,7 +65,7 @@ int main() {
 8      2.07944
 9      2.19722</program>
   <p>If these values seem odd, remember that the <c>log</c> function uses base
-            <math>e</math>. Since powers of two are so important in computer science, we
+            <m>e</m>. Since powers of two are so important in computer science, we
             often want to find logarithms with respect to base 2. To do that, we can
             use the following formula:</p>
   <math_block docname="Chapter6/tables" label="True" nowrap="False" number="True" xml:space="preserve">\log_2 x = \frac {log_e x}{log_e 2}
@@ -122,12 +122,12 @@ int main() {
             column.</p>
   <p>Log tables may not be useful any more, but for computer scientists,
             knowing the powers of two is! As an exercise, modify this program so
-            that it outputs the powers of two up to 65536 (that's <math>2^{16}</math>).
+            that it outputs the powers of two up to 65536 (that's <m>2^{16}</m>).
             Print it out and memorize it.</p>
   <exercise label="tables_AC_3">
     <statement>
       <p>Modify the active code below so that it outputs the power of two
-            up to 65536, which is <math>2^{16}</math>. If you get stuck, you can
+            up to 65536, which is <m>2^{16}</m>. If you get stuck, you can
             reveal the extra problem at the end for help.</p>
     </statement>
     <program xml:id="tables_AC_3_editor" interactive="activecode" line-numbers="yes">

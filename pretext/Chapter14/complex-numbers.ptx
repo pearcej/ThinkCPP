@@ -6,8 +6,8 @@
             many branches of mathematics and engineering, and many computations are
             performed using complex arithmetic. A complex number is the sum of a
             real part and an imaginary part, and is usually written in the form
-            <math>x + yi</math>, where <math>x</math> is the real part, <math>y</math> is the
-            imaginary part, and <math>i</math> represents the square root of -1.</p>
+            <m>x + yi</m>, where <m>x</m> is the real part, <m>y</m> is the
+            imaginary part, and <m>i</m> represents the square root of -1.</p>
   <p>The following is a class definition for a user-defined type called
             <c>Complex</c>:</p>
   <program>class Complex
@@ -37,8 +37,8 @@ public:
   <figure align="center" xml:id="empty-108">
     <image source="Chapter14/Images/14.3polar_and_cartesian.png" width="50%" alt="image"/>
   </figure>
-  <p>Complex numbers in polar coordinates are written <math>r e^{i \theta}</math>,
-            where <math>r</math> is the magnitude (radius), and <math>\theta</math> is the
+  <p>Complex numbers in polar coordinates are written <m>r e^{i \theta}</m>,
+            where <m>r</m> is the magnitude (radius), and <m>\theta</m> is the
             angle in radians.</p>
   <note>
     <p>Fortunately, it is easy to convert from one form to another. To go from

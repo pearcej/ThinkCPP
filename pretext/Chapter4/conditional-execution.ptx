@@ -19,8 +19,8 @@ x &lt; y                // x is less than y
 x &gt;= y               // x is greater than or equal to y
 x &lt;= y               // x is less than or equal to y</program>
   <p>Although these operations are probably familiar to you, the syntax C++
-            uses is a little different from mathematical symbols like <math>=</math>,
-            <math>\neq</math> and <math>\le</math>. A common error is to use a single <c>=</c>
+            uses is a little different from mathematical symbols like <m>=</m>,
+            <m>\neq</m> and <m>\le</m>. A common error is to use a single <c>=</c>
             instead of a double <c>==</c>. Remember that = is the assignment operator, and
             <c>==</c> is a comparison operator. Also, there is no such thing as <c>=&lt;</c> or <c>=&gt;</c>.</p>
   <note>

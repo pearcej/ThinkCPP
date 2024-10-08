@@ -83,7 +83,7 @@ int main() {
             until <c>n</c> is 1, which will make the condition false.</p>
   <p>At each iteration, the program outputs the value of <c>n</c> and then
             checks whether it is even or odd. If it is even, the value of <c>n</c> is
-            divided by two. If it is odd, the value is replaced by <math>3n+1</math>. For
+            divided by two. If it is odd, the value is replaced by <m>3n+1</m>. For
             example, if the starting value (the argument passed to <c>sequence</c>) is
             3, the resulting sequence is 3, 10, 5, 16, 8, 4, 2, 1.</p>
   <p>Since <c>n</c> sometimes increases and sometimes decreases, there is no

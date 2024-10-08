@@ -2,15 +2,15 @@
 <section xml:id="chapter13_mergesort">
   <title>Mergesort</title>
   <p>In <number_reference internal="True" refuri="sorting#sorting" title="Section %s"><inline classes="std std-numref">Section 13.7</inline></number_reference>, we saw a simple sorting algorithm that
-            turns out not to be very efficient. In order to sort <math>n</math> items, it
-            has to traverse the vector <math>n</math> times, and each traversal takes an
-            amount of time that is proportional to <math>n</math>. The total time,
-            therefore, is proportional to <math>n^2</math>.</p>
+            turns out not to be very efficient. In order to sort <m>n</m> items, it
+            has to traverse the vector <m>n</m> times, and each traversal takes an
+            amount of time that is proportional to <m>n</m>. The total time,
+            therefore, is proportional to <m>n^2</m>.</p>
   <p>In this section I will sketch a more efficient algorithm called
-            <term>mergesort</term>. To sort <math>n</math> items, mergesort takes time
-            proportional to <math>n \log n</math>. That may not seem impressive, but as
-            <math>n</math> gets big, the difference between <math>n^2</math> and
-            <math>n \log n</math> can be enormous. Try out a few values of <math>n</math> and
+            <term>mergesort</term>. To sort <m>n</m> items, mergesort takes time
+            proportional to <m>n \log n</m>. That may not seem impressive, but as
+            <m>n</m> gets big, the difference between <m>n^2</m> and
+            <m>n \log n</m> can be enormous. Try out a few values of <m>n</m> and
             see.</p>
   <p>The basic idea behind mergesort is this: if you have two subdecks, each
             of which has been sorted, it is easy (and fast) to merge them into a

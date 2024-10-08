@@ -12,13 +12,13 @@
     <p>Programming languages are <term>formal languages</term> that have been designed to express
       computations.</p>
   </note>
-  <p>As I mentioned before, formal languages tend to have strict rules about syntax. For example, <math>
-    3+3=6</math> is a syntactically correct mathematical statement, but <math>3=+6\$</math> is not.
-    Also, <math>H_2O</math> is a syntactically correct chemical name, but <math>_2Zz</math> is not.</p>
+  <p>As I mentioned before, formal languages tend to have strict rules about syntax. For example, <m>
+    3+3=6</m> is a syntactically correct mathematical statement, but <m>3=+6\$</m> is not.
+    Also, <m>H_2O</m> is a syntactically correct chemical name, but <m>_2Zz</m> is not.</p>
   <p>Syntax rules come in two flavors, pertaining to tokens and structure. Tokens are the basic
     elements of the language, like words and numbers and chemical elements. One of the problems with
-    3=+6$ is that $ is not a legal token in mathematics (at least as far as I know). Similarly, <math>
-    _2Zz</math> is not legal because there is no element with the abbreviation <math>Zz</math>.</p>
+    3=+6$ is that $ is not a legal token in mathematics (at least as far as I know). Similarly, <m>
+    _2Zz</m> is not legal because there is no element with the abbreviation <m>Zz</m>.</p>
   <p>The second type of syntax error pertains to the structure of a
     statement; that is, the way the tokens are arranged. The statement 3=+6$
     is structurally illegal, because you can't have a plus sign immediately

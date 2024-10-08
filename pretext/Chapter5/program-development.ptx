@@ -6,7 +6,7 @@
             them. I am going to suggest one technique that I call <term>incremental
                 development</term>.</p>
   <p>As an example, imagine you want to find the distance between two points,
-            given by the coordinates <math>(x_1, y_1)</math> and <math>(x_2, y_2)</math>. By
+            given by the coordinates <m>(x_1, y_1)</m> and <m>(x_2, y_2)</m>. By
             the usual definition,</p>
   <math_block docname="Chapter5/programdevelopment" label="True" nowrap="False" number="True" xml:space="preserve">distance = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
 
@@ -39,7 +39,7 @@ cout &lt;&lt; dist &lt;&lt; endl;</program>
             recompile and run the program. That way, at any point we know exactly
             where the error must be&#x2014;in the last line we added.</p>
   <p>The next step in the computation is to find the differences
-            <math>x_2 - x_1</math> and <math>y_2 - y_1</math>. I will store those values in
+            <m>x_2 - x_1</m> and <m>y_2 - y_1</m>. I will store those values in
             temporary variables named dx and dy.</p>
   <program>double distance (double x1, double y1, double x2, double y2) {
   double dx = x2 - x1;

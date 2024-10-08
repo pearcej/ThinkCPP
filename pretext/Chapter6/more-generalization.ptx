@@ -92,7 +92,7 @@ int main() {
   <p>When you generalize a function appropriately, you often find that the
             resulting program has capabilities you did not intend. For example, you
             might notice that the multiplication table is symmetric, because
-            <math>ab = ba</math>, so all the entries in the table appear twice. You could
+            <m>ab = ba</m>, so all the entries in the table appear twice. You could
             save ink by printing only half the table. To do that, you only have to
             change one line of <c>printMultTable</c>. Change</p>
   <program>printMultiples (i, high);</program>

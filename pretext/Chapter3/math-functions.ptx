@@ -1,38 +1,37 @@
 <?xml version="1.0"?>
 <section xml:id="chapter3_math-functions">
   <title>Math Functions</title>
-  <p>In mathematics, you have probably seen functions like <math>\sin</math> and
-            <math>\log</math>, and you have learned to evaluate expressions like
-            <math>\sin(\pi/2)</math> and <math>\log(1/x)</math>. First, you evaluate the
-            expression in parentheses, which is called the argument of the
-            function. For example, <math>\pi/2</math> is approximately 1.571, and
-            <math>1/x</math> is 0.1 (if <math>x</math> happens to be 10).</p>
-  <p>Then you can evaluate the function itself, either by looking it up in a
-            table or by performing various computations. The <math>\sin</math> of 1.571
-            is 1, and the <math>\log</math> of 0.1 is -1 (assuming that <math>\log</math>
-            indicates the logarithm base 10).</p>
-  <p>This process can be applied repeatedly to evaluate more complicated
-            expressions like <math>\log(1/\sin(\pi/2))</math>. First we evaluate the
-            argument of the innermost function, then evaluate the function, and so
-            on.</p>
+  <p>In mathematics, you have probably seen functions like <m>\sin</m> and <m>\log</m>,
+    and you have learned to evaluate expressions like <m>\sin(\pi/2)</m> and <m>\log(1/x)</m>.
+    First, you evaluate the expression in parentheses, which is called the argument of the function.
+    For example, <m>\pi/2</m> is approximately 1.571, and <m>1/x</m> is 0.1 (if <m>x</m>
+    happens to be 10).</p>
+  <p>Then you can evaluate the function itself, either by looking it up in a table or by performing
+    various computations. The <m>\sin</m> of 1.571 is 1, and the <m>\log</m> of 0.1 is
+    -1 (assuming that <m>\log</m> indicates the logarithm base 10).</p>
+  <p>This process can be applied repeatedly to evaluate more complicated expressions like <m>
+    \log(1/\sin(\pi/2))</m>. First we evaluate the argument of the innermost function, then
+    evaluate the function, and so on.</p>
   <p>C++ provides a set of built-in functions that includes most of the
-            mathematical operations you can think of. The math functions are invoked
-            using a syntax that is similar to mathematical notation:</p>
+    mathematical operations you can think of. The math functions are invoked
+    using a syntax that is similar to mathematical notation:</p>
   <exercise label="math_functions_AC_1">
     <statement>
       <p>This program performs calculations using some of the built-in functions
-            from the cmath library.</p>
+        from the cmath library.</p>
     </statement>
-    <program xml:id="math_functions_AC_1_editor" interactive="activecode" line-numbers="yes">
+    <program xml:id="math_functions_AC_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <cmath>
 using namespace std;
 
 int main () {
-    double result = log (17.0);
+    double result = log(17.0);
     double angle = 1.5;
-    double height = sin (angle);
+    double height = sin(angle);
     cout << result << endl;
     cout << angle << endl;
     cout << height << endl;
@@ -41,26 +40,28 @@ int main () {
         ]]></input>
     </program>
   </exercise>
-  <p>The first example sets log to the logarithm of 17, base <math>e</math>. There
-            is also a function called <c>log10</c> that takes logarithms base 10.</p>
-  <p>The second example finds the sine of the value of the variable angle.
-            C++ assumes that the values you use with <c>sin</c> and the other trigonometric
-            functions (<c>cos</c>, <c>tan</c>) are in <em>radians</em>.</p>
+  <p>The first example sets log to the logarithm of 17, base <m>e</m>. There is also a
+    function called <c>log10</c> that takes logarithms base 10.</p>
+  <p>The second example finds the sine of the value of the variable angle. C++ assumes that the
+    values you use with <c>sin</c> and the other trigonometric functions (<c>cos</c>, <c>tan</c>) are in <em>
+    radians</em>.</p>
   <note>
     <p>To convert from degrees to radians, you can divide by 360 and multiply
-                by 2 * pi.</p>
+      by 2 * pi.</p>
   </note>
-  <p>If you don't happen to know <math>\pi</math> to 15 digits, you can calculate
-            it using the <c>acos</c> function. The arccosine (or inverse cosine) of -1 is
-            <math>\pi</math>, because the cosine of <math>\pi</math> is -1.</p>
+  <p>If you don't happen to know <m>\pi</m> to 15 digits, you can calculate it using the <c>acos</c>
+    function. The arccosine (or inverse cosine) of -1 is <m>\pi</m>, because the cosine of <m>
+    \pi</m> is -1.</p>
   <exercise label="math_functions_AC_2">
     <statement>
       <p>This program also uses built-in functions from the cmath library,
-            specifically the functions that deal with angles.  As you can see,
-            we have a line of code that converts the default radians value to
-            degrees.</p>
+        specifically the functions that deal with angles. As you can see,
+        we have a line of code that converts the default radians value to
+        degrees.</p>
     </statement>
-    <program xml:id="math_functions_AC_2_editor" interactive="activecode" line-numbers="yes">
+    <program xml:id="math_functions_AC_2_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <cmath>
@@ -78,29 +79,26 @@ int main () {
         ]]></input>
     </program>
   </exercise>
-  <p>Before you can use any of the math functions, you have to include the
-            math header file. <term>Header files</term> contain information the compiler
-            needs about functions that are defined outside your program. For
-            example, in the <q>Hello, world!</q> program we included a header file named
-            iostream using an <term>include</term> statement:</p>
+  <p>Before you can use any of the math functions, you have to include the math header file. <term>Header
+    files</term> contain information the compiler needs about functions that are defined outside
+    your program. For example, in the <q>Hello, world!</q> program we included a header file named
+    iostream using an <term>include</term> statement:</p>
   <program>#include &lt;iostream&gt;
 using namespace std;</program>
-  <p>iostream contains information about input and output (I/O) streams,
-            including the object named <c>cout</c>. C++ has a powerful feature called
-            namespaces, that allow you to write your own implementation of cout. But
-            in most cases, we would need to use the standard implementation. To
-            convey this to the compiler, we use the line</p>
+  <p>iostream contains information about input and output (I/O) streams, including the object named <c>cout</c>.
+    C++ has a powerful feature called namespaces, that allow you to write your own implementation of
+    cout. But in most cases, we would need to use the standard implementation. To convey this to the
+    compiler, we use the line</p>
   <program>using namespace std;</program>
   <note>
-    <p>As a rule of the thumb, you should write <c>using namespace std;</c> whenever
-                you use iostream.</p>
+    <p>As a rule of the thumb, you should write <c>using namespace std;</c> whenever you use iostream.</p>
   </note>
   <p>Similarly, the math header file contains information about the math
-            functions. You can include it at the beginning of your program along
-            with iostream:</p>
+    functions. You can include it at the beginning of your program along
+    with iostream:</p>
   <program>#include &lt;cmath&gt;</program>
-  <p>Such header files have an initial &#x2018;c' to signify that these header files
-            have been derived from the <term>C</term> language.</p>
+  <p>Such header files have an initial &#x2018;c' to signify that these header files have been
+    derived from the <term>C</term> language.</p>
   <exercise label="dnd1">
     <statement>
       <p>Match the statement to its description.</p>
@@ -125,7 +123,8 @@ using namespace std;</program>
   </exercise>
   <exercise label="math_functions_2">
     <statement>
-      <p>What are the units used by sinusoidal functions (sin, asin, e.t.c.) in C++? <var/>  </p>
+      <p>What are the units used by sinusoidal functions (sin, asin, e.t.c.) in C++? <var/>
+      </p>
     </statement>
     <setup>
       <var case="insensitive">

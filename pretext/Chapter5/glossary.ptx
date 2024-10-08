@@ -34,7 +34,7 @@
     <li>
       <title>boolean:</title>
       <p>A value or variable that can take on one of two states, often called
-                        <math>true</math> and <math>false</math>. In C++, boolean values can be stored
+                        <m>true</m> and <m>false</m>. In C++, boolean values can be stored
                         in a variable type called bool.</p>
     </li>
     <li>

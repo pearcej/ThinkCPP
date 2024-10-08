@@ -145,7 +145,7 @@ int main() {
   </exercise>
   <exercise label="encapsulation_generalization_2" numbered="yes" adaptive="yes" indentation="hide">
     <statement>
-      <p>Create a function called <c>powersOfTwo</c> which prints out a table with the powers of two up to <math>2^{5}</math>.</p>
+      <p>Create a function called <c>powersOfTwo</c> which prints out a table with the powers of two up to <m>2^{5}</m>.</p>
     </statement>
     <blocks>
       <block order="1">
@@ -174,7 +174,7 @@ int main() {
   </exercise>
   <exercise label="encapsulation_generalization_3" numbered="yes" adaptive="yes" indentation="hide">
     <statement>
-      <p>Now let's generalize the function to print out the powers of a parameter n up to <math>n^{5}</math>. Create a
+      <p>Now let's generalize the function to print out the powers of a parameter n up to <m>n^{5}</m>. Create a
             function called <c>powersOfn</c> which takes an int n as a parameter.</p>
     </statement>
     <blocks>
