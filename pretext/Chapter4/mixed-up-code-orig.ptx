@@ -10,7 +10,7 @@
     </statement>
     <blocks>
       <block order="2">
-        <cline>int main () {</cline>
+        <cline>int main() {</cline>
       </block>
       <block order="6">
         <cline> int x = 18;</cline>

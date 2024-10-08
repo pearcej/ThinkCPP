@@ -172,7 +172,7 @@
     </statement>
     <blocks>
       <block order="1">
-        <cline>int main () {</cline>
+        <cline>int main() {</cline>
       </block>
       <block order="13">
         <choice correct="yes">

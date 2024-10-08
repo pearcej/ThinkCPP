@@ -24,7 +24,7 @@ int factorial (int n) {
     }
 }
 
-int main () {
+int main() {
     cout << factorial(3) << endl;
 }
         ]]></input>
@@ -60,7 +60,7 @@ int fibonacci (int n) {
     }
 }
 
-int main () {
+int main() {
     cout << fibonacci(3) << endl;
 }
         ]]></input>

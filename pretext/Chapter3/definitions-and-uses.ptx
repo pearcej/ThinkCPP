@@ -14,7 +14,7 @@ void threeLine () {
   newLine ();  newLine ();  newLine ();
 }
 
-int main () {
+int main() {
   cout &lt;&lt; "First Line." &lt;&lt; endl;
   threeLine ();
   cout &lt;&lt; "Second Line." &lt;&lt; endl;

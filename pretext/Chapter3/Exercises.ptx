@@ -300,7 +300,7 @@ void giveInsult () {
     insult = "You suck!";
 }
 
-int main () {
+int main() {
     giveInsult ();
 }</program>
     </statement>
@@ -356,7 +356,7 @@ void bestFriends (string a, string b) {
     cout &lt;&lt; a &lt;&lt; " is best friends with " &lt;&lt; b;
 }
 
-int main () {
+int main() {
     string a = "Rachel";
     string b = "Monica";
     bestFriends(b, a);
@@ -432,7 +432,7 @@ void goodbye (string name) {
     cout &lt;&lt; "!!";
 }
 
-int main () {
+int main() {
     string hannah = "Hannah";
     string anna = "Anna";
     string louise = hannah;
@@ -517,7 +517,7 @@ void orderFood (string food, int quantity) {
     cout &lt;&lt; "I'll have " &lt;&lt; quantity &lt;&lt; " " &lt;&lt; food;
 }
 
-int main () {
+int main() {
     string a = "wings";
     string b = "sliders";
     int c = 3;
@@ -590,7 +590,7 @@ void printWord (string w) {
     cout &lt;&lt; w &lt;&lt; w;
 }
 
-int main () {
+int main() {
     char a = 'a' + 5;
     printWord (a);
 }</program>

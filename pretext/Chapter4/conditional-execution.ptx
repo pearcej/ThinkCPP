@@ -41,7 +41,7 @@ x &lt;= y               // x is less than or equal to y</program>
 #include <iostream>
 using namespace std;
 
-int main () {
+int main() {
     int x = 12;
     if (x == 12) {
         cout << "Equal!" << endl;

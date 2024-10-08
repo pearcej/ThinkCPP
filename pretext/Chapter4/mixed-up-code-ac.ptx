@@ -26,7 +26,7 @@ using namespace std;
 #include <iostream>
 using namespace std;
 
-int main () {
+int main() {
     int x = 18;
     int y = 13;
     cout << x % y;
@@ -39,7 +39,7 @@ int main () {
 #include <iostream>
 using namespace std;
 
-int main () {
+int main() {
     int x = 18;
     int y = 13;
     cout << x % y;

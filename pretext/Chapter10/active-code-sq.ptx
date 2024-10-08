@@ -92,7 +92,7 @@ int main() {
 
 using namespace std;
 
-int main () {
+int main() {
     vector<double> temps = {98.6, 97.8, 100.3, 97.2, 98.7, 97.8, 99.8, 96.9, 98.2, 99.1, 99.9};
 
     int covid_count = 0;

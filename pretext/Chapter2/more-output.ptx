@@ -15,7 +15,7 @@
 #include <iostream>
 using namespace std;
 
-int main () {
+int main() {
     cout << "Hello, world." << endl;     // output one line
     cout << "How are you?" << endl;      // output another
 }
@@ -46,7 +46,7 @@ int main () {
 #include <iostream>
 using namespace std;
 
-int main () {
+int main() {
     cout << "Goodbye, ";
     cout << "cruel world!" << endl;
 }
@@ -72,7 +72,7 @@ world!</c>. Notice in <c>main</c> that there is a
 #include <iostream>
 using namespace std;
 
-int main () {
+int main() {
     cout<<"Goodbye, ";
     cout<<"cruel world!"<<endl;
 }
@@ -130,7 +130,7 @@ int main(){cout<<"Goodbye, ";cout<<"cruel world!"<<endl;}
 #include &lt;iostream&gt;
 using namespace std;
 
-int main () {
+int main() {
   cout &lt;&lt; 7 &lt;&lt; endl;
   cout &lt;&lt; 7;
   cout &lt;&lt; 7;
@@ -191,7 +191,7 @@ int main () {
              codelens="no"></program>
     <blocks>
       <block order="3">
-        <cline>int main () {</cline>
+        <cline>int main() {</cline>
       </block>
       <block order="4">
         <cline> cout &lt;&lt; "Snap!";</cline>
@@ -243,7 +243,7 @@ int main () {
              codelens="no"></program>
     <blocks>
       <block order="6">
-        <cline>int main () {</cline>
+        <cline>int main() {</cline>
       </block>
       <block order="4">
         <cline><![CDATA[ cout << "Hello," << endl; cout << "world!";]]></cline>

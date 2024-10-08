@@ -1,28 +1,29 @@
 <?xml version="1.0"?>
 <section xml:id="chapter3_composition">
   <title>Composition</title>
-  <p>Just as with mathematical functions, C++ functions can be <term>composed</term>,
-            meaning that you use one expression as part of another. For example, you
-            can use any expression as an argument to a function:</p>
-  <program>double x = cos (angle + pi / 2);</program>
-  <p>This statement takes the value of pi, divides it by two and adds the
-            result to the value of angle. The sum is then passed as an argument to
-            the <c>cos</c> function.</p>
+  <p>Just as with mathematical functions, C++ functions can be <term>composed</term>, meaning that
+    you use one expression as part of another. For example, you can use any expression as an
+    argument to a function:</p>
+  <program>double x = cos(angle + pi / 2);</program>
+  <p>This statement takes the value of pi, divides it by two and adds the result to the value of
+    angle. The sum is then passed as an argument to the <c>cos</c> function.</p>
   <p>You can also take the result of one function and pass it as an argument
-            to another:</p>
+    to another:</p>
   <exercise label="function_comp_AC_1">
     <statement>
-      <p>This program finds the log base e of 10 and raises e to that power.  The
-            result of this computation is assigned to x.</p>
+      <p>This program finds the log base e of 10 and raises e to that power. The
+        result of this computation is assigned to x.</p>
     </statement>
-    <program xml:id="function_comp_AC_1_editor" interactive="activecode" line-numbers="yes">
+    <program xml:id="function_comp_AC_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <cmath>
 using namespace std;
 
-int main () {
-    double x = exp (log (10.0));
+int main() {
+    double x = exp(log(10.0));
     cout << x;
 }
         ]]></input>
@@ -36,17 +37,18 @@ int main () {
       <choice>
         <statement id="function_comp_1_opt_a">
           <p>
-            <c>double x = log6 (12);</c>
+            <c>double x = log6(12);</c>
           </p>
         </statement>
         <feedback id="function_comp_1_opt_a">
-          <p><c>log6</c> is not a built in cmath function, but you could write an implementation for it if you wanted!</p>
+          <p><c>log6</c> is not a built in cmath function, but you could write an implementation for it
+            if you wanted!</p>
         </feedback>
       </choice>
       <choice correct="yes">
         <statement id="function_comp_1_opt_b">
           <p>
-            <c>double val = abs (tan (1.57));</c>
+            <c>double val = abs(tan(1.57));</c>
           </p>
         </statement>
         <feedback id="function_comp_1_opt_b">
@@ -56,7 +58,7 @@ int main () {
       <choice>
         <statement id="function_comp_1_opt_c">
           <p>
-            <c>double num = exp (cosine (0.86667));</c>
+            <c>double num = exp(cosine(0.86667));</c>
           </p>
         </statement>
         <feedback id="function_comp_1_opt_c">
@@ -66,7 +68,7 @@ int main () {
       <choice>
         <statement id="function_comp_1_opt_d">
           <p>
-            <c>double y = exp (cos (1.047)) + exp (tan (2.094))</c>
+            <c>double y = exp(cos(1.047)) + exp(tan(2.094))</c>
           </p>
         </statement>
         <feedback id="function_comp_1_opt_d">
@@ -78,7 +80,7 @@ int main () {
   <exercise label="function_comp_2">
     <statement>
       <p>Which of these statements returns the y-component of the unit
-            vector at 330 degrees?</p>
+        vector at 330 degrees?</p>
     </statement>
     <choices>
       <choice>

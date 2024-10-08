@@ -122,7 +122,7 @@
 #include <iostream>
 using namespace std;
 
-int main () {
+int main() {
     int friend = 4;
     int enemy = friend * (-1);
     cout << "enemy = " << enemy << endl;

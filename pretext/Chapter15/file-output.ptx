@@ -6,7 +6,7 @@
   <program>#include &lt;iostream&gt;
 using namespace std;
 
-int main () {
+int main() {
  ifstream infile ("input-file");
  ofstream outfile ("output-file");
 
@@ -27,7 +27,7 @@ int main () {
     </statement>
     <blocks>
       <block order="8">
-        <cline>int main () {</cline>
+        <cline>int main() {</cline>
       </block>
       <block order="5">
         <cline> ifstream in_file ("input_file_name");</cline>

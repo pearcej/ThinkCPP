@@ -14,7 +14,7 @@
 #include <iostream>
 using namespace std;
 
-int main () {
+int main() {
     int x = 9;
     if (x == 0) {
         cout << "x is zero" << endl;
@@ -54,7 +54,7 @@ int main () {
       <program>#include &lt;iostream&gt;
 using namespace std;
 
-int main () {
+int main() {
   int x = 0;
   if (x == 0) {
     cout &lt;&lt; "Hey!" &lt;&lt; endl;
@@ -111,7 +111,7 @@ int main () {
       <program>#include &lt;iostream&gt;
 using namespace std;
 
-int main () {
+int main() {
   int x = -4;
   if (x == 0) {
     cout &lt;&lt; "Hey!" &lt;&lt; endl;

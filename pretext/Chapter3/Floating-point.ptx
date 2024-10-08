@@ -185,7 +185,7 @@ cout &lt;&lt; e_double;</program>
 #include <iostream>
 using namespace std;
 
-int main () {
+int main() {
     double value = 5.0/2; //(a)
     cout<<"current value (a) is "<<value<<endl;
 

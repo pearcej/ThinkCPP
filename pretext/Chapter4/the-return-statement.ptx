@@ -50,7 +50,7 @@ void printLogarithm (double x) {
       <program>#include &lt;iostream&gt;
 using namespace std;
 
-int main () {
+int main() {
   int x = 8;
   if (x &gt; 8) {
     cout &lt;&lt; "One! ";
@@ -113,7 +113,7 @@ int main () {
       <program>#include &lt;iostream&gt;
 using namespace std;
 
-int main () {
+int main() {
   int x = 8;
   if (x &gt; 8) {
     cout &lt;&lt; "One! ";

@@ -196,7 +196,7 @@ struct iceCream {
    }
 };
 
-int main () {
+int main() {
   iceCream icecream (2, 3, 2);
   iceCream.printOrder();
 }</program>

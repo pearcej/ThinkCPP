@@ -17,7 +17,7 @@
 #include <iostream>
 using namespace std;
 
-int main () {
+int main() {
     cout << 17 * 3;
 }
         ]]></input>
@@ -36,7 +36,7 @@ int main () {
 #include <iostream>
 using namespace std;
 
-int main () {
+int main() {
     int hour = 7;
     int minute = 1;
     cout << hour * 60 + minute << endl;
@@ -55,7 +55,7 @@ int main () {
 #include <iostream>
 using namespace std;
 
-int main () {
+int main() {
     int minute = 3;
     int percentage;
     percentage = (minute * 100) / 60;
@@ -78,7 +78,7 @@ int main () {
   <exercise label="compos_1">
     <statement>
       <p>What must be changed in order for this code block to work?</p>
-      <program>int main () {
+      <program>int main() {
     int dogs = 3;
     int cats = 6;
     int pets;
@@ -177,7 +177,7 @@ int main () {
 #include <iostream>
 using namespace std;
 
-int main () {
+int main() {
    int v0 = 5, a = 3, t = 4, velocity;
 
    // You may only use the next line for your code.
@@ -199,7 +199,7 @@ int main () {
 #include <iostream>
 using namespace std;
 
-int main () {
+int main() {
    int l = 2, w = 3, h = 4, volume;
 
    // You may only use the next line for your code.

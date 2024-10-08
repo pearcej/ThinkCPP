@@ -28,7 +28,7 @@ using namespace std;
 
 enum Day { MON = 1, TUE, WED, THU, FRI, SAT, SUN };
 
-int main () {
+int main() {
     Day day = SUN;
     switch (day > 5) {
         case 0:
@@ -52,7 +52,7 @@ using namespace std;
 
 enum Day { MON = 1, TUE, WED, THU, FRI, SAT, SUN };
 
-int main () {
+int main() {
     Day day = SUN;
     switch (day > 5) {
         case 0:
@@ -94,7 +94,7 @@ using namespace std;
 #include <iostream>
 using namespace std;
 
-int main () {
+int main() {
     int input;
     cout << "Please enter an integer: ";
     cin >> input;
@@ -119,7 +119,7 @@ int main () {
 #include <iostream>
 using namespace std;
 
-int main () {
+int main() {
     int input;
     cout << "Please enter an integer: ";
     cin >> input;
@@ -162,7 +162,7 @@ using namespace std;
 #include <iostream>
 using namespace std;
 
-int main () {
+int main() {
     int input1;
     int input2;
     cout << "Please enter first integer: ";
@@ -188,7 +188,7 @@ int main () {
 #include <iostream>
 using namespace std;
 
-int main () {
+int main() {
     int input1;
     int input2;
     cout << "Please enter first integer: ";

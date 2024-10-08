@@ -54,7 +54,7 @@ void printParity (int x) {
     }
 }
 
-int main () {
+int main() {
     int number = 17;
     printParity(number);
     int otherNumber = 18;

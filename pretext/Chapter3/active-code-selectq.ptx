@@ -18,7 +18,7 @@ void printAnimals(string a, int b) {
     cout << b << a;
 }
 
-int main () {
+int main() {
     // DO NOT MODIFY ANYTHING BELOW THIS LINE
     printAnimals(2, "elephants");
 }
@@ -86,7 +86,7 @@ void logSubtraction (double a) {
     cout << difference;
 }
 
-int main () {
+int main() {
     // DO NOT MODIFY ANYTHING BELOW THIS LINE
     cout << "Testing with a = 8..." << endl; cout << "    Your solution has difference = "; logSubtraction(8); cout << endl; cout << "    The correct solution has difference = -1.17635" << endl; cout << "Testing with a = -2..." << endl; cout << "    Your solution has difference = "; logSubtraction(-2); cout << endl; cout << "    The correct solution has difference = nan";
 }
@@ -145,7 +145,7 @@ void intDivision () {
 
 }
 
-int main () {
+int main() {
     // DO NOT MODIFY ANYTHING BELOW THIS LINE
     cout << "Testing with a = 2.4, b = 6.8..." << endl; cout << "    Your solution has a quotient of "; intDivision(2.4, 6.8); cout << endl; cout << "    The correct solution has a quotient of 0" << endl; cout << "Testing with a = -8.6, b = 4.2..." << endl; cout << "    Your solution has a quotient of "; intDivision(-8.6, 4.2); cout << endl; cout << "    The correct solution has a quotient of -2";
 }
@@ -208,7 +208,7 @@ void volumePrism () {
 
 }
 
-int main () {
+int main() {
     // DO NOT MODIFY ANYTHING BELOW THIS LINE
     cout << "Testing with a = 3, b = 4, c = 5..." << endl; cout << "    Your solution calculated a volume of "; volumePrism(3,4,5); cout << endl; cout << "    The correct solution calculates a volume of 60" << endl; cout << "Testing with a = 5.7, b = 3.9, c = 1.3..." << endl; cout << "    Your solution calculated a volume of "; volumePrism(5.7,3.9,1.3); cout << endl; cout << "    The correct solution calculates a volume of 28.899";
 }

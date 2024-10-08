@@ -4,7 +4,7 @@
   <p>Now that we have functions that return values, I can let you in on a
             secret. main is not really supposed to be a void function. It's supposed
             to return an integer:</p>
-  <program>int main () {
+  <program>int main() {
   return 0;
 }</program>
   <p>The usual return value from main is 0, which indicates that the program

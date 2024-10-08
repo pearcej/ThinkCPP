@@ -21,7 +21,7 @@
             general you want to choose something more illustrative than phil.</p>
   <p>In order to call this function, we have to provide a <c>char</c>. For example,
             we might have a <c>main</c> function like this:</p>
-  <program>int main () {
+  <program>int main() {
   printTwice ('a');
   return 0;
 }</program>
@@ -30,7 +30,7 @@
             is passed as an argument to printTwice where it will get printed twice.</p>
   <p>Alternatively, if we had a <c>char</c> variable, we could use it as an argument
             instead:</p>
-  <program>int main () {
+  <program>int main() {
   char argument = 'b';
   printTwice (argument);
   return 0;
@@ -67,7 +67,7 @@ void printTwice (char phil) {
     cout << phil << phil << endl;
 }
 
-int main () {
+int main() {
     char argument = 'b';
     printTwice (argument);
     return 0;
@@ -88,7 +88,7 @@ void printTwice (char phil) {
   cout &lt;&lt; phil &lt;&lt; phil &lt;&lt; endl;
 }
 
-int main () {
+int main() {
   string argument = "s";
   printTwice (argument);
   return 0;
@@ -116,7 +116,7 @@ void printTwice (char phil) {
   cout &lt;&lt; phil &lt;&lt; phil &lt;&lt; endl;
 }
 
-int main () {
+int main() {
   char argument = 'b';
   printTwice (argument);
   return 0;

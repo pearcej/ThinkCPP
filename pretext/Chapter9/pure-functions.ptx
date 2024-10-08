@@ -30,7 +30,7 @@ bool after (Time& time1, Time& time2) {
     return false;
 }
 
-int main () {
+int main() {
     Time time = { 11, 59, 3.14159 };
     Time time2 = { 1, 50, 3.14159 };
     cout << after(time, time2);

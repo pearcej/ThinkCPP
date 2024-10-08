@@ -87,7 +87,7 @@ double absoluteValue (double x) {
     }                          // WRONG!!
 }
 
-int main () {
+int main() {
     cout << absoluteValue(0);
     return 0;
 }
@@ -137,7 +137,7 @@ double absoluteValue (double x) {
     return x;                      // WRONG!!
 }
 
-int main () {
+int main() {
    cout << absoluteValue(0);
    return 0;
 }
@@ -208,7 +208,7 @@ int timesTwo(int x) {
   y = y * 2;
 }
 
-int main () {
+int main() {
   int i = 2;
   cout &lt;&lt; timesTwo(i);
   return 0;
@@ -268,7 +268,7 @@ double ticket_price(int age) {
    return 0.0; //to avoid compiler error
 }
 
-int main () {
+int main() {
   int years = 5;
   double price = ticket_price(5);
   return 0;

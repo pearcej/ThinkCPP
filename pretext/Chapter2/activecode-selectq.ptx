@@ -13,7 +13,7 @@
 #include <iostream>
 using namespace std;
 
-int main () {
+int main() {
    string make;
    make = "Buick"
 
@@ -86,7 +86,7 @@ int main () {
 #include <iostream>
 using namespace std;
 
-int main () {
+int main() {
    int radius = 5;
    double pi = 3.14;
 
@@ -155,7 +155,7 @@ int main () {
         </caption>
         <program xml:id="VARS_a6_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
-int main () {
+int main() {
 
    // DO NOT MODIFY ANYTHING BELOW THIS LINE.
    cout << "Your solution had apples = " << apples << "and oranges = " << oranges << "." << endl; cout << "The correct solution has apples = apples, and oranges = oranges.";
@@ -228,7 +228,7 @@ int main () {
         </caption>
         <program xml:id="VARS_a8_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
-int main () {
+int main() {
 
    // DO NOT MODIFY ANYTHING BELOW THIS LINE.
    cout << "Your solution had plusTip = " << plusTip << endl; cout << "The correct solution has plusTip = 43.5";
@@ -289,7 +289,7 @@ int main () {
         </caption>
         <program xml:id="VARS_a10_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
-int main () {
+int main() {
 
    // DO NOT MODIFY ANYTHING BELOW THIS LINE.
    cout << "Your program should have printed 2.365";

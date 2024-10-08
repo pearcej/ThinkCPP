@@ -37,7 +37,7 @@ void printPrice (int dollars, int cents) {
     cout << "Price is " << dollars << " dollars and " << cents << " cents." << endl;
 }
 
-int main () {
+int main() {
     int dollar_amount = 2;
     int cent_amount = 92;
     printPrice (dollar_amount, cent_amount);

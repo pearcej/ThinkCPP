@@ -50,7 +50,7 @@ int addTwo (int x) {
     return total;
 }
 
-int main () {
+int main() {
     int num = 3;
     int newNum = multiplyTwo(num);
     int newerNum = addTwo(newNum);
@@ -105,7 +105,7 @@ void threeLine () {
   newLine ();  newLine ();  newLine ();
 }
 
-int main () {
+int main() {
   cout << "First Line." << endl;
   threeLine ();
   cout << "Second Line." << endl;
@@ -181,7 +181,7 @@ void goodbye () {
   cout << "goodbye,";
 }
 
-int main () {
+int main() {
   cout << "welcome, ";
   goodbye();
   return 0;

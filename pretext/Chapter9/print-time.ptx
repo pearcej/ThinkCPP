@@ -27,7 +27,7 @@ void printTime (Time& t) {
     cout << t.hour << ":" << t.minute << ":" << t.second << endl;
 }
 
-int main () {
+int main() {
     Time time = { 11, 59, 3.14159 };
     printTime(time);
 }

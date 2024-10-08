@@ -218,7 +218,7 @@ using namespace std;
 
 // Write your code for the struct Shirt here.
 
-int main () {
+int main() {
     Shirt t = { "blue", 'L' };
 }
         ]]></input>
@@ -277,7 +277,7 @@ struct Shirt {
 };
 // Write your code for the struct Outfit here.
 
-int main () {
+int main() {
     Shirt t = { "blue", 'L' };
     Pants p = { 'S', "denim" };
     Outfit o = { t, p, true };

@@ -111,7 +111,7 @@ void countBy2 (int num) {
     }
 }
 
-int main () {
+int main() {
     countBy2(6);
 }
         ]]></input>
@@ -142,7 +142,7 @@ void countBy2 (int num) {
     }
 }
 
-int main () {
+int main() {
     countBy2(6);
 }
         ]]></input></program>
@@ -168,7 +168,7 @@ void countBy2 (int num) {
     }
 }
 
-int main () {
+int main() {
     countBy2(6);
 }
         ]]></input></program></exercise>

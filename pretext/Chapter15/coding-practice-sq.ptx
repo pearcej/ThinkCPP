@@ -35,7 +35,7 @@ using namespace std;
         </statement>
         <blocks>
           <block order="13">
-            <cline>int main () {</cline>
+            <cline>int main() {</cline>
           </block>
           <block order="6">
             <cline>   string fileIn;</cline>

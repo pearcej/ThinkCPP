@@ -35,7 +35,7 @@ cin &gt;&gt; x;</program>
 #include <iostream>
 using namespace std;
 
-int main () {
+int main() {
     int x;
 
     // prompt the user for input
@@ -92,7 +92,7 @@ cout &lt;&lt; name &lt;&lt; endl;</program>
 #include <string>
 using namespace std;
 
-int main () {
+int main() {
    string name;
 
    cout << "What is your full name? ";

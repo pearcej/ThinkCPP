@@ -63,7 +63,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-int main () {
+int main() {
   string bake = "bake a cake!";
   char letter = bake[?];
 }
@@ -105,7 +105,7 @@ int main () {
 #include <iostream>
 using namespace std;
 
-int main () {
+int main() {
   string lunch = "hello";
   string person = "deejay";
   lunch[0] = lunch[3];

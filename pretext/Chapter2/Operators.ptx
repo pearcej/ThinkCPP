@@ -29,7 +29,7 @@ minute / 60</program>
 #include <iostream>
 using namespace std;
 
-int main () {
+int main() {
     int hour, minute;
     hour = 12;
     minute = 59;
@@ -243,7 +243,7 @@ cout &lt;&lt; "Decimal:" &lt;&lt; num1 / num2;</program>
     </statement>
     <blocks>
       <block order="5">
-        <cline>int main () {</cline>
+        <cline>int main() {</cline>
       </block>
       <block order="9">
         <cline> double tax = 0.06;</cline>

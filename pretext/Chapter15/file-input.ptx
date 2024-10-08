@@ -13,7 +13,7 @@
 #include &lt;fstream&gt;
 using namespace std;
 
-int main ()
+int main()
 {
  int x;
  string line;
@@ -39,7 +39,7 @@ int main ()
 #include &lt;fstream&gt;
 using namespace std;
 
-int main ()
+int main()
 {
  string fileName = ...;
  ifstream infile (fileName.c_str());
@@ -200,7 +200,7 @@ member function <var/> detects the end of the file. <var/>  <var/>  </p>
     </statement>
     <blocks>
       <block order="6">
-        <cline>int main () {</cline>
+        <cline>int main() {</cline>
       </block>
       <block order="7">
         <cline> string name_of_file = "filename";</cline>

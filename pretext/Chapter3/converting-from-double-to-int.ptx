@@ -23,7 +23,7 @@ int x = int(pi);</program>
         an extremely precise measuring device. Now we are writing a program
         to perform some calculations with our data. Consider the following C++
         code.</p>
-      <program>int main () {
+      <program>int main() {
   double temp = 7.99999999;
   int roundedTemp = int(temp);
   cout &lt;&lt; roundedTemp;

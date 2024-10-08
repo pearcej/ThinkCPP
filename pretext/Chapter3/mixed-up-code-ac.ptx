@@ -330,7 +330,7 @@ double root ( double num ) {
     return sqrt(num);
 }
 
-int main () {
+int main() {
     double s1 = 4.8;
     double s2 = 3.8;
     double sqSum = sumOfSquares(s2, s1);
@@ -494,7 +494,7 @@ void conditionalProb (double B, double both) {
     cout << prob;
 } //conditionalProb
 
-int main () {
+int main() {
     double pSnow = 0.14;
     double pBoth = 0.08;
     conditionalProb(pSnow, pBoth);
@@ -512,7 +512,7 @@ void conditionalProb (double B, double both) {
     cout << prob;
 } //conditionalProb
 
-int main () {
+int main() {
     double pSnow = 0.14;
     double pBoth = 0.08;
     conditionalProb(pSnow, pBoth);

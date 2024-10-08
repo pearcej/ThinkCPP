@@ -23,7 +23,7 @@
 #include <iostream>
 using namespace std;
 
-int main () {
+int main() {
     int hour, minute;
     char colon;
 
@@ -60,7 +60,7 @@ int main () {
 #include <iostream>
 using namespace std;
 
-int main () {
+int main() {
     int hour, minute;
     char colon;
 
@@ -80,7 +80,7 @@ int main () {
   <exercise label="output_vars_1">
     <statement>
       <p>What prints when the following code is run?</p>
-      <program>int main () {
+      <program>int main() {
   char a;
   char b;
   a = 'z';
@@ -134,7 +134,7 @@ int main () {
   <exercise label="output_vars_2">
     <statement>
       <p>Now, what prints?</p>
-      <program>int main () {
+      <program>int main() {
   char a;
   char b;
   a = 'z';
@@ -188,7 +188,7 @@ int main () {
   <exercise label="output_vars_3">
     <statement>
       <p>And now, what prints?</p>
-      <program>int main () {
+      <program>int main() {
   int x;
   char y;
   x = '3';
@@ -271,7 +271,7 @@ int main () {
     </statement>
     <blocks>
       <block order="4">
-        <cline>int main () {</cline>
+        <cline>int main() {</cline>
       </block>
       <block order="3">
         <choice correct="yes">

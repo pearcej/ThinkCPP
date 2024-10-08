@@ -208,7 +208,7 @@
     </statement>
     <blocks>
       <block order="3">
-        <cline>int main () {</cline>
+        <cline>int main() {</cline>
       </block>
       <block order="8">
         <choice correct="yes">
@@ -356,7 +356,7 @@
         <cline>} //conditionalProb</cline>
       </block>
       <block order="12">
-        <cline>int main () {</cline>
+        <cline>int main() {</cline>
       </block>
       <block order="4">
         <cline> double pSnow = 0.14;</cline>

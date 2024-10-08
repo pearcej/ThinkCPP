@@ -59,7 +59,7 @@ double fred (double xc, double yc, double xp, double yp) {
     return area (distance (xc, yc, xp, yp));
 }
 
-int main () {
+int main() {
     double circle_area = fred (1.0, 2.0, 4.0, 6.0);
     cout << circle_area << endl;
     return 0;
@@ -186,7 +186,7 @@ void grow_4(int start_size){
     print_population(new_size);
 }
 
-int main () {
+int main() {
     int begin_population=3;
     grow_4(begin_population);
 }

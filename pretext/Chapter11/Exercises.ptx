@@ -109,7 +109,7 @@ ______________________ {
    }
 }
 
-int main () {
+int main() {
   StarWars character;
   character = (StarWars){ "Rey", 3, true};
   character.isMaincast();

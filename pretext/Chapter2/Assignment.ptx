@@ -95,7 +95,7 @@ hour = "Hello.";       // WRONG !!</program>
 using namespace std;
 // main: generate some simple output
 
-int main () {
+int main() {
   int p;
   int q;
   p = "h";

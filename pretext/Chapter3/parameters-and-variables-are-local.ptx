@@ -20,7 +20,7 @@ void printTwice (char phil) {
     cout << phil << phil << endl;
 }
 
-int main () {
+int main() {
     char argument = 'b';
     printTwice (argument);
     return 0;
@@ -52,7 +52,7 @@ int main () {
   cout &lt;&lt; "Hello " &lt;&lt; name &lt;&lt; "!";
 }
 
-int main () {
+int main() {
   string name1 = "Phil";
   printHelloName(name1);
   string name2 = "Joe";
@@ -102,7 +102,7 @@ int main () {
   cout &lt;&lt; "Hello " &lt;&lt; name &lt;&lt; "!";
 }
 
-int main () {
+int main() {
   string name1 = "Phil";
   printHelloName(name1);
   string name2 = "Joe";
@@ -178,7 +178,7 @@ void printGreeting(){
   hi();
 }
 
-int main () {
+int main() {
   hi();
   printGreeting();
   hi();

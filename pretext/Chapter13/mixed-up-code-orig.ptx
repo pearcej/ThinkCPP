@@ -12,7 +12,7 @@
         <cline>enum Day { MON = 1, TUE, WED, THU, FRI, SAT, SUN };</cline>
       </block>
       <block order="15">
-        <cline>int main () {</cline>
+        <cline>int main() {</cline>
       </block>
       <block order="14">
         <cline>   Day day = SUN;</cline>
@@ -63,7 +63,7 @@
     </statement>
     <blocks>
       <block order="10">
-        <cline>int main () {</cline>
+        <cline>int main() {</cline>
       </block>
       <block order="15">
         <cline>   int input;</cline>
@@ -120,7 +120,7 @@
     </statement>
     <blocks>
       <block order="2">
-        <cline>int main () {</cline>
+        <cline>int main() {</cline>
       </block>
       <block order="18">
         <cline>   int input1;</cline>

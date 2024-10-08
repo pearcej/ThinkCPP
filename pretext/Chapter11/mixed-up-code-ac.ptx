@@ -22,7 +22,7 @@ void printStudent (const Student& stu) {
      cout << stu.id << ":" << stu.year << ":" << stu.name << endl;
 }
 
-int main () {
+int main() {
       Student s1 = { 56673, 2023, "Bob" };
       printStudent (s1);
 }
@@ -51,7 +51,7 @@ void Student::print () {
     cout << stu.id << ":" << stu.year << ":" << stu.name << endl;
 }
 
-int main () {
+int main() {
     Student s1 = { 56673, 2023, "Bob" };
     s1.print();
 }
@@ -75,7 +75,7 @@ void Student::print () {
     cout << stu.id << ":" << stu.year << ":" << stu.name << endl;
 }
 
-int main () {
+int main() {
     Student s1 = { 56673, 2023, "Bob" };
     s1.print();
 }
@@ -512,7 +512,7 @@ Penguin::Penguin (int age_in, string name_in) {
     name = name_in;
 }
 
-int main () {
+int main() {
     Penguin p1 ();
     Penguin p2 (3, "Bob");
 }
@@ -541,7 +541,7 @@ Penguin::Penguin (int age_in, string name_in) {
     name = name_in;
 }
 
-int main () {
+int main() {
     Penguin p1 ();
     Penguin p2 (3, "Bob");
 }

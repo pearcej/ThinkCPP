@@ -17,7 +17,7 @@ void printStudent (const Student& stu) {
      cout << stu.id << ":" << stu.year << ":" << stu.name << endl;
 }
 
-int main ( ) {
+int main( ) {
       Student s1 = { 56673, 2023, "Bob" };
       printStudent (s1);
 }
@@ -56,7 +56,7 @@ int main ( ) {
         <cline>}</cline>
       </block>
       <block order="10">
-        <cline>int main () {</cline>
+        <cline>int main() {</cline>
         <cline>Student s1 = { 56673, 2023, "Bob" };</cline>
       </block>
       <block order="13" correct="no">
@@ -430,7 +430,7 @@ int main ( ) {
         <cline>}                                    </cline>
       </block>
       <block order="3">
-        <cline>int main () {</cline>
+        <cline>int main() {</cline>
       </block>
       <block order="6">
         <cline>Penguin p1 ();</cline>
@@ -475,7 +475,7 @@ int main ( ) {
         <cline>bool after (const Student&amp; stu) const;</cline>
       </block>
       <block order="5" correct="no">
-        <cline>int main () {                        </cline>
+        <cline>int main() {                        </cline>
       </block>
       <block order="9" correct="no">
         <cline>Student s1;                  </cline>

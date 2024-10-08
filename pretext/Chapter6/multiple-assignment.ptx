@@ -13,7 +13,7 @@
 #include <iostream>
 using namespace std;
 
-int main () {
+int main() {
     int fred = 5;
     cout << fred;
     fred = 7;
@@ -35,7 +35,7 @@ int main () {
 #include <iostream>
 using namespace std;
 
-int main () {
+int main() {
     int fred = 5;
     fred = 7;
     cout << fred;
@@ -115,7 +115,7 @@ a = 3;         // a and b are no longer equal</program>
 #include <iostream>
 using namespace std;
 
-int main () {
+int main() {
   int x = 10;
   cout << x << "!";
   x = 1;
@@ -168,7 +168,7 @@ int main () {
 #include <iostream>
 using namespace std;
 
-int main () {
+int main() {
   int x = 0;
   x = 5;
   int y = x;
