@@ -10,7 +10,7 @@
                     appears in a given string. <c>countWord</c> should take two strings <c>input</c> and <c>word</c> as parameters and return an <c>int</c>.
                     Feel free to use the <c>stringToLower</c> function we wrote earlier. Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_7_AC_2q_editor" interactive="activecode" language="cpp" line-numbers="yes">
+        <program xml:id="cp_7_AC_2q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 #include "ctype.h"
@@ -46,7 +46,7 @@ int main() {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter7', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_7_AC_2q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+      <exercise label="cp_7_AC_2q_pp" numbered="yes" adaptive="yes" indentation="hide">
         <statement>
           <p>How much does Bubba love shrimp? Probably a lot. But how many times does the word <q>shrimp</q> come
                     up in his monologue? Write a function <c>countWord</c> that counts the number of times a given word
@@ -109,7 +109,7 @@ int main() {
                     The output should be:</p>
           <program>Gucci , Gucci , Gucci , Gucci</program>
         </statement>
-        <program xml:id="cp_7_AC_4q_editor" interactive="activecode" language="cpp" line-numbers="yes">
+        <program xml:id="cp_7_AC_4q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 #include <string>
@@ -127,7 +127,7 @@ int main() {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter7', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_7_AC_4q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+      <exercise label="cp_7_AC_4q_pp" numbered="yes" adaptive="yes" indentation="hide">
         <statement>
           <p>Write a void function <c>removeWord</c> that removes a given word from a given string and prints
                     out the new string. <c>removeWord</c> should take two strings <c>input</c> and <c>word</c> as parameters
@@ -182,7 +182,7 @@ int main() {
                     and returns the reversed <c>string</c>. Run and test your code! Select the Parsonsprob
                     tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_7_AC_6q_editor" interactive="activecode" language="cpp" line-numbers="yes">
+        <program xml:id="cp_7_AC_6q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -205,7 +205,7 @@ TEST_CASE("reverseWord function") {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter7', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_7_AC_6q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+      <exercise label="cp_7_AC_6q_pp" numbered="yes" adaptive="yes" indentation="hide">
         <statement>
           <p>Write the function <c>reverseString</c> which takes a <c>string input</c>, reverses it,
                     and returns the reversed <c>string</c>. Use the lines to construct
@@ -252,7 +252,7 @@ TEST_CASE("reverseWord function") {
                     are vowels. Run and test your code! Select the Parsonsprob tab for hints for
                     the construction of the code.</p>
         </statement>
-        <program xml:id="cp_7_AC_8q_editor" interactive="activecode" language="cpp" line-numbers="yes">
+        <program xml:id="cp_7_AC_8q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -275,7 +275,7 @@ TEST_CASE("countVowels function") {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter7', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_7_AC_8q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+      <exercise label="cp_7_AC_8q_pp" numbered="yes" adaptive="yes" indentation="hide">
         <statement>
           <p>Write the function <c>countVowels</c> which takes a <c>string input</c> and returns
                     the number of vowels in the <c>string</c>. Remember, &#x2018;a', &#x2018;e', &#x2018;i', &#x2018;o', and &#x2018;u'
@@ -329,7 +329,7 @@ TEST_CASE("countVowels function") {
                     Feel free to use any <c>string</c> functions you'd like. Run and test your code!
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_7_AC_10q_editor" interactive="activecode" language="cpp" line-numbers="yes">
+        <program xml:id="cp_7_AC_10q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 #include <string>
@@ -364,7 +364,7 @@ TEST_CASE("camelToSnake function") {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter7', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_7_AC_10q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+      <exercise label="cp_7_AC_10q_pp" numbered="yes" adaptive="yes" indentation="hide">
         <statement>
           <p>Camel case is the practice of writing phrases without spaces or punctuation,
                     indicating the separation of words using capital letter. For example, <q>camel case</q>

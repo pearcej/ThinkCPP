@@ -6,7 +6,7 @@
     <caption>
       <p>Fix the code below so that it runs without errors.  Hint: you might need to change the names of some variables.</p>
     </caption>
-    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="VARS_a1q_ps_editor">
+    <program interactive="activecode" line-numbers="yes" xml:id="VARS_a1q_ps_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -27,7 +27,7 @@ int main () {
                 Below is one way to fix the program.  true and false are keywords, so they cannot be used as variable names.
 
     
-    <program xml:id="VARS_a1a_ps_editor" language="cpp" line-numbers="yes"><input><![CDATA[
+    <program xml:id="VARS_a1a_ps_editor" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -41,7 +41,7 @@ int main () {
 
             
 
-<exercise label="VARS_a1a_ps"><caption><p>Below is one way to fix the program.  <c>true</c> and <c>false</c> are keywords, so they cannot be used as variable names.</p></caption><program xml:id="VARS_a1a_ps_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="VARS_a1a_ps"><caption><p>Below is one way to fix the program.  <c>true</c> and <c>false</c> are keywords, so they cannot be used as variable names.</p></caption><program xml:id="VARS_a1a_ps_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -60,7 +60,7 @@ int main () {
         <caption>
           <p>Finish the code below so that it prints <q>I drive a 2014 Buick Regal</q>. Select the Pseudocode tab for hints for the construction of the code.</p>
         </caption>
-        <program xml:id="VARS_a2_ps_editor" interactive="activecode" language="cpp" line-numbers="yes">
+        <program xml:id="VARS_a2_ps_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -81,7 +81,7 @@ int main () {
       </exercise>
     </TabNode>
     <TabNode tabname="Pseudocode" tabnode_options="{'subchapter': 'activeCode_pseudocode', 'chapter': 'Chapter2', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Pseudocode'}">
-      <exercise label="VARS_a2_p_ps" numbered="yes" adaptive="yes" indentation="show" language="cpp">
+      <exercise label="VARS_a2_p_ps" numbered="yes" adaptive="yes" indentation="show">
         <caption>
           <p>Finish the code below so that it prints <q>I drive a 2014 Buick Regal</q>. Use the lines to construct the pseudocode, then go back to complete the Activecode tab.</p>
         </caption>
@@ -134,7 +134,7 @@ int main () {
     <caption>
       <p>Fix the code below so that it prints <q>Cady scored 90% on the exam.</q></p>
     </caption>
-    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="VARS_a3q_ps_editor">
+    <program interactive="activecode" line-numbers="yes" xml:id="VARS_a3q_ps_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -155,7 +155,7 @@ int main() {
                 Below is one way to fix the program.  We want to use doubles so that our result isn't rounded down to 0 through integer division.
 
     
-    <program xml:id="VARS_a3a_ps_editor" language="cpp" line-numbers="yes"><input><![CDATA[
+    <program xml:id="VARS_a3a_ps_editor" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -167,7 +167,7 @@ int main() {
 
             
 
-<exercise label="VARS_a3a_ps"><caption><p>Below is one way to fix the program.  We want to use doubles so that our result isn't rounded down to 0 through integer division.</p></caption><program xml:id="VARS_a3a_ps_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="VARS_a3a_ps"><caption><p>Below is one way to fix the program.  We want to use doubles so that our result isn't rounded down to 0 through integer division.</p></caption><program xml:id="VARS_a3a_ps_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -185,7 +185,7 @@ int main() {
           <p>Finish the code below so that it returns the correct volume of a sphere. Select the Pseudocode tab for hints for the construction of the code.
                     Hint: think about what happens when you use integer division. The volume of a sphere is given by V = (4/3)(pi)(r^3).</p>
         </caption>
-        <program xml:id="VARS_a4_ps_editor" interactive="activecode" language="cpp" line-numbers="yes">
+        <program xml:id="VARS_a4_ps_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -205,7 +205,7 @@ int main () {
       </exercise>
     </TabNode>
     <TabNode tabname="Pseudocode" tabnode_options="{'subchapter': 'activeCode_pseudocode', 'chapter': 'Chapter2', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Pseudocode'}">
-      <exercise label="VARS_a4_p_ps" numbered="yes" adaptive="yes" indentation="show" language="cpp">
+      <exercise label="VARS_a4_p_ps" numbered="yes" adaptive="yes" indentation="show">
         <caption>
           <p>Finish the code below so that it returns the correct volume of a sphere. Select the Parsonsprob tab for hints for the construction of the code. Hint: think about what happens when you use integer division. The volume of a sphere is given by V = (4/3)(pi)(r^3).
                     Use the lines on to construct the pseudocode, then go back to complete the Activecode tab.</p>
@@ -245,7 +245,7 @@ int main () {
     <caption>
       <p>Fix the code below so that assigns <c>a</c> its correct value of <c>'a'</c>.  Hint: use character operations!</p>
     </caption>
-    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="VARS_a5q_ps_editor">
+    <program interactive="activecode" line-numbers="yes" xml:id="VARS_a5q_ps_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -269,7 +269,7 @@ int main () {
                 Below is one way to complete the program.  There are many creative ways that you could use the order of operations to come up with a complex expression that will bring you to 'a', here is one way.
 
     
-    <program xml:id="VARS_a5a_ps_editor" language="cpp" line-numbers="yes"><input><![CDATA[
+    <program xml:id="VARS_a5a_ps_editor" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -282,7 +282,7 @@ int main () {
 
             
 
-<exercise label="VARS_a5a_ps"><caption><p>Below is one way to complete the program.  There are many creative ways that you could use the order of operations to come up with a complex expression that will bring you to <c>'a'</c>, here is one way.</p></caption><program xml:id="VARS_a5a_ps_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="VARS_a5a_ps"><caption><p>Below is one way to complete the program.  There are many creative ways that you could use the order of operations to come up with a complex expression that will bring you to <c>'a'</c>, here is one way.</p></caption><program xml:id="VARS_a5a_ps_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -300,7 +300,7 @@ int main () {
         <caption>
           <p>Write code that assigns <q>apples</q> to the variable oranges, and <q>oranges</q> to the variable apples, then swaps their values.  Be sure to inclue any necessary headers.  YOU MAY NOT HARDCODE YOUR SOLUTION. Select the Pseudocode tab for hints for the construction of the code.</p>
         </caption>
-        <program xml:id="VARS_a6_ps_editor" interactive="activecode" language="cpp" line-numbers="yes">
+        <program xml:id="VARS_a6_ps_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
 int main () {
 
@@ -312,7 +312,7 @@ int main () {
       </exercise>
     </TabNode>
     <TabNode tabname="Pseudocode" tabnode_options="{'subchapter': 'activeCode_pseudocode', 'chapter': 'Chapter2', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Pseudocode'}">
-      <exercise label="VARS_a6_p_ps" numbered="yes" adaptive="yes" indentation="show" language="cpp">
+      <exercise label="VARS_a6_p_ps" numbered="yes" adaptive="yes" indentation="show">
         <caption>
           <p>Write code that assigns <q>apples</q> to the variable oranges, and <q>oranges</q> to the variable apples, then swaps their values.  Be sure to inclue any necessary headers. Use the lines to construct the pseudocode, then go back to complete the Activecode tab.</p>
         </caption>
@@ -355,7 +355,7 @@ int main () {
     <caption>
       <p>Write code that prints <q>Eat</q>, <q>More</q>, and <q>Chicken</q> on 3 consecutive lines. Be sure to inclue any necessary headers.</p>
     </caption>
-    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="VARS_a7q_ps_editor">
+    <program interactive="activecode" line-numbers="yes" xml:id="VARS_a7q_ps_editor">
       <input>
 int main () {
 
@@ -369,7 +369,7 @@ int main () {
                 Below is one way to implement the solution.
 
     
-    <program xml:id="VARS_a7a_ps_editor" language="cpp" line-numbers="yes"><input><![CDATA[
+    <program xml:id="VARS_a7a_ps_editor" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -382,7 +382,7 @@ int main () {
 
             
 
-<exercise label="VARS_a7a_ps"><caption><p>Below is one way to implement the solution.</p></caption><program xml:id="VARS_a7a_ps_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="VARS_a7a_ps"><caption><p>Below is one way to implement the solution.</p></caption><program xml:id="VARS_a7a_ps_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -400,7 +400,7 @@ int main () {
         <caption>
           <p>Write code that calculates how much you you will spend after tipping 20% on your $36.25 dinner.  Save the result of this calculation in <c>plusTip</c>.  Be sure to include any necessary headers. Select the Pseudocode tab for hints for the construction of the code.</p>
         </caption>
-        <program xml:id="VARS_a8_ps_editor" interactive="activecode" language="cpp" line-numbers="yes">
+        <program xml:id="VARS_a8_ps_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
 int main () {
 
@@ -412,7 +412,7 @@ int main () {
       </exercise>
     </TabNode>
     <TabNode tabname="Pseudocode" tabnode_options="{'subchapter': 'activeCode_pseudocode', 'chapter': 'Chapter2', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Pseudocode'}">
-      <exercise label="VARS_a8_p_ps" numbered="yes" adaptive="yes" indentation="show" language="cpp">
+      <exercise label="VARS_a8_p_ps" numbered="yes" adaptive="yes" indentation="show">
         <caption>
           <p>Write code that calculates how much you you will spend after tipping 20% on your $36.25 dinner.  Save the result of this calculation in <c>plusTip</c>.
                     Use the lines to construct the pseudocode, then go back to complete the Activecode tab.</p>
@@ -449,7 +449,7 @@ int main () {
     <caption>
       <p>You have about three hours and fifteen minutes of homework to do today.  Rather than starting it right away, you choose to procrastinate by calculating how many seconds you'll be spending on your work.  Convert the time to seconds and store the result in <c>seconds</c>.  Be sure to inclue any necessary headers.</p>
     </caption>
-    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="VARS_a9q_ps_editor">
+    <program interactive="activecode" line-numbers="yes" xml:id="VARS_a9q_ps_editor">
       <input><![CDATA[
 int main () {
 
@@ -465,7 +465,7 @@ int main () {
                 Below is one way to implement the solution.
 
     
-    <program xml:id="VARS_a9a_ps_editor" language="cpp" line-numbers="yes"><input><![CDATA[
+    <program xml:id="VARS_a9a_ps_editor" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -479,7 +479,7 @@ int main () {
 
             
 
-<exercise label="VARS_a9a_ps"><caption><p>Below is one way to implement the solution.</p></caption><program xml:id="VARS_a9a_ps_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="VARS_a9a_ps"><caption><p>Below is one way to implement the solution.</p></caption><program xml:id="VARS_a9a_ps_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -498,7 +498,7 @@ int main () {
         <caption>
           <p>Write code that calculates and prints the average of a and b if a = 3.14, and b = 1.59.  You may only use one line of code.  Be sure to inclue any necessary headers. Select the Pseudocode tab for hints for the construction of the code.</p>
         </caption>
-        <program xml:id="VARS_a10_ps_editor" interactive="activecode" language="cpp" line-numbers="yes">
+        <program xml:id="VARS_a10_ps_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
 int main () {
 
@@ -510,7 +510,7 @@ int main () {
       </exercise>
     </TabNode>
     <TabNode tabname="Pseudocode" tabnode_options="{'subchapter': 'activeCode_pseudocode', 'chapter': 'Chapter2', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Pseudocode'}">
-      <exercise label="VARS_a10_p_ps" numbered="yes" adaptive="yes" indentation="show" language="cpp">
+      <exercise label="VARS_a10_p_ps" numbered="yes" adaptive="yes" indentation="show">
         <caption>
           <p>Write code that calculates and prints the average of a and b if a = 3.14, and b = 1.59.  You may only use one line of code. Use the lines on the to construct the pseudocode, then go back to complete the Activecode tab.</p>
         </caption>

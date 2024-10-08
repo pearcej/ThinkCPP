@@ -73,7 +73,7 @@ countdown (n-1);</program>
             What if we pass zero as an argument, and neither conditional
             returns true?</p>
     </statement>
-    <program xml:id="return_vals_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
+    <program xml:id="return_vals_AC_1_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -122,7 +122,7 @@ int main () {
             absoluteValue.  If we pass 0 as an argument, the function will
             return 0.  Thus, every route through the conditonal is satisfied.</p>
     </statement>
-    <program xml:id="return_vals_AC_2_editor" interactive="activecode" language="cpp" line-numbers="yes">
+    <program xml:id="return_vals_AC_2_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;

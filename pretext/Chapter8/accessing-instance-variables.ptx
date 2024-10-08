@@ -20,7 +20,7 @@ double distance = sqrt(blank.x * blank.x + blank.y * blank.y);</program>
             <c>black</c> using dot notation and output their values. Next, we output the
             distance from the origin.</p>
     </statement>
-    <program xml:id="accessing_instance_variables_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
+    <program xml:id="accessing_instance_variables_AC_1_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <cmath>
@@ -91,7 +91,7 @@ int main() {
   <exercise label="accessing_instance_variables_2">
     <statement>
       <p>What will print?</p>
-      <program language="cpp" line-numbers="yes">
+      <program line-numbers="yes">
         <input><![CDATA[
 struct Blue {
   double x, y;

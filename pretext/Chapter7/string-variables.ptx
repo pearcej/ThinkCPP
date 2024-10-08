@@ -8,7 +8,7 @@
             giving it a value. The second line assigns it the string value <c>"Hello,"</c>.
             The third line is a combined declaration and assignment, also called an initialization.</p>
     </statement>
-    <program xml:id="string_variables_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
+    <program xml:id="string_variables_AC_1_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -35,7 +35,7 @@ int main() {
     <statement>
       <p>Run the active code below!</p>
     </statement>
-    <program xml:id="string_variables_AC_2_editor" interactive="activecode" language="cpp" line-numbers="yes">
+    <program xml:id="string_variables_AC_2_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -49,7 +49,7 @@ int main() {
         ]]></input>
     </program>
   </exercise>
-  <exercise label="string_variables_1" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+  <exercise label="string_variables_1" numbered="yes" adaptive="yes" indentation="hide">
     <statement>
       <p>Construct a block of code that correctly prints out a string variable.</p>
     </statement>

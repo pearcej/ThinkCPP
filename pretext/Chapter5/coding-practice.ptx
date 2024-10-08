@@ -8,7 +8,7 @@
                 Below is one way to implement the calculator function. Using conditionals,
                     we return the correct result depending on which operation was given.
 
-    <program xml:id="cp_5_AC_1a" language="cpp" line-numbers="yes"><input><![CDATA[
+    <program xml:id="cp_5_AC_1a" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -72,7 +72,7 @@ TEST_CASE("calculator function: division") {
                     we can find the interior angle and return it. Notice how we use 180.0
                     instead of 180 to avoid integer division.
 
-    <program xml:id="cp_5_AC_3a" language="cpp" line-numbers="yes"><input><![CDATA[
+    <program xml:id="cp_5_AC_3a" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -113,7 +113,7 @@ TEST_CASE("calculateIntAngle function") {
                     check to see if the dog is one year old. If it is older than one, then
                     we can use the formula to return the correct age in human years.
 
-    <program xml:id="cp_5_AC_5a" language="cpp" line-numbers="yes"><input><![CDATA[
+    <program xml:id="cp_5_AC_5a" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -159,7 +159,7 @@ TEST_CASE("dogToHumanYears function for &gt;1") {
                 Below is one way to implement the program. We can use conditionals in this
                     order to efficiently determine whether or not a given year is a leap year.
 
-    <program xml:id="cp_5_AC_7a" language="cpp" line-numbers="yes"><input><![CDATA[
+    <program xml:id="cp_5_AC_7a" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -224,7 +224,7 @@ TEST_CASE("isLeapYear divisible by 400") {
                     is 1, and in that case we return 1. Otherwise, we recursively
                     call triangularNum on n-1.
 
-    <program xml:id="cp_5_AC_9a" language="cpp" line-numbers="yes"><input><![CDATA[
+    <program xml:id="cp_5_AC_9a" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 

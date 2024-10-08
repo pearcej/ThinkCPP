@@ -11,7 +11,6 @@
           of some variables.</p>
       </statement>
       <program interactive="activecode"
-               language="cpp"
                line-numbers="yes"
                xml:id="VARS_a1q_editor">
       <input><![CDATA[
@@ -31,7 +30,6 @@ int main () {
         <p>Below is one way to fix the program. true and false are
           keywords, so they cannot be used as variable names.</p>
         <program xml:id="VARS_a1a_editor"
-                 language="cpp"
                  line-numbers="yes"><input><![CDATA[
            #include <iostream>
            using namespace std;
@@ -54,7 +52,6 @@ int main () {
       </statement>
       <program xml:id="VARS_a2_editor"
                interactive="activecode"
-               language="cpp"
                line-numbers="yes">
           <input><![CDATA[
     #include <iostream>
@@ -78,7 +75,6 @@ int main () {
                   numbered="yes"
                   adaptive="yes"
                   indentation="show"
-                  language="cpp"
                   exercise-interactive="parson">
           <p>Finish the code below so that it prints <q>I drive a 2014 Buick Regal</q>. Use the
             lines to construct the pseudocode, then go back to complete the exercise.</p>
@@ -133,7 +129,6 @@ int main () {
         <p>Fix the code below so that it prints <q>Cady scored 90% on the exam.</q></p>
       </statement>
       <program interactive="activecode"
-               language="cpp"
                line-numbers="yes"
                xml:id="VARS_a3q_editor">
       <input><![CDATA[
@@ -153,7 +148,6 @@ int main() {
         <p>Below is one way to fix the program. We want to use doubles so
           that our result isn't rounded down to 0 through integer division.</p>
         <program xml:id="VARS_a3a_editor"
-                 language="cpp"
                  line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -175,7 +169,6 @@ int main() {
       </statement>
       <program xml:id="VARS_a4_ps_editor"
                interactive="activecode"
-               language="cpp"
                line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -199,7 +192,6 @@ int main () {
                   numbered="yes"
                   adaptive="yes"
                   indentation="show"
-                  language="cpp"
                   exercise-interactive="parson">
           <p>Use the lines on to construct the pseudocode, then go back to complete the exercise.</p>
           <blocks>
@@ -240,7 +232,6 @@ int main () {
           character operations!</p>
       </statement>
       <program interactive="activecode"
-               language="cpp"
                line-numbers="yes"
                xml:id="VARS_a5q_editor">
       <input><![CDATA[
@@ -262,7 +253,6 @@ int main () {
       <solution component="ex_solution"> Below is one way to complete the program. There are many
         creative ways that you could use the order of operations to come up with a complex
         expression that will bring you to 'a', here is one way. <program xml:id="VARS_a5a_editor"
-                 language="cpp"
                  line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -285,7 +275,6 @@ int main () {
       </statement>
       <program xml:id="VARS_a6_ps_editor"
                interactive="activecode"
-               language="cpp"
                line-numbers="yes">
         <input><![CDATA[
 int main () {
@@ -302,8 +291,7 @@ int main () {
                   numbered="yes"
                   exercise-interactive="parson"
                   adaptive="yes"
-                  indentation="show"
-                  language="cpp">
+                  indentation="show">
           <p>Use the lines to construct the pseudocode, then go back to complete the exercise.</p>
           <blocks>
             <block order="7">
@@ -347,7 +335,6 @@ int main () {
           lines. Be sure to inclue any necessary headers.</p>
       </statement>
       <program interactive="activecode"
-               language="cpp"
                line-numbers="yes"
                xml:id="VARS_a7q_editor">
       <input>
@@ -357,7 +344,6 @@ int main () {
         </input>
     </program>
       <solution component="ex_solution"> Below is one way to implement the solution. <program xml:id="VARS_a7a_editor"
-                 language="cpp"
                  line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -379,7 +365,6 @@ int main () {
       </statement>
       <program xml:id="VARS_a8_ps_editor"
                interactive="activecode"
-               language="cpp"
                line-numbers="yes">
       <input><![CDATA[
 int main () {
@@ -395,7 +380,6 @@ int main () {
                   numbered="yes"
                   adaptive="yes"
                   indentation="show"
-                  language="cpp"
                   exercise-interactive="parson">
           <p>Use the lines to construct the pseudocode, then go back to complete the exercise.</p>
           <blocks>
@@ -436,7 +420,6 @@ int main () {
           sure to inclue any necessary headers.</p>
       </statement>
       <program interactive="activecode"
-               language="cpp"
                line-numbers="yes"
                xml:id="VARS_a9q_editor">
       <input><![CDATA[
@@ -449,7 +432,6 @@ int main () {
         ]]></input>
     </program>
       <solution component="ex_solution"> Below is one way to implement the solution. <program xml:id="VARS_a9a_editor"
-                 language="cpp"
                  line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -473,7 +455,6 @@ int main () {
       </statement>
       <program xml:id="VARS_a10_ps_editor"
                interactive="activecode"
-               language="cpp"
                line-numbers="yes">
               <input><![CDATA[
     int main () {
@@ -489,7 +470,6 @@ int main () {
                   numbered="yes"
                   adaptive="yes"
                   indentation="show"
-                  language="cpp"
                   exercise-interactive="parson">
           <p>Write code that calculates and prints the average of a and b if a = 3.14, and b = 1.59.
             You may only use one line of code. Use the lines on the to construct the pseudocode,

@@ -35,7 +35,7 @@
     </statement>
     <setup>
       <var>
-        <program language="cpp" line-numbers="yes">
+        <program line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -62,7 +62,7 @@ int main() {
   <exercise label="fuwresults_2">
     <statement>
       <p>Will the following code compile?</p>
-      <program language="cpp" line-numbers="yes">
+      <program line-numbers="yes">
         <input><![CDATA[
 #include <iostream>
 using namespace std;

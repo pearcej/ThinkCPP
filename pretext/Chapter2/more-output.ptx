@@ -9,7 +9,6 @@
     </caption>
     <program label="more_output_AC_1_editor"
              interactive="activecode"
-             language="cpp"
              line-numbers="yes"
              highlight-lines="5-6">
       <input><![CDATA[
@@ -41,7 +40,6 @@ int main () {
     </statement>
     <program xml:id="more_output_AC_2_editor"
              interactive="activecode"
-             language="cpp"
              line-numbers="yes"
              highlight-lines="5">
       <input><![CDATA[
@@ -69,7 +67,6 @@ world!</c>. Notice in <c>main</c> that there is a
     </caption>
     <program xml:id="more_output_AC_3_editor"
              interactive="activecode"
-             language="cpp"
              line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -93,7 +90,6 @@ int main () {
     </caption>
     <program xml:id="more_output_AC_4_editor"
              interactive="activecode"
-             language="cpp"
              line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -129,7 +125,7 @@ int main(){cout<<"Goodbye, ";cout<<"cruel world!"<<endl;}
   <exercise label="more_output_3.0">
     <statement>
       <p>On how many separate lines will the 7's be printed?</p>
-      <program language="cpp"
+      <program
                line-numbers="yes">
 #include &lt;iostream&gt;
 using namespace std;
@@ -181,8 +177,7 @@ int main () {
   <exercise label="more_output_3"
             numbered="yes"
             adaptive="yes"
-            indentation="show"
-            language="cpp">
+            indentation="show">
     <statement>
       <p>Construct a main function that prints <q>Snap!</q> on the first line, <q>Crackle!</q> on
         the third line, and <q>Pop!</q> on the sixth line. You might not use all of endl blocks
@@ -192,7 +187,7 @@ int main () {
       #include &lt;iostream&gt;
       using namespace std;
     </program-preamble>
-    <program language="cpp"
+    <program
              codelens="no"></program>
     <blocks>
       <block order="3">
@@ -235,8 +230,7 @@ int main () {
   <exercise label="more_output_3.1"
             numbered="yes"
             adaptive="yes"
-            indentation="show"
-            language="cpp">
+            indentation="show">
     <statement>
       <p>Construct a main function that prints <q>Hello, world!</q> so that <q>Hello,</q> and <q>
         world!</q> are printed on two separate lines.</p>
@@ -245,7 +239,7 @@ int main () {
       #include &lt;iostream&gt;
       using namespace std;
     </program-preamble>
-    <program language="cpp"
+    <program
              codelens="no"></program>
     <blocks>
       <block order="6">

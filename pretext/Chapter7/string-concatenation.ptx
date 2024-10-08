@@ -9,7 +9,7 @@
       <p>In the active code below, we use the <c>+</c> operator to concatenate <c>fruit</c> with
             <c>bakedGood</c> to create <c>dessert</c>.</p>
     </statement>
-    <program xml:id="string_concatenation_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
+    <program xml:id="string_concatenation_AC_1_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -43,7 +43,7 @@ int main() {
     <statement>
       <p>The active code below outputs the ducklings names in alphabetical order.</p>
     </statement>
-    <program xml:id="string_concatenation_AC_2_editor" interactive="activecode" language="cpp" line-numbers="yes">
+    <program xml:id="string_concatenation_AC_2_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -80,7 +80,7 @@ Quack</program>
   <exercise label="string_concatenation_1">
     <statement>
       <p>What is printed by the following statements?</p>
-      <program language="cpp" line-numbers="yes">
+      <program line-numbers="yes">
         <input><![CDATA[
 string s = "C++";
 string t = "rocks";
@@ -123,7 +123,7 @@ cout << s + t << endl;
       </choice>
     </choices>
   </exercise>
-  <exercise label="string_concatenation_2" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+  <exercise label="string_concatenation_2" numbered="yes" adaptive="yes" indentation="hide">
     <statement>
       <p>As an exercise, put together the code below so that it prints <c>C++ is so fun!</c></p>
     </statement>
@@ -152,7 +152,7 @@ cout << s + t << endl;
       </block>
     </blocks>
   </exercise>
-  <exercise label="string_concatenation_3" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+  <exercise label="string_concatenation_3" numbered="yes" adaptive="yes" indentation="hide">
     <statement>
       <p>Put together the code below to creater a function <c>greeter</c> that adds <q>hello</q> and <q>goodbye</q> behind and ahead of a message
             respectively and then prints the new message.

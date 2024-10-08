@@ -18,7 +18,6 @@
     </caption>
     <program xml:id="output_vars_AC_1_editor"
              interactive="activecode"
-             language="cpp"
              line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -56,7 +55,6 @@ int main () {
     </caption>
     <program xml:id="output_vars_AC_2_editor"
              interactive="activecode"
-             language="cpp"
              line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -266,8 +264,7 @@ int main () {
   <exercise label="output_vars_5"
            numbered="yes"
            adaptive="yes"
-           indentation="hide"
-           language="cpp">
+           indentation="hide">
     <statement>
       <p>Construct a main function that assigns <q>Hello</q> to the variable h, then prints out h's
         value.</p>

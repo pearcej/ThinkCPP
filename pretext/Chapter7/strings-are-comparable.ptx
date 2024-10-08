@@ -8,7 +8,7 @@
       <p>Take a look at the active code below, which checks to see if <c>word</c> is
             equal to <c>"banana"</c>.</p>
     </statement>
-    <program xml:id="strings_comparable_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
+    <program xml:id="strings_comparable_AC_1_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -30,7 +30,7 @@ int main() {
       <p>The active code below uses comparison operators to determine the ordering
             of <c>word</c> relative to <c>"banana"</c>.</p>
     </statement>
-    <program xml:id="strings_comparable_AC_2_editor" interactive="activecode" language="cpp" line-numbers="yes">
+    <program xml:id="strings_comparable_AC_2_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -63,7 +63,7 @@ int main() {
     <statement>
       <p>What would the result of the following comparison be?
             Where <c>1</c> means true and <c>0</c> means false.</p>
-      <program language="cpp" line-numbers="yes">
+      <program line-numbers="yes">
         <input><![CDATA[
 "Dog" < "Doghouse";
 ]]></input>
@@ -92,7 +92,7 @@ int main() {
     <statement>
       <p>What would the result of the following comparison be?
             Where <c>1</c> means true and <c>0</c> means false.</p>
-      <program language="cpp" line-numbers="yes">
+      <program line-numbers="yes">
         <input>
 "dog" &lt; "Dog";
 </input>
@@ -129,7 +129,7 @@ int main() {
     <statement>
       <p>What would the result of the following comparison be?
             Where <c>1</c> means true and <c>0</c> means false.</p>
-      <program language="cpp" line-numbers="yes">
+      <program line-numbers="yes">
         <input><![CDATA[
 "dog" < "Doghouse";
 ]]></input>
@@ -158,7 +158,7 @@ int main() {
     <statement>
       <p>What would the result of the following comparison be?
             Where <c>1</c> means true and <c>0</c> means false.</p>
-      <program language="cpp" line-numbers="yes">
+      <program line-numbers="yes">
         <input><![CDATA[
 "bread" < "bread";
 ]]></input>

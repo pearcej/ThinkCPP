@@ -8,7 +8,7 @@
           <p>There are errors in the code below. Modify the code so that <c>main</c> runs
                     successfully. Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_14_AC_2q_editor" interactive="activecode" language="cpp" line-numbers="yes">
+        <program xml:id="cp_14_AC_2q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -45,7 +45,7 @@ int main() {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter14', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_14_AC_2q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+      <exercise label="cp_14_AC_2q_pp" numbered="yes" adaptive="yes" indentation="hide">
         <statement>
           <p>There are errors in the code below. Modify the code so that <c>main</c> runs
                     successfully. Use the lines to construct the code, then go back to complete the Activecode tab.</p>
@@ -137,7 +137,7 @@ int main() {
                     what 100 degrees Celsius is in Fahrenheit.
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_14_AC_4q_editor" interactive="activecode" language="cpp" line-numbers="yes">
+        <program xml:id="cp_14_AC_4q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -186,7 +186,7 @@ int main() {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter14', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_14_AC_4q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+      <exercise label="cp_14_AC_4q_pp" numbered="yes" adaptive="yes" indentation="hide">
         <statement>
           <p>In <c>main</c> create a <c>Temp</c> object to calculate
                     what 100 degrees Celsius is in Fahrenheit.
@@ -224,7 +224,7 @@ int main() {
                     and copies the data into the <c>elements</c> vector.
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_14_AC_6q_editor" interactive="activecode" language="cpp" line-numbers="yes">
+        <program xml:id="cp_14_AC_6q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 #include <vector>
@@ -243,7 +243,7 @@ class MyVector {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter14', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_14_AC_6q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+      <exercise label="cp_14_AC_6q_pp" numbered="yes" adaptive="yes" indentation="hide">
         <statement>
           <p>What if we had an existing <c>vector</c> with data that we want to copy
                     into our <c>MyVector</c>? Write a constructor that takes a <c>vector</c>
@@ -278,7 +278,7 @@ class MyVector {
                     [2, 5, 1, 8] followed by a newline.
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_14_AC_8q_editor" interactive="activecode" language="cpp" line-numbers="yes">
+        <program xml:id="cp_14_AC_8q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 #include <vector>
@@ -328,7 +328,7 @@ int MyVector::at(int index) { return elements[index]; }
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter14', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_14_AC_8q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+      <exercise label="cp_14_AC_8q_pp" numbered="yes" adaptive="yes" indentation="hide">
         <statement>
           <p>Now we can write some of our own fun functions! No longer
                     do we need to write <c>for</c> loops every time we want to
@@ -378,7 +378,7 @@ int MyVector::at(int index) { return elements[index]; }
                     and return the max and min values. Select the Parsonsprob tab for hints
                     for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_14_AC_10q_editor" interactive="activecode" language="cpp" line-numbers="yes">
+        <program xml:id="cp_14_AC_10q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 #include <vector>
@@ -457,7 +457,7 @@ void MyVector::pop_front() {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter14', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_14_AC_10q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+      <exercise label="cp_14_AC_10q_pp" numbered="yes" adaptive="yes" indentation="hide">
         <statement>
           <p>What if we wanted to return the largest and smallest elements in our
                     <c>MyVector</c>? Write the public member functions <c>max</c> and <c>min</c>

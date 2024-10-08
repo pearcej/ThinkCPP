@@ -44,7 +44,7 @@ if (card1.equals(card2)) {
     <statement>
       <p>Run the active code below to see how the <c>equals()</c> function works.</p>
     </statement>
-    <program xml:id="c12_4_editor" interactive="activecode" language="cpp" line-numbers="yes">
+    <program xml:id="c12_4_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <string>
@@ -187,7 +187,7 @@ void Card::print () const {
       </choice>
     </choices>
   </exercise>
-  <exercise label="equals_function_3" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+  <exercise label="equals_function_3" numbered="yes" adaptive="yes" indentation="hide">
     <statement>
       <p>In a card game called Euchre, the highest ranked suit is called the trump suit.  The trump suit contains
             all of the cards of that suit, and the Jack of the other suit of the same color.  For example, if Hearts

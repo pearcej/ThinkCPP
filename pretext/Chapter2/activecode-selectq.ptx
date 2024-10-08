@@ -8,7 +8,7 @@
         <caption>
           <p>Finish the code below so that it prints <q>I drive a 2014 Buick Regal</q>. Select the Parsonsprob tab for hints for the construction of the code.</p>
         </caption>
-        <program xml:id="VARS_a2_editor" interactive="activecode" language="cpp" line-numbers="yes">
+        <program xml:id="VARS_a2_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -29,7 +29,7 @@ int main () {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter2', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="VARS_a2_p" numbered="yes" adaptive="yes" indentation="show" language="cpp">
+      <exercise label="VARS_a2_p" numbered="yes" adaptive="yes" indentation="show">
         <caption>
           <p>Finish the code below so that it prints <q>I drive a 2014 Buick Regal</q>. Use the lines to construct the code, then go back to complete the Activecode tab.</p>
         </caption>
@@ -81,7 +81,7 @@ int main () {
         <caption>
           <p>Finish the code below so that it returns the correct volume of a sphere. Select the Parsonsprob tab for hints for the construction of the code. Hint: think about what happens when you use integer division. The volume of a sphere is given by V = (4/3)(pi)(r^3).</p>
         </caption>
-        <program xml:id="VARS_a4_editor" interactive="activecode" language="cpp" line-numbers="yes">
+        <program xml:id="VARS_a4_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -101,7 +101,7 @@ int main () {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter2', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="VARS_a4_p" numbered="yes" adaptive="yes" indentation="show" language="cpp">
+      <exercise label="VARS_a4_p" numbered="yes" adaptive="yes" indentation="show">
         <caption>
           <p>Finish the code below so that it returns the correct volume of a sphere. Use the lines to construct the code, then go back to complete the Activecode tab. The volume of a sphere is given by V = (4/3)(pi)(r^3).</p>
         </caption>
@@ -153,7 +153,7 @@ int main () {
         <caption>
           <p>Write code that assigns <q>apples</q> to the variable oranges, and <q>oranges</q> to the variable apples, then swaps their values.  Be sure to inclue any necessary headers.  YOU MAY NOT HARDCODE YOUR SOLUTION. Select the Parsonsprob tab for hints for the construction of the code.</p>
         </caption>
-        <program xml:id="VARS_a6_editor" interactive="activecode" language="cpp" line-numbers="yes">
+        <program xml:id="VARS_a6_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
 int main () {
 
@@ -165,7 +165,7 @@ int main () {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter2', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="VARS_a6_p" numbered="yes" adaptive="yes" indentation="show" language="cpp">
+      <exercise label="VARS_a6_p" numbered="yes" adaptive="yes" indentation="show">
         <caption>
           <p>Write code that assigns <q>apples</q> to the variable oranges, and <q>oranges</q> to the variable apples, then swaps their values.  Be sure to inclue any necessary headers.
                     Use the lines to construct the code, then go back to complete the Activecode tab.</p>
@@ -226,7 +226,7 @@ int main () {
         <caption>
           <p>Write code that calculates how much you you will spend after tipping 20% on your $36.25 dinner.  Save the result of this calculation in <c>plusTip</c>.  Be sure to include any necessary headers. Select the Parsonsprob tab for hints for the construction of the code.</p>
         </caption>
-        <program xml:id="VARS_a8_editor" interactive="activecode" language="cpp" line-numbers="yes">
+        <program xml:id="VARS_a8_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
 int main () {
 
@@ -238,7 +238,7 @@ int main () {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter2', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="VARS_a8_p" numbered="yes" adaptive="yes" indentation="show" language="cpp">
+      <exercise label="VARS_a8_p" numbered="yes" adaptive="yes" indentation="show">
         <caption>
           <p>Write code that calculates how much you you will spend after tipping 20% on your $36.25 dinner.  Save the result of this calculation in <c>plusTip</c>. Use the lines on to construct the code, then go back to complete the Activecode tab.</p>
         </caption>
@@ -287,7 +287,7 @@ int main () {
         <caption>
           <p>Write code that calculates and prints the average of a and b if a = 3.14, and b = 1.59.  You may only use one line of code.  Be sure to inclue any necessary headers. Select the Parsonsprob tab for hints for the construction of the code.</p>
         </caption>
-        <program xml:id="VARS_a10_editor" interactive="activecode" language="cpp" line-numbers="yes">
+        <program xml:id="VARS_a10_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
 int main () {
 
@@ -299,7 +299,7 @@ int main () {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter2', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="VARS_a10_p" numbered="yes" adaptive="yes" indentation="show" language="cpp">
+      <exercise label="VARS_a10_p" numbered="yes" adaptive="yes" indentation="show">
         <caption>
           <p>Write code that calculates and prints the average of a and b if a = 3.14, and b = 1.59.  You may only use one line of code. Use the lines on to construct the code, then go back to complete the Activecode tab.</p>
         </caption>

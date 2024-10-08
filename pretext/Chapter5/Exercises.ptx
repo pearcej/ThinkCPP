@@ -4,7 +4,7 @@
   <exercise label="mce_5_1">
     <statement>
       <p>What should be the return type of the function <c>convertToCelsius</c>?</p>
-      <program language="cpp" line-numbers="yes">
+      <program line-numbers="yes">
         <input>
 ______ convertToCelsius (double fahrenheit) {
   double celsius;
@@ -60,7 +60,7 @@ ______ convertToCelsius (double fahrenheit) {
   <exercise label="mce_5_2">
     <statement>
       <p>What would be returned by <c>secretFunction</c> if the input was 14?</p>
-      <program language="cpp" line-numbers="yes">
+      <program line-numbers="yes">
         <input>
 int secretFunction (int input) {
   if (input % 2 == 0) {
@@ -172,7 +172,7 @@ int secretFunction (int input) {
     <statement>
       <p>If we wrote the following function, which of the other functions below can we also legally write
             and add to the program?</p>
-      <program language="cpp" line-numbers="yes">
+      <program line-numbers="yes">
         <input>
 int func (double x, bool y);
 </input>
@@ -234,7 +234,7 @@ int func (double x, bool y);
   <exercise label="mce_5_5">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp" line-numbers="yes">
+      <program line-numbers="yes">
         <input><![CDATA[
 int main() {
   bool x = 2 < 3;
@@ -284,7 +284,7 @@ int main() {
   <exercise label="mce_5_6">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp" line-numbers="yes">
+      <program line-numbers="yes">
         <input><![CDATA[
 int main() {
   bool w = !(2 * 3 == 6 || 4 - 3 > 8);
@@ -342,7 +342,7 @@ int main() {
   <exercise label="mce_5_7">
     <statement>
       <p>Are there any issues with the code below?</p>
-      <program language="cpp" line-numbers="yes">
+      <program line-numbers="yes">
         <input>
 bool isEven (int num) {
   if (num % 2 == 0) {
@@ -390,7 +390,7 @@ bool isEven (int num) {
   <exercise label="mce_5_8">
     <statement>
       <p>Are there any issues with the code below?</p>
-      <program language="cpp" line-numbers="yes">
+      <program line-numbers="yes">
         <input><![CDATA[
 double Free_time (int day) {
   if (day==1||day==2||day==3||day==4) {
@@ -443,7 +443,7 @@ double Free_time (int day) {
   <exercise label="mce_5_9">
     <statement>
       <p>Are there any issues with the code below?</p>
-      <program language="cpp" line-numbers="yes">
+      <program line-numbers="yes">
         <input><![CDATA[
 void moonWeight (double earth) {
   double moon = 0.165 * earth;
@@ -538,7 +538,7 @@ void moonWeight (double earth) {
   <exercise label="mce_5_11">
     <statement>
       <p>What is the base case of the <c>factorial</c> recursive function?</p>
-      <program language="cpp" line-numbers="yes">
+      <program line-numbers="yes">
         <input>
 int factorial (int n) {
   if (n == 0) {
@@ -597,7 +597,7 @@ int factorial (int n) {
   <exercise label="mce_5_12">
     <statement>
       <p>What is printed?</p>
-      <program language="cpp" line-numbers="yes">
+      <program line-numbers="yes">
         <input><![CDATA[
 void print_sequence (int n) {
   if (n == 0) {

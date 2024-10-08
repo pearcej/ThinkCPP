@@ -24,7 +24,7 @@
     <statement>
       <p>Feel free to try out the <c>convertToSeconds()</c> function in the active code below!</p>
     </statement>
-    <program xml:id="yet_another_example_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
+    <program xml:id="yet_another_example_AC_1_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;

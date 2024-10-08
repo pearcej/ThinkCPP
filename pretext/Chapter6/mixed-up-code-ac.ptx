@@ -7,7 +7,7 @@
     <statement>
       <p>Write a program that prints out the even numbers between 20 and 40, inclusive.</p>
     </statement>
-    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_6_1_ac_q_editor">
+    <program interactive="activecode" line-numbers="yes" xml:id="mucp_6_1_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -21,7 +21,7 @@ using namespace std;
                 Below is one way to write the program
 
     
-    <program xml:id="mucp_6_1_ac_a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_6_1_ac_a_editor" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -36,7 +36,7 @@ int main() {
 
             
 
-<exercise label="mucp_6_1_ac_a"><statement><p>Below is one way to write the program</p></statement><program xml:id="mucp_6_1_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_6_1_ac_a"><statement><p>Below is one way to write the program</p></statement><program xml:id="mucp_6_1_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -54,7 +54,7 @@ int main() {
     <statement>
       <p>Write a program that counts down from 100 to 0 in decrements of 10.</p>
     </statement>
-    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_6_2_ac_q_editor">
+    <program interactive="activecode" line-numbers="yes" xml:id="mucp_6_2_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -68,7 +68,7 @@ using namespace std;
                 Below is one way to write the program
 
     
-    <program xml:id="mucp_6_2_ac_a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_6_2_ac_a_editor" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -83,7 +83,7 @@ int main() {
 
             
 
-<exercise label="mucp_6_2_ac_a"><statement><p>Below is one way to write the program</p></statement><program xml:id="mucp_6_2_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_6_2_ac_a"><statement><p>Below is one way to write the program</p></statement><program xml:id="mucp_6_2_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -101,7 +101,7 @@ int main() {
     <statement>
       <p>Write a program that finds the sum of the first 10 natural numbers.</p>
     </statement>
-    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_6_3_ac_q_editor">
+    <program interactive="activecode" line-numbers="yes" xml:id="mucp_6_3_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -115,7 +115,7 @@ using namespace std;
                 Below is one way to write the program.
 
     
-    <program xml:id="mucp_6_3_aq_a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_6_3_aq_a_editor" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -131,7 +131,7 @@ int main() {
 
             
 
-<exercise label="mucp_6_3_aq_a"><statement><p>Below is one way to write the program.</p></statement><program xml:id="mucp_6_3_aq_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_6_3_aq_a"><statement><p>Below is one way to write the program.</p></statement><program xml:id="mucp_6_3_aq_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -150,7 +150,7 @@ int main() {
     <statement>
       <p>Write a function, <c>repreatHello</c>, that is a void function that takes no arguments and uses a while loop to print out <q>hello</q> three times.</p>
     </statement>
-    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_6_4_ac_q_editor">
+    <program interactive="activecode" line-numbers="yes" xml:id="mucp_6_4_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -170,7 +170,7 @@ int main() {
                 Below is one way to write the function
 
     
-    <program xml:id="mucp_6_4_ac_a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_6_4_ac_a_editor" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -189,7 +189,7 @@ int main() {
 
             
 
-<exercise label="mucp_6_4_ac_a"><statement><p>Below is one way to write the function</p></statement><program xml:id="mucp_6_4_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_6_4_ac_a"><statement><p>Below is one way to write the function</p></statement><program xml:id="mucp_6_4_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -213,7 +213,7 @@ int main() {
                     Let's write the code for the <c>repeatString</c> function, which takes
                     input as a parameter and uses a while loop to print out the string three times.</p>
     </statement>
-    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_6_5_ac_q_editor">
+    <program interactive="activecode" line-numbers="yes" xml:id="mucp_6_5_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -233,7 +233,7 @@ int main() {
                 Below is one way to write the function.
 
     
-    <program xml:id="mucp_6_5_ac_a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_6_5_ac_a_editor" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -252,7 +252,7 @@ int main() {
 
             
 
-<exercise label="mucp_6_5_ac_a"><statement><p>Below is one way to write the function.</p></statement><program xml:id="mucp_6_5_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_6_5_ac_a"><statement><p>Below is one way to write the function.</p></statement><program xml:id="mucp_6_5_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -276,7 +276,7 @@ int main() {
                     Let's write the code for the new <c>repeatString</c> function, which takes
                     input and x as parameters and uses a while loop to print out the string x number of times.</p>
     </statement>
-    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_6_6_ac_q_editor">
+    <program interactive="activecode" line-numbers="yes" xml:id="mucp_6_6_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -296,7 +296,7 @@ int main() {
                 Below is one way to write the function
 
     
-    <program xml:id="mucp_6_6_ac_a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_6_6_ac_a_editor" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -315,7 +315,7 @@ int main() {
 
             
 
-<exercise label="mucp_6_6_ac_a"><statement><p>Below is one way to write the function</p></statement><program xml:id="mucp_6_6_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_6_6_ac_a"><statement><p>Below is one way to write the function</p></statement><program xml:id="mucp_6_6_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -339,7 +339,7 @@ int main() {
                     Write the function <c>newYearCountdown</c>, which prints out a countdown from 10 and then
                     prints out <q>Happy New Year!</q>.</p>
     </statement>
-    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_6_7_ac_q_editor">
+    <program interactive="activecode" line-numbers="yes" xml:id="mucp_6_7_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -359,7 +359,7 @@ int main() {
                 Below is one way to write the function.
 
     
-    <program xml:id="mucp_6_7_ac_a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_6_7_ac_a_editor" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -379,7 +379,7 @@ int main() {
 
             
 
-<exercise label="mucp_6_7_ac_a"><statement><p>Below is one way to write the function.</p></statement><program xml:id="mucp_6_7_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_6_7_ac_a"><statement><p>Below is one way to write the function.</p></statement><program xml:id="mucp_6_7_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -407,7 +407,7 @@ int main() {
                     1000 until powerLevel is over 9000. Then powerUp prints <q>It's over 9000!</q>.
                     Write the necessary code for the powerUp function.</p>
     </statement>
-    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_6_8_ac_q_editor">
+    <program interactive="activecode" line-numbers="yes" xml:id="mucp_6_8_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -427,7 +427,7 @@ int main() {
                 Below is one way to write the function
 
     
-    <program xml:id="mucp_6_8_ac_a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_6_8_ac_a_editor" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -446,7 +446,7 @@ int main() {
 
             
 
-<exercise label="mucp_6_8_ac_a"><statement><p>Below is one way to write the function</p></statement><program xml:id="mucp_6_8_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_6_8_ac_a"><statement><p>Below is one way to write the function</p></statement><program xml:id="mucp_6_8_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -471,7 +471,7 @@ int main() {
                     all the integers from start to end, inclusive, together and returns
                     the sum. Write the necessary code for the summation function.</p>
     </statement>
-    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_6_9_ac_q_editor">
+    <program interactive="activecode" line-numbers="yes" xml:id="mucp_6_9_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -497,7 +497,7 @@ TEST_CASE("summation function") {
                 Below is one way to write the function
 
     
-    <program xml:id="mucp_6_9_ac_a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_6_9_ac_a_editor" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -528,7 +528,7 @@ TEST_CASE("summation function") {
 
             
 
-<exercise label="mucp_6_9_ac_a"><statement><p>Below is one way to write the function</p></statement><program xml:id="mucp_6_9_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_6_9_ac_a"><statement><p>Below is one way to write the function</p></statement><program xml:id="mucp_6_9_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -566,7 +566,7 @@ TEST_CASE("summation function") {
                     Write the necessary code, with reverse
                     declared first, then temp, and lastly remainder.</p>
     </statement>
-    <program interactive="activecode" language="cpp" line-numbers="yes" xml:id="mucp_6_10_ac_q_editor">
+    <program interactive="activecode" line-numbers="yes" xml:id="mucp_6_10_ac_q_editor">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -592,7 +592,7 @@ TEST_CASE("reverseNumber function") {
                 Below is one way to write the function
 
     
-    <program xml:id="mucp_6_10_ac_a_editor" language="cpp" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_6_10_ac_a_editor" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -621,7 +621,7 @@ TEST_CASE("reverseNumber function") {
 
             
 
-<exercise label="mucp_6_10_ac_a"><statement><p>Below is one way to write the function</p></statement><program xml:id="mucp_6_10_ac_a_editor-1" interactive="activecode" language="cpp" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_6_10_ac_a"><statement><p>Below is one way to write the function</p></statement><program xml:id="mucp_6_10_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
 

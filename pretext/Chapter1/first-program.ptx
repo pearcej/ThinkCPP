@@ -9,7 +9,6 @@
   <listing label="first_program_AC"
            xml:id="first_program_AC">
     <program interactive="activecode"
-             language="cpp"
              line-numbers="yes">
       <input><![CDATA[
 #include <iostream>

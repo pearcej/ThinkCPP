@@ -36,7 +36,7 @@
   <exercise label="local_variables_1">
     <statement>
       <p>Are there any issues with the code below?</p>
-      <program language="cpp" line-numbers="yes">
+      <program line-numbers="yes">
         <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -102,7 +102,7 @@ int main() {
   <exercise label="local_variables_2">
     <statement>
       <p>Take a look at the code below. Is the <c>i</c> in <c>printMultiples</c> the same variable as the <c>i</c> in <c>printMultTable</c>?</p>
-      <program language="cpp" line-numbers="yes">
+      <program line-numbers="yes">
         <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -152,7 +152,7 @@ int main() {
   <exercise label="local_variables_3">
     <statement>
       <p>Take a look at the code below. Is the variable <c>j</c> accessable  in the function <c>printMultiples</c>?</p>
-      <program language="cpp" line-numbers="yes">
+      <program line-numbers="yes">
         <input><![CDATA[
 #include <iostream>
 using namespace std;

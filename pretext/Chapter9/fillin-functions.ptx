@@ -30,7 +30,7 @@
       <p>The active code below uses the fill-in version of the <c>addTime</c> function.
             Feel free to modify the code!</p>
     </statement>
-    <program xml:id="fillin_functions_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
+    <program xml:id="fillin_functions_AC_1_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -73,7 +73,7 @@ int main() {
   <exercise label="fillin_functions_1">
     <statement>
       <p>Which parameter is not declared as a <c>const</c>?</p>
-      <program language="cpp" line-numbers="yes">
+      <program line-numbers="yes">
         <input>
 void addTimeFill (const Time&amp; t1, const Time&amp; t2, Time&amp; sum) {
   sum.hour = t1.hour + t2.hour;

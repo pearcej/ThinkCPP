@@ -117,7 +117,6 @@
     </statement>
     <program xml:id="keywords_4_editor"
              interactive="activecode"
-             language="cpp"
              line-numbers="yes">
       <input><![CDATA[
 #include <iostream>

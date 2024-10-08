@@ -42,7 +42,7 @@ int convertToInt (const string&amp; s)
             <c>digitString</c> to a C string before passing it as an argument.</p>
   <p>Try the function out for yourself! As you can see, this function can also be used
             to parse phone numbers!</p>
-  <program xml:id="c15_6" interactive="activecode" language="cpp" line-numbers="yes">
+  <program xml:id="c15_6" interactive="activecode" line-numbers="yes">
     <input><![CDATA[
 #include <iostream>
 #include <string>
@@ -152,7 +152,7 @@ int main() {
       </choice>
     </choices>
   </exercise>
-  <exercise label="question15_6_3" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+  <exercise label="question15_6_3" numbered="yes" adaptive="yes" indentation="hide">
     <statement>
       <p>Create the replace_with() function that takes a string <q>str</q>, a character to get rid of <q>olc_char</q>,
             and a character to replace it with <q>new_char</q>.  It should return a new string that has replaces any

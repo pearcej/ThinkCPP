@@ -9,7 +9,6 @@
     </caption>
     <program xml:id="char_operations_AC_1_editor"
              interactive="activecode"
-             language="cpp"
              line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -40,7 +39,6 @@ int main () {
     </caption>
     <program xml:id="char_operations_AC_2_editor"
              interactive="activecode"
-             language="cpp"
              line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -98,8 +96,7 @@ int main () {
   <exercise label="char_operations_2"
            numbered="yes"
            adaptive="yes"
-           indentation="hide"
-           language="cpp">
+           indentation="hide">
     <statement>
       <p>Construct a main function that uses character operations to generate the output &#x2018;r'.</p>
     </statement>

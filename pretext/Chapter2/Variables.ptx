@@ -139,8 +139,7 @@ int hour, minute;</program>
   <exercise label="variables_4"
             numbered="yes"
             adaptive="yes"
-            indentation="hide"
-            language="cpp">
+            indentation="hide">
     <statement>
       <p>Arrange the code blocks to create the variables <c>name</c>, <c>firstInitial</c>, and <c>numberOfSiblings</c> IN THAT
         ORDER. It is up to you to choose the correct types for these variables.</p>

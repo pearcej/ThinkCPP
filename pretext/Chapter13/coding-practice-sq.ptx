@@ -11,7 +11,7 @@
                     Print out this information in the following format: Planet <c>planet</c> has <c>numDays</c> number of days in
                     a year! Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_13_AC_2q_editor" interactive="activecode" language="cpp" line-numbers="yes">
+        <program xml:id="cp_13_AC_2q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -27,7 +27,7 @@ int main() {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_13_AC_2_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+      <exercise label="cp_13_AC_2_pp" numbered="yes" adaptive="yes" indentation="hide">
         <statement>
           <p>How long is a year on other planets? Let's write a program that prints out the number of days
                     in a year on each planet using a switch statement. These values are, in planetary order,
@@ -110,7 +110,7 @@ int main() {
                     generates a random value between low and high, inclusive. Be sure to include the relevant libraries!
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_13_AC_4q_editor" interactive="activecode" language="cpp" line-numbers="yes">
+        <program xml:id="cp_13_AC_4q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 // Add any relevant libraries here.
@@ -122,7 +122,7 @@ using namespace std;
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_13_AC_4_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+      <exercise label="cp_13_AC_4_pp" numbered="yes" adaptive="yes" indentation="hide">
         <statement>
           <p>Now let's generate a <c>BingoBoard</c>! We want to fill the 25 <c>Space</c>s on the <c>BingoBoard</c> with
                     random values from 1 to 75 without repititon. To do this, we'll make a <c>vector</c>
@@ -164,7 +164,7 @@ using namespace std;
                     shuffles it using <c>randomInt</c> and <c>swapValues</c>, and returns the shuffled <c>vector</c>.
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_13_AC_6q_editor" interactive="activecode" language="cpp" line-numbers="yes">
+        <program xml:id="cp_13_AC_6q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 #include <vector>
@@ -178,7 +178,7 @@ using namespace std;
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_13_AC_6_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+      <exercise label="cp_13_AC_6_pp" numbered="yes" adaptive="yes" indentation="hide">
         <statement>
           <p>Now that we have the functions <c>randomInt</c> and <c>swapValues</c>, we can write the function
                     <c>generateRandVec</c>. <c>generateRandVec</c> creates a <c>vector</c> with values from 1 to 75,
@@ -225,7 +225,7 @@ using namespace std;
                     <c>printBoard</c>. Insert tabs between each value in each row to make the board
                     print out neater. Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_13_AC_8q_editor" interactive="activecode" language="cpp" line-numbers="yes">
+        <program xml:id="cp_13_AC_8q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 #include <vector>
@@ -307,7 +307,7 @@ void BingoBoard::makeBoard() {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_13_AC_8_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+      <exercise label="cp_13_AC_8_pp" numbered="yes" adaptive="yes" indentation="hide">
         <statement>
           <p>Let's print out our <c>BingoBoard</c>! Write the <c>BingoBoard</c> member function
                     <c>printBoard</c>. Insert tabs between each value in each row to make the board
@@ -355,7 +355,7 @@ void BingoBoard::makeBoard() {
                     is already sorted. Write the function <c>fastBubbleSort</c>, which is <c>bubbleSort</c> with this
                     modification. Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_13_AC_10q_editor" interactive="activecode" language="cpp" line-numbers="yes">
+        <program xml:id="cp_13_AC_10q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 #include <vector>
@@ -381,7 +381,7 @@ int main() {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_13_AC_10_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+      <exercise label="cp_13_AC_10_pp" numbered="yes" adaptive="yes" indentation="hide">
         <statement>
           <p>You may have noticed that in some cases, our version of <c>bubbleSort</c> does
                     an unnecessary amount of work. For example, if our <c>vector</c> was {1, 2, 3, 5, 4},

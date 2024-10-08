@@ -13,7 +13,7 @@
       <p>In the active code below, the output of this function, if we pass <c>time</c> an argument, is
             <c>11:59:3.14159</c>.</p>
     </statement>
-    <program xml:id="printTime_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
+    <program xml:id="printTime_AC_1_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -37,7 +37,7 @@ int main () {
   <exercise label="printTime_1">
     <statement>
       <p>Which of the following would be a correct way to display the price of an object and finish the <c>printPrice</c>, which we saw on the previous page?</p>
-      <program language="cpp" line-numbers="yes">
+      <program line-numbers="yes">
         <input>
 struct Price {
   int dollar, cents;

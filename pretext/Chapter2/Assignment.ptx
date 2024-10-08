@@ -42,7 +42,7 @@ minute = 59;         // set minute to 59
     button to advance line by line. As you do so, watch the area to the right
     to examine the <q>state of mind</q> of the computer as it runs the code.
   </p>
-  <program interactive="codelens" language="cpp" label="state_of_mind" >
+  <program interactive="codelens" label="state_of_mind" >
 int main() {
   char firstLetter;
   firstLetter = 'a';   // give firstLetter the value 'a'
@@ -141,8 +141,7 @@ int main () {
   <exercise label="assignment_3"
            numbered="yes"
            adaptive="yes"
-           indentation="hide"
-           language="cpp">
+           indentation="hide">
     <statement>
       <p>You love your car, and you decide to keep track of its make, model, and year. You do so
         using three assignment statements IN THAT ORDER. For the sake of this problem, suppose you

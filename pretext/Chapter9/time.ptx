@@ -14,7 +14,7 @@
       <p>The active code below shows what the structure definition looks like.
             We can create a <c>Time</c> object in the usual way.</p>
     </statement>
-    <program xml:id="time_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
+    <program xml:id="time_AC_1_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -42,7 +42,7 @@ int main() {
   <exercise label="time_1">
     <statement>
       <p>Which of the following words are variables of type <c>Price</c>?</p>
-      <program language="cpp" line-numbers="yes">
+      <program line-numbers="yes">
         <input>
 struct Price {
   int dollar, cents;
@@ -86,7 +86,7 @@ int main() {
   <exercise label="time_2">
     <statement>
       <p>Which of the following words are instance variables of the <c>Price</c> structure?</p>
-      <program language="cpp" line-numbers="yes">
+      <program line-numbers="yes">
         <input>
 struct Price {
   int dollar, cents;
@@ -130,7 +130,7 @@ int main() {
   <exercise label="time_3">
     <statement>
       <p>Which of the following words are a user-defined structure?</p>
-      <program language="cpp" line-numbers="yes">
+      <program line-numbers="yes">
         <input>
 struct Price {
   int dollar, cents;
@@ -178,7 +178,7 @@ int main() {
             in the HOUR:MINUTE:SECONDS format. If you get stuck, you can reveal the extra problem
             at the end for help.</p>
     </statement>
-    <program xml:id="time_AC_2_editor" interactive="activecode" language="cpp" line-numbers="yes">
+    <program xml:id="time_AC_2_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -203,7 +203,7 @@ int main() {
     </program>
   </exercise>
   <exercises line="151" runestone_options="{'showtitle': 'data-showtitle=&quot;Reveal Problem&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'time', 'chapter': 'Chapter9', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': '9_1_1', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter9/time.rst">
-    <exercise label="time_4" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+    <exercise label="time_4" numbered="yes" adaptive="yes" indentation="hide">
       <statement>
         <p>Let's write the code for the <c>printTime</c> function. <c>printTime</c>
                 should print out the time in the HOUR:MINUTE:SECONDS format.</p>

@@ -25,7 +25,7 @@
     </ul>
   </p>
   <p>For example, instead of writing the 53 lines of code below&#x2026;</p>
-  <program xml:id="functions_AC_1" interactive="activecode" language="cpp" line-numbers="yes">
+  <program xml:id="functions_AC_1" interactive="activecode" line-numbers="yes">
     <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -84,7 +84,7 @@ int main() {
   </program>
   <p>..you would reduce it to the 21 lines of code below, making it easier to read, debug, and use
             the function many times with rewriting it each time.</p>
-  <program xml:id="functions_AC_2" interactive="activecode" language="cpp" line-numbers="yes">
+  <program xml:id="functions_AC_2" interactive="activecode" line-numbers="yes">
     <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -148,7 +148,7 @@ int main() {
       </choice>
     </choices>
   </exercise>
-  <exercise label="functions_2" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+  <exercise label="functions_2" numbered="yes" adaptive="yes" indentation="hide">
     <statement>
       <p>Create a function called <c>absoluteValue</c>, which returns the absolute value of a parameter <c>num</c>. Assume you do not have access to <c>#include &lt;cmath&gt;</c>.</p>
     </statement>

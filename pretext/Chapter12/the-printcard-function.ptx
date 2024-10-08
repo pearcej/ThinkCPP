@@ -62,7 +62,7 @@ card.print ();</program>
             the values that <c>card</c> is being initialized to in the constructor:  this will
             change the output from the <c>Card::print()</c> function.</p>
     </statement>
-    <program xml:id="c12_3_editor" interactive="activecode" language="cpp" line-numbers="yes">
+    <program xml:id="c12_3_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <string>

@@ -9,7 +9,7 @@
                     for their full name. Then the function outputs <q>Hello <c>fullName</c>!</q>.
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_8_AC_2q_editor" interactive="activecode" language="cpp" line-numbers="yes">
+        <program xml:id="cp_8_AC_2q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -26,7 +26,7 @@ int main() {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter8', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_8_AC_2q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+      <exercise label="cp_8_AC_2q_pp" numbered="yes" adaptive="yes" indentation="hide">
         <statement>
           <p>Write a simple function called <c>greetUser</c> which prompts the user
                     for their full name. Then the function outputs <q>Hello <c>fullName</c>!</q>.
@@ -73,7 +73,7 @@ int main() {
                     <q>Robot <c>name</c> is fully charged!</q>. Select the Parsonsprob tab for hints for
                     the construction of the code.</p>
         </statement>
-        <program xml:id="cp_8_AC_4q_editor" interactive="activecode" language="cpp" line-numbers="yes">
+        <program xml:id="cp_8_AC_4q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -111,7 +111,7 @@ void printRobotData (Robot r) {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter8', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_8_AC_4q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+      <exercise label="cp_8_AC_4q_pp" numbered="yes" adaptive="yes" indentation="hide">
         <statement>
           <p>Robots will naturally deplete their charge as they carry out tasks.
                     Write a function called <c>chargeRobot</c> which takes a <c>Robot</c> as
@@ -154,7 +154,7 @@ void printRobotData (Robot r) {
                     Pokemon's info in the following format: <c>pokeName</c> (Lv. <c>level</c>, <c>healthPercentage</c>% HP).
                     Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_8_AC_6q_editor" interactive="activecode" language="cpp" line-numbers="yes">
+        <program xml:id="cp_8_AC_6q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -175,7 +175,7 @@ int main() {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter8', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_8_AC_6q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+      <exercise label="cp_8_AC_6q_pp" numbered="yes" adaptive="yes" indentation="hide">
         <statement>
           <p>Write the <c>Pokemon</c> structure, which has instance variables <c>string pokeName</c>,
                     <c>string type</c>, <c>int level</c>, and <c>int healthPercentage</c> in that order.
@@ -231,7 +231,7 @@ int main() {
                     and heals the Trainer's Pokemon to 100 percent health. Select the Parsonsprob
                     tab for hints for the construction of the code.</p>
         </statement>
-        <program xml:id="cp_8_AC_8q_editor" interactive="activecode" language="cpp" line-numbers="yes">
+        <program xml:id="cp_8_AC_8q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -288,7 +288,7 @@ void printTrainerInfo(Trainer t) {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter8', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_8_AC_8q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+      <exercise label="cp_8_AC_8q_pp" numbered="yes" adaptive="yes" indentation="hide">
         <statement>
           <p>When Pokemon are injured, they can be healed up at the Pokemon Center.
                     Write the function <c>healPokemon</c>, which takes a <c>Trainer</c> as a parameter
@@ -359,7 +359,7 @@ Please enter your weight in pounds: 170
 Please select a planet: 23
 Error, not a valid planet.</program>
         </statement>
-        <program xml:id="cp_8_AC_10q_editor" interactive="activecode" language="cpp" line-numbers="yes">
+        <program xml:id="cp_8_AC_10q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -374,7 +374,7 @@ int main() {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter8', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_8_AC_10q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+      <exercise label="cp_8_AC_10q_pp" numbered="yes" adaptive="yes" indentation="hide">
         <statement>
           <p>Ever wanted to know how much you'd weigh on each planet? Write the <c>convertWeight</c>
                     function, which takes a <c>double earthWeight</c> and <c>int planet</c> as parameters. First,

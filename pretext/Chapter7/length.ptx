@@ -8,7 +8,7 @@
     <statement>
       <p>The active code below outputs the length of string <c>fruit</c>.</p>
     </statement>
-    <program xml:id="length_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
+    <program xml:id="length_AC_1_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -49,7 +49,7 @@ char last = fruit[length];       // WRONG!!</program>
       <p>The active code below outputs the last character in string <c>fruit</c>
             using the <c>length</c> function.</p>
     </statement>
-    <program xml:id="length_AC_2_editor" interactive="activecode" language="cpp" line-numbers="yes">
+    <program xml:id="length_AC_2_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -66,7 +66,7 @@ int main() {
   <exercise label="length_1">
     <statement>
       <p>What is printed by the following statements?</p>
-      <program language="cpp" line-numbers="yes">
+      <program line-numbers="yes">
         <input><![CDATA[
 string s = "coding rocks";
 cout << s.length() << endl;
@@ -95,7 +95,7 @@ cout << s.length() << endl;
   <exercise label="length_2">
     <statement>
       <p>What is printed by the following statements?</p>
-      <program language="cpp" line-numbers="yes">
+      <program line-numbers="yes">
         <input><![CDATA[
 string s = "coding rocks";
 cout << (s[s.length()-5]) << endl;
@@ -137,7 +137,7 @@ cout << (s[s.length()-5]) << endl;
       </choice>
     </choices>
   </exercise>
-  <exercise label="length_3" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+  <exercise label="length_3" numbered="yes" adaptive="yes" indentation="hide">
     <statement>
       <p>Construct a block of code that correctly implements the accumulator pattern, with <c>course</c> being the first variable initialized.</p>
     </statement>

@@ -189,7 +189,7 @@
     <statement>
       <p>What type of error would the following code cause? Assume you are
         trying to calculate the volume of a cylinder:</p>
-      <program language="cpp">
+      <program>
         <input>int radius = 7;
           int height = 8;
           double volume = 3.14 * radius * height;</input>
@@ -236,7 +236,7 @@
     <statement>
       <p>What type of error would the following generate? Assume you are
         trying to calculate the volume of a cylinder:</p>
-      <program language="cpp">
+      <program>
         <input>int radius = 7;
           int height = 8;
           double volume = 3.14 * radius * height;</input>

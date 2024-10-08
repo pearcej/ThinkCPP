@@ -159,7 +159,7 @@
             <c>merge</c> function works. If you get stuck, you can reveal the extra problem
             at the end for help.</p>
     </statement>
-    <program xml:id="mergesort_2_editor" interactive="activecode" language="cpp" line-numbers="yes">
+    <program xml:id="mergesort_2_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <string>
@@ -363,7 +363,7 @@ void Deck::sortDeck () {
     </program>
   </exercise>
   <exercises line="351" runestone_options="{'showtitle': 'data-showtitle=&quot;merge Help&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'mergesort', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': 'mergesort_reveal_1', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter13/mergesort.rst">
-    <exercise label="mergesort_help_1" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+    <exercise label="mergesort_help_1" numbered="yes" adaptive="yes" indentation="hide">
       <statement>
         <p>First, let's write the code for the merge function. merge should
                 take two decks as parameters and return a deck with the deck merged.</p>
@@ -452,7 +452,7 @@ void Deck::sortDeck () {
             comments in <c>main</c> to test your functions. If done correctly, the program should output a sorted
             deck of cards. If you get stuck, you can reveal the extra problems at the end for help.</p>
     </statement>
-    <program xml:id="mergesort_3_editor" interactive="activecode" language="cpp" line-numbers="yes">
+    <program xml:id="mergesort_3_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <string>
@@ -688,7 +688,7 @@ Deck merge (const Deck&amp; d1, const Deck&amp; d2) {
     </program>
   </exercise>
   <exercises line="654" runestone_options="{'showtitle': 'data-showtitle=&quot;mergeSort Help&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'mergesort', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': 'mergesort_reveal_2', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter13/mergesort.rst">
-    <exercise label="mergesort_help_2" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+    <exercise label="mergesort_help_2" numbered="yes" adaptive="yes" indentation="hide">
       <statement>
         <p>Let's write the code for the mergeSort function. mergeSort
                 should be a Deck member function that returns a sorted deck.</p>
@@ -721,7 +721,7 @@ Deck merge (const Deck&amp; d1, const Deck&amp; d2) {
     </exercise>
   </exercises>
   <exercises line="680" runestone_options="{'showtitle': 'data-showtitle=&quot;mergeSort Recursion Help&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'mergesort', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': 'mergesort_reveal_3', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter13/mergesort.rst">
-    <exercise label="mergesort_help_3" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+    <exercise label="mergesort_help_3" numbered="yes" adaptive="yes" indentation="hide">
       <statement>
         <p>Let's take it one step further and rewrite <c>mergeSort</c> as a
                 recursive function.</p>

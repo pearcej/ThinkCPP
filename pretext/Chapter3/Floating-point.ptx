@@ -180,7 +180,6 @@ cout &lt;&lt; e_double;</program>
     </statement>
     <program label="floating_point_a1_editor"
              interactive="activecode"
-             language="cpp"
              line-numbers="yes">
       <input><![CDATA[
 #include <iostream>

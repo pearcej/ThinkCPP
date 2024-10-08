@@ -46,7 +46,7 @@ blank.y = 4.0;</program>
   <exercise label="point_objects_1">
     <statement>
       <p>Which of the following would be the correct way to initialize the <c>x</c> instance variable of the <c>Point</c> object?</p>
-      <program language="cpp" line-numbers="yes">
+      <program line-numbers="yes">
         <input>
 struct Point () {
   double x, y;
@@ -93,7 +93,7 @@ int main() {
       </choice>
     </choices>
   </exercise>
-  <exercise label="point_objects_2" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+  <exercise label="point_objects_2" numbered="yes" adaptive="yes" indentation="hide">
     <statement>
       <p>Construct a block of code that correctly creates variables of a certain structure's type.</p>
     </statement>

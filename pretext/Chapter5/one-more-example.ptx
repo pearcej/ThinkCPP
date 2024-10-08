@@ -10,7 +10,7 @@
             the passed argument.  It is the condensed version of the
             example on the previous page.</p>
     </statement>
-    <program xml:id="recursion_ex_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
+    <program xml:id="recursion_ex_AC_1_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -46,7 +46,7 @@ int main () {
       <p>This program uses recursion to calculate the nth number in the
             fibonacci sequence.</p>
     </statement>
-    <program xml:id="recursion_ex_AC_2_editor" interactive="activecode" language="cpp" line-numbers="yes">
+    <program xml:id="recursion_ex_AC_2_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;

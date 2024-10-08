@@ -11,7 +11,7 @@
       <p>Take a look at the active code below, which uses the <c>find</c> function to find
             the character <c>'a'</c> in string <c>fruit</c> and string <c>dessert</c>.</p>
     </statement>
-    <program xml:id="find_function_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
+    <program xml:id="find_function_AC_1_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -41,7 +41,7 @@ int main() {
     <statement>
       <p>The active code below finds the starting index of <c>"nan"</c> in <c>fruit</c>.</p>
     </statement>
-    <program xml:id="find_function_AC_2_editor" interactive="activecode" language="cpp" line-numbers="yes">
+    <program xml:id="find_function_AC_2_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -81,7 +81,7 @@ int main() {
       <cline>}</cline>
     </areas>
   </exercise>
-  <exercise label="find_function_2" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+  <exercise label="find_function_2" numbered="yes" adaptive="yes" indentation="hide">
     <statement>
       <p>Construct a block of code that correctly finds and prints where the first <q>B</q> is in the string. Declare <c>city</c> before <c>index</c>.</p>
     </statement>
@@ -102,7 +102,7 @@ int main() {
   <exercise label="find_function_3">
     <statement>
       <p>What is printed when the code is run?</p>
-      <program language="cpp" line-numbers="yes">
+      <program line-numbers="yes">
         <input><![CDATA[
 string sentence = "Most seas are rough but this sea is so calm!";
 string target = "sea";

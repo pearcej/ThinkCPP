@@ -26,7 +26,7 @@
   <p>In main you can call this function in the usual ways:</p>
   <program>cout &lt;&lt; isSingleDigit (2) &lt;&lt; endl;
 bool bigFlag = !isSingleDigit (17);</program>
-  <program xml:id="bool_fun_AC_1" interactive="activecode" language="cpp" line-numbers="yes">
+  <program xml:id="bool_fun_AC_1" interactive="activecode" line-numbers="yes">
     <input><![CDATA[
 #include <iostream>
 #include <cmath>
@@ -74,7 +74,7 @@ else {
       </match>
     </matches>
   </exercise>
-  <exercise label="bool_fun_2" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+  <exercise label="bool_fun_2" numbered="yes" adaptive="yes" indentation="hide">
     <statement>
       <p>Construct a block of code that first checks if a number <em>x</em> is positive,
             then checks if it's even, and then prints out a message to classify

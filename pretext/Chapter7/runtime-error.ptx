@@ -17,7 +17,7 @@
             it so that we print out the first letter and last letter of string <c>greeting</c> instead
             of indexing out of range?</p>
     </statement>
-    <program xml:id="runtime_error_AC_1_editor" interactive="activecode" language="cpp" line-numbers="yes">
+    <program xml:id="runtime_error_AC_1_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -54,7 +54,7 @@ int main() {
       <cline>}</cline>
     </areas>
   </exercise>
-  <exercise label="runtime_error_2" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+  <exercise label="runtime_error_2" numbered="yes" adaptive="yes" indentation="hide">
     <statement>
       <p>Construct a block of code that correctly changes the string to say <q>cat in the hat</q> instead of <q>cat on the mat</q>, then print it.</p>
     </statement>

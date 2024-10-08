@@ -46,7 +46,7 @@ for (int suit = 0; suit &lt;= 3; suit++) {
       <p>Take a look at the active code below, which includes the implementation of
             the <c>buildDeck</c> function.</p>
     </statement>
-    <program xml:id="c12_6_editor" interactive="activecode" language="cpp" line-numbers="yes">
+    <program xml:id="c12_6_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <string>

@@ -163,7 +163,7 @@
       </var>
     </setup>
   </exercise>
-  <exercise label="question15_5_4" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+  <exercise label="question15_5_4" numbered="yes" adaptive="yes" indentation="hide">
     <statement>
       <p>Create a block of code that takes a date written in the format <q>mm/dd/yyyyy</q>
             as an argument, and that separates it into three separate integers: day,

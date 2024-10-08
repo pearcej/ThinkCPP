@@ -69,7 +69,7 @@ would help me condense the function's code and make it easier to understand.  </
             sorted deck of cards. If you get stuck, you can reveal the extra problems
             at the end for help.</p>
     </statement>
-    <program xml:id="sorting_deck_2_editor" interactive="activecode" language="cpp" line-numbers="yes">
+    <program xml:id="sorting_deck_2_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <string>
@@ -209,7 +209,7 @@ void Deck::shuffleDeck () {
     </program>
   </exercise>
   <exercises line="208" runestone_options="{'showtitle': 'data-showtitle=&quot;findLowestCard Help&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'sorting', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': 'sorting_reveal_1', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter13/sorting.rst">
-    <exercise label="sorting_help_1" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+    <exercise label="sorting_help_1" numbered="yes" adaptive="yes" indentation="hide">
       <statement>
         <p>Let's write the code for the findLowestCard function. findLowestCard
                 should take an index as a parameter and return an int.</p>
@@ -261,7 +261,7 @@ void Deck::shuffleDeck () {
     </exercise>
   </exercises>
   <exercises line="243" runestone_options="{'showtitle': 'data-showtitle=&quot;sortDeck Help&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'sorting', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': 'sorting_reveal_2', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter13/sorting.rst">
-    <exercise label="sorting_help_2" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
+    <exercise label="sorting_help_2" numbered="yes" adaptive="yes" indentation="hide">
       <statement>
         <p>Let's write the code for the sortDeck function. We'll use findLowestCard
                 and swapCards in our implementation of sortDeck.</p>
