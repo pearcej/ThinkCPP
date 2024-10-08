@@ -39,12 +39,12 @@
     is the process of breaking a large, complex task up into smaller and
     smaller subtasks until eventually the subtasks are simple enough to be
     performed with one of these simple functions.</p>
-  <listing label="program_1">
-    <caption>
+  <exercise label="program_1">
+    <statement>
       <p>A(n) <var/> is a series of instructions that are used to perform
         a computation. 
       </p>
-    </caption>
+    </statement>
     <setup>
       <var case="insensitive">
         <condition string="^\s*program\s*$">
@@ -59,11 +59,11 @@
         </condition>
       </var>
     </setup>
-  </listing>
-  <listing label="program_2">
-    <caption>
+  </exercise>
+  <exercise label="program_2">
+    <statement>
       <p>Match each term to an example of it.</p>
-    </caption>
+    </statement>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -90,5 +90,5 @@
           distance</response>
       </match>
     </matches>
-  </listing>
+  </exercise>
 </section>

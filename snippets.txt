@@ -1,0 +1,13 @@
+<program-preamble>
+  #include &lt;iostream&gt;
+  using namespace std;
+</program-preamble>
+<program language="cpp" codelens="no"></program>
+
+//FIND REPLACE caption
+(</?)caption
+$1statement
+
+
+
+by dragging items on the left to the matching box on the right.

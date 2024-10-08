@@ -55,14 +55,14 @@
     On the other hand, it is useful to know what the steps are that are
     happening in the background, so that if something goes wrong you can
     figure out what it is.</p>
-  <listing label="program_lang_1">
-    <caption>
+  <exercise label="program_lang_1">
+    <statement>
       <p>A(n) <var/> translates a high-level program line by line, executing commands as they come.
         A(n) <var/> translates a high-level program all at once, before executing any of the
         commands! </p>
       <p>A(n) <var/> translates a high-level program all at once, before executing any of the
         commands! </p>
-    </caption>
+    </statement>
     <setup>
       <var case="insensitive">
         <condition string="^\s*interpreter\s*$">
@@ -89,101 +89,101 @@
         </condition>
       </var>
     </setup>
-  </listing>
-  <listing label="program_lang_2">
-    <caption>
+  </exercise>
+  <exercise label="program_lang_2">
+    <statement>
       <p><term>Multiple Response</term> Which is true about a high-level programming language?</p>
-    </caption>
+    </statement>
     <choices>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>Almost all programs are written in high-level languages.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>High-level languages are efficient and easy to understand, an obvious choice for
             writing a program!</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>Programs written in a high-level language must be translated before they can be run.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>All programs in high-level language must be translated to a low-level language before
             the computer can execute them!</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>It's easier to program in a low-level language than a high-level language.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Actually, its much the other way around!</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>Computers can only execute programs written in high-level languages.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Computers actually can't understand high-level languages as they are written.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>High-level programs can only run on one kind of computer (you'd have to rewrite the
             program if you wanted to use a different machine).</p>
-        </caption>
+        </statement>
         <feedback>
           <p>High-level programs are portable, meaning they can run on different kinds of computers
             with little to no modification.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="program_lang_3">
-    <caption>
+  </exercise>
+  <exercise label="program_lang_3">
+    <statement>
       <p>What is the role of an executor?</p>
-    </caption>
+    </statement>
     <choices>
       <choice>
-        <caption>
+        <statement>
           <p>To translate the program line by line.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>This is the role of an interpreter!</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>To copy the program from disk to memory and make the computer run the program.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>The role of an executor is to carry out, or execute, the program!</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>To translate the program all at once.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>This is the role of a compiler!</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>To give an error message if something is preventing the code from being translated.</p>
-        </caption>
+        </statement>
         <feedback>
           <p>This happens automatically when we try to compile/interpret our program.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="program_lang_4">
-    <caption>
+  </exercise>
+  <exercise label="program_lang_4">
+    <statement>
       <p>Match each term to an example of it by dragging the term into the appropriate box.</p>
-    </caption>
+    </statement>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -197,5 +197,5 @@
         <response>translated version of our program that the computer can understand and execute</response>
       </match>
     </matches>
-  </listing>
+  </exercise>
 </section>

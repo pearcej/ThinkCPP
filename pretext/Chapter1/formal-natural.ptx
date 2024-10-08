@@ -92,59 +92,59 @@
     Finally, remember that the details matter. Little things like spelling
     errors and bad punctuation, which you can get away with in natural
     languages, can make a big difference in a formal language.</p>
-  <listing label="formal_natural_1">
-    <caption>
+  <exercise label="formal_natural_1">
+    <statement>
       <p><term>Multiple Response</term> Select all <term>formal</term> languages from the choices
         below.</p>
-    </caption>
+    </statement>
     <choices>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>C++</p>
-        </caption>
+        </statement>
         <feedback>
           <p>All programming languages are formal languages!</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>scientific notation</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Scientific notation is designed to denote large numbers.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>Mandarin</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Mandarin is a natural language.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>English</p>
-        </caption>
+        </statement>
         <feedback>
           <p>English is a natural language.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>chemical formulas</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Chemical formulas represent what elements a compound is made of! For example CO2 is is
             carbon dioxide!</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
-  <listing label="formal_natural_2">
-    <caption>
+  </exercise>
+  <exercise label="formal_natural_2">
+    <statement>
       <p>Analyzing the structure of a sentence or a program is called <var/>.</p>
-    </caption>
+    </statement>
     <setup>
       <var case="insensitive">
         <condition string="^\s*parsing\s*$">
@@ -159,11 +159,11 @@
         </condition>
       </var>
     </setup>
-  </listing>
-  <listing label="formal_natural_3">
-    <caption>
+  </exercise>
+  <exercise label="formal_natural_3">
+    <statement>
       <p>Match each term to an example of it by dragging the term into the appropriate box.</p>
-    </caption>
+    </statement>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -181,11 +181,11 @@
         <response>meaning exactly what is said, nothing more</response>
       </match>
     </matches>
-  </listing>
-  <listing label="formal_natural_4">
-    <caption>
+  </exercise>
+  <exercise label="formal_natural_4">
+    <statement>
       <p>Match each term to an example of it by dragging the term into the appropriate box.</p>
-    </caption>
+    </statement>
     <feedback>
       <p>Try again!</p>
     </feedback>
@@ -203,53 +203,53 @@
         <response> Give me a cup of water.</response>
       </match>
     </matches>
-  </listing>
-  <listing label="formal_natural_5">
-    <caption>
+  </exercise>
+  <exercise label="formal_natural_5">
+    <statement>
       <p><term>Multiple Response</term> Formal languages are&#x2026;</p>
-    </caption>
+    </statement>
     <choices>
       <choice>
-        <caption>
+        <statement>
           <p>ambiguous</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Formal languages are designed to be unambiguous, so that each statement has only one
             meaning.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>redundant</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Formal language is straight to the point.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>literal</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Formal languages mean exactly what they say.</p>
         </feedback>
       </choice>
       <choice>
-        <caption>
+        <statement>
           <p>verbose</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Formal language is straight to the point.</p>
         </feedback>
       </choice>
       <choice correct="yes">
-        <caption>
+        <statement>
           <p>concise</p>
-        </caption>
+        </statement>
         <feedback>
           <p>Formal language is straight to the point.</p>
         </feedback>
       </choice>
     </choices>
-  </listing>
+  </exercise>
 </section>

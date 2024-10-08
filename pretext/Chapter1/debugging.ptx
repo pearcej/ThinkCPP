@@ -84,12 +84,12 @@
         Users' Guide</em> Beta Version 1).</p>
     <p>In later chapters I will make more suggestions about debugging and other
       programming practices.</p>
-    <listing label="debugging_1">
-      <caption>
+    <exercise label="debugging_1">
+      <statement>
         <p>Another word for an error is a(n) <var/>. The process of
           finding and fixing errors is called <var/>.
         </p>
-      </caption>
+      </statement>
       <setup>
         <var case="insensitive">
           <condition string="^\s*bug\s*$">
@@ -116,11 +116,11 @@
           </condition>
         </var>
       </setup>
-    </listing>
-    <listing label="debugging_2">
-      <caption>
+    </exercise>
+    <exercise label="debugging_2">
+      <statement>
         <p>Match each term to its definition!</p>
-      </caption>
+      </statement>
       <feedback>
         <p>Try again!</p>
       </feedback>
@@ -139,12 +139,12 @@
           <response>your program does what you told it to do, not what you intended for it to do</response>
         </match>
       </matches>
-    </listing>
-    <listing label="debugging_4">
-      <caption>
+    </exercise>
+    <exercise label="debugging_4">
+      <statement>
         <p>The structure of your program and the rules it must follow are called the <var/>.
         </p>
-      </caption>
+      </statement>
       <setup>
         <var case="insensitive">
           <condition string="^\s*syntax\s*$">
@@ -159,6 +159,6 @@
           </condition>
         </var>
       </setup>
-    </listing>
+    </exercise>
   </subsection>
 </section>
