@@ -2,45 +2,47 @@
 <section xml:id="chapter3_functions-with-multiple-parameters">
   <title>Functions with Multiple Parameters</title>
   <p>The syntax for declaring and invoking functions with multiple parameters
-            is a common source of errors. First, remember that you have to declare
-            the type of every parameter. For example</p>
-  <program>void printTime (int hour, int minute) {
+    is a common source of errors. First, remember that you have to declare
+    the type of every parameter. For example</p>
+  <program>void printTime(int hour, int minute) {
   cout &lt;&lt; hour;
   cout &lt;&lt; ":";
   cout &lt;&lt; minute;
 }</program>
-  <p>It might be tempting to write <c>(int hour, minute)</c>, but that format is
-            only legal for variable declarations, not for parameters.</p>
+  <p>It might be tempting to write <c>(int hour, minute)</c>, but that format is only legal for variable declarations,
+    not for parameters.</p>
   <p>Another common source of confusion is that you do not have to declare
-            the types of arguments. The following is wrong!</p>
+    the types of arguments when you call a function. The following is wrong!</p>
   <program>int hour = 11;
 int minute = 59;
-printTime (int hour, int minute);   // WRONG!</program>
+printTime(int hour, int minute);   // WRONG!</program>
   <p>In this case, the compiler can tell the type of hour and minute by
-            looking at their declarations.</p>
+    looking at their declarations.</p>
   <warning>
     <p>It is unnecessary and illegal to include the type when you pass
-                variables as arguments! The type is only needed for declaration.</p>
+      variables as arguments! The type is only needed for declaration.</p>
   </warning>
-  <p>The correct syntax is printTime (hour, minute).</p>
+  <p>The correct syntax is printTime(hour, minute).</p>
   <exercise label="multiple_params_AC_1">
     <statement>
       <p>This program shows how the dollar_amount and cent_amount arguments
-            are passed into the printPrice function.</p>
+        are passed into the printPrice function.</p>
     </statement>
-    <program xml:id="multiple_params_AC_1_editor" interactive="activecode" line-numbers="yes">
+    <program xml:id="multiple_params_AC_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
 
-void printPrice (int dollars, int cents) {
+void printPrice(int dollars, int cents) {
     cout << "Price is " << dollars << " dollars and " << cents << " cents." << endl;
 }
 
 int main() {
     int dollar_amount = 2;
     int cent_amount = 92;
-    printPrice (dollar_amount, cent_amount);
+    printPrice(dollar_amount, cent_amount);
     return 0;
 }
         ]]></input>
@@ -49,7 +51,7 @@ int main() {
   <exercise label="multiple_params_1">
     <statement>
       <p>Which of the following is a correct function header (first line of
-            a function definition)?</p>
+        a function definition)?</p>
     </statement>
     <choices>
       <choice>

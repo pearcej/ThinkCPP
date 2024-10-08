@@ -26,7 +26,7 @@
     built-in C++ commands:</p>
   <program>int main() {
   cout &lt;&lt; "First Line." &lt;&lt; endl;
-  newLine ();
+  newLine();
   cout &lt;&lt; "Second Line." &lt;&lt; endl;
   return 0;
 }</program>
@@ -38,9 +38,9 @@ Second line.</program>
     space between the lines? We could call the same function repeatedly:</p>
   <program>int main() {
   cout &lt;&lt; "First Line." &lt;&lt; endl;
-  newLine ();
-  newLine ();
-  newLine ();
+  newLine();
+  newLine();
+  newLine();
   cout &lt;&lt; "Second Line." &lt;&lt; endl;
   return 0;
 }</program>
@@ -58,17 +58,17 @@ Second line.</program>
 #include <iostream>
 using namespace std;
 
-void newLine () {
+void newLine() {
     cout << '*' << endl;
 }
 
-void threeLine () {
-    newLine ();  newLine ();  newLine ();
+void threeLine() {
+    newLine();  newLine();  newLine();
 }
 
 int main() {
     cout << "First Line." << endl;
-    threeLine ();
+    threeLine();
     cout << "Second Line." << endl;
     return 0;
 }
@@ -166,50 +166,24 @@ endl</c>?</p>
       <p>Remember, the operator '=' is used for assignment.</p>
     </feedback>
     <areas>
-      <cline>
-        <area correct="yes">void printX() {</area>
-      </cline>
-      <cline>
-        <area correct="no">cout &lt;&lt; "X";</area>
-      </cline>
+      <cline><area correct="yes">void printX() {</area></cline>
+      <cline>    <area correct="no">cout &lt;&lt; "X";</area></cline>
       <cline>}</cline>
       <cline/>
-      <cline>
-        <area correct="yes">void printVar(int a) {</area>
-      </cline>
-      <cline>
-        <area correct="no">cout &lt;&lt; a;</area>
-      </cline>
+      <cline><area correct="yes">void printVar(int a) {</area></cline>
+      <cline>    <area correct="no">cout &lt;&lt; a;</area></cline>
       <cline>}</cline>
       <cline/>
-      <cline>
-        <area correct="yes">int main() {</area>
-      </cline>
-      <cline>
-        <area correct="no">int x = 7;</area>
-      </cline>
-      <cline>
-        <area correct="no">printVar(x);</area>
-      </cline>
-      <cline>
-        <area correct="no">if (x &lt; 10) {</area>
-      </cline>
-      <cline>
-        <area correct="no">x = x - 1;</area>
-      </cline>
-      <cline>    }</cline>
-      <cline>
-        <area correct="no">printX();</area>
-      </cline>
-      <cline>
-        <area correct="no">int y = 3;</area>
-      </cline>
-      <cline>
-        <area correct="no">double result = x / y;</area>
-      </cline>
-      <cline>
-        <area correct="no">printVar(result);</area>
-      </cline>
+      <cline><area correct="yes">int main() {</area></cline>
+      <cline>    <area correct="no">int x = 7;</area></cline>
+      <cline>    <area correct="no">printVar(x);</area></cline>
+      <cline>    <area correct="no">if (x &lt; 10) {</area></cline>
+      <cline>    <area correct="no">x = x - 1;</area></cline>
+      <cline>}</cline>
+      <cline><area correct="no">printX();</area></cline>
+      <cline>    <area correct="no">int y = 3;</area></cline>
+      <cline>    <area correct="no">double result = x / y;</area></cline>
+      <cline>    <area correct="no">printVar(result);</area></cline>
       <cline>    return 0;</cline>
       <cline>}</cline>
     </areas>
@@ -222,50 +196,24 @@ endl</c>?</p>
       <p>Remember, the operator '=' is used for assignment.</p>
     </feedback>
     <areas>
-      <cline>
-        <area correct="no">void printX() {</area>
-      </cline>
-      <cline>
-        <area correct="no">cout &lt;&lt; "X";</area>
-      </cline>
+      <cline><area correct="no">void printX() {</area></cline>
+      <cline>    <area correct="no">cout &lt;&lt; "X";</area></cline>
       <cline>}</cline>
       <cline/>
-      <cline>
-        <area correct="no">void printVar(int a) {</area>
-      </cline>
-      <cline>
-        <area correct="no">cout &lt;&lt; a;</area>
-      </cline>
+      <cline><area correct="no">void printVar(int a) {</area></cline>
+      <cline>    <area correct="no">cout &lt;&lt; a;</area></cline>
       <cline>}</cline>
       <cline/>
-      <cline>
-        <area correct="no">int main() {</area>
-      </cline>
-      <cline>
-        <area correct="no">int x = 7;</area>
-      </cline>
-      <cline>
-        <area correct="yes">printVar(x);</area>
-      </cline>
-      <cline>
-        <area correct="no">if (x &lt; 10) {</area>
-      </cline>
-      <cline>
-        <area correct="no">x = x - 1;</area>
-      </cline>
-      <cline>    }</cline>
-      <cline>
-        <area correct="yes">printX();</area>
-      </cline>
-      <cline>
-        <area correct="no">int y = 3;</area>
-      </cline>
-      <cline>
-        <area correct="no">double result = x / y;</area>
-      </cline>
-      <cline>
-        <area correct="yes">printVar(result);</area>
-      </cline>
+      <cline><area correct="no">int main() {</area></cline>
+      <cline>    <area correct="no">int x = 7;</area></cline>
+      <cline>    <area correct="yes">printVar(x);</area></cline>
+      <cline>    <area correct="no">if (x &lt; 10) {</area></cline>
+      <cline>    <area correct="no">x = x - 1;</area></cline>
+      <cline>}</cline>
+      <cline><area correct="yes">printX();</area></cline>
+      <cline>    <area correct="no">int y = 3;</area></cline>
+      <cline>    <area correct="no">double result = x / y;</area></cline>
+      <cline>    <area correct="yes">printVar(result);</area></cline>
       <cline>    return 0;</cline>
       <cline>}</cline>
     </areas>
@@ -279,13 +227,13 @@ endl</c>?</p>
     </statement>
     <blocks>
       <block order="3">
-        <cline>void perimeter (int length,int width) {</cline>
+        <cline>void perimeter(int length,int width) {</cline>
       </block>
       <block order="7">
-        <cline>int twice_length = 2*length;</cline>
+        <cline>int twice_length = 2 * length;</cline>
       </block>
       <block order="4">
-        <cline>int twice_width = 2*width;</cline>
+        <cline>int twice_width = 2 * width;</cline>
       </block>
       <block order="6">
         <cline>int perimeter_value = twice_length + twice_width;</cline>

@@ -1,51 +1,49 @@
 <?xml version="1.0"?>
 <section xml:id="chapter3_programs-with-multiple-functions">
   <title>Programs with Multiple Functions</title>
-  <p>When you look at a class definition that contains several functions, it
-            is tempting to read it from top to bottom, but that is likely to be
-            confusing, because that is not the <term>order of execution</term> of the
-            program.</p>
+  <p>When you look at a class definition that contains several functions, it is tempting to read it
+    from top to bottom, but that is likely to be confusing, because that is not the <term>order of
+    execution</term> of the program.</p>
   <note>
-    <p>The order of execution is not necessarily the order in which functions
-                are defined!  For example, the last function that you write might be the
-                first one that you call in the <c>main</c> function.</p>
+    <p>The order of execution is not necessarily the order in which functions are defined! For
+      example, the last function that you write might be the first one that you call in the <c>main</c>
+      function.</p>
   </note>
-  <p>Execution always begins at the first statement of <c>main</c>, regardless of
-            where it is in the program** (often it is at the bottom). Statements are
-            executed one at a time, in order, until you reach a function call.
-            Function calls are like a detour in the flow of execution. Instead of
-            going to the next statement, you go to the first line of the called
-            function, execute all the statements there, and then come back and pick
-            up again where you left off.</p>
-  <p>That sounds simple enough, except that you have to remember that one
-            function can call another. Thus, while we are in the middle of <c>main</c>, we
-            might have to go off and execute the statements in <c>threeLine</c>. But while
-            we are executing <c>threeLine</c>, we get interrupted three times to go off and
-            execute <c>newLine</c>.</p>
-  <p>Fortunately, C++ is adept at keeping track of where it is, so each time
-            <c>newLine</c> completes, the program picks up where it left off in <c>threeLine</c>,
-            and eventually gets back to <c>main</c> so the program can terminate.</p>
+  <p>Execution always begins at the first statement of <c>main</c>, regardless of where it is in the
+    program** (often it is at the bottom). Statements are executed one at a time, in order, until
+    you reach a function call. Function calls are like a detour in the flow of execution. Instead of
+    going to the next statement, you go to the first line of the called function, execute all the
+    statements there, and then come back and pick up again where you left off.</p>
+  <p>That sounds simple enough, except that you have to remember that one function can call another.
+    Thus, while we are in the middle of <c>main</c>, we might have to go off and execute the statements
+    in <c>threeLine</c>. But while we are executing <c>threeLine</c>, we get interrupted three times to go off and
+    execute <c>newLine</c>.</p>
+  <p>Fortunately, C++ is adept at keeping track of where it is, so each time <c>newLine</c> completes, the
+    program picks up where it left off in <c>threeLine</c>, and eventually gets back to <c>main</c> so the
+    program can terminate.</p>
   <exercise label="multiple_functions_AC_1">
     <statement>
       <p>This program calls the multiplyTwo and addTwo functions in the
-            main.  See if you can follow the order of execution.</p>
+        main. Follow the order of execution using the Codelens.</p>
     </statement>
-    <program xml:id="multiple_functions_AC_1_editor" interactive="activecode" line-numbers="yes">
+    <program label="multiple_functions_AC_1_editor"
+             interactive="codelens"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
 
-void printTotal (int x) {
+void printTotal(int x) {
     cout << x << endl;
 }
 
-int multiplyTwo (int x) {
+int multiplyTwo(int x) {
     int total = x * 2;
     printTotal(total);
     return total;
 }
 
-int addTwo (int x) {
+int addTwo(int x) {
     int total = x + 2;
     return total;
 }
@@ -60,8 +58,8 @@ int main() {
         ]]></input>
     </program>
   </exercise>
-  <p>What's the moral of this sordid tale? When you read a program, don't
-            read from top to bottom. Instead, <term>follow the flow of execution</term>.</p>
+  <p>What's the moral of this sordid tale? When you read a program, don't read from top to bottom.
+    Instead, <term>follow the flow of execution</term>.</p>
   <exercise label="multiple_fun_1">
     <statement>
       <p>Match the function to the order it is executed in the program above.</p>
@@ -91,18 +89,20 @@ int main() {
   <exercise label="multiple_fun_2">
     <statement>
       <p>Consider the following C++ code. Note that line numbers are included
-            on the left.</p>
+        on the left.</p>
       <program line-numbers="yes">
         <input><![CDATA[
 #include <iostream>
 using namespace std;
 
-void newLine () {
+void newLine() {
   cout << endl;
 }
 
-void threeLine () {
-  newLine ();  newLine ();  newLine ();
+void threeLine() {
+  newLine ();
+  newLine ();
+  newLine ();
 }
 
 int main() {
@@ -114,7 +114,7 @@ int main() {
 ]]></input>
       </program>
       <p>Which of the following reflects the order in which these functions
-            are executed in C++?</p>
+        are executed in C++?</p>
     </statement>
     <choices>
       <choice>
@@ -124,7 +124,8 @@ int main() {
           </p>
         </statement>
         <feedback id="multiple_fun_2_opt_a">
-          <p>Remember to follow the order of execution, which is not necessarily the order the program is written.</p>
+          <p>Remember to follow the order of execution, which is not necessarily the order the
+            program is written.</p>
         </feedback>
       </choice>
       <choice>
@@ -134,7 +135,8 @@ int main() {
           </p>
         </statement>
         <feedback id="multiple_fun_2_opt_b">
-          <p>Remember to follow the order of execution, which is not necessarily the order the program is written.</p>
+          <p>Remember to follow the order of execution, which is not necessarily the order the
+            program is written.</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -167,17 +169,19 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void yo () {
+void yo() {
   cout << "yo, ";
 }
 
-void hello () {
+void hello() {
   cout << "hello, ";
-  yo(); yo();
+  yo();
+  yo();
 }
 
-void goodbye () {
-  yo(); hello();
+void goodbye() {
+  yo();
+  hello();
   cout << "goodbye,";
 }
 
@@ -218,7 +222,8 @@ int main() {
           </p>
         </statement>
         <feedback id="multiple_fun_3_opt_c">
-          <p>The order of calls and composition of <c>yo</c> in <c>hello</c> and both of those in <c>goodbye</c> produce this output.</p>
+          <p>The order of calls and composition of <c>yo</c> in <c>hello</c> and both of those in <c>goodbye</c>
+            produce this output.</p>
         </feedback>
       </choice>
       <choice>

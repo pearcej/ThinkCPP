@@ -47,8 +47,7 @@ int main() {
 
     <exercise label="VARS_a2">
       <statement>
-        <p>Finish the code below so that it prints <q>I drive a 2014 Buick Regal</q>. Select the
-          Parsonsprob tab for hints for the construction of the code.</p>
+        <p>Finish the code below so that it prints <q>I drive a 2014 Buick Regal</q></p>
       </statement>
       <program xml:id="VARS_a2_editor"
                interactive="activecode"
@@ -71,13 +70,13 @@ int main() {
         ]]></input>
         </program>
       <hint component="ex_parsons_help">
+        <p>Finish the code below so that it prints <q>I drive a 2014 Buick Regal</q>. Use the
+          lines to construct the pseudocode, then go back to complete the exercise.</p>
         <activity label="VARS_a2_p"
                   numbered="yes"
                   adaptive="yes"
                   indentation="show"
                   exercise-interactive="parson">
-          <p>Finish the code below so that it prints <q>I drive a 2014 Buick Regal</q>. Use the
-            lines to construct the pseudocode, then go back to complete the exercise.</p>
           <blocks>
             <block order="12">
               <cline>Open main()</cline>
@@ -162,8 +161,7 @@ int main() {
 
     <exercise label="VARS_a4">
       <statement>
-        <p>Finish the code below so that it returns the correct volume of a sphere. Select the
-          Pseudocode tab for hints for the construction of the code.
+        <p>Finish the code below so that it returns the correct volume of a sphere.
           Hint: think about what happens when you use integer division. The volume of a sphere is
           given by V = (4/3)(pi)(r^3).</p>
       </statement>
@@ -188,12 +186,12 @@ int main() {
     ]]></input>
     </program>
       <hint component="ex_parsons_help">
+        <p>Use the lines on to construct the pseudocode, then go back to complete the exercise.</p>
         <activity label="VARS_a4_p_ps"
                   numbered="yes"
                   adaptive="yes"
                   indentation="show"
                   exercise-interactive="parson">
-          <p>Use the lines on to construct the pseudocode, then go back to complete the exercise.</p>
           <blocks>
             <block order="6">
               <cline>Open main()</cline>
@@ -287,12 +285,12 @@ int main() {
       ]]></input>
       </program>
       <hint component="ex_parsons_hint">
+        <p>Use the lines to construct the pseudocode, then go back to complete the exercise.</p>
         <activity label="VARS_a6_p_ps"
                   numbered="yes"
                   exercise-interactive="parson"
                   adaptive="yes"
                   indentation="show">
-          <p>Use the lines to construct the pseudocode, then go back to complete the exercise.</p>
           <blocks>
             <block order="7">
               <cline>Open main()</cline>
@@ -361,7 +359,7 @@ int main() {
       <statement>
         <p>Write code that calculates how much you you will spend after tipping 20% on your $36.25
           dinner. Save the result of this calculation in <c>plusTip</c>. Be sure to include any necessary
-          headers. Select the Pseudocode tab for hints for the construction of the code.</p>
+          headers.</p>
       </statement>
       <program xml:id="VARS_a8_ps_editor"
                interactive="activecode"
@@ -376,12 +374,12 @@ int main() {
     ]]></input>
     </program>
       <hint component="ex_parsons_help">
+        <p>Use the lines to construct the pseudocode, then go back to complete the exercise.</p>
         <activity label="VARS_a8_p_ps"
                   numbered="yes"
                   adaptive="yes"
                   indentation="show"
                   exercise-interactive="parson">
-          <p>Use the lines to construct the pseudocode, then go back to complete the exercise.</p>
           <blocks>
             <block order="6">
               <cline>Open main()</cline>
@@ -450,8 +448,7 @@ int main() {
       <statement>
         <p>Write code that calculates and prints the average of a and b if a = 3.14, and b = 1.59.
           You
-          may only use one line of code. Be sure to inclue any necessary headers. Select the
-          Pseudocode tab for hints for the construction of the code.</p>
+          may only use one line of code. Be sure to inclue any necessary headers.</p>
       </statement>
       <program xml:id="VARS_a10_ps_editor"
                interactive="activecode"
@@ -466,14 +463,14 @@ int main() {
             ]]></input>
             </program>
       <hint component="ex_parsons_help">
+        <p>Write code that calculates and prints the average of a and b if a = 3.14, and b = 1.59.
+          You may only use one line of code. Use the lines on the to construct the pseudocode,
+          then go back to complete the Activecode.</p>
         <activity label="VARS_a10_p_ps"
                   numbered="yes"
                   adaptive="yes"
                   indentation="show"
                   exercise-interactive="parson">
-          <p>Write code that calculates and prints the average of a and b if a = 3.14, and b = 1.59.
-            You may only use one line of code. Use the lines on the to construct the pseudocode,
-            then go back to complete the Activecode tab.</p>
           <blocks>
             <block order="2">
               <cline>Open main()</cline>

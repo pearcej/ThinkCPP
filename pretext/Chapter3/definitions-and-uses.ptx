@@ -2,16 +2,18 @@
 <section xml:id="chapter3_definitions-and-uses">
   <title>Definitions and Uses</title>
   <p>Pulling together all the code fragments from the previous section, the
-            whole program looks like this:</p>
+    whole program looks like this:</p>
   <program>#include &lt;iostream&gt;
 using namespace std;
 
 void newLine () {
-  cout &lt;&lt; endl;
+    cout &lt;&lt; endl;
 }
 
 void threeLine () {
-  newLine ();  newLine ();  newLine ();
+    newLine ();
+    newLine ();
+    newLine ();
 }
 
 int main() {
@@ -20,19 +22,17 @@ int main() {
   cout &lt;&lt; "Second Line." &lt;&lt; endl;
   return 0;
 }</program>
-  <p>This program contains three function definitions: <c>newLine</c>, <c>threeLine</c>,
-            and <c>main</c>.</p>
-  <p>Inside the definition of <c>main</c>, there is a statement that uses or calls
-            <c>threeLine</c>. Similarly, <c>threeLine</c> calls <c>newLine</c> three times. Notice that
-            the definition of each function appears above the place where it is
-            used.</p>
+  <p>This program contains three function definitions: <c>newLine</c>, <c>threeLine</c>, and <c>main</c>.</p>
+  <p>Inside the definition of <c>main</c>, there is a statement that uses or calls <c>threeLine</c>. Similarly, <c>threeLine</c>
+    calls <c>newLine</c> three times. Notice that the definition of each function appears above the place
+    where it is used.</p>
   <p>This is necessary in C++; the definition of a function must appear
-            before (above) the first use of the function. You should try compiling
-            this program with the functions in a different order and see what error
-            messages you get.</p>
+    before (above) the first use of the function. You should try compiling
+    this program with the functions in a different order and see what error
+    messages you get.</p>
   <exercise label="defns_uses_1">
     <statement>
-      <p>The function definition must be written <var/> the first use of the function.  </p>
+      <p>The function definition must be written <var/> the first use of the function. </p>
     </statement>
     <setup>
       <var case="insensitive">
@@ -52,7 +52,7 @@ int main() {
   <exercise label="defns_uses_2">
     <statement>
       <p>Which of the following is a correct function header (first line of
-            a function definition)?</p>
+        a function definition)?</p>
     </statement>
     <choices>
       <choice>
@@ -62,7 +62,8 @@ int main() {
           </p>
         </statement>
         <feedback id="defns_uses_2_opt_a">
-          <p>This function header is missing a <c>{</c>, which is needed to begin defining the function.</p>
+          <p>This function header is missing a <c>{</c>, which is needed to begin defining the
+            function.</p>
         </feedback>
       </choice>
       <choice>
@@ -92,17 +93,21 @@ int main() {
           </p>
         </statement>
         <feedback id="defns_uses_2_opt_d">
-          <p>This function header is missing parentheses. Even if a function does not take in any parameters, empty parentheses should be used.</p>
+          <p>This function header is missing parentheses. Even if a function does not take in any
+            parameters, empty parentheses should be used.</p>
         </feedback>
       </choice>
     </choices>
   </exercise>
-  <exercise label="defns_uses_3" adaptive="yes" indentation="hide">
+  <exercise label="defns_uses_3"
+            adaptive="yes"
+            indentation="hide">
     <statement>
       <p>Construct a block of code that correctly defines a the addTwo function.</p>
     </statement>
     <blocks>
-      <block order="1" correct="no">
+      <block order="1"
+             correct="no">
         <cline>void addTwo(int x) {</cline>
         <cline>void addTwo(int x); </cline>
         <cline>void addTwo(int x) </cline>
