@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
     <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
         <title>Strings and things</title>
-        <xi:include href='./containers_and_strings.ptx' />
-        <xi:include href='./string_variables.ptx' />
-        <xi:include href='./extracting_characters.ptx' />
+        <xi:include href='./containers-and-strings.ptx' />
+        <xi:include href='./string-variables.ptx' />
+        <xi:include href='./extracting-characters.ptx' />
         <xi:include href='./length.ptx' />
         <xi:include href='./traversal.ptx' />
-        <xi:include href='./runtime_error.ptx' />
-        <xi:include href='./find_function.ptx' />
-        <xi:include href='./own_version_find.ptx' />
-        <xi:include href='./looping_and_counting.ptx' />
-        <xi:include href='./increment_decrement.ptx' />
-        <xi:include href='./string_concatenation.ptx' />
-        <xi:include href='./strings_are_mutable.ptx' />
-        <xi:include href='./strings_are_comparable.ptx' />
-        <xi:include href='./character_classification.ptx' />
-        <xi:include href='./other_string_functions.ptx' />
+        <xi:include href='./runtime-error.ptx' />
+        <xi:include href='./find-function.ptx' />
+        <xi:include href='./own-version-find.ptx' />
+        <xi:include href='./looping-and-counting.ptx' />
+        <xi:include href='./increment-decrement.ptx' />
+        <xi:include href='./string-concatenation.ptx' />
+        <xi:include href='./strings-are-mutable.ptx' />
+        <xi:include href='./strings-are-comparable.ptx' />
+        <xi:include href='./character-classification.ptx' />
+        <xi:include href='./other-string-functions.ptx' />
         <xi:include href='./glossary.ptx' />
-        <xi:include href='./Exercises.ptx' />
-        <xi:include href='./mixed_up_code.ptx' />
-        <xi:include href='./coding_practice.ptx' />
+        <xi:include href='./exercises.ptx' />
+        <xi:include href='./mixed-up-code.ptx' />
+        <xi:include href='./coding-practice.ptx' />
     </chapter>

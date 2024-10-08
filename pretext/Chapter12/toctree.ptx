@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
     <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-        <title>Vectors of Objects</title>
+        <title>-vectors of -objects</title>
         <xi:include href='./composition.ptx' />
-        <xi:include href='./card_objects.ptx' />
-        <xi:include href='./the_printcard_function.ptx' />
-        <xi:include href='./the_equals_function.ptx' />
-        <xi:include href='./the_isgreater_function.ptx' />
-        <xi:include href='./vector_of_cards.ptx' />
-        <xi:include href='./the_printdeck_function.ptx' />
+        <xi:include href='./card-objects.ptx' />
+        <xi:include href='./the-printcard-function.ptx' />
+        <xi:include href='./the-equals-function.ptx' />
+        <xi:include href='./the-isgreater-function.ptx' />
+        <xi:include href='./vector-of-cards.ptx' />
+        <xi:include href='./the-printdeck-function.ptx' />
         <xi:include href='./searching.ptx' />
-        <xi:include href='./bisection_search.ptx' />
-        <xi:include href='./decks_and_subdecks.ptx' />
+        <xi:include href='./bisection-search.ptx' />
+        <xi:include href='./decks-and-subdecks.ptx' />
         <xi:include href='./glossary.ptx' />
-        <xi:include href='./Exercises.ptx' />
-        <xi:include href='./mixed_up_code.ptx' />
-        <xi:include href='./coding_practice.ptx' />
+        <xi:include href='./exercises.ptx' />
+        <xi:include href='./mixed-up-code.ptx' />
+        <xi:include href='./coding-practice.ptx' />
     </chapter>

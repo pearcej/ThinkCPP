@@ -2,17 +2,17 @@
     <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
         <title>File Input/Output and ``matrix``\ es</title>
         <xi:include href='./intro.ptx' />
-        <xi:include href='./Streams.ptx' />
-        <xi:include href='./File_input.ptx' />
-        <xi:include href='./File_output.ptx' />
-        <xi:include href='./Parsing_input.ptx' />
-        <xi:include href='./Parsing_numbers.ptx' />
-        <xi:include href='./The_Set_data_structure.ptx' />
+        <xi:include href='./streams.ptx' />
+        <xi:include href='./file-input.ptx' />
+        <xi:include href='./file-output.ptx' />
+        <xi:include href='./parsing-input.ptx' />
+        <xi:include href='./parsing-numbers.ptx' />
+        <xi:include href='./the-set-data-structure.ptx' />
         <xi:include href='./apmatrix.ptx' />
-        <xi:include href='./A_distance_matrix.ptx' />
-        <xi:include href='./A_proper_distance_matrix.ptx' />
-        <xi:include href='./Glossary.ptx' />
-        <xi:include href='./Exercises.ptx' />
-        <xi:include href='./mixed_up_code.ptx' />
-        <xi:include href='./coding_practice.ptx' />
+        <xi:include href='./a-distance-matrix.ptx' />
+        <xi:include href='./a-proper-distance-matrix.ptx' />
+        <xi:include href='./glossary.ptx' />
+        <xi:include href='./exercises.ptx' />
+        <xi:include href='./mixed-up-code.ptx' />
+        <xi:include href='./coding-practice.ptx' />
     </chapter>

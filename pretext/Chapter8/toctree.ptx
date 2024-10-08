@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
     <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
         <title>Structures</title>
-        <xi:include href='./compound_values.ptx' />
-        <xi:include href='./point_objects.ptx' />
-        <xi:include href='./accessing_instance_variables.ptx' />
-        <xi:include href='./operations_on_structures.ptx' />
-        <xi:include href='./structures_as_parameters.ptx' />
-        <xi:include href='./call_by_value.ptx' />
-        <xi:include href='./call_by_reference.ptx' />
+        <xi:include href='./compound-values.ptx' />
+        <xi:include href='./point-objects.ptx' />
+        <xi:include href='./accessing-instance-variables.ptx' />
+        <xi:include href='./operations-on-structures.ptx' />
+        <xi:include href='./structures-as-parameters.ptx' />
+        <xi:include href='./call-by-value.ptx' />
+        <xi:include href='./call-by-reference.ptx' />
         <xi:include href='./rectangles.ptx' />
-        <xi:include href='./structures_as_returns_types.ptx' />
-        <xi:include href='./passing_other_types_by_reference.ptx' />
-        <xi:include href='./getting_user_input.ptx' />
+        <xi:include href='./structures-as-returns-types.ptx' />
+        <xi:include href='./passing-other-types-by-reference.ptx' />
+        <xi:include href='./getting-user-input.ptx' />
         <xi:include href='./glossary.ptx' />
-        <xi:include href='./Exercises.ptx' />
-        <xi:include href='./mixed_up_code.ptx' />
-        <xi:include href='./coding_practice.ptx' />
+        <xi:include href='./exercises.ptx' />
+        <xi:include href='./mixed-up-code.ptx' />
+        <xi:include href='./coding-practice.ptx' />
     </chapter>
