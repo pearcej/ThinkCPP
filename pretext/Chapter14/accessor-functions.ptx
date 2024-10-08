@@ -159,7 +159,7 @@ double Complex::getImag () {
     </program>
   </exercise>
   <exercises line="167" runestone_options="{'showtitle': 'data-showtitle=&quot;Reveal Problem&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'accessor_functions', 'chapter': 'Chapter14', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': '14_4_1', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter14/accessor_functions.rst">
-    <exercise label="question14_4_1" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <exercise label="question14_4_1" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
       <statement>
         <p>Let's write the code for the <c>calculatePolar</c> function.
                 Follow the format of the function <c>calculateCartesian</c>.</p>
@@ -198,7 +198,7 @@ double Complex::getImag () {
     </exercise>
   </exercises>
   <exercises line="194" runestone_options="{'showtitle': 'data-showtitle=&quot;Reveal Problem&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'accessor_functions', 'chapter': 'Chapter14', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': '14_4_2', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter14/accessor_functions.rst">
-    <exercise label="question14_4_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <exercise label="question14_4_2" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
       <statement>
         <p>Let's write the code for the <c>getMag</c> function,
                 which should return the magnitude of a <c>Complex</c> object.</p>
@@ -227,7 +227,7 @@ double Complex::getImag () {
     </exercise>
   </exercises>
   <exercises line="217" runestone_options="{'showtitle': 'data-showtitle=&quot;Reveal Problem&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'accessor_functions', 'chapter': 'Chapter14', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': '14_4_3', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter14/accessor_functions.rst">
-    <exercise label="question14_4_3" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <exercise label="question14_4_3" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
       <statement>
         <p>Let's write the code for the <c>getTheta</c> function,
                 which should return the magnitude of a <c>Complex</c> object.</p>

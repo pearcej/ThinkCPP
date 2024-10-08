@@ -143,7 +143,7 @@ int main() {
       </choice>
     </choices>
   </exercise>
-  <exercise label="encapsulation_generalization_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="encapsulation_generalization_2" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
     <statement>
       <p>Create a function called <c>powersOfTwo</c> which prints out a table with the powers of two up to <math>2^{5}</math>.</p>
     </statement>
@@ -172,7 +172,7 @@ int main() {
       </block>
     </blocks>
   </exercise>
-  <exercise label="encapsulation_generalization_3" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="encapsulation_generalization_3" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
     <statement>
       <p>Now let's generalize the function to print out the powers of a parameter n up to <math>n^{5}</math>. Create a
             function called <c>powersOfn</c> which takes an int n as a parameter.</p>

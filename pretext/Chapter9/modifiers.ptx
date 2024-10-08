@@ -103,7 +103,7 @@ int main() {
     </program>
   </exercise>
   <exercises line="109" runestone_options="{'showtitle': 'data-showtitle=&quot;Reveal Problem&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'modifiers', 'chapter': 'Chapter9', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': '9_6_1', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter9/modifiers.rst">
-    <exercise label="modifiers_1" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <exercise label="modifiers_1" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
       <statement>
         <p>Let's write the code for the <c>increment</c> function. <c>increment</c>
                 adds a number of seconds to a <c>Time</c> object and updates the values

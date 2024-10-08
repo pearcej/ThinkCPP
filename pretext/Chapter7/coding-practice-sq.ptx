@@ -46,7 +46,7 @@ int main() {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter7', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_7_AC_2q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cp_7_AC_2q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>How much does Bubba love shrimp? Probably a lot. But how many times does the word <q>shrimp</q> come
                     up in his monologue? Write a function <c>countWord</c> that counts the number of times a given word
@@ -127,7 +127,7 @@ int main() {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter7', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_7_AC_4q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cp_7_AC_4q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>Write a void function <c>removeWord</c> that removes a given word from a given string and prints
                     out the new string. <c>removeWord</c> should take two strings <c>input</c> and <c>word</c> as parameters
@@ -205,7 +205,7 @@ TEST_CASE("reverseWord function") {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter7', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_7_AC_6q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cp_7_AC_6q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>Write the function <c>reverseString</c> which takes a <c>string input</c>, reverses it,
                     and returns the reversed <c>string</c>. Use the lines to construct
@@ -275,7 +275,7 @@ TEST_CASE("countVowels function") {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter7', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_7_AC_8q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cp_7_AC_8q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>Write the function <c>countVowels</c> which takes a <c>string input</c> and returns
                     the number of vowels in the <c>string</c>. Remember, &#x2018;a', &#x2018;e', &#x2018;i', &#x2018;o', and &#x2018;u'
@@ -364,7 +364,7 @@ TEST_CASE("camelToSnake function") {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter7', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_7_AC_10q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cp_7_AC_10q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>Camel case is the practice of writing phrases without spaces or punctuation,
                     indicating the separation of words using capital letter. For example, <q>camel case</q>

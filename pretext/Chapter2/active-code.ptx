@@ -78,7 +78,7 @@ int main () {
                   numbered="yes"
                   adaptive="yes"
                   indentation="show"
-                  language="python"
+                  language="cpp"
                   exercise-interactive="parson">
           <p>Finish the code below so that it prints <q>I drive a 2014 Buick Regal</q>. Use the
             lines to construct the pseudocode, then go back to complete the exercise.</p>
@@ -199,7 +199,7 @@ int main () {
                   numbered="yes"
                   adaptive="yes"
                   indentation="show"
-                  language="python"
+                  language="cpp"
                   exercise-interactive="parson">
           <p>Use the lines on to construct the pseudocode, then go back to complete the exercise.</p>
           <blocks>
@@ -303,7 +303,7 @@ int main () {
                   exercise-interactive="parson"
                   adaptive="yes"
                   indentation="show"
-                  language="python">
+                  language="cpp">
           <p>Use the lines to construct the pseudocode, then go back to complete the exercise.</p>
           <blocks>
             <block order="7">
@@ -395,7 +395,7 @@ int main () {
                   numbered="yes"
                   adaptive="yes"
                   indentation="show"
-                  language="python"
+                  language="cpp"
                   exercise-interactive="parson">
           <p>Use the lines to construct the pseudocode, then go back to complete the exercise.</p>
           <blocks>
@@ -489,7 +489,7 @@ int main () {
                   numbered="yes"
                   adaptive="yes"
                   indentation="show"
-                  language="python"
+                  language="cpp"
                   exercise-interactive="parson">
           <p>Write code that calculates and prints the average of a and b if a = 3.14, and b = 1.59.
             You may only use one line of code. Use the lines on the to construct the pseudocode,

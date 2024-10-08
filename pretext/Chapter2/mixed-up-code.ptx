@@ -7,7 +7,7 @@
            numbered="yes"
            adaptive="yes"
            indentation="show"
-           language="python">
+           language="cpp">
     <statement>
       <p>Construct a block of code that prints: <q>Lions &amp;</q> one the first line, <q>Tigers
         &amp; Bears!</q> on the second line, and <q>Oh my!</q> on the FOURTH line.</p>
@@ -55,7 +55,7 @@
            numbered="yes"
            adaptive="yes"
            indentation="show"
-           language="python">
+           language="cpp">
     <statement>
       <p>Construct a block of code that swaps the value of integers x and y, which have values 3 and
         6, respectively.</p>
@@ -98,7 +98,7 @@
            numbered="yes"
            adaptive="yes"
            indentation="show"
-           language="python">
+           language="cpp">
     <statement>
       <p>Dan Humphrey is a 3.98 student at Constance High School. His crush's first initial is S.
         Construct a program that assigns the variables name, GPA, and crush, in that order.</p>
@@ -142,7 +142,7 @@
            numbered="yes"
            adaptive="yes"
            indentation="hide"
-           language="python">
+           language="cpp">
     <statement>
       <p>You decide to make homemade Mac &#x2018;n' Cheese for you and your roomates. Whoever wrote
         the recipe wanted to make things hard for you by stating that it calls for 1% of a gallon of
@@ -187,7 +187,7 @@
            numbered="yes"
            adaptive="yes"
            indentation="hide"
-           language="python">
+           language="cpp">
     <statement>
       <p>Construct a block of code that takes the volume of the rectangular prism defined by length,
         width, and height and prints the result to the terminal.</p>
@@ -234,7 +234,7 @@
            numbered="yes"
            adaptive="yes"
            indentation="hide"
-           language="python">
+           language="cpp">
     <statement>
       <p>Construct a block of code that changes the value of the variable a from the character
         &#x2018;a' to the character &#x2018;z'.</p>
@@ -271,7 +271,7 @@
            numbered="yes"
            adaptive="yes"
            indentation="hide"
-           language="python">
+           language="cpp">
     <statement>
       <p>Construct a block of code that outputs the volume of a cylinder with a radius of 3 and a
         height of 4. There are many ways to do this using the choices below, but only the correct
@@ -321,7 +321,7 @@
            numbered="yes"
            adaptive="yes"
            indentation="hide"
-           language="python">
+           language="cpp">
     <statement>
       <p>Construct a block of code that prints <q>My favorite class is MATH</q> on the same line.</p>
     </statement>
@@ -359,7 +359,7 @@
            numbered="yes"
            adaptive="yes"
            indentation="hide"
-           language="python">
+           language="cpp">
     <statement>
       <p>It's Black Friday and the Nintendo Switch you'be been saving up for is marked down to 60%
         of its original price! Construct a block of code that calculates how much money you'd be
@@ -405,7 +405,7 @@
            numbered="yes"
            adaptive="yes"
            indentation="hide"
-           language="python">
+           language="cpp">
     <statement>
       <p>Your family just bought a dog and everyone has been fighting over what to name it. It went
         from Champ to Copper to Higgins, and after a few days of being Higgins, everyone agreed on

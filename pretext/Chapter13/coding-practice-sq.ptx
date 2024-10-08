@@ -27,7 +27,7 @@ int main() {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_13_AC_2_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cp_13_AC_2_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>How long is a year on other planets? Let's write a program that prints out the number of days
                     in a year on each planet using a switch statement. These values are, in planetary order,
@@ -122,7 +122,7 @@ using namespace std;
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_13_AC_4_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cp_13_AC_4_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>Now let's generate a <c>BingoBoard</c>! We want to fill the 25 <c>Space</c>s on the <c>BingoBoard</c> with
                     random values from 1 to 75 without repititon. To do this, we'll make a <c>vector</c>
@@ -178,7 +178,7 @@ using namespace std;
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_13_AC_6_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cp_13_AC_6_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>Now that we have the functions <c>randomInt</c> and <c>swapValues</c>, we can write the function
                     <c>generateRandVec</c>. <c>generateRandVec</c> creates a <c>vector</c> with values from 1 to 75,
@@ -307,7 +307,7 @@ void BingoBoard::makeBoard() {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_13_AC_8_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cp_13_AC_8_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>Let's print out our <c>BingoBoard</c>! Write the <c>BingoBoard</c> member function
                     <c>printBoard</c>. Insert tabs between each value in each row to make the board
@@ -381,7 +381,7 @@ int main() {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_13_AC_10_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cp_13_AC_10_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>You may have noticed that in some cases, our version of <c>bubbleSort</c> does
                     an unnecessary amount of work. For example, if our <c>vector</c> was {1, 2, 3, 5, 4},

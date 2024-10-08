@@ -93,7 +93,7 @@ int main() {
       </choice>
     </choices>
   </exercise>
-  <exercise label="point_objects_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="point_objects_2" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
     <statement>
       <p>Construct a block of code that correctly creates variables of a certain structure's type.</p>
     </statement>

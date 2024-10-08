@@ -148,7 +148,7 @@ Deck::Deck () {
       </choice>
     </choices>
   </exercise>
-  <exercise label="deck_constructor_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="deck_constructor_2" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
     <statement>
       <p>Let's write a constructor for a deck of cards that uses 40 cards.
             This deck uses all 4 suits and ranks Ace through 10, omitting all

@@ -152,7 +152,7 @@ int main() {
       </choice>
     </choices>
   </exercise>
-  <exercise label="question15_6_3" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="question15_6_3" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
     <statement>
       <p>Create the replace_with() function that takes a string <q>str</q>, a character to get rid of <q>olc_char</q>,
             and a character to replace it with <q>new_char</q>.  It should return a new string that has replaces any

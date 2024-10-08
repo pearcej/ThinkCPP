@@ -277,7 +277,7 @@ endl</c>?</p>
       <cline>}</cline>
     </areas>
   </exercise>
-  <exercise label="new_functions_pp_1" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="new_functions_pp_1" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
     <statement>
       <p>Construct a function that correctly prints the perimeter of a rectangle.</p>
     </statement>

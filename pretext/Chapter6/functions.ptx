@@ -148,7 +148,7 @@ int main() {
       </choice>
     </choices>
   </exercise>
-  <exercise label="functions_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="functions_2" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
     <statement>
       <p>Create a function called <c>absoluteValue</c>, which returns the absolute value of a parameter <c>num</c>. Assume you do not have access to <c>#include &lt;cmath&gt;</c>.</p>
     </statement>

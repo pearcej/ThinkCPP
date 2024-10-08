@@ -49,7 +49,7 @@ int main() {
         ]]></input>
     </program>
   </exercise>
-  <exercise label="string_variables_1" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="string_variables_1" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
     <statement>
       <p>Construct a block of code that correctly prints out a string variable.</p>
     </statement>

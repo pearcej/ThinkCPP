@@ -7,9 +7,9 @@
     <caption>
       <p>This program prints two different statements on two different lines using <c>endl</c>.</p>
     </caption>
-    <program xml:id="more_output_AC_1_editor"
+    <program label="more_output_AC_1_editor"
              interactive="activecode"
-             language="python"
+             language="cpp"
              line-numbers="yes"
              highlight-lines="5-6">
       <input><![CDATA[

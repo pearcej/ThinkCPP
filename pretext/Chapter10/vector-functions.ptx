@@ -109,7 +109,7 @@ void print_vec(vector&lt;int&gt; vec) {
       </choice>
     </choices>
   </exercise>
-  <exercise label="vector_functions_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="vector_functions_2" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
     <statement>
       <p>Construct the <c>make_even</c> function that loops through <c>vec</c>, adds 1 to any elements
             that are odd, and returns the new vector.</p>

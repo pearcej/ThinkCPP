@@ -157,7 +157,7 @@ void Time::print () {
       </choice>
     </choices>
   </exercise>
-  <exercise label="print_3" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="print_3" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
     <statement>
       <p>Create the <c>Dog</c> object with member functions <c>bark</c> and <c>is_teacup_dog</c> (if the weight of the dog is less than 4 pounds)  Write the functions
             in the same order they appear inside the structure.</p>

@@ -103,7 +103,7 @@ int multiply (int a, int b) {
       </choice>
     </choices>
   </exercise>
-  <exercise label="pass_others_reference_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="pass_others_reference_2" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
     <statement>
       <p>Create a function called <c>addNum</c> that takes two parameters, an integer <c>x</c> and an integer <c>y</c>. The function should add <c>y</c> to <c>x</c>, then print <c>x</c>. The variable <c>x</c> should be modified, while the variable <c>y</c> should not.</p>
     </statement>

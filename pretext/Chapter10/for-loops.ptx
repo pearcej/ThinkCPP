@@ -133,7 +133,7 @@ int main() {
       </choice>
     </choices>
   </exercise>
-  <exercise label="question10_4_3" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="question10_4_3" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
     <statement>
       <p>Construct the <c>half_life()</c> function that prints the first num half lives
             of the initial amount.</p>

@@ -210,7 +210,7 @@ Deck Deck::subdeck (int low, int high) const {
     </program>
   </exercise>
   <exercises line="217" runestone_options="{'showtitle': 'data-showtitle=&quot;findBisect Help&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'subdecks', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': 'subdecks_reveal_1', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter13/subdecks.rst">
-    <exercise label="subdecks_help_1" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <exercise label="subdecks_help_1" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
       <statement>
         <p>Let's write the code for this version of the findBisect function.
                 findBisect should take a subdeck and a card as parameters and

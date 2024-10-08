@@ -235,7 +235,7 @@ cout &lt;&lt; "Decimal:" &lt;&lt; num1 / num2;</program>
            numbered="yes"
            adaptive="yes"
            indentation="hide"
-           language="python">
+           language="cpp">
     <statement>
       <p>Construct a code block that prints the total cost of your meal, including the 6.0% sales
         tax, after you purchase two orders of fries, three burgers, and a milkshake. Start by

@@ -147,7 +147,7 @@ int main() {
     </program>
   </exercise>
   <exercises line="178" runestone_options="{'showtitle': 'data-showtitle=&quot;Reveal Problem&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'tables', 'chapter': 'Chapter6', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': '6_4_1', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter6/tables.rst">
-    <exercise label="tables_1" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <exercise label="tables_1" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
       <statement>
         <p>Let's write the code that prints out the powers of two.</p>
       </statement>

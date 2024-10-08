@@ -142,7 +142,7 @@ int main () {
            numbered="yes"
            adaptive="yes"
            indentation="hide"
-           language="python">
+           language="cpp">
     <statement>
       <p>You love your car, and you decide to keep track of its make, model, and year. You do so
         using three assignment statements IN THAT ORDER. For the sake of this problem, suppose you

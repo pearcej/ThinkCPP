@@ -187,7 +187,7 @@ void Card::print () const {
       </choice>
     </choices>
   </exercise>
-  <exercise label="equals_function_3" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="equals_function_3" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
     <statement>
       <p>In a card game called Euchre, the highest ranked suit is called the trump suit.  The trump suit contains
             all of the cards of that suit, and the Jack of the other suit of the same color.  For example, if Hearts

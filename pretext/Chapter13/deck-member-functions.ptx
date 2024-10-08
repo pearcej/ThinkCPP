@@ -192,7 +192,7 @@ struct Deck {
       </choice>
     </choices>
   </exercise>
-  <exercise label="deck_members_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="deck_members_2" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
     <statement>
       <p>Write find as a Deck member function that takes a Card as a parameter.</p>
     </statement>

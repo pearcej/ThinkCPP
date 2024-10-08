@@ -119,7 +119,7 @@ int main() {
       </choice>
     </choices>
   </exercise>
-  <exercise label="alt_execution_2" adaptive="yes" indentation="hide" language="python">
+  <exercise label="alt_execution_2" adaptive="yes" indentation="hide" language="cpp">
     <statement>
       <p>Construct a block of code that correctly goes through alternative
             execution for pricing of an entre at a nice restaurant.  If the

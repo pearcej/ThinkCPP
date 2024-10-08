@@ -123,7 +123,7 @@ cout << s + t << endl;
       </choice>
     </choices>
   </exercise>
-  <exercise label="string_concatenation_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="string_concatenation_2" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
     <statement>
       <p>As an exercise, put together the code below so that it prints <c>C++ is so fun!</c></p>
     </statement>
@@ -152,7 +152,7 @@ cout << s + t << endl;
       </block>
     </blocks>
   </exercise>
-  <exercise label="string_concatenation_3" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="string_concatenation_3" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
     <statement>
       <p>Put together the code below to creater a function <c>greeter</c> that adds <q>hello</q> and <q>goodbye</q> behind and ahead of a message
             respectively and then prints the new message.

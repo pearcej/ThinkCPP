@@ -29,7 +29,7 @@ int main () {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter2', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="VARS_a2_p" numbered="yes" adaptive="yes" indentation="show" language="python">
+      <exercise label="VARS_a2_p" numbered="yes" adaptive="yes" indentation="show" language="cpp">
         <caption>
           <p>Finish the code below so that it prints <q>I drive a 2014 Buick Regal</q>. Use the lines to construct the code, then go back to complete the Activecode tab.</p>
         </caption>
@@ -101,7 +101,7 @@ int main () {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter2', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="VARS_a4_p" numbered="yes" adaptive="yes" indentation="show" language="python">
+      <exercise label="VARS_a4_p" numbered="yes" adaptive="yes" indentation="show" language="cpp">
         <caption>
           <p>Finish the code below so that it returns the correct volume of a sphere. Use the lines to construct the code, then go back to complete the Activecode tab. The volume of a sphere is given by V = (4/3)(pi)(r^3).</p>
         </caption>
@@ -165,7 +165,7 @@ int main () {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter2', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="VARS_a6_p" numbered="yes" adaptive="yes" indentation="show" language="python">
+      <exercise label="VARS_a6_p" numbered="yes" adaptive="yes" indentation="show" language="cpp">
         <caption>
           <p>Write code that assigns <q>apples</q> to the variable oranges, and <q>oranges</q> to the variable apples, then swaps their values.  Be sure to inclue any necessary headers.
                     Use the lines to construct the code, then go back to complete the Activecode tab.</p>
@@ -238,7 +238,7 @@ int main () {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter2', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="VARS_a8_p" numbered="yes" adaptive="yes" indentation="show" language="python">
+      <exercise label="VARS_a8_p" numbered="yes" adaptive="yes" indentation="show" language="cpp">
         <caption>
           <p>Write code that calculates how much you you will spend after tipping 20% on your $36.25 dinner.  Save the result of this calculation in <c>plusTip</c>. Use the lines on to construct the code, then go back to complete the Activecode tab.</p>
         </caption>
@@ -299,7 +299,7 @@ int main () {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter2', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="VARS_a10_p" numbered="yes" adaptive="yes" indentation="show" language="python">
+      <exercise label="VARS_a10_p" numbered="yes" adaptive="yes" indentation="show" language="cpp">
         <caption>
           <p>Write code that calculates and prints the average of a and b if a = 3.14, and b = 1.59.  You may only use one line of code. Use the lines on to construct the code, then go back to complete the Activecode tab.</p>
         </caption>

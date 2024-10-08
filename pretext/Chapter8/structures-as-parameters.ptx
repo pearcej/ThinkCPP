@@ -133,7 +133,7 @@ int main() {
       </choice>
     </choices>
   </exercise>
-  <exercise label="structures_parameters_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="structures_parameters_2" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
     <statement>
       <p>Construct a function that takes in three Point structures and prints the average of the x coordinates and the average of the y coordinates as a coordinate. Find the x average before the y average.</p>
     </statement>

@@ -267,7 +267,7 @@ int main () {
            numbered="yes"
            adaptive="yes"
            indentation="hide"
-           language="python">
+           language="cpp">
     <statement>
       <p>Construct a main function that assigns <q>Hello</q> to the variable h, then prints out h's
         value.</p>

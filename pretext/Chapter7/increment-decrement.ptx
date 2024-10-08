@@ -146,7 +146,7 @@ while (x < 0) {
       </choice>
     </choices>
   </exercise>
-  <exercise label="increment_decrement_3" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="increment_decrement_3" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
     <statement>
       <p>Print every number from 1-10 in this format: <q>Number 1</q>. Each number should be on its own line.</p>
     </statement>

@@ -99,7 +99,7 @@ int main () {
            numbered="yes"
            adaptive="yes"
            indentation="hide"
-           language="python">
+           language="cpp">
     <statement>
       <p>Construct a main function that uses character operations to generate the output &#x2018;r'.</p>
     </statement>

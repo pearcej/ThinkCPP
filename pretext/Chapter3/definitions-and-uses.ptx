@@ -97,7 +97,7 @@ int main () {
       </choice>
     </choices>
   </exercise>
-  <exercise label="defns_uses_3" adaptive="yes" indentation="hide" language="python">
+  <exercise label="defns_uses_3" adaptive="yes" indentation="hide" language="cpp">
     <statement>
       <p>Construct a block of code that correctly defines a the addTwo function.</p>
     </statement>

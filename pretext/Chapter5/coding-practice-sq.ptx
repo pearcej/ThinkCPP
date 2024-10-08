@@ -37,7 +37,7 @@ TEST_CASE("convertToBinary function") {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter5', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_5_AC_2q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cp_5_AC_2q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>A binary number is one that is expressed in the base-2 numeral system.
                     Write a function <c>convertToBinary</c> which takes a <c>decimal</c> as
@@ -129,7 +129,7 @@ TEST_CASE("birthSeason function: winter") {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter5', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_5_AC_4q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cp_5_AC_4q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>The astronomical start and end dates of the four seasons are based on the position of
                     the Earth relative to the Sun. As a result, it changes every year and can be difficult to
@@ -210,7 +210,7 @@ TEST_CASE("isCommonFactor function: false cases") {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter5', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_5_AC_6q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cp_5_AC_6q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>A number is a common factor of two other numbers if it divides evenly into both of the
                     other numbers. For example, 2 is a common factor of 4 and 18, because 2 goes evenly into
@@ -292,7 +292,7 @@ TEST_CASE("isPoisonous function: false cases") {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter5', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_5_AC_8q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cp_5_AC_8q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>In the enchanted Mushroom Forest, there are many different types of
                     mushrooms as far as the eye can see. Most of these mushrooms
@@ -381,7 +381,7 @@ TEST_CASE("digitSum function") {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter5', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_5_AC_10q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cp_5_AC_10q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>Write the function <c>digitSum</c> which takes an <c>int num</c> as a parameter
                     and returns the sum of all its digits. For example, <c>digitSum (1423)</c>

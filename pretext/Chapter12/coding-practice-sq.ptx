@@ -27,7 +27,7 @@ struct Pixel {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter12', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_12_AC_2_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cp_12_AC_2_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>An image is just a matrix of pixels. Write the <c>struct</c> definition for <c>Image</c>,
                     which should store information about its height and width and contain a matrix
@@ -108,7 +108,7 @@ void Pixel::printPixel() {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter12', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_12_AC_4_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cp_12_AC_4_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>Now let's print an <c>Image</c>. Unfortunately we can't print out the actual
                     image to the terminal, but we can print out the <c>Pixel</c>s in the <c>Image</c>
@@ -222,7 +222,7 @@ void Image::cropImage(int startRow, int stopRow, int startCol, int stopCol) {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter12', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_12_AC_6_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cp_12_AC_6_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>Let's write a <c>swapPixel</c> member function for <c>Image</c>. <c>swapPixel</c>
                     takes two pairs of row indices and column indices from a matrix and swaps the two
@@ -346,7 +346,7 @@ void Image::flipHorizontal() {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter12', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_12_AC_8_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cp_12_AC_8_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>Oops! Somehow our image came out upside down. Let's write
                     the <c>Image</c> member function <c>flipVertical</c>, which
@@ -508,7 +508,7 @@ void Image::createBorder(Pixel p) {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter12', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_12_AC_10_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cp_12_AC_10_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>Let's return our image to the state of a clean slate. Write the
                     function <c>clearImage</c>, which sets the color of every <c>Pixel</c>

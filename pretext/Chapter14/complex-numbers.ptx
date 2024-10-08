@@ -166,7 +166,7 @@ int main() {
         ]]></input>
     </program>
   </exercise>
-  <exercise label="question14_3_1" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="question14_3_1" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
     <statement>
       <p>Let's write a constructor that uses parameters to
             initialize the magnitude and theta, but does not calculate

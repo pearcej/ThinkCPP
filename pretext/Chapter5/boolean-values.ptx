@@ -65,7 +65,7 @@ operator is used to check if two boolean values are equal. <var/>  <var/>  <var/
       </var>
     </setup>
   </exercise>
-  <exercise label="bool_vals_2" indentation="hide" language="python">
+  <exercise label="bool_vals_2" indentation="hide" language="cpp">
     <statement>
       <p>Put the following blocks in order of how large the set is.  Put the largest
             set at the top.</p>

@@ -116,7 +116,7 @@ void Time::increment (double secs) {
       </var>
     </setup>
   </exercise>
-  <exercise label="another_example_3" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="another_example_3" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
     <statement>
       <p>Create the <c>Cat</c> object with member functions <c>make_noise</c> and <c>catch_mouse</c>.
             The <c>make_noise</c> function should print different noises depending on the cat's mood.

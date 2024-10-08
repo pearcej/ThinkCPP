@@ -146,7 +146,7 @@ bool Time::after (const Time&amp; time2) const {
       </choice>
     </choices>
   </exercise>
-  <exercise label="more_complicated_example_3" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="more_complicated_example_3" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
     <statement>
       <p>Create the <c>Dog::is_older()</c> function as it would be defined INSIDE of the <c>Dog</c> structure definition.  This function
             checks if the current <c>Dog</c> is older than another <c>Dog</c>.  The function is invoked on the current <c>Dog</c>.</p>

@@ -137,7 +137,7 @@ cout << (s[s.length()-5]) << endl;
       </choice>
     </choices>
   </exercise>
-  <exercise label="length_3" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="length_3" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
     <statement>
       <p>Construct a block of code that correctly implements the accumulator pattern, with <c>course</c> being the first variable initialized.</p>
     </statement>

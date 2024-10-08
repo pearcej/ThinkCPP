@@ -21,7 +21,7 @@ int main () {
    outfile &lt;&lt; line &lt;&lt; endl;
  }
 }</program>
-  <exercise label="question15_4_1" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="question15_4_1" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
     <statement>
       <p>Create a code block that sends output to a file. First, make sure that both the input file and the output file are able to be opened.</p>
     </statement>

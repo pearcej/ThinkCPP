@@ -24,7 +24,7 @@ using namespace std;
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter15', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_15_AC_2q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cp_15_AC_2q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>Write a program that prompts a user for the name of an input file
                     and for an integer <c>n</c>. Then open the file and output the first
@@ -131,7 +131,7 @@ int main() {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter15', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_15_AC_4q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cp_15_AC_4q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>Write a program that prompts a user for an integer <c>n</c> and print the first <c>n</c>
                     powers of 2 to an output file called <c>powers.txt</c>. Include proper file error checking.
@@ -223,7 +223,7 @@ using namespace std;
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter15', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_15_AC_6q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cp_15_AC_6q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>Write a program that takes an input file called <q>dream.txt</q> and outputs
                     the number of times the string <q>you</q> appears in the file to the terminal.
@@ -325,7 +325,7 @@ using namespace std;
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter15', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_15_AC_8q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cp_15_AC_8q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>Write a program that takes an input file called <q>shrimp.txt</q> and outputs
                     the quote with <q>shrimp</q> replaced by a word that the user inputs to the terminal.
@@ -434,7 +434,7 @@ int main() {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter15', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_15_AC_10q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cp_15_AC_10q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>Write a program that computes the product of two matrices.
                     Take a look at the example below. To find the product of two

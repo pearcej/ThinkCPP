@@ -74,7 +74,7 @@ else {
       </match>
     </matches>
   </exercise>
-  <exercise label="bool_fun_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="bool_fun_2" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
     <statement>
       <p>Construct a block of code that first checks if a number <em>x</em> is positive,
             then checks if it's even, and then prints out a message to classify

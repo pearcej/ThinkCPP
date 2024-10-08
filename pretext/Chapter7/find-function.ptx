@@ -81,7 +81,7 @@ int main() {
       <cline>}</cline>
     </areas>
   </exercise>
-  <exercise label="find_function_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="find_function_2" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
     <statement>
       <p>Construct a block of code that correctly finds and prints where the first <q>B</q> is in the string. Declare <c>city</c> before <c>index</c>.</p>
     </statement>

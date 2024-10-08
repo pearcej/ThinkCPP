@@ -75,7 +75,7 @@ int main() {
     </program>
   </exercise>
   <exercises line="89" runestone_options="{'showtitle': 'data-showtitle=&quot;Reveal Problem&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'character_classification', 'chapter': 'Chapter7', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': '7_14_1', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter7/character_classification.rst">
-    <exercise label="character_classification_1" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <exercise label="character_classification_1" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
       <statement>
         <p>Let's write the code for the <c>stringToUpper</c> function. <c>stringToUpper</c>
                 should convert a string to uppercase.</p>
@@ -126,7 +126,7 @@ int main() {
     </exercise>
   </exercises>
   <exercises line="125" runestone_options="{'showtitle': 'data-showtitle=&quot;Reveal Problem&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'character_classification', 'chapter': 'Chapter7', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': '7_14_2', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter7/character_classification.rst">
-    <exercise label="character_classification_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <exercise label="character_classification_2" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
       <statement>
         <p>Let's write the code for the <c>stringToLower</c> function. <c>stringToLower</c>
                 should convert a string to lowercase.</p>

@@ -26,7 +26,7 @@ int main() {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter8', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_8_AC_2q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cp_8_AC_2q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>Write a simple function called <c>greetUser</c> which prompts the user
                     for their full name. Then the function outputs <q>Hello <c>fullName</c>!</q>.
@@ -111,7 +111,7 @@ void printRobotData (Robot r) {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter8', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_8_AC_4q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cp_8_AC_4q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>Robots will naturally deplete their charge as they carry out tasks.
                     Write a function called <c>chargeRobot</c> which takes a <c>Robot</c> as
@@ -175,7 +175,7 @@ int main() {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter8', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_8_AC_6q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cp_8_AC_6q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>Write the <c>Pokemon</c> structure, which has instance variables <c>string pokeName</c>,
                     <c>string type</c>, <c>int level</c>, and <c>int healthPercentage</c> in that order.
@@ -288,7 +288,7 @@ void printTrainerInfo(Trainer t) {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter8', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_8_AC_8q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cp_8_AC_8q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>When Pokemon are injured, they can be healed up at the Pokemon Center.
                     Write the function <c>healPokemon</c>, which takes a <c>Trainer</c> as a parameter
@@ -374,7 +374,7 @@ int main() {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter8', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_8_AC_10q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cp_8_AC_10q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>Ever wanted to know how much you'd weigh on each planet? Write the <c>convertWeight</c>
                     function, which takes a <c>double earthWeight</c> and <c>int planet</c> as parameters. First,

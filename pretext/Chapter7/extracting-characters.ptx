@@ -171,7 +171,7 @@ int main () {
       <cline>}</cline>
     </areas>
   </exercise>
-  <exercise label="extracting_characters_4" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="extracting_characters_4" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
     <statement>
       <p>Construct a block of code that correctly prints the letter <q>a</q>.</p>
     </statement>

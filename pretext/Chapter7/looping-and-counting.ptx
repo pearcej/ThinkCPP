@@ -73,7 +73,7 @@ while (x < 0) {
       </choice>
     </choices>
   </exercise>
-  <exercise label="looping_counting_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="looping_counting_2" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
     <statement>
       <p>As an exercise, encapsulate this code in a function named
             <c>countLetters</c>, and generalize it so that it accepts the string and
@@ -126,7 +126,7 @@ while (x < 0) {
       </block>
     </blocks>
   </exercise>
-  <exercise label="looping_counting_3" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="looping_counting_3" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
     <statement>
       <p>The following is the correct code for printing the even numbers from 0 to 10, but it also includes some extra code that you won't need. Drag the needed blocks from the left and put them in the correct order on the right.</p>
     </statement>

@@ -45,7 +45,7 @@ int main() {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter14', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_14_AC_2q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cp_14_AC_2q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>There are errors in the code below. Modify the code so that <c>main</c> runs
                     successfully. Use the lines to construct the code, then go back to complete the Activecode tab.</p>
@@ -186,7 +186,7 @@ int main() {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter14', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_14_AC_4q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cp_14_AC_4q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>In <c>main</c> create a <c>Temp</c> object to calculate
                     what 100 degrees Celsius is in Fahrenheit.
@@ -243,7 +243,7 @@ class MyVector {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter14', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_14_AC_6q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cp_14_AC_6q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>What if we had an existing <c>vector</c> with data that we want to copy
                     into our <c>MyVector</c>? Write a constructor that takes a <c>vector</c>
@@ -328,7 +328,7 @@ int MyVector::at(int index) { return elements[index]; }
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter14', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_14_AC_8q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cp_14_AC_8q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>Now we can write some of our own fun functions! No longer
                     do we need to write <c>for</c> loops every time we want to
@@ -457,7 +457,7 @@ void MyVector::pop_front() {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter14', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cp_14_AC_10q_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cp_14_AC_10q_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>What if we wanted to return the largest and smallest elements in our
                     <c>MyVector</c>? Write the public member functions <c>max</c> and <c>min</c>

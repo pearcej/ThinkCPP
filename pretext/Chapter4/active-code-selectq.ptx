@@ -35,7 +35,7 @@ string whichDoor (double grade) {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter4', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cond_rec_a2_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cond_rec_a2_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>You are part of a class where everyone passes, but it's very hard
                     to pass with an A.  Fix the function so it prints your letter grade
@@ -112,7 +112,7 @@ void is_even (int num) {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter4', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cond_rec_a4_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cond_rec_a4_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>Finish the code below so that it prints true if <c>x</c> is even
                     and false if <c>x</c> is odd. Use the lines to construct the code,
@@ -176,7 +176,7 @@ void greaterThan () {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter4', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cond_rec_a6_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cond_rec_a6_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>Write the function <c>greaterThan</c> that prints true
                     if the first <c>double</c> argument is greater than the
@@ -242,7 +242,7 @@ void exclusiveOr (bool a, bool b) {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter4', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cond_rec_a8_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cond_rec_a8_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>Write the function <c>exclusiveOr</c> that prints true If
                     either <c>a</c> OR <c>b</c> is true, and prints false otherwise.
@@ -300,7 +300,7 @@ void printNegativeNum () {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter4', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="cond_rec_a10_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="cond_rec_a10_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>Write the function <c>printNegativeNum</c> that asks the user
                     for a negative number.  If the user does not provide a negative

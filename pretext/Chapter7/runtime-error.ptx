@@ -54,7 +54,7 @@ int main() {
       <cline>}</cline>
     </areas>
   </exercise>
-  <exercise label="runtime_error_2" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="runtime_error_2" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
     <statement>
       <p>Construct a block of code that correctly changes the string to say <q>cat in the hat</q> instead of <q>cat on the mat</q>, then print it.</p>
     </statement>

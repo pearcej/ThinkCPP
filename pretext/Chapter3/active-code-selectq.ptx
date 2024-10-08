@@ -27,7 +27,7 @@ int main () {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter3', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="functions_a2_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="functions_a2_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>Fix the code below so that it prints <q>2 elephants</q>. Use the lines to construct the code, then go back to complete the Activecode tab.</p>
         </statement>
@@ -95,7 +95,7 @@ int main () {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter3', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="functions_a4_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="functions_a4_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>Finish the code below so that it calculates the common log of <c>a</c> minus the <em>natural</em> log of <c>a</c> and prints the difference. You will need to use cmath functions. Use the lines to construct the code, then go back to complete the Activecode tab.</p>
         </statement>
@@ -154,7 +154,7 @@ int main () {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter3', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="functions_a6_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="functions_a6_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>Write a function called <c>intDivision</c> that takes two doubles as parameters and prints the quotient of the <term>integer division</term> of the first number divided by the second.
                     Use the lines to construct the code, then go back to complete the Activecode tab.</p>
@@ -217,7 +217,7 @@ int main () {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter3', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="functions_a8_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="functions_a8_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>Write a function called <c>volumePrism</c> that takes three <c>double</c> sidelengths as parameters, and calculates and prints the volume of a the rectangular prism.
                     Use the lines to construct the code, then go back to complete the Activecode tab.</p>
@@ -275,7 +275,7 @@ int main() {
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter3', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
-      <exercise label="functions_a10_pp" numbered="yes" adaptive="yes" indentation="hide" language="python">
+      <exercise label="functions_a10_pp" numbered="yes" adaptive="yes" indentation="hide" language="cpp">
         <statement>
           <p>Write a function called <c>volumeSphere</c> that takes a <c>double</c> radius as a parameter, and calculates and prints the volume of a sphere with that radius.  Use 3.14 for <c>pi</c>.
                     Use the lines to construct the code, then go back to complete the Activecode tab.</p>

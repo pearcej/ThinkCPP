@@ -112,7 +112,7 @@ string message = "You're a lizard Harry";
       </choice>
     </choices>
   </exercise>
-  <exercise label="string_mutable_3" numbered="yes" adaptive="yes" indentation="show" language="python">
+  <exercise label="string_mutable_3" numbered="yes" adaptive="yes" indentation="show" language="cpp">
     <statement>
       <p>Put together the code below to create a function <c>mixer</c> that takes in two strings and replaces every even index
             of the first string by the corresponding index of the second. It returns the modified first string.

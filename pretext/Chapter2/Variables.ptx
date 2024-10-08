@@ -140,7 +140,7 @@ int hour, minute;</program>
             numbered="yes"
             adaptive="yes"
             indentation="hide"
-            language="python">
+            language="cpp">
     <statement>
       <p>Arrange the code blocks to create the variables <c>name</c>, <c>firstInitial</c>, and <c>numberOfSiblings</c> IN THAT
         ORDER. It is up to you to choose the correct types for these variables.</p>
