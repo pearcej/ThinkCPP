@@ -174,10 +174,10 @@ cout &lt;&lt; e_double;</program>
     can get tricky when we have a mix of integers and doubles in our expression.
     The thing to remeber is if either the divisor or the dividend is a double
     then the program will carry out floating point division.</p>
-  <exercise label="floating_point_a1">
-    <statement>
-      <p>Run the code below to see what type of division occurs each time.</p>
-    </statement>
+  <listing label="floating_point_a1">
+    <caption>
+      <p>Run the code to see what type of division occurs each time.</p>
+    </caption>
     <program label="floating_point_a1_editor"
              interactive="activecode"
              line-numbers="yes">
@@ -187,19 +187,19 @@ using namespace std;
 
 int main() {
     double value = 5.0/2; //(a)
-    cout<<"current value (a) is "<<value<<endl;
+    cout << "current value (a) is " << value << endl;
 
     value = 5/2.0; //(b)
-    cout<<"current value (b) is "<<value<<endl;
+    cout << "current value (b) is " << value << endl;
 
     value = 5/2; //(c)
-    cout<<"current value (c) is "<<value<<endl;
+    cout << "current value (c) is " << value << endl;
 
     value = 5.0/2.0; //(d)
-    cout<<"current value (d) is "<<value<<endl;
+    cout << "current value (d) is " << value << endl;
     return 0;
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
 </section>

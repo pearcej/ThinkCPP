@@ -5,7 +5,7 @@
     you provide to let the function do its job. For example, if you want to find the sine of a
     number, you have to indicate what the number is. Thus, <c>sin</c> takes a <c>double</c> value as a
     parameter.</p>
-  <p>Some functions take more than one parameter, like <c>pow</c>, which takes two <c>double</c> s, the base
+  <p>Some functions take more than one parameter, like <c>pow</c>, which takes two <c>double</c>s, the base
     and the exponent.</p>
   <p>Notice that in each of these cases we have to specify not only how many
     parameters there are, but also what type they are. So it shouldn't
