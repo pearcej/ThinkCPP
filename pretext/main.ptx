@@ -10,7 +10,7 @@
         <html>
             <!-- Any program or Runestone interactive without a @language will -->
             <!-- assumed to be python                                          -->
-            <defaults programming-language="python"/>
+            <defaults programming-language="cpp"/>
         </html>
     </docinfo>
     <!-- <xi:include href="./bookinfo.ptx"/> -->
