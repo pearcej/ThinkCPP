@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <exercises xml:id="chapter4_multiple-choice-exercises">
   <title>Multiple Choice Exercises</title>
-  <p>Answer the following <term>Multiple Choice</term> questions to
-            assess what you have learned in this chapter.</p>
+  <p>Answer the following <term>Multiple Choice</term> questions to assess what you have learned in
+    this chapter.</p>
   <exercise label="cond_rec_mc1">
     <statement>
-      <p>Say you run the following code.  What is the value of <c>mod</c>?</p>
+      <p>Say you run the following code. What is the value of <c>mod</c>?</p>
       <program>int x = 4;
 int y = 7;
 int mod = y % x;</program>
@@ -113,8 +113,7 @@ hello!</program>
           <program>bye!</program>
         </statement>
         <feedback id="cond_rec_mc2_opt_e">
-          <p>At least one of the conditons is met, so the <c>else</c> will not
-            execute!</p>
+          <p>At least one of the conditons is met, so the <c>else</c> will not execute!</p>
         </feedback>
       </choice>
     </choices>
@@ -162,9 +161,8 @@ else {
 It's Cold!</program>
         </statement>
         <feedback id="cond_rec_mc3_opt_c">
-          <p>You've identified some of the conditons that are met!
-            Take another look at the <em>chain</em> of conditionals at the
-            end!</p>
+          <p>You've identified some of the conditons that are met! Take another look at the <em>
+            chain</em> of conditionals at the end!</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -192,7 +190,7 @@ It's Hot!</program>
   <exercise label="cond_rec_mc4">
     <statement>
       <p>Suppose you have defined the following function:</p>
-      <program>void practicingReturns (int a, int b) {
+      <program>void practicingReturns(int a, int b) {
     if (a &lt; b) {
         a += 2;
     }
@@ -218,8 +216,7 @@ It's Hot!</program>
           <p>7</p>
         </statement>
         <feedback id="cond_rec_mc4_opt_b">
-          <p>This is the value of <c>a + b</c> after the first conditional, but it
-            doesn't print.</p>
+          <p>This is the value of <c>a + b</c> after the first conditional, but it doesn't print.</p>
         </feedback>
       </choice>
       <choice>
@@ -243,7 +240,7 @@ It's Hot!</program>
   <exercise label="cond_rec_mc5">
     <statement>
       <p>Suppose you have defined the following function:</p>
-      <program>void fortuneCookie (int a, bool b, char c) {
+      <program>void fortuneCookie(int a, bool b, char c) {
     if (c &lt; 'm') {
         if (a % 2 == 0) {
             cout &lt;&lt; "An alien of some sort will be appearing to you shortly.";
@@ -323,7 +320,7 @@ It's Hot!</program>
   <exercise label="cond_rec_mc6">
     <statement>
       <p>Suppose you have defined the following function:</p>
-      <program>void fortuneCookie (int a, bool b, char c) {
+      <program>void fortuneCookie(int a, bool b, char c) {
     if (c &lt; 'm') {
         if (a % 2 == 0) {
             cout &lt;&lt; "An alien of some sort will be appearing to you shortly.";
@@ -403,7 +400,7 @@ It's Hot!</program>
   <exercise label="cond_rec_mc7">
     <statement>
       <p>Suppose you have defined the following function:</p>
-      <program>void theThing (int m, int n, bool b) {
+      <program>void theThing(int m, int n, bool b) {
     if (b) {
         if (m % 4 == 0) {
             cout &lt;&lt; m;
@@ -427,7 +424,7 @@ It's Hot!</program>
     cout &lt;&lt; -1;
 }</program>
       <p>What is printed when we run the following code?</p>
-      <program>theThing (5, 10, false);</program>
+      <program>theThing(5, 10, false);</program>
     </statement>
     <choices>
       <choice>
@@ -475,7 +472,7 @@ It's Hot!</program>
   <exercise label="cond_rec_mc8">
     <statement>
       <p>Suppose you have defined the following function:</p>
-      <program>void theThing (int m, int n, bool b) {
+      <program>void theThing(int m, int n, bool b) {
     if (b) {
         if (m % 4 == 0) {
             cout &lt;&lt; m;
@@ -499,7 +496,7 @@ It's Hot!</program>
     cout &lt;&lt; -1;
 }</program>
       <p>What is printed when we run the following code?</p>
-      <program>theThing (6, 4, true);</program>
+      <program>theThing(6, 4, true);</program>
     </statement>
     <choices>
       <choice>
@@ -547,18 +544,18 @@ It's Hot!</program>
   <exercise label="cond_rec_mc9">
     <statement>
       <p>Suppose you have defined the following function:</p>
-      <program>void moo (int m, int n) {
+      <program>void moo(int m, int n) {
     if (m != n) {
         m += 2;
         cout &lt;&lt; "Moo!";
-        moo (m, n);
+        moo(m, n);
     }
     else {
         cout &lt;&lt; "Got Milk?";
     }
 }</program>
       <p>How many times does <q>Moo!</q> print when we run the following?</p>
-      <program>moo (4, 8);</program>
+      <program>moo(4, 8);</program>
     </statement>
     <choices>
       <choice>
@@ -566,8 +563,7 @@ It's Hot!</program>
           <p>0</p>
         </statement>
         <feedback id="cond_rec_mc9_opt_a">
-          <p>When we call the function <c>4 != 8</c>, so <q>Moo!</q> is printed at least
-            once.</p>
+          <p>When we call the function <c>4 != 8</c>, so <q>Moo!</q> is printed at least once.</p>
         </feedback>
       </choice>
       <choice>
@@ -575,8 +571,8 @@ It's Hot!</program>
           <p>1</p>
         </statement>
         <feedback id="cond_rec_mc9_opt_b">
-          <p>The function calls itself inside of the <c>if</c> loop, so <q>Moo!</q> is printed
-            more than once.</p>
+          <p>The function calls itself inside of the <c>if</c> loop, so <q>Moo!</q> is printed more
+            than once.</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -584,8 +580,8 @@ It's Hot!</program>
           <p>2</p>
         </statement>
         <feedback id="cond_rec_mc9_opt_c">
-          <p><c>m</c> is incremented by two each with each function call, so after two
-            <c>m == n</c> and the recursion stops.</p>
+          <p><c>m</c> is incremented by two each with each function call, so after two <c>m == n</c> and
+            the recursion stops.</p>
         </feedback>
       </choice>
       <choice>
@@ -609,18 +605,18 @@ It's Hot!</program>
   <exercise label="cond_rec_mc10">
     <statement>
       <p>Suppose you have defined the following function:</p>
-      <program>void moo (int m, int n) {
+      <program>void moo(int m, int n) {
     if (m != n) {
         m += 2;
         cout &lt;&lt; "Moo!";
-        moo (m, n);
+        moo(m, n);
     }
     else {
         cout &lt;&lt; "Got Milk?";
     }
 }</program>
       <p>How many times does <q>Moo!</q> print when we run the following?</p>
-      <program>moo (5, 10);</program>
+      <program>moo(5, 10);</program>
     </statement>
     <choices>
       <choice>
@@ -628,8 +624,7 @@ It's Hot!</program>
           <p>0</p>
         </statement>
         <feedback id="cond_rec_mc10_opt_a">
-          <p>When we call the function <c>5 != 10</c>, so <q>Moo!</q> is printed at least
-            once.</p>
+          <p>When we call the function <c>5 != 10</c>, so <q>Moo!</q> is printed at least once.</p>
         </feedback>
       </choice>
       <choice>
@@ -637,8 +632,8 @@ It's Hot!</program>
           <p>1</p>
         </statement>
         <feedback id="cond_rec_mc10_opt_b">
-          <p>The function calls itself inside of the <c>if</c> loop, so <q>Moo!</q> is printed
-            more than once.</p>
+          <p>The function calls itself inside of the <c>if</c> loop, so <q>Moo!</q> is printed more
+            than once.</p>
         </feedback>
       </choice>
       <choice>
@@ -646,8 +641,7 @@ It's Hot!</program>
           <p>2</p>
         </statement>
         <feedback id="cond_rec_mc10_opt_c">
-          <p>After two function calls, <c>m == 9</c> and <c>n == 10</c>.  The function is not
-            done printing.</p>
+          <p>After two function calls, <c>m == 9</c> and <c>n == 10</c>. The function is not done printing.</p>
         </feedback>
       </choice>
       <choice>
@@ -655,8 +649,7 @@ It's Hot!</program>
           <p>3</p>
         </statement>
         <feedback id="cond_rec_mc10_opt_d">
-          <p>After three function calls, <c>m == 11</c> and <c>n == 10</c>.  The function is not
-            done printing</p>
+          <p>After three function calls, <c>m == 11</c> and <c>n == 10</c>. The function is not done printing</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -664,8 +657,8 @@ It's Hot!</program>
           <p>infinite recursion</p>
         </statement>
         <feedback id="cond_rec_mc10_opt_e">
-          <p>The function stops printing <q>Moo!</q> when <c>m == n</c>, but since <c>m</c> is odd
-            and <c>n</c> is even, they will never be equal as long as we increment by two.</p>
+          <p>The function stops printing <q>Moo!</q> when <c>m == n</c>, but since <c>m</c> is odd and <c>n</c>
+            is even, they will never be equal as long as we increment by two.</p>
         </feedback>
       </choice>
     </choices>

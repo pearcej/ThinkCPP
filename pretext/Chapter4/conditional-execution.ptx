@@ -1,16 +1,15 @@
 <?xml version="1.0"?>
 <section xml:id="chapter4_conditional-execution">
   <title>Conditional Execution</title>
-  <p>In order to write useful programs, we almost always need the ability to
-            check certain conditions and change the behavior of the program
-            accordingly. <term>Conditional statements</term> give us this ability. The
-            simplest form is the if statement:</p>
+  <p>In order to write useful programs, we almost always need the ability to check certain
+    conditions and change the behavior of the program accordingly. <term>Conditional statements</term>
+    give us this ability. The simplest form is the if statement:</p>
   <program>if (x &gt; 0) {
   cout &lt;&lt; "x is positive" &lt;&lt; endl;
 }</program>
   <p>The expression in parentheses is called the condition. If it is true,
-            then the statements in brackets get executed. If the condition is not
-            true, nothing happens.</p>
+    then the statements in brackets get executed. If the condition is not
+    true, nothing happens.</p>
   <p>The condition can contain any of the <term>comparison operators</term>:</p>
   <program>x == y               // x equals y
 x != y               // x is not equal to y
@@ -18,25 +17,39 @@ x &gt; y                // x is greater than y
 x &lt; y                // x is less than y
 x &gt;= y               // x is greater than or equal to y
 x &lt;= y               // x is less than or equal to y</program>
-  <p>Although these operations are probably familiar to you, the syntax C++
-            uses is a little different from mathematical symbols like <m>=</m>,
-            <m>\neq</m> and <m>\le</m>. A common error is to use a single <c>=</c>
-            instead of a double <c>==</c>. Remember that = is the assignment operator, and
-            <c>==</c> is a comparison operator. Also, there is no such thing as <c>=&lt;</c> or <c>=&gt;</c>.</p>
-  <note>
-    <p>Both sides of a conditional operator have to be the same type.</p>
-  </note>
-  <p>Despite automatic type conversion, you can only compare <c>int</c> s to <c>int</c> s and
-            <c>double</c> s to <c>double</c> s. Unfortunately, at this point you can't compare <c>string</c> s
-            at all! There is a way to compare them, but we won't get to it for a couple of
-            chapters.</p>
+  <p>Although these operations are probably familiar to you, the syntax C++ uses is a little
+    different from mathematical symbols like <m>=</m>, <m>\neq</m>, and <m>\le</m>. A common error is
+    to use a single <c>=</c> instead of a double <c>==</c>. Remember that <c>=</c> is the assignment operator,
+    and <c>==</c> is a comparison operator. Also, there is no such thing as <c>=&lt;</c> or <c>=&gt;</c>.</p>
   <p>Observe the conditional statement below.</p>
-  <exercise label="conditional_execution_AC_1">
-    <statement>
+
+  <listing label="composition_AC_31">
+    <caption>
+      <p>This program performs a calculation involving variables and assigns the result to a variable.</p>
+    </caption>
+    <program xml:id="composition_AC_31_editor" interactive="activecode" line-numbers="yes">
+      <input><![CDATA[
+#include <iostream>
+using namespace std;
+
+int main() {
+    int minute = 3;
+    int percentage;
+    percentage = (minute * 100) / 60;
+    cout << percentage;
+}
+        ]]></input>
+    </program>
+  </listing>
+
+  <listing label="conditional_execution_AC_1">
+    <caption>
       <p>This program shows how you can use conditional statements to
-            assess true/false situations.</p>
-    </statement>
-    <program xml:id="conditional_execution_AC_1_editor" interactive="activecode" line-numbers="yes">
+        assess true/false situations.</p>
+    </caption>
+    <program label="conditional_execution_AC_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -56,10 +69,11 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <exercise label="conditional_execution_1">
     <statement>
-      <p>Observe the code above. <q>Bigger</q> doesn't print! How can you modify this so that all of the statements print?</p>
+      <p>Observe the code above. <q>Bigger</q> doesn't print! How can you modify this so that all of
+        the statements print?</p>
     </statement>
     <choices>
       <choice>
