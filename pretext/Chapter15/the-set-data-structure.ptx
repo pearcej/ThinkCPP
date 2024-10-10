@@ -307,7 +307,7 @@ int Set::add(const string&amp; s) {
     </statement>
     <setup>
       <var>
-        <condition number="[76, 76]">
+        <condition number="76">
           <feedback>
             <p>Correct!</p>
           </feedback>

@@ -95,7 +95,7 @@ double servingSize = servings / people;</program>
           This is <var/> (more, less, the same) than/as the actual serving size of her slice.</p>
       </var>
       <var>
-        <condition number="[2, 2]">
+        <condition number="2">
           <feedback>
             <p>Correct! C++ performs integer division.</p>
           </feedback>

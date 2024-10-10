@@ -100,7 +100,7 @@ column <var/> and row <var/> of our matrix. <var/>  <var/>  </p>
     </statement>
     <setup>
       <var>
-        <condition number="[18, 18]">
+        <condition number="18">
           <feedback>
             <p>Correct!</p>
           </feedback>
@@ -112,7 +112,7 @@ column <var/> and row <var/> of our matrix. <var/>  <var/>  </p>
         </condition>
       </var>
       <var>
-        <condition number="[10, 10]">
+        <condition number="10">
           <feedback>
             <p>Correct!</p>
           </feedback>

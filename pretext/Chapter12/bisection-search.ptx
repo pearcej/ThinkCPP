@@ -395,7 +395,7 @@ bool Card::isGreater(const Card&amp; c2) const {
     </statement>
     <setup>
       <var>
-        <condition number="[2, 2]">
+        <condition number="2">
           <feedback>
             <p>Correct!</p>
           </feedback>

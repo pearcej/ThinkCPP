@@ -139,7 +139,7 @@ times while searching for a particular card. <var/>  <var/>  </p>
     </statement>
     <setup>
       <var>
-        <condition number="[1, 1]">
+        <condition number="1">
           <feedback>
             <p>Correct!</p>
           </feedback>
@@ -151,7 +151,7 @@ times while searching for a particular card. <var/>  <var/>  </p>
         </condition>
       </var>
       <var>
-        <condition number="[52, 52]">
+        <condition number="52">
           <feedback>
             <p>Correct!</p>
           </feedback>

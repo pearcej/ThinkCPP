@@ -131,12 +131,12 @@ int main() {
     </statement>
     <setup>
       <var>
-        <condition number="[6, 6]">
+        <condition number="6">
           <feedback>
             <p>Correct!</p>
           </feedback>
         </condition>
-        <condition number="[7, 7]">
+        <condition number="7">
           <feedback>
             <p>The loop runs 7 times, but vectors are zero indexed, so the loop never reaches the 7th index!</p>
           </feedback>

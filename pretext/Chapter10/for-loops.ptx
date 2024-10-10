@@ -76,12 +76,12 @@ int main() {
     </statement>
     <setup>
       <var>
-        <condition number="[3, 3]">
+        <condition number="3">
           <feedback>
             <p>Correct!</p>
           </feedback>
         </condition>
-        <condition number="[4, 4]">
+        <condition number="4">
           <feedback>
             <p>Incorrect! The loop does not execute when i = 4.</p>
           </feedback>
