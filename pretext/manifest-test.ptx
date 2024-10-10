@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<chapter><title>Testing</title>
+<section>
+  <subsection>
+    <exercise >
+      <p>asdfasdf</p>
+      <program interactive="activecode"  label="ex_nostatement_program_label"
+              line-numbers="yes">
+        <input><![CDATA[
+  #include <iostream>
+  using namespace std;
+  // main: generate some simple output
+  int main() {
+      cout << "Hello, World 1." << endl;
+      return 0;
+  }
+          ]]></input>
+      </program>
+    </exercise>
+    <exercise >
+      <statement>asdfasdf</statement>
+      <program interactive="activecode"  label="ex_statement_program_label"
+              line-numbers="yes">
+        <input><![CDATA[
+  #include <iostream>
+  using namespace std;
+  // main: generate some simple output
+  int main() {
+      cout << "Hello, World 2." << endl;
+      return 0;
+  }
+          ]]></input>
+      </program>
+    </exercise>
+    <exercise label="ex_label_nostatement_program">
+      <p>asdfasdf</p>
+      <program interactive="activecode"  
+              line-numbers="yes">
+        <input><![CDATA[
+  #include <iostream>
+  using namespace std;
+  // main: generate some simple output
+  int main() {
+      cout << "Hello, World 3." << endl;
+      return 0;
+  }
+          ]]></input>
+      </program>
+    </exercise>
+    <exercise label="ex_label_statement_program">
+      <statement>asdfasdf</statement>
+      <program interactive="activecode"  
+              line-numbers="yes">
+        <input><![CDATA[
+  #include <iostream>
+  using namespace std;
+  // main: generate some simple output
+  int main() {
+      cout << "Hello, World 4." << endl;
+      return 0;
+  }
+          ]]></input>
+      </program>
+    </exercise>
+  </subsection>
+  <subsection>
+    <activity >
+      <p>asdfasdf</p>
+      <program interactive="activecode"  label="act_nostatement_program_label"
+              line-numbers="yes">
+        <input><![CDATA[
+  #include <iostream>
+  using namespace std;
+  // main: generate some simple output
+  int main() {
+      cout << "Hello, World 5." << endl;
+      return 0;
+  }
+          ]]></input>
+      </program>
+    </activity>
+    <activity >
+      <statement>asdfasdf</statement>
+      <program interactive="activecode"  label="act_statement_program_label"
+              line-numbers="yes">
+        <input><![CDATA[
+  #include <iostream>
+  using namespace std;
+  // main: generate some simple output
+  int main() {
+      cout << "Hello, World 6." << endl;
+      return 0;
+  }
+          ]]></input>
+      </program>
+    </activity>
+    <activity label="act_label_nostatement_program">
+      <p>asdfasdf</p>
+      <program interactive="activecode"  
+              line-numbers="yes">
+        <input><![CDATA[
+  #include <iostream>
+  using namespace std;
+  // main: generate some simple output
+  int main() {
+      cout << "Hello, World 7." << endl;
+      return 0;
+  }
+          ]]></input>
+      </program>
+    </activity>
+    <activity label="act_label_statement_program">
+      <statement>asdfasdf</statement>
+      <program interactive="activecode"  
+              line-numbers="yes">
+        <input><![CDATA[
+  #include <iostream>
+  using namespace std;
+  // main: generate some simple output
+  int main() {
+      cout << "Hello, World 8." << endl;
+      return 0;
+  }
+          ]]></input>
+      </program>
+    </activity>
+
+  </subsection>
+  
+</section>
+</chapter>
