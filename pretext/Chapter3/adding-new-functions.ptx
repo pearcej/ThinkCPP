@@ -104,7 +104,7 @@ int main() {
     these new functions. Actually, there are a lot of reasons, but this
     example only demonstrates two:</p>
   <p>
-    <ol label="1">
+    <ol>
       <li>
         <p>Creating a new function gives you an opportunity to give a name to a group of statements.
           Functions can simplify a program by hiding a complex computation behind a single command,

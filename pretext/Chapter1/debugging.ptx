@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="chapter1_what-is-debugging">
   <title>What is Debugging?</title>
+  <introduction>
   <p>Programming is a complex process, and since it is done by human
     beings, it often leads to errors. For whimsical reasons, programming errors are called <term>
     bugs</term> and the process of tracking them down and correcting them is called <term>debugging</term>
@@ -8,6 +9,7 @@
   <p>There are a few different kinds of errors that can occur in a program,
     and it is useful to distinguish between them in order to track them down
     more quickly.</p>
+  </introduction>
   <subsection xml:id="chapter1_compile-time-errors">
     <title>Compile-time errors</title>
     <p>The compiler can only translate a program if the program is
