@@ -168,18 +168,18 @@ void print_vec(vector&lt;int&gt; vec) {
         <input><![CDATA[
 vector<int> numbers(5);
 int size = 5;
-for (int i = 0; i < size; i++){
+for (int i = 0; i < size; i++) {
    numbers[i] = i;
 }
 
 int end = 4;
 
-for (int i = 0; i < size; i++){
+for (int i = 0; i < size; i++) {
    numbers[i] = numbers[end];
    end--;
 }
 
-for (int i = 0; i < size; i++){
+for (int i = 0; i < size; i++) {
    cout << numbers[i] << "  ";
 }
 

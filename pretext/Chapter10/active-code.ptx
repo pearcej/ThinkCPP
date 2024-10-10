@@ -185,7 +185,7 @@ using namespace std;
 int main() {
     vector<string> words = {"roses", "are", "red", "violets", "stop", "are", "blue"};
 
-    while (words[words.size() - 1] != "stop"){
+    while (words[words.size() - 1] != "stop") {
         words.pop_back();
     }
 }
@@ -203,7 +203,7 @@ using namespace std;
 int main() {
     vector<string> words = {"roses", "are", "red", "violets", "stop", "are", "blue"};
 
-    while (words[words.size() - 1] != "stop"){
+    while (words[words.size() - 1] != "stop") {
         words.pop_back();
     }
 }
@@ -381,7 +381,7 @@ using namespace std;
 void make_odd ( vector<int> &nums) {
     for (size_t i = 0; i < nums.size(); ++i) {
 
-        if((nums[i] % 2 == 0) && (nums[i] != 0)){
+        if((nums[i] % 2 == 0) && (nums[i] != 0)) {
             nums[i]--;
         }
 
@@ -400,7 +400,7 @@ using namespace std;
 void make_odd ( vector<int> &nums) {
     for (size_t i = 0; i < nums.size(); ++i) {
 
-        if((nums[i] % 2 == 0) && (nums[i] != 0)){
+        if((nums[i] % 2 == 0) && (nums[i] != 0)) {
             nums[i]--;
         }
 

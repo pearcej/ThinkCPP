@@ -6,8 +6,10 @@
     this:</p>
   <p>The <q>Hello, World.</q> program is a great place to start learning a new language. Observe the
     program structure below.</p>
-  <activity>
-    <statement></statement>
+  <listing>
+    <caption>
+      <p>This program prints <q>Hello, World.</q> to the output.</p>
+    </caption>
     <program interactive="activecode"  label="first_program_AC" id="first_program_AC"
              line-numbers="yes">
       <input><![CDATA[
@@ -26,7 +28,7 @@ for (int i = 0; i &lt; upperBound; i++) {
 }
         ]]></input>
     </program>
-  </activity>
+  </listing>
   <p>Some people judge the quality of a programming language by the simplicity of the <q>Hello,
     World.</q> program. By this standard, C++ does reasonably well. Even so, this simple program
     contains several features that are hard to explain to beginning programmers. For now, we will

@@ -95,7 +95,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-int main(){cout<<"Goodbye, ";cout<<"cruel world!"<<endl;}
+int main() {cout<<"Goodbye, ";cout<<"cruel world!"<<endl;}
         ]]></input>
     </program>
   </listing>

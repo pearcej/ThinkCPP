@@ -163,7 +163,7 @@ string word_2 = "underwaa";
 size_t end_1 = word_1.length();
 size_t end_2 = word_2.length();
 
-if ( end_2 < end_1 ){
+if ( end_2 < end_1 ) {
    end_1 = end_2;
 }
 
@@ -171,7 +171,7 @@ size_t index = 0;
 size_t counter = 0;
 
 while ( index < end_1 ) {
-  if ( word_1[index] == word_2[index] ){
+  if ( word_1[index] == word_2[index] ) {
      counter = counter + 1;
   }
   else {

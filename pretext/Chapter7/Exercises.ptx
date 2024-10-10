@@ -695,8 +695,8 @@ int main() {
    string quote = "Suffering builds character";
    size_t count = 0;
    size_t index = 17;
-   while ( index != quote.length() ){
-     if ( quote[index] == 'a' || quote[index] == 'e' ){
+   while ( index != quote.length() ) {
+     if ( quote[index] == 'a' || quote[index] == 'e' ) {
        count = count + index;
      }
      index = index + 1;
@@ -749,7 +749,7 @@ int main() {
 int main() {
    string quote = "Its Bond, James Bond";
    size_t index = 1;
-   while( index < quote.length() ){
+   while( index < quote.length() ) {
      quote[index] = 'M';
      index = index * 2;
    }

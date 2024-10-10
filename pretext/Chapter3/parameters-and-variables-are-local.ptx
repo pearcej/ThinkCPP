@@ -176,7 +176,7 @@ int main() {
   cout &lt;&lt; "hiii !"&lt;&lt;endl;
 }
 
-void printGreeting(){
+void printGreeting() {
   hi();
   cout&lt;&lt;"how are you doing today. "&lt;&lt;endl;
   hi();

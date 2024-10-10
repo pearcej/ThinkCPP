@@ -148,12 +148,12 @@ string message = "You're a lizard Harry";
       </block>
       <block order="9">
         <choice correct="yes">
-          <cline>     if( (i % 2) == 0){</cline>
+          <cline>     if( (i % 2) == 0) {</cline>
           <cline>       s1[i] = s2[i];</cline>
           <cline>     }</cline>
         </choice>
         <choice>
-          <cline>     if( (i % 2) == 1){ </cline>
+          <cline>     if( (i % 2) == 1) { </cline>
           <cline>       s1[i] = s2[i];</cline>
           <cline>     }</cline>
         </choice>

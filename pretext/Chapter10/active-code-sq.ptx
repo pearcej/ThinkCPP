@@ -402,7 +402,7 @@ int main() {
             <cline>    int half = vec.size() / 2;</cline>
           </block>
           <block order="4">
-            <cline>    for (int i = vec.size() - 1; i &gt;= half; i--){</cline>
+            <cline>    for (int i = vec.size() - 1; i &gt;= half; i--) {</cline>
           </block>
           <block order="5">
             <cline><![CDATA[        cout << vec[i-half] << ' ';]]></cline>

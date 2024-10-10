@@ -107,7 +107,7 @@ void Card::print() const {
   int i = 0;
   for (int suit = 0; suit &lt;= 3; suit++) {
       for (int rank = 1; rank &lt;= 13; rank++) {
-        if (rank == 1 || rank &gt;= 9){
+        if (rank == 1 || rank &gt;= 9) {
           deck[i].suit = suit;
           deck[i].rank = rank;
           i++;

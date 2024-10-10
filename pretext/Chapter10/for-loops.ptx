@@ -191,7 +191,7 @@ using namespace std;
 int main() {
     vector<int> count = {1,2,3,4};
     int i;
-    for (i = 3; i > -1; i--){
+    for (i = 3; i > -1; i--) {
        cout << count[i] << endl;
     }
 }

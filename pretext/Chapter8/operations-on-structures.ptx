@@ -21,7 +21,7 @@ blank = { 3.0, 4.0 };</program>
             assignment was written like the following. Both forms are supported in
             modern compilers.</p>
   <program>Point blank;
-blank = (Point){ 3.0, 4.0 };</program>
+blank = (Point) { 3.0, 4.0 };</program>
   <p>It is legal to assign one structure to another. For example:</p>
   <program>Point p1 = { 3.0, 4.0 };
 Point p2 = p1;
@@ -54,7 +54,7 @@ cout &lt;&lt; p2.x &lt;&lt; ", " &lt;&lt;  p2.y &lt;&lt; endl;</program>
         <area correct="no">Point p = hello;</area>
       </cline>
       <cline>
-        <area correct="no">beep = (Point){3.0, 4.0};</area>
+        <area correct="no">beep = (Point) {3.0, 4.0};</area>
       </cline>
       <cline>
         <area correct="yes">bool check = blank == beep;</area>

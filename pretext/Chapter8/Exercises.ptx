@@ -283,7 +283,7 @@ int calculateDensity(Cube c) {
 
 int main() {
   Cube c;
-  c = (Cube){ 2, 8, 4 };
+  c = (Cube) { 2, 8, 4 };
   int density = calculateDensity (c);
   cout << density;
 }

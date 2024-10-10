@@ -408,7 +408,7 @@ TEST_CASE("camelToSnake function") {
             <cline><![CDATA[    for (int i = 0; i < len; i++) {]]></cline>
           </block>
           <block order="4">
-            <cline>        if (isupper(input.at(i))){</cline>
+            <cline>        if (isupper(input.at(i))) {</cline>
             <cline>            input.at(i) = tolower(input.at(i));</cline>
             <cline>            input.insert(i, "_");</cline>
             <cline>        }</cline>
