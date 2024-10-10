@@ -14,7 +14,7 @@
 #include <vector>
 using namespace std;
 
-int evenCount (const vector<int> &vec) {
+int evenCount(const vector<int> &vec) {
     for (int i = 0; i < vec.size(); i++) {
         if (i % 2 == 0) {
             count++;
@@ -39,7 +39,7 @@ int main() {
         </statement>
         <blocks>
           <block order="7">
-            <cline><![CDATA[int evenCount (const vector<int> &vec) {]]></cline>
+            <cline><![CDATA[int evenCount(const vector<int> &vec) {]]></cline>
           </block>
           <block order="11">
             <cline>    int count = 0;</cline>
@@ -254,7 +254,7 @@ int main() {
         </statement>
         <blocks>
           <block order="6">
-            <cline><![CDATA[vector<int> randomNums (int num, int max) {]]></cline>
+            <cline><![CDATA[vector<int> randomNums(int num, int max) {]]></cline>
           </block>
           <block order="7">
             <cline><![CDATA[    vector<int> randomVec(num);]]></cline>
@@ -319,10 +319,10 @@ int main() {
         <blocks>
           <block order="1">
             <choice correct="yes">
-              <cline><![CDATA[int hundyBundy (const vector<int> vec) {]]></cline>
+              <cline><![CDATA[int hundyBundy(const vector<int> vec) {]]></cline>
             </choice>
             <choice>
-              <cline><![CDATA[vector<int> hundyBundy (const vector<int> vec) { ]]></cline>
+              <cline><![CDATA[vector<int> hundyBundy(const vector<int> vec) { ]]></cline>
             </choice>
           </block>
           <block order="9">

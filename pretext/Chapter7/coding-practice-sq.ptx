@@ -16,7 +16,7 @@
 #include "ctype.h"
 using namespace std;
 
-void stringToLower (string &input) {
+void stringToLower(string &input) {
     int i = 0;
     while (i < input.length()) {
         if (isalpha(input[i]) && isupper(input[i])) {
@@ -26,7 +26,7 @@ void stringToLower (string &input) {
     }
 }
 
-int countWord (string input, string word) {
+int countWord(string input, string word) {
     // Write your implementation here.
 }
 
@@ -55,7 +55,7 @@ int main() {
         </statement>
         <blocks>
           <block order="2">
-            <cline>int countWord (string input, string word) {</cline>
+            <cline>int countWord(string input, string word) {</cline>
           </block>
           <block order="6">
             <cline>    int count = 0;</cline>
@@ -115,7 +115,7 @@ int main() {
 #include <string>
 using namespace std;
 
-void removeWord (string input, string word) {
+void removeWord(string input, string word) {
     // Write your implementation here.
 }
 
@@ -140,7 +140,7 @@ int main() {
         </statement>
         <blocks>
           <block order="2">
-            <cline>void removeWord (string input, string word) {</cline>
+            <cline>void removeWord(string input, string word) {</cline>
           </block>
           <block order="5">
             <choice correct="yes">
@@ -187,7 +187,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-string reverseWord (string input) {
+string reverseWord(string input) {
     // Write your implementation here.
 }
         ]]></input>
@@ -213,7 +213,7 @@ TEST_CASE("reverseWord function") {
         </statement>
         <blocks>
           <block order="8">
-            <cline>string reverseWord (string input) {</cline>
+            <cline>string reverseWord(string input) {</cline>
           </block>
           <block order="7">
             <cline>    int len = input.length();</cline>
@@ -257,7 +257,7 @@ TEST_CASE("reverseWord function") {
 #include <iostream>
 using namespace std;
 
-int countVowels (string input) {
+int countVowels(string input) {
     // Write your implementation here.
 }
         ]]></input>
@@ -283,7 +283,7 @@ TEST_CASE("countVowels function") {
         </statement>
         <blocks>
           <block order="5">
-            <cline>int countVowels (string input) {</cline>
+            <cline>int countVowels(string input) {</cline>
           </block>
           <block order="1">
             <cline>    int count = 0;</cline>
@@ -336,11 +336,11 @@ TEST_CASE("countVowels function") {
 #include "ctype.h"
 using namespace std;
 
-string snakeToCamel (string input) {
+string snakeToCamel(string input) {
     // Write your implementation here.
 }
 
-string camelToSnake (string input) {
+string camelToSnake(string input) {
     // Write your implementation here.
 }
         ]]></input>
@@ -378,7 +378,7 @@ TEST_CASE("camelToSnake function") {
         <blocks>
           <block order="3">
             <cline>// snakeToCamel function</cline>
-            <cline>string snakeToCamel (string input) {</cline>
+            <cline>string snakeToCamel(string input) {</cline>
           </block>
           <block order="9">
             <cline>    int len = input.length();</cline>
@@ -399,7 +399,7 @@ TEST_CASE("camelToSnake function") {
           </block>
           <block order="6">
             <cline>// camelToSnake function</cline>
-            <cline>string camelToSnake (string input) {</cline>
+            <cline>string camelToSnake(string input) {</cline>
           </block>
           <block order="7">
             <cline>    int len = input.length();</cline>

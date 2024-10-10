@@ -32,7 +32,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void printInteger (double d) {
+void printInteger(double d) {
     d = int(d);
     cout << d;
 }
@@ -49,7 +49,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void printInteger (double d) {
+void printInteger(double d) {
     d = int(d);
     cout << d;
 }
@@ -90,14 +90,14 @@ int main() { // Implement the two functions
 #include <iostream>
 using namespace std;
 
-void newLine () {
+void newLine() {
     cout << endl;
 }  //newLine
 
-void divider () {
-    newLine ();  //first call
+void divider() {
+    newLine();  //first call
     cout << ". . . . . . . . . . . . " << endl;
-    newLine ();  //second call
+    newLine();  //second call
 }  //divider
 
 int main() { // Use the two functions
@@ -112,14 +112,14 @@ int main() { // Use the two functions
 #include <iostream>
 using namespace std;
 
-void newLine () {
+void newLine() {
     cout << endl;
 }  //newLine
 
-void divider () {
-    newLine ();  //first call
+void divider() {
+    newLine();  //first call
     cout << ". . . . . . . . . . . . " << endl;
-    newLine ();  //second call
+    newLine();  //second call
 }  //divider
 
 int main() { // Use the two functions
@@ -159,7 +159,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void volumeCone (double r, double h) {
+void volumeCone(double r, double h) {
     double vol = 1/3.0 * 3.14 * r * r * h;
     cout << vol;
 }
@@ -171,7 +171,7 @@ void volumeCone (double r, double h) {
 #include <iostream>
 using namespace std;
 
-void volumeCone (double r, double h) {
+void volumeCone(double r, double h) {
     double vol = 1/3.0 * 3.14 * r * r * h;
     cout << vol;
 }
@@ -209,7 +209,7 @@ int main() {
 #include <cmath>
 using namespace std;
 
-void sineDegrees (double d) {
+void sineDegrees(double d) {
     double r = d * (2 * 3.14) / 360.0;
     double sine = sin(r);
     cout << sine;
@@ -228,7 +228,7 @@ int main() {
 #include <cmath>
 using namespace std;
 
-void sineDegrees (double d) {
+void sineDegrees(double d) {
     double r = d * (2 * 3.14) / 360.0;
     double sine = sin(r);
     cout << sine;
@@ -270,7 +270,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void finalPrice (double item) {
+void finalPrice(double item) {
     double discount = item * 0.30;
     double final = (item - discount) * 1.08;
     cout << final;
@@ -283,7 +283,7 @@ void finalPrice (double item) {
 #include <iostream>
 using namespace std;
 
-void finalPrice (double item) {
+void finalPrice(double item) {
     double discount = item * 0.30;
     double final = (item - discount) * 1.08;
     cout << final;
@@ -369,7 +369,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void eatMore (string animal) {
+void eatMore(string animal) {
     cout << "Eat";
     cout << endl; cout << "More" << endl;
     cout << endl;
@@ -388,7 +388,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void eatMore (string animal) {
+void eatMore(string animal) {
     cout << "Eat";
     cout << endl; cout << "More" << endl;
     cout << endl;
@@ -432,7 +432,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void printAmount (int dollars, int cents) {
+void printAmount(int dollars, int cents) {
     int dollarTotal = dollars + cents / 100;
     double centTotal = cents % 100;
     cout << "$" << dollarTotal << "." << centTotal;
@@ -451,7 +451,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void printAmount (int dollars, int cents) {
+void printAmount(int dollars, int cents) {
     int dollarTotal = dollars + cents / 100;
     double centTotal = cents % 100;
     cout << "$" << dollarTotal << "." << centTotal;
@@ -489,7 +489,7 @@ using namespace std;
 #include <iostream>
 using namespace std;
 
-void conditionalProb (double B, double both) {
+void conditionalProb(double B, double both) {
     double prob = both / B;
     cout << prob;
 } //conditionalProb
@@ -507,7 +507,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void conditionalProb (double B, double both) {
+void conditionalProb(double B, double both) {
     double prob = both / B;
     cout << prob;
 } //conditionalProb
@@ -544,7 +544,7 @@ using namespace std;
 #include <iostream>
 using namespace std;
 
-void finalGrade (double m1, double m2, double f) {
+void finalGrade(double m1, double m2, double f) {
     double m_comp = m1 * 0.2 + m2 * 0.2;
     double f_comp = f * 0.6;
     double final_grade = m_comp + f_comp;
@@ -562,7 +562,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void finalGrade (double m1, double m2, double f) {
+void finalGrade(double m1, double m2, double f) {
     double m_comp = m1 * 0.2 + m2 * 0.2;
     double f_comp = f * 0.6;
     double final_grade = m_comp + f_comp;

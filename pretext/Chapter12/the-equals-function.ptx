@@ -13,7 +13,7 @@
             choice: should <c>equals</c> be a member function or a free-standing
             function?</p>
   <p>As a member function, it looks like this:</p>
-  <program>bool Card::equals (const Card&amp; c2) const {
+  <program>bool Card::equals(const Card&amp; c2) const {
   return (rank == c2.rank &amp;&amp; suit == c2.suit);
 }</program>
   <p>To use this function, we have to invoke it on one of the cards and pass
@@ -29,7 +29,7 @@ if (card1.equals(card2)) {
             What I mean by symmetric is that it does not matter whether I ask <q>Is A
             equal to B?</q> or <q>Is B equal to A?</q> In this case, I think it looks better
             to rewrite <c>equals</c> as a nonmember function:</p>
-  <program>bool equals (const Card&amp; c1, const Card&amp; c2) {
+  <program>bool equals(const Card&amp; c1, const Card&amp; c2) {
   return (c1.rank == c2.rank &amp;&amp; c1.suit == c2.suit);
 }</program>
   <p>When we call this version of the function, the arguments appear
@@ -54,10 +54,10 @@ using namespace std;
 struct Card {
     int suit, rank;
 
-    Card ();
-    Card (int s, int r);
-    void print () const;
-    bool equals (const Card& c2) const;
+    Card();
+    Card(int s, int r);
+    void print() const;
+    bool equals(const Card& c2) const;
 };
 
 int main() {
@@ -71,15 +71,15 @@ int main() {
         ]]></input>
       <tests>
 
-Card::Card () {
+Card::Card() {
   suit = 0;  rank = 0;
 }
 
-Card::Card (int s, int r) {
+Card::Card(int s, int r) {
   suit = s;  rank = r;
 }
 
-bool Card::equals (const Card&amp; c2) const {
+bool Card::equals(const Card&amp; c2) const {
   bool boolean = (rank == c2.rank &amp;&amp; suit == c2.suit);
   if (boolean == true) {
     cout &lt;&lt; "Yup, that's the same card." &lt;&lt; endl;
@@ -90,7 +90,7 @@ bool Card::equals (const Card&amp; c2) const {
   return boolean;
 }
 
-void Card::print () const {
+void Card::print() const {
   vector&lt;string&gt; suits (4);
   suits[0] = "Clubs";
   suits[1] = "Diamonds";
@@ -197,7 +197,7 @@ void Card::print () const {
     </statement>
     <blocks>
       <block order="7">
-        <cline>bool Card::is_trump (string trump_suit) {</cline>
+        <cline>bool Card::is_trump(string trump_suit) {</cline>
       </block>
       <block order="5">
         <choice correct="yes">

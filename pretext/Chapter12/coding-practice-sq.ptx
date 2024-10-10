@@ -517,7 +517,7 @@ void Image::createBorder(Pixel p) {
         </statement>
         <blocks>
           <block order="1">
-            <cline>void Image::clearImage () {</cline>
+            <cline>void Image::clearImage() {</cline>
           </block>
           <block order="5">
             <cline><![CDATA[    for (int r = 0; r < height; r++) {]]></cline>

@@ -12,7 +12,7 @@
 #include <iostream>
 using namespace std;
 
-void countdown (int n) {
+void countdown(int n) {
     while (n > 0) {
         cout << n << endl;
         n = n - 1;
@@ -68,7 +68,7 @@ int main() {
             the value of <c>n</c> gets smaller each time through the loop (each
             <term>iteration</term>), so eventually we have to get to zero. In other cases it
             is not so easy to tell:</p>
-  <program>void sequence (int n) {
+  <program>void sequence(int n) {
   while (n != 1) {
     cout &lt;&lt; n &lt;&lt; endl;
     if (n % 2 == 0) {           // n is even

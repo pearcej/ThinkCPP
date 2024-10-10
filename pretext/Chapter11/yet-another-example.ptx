@@ -2,13 +2,13 @@
 <section xml:id="chapter11_yet-another-example">
   <title>Yet another example</title>
   <p>The original version of <c>convertToSeconds</c> looked like this:</p>
-  <program>double convertToSeconds (const Time&amp; time) {
+  <program>double convertToSeconds(const Time&amp; time) {
   int minutes = time.hour * 60 + time.minute;
   double seconds = minutes * 60 + time.second;
   return seconds;
 }</program>
   <p>It is straightforward to convert this to a member function:</p>
-  <program>double Time::convertToSeconds () const {
+  <program>double Time::convertToSeconds() const {
   int minutes = hour * 60 + minute;
   double seconds = minutes * 60 + second;
   return seconds;
@@ -32,8 +32,8 @@ using namespace std;
 struct Time {
     int hour, minute;
     double second;
-    double convertToSeconds () const;
-    void print ();
+    double convertToSeconds() const;
+    void print();
 };
 
 int main() {
@@ -47,11 +47,11 @@ int main() {
         ]]></input>
       <tests>
 
-void Time::print () {
+void Time::print() {
   cout &lt;&lt; hour &lt;&lt; ":" &lt;&lt; minute &lt;&lt; ":" &lt;&lt; second;
 }
 
-double Time::convertToSeconds () const {
+double Time::convertToSeconds() const {
   int minutes = hour * 60 + minute;
   double seconds = minutes * 60 + second;
   return seconds;

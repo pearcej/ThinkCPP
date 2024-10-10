@@ -36,7 +36,7 @@ struct Rectangle {
     double width, height;
 };
 
-void printPoint (Point p) {
+void printPoint(Point p) {
     cout << "(" << p.x << ", " << p.y << ")" << endl;
 }
 
@@ -77,7 +77,7 @@ Rectangle addTwo (Point& p) {
   return result;
 }
 
-void printPoint (Point p) {
+void printPoint(Point p) {
   cout << "(" << p.x << ", " << p.y << ")" << endl;
 }
 

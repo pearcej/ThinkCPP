@@ -23,7 +23,7 @@ suits[3] = "Spades";</program>
             the appropriate elements using the <c>suit</c> and <c>rank</c> as indices.
             Finally, we can write a function called <c>print</c> that outputs the card
             on which it is invoked:</p>
-  <program>void Card::print () const {
+  <program>void Card::print() const {
   vector&lt;string&gt; suits (4);
   suits[0] = "Clubs";
   suits[1] = "Diamonds";
@@ -54,7 +54,7 @@ suits[3] = "Spades";</program>
             instance variables of the current object implicitly (without having to
             use dot notation to specify the object). The output of this code</p>
   <program>Card card (1, 11);
-card.print ();</program>
+card.print();</program>
   <p>is <c>Jack of Diamonds</c>.</p>
   <exercise label="12_3">
     <statement>
@@ -72,28 +72,28 @@ using namespace std;
 struct Card {
     int suit, rank;
 
-    Card ();
-    Card (int s, int r);
-    void print () const;
+    Card();
+    Card(int s, int r);
+    void print() const;
 };
 
 int main() {
     Card card (1,11);
-    card.print ();
+    card.print();
 }
 
         ]]></input>
       <tests>
 
-Card::Card () {
+Card::Card() {
   suit = 0;  rank = 0;
 }
 
-Card::Card (int s, int r) {
+Card::Card(int s, int r) {
   suit = s;  rank = r;
 }
 
-void Card::print () const {
+void Card::print() const {
   vector&lt;string&gt; suits (4);
   suits[0] = "Clubs";
   suits[1] = "Diamonds";
@@ -173,7 +173,7 @@ void Card::print () const {
     <setup>
       <var>
         <program>Card card (3, 1);
-card.print ();</program>
+card.print();</program>
         <p>What is printed by card.print()? Type your answer exactly as it would appear in the terminal.</p>
       </var>
     </setup>

@@ -15,7 +15,7 @@
   <program>double result = area (radius);
 return result;</program>
   <p>Wrapping that all up in a function, we get:</p>
-  <program>double fred (double xc, double yc, double xp, double yp) {
+  <program>double fred(double xc, double yc, double xp, double yp) {
   double radius = distance (xc, yc, xp, yp);
   double result = area (radius);
   return result;
@@ -25,7 +25,7 @@ return result;</program>
   <p>The temporary variables radius and area are useful for development and
     debugging, but once the program is working we can make it more concise
     by composing the function calls:</p>
-  <program>double fred (double xc, double yc, double xp, double yp) {
+  <program>double fred(double xc, double yc, double xp, double yp) {
   return area (distance (xc, yc, xp, yp));
 }</program>
   <listing label="fun_comp_AC_1">
@@ -43,7 +43,7 @@ return result;</program>
 #include <cmath>
 using namespace std;
 
-double distance (double x1, double y1, double x2, double y2) {
+double distance(double x1, double y1, double x2, double y2) {
     double dx = x2 - x1;
     double dy = y2 - y1;
     double dsquared = dx * dx + dy * dy;
@@ -51,12 +51,12 @@ double distance (double x1, double y1, double x2, double y2) {
     return result;
 }
 
-double area (double radius) {
+double area(double radius) {
     double area = 3.14 * (radius * radius);
     return area;
 }
 
-double fred (double xc, double yc, double xp, double yp) {
+double fred(double xc, double yc, double xp, double yp) {
     return area (distance (xc, yc, xp, yp));
 }
 
@@ -112,7 +112,7 @@ int main() {
     <statement>
       <p>It turns out you already have a function called <c>printHelloName</c> so you must rename this one. Which
         of the following could be the new name for your function?</p>
-      <program>void printHelloName (string name) {
+      <program>void printHelloName(string name) {
   cout &lt;&lt; "Hello " &lt;&lt; name &lt;&lt; "!" &lt;&lt;  endl;
 }</program>
     </statement>
@@ -179,11 +179,11 @@ int main() {
 #include <iostream>
 using namespace std;
 
-int increase_population (int population) {
+int increase_population(int population) {
     return population*2;
 }
 
-void print_population (int population) {
+void print_population(int population) {
     cout<<"The current population is "<<population<<endl;
 }
 

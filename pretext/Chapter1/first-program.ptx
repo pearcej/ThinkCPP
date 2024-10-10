@@ -14,7 +14,7 @@
 #include <iostream>
 using namespace std;
 // main: generate some simple output
-int main (int foo) {
+int main(int foo) {
     cout << "Hello, World." << endl;
     return 0;
 }

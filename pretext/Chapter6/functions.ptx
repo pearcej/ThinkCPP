@@ -154,16 +154,16 @@ int main() {
     </statement>
     <blocks>
       <block order="4">
-        <cline>int absoluteValue (int num) {</cline>
+        <cline>int absoluteValue(int num) {</cline>
       </block>
       <block order="6" correct="no">
-        <cline>void absoluteValue (int num) { </cline>
+        <cline>void absoluteValue(int num) { </cline>
       </block>
       <block order="2" correct="no">
-        <cline>int absoluteValue (int num) </cline>
+        <cline>int absoluteValue(int num) </cline>
       </block>
       <block order="3" correct="no">
-        <cline>void absoluteValue (int num) </cline>
+        <cline>void absoluteValue(int num) </cline>
       </block>
       <block order="5">
         <cline>  if (num &gt; 0) {</cline>

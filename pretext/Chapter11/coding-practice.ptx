@@ -74,7 +74,7 @@ using namespace std;
 struct Cake {
     string name;
     double weight;
-    bool has_icing ();
+    bool has_icing();
 };
 
 // Write your code for the has_icing function
@@ -174,15 +174,15 @@ using namespace std;
 struct Music {
     int num_sold;
     int year;
-    void sold (int num_sold);
-    bool is_new (int year);
+    void sold(int num_sold);
+    bool is_new(int year);
 };
 
-void Music::sold (int num_sold) {
+void Music::sold(int num_sold) {
    cout << 2 * num_sold << endl;
 }
 
-bool Music:: is_new (int year) {
+bool Music:: is_new(int year) {
    if (year > 2012) {
      return true;
    }
@@ -205,15 +205,15 @@ using namespace std;
 struct Music {
     int num_sold;
     int year;
-    void sold (int num_sold);
-    bool is_new (int year);
+    void sold(int num_sold);
+    bool is_new(int year);
 };
 
-void Music::sold (int num_sold) {
+void Music::sold(int num_sold) {
    cout << 2 * num_sold << endl;
 }
 
-bool Music:: is_new (int year) {
+bool Music:: is_new(int year) {
    if (year > 2012) {
      return true;
    }
@@ -262,10 +262,10 @@ using namespace std;
 struct Music {
     int num_sold;
     int year;
-    bool latest (const &Music m_other) const;
+    bool latest(const &Music m_other) const;
 };
 
-bool Music:: latest (const &Music m_other) const {
+bool Music:: latest(const &Music m_other) const {
    if (year > m_other.year) {
      return true;
    }
@@ -290,10 +290,10 @@ using namespace std;
 struct Music {
     int num_sold;
     int year;
-    bool latest (const &Music m_other) const;
+    bool latest(const &Music m_other) const;
 };
 
-bool Music:: latest (const &Music m_other) const {
+bool Music:: latest(const &Music m_other) const {
    if (year > m_other.year) {
      return true;
    }
@@ -422,7 +422,7 @@ using namespace std;
 struct Cake {
     string name;
     double weight;
-    bool has_icing ();
+    bool has_icing();
 };
 
 // Write your code for the has_icing function
@@ -527,7 +527,7 @@ struct Pants {
     Pants();
 };
 
-Pants::Pants () {
+Pants::Pants() {
    size = 'L';
    material = "cotton";
 }
@@ -551,7 +551,7 @@ struct Pants {
     Pants();
 };
 
-Pants::Pants () {
+Pants::Pants() {
    size = 'L';
    material = "cotton";
 }
@@ -575,9 +575,9 @@ using namespace std;
 struct Book {
     string name;
     int publish_year;
-    bool is_famous ();
-    Book ();
-    Book (string name_in, int publish_year_in);
+    bool is_famous();
+    Book();
+    Book(string name_in, int publish_year_in);
 };
 
 // Write your code for the default constructor here
@@ -604,17 +604,17 @@ using namespace std;
 struct Book {
     string name;
     int year;
-    bool is_famous ();
-    Book ();
-    Book (string name_in, int publish_year_in);
+    bool is_famous();
+    Book();
+    Book(string name_in, int publish_year_in);
 };
 
-Book::Book () {
+Book::Book() {
    name = "N/A";
    publish_year = 0;
 }
 
-Book::Book (string name_in, int publish_year_in) {
+Book::Book(string name_in, int publish_year_in) {
    name = name_in;
    publish_year = publish_year_in ;
 }
@@ -634,17 +634,17 @@ using namespace std;
 struct Book {
     string name;
     int year;
-    bool is_famous ();
-    Book ();
-    Book (string name_in, int publish_year_in);
+    bool is_famous();
+    Book();
+    Book(string name_in, int publish_year_in);
 };
 
-Book::Book () {
+Book::Book() {
    name = "N/A";
    publish_year = 0;
 }
 
-Book::Book (string name_in, int publish_year_in) {
+Book::Book(string name_in, int publish_year_in) {
    name = name_in;
    publish_year = publish_year_in ;
 }
@@ -666,9 +666,9 @@ struct Book {
     // Group and label the following as instance variables, constructors, modifiers or functions as would be seen in a header (Book.h) file
     string name;
     int publish_year;
-    bool is_famous ();
-    Book ();
-    Book (string name_in, int publish_year_in);
+    bool is_famous();
+    Book();
+    Book(string name_in, int publish_year_in);
 };
 
 
@@ -695,10 +695,10 @@ struct Book {
     string name;
     int publish_year;
     // Functions
-    bool is_famous ();
+    bool is_famous();
     // Constructors
-    Book ();
-    Book (string name_in, int publish_year_in);
+    Book();
+    Book(string name_in, int publish_year_in);
 };
 
 
@@ -720,10 +720,10 @@ struct Book {
     string name;
     int publish_year;
     // Functions
-    bool is_famous ();
+    bool is_famous();
     // Constructors
-    Book ();
-    Book (string name_in, int publish_year_in);
+    Book();
+    Book(string name_in, int publish_year_in);
 };
 
 
@@ -769,17 +769,17 @@ using namespace std;
 struct Instrument {
     string name;
     int year_made;
-    bool is_popular ();
-    Instrument ();
-    Instrument (string name_in, int year_made_in);
+    bool is_popular();
+    Instrument();
+    Instrument(string name_in, int year_made_in);
 };
 
-Instrument::Instrument () {
+Instrument::Instrument() {
    name = "guitar";
    publish_year = 2000;
 }
 
-Instrument::Instrument (string name_in, int year_made_in) {
+Instrument::Instrument(string name_in, int year_made_in) {
    name = name_in;
    year_made = year_made_in;
 }
@@ -799,17 +799,17 @@ using namespace std;
 struct Instrument {
     string name;
     int year_made;
-    bool is_popular ();
-    Instrument ();
-    Instrument (string name_in, int year_made_in);
+    bool is_popular();
+    Instrument();
+    Instrument(string name_in, int year_made_in);
 };
 
-Instrument::Instrument () {
+Instrument::Instrument() {
    name = "guitar";
    publish_year = 2000;
 }
 
-Instrument::Instrument (string name_in, int year_made_in) {
+Instrument::Instrument(string name_in, int year_made_in) {
    name = name_in;
    year_made = year_made_in;
 }

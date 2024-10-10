@@ -8,17 +8,17 @@
   <p>The following function takes a single argument, the size of the vector.
             It allocates a new vector of <c>int</c>s, and fills it with random values
             between 0 and <c>upperBound-1</c>.</p>
-  <program>vector&lt;int&gt; randomVector (int n, int upperBound) {
+  <program>vector&lt;int&gt; randomVector(int n, int upperBound) {
   vector&lt;int&gt; vec (n);
   for (size_t i = 0; i &lt; vec.size(); i++) {
-    vec[i] = random () % upperBound;
+    vec[i] = random() % upperBound;
   }
   return vec;
 }</program>
   <p>The return type is <c>vector&lt;int&gt;</c>, which means that this function
             returns a vector of integers. To test this function, it is convenient to
             have a function that outputs the contents of a vector.</p>
-  <program>void printVector (const vector&lt;int&gt;&amp; vec) {
+  <program>void printVector(const vector&lt;int&gt;&amp; vec) {
   for (size_t i = 0; i &lt; vec.size(); i++) {
     cout &lt;&lt; vec[i] &lt;&lt; " ";
   }
@@ -45,8 +45,8 @@ printVector (vector);</program>
 #include <vector>
 using namespace std;
 
-vector<int> randomVector (int n, int upperBound);
-void printVector (const vector<int> & vec);
+vector<int> randomVector(int n, int upperBound);
+void printVector(const vector<int> & vec);
 
 int main() {
     int numValues = 20;
@@ -58,15 +58,15 @@ int main() {
         ]]></input>
       <tests>
 
-vector&lt;int&gt; randomVector (int n, int upperBound) {
+vector&lt;int&gt; randomVector(int n, int upperBound) {
    vector&lt;int&gt; vec (n);
    for (size_t i = 0; i&lt;vec.size(); i++) {
-      vec[i] = random () % upperBound;
+      vec[i] = random() % upperBound;
    }
    return vec;
 }
 
-void printVector (const vector&lt;int&gt;&amp; vec) {
+void printVector(const vector&lt;int&gt;&amp; vec) {
    for (size_t i = 0; i&lt;vec.size(); i++) {
       cout &lt;&lt; vec[i] &lt;&lt; " ";
    }
@@ -147,7 +147,7 @@ void printVector (const vector&lt;int&gt;&amp; vec) {
       <p>Would compiling the following code lead to a compiler error?</p>
       <program line-numbers="yes">
         <input><![CDATA[
-void dostuff (const vector<int> & vec) {
+void dostuff(const vector<int> & vec) {
    for (size_t i = 0; i < vec.size(); i++) {
       vec[i] = vec[i] ;
    }

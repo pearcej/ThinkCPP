@@ -374,7 +374,7 @@ int main() {
       <p>Why are we allowed to use the variable <c>x</c> in both <c>main</c> and in the function definition of <c>superSecretFunction</c>?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
-int superSecretFunction (int n) {
+int superSecretFunction(int n) {
   int x = 0;
   return (2 + (n * n) - 5 * n / 7) * x;
 }
@@ -426,7 +426,7 @@ int main() {
       <p>What is the output of the code below?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
-int loopFive (int n) {
+int loopFive(int n) {
   while (n % 5 != 0) {
     n = n + 3;
   }
@@ -485,7 +485,7 @@ int main() {
             error?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
-void repeatBot (string input) {
+void repeatBot(string input) {
   int n = 0;
   while (n < 5) {
     cout << input << " ";
@@ -541,7 +541,7 @@ int main() {
             Can you find the new error?</p>
       <program language="cpp" line-numbers="yes">
         <input><![CDATA[
-void repeatBot (string input) {
+void repeatBot(string input) {
   int n = 0;
   while (n > 5) {
     cout << input << " ";

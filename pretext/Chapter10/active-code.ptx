@@ -75,7 +75,7 @@ int main() {
 #include <vector>
 using namespace std;
 
-int endsWith (const vector<string>& vec, char c) {
+int endsWith(const vector<string>& vec, char c) {
     int count;
     for (size_t i = 0; i < vec.size(); i++) {
         last = vec.size() - 1;
@@ -103,7 +103,7 @@ int endsWith (const vector<string>& vec, char c) {
 #include <vector>
 using namespace std;
 
-int endsWith (const vector<string>& vec, char c) {
+int endsWith(const vector<string>& vec, char c) {
     int count = 0;
     for (size_t i = 0; i < vec.size(); i++) {
         int last = vec[i].size() - 1;
@@ -126,7 +126,7 @@ int endsWith (const vector<string>& vec, char c) {
 #include <vector>
 using namespace std;
 
-int endsWith (const vector<string>& vec, char c) {
+int endsWith(const vector<string>& vec, char c) {
     int count = 0;
     for (size_t i = 0; i < vec.size(); i++) {
         int last = vec[i].size() - 1;
@@ -244,7 +244,7 @@ using namespace std;
 using namespace std;
 
 
-int has_char (const vector<string>& vec, char let) {
+int has_char(const vector<string>& vec, char let) {
     int count = 0;
     for (size_t i = 0; i < vec.size(); i++) {
         for (size_t c = 0; c < vec[i].size(); c++) {
@@ -270,7 +270,7 @@ int has_char (const vector<string>& vec, char let) {
 using namespace std;
 
 
-int has_char (const vector<string>& vec, char let) {
+int has_char(const vector<string>& vec, char let) {
     int count = 0;
     for (size_t i = 0; i < vec.size(); i++) {
         for (size_t c = 0; c < vec[i].size(); c++) {
@@ -318,7 +318,7 @@ using namespace std;
 #include <vector>
 using namespace std;
 
-double mean (const vector<double> nums) {
+double mean(const vector<double> nums) {
     double sum = 0;
     for (size_t i = 0; i < nums.size(); ++i) {
         sum = sum + nums[i];
@@ -335,7 +335,7 @@ double mean (const vector<double> nums) {
 #include <vector>
 using namespace std;
 
-double mean (const vector<double> nums) {
+double mean(const vector<double> nums) {
     double sum = 0;
     for (size_t i = 0; i < nums.size(); ++i) {
         sum = sum + nums[i];

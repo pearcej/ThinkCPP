@@ -92,12 +92,12 @@ int main() {
     Time t1 = { 9, 14, 30.0 };
     increment(t1, 60.0);
     // Should output "9:15:30"
-    printTime (t1);
+    printTime(t1);
 
     Time t2 = { 9, 59, 45.0 };
     increment(t2, 120.0);
     // Should output "10:1:45"
-    printTime (t2);
+    printTime(t2);
 }
         ]]></input>
     </program>
@@ -115,7 +115,7 @@ int main() {
             <cline>void increment (Time&amp; time, double secs) {</cline>
           </choice>
           <choice>
-            <cline>void increment (const Time&amp; time, double secs) {                         </cline>
+            <cline>void increment(const Time&amp; time, double secs) {                         </cline>
           </choice>
         </block>
         <block order="7">

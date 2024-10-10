@@ -2,9 +2,9 @@
 <section xml:id="chapter11_one-last-example">
   <title>One last example</title>
   <p>The final example we'll look at is <c>addTime</c>:</p>
-  <program>Time addTime2 (const Time&amp; t1, const Time&amp; t2) {
-  double seconds = convertToSeconds (t1) + convertToSeconds (t2);
-  return makeTime (seconds);
+  <program>Time addTime2(const Time&amp; t1, const Time&amp; t2) {
+  double seconds = convertToSeconds(t1) + convertToSeconds(t2);
+  return makeTime(seconds);
 }</program>
   <p>We have to make several changes to this function, including:</p>
   <p>
@@ -22,9 +22,9 @@
     </ol>
   </p>
   <p>Here's the result:</p>
-  <program>Time Time::add (const Time&amp; t2) const {
-  double seconds = convertToSeconds () + t2.convertToSeconds ();
-  Time time (seconds);
+  <program>Time Time::add(const Time&amp; t2) const {
+  double seconds = convertToSeconds() + t2.convertToSeconds();
+  Time time(seconds);
   return time;
 }</program>
   <p>The first time we invoke <c>convertToSeconds</c>, there is no apparent
@@ -46,12 +46,12 @@ using namespace std;
 struct Time {
     int hour, minute;
     double second;
-    Time (double secs);
-    Time (int h, int m, double s);
-    bool after (const Time& time2) const;
-    Time add (const Time& t2) const;
-    double convertToSeconds () const;
-    void print ();
+    Time(double secs);
+    Time(int h, int m, double s);
+    bool after(const Time& time2) const;
+    Time add(const Time& t2) const;
+    double convertToSeconds() const;
+    void print();
 };
 
 int main() {
@@ -64,35 +64,35 @@ int main() {
         ]]></input>
       <tests>
 
-Time::Time (double secs) {
-  hour = int (secs / 3600.0);
+Time::Time(double secs) {
+  hour = int(secs / 3600.0);
   secs -= hour * 3600.0;
-  minute = int (secs / 60.0);
+  minute = int(secs / 60.0);
   secs -= minute * 60.0;
   second = secs;
 }
 
-Time::Time (int h, int m, double s) {
+Time::Time(int h, int m, double s) {
   hour = h; minute = m; second = s;
 }
 
-void Time::print () {
+void Time::print() {
   cout &lt;&lt; hour &lt;&lt; ":" &lt;&lt; minute &lt;&lt; ":" &lt;&lt; second;
 }
 
-double Time::convertToSeconds () const {
+double Time::convertToSeconds() const {
   int minutes = hour * 60 + minute;
   double seconds = minutes * 60 + second;
   return seconds;
 }
 
-Time Time::add (const Time &amp;t2) const {
-  double seconds = convertToSeconds () + t2.convertToSeconds ();
-  Time time (seconds);
+Time Time::add(const Time &amp;t2) const {
+  double seconds = convertToSeconds() + t2.convertToSeconds();
+  Time time(seconds);
   return time;
 }
 
-bool Time::after (const Time&amp; time2) const {
+bool Time::after(const Time&amp; time2) const {
   if (hour &gt; time2.hour) return true;
   if (hour &lt; time2.hour) return false;
 

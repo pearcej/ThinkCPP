@@ -13,13 +13,13 @@
   int suit, rank;
 
 public:
-  Card ();
-  Card (int s, int r);
+  Card();
+  Card(int s, int r);
 
-  int getRank () const { return rank; }
-  int getSuit () const { return suit; }
-  int setRank (int r) { rank = r; }
-  int setSuit (int s) { suit = s; }
+  int getRank() const { return rank; }
+  int getSuit() const { return suit; }
+  int setRank(int r) { rank = r; }
+  int setSuit(int s) { suit = s; }
 };</program>
   <p>I replaced the word <c>struct</c> with the word <c>class</c> and removed the
             <c>private:</c> label. This result of the two definitions is exactly the
@@ -64,17 +64,17 @@ private:
   vector<Card> cards;
 
 public:
-  Deck ();
-  Deck (int n);
+  Deck();
+  Deck(int n);
 
-  void print () const;
-  void swapCards (int index1, int index2);
-  int findLowestCard (int index);
-  void shuffleDeck ();
-  void sortDeck ();
-  Deck subdeck (int low, int high) const;
-  Deck mergeSort () const;
-  Deck mergeSort (Deck deck) const;
+  void print() const;
+  void swapCards(int index1, int index2);
+  int findLowestCard(int index);
+  void shuffleDeck();
+  void sortDeck();
+  Deck subdeck(int low, int high) const;
+  Deck mergeSort() const;
+  Deck mergeSort(Deck deck) const;
 };
 ]]></input>
       </program>

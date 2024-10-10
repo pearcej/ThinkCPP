@@ -17,7 +17,7 @@
   <program> #include &lt;iostream&gt;
  using namespace std;
 
-int convertToInt (const string&amp; s)
+int convertToInt(const string&amp; s)
 {
   string digitString = "";
 
@@ -49,7 +49,7 @@ int convertToInt (const string&amp; s)
 #include <vector>
 using namespace std;
 
-int convertToInt (const string& s) {
+int convertToInt(const string& s) {
    string digitString = "";
 
    for (size_t i = 0; i < s.length(); i++) {
@@ -161,10 +161,10 @@ int main() {
     <blocks>
       <block order="10">
         <choice correct="yes">
-          <cline>string replace_with (string str, char old_char, char new_char) {</cline>
+          <cline>string replace_with(string str, char old_char, char new_char) {</cline>
         </choice>
         <choice>
-          <cline>string replace_with () {                              </cline>
+          <cline>string replace_with() {                              </cline>
         </choice>
       </block>
       <block order="7">

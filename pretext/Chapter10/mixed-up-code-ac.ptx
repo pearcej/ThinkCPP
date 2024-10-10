@@ -307,7 +307,7 @@ using namespace std;
 int main() {
     vector<int> keno = {};
     for (size_t i = 0; i < 20; i++) {
-        int x = random ();
+        int x = random();
         int y = x % 80;
         keno.push_back(y + 1);
     }
@@ -324,7 +324,7 @@ using namespace std;
 int main() {
     vector<int> keno = {};
     for (size_t i = 0; i < 20; i++) {
-        int x = random ();
+        int x = random();
         int y = x % 80;
         keno.push_back(y + 1);
     }
@@ -529,7 +529,7 @@ int main() {
 #include <vector>
 using namespace std;
 
-int howMany (const vector<string>& vec, char let) {
+int howMany(const vector<string>& vec, char let) {
     int count = 0;
     for (size_t i = 0; i < vec.size(); i++) {
         for (size_t c = 0; c < vec[i].size(); c++) {
@@ -561,7 +561,7 @@ int main() {
 #include <vector>
 using namespace std;
 
-int howMany (const vector<string>& vec, char let) {
+int howMany(const vector<string>& vec, char let) {
     int count = 0;
     for (size_t i = 0; i < vec.size(); i++) {
         for (size_t c = 0; c < vec[i].size(); c++) {
@@ -590,7 +590,7 @@ int main() {
 #include <vector>
 using namespace std;
 
-int howMany (const vector<string>& vec, char let) {
+int howMany(const vector<string>& vec, char let) {
     int count = 0;
     for (size_t i = 0; i < vec.size(); i++) {
         for (size_t c = 0; c < vec[i].size(); c++) {

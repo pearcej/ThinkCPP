@@ -94,15 +94,15 @@
         <input>
 struct Card {
   int suit, rank;
-  Card ();
-  Card (int s, int r);
+  Card();
+  Card(int s, int r);
 };
 
-Card::Card () {
+Card::Card() {
   suit = 0;  rank = 0;
 }
 
-Card::Card (int s, int r) {
+Card::Card(int s, int r) {
   suit = s;  rank = r;
 }
 
@@ -154,9 +154,9 @@ int main() {
         <input>
 struct Card {
   int suit, rank;
-  Card ();
-  Card (int s, int r);
-  void print () const;
+  Card();
+  Card(int s, int r);
+  void print() const;
 };
 
 int main() {
@@ -208,10 +208,10 @@ int main() {
         <input><![CDATA[
 struct Card {
   int suit, rank;
-  Card ();
-  Card (int s, int r);
-  void print () const;
-  bool isGreater (const Card& c2) const;
+  Card();
+  Card(int s, int r);
+  void print() const;
+  bool isGreater(const Card& c2) const;
 };
 
 int main() {
@@ -264,21 +264,21 @@ int main() {
         <input><![CDATA[
 struct Card {
   int suit, rank;
-  Card ();
-  Card (int s, int r);
-  void print () const;
-  bool isGreater (const Card& c2) const;
+  Card();
+  Card(int s, int r);
+  void print() const;
+  bool isGreater(const Card& c2) const;
 };
 
 vector<Card> buildDeck();
 
-bool equals (const Card& c1, const Card& c2){
+bool equals(const Card& c1, const Card& c2){
   return (c1.rank == c2.rank && c1.suit == c2.suit);
 }
 
 void printDeck(const vector<Card>& deck);
 
-int find (const Card& card, const vector<Card>& deck);
+int find(const Card& card, const vector<Card>& deck);
 
 int main() {
   vector<Card> deck = buildDeck();
@@ -330,10 +330,10 @@ int main() {
         <input><![CDATA[
 struct Card {
   int suit, rank;
-  Card ();
-  Card (int s, int r);
-  void print () const;
-  bool isGreater (const Card& c2) const;
+  Card();
+  Card(int s, int r);
+  void print() const;
+  bool isGreater(const Card& c2) const;
 };
 
 vector<Card> createDeck() {
@@ -397,17 +397,17 @@ int main() {
         <input><![CDATA[
 struct Card {
   int suit, rank;
-  Card ();
-  Card (int s, int r);
-  void print () const;
-  bool isGreater (const Card& c2) const;
+  Card();
+  Card(int s, int r);
+  void print() const;
+  bool isGreater(const Card& c2) const;
 };
 
 vector<Card> buildDeck();
-bool equals (const Card& c1, const Card& c2);
+bool equals(const Card& c1, const Card& c2);
 void printDeck(const vector<Card>& deck);
-int find (const Card& card, const vector<Card>& deck);
-int findBisect (const Card& card, const vector<Card>& deck, int low, int high);
+int find(const Card& card, const vector<Card>& deck);
+int findBisect(const Card& card, const vector<Card>& deck, int low, int high);
 
 int main() {
   vector<Card> deck = buildDeck();
@@ -460,17 +460,17 @@ int main() {
         <input><![CDATA[
 struct Card {
   int suit, rank;
-  Card ();
-  Card (int s, int r);
-  void print () const;
-  bool isGreater (const Card& c2) const;
+  Card();
+  Card(int s, int r);
+  void print() const;
+  bool isGreater(const Card& c2) const;
 };
 
 vector<Card> buildDeck();
-bool equals (const Card& c1, const Card& c2);
+bool equals(const Card& c1, const Card& c2);
 void printDeck(const vector<Card>& deck);
 
-void findAllQueens (const vector<Card>& deck) {
+void findAllQueens(const vector<Card>& deck) {
   for (size_t i = 0; i < deck.____; ++i) {
     if (deck[i].____ == 12) {
       cout << ____ << " ";

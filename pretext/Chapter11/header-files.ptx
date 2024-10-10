@@ -19,17 +19,17 @@
   double second;
 
   // constructors
-  Time (int hour, int min, double secs);
-  Time (double secs);
+  Time(int hour, int min, double secs);
+  Time(double secs);
 
   // modifiers
-  void increment (double secs);
+  void increment(double secs);
 
   // functions
-  void print () const;
-  bool after (const Time&amp; time2) const;
-  Time add (const Time&amp; t2) const;
-  double convertToSeconds () const;
+  void print() const;
+  bool after(const Time&amp; time2) const;
+  Time add(const Time&amp; t2) const;
+  double convertToSeconds() const;
 };</program>
   <p>Notice that in the structure definition I don't include the prefix <c>Time::</c>
             at the beginning of every function name. The compiler knows that we are declaring
@@ -40,19 +40,19 @@
 using namespace std;
 #include "Time.h"
 
-Time::Time (int h, int m, double s)  ...
+Time::Time(int h, int m, double s)  ...
 
-Time::Time (double secs) ...
+Time::Time(double secs) ...
 
-void Time::increment (double secs) ...
+void Time::increment(double secs) ...
 
-void Time::print () const ...
+void Time::print() const ...
 
-bool Time::after (const Time&amp; time2) const ...
+bool Time::after(const Time&amp; time2) const ...
 
-Time Time::add (const Time&amp; t2) const ...
+Time Time::add(const Time&amp; t2) const ...
 
-double Time::convertToSeconds () const ...</program>
+double Time::convertToSeconds() const ...</program>
   <p>In this case the definitions in <c>Time.cpp</c> appear in the same order as
             the declarations in <c>Time.h</c>, although it is not necessary.</p>
   <p>On the other hand, it is necessary to include the header file using an
@@ -73,11 +73,11 @@ using namespace std;
 int main() {
   Time currentTime (9, 14, 30.0);
   currentTime.increment (500.0);
-  currentTime.print ();
+  currentTime.print();
 
   Time breadTime (3, 35, 0.0);
   Time doneTime = currentTime.add (breadTime);
-  doneTime.print ();
+  doneTime.print();
 
   if (doneTime.after (currentTime)) {
     cout &lt;&lt; "The bread will be done after it starts." &lt;&lt; endl;

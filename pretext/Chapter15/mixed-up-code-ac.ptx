@@ -524,12 +524,12 @@ class Set {
         int numElements;
 
     public:
-        Set (int n);
+        Set(int n);
 
-        int getNumElements () const;
-        string getElement (int i) const;
-        int find (const string& s) const;
-        int add (const string& s);
+        int getNumElements() const;
+        string getElement(int i) const;
+        int find(const string& s) const;
+        int add(const string& s);
 };
 
 Set vectorToSet(vector<string> data) {
@@ -553,12 +553,12 @@ class Set {
         int numElements;
 
     public:
-        Set (int n);
+        Set(int n);
 
-        int getNumElements () const;
-        string getElement (int i) const;
-        int find (const string& s) const;
-        int add (const string& s);
+        int getNumElements() const;
+        string getElement(int i) const;
+        int find(const string& s) const;
+        int add(const string& s);
 };
 
 Set vectorToSet(vector<string> data) {
@@ -601,7 +601,7 @@ class Matrix {
     private:
         vector<vector<int> > elements;
     public:
-        Matrix (int numRows, int numCols) {
+        Matrix(int numRows, int numCols) {
             vector<int> row(numCols);
             for (int i = 0; i < numRows; ++i) {
             elements.push_back(row);
@@ -624,7 +624,7 @@ class Matrix {
     private:
         vector<vector<int> > elements;
     public:
-        Matrix (int numRows, int numCols) {
+        Matrix(int numRows, int numCols) {
             vector<int> row(numCols);
             for (int i = 0; i < numRows; ++i) {
             elements.push_back(row);
@@ -671,7 +671,7 @@ class Matrix {
     private:
         vector<vector<int> > elements;
     public:
-        Matrix (int numRows, int numCols) {
+        Matrix(int numRows, int numCols) {
             vector<int> row(numCols);
             for (int i = 0; i < numRows; ++i) {
             elements.push_back(row);
@@ -682,7 +682,7 @@ class Matrix {
         }
 };
 
-void Matrix::setData (int row, int col, int value) {
+void Matrix::setData(int row, int col, int value) {
     elements[row][col] = value;
 }
 
@@ -716,7 +716,7 @@ class Matrix {
     private:
         vector<vector<int> > elements;
     public:
-        Matrix (int numRows, int numCols) {
+        Matrix(int numRows, int numCols) {
             vector<int> row(numCols);
             for (int i = 0; i < numRows; ++i) {
             elements.push_back(row);
@@ -727,7 +727,7 @@ class Matrix {
         }
 };
 
-void Matrix::setData (int row, int col, int value) {
+void Matrix::setData(int row, int col, int value) {
     elements[row][col] = value;
 }
 

@@ -4,7 +4,7 @@
   <p>Functions can return bool values just like any other type, which is
             often convenient for hiding complicated tests inside functions. For
             example:</p>
-  <program>bool isSingleDigit (int x) {
+  <program>bool isSingleDigit(int x) {
   if (x &gt;= 0 &amp;&amp; x &lt; 10) {
     return true;
   }
@@ -20,7 +20,7 @@
             needs to be. Remember that the expression &#8216;'x >= 0 && x < 10'' has type
             bool, so there is nothing wrong with returning it directly, and avoiding
             the if statement altogether:]]></p>
-  <program>bool isSingleDigit (int x) {
+  <program>bool isSingleDigit(int x) {
   return (x &gt;= 0 &amp;&amp; x &lt; 10);
 }</program>
   <p>In main you can call this function in the usual ways:</p>
@@ -32,7 +32,7 @@ bool bigFlag = !isSingleDigit (17);</program>
 #include <cmath>
 using namespace std;
 
- bool isSingleDigit (int x) {
+ bool isSingleDigit(int x) {
    return (x >= 0 && x < 10);
  }
 

@@ -30,7 +30,7 @@ TEN, JACK, QUEEN, KING };</program>
   Rank rank;
   Suit suit;
 
-  Card (Suit s, Rank r);
+  Card(Suit s, Rank r);
 };</program>
   <p>The types of the parameters for the constructor have changed, too.
             Now, to create a card, we can use the values from the enumerated type as
@@ -61,26 +61,26 @@ TEN, JACK, QUEEN, KING };
 struct Card {
     Rank rank;
     Suit suit;
-    Card (Suit s, Rank r);
-    void print () const;
+    Card(Suit s, Rank r);
+    void print() const;
 };
 
 int main() {
     Card card1 (DIAMONDS, JACK);
-    card1.print ();
+    card1.print();
     Card card2 (HEARTS, QUEEN);
-    card2.print ();
+    card2.print();
     Card card3 (CLUBS, THREE);
-    card3.print ();
+    card3.print();
 }
 
         ]]></input>
       <tests>
-Card::Card (Suit s, Rank r) {
+Card::Card(Suit s, Rank r) {
     suit = s;  rank = r;
 }
 
-void Card::print () const {
+void Card::print() const {
     vector&lt;string&gt; suits (4);
     suits[0] = "Clubs";
     suits[1] = "Diamonds";
@@ -190,7 +190,7 @@ struct iceCream {
    Order order;
 
    iceCream (Scoops s, Flavor f, Order o);
-   printOrder () {
+   printOrder() {
      // To save space, I didn't include the mapping.  I'm sure you can still figure it out.
      cout &lt;&lt; "Who ordered a " &lt;&lt; scoops[scoop] &lt;&lt; " scoop of " &lt;&lt; flavors[flavor] &lt;&lt; " in a " &lt;&lt; orders[order] &lt;&lt; ?;
    }

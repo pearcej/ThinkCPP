@@ -6,19 +6,19 @@
   <program>#include &lt;iostream&gt;
 using namespace std;
 
-void newLine () {
+void newLine() {
     cout &lt;&lt; endl;
 }
 
-void threeLine () {
-    newLine ();
-    newLine ();
-    newLine ();
+void threeLine() {
+    newLine();
+    newLine();
+    newLine();
 }
 
 int main() {
   cout &lt;&lt; "First Line." &lt;&lt; endl;
-  threeLine ();
+  threeLine();
   cout &lt;&lt; "Second Line." &lt;&lt; endl;
   return 0;
 }</program>
@@ -69,7 +69,7 @@ int main() {
       <choice>
         <statement id="defns_uses_2_opt_b">
           <p>
-            <c>totalCostAfterTax () {</c>
+            <c>totalCostAfterTax() {</c>
           </p>
         </statement>
         <feedback id="defns_uses_2_opt_b">
@@ -79,7 +79,7 @@ int main() {
       <choice correct="yes">
         <statement id="defns_uses_2_opt_c">
           <p>
-            <c>void todaysWeather () {</c>
+            <c>void todaysWeather() {</c>
           </p>
         </statement>
         <feedback id="defns_uses_2_opt_c">

@@ -9,10 +9,10 @@
   <program>struct Deck {
   vector&lt;Card&gt; cards;
 
-  Deck (int n);
+  Deck(int n);
 };
 
-Deck::Deck (int size) {
+Deck::Deck(int size) {
   vector&lt;Card&gt; temp (size);
   cards = temp;
 }</program>

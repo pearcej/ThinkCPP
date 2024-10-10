@@ -10,7 +10,7 @@
   <p>Having more than one function with the same name, which is called
             <term>overloading</term>, is legal in C++ <em>as long as each version takes
                 different parameters</em>. So we can go ahead and rename <c>fred</c>:</p>
-  <program>double area (double xc, double yc, double xp, double yp) {
+  <program>double area(double xc, double yc, double xp, double yp) {
   return area (distance (xc, yc, xp, yp));
 }</program>
   <p>This looks like a recursive function, but it is not. Actually, this
@@ -42,8 +42,8 @@
   <exercise label="overloading_1">
     <statement>
       <p>Which of the following function declarations would be legal if it was added to the program below?</p>
-      <program>double price (int x, int y);
-double price (double a, int b, string c);</program>
+      <program>double price(int x, int y);
+double price(double a, int b, string c);</program>
     </statement>
     <choices>
       <choice>
@@ -125,8 +125,8 @@ double price(double a, int b, string c);</program>
     <statement>
       <p>Suppose you have written the following functions for baking cake.
             Is there anything wrong with how <c>bakeCake</c> was overloaded?</p>
-      <program>bool bakeCake (string cakeMix, int eggs, double milk, bool birthday);
-bool bakeCake (string cakeMix, int eggs, double water, bool holiday);</program>
+      <program>bool bakeCake(string cakeMix, int eggs, double milk, bool birthday);
+bool bakeCake(string cakeMix, int eggs, double water, bool holiday);</program>
     </statement>
     <choices>
       <choice>
@@ -166,8 +166,8 @@ bool bakeCake (string cakeMix, int eggs, double water, bool holiday);</program>
   <exercise label="overloading_4">
     <statement>
       <p>Would adding both of the following function declarations to a program lead to an error?</p>
-      <program>int stockPrice (string currency, int previous_price, double interest_rate );
-double stockPrice (string currency, int older_price, double interest_rate );</program>
+      <program>int stockPrice(string currency, int previous_price, double interest_rate );
+double stockPrice(string currency, int older_price, double interest_rate );</program>
     </statement>
     <choices>
       <choice>

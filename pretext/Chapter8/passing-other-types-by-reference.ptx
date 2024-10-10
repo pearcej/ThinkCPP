@@ -69,7 +69,7 @@ void add (int&amp; z, int q) {
   z = z + y;
 }
 
-int multiply (int a, int b) {
+int multiply(int a, int b) {
   int total = a * b;
   return total;
 }

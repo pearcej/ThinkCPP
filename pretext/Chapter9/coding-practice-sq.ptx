@@ -47,10 +47,10 @@ int main() {
         <blocks>
           <block order="7">
             <choice correct="yes">
-              <cline>void printCakeInfo (Cake c) {</cline>
+              <cline>void printCakeInfo(Cake c) {</cline>
             </choice>
             <choice>
-              <cline>string printCakeInfo (Cake c) { </cline>
+              <cline>string printCakeInfo(Cake c) { </cline>
             </choice>
           </block>
           <block order="1">
@@ -110,8 +110,8 @@ struct Cake {
     bool has_icing;
 };
 
-void printCakeInfo (Cake c);
-Cake makeCake ();
+void printCakeInfo(Cake c);
+Cake makeCake();
 
 // Write your code for the changeCakeDiameter function here.
 
@@ -122,7 +122,7 @@ int main() {
 }
         ]]></input>
           <tests>
-void printCakeInfo (Cake c) {
+void printCakeInfo(Cake c) {
     if (c.name == "n/a") {
         if (c.has_icing) {
             cout &lt;&lt; "This is a " &lt;&lt; c.color &lt;&lt; "," &lt;&lt; c.diameter &lt;&lt; " inch diameter cake with icing." &lt;&lt; endl;
@@ -141,7 +141,7 @@ void printCakeInfo (Cake c) {
     }
 }
 
-Cake makeCake () {
+Cake makeCake() {
     Cake input;
     string name, color;
     double diameter;
@@ -179,14 +179,14 @@ Cake makeCake () {
         <blocks>
           <block order="1">
             <choice correct="yes">
-              <cline>void changeCakeDiameter (Cake &amp;c, double scale) {</cline>
+              <cline>void changeCakeDiameter(Cake &amp;c, double scale) {</cline>
             </choice>
             <choice>
-              <cline>void changeCakeDiameter (Cake c, double scale) { </cline>
+              <cline>void changeCakeDiameter(Cake c, double scale) { </cline>
             </choice>
           </block>
           <block order="3">
-            <cline>string changeCakeDiameter (Cake c, double scale) { </cline>
+            <cline>string changeCakeDiameter(Cake c, double scale) { </cline>
           </block>
           <block order="5">
             <cline>    c.diameter *= scale;</cline>
@@ -354,16 +354,16 @@ int main() {
     Shirt t = { "blue", 'L' };
     Pants p = { 'S', "denim" };
     Outfit o = { t, p, true };
-    printOutfit (o);
+    printOutfit(o);
     Shirt newShirt = { "red", 'M' };
     Pants newPants = { 'M', "khakis" };
     changeShirts (o, newShirt);
     changePants (o, newPants);
-    printOutfit (o);
+    printOutfit(o);
 }
         ]]></input>
           <tests>
-void printOutfit (Outfit o) {
+void printOutfit(Outfit o) {
     cout &lt;&lt; "Shirt: " &lt;&lt; o.s.color &lt;&lt; " and " &lt;&lt; o.s.size &lt;&lt; "; Pants: " &lt;&lt; o.p.size &lt;&lt; " and " &lt;&lt; o.p.material &lt;&lt; "; ";
     if (o.has_hat) {
         cout &lt;&lt; "has hat" &lt;&lt; endl;
@@ -386,7 +386,7 @@ void printOutfit (Outfit o) {
         <blocks>
           <block order="2">
             <cline>// changeShirts function</cline>
-            <cline>void changeShirts (Outfit &amp;outfit, Shirt shirt) {</cline>
+            <cline>void changeShirts(Outfit &amp;outfit, Shirt shirt) {</cline>
           </block>
           <block order="6">
             <cline>    outfit.s = shirt;</cline>
@@ -396,7 +396,7 @@ void printOutfit (Outfit o) {
           </block>
           <block order="1">
             <cline>// changePants function</cline>
-            <cline>void changePants (Outfit &amp;outfit, Pants p) {</cline>
+            <cline>void changePants(Outfit &amp;outfit, Pants p) {</cline>
           </block>
           <block order="4">
             <cline>    outfit.p = pants;</cline>

@@ -182,10 +182,10 @@
     </statement>
     <blocks>
       <block order="2">
-        <cline>Deck Deck::mergeSort () const {</cline>
+        <cline>Deck Deck::mergeSort() const {</cline>
       </block>
       <block order="3" correct="no">
-        <cline>Deck::mergeSort () const {  </cline>
+        <cline>Deck::mergeSort() const {  </cline>
       </block>
       <block order="4">
         <cline>   find the midpoint of the deck</cline>
@@ -260,7 +260,7 @@
     <blocks>
       <block order="1">
         <choice correct="yes">
-          <cline>int Dictionary::find (string word) {</cline>
+          <cline>int Dictionary::find(string word) {</cline>
         </choice>
         <choice>
           <cline>int Dictionary::find (Entry word) {  </cline>
@@ -309,10 +309,10 @@
     <blocks>
       <block order="6">
         <choice correct="yes">
-          <cline>int Dictionary::findFirstWord (int start) {</cline>
+          <cline>int Dictionary::findFirstWord(int start) {</cline>
         </choice>
         <choice>
-          <cline>int Dictionary::findFirstWord (string word) {  </cline>
+          <cline>int Dictionary::findFirstWord(string word) {  </cline>
         </choice>
       </block>
       <block order="12">
@@ -357,10 +357,10 @@
     <blocks>
       <block order="2">
         <choice correct="yes">
-          <cline>void Dictionary::swap (int a, int b) {</cline>
+          <cline>void Dictionary::swap(int a, int b) {</cline>
         </choice>
         <choice>
-          <cline>void Dictionary::swap () {  </cline>
+          <cline>void Dictionary::swap() {  </cline>
         </choice>
       </block>
       <block order="1">
@@ -387,10 +387,10 @@
     <blocks>
       <block order="1">
         <choice correct="yes">
-          <cline>void Dictionary::alphabetize () {</cline>
+          <cline>void Dictionary::alphabetize() {</cline>
         </choice>
         <choice>
-          <cline>int Dictionary::alphabetize () {  </cline>
+          <cline>int Dictionary::alphabetize() {  </cline>
         </choice>
       </block>
       <block order="4">
@@ -428,7 +428,7 @@
     </statement>
     <blocks>
       <block order="2">
-        <cline>void Dictionary::printDictionary () {</cline>
+        <cline>void Dictionary::printDictionary() {</cline>
       </block>
       <block order="1">
         <cline><![CDATA[   for (size_t i = 0; i < entries.size(); ++i) {]]></cline>

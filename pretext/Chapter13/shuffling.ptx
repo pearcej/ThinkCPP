@@ -99,7 +99,7 @@ enum Suit { CLUBS, DIAMONDS, HEARTS, SPADES };
 enum Rank { ACE=1, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE,
 TEN, JACK, QUEEN, KING };
 
-int randomInt (int low, int high) {
+int randomInt(int low, int high) {
     // ``randomInt`` should choose a random integer between
     // the low and high parameters and return an integer.
     // Delete the return 0 and write your implementation here.
@@ -109,25 +109,25 @@ int randomInt (int low, int high) {
 struct Card {
     Rank rank;
     Suit suit;
-    Card ();
-    Card (Suit s, Rank r);
-    void print () const;
+    Card();
+    Card(Suit s, Rank r);
+    void print() const;
 };
 
 struct Deck {
     vector<Card> cards;
-    Deck ();
-    void print () const;
-    void swapCards (int index1, int index2);
-    void shuffleDeck ();
+    Deck();
+    void print() const;
+    void swapCards(int index1, int index2);
+    void shuffleDeck();
 };
 
-void Deck::swapCards (int index1, int index2) {
+void Deck::swapCards(int index1, int index2) {
     // ``swapCards`` should take two indices and switch the cards
     // at the indicated positions. Write your implementation here.
 }
 
-void Deck::shuffleDeck () {
+void Deck::shuffleDeck() {
     // Follow the pseudocode from above and use ``randomInt`` and
     // ``swapCards`` to write the ``shuffle`` member function.
     // Write your implementation here.
@@ -135,21 +135,21 @@ void Deck::shuffleDeck () {
 
 int main() {
     Deck deck;
-    deck.shuffleDeck ();
-    deck.print ();
+    deck.shuffleDeck();
+    deck.print();
 }
 
         ]]></input>
       <tests>
-Card::Card () {
+Card::Card() {
     suit = SPADES;  rank = ACE;
 }
 
-Card::Card (Suit s, Rank r) {
+Card::Card(Suit s, Rank r) {
     suit = s;  rank = r;
 }
 
-void Card::print () const {
+void Card::print() const {
     vector&lt;string&gt; suits (4);
     suits[0] = "Clubs";
     suits[1] = "Diamonds";
@@ -174,7 +174,7 @@ void Card::print () const {
     cout &lt;&lt; ranks[rank] &lt;&lt; " of " &lt;&lt; suits[suit] &lt;&lt; endl;
 }
 
-Deck::Deck () {
+Deck::Deck() {
     vector&lt;Card&gt; temp (52);
     cards = temp;
 
@@ -188,9 +188,9 @@ Deck::Deck () {
     }
 }
 
-void Deck::print () const {
+void Deck::print() const {
     for (size_t i = 0; i &lt; cards.size(); i++) {
-        cards[i].print ();
+        cards[i].print();
     }
 }
 </tests>
@@ -205,14 +205,14 @@ void Deck::print () const {
       <blocks>
         <block order="3">
           <choice correct="yes">
-            <cline>int randomInt (int low, int high) {</cline>
+            <cline>int randomInt(int low, int high) {</cline>
           </choice>
           <choice>
-            <cline>int randomInt () {                         </cline>
+            <cline>int randomInt() {                         </cline>
           </choice>
         </block>
         <block order="7">
-          <cline> int x = random ();</cline>
+          <cline> int x = random();</cline>
         </block>
         <block order="5">
           <choice correct="yes">
@@ -244,10 +244,10 @@ void Deck::print () const {
       <blocks>
         <block order="1">
           <choice correct="yes">
-            <cline>void Deck::swapCards (int index1, int index2) {</cline>
+            <cline>void Deck::swapCards(int index1, int index2) {</cline>
           </choice>
           <choice>
-            <cline>void Card::swapCards (int index1, int index2) {                         </cline>
+            <cline>void Card::swapCards(int index1, int index2) {                         </cline>
           </choice>
         </block>
         <block order="5">
@@ -277,10 +277,10 @@ void Deck::print () const {
       <blocks>
         <block order="2">
           <choice correct="yes">
-            <cline>void Deck::shuffleDeck () {</cline>
+            <cline>void Deck::shuffleDeck() {</cline>
           </choice>
           <choice>
-            <cline>Deck Deck::shuffleDeck (Deck deck) {                         </cline>
+            <cline>Deck Deck::shuffleDeck(Deck deck) {                         </cline>
           </choice>
         </block>
         <block order="6">

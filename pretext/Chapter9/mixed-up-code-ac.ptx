@@ -78,7 +78,7 @@ struct Movie {
     int releaseYear;
 };
 
-void printMovie (const Movie& m) {
+void printMovie(const Movie& m) {
     cout << "\"" << m.title << "\" directed by ";
     cout << m.director << " (" << m.releaseYear << ")" << endl;
 }
@@ -96,7 +96,7 @@ struct Movie {
     int releaseYear;
 };
 
-void printMovie (const Movie& m) {
+void printMovie(const Movie& m) {
     cout << "\"" << m.title << "\" directed by ";
     cout << m.director << " (" << m.releaseYear << ")" << endl;
 }
@@ -133,7 +133,7 @@ struct Movie {
     int releaseYear;
 };
 
-int movieAge (const Movie& m, int currentYear) {
+int movieAge(const Movie& m, int currentYear) {
     return currentYear - m.releaseYear;
 }
         ]]></input></program>
@@ -150,7 +150,7 @@ struct Movie {
     int releaseYear;
 };
 
-int movieAge (const Movie& m, int currentYear) {
+int movieAge(const Movie& m, int currentYear) {
     return currentYear - m.releaseYear;
 }
         ]]></input></program></exercise>
@@ -231,7 +231,7 @@ struct Date {
     int year;
 };
 
-void printDate (const Date& d) {
+void printDate(const Date& d) {
     cout << d.month << "/" << d.day << "/" << d.year << endl;
 }
         ]]></input></program>
@@ -248,7 +248,7 @@ struct Date {
     int year;
 };
 
-void printDate (const Date& d) {
+void printDate(const Date& d) {
     cout << d.month << "/" << d.day << "/" << d.year << endl;
 }
         ]]></input></program></exercise>
@@ -396,7 +396,7 @@ struct Length {
     int yards;
 };
 
-void printLength (const Length& l) {
+void printLength(const Length& l) {
     cout << l.yards << " yds, " << l.feet << " feet, " << l.inches << " in" << endl;
 }
         ]]></input></program>
@@ -413,7 +413,7 @@ struct Length {
     int yards;
 };
 
-void printLength (const Length& l) {
+void printLength(const Length& l) {
     cout << l.yards << " yds, " << l.feet << " feet, " << l.inches << " in" << endl;
 }
         ]]></input></program></exercise>
@@ -505,7 +505,7 @@ struct Length {
     int yards;
 };
 
-void addLengths (const Length& first, const Length& second, Length& total) {
+void addLengths(const Length& first, const Length& second, Length& total) {
     total.inches = first.inches + second.inches;
     total.feet = first.feet + second.feet;
     total.yards = first.yards + second.yards;
@@ -534,7 +534,7 @@ struct Length {
     int yards;
 };
 
-void addLengths (const Length& first, const Length& second, Length& total) {
+void addLengths(const Length& first, const Length& second, Length& total) {
     total.inches = first.inches + second.inches;
     total.feet = first.feet + second.feet;
     total.yards = first.yards + second.yards;

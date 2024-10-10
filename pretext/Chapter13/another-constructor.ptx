@@ -5,7 +5,7 @@
             cards in it. From the previous chapter we have a function called
             <c>buildDeck</c> that we could use (with a few adaptations), but it might
             be more natural to write a second <c>Deck</c> constructor.</p>
-  <program>Deck::Deck () {
+  <program>Deck::Deck() {
   vector&lt;Card&gt; temp (52);
   cards = temp;
 
@@ -40,14 +40,14 @@ TEN, JACK, QUEEN, KING };
 struct Card {
     Rank rank;
     Suit suit;
-    Card ();
-    Card (Suit s, Rank r);
-    void print () const;
+    Card();
+    Card(Suit s, Rank r);
+    void print() const;
 };
 
 struct Deck {
     vector<Card> cards;
-    Deck ();
+    Deck();
 };
 
 int main() {
@@ -59,15 +59,15 @@ int main() {
 
         ]]></input>
       <tests>
-Card::Card () {
+Card::Card() {
     suit = SPADES;  rank = ACE;
 }
 
-Card::Card (Suit s, Rank r) {
+Card::Card(Suit s, Rank r) {
     suit = s;  rank = r;
 }
 
-void Card::print () const {
+void Card::print() const {
     vector&lt;string&gt; suits (4);
     suits[0] = "Clubs";
     suits[1] = "Diamonds";
@@ -92,7 +92,7 @@ void Card::print () const {
     cout &lt;&lt; ranks[rank] &lt;&lt; " of " &lt;&lt; suits[suit] &lt;&lt; endl;
 }
 
-Deck::Deck () {
+Deck::Deck() {
     vector&lt;Card&gt; temp (52);
     cards = temp;
 
@@ -156,7 +156,7 @@ Deck::Deck () {
     </statement>
     <blocks>
       <block order="2">
-        <cline>Deck::Deck () {</cline>
+        <cline>Deck::Deck() {</cline>
       </block>
       <block order="4">
         <choice correct="yes">

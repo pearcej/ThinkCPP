@@ -16,28 +16,28 @@ private:
   double mag, theta;
   bool cartesian, polar;
 
-  void calculateCartesian ();
-  void calculatePolar ();
+  void calculateCartesian();
+  void calculatePolar();
 
 public:
-  Complex () { cartesian = false;  polar = false; }
+  Complex() { cartesian = false;  polar = false; }
 
-  Complex (double r, double i)
+  Complex(double r, double i)
   {
     real = r;  imag = i;
     cartesian = true;  polar = false;
   }
 
-  void printCartesian ();
-  void printPolar ();
+  void printCartesian();
+  void printPolar();
 
-  double getReal ();
-  double getImag ();
-  double getMag ();
-  double getTheta ();
+  double getReal();
+  double getImag();
+  double getMag();
+  double getTheta();
 
-  void setCartesian (double r, double i);
-  void setPolar (double m, double t);
+  void setCartesian(double r, double i);
+  void setPolar(double m, double t);
 };</program>
   <p>The <c>private</c> label at the beginning is not necessary, but it is a
             useful reminder.</p>
@@ -59,20 +59,20 @@ class Complex
   double real, imag;
   double mag, theta;
   bool cartesian, polar;
-  void calculateCartesian ();
-  void calculatePolar ();
+  void calculateCartesian();
+  void calculatePolar();
 
 public:
-  Complex ();
-  Complex (double r, double i);
-  double getReal ();
-  double getImag ();
-  double getMag ();
-  double getTheta ();
-  void printCartesian ();
-  void printPolar ();
-  void setPolar (double m, double t);
-  void setCartesian (double r, double i);
+  Complex();
+  Complex(double r, double i);
+  double getReal();
+  double getImag();
+  double getMag();
+  double getTheta();
+  void printCartesian();
+  void printPolar();
+  void setPolar(double m, double t);
+  void setCartesian(double r, double i);
 };
 
 Complex add (Complex& a, Complex& b);
@@ -88,14 +88,14 @@ int main() {
 }
         ]]></input>
       <tests>
-Complex::Complex () { cartesian = false;  polar = false; }
+Complex::Complex() { cartesian = false;  polar = false; }
 
-Complex::Complex (double r, double i) {
+Complex::Complex(double r, double i) {
   real = r;  imag = i;
   cartesian = true;  polar = false;
 }
 
-void Complex::calculateCartesian () {
+void Complex::calculateCartesian() {
   assert (polar);
   real = mag * cos (theta);
   imag = mag * sin (theta);
@@ -103,41 +103,41 @@ void Complex::calculateCartesian () {
   assert (polar &amp;&amp; cartesian);
 }
 
-double Complex::getReal () {
-  if (cartesian == false) calculateCartesian ();
+double Complex::getReal() {
+  if (cartesian == false) calculateCartesian();
   return real;
 }
 
-double Complex::getImag () {
-  if (cartesian == false) calculateCartesian ();
+double Complex::getImag() {
+  if (cartesian == false) calculateCartesian();
   return imag;
 }
 
-void Complex::calculatePolar () {
+void Complex::calculatePolar() {
   mag = sqrt(pow(real, 2) + pow(imag, 2));
   theta = atan(imag / real);
   polar = true;
 }
 
-double Complex::getMag () {
+double Complex::getMag() {
   if (polar == false) {
-    calculatePolar ();
+    calculatePolar();
   }
   return mag;
 }
 
-double Complex::getTheta () {
+double Complex::getTheta() {
   if (polar == false) {
-    calculatePolar ();
+    calculatePolar();
   }
   return theta;
 }
 
-void Complex::printCartesian () {
+void Complex::printCartesian() {
   cout &lt;&lt; getReal() &lt;&lt; " + " &lt;&lt; getImag() &lt;&lt; "i" &lt;&lt; endl;
 }
 
-void Complex::printPolar () {
+void Complex::printPolar() {
   cout &lt;&lt; getMag() &lt;&lt; " e^ " &lt;&lt; getTheta() &lt;&lt; "i" &lt;&lt; endl;
 }
 
@@ -155,7 +155,7 @@ Complex subtract (Complex&amp; a, Complex&amp; b) {
   return diff;
 }
 
-void Complex::setPolar (double m, double t) {
+void Complex::setPolar(double m, double t) {
   mag = m;  theta = t;
   cartesian = false;  polar = true;
 }
@@ -168,7 +168,7 @@ Complex mult (Complex&amp; a, Complex&amp; b) {
   return product;
 }
 
-void Complex::setCartesian (double r, double i) {
+void Complex::setCartesian(double r, double i) {
   real = r;    imag = i;
   cartesian = true;  polar = false;
 }

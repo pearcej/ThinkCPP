@@ -56,9 +56,9 @@ using namespace std;
 struct Card {
     int suit, rank;
 
-    Card ();
-    Card (int s, int r);
-    void print () const;
+    Card();
+    Card(int s, int r);
+    void print() const;
 };
 
 vector<Card> buildDeck() {
@@ -84,15 +84,15 @@ int main() {
         ]]></input>
       <tests>
 
-Card::Card () {
+Card::Card() {
    suit = 0;  rank = 0;
 }
 
-Card::Card (int s, int r) {
+Card::Card(int s, int r) {
    suit = s;  rank = r;
 }
 
-void Card::print () const {
+void Card::print() const {
    vector&lt;string&gt; suits (4);
    suits[0] = "Clubs";
    suits[1] = "Diamonds";

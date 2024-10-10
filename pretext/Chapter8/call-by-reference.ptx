@@ -7,7 +7,7 @@
   <p>For example, you can reflect a point around the 45-degree line by
             swapping the two coordinates. The most obvious (but incorrect) way to
             write a <c>reflect</c> function is something like this:</p>
-  <program>void reflect (Point p) {      // WRONG !!
+  <program>void reflect(Point p) {      // WRONG !!
   double temp = p.x;
   p.x = p.y;
   p.y = temp;
@@ -46,7 +46,7 @@ void reflect (Point& p) {
     p.y = temp;
 }
 
-void printPoint (Point p) {
+void printPoint(Point p) {
     cout << "(" << p.x << ", " << p.y << ")" << endl;
 }
 

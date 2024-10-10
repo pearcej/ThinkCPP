@@ -640,7 +640,7 @@ int main() {
   <exercise label="functions_mc10">
     <statement>
       <p>How many local variables and parameters does <c>mult</c> have?</p>
-      <program>void mult (int a, int b, int c) {
+      <program>void mult(int a, int b, int c) {
     int d = 7;
     cout &lt;&lt; a * b * c * d;
 }</program>

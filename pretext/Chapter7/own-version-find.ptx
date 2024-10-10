@@ -6,7 +6,7 @@
             function is to write a version that takes an additional parameter&#x2014;the
             index where we should start looking. Here is an implementation of this
             function.</p>
-  <program>size_t find (string s, char c, size_t i) {
+  <program>size_t find(string s, char c, size_t i) {
   while (i &lt; s.length()) {
     if (s[i] == c) return i;
     i = i + 1;
@@ -28,7 +28,7 @@
 #include <iostream>
 using namespace std;
 
-size_t find (string s, char c, size_t i) {
+size_t find(string s, char c, size_t i) {
     size_t length = s.length();
     while (i < length) {
         if (s[i] == c) {

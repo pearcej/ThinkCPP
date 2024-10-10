@@ -73,7 +73,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void multiply (int x, int y) {
+void multiply(int x, int y) {
   cout << x * y << endl;
 }
 

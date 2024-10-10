@@ -109,10 +109,10 @@
     <blocks>
       <block order="8">
         <choice correct="yes">
-          <cline>void longerString (string first, string second) {</cline>
+          <cline>void longerString(string first, string second) {</cline>
         </choice>
         <choice>
-          <cline>string longerString (string first, string second) {  </cline>
+          <cline>string longerString(string first, string second) {  </cline>
         </choice>
       </block>
       <block order="15">
@@ -170,10 +170,10 @@
     <blocks>
       <block order="9">
         <choice correct="yes">
-          <cline>void cipherText (string input) {</cline>
+          <cline>void cipherText(string input) {</cline>
         </choice>
         <choice>
-          <cline>string cipherText (string input) {  </cline>
+          <cline>string cipherText(string input) {  </cline>
         </choice>
       </block>
       <block order="11">
@@ -375,10 +375,10 @@
     <blocks>
       <block order="3">
         <choice correct="yes">
-          <cline>string censorE (string input) {</cline>
+          <cline>string censorE(string input) {</cline>
         </choice>
         <choice>
-          <cline>void censorE (string input) {  </cline>
+          <cline>void censorE(string input) {  </cline>
         </choice>
       </block>
       <block order="4" correct="no">
@@ -440,10 +440,10 @@
     <blocks>
       <block order="3">
         <choice correct="yes">
-          <cline>string censorLetter (string input, char letter) {</cline>
+          <cline>string censorLetter(string input, char letter) {</cline>
         </choice>
         <choice>
-          <cline>string censorLetter (string input) {  </cline>
+          <cline>string censorLetter(string input) {  </cline>
         </choice>
       </block>
       <block order="6">
@@ -503,10 +503,10 @@
     <blocks>
       <block order="2">
         <choice correct="yes">
-          <cline>string alphaCombine (string first, string second) {</cline>
+          <cline>string alphaCombine(string first, string second) {</cline>
         </choice>
         <choice>
-          <cline>void alphaCombine (string first, string second) {  </cline>
+          <cline>void alphaCombine(string first, string second) {  </cline>
         </choice>
       </block>
       <block order="3">

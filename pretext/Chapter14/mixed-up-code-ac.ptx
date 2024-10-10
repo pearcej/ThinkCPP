@@ -33,8 +33,8 @@ class Circle {
     private:
         double radius;
     public:
-        Circle (double r) { radius = r; }
-        double calculateArea () { return 3.14 * radius * radius; }
+        Circle(double r) { radius = r; }
+        double calculateArea() { return 3.14 * radius * radius; }
 };
         ]]></input></program>
 
@@ -48,8 +48,8 @@ class Circle {
     private:
         double radius;
     public:
-        Circle (double r) { radius = r; }
-        double calculateArea () { return 3.14 * radius * radius; }
+        Circle(double r) { radius = r; }
+        double calculateArea() { return 3.14 * radius * radius; }
 };
         ]]></input></program></exercise>
             </solution>
@@ -84,12 +84,12 @@ class Circle {
     private:
         double radius;
     public:
-        Circle (double r) { radius = r; }
-        double calculateArea () { return 3.14 * radius * radius; }
-        double getRadius () {
+        Circle(double r) { radius = r; }
+        double calculateArea() { return 3.14 * radius * radius; }
+        double getRadius() {
             return radius;
         }
-        void setRadius (double r) {
+        void setRadius(double r) {
             if (r < 0) { cout << "Error! Cannot have a negative radius!" << endl; }
             else { radius = r; }
         }
@@ -106,12 +106,12 @@ class Circle {
     private:
         double radius;
     public:
-        Circle (double r) { radius = r; }
-        double calculateArea () { return 3.14 * radius * radius; }
-        double getRadius () {
+        Circle(double r) { radius = r; }
+        double calculateArea() { return 3.14 * radius * radius; }
+        double getRadius() {
             return radius;
         }
-        void setRadius (double r) {
+        void setRadius(double r) {
             if (r < 0) { cout << "Error! Cannot have a negative radius!" << endl; }
             else { radius = r; }
         }
@@ -146,12 +146,12 @@ class Circle {
     private:
         double radius;
     public:
-        Circle (double r) { radius = r; }
-        double calculateArea () { return 3.14 * radius * radius; }
-        double getRadius () {
+        Circle(double r) { radius = r; }
+        double calculateArea() { return 3.14 * radius * radius; }
+        double getRadius() {
             return radius;
         }
-        void setRadius (double r) {
+        void setRadius(double r) {
             if (r < 0) { cout << "Error! Cannot have a negative radius!" << endl; }
             else { radius = r; }
         }
@@ -159,9 +159,9 @@ class Circle {
 
 int main() {
     Circle c(2.4);
-    cout << "Radius: " << c.getRadius () << endl;
+    cout << "Radius: " << c.getRadius() << endl;
     c.setRadius (3.6);
-    cout << "New radius: " << c.getRadius () << endl;
+    cout << "New radius: " << c.getRadius() << endl;
 }
         ]]></input></program>
 
@@ -175,12 +175,12 @@ class Circle {
     private:
         double radius;
     public:
-        Circle (double r) { radius = r; }
-        double calculateArea () { return 3.14 * radius * radius; }
-        double getRadius () {
+        Circle(double r) { radius = r; }
+        double calculateArea() { return 3.14 * radius * radius; }
+        double getRadius() {
             return radius;
         }
-        void setRadius (double r) {
+        void setRadius(double r) {
             if (r < 0) { cout << "Error! Cannot have a negative radius!" << endl; }
             else { radius = r; }
         }
@@ -188,9 +188,9 @@ class Circle {
 
 int main() {
     Circle c(2.4);
-    cout << "Radius: " << c.getRadius () << endl;
+    cout << "Radius: " << c.getRadius() << endl;
     c.setRadius (3.6);
-    cout << "New radius: " << c.getRadius () << endl;
+    cout << "New radius: " << c.getRadius() << endl;
 }
         ]]></input></program></exercise>
             </solution>
@@ -226,12 +226,12 @@ class Point {
     private:
         double x, y;
     public:
-        Point () { x = 0; y = 0; }
-        Point (double xVal, double yVal) { x = xVal; y = yVal; }
-        double getX () { return x; }
-        double getY () { return y; }
-        void setX (double xVal) { x = xVal; }
-        void setY (double yVal) { y = yVal; }
+        Point() { x = 0; y = 0; }
+        Point(double xVal, double yVal) { x = xVal; y = yVal; }
+        double getX() { return x; }
+        double getY() { return y; }
+        void setX(double xVal) { x = xVal; }
+        void setY(double yVal) { y = yVal; }
 };
         ]]></input></program>
 
@@ -245,12 +245,12 @@ class Point {
     private:
         double x, y;
     public:
-        Point () { x = 0; y = 0; }
-        Point (double xVal, double yVal) { x = xVal; y = yVal; }
-        double getX () { return x; }
-        double getY () { return y; }
-        void setX (double xVal) { x = xVal; }
-        void setY (double yVal) { y = yVal; }
+        Point() { x = 0; y = 0; }
+        Point(double xVal, double yVal) { x = xVal; y = yVal; }
+        double getX() { return x; }
+        double getY() { return y; }
+        void setX(double xVal) { x = xVal; }
+        void setY(double yVal) { y = yVal; }
 };
         ]]></input></program></exercise>
             </solution>
@@ -287,12 +287,12 @@ class Point {
     private:
         double x, y;
     public:
-        Point () { x = 0; y = 0; }
-        Point (double xVal, double yVal) { x = xVal; y = yVal; }
-        double getX () { return x; }
-        double getY () { return y; }
-        void setX (double xVal) { x = xVal; }
-        void setY (double yVal) { y = yVal; }
+        Point() { x = 0; y = 0; }
+        Point(double xVal, double yVal) { x = xVal; y = yVal; }
+        double getX() { return x; }
+        double getY() { return y; }
+        void setX(double xVal) { x = xVal; }
+        void setY(double yVal) { y = yVal; }
 };
 
 class Rectangle {
@@ -300,11 +300,11 @@ class Rectangle {
         Point upperLeft, lowerRight;
     public:
         double length, height;
-        Rectangle (Point upLeft, Point lowRight) { upperLeft = upLeft; lowerRight = lowRight; }
-        Point getUpperLeft () { return upperLeft; }
-        Point getLowerRight () { return lowerRight; }
-        void setUpperLeft (Point p) { upperLeft = p; }
-        void setLowerRight (Point p) { lowerRight = p; }
+        Rectangle(Point upLeft, Point lowRight) { upperLeft = upLeft; lowerRight = lowRight; }
+        Point getUpperLeft() { return upperLeft; }
+        Point getLowerRight() { return lowerRight; }
+        void setUpperLeft(Point p) { upperLeft = p; }
+        void setLowerRight(Point p) { lowerRight = p; }
 };
         ]]></input></program>
 
@@ -318,12 +318,12 @@ class Point {
     private:
         double x, y;
     public:
-        Point () { x = 0; y = 0; }
-        Point (double xVal, double yVal) { x = xVal; y = yVal; }
-        double getX () { return x; }
-        double getY () { return y; }
-        void setX (double xVal) { x = xVal; }
-        void setY (double yVal) { y = yVal; }
+        Point() { x = 0; y = 0; }
+        Point(double xVal, double yVal) { x = xVal; y = yVal; }
+        double getX() { return x; }
+        double getY() { return y; }
+        void setX(double xVal) { x = xVal; }
+        void setY(double yVal) { y = yVal; }
 };
 
 class Rectangle {
@@ -331,11 +331,11 @@ class Rectangle {
         Point upperLeft, lowerRight;
     public:
         double length, height;
-        Rectangle (Point upLeft, Point lowRight) { upperLeft = upLeft; lowerRight = lowRight; }
-        Point getUpperLeft () { return upperLeft; }
-        Point getLowerRight () { return lowerRight; }
-        void setUpperLeft (Point p) { upperLeft = p; }
-        void setLowerRight (Point p) { lowerRight = p; }
+        Rectangle(Point upLeft, Point lowRight) { upperLeft = upLeft; lowerRight = lowRight; }
+        Point getUpperLeft() { return upperLeft; }
+        Point getLowerRight() { return lowerRight; }
+        void setUpperLeft(Point p) { upperLeft = p; }
+        void setLowerRight(Point p) { lowerRight = p; }
 };
         ]]></input></program></exercise>
             </solution>
@@ -369,12 +369,12 @@ class Point {
     private:
         double x, y;
     public:
-        Point () { x = 0; y = 0; }
-        Point (double xVal, double yVal) { x = xVal; y = yVal; }
-        double getX () { return x; }
-        double getY () { return y; }
-        void setX (double xVal) { x = xVal; }
-        void setY (double yVal) { y = yVal; }
+        Point() { x = 0; y = 0; }
+        Point(double xVal, double yVal) { x = xVal; y = yVal; }
+        double getX() { return x; }
+        double getY() { return y; }
+        void setX(double xVal) { x = xVal; }
+        void setY(double yVal) { y = yVal; }
 };
 
 class Rectangle {
@@ -382,21 +382,21 @@ class Rectangle {
         Point upperLeft, lowerRight;
     public:
         double length, height;
-        Rectangle (Point upLeft, Point lowRight) { upperLeft = upLeft; lowerRight = lowRight; }
-        Point getUpperLeft () { return upperLeft; }
-        Point getLowerRight () { return lowerRight; }
-        void setUpperLeft (Point p) { upperLeft = p; }
-        void setLowerRight (Point p) { lowerRight = p; }
+        Rectangle(Point upLeft, Point lowRight) { upperLeft = upLeft; lowerRight = lowRight; }
+        Point getUpperLeft() { return upperLeft; }
+        Point getLowerRight() { return lowerRight; }
+        void setUpperLeft(Point p) { upperLeft = p; }
+        void setLowerRight(Point p) { lowerRight = p; }
 };
 
-void Rectangle::calculateSides () {
+void Rectangle::calculateSides() {
 
-double Rectangle::calculateSides () {
+double Rectangle::calculateSides() {
     length = getLowerRight().getX() - getUpperLeft().getX();
     height = getUpperLeft().getY() - getLowerRight().getY();
 }
 
-double Rectangle::calculateArea () {
+double Rectangle::calculateArea() {
     return length * height;
 }
         ]]></input></program>
@@ -411,12 +411,12 @@ class Point {
     private:
         double x, y;
     public:
-        Point () { x = 0; y = 0; }
-        Point (double xVal, double yVal) { x = xVal; y = yVal; }
-        double getX () { return x; }
-        double getY () { return y; }
-        void setX (double xVal) { x = xVal; }
-        void setY (double yVal) { y = yVal; }
+        Point() { x = 0; y = 0; }
+        Point(double xVal, double yVal) { x = xVal; y = yVal; }
+        double getX() { return x; }
+        double getY() { return y; }
+        void setX(double xVal) { x = xVal; }
+        void setY(double yVal) { y = yVal; }
 };
 
 class Rectangle {
@@ -424,21 +424,21 @@ class Rectangle {
         Point upperLeft, lowerRight;
     public:
         double length, height;
-        Rectangle (Point upLeft, Point lowRight) { upperLeft = upLeft; lowerRight = lowRight; }
-        Point getUpperLeft () { return upperLeft; }
-        Point getLowerRight () { return lowerRight; }
-        void setUpperLeft (Point p) { upperLeft = p; }
-        void setLowerRight (Point p) { lowerRight = p; }
+        Rectangle(Point upLeft, Point lowRight) { upperLeft = upLeft; lowerRight = lowRight; }
+        Point getUpperLeft() { return upperLeft; }
+        Point getLowerRight() { return lowerRight; }
+        void setUpperLeft(Point p) { upperLeft = p; }
+        void setLowerRight(Point p) { lowerRight = p; }
 };
 
-void Rectangle::calculateSides () {
+void Rectangle::calculateSides() {
 
-double Rectangle::calculateSides () {
+double Rectangle::calculateSides() {
     length = getLowerRight().getX() - getUpperLeft().getX();
     height = getUpperLeft().getY() - getLowerRight().getY();
 }
 
-double Rectangle::calculateArea () {
+double Rectangle::calculateArea() {
     return length * height;
 }
         ]]></input></program></exercise>
@@ -473,12 +473,12 @@ class Point {
     private:
         double x, y;
     public:
-        Point () { x = 0; y = 0; }
-        Point (double xVal, double yVal) { x = xVal; y = yVal; }
-        double getX () { return x; }
-        double getY () { return y; }
-        void setX (double xVal) { x = xVal; }
-        void setY (double yVal) { y = yVal; }
+        Point() { x = 0; y = 0; }
+        Point(double xVal, double yVal) { x = xVal; y = yVal; }
+        double getX() { return x; }
+        double getY() { return y; }
+        void setX(double xVal) { x = xVal; }
+        void setY(double yVal) { y = yVal; }
 };
 
 class Rectangle {
@@ -486,21 +486,21 @@ class Rectangle {
         Point upperLeft, lowerRight;
     public:
         double length, height;
-        Rectangle (Point upLeft, Point lowRight) { upperLeft = upLeft; lowerRight = lowRight; }
-        Point getUpperLeft () { return upperLeft; }
-        Point getLowerRight () { return lowerRight; }
-        void setUpperLeft (Point p) { upperLeft = p; }
-        void setLowerRight (Point p) { lowerRight = p; }
+        Rectangle(Point upLeft, Point lowRight) { upperLeft = upLeft; lowerRight = lowRight; }
+        Point getUpperLeft() { return upperLeft; }
+        Point getLowerRight() { return lowerRight; }
+        void setUpperLeft(Point p) { upperLeft = p; }
+        void setLowerRight(Point p) { lowerRight = p; }
 };
 
-void Rectangle::calculateSides () {
+void Rectangle::calculateSides() {
 
-double Rectangle::calculateSides () {
+double Rectangle::calculateSides() {
     length = getLowerRight().getX() - getUpperLeft().getX();
     height = getUpperLeft().getY() - getLowerRight().getY();
 }
 
-double Rectangle::calculateArea () {
+double Rectangle::calculateArea() {
     return length * height;
 }
 
@@ -528,12 +528,12 @@ class Point {
     private:
         double x, y;
     public:
-        Point () { x = 0; y = 0; }
-        Point (double xVal, double yVal) { x = xVal; y = yVal; }
-        double getX () { return x; }
-        double getY () { return y; }
-        void setX (double xVal) { x = xVal; }
-        void setY (double yVal) { y = yVal; }
+        Point() { x = 0; y = 0; }
+        Point(double xVal, double yVal) { x = xVal; y = yVal; }
+        double getX() { return x; }
+        double getY() { return y; }
+        void setX(double xVal) { x = xVal; }
+        void setY(double yVal) { y = yVal; }
 };
 
 class Rectangle {
@@ -541,21 +541,21 @@ class Rectangle {
         Point upperLeft, lowerRight;
     public:
         double length, height;
-        Rectangle (Point upLeft, Point lowRight) { upperLeft = upLeft; lowerRight = lowRight; }
-        Point getUpperLeft () { return upperLeft; }
-        Point getLowerRight () { return lowerRight; }
-        void setUpperLeft (Point p) { upperLeft = p; }
-        void setLowerRight (Point p) { lowerRight = p; }
+        Rectangle(Point upLeft, Point lowRight) { upperLeft = upLeft; lowerRight = lowRight; }
+        Point getUpperLeft() { return upperLeft; }
+        Point getLowerRight() { return lowerRight; }
+        void setUpperLeft(Point p) { upperLeft = p; }
+        void setLowerRight(Point p) { lowerRight = p; }
 };
 
-void Rectangle::calculateSides () {
+void Rectangle::calculateSides() {
 
-double Rectangle::calculateSides () {
+double Rectangle::calculateSides() {
     length = getLowerRight().getX() - getUpperLeft().getX();
     height = getUpperLeft().getY() - getLowerRight().getY();
 }
 
-double Rectangle::calculateArea () {
+double Rectangle::calculateArea() {
     return length * height;
 }
 
@@ -609,14 +609,14 @@ class Date {
         int day, month, year;
         vector<int> daysInMonth = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
     public:
-        Date () { day = 1; month = 1; year = 2000; }
-        Date (int d, int m, int y) { day = d; month = m; year = y; }
-        int getDay () { return day; }
-        int getMonth () { return month; }
-        int getYear () { return year; }
-        void setDay (int d) { if (d > 0 && d < 32) day = d; }
-        void setMonth (int m) { if (m > 0 && m < 13) month = m; }
-        void setYear (int y) { year = y; }
+        Date() { day = 1; month = 1; year = 2000; }
+        Date(int d, int m, int y) { day = d; month = m; year = y; }
+        int getDay() { return day; }
+        int getMonth() { return month; }
+        int getYear() { return year; }
+        void setDay(int d) { if (d > 0 && d < 32) day = d; }
+        void setMonth(int m) { if (m > 0 && m < 13) month = m; }
+        void setYear(int y) { year = y; }
 };
         ]]></input></program>
 
@@ -632,14 +632,14 @@ class Date {
         int day, month, year;
         vector<int> daysInMonth = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
     public:
-        Date () { day = 1; month = 1; year = 2000; }
-        Date (int d, int m, int y) { day = d; month = m; year = y; }
-        int getDay () { return day; }
-        int getMonth () { return month; }
-        int getYear () { return year; }
-        void setDay (int d) { if (d > 0 && d < 32) day = d; }
-        void setMonth (int m) { if (m > 0 && m < 13) month = m; }
-        void setYear (int y) { year = y; }
+        Date() { day = 1; month = 1; year = 2000; }
+        Date(int d, int m, int y) { day = d; month = m; year = y; }
+        int getDay() { return day; }
+        int getMonth() { return month; }
+        int getYear() { return year; }
+        void setDay(int d) { if (d > 0 && d < 32) day = d; }
+        void setMonth(int m) { if (m > 0 && m < 13) month = m; }
+        void setYear(int y) { year = y; }
 };
         ]]></input></program></exercise>
             </solution>
@@ -675,17 +675,17 @@ class Date {
         int day, month, year;
         vector<int> daysInMonth = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
     public:
-        Date () { day = 1; month = 1; year = 2000; }
-        Date (int d, int m, int y) { day = d; month = m; year = y; }
-        int getDay () { return day; }
-        int getMonth () { return month; }
-        int getYear () { return year; }
-        void setDay (int d) { if (d > 0 && d < 32) day = d; }
-        void setMonth (int m) { if (m > 0 && m < 13) month = m; }
-        void setYear (int y) { year = y; }
+        Date() { day = 1; month = 1; year = 2000; }
+        Date(int d, int m, int y) { day = d; month = m; year = y; }
+        int getDay() { return day; }
+        int getMonth() { return month; }
+        int getYear() { return year; }
+        void setDay(int d) { if (d > 0 && d < 32) day = d; }
+        void setMonth(int m) { if (m > 0 && m < 13) month = m; }
+        void setYear(int y) { year = y; }
 };
 
-void Date::printDate () {
+void Date::printDate() {
     if (getYear() < 0) {
         cout << getMonth() << "/" << getDay() << "/" << -getYear() << " BCE" << endl;
     }
@@ -707,17 +707,17 @@ class Date {
         int day, month, year;
         vector<int> daysInMonth = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
     public:
-        Date () { day = 1; month = 1; year = 2000; }
-        Date (int d, int m, int y) { day = d; month = m; year = y; }
-        int getDay () { return day; }
-        int getMonth () { return month; }
-        int getYear () { return year; }
-        void setDay (int d) { if (d > 0 && d < 32) day = d; }
-        void setMonth (int m) { if (m > 0 && m < 13) month = m; }
-        void setYear (int y) { year = y; }
+        Date() { day = 1; month = 1; year = 2000; }
+        Date(int d, int m, int y) { day = d; month = m; year = y; }
+        int getDay() { return day; }
+        int getMonth() { return month; }
+        int getYear() { return year; }
+        void setDay(int d) { if (d > 0 && d < 32) day = d; }
+        void setMonth(int m) { if (m > 0 && m < 13) month = m; }
+        void setYear(int y) { year = y; }
 };
 
-void Date::printDate () {
+void Date::printDate() {
     if (getYear() < 0) {
         cout << getMonth() << "/" << getDay() << "/" << -getYear() << " BCE" << endl;
     }
@@ -759,24 +759,24 @@ class Date {
         int day, month, year;
         vector<int> daysInMonth = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
     public:
-        Date () { day = 1; month = 1; year = 2000; }
-        Date (int d, int m, int y) { day = d; month = m; year = y; }
-        int getDay () { return day; }
-        int getMonth () { return month; }
-        int getYear () { return year; }
-        void setDay (int d) { if (d > 0 && d < 32) day = d; }
-        void setMonth (int m) { if (m > 0 && m < 13) month = m; }
-        void setYear (int y) { year = y; }
+        Date() { day = 1; month = 1; year = 2000; }
+        Date(int d, int m, int y) { day = d; month = m; year = y; }
+        int getDay() { return day; }
+        int getMonth() { return month; }
+        int getYear() { return year; }
+        void setDay(int d) { if (d > 0 && d < 32) day = d; }
+        void setMonth(int m) { if (m > 0 && m < 13) month = m; }
+        void setYear(int y) { year = y; }
 };
 
-bool Date::isLeapYear () {
+bool Date::isLeapYear() {
     if (getYear() % 4 != 0) { return false; }
     else if (getYear() % 100 != 0) { return true; }
     else if (getYear() % 400 != 0) { return false; }
     else { return true; }
 }
 
-int Date::lastDayInMonth () {
+int Date::lastDayInMonth() {
     if (isLeapYear() && getMonth() == 2) {
         return daysInMonth[getMonth() - 1] + 1;
     else {
@@ -797,24 +797,24 @@ class Date {
         int day, month, year;
         vector<int> daysInMonth = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
     public:
-        Date () { day = 1; month = 1; year = 2000; }
-        Date (int d, int m, int y) { day = d; month = m; year = y; }
-        int getDay () { return day; }
-        int getMonth () { return month; }
-        int getYear () { return year; }
-        void setDay (int d) { if (d > 0 && d < 32) day = d; }
-        void setMonth (int m) { if (m > 0 && m < 13) month = m; }
-        void setYear (int y) { year = y; }
+        Date() { day = 1; month = 1; year = 2000; }
+        Date(int d, int m, int y) { day = d; month = m; year = y; }
+        int getDay() { return day; }
+        int getMonth() { return month; }
+        int getYear() { return year; }
+        void setDay(int d) { if (d > 0 && d < 32) day = d; }
+        void setMonth(int m) { if (m > 0 && m < 13) month = m; }
+        void setYear(int y) { year = y; }
 };
 
-bool Date::isLeapYear () {
+bool Date::isLeapYear() {
     if (getYear() % 4 != 0) { return false; }
     else if (getYear() % 100 != 0) { return true; }
     else if (getYear() % 400 != 0) { return false; }
     else { return true; }
 }
 
-int Date::lastDayInMonth () {
+int Date::lastDayInMonth() {
     if (isLeapYear() && getMonth() == 2) {
         return daysInMonth[getMonth() - 1] + 1;
     else {

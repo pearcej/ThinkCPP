@@ -13,7 +13,7 @@ struct Student {
      string name;
 };
 
-void printStudent (const Student& stu) {
+void printStudent(const Student& stu) {
      cout << stu.id << ":" << stu.year << ":" << stu.name << endl;
 }
 
@@ -34,7 +34,7 @@ int main( ) {
         <cline>string name;</cline>
       </block>
       <block order="5">
-        <cline>void print ();</cline>
+        <cline>void print();</cline>
       </block>
       <block order="3">
         <cline>};</cline>
@@ -43,10 +43,10 @@ int main( ) {
         <cline>} </cline>
       </block>
       <block order="1">
-        <cline>void Student::print () {</cline>
+        <cline>void Student::print() {</cline>
       </block>
       <block order="4" correct="no">
-        <cline>void Student::print (const Student&amp; stu) { </cline>
+        <cline>void Student::print(const Student&amp; stu) { </cline>
       </block>
       <block order="6">
         <cline>Student stu = *this;</cline>
@@ -92,20 +92,20 @@ int main( ) {
       </block>
       <block order="7">
         <choice correct="yes">
-          <cline>   bool check ();</cline>
+          <cline>   bool check();</cline>
         </choice>
         <choice>
-          <cline>   void check (); </cline>
+          <cline>   void check(); </cline>
         </choice>
       </block>
       <block order="8">
         <cline>};</cline>
       </block>
       <block order="11" correct="no">
-        <cline>void Album::check () { </cline>
+        <cline>void Album::check() { </cline>
       </block>
       <block order="10">
-        <cline>bool Album::check () {</cline>
+        <cline>bool Album::check() {</cline>
       </block>
       <block order="6">
         <cline>if (year &gt; 2015) {</cline>
@@ -127,13 +127,13 @@ int main( ) {
     </statement>
     <blocks>
       <block order="5" correct="no">
-        <cline>double convertToSeconds (const Time&amp; time) { </cline>
+        <cline>double convertToSeconds(const Time&amp; time) { </cline>
       </block>
       <block order="6">
-        <cline>double Time::convertToSeconds () const {</cline>
+        <cline>double Time::convertToSeconds() const {</cline>
       </block>
       <block order="7" correct="no">
-        <cline>double Time::convertToSeconds () { </cline>
+        <cline>double Time::convertToSeconds() { </cline>
       </block>
       <block order="2">
         <choice correct="yes">
@@ -201,16 +201,16 @@ int main( ) {
     </statement>
     <blocks>
       <block order="4">
-        <cline>Days::Days (int num_days) {</cline>
+        <cline>Days::Days(int num_days) {</cline>
       </block>
       <block order="11" correct="no">
-        <cline>void Days::Days (int num_days) { </cline>
+        <cline>void Days::Days(int num_days) { </cline>
       </block>
       <block order="8" correct="no">
-        <cline>Construct::Days (int num_days) { </cline>
+        <cline>Construct::Days(int num_days) { </cline>
       </block>
       <block order="7" correct="no">
-        <cline>Days (int num_days) { </cline>
+        <cline>Days(int num_days) { </cline>
       </block>
       <block order="9">
         <cline>years = num_days / 365;</cline>
@@ -246,10 +246,10 @@ int main( ) {
     </statement>
     <blocks>
       <block order="3">
-        <cline>Student::Student () {</cline>
+        <cline>Student::Student() {</cline>
       </block>
       <block order="8">
-        <cline>void Student::Student () {</cline>
+        <cline>void Student::Student() {</cline>
       </block>
       <block order="2">
         <cline>id = 123456789;</cline>
@@ -264,7 +264,7 @@ int main( ) {
         <cline>}                     </cline>
       </block>
       <block order="6">
-        <cline>Student::Student (int id_in, int year_in, string name_in) {</cline>
+        <cline>Student::Student(int id_in, int year_in, string name_in) {</cline>
       </block>
       <block order="9">
         <cline>Student::Student construct(int id_in, int year_in, string name_in) {</cline>
@@ -302,23 +302,23 @@ int main( ) {
       </block>
       <block order="6">
         <choice correct="yes">
-          <cline>Penguin ();</cline>
+          <cline>Penguin();</cline>
         </choice>
         <choice>
-          <cline>void Penguin (); </cline>
+          <cline>void Penguin(); </cline>
         </choice>
       </block>
       <block order="5">
-        <cline>Penguin (int age_in; int weight_in);</cline>
+        <cline>Penguin(int age_in; int weight_in);</cline>
       </block>
       <block order="13" correct="no">
-        <cline>void Penguin (int age_in; int weight_in); </cline>
+        <cline>void Penguin(int age_in; int weight_in); </cline>
       </block>
       <block order="14">
         <cline>};</cline>
       </block>
       <block order="7">
-        <cline>Penguin::Penguin () {</cline>
+        <cline>Penguin::Penguin() {</cline>
       </block>
       <block order="2">
         <cline>age = 1;</cline>
@@ -328,7 +328,7 @@ int main( ) {
         <cline>}</cline>
       </block>
       <block order="9">
-        <cline>Penguin::Penguin (int age_in, int weight_in) {</cline>
+        <cline>Penguin::Penguin(int age_in, int weight_in) {</cline>
       </block>
       <block order="10">
         <cline>age = age_in;</cline>
@@ -347,26 +347,26 @@ int main( ) {
     <statement>
       <p>Put the necessary blocks of code in the correct order to make the
             AddDays function below a member function a member function.</p>
-      <p>Days AddDays (const Days&amp; d1, const Days&amp; d2) {
+      <p>Days AddDays(const Days&amp; d1, const Days&amp; d2) {
             int days = convertToDays (d1) + convertToDays(d2);
             return makeDays (days);
             }</p>
     </statement>
     <blocks>
       <block order="6">
-        <cline>Days Days::add (const Days&amp; d2) const {</cline>
+        <cline>Days Days::add(const Days&amp; d2) const {</cline>
       </block>
       <block order="4" correct="no">
-        <cline>Days Days::add (const Days&amp; d2) { </cline>
+        <cline>Days Days::add(const Days&amp; d2) { </cline>
       </block>
       <block order="3" correct="no">
-        <cline>Days Days::add () { </cline>
+        <cline>Days Days::add() { </cline>
       </block>
       <block order="1">
-        <cline>int days = convertToDays () + d2.convertToDays ();</cline>
+        <cline>int days = convertToDays() + d2.convertToDays();</cline>
       </block>
       <block order="7" correct="no">
-        <cline>int days = d1.convertToDays () + d2.convertToDays (); </cline>
+        <cline>int days = d1.convertToDays() + d2.convertToDays(); </cline>
       </block>
       <block order="5">
         <cline>Days day (days);</cline>
@@ -390,41 +390,41 @@ int main( ) {
         <cline> string name;</cline>
       </block>
       <block order="1">
-        <cline> Penguin ();</cline>
-        <cline> Penguin (int age_in, string name);</cline>
+        <cline> Penguin();</cline>
+        <cline> Penguin(int age_in, string name);</cline>
         <cline>};</cline>
       </block>
       <block order="9" correct="no">
-        <cline> void Penguin ();</cline>
-        <cline> void Penguin (int age_in, string name);</cline>
+        <cline> void Penguin();</cline>
+        <cline> void Penguin(int age_in, string name);</cline>
         <cline>};                                         </cline>
       </block>
       <block order="2">
-        <cline>Penguin::Penguin () {</cline>
+        <cline>Penguin::Penguin() {</cline>
         <cline>age = 1;</cline>
         <cline>name = "Alice";</cline>
         <cline>}</cline>
       </block>
       <block order="4" correct="no">
-        <cline>Penguin::Penguin () const {</cline>
+        <cline>Penguin::Penguin() const {</cline>
         <cline>p1.age = 1;</cline>
         <cline>p1.name = "Alice";</cline>
         <cline>}                                     </cline>
       </block>
       <block order="11">
-        <cline>Penguin::Penguin (int age_in, string name_in) {</cline>
+        <cline>Penguin::Penguin(int age_in, string name_in) {</cline>
         <cline>age = age_in;</cline>
         <cline>name = name_in;</cline>
         <cline>}</cline>
       </block>
       <block order="5" correct="no">
-        <cline>void Penguin::Penguin (int age_in, string name_in) const {</cline>
+        <cline>void Penguin::Penguin(int age_in, string name_in) const {</cline>
         <cline>age = age_in;</cline>
         <cline>name = name_in;</cline>
         <cline>}                                </cline>
       </block>
       <block order="10" correct="no">
-        <cline>Penguin::Penguin (int age_in, string name_in) {</cline>
+        <cline>Penguin::Penguin(int age_in, string name_in) {</cline>
         <cline>p1.age = age_in;</cline>
         <cline>p1.name = name_in;</cline>
         <cline>}                                    </cline>
@@ -433,11 +433,11 @@ int main( ) {
         <cline>int main() {</cline>
       </block>
       <block order="6">
-        <cline>Penguin p1 ();</cline>
+        <cline>Penguin p1();</cline>
         <cline>Penguin p2 (3, "Bob");</cline>
       </block>
       <block order="7" correct="no">
-        <cline>Penguin p1 ();</cline>
+        <cline>Penguin p1();</cline>
         <cline>Penguin p2 (age_in, name_in);        </cline>
       </block>
       <block order="8">
@@ -461,18 +461,18 @@ int main( ) {
       </block>
       <block order="7">
         <cline>// constructors</cline>
-        <cline>Student (int id, int year, string name);</cline>
-        <cline>Student ();</cline>
+        <cline>Student(int id, int year, string name);</cline>
+        <cline>Student();</cline>
       </block>
       <block order="4" correct="no">
         <cline>// constructors</cline>
-        <cline>Student::Student () const;</cline>
-        <cline>Student::Student (int id, int year, string name);      </cline>
+        <cline>Student::Student() const;</cline>
+        <cline>Student::Student(int id, int year, string name);      </cline>
       </block>
       <block order="1">
         <cline>// functions</cline>
-        <cline>void print () const;</cline>
-        <cline>bool after (const Student&amp; stu) const;</cline>
+        <cline>void print() const;</cline>
+        <cline>bool after(const Student&amp; stu) const;</cline>
       </block>
       <block order="5" correct="no">
         <cline>int main() {                        </cline>

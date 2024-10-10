@@ -10,7 +10,7 @@
   double second;
 };
 
-void printTime (const Time&amp; time) {
+void printTime(const Time&amp; time) {
   cout &lt;&lt; time.hour &lt;&lt; ":" &lt;&lt; time.minute &lt;&lt; ":" &lt;&lt; time.second &lt;&lt; endl;
 }</program>
   <p>To call this function, we had to pass a <c>Time</c> object as a parameter.</p>
@@ -34,7 +34,7 @@ printTime (currentTime);</program>
             now is the <c>*</c> operator, which converts a structure pointer into a
             structure. In the following function, we use it to assign the value of
             <c>this</c> to a local variable named <c>time</c>.</p>
-  <program>void Time::print () {
+  <program>void Time::print() {
   Time time = *this;
   cout &lt;&lt; time.hour &lt;&lt; ":" &lt;&lt; time.minute &lt;&lt; ":" &lt;&lt; time.second &lt;&lt; endl;
 }</program>
@@ -44,14 +44,14 @@ printTime (currentTime);</program>
   <p>In order to invoke the new version of <c>print</c>, we have to invoke it on
             a <c>Time</c> object:</p>
   <program>Time currentTime = { 9, 14, 30.0 };
-currentTime.print ();</program>
+currentTime.print();</program>
   <p>The last step of the transformation process is that we have to declare
             the new function inside the structure definition:</p>
   <program>struct Time {
   int hour, minute;
   double second;
 
-  void print ();
+  void print();
 };</program>
   <note>
     <p>You should only use the scope resolution operator <c>::</c> if you define a
@@ -83,17 +83,17 @@ struct Time {
     int hour, minute;
     double second;
 
-    void print ();
+    void print();
 };
 
 int main() {
     Time currentTime = { 9, 14, 30.0 };
-    currentTime.print ();
+    currentTime.print();
 }
 
         ]]></input>
       <tests>
-void Time::print () {
+void Time::print() {
   cout &lt;&lt; hour &lt;&lt; ":" &lt;&lt; minute &lt;&lt; ":" &lt;&lt; second &lt;&lt; endl;
 }
 </tests>

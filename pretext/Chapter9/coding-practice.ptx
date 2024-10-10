@@ -54,9 +54,9 @@ struct Cake {
     bool has_icing;
 };
 
-void printCakeInfo (Cake c);
+void printCakeInfo(Cake c);
 
-Cake makeCake () {
+Cake makeCake() {
     Cake input;
     string name, color;
     double diameter;
@@ -82,11 +82,11 @@ Cake makeCake () {
 }
 
 int main() {
-    Cake input = makeCake ();
+    Cake input = makeCake();
     printCakeInfo (input);
 }
         ]]></input><tests>
-void printCakeInfo (Cake c) {
+void printCakeInfo(Cake c) {
     if (c.name == "n/a") {
         if (c.has_icing) {
             cout &lt;&lt; "This is a " &lt;&lt; c.color &lt;&lt; "," &lt;&lt; c.diameter &lt;&lt; " inch diameter cake with icing." &lt;&lt; endl;
@@ -136,11 +136,11 @@ struct Cake {
     bool has_icing;
 };
 
-void printCakeInfo (Cake c);
-Cake makeCake ();
+void printCakeInfo(Cake c);
+Cake makeCake();
 
 void editCake (Cake& c) {
-    Cake newCake = makeCake ();
+    Cake newCake = makeCake();
     c = newCake;
 }
 
@@ -150,7 +150,7 @@ int main() {
     printCakeInfo (original);
 }
         ]]></input><tests>
- void printCakeInfo (Cake c) {
+ void printCakeInfo(Cake c) {
      if (c.name == "n/a") {
          if (c.has_icing) {
              cout &lt;&lt; "This is a " &lt;&lt; c.color &lt;&lt; "," &lt;&lt; c.diameter &lt;&lt; " inch diameter cake with icing." &lt;&lt; endl;
@@ -169,7 +169,7 @@ int main() {
      }
  }
 
- Cake makeCake () {
+ Cake makeCake() {
      Cake input;
      string name, color;
      double diameter;
@@ -269,7 +269,7 @@ struct Outfit {
     bool has_hat;
 }
 
-void printOutfit (Outfit o) {
+void printOutfit(Outfit o) {
 "Shirt: blue and L; Pants: S and denim; has hat"
     cout << "Shirt: " << o.s.color << " and " << o.s.size << "; Pants:" << o.p.size << " and " << o.p.material << "; ";
     if (o.has_hat) {
@@ -284,7 +284,7 @@ int main() {
     Shirt t = { "blue", 'L' };
     Pants p = { 'S', "denim" };
     Outfit o = { t, p, true };
-    printOutfit (o);
+    printOutfit(o);
 }
         ]]></input></program>
             

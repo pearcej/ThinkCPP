@@ -98,10 +98,10 @@
     <blocks>
       <block order="6">
         <choice correct="yes">
-          <cline>void printSong (Song s) {</cline>
+          <cline>void printSong(Song s) {</cline>
         </choice>
         <choice>
-          <cline>struct printSong (Song s) {  </cline>
+          <cline>struct printSong(Song s) {  </cline>
         </choice>
       </block>
       <block order="2">
@@ -180,10 +180,10 @@
     <blocks>
       <block order="4">
         <choice correct="yes">
-          <cline>int convertToHumanAge (Unicorn u) {</cline>
+          <cline>int convertToHumanAge(Unicorn u) {</cline>
         </choice>
         <choice>
-          <cline>void convertToHumanAge (Unicorn u) {  </cline>
+          <cline>void convertToHumanAge(Unicorn u) {  </cline>
         </choice>
       </block>
       <block order="8">
@@ -237,10 +237,10 @@
         <cline>void unicornPower (Unicorn&amp; u) {</cline>
       </block>
       <block order="8" correct="no">
-        <cline>void &amp;unicornPower (Unicorn u) {  </cline>
+        <cline>void &amp;unicornPower(Unicorn u) {  </cline>
       </block>
       <block order="5" correct="no">
-        <cline>void unicornPower (Unicorn u) {  </cline>
+        <cline>void unicornPower(Unicorn u) {  </cline>
       </block>
       <block order="7">
         <choice correct="yes">
@@ -330,7 +330,7 @@
     <blocks>
       <block order="8">
         <choice correct="yes">
-          <cline>void printAddress (Employee e) {</cline>
+          <cline>void printAddress(Employee e) {</cline>
         </choice>
         <choice>
           <cline>string printAddress (Employee&amp; e) {  </cline>
@@ -368,13 +368,13 @@
         <cline>void updateAddress (Employee&amp; e, Address a) {</cline>
       </block>
       <block order="5" correct="no">
-        <cline>void updateAddress (Employee e, Address&amp; a) {  </cline>
+        <cline>void updateAddress(Employee e, Address&amp; a) {  </cline>
       </block>
       <block order="1" correct="no">
-        <cline>void updateAddress (Employee e, Address a) {  </cline>
+        <cline>void updateAddress(Employee e, Address a) {  </cline>
       </block>
       <block order="10" correct="no">
-        <cline>Employee updateAddress (Employee e, Address a) {  </cline>
+        <cline>Employee updateAddress(Employee e, Address a) {  </cline>
       </block>
       <block order="9">
         <cline>   e.address = a;</cline>

@@ -143,7 +143,7 @@ struct Song {
     int year;
 };
 
-void printSong (Song s) {
+void printSong(Song s) {
     cout << "\"" << s.title << "\" by " << s.artist;
     cout << " (" << s.album << ", " << s.year << ")" << endl;
 }
@@ -170,7 +170,7 @@ struct Song {
     int year;
 };
 
-void printSong (Song s) {
+void printSong(Song s) {
     cout << "\"" << s.title << "\" by " << s.artist;
     cout << " (" << s.album << ", " << s.year << ")" << endl;
 }
@@ -269,7 +269,7 @@ struct Unicorn {
     bool isSparkly;
 };
 
-int convertToHumanAge (Unicorn u) {
+int convertToHumanAge(Unicorn u) {
     if (u.isSparkly) {
         return 3 * u.age + u.hornLength;
     }
@@ -293,7 +293,7 @@ struct Unicorn {
     bool isSparkly;
 };
 
-int convertToHumanAge (Unicorn u) {
+int convertToHumanAge(Unicorn u) {
     if (u.isSparkly) {
         return 3 * u.age + u.hornLength;
     }
@@ -456,7 +456,7 @@ struct Employee {
     int id;
 };
 
-void printAddress (Employee e) {
+void printAddress(Employee e) {
     cout << e.name << " (" << e.id << ") lives at ";
     cout << e.address.houseNumber << " in" << e.address.state << " ," << e.address.postalAddress << endl;
 }
@@ -480,7 +480,7 @@ struct Employee {
     int id;
 };
 
-void printAddress (Employee e) {
+void printAddress(Employee e) {
     cout << e.name << " (" << e.id << ") lives at ";
     cout << e.address.houseNumber << " in" << e.address.state << " ," << e.address.postalAddress << endl;
 }

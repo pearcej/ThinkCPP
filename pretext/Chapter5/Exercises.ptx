@@ -6,7 +6,7 @@
       <p>What should be the return type of the function <c>convertToCelsius</c>?</p>
       <program line-numbers="yes">
         <input>
-______ convertToCelsius (double fahrenheit) {
+______ convertToCelsius(double fahrenheit) {
   double celsius;
   celsius = (fahrenheit - 32) * 5 / 9;
   return celsius;
@@ -62,7 +62,7 @@ ______ convertToCelsius (double fahrenheit) {
       <p>What would be returned by <c>secretFunction</c> if the input was 14?</p>
       <program line-numbers="yes">
         <input>
-int secretFunction (int input) {
+int secretFunction(int input) {
   if (input % 2 == 0) {
     return 3 * input - 2;
   }
@@ -129,7 +129,7 @@ int secretFunction (int input) {
       <choice>
         <statement id="mce_5_3_opt_a">
           <p>
-            <c>boolean isPrime (int input) {</c>
+            <c>boolean isPrime(int input) {</c>
           </p>
         </statement>
         <feedback id="mce_5_3_opt_a">
@@ -149,7 +149,7 @@ int secretFunction (int input) {
       <choice correct="yes">
         <statement id="mce_5_3_opt_c">
           <p>
-            <c>bool isPrime (int input) {</c>
+            <c>bool isPrime(int input) {</c>
           </p>
         </statement>
         <feedback id="mce_5_3_opt_c">
@@ -159,7 +159,7 @@ int secretFunction (int input) {
       <choice>
         <statement id="mce_5_3_opt_d">
           <p>
-            <c>int isPrime (bool input) {</c>
+            <c>int isPrime(bool input) {</c>
           </p>
         </statement>
         <feedback id="mce_5_3_opt_d">
@@ -174,7 +174,7 @@ int secretFunction (int input) {
             and add to the program?</p>
       <program line-numbers="yes">
         <input>
-int func (double x, bool y);
+int func(double x, bool y);
 </input>
       </program>
     </statement>
@@ -182,7 +182,7 @@ int func (double x, bool y);
       <choice>
         <statement id="mce_5_4_opt_a">
           <p>
-            <c>int func (double a, bool b);</c>
+            <c>int func(double a, bool b);</c>
           </p>
         </statement>
         <feedback id="mce_5_4_opt_a">
@@ -192,7 +192,7 @@ int func (double x, bool y);
       <choice correct="yes">
         <statement id="mce_5_4_opt_b">
           <p>
-            <c>int foo (double x, bool y);</c>
+            <c>int foo(double x, bool y);</c>
           </p>
         </statement>
         <feedback id="mce_5_4_opt_b">
@@ -202,7 +202,7 @@ int func (double x, bool y);
       <choice correct="yes">
         <statement id="mce_5_4_opt_c">
           <p>
-            <c>int func (double x);</c>
+            <c>int func(double x);</c>
           </p>
         </statement>
         <feedback id="mce_5_4_opt_c">
@@ -212,7 +212,7 @@ int func (double x, bool y);
       <choice>
         <statement id="mce_5_4_opt_d">
           <p>
-            <c>void func (double x, bool y);</c>
+            <c>void func(double x, bool y);</c>
           </p>
         </statement>
         <feedback id="mce_5_4_opt_d">
@@ -222,7 +222,7 @@ int func (double x, bool y);
       <choice correct="yes">
         <statement id="mce_5_4_opt_e">
           <p>
-            <c>int func (bool y, double x);</c>
+            <c>int func(bool y, double x);</c>
           </p>
         </statement>
         <feedback id="mce_5_4_opt_e">
@@ -344,7 +344,7 @@ int main() {
       <p>Are there any issues with the code below?</p>
       <program line-numbers="yes">
         <input>
-bool isEven (int num) {
+bool isEven(int num) {
   if (num % 2 == 0) {
     return true;
   }
@@ -392,7 +392,7 @@ bool isEven (int num) {
       <p>Are there any issues with the code below?</p>
       <program line-numbers="yes">
         <input><![CDATA[
-double Free_time (int day) {
+double Free_time(int day) {
   if (day==1||day==2||day==3||day==4) {
     cout<<"Better study on weekday!"<<endl;
     return day*0.25;
@@ -445,7 +445,7 @@ double Free_time (int day) {
       <p>Are there any issues with the code below?</p>
       <program line-numbers="yes">
         <input><![CDATA[
-void moonWeight (double earth) {
+void moonWeight(double earth) {
   double moon = 0.165 * earth;
   cout << "You would weigh " << moon << " pounds on the moon." << endl;
   return moon;
@@ -540,7 +540,7 @@ void moonWeight (double earth) {
       <p>What is the base case of the <c>factorial</c> recursive function?</p>
       <program line-numbers="yes">
         <input>
-int factorial (int n) {
+int factorial(int n) {
   if (n == 0) {
     return 1;
   }
@@ -599,7 +599,7 @@ int factorial (int n) {
       <p>What is printed?</p>
       <program line-numbers="yes">
         <input><![CDATA[
-void print_sequence (int n) {
+void print_sequence(int n) {
   if (n == 0) {
      cout << 1;
      return;

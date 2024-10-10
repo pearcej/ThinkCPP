@@ -29,7 +29,7 @@ struct Point {
     double x, y;
 };
 
-void addTwo (Point p) {
+void addTwo(Point p) {
     cout << "(" << p.x + 2 << ", " << p.y + 2 << ")" << endl;
 }
 
@@ -113,7 +113,7 @@ struct Point {
   int x, y;
 };
 
-void timesTwo (Point p) {
+void timesTwo(Point p) {
   p.x = p.x * 2;
   p.y = p.y * 2;
   cout << "(" << p.x << ", " << p.y << ")";

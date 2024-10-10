@@ -80,13 +80,13 @@
     </statement>
     <blocks>
       <block order="5">
-        <cline>bool songEqual (const Song&amp; a, const &amp;Song b) {</cline>
+        <cline>bool songEqual(const Song&amp; a, const &amp;Song b) {</cline>
       </block>
       <block order="7" correct="no">
-        <cline>bool songEqual (Song const &amp;a, Song const &amp;b) {  </cline>
+        <cline>bool songEqual(Song const &amp;a, Song const &amp;b) {  </cline>
       </block>
       <block order="2" correct="no">
-        <cline>bool Song::songEqual (const Song&amp; song) {  </cline>
+        <cline>bool Song::songEqual(const Song&amp; song) {  </cline>
       </block>
       <block order="9">
         <cline>   if (a.title == b.title &amp;&amp; a.artist == b.artist) {</cline>
@@ -125,13 +125,13 @@
     </statement>
     <blocks>
       <block order="16">
-        <cline>int Album::searchAlbum (const Song&amp; a) {</cline>
+        <cline>int Album::searchAlbum(const Song&amp; a) {</cline>
       </block>
       <block order="4" correct="no">
-        <cline>int searchAlbum (const Album&amp; album, const Song&amp; a) {  </cline>
+        <cline>int searchAlbum(const Album&amp; album, const Song&amp; a) {  </cline>
       </block>
       <block order="12" correct="no">
-        <cline>bool searchAlbum (Song const &amp;a) {  </cline>
+        <cline>bool searchAlbum(Song const &amp;a) {  </cline>
       </block>
       <block order="8">
         <cline><![CDATA[   for (size_t i = 0; i < songs.size(); ++i) {]]></cline>
@@ -187,13 +187,13 @@
     </statement>
     <blocks>
       <block order="7">
-        <cline>void Album::mostLikedSong () {</cline>
+        <cline>void Album::mostLikedSong() {</cline>
       </block>
       <block order="8" correct="no">
-        <cline>int Album::mostLikedSong () {  </cline>
+        <cline>int Album::mostLikedSong() {  </cline>
       </block>
       <block order="2" correct="no">
-        <cline>void Album::mostLikedSong (const Song&amp; a) {  </cline>
+        <cline>void Album::mostLikedSong(const Song&amp; a) {  </cline>
       </block>
       <block order="18">
         <cline>   int maxIndex = 0;</cline>
@@ -318,7 +318,7 @@
     </statement>
     <blocks>
       <block order="4">
-        <cline>bool productEqual (const Product&amp; a, const &amp;Product b) {</cline>
+        <cline>bool productEqual(const Product&amp; a, const &amp;Product b) {</cline>
       </block>
       <block order="16" correct="no">
         <cline>bool productEqual (Product const &amp;a, Product const &amp;b) {  </cline>
@@ -348,10 +348,10 @@
         <cline>}</cline>
       </block>
       <block order="22">
-        <cline>int List::searchList (const Product&amp; a) {</cline>
+        <cline>int List::searchList(const Product&amp; a) {</cline>
       </block>
       <block order="8" correct="no">
-        <cline>int searchList (const Product&amp; a) {  </cline>
+        <cline>int searchList(const Product&amp; a) {  </cline>
       </block>
       <block order="21">
         <cline><![CDATA[   for (size_t i = 0; i < products.size(); ++i) {]]></cline>
@@ -393,13 +393,13 @@
     </statement>
     <blocks>
       <block order="11">
-        <cline>double List::totalPrice () {</cline>
+        <cline>double List::totalPrice() {</cline>
       </block>
       <block order="13" correct="no">
-        <cline>double List : totalPrice () {  </cline>
+        <cline>double List : totalPrice() {  </cline>
       </block>
       <block order="7" correct="no">
-        <cline>int totalPrice () {  </cline>
+        <cline>int totalPrice() {  </cline>
       </block>
       <block order="9">
         <choice correct="yes">

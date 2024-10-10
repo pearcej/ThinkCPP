@@ -384,7 +384,7 @@ for ( size_t i = 0; i &lt; chant.size(); i++ ){
     <statement>
       <p>Suppose you are randomly assigning students to discussions 1-8.  How would you do this correctly?  Assume
             you have alreay implemented the following code.</p>
-      <program>int x = random ();</program>
+      <program>int x = random();</program>
     </statement>
     <choices>
       <choice correct="yes">
@@ -427,7 +427,7 @@ y = y + 1;</program>
   <exercise label="vectors_mc9">
     <statement>
       <p>Suppose you have defined the <c>fizzBuzz</c> function as the following</p>
-      <program>int fizzBuzz (const vector&lt;int&gt; &amp; vec, int num1, int num2) {
+      <program>int fizzBuzz(const vector&lt;int&gt; &amp; vec, int num1, int num2) {
     int count = 0;
     for (size_t i = 0; i &lt; vec.size(); i++) {
         if (vec[i] % num1 == 0 &amp;&amp; vec[i] % num2 == 0) {
@@ -486,7 +486,7 @@ cout &lt;&lt; fizzBuzz(numbers, 2, 7);</program>
   <exercise label="vectors_mc10">
     <statement>
       <p>Suppose you have defined the <c>startsWith</c> function as the following</p>
-      <program>int startsWith (const vector&lt;string&gt; &amp; vec, char c) {
+      <program>int startsWith(const vector&lt;string&gt; &amp; vec, char c) {
     int count = 0;
     int pos = 0;
     for (size_t i = 0; i &lt; vec.size(); i++) {
@@ -547,7 +547,7 @@ cout &lt;&lt; howMany(names, 'M');</program>
   <exercise label="vectors_mc11">
     <statement>
       <p>Suppose you have defined the <c>howMany</c> function as the following</p>
-      <program>int howMany (const vector&lt;string&gt;&amp; vec, char let) {
+      <program>int howMany(const vector&lt;string&gt;&amp; vec, char let) {
     int count = 0;
     for (size_t i = 0; i &lt; vec.size(); i++) {
         for (size_t c = 0; c &lt; vec[i].size(); c++) {
@@ -612,7 +612,7 @@ for (int i = 0; i &lt; letters.size(); ++i) {
   <exercise label="vectors_mc12">
     <statement>
       <p>Suppose you have defined the <c>repeater</c> function as the following</p>
-      <program>int repeater (const vector&lt;int&gt;&amp; vec) {
+      <program>int repeater(const vector&lt;int&gt;&amp; vec) {
     int count = 0;
     for (size_t i = 0; i &lt; vec.size(); i++) {
         for (size_t j = 0; j &lt; vec.size(); j++) {

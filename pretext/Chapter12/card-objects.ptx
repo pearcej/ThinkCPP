@@ -117,15 +117,15 @@
   <program>struct Card {
   int suit, rank;
 
-  Card ();
-  Card (int s, int r);
+  Card();
+  Card(int s, int r);
 };
 
-Card::Card () {
+Card::Card() {
   suit = 0;  rank = 0;
 }
 
-Card::Card (int s, int r) {
+Card::Card(int s, int r) {
   suit = s;  rank = r;
 }</program>
   <p>There are two constructors for <c>Card</c>s. You can tell that they are

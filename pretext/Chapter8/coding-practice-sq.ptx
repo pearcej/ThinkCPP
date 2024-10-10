@@ -14,12 +14,12 @@
 #include <iostream>
 using namespace std;
 
-void greetUser () {
+void greetUser() {
     // Write your implementation here.
 }
 
 int main() {
-    greetUser ();
+    greetUser();
 }
         ]]></input>
         </program>
@@ -34,7 +34,7 @@ int main() {
         </statement>
         <blocks>
           <block order="4">
-            <cline>void greetUser () {</cline>
+            <cline>void greetUser() {</cline>
           </block>
           <block order="7">
             <cline>    string fullName;</cline>
@@ -86,7 +86,7 @@ struct Robot {
     string task;
 };
 
-void printRobotData (Robot r);
+void printRobotData(Robot r);
 
 // Write your code for the function chargeRobot here.
 
@@ -100,7 +100,7 @@ int main() {
 }
         ]]></input>
           <tests>
-void printRobotData (Robot r) {
+void printRobotData(Robot r) {
     cout &lt;&lt; r.name &lt;&lt; " (" &lt;&lt; r.model &lt;&lt; " " &lt;&lt; r.serialNumber
             &lt;&lt; ") has " &lt;&lt; r.batteryLevelPercentage
             &lt;&lt; " percent battery and is currently executing the task \""
@@ -122,10 +122,10 @@ void printRobotData (Robot r) {
         <blocks>
           <block order="3">
             <choice correct="yes">
-              <cline>void chargeRobot (Robot &amp;r) {</cline>
+              <cline>void chargeRobot(Robot &amp;r) {</cline>
             </choice>
             <choice>
-              <cline>void chargeRobot (Robot r) { </cline>
+              <cline>void chargeRobot(Robot r) { </cline>
             </choice>
           </block>
           <block order="5">
@@ -206,10 +206,10 @@ int main() {
           <block order="4">
             <choice correct="yes">
               <cline>// printPokeInfo function creation</cline>
-              <cline>void printPokeInfo (Pokemon p) {</cline>
+              <cline>void printPokeInfo(Pokemon p) {</cline>
             </choice>
             <choice>
-              <cline>string printPokeInfo (Pokemon p) { </cline>
+              <cline>string printPokeInfo(Pokemon p) { </cline>
             </choice>
           </block>
           <block order="3">
@@ -298,10 +298,10 @@ void printTrainerInfo(Trainer t) {
         <blocks>
           <block order="3">
             <choice correct="yes">
-              <cline>void healPokemon (Trainer &amp;t) {</cline>
+              <cline>void healPokemon(Trainer &amp;t) {</cline>
             </choice>
             <choice>
-              <cline>void healPokemon (Trainer t) { </cline>
+              <cline>void healPokemon(Trainer t) { </cline>
             </choice>
           </block>
           <block order="1">
@@ -405,7 +405,7 @@ Error, not a valid planet.</program>
         <blocks>
           <block order="9">
             <cline>// convertWeight function creation</cline>
-            <cline>void convertWeight (double earthWeight, int planet) {</cline>
+            <cline>void convertWeight(double earthWeight, int planet) {</cline>
           </block>
           <block order="13">
             <cline>    if (planet== 1) {</cline>

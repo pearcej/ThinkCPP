@@ -19,11 +19,11 @@ class Room {
         int height;
 
     public:
-        int calculateArea () {
+        int calculateArea() {
             return length * width;
         }
 
-        int calculateVolume () {
+        int calculateVolume() {
             return length * width * height;
         }
 };
@@ -70,17 +70,17 @@ class Temp {
         }
 
     public:
-        double getFahrenheit () {
+        double getFahrenheit() {
             if (is_celsius) { return cToF(); }
             else { return fahrenheit; }
         }
-        double getCelsius () {
+        double getCelsius() {
             if (is_fahrenheit) { return fToC(); }
             else { return celsius; }
         }
-        void setFahrenheit (double f) { fahrenheit = f; is_fahrenheit = true; is_celsius = false; }
-        void setCelsius (double c) { celsius = c; is_celsius = true; is_fahrenheit = false; }
-        void printTemp () {
+        void setFahrenheit(double f) { fahrenheit = f; is_fahrenheit = true; is_celsius = false; }
+        void setCelsius(double c) { celsius = c; is_celsius = true; is_fahrenheit = false; }
+        void printTemp() {
             if (is_fahrenheit) {
                 cout << "It is " << getFahrenheit() << " degrees Fahrenheit" << endl;
             }

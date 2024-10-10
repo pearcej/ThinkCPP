@@ -307,7 +307,7 @@ bool guessTheWord(string correct) {
 #include <iostream>
 using namespace std;
 
-bool guessTheWord (string correct) {
+bool guessTheWord(string correct) {
     cout << "Guess the word!";
     string guess;
     cin >> guess;
@@ -399,7 +399,7 @@ void greaterThan(FIX ME) {
 #include <iostream>
 using namespace std;
 
-void goodVibes (string mood) {
+void goodVibes(string mood) {
 
 }
         ]]></input>
@@ -412,7 +412,7 @@ void goodVibes (string mood) {
 #include <iostream>
 using namespace std;
 
-void goodVibes (string mood) {
+void goodVibes(string mood) {
     if (mood == "bad") {
         return;
     }
@@ -434,7 +434,7 @@ void goodVibes (string mood) {
 #include <iostream>
 using namespace std;
 
-void exclusiveOr (bool a, bool b) {
+void exclusiveOr(bool a, bool b) {
 
 }
       ]]></input>
@@ -450,7 +450,7 @@ void exclusiveOr (bool a, bool b) {
                   exercise-interactive="parson">
           <blocks>
             <block order="2">
-              <cline>void exclusiveOr (bool a, bool b) {</cline>
+              <cline>void exclusiveOr(bool a, bool b) {</cline>
             </block>
             <block order="1">
               <choice correct="yes">
@@ -490,7 +490,7 @@ void exclusiveOr (bool a, bool b) {
 #include <iostream>
 using namespace std;
 
-void countdown (int num) {
+void countdown(int num) {
 
 }
         ]]></input>
@@ -502,7 +502,7 @@ void countdown (int num) {
 #include <iostream>
 using namespace std;
 
-void countdown (int num) {
+void countdown(int num) {
     if (num != 0){
         cout << num << endl;
         num -= 1;

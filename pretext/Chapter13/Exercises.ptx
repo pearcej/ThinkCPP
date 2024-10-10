@@ -239,21 +239,21 @@ struct Entry {
 struct Card {
   int suit, rank;
 
-  Card ();
-  Card (int s, int r);
+  Card();
+  Card(int s, int r);
 
-  void print () const;
-  bool isGreater (const Card& c2) const;
-  int find (const Deck& deck) const;
+  void print() const;
+  bool isGreater(const Card& c2) const;
+  int find(const Deck& deck) const;
 };
 
 struct Deck {
   vector<Card> cards;
 
-  Deck ();
-  Deck (int n);
-  void print () const;
-  int find (const Card& card) const;
+  Deck();
+  Deck(int n);
+  void print() const;
+  int find(const Card& card) const;
 };
 ]]></input>
       </program>

@@ -32,7 +32,7 @@
             time, the arguments are not symmetric. It matters whether we want to
             know <q>Is A greater than B?</q> or <q>Is B greater than A?</q> Therefore I think
             it makes more sense to write <c>isGreater</c> as a member function:</p>
-  <program>bool Card::isGreater (const Card&amp; c2) const {
+  <program>bool Card::isGreater(const Card&amp; c2) const {
   // first check the suits
   if (suit &gt; c2.suit) return true;
   if (suit &lt; c2.suit) return false;
@@ -50,9 +50,9 @@
 Card card2 (2, 4);
 
 if (card1.isGreater (card2)) {
-  card1.print ();
+  card1.print();
   cout &lt;&lt; "is greater than" &lt;&lt; endl;
-  card2.print ();
+  card2.print();
 }</program>
   <p>You can almost read it like English: <q>If card1 isGreater card2 &#x2026;</q> The
             output of this program is</p>
@@ -77,40 +77,40 @@ using namespace std;
 struct Card {
     int suit, rank;
 
-    Card ();
-    Card (int s, int r);
-    void print () const;
-    bool equals (const Card& c2) const;
-    bool isGreater (const Card& c2) const;
+    Card();
+    Card(int s, int r);
+    void print() const;
+    bool equals(const Card& c2) const;
+    bool isGreater(const Card& c2) const;
 };
 
 int main() {
     Card card1 (2,10);
     Card card2 (2,4);
     if (card1.isGreater (card2)) {
-        card1.print ();
+        card1.print();
         cout << "is greater than" << endl;
-        card2.print ();
+        card2.print();
     }
     else {
-        card2.print ();
+        card2.print();
         cout << "is greater than" << endl;
-        card1.print ();
+        card1.print();
     }
 }
 
         ]]></input>
       <tests>
 
-Card::Card () {
+Card::Card() {
   suit = 0;  rank = 0;
 }
 
-Card::Card (int s, int r) {
+Card::Card(int s, int r) {
   suit = s;  rank = r;
 }
 
-bool Card::equals (const Card&amp; c2) const {
+bool Card::equals(const Card&amp; c2) const {
   bool boolean = (rank == c2.rank &amp;&amp; suit == c2.suit);
   if (boolean == true) {
     cout &lt;&lt; "Yup, that's the same card." &lt;&lt; endl;
@@ -121,7 +121,7 @@ bool Card::equals (const Card&amp; c2) const {
   return boolean;
 }
 
-bool Card::isGreater (const Card&amp; c2) const {
+bool Card::isGreater(const Card&amp; c2) const {
   if (suit &gt; c2.suit) return true;
   if (suit &lt; c2.suit) return false;
 
@@ -131,7 +131,7 @@ bool Card::isGreater (const Card&amp; c2) const {
   return false;
 }
 
-void Card::print () const {
+void Card::print() const {
   vector&lt;string&gt; suits (4);
   suits[0] = "Clubs";
   suits[1] = "Diamonds";
@@ -214,14 +214,14 @@ void Card::print () const {
         <program>Card card1 (2,12);
 Card card2 (1,12);
 if (card1.isGreater (card2)) {
-   card1.print ();
+   card1.print();
    cout &lt;&lt; "is greater than" &lt;&lt; endl;
-   card2.print ();
+   card2.print();
 }
 else {
-   card2.print ();
+   card2.print();
    cout &lt;&lt; "is greater than" &lt;&lt; endl;
-   card1.print ();
+   card1.print();
 }</program>
         <p>If the above code is run, the terminal will print:
 <q>Queen of Hearts</q>

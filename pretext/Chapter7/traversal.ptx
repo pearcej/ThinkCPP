@@ -58,7 +58,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void reverseWord (string word) {
+void reverseWord(string word) {
     // ``reverseWord`` should take the letters of ``word``
     // and output them in reverse.
 }
@@ -77,7 +77,7 @@ int main() {
       </statement>
       <blocks>
         <block order="5">
-          <cline>void reverseWord (string input) {</cline>
+          <cline>void reverseWord(string input) {</cline>
         </block>
         <block order="7">
           <choice correct="yes">

@@ -14,7 +14,7 @@
             results.</p>
   <p>One option is to add a comment to the function that warns programmers
             about the <term>precondition</term>.</p>
-  <program>void Complex::calculateCartesian ()
+  <program>void Complex::calculateCartesian()
 // precondition: the current object contains valid polar coordinates
     and the polar flag is set
 // postcondition: the current object will contain valid Cartesian
@@ -30,7 +30,7 @@
   <p>These comments are useful for people reading your programs, but it is an
             even better idea to add code that <em>checks</em> the preconditions, so that we
             can print an appropriate error message:</p>
-  <program>void Complex::calculateCartesian ()
+  <program>void Complex::calculateCartesian()
 {
   if (polar == false) {
     cout &lt;&lt;
@@ -52,7 +52,7 @@
             long as the argument is true, <c>assert</c> does nothing. If the argument
             is false, assert prints an error message and quits. Here's how to use
             it:</p>
-  <program>void Complex::calculateCartesian ()
+  <program>void Complex::calculateCartesian()
 {
   assert (polar);
   real = mag * cos (theta);
@@ -89,18 +89,18 @@ class Complex
   bool cartesian, polar;
 
 public:
-  Complex ();
-  Complex (double r, double i);
-  void calculateCartesian ();
-  double getReal ();
-  double getImag ();
-  void calculatePolar ();
-  double getMag ();
-  double getTheta ();
-  void printCartesian ();
-  void printPolar ();
-  void setPolar (double m, double t);
-  void setCartesian (double r, double i);
+  Complex();
+  Complex(double r, double i);
+  void calculateCartesian();
+  double getReal();
+  double getImag();
+  void calculatePolar();
+  double getMag();
+  double getTheta();
+  void printCartesian();
+  void printPolar();
+  void setPolar(double m, double t);
+  void setCartesian(double r, double i);
 };
 
 Complex add (Complex& a, Complex& b);
@@ -115,14 +115,14 @@ int main() {
 }
         ]]></input>
       <tests>
-Complex::Complex () { cartesian = false;  polar = false; }
+Complex::Complex() { cartesian = false;  polar = false; }
 
-Complex::Complex (double r, double i) {
+Complex::Complex(double r, double i) {
   real = r;  imag = i;
   cartesian = true;  polar = false;
 }
 
-void Complex::calculateCartesian () {
+void Complex::calculateCartesian() {
   assert (polar);
   real = mag * cos (theta);
   imag = mag * sin (theta);
@@ -130,41 +130,41 @@ void Complex::calculateCartesian () {
   assert (polar &amp;&amp; cartesian);
 }
 
-double Complex::getReal () {
-  if (cartesian == false) calculateCartesian ();
+double Complex::getReal() {
+  if (cartesian == false) calculateCartesian();
   return real;
 }
 
-double Complex::getImag () {
-  if (cartesian == false) calculateCartesian ();
+double Complex::getImag() {
+  if (cartesian == false) calculateCartesian();
   return imag;
 }
 
-void Complex::calculatePolar () {
+void Complex::calculatePolar() {
   mag = sqrt(pow(real, 2) + pow(imag, 2));
   theta = atan(imag / real);
   polar = true;
 }
 
-double Complex::getMag () {
+double Complex::getMag() {
   if (polar == false) {
-    calculatePolar ();
+    calculatePolar();
   }
   return mag;
 }
 
-double Complex::getTheta () {
+double Complex::getTheta() {
   if (polar == false) {
-    calculatePolar ();
+    calculatePolar();
   }
   return theta;
 }
 
-void Complex::printCartesian () {
+void Complex::printCartesian() {
   cout &lt;&lt; getReal() &lt;&lt; " + " &lt;&lt; getImag() &lt;&lt; "i" &lt;&lt; endl;
 }
 
-void Complex::printPolar () {
+void Complex::printPolar() {
   cout &lt;&lt; getMag() &lt;&lt; " e^ " &lt;&lt; getTheta() &lt;&lt; "i" &lt;&lt; endl;
 }
 
@@ -182,7 +182,7 @@ Complex subtract (Complex&amp; a, Complex&amp; b) {
   return diff;
 }
 
-void Complex::setPolar (double m, double t) {
+void Complex::setPolar(double m, double t) {
   mag = m;  theta = t;
   cartesian = false;  polar = true;
 }
@@ -195,7 +195,7 @@ Complex mult (Complex&amp; a, Complex&amp; b) {
   return product;
 }
 
-void Complex::setCartesian (double r, double i) {
+void Complex::setCartesian(double r, double i) {
   real = r;    imag = i;
   cartesian = true;  polar = false;
 }

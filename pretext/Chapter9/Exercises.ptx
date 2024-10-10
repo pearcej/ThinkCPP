@@ -258,7 +258,7 @@ void printBook (Book& b) {
   cout << "\"" << b.title << "\" by " << b.author << " (" << b.yearPublished << "), $" << b.price << endl;
 }
 
-void applyDiscount (const Book& b, double discount) {
+void applyDiscount(const Book& b, double discount) {
   b.price -= discount;
 }
 
@@ -376,11 +376,11 @@ struct Point3D {
   double x, y, z;
 };
 
-void printPoint3D (const Point3D& p) {
+void printPoint3D(const Point3D& p) {
   cout << "(" << p.x << ", " << p.y << ", " << p.z << ")" << endl;
 }
 
-void midpoint (const Point3D& p1, const Point3D& p2, Point3D p3) {
+void midpoint(const Point3D& p1, const Point3D& p2, Point3D p3) {
   p3.x = (p1.x + p2.x) / 2;
   p3.y = (p1.y + p2.y) / 2;
   p3.z = (p1.z + p2.z) / 2;
@@ -440,11 +440,11 @@ struct Point3D {
   double x, y, z;
 };
 
-void printPoint3D (const Point3D& p) {
+void printPoint3D(const Point3D& p) {
   cout << "(" << p.x << ", " << p.y << ", " << p.z << ")" << endl;
 }
 
-void midpoint (const Point3D& p1, const Point3D& p2, Point3D& p3) {
+void midpoint(const Point3D& p1, const Point3D& p2, Point3D& p3) {
   p3.x = (p1.x + p2.x) / 2;
   p3.y = (p1.y + p2.y) / 2;
   p3.z = (p1.z + p2.z) / 2;
@@ -504,11 +504,11 @@ struct Point3D {
   double x, y, z;
 };
 
-void printPoint3D (const Point3D& p) {
+void printPoint3D(const Point3D& p) {
   cout << "(" << p.x << ", " << p.y << ", " << p.z << ")" << endl;
 }
 
-void midpoint (const Point3D& p1, const Point3D& p2, Point3D& p3) {
+void midpoint(const Point3D& p1, const Point3D& p2, Point3D& p3) {
   p3.x = (p1.x + p2.x) / 2;
   p3.y = (p1.y + p2.y) / 2;
   p3.z = (p1.z + p2.z) / 2;
@@ -572,11 +572,11 @@ struct Point3D {
   double x, y, z;
 };
 
-void printPoint3D (const Point3D& p) {
+void printPoint3D(const Point3D& p) {
   cout << "(" << p.x << ", " << p.y << ", " << p.z << ")" << endl;
 }
 
-void midpoint (const Point3D& p1, const Point3D& p2, Point3D& p3) {
+void midpoint(const Point3D& p1, const Point3D& p2, Point3D& p3) {
   p3.x = (p1.x + p2.x) / 2;
   p3.y = (p1.y + p2.y) / 2;
   p3.z = (p1.z + p2.z) / 2;

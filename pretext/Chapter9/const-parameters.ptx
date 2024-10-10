@@ -15,8 +15,8 @@
   <p>If you are writing a function and you do not intend to modify a
             parameter, you can declare that it is a <term>constant reference
                 parameter</term>. The syntax looks like this:</p>
-  <program>void printTime (const Time&amp; time) ...
-Time addTime (const Time&amp; t1, const Time&amp; t2) ...</program>
+  <program>void printTime(const Time&amp; time) ...
+Time addTime(const Time&amp; t1, const Time&amp; t2) ...</program>
   <p>I've included only the first line of the functions. If you tell the
             compiler that you don't intend to change a parameter, it can help remind
             you. If you try to change one, you should get a compiler error, or at
@@ -62,7 +62,7 @@ Time addTime (const Time&amp; t1, const Time&amp; t2) ...</program>
       </choice>
       <choice>
         <statement>
-          <p>The syntax can look like this: void printTime (const Time&amp; time)...</p>
+          <p>The syntax can look like this: void printTime(const Time&amp; time)...</p>
         </statement>
         <feedback>
           <p>This is true</p>

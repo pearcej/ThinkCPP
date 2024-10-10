@@ -7,7 +7,7 @@
 Time breadTime = { 3, 35, 0.0 };</program>
   <p>Now, using constructors, we have a different way to declare and
             initialize:</p>
-  <program>Time time (seconds);</program>
+  <program>Time time(seconds);</program>
   <p>These two functions represent different programming styles, and
             different points in the history of C++. Maybe for that reason, the C++
             compiler requires that you use one or the other, and not both in the
@@ -23,7 +23,7 @@ Time breadTime = { 3, 35, 0.0 };</program>
   <p>For example, it is common to have a constructor that takes one parameter
             for each instance variable, and that assigns the values of the
             parameters to the instance variables:</p>
-  <program>Time::Time (int h, int m, double s) {
+  <program>Time::Time(int h, int m, double s) {
   hour = h;  minute = m;  second = s;
 }</program>
   <p>To invoke this constructor, we use the same funny syntax as before,
@@ -43,9 +43,9 @@ using namespace std;
 struct Time {
     int hour, minute;
     double second;
-    Time (double secs);
-    Time (int h, int m, double s);
-    void print ();
+    Time(double secs);
+    Time(int h, int m, double s);
+    void print();
 };
 
 int main() {
@@ -58,19 +58,19 @@ int main() {
         ]]></input>
       <tests>
 
-Time::Time (double secs) {
-  hour = int (secs / 3600.0);
+Time::Time(double secs) {
+  hour = int(secs / 3600.0);
   secs -= hour * 3600.0;
-  minute = int (secs / 60.0);
+  minute = int(secs / 60.0);
   secs -= minute * 60.0;
   second = secs;
 }
 
-Time::Time (int h, int m, double s) {
+Time::Time(int h, int m, double s) {
   hour = h; minute = m; second = s;
 }
 
-void Time::print () {
+void Time::print() {
   cout &lt;&lt; hour &lt;&lt; ":" &lt;&lt; minute &lt;&lt; ":" &lt;&lt; second;
 }
 </tests>

@@ -41,15 +41,15 @@ private:
   int numElements;
 
 public:
-  Set (int n);
+  Set(int n);
 
-  int getNumElements () const;
-  string getElement (int i) const;
-  int find (const string&amp; s) const;
-  int add (const string&amp; s);
+  int getNumElements() const;
+  string getElement(int i) const;
+  int find(const string&amp; s) const;
+  int add(const string&amp; s);
 };
 
-Set::Set (int n)
+Set::Set(int n)
 {
   vector&lt;string&gt; temp (n);
   elements = temp;
@@ -64,7 +64,7 @@ Set::Set (int n)
   <p><c>getNumElements</c> and <c>getElement</c> are accessor functions for the
             instance variables, which are private. <c>numElements</c> is a read-only
             variable, so we provide a <c>get</c> function but not a <c>set</c> function.</p>
-  <program>int Set::getNumElements () const
+  <program>int Set::getNumElements() const
 {
   return numElements;
 }</program>
@@ -79,7 +79,7 @@ Set::Set (int n)
             need to check a stronger condition. The index has to be less than the
             number of elements, which might be smaller than the length of the
             <c>vector</c>.</p>
-  <program>string Set::getElement (int i) const
+  <program>string Set::getElement(int i) const
 {
   if (i &lt; numElements) {
     return elements[i];
@@ -92,7 +92,7 @@ Set::Set (int n)
             message (not the most useful message, I admit), and exits.</p>
   <p>The interesting functions are <c>find</c> and <c>add</c>. By now, the pattern
             for traversing and searching should be old hat:</p>
-  <program>int Set::find (const string&amp; s) const
+  <program>int Set::find(const string&amp; s) const
 {
   for (int i=0; i&lt;numElements; i++) {
     if (elements[i] == s) return i;
@@ -102,7 +102,7 @@ Set::Set (int n)
   <p>So that leaves us with <c>add</c>. Often the return type for something like
             <c>add</c> would be void, but in this case it might be useful to make it
             return the index of the element.</p>
-  <program>int Set::add (const string&amp; s)
+  <program>int Set::add(const string&amp; s)
 {
   // if the element is already in the set, return its index
   int index = find (s);
@@ -152,15 +152,15 @@ private:
   int numElements;
 
 public:
-  Set (int n);
+  Set(int n);
 
-  int getNumElements () const;
-  string getElement (int i) const;
-  int find (const string& s) const;
-  int add (const string& s);
+  int getNumElements() const;
+  string getElement(int i) const;
+  int find(const string& s) const;
+  int add(const string& s);
 };
 
-Set::Set (int n)
+Set::Set(int n)
 {
   vector<string> temp (n);
   elements = temp;
@@ -177,11 +177,11 @@ int main() {
         ]]></input>
     <tests>
 
-int Set::getNumElements () const {
+int Set::getNumElements() const {
   return numElements;
 }
 
-string Set::getElement (int i) const {
+string Set::getElement(int i) const {
   if (i &lt; numElements) {
     return elements[i];
   }
@@ -191,14 +191,14 @@ string Set::getElement (int i) const {
   }
 }
 
-int Set::find (const string&amp; s) const {
+int Set::find(const string&amp; s) const {
   for (int i=0; i&lt;numElements; i++) {
     if (elements[i] == s) return i;
   }
   return -1;
 }
 
-int Set::add (const string&amp; s) {
+int Set::add(const string&amp; s) {
   int index = find (s);
   if (index != -1) return index;
 

@@ -14,7 +14,7 @@
     </li>
     <li>
       <title>type:</title>
-      <p>A set of values. The types we have seen are integers (int in C++)
+      <p>A set of values. The types we have seen are integers(int in C++)
         and characters ( char in C++).</p>
     </li>
     <li>

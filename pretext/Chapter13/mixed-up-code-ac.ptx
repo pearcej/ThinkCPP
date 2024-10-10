@@ -226,7 +226,7 @@ int main() {
 
     
     <program xml:id="mucp_13_4_ac_a_editor" line-numbers="yes"><input>
-Deck Deck::mergeSort () const {
+Deck Deck::mergeSort() const {
     find the midpoint of the deck
     divide the deck into two subdecks
     sort the subdecks using sort
@@ -238,7 +238,7 @@ Deck Deck::mergeSort () const {
             
 
 <exercise label="mucp_13_4_ac_a"><statement><p>Below is one way to write the pseudocode of <c>mergeSort</c>.</p></statement><program xml:id="mucp_13_4_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input>
-Deck Deck::mergeSort () const {
+Deck Deck::mergeSort() const {
     find the midpoint of the deck
     divide the deck into two subdecks
     sort the subdecks using sort
@@ -337,7 +337,7 @@ struct Dictionary {
     vector<Entry> entries;
 };
 
-int Dictionary::find (string word) {
+int Dictionary::find(string word) {
     for (size_t i = 0; i < entries.size(); ++i) {
         if (entries[i].word == word) {
             return i;
@@ -363,7 +363,7 @@ struct Dictionary {
     vector<Entry> entries;
 };
 
-int Dictionary::find (string word) {
+int Dictionary::find(string word) {
     for (size_t i = 0; i < entries.size(); ++i) {
         if (entries[i].word == word) {
             return i;
@@ -410,7 +410,7 @@ struct Dictionary {
     vector<Entry> entries;
 };
 
-int Dictionary::findFirstWord (int start) {
+int Dictionary::findFirstWord(int start) {
     int min = start;
     for (size_t i = start; i < entries.size(); ++i) {
         if (entries[i].word < entries[min].word) {
@@ -437,7 +437,7 @@ struct Dictionary {
     vector<Entry> entries;
 };
 
-int Dictionary::findFirstWord (int start) {
+int Dictionary::findFirstWord(int start) {
     int min = start;
     for (size_t i = start; i < entries.size(); ++i) {
         if (entries[i].word < entries[min].word) {
@@ -484,7 +484,7 @@ struct Dictionary {
     vector<Entry> entries;
 };
 
-void Dictionary::swap (int a, int b) {
+void Dictionary::swap(int a, int b) {
     Entry temp = entries[a];
     entries[a] = entries[b];
     entries[b] = temp;
@@ -507,7 +507,7 @@ struct Dictionary {
     vector<Entry> entries;
 };
 
-void Dictionary::swap (int a, int b) {
+void Dictionary::swap(int a, int b) {
     Entry temp = entries[a];
     entries[a] = entries[b];
     entries[b] = temp;
@@ -541,7 +541,7 @@ using namespace std;
 #include <vector>
 using namespace std;
 
-void Dictionary::alphabetize () {
+void Dictionary::alphabetize() {
     for (size_t i = 0; i < entries.size(); ++i) {
         int min = findFirstWord (i);
         swap (i, min);
@@ -556,7 +556,7 @@ void Dictionary::alphabetize () {
 #include <vector>
 using namespace std;
 
-void Dictionary::alphabetize () {
+void Dictionary::alphabetize() {
     for (size_t i = 0; i < entries.size(); ++i) {
         int min = findFirstWord (i);
         swap (i, min);
@@ -600,7 +600,7 @@ struct Dictionary {
     vector<Entry> entries;
 };
 
-void Dictionary::printDictionary () {
+void Dictionary::printDictionary() {
     for (size_t i = 0; i < entries.size(); ++i) {
         cout << entries[i].word << endl;
     }
@@ -623,7 +623,7 @@ struct Dictionary {
     vector<Entry> entries;
 };
 
-void Dictionary::printDictionary () {
+void Dictionary::printDictionary() {
     for (size_t i = 0; i < entries.size(); ++i) {
         cout << entries[i].word << endl;
     }

@@ -12,7 +12,7 @@
 #include <iostream>
 using namespace std;
 
-double calculator (double first, double second, char operation) {
+double calculator(double first, double second, char operation) {
     if (operation == '+') {
         return first + second;
     }
@@ -76,7 +76,7 @@ TEST_CASE("calculator function: division") {
 #include <iostream>
 using namespace std;
 
-double calculateIntAngle (int numSides) {
+double calculateIntAngle(int numSides) {
     return (numSides - 2) * 180.0 / numSides;
 }
         ]]></input><tests>
@@ -117,7 +117,7 @@ TEST_CASE("calculateIntAngle function") {
 #include <iostream>
 using namespace std;
 
-int dogToHumanYears (int dogAge) {
+int dogToHumanYears(int dogAge) {
     if (dogAge == 1) {
         return 15;
     }
@@ -163,7 +163,7 @@ TEST_CASE("dogToHumanYears function for &gt;1") {
 #include <iostream>
 using namespace std;
 
-bool isLeapYear (int year) {
+bool isLeapYear(int year) {
     if (year % 400 == 0) {
         return true;
     }
@@ -228,7 +228,7 @@ TEST_CASE("isLeapYear divisible by 400") {
 #include <iostream>
 using namespace std;
 
-int triangularNum (int n) {
+int triangularNum(int n) {
     if (n == 1) {
         return 1;
     }

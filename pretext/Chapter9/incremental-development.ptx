@@ -21,18 +21,18 @@
             <c>Time</c>s into <c>double</c>s and take advantage of the fact that the
             computer already knows how to do arithmetic with <c>double</c>s. Here is
             a function that converts a <c>Time</c> into a <c>double</c>:</p>
-  <program>double convertToSeconds (const Time&amp; t) {
+  <program>double convertToSeconds(const Time&amp; t) {
   int minutes = t.hour * 60 + t.minute;
   double seconds = minutes * 60 + t.second;
   return seconds;
 }</program>
   <p>Now all we need is a way to convert from a <c>double</c> to a <c>Time</c>
             object:</p>
-  <program>Time makeTime (double secs) {
+  <program>Time makeTime(double secs) {
   Time time;
-  time.hour = int (secs / 3600.0);
+  time.hour = int(secs / 3600.0);
   secs -= time.hour * 3600.0;
-  time.minute = int (secs / 60.0);
+  time.minute = int(secs / 60.0);
   secs -= time.minute * 60;
   time.second = secs;
   return time;
@@ -40,9 +40,9 @@
   <p>You might have to think a bit to convince yourself that the technique I
             am using to convert from one base to another is correct. Assuming you
             are convinced, we can use these functions to rewrite <c>addTime</c>:</p>
-  <program>Time addTime (const Time&amp; t1, const Time&amp; t2) {
-  double seconds = convertToSeconds (t1) + convertToSeconds (t2);
-  return makeTime (seconds);
+  <program>Time addTime(const Time&amp; t1, const Time&amp; t2) {
+  double seconds = convertToSeconds(t1) + convertToSeconds(t2);
+  return makeTime(seconds);
 }</program>
   <exercise label="incremental_development_AC_1">
     <statement>
@@ -62,25 +62,25 @@ void printTime (Time& t) {
     cout << t.hour << ":" << t.minute << ":" << t.second << endl;
 }
 
-double convertToSeconds (const Time& t) {
+double convertToSeconds(const Time& t) {
     int minutes = t.hour * 60 + t.minute;
     double seconds = minutes * 60 + t.second;
     return seconds;
 }
 
-Time makeTime (double secs) {
+Time makeTime(double secs) {
     Time time;
-    time.hour = int (secs / 3600.0);
+    time.hour = int(secs / 3600.0);
     secs -= time.hour * 3600.0;
-    time.minute = int (secs / 60.0);
+    time.minute = int(secs / 60.0);
     secs -= time.minute * 60;
     time.second = secs;
     return time;
 }
 
-Time addTime (const Time& t1, const Time& t2) {
-    double seconds = convertToSeconds (t1) + convertToSeconds (t2);
-    return makeTime (seconds);
+Time addTime(const Time& t1, const Time& t2) {
+    double seconds = convertToSeconds(t1) + convertToSeconds(t2);
+    return makeTime(seconds);
 }
 
 int main() {
@@ -115,25 +115,25 @@ void printTime (Time& t) {
     cout << t.hour << ":" << t.minute << ":" << t.second << endl;
 }
 
-double convertToSeconds (const Time& t) {
+double convertToSeconds(const Time& t) {
     int minutes = t.hour * 60 + t.minute;
     double seconds = minutes * 60 + t.second;
     return seconds;
 }
 
-Time makeTime (double secs) {
+Time makeTime(double secs) {
     Time time;
-    time.hour = int (secs / 3600.0);
+    time.hour = int(secs / 3600.0);
     secs -= time.hour * 3600.0;
-    time.minute = int (secs / 60.0);
+    time.minute = int(secs / 60.0);
     secs -= time.minute * 60;
     time.second = secs;
     return time;
 }
 
-Time addTime (const Time& t1, const Time& t2) {
-    double seconds = convertToSeconds (t1) + convertToSeconds (t2);
-    return makeTime (seconds);
+Time addTime(const Time& t1, const Time& t2) {
+    double seconds = convertToSeconds(t1) + convertToSeconds(t2);
+    return makeTime(seconds);
 }
 
 void increment (Time& time, double secs) {
@@ -145,12 +145,12 @@ int main() {
     Time t1 = { 9, 14, 30.0 };
     increment(t1, 60.0);
     // Should output "9:15:30"
-    printTime (t1);
+    printTime(t1);
 
     Time t2 = { 9, 59, 45.0 };
     increment(t2, 120.0);
     // Should output "10:1:45"
-    printTime (t2);
+    printTime(t2);
 }
         ]]></input>
     </program>
@@ -173,19 +173,19 @@ int main() {
         </block>
         <block order="6">
           <choice correct="yes">
-            <cline>   double seconds = convertToSeconds (time) + secs;</cline>
+            <cline>   double seconds = convertToSeconds(time) + secs;</cline>
           </choice>
           <choice>
-            <cline>   double seconds = convertToSeconds (time);                        </cline>
+            <cline>   double seconds = convertToSeconds(time);                        </cline>
           </choice>
         </block>
         <block order="3">
           <choice correct="yes">
-            <cline>   time = makeTime (seconds);</cline>
+            <cline>   time = makeTime(seconds);</cline>
             <cline>}</cline>
           </choice>
           <choice>
-            <cline>   return makeTime (seconds)                        </cline>
+            <cline>   return makeTime(seconds)                        </cline>
             <cline>}</cline>
           </choice>
         </block>

@@ -11,7 +11,7 @@
   <p>You can make up any name you want for your function, except that you can't call it <c>main</c> or
     any other C++ keyword. The list of parameters specifies what information &#x2013; if any
     &#x2013; you have to provide in order to use, or <term>call</term>, the new function.</p>
-  <p><c>main</c> doesn't take any parameters, as indicated by the empty parentheses () in it's
+  <p><c>main</c> doesn't take any parameters, as indicated by the empty parentheses() in it's
     definition. The first couple of functions we are going to write also have no parameters, so the
     syntax looks like this:</p>
   <program>void newLine() {

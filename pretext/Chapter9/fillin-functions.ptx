@@ -6,7 +6,7 @@
             creating a new object every time <c>addTime</c> is called, we could require
             the caller to provide an <q>empty</q> object where <c>addTime</c> can store the
             result. Compare the following with the previous version:</p>
-  <program>void addTimeFill (const Time&amp; t1, const Time&amp; t2, Time&amp; sum) {
+  <program>void addTimeFill(const Time&amp; t1, const Time&amp; t2, Time&amp; sum) {
   sum.hour = t1.hour + t2.hour;
   sum.minute = t1.minute + t2.minute;
   sum.second = t1.second + t2.second;
@@ -44,7 +44,7 @@ void printTime (Time& t) {
     cout << t.hour << ":" << t.minute << ":" << t.second << endl;
 }
 
-void addTimeFill (const Time& t1, const Time& t2, Time& sum) {
+void addTimeFill(const Time& t1, const Time& t2, Time& sum) {
     sum.hour = t1.hour + t2.hour;
     sum.minute = t1.minute + t2.minute;
     sum.second = t1.second + t2.second;
@@ -75,7 +75,7 @@ int main() {
       <p>Which parameter is not declared as a <c>const</c>?</p>
       <program line-numbers="yes">
         <input>
-void addTimeFill (const Time&amp; t1, const Time&amp; t2, Time&amp; sum) {
+void addTimeFill(const Time&amp; t1, const Time&amp; t2, Time&amp; sum) {
   sum.hour = t1.hour + t2.hour;
   sum.minute = t1.minute + t2.minute;
   sum.second = t1.second + t2.second;

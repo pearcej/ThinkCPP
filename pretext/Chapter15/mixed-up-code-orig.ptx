@@ -417,11 +417,11 @@
         <cline><![CDATA[      vector<string> elements;]]></cline>
         <cline>      int numElements;</cline>
         <cline>   public:</cline>
-        <cline>      Set (int n);</cline>
-        <cline>      int getNumElements () const;</cline>
-        <cline>      string getElement (int i) const;</cline>
-        <cline>      int find (const string&amp; s) const;</cline>
-        <cline>      int add (const string&amp; s);</cline>
+        <cline>      Set(int n);</cline>
+        <cline>      int getNumElements() const;</cline>
+        <cline>      string getElement(int i) const;</cline>
+        <cline>      int find(const string&amp; s) const;</cline>
+        <cline>      int add(const string&amp; s);</cline>
         <cline>};</cline>
       </block>
       <block order="6">
@@ -479,7 +479,7 @@
         <cline>   public:</cline>
       </block>
       <block order="6">
-        <cline>      Matrix (int numRows, int numCols) {</cline>
+        <cline>      Matrix(int numRows, int numCols) {</cline>
       </block>
       <block order="12">
         <cline><![CDATA[         vector<int> row(numCols);]]></cline>
@@ -523,10 +523,10 @@
     <blocks>
       <block order="5">
         <choice correct="yes">
-          <cline>void Matrix::setData (int row, int col, int value) {</cline>
+          <cline>void Matrix::setData(int row, int col, int value) {</cline>
         </choice>
         <choice>
-          <cline>void setData (int row, int col, int value) {  </cline>
+          <cline>void setData(int row, int col, int value) {  </cline>
         </choice>
       </block>
       <block order="1">

@@ -11,16 +11,16 @@
     </statement>
     <blocks>
       <block order="1">
-        <cline>double dollarToYen (double dollar) {</cline>
+        <cline>double dollarToYen(double dollar) {</cline>
       </block>
       <block order="5" correct="no">
-        <cline>int dollarToYen (double dollar) {  </cline>
+        <cline>int dollarToYen(double dollar) {  </cline>
       </block>
       <block order="7" correct="no">
-        <cline>void dollarToYen (double dollar) {  </cline>
+        <cline>void dollarToYen(double dollar) {  </cline>
       </block>
       <block order="4" correct="no">
-        <cline>double dollarToYen () {  </cline>
+        <cline>double dollarToYen() {  </cline>
       </block>
       <block order="2" correct="no">
         <cline>   double yen;  </cline>
@@ -49,10 +49,10 @@
     </statement>
     <blocks>
       <block order="5">
-        <cline>double priceWithTax (double price, double percentTax) {</cline>
+        <cline>double priceWithTax(double price, double percentTax) {</cline>
       </block>
       <block order="3" correct="no">
-        <cline>int priceWithTax (double price, int percentTax) {  </cline>
+        <cline>int priceWithTax(double price, int percentTax) {  </cline>
       </block>
       <block order="4" correct="no">
         <cline>double priceWithTax (price, percentTax) {  </cline>
@@ -82,13 +82,13 @@
     </statement>
     <blocks>
       <block order="5">
-        <cline>char percentToLetter (double percentage) {</cline>
+        <cline>char percentToLetter(double percentage) {</cline>
       </block>
       <block order="13" correct="no">
-        <cline>void percentToLetter (double percentage) {  </cline>
+        <cline>void percentToLetter(double percentage) {  </cline>
       </block>
       <block order="1" correct="no">
-        <cline>void percentToLetter (int percentage) {  </cline>
+        <cline>void percentToLetter(int percentage) {  </cline>
       </block>
       <block order="14" correct="no">
         <cline>char percentToLetter (percentage) {  </cline>
@@ -158,13 +158,13 @@
     </statement>
     <blocks>
       <block order="2">
-        <cline>double triangleArea (double base, double height) {</cline>
+        <cline>double triangleArea(double base, double height) {</cline>
       </block>
       <block order="3" correct="no">
-        <cline>int triangleArea (double base, double height) {  </cline>
+        <cline>int triangleArea(double base, double height) {  </cline>
       </block>
       <block order="7" correct="no">
-        <cline>void triangleArea (double base, double height) {  </cline>
+        <cline>void triangleArea(double base, double height) {  </cline>
       </block>
       <block order="8" correct="no">
         <cline>double triangleArea (base, height) {  </cline>
@@ -192,10 +192,10 @@
     </statement>
     <blocks>
       <block order="2">
-        <cline>double cylinderVolume (double radius, double height) {</cline>
+        <cline>double cylinderVolume(double radius, double height) {</cline>
       </block>
       <block order="3" correct="no">
-        <cline>void cylinderVolume (double radius, double height) {  </cline>
+        <cline>void cylinderVolume(double radius, double height) {  </cline>
       </block>
       <block order="6" correct="no">
         <cline>double cylinderVolume (radius, height) {  </cline>
@@ -223,13 +223,13 @@
     </statement>
     <blocks>
       <block order="10">
-        <cline>int birdType (bool isRound, bool isGray) {</cline>
+        <cline>int birdType(bool isRound, bool isGray) {</cline>
       </block>
       <block order="7" correct="no">
-        <cline>void birdType (bool isRound, bool isGray) {  </cline>
+        <cline>void birdType(bool isRound, bool isGray) {  </cline>
       </block>
       <block order="11" correct="no">
-        <cline>double birdType (int isRound, char isGray) {  </cline>
+        <cline>double birdType(int isRound, char isGray) {  </cline>
       </block>
       <block order="1">
         <choice correct="yes">
@@ -286,10 +286,10 @@
     <blocks>
       <block order="2">
         <choice correct="yes">
-          <cline>bool isDoubleDigit (int num) {</cline>
+          <cline>bool isDoubleDigit(int num) {</cline>
         </choice>
         <choice>
-          <cline>isDoubleDigit (int num) {  </cline>
+          <cline>isDoubleDigit(int num) {  </cline>
         </choice>
       </block>
       <block order="10">
@@ -334,10 +334,10 @@
     <blocks>
       <block order="13">
         <choice correct="yes">
-          <cline>int Compare (int a, int b) {</cline>
+          <cline>int Compare(int a, int b) {</cline>
         </choice>
         <choice>
-          <cline>bool Compare (int a, int b) {   </cline>
+          <cline>bool Compare(int a, int b) {   </cline>
         </choice>
       </block>
       <block order="7">
@@ -392,10 +392,10 @@
     <blocks>
       <block order="8">
         <choice correct="yes">
-          <cline>bool isFactor (int num, int factor) {</cline>
+          <cline>bool isFactor(int num, int factor) {</cline>
         </choice>
         <choice>
-          <cline>void isFactor (int num, int factor) {  </cline>
+          <cline>void isFactor(int num, int factor) {  </cline>
         </choice>
       </block>
       <block order="6">
@@ -439,13 +439,13 @@
     </statement>
     <blocks>
       <block order="11">
-        <cline>bool isPerfectSquare (int input) {</cline>
+        <cline>bool isPerfectSquare(int input) {</cline>
       </block>
       <block order="9" correct="no">
-        <cline>bool isPerfectSquare (int input) </cline>
+        <cline>bool isPerfectSquare(int input) </cline>
       </block>
       <block order="6" correct="no">
-        <cline>int isPerfectSquare (int input) {  </cline>
+        <cline>int isPerfectSquare(int input) {  </cline>
       </block>
       <block order="12">
         <cline>   int root = sqrt (input);</cline>
@@ -492,13 +492,13 @@
     </statement>
     <blocks>
       <block order="6">
-        <cline>int countBacteria (int hour) {</cline>
+        <cline>int countBacteria(int hour) {</cline>
       </block>
       <block order="7" correct="no">
-        <cline>void countBacteria (int hour) {  </cline>
+        <cline>void countBacteria(int hour) {  </cline>
       </block>
       <block order="8" correct="no">
-        <cline>bool countBacteria (int hour) {  </cline>
+        <cline>bool countBacteria(int hour) {  </cline>
       </block>
       <block order="9">
         <choice correct="yes">

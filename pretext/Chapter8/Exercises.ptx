@@ -277,7 +277,7 @@ struct Cube {
   int mass;
 };
 
-int calculateDensity (Cube c) {
+int calculateDensity(Cube c) {
   return c.mass / c.volume;
 }
 
@@ -336,7 +336,7 @@ struct Student {
   bool coffeeCupFull;
 };
 
-void pourCoffee (Student s) {
+void pourCoffee(Student s) {
   s.coffeeCupFull = true;
 }
 
@@ -457,13 +457,13 @@ void foo (int& x, int y) {
   y = 2 * x + 3 * y;
 }
 
-void bar (int x, int y) {
+void bar(int x, int y) {
   y = 2 * x;
   x = x - 1;
   foo (x, x);
 }
 
-void func (int &x, int& y) {
+void func(int &x, int& y) {
   x = x + 3;
   bar (y, x);
 }

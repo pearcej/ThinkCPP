@@ -52,9 +52,9 @@ struct Student {
     string name;
     int year;
 
-    int getID () { return id; }
-    int setID (int i) { id = i; }
-    void printInfo () { cout << "Student: " << name << ", " << year; }
+    int getID() { return id; }
+    int setID(int i) { id = i; }
+    void printInfo() { cout << "Student: " << name << ", " << year; }
 };
 ]]></input>
       </program>
@@ -63,7 +63,7 @@ struct Student {
       <choice>
         <statement id="mce_14_2_opt_a">
           <p>
-            <c>Student ()</c>
+            <c>Student()</c>
           </p>
         </statement>
         <feedback id="mce_14_2_opt_a">
@@ -73,7 +73,7 @@ struct Student {
       <choice correct="yes">
         <statement id="mce_14_2_opt_b">
           <p>
-            <c>getID ()</c>
+            <c>getID()</c>
           </p>
         </statement>
         <feedback id="mce_14_2_opt_b">
@@ -83,7 +83,7 @@ struct Student {
       <choice correct="yes">
         <statement id="mce_14_2_opt_c">
           <p>
-            <c>setID ()</c>
+            <c>setID()</c>
           </p>
         </statement>
         <feedback id="mce_14_2_opt_c">
@@ -93,7 +93,7 @@ struct Student {
       <choice>
         <statement id="mce_14_2_opt_d">
           <p>
-            <c>printInfo ()</c>
+            <c>printInfo()</c>
           </p>
         </statement>
         <feedback id="mce_14_2_opt_d">
@@ -151,9 +151,9 @@ class rightTriangle {
   int height;
 
   public:
-    int getBase () { return base; }
-    int getHeight () { return height; }
-    double calculateHypotenuse () {
+    int getBase() { return base; }
+    int getHeight() { return height; }
+    double calculateHypotenuse() {
       ???
     }
 };
@@ -215,7 +215,7 @@ class Plane {
   string destination;
 
   public:
-    void printInfo () {
+    void printInfo() {
       cout << "Flight " << flightNumber << " (" << model
            << ") from " << origin << " to " << destination << endl;
     }
@@ -227,7 +227,7 @@ int main() {
   p.model = "Boeing 787";
   p.origin = "Los Angeles";
   p.destination = "Detroit";
-  p.printInfo ();
+  p.printInfo();
 }
 ]]></input>
       </program>
@@ -280,11 +280,11 @@ class Temp {
     bool is_celsius;
 
   public:
-    double getFahrenheit () { return fahrenheit; }
-    double getCelsius () { return celsius; }
-    void setFahrenheit (double f) { fahrenheit = f; is_fahrenheit = true; is_celsius = false; }
-    void setCelsius (double c) { celsius = c; is_celsius = true; is_fahrenheit = false; }
-    void printTemp () {
+    double getFahrenheit() { return fahrenheit; }
+    double getCelsius() { return celsius; }
+    void setFahrenheit(double f) { fahrenheit = f; is_fahrenheit = true; is_celsius = false; }
+    void setCelsius(double c) { celsius = c; is_celsius = true; is_fahrenheit = false; }
+    void printTemp() {
       if (is_fahrenheit) {
         cout << "It is " << getFahrenheit() << " degrees Fahrenheit" << endl;
       }
@@ -298,7 +298,7 @@ int main() {
   Temp t;
   t.setFahrenheit (125);
   t.setCelsius (30);
-  t.printTemp ();
+  t.printTemp();
 }
 ]]></input>
       </program>
@@ -391,7 +391,7 @@ class Date {
     string message;
 
   public:
-    Date (int hour, int d, int m, int y, bool b, string m) {
+    Date(int hour, int d, int m, int y, bool b, string m) {
       day = d;
       month = m;
       year = y;
@@ -442,7 +442,7 @@ class Date {
       <p>Take a look at the function below. What are its preconditions and postconditions?</p>
       <program line-numbers="yes">
         <input>
-int calculateRectangleArea (int length, int width) {
+int calculateRectangleArea(int length, int width) {
   return length * width;
 }
 </input>

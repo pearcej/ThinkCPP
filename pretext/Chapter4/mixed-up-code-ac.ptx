@@ -78,7 +78,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void is_even (int number) {
+void is_even(int number) {
     if (number % 2 == 0) {
     cout << true;
     }
@@ -100,7 +100,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void is_even (int number) {
+void is_even(int number) {
     if (number % 2 == 0) {
     cout << true;
     }
@@ -148,7 +148,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void difference (int a, int b) {
+void difference(int a, int b) {
     if (a - b > 0) {
     cout << a - b;
     }
@@ -170,7 +170,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void difference (int a, int b) {
+void difference(int a, int b) {
     if (a - b > 0) {
     cout << a - b;
     }
@@ -327,7 +327,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void printLetterGrade (double grade) {
+void printLetterGrade(double grade) {
     if (grade < 70) {
     cout << "F"; }
     else if (grade < 80) {
@@ -350,7 +350,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void printLetterGrade (double grade) {
+void printLetterGrade(double grade) {
     if (grade < 70) {
     cout << "F"; }
     else if (grade < 80) {
@@ -394,7 +394,7 @@ using namespace std;
 #include <iostream>
 using namespace std;
 
-void knightKnave (bool truth, bool told) {
+void knightKnave(bool truth, bool told) {
     if (truth == true) {
         if (told == true) {
             cout << "Knight";
@@ -419,7 +419,7 @@ void knightKnave (bool truth, bool told) {
 #include <iostream>
 using namespace std;
 
-void knightKnave (bool truth, bool told) {
+void knightKnave(bool truth, bool told) {
     if (truth == true) {
         if (told == true) {
             cout << "Knight";
@@ -463,7 +463,7 @@ using namespace std;
 #include <iostream>
 using namespace std;
 
-void makeVocals (string animal, string mood) {
+void makeVocals(string animal, string mood) {
     if (mood == "bad") {
         if (animal == "dog") {
             cout << "Woof!" << endl;
@@ -494,7 +494,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void makeVocals (string animal, string mood) {
+void makeVocals(string animal, string mood) {
     if (mood == "bad") {
         if (animal == "dog") {
             cout << "Woof!" << endl;
@@ -544,12 +544,12 @@ using namespace std;
 #include <iostream>
 using namespace std;
 
-void takeSum () {
+void takeSum() {
     cout << "Input a positive number!";
     int num;
     cin >> num;
     if (num < 0) {
-        takeSum ();
+        takeSum();
     } // END "if"
     cout << num;
 } // END function
@@ -565,12 +565,12 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void takeSum () {
+void takeSum() {
     cout << "Input a positive number!";
     int num;
     cin >> num;
     if (num < 0) {
-        takeSum ();
+        takeSum();
     } // END "if"
     cout << num;
 } // END function
@@ -610,12 +610,12 @@ using namespace std;
 #include <iostream>
 using namespace std;
 
-void capitalize () {
+void capitalize() {
     cout << "Input a lowercase character!";
     char let;
     cin >> let;
     if (int(let) < 97 || int(let) > 122) {
-    capitalize (); }
+    capitalize(); }
     let = let - 32;
     cout << char(let);
 }
@@ -631,12 +631,12 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void capitalize () {
+void capitalize() {
     cout << "Input a lowercase character!";
     char let;
     cin >> let;
     if (int(let) < 97 || int(let) > 122) {
-    capitalize (); }
+    capitalize(); }
     let = let - 32;
     cout << char(let);
 }

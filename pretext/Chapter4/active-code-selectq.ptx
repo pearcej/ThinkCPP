@@ -17,7 +17,7 @@
 #include <iostream>
 using namespace std;
 
-string whichDoor (double grade) {
+string whichDoor(double grade) {
     s = "";
     if (grade < 50) {
         s = "C";
@@ -45,10 +45,10 @@ string whichDoor (double grade) {
         <blocks>
           <block order="7">
             <choice correct="yes">
-              <cline>string whichDoor (double grade) {</cline>
+              <cline>string whichDoor(double grade) {</cline>
             </choice>
             <choice>
-              <cline>void whichDoor (double grade) { </cline>
+              <cline>void whichDoor(double grade) { </cline>
             </choice>
           </block>
           <block order="1">
@@ -102,7 +102,7 @@ string whichDoor (double grade) {
 #include <iostream>
 using namespace std;
 
-void is_even (int num) {
+void is_even(int num) {
     if (num % 2 == 0) {
         cout << true;
     }
@@ -120,7 +120,7 @@ void is_even (int num) {
         </statement>
         <blocks>
           <block order="3">
-            <cline>void is_even (int num) {</cline>
+            <cline>void is_even(int num) {</cline>
           </block>
           <block order="2">
             <choice correct="yes">
@@ -168,7 +168,7 @@ void is_even (int num) {
 #include <iostream>
 using namespace std;
 
-void greaterThan () {
+void greaterThan() {
 
 }
         ]]></input>
@@ -187,10 +187,10 @@ void greaterThan () {
         <blocks>
           <block order="3">
             <choice correct="yes">
-              <cline>void greaterThan (double a, double b) {</cline>
+              <cline>void greaterThan(double a, double b) {</cline>
             </choice>
             <choice>
-              <cline>void greaterThan (int a , int b) { </cline>
+              <cline>void greaterThan(int a , int b) { </cline>
             </choice>
           </block>
           <block order="5">
@@ -234,7 +234,7 @@ void greaterThan () {
 #include <iostream>
 using namespace std;
 
-void exclusiveOr (bool a, bool b) {
+void exclusiveOr(bool a, bool b) {
 
 }
         ]]></input>
@@ -251,7 +251,7 @@ void exclusiveOr (bool a, bool b) {
         </statement>
         <blocks>
           <block order="2">
-            <cline>void exclusiveOr (bool a, bool b) {</cline>
+            <cline>void exclusiveOr(bool a, bool b) {</cline>
           </block>
           <block order="1">
             <choice correct="yes">
@@ -292,7 +292,7 @@ void exclusiveOr (bool a, bool b) {
 #include <iostream>
 using namespace std;
 
-void printNegativeNum () {
+void printNegativeNum() {
 
 }
         ]]></input>
@@ -310,7 +310,7 @@ void printNegativeNum () {
         </statement>
         <blocks>
           <block order="3">
-            <cline>void printNegativeNum () {</cline>
+            <cline>void printNegativeNum() {</cline>
           </block>
           <block order="2">
             <cline>    int negative;</cline>

@@ -66,7 +66,7 @@
   </p>
   <p>Steps 3 and 4 look suspiciously like recursive invocations. Here's what
             this all looks like translated into C++:</p>
-  <program>int findBisect (const Card&amp; card, const vector&lt;Card&gt;&amp; deck,
+  <program>int findBisect(const Card&amp; card, const vector&lt;Card&gt;&amp; deck,
                 int low, int high) {
   int mid = (high + low) / 2;
 
@@ -92,7 +92,7 @@
             mean is that there are no cards in the segment of the deck indicated by
             <c>low</c> and <c>high</c>.</p>
   <p>With that line added, the function works correctly:</p>
-  <program>int findBisect (const Card&amp; card, const vector&lt;Card&gt;&amp; deck,
+  <program>int findBisect(const Card&amp; card, const vector&lt;Card&gt;&amp; deck,
                 int low, int high) {
 
   cout &lt;&lt; low &lt;&lt; ", " &lt;&lt; high &lt;&lt; endl;
@@ -148,21 +148,21 @@ using namespace std;
 struct Card {
     int suit, rank;
 
-    Card ();
-    Card (int s, int r);
-    void print () const;
-    bool isGreater (const Card& c2) const;
+    Card();
+    Card(int s, int r);
+    void print() const;
+    bool isGreater(const Card& c2) const;
 };
 
 vector<Card> buildDeck();
 
-bool equals (const Card& c1, const Card& c2){
+bool equals(const Card& c1, const Card& c2){
     return (c1.rank == c2.rank && c1.suit == c2.suit);
 }
 
 void printDeck(const vector<Card>& deck);
-int find (const Card& card, const vector<Card>& deck);
-int findBisect (const Card& card, const vector<Card>& deck, int low, int high);
+int find(const Card& card, const vector<Card>& deck);
+int findBisect(const Card& card, const vector<Card>& deck, int low, int high);
 
 int main() {
     vector<Card> deck = buildDeck();
@@ -174,15 +174,15 @@ int main() {
         ]]></input>
       <tests>
 
-Card::Card () {
+Card::Card() {
    suit = 0;  rank = 0;
 }
 
-Card::Card (int s, int r) {
+Card::Card(int s, int r) {
    suit = s;  rank = r;
 }
 
-void Card::print () const {
+void Card::print() const {
    vector&lt;string&gt; suits (4);
    suits[0] = "Clubs";
    suits[1] = "Diamonds";
@@ -220,20 +220,20 @@ vector&lt;Card&gt; buildDeck() {
    return deck;
 }
 
- void printDeck (const vector&lt;Card&gt;&amp; deck) {
+ void printDeck(const vector&lt;Card&gt;&amp; deck) {
    for (size_t i = 0; i &lt; deck.size(); i++) {
-     deck[i].print ();
+     deck[i].print();
    }
  }
 
-int find (const Card&amp; card, const vector&lt;Card&gt;&amp; deck) {
+int find(const Card&amp; card, const vector&lt;Card&gt;&amp; deck) {
    for (size_t i = 0; i &lt; deck.size(); i++) {
     if (equals (deck[i], card)) return i;
    }
    return -1;
 }
 
-int findBisect (const Card&amp; card, const vector&lt;Card&gt;&amp; deck, int low, int high) {
+int findBisect(const Card&amp; card, const vector&lt;Card&gt;&amp; deck, int low, int high) {
 
    cout &lt;&lt; low &lt;&lt; ", " &lt;&lt; high &lt;&lt; endl;
 
@@ -249,7 +249,7 @@ int findBisect (const Card&amp; card, const vector&lt;Card&gt;&amp; deck, int lo
       return findBisect (card, deck, mid+1, high);
    }
 }
-bool Card::isGreater (const Card&amp; c2) const {
+bool Card::isGreater(const Card&amp; c2) const {
   if (suit &gt; c2.suit) return true;
   if (suit &lt; c2.suit) return false;
 

@@ -80,7 +80,7 @@ int main() {
 #include <cmath>
 using namespace std;
 
-void logSubtraction (double a) {
+void logSubtraction(double a) {
     // Create the variable difference and assign it to the difference mentioned in the instructions
 
     cout << difference;
@@ -101,7 +101,7 @@ int main() {
         </statement>
         <blocks>
           <block order="4">
-            <cline>void logSubtraction (double a) {</cline>
+            <cline>void logSubtraction(double a) {</cline>
           </block>
           <block order="7">
             <choice correct="yes">
@@ -141,7 +141,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void intDivision () {
+void intDivision() {
 
 }
 
@@ -204,7 +204,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void volumePrism () {
+void volumePrism() {
 
 }
 
@@ -225,10 +225,10 @@ int main() {
         <blocks>
           <block order="4">
             <choice correct="yes">
-              <cline>void volumePrism (double s1, double s2, double s3) {</cline>
+              <cline>void volumePrism(double s1, double s2, double s3) {</cline>
             </choice>
             <choice>
-              <cline>void volumePrism (int s1, int s2, int s3) { </cline>
+              <cline>void volumePrism(int s1, int s2, int s3) { </cline>
             </choice>
           </block>
           <block order="7">
@@ -262,7 +262,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void volumeSphere () {
+void volumeSphere() {
 
 }
 

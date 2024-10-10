@@ -32,14 +32,14 @@ private:
   matrix&lt;int&gt; distances;
 
 public:
-  DistMatrix (int rows);
+  DistMatrix(int rows);
 
-  void add (const string&amp; city1, const string&amp; city2, int dist);
-  int distance (int i, int j) const;
-  int distance (const string&amp; city1, const string&amp; city2) const;
-  string cityName (int i) const;
-  int numCities () const;
-  void print ();
+  void add(const string&amp; city1, const string&amp; city2, int dist);
+  int distance(int i, int j) const;
+  int distance(const string&amp; city1, const string&amp; city2) const;
+  string cityName(int i) const;
+  int numCities() const;
+  void print();
 };</program>
   <p>Using this interface simplifies <c>main</c>:</p>
   <program>#include &lt;iostream&gt;
@@ -59,11 +59,11 @@ int main()
     processLine (line, distances);
   }
 
-  distances.print ();
+  distances.print();
   return 0;
 }</program>
   <p>It also simplifies <c>processLine</c>:</p>
-  <program>void processLine (const string&amp; line, DistMatrix&amp; distances)
+  <program>void processLine(const string&amp; line, DistMatrix&amp; distances)
 {
   char quote = '\"';
   vector&lt;int&gt; quoteIndex (4);

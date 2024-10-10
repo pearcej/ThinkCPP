@@ -31,7 +31,7 @@
             the number of elements in a vector that equal a given value. The
             parameters are the vector and the integer value we are looking for. The
             return value is the number of times the value appears.</p>
-  <program>int howMany (const vector&lt;int&gt;&amp; vec, int value) {
+  <program>int howMany(const vector&lt;int&gt;&amp; vec, int value) {
   int count = 0;
   for (size_t i = 0; i &lt; vec.size(); i++) {
     if (vec[i] == value) count++;
@@ -50,9 +50,9 @@
 #include <vector>
 using namespace std;
 
-vector<int> randomVector (int n, int upperBound);
-void printVector (const vector<int>& vec);
-int howMany (const vector<int>& vec, int value);
+vector<int> randomVector(int n, int upperBound);
+void printVector(const vector<int>& vec);
+int howMany(const vector<int>& vec, int value);
 
 int main() {
     int numValues = 20;
@@ -67,7 +67,7 @@ int main() {
         ]]></input>
       <tests>
 
-int howMany (const vector&lt;int&gt;&amp; vec, int value) {
+int howMany(const vector&lt;int&gt;&amp; vec, int value) {
    int count = 0;
    for (size_t i = 0; i &lt; vec.size(); i++) {
       if (vec[i] == value) count++;
@@ -75,15 +75,15 @@ int howMany (const vector&lt;int&gt;&amp; vec, int value) {
    return count;
 }
 
-vector&lt;int&gt; randomVector (int n, int upperBound) {
+vector&lt;int&gt; randomVector(int n, int upperBound) {
    vector&lt;int&gt; vec (n);
    for (size_t i = 0; i&lt;vec.size(); i++) {
-      vec[i] = random () % upperBound;
+      vec[i] = random() % upperBound;
    }
    return vec;
 }
 
-void printVector (const vector&lt;int&gt;&amp; vec) {
+void printVector(const vector&lt;int&gt;&amp; vec) {
    for (size_t i = 0; i&lt;vec.size(); i++) {
       cout &lt;&lt; vec[i] &lt;&lt; " ";
    }

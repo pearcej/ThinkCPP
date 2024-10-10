@@ -31,7 +31,7 @@ else {
     the arguments you provide. C++ can figure out what type they are. You should resist the
     temptation to write things like:</p>
   <program>int number = 17;
-printParity (int number);         // WRONG!!!</program>
+printParity(int number);         // WRONG!!!</program>
   <listing label="alt_execution_AC_1">
     <caption>
       <p>This program shows you how the print parity function works.

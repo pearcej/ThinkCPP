@@ -20,7 +20,7 @@
 #include <iostream>
 using namespace std;
 
-void printTriangle (int n) {
+void printTriangle(int n) {
     // Write your implementation here.
 }
 
@@ -47,7 +47,7 @@ int main() {
         <blocks>
           <block order="7">
             <cline>// Create function</cline>
-            <cline>void printTriangle (int n) {</cline>
+            <cline>void printTriangle(int n) {</cline>
           </block>
           <block order="17">
             <cline>    int row = 0;</cline>
@@ -129,7 +129,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void printNumPyramid (int n) {
+void printNumPyramid(int n) {
     // Write your implementation here.
 }
 
@@ -155,7 +155,7 @@ int main() {
         </statement>
         <blocks>
           <block order="6">
-            <cline>void printNumPyramid (int n) {</cline>
+            <cline>void printNumPyramid(int n) {</cline>
           </block>
           <block order="5">
             <choice correct="yes">
@@ -235,7 +235,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void printAddTable (int n) {
+void printAddTable(int n) {
     // Write your implementation here.
 }
 
@@ -267,7 +267,7 @@ int main() {
         </statement>
         <blocks>
           <block order="1">
-            <cline>void printAddTable (int n) {</cline>
+            <cline>void printAddTable(int n) {</cline>
           </block>
           <block order="3">
             <choice correct="yes">
@@ -372,7 +372,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-int factorial (int n) {
+int factorial(int n) {
     // Write your implementation here.
 }
         ]]></input>
@@ -399,7 +399,7 @@ TEST_CASE("factorial function") {
         </statement>
         <blocks>
           <block order="10">
-            <cline>int factorial (int n) {</cline>
+            <cline>int factorial(int n) {</cline>
           </block>
           <block order="1">
             <cline>    int i = n;</cline>

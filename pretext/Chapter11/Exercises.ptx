@@ -97,7 +97,7 @@ struct StarWars {
   int num_appearences;
   bool isJedi;
 
-  bool isMainCast ();
+  bool isMainCast();
 };
 
 ______________________ {
@@ -121,7 +121,7 @@ int main() {
       <choice correct="yes">
         <statement id="mce_11_3_opt_a">
           <p>
-            <c>bool StarWars::isMainCast ()</c>
+            <c>bool StarWars::isMainCast()</c>
           </p>
         </statement>
         <feedback id="mce_11_3_opt_a">
@@ -131,7 +131,7 @@ int main() {
       <choice>
         <statement id="mce_11_3_opt_b">
           <p>
-            <c>void StarWars::isMainCast ()</c>
+            <c>void StarWars::isMainCast()</c>
           </p>
         </statement>
         <feedback id="mce_11_3_opt_b">
@@ -141,7 +141,7 @@ int main() {
       <choice>
         <statement id="mce_11_3_opt_c">
           <p>
-            <c>bool isMainCast ()</c>
+            <c>bool isMainCast()</c>
           </p>
         </statement>
         <feedback id="mce_11_3_opt_c">
@@ -171,7 +171,7 @@ struct Cube {
 
 
   //function to check if the current cude has a higher density than another
-  int greater_density (const Cube& cube2) {
+  int greater_density(const Cube& cube2) {
       if (density > cube2.density) {
          return true;
       }
@@ -240,7 +240,7 @@ struct Penguin {
   Penguin();
 };
 
-Penguin::Penguin () {
+Penguin::Penguin() {
   age = 1;
   gender = "female";
 }
@@ -299,7 +299,7 @@ struct Penguin {
   Penguin(int age_in, string gender_in);
 };
 
-Penguin::Penguin () {
+Penguin::Penguin() {
   age = 1;
   gender = "female";
 }
@@ -362,16 +362,16 @@ struct Student {
   string year;
 
   // Constructors
-  Student (int age, int id, string year);
-  Student (string year);
+  Student(int age, int id, string year);
+  Student(string year);
 
   // Modifiers
-  void increment (int age);
+  void increment(int age);
 
   // Functions
-  void print () const;
-  bool isJunior (const Student&amp; student2) const;
-  Student add (const Student&amp; s2) const;
+  void print() const;
+  bool isJunior(const Student&amp; student2) const;
+  Student add(const Student&amp; s2) const;
 };
 </input>
       </program>
@@ -424,7 +424,7 @@ struct Penguin {
   Penguin(int age_in, string gender_in);
 };
 
-Penguin::Penguin () {
+Penguin::Penguin() {
   age = 1;
   gender = "female";
 }
@@ -485,7 +485,7 @@ int main() {
 struct Point3D {
   int x, y, z;
 
-  Point3D () {
+  Point3D() {
     x = 4;
     y = 2;
     z = 3;

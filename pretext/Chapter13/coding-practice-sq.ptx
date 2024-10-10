@@ -240,20 +240,20 @@ struct Space {
 
 struct BingoBoard {
     vector<vector<Space> > board;
-    void makeBoard ();
-    void printBoard ();
+    void makeBoard();
+    void printBoard();
 };
 
-int randomInt (int low, int high);
+int randomInt(int low, int high);
 void swapValues (vector<int> &vec, int index1, int index2);
-vector<int> generateRandVec ();
+vector<int> generateRandVec();
 
 // Write your code for the printBoard function here.
 
 int main() {
     BingoBoard bingo;
-    bingo.makeBoard ();
-    bingo.printBoard ();
+    bingo.makeBoard();
+    bingo.printBoard();
 }
         ]]></input>
           <tests>
@@ -315,7 +315,7 @@ void BingoBoard::makeBoard() {
         </statement>
         <blocks>
           <block order="6">
-            <cline>void BingoBoard::printBoard () {</cline>
+            <cline>void BingoBoard::printBoard() {</cline>
           </block>
           <block order="1">
             <cline><![CDATA[    for (size_t j = 0; j < board.size(); j++) {]]></cline>

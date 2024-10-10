@@ -150,7 +150,7 @@ int main() {
 #include <string>
 using namespace std;
 
-void longerString (string first, string second) {
+void longerString(string first, string second) {
     if (first.length() > second.length()) {
         cout << first << " is longer than " << second << endl;
     }
@@ -175,7 +175,7 @@ int main() {
 #include <string>
 using namespace std;
 
-void longerString (string first, string second) {
+void longerString(string first, string second) {
     if (first.length() > second.length()) {
         cout << first << " is longer than " << second << endl;
     }
@@ -227,7 +227,7 @@ int main() {
 #include <string>
 using namespace std;
 
-void cipherText (string input) {
+void cipherText(string input) {
     int i = 0;
     while ((unsigned)i < input.length()) {
         input[i] = input[i] + 1;
@@ -248,7 +248,7 @@ int main() {
 #include <string>
 using namespace std;
 
-void cipherText (string input) {
+void cipherText(string input) {
     int i = 0;
     while ((unsigned)i < input.length()) {
         input[i] = input[i] + 1;
@@ -471,7 +471,7 @@ TEST_CASE("censorE function") {
 #include <string>
 using namespace std;
 
-string censorE (string input) {
+string censorE(string input) {
     int i = 0;
     while ((unsigned)i < input.length()) {
         if (input[i] == 'e') {
@@ -500,7 +500,7 @@ TEST_CASE("censorE function") {
 #include <string>
 using namespace std;
 
-string censorE (string input) {
+string censorE(string input) {
     int i = 0;
     while ((unsigned)i < input.length()) {
         if (input[i] == 'e') {
@@ -564,7 +564,7 @@ TEST_CASE("censorLetter function") {
 #include <string>
 using namespace std;
 
-string censorLetter (string input, char letter) {
+string censorLetter(string input, char letter) {
     int i = 0;
     while ((unsigned)i < input.length()) {
         if (input[i] == letter) {
@@ -593,7 +593,7 @@ TEST_CASE("censorLetter function") {
 #include <string>
 using namespace std;
 
-string censorLetter (string input, char letter) {
+string censorLetter(string input, char letter) {
     int i = 0;
     while ((unsigned)i < input.length()) {
         if (input[i] == letter) {
@@ -657,7 +657,7 @@ TEST_CASE("alphaCombine function") {
 #include <string>
 using namespace std;
 
-string alphaCombine (string first, string second) {
+string alphaCombine(string first, string second) {
     if (first > second) {
         return second + first;
     }
@@ -684,7 +684,7 @@ TEST_CASE("alphaCombine function") {
 #include <string>
 using namespace std;
 
-string alphaCombine (string first, string second) {
+string alphaCombine(string first, string second) {
     if (first > second) {
         return second + first;
     }

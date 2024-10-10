@@ -107,7 +107,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void printMultiples (int n) {
+void printMultiples(int n) {
   int i = 1;
   while (i <= 6) {
     cout << n * i << '\t';
@@ -157,7 +157,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void printMultiples (int n) {
+void printMultiples(int n) {
   int i = 1;
   while (i <= 6) {
     cout << n * i << '\t';

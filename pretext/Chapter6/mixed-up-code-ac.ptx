@@ -237,7 +237,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void repeatString (string input) {
+void repeatString(string input) {
    int n = 0;
    while (n < 3) {
       cout << input << endl;
@@ -256,7 +256,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void repeatString (string input) {
+void repeatString(string input) {
    int n = 0;
    while (n < 3) {
       cout << input << endl;
@@ -300,7 +300,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void repeatString (string input, int x) {
+void repeatString(string input, int x) {
    int n = 0;
    while (n < x) {
       cout << input << endl;
@@ -319,7 +319,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void repeatString (string input, int x) {
+void repeatString(string input, int x) {
    int n = 0;
    while (n < x) {
       cout << input << endl;
@@ -431,7 +431,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void powerUp (int powerLevel) {
+void powerUp(int powerLevel) {
    while (powerLevel < 9000) {
       cout << "More power!" << endl;
       powerLevel = powerLevel + 1000;
@@ -450,7 +450,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void powerUp (int powerLevel) {
+void powerUp(int powerLevel) {
    while (powerLevel < 9000) {
       cout << "More power!" << endl;
       powerLevel = powerLevel + 1000;
@@ -501,7 +501,7 @@ TEST_CASE("summation function") {
 #include <iostream>
 using namespace std;
 
-int summation (int start, int end) {
+int summation(int start, int end) {
    int n = start;
    int sum = 0;
    while (n <= end) {
@@ -532,7 +532,7 @@ TEST_CASE("summation function") {
 #include <iostream>
 using namespace std;
 
-int summation (int start, int end) {
+int summation(int start, int end) {
    int n = start;
    int sum = 0;
    while (n <= end) {
@@ -596,7 +596,7 @@ TEST_CASE("reverseNumber function") {
 #include <iostream>
 using namespace std;
 
-int reverseNumber (int num) {
+int reverseNumber(int num) {
    int reverse = 0;
    int temp = num;
    int remainder = 0;
@@ -625,7 +625,7 @@ TEST_CASE("reverseNumber function") {
 #include <iostream>
 using namespace std;
 
-int reverseNumber (int num) {
+int reverseNumber(int num) {
    int reverse = 0;
    int temp = num;
    int remainder = 0;

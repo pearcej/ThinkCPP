@@ -18,7 +18,7 @@ using namespace std;
      string name;
 };
 
-void printStudent (const Student& stu) {
+void printStudent(const Student& stu) {
      cout << stu.id << ":" << stu.year << ":" << stu.name << endl;
 }
 
@@ -43,10 +43,10 @@ using namespace std;
 struct Student {
     int id, year;
     string name;
-    void print ();
+    void print();
 };
 
-void Student::print () {
+void Student::print() {
     Student stu = *this;
     cout << stu.id << ":" << stu.year << ":" << stu.name << endl;
 }
@@ -67,10 +67,10 @@ using namespace std;
 struct Student {
     int id, year;
     string name;
-    void print ();
+    void print();
 };
 
-void Student::print () {
+void Student::print() {
     Student stu = *this;
     cout << stu.id << ":" << stu.year << ":" << stu.name << endl;
 }
@@ -110,10 +110,10 @@ using namespace std;
 struct Album {
     string name;
     int year;
-    bool check ();
+    bool check();
 };
 
-bool Album::check () {
+bool Album::check() {
     if (year > 2015) {
         return true;
     }
@@ -132,10 +132,10 @@ using namespace std;
 struct Album {
     string name;
     int year;
-    bool check ();
+    bool check();
 };
 
-bool Album::check () {
+bool Album::check() {
     if (year > 2015) {
         return true;
     }
@@ -175,7 +175,7 @@ struct Time {
     int second;
 };
 
-double Time::convertToSeconds () const {
+double Time::convertToSeconds() const {
     int minutes = time.hour * 60 + time.minutes;
     double seconds = minutes * 60 + time.second;
     return seconds;
@@ -194,7 +194,7 @@ struct Time {
     int second;
 };
 
-double Time::convertToSeconds () const {
+double Time::convertToSeconds() const {
     int minutes = time.hour * 60 + time.minutes;
     double seconds = minutes * 60 + time.second;
     return seconds;
@@ -270,7 +270,7 @@ using namespace std;
 #include <iostream>
 using namespace std;
 
-Days::Days (int num_days) {
+Days::Days(int num_days) {
     years = num_days / 365;
     Days day;
     num_days -= years * 365;
@@ -286,7 +286,7 @@ Days::Days (int num_days) {
 #include <iostream>
 using namespace std;
 
-Days::Days (int num_days) {
+Days::Days(int num_days) {
     years = num_days / 365;
     Days day;
     num_days -= years * 365;
@@ -320,13 +320,13 @@ using namespace std;
 #include <iostream>
 using namespace std;
 
-Student::Student () {
-    void Student::Student () {
+Student::Student() {
+    void Student::Student() {
         id = 123456789;
         year = 2020;
         name = "Alice";
     }
-    Student::Student (int id_in, int year_in, string name_in) {
+    Student::Student(int id_in, int year_in, string name_in) {
         Student::Student construct(int id_in, int year_in, string name_in) {
             id = id_in;
             year = year_in;
@@ -340,13 +340,13 @@ Student::Student () {
 #include <iostream>
 using namespace std;
 
-Student::Student () {
-    void Student::Student () {
+Student::Student() {
+    void Student::Student() {
         id = 123456789;
         year = 2020;
         name = "Alice";
     }
-    Student::Student (int id_in, int year_in, string name_in) {
+    Student::Student(int id_in, int year_in, string name_in) {
         Student::Student construct(int id_in, int year_in, string name_in) {
             id = id_in;
             year = year_in;
@@ -382,16 +382,16 @@ using namespace std;
 struct Penguin {
     int age;
     int weight;
-    Penguin ();
-    Penguin (int age_in, int weight_in);
+    Penguin();
+    Penguin(int age_in, int weight_in);
 };
 
-Penguin::Penguin () {
+Penguin::Penguin() {
     age = 1;
     weight = 24;
 }
 
-Penguin::Penguin (int age_in, int weight_in) {
+Penguin::Penguin(int age_in, int weight_in) {
     age = age_in;
     weight = weight_in;
 }
@@ -406,16 +406,16 @@ using namespace std;
 struct Penguin {
     int age;
     int weight;
-    Penguin ();
-    Penguin (int age_in, int weight_in);
+    Penguin();
+    Penguin(int age_in, int weight_in);
 };
 
-Penguin::Penguin () {
+Penguin::Penguin() {
     age = 1;
     weight = 24;
 }
 
-Penguin::Penguin (int age_in, int weight_in) {
+Penguin::Penguin(int age_in, int weight_in) {
     age = age_in;
     weight = weight_in;
 }
@@ -433,7 +433,7 @@ Penguin::Penguin (int age_in, int weight_in) {
 using namespace std;
 // EDIT THE CODE BELOW
 
-Days AddDays (const Days& d1, const Days& d2) {
+Days AddDays(const Days& d1, const Days& d2) {
     int days = convertToDays (d1) + convertToDays(d2);
     return makeDays (days);
 }
@@ -450,8 +450,8 @@ Days AddDays (const Days& d1, const Days& d2) {
 #include <iostream>
 using namespace std;
 
-Days Days::add (const Days& d2) const {
-    int days = convertToDays () + d2.convertToDays ();
+Days Days::add(const Days& d2) const {
+    int days = convertToDays() + d2.convertToDays();
     Days day (days);
     return day;
 }
@@ -463,8 +463,8 @@ Days Days::add (const Days& d2) const {
 #include <iostream>
 using namespace std;
 
-Days Days::add (const Days& d2) const {
-    int days = convertToDays () + d2.convertToDays ();
+Days Days::add(const Days& d2) const {
+    int days = convertToDays() + d2.convertToDays();
     Days day (days);
     return day;
 }
@@ -498,22 +498,22 @@ using namespace std;
 struct Penguin {
     int age;
     string name;
-    Penguin ();
-    Penguin (int age_in, string name);
+    Penguin();
+    Penguin(int age_in, string name);
 };
 
-Penguin::Penguin () {
+Penguin::Penguin() {
     age = 1;
     name = "Alice";
 }
 
-Penguin::Penguin (int age_in, string name_in) {
+Penguin::Penguin(int age_in, string name_in) {
     age = age_in;
     name = name_in;
 }
 
 int main() {
-    Penguin p1 ();
+    Penguin p1();
     Penguin p2 (3, "Bob");
 }
         ]]></input></program>
@@ -527,22 +527,22 @@ using namespace std;
 struct Penguin {
     int age;
     string name;
-    Penguin ();
-    Penguin (int age_in, string name);
+    Penguin();
+    Penguin(int age_in, string name);
 };
 
-Penguin::Penguin () {
+Penguin::Penguin() {
     age = 1;
     name = "Alice";
 }
 
-Penguin::Penguin (int age_in, string name_in) {
+Penguin::Penguin(int age_in, string name_in) {
     age = age_in;
     name = name_in;
 }
 
 int main() {
-    Penguin p1 ();
+    Penguin p1();
     Penguin p2 (3, "Bob");
 }
         ]]></input></program></exercise>
@@ -576,11 +576,11 @@ struct Student {
     int id, year;
     string name;
     // constructors
-    Student (int id, int year, string name);
-    Student ();
+    Student(int id, int year, string name);
+    Student();
     // functions
-    void print () const;
-    bool after (const Student& stu) const;
+    void print() const;
+    bool after(const Student& stu) const;
 };
         ]]></input></program>
 
@@ -595,11 +595,11 @@ struct Student {
     int id, year;
     string name;
     // constructors
-    Student (int id, int year, string name);
-    Student ();
+    Student(int id, int year, string name);
+    Student();
     // functions
-    void print () const;
-    bool after (const Student& stu) const;
+    void print() const;
+    bool after(const Student& stu) const;
 };
         ]]></input></program></exercise>
             </solution>

@@ -11,7 +11,7 @@
             integer.</p>
   <p>Here's a function that encapsulates the loop from the previous section
             and generalizes it to print multiples of <c>n</c>.</p>
-  <program>void printMultiples (int n) {
+  <program>void printMultiples(int n) {
   int i = 1;
   while (i &lt;= 6) {
     cout &lt;&lt; n * i &lt;&lt; "   ";
@@ -48,7 +48,7 @@ while (i &lt;= 6) {
 #include <iostream>
 using namespace std;
 
-void printMultiples (int n) {
+void printMultiples(int n) {
     int i = 1;
     while (i <= 6) {
         cout << n * i << "   ";
@@ -85,7 +85,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void printMultiples (int n) {
+void printMultiples(int n) {
     int i = 1;
     while (i <= 6) {
         cout << n * i << '\t';
@@ -149,7 +149,7 @@ int main() {
     </statement>
     <blocks>
       <block order="1">
-        <cline>void powersOfTwo () {</cline>
+        <cline>void powersOfTwo() {</cline>
       </block>
       <block order="4">
         <cline>  int x = 1;</cline>
@@ -180,10 +180,10 @@ int main() {
     <blocks>
       <block order="5">
         <choice correct="yes">
-          <cline>void powersOfn (int n) {</cline>
+          <cline>void powersOfn(int n) {</cline>
         </choice>
         <choice>
-          <cline>void powersOfn (string n) {  </cline>
+          <cline>void powersOfn(string n) {  </cline>
         </choice>
       </block>
       <block order="6">

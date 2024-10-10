@@ -10,7 +10,7 @@
             deck and comparing each card to the one we are looking for. If we find
             it we return the index where the card appears. If it is not in the deck,
             we return -1.</p>
-  <program>int find (const Card&amp; card, const vector&lt;Card&gt;&amp; deck) {
+  <program>int find(const Card&amp; card, const vector&lt;Card&gt;&amp; deck) {
   for (size_t i = 0; i &lt; deck.size(); i++) {
     if (equals (deck[i], card)) return i;
   }
@@ -25,7 +25,7 @@
             looking for. If the loop terminates without finding the card, we know
             the card is not in the deck and return <c>-1</c>.</p>
   <p>To test this function, I wrote the following:</p>
-  <program>vector&lt;Card&gt; deck = buildDeck ();
+  <program>vector&lt;Card&gt; deck = buildDeck();
 
 int index = card.find (deck[17]);
 cout &lt;&lt; "I found the card at index = " &lt;&lt; index &lt;&lt; endl;</program>
@@ -46,20 +46,20 @@ using namespace std;
 struct Card {
     int suit, rank;
 
-    Card ();
-    Card (int s, int r);
-    void print () const;
+    Card();
+    Card(int s, int r);
+    void print() const;
 };
 
 vector<Card> buildDeck();
 
-bool equals (const Card& c1, const Card& c2){
+bool equals(const Card& c1, const Card& c2){
     return (c1.rank == c2.rank && c1.suit == c2.suit);
 }
 
 void printDeck(const vector<Card>& deck);
 
-int find (const Card& card, const vector<Card>& deck);
+int find(const Card& card, const vector<Card>& deck);
 
 int main() {
     vector<Card> deck = buildDeck();
@@ -70,15 +70,15 @@ int main() {
         ]]></input>
       <tests>
 
-Card::Card () {
+Card::Card() {
    suit = 0;  rank = 0;
 }
 
-Card::Card (int s, int r) {
+Card::Card(int s, int r) {
    suit = s;  rank = r;
 }
 
-void Card::print () const {
+void Card::print() const {
    vector&lt;string&gt; suits (4);
    suits[0] = "Clubs";
    suits[1] = "Diamonds";
@@ -103,9 +103,9 @@ void Card::print () const {
    cout &lt;&lt; ranks[rank] &lt;&lt; " of " &lt;&lt; suits[suit] &lt;&lt; endl;
  }
 
- void printDeck (const vector&lt;Card&gt;&amp; deck) {
+ void printDeck(const vector&lt;Card&gt;&amp; deck) {
    for (size_t i = 0; i &lt; deck.size(); i++) {
-     deck[i].print ();
+     deck[i].print();
    }
  }
 
@@ -122,7 +122,7 @@ vector&lt;Card&gt; buildDeck() {
    return deck;
 }
 
-int find (const Card&amp; card, const vector&lt;Card&gt;&amp; deck) {
+int find(const Card&amp; card, const vector&lt;Card&gt;&amp; deck) {
    for (size_t i = 0; i &lt; deck.size(); i++) {
     if (equals (deck[i], card)) return i;
    }

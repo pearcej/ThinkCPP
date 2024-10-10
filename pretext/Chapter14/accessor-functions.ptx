@@ -7,15 +7,15 @@
   <p>In this case, the accessor functions give us an opportunity to make sure
             that the value of the variable is valid before we return it. Here's what
             <c>getReal</c> looks like:</p>
-  <program>double Complex::getReal ()
+  <program>double Complex::getReal()
 {
-  if (cartesian == false) calculateCartesian ();
+  if (cartesian == false) calculateCartesian();
   return real;
 }</program>
   <p>If the <c>cartesian</c> flag is true then <c>real</c> contains valid data, and
             we can just return it. Otherwise, we have to call <c>calculateCartesian</c>
             to convert from polar coordinates to Cartesian coordinates:</p>
-  <program>void Complex::calculateCartesian ()
+  <program>void Complex::calculateCartesian()
 {
   real = mag * cos (theta);
   imag = mag * sin (theta);
@@ -47,26 +47,26 @@ class Complex
   bool cartesian, polar;
 
 public:
-  Complex () { cartesian = false;  polar = false; }
-  Complex (double r, double i)
+  Complex() { cartesian = false;  polar = false; }
+  Complex(double r, double i)
   {
     real = r;  imag = i;
     cartesian = true;  polar = false;
   }
-  void calculateCartesian ()
+  void calculateCartesian()
   {
     real = mag * cos (theta);
     imag = mag * sin (theta);
     cartesian = true;
   }
-  double getReal ()
+  double getReal()
   {
-    if (cartesian == false) calculateCartesian ();
+    if (cartesian == false) calculateCartesian();
     return real;
   }
-  double getImag ()
+  double getImag()
   {
-    if (cartesian == false) calculateCartesian ();
+    if (cartesian == false) calculateCartesian();
     return imag;
   }
 };
@@ -98,29 +98,29 @@ class Complex
   bool cartesian, polar;
 
 public:
-  Complex ();
-  Complex (double r, double i);
-  void calculateCartesian ();
-  double getReal ();
-  double getImag ();
-  void calculatePolar ();
-  double getMag ();
-  double getTheta ();
+  Complex();
+  Complex(double r, double i);
+  void calculateCartesian();
+  double getReal();
+  double getImag();
+  void calculatePolar();
+  double getMag();
+  double getTheta();
 };
 
-void Complex::calculatePolar () {
+void Complex::calculatePolar() {
   // ``calculatePolar`` should convert the real and imaginary parts
   // into magnitude and theta. Use the formula in the previous section.
   // Write your implementation here.
 }
 
-double Complex::getMag () {
+double Complex::getMag() {
   // ``getMag`` should return the magnitude.
   // Delete the return 0 and write your implementation here.
   return 0;
 }
 
-double Complex::getTheta () {
+double Complex::getTheta() {
   // ``getMag`` should return the theta.
   // Delete the return 0 and write your implementation here.
   return 0;
@@ -133,26 +133,26 @@ int main() {
 }
         ]]></input>
       <tests>
-Complex::Complex () { cartesian = false;  polar = false; }
+Complex::Complex() { cartesian = false;  polar = false; }
 
-Complex::Complex (double r, double i) {
+Complex::Complex(double r, double i) {
   real = r;  imag = i;
   cartesian = true;  polar = false;
 }
 
-void Complex::calculateCartesian () {
+void Complex::calculateCartesian() {
   real = mag * cos (theta);
   imag = mag * sin (theta);
   cartesian = true;
 }
 
-double Complex::getReal () {
-  if (cartesian == false) calculateCartesian ();
+double Complex::getReal() {
+  if (cartesian == false) calculateCartesian();
   return real;
 }
 
-double Complex::getImag () {
-  if (cartesian == false) calculateCartesian ();
+double Complex::getImag() {
+  if (cartesian == false) calculateCartesian();
   return imag;
 }
 </tests>
@@ -167,10 +167,10 @@ double Complex::getImag () {
       <blocks>
         <block order="1">
           <choice correct="yes">
-            <cline>void Complex::calculatePolar () {</cline>
+            <cline>void Complex::calculatePolar() {</cline>
           </choice>
           <choice>
-            <cline>void Complex::calculateCartesian () {                         </cline>
+            <cline>void Complex::calculateCartesian() {                         </cline>
           </choice>
         </block>
         <block order="4">
@@ -206,17 +206,17 @@ double Complex::getImag () {
       <blocks>
         <block order="3">
           <choice correct="yes">
-            <cline>double Complex::getMag () {</cline>
+            <cline>double Complex::getMag() {</cline>
           </choice>
           <choice>
-            <cline>void Complex::getMag () {                         </cline>
+            <cline>void Complex::getMag() {                         </cline>
           </choice>
         </block>
         <block order="4">
           <cline>   if (polar == false) {</cline>
         </block>
         <block order="1">
-          <cline>      calculatePolar ();</cline>
+          <cline>      calculatePolar();</cline>
           <cline>   }</cline>
         </block>
         <block order="5">
@@ -235,10 +235,10 @@ double Complex::getImag () {
       <blocks>
         <block order="1">
           <choice correct="yes">
-            <cline>double Complex::getTheta () {</cline>
+            <cline>double Complex::getTheta() {</cline>
           </choice>
           <choice>
-            <cline>double Complex::getMag () {                         </cline>
+            <cline>double Complex::getMag() {                         </cline>
           </choice>
         </block>
         <block order="3">
@@ -246,11 +246,11 @@ double Complex::getImag () {
         </block>
         <block order="6">
           <choice correct="yes">
-            <cline>      calculatePolar ();</cline>
+            <cline>      calculatePolar();</cline>
             <cline>   }</cline>
           </choice>
           <choice>
-            <cline>      calculateCartesian ();                         </cline>
+            <cline>      calculateCartesian();                         </cline>
             <cline>   }</cline>
           </choice>
         </block>

@@ -18,7 +18,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int convertToBinary (int decimal) {
+int convertToBinary(int decimal) {
     // Write your implementation here.
 }
         ]]></input>
@@ -48,7 +48,7 @@ TEST_CASE("convertToBinary function") {
         </statement>
         <blocks>
           <block order="2">
-            <cline>int convertToBinary (int decimal) {</cline>
+            <cline>int convertToBinary(int decimal) {</cline>
           </block>
           <block order="5">
             <choice correct="yes">
@@ -93,7 +93,7 @@ TEST_CASE("convertToBinary function") {
 #include <iostream>
 using namespace std;
 
-string birthSeason (int month, int day) {
+string birthSeason(int month, int day) {
     // Write your implementation here.
 }
         ]]></input>
@@ -143,7 +143,7 @@ TEST_CASE("birthSeason function: winter") {
         </statement>
         <blocks>
           <block order="5">
-            <cline>string birthSeason (int month, int day) {</cline>
+            <cline>string birthSeason(int month, int day) {</cline>
           </block>
           <block order="4">
             <cline><![CDATA[    if (month >= 3 && month < 6){]]></cline>
@@ -188,7 +188,7 @@ TEST_CASE("birthSeason function: winter") {
 #include <iostream>
 using namespace std;
 
-bool isCommonFactor (int num1, int num2, int factor) {
+bool isCommonFactor(int num1, int num2, int factor) {
     // Write your implementation here.
 }
         ]]></input>
@@ -221,7 +221,7 @@ TEST_CASE("isCommonFactor function: false cases") {
         </statement>
         <blocks>
           <block order="5">
-            <cline>bool isCommonFactor (int num1, int num2, int factor) {</cline>
+            <cline>bool isCommonFactor(int num1, int num2, int factor) {</cline>
           </block>
           <block order="6">
             <choice correct="yes">
@@ -269,7 +269,7 @@ TEST_CASE("isCommonFactor function: false cases") {
 #include <iostream>
 using namespace std;
 
-bool isPoisonous (char size, int numSpots, bool isRed) {
+bool isPoisonous(char size, int numSpots, bool isRed) {
     // Write your implementation here.
 }
         ]]></input>
@@ -307,7 +307,7 @@ TEST_CASE("isPoisonous function: false cases") {
         </statement>
         <blocks>
           <block order="4">
-            <cline>bool isPoisonous (char size, int numSpots, bool isRed) {</cline>
+            <cline>bool isPoisonous(char size, int numSpots, bool isRed) {</cline>
           </block>
           <block order="8">
             <choice correct="yes">
@@ -362,7 +362,7 @@ TEST_CASE("isPoisonous function: false cases") {
 #include <iostream>
 using namespace std;
 
-int digitSum (int num) {
+int digitSum(int num) {
     // Write your implementation here.
 }
         ]]></input>
@@ -390,7 +390,7 @@ TEST_CASE("digitSum function") {
         </statement>
         <blocks>
           <block order="4">
-            <cline>int digitSum (int num) {</cline>
+            <cline>int digitSum(int num) {</cline>
           </block>
           <block order="5">
             <choice correct="yes">

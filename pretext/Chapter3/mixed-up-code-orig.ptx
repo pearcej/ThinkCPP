@@ -10,10 +10,10 @@
     <blocks>
       <block order="6">
         <choice correct="yes">
-          <cline>void printInteger (double d) {</cline>
+          <cline>void printInteger(double d) {</cline>
         </choice>
         <choice>
-          <cline>printInteger (double d); </cline>
+          <cline>printInteger(double d); </cline>
         </choice>
       </block>
       <block order="5">
@@ -43,7 +43,7 @@
     </statement>
     <blocks>
       <block order="6">
-        <cline>void newLine () {</cline>
+        <cline>void newLine() {</cline>
       </block>
       <block order="7">
         <cline> cout &lt;&lt; endl;</cline>
@@ -53,7 +53,7 @@
       </block>
       <block order="5">
         <choice correct="yes">
-          <cline>void divider () {</cline>
+          <cline>void divider() {</cline>
         </choice>
         <choice>
           <cline> void divider (newLine) { </cline>
@@ -61,10 +61,10 @@
       </block>
       <block order="4">
         <choice correct="yes">
-          <cline> newLine ();  //first call</cline>
+          <cline> newLine();  //first call</cline>
         </choice>
         <choice>
-          <cline><![CDATA[ cout << newLine ();  //first call ]]></cline>
+          <cline><![CDATA[ cout << newLine();  //first call ]]></cline>
         </choice>
       </block>
       <block order="11">
@@ -72,10 +72,10 @@
       </block>
       <block order="2">
         <choice correct="yes">
-          <cline> newline ();  //second call</cline>
+          <cline> newline();  //second call</cline>
         </choice>
         <choice>
-          <cline><![CDATA[ cout << newLine ();  //second call ]]></cline>
+          <cline><![CDATA[ cout << newLine();  //second call ]]></cline>
         </choice>
       </block>
       <block order="8">
@@ -90,10 +90,10 @@
     <blocks>
       <block order="1">
         <choice correct="yes">
-          <cline>void volumeCone (double r, double h) {</cline>
+          <cline>void volumeCone(double r, double h) {</cline>
         </choice>
         <choice>
-          <cline>double volumeCone (double r, double h) { </cline>
+          <cline>double volumeCone(double r, double h) { </cline>
         </choice>
       </block>
       <block order="2">
@@ -134,10 +134,10 @@
       </block>
       <block order="11">
         <choice correct="yes">
-          <cline>void sineDegrees (double d) {</cline>
+          <cline>void sineDegrees(double d) {</cline>
         </choice>
         <choice>
-          <cline>void sineDegrees () { </cline>
+          <cline>void sineDegrees() { </cline>
         </choice>
       </block>
       <block order="7">
@@ -174,10 +174,10 @@
     <blocks>
       <block order="5">
         <choice correct="yes">
-          <cline>void finalPrice (double item) {</cline>
+          <cline>void finalPrice(double item) {</cline>
         </choice>
         <choice>
-          <cline>void finalPrice (string item) { </cline>
+          <cline>void finalPrice(string item) { </cline>
         </choice>
       </block>
       <block order="2">
@@ -256,10 +256,10 @@
     <blocks>
       <block order="6">
         <choice correct="yes">
-          <cline>void eatMore (string animal) {</cline>
+          <cline>void eatMore(string animal) {</cline>
         </choice>
         <choice>
-          <cline>void eatMore () { </cline>
+          <cline>void eatMore() { </cline>
         </choice>
       </block>
       <block order="2">
@@ -295,7 +295,7 @@
     </statement>
     <blocks>
       <block order="6">
-        <cline>void printAmount (int dollars, int cents) {</cline>
+        <cline>void printAmount(int dollars, int cents) {</cline>
       </block>
       <block order="8">
         <choice correct="yes">
@@ -335,10 +335,10 @@
     <blocks>
       <block order="9">
         <choice correct="yes">
-          <cline>void conditionalProb (double B, double both) {</cline>
+          <cline>void conditionalProb(double B, double both) {</cline>
         </choice>
         <choice>
-          <cline>void conditionalProb (double B, both) { </cline>
+          <cline>void conditionalProb(double B, both) { </cline>
         </choice>
       </block>
       <block order="6">
@@ -388,10 +388,10 @@
     <blocks>
       <block order="9">
         <choice correct="yes">
-          <cline>void finalGrade (double m1, double m2, double f) {</cline>
+          <cline>void finalGrade(double m1, double m2, double f) {</cline>
         </choice>
         <choice>
-          <cline>void finalGrade (double m1, m2, f) { </cline>
+          <cline>void finalGrade(double m1, m2, f) { </cline>
         </choice>
       </block>
       <block order="6">

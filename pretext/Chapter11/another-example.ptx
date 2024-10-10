@@ -5,7 +5,7 @@
             transform one of the parameters into the implicit parameter called
             <c>this</c>. Then we can go through the function and make all the variable
             accesses implicit.</p>
-  <program>void Time::increment (double secs) {
+  <program>void Time::increment(double secs) {
   second += secs;
 
   while (second &gt;= 60.0) {
@@ -27,13 +27,13 @@
   int hour, minute;
   double second;
 
-  print ();
-  increment (double secs);
+  print();
+  increment(double secs);
 };</program>
   <p>And again, to call it, we have to invoke it on a <c>Time</c> object:</p>
   <program>Time currentTime = { 9, 14, 30.0 };
 currentTime.increment (500.0);
-currentTime.print ();</program>
+currentTime.print();</program>
   <p>The output of this program is <c>9:22:50</c>.</p>
   <exercise label="another_example_AC_1">
     <statement>
@@ -48,23 +48,23 @@ using namespace std;
 struct Time {
     int hour, minute;
     double second;
-    void print ();
-    void increment (double secs);
+    void print();
+    void increment(double secs);
 };
 
 int main() {
     Time currentTime = { 9, 14, 30.0 };
     currentTime.increment (500.0);
-    currentTime.print ();
+    currentTime.print();
 }
 
         ]]></input>
       <tests>
-void Time::print () {
+void Time::print() {
   cout &lt;&lt; hour &lt;&lt; ":" &lt;&lt; minute &lt;&lt; ":" &lt;&lt; second &lt;&lt; endl;
 }
 
-void Time::increment (double secs) {
+void Time::increment(double secs) {
   second += secs;
   while (second &gt;= 60.0) {
     second -= 60.0;

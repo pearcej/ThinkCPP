@@ -46,16 +46,16 @@ class Complex
   bool cartesian, polar;
 
 public:
-  Complex ();
-  Complex (double r, double i);
-  void calculateCartesian ();
-  double getReal ();
-  double getImag ();
-  void calculatePolar ();
-  double getMag ();
-  double getTheta ();
-  void printCartesian ();
-  void printPolar ();
+  Complex();
+  Complex(double r, double i);
+  void calculateCartesian();
+  double getReal();
+  double getImag();
+  void calculatePolar();
+  double getMag();
+  double getTheta();
+  void printCartesian();
+  void printPolar();
 };
 
 Complex add (Complex& a, Complex& b);
@@ -78,54 +78,54 @@ int main() {
 }
         ]]></input>
       <tests>
-Complex::Complex () { cartesian = false;  polar = false; }
+Complex::Complex() { cartesian = false;  polar = false; }
 
-Complex::Complex (double r, double i) {
+Complex::Complex(double r, double i) {
   real = r;  imag = i;
   cartesian = true;  polar = false;
 }
 
-void Complex::calculateCartesian () {
+void Complex::calculateCartesian() {
   real = mag * cos (theta);
   imag = mag * sin (theta);
   cartesian = true;
 }
 
-double Complex::getReal () {
-  if (cartesian == false) calculateCartesian ();
+double Complex::getReal() {
+  if (cartesian == false) calculateCartesian();
   return real;
 }
 
-double Complex::getImag () {
-  if (cartesian == false) calculateCartesian ();
+double Complex::getImag() {
+  if (cartesian == false) calculateCartesian();
   return imag;
 }
 
-void Complex::calculatePolar () {
+void Complex::calculatePolar() {
   mag = sqrt(pow(real, 2) + pow(imag, 2));
   theta = atan(imag / real);
   polar = true;
 }
 
-double Complex::getMag () {
+double Complex::getMag() {
   if (polar == false) {
-    calculatePolar ();
+    calculatePolar();
   }
   return mag;
 }
 
-double Complex::getTheta () {
+double Complex::getTheta() {
   if (polar == false) {
-    calculatePolar ();
+    calculatePolar();
   }
   return theta;
 }
 
-void Complex::printCartesian () {
+void Complex::printCartesian() {
   cout &lt;&lt; getReal() &lt;&lt; " + " &lt;&lt; getImag() &lt;&lt; "i" &lt;&lt; endl;
 }
 
-void Complex::printPolar () {
+void Complex::printPolar() {
   cout &lt;&lt; getMag() &lt;&lt; " e^ " &lt;&lt; getTheta() &lt;&lt; "i" &lt;&lt; endl;
 }
 

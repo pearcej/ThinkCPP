@@ -6,16 +6,16 @@
             definition. Looking at the functions we have written so far, one obvious
             candidate is <c>printDeck</c> (<number_reference internal="True" refuri="../Chapter12/the_printdeck_function#printdeck" title="Section %s"><inline classes="std std-numref">Section 12.7</inline></number_reference>).
             Here's how it looks, rewritten as a <c>Deck</c> member function:</p>
-  <program>void Deck::print () const {
+  <program>void Deck::print() const {
   for (size_t i = 0; i &lt; cards.size(); i++) {
-    cards[i].print ();
+    cards[i].print();
   }
 }</program>
   <p>As usual, we can refer to the instance variables of the current object
             without using dot notation.</p>
   <exercise label="deck_members_AC_1">
     <statement>
-      <p>The active code below prints out the deck of cards like in the previous section. Notice we can just use <c>deck.print ()</c>
+      <p>The active code below prints out the deck of cards like in the previous section. Notice we can just use <c>deck.print()</c>
             to print out the deck instead of writing a for loop in main.</p>
     </statement>
     <program xml:id="deck_members_AC_1_editor" interactive="activecode" line-numbers="yes">
@@ -33,33 +33,33 @@ TEN, JACK, QUEEN, KING };
 struct Card {
     Rank rank;
     Suit suit;
-    Card ();
-    Card (Suit s, Rank r);
-    void print () const;
+    Card();
+    Card(Suit s, Rank r);
+    void print() const;
 };
 
 struct Deck {
     vector<Card> cards;
-    Deck ();
-   void print () const;
+    Deck();
+   void print() const;
 };
 
 int main() {
     Deck deck;
-    deck.print ();
+    deck.print();
 }
 
         ]]></input>
       <tests>
-Card::Card () {
+Card::Card() {
     suit = SPADES;  rank = ACE;
 }
 
-Card::Card (Suit s, Rank r) {
+Card::Card(Suit s, Rank r) {
     suit = s;  rank = r;
 }
 
-void Card::print () const {
+void Card::print() const {
     vector&lt;string&gt; suits (4);
     suits[0] = "Clubs";
     suits[1] = "Diamonds";
@@ -84,7 +84,7 @@ void Card::print () const {
     cout &lt;&lt; ranks[rank] &lt;&lt; " of " &lt;&lt; suits[suit] &lt;&lt; endl;
 }
 
-Deck::Deck () {
+Deck::Deck() {
     vector&lt;Card&gt; temp (52);
     cards = temp;
 
@@ -98,9 +98,9 @@ Deck::Deck () {
     }
 }
 
-void Deck::print () const {
+void Deck::print() const {
     for (size_t i = 0; i &lt; cards.size(); i++) {
-        cards[i].print ();
+        cards[i].print();
     }
 }
 </tests>
@@ -115,7 +115,7 @@ void Deck::print () const {
             <c>Deck</c> member function that takes a <c>Card</c> as a parameter.</p>
   <p>Writing <c>find</c> as a <c>Card</c> member function is a little tricky.
             Here's my version:</p>
-  <program>int Card::find (const Deck&amp; deck) const {
+  <program>int Card::find(const Deck&amp; deck) const {
   for (size_t i = 0; i &lt; deck.cards.size(); i++) {
     if (equals (deck.cards[i], *this)) return i;
   }
@@ -136,22 +136,22 @@ struct Deck;
 struct Card {
   int suit, rank;
 
-  Card ();
-  Card (int s, int r);
+  Card();
+  Card(int s, int r);
 
-  void print () const;
-  bool isGreater (const Card&amp; c2) const;
-  int find (const Deck&amp; deck) const;
+  void print() const;
+  bool isGreater(const Card&amp; c2) const;
+  int find(const Deck&amp; deck) const;
 };
 
 // and then later we provide the definition of Deck
 struct Deck {
   vector&lt;Card&gt; cards;
 
-  Deck ();
-  Deck (int n);
-  void print () const;
-  int find (const Card&amp; card) const;
+  Deck();
+  Deck(int n);
+  void print() const;
+  int find(const Card&amp; card) const;
 };</program>
   <exercise label="deck_members_1">
     <statement>
@@ -199,10 +199,10 @@ struct Deck {
     <blocks>
       <block order="2">
         <choice correct="yes">
-          <cline>int Deck::find (Card card) const {</cline>
+          <cline>int Deck::find(Card card) const {</cline>
         </choice>
         <choice>
-          <cline>int find (Card) {                         </cline>
+          <cline>int find(Card) {                         </cline>
         </choice>
       </block>
       <block order="4">
@@ -251,17 +251,17 @@ TEN, JACK, QUEEN, KING };
 struct Card {
     Rank rank;
     Suit suit;
-    Card ();
-    Card (Suit s, Rank r);
-    void print () const;
-    bool equals (const Card& c2) const;
+    Card();
+    Card(Suit s, Rank r);
+    void print() const;
+    bool equals(const Card& c2) const;
 };
 
 struct Deck {
     vector<Card> cards;
-    Deck ();
-    void print () const;
-    int find (Card card) const;
+    Deck();
+    void print() const;
+    int find(Card card) const;
 };
 
 int main() {
@@ -275,15 +275,15 @@ int main() {
 
         ]]></input>
       <tests>
-Card::Card () {
+Card::Card() {
     suit = SPADES;  rank = ACE;
 }
 
-Card::Card (Suit s, Rank r) {
+Card::Card(Suit s, Rank r) {
     suit = s;  rank = r;
 }
 
-void Card::print () const {
+void Card::print() const {
     vector&lt;string&gt; suits (4);
     suits[0] = "Clubs";
     suits[1] = "Diamonds";
@@ -308,7 +308,7 @@ void Card::print () const {
     cout &lt;&lt; ranks[rank] &lt;&lt; " of " &lt;&lt; suits[suit] &lt;&lt; endl;
 }
 
-Deck::Deck () {
+Deck::Deck() {
     vector&lt;Card&gt; temp (52);
     cards = temp;
 
@@ -322,13 +322,13 @@ Deck::Deck () {
     }
 }
 
-void Deck::print () const {
+void Deck::print() const {
     for (size_t i = 0; i &lt; cards.size(); i++) {
-        cards[i].print ();
+        cards[i].print();
     }
 }
 
-int Deck::find (Card card) const {
+int Deck::find(Card card) const {
     for (size_t i = 0; i &amp;#60; cards.size(); i++) {
         if (cards[i].equals(card)) {
             return i;
@@ -337,7 +337,7 @@ int Deck::find (Card card) const {
     return -1;
 }
 
-bool Card::equals (const Card&amp; c2) const {
+bool Card::equals(const Card&amp; c2) const {
     return (rank == c2.rank &amp;&amp; suit == c2.suit);
 }
 </tests>

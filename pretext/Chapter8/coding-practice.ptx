@@ -12,7 +12,7 @@
 #include <iostream>
 using namespace std;
 
-void rectangleInfo () {
+void rectangleInfo() {
     int height, width;
     cout << "Please enter the height and width of a rectangle separated by spaces: ";
     cin >> height >> width;
@@ -21,7 +21,7 @@ void rectangleInfo () {
 }
 
 int main() {
-    rectangleInfo ();
+    rectangleInfo();
 }
         ]]></input></program>
             
@@ -58,7 +58,7 @@ struct Robot {
     string task;
 };
 
-void printRobotData (Robot r) {
+void printRobotData(Robot r) {
      cout << r.name << " (" << r.model << " " << r.serialNumber
           << ") has " << r.batteryLevelPercentage
           << " percent battery and is currently executing the task \""
@@ -109,7 +109,7 @@ struct Robot {
     string task;
 };
 
-void printRobotData (Robot r);
+void printRobotData(Robot r);
 
 void resetRobot(Robot& r) {
     Robot reset = { "EnterAName", r.model, r.serialNumber, 100, "Idle" };
@@ -125,7 +125,7 @@ int main() {
     cout << "EnterAName (RSO 1985) has 100 percent battery and is currently executing the task \"Idle\"";
 }
         ]]></input><tests>
-void printRobotData (Robot r) {
+void printRobotData(Robot r) {
      cout &lt;&lt; r.name &lt;&lt; " (" &lt;&lt; r.model &lt;&lt; " " &lt;&lt; r.serialNumber
           &lt;&lt; ") has " &lt;&lt; r.batteryLevelPercentage
           &lt;&lt; " percent battery and is currently executing the task \""

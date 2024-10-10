@@ -45,7 +45,7 @@
             city name and using the <c>substr</c> function to extract the cities and
             distance. <c>substr</c> is a <c>string</c> member function; it takes two
             arguments, the starting index of the substring and the length.</p>
-  <program>void processLine (const string&amp; line)
+  <program>void processLine(const string&amp; line)
 {
   // the character we are looking for is a quotation mark
   char quote = '\"';

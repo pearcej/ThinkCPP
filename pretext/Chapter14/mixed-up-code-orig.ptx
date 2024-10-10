@@ -34,13 +34,13 @@
         <cline>   public:</cline>
       </block>
       <block order="5">
-        <cline>      Circle (double r) { radius = r; }</cline>
+        <cline>      Circle(double r) { radius = r; }</cline>
       </block>
       <block order="1" correct="no">
-        <cline>      Circle (int r) { radius = r; }  </cline>
+        <cline>      Circle(int r) { radius = r; }  </cline>
       </block>
       <block order="4">
-        <cline>      double calculateArea () { return 3.14 * radius * radius; }</cline>
+        <cline>      double calculateArea() { return 3.14 * radius * radius; }</cline>
         <cline>};</cline>
       </block>
     </blocks>
@@ -60,14 +60,14 @@
         <cline>   private:</cline>
         <cline>      double radius;</cline>
         <cline>   public:</cline>
-        <cline>      Circle (double r) { radius = r; }</cline>
-        <cline>      double calculateArea () { return 3.14 * radius * radius; }</cline>
+        <cline>      Circle(double r) { radius = r; }</cline>
+        <cline>      double calculateArea() { return 3.14 * radius * radius; }</cline>
       </block>
       <block order="2">
-        <cline>      double getRadius () {</cline>
+        <cline>      double getRadius() {</cline>
       </block>
       <block order="7" correct="no">
-        <cline>      void getRadius () {  </cline>
+        <cline>      void getRadius() {  </cline>
       </block>
       <block order="11">
         <cline>         return radius;</cline>
@@ -76,10 +76,10 @@
         <cline>      }</cline>
       </block>
       <block order="3">
-        <cline>      void setRadius (double r) {</cline>
+        <cline>      void setRadius(double r) {</cline>
       </block>
       <block order="8" correct="no">
-        <cline>      double setRadius (double r) {  </cline>
+        <cline>      double setRadius(double r) {  </cline>
       </block>
       <block order="4">
         <cline><![CDATA[         if (r < 0) { cout << "Error! Cannot have a negative radius!" << endl; }]]></cline>
@@ -115,7 +115,7 @@
         <cline>   c.radius = 2.4;  </cline>
       </block>
       <block order="4">
-        <cline><![CDATA[   cout << "Radius: " << c.getRadius () << endl;]]></cline>
+        <cline><![CDATA[   cout << "Radius: " << c.getRadius() << endl;]]></cline>
       </block>
       <block order="5" correct="no">
         <cline><![CDATA[   cout << "Radius: " << c.radius << endl;  ]]></cline>
@@ -127,7 +127,7 @@
         <cline>   s.setRadius (3.6);</cline>
       </block>
       <block order="11">
-        <cline><![CDATA[   cout << "New radius: " << c.getRadius () << endl;]]></cline>
+        <cline><![CDATA[   cout << "New radius: " << c.getRadius() << endl;]]></cline>
       </block>
       <block order="6" correct="no">
         <cline><![CDATA[   cout << "New radius: " << c.radius << endl;  ]]></cline>
@@ -161,22 +161,22 @@
         <cline>   public:</cline>
       </block>
       <block order="10">
-        <cline>      Point () { x = 0; y = 0; }</cline>
+        <cline>      Point() { x = 0; y = 0; }</cline>
       </block>
       <block order="9">
-        <cline>      Point (double xVal, double yVal) { x = xVal; y = yVal; }</cline>
+        <cline>      Point(double xVal, double yVal) { x = xVal; y = yVal; }</cline>
       </block>
       <block order="5">
-        <cline>      double getX () { return x; }</cline>
+        <cline>      double getX() { return x; }</cline>
       </block>
       <block order="3">
-        <cline>      double getY () { return y; }</cline>
+        <cline>      double getY() { return y; }</cline>
       </block>
       <block order="2">
-        <cline>      void setX (double xVal) { x = xVal; }</cline>
+        <cline>      void setX(double xVal) { x = xVal; }</cline>
       </block>
       <block order="1">
-        <cline>      void setY (double yVal) { y = yVal; }</cline>
+        <cline>      void setY(double yVal) { y = yVal; }</cline>
       </block>
       <block order="11">
         <cline>};</cline>
@@ -210,19 +210,19 @@
         <cline>      double length, height;</cline>
       </block>
       <block order="10">
-        <cline>      Rectangle (Point upLeft, Point lowRight) { upperLeft = upLeft; lowerRight = lowRight; }</cline>
+        <cline>      Rectangle(Point upLeft, Point lowRight) { upperLeft = upLeft; lowerRight = lowRight; }</cline>
       </block>
       <block order="2">
-        <cline>      Point getUpperLeft () { return upperLeft; }</cline>
+        <cline>      Point getUpperLeft() { return upperLeft; }</cline>
       </block>
       <block order="7">
-        <cline>      Point getLowerRight () { return lowerRight; }</cline>
+        <cline>      Point getLowerRight() { return lowerRight; }</cline>
       </block>
       <block order="6">
-        <cline>      void setUpperLeft (Point p) { upperLeft = p; }</cline>
+        <cline>      void setUpperLeft(Point p) { upperLeft = p; }</cline>
       </block>
       <block order="9">
-        <cline>      void setLowerRight (Point p) { lowerRight = p; }</cline>
+        <cline>      void setLowerRight(Point p) { lowerRight = p; }</cline>
       </block>
       <block order="4">
         <cline>};</cline>
@@ -238,10 +238,10 @@ Afterwards, write the ``Rectangle</c> member function <c>calculateArea</c>,
     </statement>
     <blocks>
       <block order="7">
-        <cline>void Rectangle::calculateSides () {</cline>
+        <cline>void Rectangle::calculateSides() {</cline>
       </block>
       <block order="1">
-        <cline>double Rectangle::calculateSides () {</cline>
+        <cline>double Rectangle::calculateSides() {</cline>
       </block>
       <block order="9">
         <cline>   length = getLowerRight().getX() - getUpperLeft().getX();</cline>
@@ -265,7 +265,7 @@ Afterwards, write the ``Rectangle</c> member function <c>calculateArea</c>,
         <cline>}</cline>
       </block>
       <block order="5">
-        <cline>double Rectangle::calculateArea () {</cline>
+        <cline>double Rectangle::calculateArea() {</cline>
       </block>
       <block order="6">
         <cline>   return length * height;</cline>
@@ -360,40 +360,40 @@ Afterwards, write the ``Rectangle</c> member function <c>calculateArea</c>,
         <cline>   public:</cline>
       </block>
       <block order="14">
-        <cline>      Date () { day = 1; month = 1; year = 2000; }</cline>
+        <cline>      Date() { day = 1; month = 1; year = 2000; }</cline>
       </block>
       <block order="15" correct="no">
-        <cline>      Date () { day = 0; month = 0; year = 0; }  </cline>
+        <cline>      Date() { day = 0; month = 0; year = 0; }  </cline>
       </block>
       <block order="3">
-        <cline>      Date (int d, int m, int y) { day = d; month = m; year = y; }</cline>
+        <cline>      Date(int d, int m, int y) { day = d; month = m; year = y; }</cline>
       </block>
       <block order="8">
-        <cline>      int getDay () { return day; }</cline>
+        <cline>      int getDay() { return day; }</cline>
       </block>
       <block order="18">
-        <cline>      int getMonth () { return month; }</cline>
+        <cline>      int getMonth() { return month; }</cline>
       </block>
       <block order="17">
-        <cline>      int getYear () { return year; }</cline>
+        <cline>      int getYear() { return year; }</cline>
       </block>
       <block order="2">
-        <cline><![CDATA[      void setDay (int d) { if (d > 0 && d < 32) day = d; }]]></cline>
+        <cline><![CDATA[      void setDay(int d) { if (d > 0 && d < 32) day = d; }]]></cline>
       </block>
       <block order="12">
-        <cline><![CDATA[      void setMonth (int m) { if (m > 0 && m < 13) month = m; }]]></cline>
+        <cline><![CDATA[      void setMonth(int m) { if (m > 0 && m < 13) month = m; }]]></cline>
       </block>
       <block order="10">
-        <cline>      void setYear (int y) { year = y; }</cline>
+        <cline>      void setYear(int y) { year = y; }</cline>
       </block>
       <block order="4" correct="no">
-        <cline><![CDATA[      void setDay (int d) { if (d > 1 && d < 31) day = d; }  ]]></cline>
+        <cline><![CDATA[      void setDay(int d) { if (d > 1 && d < 31) day = d; }  ]]></cline>
       </block>
       <block order="5" correct="no">
-        <cline><![CDATA[      void setMonth (int m) { if (m >= 0 && m <= 12) month = m; }  ]]></cline>
+        <cline><![CDATA[      void setMonth(int m) { if (m >= 0 && m <= 12) month = m; }  ]]></cline>
       </block>
       <block order="9" correct="no">
-        <cline><![CDATA[      void setYear (int y) { if (y >= 2000 && y < 3000) year = y; }  ]]></cline>
+        <cline><![CDATA[      void setYear(int y) { if (y >= 2000 && y < 3000) year = y; }  ]]></cline>
       </block>
       <block order="1">
         <cline>};</cline>
@@ -408,7 +408,7 @@ Afterwards, write the ``Rectangle</c> member function <c>calculateArea</c>,
     </statement>
     <blocks>
       <block order="7">
-        <cline>void Date::printDate () {</cline>
+        <cline>void Date::printDate() {</cline>
       </block>
       <block order="8">
         <cline><![CDATA[   if (getYear() < 0) {]]></cline>
@@ -447,7 +447,7 @@ Afterwards, write the ``Rectangle</c> member function <c>calculateArea</c>,
     </statement>
     <blocks>
       <block order="13">
-        <cline>bool Date::isLeapYear () {</cline>
+        <cline>bool Date::isLeapYear() {</cline>
       </block>
       <block order="2">
         <cline>   if (getYear() % 4 != 0) { return false; }</cline>
@@ -471,7 +471,7 @@ Afterwards, write the ``Rectangle</c> member function <c>calculateArea</c>,
         <cline>}</cline>
       </block>
       <block order="12">
-        <cline>int Date::lastDayInMonth () {</cline>
+        <cline>int Date::lastDayInMonth() {</cline>
       </block>
       <block order="15">
         <cline>   if (isLeapYear() &amp;&amp; getMonth() == 2) {</cline>

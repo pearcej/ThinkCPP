@@ -40,10 +40,10 @@
     <blocks>
       <block order="1">
         <choice correct="yes">
-          <cline>void is_true (int number) {</cline>
+          <cline>void is_true(int number) {</cline>
         </choice>
         <choice>
-          <cline>bool is_true (int number) { </cline>
+          <cline>bool is_true(int number) { </cline>
         </choice>
       </block>
       <block order="4">
@@ -73,10 +73,10 @@
     <blocks>
       <block order="3">
         <choice correct="yes">
-          <cline>void difference (int a, int b) {</cline>
+          <cline>void difference(int a, int b) {</cline>
         </choice>
         <choice>
-          <cline>int difference (int a, int b) { </cline>
+          <cline>int difference(int a, int b) { </cline>
         </choice>
       </block>
       <block order="8">
@@ -112,10 +112,10 @@
     <blocks>
       <block order="10">
         <choice correct="yes">
-          <cline>void matic (int x, int y) {</cline>
+          <cline>void matic(int x, int y) {</cline>
         </choice>
         <choice>
-          <cline>int matic (int x, int y) {    </cline>
+          <cline>int matic(int x, int y) {    </cline>
         </choice>
       </block>
       <block order="11">
@@ -205,7 +205,7 @@
     </statement>
     <blocks>
       <block order="1">
-        <cline>void printLetterGrade (double grade) {</cline>
+        <cline>void printLetterGrade(double grade) {</cline>
       </block>
       <block order="3">
         <cline> if (grade &lt; 70) {</cline>
@@ -264,7 +264,7 @@
     </statement>
     <blocks>
       <block order="7">
-        <cline>void knightKnave (bool truth, bool told) {</cline>
+        <cline>void knightKnave(bool truth, bool told) {</cline>
       </block>
       <block order="8">
         <cline> if (truth == true) {</cline>
@@ -305,7 +305,7 @@
     </statement>
     <blocks>
       <block order="6">
-        <cline>void makeVocals (string animal, string mood) {</cline>
+        <cline>void makeVocals(string animal, string mood) {</cline>
       </block>
       <block order="1">
         <cline> if (mood == "bad") {</cline>
@@ -346,7 +346,7 @@
     </statement>
     <blocks>
       <block order="1">
-        <cline>void takeSum () {</cline>
+        <cline>void takeSum() {</cline>
       </block>
       <block order="8">
         <cline><![CDATA[ cout << "Input a positive number!";]]></cline>
@@ -359,7 +359,7 @@
         <cline> if (num &lt; 0) {</cline>
       </block>
       <block order="2">
-        <cline>  takeSum ();</cline>
+        <cline>  takeSum();</cline>
       </block>
       <block order="5">
         <cline> } // END "if"</cline>
@@ -385,7 +385,7 @@
     </statement>
     <blocks>
       <block order="3">
-        <cline>void capitalize () {</cline>
+        <cline>void capitalize() {</cline>
       </block>
       <block order="2">
         <cline><![CDATA[ cout << "Input a lowercase character!";]]></cline>
@@ -398,7 +398,7 @@
         <cline><![CDATA[ if (int(let) < 97 || int(let) > 122) {]]></cline>
       </block>
       <block order="8">
-        <cline>  capitalize (); }</cline>
+        <cline>  capitalize(); }</cline>
       </block>
       <block order="1">
         <cline> let = let - 32;</cline>

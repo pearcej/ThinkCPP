@@ -136,7 +136,7 @@ struct Song {
     int numLikes;
 };
 
-bool songEqual (const Song& a, const &Song b) {
+bool songEqual(const Song& a, const &Song b) {
     if (a.title == b.title && a.artist == b.artist) {
         return true;
     }
@@ -158,7 +158,7 @@ struct Song {
     int numLikes;
 };
 
-bool songEqual (const Song& a, const &Song b) {
+bool songEqual(const Song& a, const &Song b) {
     if (a.title == b.title && a.artist == b.artist) {
         return true;
     }
@@ -209,7 +209,7 @@ struct Album {
     vector<Song> songs;
 };
 
-int Album::searchAlbum (const Song& a) {
+int Album::searchAlbum(const Song& a) {
     for (size_t i = 0; i < songs.size(); ++i) {
         if (songEqual (songs[i], a)) {
             return i;
@@ -238,7 +238,7 @@ struct Album {
     vector<Song> songs;
 };
 
-int Album::searchAlbum (const Song& a) {
+int Album::searchAlbum(const Song& a) {
     for (size_t i = 0; i < songs.size(); ++i) {
         if (songEqual (songs[i], a)) {
             return i;
@@ -288,7 +288,7 @@ struct Album {
     vector<Song> songs;
 };
 
-void Album::mostLikedSong () {
+void Album::mostLikedSong() {
     int maxIndex = 0;
     int maxLikes = 0;
     for (size_t i = 0; i < songs.size(); ++i) {
@@ -322,7 +322,7 @@ struct Album {
     vector<Song> songs;
 };
 
-void Album::mostLikedSong () {
+void Album::mostLikedSong() {
     int maxIndex = 0;
     int maxLikes = 0;
     for (size_t i = 0; i < songs.size(); ++i) {
@@ -470,7 +470,7 @@ struct Product {
     double price;
 };
 
-bool productEqual (const Product& a, const &Product b) {
+bool productEqual(const Product& a, const &Product b) {
     if (a.name == b.name && a.price == b.price) {
         return true;
     }
@@ -479,7 +479,7 @@ bool productEqual (const Product& a, const &Product b) {
     }
 }
 
-int List::searchList (const Product& a) {
+int List::searchList(const Product& a) {
     for (size_t i = 0; i < products.size(); ++i) {
         if (productEqual (products[i], a)) {
             return i;
@@ -501,7 +501,7 @@ struct Product {
     double price;
 };
 
-bool productEqual (const Product& a, const &Product b) {
+bool productEqual(const Product& a, const &Product b) {
     if (a.name == b.name && a.price == b.price) {
         return true;
     }
@@ -510,7 +510,7 @@ bool productEqual (const Product& a, const &Product b) {
     }
 }
 
-int List::searchList (const Product& a) {
+int List::searchList(const Product& a) {
     for (size_t i = 0; i < products.size(); ++i) {
         if (productEqual (products[i], a)) {
             return i;
@@ -556,7 +556,7 @@ struct List {
     vector<Product> products;
 };
 
-double List::totalPrice () {
+double List::totalPrice() {
     double total = 0;
     for (size_t i = 0; i < products.size(); ++i) {
         total += products[i].price;
@@ -582,7 +582,7 @@ struct List {
     vector<Product> products;
 };
 
-double List::totalPrice () {
+double List::totalPrice() {
     double total = 0;
     for (size_t i = 0; i < products.size(); ++i) {
         total += products[i].price;
@@ -630,7 +630,7 @@ struct List {
     vector&#60Product&#62 products;
 };
 
-void List::removeProduct (int index) {
+void List::removeProduct(int index) {
     products[index] = products[products.size() - 1];
 }
         ]]></input></program>
@@ -652,7 +652,7 @@ struct List {
     vector&#60Product&#62 products;
 };
 
-void List::removeProduct (int index) {
+void List::removeProduct(int index) {
     products[index] = products[products.size() - 1];
 }
         ]]></input></program></exercise>

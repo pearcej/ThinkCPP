@@ -124,12 +124,12 @@ struct Space {
 
 struct BingoBoard {
     vector<vector<Space> > board;
-    void makeBoard ();
+    void makeBoard();
 };
 
-int randomInt (int low, int high);
+int randomInt(int low, int high);
 void swapValues (vector<int> &vec, int index1, int index2);
-vector<int> generateRandVec ();
+vector<int> generateRandVec();
 
 void BingoBoard::makeBoard() {
     // Initialize board

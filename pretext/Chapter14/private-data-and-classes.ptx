@@ -32,13 +32,13 @@ private:
   int suit, rank;
 
 public:
-  Card ();
-  Card (int s, int r);
+  Card();
+  Card(int s, int r);
 
-  int getRank () const { return rank; }
-  int getSuit () const { return suit; }
-  void setRank (int r) { rank = r; }
-  void setSuit (int s) { suit = s; }
+  int getRank() const { return rank; }
+  int getSuit() const { return suit; }
+  void setRank(int r) { rank = r; }
+  void setSuit(int s) { suit = s; }
 };</program>
   <p>There are two sections of this definition, a <term>private</term> part and a <term>public</term>
             part. The functions are public, which means that they can be invoked by
@@ -69,13 +69,13 @@ struct Card {
     private:
         int suit, rank;
     public:
-        Card ();
-        Card (int s, int r);
-        int getRank () const { return rank; }
-        int getSuit () const { return suit; }
-        void setRank (int r) { rank = r; }
-        void setSuit (int s) { suit = s; }
-        void print () const;
+        Card();
+        Card(int s, int r);
+        int getRank() const { return rank; }
+        int getSuit() const { return suit; }
+        void setRank(int r) { rank = r; }
+        void setSuit(int s) { suit = s; }
+        void print() const;
 };
 
 int main() {
@@ -98,15 +98,15 @@ int main() {
 }
         ]]></input>
       <tests>
-Card::Card () {
+Card::Card() {
     suit = 3;  rank = 0;
 }
 
-Card::Card (int s, int r) {
+Card::Card(int s, int r) {
     suit = s;  rank = r;
 }
 
-void Card::print () const {
+void Card::print() const {
     vector&lt;string&gt; suits (4);
     suits[0] = "Clubs";
     suits[1] = "Diamonds";

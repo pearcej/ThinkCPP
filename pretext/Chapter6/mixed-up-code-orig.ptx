@@ -149,10 +149,10 @@
     <blocks>
       <block order="4">
         <choice correct="yes">
-          <cline>void repeatHello () {</cline>
+          <cline>void repeatHello() {</cline>
         </choice>
         <choice>
-          <cline>repeatHello () {                          </cline>
+          <cline>repeatHello() {                          </cline>
         </choice>
       </block>
       <block order="10">
@@ -198,10 +198,10 @@
     <blocks>
       <block order="6">
         <choice correct="yes">
-          <cline>void repeatString (string input) {</cline>
+          <cline>void repeatString(string input) {</cline>
         </choice>
         <choice>
-          <cline>void repeatString () {                         </cline>
+          <cline>void repeatString() {                         </cline>
         </choice>
       </block>
       <block order="9">
@@ -241,10 +241,10 @@
     <blocks>
       <block order="7">
         <choice correct="yes">
-          <cline>void repeatString (string input, int x) {</cline>
+          <cline>void repeatString(string input, int x) {</cline>
         </choice>
         <choice>
-          <cline>void repeatString (string input, string x) {                         </cline>
+          <cline>void repeatString(string input, string x) {                         </cline>
         </choice>
       </block>
       <block order="3">
@@ -290,10 +290,10 @@
     <blocks>
       <block order="10">
         <choice correct="yes">
-          <cline>void newYearCountdown () {</cline>
+          <cline>void newYearCountdown() {</cline>
         </choice>
         <choice>
-          <cline>void newYearCountdown (string input) {                         </cline>
+          <cline>void newYearCountdown(string input) {                         </cline>
         </choice>
       </block>
       <block order="3">
@@ -343,10 +343,10 @@
     <blocks>
       <block order="11">
         <choice correct="yes">
-          <cline>void powerUp (int powerLevel) {</cline>
+          <cline>void powerUp(int powerLevel) {</cline>
         </choice>
         <choice>
-          <cline>void powerUp () {                         </cline>
+          <cline>void powerUp() {                         </cline>
         </choice>
       </block>
       <block order="6" correct="no">
@@ -395,13 +395,13 @@
     </statement>
     <blocks>
       <block order="2">
-        <cline>int summation (int start, int end) {</cline>
+        <cline>int summation(int start, int end) {</cline>
       </block>
       <block order="8" correct="no">
-        <cline>void summation (int start, int end) {  </cline>
+        <cline>void summation(int start, int end) {  </cline>
       </block>
       <block order="3" correct="no">
-        <cline>int summation () {  </cline>
+        <cline>int summation() {  </cline>
       </block>
       <block order="6">
         <cline>   int n = start;</cline>
@@ -450,10 +450,10 @@
     </statement>
     <blocks>
       <block order="9">
-        <cline>int reverseNumber (int num) {</cline>
+        <cline>int reverseNumber(int num) {</cline>
       </block>
       <block order="8" correct="no">
-        <cline>void reverseNumber (int num) {  </cline>
+        <cline>void reverseNumber(int num) {  </cline>
       </block>
       <block order="10">
         <cline>   int reverse = 0;</cline>

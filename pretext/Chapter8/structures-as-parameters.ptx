@@ -2,7 +2,7 @@
 <section xml:id="chapter8_structures-as-parameters">
   <title>Structures as parameters</title>
   <p>You can pass structures as parameters in the usual way. For example,</p>
-  <program>void printPoint (Point p) {
+  <program>void printPoint(Point p) {
   cout &lt;&lt; "(" &lt;&lt; p.x &lt;&lt; ", " &lt;&lt; p.y &lt;&lt; ")" &lt;&lt; endl;
 }</program>
   <p><c>printPoint</c> takes a point as an argument and outputs it in the
@@ -22,7 +22,7 @@ struct Point {
     double x, y;
 };
 
-void printPoint (Point p) {
+void printPoint(Point p) {
     cout << "(" << p.x << ", " << p.y << ")" << endl;
 }
 
@@ -36,7 +36,7 @@ int main() {
   <p>As a second example, we can rewrite the <c>distance</c> function from
             <number_reference internal="True" refuri="../Chapter5/programdevelopment#distance" title="Section %s"><inline classes="std std-numref">Section 5.2</inline></number_reference> so that it takes two <c>Point</c>s as
             parameters instead of four <c>double</c>s.</p>
-  <program>double distance (Point p1, Point p2) {
+  <program>double distance(Point p1, Point p2) {
   double dx = p2.x - p1.x;
   double dy = p2.y - p1.y;
   return sqrt (dx*dx + dy*dy);
@@ -56,7 +56,7 @@ struct Point {
     double x, y;
 };
 
-double distance (Point p1, Point p2) {
+double distance(Point p1, Point p2) {
     double dx = p2.x - p1.x;
     double dy = p2.y - p1.y;
     return sqrt (dx*dx + dy*dy);
@@ -79,7 +79,7 @@ struct Coordinate {
   int x, y;
 };
 
-void printOppositeCoordinate (Coordinate p) {
+void printOppositeCoordinate(Coordinate p) {
   cout << "(" << -p.y << ", " << -p.x << ")" << endl;
 }
 

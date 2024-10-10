@@ -15,8 +15,8 @@
   double real, imag;
 
 public:
-  Complex () { }
-  Complex (double r, double i) { real = r;  imag = i; }
+  Complex() { }
+  Complex(double r, double i) { real = r;  imag = i; }
 };</program>
   <p>Because this is a <c>class</c> definition, the instance variables <c>real</c>
             and <c>imag</c> are private, and we have to include the label <c>public:</c>
@@ -64,9 +64,9 @@ y       &amp; = &amp;  r \sin \theta\end{aligned}</math_block>
   bool cartesian, polar;
 
 public:
-  Complex () { cartesian = false;  polar = false; }
+  Complex() { cartesian = false;  polar = false; }
 
-  Complex (double r, double i)
+  Complex(double r, double i)
   {
     real = r;  imag = i;
     cartesian = true;  polar = false;
@@ -108,13 +108,13 @@ class Triangle {
   private:
     double side_a, side_b, side_c;
   public:
-    Triangle () {side_a = 1; side_b = 1; side_c = 1;}
-    Triangle (double a_in, double b_in, double c_in) {
+    Triangle() {side_a = 1; side_b = 1; side_c = 1;}
+    Triangle(double a_in, double b_in, double c_in) {
       side_a = a_in;
       side_b = b_in;
       side_c = c_in;
     }
-    double perimeter () {
+    double perimeter() {
       return side_a + side_b + side_c;
     }
 };
@@ -144,15 +144,15 @@ class Triangle {
   private:
     double side_a, side_b, angle;
   public:
-    Triangle () {side_a = 1; side_b = 1; angle = 60;}
-    Triangle (double a_in, double b_in, double c_in) {
+    Triangle() {side_a = 1; side_b = 1; angle = 60;}
+    Triangle(double a_in, double b_in, double c_in) {
       side_a = a_in;
       side_b = b_in;
       // Law of Cosines: c^2 = a^2 + b^2 - 2abcosC
       angle = acos((pow(a_in, 2) + pow(b_in, 2) - pow(c_in, 2))
                    / 2 * a_in * b_in);
     }
-    double perimeter () {
+    double perimeter() {
       return side_a + side_b +
              sqrt(pow(side_a, 2) + pow(side_b, 2)
              - 2 * side_a * side_b * cos(angle));
@@ -175,10 +175,10 @@ int main() {
     <blocks>
       <block order="7">
         <choice correct="yes">
-          <cline>Complex (double m, double t)</cline>
+          <cline>Complex(double m, double t)</cline>
         </choice>
         <choice>
-          <cline>Complex (int m, int t)                         </cline>
+          <cline>Complex(int m, int t)                         </cline>
         </choice>
       </block>
       <block order="3">

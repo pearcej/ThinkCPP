@@ -48,7 +48,7 @@ blank.y = 4.0;</program>
       <p>Which of the following would be the correct way to initialize the <c>x</c> instance variable of the <c>Point</c> object?</p>
       <program line-numbers="yes">
         <input>
-struct Point () {
+struct Point() {
   double x, y;
 };
 

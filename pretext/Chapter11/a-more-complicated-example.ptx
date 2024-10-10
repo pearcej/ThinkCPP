@@ -9,7 +9,7 @@
   <p>Inside the function, we can refer to one of the them implicitly, but to
             access the instance variables of the other we continue to use dot
             notation.</p>
-  <program>bool Time::after (const Time&amp; time2) const {
+  <program>bool Time::after(const Time&amp; time2) const {
   if (hour &gt; time2.hour) return true;
   if (hour &lt; time2.hour) return false;
 
@@ -38,7 +38,7 @@ using namespace std;
 struct Time {
     int hour, minute;
     double second;
-    bool after (const Time& time2) const;
+    bool after(const Time& time2) const;
 };
 
 int main() {
@@ -55,7 +55,7 @@ int main() {
         ]]></input>
       <tests>
 
-bool Time::after (const Time&amp; time2) const {
+bool Time::after(const Time&amp; time2) const {
   if (hour &gt; time2.hour) return true;
   if (hour &lt; time2.hour) return false;
 

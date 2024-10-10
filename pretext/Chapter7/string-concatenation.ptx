@@ -163,7 +163,7 @@ cout << s + t << endl;
         <cline>void greeter(string message) {</cline>
       </block>
       <block order="4" correct="no">
-        <cline>string greeter (string message) { </cline>
+        <cline>string greeter(string message) { </cline>
       </block>
       <block order="8">
         <choice correct="yes">

@@ -4,7 +4,7 @@
   <p>As another example of generalization, imagine you wanted a program that
             would print a multiplication table of any size, not just the 6x6 table.
             You could add a parameter to <c>printMultTable</c>:</p>
-  <program>void printMultTable (int high) {
+  <program>void printMultTable(int high) {
   int i = 1;
   while (i &lt;= high) {
     printMultiples (i);
@@ -27,7 +27,7 @@
   <p>Just to be annoying, I will also call this parameter <c>high</c>,
             demonstrating that different functions can have parameters with the same
             name (just like local variables):</p>
-  <program>void printMultiples (int n, int high) {
+  <program>void printMultiples(int n, int high) {
   int i = 1;
   while (i &lt;= high) {
     cout &lt;&lt; n * i &lt;&lt; "   ";
@@ -36,7 +36,7 @@
   cout &lt;&lt; endl;
 }
 
-void printMultTable (int high) {
+void printMultTable(int high) {
   int i = 1;
   while (i &lt;= high) {
     printMultiples (i, high);
@@ -66,7 +66,7 @@ void printMultTable (int high) {
 #include <iostream>
 using namespace std;
 
-void printMultiples (int n, int high) {
+void printMultiples(int n, int high) {
     int i = 1;
     while (i <= high) {
         cout << n * i << "\t";
@@ -75,7 +75,7 @@ void printMultiples (int n, int high) {
     cout << endl;
 }
 
-void printMultTable (int high) {
+void printMultTable(int high) {
     int i = 1;
     while (i <= high) {
         printMultiples (i, high);
@@ -119,7 +119,7 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void printMultiples (int n, int high) {
+void printMultiples(int n, int high) {
     int i = 1;
     while (i <= high) {
         cout << n * i << "\t";
@@ -128,7 +128,7 @@ void printMultiples (int n, int high) {
     cout << endl;
 }
 
-void printMultTable (int high) {
+void printMultTable(int high) {
     int i = 1;
     while (i <= high) {
         printMultiples (i, i);

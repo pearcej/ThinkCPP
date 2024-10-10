@@ -3,7 +3,7 @@
   <title>More encapsulation</title>
   <p>To demonstrate encapsulation again, I'll take the code from the previous
             section and wrap it up in a function:</p>
-  <program>void printMultTable () {
+  <program>void printMultTable() {
   int i = 1;
   while (i &lt;= 6) {
     printMultiples (i);
@@ -26,7 +26,7 @@
 #include <iostream>
 using namespace std;
 
-void printMultiples (int n) {
+void printMultiples(int n) {
     int i = 1;
     while (i <= 6) {
         cout << n * i << '\t';
