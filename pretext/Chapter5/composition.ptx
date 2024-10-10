@@ -2,17 +2,16 @@
 <section xml:id="chapter5_composition">
   <title>Composition</title>
   <p>As you should expect by now, once you define a new function, you can use
-            it as part of an expression, and you can build new functions using
-            existing functions. For example, what if someone gave you two points,
-            the center of the circle and a point on the perimeter, and asked for the
-            area of the circle?</p>
-  <p>Let's say the center point is stored in the variables <c>xc</c> and <c>yc</c>, and the
-            perimeter point is in <c>xp</c> and <c>yp</c>. The first step is to find the radius of
-            the circle, which is the distance between the two points. Fortunately,
-            we have a function, <c>distance</c>, that does that.</p>
+    it as part of an expression, and you can build new functions using
+    existing functions. For example, what if someone gave you two points,
+    the center of the circle and a point on the perimeter, and asked for the
+    area of the circle?</p>
+  <p>Let's say the center point is stored in the variables <c>xc</c> and <c>yc</c>, and the perimeter
+    point is in <c>xp</c> and <c>yp</c>. The first step is to find the radius of the circle, which is
+    the distance between the two points. Fortunately, we have a function, <c>distance</c>, that does that.</p>
   <program>double radius = distance (xc, yc, xp, yp);</program>
   <p>The second step is to find the area of a circle with that radius, and
-            return it.</p>
+    return it.</p>
   <program>double result = area (radius);
 return result;</program>
   <p>Wrapping that all up in a function, we get:</p>
@@ -21,22 +20,24 @@ return result;</program>
   double result = area (radius);
   return result;
 }</program>
-  <p>The name of this function is <c>fred</c>, which may seem odd. I will explain
-            why in the next section.</p>
+  <p>The name of this function is <c>fred</c>, which may seem odd. I will explain why in the next
+    section.</p>
   <p>The temporary variables radius and area are useful for development and
-            debugging, but once the program is working we can make it more concise
-            by composing the function calls:</p>
+    debugging, but once the program is working we can make it more concise
+    by composing the function calls:</p>
   <program>double fred (double xc, double yc, double xp, double yp) {
   return area (distance (xc, yc, xp, yp));
 }</program>
-  <exercise label="fun_comp_AC_1">
-    <statement>
+  <listing label="fun_comp_AC_1">
+    <caption>
       <p>This program shows you how the distance and area functions are
-            composed in the fred function to calculate the area of a circle
-            if we only know the coordinates of the center, and one other point
-            of the circle.</p>
-    </statement>
-    <program xml:id="fun_comp_AC_1_editor" interactive="activecode" line-numbers="yes">
+        composed in the fred function to calculate the area of a circle
+        if we only know the coordinates of the center, and one other point
+        of the circle.</p>
+    </caption>
+    <program xml:id="fun_comp_AC_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <cmath>
@@ -66,7 +67,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <exercise label="fun_comp_1">
     <statement>
       <p>What is the composition of the function <c>fred</c> ?</p>
@@ -77,7 +78,8 @@ int main() {
           <p>the types and quantities of variables that make up the function</p>
         </statement>
         <feedback>
-          <p>This would tell us what variables the function is composed of, but this is not what function composition means.</p>
+          <p>This would tell us what variables the function is composed of, but this is not what
+            function composition means.</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -108,9 +110,8 @@ int main() {
   </exercise>
   <exercise label="fun_comp_2">
     <statement>
-      <p>It turns out you already have a function called <c>printHelloName</c>
-            so you must rename this one.  Which of the following could be the
-            new name for your function?</p>
+      <p>It turns out you already have a function called <c>printHelloName</c> so you must rename this one. Which
+        of the following could be the new name for your function?</p>
       <program>void printHelloName (string name) {
   cout &lt;&lt; "Hello " &lt;&lt; name &lt;&lt; "!" &lt;&lt;  endl;
 }</program>
@@ -121,7 +122,8 @@ int main() {
           <p>print_hello_name</p>
         </statement>
         <feedback>
-          <p>This function name isn't much of a change from our original, and would be a good choice, but what about the other options?</p>
+          <p>This function name isn't much of a change from our original, and would be a good
+            choice, but what about the other options?</p>
         </feedback>
       </choice>
       <choice>
@@ -129,7 +131,8 @@ int main() {
           <p>fluffy_cat</p>
         </statement>
         <feedback>
-          <p>Although unconventional, there is nothing wrong about this name, but what about eat_pizza?</p>
+          <p>Although unconventional, there is nothing wrong about this name, but what about
+            eat_pizza?</p>
         </feedback>
       </choice>
       <choice>
@@ -137,7 +140,8 @@ int main() {
           <p>eat_pizza</p>
         </statement>
         <feedback>
-          <p>Although unconventional, there is nothing wrong about this name, but what about fluffy_cat?</p>
+          <p>Although unconventional, there is nothing wrong about this name, but what about
+            fluffy_cat?</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -145,7 +149,8 @@ int main() {
           <p>all of the above</p>
         </statement>
         <feedback>
-          <p>All of these function names are technically legal, but in general, it's good practice to name your functions something that describes what they do.</p>
+          <p>All of these function names are technically legal, but in general, it's good practice
+            to name your functions something that describes what they do.</p>
         </feedback>
       </choice>
       <choice>
@@ -153,20 +158,23 @@ int main() {
           <p>none of the above</p>
         </statement>
         <feedback>
-          <p>There's nothing wrong with any of these function names, although some of them are weird.</p>
+          <p>There's nothing wrong with any of these function names, although some of them are
+            weird.</p>
         </feedback>
       </choice>
     </choices>
   </exercise>
   <p>Function composition is not limited to a fixed number of calls.
-            Multiple calls can be made to the same function as well as to a number of
-            different functions.</p>
-  <exercise label="multi_comp_1">
-    <statement>
+    Multiple calls can be made to the same function as well as to a number of
+    different functions.</p>
+  <listing label="multi_comp_1">
+    <caption>
       <p>This program shows how mutliple calls are made to one function and it
-            also shows that calling two or more different functions is valid.</p>
-    </statement>
-    <program xml:id="multi_comp_1_editor" interactive="activecode" line-numbers="yes">
+        also shows that calling two or more different functions is valid.</p>
+    </caption>
+    <program xml:id="multi_comp_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -192,5 +200,5 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
 </section>
