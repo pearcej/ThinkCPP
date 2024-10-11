@@ -493,12 +493,8 @@ int main() {
         ]]></input>
     </program>
       <solution>
-
-
         <p>Below is one way to complete the program. You need to make sure to convert your angle
           to radians before doing any calculations with sinusoidal functions.</p>
-
-
         <program xml:id="functions_a9a_editor"
                  line-numbers="yes"><input><![CDATA[
 #include <iostream>
@@ -511,7 +507,6 @@ void tanDegrees(double degrees) {
     cout << tangent;
 }
         ]]></input></program>
-
       </solution>
     </exercise>
 

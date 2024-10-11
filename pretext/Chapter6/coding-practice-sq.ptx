@@ -363,7 +363,7 @@ int main() {
       <exercise label="cp_6_AC_10q">
         <statement>
           <p>Write a function called <c>factorial</c> which takes an <c>int n</c> as a parameter
-                    and returns <c>n</c> factorial. Remembers that a factorial (denoted by !) is the product of all
+                    and returns <c>n</c> factorial. Remembers that a factorial(denoted by !) is the product of all
                     positive integers less than or equal to <c>n</c>, so 4! is 24. Use a <c>while</c> loop.
                     Run and test your code! Select the Parsonsprob tab for hints for the construction of the code.</p>
         </statement>
@@ -381,9 +381,9 @@ int factorial(int n) {
 #include &lt;catch.hpp&gt;
 
 TEST_CASE("factorial function") {
-    REQUIRE(factorial (4) == 24);
-    REQUIRE(factorial (6) == 720);
-    REQUIRE(factorial (9) == 362880);
+    REQUIRE(factorial(4) == 24);
+    REQUIRE(factorial(6) == 720);
+    REQUIRE(factorial(9) == 362880);
 }
 </tests>
         </program>
@@ -393,7 +393,7 @@ TEST_CASE("factorial function") {
       <exercise label="cp_6_AC_10q_pp" numbered="yes" adaptive="yes" indentation="hide">
         <statement>
           <p>Write a function called <c>factorial</c> which takes an <c>int n</c> as a parameter
-                    and returns <c>n</c> factorial. Remembers that a factorial (denoted by !) is the product of all
+                    and returns <c>n</c> factorial. Remembers that a factorial(denoted by !) is the product of all
                     positive integers less than or equal to <c>n</c>, so 4! is 24. Use a <c>while</c> loop.
                     Run and test your code! Use the lines to construct the code, then go back to complete the Activecode tab.</p>
         </statement>
