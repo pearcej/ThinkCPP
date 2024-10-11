@@ -2,21 +2,21 @@
 <section xml:id="chapter5_returning-from-main">
   <title>Returning from main</title>
   <p>Now that we have functions that return values, I can let you in on a
-            secret. main is not really supposed to be a void function. It's supposed
-            to return an integer:</p>
+    secret. main is not really supposed to be a void function. It's supposed
+    to return an integer:</p>
   <program>int main() {
   return 0;
 }</program>
   <p>The usual return value from main is 0, which indicates that the program
-            succeeded at whatever it was supposed to do. If something goes wrong, it
-            is common to return -1, or some other value that indicates what kind of
-            error occurred.</p>
+    succeeded at whatever it was supposed to do. If something goes wrong, it
+    is common to return -1, or some other value that indicates what kind of
+    error occurred.</p>
   <p>Of course, you might wonder who this value gets returned to, since we
-            never call main ourselves. It turns out that when the system executes a
-            program, it starts by calling main in pretty much the same way it calls
-            all the other functions.</p>
+    never call main ourselves. It turns out that when the system executes a
+    program, it starts by calling main in pretty much the same way it calls
+    all the other functions.</p>
   <p>There are even some parameters that are passed to main by the system,
-            but we are not going to deal with them for a little while.</p>
+    but we are not going to deal with them for a little while.</p>
   <exercise label="return_main_mc_1">
     <statement>
       <p>What data type is the main function supposed to return?</p>
@@ -35,7 +35,7 @@
           <p>integer</p>
         </statement>
         <feedback>
-          <p>Correct!  You should always return an integer to avoid issues down the road.</p>
+          <p>Correct! You should always return an integer to avoid issues down the road.</p>
         </feedback>
       </choice>
       <choice>
@@ -58,8 +58,9 @@
   </exercise>
   <exercise label="fitb_return_main_2">
     <statement>
-      <p>Usually, we return <var/> to exit main.  However, if there are
-any errors that we catch, we might return <var/>. <var/>  <var/>  </p>
+      <p>Usually, we return <var/> to exit main. However, if there are any errors that we catch, we
+        might return <var/>. <var/>  <var/>
+      </p>
     </statement>
     <setup>
       <var case="insensitive">

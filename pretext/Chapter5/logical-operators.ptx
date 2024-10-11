@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
 <section xml:id="chapter5_logical-operators">
   <title>Logical operators</title>
-  <p>There are three <term>logical operators</term> in C++: AND, OR and NOT, which are
-            denoted by the symbols &#x2018;'&amp;&amp;'', &#x2018;'||'' and &#x2018;'!''. The semantics (meaning) of these
-            operators is similar to their meaning in English. For example &#x2018;'x &gt; 0 &amp;&amp; x
-            &lt; 10'' is true only if x is greater than zero AND less than 10.</p>
-  <p>&#x2018;'evenFlag || n%3 == 0'' is true if <em>either</em> of the conditions is true,
-            that is, if evenFlag is true OR the number is divisible by 3.</p>
+  <p>There are three <term>logical operators</term> in C++: AND, OR and NOT, which are denoted by
+    the symbols &#x2018;'&amp;&amp;'', &#x2018;'||'' and &#x2018;'!''. The semantics (meaning) of
+    these operators is similar to their meaning in English. For example &#x2018;'x &gt; 0 &amp;&amp;
+    x &lt; 10'' is true only if x is greater than zero AND less than 10.</p>
+  <p><c>evenFlag || n%3 == 0</c> is true if <em>either</em> of the conditions is true, that is, if evenFlag is true OR
+    the number is divisible by 3.</p>
   <p>Finally, the NOT operator has the effect of negating or inverting a bool
-            expression, so !evenFlag is true if evenFlag is false; that is, if the
-            number is odd.</p>
+    expression, so !evenFlag is true if evenFlag is false; that is, if the
+    number is odd.</p>
   <p>Logical operators often provide a way to simplify nested conditional
-            statements.</p>
+    statements.</p>
   <exercise label="logical_op_1">
     <statement>
       <p>Multiple Response: How could you re-write the following code using a single conditional?</p>
@@ -66,7 +66,8 @@
   </exercise>
   <exercise label="logical_op_2">
     <statement>
-      <p>Match the conditional statement to the correct boolean and the meaning of the operator in use, given n = 7.</p>
+      <p>Match the conditional statement to the correct boolean and the meaning of the operator in
+        use, given n = 7.</p>
     </statement>
     <feedback>
       <p>Try again!</p>
@@ -102,8 +103,9 @@
     <statement>
       <dl>
         <li>
-          <title>Add a single logical operator to make the expression check if x is greater than or equal to 50</title>
-          <p><var/> ( x &lt; 50 ) <var/>  </p>
+          <title>Add a single logical operator to make the expression check if x is greater than or
+            equal to 50</title>
+          <p><var/> ( x &lt; 50 ) </p>
         </li>
       </dl>
     </statement>
@@ -111,7 +113,8 @@
       <var case="insensitive">
         <condition string="^\s*[!]\s*$">
           <feedback>
-            <p>If the expression checks for the opposite of what you want then just <c>!</c> the result</p>
+            <p>If the expression checks for the opposite of what you want then just <c>!</c> the
+              result</p>
           </feedback>
         </condition>
         <condition string="^\s*.*\s*$">

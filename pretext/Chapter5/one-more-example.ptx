@@ -2,15 +2,17 @@
 <section xml:id="chapter5_one-more-example">
   <title>One more example</title>
   <p>In the previous example I used temporary variables to spell out the
-            steps, and to make the code easier to debug, but I could have saved a
-            few lines:</p>
-  <exercise label="recursion_ex_AC_1">
-    <statement>
+    steps, and to make the code easier to debug, but I could have saved a
+    few lines:</p>
+  <listing label="recursion_ex_AC_1">
+    <caption>
       <p>This program uses recursion to calculate the factorial of
-            the passed argument.  It is the condensed version of the
-            example on the previous page.</p>
-    </statement>
-    <program xml:id="recursion_ex_AC_1_editor" interactive="activecode" line-numbers="yes">
+        the passed argument. It is the condensed version of the
+        example on the previous page.</p>
+    </caption>
+    <program xml:id="recursion_ex_AC_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -20,7 +22,7 @@ int factorial(int n) {
         return 1;
     }
     else {
-        return n * factorial (n-1);
+        return n * factorial(n-1);
     }
 }
 
@@ -29,24 +31,26 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>From now on I will tend to use the more concise version, but I recommend
-            that you use the more explicit version while you are developing code.
-            When you have it working, you can tighten it up, if you are feeling
-            inspired.</p>
+    that you use the more explicit version while you are developing code.
+    When you have it working, you can tighten it up, if you are feeling
+    inspired.</p>
   <p>After factorial, the classic example of a recursively-defined
-            mathematical function is fibonacci, which has the following definition:</p>
-  <math_block docname="Chapter5/onemoreexample" label="True" nowrap="False" number="True" xml:space="preserve">\begin{aligned}
-&amp;&amp; fibonacci(0) = 1 \\
-&amp;&amp; fibonacci(1) = 1 \\
-&amp;&amp; fibonacci(n) = fibonacci(n-1) + fibonacci(n-2);\end{aligned}</math_block>
-  <p>Translated into C++, this is</p>
-  <exercise label="recursion_ex_AC_2">
-    <statement>
+    mathematical function is fibonacci, which has the following definition:</p>
+  <me>\begin{aligned}
+ fibonacci(0) \amp = 1 \\
+ fibonacci(1) \amp = 1 \\
+ fibonacci(n) \amp = fibonacci(n-1) + fibonacci(n-2);\end{aligned}</me>
+  <p>Translated into C++, this is:</p>
+  <listing label="recursion_ex_AC_2">
+    <caption>
       <p>This program uses recursion to calculate the nth number in the
-            fibonacci sequence.</p>
-    </statement>
-    <program xml:id="recursion_ex_AC_2_editor" interactive="activecode" line-numbers="yes">
+        fibonacci sequence.</p>
+    </caption>
+    <program xml:id="recursion_ex_AC_2_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -56,7 +60,7 @@ int fibonacci(int n) {
         return 1;
     }
     else {
-        return fibonacci (n-1) + fibonacci (n-2);
+        return fibonacci(n-1) + fibonacci(n-2);
     }
 }
 
@@ -65,10 +69,10 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>If you try to follow the flow of execution here, even for fairly small
-            values of n, your head explodes. But according to the leap of faith, if
-            we assume that the two recursive calls (yes, you can make two recursive
-            calls) work correctly, then it is clear that we get the right result by
-            adding them together.</p>
+    values of n, your head explodes. But according to the leap of faith, if
+    we assume that the two recursive calls (yes, you can make two recursive
+    calls) work correctly, then it is clear that we get the right result by
+    adding them together.</p>
 </section>

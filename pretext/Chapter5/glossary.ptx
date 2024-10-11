@@ -13,44 +13,43 @@
     <li>
       <title>dead code:</title>
       <p>Part of a program that can never be executed, often because it
-                        appears after a return statement.</p>
+        appears after a return statement.</p>
     </li>
     <li>
       <title>scaffolding:</title>
       <p>Code that is used during program development but is not part of the
-                        final version.</p>
+        final version.</p>
     </li>
     <li>
       <title>void:</title>
       <p>A special return type that indicates a void function; that is, one
-                        that does not return a value.</p>
+        that does not return a value.</p>
     </li>
     <li>
       <title>overloading:</title>
       <p>Having more than one function with the same name but different
-                        parameters. When you call an overloaded function, C++ knows which
-                        version to use by looking at the arguments you provide.</p>
+        parameters. When you call an overloaded function, C++ knows which
+        version to use by looking at the arguments you provide.</p>
     </li>
     <li>
       <title>boolean:</title>
-      <p>A value or variable that can take on one of two states, often called
-                        <m>true</m> and <m>false</m>. In C++, boolean values can be stored
-                        in a variable type called bool.</p>
+      <p>A value or variable that can take on one of two states, often called <m>true</m> and <m>
+        false</m>. In C++, boolean values can be stored in a variable type called bool.</p>
     </li>
     <li>
       <title>flag:</title>
       <p>A variable (usually type bool) that records a condition or status
-                        information.</p>
+        information.</p>
     </li>
     <li>
       <title>comparison operator:</title>
       <p>An operator that compares two values and produces a boolean that
-                        indicates the relationship between the operands.</p>
+        indicates the relationship between the operands.</p>
     </li>
     <li>
       <title>logical operator:</title>
       <p>An operator that combines boolean values in order to test compound
-                        conditions.</p>
+        conditions.</p>
     </li>
   </dl>
   <exercise label="chapter_five_glossary_1">
@@ -114,7 +113,8 @@
     <matches>
       <match order="1">
         <premise>boolean</premise>
-        <response>A value or variable that can take on one of two states, often called true and false.</response>
+        <response>A value or variable that can take on one of two states, often called true and
+          false.</response>
       </match>
       <match order="2">
         <premise>flag</premise>

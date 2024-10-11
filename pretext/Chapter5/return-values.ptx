@@ -60,8 +60,6 @@ countdown(n-1);</program>
       that <em>every possible path</em> through the program hits a return statement. If you forget,
       your code will have errors.</p>
   </warning>
-  <p>Code that appears after a return statement, or any place else where it can never be executed,
-    is called <term>dead code</term>. Some compilers warn you if part of your code is dead.</p>
   <listing label="return_vals_AC_1">
     <caption>
       <p>Notice that there are two return statements in this code.
@@ -250,7 +248,7 @@ int main() {
 using namespace std;
 
 double ticket_price(int age) {
-   if(age&lt;5){
+   if(age&lt;5) {
        return 5.50;
        cout&lt;&lt;" You get a child discount yay!"&lt;&lt;endl;
    }

@@ -122,8 +122,8 @@ int secretFunction(int input) {
   </exercise>
   <exercise label="mce_5_3">
     <statement>
-      <p>If we wanted to create a boolean function called <c>isPrime</c>, which takes an <c>int input</c>
-            as a parameter, which of the following would be the correct function header?</p>
+      <p>If we wanted to create a boolean function called <c>isPrime</c>, which takes an <c>int input</c> as a
+        parameter, which of the following would be the correct function header?</p>
     </statement>
     <choices>
       <choice>
@@ -143,7 +143,8 @@ int secretFunction(int input) {
           </p>
         </statement>
         <feedback id="mce_5_3_opt_b">
-          <p>In a function header, the type of each variable must be specified in the parameter list.</p>
+          <p>In a function header, the type of each variable must be specified in the parameter
+            list.</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -170,8 +171,9 @@ int secretFunction(int input) {
   </exercise>
   <exercise label="mce_5_4">
     <statement>
-      <p>If we wrote the following function, which of the other functions below can we also legally write
-            and add to the program?</p>
+      <p>If we wrote the following function, which of the other functions below can we also legally
+        write
+        and add to the program?</p>
       <program line-numbers="yes">
         <input>
 int func(double x, bool y);
@@ -186,7 +188,8 @@ int func(double x, bool y);
           </p>
         </statement>
         <feedback id="mce_5_4_opt_a">
-          <p>Since this function has the same name and parameter types as the given function, it is not allowed.</p>
+          <p>Since this function has the same name and parameter types as the given function, it is
+            not allowed.</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -206,7 +209,8 @@ int func(double x, bool y);
           </p>
         </statement>
         <feedback id="mce_5_4_opt_c">
-          <p>Although this function has the same name as the given function, it has a different number of parameters, so it is allowed.</p>
+          <p>Although this function has the same name as the given function, it has a different
+            number of parameters, so it is allowed.</p>
         </feedback>
       </choice>
       <choice>
@@ -216,7 +220,8 @@ int func(double x, bool y);
           </p>
         </statement>
         <feedback id="mce_5_4_opt_d">
-          <p>Although this function has a different return type, its parameter list is the same as the given function, so it is not allowed.</p>
+          <p>Although this function has a different return type, its parameter list is the same as
+            the given function, so it is not allowed.</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -226,7 +231,8 @@ int func(double x, bool y);
           </p>
         </statement>
         <feedback id="mce_5_4_opt_e">
-          <p>Although this function has the same name as the given function, its parameter list is in a different order, so it is allowed.</p>
+          <p>Although this function has the same name as the given function, its parameter list is
+            in a different order, so it is allowed.</p>
         </feedback>
       </choice>
     </choices>
@@ -252,7 +258,8 @@ int main() {
           <p>1001</p>
         </statement>
         <feedback id="mce_5_5_opt_a">
-          <p>Since the first and last statements are true and the middle two are false, this is the correct output.</p>
+          <p>Since the first and last statements are true and the middle two are false, this is the
+            correct output.</p>
         </feedback>
       </choice>
       <choice>
@@ -268,7 +275,8 @@ int main() {
           <p>1false01</p>
         </statement>
         <feedback id="mce_5_5_opt_c">
-          <p>Since the second <c>cout</c> statement doesn't have quotes around the word <q>false</q>, the value of 0 is outputted.</p>
+          <p>Since the second <c>cout</c> statement doesn't have quotes around the word <q>false</q>,
+            the value of 0 is outputted.</p>
         </feedback>
       </choice>
       <choice>
@@ -358,7 +366,8 @@ bool isEven(int num) {
           <p>Yes, we have to return either 0 or 1.</p>
         </statement>
         <feedback id="mce_5_7_opt_a">
-          <p>Returning a 0 or 1 would be returning an <c>int</c>, even though booleans evaluate to 0 or 1.</p>
+          <p>Returning a 0 or 1 would be returning an <c>int</c>, even though booleans evaluate to 0 or
+            1.</p>
         </feedback>
       </choice>
       <choice>
@@ -374,7 +383,8 @@ bool isEven(int num) {
           <p>Yes, there is no case for odd numbers.</p>
         </statement>
         <feedback id="mce_5_7_opt_c">
-          <p>Since we never established an else clause, if the input was an odd number, the function would not return anything despite not being a void function.</p>
+          <p>Since we never established an else clause, if the input was an odd number, the function
+            would not return anything despite not being a void function.</p>
         </feedback>
       </choice>
       <choice>
@@ -393,12 +403,12 @@ bool isEven(int num) {
       <program line-numbers="yes">
         <input><![CDATA[
 double Free_time(int day) {
-  if (day==1||day==2||day==3||day==4) {
-    cout<<"Better study on weekday!"<<endl;
+  if (day == 1 || day == 2 || day == 3 || day == 4) {
+    cout << "Better study on weekday!" << endl;
     return day*0.25;
   }
   else{
-    cout<<"Happy weekend"<<endl;
+    cout << "Happy weekend" << endl;
     return day;
   }
 }
@@ -424,7 +434,8 @@ double Free_time(int day) {
       </choice>
       <choice>
         <statement id="mce_5_8_opt_c">
-          <p>Yes, we are returning an <c>int</c> (in the <c>else</c> block) where as the return type is <c>double</c>.</p>
+          <p>Yes, we are returning an <c>int</c> (in the <c>else</c> block) where as the return type is <c>double</c>
+            .</p>
         </statement>
         <feedback id="mce_5_8_opt_c">
           <p>Implicit conversion from an int to double is ok in c++!</p>
@@ -530,7 +541,8 @@ void moonWeight(double earth) {
           </p>
         </statement>
         <feedback id="mce_5_10_opt_d">
-          <p>Yes, <c>main</c> is supposed to return an integer, which is why programmers often return 0 at the end of <c>main</c>.</p>
+          <p>Yes, <c>main</c> is supposed to return an integer, which is why programmers often return 0
+            at the end of <c>main</c>.</p>
         </feedback>
       </choice>
     </choices>
@@ -545,7 +557,7 @@ int factorial(int n) {
     return 1;
   }
   else {
-    int recurse = factorial (n-1);
+    int recurse = factorial(n-1);
     int result = n * recurse;
     return result;
   }
@@ -611,7 +623,7 @@ void print_sequence(int n) {
   }
 }
 
-int main(){
+int main() {
     int val=6;
     print_sequence(val);
 }

@@ -187,14 +187,14 @@ TEST_CASE("percentToLetter function") {
 #include <iostream>
 using namespace std;
 
-char percentToLetter(double percentage){
-    if (percentage >= 90){
+char percentToLetter(double percentage) {
+    if (percentage >= 90) {
         return 'A';
     }
-    else if (percentage >= 80){
+    else if (percentage >= 80) {
         return 'B';
     }
-    else if (percentage >= 70){
+    else if (percentage >= 70) {
         return 'C';
     }
     else {
@@ -218,14 +218,14 @@ TEST_CASE("percentToLetter function") {
 #include <iostream>
 using namespace std;
 
-char percentToLetter(double percentage){
-    if (percentage >= 90){
+char percentToLetter(double percentage) {
+    if (percentage >= 90) {
         return 'A';
     }
-    else if (percentage >= 80){
+    else if (percentage >= 80) {
         return 'B';
     }
-    else if (percentage >= 70){
+    else if (percentage >= 70) {
         return 'C';
     }
     else {
@@ -280,7 +280,7 @@ TEST_CASE("triangleArea function") {
 #include <iostream>
 using namespace std;
 
-double triangleArea(double base, double height){
+double triangleArea(double base, double height) {
     return 0.5 * base * height;
 }
 
@@ -300,7 +300,7 @@ TEST_CASE("triangleArea function") {
 #include <iostream>
 using namespace std;
 
-double triangleArea(double base, double height){
+double triangleArea(double base, double height) {
     return 0.5 * base * height;
 }
 
@@ -352,7 +352,7 @@ TEST_CASE("cylinderVolume function") {
 #include <iostream>
 using namespace std;
 
-double cylinderVolume(double radius, double height){
+double cylinderVolume(double radius, double height) {
     double pi = 3.14;
     return pi * radius * radius * height;
 }
@@ -374,7 +374,7 @@ TEST_CASE("cylinderVolume function") {
 #include <iostream>
 using namespace std;
 
-double cylinderVolume(double radius, double height){
+double cylinderVolume(double radius, double height) {
     double pi = 3.14;
     return pi * radius * radius * height;
 }
@@ -431,11 +431,11 @@ TEST_CASE("birdType function") {
 #include <iostream>
 using namespace std;
 
-int birdType(bool isRound, bool isGray){
-   if (isRound && !isGray){
+int birdType(bool isRound, bool isGray) {
+   if (isRound && !isGray) {
       return 1;
    }
-   else if(!isRound && isGray){
+   else if(!isRound && isGray) {
       return 2;
    }
    else{
@@ -460,11 +460,11 @@ TEST_CASE("birdType function") {
 #include <iostream>
 using namespace std;
 
-int birdType(bool isRound, bool isGray){
-   if (isRound && !isGray){
+int birdType(bool isRound, bool isGray) {
+   if (isRound && !isGray) {
       return 1;
    }
-   else if(!isRound && isGray){
+   else if(!isRound && isGray) {
       return 2;
    }
    else{
@@ -520,8 +520,8 @@ TEST_CASE("isDoubleDigit function") {
 #include <iostream>
 using namespace std;
 
-bool isDoubleDigit(int num){
-   if(num >= 10 && num < 100){
+bool isDoubleDigit(int num) {
+   if(num >= 10 && num < 100) {
       return true;
    }
    else {
@@ -545,8 +545,8 @@ TEST_CASE("isDoubleDigit function") {
 #include <iostream>
 using namespace std;
 
-bool isDoubleDigit(int num){
-   if(num >= 10 && num < 100){
+bool isDoubleDigit(int num) {
+   if(num >= 10 && num < 100) {
       return true;
    }
    else {
@@ -602,11 +602,11 @@ TEST_CASE("Compare function") {
 #include <iostream>
 using namespace std;
 
-int Compare(int a, int b){
-   if (a > b){
+int Compare(int a, int b) {
+   if (a > b) {
       return 1;
    }
-   else if(a < b){
+   else if(a < b) {
       return -1;
    }
    else{
@@ -631,11 +631,11 @@ TEST_CASE("Compare function") {
 #include <iostream>
 using namespace std;
 
-int Compare(int a, int b){
-   if (a > b){
+int Compare(int a, int b) {
+   if (a > b) {
       return 1;
    }
-   else if(a < b){
+   else if(a < b) {
       return -1;
    }
    else{
@@ -693,8 +693,8 @@ TEST_CASE("isFactor function") {
 #include <iostream>
 using namespace std;
 
-bool isFactor(int num, int factor){
-   if (num % factor == 0){
+bool isFactor(int num, int factor) {
+   if (num % factor == 0) {
       return true;
    }
    else {
@@ -719,8 +719,8 @@ TEST_CASE("isFactor function") {
 #include <iostream>
 using namespace std;
 
-bool isFactor(int num, int factor){
-   if (num % factor == 0){
+bool isFactor(int num, int factor) {
+   if (num % factor == 0) {
       return true;
    }
    else {
@@ -779,9 +779,9 @@ TEST_CASE("isPerfectSquare function") {
 #include <math.h>
 using namespace std;
 
-bool isPerfectSquare(int input){
+bool isPerfectSquare(int input) {
    int root = sqrt(input);
-   if(pow(root,2) == input){
+   if(pow(root,2) == input) {
       return true;
    }
    else{
@@ -807,9 +807,9 @@ TEST_CASE("isPerfectSquare function") {
 #include <math.h>
 using namespace std;
 
-bool isPerfectSquare(int input){
+bool isPerfectSquare(int input) {
    int root = sqrt(input);
-   if(pow(root,2) == input){
+   if(pow(root,2) == input) {
       return true;
    }
    else{

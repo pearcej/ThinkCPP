@@ -146,22 +146,22 @@ TEST_CASE("birthSeason function: winter") {
             <cline>string birthSeason(int month, int day) {</cline>
           </block>
           <block order="4">
-            <cline><![CDATA[    if (month >= 3 && month < 6){]]></cline>
+            <cline><![CDATA[    if (month >= 3 && month < 6) {]]></cline>
             <cline>        return "spring";</cline>
             <cline>    }</cline>
           </block>
           <block order="1">
-            <cline><![CDATA[    if (month >= 6 && month < 9){]]></cline>
+            <cline><![CDATA[    if (month >= 6 && month < 9) {]]></cline>
             <cline>        return "summer";</cline>
             <cline>    }</cline>
           </block>
           <block order="6">
-            <cline><![CDATA[    if (month >= 9 && month < 12){]]></cline>
+            <cline><![CDATA[    if (month >= 9 && month < 12) {]]></cline>
             <cline>        return "fall";</cline>
             <cline>    }</cline>
           </block>
           <block order="2">
-            <cline><![CDATA[    if (month == 12 || month < 3){]]></cline>
+            <cline><![CDATA[    if (month == 12 || month < 3) {]]></cline>
             <cline>        return "winter";</cline>
             <cline>    }</cline>
           </block>

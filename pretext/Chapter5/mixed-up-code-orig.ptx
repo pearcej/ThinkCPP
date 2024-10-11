@@ -365,7 +365,7 @@
         <cline>   }</cline>
       </block>
       <block order="14" correct="no">
-        <cline>   else if (a &gt; 0){ </cline>
+        <cline>   else if (a &gt; 0) { </cline>
       </block>
       <block order="6">
         <cline>   else {</cline>
