@@ -129,17 +129,40 @@ int main() {
         to $40.</p>
     </statement>
     <blocks>
-      <block order="1"
-             correct="no">
+      <block order="1">
         <cline>int cost = 40;</cline>
-        <cline>if (cost &gt; 30) {</cline>
-        <cline>if (cost &gt; 30) </cline>
+      </block>
+      <block order="5">
+        <choice correct="yes">
+          <cline>if (cost &gt; 30) {</cline>
+        </choice>
+        <choice>
+          <cline>if (cost &gt; 30) </cline>
+        </choice>
+      </block>
+      <block order="3">
         <cline><![CDATA[ cout << "Expensive!";]]></cline>
+      </block>
+      <block order="6">
         <cline>} //"if" bracket</cline>
-        <cline>else {</cline>
-        <cline>else if { </cline>
-        <cline><![CDATA[ cout << "Inexpensive!" ]]></cline>
-        <cline><![CDATA[ cout << "Inexpensive!";]]></cline>
+      </block>
+      <block order="7">
+        <choice correct="yes">
+          <cline>else {</cline>
+        </choice>
+        <choice>
+          <cline>else if { </cline>
+        </choice>
+      </block>
+      <block order="2">
+        <choice correct="yes">
+          <cline><![CDATA[ cout << "Inexpensive!";]]></cline>
+        </choice>
+        <choice>
+          <cline><![CDATA[ cout << "Inexpensive!"]]></cline>
+        </choice>
+      </block>
+      <block order="4">
         <cline>} //"else" bracket</cline>
       </block>
     </blocks>

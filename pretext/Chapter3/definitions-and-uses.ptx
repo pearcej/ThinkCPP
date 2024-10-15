@@ -106,13 +106,25 @@ int main() {
       <p>Construct a block of code that correctly defines a the addTwo function.</p>
     </statement>
     <blocks>
+      <block order="3"
+             correct="yes">
+      <cline>void addTwo(int x) {</cline>
+      </block>
       <block order="1"
              correct="no">
-        <cline>void addTwo(int x) {</cline>
         <cline>void addTwo(int x); </cline>
+      </block>
+      <block order="7"
+             correct="no">
         <cline>void addTwo(int x) </cline>
+      </block>
+      <block order="4">
         <cline> int plustwo = x + 2;</cline>
+      </block>
+      <block order="5">
         <cline> cout &lt;&lt; plustwo;</cline>
+      </block>
+      <block order="6">
         <cline>}</cline>
       </block>
     </blocks>

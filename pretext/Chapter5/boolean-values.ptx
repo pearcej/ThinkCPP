@@ -71,10 +71,16 @@
         set at the top.</p>
     </statement>
     <blocks>
-      <block order="1">
+      <block order="3">
         <cline>double</cline>
+      </block>
+      <block order="2">
         <cline>int</cline>
+      </block>
+      <block order="4">
         <cline>char</cline>
+      </block>
+      <block order="1">
         <cline>bool</cline>
       </block>
     </blocks>

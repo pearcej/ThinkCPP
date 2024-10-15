@@ -230,20 +230,18 @@ endl</c>?</p>
         <cline>void perimeter(int length,int width) {</cline>
       </block>
       <block order="7">
-        <cline>int twice_length = 2 * length;</cline>
-      </block>
-      <block order="4">
-        <cline>int twice_width = 2 * width;</cline>
+        <cline> int twice_length = 2 * length;</cline>
+        <cline> int twice_width = 2 * width;</cline>
       </block>
       <block order="6">
-        <cline>int perimeter_value = twice_length + twice_width;</cline>
+        <cline> int perimeter_value = twice_length + twice_width;</cline>
       </block>
       <block order="5">
-        <cline><![CDATA[cout << perimeter_value << endl;]]></cline>
+        <cline> <![CDATA[cout << perimeter_value << endl;]]></cline>
       </block>
       <block order="2"
              correct="no">
-        <cline>return parameter_value; </cline>
+        <cline> return parameter_value; </cline>
       </block>
       <block order="1">
         <cline>}</cline>
