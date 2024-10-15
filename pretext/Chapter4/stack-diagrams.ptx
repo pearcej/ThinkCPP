@@ -11,7 +11,7 @@
           xml:id="empty-216">
     <image source="Chapter4/Images/4.9stackdiagram.png"
            width="50%"
-           alt="image"/>
+           alt="A stack of 5 boxes. The top one is labeled main and is empty. The next four are all labeled 'countdown' and respectively contain n = 3, n = 2, n = 1, n = 0."/>
   </figure>
   <p>There is one instance of <c>main</c> and <term>four</term> instances of <c>countdown</c>, each with a
     different value for the parameter <c>n</c>. The bottom of the stack, <c>countdown</c> with <c>n = 0</c> is the

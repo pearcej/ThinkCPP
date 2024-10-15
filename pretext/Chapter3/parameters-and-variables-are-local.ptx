@@ -38,7 +38,7 @@ int main() {
           xml:id="empty-195">
     <image source="Chapter3/Images/3.9stackdiagram.png"
            width="50%"
-           alt="image"/>
+           alt="Two boxes. One labeled main that contains a variable named 'argument' which is 'b'. The other labeled printTwice that contains a variable named 'phil' which is 'b'."/>
   </figure>
   <p>Whenever a function is called, it creates a new <term>instance</term> of that function. Each
     instance of a function contains the parameters and local variables for that function. In the

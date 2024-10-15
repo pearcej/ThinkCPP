@@ -111,7 +111,7 @@ int main() {
           xml:id="empty-243">
     <image source="Chapter5/Images/5.10stackdiagram.png"
            width="50%"
-           alt="image"/>
+           alt="A stack of five boxes showing the values of variables and the return value of a call to factorial(3)."/>
     <caption>
       <p>The return values are shown being passed back up the stack.</p>
     </caption>
