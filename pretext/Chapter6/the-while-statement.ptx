@@ -2,11 +2,11 @@
 <section xml:id="chapter6_the-while-statement">
   <title>The while statement</title>
   <p>Using a <c>while</c> statement, we can rewrite <c>countdown</c>:</p>
-  <exercise label="the_while_statement_AC_1">
-    <statement>
+  <listing label="the_while_statement_AC_1">
+    <caption>
       <p>Try running the active code below! Afterwards, try changing 9 to a different
         integer to see how the function works!</p>
-    </statement>
+    </caption>
     <program xml:id="the_while_statement_AC_1_editor"
              interactive="activecode"
              line-numbers="yes">
@@ -27,7 +27,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>You can almost read a <c>while</c> statement as if it were English. What this means is, <q>While <c>n</c>
     is greater than zero, continue displaying the value of <c>n</c> and then reducing the value of <c>n</c>
     by 1. When you get to zero, output the word &#x2018;Blastoff!'</q></p>

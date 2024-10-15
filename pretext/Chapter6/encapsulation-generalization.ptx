@@ -42,10 +42,10 @@ while (i &lt;= 6) {
 }</program>
   <p>First of all, notice how similar this loop is to the one inside <c>printMultiples</c>. All I did was replace
     the print statement with a function call.</p>
-  <exercise label="encapsulation_generalization_AC_1">
-    <statement>
+  <listing label="encapsulation_generalization_AC_1">
+    <caption>
       <p>Try running the active code below, which uses <c>printMultiples</c>.</p>
-    </statement>
+    </caption>
     <program xml:id="encapsulation_generalization_AC_1_editor"
              interactive="activecode"
              line-numbers="yes">
@@ -71,7 +71,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>The output of this program is</p>
   <console><output>1   2   3   4   5   6
 2   4   6   8   10   12
@@ -81,10 +81,10 @@ int main() {
 6   12   18   24   30   36</output></console>
   <p>which is a (slightly sloppy) multiplication table. If the sloppiness
     bothers you, you can also use tab characters, like below.</p>
-  <exercise label="encapsulation_generalization_AC_2">
-    <statement>
+  <listing label="encapsulation_generalization_AC_2">
+    <caption>
       <p>The active code below uses tab characters to make the table neater.</p>
-    </statement>
+    </caption>
     <program xml:id="encapsulation_generalization_AC_2_editor"
              interactive="activecode"
              line-numbers="yes">
@@ -110,7 +110,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <exercise label="encapsulation_generalization_1">
     <statement>
       <p>What is the purpose of generalization?</p>

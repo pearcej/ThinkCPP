@@ -49,12 +49,12 @@ void printMultTable(int high) {
 5   10   15   20   25   30   35
 6   12   18   24   30   36   42
 7   14   21   28   35   42   49</output></console>
-  <exercise label="more_generalization_AC_1">
-    <statement>
+  <listing label="more_generalization_AC_1">
+    <caption>
       <p>The active code below uses the updated <c>printMultTable</c> function. Notice that with generalization,
         we can create multiplication tables of multiple sizes by simply changing the parameter
         passed into <c>printMultTable</c>. Run the active code to see what happens!</p>
-    </statement>
+    </caption>
     <program xml:id="more_generalization_AC_1_editor"
              interactive="activecode"
              line-numbers="yes">
@@ -84,7 +84,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>When you generalize a function appropriately, you often find that the resulting program has
     capabilities you did not intend. For example, you might notice that the multiplication table is
     symmetric, because <m>ab = ba</m>, so all the entries in the table appear twice. You could save
