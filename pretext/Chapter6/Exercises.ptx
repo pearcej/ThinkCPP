@@ -4,7 +4,8 @@
   <exercise label="mce_6_1">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input><![CDATA[
 int main() {
   int x = 0;
@@ -24,7 +25,8 @@ int main() {
           <p>0</p>
         </statement>
         <feedback id="mce_6_1_opt_a">
-          <p><c>x</c> is initialized to 0, but it's value is reassigned in the while loop. Can you figure out what the final value assigned to <c>x</c> is?</p>
+          <p><c>x</c> is initialized to 0, but it's value is reassigned in the while loop. Can you
+            figure out what the final value assigned to <c>x</c> is?</p>
         </feedback>
       </choice>
       <choice>
@@ -32,7 +34,8 @@ int main() {
           <p>1</p>
         </statement>
         <feedback id="mce_6_1_opt_b">
-          <p>When <c>i</c> is 1, <c>x</c> is assigned the value of <c>i</c>, so <c>x</c> is 1. However, the while loop continuously increments i, so the final value of <c>x</c> is not 1.</p>
+          <p>When <c>i</c> is 1, <c>x</c> is assigned the value of <c>i</c>, so <c>x</c> is 1. However,
+            the while loop continuously increments i, so the final value of <c>x</c> is not 1.</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -40,7 +43,8 @@ int main() {
           <p>9</p>
         </statement>
         <feedback id="mce_6_1_opt_c">
-          <p><c>x</c> is assigned the value of 9 during the last iteration of the while loop, and thus 9 is the output of the program.</p>
+          <p><c>x</c> is assigned the value of 9 during the last iteration of the while loop, and
+            thus 9 is the output of the program.</p>
         </feedback>
       </choice>
       <choice>
@@ -48,7 +52,8 @@ int main() {
           <p>10</p>
         </statement>
         <feedback id="mce_6_1_opt_d">
-          <p><c>i</c> is incremented to a value of 10, but since <c>i &lt; 10</c> is false, the contents of the while loop is not executed, so <c>x</c> is never assigned the value of 10.</p>
+          <p><c>i</c> is incremented to a value of 10, but since <c>i &lt; 10</c> is false, the contents of
+            the while loop is not executed, so <c>x</c> is never assigned the value of 10.</p>
         </feedback>
       </choice>
     </choices>
@@ -56,7 +61,8 @@ int main() {
   <exercise label="mce_6_2">
     <statement>
       <p>What is the final value of <c>i</c> when the code finished running?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input><![CDATA[
 int main() {
   int x = 0;
@@ -76,7 +82,8 @@ int main() {
           <p>0</p>
         </statement>
         <feedback id="mce_6_2_opt_a">
-          <p><c>i</c> is initialized with a value of 1 and is incremented, so it will never have a value of 0.</p>
+          <p><c>i</c> is initialized with a value of 1 and is incremented, so it will never have a
+            value of 0.</p>
         </feedback>
       </choice>
       <choice>
@@ -100,7 +107,8 @@ int main() {
           <p>10</p>
         </statement>
         <feedback id="mce_6_2_opt_d">
-          <p>In order for the while loop to terminate, the condition <c>i &lt; 10</c> must be false, and this is achieved when <c>i</c> is incremented to 10.</p>
+          <p>In order for the while loop to terminate, the condition <c>i &lt; 10</c> must be false, and this
+            is achieved when <c>i</c> is incremented to 10.</p>
         </feedback>
       </choice>
     </choices>
@@ -108,7 +116,8 @@ int main() {
   <exercise label="mce_6_3">
     <statement>
       <p>How many times does the following while loop run?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input>
 int main() {
   int i = 6;
@@ -159,7 +168,8 @@ int main() {
   <exercise label="mce_6_4">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input><![CDATA[
 int main() {
   int j = 6;
@@ -193,7 +203,9 @@ int main() {
           <p>People really really really like Joe's Pizza.</p>
         </statement>
         <feedback id="mce_6_4_opt_b">
-          <p>The code will print out three <q>really</q>s, two from evaluating the while loop condition and one from evaluating the if condition before printing out <q>like Joe's Pizza</q></p>
+          <p>The code will print out three <q>really</q>s, two from evaluating the while loop
+            condition and one from evaluating the if condition before printing out <q>like Joe's
+            Pizza</q></p>
         </feedback>
       </choice>
       <choice>
@@ -217,7 +229,8 @@ int main() {
   <exercise label="mce_6_5">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input><![CDATA[
 int main() {
   int n = 10;
@@ -262,7 +275,8 @@ int main() {
           <p>It will result in an infinite loop.</p>
         </statement>
         <feedback id="mce_6_5_opt_d">
-          <p>Since we repeatedly decrement <c>n</c> inside the while loop, it will eventually be equal to 3 and the while loop will terminate.</p>
+          <p>Since we repeatedly decrement <c>n</c> inside the while loop, it will eventually be
+            equal to 3 and the while loop will terminate.</p>
         </feedback>
       </choice>
     </choices>
@@ -270,7 +284,8 @@ int main() {
   <exercise label="mce_6_6">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input><![CDATA[
 int main() {
   int n = 10;
@@ -314,7 +329,8 @@ int main() {
           <p>It will result in an infinite loop.</p>
         </statement>
         <feedback id="mce_6_6_opt_d">
-          <p>Since we never change the value of <c>n</c>, 10 will never equal 3 so the code will run forever.</p>
+          <p>Since we never change the value of <c>n</c>, 10 will never equal 3 so the code will run
+            forever.</p>
         </feedback>
       </choice>
     </choices>
@@ -322,7 +338,8 @@ int main() {
   <exercise label="mce_6_7">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input><![CDATA[
 int main() {
   int x = 1;
@@ -356,7 +373,8 @@ int main() {
           <p>The first five perfect squares.</p>
         </statement>
         <feedback id="mce_6_7_opt_c">
-          <p>Dividing <c>x</c> to the power of 5 by <c>x</c> to the power of 3 effectively results in perfect squares.</p>
+          <p>Dividing <c>x</c> to the power of 5 by <c>x</c> to the power of 3 effectively results in
+            perfect squares.</p>
         </feedback>
       </choice>
       <choice>
@@ -371,8 +389,10 @@ int main() {
   </exercise>
   <exercise label="mce_6_8">
     <statement>
-      <p>Why are we allowed to use the variable <c>x</c> in both <c>main</c> and in the function definition of <c>superSecretFunction</c>?</p>
-      <program language="cpp" line-numbers="yes">
+      <p>Why are we allowed to use the variable <c>x</c> in both <c>main</c> and in the function
+        definition of <c>superSecretFunction</c>?</p>
+      <program language="cpp"
+               line-numbers="yes">
         <input><![CDATA[
 int superSecretFunction(int n) {
   int x = 0;
@@ -397,18 +417,22 @@ int main() {
       </choice>
       <choice correct="yes">
         <statement id="mce_6_8_opt_b">
-          <p>Although the name of both variables is <c>x</c>, they represent different locations in memory, and thus are different variables.</p>
+          <p>Although the name of both variables is <c>x</c>, they represent different locations in
+            memory, and thus are different variables.</p>
         </statement>
         <feedback id="mce_6_8_opt_b">
-          <p>One <c>x</c> is a local variable of <c>superSecretFunction</c> while the other is a local variable of <c>main</c>.</p>
+          <p>One <c>x</c> is a local variable of <c>superSecretFunction</c> while the other is a local variable of <c>main</c>
+            .</p>
         </feedback>
       </choice>
       <choice>
         <statement id="mce_6_8_opt_c">
-          <p>We can assign them different values but not the same value. Thus, if both were initialized to 0, then we'd get an error.</p>
+          <p>We can assign them different values but not the same value. Thus, if both were
+            initialized to 0, then we'd get an error.</p>
         </statement>
         <feedback id="mce_6_8_opt_c">
-          <p>Since they are not in the same storage location, they can store any value, including the same value.</p>
+          <p>Since they are not in the same storage location, they can store any value, including
+            the same value.</p>
         </feedback>
       </choice>
       <choice>
@@ -424,7 +448,8 @@ int main() {
   <exercise label="mce_6_9">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input><![CDATA[
 int loopFive(int n) {
   while (n % 5 != 0) {
@@ -447,7 +472,8 @@ int main() {
           <p>51510</p>
         </statement>
         <feedback id="mce_6_9_opt_a">
-          <p><c>n</c> is repeatedly incremented by 3 until it is divisible by 5, and this happens when <c>n</c> is 5, 15, and 10 for the inputs of 2, 3, and 4 respectively.</p>
+          <p><c>n</c> is repeatedly incremented by 3 until it is divisible by 5, and this happens
+            when <c>n</c> is 5, 15, and 10 for the inputs of 2, 3, and 4 respectively.</p>
         </feedback>
       </choice>
       <choice>
@@ -479,11 +505,12 @@ int main() {
   <exercise label="mce_6_10">
     <statement>
       <p>The super evil villian RePete wants to annoy the city by
-            hacking into the city's helper robots and making them repeat
-            everything they say 5 times. However, there's an error in his
-            code and now the robots won't stop repeating! Can you find the
-            error?</p>
-      <program language="cpp" line-numbers="yes">
+        hacking into the city's helper robots and making them repeat
+        everything they say 5 times. However, there's an error in his
+        code and now the robots won't stop repeating! Can you find the
+        error?</p>
+      <program language="cpp"
+               line-numbers="yes">
         <input><![CDATA[
 void repeatBot(string input) {
   int n = 0;
@@ -505,7 +532,8 @@ int main() {
           <p><c>repeatBot</c> can only take one word as an argument.</p>
         </statement>
         <feedback id="mce_6_10_opt_a">
-          <p>A <c>string</c> is any number of characters or words surrounded by double quotes, not just one word.</p>
+          <p>A <c>string</c> is any number of characters or words surrounded by double quotes, not just
+            one word.</p>
         </feedback>
       </choice>
       <choice>
@@ -518,18 +546,22 @@ int main() {
       </choice>
       <choice>
         <statement id="mce_6_10_opt_c">
-          <p>Every time the <c>while</c> loop runs, <c>n</c> is reset to 0, so it will always be less than 5.</p>
+          <p>Every time the <c>while</c> loop runs, <c>n</c> is reset to 0, so it will always be less than
+            5.</p>
         </statement>
         <feedback id="mce_6_10_opt_c">
-          <p>The initialization of <c>n</c> occurs outside the <c>while</c> loop, so the value of <c>n</c> does not get reset to 0.</p>
+          <p>The initialization of <c>n</c> occurs outside the <c>while</c> loop, so the value of <c>n</c>
+            does not get reset to 0.</p>
         </feedback>
       </choice>
       <choice correct="yes">
         <statement id="mce_6_10_opt_d">
-          <p><c>n</c> is declared to be 0 and we continuously decrement <c>n</c> so it will always be less than 5.</p>
+          <p><c>n</c> is declared to be 0 and we continuously decrement <c>n</c> so it will always be
+            less than 5.</p>
         </statement>
         <feedback id="mce_6_10_opt_d">
-          <p>Since <c>n</c> starts at 0 and gets smaller, the conditional for the <c>while</c> loop will always be true, and thus the code runs forever.</p>
+          <p>Since <c>n</c> starts at 0 and gets smaller, the conditional for the <c>while</c> loop will
+            always be true, and thus the code runs forever.</p>
         </feedback>
       </choice>
     </choices>
@@ -537,9 +569,10 @@ int main() {
   <exercise label="mce_6_11">
     <statement>
       <p>After making some changes to his code, RePete tries again.
-            This time, however, the robots don't repeat anything!
-            Can you find the new error?</p>
-      <program language="cpp" line-numbers="yes">
+        This time, however, the robots don't repeat anything!
+        Can you find the new error?</p>
+      <program language="cpp"
+               line-numbers="yes">
         <input><![CDATA[
 void repeatBot(string input) {
   int n = 0;
@@ -585,7 +618,8 @@ int main() {
           <p>The conditional for the <c>while</c> loop is not met.</p>
         </statement>
         <feedback id="mce_6_11_opt_d">
-          <p>Since <c>n</c> is declared to be 0, 0 is not greater than 5, so the <c>while</c> loop does not execute.</p>
+          <p>Since <c>n</c> is declared to be 0, 0 is not greater than 5, so the <c>while</c> loop does
+            not execute.</p>
         </feedback>
       </choice>
     </choices>

@@ -5,7 +5,7 @@
     <li>
       <title>loop:</title>
       <p>A statement that executes repeatedly while a condition is true or
-                        until some condition is satisfied.</p>
+        until some condition is satisfied.</p>
     </li>
     <li>
       <title>infinite loop:</title>
@@ -18,37 +18,37 @@
     <li>
       <title>iteration:</title>
       <p>One pass through (execution of) the body of the loop, including the
-                        evaluation of the condition.</p>
+        evaluation of the condition.</p>
     </li>
     <li>
       <title>tab:</title>
-      <p>A special character, written as <c>\t</c> in C++, that causes the cursor
-                        to move to the next tab stop on the current line.</p>
+      <p>A special character, written as <c>\t</c> in C++, that causes the cursor to move to the next
+        tab stop on the current line.</p>
     </li>
     <li>
       <title>encapsulate:</title>
       <p>To divide a large complex program into components (like functions)
-                        and isolate the components from each other (for example, by using
-                        local variables).</p>
+        and isolate the components from each other (for example, by using
+        local variables).</p>
     </li>
     <li>
       <title>local variable:</title>
       <p>A variable that is declared inside a function and that exists only
-                        within that function. Local variables cannot be accessed from outside
-                        their home function, and do not interfere with any other functions.</p>
+        within that function. Local variables cannot be accessed from outside
+        their home function, and do not interfere with any other functions.</p>
     </li>
     <li>
       <title>generalize:</title>
       <p>To replace something unnecessarily specific (like a constant value)
-                        with something appropriately general (like a variable or parameter).
-                        Generalization makes code more versatile, more likely to be reused,
-                        and sometimes even easier to write.</p>
+        with something appropriately general (like a variable or parameter).
+        Generalization makes code more versatile, more likely to be reused,
+        and sometimes even easier to write.</p>
     </li>
     <li>
       <title>development plan:</title>
       <p>A process for developing a program. In this chapter, I demonstrated a
-                        style of development based on developing code to do simple, specific
-                        things, and then encapsulating and generalizing.</p>
+        style of development based on developing code to do simple, specific
+        things, and then encapsulating and generalizing.</p>
     </li>
   </dl>
   <exercise label="chapter_six_glossary_one">
@@ -62,7 +62,8 @@
     <matches>
       <match order="1">
         <premise>loop</premise>
-        <response>A statement that executes repeatedly while a condition is true or some condition is satisfied.</response>
+        <response>A statement that executes repeatedly while a condition is true or some condition
+          is satisfied.</response>
       </match>
       <match order="2">
         <premise>infinite loop</premise>
@@ -74,11 +75,13 @@
       </match>
       <match order="4">
         <premise>iteration</premise>
-        <response>One pass through (execution of) the body of the loop, including the valuation of the condition.</response>
+        <response>One pass through (execution of) the body of the loop, including the valuation of
+          the condition.</response>
       </match>
       <match order="5">
         <premise>tab</premise>
-        <response>A special character, written as \t in C++, that causes the cursor to move to the next tab stop on the current line.</response>
+        <response>A special character, written as \t in C++, that causes the cursor to move to the
+          next tab stop on the current line.</response>
       </match>
     </matches>
   </exercise>
@@ -93,15 +96,19 @@
     <matches>
       <match order="1">
         <premise>encapsulate</premise>
-        <response>To divide a large complex program into components (like functions) and isolate the components from each other (for example, by using local variables).</response>
+        <response>To divide a large complex program into components (like functions) and isolate the
+          components from each other (for example, by using local variables).</response>
       </match>
       <match order="2">
         <premise>local variable</premise>
-        <response>A variable that is declared inside a function and that exists only within that function. Local variables cannot be accessed from outside their home function, and do not interfere with any other functions.</response>
+        <response>A variable that is declared inside a function and that exists only within that
+          function. Local variables cannot be accessed from outside their home function, and do not
+          interfere with any other functions.</response>
       </match>
       <match order="3">
         <premise>generalize</premise>
-        <response>To replace something unnecessarily specific (like a constant value) with something appropriately general (like a variable or parameter).</response>
+        <response>To replace something unnecessarily specific (like a constant value) with something
+          appropriately general (like a variable or parameter).</response>
       </match>
       <match order="4">
         <premise>development plan</premise>
