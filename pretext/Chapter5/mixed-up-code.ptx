@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="chapter5_mixed-up-code-exercises">
+<exercises xml:id="chapter5_mixed-up-code-exercises">
   <title>Mixed Up Code Practice</title>
   <exercise label="mucp_5_1"
             numbered="yes"
@@ -584,4 +584,4 @@
       </block>
     </blocks>
   </exercise>
-</section>
+</exercises>

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="chapter2_mixed-up-code-exercises-1">
+<exercises xml:id="chapter2_mixed-up-code-exercises-1">
   <title>Mixed-Up Code Exercises</title>
   <p>Answer the following <term>Mixed-Up Code</term> questions to assess what you have learned in
     this chapter.</p>
@@ -443,4 +443,4 @@
       </block>
     </blocks>
   </exercise>
-</section>
+</exercises>
