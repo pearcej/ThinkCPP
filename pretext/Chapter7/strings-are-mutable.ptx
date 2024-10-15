@@ -1,14 +1,15 @@
 <?xml version="1.0"?>
 <section xml:id="chapter7_strings-are-mutable">
   <title><c>string</c>s are mutable</title>
-  <p>You can change the letters in an <c>string</c> one at a time using the
-            <c>[]</c> operator on the left side of an assignment.</p>
-  <exercise label="strings_are_mutable_AC_1">
-    <statement>
-      <p>The active code below changes the first letter in <c>greeting</c> to be
-            <c>'J'</c>.</p>
-    </statement>
-    <program xml:id="strings_are_mutable_AC_1_editor" interactive="activecode" line-numbers="yes">
+  <p>You can change the letters in an <c>string</c> one at a time using the <c>[]</c> operator on the left
+    side of an assignment.</p>
+  <listing label="strings_are_mutable_AC_1">
+    <caption>
+      <p>The active code below changes the first letter in <c>greeting</c> to be <c>'J'</c>.</p>
+    </caption>
+    <program xml:id="strings_are_mutable_AC_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -20,10 +21,10 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>This produces the output <c>Jello, world!</c>.</p>
   <exercise label="string_mutable_1">
-    <statement>
+    <caption>
       <p>What is printed by the following statements?</p>
       <program line-numbers="yes">
         <input><![CDATA[
@@ -32,7 +33,7 @@ fav_food[3] = "d";
 cout << fav_food << endl;
 ]]></input>
       </program>
-    </statement>
+    </caption>
     <choices>
       <choice>
         <statement>
@@ -99,7 +100,8 @@ string message = "You're a lizard Harry";
           <p>"w" = message[9];</p>
         </statement>
         <feedback>
-          <p>In order to change a letter in a string, the ``[]`` operator must be on the left of the assignment.</p>
+          <p>In order to change a letter in a string, the ``[]`` operator must be on the left of the
+            assignment.</p>
         </feedback>
       </choice>
       <choice>
@@ -112,13 +114,15 @@ string message = "You're a lizard Harry";
       </choice>
     </choices>
   </exercise>
-  <exercise label="string_mutable_3" numbered="yes" adaptive="yes" indentation="show">
+  <exercise label="string_mutable_3"
+            numbered="yes"
+            adaptive="yes"
+            indentation="show">
     <statement>
-      <p>Put together the code below to create a function <c>mixer</c> that takes in two strings and replaces every even index
-            of the first string by the corresponding index of the second. It returns the modified first string.
-            Example:
-            <c>string_a = "food"</c>  and <c>string_b = "summer"</c> .
-            <c>mixer(string_a ,string_b )</c> makes <c>string_a</c> become <q>somd</q>.</p>
+      <p>Put together the code below to create a function <c>mixer</c> that takes in two strings and
+        replaces every even index of the first string by the corresponding index of the second. It
+        returns the modified first string. Example: <c>string_a = "food"</c> and <c>string_b = "summer"</c> . <c>mixer(string_a ,string_b )</c> makes <c>string_a</c>
+        become <q>somd</q>.</p>
       <p>Assume second string is greater than first.</p>
     </statement>
     <blocks>
@@ -142,7 +146,8 @@ string message = "You're a lizard Harry";
         <cline>   index i = 0;</cline>
         <cline>   while (i &amp;lt size) {</cline>
       </block>
-      <block order="1" correct="no">
+      <block order="1"
+             correct="no">
         <cline>   index i = size - 1; </cline>
         <cline>   while (i &amp;lt size) {</cline>
       </block>
@@ -162,7 +167,7 @@ string message = "You're a lizard Harry";
         <cline>     i++;</cline>
       </block>
       <block order="2">
-        <cline>   }</cline>
+        <cline>   } // end while</cline>
       </block>
       <block order="12">
         <choice correct="yes">
@@ -173,7 +178,7 @@ string message = "You're a lizard Harry";
         </choice>
       </block>
       <block order="3">
-        <cline>}</cline>
+        <cline>} // end program</cline>
       </block>
     </blocks>
   </exercise>

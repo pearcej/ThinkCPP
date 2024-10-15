@@ -1,17 +1,18 @@
 <?xml version="1.0"?>
 <section xml:id="chapter7_the-find-function">
   <title>The <c>find</c> function</title>
-  <p>The <c>string</c> class provides several other functions that you can
-            invoke on strings. The <c>find</c> function is like the opposite the <c>[]</c>
-            operator. Instead of taking an index and extracting the character at
-            that index, <c>find</c> takes a character and finds the index where that
-            character appears.</p>
-  <exercise label="find_function_AC_1">
-    <statement>
-      <p>Take a look at the active code below, which uses the <c>find</c> function to find
-            the character <c>'a'</c> in string <c>fruit</c> and string <c>dessert</c>.</p>
-    </statement>
-    <program xml:id="find_function_AC_1_editor" interactive="activecode" line-numbers="yes">
+  <p>The <c>string</c> class provides several other functions that you can invoke on strings. The <c>find</c>
+    function is like the opposite the <c>[]</c> operator. Instead of taking an index and extracting
+    the character at that index, <c>find</c> takes a character and finds the index where that character
+    appears.</p>
+  <listing label="find_function_AC_1">
+    <caption>
+      <p>Take a look at the active code below, which uses the <c>find</c> function to find the character <c>'a'</c>
+        in string <c>fruit</c> and string <c>dessert</c>.</p>
+    </caption>
+    <program xml:id="find_function_AC_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -26,22 +27,22 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
-  <p>This example finds the index of the letter <c>'a'</c> in the string. In
-            this case, the letter appears three times, so it is not obvious what
-            <c>find</c> should do. According to the documentation, it returns the index
-            of the <em>first</em> appearance, so the result is 1. If the given letter does
-            not appear in the string, <c>find</c> a <em>very</em> large integer. We can test
-            whether <c>find</c> found a given letter by checking to see if it equals
-            the constant defined by <c>string::npos</c>.</p>
-  <p>In addition, there is a version of <c>find</c> that takes another
-            <c>string</c> as an argument and that finds the index where the substring
-            appears in the string.</p>
-  <exercise label="find_function_AC_2">
-    <statement>
+  </listing>
+  <p>This example finds the index of the letter <c>'a'</c> in the string. In this case, the letter
+    appears three times, so it is not obvious what <c>find</c> should do. According to the
+    documentation, it returns the index of the <em>first</em> appearance, so the result is 1. If the
+    given letter does not appear in the string, <c>find</c> a <em>very</em> large integer. We can test
+    whether <c>find</c> found a given letter by checking to see if it equals the constant defined by <c>string::npos</c>
+    .</p>
+  <p>In addition, there is a version of <c>find</c> that takes another <c>string</c> as an argument and that
+    finds the index where the substring appears in the string.</p>
+  <listing label="find_function_AC_2">
+    <caption>
       <p>The active code below finds the starting index of <c>"nan"</c> in <c>fruit</c>.</p>
-    </statement>
-    <program xml:id="find_function_AC_2_editor" interactive="activecode" line-numbers="yes">
+    </caption>
+    <program xml:id="find_function_AC_2_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -53,13 +54,16 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>This example returns the value 2.</p>
-  <p>You should remember from <number_reference internal="True" refuri="../Chapter5/overloading#overloading" title="Section %s"><inline classes="std std-numref">Section 5.4</inline></number_reference> that
-            there can be more than one function with the same name, as long as they
-            take a different number of parameters or different types. In this case,
-            C++ knows which version of <c>find</c> to invoke by looking at the type of
-            the argument we provide.</p>
+  <p>You should remember from <number_reference internal="True"
+                      refuri="../Chapter5/overloading#overloading"
+                      title="Section %s">
+      <inline classes="std std-numref">Section 5.4</inline>
+    </number_reference> that there can be
+    more than one function with the same name, as long as they take a different number of parameters
+    or different types. In this case, C++ knows which version of <c>find</c> to invoke by looking at the
+    type of the argument we provide.</p>
   <exercise label="find_function_1">
     <statement>
       <p>Click on the name of each variable that had been initialized with the value of 0.</p>
@@ -68,33 +72,48 @@ int main() {
       <p>Remember that the index of a string begins at 0, not 1.</p>
     </feedback>
     <areas>
-      <cline>
-        <area correct="no">def main() {:</area>
-      </cline>
-      <cline>
-        <area correct="no">string fruit = "apple";</area>
-      </cline>
-      <cline>    size_t<area correct="no"> index_a </area>= fruit.find('e');</cline>
-      <cline>    size_t<area correct="yes"> index_b </area>= fruit.find("app");</cline>
-      <cline>    size_t<area correct="yes"> index_c </area>= fruit.find('a');</cline>
-      <cline>    size_t<area correct="no"> index_d </area>= fruit.find('l');</cline>
-      <cline>}</cline>
+<cline><area correct="no">def main() {:</area></cline>
+<cline><area correct="no">string fruit = "apple";</area></cline>
+<cline>    size_t<area correct="no"> index_a </area>= fruit.find('e');</cline>
+<cline>    size_t<area correct="yes"> index_b </area>= fruit.find("app");</cline>
+<cline>    size_t<area correct="yes"> index_c </area>= fruit.find('a');</cline>
+<cline>    size_t<area correct="no"> index_d </area>= fruit.find('l');</cline>
+<cline>}</cline>
     </areas>
   </exercise>
-  <exercise label="find_function_2" numbered="yes" adaptive="yes" indentation="hide">
+  <exercise label="find_function_2"
+            numbered="yes"
+            adaptive="yes"
+            indentation="hide">
     <statement>
-      <p>Construct a block of code that correctly finds and prints where the first <q>B</q> is in the string. Declare <c>city</c> before <c>index</c>.</p>
+      <p>Construct a block of code that correctly finds and prints where the first <q>B</q> is in
+        the string. Declare <c>city</c> before <c>index</c>.</p>
     </statement>
     <blocks>
-      <block order="1" correct="no">
+      <block order="4">
         <cline>int main() {</cline>
-        <cline>   string city = "New Baltimore";</cline>
-        <cline>   string city = "New Baltimore" </cline>
-        <cline>   size_t index;</cline>
-        <cline>   index = city.find('B');</cline>
-        <cline>   index = city.find(B); </cline>
-        <cline>   index = city.find('b'); </cline>
-        <cline><![CDATA[   cout << index << endl;]]></cline>
+      </block>
+      <block order="1">
+        <choice correct="yes">
+          <cline> string city = "New Baltimore";</cline>
+        </choice>
+        <choice>
+          <cline> string city = "New Baltimore" </cline>
+        </choice>
+      </block>
+      <block order="2">
+        <choice correct="yes">
+          <cline> size_t index = city.find('B');</cline>
+        </choice>
+        <choice>
+          <cline> size_t index = city.find(B); </cline>
+        </choice>
+        <choice>
+          <cline> size_t index = city.find('b'); </cline>
+        </choice>
+      </block>
+      <block order="3">
+        <cline> <![CDATA[cout << index << endl;]]></cline>
         <cline>}</cline>
       </block>
     </blocks>
@@ -127,7 +146,8 @@ cout << "Index to find sea is " << index << endl;
             <p>
               <ul>
                 <li>
-                  <p>Correct! <c>index</c> only has to look for a sequence arranged as <q>sea</q> in the string.</p>
+                  <p>Correct! <c>index</c> only has to look for a sequence arranged as <q>sea</q> in the
+                    string.</p>
                 </li>
               </ul>
             </p>
@@ -159,7 +179,8 @@ cout << "Index to find sea is " << index << endl;
           <p>Index to find sea is 5</p>
         </statement>
         <feedback>
-          <p>Correct! <code>index</code> only has to look for a sequence arranged as "sea" in the string.</p>
+          <p>Correct! <code>index</code> only has to look for a sequence arranged as "sea" in the
+            string.</p>
         </feedback>
       </choice>
       <choice>

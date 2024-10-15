@@ -1,14 +1,15 @@
 <?xml version="1.0"?>
 <section xml:id="chapter7_length">
   <title>Length</title>
-  <p>To find the length of a string (number of characters), we can use the
-            <c>length</c> function. The syntax for calling this function is a little
-            different from what we've seen before.</p>
-  <exercise label="length_AC_1">
-    <statement>
+  <p>To find the length of a string (number of characters), we can use the <c>length</c> function. The
+    syntax for calling this function is a little different from what we've seen before.</p>
+  <listing label="length_AC_1">
+    <caption>
       <p>The active code below outputs the length of string <c>fruit</c>.</p>
-    </statement>
-    <program xml:id="length_AC_1_editor" interactive="activecode" line-numbers="yes">
+    </caption>
+    <program xml:id="length_AC_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -21,35 +22,35 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
-  <p>To describe this function call, we would say that we are <term>invoking</term>
-            the length function on the string named <c>fruit</c>. This vocabulary may
-            seem strange, but we will see many more examples where we invoke a
-            function on an object. The syntax for function invocation is called <q>dot
-            notation,</q> because the dot (period) separates the name of the object,
-            <c>fruit</c>, from the name of the function, <c>length</c>.</p>
-  <p><c>length</c> takes no arguments, as indicated by the empty parentheses
-            <c>()</c>. The return value is an integer, in this case 6. Notice that it
-            is legal to have a variable with the same name as a function.</p>
+  </listing>
+  <p>To describe this function call, we would say that we are <term>invoking</term> the length
+    function on the string named <c>fruit</c>. This vocabulary may seem strange, but we will see many
+    more examples where we invoke a function on an object. The syntax for function invocation is
+    called <q>dot
+      notation,</q> because the dot (period) separates the name of the object, <c>fruit</c>, from the
+    name of the function, <c>length</c>.</p>
+  <p><c>length</c> takes no arguments, as indicated by the empty parentheses <c>()</c>. The return value is
+    an integer, in this case 6. Notice that it is legal to have a variable with the same name as a
+    function.</p>
   <p>To find the last letter of a string, you might be tempted to try
-            something like</p>
+    something like</p>
   <program>int length = fruit.length();
 char last = fruit[length];       // WRONG!!</program>
-  <p>That won't work. The reason is that there is no 6th letter in
-            <c>"banana"</c>. Since we started counting at 0, the 6 letters are numbered
-            from 0 to 5. To get the last character, you have to subtract 1 from
-            <c>length</c>.</p>
+  <p>That won't work. The reason is that there is no 6th letter in <c>"banana"</c>. Since we started
+    counting at 0, the 6 letters are numbered from 0 to 5. To get the last character, you have to
+    subtract 1 from <c>length</c>.</p>
   <warning>
-    <p>A common source of error involving strings and other arrays is indexing
-                out of bounds. This is usually the result of forgetting to subtract 1 from
-                <c>length</c>.</p>
+    <p>A common source of error involving strings and other arrays is indexing out of bounds. This
+      is usually the result of forgetting to subtract 1 from <c>length</c>.</p>
   </warning>
-  <exercise label="length_AC_2">
-    <statement>
-      <p>The active code below outputs the last character in string <c>fruit</c>
-            using the <c>length</c> function.</p>
-    </statement>
-    <program xml:id="length_AC_2_editor" interactive="activecode" line-numbers="yes">
+  <listing label="length_AC_2">
+    <caption>
+      <p>The active code below outputs the last character in string <c>fruit</c> using the <c>length</c>
+        function.</p>
+    </caption>
+    <program xml:id="length_AC_2_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -62,7 +63,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <exercise label="length_1">
     <statement>
       <p>What is printed by the following statements?</p>
@@ -116,7 +117,8 @@ cout << (s[s.length()-5]) << endl;
           <p>r</p>
         </statement>
         <feedback>
-          <p>Yes, s.length() is 12 and 12-5 is 7.  Use 7 as index and remember to start counting with 0.</p>
+          <p>Yes, s.length() is 12 and 12-5 is 7. Use 7 as index and remember to start counting with
+            0.</p>
         </feedback>
       </choice>
       <choice>
@@ -137,19 +139,37 @@ cout << (s[s.length()-5]) << endl;
       </choice>
     </choices>
   </exercise>
-  <exercise label="length_3" numbered="yes" adaptive="yes" indentation="hide">
+  <exercise label="length_3"
+            numbered="yes"
+            adaptive="yes"
+            indentation="hide">
     <statement>
-      <p>Construct a block of code that correctly implements the accumulator pattern, with <c>course</c> being the first variable initialized.</p>
+      <p>Construct a block of code that correctly implements the accumulator pattern, with <c>course</c>
+        being the first variable initialized.</p>
     </statement>
     <blocks>
-      <block order="1" correct="no">
+      <block order="6">
         <cline>int main() {</cline>
-        <cline>   string course = "Programming";</cline>
-        <cline>   int num_chars;</cline>
-        <cline>   string num_chars; </cline>
-        <cline>   num_chars = course.length();</cline>
-        <cline>   num_chars = length(course); </cline>
-        <cline><![CDATA[   cout << num_chars << endl;]]></cline>
+          </block>
+          <block order="7">
+        <cline> string course = "Programming";</cline>
+      </block>
+      <block order="3">
+        <cline> int num_chars;</cline>
+      </block>
+      <block order="1" correct="no">
+        <cline> string num_chars; </cline>
+      </block>
+      <block order="2">
+        <choice correct="yes">
+          <cline> num_chars = course.length();</cline></choice>
+        <choice>
+          <cline> num_chars = length(course); </cline></choice>
+      </block>
+      <block order="4">
+        <cline><![CDATA[ cout << num_chars << endl;]]></cline>
+      </block>
+      <block order="5">
         <cline>}</cline>
       </block>
     </blocks>

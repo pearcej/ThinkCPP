@@ -4,7 +4,8 @@
   <exercise label="mce_7_1">
     <statement>
       <p>Which variables below is declared as a <c>string</c> type?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input>
 int main() {
   int x = 0;
@@ -93,7 +94,8 @@ int main() {
   <exercise label="mce_7_2">
     <statement>
       <p>What value should replace the question mark to output the character &#x2018;p'?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input><![CDATA[
 int main() {
   string quote = "Not my tempo.";
@@ -140,7 +142,8 @@ int main() {
   <exercise label="mce_7_3">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input><![CDATA[
 int main() {
   string quote = "I love you 3000.";
@@ -196,7 +199,8 @@ int main() {
   <exercise label="mce_7_4">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input><![CDATA[
 int main() {
   string quote = "Look at me. I'm the captain now.";
@@ -236,7 +240,8 @@ int main() {
           <p>&#x2018; &#x2018;</p>
         </statement>
         <feedback id="mce_7_4_opt_d">
-          <p>It might be logical to think that memory outside of the <c>string</c> is empty space, but there could be leftover junk values.</p>
+          <p>It might be logical to think that memory outside of the <c>string</c> is empty space, but
+            there could be leftover junk values.</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -252,7 +257,8 @@ int main() {
   <exercise label="mce_7_5">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input><![CDATA[
 int main() {
   string quote = "With great power comes great responsiblity.";
@@ -305,7 +311,8 @@ int main() {
   <exercise label="mce_7_6">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input><![CDATA[
 int main() {
   string quote = "Why so serious?";
@@ -355,7 +362,8 @@ int main() {
   <exercise label="mce_7_7">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input><![CDATA[
 int main() {
   string tongue_twister = "How much wood could a woodchuck chuck if a woodchuck could chuck wood?";
@@ -371,7 +379,8 @@ int main() {
           <p>4</p>
         </statement>
         <feedback id="mce_7_7_opt_a">
-          <p>Although <q>wood</q> appears four times in the <c>string</c>, that is not what the <c>find</c> function returns.</p>
+          <p>Although <q>wood</q> appears four times in the <c>string</c>, that is not what the <c>find</c>
+            function returns.</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -411,7 +420,8 @@ int main() {
   <exercise label="mce_7_8">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input><![CDATA[
 int main() {
   string tongue_twister = "How much wood could a woodchuck chuck if a woodchuck could chuck wood?";
@@ -459,7 +469,8 @@ int main() {
   <exercise label="mce_7_9">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input><![CDATA[
 int main() {
   string quote = "Life is like a box of chocolates. You never know what you're gonna get.";
@@ -514,7 +525,8 @@ int main() {
   <exercise label="mce_7_10">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input><![CDATA[
 int main() {
   string call = "Marco!";
@@ -563,7 +575,8 @@ int main() {
           <p>Error!</p>
         </statement>
         <feedback id="mce_7_10_opt_e">
-          <p>We cannot concatenate native C strings like <q>call</q> and <q>response</q>, so this code results in an error.</p>
+          <p>We cannot concatenate native C strings like <q>call</q> and <q>response</q>, so this
+            code results in an error.</p>
         </feedback>
       </choice>
     </choices>
@@ -571,9 +584,10 @@ int main() {
   <exercise label="mce_7_11">
     <statement>
       <p>An error occured while delivering a message. All instances of the letter &#x2018;s'
-            got replaced by &#x2018;X's. Can you complete the code below to fix this error by selecting
-            the correct line of code to replace the question marks?</p>
-      <program language="cpp" line-numbers="yes">
+        got replaced by &#x2018;X's. Can you complete the code below to fix this error by selecting
+        the correct line of code to replace the question marks?</p>
+      <program language="cpp"
+               line-numbers="yes">
         <input><![CDATA[
 int main() {
   string question = "Honey? Where'X my Xuper Xuit?";
@@ -635,7 +649,8 @@ int main() {
   <exercise label="mce_7_12">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input><![CDATA[
 int main() {
   cout << "butter" < "butterfly";
@@ -649,7 +664,8 @@ int main() {
           <p>butterbutterfly</p>
         </statement>
         <feedback id="mce_7_12_opt_a">
-          <p>The operator between <q>butter</q> and <q>butterfly</q> is the <c>&lt;</c> operator, not <c>&lt;&lt;</c>.</p>
+          <p>The operator between <q>butter</q> and <q>butterfly</q> is the <c>&lt;</c> operator, not <c>&lt;&lt;</c>
+            .</p>
         </feedback>
       </choice>
       <choice>
@@ -689,7 +705,8 @@ int main() {
   <exercise label="mce_7_13">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input><![CDATA[
 int main() {
    string quote = "Suffering builds character";
@@ -712,7 +729,8 @@ int main() {
           <p>3</p>
         </statement>
         <feedback id="mce_7_13_opt_a">
-          <p>The code is not counting the number of a's or e's after position 17. Rather adding up their indices.</p>
+          <p>The code is not counting the number of a's or e's after position 17. Rather adding up
+            their indices.</p>
         </feedback>
       </choice>
       <choice>
@@ -728,7 +746,8 @@ int main() {
           <p>64</p>
         </statement>
         <feedback id="mce_7_13_opt_c">
-          <p>Correct! the occurences of &#x2018;a' are 19  and 21, while that of &#x2018;e' is 24 (after <c>index</c> 17). The total is 64.</p>
+          <p>Correct! the occurences of &#x2018;a' are 19 and 21, while that of &#x2018;e' is 24
+            (after <c>index</c> 17). The total is 64.</p>
         </feedback>
       </choice>
       <choice>
@@ -744,7 +763,8 @@ int main() {
   <exercise label="mce_7_14">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input><![CDATA[
 int main() {
    string quote = "Its Bond, James Bond";

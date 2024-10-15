@@ -1,12 +1,14 @@
 <?xml version="1.0"?>
 <section xml:id="chapter7_looping-and-counting-loopcount">
   <title>Looping and counting</title>
-  <exercise label="looping_and_counting_AC_1">
-    <statement>
-      <p>The active code below counts the number of times the letter <c>'a'</c>
-            appears in a string <c>fruit</c>.</p>
-    </statement>
-    <program xml:id="looping_and_counting_AC_1_editor" interactive="activecode" line-numbers="yes">
+  <listing label="looping_and_counting_AC_1">
+    <caption>
+      <p>The active code below counts the number of times the letter <c>'a'</c> appears in a string <c>fruit</c>
+        .</p>
+    </caption>
+    <program xml:id="looping_and_counting_AC_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -26,13 +28,12 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
-  <p>This program demonstrates a common idiom, called a <term>counter</term>. The
-            variable <c>count</c> is initialized to zero and then incremented each time
-            we find an <c>'a'</c>. (To <term>increment</term> is to increase by one; it is the
-            opposite of <term>decrement</term>, and unrelated to <term>excrement</term>, which is a
-            noun.) When we exit the loop, <c>count</c> contains the result: the total
-            number of a's.</p>
+  </listing>
+  <p>This program demonstrates a common idiom, called a <term>counter</term>. The variable <c>count</c>
+    is initialized to zero and then incremented each time we find an <c>'a'</c>. (To <term>increment</term>
+    is to increase by one; it is the opposite of <term>decrement</term>, and unrelated to <term>
+    excrement</term>, which is a noun.) When we exit the loop, <c>count</c> contains the result: the
+    total number of a's.</p>
   <exercise label="looping_counting_1">
     <statement>
       <p>What does the following code print?</p>
@@ -73,65 +74,68 @@ while (x < 0) {
       </choice>
     </choices>
   </exercise>
-  <exercise label="looping_counting_2" numbered="yes" adaptive="yes" indentation="hide">
+  <exercise label="looping_counting_2"
+            numbered="yes"
+            adaptive="yes"
+            indentation="hide">
     <statement>
-      <p>As an exercise, encapsulate this code in a function named
-            <c>countLetters</c>, and generalize it so that it accepts the string and
-            the letter as arguments. In the function, declare <c>length</c>, <c>count</c>, and <c>index</c> in that order.
-            Within the main function, declare <c>city</c> and <c>letter</c> in that order.</p>
+      <p>As an exercise, encapsulate this code in a function named <c>countLetters</c>, and generalize it so
+        that it accepts the string and the letter as arguments. In the function, declare <c>length</c>, <c>count</c>,
+        and <c>index</c> in that order. Within the main function, declare <c>city</c> and <c>letter</c> in that
+        order.</p>
     </statement>
     <blocks>
       <block order="4">
         <cline>size_t countLetters(string s, char letter) {</cline>
       </block>
-      <block order="7">
-        <cline>   size_t length = s.length();</cline>
-      </block>
       <block order="9">
-        <cline>   size_t count = 0;</cline>
-      </block>
-      <block order="11">
-        <cline>   size_t index = 0;</cline>
+        <cline> size_t length = s.length();</cline>
+        <cline> size_t count = 0;</cline>
+        <cline> size_t index = 0;</cline>
       </block>
       <block order="2">
-        <cline><![CDATA[   while (index < length) {]]></cline>
+        <cline> <![CDATA[while (index < length) {]]></cline>
       </block>
       <block order="10">
-        <cline>     if (s[index] == letter) {</cline>
+        <cline>  if (s[index] == letter) {</cline>
       </block>
       <block order="6">
-        <cline>       count = count + 1;</cline>
-        <cline>     }</cline>
+        <cline>   count = count + 1;</cline>
+        <cline>  }</cline>
       </block>
       <block order="13">
-        <cline>     index = index + 1;</cline>
-        <cline>   }</cline>
+        <cline>  index = index + 1;</cline>
+        <cline> }</cline>
       </block>
       <block order="1">
-        <cline>   return count;</cline>
+        <cline> return count;</cline>
         <cline>}</cline>
       </block>
       <block order="12">
         <cline>int main() {</cline>
       </block>
       <block order="8">
-        <cline>   string city = "New Baltimore";</cline>
-      </block>
-      <block order="5">
-        <cline>   char letter = "e";</cline>
+        <cline> string city = "New Baltimore";</cline>
+        <cline> char letter = "e";</cline>
       </block>
       <block order="3">
-        <cline><![CDATA[   cout << countLetters(city, letter);]]></cline>
+        <cline> <![CDATA[cout << countLetters(city, letter);]]></cline>
         <cline>}</cline>
       </block>
     </blocks>
   </exercise>
-  <exercise label="looping_counting_3" numbered="yes" adaptive="yes" indentation="hide">
+  <exercise label="looping_counting_3"
+            numbered="yes"
+            adaptive="yes"
+            indentation="hide">
     <statement>
-      <p>The following is the correct code for printing the even numbers from 0 to 10, but it also includes some extra code that you won't need. Drag the needed blocks from the left and put them in the correct order on the right.</p>
+      <p>The following is the correct code for printing the even numbers from 0 to 10, but it also
+        includes some extra code that you won't need. Drag the needed blocks from the left and put
+        them in the correct order on the right.</p>
     </statement>
     <blocks>
-      <block order="4" correct="no">
+      <block order="4"
+             correct="no">
         <cline>x = x + 1; </cline>
       </block>
       <block order="5">
@@ -140,14 +144,15 @@ while (x < 0) {
       <block order="3">
         <cline>while (x &lt;= 10) {</cline>
       </block>
-      <block order="1" correct="no">
+      <block order="1"
+             correct="no">
         <cline>while (x &lt; 10) { </cline>
       </block>
       <block order="2">
-        <cline><![CDATA[   cout << x << endl;]]></cline>
+        <cline> <![CDATA[cout << x << endl;]]></cline>
       </block>
       <block order="6">
-        <cline>   x = x + 2;</cline>
+        <cline> x = x + 2;</cline>
         <cline>}</cline>
       </block>
     </blocks>

@@ -1,31 +1,30 @@
 <?xml version="1.0"?>
 <section xml:id="chapter7_traversal">
   <title>Traversal</title>
-  <p>A common thing to do with a string is start at the beginning, select
-            each character in turn, do something to it, and continue until the end.
-            This pattern of processing is called a <term>traversal</term>. A natural way to
-            encode a traversal is with a <c>while</c> statement.</p>
+  <p>A common thing to do with a string is start at the beginning, select each character in turn, do
+    something to it, and continue until the end. This pattern of processing is called a <term>
+    traversal</term>. A natural way to encode a traversal is with a <c>while</c> statement.</p>
   <note>
-    <p>On some machines, comparing an <c>int</c> to the output from <c>length</c>
-                will generate a type error.  This is because the length function
-                returns an unsigned integer type. To keep the variable type consistent,
-                you should use <c>size_t</c> rather than <c>int</c> for the
-                type of iterator <c>i</c>.</p>
+    <p>On some machines, comparing an <c>int</c> to the output from <c>length</c> will generate a type error.
+      This is because the length function returns an unsigned integer type. To keep the variable
+      type consistent, you should use <c>size_t</c> rather than <c>int</c> for the type of the counter you
+      use to keep track of the current index in the string.</p>
   </note>
-  <exercise label="traversal_AC_1">
-    <statement>
-      <p>The active code below outputs each letter of string <c>fruit</c>
-            using a while loop.</p>
-    </statement>
-    <program xml:id="traversal_AC_1_editor" interactive="activecode" line-numbers="yes">
+  <listing label="traversal_AC_1">
+    <caption>
+      <p>The active code below outputs each letter of string <c>fruit</c> using a while loop.</p>
+    </caption>
+    <program xml:id="traversal_AC_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <string>
 #include <iostream>
 using namespace std;
 
 int main() {
-    size_t index = 0;
     string fruit = "apple";
+    size_t index = 0;
     while (index < fruit.lenght()) {
         char letter = fruit[index];
         cout << letter << endl;
@@ -34,32 +33,32 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
-  <p>This loop traverses the string and outputs each letter on a line by
-            itself. Notice that the condition is <c>index &lt; lengthfruit</c>, which
-            means that when <c>index</c> is equal to the length of the string, the
-            condition is false and the body of the loop is not executed. The last
-            character we access is the one with the index <c>fruit.length()-1</c>.</p>
-  <p>The name of the loop variable is <c>index</c>. An <term>index</term> is a variable
-            or value used to specify one member of an ordered set, in this case the
-            set of characters in the string. The index indicates (hence the name)
-            which one you want. The set has to be ordered so that each letter has an
-            index and each index refers to a single character.</p>
-  <p>As an exercise, write a function that takes an <c>string</c> as an argument
-            and that outputs the letters backwards, all on one line.</p>
-  <exercise label="traversal_AC_2">
-    <statement>
-      <p>Try writing the <c>reverseWord</c> function in the commented section
-            of the active code below. If done correctly, the program should output <q>hello</q>
-            backwards. If you get stuck, you can reveal the extra problem at the end for help.</p>
-    </statement>
-    <program xml:id="traversal_AC_2_editor" interactive="activecode" line-numbers="yes">
+  </listing>
+  <p>This loop traverses the string and outputs each letter on a line by itself. Notice that the
+    condition is <c>index &lt; lengthfruit</c>, which means that when <c>index</c> is equal to the length of the string, the
+    condition is false and the body of the loop is not executed. The last character we access is the
+    one with the index <c>fruit.length()-1</c>.</p>
+  <p>The name of the loop variable is <c>index</c>. An <term>index</term> is a variable or value used to
+    specify one member of an ordered set, in this case the set of characters in the string. The
+    index indicates (hence the name) which one you want. The set has to be ordered so that each
+    letter has an index and each index refers to a single character.</p>
+  <p>As an exercise, write a function that takes an <c>string</c> as an argument and that outputs the
+    letters backwards, all on one line.</p>
+  <exercise label="traversal_1">
+    <caption>
+      <p>Try writing the <c>reverseWord</c> function in the commented section of the active code below. If done
+        correctly, the program should output <q>hello</q> backwards. If you get stuck, you can
+        reveal the hint below for help.</p>
+    </caption>
+    <program xml:id="traversal_AC_2_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
 
 void reverseWord(string word) {
-    // ``reverseWord`` should take the letters of ``word``
+    // 'reverseWord' should take the letters of 'word'
     // and output them in reverse.
 }
 
@@ -68,53 +67,60 @@ int main() {
 }
         ]]></input>
     </program>
+    <hint>
+      <activity label="traversal_1_hint"
+                numbered="yes"
+                adaptive="yes"
+                indentation="hide"
+                exercise-interactive="parson"
+                langauge="cpp">
+        <statement>
+          <p>Let's write the code for the <c>reverseWord</c> function. <c>reverseWord</c> should take a string as a
+            parameter and output the letters backwards.</p>
+        </statement>
+        <blocks>
+          <block order="5">
+            <cline>void reverseWord(string input) {</cline>
+          </block>
+          <block order="7">
+            <choice correct="yes">
+              <cline> size_t count = 0;</cline>
+              <cline> size_t index = input.length() - 1;</cline>
+            </choice>
+            <choice>
+              <cline> size_t count = 0;</cline>
+              <cline> size_t index = input.length();  </cline>
+            </choice>
+          </block>
+          <block order="2">
+            <choice correct="yes">
+              <cline><![CDATA[ while (count < input.length()) {]]></cline>
+            </choice>
+            <choice>
+              <cline><![CDATA[ while (count <= input.length() ) { ]]></cline>
+            </choice>
+          </block>
+          <block order="4">
+            <cline><![CDATA[  cout << input[index];]]></cline>
+          </block>
+          <block order="8">
+            <cline>  index = index - 1;</cline>
+            <cline>  count = count + 1;</cline>
+            <cline> }</cline>
+            <cline>}</cline>
+          </block>
+          <block order="3"
+                 correct="no">
+            <cline>  index = index + 1;</cline>
+            <cline>  count = count + 1;</cline>
+            <cline> }</cline>
+            <cline>}</cline>
+          </block>
+        </blocks>
+      </activity>
+    </hint>
   </exercise>
-  <exercises line="76" runestone_options="{'showtitle': 'data-showtitle=&quot;Reveal Problem&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'traversal', 'chapter': 'Chapter7', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': '7_5_1', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter7/traversal.rst">
-    <exercise label="traversal_1" numbered="yes" adaptive="yes" indentation="hide">
-      <statement>
-        <p>Let's write the code for the <c>reverseWord</c> function. <c>reverseWord</c>
-                should take a string as a parameter and output the letters backwards.</p>
-      </statement>
-      <blocks>
-        <block order="5">
-          <cline>void reverseWord(string input) {</cline>
-        </block>
-        <block order="7">
-          <choice correct="yes">
-            <cline>  size_t count = 0;</cline>
-            <cline>  size_t index = input.length() - 1;</cline>
-          </choice>
-          <choice>
-            <cline>  size_t count = 0;</cline>
-            <cline>  size_t index = input.length();  </cline>
-          </choice>
-        </block>
-        <block order="2">
-          <choice correct="yes">
-            <cline><![CDATA[  while (count < input.length()) {]]></cline>
-          </choice>
-          <choice>
-            <cline><![CDATA[  while (count <= input.length() ) { ]]></cline>
-          </choice>
-        </block>
-        <block order="4">
-          <cline><![CDATA[    cout << input[index];]]></cline>
-        </block>
-        <block order="8">
-          <cline>    index = index - 1;</cline>
-          <cline>    count = count + 1;</cline>
-          <cline>  }</cline>
-          <cline>}</cline>
-        </block>
-        <block order="3" correct="no">
-          <cline>    index = index + 1;</cline>
-          <cline>    count = count + 1;</cline>
-          <cline>  }</cline>
-          <cline>} </cline>
-        </block>
-      </blocks>
-    </exercise>
-  </exercises>
+
   <exercise label="traversal_2">
     <statement>
       <p>How many times is the letter o printed by the following statements?</p>
@@ -143,7 +149,7 @@ while (i < s.length()) {
           <p>1</p>
         </statement>
         <feedback>
-          <p>Yes, i goes through the odd numbers starting at 1.  o is at position 1 and 8.</p>
+          <p>Yes, i goes through the odd numbers starting at 1. o is at position 1 and 8.</p>
         </feedback>
       </choice>
       <choice>
@@ -186,7 +192,8 @@ while (index < truth.length()) {
           <p>e e e e e</p>
         </statement>
         <feedback>
-          <p>We are updating the value of of <code>index</code>. Not doing so would make it an infinte loop!</p>
+          <p>We are updating the value of of <code>index</code>. Not doing so would make it an
+            infinte loop!</p>
         </feedback>
       </choice>
       <choice>
@@ -194,7 +201,8 @@ while (index < truth.length()) {
           <p>e e n r</p>
         </statement>
         <feedback>
-          <p>Recalculate the values of <code>index</code> at each stage and consider which ones are &amp;lt 7.</p>
+          <p>Recalculate the values of <code>index</code> at each stage and consider which ones are
+            &amp;lt 7.</p>
         </feedback>
       </choice>
     </choices>

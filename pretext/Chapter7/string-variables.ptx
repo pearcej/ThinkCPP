@@ -2,15 +2,18 @@
 <section xml:id="chapter7_string-variables">
   <title><c>string</c> variables</title>
   <p>You can create a variable with type <c>string</c> in the usual ways.</p>
-  <exercise label="string_variables_AC_1">
-    <statement>
-      <p>In the active code below, the first line creates a <c>string</c> without
-            giving it a value. The second line assigns it the string value <c>"Hello,"</c>.
-            The third line is a combined declaration and assignment, also called an initialization.</p>
-    </statement>
-    <program xml:id="string_variables_AC_1_editor" interactive="activecode" line-numbers="yes">
+  <listing label="string_variables_AC_1">
+    <caption>
+      <p>In the active code below, the first line creates a <c>string</c> without giving it a value. The
+        second line assigns it the string value <c>"Hello,"</c>. The third line is a combined declaration
+        and assignment, also called an initialization.</p>
+    </caption>
+    <program xml:id="string_variables_AC_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main() {
@@ -20,24 +23,26 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
-  <p>Normally when string values like <c>"Hello, "</c> or <c>"world."</c> appear,
-            they are treated as C strings. In this case, when we assign them to an
-            <c>string</c> variable, they are converted automatically to <c>string</c>
-            values.</p>
+  </listing>
+  <p>Normally when string values like <c>"Hello, "</c> or <c>"world."</c> appear, they are treated as C strings. In
+    this case, when we assign them to an <c>string</c> variable, they are converted automatically to <c>string</c>
+    values.</p>
   <p>We can output strings in the usual way:</p>
   <program>cout &lt;&lt; first &lt;&lt; second &lt;&lt; endl;</program>
-  <p>In order to compile this code, you will have to include the header file
-            for the <c>string</c> class, and you will have to add the file <c>string</c>
-            to the list of files you want to compile. The details of how to do this
-            depend on your programming environment.</p>
-  <exercise label="string_variables_AC_2">
-    <statement>
+  <note>In order to compile this code, you will have to include the header file for the <c>string</c> class.
+    If you are already including <c>iostream</c>, you may get away with not explicitly including <c>string</c>.
+    In some environments, <c>iostream</c> will include <c>string</c> for you. But it is best to explicitly
+    include <c>string</c> if your code relies on it.</note>
+  <listing label="string_variables_AC_2">
+    <caption>
       <p>Run the active code below!</p>
-    </statement>
-    <program xml:id="string_variables_AC_2_editor" interactive="activecode" line-numbers="yes">
+    </caption>
+    <program xml:id="string_variables_AC_2_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main() {
@@ -48,16 +53,27 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
-  <exercise label="string_variables_1" numbered="yes" adaptive="yes" indentation="hide">
+  </listing>
+  <exercise label="string_variables_1"
+            numbered="yes"
+            adaptive="yes"
+            indentation="hide">
     <statement>
       <p>Construct a block of code that correctly prints out a string variable.</p>
     </statement>
     <blocks>
-      <block order="1">
+      <block order="3">
         <cline>string x;</cline>
-        <cline>x = "It is cold outside!";</cline>
-        <cline>x = "It is cold outside" </cline>
+      </block>
+      <block order="2">
+        <choice correct="yes">
+          <cline>x = "It is cold outside!";</cline>
+        </choice>
+        <choice>
+          <cline>x = It is cold outside;</cline>
+        </choice>
+      </block>
+      <block order="1">
         <cline>cout &lt;&lt; x &lt;&lt; endl;</cline>
       </block>
     </blocks>
@@ -97,28 +113,13 @@ int main() {
     <statement>
       <p>Click on each spot where a string assignment occurs.</p>
     </statement>
-    <feedback>
-      <p>Remember, square brackets [] are used to access a character in a string.</p>
-    </feedback>
     <areas>
-      <cline>
-        <area correct="no">def main() {</area>
-      </cline>
-      <cline>
-        <area correct="no">string fruit;</area>
-      </cline>
-      <cline>
-        <area correct="yes">fruit = "apple";</area>
-      </cline>
-      <cline>
-        <area correct="yes">fruit = "pear";</area>
-      </cline>
-      <cline>
-        <area correct="no">string flavor;</area>
-      </cline>
-      <cline>
-        <area correct="yes">flavor = "vanilla";</area>
-      </cline>
+      <cline><area correct="no">def main() {</area></cline>
+      <cline>    <area correct="no">string fruit;</area></cline>
+      <cline>    <area correct="yes">fruit = "apple";</area></cline>
+      <cline>    <area correct="yes">fruit = "pear";</area></cline>
+      <cline>    <area correct="no">string flavor;</area></cline>
+      <cline>    <area correct="yes">flavor = "vanilla";</area></cline>
       <cline>}</cline>
     </areas>
   </exercise>
