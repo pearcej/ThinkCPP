@@ -25,8 +25,7 @@
     </ul>
   </p>
   <p>For example, instead of writing the 53 lines of code below&#x2026;</p>
-  <listing xml:id="functions_AC_1"
-           interactive="activecode"
+  <program xml:id="functions_AC_1"
            line-numbers="yes">
     <input><![CDATA[
 #include <iostream>
@@ -83,11 +82,10 @@ int main() {
     cout << x << endl;
 }
         ]]></input>
-  </listing>
+  </program>
   <p>..you would reduce it to the 21 lines of code below, making it easier to read, debug, and use
     the function many times with rewriting it each time.</p>
   <program xml:id="functions_AC_2"
-           interactive="activecode"
            line-numbers="yes">
     <input><![CDATA[
 #include <iostream>
