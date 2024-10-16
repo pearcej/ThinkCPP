@@ -43,8 +43,8 @@ int main() {
     instance of a function contains the parameters and local variables for that function. In the
     diagram an instance of a function is represented by a box with the name of the function on the
     outside and the variables and parameters inside.</p>
-  <note>When you use the Codelens feature to run a program, it shows the variables organized in a
-    stack diagram. Try it on <xref ref="locals_AC_1"/> above.</note>
+  <note><p>When you use the Codelens feature to run a program, it shows the variables organized in a
+    stack diagram. Try it on <xref ref="locals_AC_1"/> above.</p></note>
   <p>In the example, <c>main</c> has one local variable, argument, and no parameters. <c>printTwice</c> has no
     local variables and one parameter, named phil.</p>
   <exercise label="locals_1">
