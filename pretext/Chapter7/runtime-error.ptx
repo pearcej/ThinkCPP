@@ -11,14 +11,16 @@
     things that can cause one. Well, now we are. If you use the <c>[]</c> operator and you provide an
     index that is negative or greater than <c>length-1</c>, you will get a run-time error and a message
     something like this:</p>
-  <console><output>index out of range: 6, string: banana</output></console>
+  <console>
+    <output>index out of range: 6, string: banana</output>
+  </console>
   <p>Try it in your development environment and see how it looks.</p>
   <listing label="runtime_error_AC_1">
-    <statement>
+    <caption>
       <p>Running the active code below will result in a runtime error. Can you fix it so that we
         print out the first letter and last letter of string <c>greeting</c> instead of indexing out of
         range?</p>
-    </statement>
+    </caption>
     <program xml:id="runtime_error_AC_1_editor"
              interactive="activecode"
              line-numbers="yes">
@@ -59,7 +61,8 @@ int main() {
             indentation="hide">
     <statement>
       <p>Construct a block of code that correctly changes the string to say <q>cat in the hat</q>
-        instead of <q>cat on the mat</q>, then print it. Change the necessary characters in order from index 0 to the end of the string.</p>
+        instead of <q>cat on the mat</q>, then print it. Change the necessary characters in order
+        from index 0 to the end of the string.</p>
     </statement>
     <blocks>
       <block order="1">

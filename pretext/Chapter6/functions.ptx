@@ -25,7 +25,7 @@
     </ul>
   </p>
   <p>For example, instead of writing the 53 lines of code below&#x2026;</p>
-  <program xml:id="functions_AC_1"
+  <program xml:id="functions_AC_1" language="cpp"
            line-numbers="yes">
     <input><![CDATA[
 #include <iostream>
