@@ -330,9 +330,9 @@ struct Music {
 
 int main() {
     Music m1 = { "n/a", 2007, true };
-    printInfo (m1);
+    printInfo(m1);
     Cake c2 = { "Drake", 2016, false };
-    printInfo (m2);
+    printInfo(m2);
 }
         ]]></input>
     </program>
@@ -353,7 +353,7 @@ struct Music {
     bool has_featured;
 };
 
-void printInfo (Music m) {
+void printInfo(Music m) {
     if (m.artist == "n/a") {
         cout << "Unknown artist! Your album is from " << m.year << "." << endl;
     }
@@ -369,9 +369,9 @@ void printInfo (Music m) {
 
 int main() {
     Music m1 = { "n/a", 2007, true };
-    printInfo (m1);
+    printInfo(m1);
     Music m2 = { "Drake", 2016, false };
-    printInfo (m2);
+    printInfo(m2);
 }
         ]]></input></program>
 
@@ -387,7 +387,7 @@ struct Music {
     bool has_featured;
 };
 
-void printInfo (Music m) {
+void printInfo(Music m) {
     if (m.artist == "n/a") {
         cout << "Unknown artist! Your album is from " << m.year << "." << endl;
     }
@@ -403,9 +403,9 @@ void printInfo (Music m) {
 
 int main() {
     Music m1 = { "n/a", 2007, true };
-    printInfo (m1);
+    printInfo(m1);
     Music m2 = { "Drake", 2016, false };
-    printInfo (m2);
+    printInfo(m2);
 }
         ]]></input></program></exercise>
             </solution>

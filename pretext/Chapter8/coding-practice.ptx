@@ -13,12 +13,12 @@
 #include &lt;iostream&gt;
 using namespace std;
 
-void rectangleInfo () {
+void rectangleInfo() {
     // Write your implementation here.
 }
 
 int main() {
-    rectangleInfo ();
+    rectangleInfo();
 }
         </input>
     </program>
@@ -30,7 +30,7 @@ int main() {
 #include &lt;iostream&gt;
 using namespace std;
 
-void rectangleInfo () {
+void rectangleInfo() {
     int height, width;
     cout &lt;&lt; "Please enter the height and width of a rectangle separated by spaces: ";
     cin &gt;&gt; height &gt;&gt; width;
@@ -39,7 +39,7 @@ void rectangleInfo () {
 }
 
 int main() {
-    rectangleInfo ();
+    rectangleInfo();
 }
         </input>
     </program>
@@ -369,7 +369,7 @@ using namespace std;
 int main() {
     Pokemon magikarp = { "Magikarp", "Water", 12, 100 };
     cout &lt;&lt; "Your output:" &lt;&lt; endl;
-    printPokeInfo (magikarp);
+    printPokeInfo(magikarp);
     cout &lt;&lt; "Correct output:" &lt;&lt; endl;
     cout &lt;&lt; "Magikarp (Lv. 12, 100% HP)";
 }
@@ -407,10 +407,10 @@ int main() {
           <block order="4">
             <choice correct="yes">
               <cline>// printPokeInfo function creation</cline>
-              <cline>void printPokeInfo (Pokemon p) {</cline>
+              <cline>void printPokeInfo(Pokemon p) {</cline>
             </choice>
             <choice>
-              <cline>string printPokeInfo (Pokemon p) { </cline>
+              <cline>string printPokeInfo(Pokemon p) { </cline>
             </choice>
           </block>
           <block order="3">
@@ -459,7 +459,7 @@ int main() {
     Pokemon charizard = { "Charizard", "Fire &amp; Flying", 77, 100 };
     Pokemon blastoise = { "Blastoise", "Water", 77, 100 };
     Trainer red = { "Red", 'M', 8, pikachu, espeon, snorlax, venusaur, charizard, blastoise };
-    printTrainerInfo (red);
+    printTrainerInfo(red);
 }
         </input>
 <tests>
@@ -514,7 +514,7 @@ int main() {
     Pokemon charizard = { "Charizard", "Fire &amp; Flying", 77, 100 };
     Pokemon blastoise = { "Blastoise", "Water", 77, 100 };
     Trainer red = { "Red", 'M', 8, pikachu, espeon, snorlax, venusaur, charizard, blastoise };
-    printTrainerInfo (red);
+    printTrainerInfo(red);
 }
         </input>
 <tests>

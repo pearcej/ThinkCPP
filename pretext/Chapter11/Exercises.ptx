@@ -505,7 +505,7 @@ Point3D p1;
           <p>Sum of relevant variables =</p>
         </statement>
         <feedback id="mce_11_9_opt_a">
-          <p>Take a closer look Point3D ( )</p>
+          <p>Take a closer look Point3D( )</p>
         </feedback>
       </choice>
       <choice>
@@ -513,7 +513,7 @@ Point3D p1;
           <p>Sum of relevant variables = 9</p>
         </statement>
         <feedback id="mce_11_9_opt_b">
-          <p>Take a closer look at what is outputted in Point3D ( )</p>
+          <p>Take a closer look at what is outputted in Point3D( )</p>
         </feedback>
       </choice>
       <choice correct="yes">

@@ -166,7 +166,7 @@ using namespace std;
 int main() {
     Pokemon magikarp = { "Magikarp", "Water", 12, 100 };
     cout << "Your output:" << endl;
-    printPokeInfo (magikarp);
+    printPokeInfo(magikarp);
     cout << "Correct output:" << endl;
     cout << "Magikarp (Lv. 12, 100% HP)";
 }
