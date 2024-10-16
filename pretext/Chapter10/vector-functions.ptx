@@ -30,7 +30,7 @@ int main() {
     cout &lt;&lt; values[i] &lt;&lt; endl;
   }
 }</program>
-  <exercise label="vector_functions_AC_1">
+  <listing label="vector_functions_AC_1">
     <statement>
       <p>This active code uses the <c>push_back</c> function to add
             even numbers less than or equal to 10 to the vector <c>values</c>.</p>
@@ -69,7 +69,7 @@ void print_vec(vector&lt;int&gt; vec) {
 }
 </tests>
     </program>
-  </exercise>
+  </listing>
   <exercise label="vector_functions_1">
     <statement>
       <p>Let <term>nums</term> be the vector { 0, 1, 2, 3, 4 }. If we run the command <c>nums.push_back(3)</c>, what will be returned by <c>nums.size()</c>?</p>

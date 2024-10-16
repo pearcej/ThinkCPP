@@ -45,7 +45,7 @@ Second line.</program>
   return 0;
 }</program>
   <p>Or we could write a new function, named <c>threeLine</c>, that prints three new lines:</p>
-  <exercise label="new_functions_AC_1">
+  <listing label="new_functions_AC_1">
     <statement>
       <p>Here we define the threeLine function, which calls the newLine function three times. The
         result is a function that prints three lines after it is called (each of those empty lines
@@ -74,7 +74,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>You should notice a few things about this program:</p>
   <p>
     <ul>

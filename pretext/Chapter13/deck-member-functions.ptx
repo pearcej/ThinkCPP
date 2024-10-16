@@ -13,7 +13,7 @@
 }</program>
   <p>As usual, we can refer to the instance variables of the current object
             without using dot notation.</p>
-  <exercise label="deck_members_AC_1">
+  <listing label="deck_members_AC_1">
     <statement>
       <p>This active code prints out the deck of cards like in the previous section. Notice we can just use <c>deck.print()</c>
             to print out the deck instead of writing a for loop in main.</p>
@@ -105,7 +105,7 @@ void Deck::print() const {
 }
 </tests>
     </program>
-  </exercise>
+  </listing>
   <p>For some of the other functions, it is not obvious whether they should
             be member functions of <c>Card</c>, member functions of <c>Deck</c>, or
             nonmember functions that take <c>Card</c>s and <c>Deck</c>s as parameters.
@@ -232,7 +232,7 @@ struct Deck {
       </block>
     </blocks>
   </exercise>
-  <exercise label="deck_members_AC_2">
+  <listing label="deck_members_AC_2">
     <statement>
       <p>This active code uses the <c>find</c> function that we just wrote.</p>
     </statement>
@@ -342,5 +342,5 @@ bool Card::equals(const Card&amp; c2) const {
 }
 </tests>
     </program>
-  </exercise>
+  </listing>
 </section>

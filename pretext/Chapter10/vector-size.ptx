@@ -27,7 +27,7 @@ for (i = 0; i &lt; count.size(); i++) {
             again reduces execution speed, so it would be better to store the size
             in some variable by calling the <c>size</c> function before the loop
             begins, and use this variable to check for the last element.</p>
-  <exercise label="vector_size_AC_1">
+  <listing label="vector_size_AC_1">
     <statement>
       <p>Try running this active code!</p>
     </statement>
@@ -46,7 +46,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <exercise label="vector_size_1">
     <statement>
       <p>Let <term>nums</term> be the vector { 0, 1, 2, 3, 4 }. What is the variable type <em>of</em> <c>nums.size()</c>? <var/>  </p>

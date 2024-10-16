@@ -36,7 +36,7 @@ while (i &lt; 4) {
             outputting the <c>i</c>th element. This type of vector traversal is very
             common. Vectors and loops go together like fava beans and a nice
             Chianti.</p>
-  <exercise label="accessing_elements_AC_1">
+  <listing label="accessing_elements_AC_1">
     <statement>
       <p>Take a look at this active code. We can modify the vectors by accessing
             its elements.</p>
@@ -67,7 +67,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <exercise label="accessing_elements_1">
     <statement>
       <p><term>Multiple Response</term> How would you increment the third element of <c>vector&lt;int&gt; vec</c> by one?</p>

@@ -21,7 +21,7 @@
   <p>Notice how similar this function is to <c>buildDeck</c>, except that we had
             to change the syntax to make it a constructor. Now we can create a
             standard 52-card deck with the simple declaration <c>Deck deck;</c></p>
-  <exercise label="deck_constructor_AC_1">
+  <listing label="deck_constructor_AC_1">
     <statement>
       <p>This active code prints out the cards in a deck using the loop from the previous section.</p>
     </statement>
@@ -107,7 +107,7 @@ Deck::Deck() {
 }
 </tests>
     </program>
-  </exercise>
+  </listing>
   <exercise label="deck_constructor_1">
     <statement>
       <p>Based on your observations from the active code above, the cards in <c>deck</c> are initialized

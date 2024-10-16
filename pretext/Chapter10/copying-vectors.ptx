@@ -10,7 +10,7 @@
   <program>vector&lt;int&gt; copy = count;</program>
   <p>The <c>=</c> operator works on <c>vector</c>s in pretty much the way you
             would expect.</p>
-  <exercise label="copying_vectors_AC_1">
+  <listing label="copying_vectors_AC_1">
     <statement>
       <p>Take a look at this active code, which uses the copy constructor.</p>
     </statement>
@@ -49,7 +49,7 @@ void print_vec(vector&lt;int&gt; vec) {
 }
 </tests>
     </program>
-  </exercise>
+  </listing>
   <exercise label="copying_vectors_1">
     <statement>
       <p><term>Multiple Response</term> How would you make a copy of <c><![CDATA[vector<double> decimals]]></c> called <term>nums</term>?</p>

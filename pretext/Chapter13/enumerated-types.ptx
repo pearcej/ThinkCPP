@@ -40,7 +40,7 @@ TEN, JACK, QUEEN, KING };</program>
             capital letters. This code is much clearer than the alternative using
             integers:</p>
   <program>Card card (1, 11);</program>
-  <exercise label="enum_type_AC_1">
+  <listing label="enum_type_AC_1">
     <statement>
       <p>This active code uses the enumerated types created above to construct <c>Card</c> objects.
             Feel free to modify the values that the cards are being initialized to in the constructor:  this will
@@ -106,7 +106,7 @@ void Card::print() const {
 }
 </tests>
     </program>
-  </exercise>
+  </listing>
   <p>Because we know that the values in the enumerated types are represented
             as integers, we can use them as indices for a vector. Therefore the old
             <c>print</c> function will work without modification. We have to make some

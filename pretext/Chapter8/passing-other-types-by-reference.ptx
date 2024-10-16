@@ -19,7 +19,7 @@ cout &lt;&lt; i &lt;&lt; j &lt;&lt; endl;</program>
             <c>y</c> were declared as regular parameters (without the <c>&amp;</c>s),
             <c>swap</c> would not work. It would modify <c>x</c> and <c>y</c> and have no
             effect on <c>i</c> and <c>j</c>.</p>
-  <exercise label="pass_others_reference_AC_1">
+  <listing label="pass_others_reference_AC_1">
     <statement>
       <p>This active code uses the <c>swap</c> function. Run the active code
             for the output!</p>
@@ -43,7 +43,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>When people start passing things like integers by reference, they often
             try to use an expression as a reference argument. For example:</p>
   <program>int i = 7;

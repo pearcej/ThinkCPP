@@ -34,7 +34,7 @@
   <p>The next line of the function invokes the constructor that takes a
             single <c>double</c> as a parameter; the last line returns the resulting
             object.</p>
-  <exercise label="one_last_example_AC_1">
+  <listing label="one_last_example_AC_1">
     <statement>
       <p>Feel free to try out the <c>add</c> function in this active code!</p>
     </statement>
@@ -104,7 +104,7 @@ bool Time::after(const Time&amp; time2) const {
 }
 </tests>
     </program>
-  </exercise>
+  </listing>
   <exercise label="one_last_example_1">
     <statement>
       <p>Inside a member function, the compiler assumes that we want to invoke the function

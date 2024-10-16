@@ -29,7 +29,7 @@ while (i &lt; 4) {
   cout &lt;&lt; count[i] &lt;&lt; endl;
   i++;
 }</program>
-  <exercise label="for_loops_AC_1">
+  <listing label="for_loops_AC_1">
     <statement>
       <p>Run this active code, which uses a <c>for</c> loop.</p>
     </statement>
@@ -48,8 +48,8 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
-  <exercise label="for_loops_AC_2">
+  </listing>
+  <listing label="for_loops_AC_2">
     <statement>
       <p>Run this active code, which uses a <c>while</c> loop.</p>
     </statement>
@@ -69,7 +69,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <exercise label="for_loops_1">
     <statement>
       <p>How many times would the following loop execute?  <c><![CDATA[for (int i = 1; i < 4; i++)]]></c> <var/>  </p>
@@ -178,7 +178,7 @@ int main() {
       </block>
     </blocks>
   </exercise>
-  <exercise label="for_loops_AC_3">
+  <listing label="for_loops_AC_3">
     <statement>
       <p>Run this active code, which uses a <c>for</c> loop with a negative change in the <q>INCREMENTOR</q>.</p>
     </statement>
@@ -197,5 +197,5 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
 </section>

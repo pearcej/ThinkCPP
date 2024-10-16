@@ -20,7 +20,7 @@
             parameter list (which is empty in this case).</p>
   <p>The <c>print</c> function in the previous section should also declare that
             the implicit parameter is <c>const</c>.</p>
-  <exercise label="yet_another_example_AC_1">
+  <listing label="yet_another_example_AC_1">
     <statement>
       <p>Feel free to try out the <c>convertToSeconds()</c> function in this active code!</p>
     </statement>
@@ -58,7 +58,7 @@ double Time::convertToSeconds() const {
 }
 </tests>
     </program>
-  </exercise>
+  </listing>
   <exercise label="yet_another_example_1">
     <statement>
       <p>When writing a member function, where should you declare the implicit parameter to be <c>const</c>?</p>

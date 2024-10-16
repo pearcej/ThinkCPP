@@ -8,11 +8,11 @@
   <program>void printTime (Time&amp; t) {
   cout &lt;&lt; t.hour &lt;&lt; ":" &lt;&lt; t.minute &lt;&lt; ":" &lt;&lt; t.second &lt;&lt; endl;
 }</program>
-  <exercise label="printTime_AC_1">
-    <statement>
+  <listing label="printTime_AC_1">
+    <caption>
       <p>In this active code, the output of this function, if we pass <c>time</c> an argument, is
             <c>11:59:3.14159</c>.</p>
-    </statement>
+    </caption>
     <program xml:id="printTime_AC_1_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -33,7 +33,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <exercise label="printTime_1">
     <statement>
       <p>Which of the following would be a correct way to display the price of an object and finish the <c>printPrice</c>, which we saw on the previous page?</p>

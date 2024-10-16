@@ -35,7 +35,7 @@
 currentTime.increment (500.0);
 currentTime.print();</program>
   <p>The output of this program is <c>9:22:50</c>.</p>
-  <exercise label="another_example_AC_1">
+  <listing label="another_example_AC_1">
     <statement>
       <p>Feel free to change the input and experiment around with the active
             code below!</p>
@@ -77,7 +77,7 @@ void Time::increment(double secs) {
 }
 </tests>
     </program>
-  </exercise>
+  </listing>
   <exercise label="another_example_1">
     <statement>
       <p>Suppose we have previously declared <c>Time currentTime = {9, 14, 30.0}</c>.  What should be printed by <c>time.print()</c> after calling <c>time.increment(645.0)</c>? Type your response in the form <term>hh:mm:ss</term>. <var/>  </p>

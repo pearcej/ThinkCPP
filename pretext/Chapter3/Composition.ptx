@@ -9,7 +9,7 @@
     angle. The sum is then passed as an argument to the <c>cos</c> function.</p>
   <p>You can also take the result of one function and pass it as an argument
     to another:</p>
-  <exercise label="function_comp_AC_1">
+  <listing label="function_comp_AC_1">
     <statement>
       <p>This program finds the log base e of 10 and raises e to that power. The
         result of this computation is assigned to x.</p>
@@ -28,7 +28,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <exercise label="function_comp_1">
     <statement>
       <p>Which of these statements has proper syntax?</p>

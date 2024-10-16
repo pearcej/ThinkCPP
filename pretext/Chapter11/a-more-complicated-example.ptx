@@ -25,7 +25,7 @@
 }</program>
   <p>You can almost read the invocation like English: <q>If the done-time is
             after the current-time, then&#x2026;</q></p>
-  <exercise label="more_complicated_example_AC_1">
+  <listing label="more_complicated_example_AC_1">
     <statement>
       <p>This active code is another practical example using the <c>after</c> function.
             Feel free to modify the time that school gets out, and the time that the track meet starts, if you wish!</p>
@@ -67,7 +67,7 @@ bool Time::after(const Time&amp; time2) const {
 }
 </tests>
     </program>
-  </exercise>
+  </listing>
   <exercise label="more_complicated_example_1">
     <statement>
       <p>Which is/are true about the <c>Time::after</c> member function?</p>

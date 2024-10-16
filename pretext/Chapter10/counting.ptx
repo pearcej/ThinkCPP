@@ -38,7 +38,7 @@
   }
   return count;
 }</program>
-  <exercise label="counting_AC_1">
+  <listing label="counting_AC_1">
     <statement>
       <p>Take a look at this active code which uses the <c>howMany</c> function. Run the
             code to see how many times the target appears in the vector! Feel free to
@@ -90,7 +90,7 @@ void printVector(const vector&lt;int&gt;&amp; vec) {
 }
 </tests>
     </program>
-  </exercise>
+  </listing>
   <exercise label="counting_1">
     <statement>
       <p>Which of the following is the best definition of bottom-up design?</p>

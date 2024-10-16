@@ -23,7 +23,7 @@ printTime(int hour, int minute);   // WRONG!</program>
       variables as arguments! The type is only needed for declaration.</p>
   </warning>
   <p>The correct syntax is printTime(hour, minute).</p>
-  <exercise label="multiple_params_AC_1">
+  <listing label="multiple_params_AC_1">
     <statement>
       <p>This program shows how the dollar_amount and cent_amount arguments
         are passed into the printPrice function.</p>
@@ -47,7 +47,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <exercise label="multiple_params_1">
     <statement>
       <p>Which of the following is a correct function header (first line of

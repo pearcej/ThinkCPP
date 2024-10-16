@@ -70,7 +70,7 @@ currentTime.print();</program>
             the function works. If you omit the definition, or provide a definition
             that has an interface different from what you promised, the compiler
             will complain.</p>
-  <exercise label="print_AC_1">
+  <listing label="print_AC_1">
     <statement>
       <p>Feel free to mess around with input for <c>currentTime</c> in this active code!</p>
     </statement>
@@ -98,7 +98,7 @@ void Time::print() {
 }
 </tests>
     </program>
-  </exercise>
+  </listing>
   <exercise label="print_1">
     <statement>
       <p>What keyword do we use to refer to the current object? <var/> </p>

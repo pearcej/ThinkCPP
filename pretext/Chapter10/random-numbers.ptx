@@ -20,7 +20,7 @@
             my computer) also defined in the header file. Each time you call
             <c>random</c> you get a different randomly-generated number. To see a
             sample, run this loop:</p>
-  <exercise label="random_numbers_AC_1">
+  <listing label="random_numbers_AC_1">
     <statement>
       <p>Take a look at this active code, which generates 4 random numbers.</p>
     </statement>
@@ -39,7 +39,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>On my machine I got the following output:</p>
   <program>1804289383
 846930886
@@ -57,7 +57,7 @@ int y = x % upperBound;</program>
   <note>
     <p>Keep in mind, though, that <c>y</c> will never be equal to <c>upperBound</c>.</p>
   </note>
-  <exercise label="random_numbers_AC_2">
+  <listing label="random_numbers_AC_2">
     <statement>
       <p>This active code generates random numbers between 1 and 7.</p>
     </statement>
@@ -78,7 +78,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>It is also frequently useful to generate random floating-point values. A
             common way to do that is by dividing by <c>RAND_MAX</c>. For example:</p>
   <program>int x = random();
@@ -87,7 +87,7 @@ double y = double(x) / RAND_MAX;</program>
             both end points. As an exercise, you might want to think about how to
             generate a random floating-point value in a given range; for example,
             between 100.0 and 200.0.</p>
-  <exercise label="random_numbers_AC_3">
+  <listing label="random_numbers_AC_3">
     <statement>
       <p>This active code generates random numbers between 0 and 1. Can you modify it
             to generate random numbers between 100.0 and 200.0? If you're stuck you can
@@ -109,7 +109,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <hint>
     <p>The formula to generate random numbers between min and max is
                 min + (max - min) * double(x) / RAND_MAX.</p>

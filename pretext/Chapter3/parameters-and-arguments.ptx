@@ -51,11 +51,11 @@
     sometimes converts arguments from one type to another automatically.
     For now you should learn the general rule, and we will deal with
     exceptions later.</p>
-  <exercise label="params_args_AC_1">
-    <statement>
+  <listing label="params_args_AC_1">
+    <caption>
       <p>The following code will show the output of the printTwice function.
         Try modifying the value of argument to change the output.</p>
-    </statement>
+    </caption>
     <program xml:id="params_args_AC_1_editor"
              interactive="activecode"
              line-numbers="yes">
@@ -74,7 +74,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <exercise label="params_args_1">
     <statement>
       <p>What will be printed to the terminal? If nothing will print, or if the compiler will
