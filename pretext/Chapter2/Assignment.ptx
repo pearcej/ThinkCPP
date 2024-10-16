@@ -34,23 +34,28 @@ minute = 59;         // set minute to 59
   <p>I sometimes use different shapes to indicate different variable types.
     These shapes should help remind you that one of the rules in C++ is that
     a variable has to have the same type as the value you assign it.</p>
-  <p>It can be useful to exampine the <q>state of mind</q> of the computer
+  <p>It can be useful to examine the <q>state of mind</q> of the computer
     as it runs code you have written. Programmers use <term>debuggers</term>
     to do so. In this book, you can use the <term>codelens</term> feature to
-    run programs line by line. Run the code sample below by using the <b>Next</b>
-    button to advance line by line. As you do so, watch the area to the right
-    to examine the <q>state of mind</q> of the computer as it runs the code.
+    run programs line by line.
   </p>
-  <program interactive="codelens" label="state_of_mind" >
-int main() {
-  char firstLetter;
-  firstLetter = 'a';   // give firstLetter the value 'a'
-  int hour;
-  hour = 11;           // assign the value 11 to hour
-  int minute;
-  minute = 59;         // set minute to 59
-}
-  </program>
+  <activity label="state_of_mind">
+    <statement>
+      <p>Run the code sample below by using the <b>Next</b> button to advance line by line. As you do so,
+      watch the area to the right to examine the <q>state of mind</q> of the computer as it runs the
+      code.</p>
+    </statement>
+    <program interactive="codelens" xml:id="state_of_mind_ed">
+  int main() {
+    char firstLetter;
+    firstLetter = 'a';   // give firstLetter the value 'a'
+    int hour;
+    hour = 11;           // assign the value 11 to hour
+    int minute;
+    minute = 59;         // set minute to 59
+  }
+    </program>
+  </activity>
   <warning>
     <p>The variable type that you declare must match the type of the value
       assigned to it. A type mismatch will generate a compile error.</p>
