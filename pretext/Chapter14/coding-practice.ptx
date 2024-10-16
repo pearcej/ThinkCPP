@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <section xml:id="chapter14_coding-practice">
   <title>Coding Practice</title>
-  <exercise xml:id="empty-93">
+  <exercise label="XXX">
     <statement/>
-    <program interactive="" language="" xml:id="empty-94"/>
+    <program interactive="" language="" label="XXX"/>
     <solution>
                 Below is the class definition of Room. As you can see, there isn't
                     a big difference between structs and classes.
@@ -42,9 +42,9 @@ class Room {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <exercise xml:id="empty-95">
+  <exercise label="XXX">
     <statement/>
-    <program interactive="" language="" xml:id="empty-96"/>
+    <program interactive="" language="" label="XXX"/>
     <solution>
                 Below is one way to implement this. We use the correct conversions
                     in cToF and fToC and then call these functions in
@@ -105,9 +105,9 @@ class Temp {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <exercise xml:id="empty-97">
+  <exercise label="XXX">
     <statement/>
-    <program interactive="" language="" xml:id="empty-98"/>
+    <program interactive="" language="" label="XXX"/>
     <solution>
                 Below is the class definition of MyVector. We use the public
                     and private keywords to separate public and private members of
@@ -141,9 +141,9 @@ class MyVector {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <exercise xml:id="empty-99">
+  <exercise label="XXX">
     <statement/>
-    <program interactive="" language="" xml:id="empty-100"/>
+    <program interactive="" language="" label="XXX"/>
     <solution>
                 Below is one way to implement these functions. Since these
                     functions are defined for vectors, we can call them
@@ -199,9 +199,9 @@ MyVector::MyVector (vector&lt;int&gt; vec) {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <exercise xml:id="empty-101">
+  <exercise label="XXX">
     <statement/>
-    <program interactive="" language="" xml:id="empty-102"/>
+    <program interactive="" language="" label="XXX"/>
     <solution>
                 Below is one way to implement these functions. For push_front,
                     we can create a temporary vector and add the new element to the

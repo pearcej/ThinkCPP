@@ -43,7 +43,7 @@ product.printCartesian();</program>
   <program>-6 + 17i</program>
   <exercise label="fourteeneight">
     <statement>
-      <p>The active code below uses the <c>mult</c> and <c>setPolar</c> functions.
+      <p>This active code uses the <c>mult</c> and <c>setPolar</c> functions.
             Feel free to modify the code and experiment around!</p>
     </statement>
     <program xml:id="fourteeneight_editor" interactive="activecode" line-numbers="yes">
@@ -225,7 +225,7 @@ int main() {
   <exercise label="fourteennine">
     <statement>
       <p>Now let's try implementing the <c>setCartesian</c> function. Write your
-            implementation in the commented area of the active code below.
+            implementation in the commented area of this active code.
             Read the comments in <c>main</c> to test out your code! If you get stuck,
             you can reveal the extra problem at the end for help.</p>
     </statement>

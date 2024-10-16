@@ -5,7 +5,7 @@
     side of an assignment.</p>
   <listing label="strings_are_mutable_AC_1">
     <caption>
-      <p>The active code below changes the first letter in <c>greeting</c> to be <c>'J'</c>.</p>
+      <p>This active code changes the first letter in <c>greeting</c> to be <c>'J'</c>.</p>
     </caption>
     <program xml:id="strings_are_mutable_AC_1_editor"
              interactive="activecode"

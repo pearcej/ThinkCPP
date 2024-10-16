@@ -58,7 +58,7 @@ card.print();</program>
   <p>is <c>Jack of Diamonds</c>.</p>
   <exercise label="12_3">
     <statement>
-      <p>The active code below uses the <c>Card::print()</c> function.  Feel free to modify
+      <p>This active code uses the <c>Card::print()</c> function.  Feel free to modify
             the values that <c>card</c> is being initialized to in the constructor:  this will
             change the output from the <c>Card::print()</c> function.</p>
     </statement>

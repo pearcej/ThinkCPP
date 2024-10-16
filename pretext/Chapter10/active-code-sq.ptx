@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="chapter10_coding-practice">
   <title>Coding Practice</title>
-  <exercise xml:id="empty-9">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'activeCode_sq', 'chapter': 'Chapter10', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="vectors_a2">
         <statement>
@@ -77,7 +77,7 @@ int main() {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-10">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'activeCode_sq', 'chapter': 'Chapter10', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="vectors_a4">
         <statement>
@@ -152,7 +152,7 @@ int main() {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-11">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'activeCode_sq', 'chapter': 'Chapter10', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="vectors_a6">
         <statement>
@@ -213,7 +213,7 @@ int main() {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-12">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'activeCode_sq', 'chapter': 'Chapter10', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="vectors_a8">
         <statement>
@@ -286,7 +286,7 @@ int main() {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-13">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'activeCode_sq', 'chapter': 'Chapter10', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="vectors_a10">
         <statement>
@@ -356,7 +356,7 @@ int main() {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-14">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'activeCode_sq', 'chapter': 'Chapter10', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="vectors_a12">
         <statement>

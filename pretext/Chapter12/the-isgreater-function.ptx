@@ -64,7 +64,7 @@ is greater than
             in most card games.</p>
   <exercise label="12_5">
     <statement>
-      <p>Take a look at the active code below, which uses the <c>isGreater</c> function.
+      <p>Take a look at this active code, which uses the <c>isGreater</c> function.
             Feel free to change the values of the cards.</p>
     </statement>
     <program xml:id="c12_5_editor" interactive="activecode" line-numbers="yes">

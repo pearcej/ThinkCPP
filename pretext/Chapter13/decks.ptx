@@ -25,7 +25,7 @@ Deck::Deck(int size) {
   <p>Now we can create a deck of cards like this:</p>
   <program>Deck deck (52);</program>
   <p>Here is a state diagram showing what a <c>Deck</c> object looks like:</p>
-  <figure align="center" xml:id="empty-82">
+  <figure align="center" label="XXX">
     <image source="Chapter13/Images/13.3stackdiagram.png" width="50%" alt="image"/>
   </figure>
   <p>The object named <c>deck</c> has a single instance variable named

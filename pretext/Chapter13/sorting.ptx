@@ -63,7 +63,7 @@ would help me condense the function's code and make it easier to understand.  </
   <exercise label="sorting_deck_2">
     <statement>
       <p>Try writing the <c>findLowestCard</c> function in the commented section
-            of the active code below. Once you're done with <c>findLowestCard</c>,
+            of this active code. Once you're done with <c>findLowestCard</c>,
             try using it along with <c>swapCards</c> to implement the <c>Deck</c> member
             function <c>sortDeck</c>. If done correctly, the program should output a
             sorted deck of cards. If you get stuck, you can reveal the extra problems

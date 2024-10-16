@@ -27,7 +27,7 @@
             worth a spending a little run time to avoid a lot of debugging time.</p>
   <exercise label="fillin_functions_AC_1">
     <statement>
-      <p>The active code below uses the fill-in version of the <c>addTime</c> function.
+      <p>This active code uses the fill-in version of the <c>addTime</c> function.
             Feel free to modify the code!</p>
     </statement>
     <program xml:id="fillin_functions_AC_1_editor" interactive="activecode" line-numbers="yes">

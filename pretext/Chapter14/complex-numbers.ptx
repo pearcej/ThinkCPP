@@ -34,7 +34,7 @@ public:
             the point relative to the origin, and the distance (or magnitude) of the
             point.</p>
   <p>The following figure shows the two coordinate systems graphically.</p>
-  <figure align="center" xml:id="empty-108">
+  <figure align="center" label="XXX">
     <image source="Chapter14/Images/14.3polar_and_cartesian.png" width="50%" alt="image"/>
   </figure>
   <p>Complex numbers in polar coordinates are written <m>r e^{i \theta}</m>,
@@ -94,7 +94,7 @@ public:
             those kinds of mistakes impossible.</p>
   <exercise label="fourteentwo">
     <statement>
-      <p>Take a look at the active code below, which demonstrates the separation of
+      <p>Take a look at this active code, which demonstrates the separation of
             interface and implementation using classes. In this code, we create a <c>Triangle</c>
             object which is represented by three sides. In <c>main</c>, we print out the perimeter of
             the triangle, which should be 12.</p>

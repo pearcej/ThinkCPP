@@ -2,7 +2,7 @@
 <section xml:id="chapter15_activecode-exercises">
   <title>Activecode Exercises</title>
   <p>Answer the following <term>Activecode</term> questions to assess what you have learned in this chapter.</p>
-  <exercise xml:id="empty-134">
+  <exercise label="XXX">
     <statement>
       <p>We have a file called <q>locations.txt</q> that we want to read data from.
                     Check to make sure that the file was opened properly; if it wasn't,
@@ -51,7 +51,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-135">
+  <exercise label="XXX">
     <statement>
       <p>Let's write a program that prompts the user for a filename and
                     opens that file.</p>
@@ -105,7 +105,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-136">
+  <exercise label="XXX">
     <statement>
       <p>Now let's write some output to a file. Write a program that prompts
                     a user for a list of 5 integers separated by spaces, calculates the
@@ -169,7 +169,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-137">
+  <exercise label="XXX">
     <statement>
       <p>We are given a file called <q>data.txt</q> with an unknown number of
                     <c>double</c> values. Write a program that finds the minimum, maximum,
@@ -246,7 +246,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-138">
+  <exercise label="XXX">
     <statement>
       <p>You are given a file called <q>employee_data.txt</q> and you want to store
                     the information from that file into a vector of data. The file contains
@@ -347,7 +347,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-139">
+  <exercise label="XXX">
     <statement>
       <p>You are given a file but it appears that someone's capslock key was stuck
                     because everything is in uppercase. Write a program that takes the input from
@@ -426,7 +426,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-140">
+  <exercise label="XXX">
     <statement>
       <p>Nobody ever put a limit on how many files we can work with. Does
                     this mean we can open two or more files at once? Yes we can!
@@ -491,7 +491,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-141">
+  <exercise label="XXX">
     <statement>
       <p>In chapter 15.7 we defined the <c>Set</c> data structure.
                     Write a function <c>vectorToSet</c> which takes a <c>vector</c>
@@ -570,7 +570,7 @@ Set vectorToSet(vector<string> data) {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-142">
+  <exercise label="XXX">
     <statement>
       <p>Let's write the struct definition for a <c>Matrix</c>! The underlying
                     data structure is a <c>vector</c> of vectors of <c>int``s. Write
@@ -637,7 +637,7 @@ class Matrix {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-143">
+  <exercise label="XXX">
     <statement>
       <p>Now that we have the basic structure of a <c>Matrix</c>, let's write
                     a function that allows us to add data to a matrix. Write the <c>Matrix</c>

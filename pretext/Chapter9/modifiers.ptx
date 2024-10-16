@@ -26,7 +26,7 @@
             replacing the <c>if</c> statements with <c>while</c> statements:</p>
   <exercise label="modifiers_AC_1">
     <statement>
-      <p>The active code below uses the <c>increment</c> function. Run the active code to
+      <p>This active code uses the <c>increment</c> function. Run the active code to
             see what the output is!</p>
     </statement>
     <program xml:id="modifiers_AC_1_editor" interactive="activecode" line-numbers="yes">
@@ -67,7 +67,7 @@ int main() {
     <statement>
       <p>The solution above is correct, but not very efficient. Can you think of a
             solution that does not require iteration? Try writing a more efficient version
-            of <c>increment</c> in the commented section of the active code below. If you get stuck,
+            of <c>increment</c> in the commented section of this active code. If you get stuck,
             you can reveal the extra problem at the end for help.</p>
     </statement>
     <program xml:id="modifiers_AC_2_editor" interactive="activecode" line-numbers="yes">

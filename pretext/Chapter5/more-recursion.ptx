@@ -108,7 +108,7 @@ int main() {
   <p>Here is what the stack diagram looks like for this sequence of function
     calls:</p>
   <figure align="center"
-          xml:id="empty-243">
+          label="XXX">
     <image source="Chapter5/Images/5.10stackdiagram.png"
            width="50%"
            alt="A stack of five boxes showing the values of variables and the return value of a call to factorial(3)."/>

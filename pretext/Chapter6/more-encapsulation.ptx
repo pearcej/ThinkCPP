@@ -18,7 +18,7 @@
     approach lets you design as you go along.</p>
   <listing label="more_encapsulation_AC_1">
     <caption>
-      <p>The active code below uses the <c>printMultTable</c> function. Run the active code to see what happens!</p>
+      <p>This active code uses the <c>printMultTable</c> function. Run the active code to see what happens!</p>
     </caption>
     <program xml:id="more_encapsulation_AC_1_editor"
              interactive="activecode"

@@ -36,7 +36,7 @@ c1.printPolar();</program>
 3.60555 e^ 0.982794i</program>
   <exercise label="fourteensix">
     <statement>
-      <p>The active code below uses the print functions for <c>Complex</c> objects.
+      <p>This active code uses the print functions for <c>Complex</c> objects.
             Feel free to modify the code and experiment around!</p>
     </statement>
     <program xml:id="fourteensix_editor" interactive="activecode" line-numbers="yes">

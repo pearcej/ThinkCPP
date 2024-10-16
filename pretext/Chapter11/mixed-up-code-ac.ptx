@@ -2,7 +2,7 @@
 <section xml:id="chapter11_activecode-exercises">
   <title>Activecode Exercises</title>
   <p>Answer the following <term>Activecode</term> questions to assess what you have learned in this chapter.</p>
-  <exercise xml:id="empty-36">
+  <exercise label="XXX">
     <statement>
       <p>Suppose you have the following code. Construct a block of code that would make the print function into a member function.</p>
     </statement>
@@ -82,7 +82,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-37">
+  <exercise label="XXX">
     <statement>
       <p>Let's make an album! Write the struct definition for
                     <c>Album</c>, which should have instance variables name and year.
@@ -146,7 +146,7 @@ bool Album::check() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-38">
+  <exercise label="XXX">
     <statement>
       <p>Write the necessary of code to establish
                     the <c>convertToSeconds</c> member function as a part of the <c>Time</c> struct.</p>
@@ -202,7 +202,7 @@ double Time::convertToSeconds() const {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-39">
+  <exercise label="XXX">
     <statement>
       <p>Create the <c>Student::is_older()</c> function as it would be defined INSIDE
                     of the Student structure definition. This function checks if the current
@@ -246,7 +246,7 @@ bool is_older(const Student& stu) const {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-40">
+  <exercise label="XXX">
     <statement>
       <p>Write the necessary code to initialise
                     a constructor for type <c>Days</c> that takes in the number of days and
@@ -297,7 +297,7 @@ Days::Days(int num_days) {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-41">
+  <exercise label="XXX">
     <statement>
       <p>Let's write two constructors for <c>Student</c>. One with no arguments and
                     one with arguments.</p>
@@ -355,7 +355,7 @@ Student::Student() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-42">
+  <exercise label="XXX">
     <statement>
       <p>Implement two constructors for the <c>Penguin</c> structure. One should
                     be a default constructor, the other should take arguments. The
@@ -422,7 +422,7 @@ Penguin::Penguin(int age_in, int weight_in) {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-43">
+  <exercise label="XXX">
     <statement>
       <p>Write the necessary blocks of code to make the
                     <c>AddDays</c> function below a member function.</p>
@@ -471,7 +471,7 @@ Days Days::add(const Days& d2) const {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-44">
+  <exercise label="XXX">
     <statement>
       <p>Write the necessary blocks of code to create a struct
                     <c>Penguin</c> that stores name and age. In addition have 2 constructors and
@@ -548,7 +548,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-45">
+  <exercise label="XXX">
     <statement>
       <p>Write the necessary blocks of code in order to write
                     a header (.h) file for the struct <c>Student</c>.</p>

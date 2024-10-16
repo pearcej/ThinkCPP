@@ -3,7 +3,7 @@
   <title>Activecode Exercises</title>
   <p>Answer the following <term>Activecode</term> questions to
             assess what you have learned in this chapter.</p>
-  <exercise xml:id="empty-201">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter4', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cond_rec_a2">
         <statement>
@@ -89,7 +89,7 @@ string whichDoor(double grade) {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-202">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter4', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cond_rec_a4">
         <statement>
@@ -153,7 +153,7 @@ void is_even(int num) {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-203">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter4', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cond_rec_a6">
         <statement>
@@ -220,7 +220,7 @@ void greaterThan() {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-204">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter4', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cond_rec_a8">
         <statement>
@@ -277,7 +277,7 @@ void exclusiveOr(bool a, bool b) {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-205">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter4', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cond_rec_a10">
         <statement>

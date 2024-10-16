@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="chapter12_coding-practice">
   <title>Coding Practice</title>
-  <exercise xml:id="empty-46">
+  <exercise label="XXX">
     <statement>
       <p>A pixel is the smallest controllable element of a picture represented on the screen. Images
                     are comprised of numerous individual pixels, and each pixel's color sample has three numerical
@@ -61,7 +61,7 @@ struct Pixel {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <exercise xml:id="empty-47">
+  <exercise label="XXX">
     <statement>
       <p>Let's print out a <c>Pixel</c>! Write the <c>Pixel</c> member function <c>printPixel</c>,
                     which prints out the values of the <c>Pixel</c> in this form: (r, g, b).</p>
@@ -150,7 +150,7 @@ int main() {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <exercise xml:id="empty-48">
+  <exercise label="XXX">
     <statement>
       <p>Somebody photobombed our image! What if we wanted to crop the photobomber out?
                     Let's write the <c>Image</c> member function <c>cropImage</c>, which takes four paramenters,
@@ -351,7 +351,7 @@ void Image::printImage() {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <exercise xml:id="empty-49">
+  <exercise label="XXX">
     <statement>
       <p>When you take a selfie on your phone, the image is mirrored.
                     We can do the same to an image by flipping it horizontally.
@@ -611,7 +611,7 @@ void Image::swapPixel(int row1, int col1, int row2, int col2) {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <exercise xml:id="empty-50">
+  <exercise label="XXX">
     <statement>
       <p>Let's write the <c>Image</c> member function called <c>createBorder</c>,
                     which sets the <c>Pixel</c>s on the edge of an <c>Image</c> to a given

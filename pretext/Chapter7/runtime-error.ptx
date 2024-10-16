@@ -17,7 +17,7 @@
   <p>Try it in your development environment and see how it looks.</p>
   <listing label="runtime_error_AC_1">
     <caption>
-      <p>Running the active code below will result in a runtime error. Can you fix it so that we
+      <p>Running this active code will result in a runtime error. Can you fix it so that we
         print out the first letter and last letter of string <c>greeting</c> instead of indexing out of
         range?</p>
     </caption>

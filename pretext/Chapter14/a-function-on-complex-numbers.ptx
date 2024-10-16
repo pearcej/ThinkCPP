@@ -27,7 +27,7 @@ sum.printCartesian();</program>
   <program>5 + 7i</program>
   <exercise label="fourteenseven">
     <statement>
-      <p>The active code below uses the <c>add</c> function for <c>Complex</c> objects.
+      <p>This active code uses the <c>add</c> function for <c>Complex</c> objects.
             As an exercise, write the <c>subtract</c> function for <c>Complex</c> objects
             in the commented area of the active code. If you get stuck, you can reveal
             the extra problem at the end for help. Once you are finished, feel

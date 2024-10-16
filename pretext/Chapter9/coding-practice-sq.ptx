@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="chapter9_coding-practice-1">
   <title>Coding Practice</title>
-  <exercise xml:id="empty-336">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter9', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_9_AC_2q">
         <statement>
@@ -90,7 +90,7 @@ int main() {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-337">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter9', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_9_AC_4q">
         <statement>
@@ -204,7 +204,7 @@ Cake makeCake() {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-338">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter9', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_9_AC_6q">
         <statement>
@@ -254,7 +254,7 @@ int main() {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-339">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter9', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_9_AC_8q">
         <statement>
@@ -315,7 +315,7 @@ int main() {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-340">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter9', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_9_AC_10q">
         <statement>

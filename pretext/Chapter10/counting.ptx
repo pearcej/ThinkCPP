@@ -40,7 +40,7 @@
 }</program>
   <exercise label="counting_AC_1">
     <statement>
-      <p>Take a look at the active code below which uses the <c>howMany</c> function. Run the
+      <p>Take a look at this active code which uses the <c>howMany</c> function. Run the
             code to see how many times the target appears in the vector! Feel free to
             modify the code and experiment around.</p>
     </statement>

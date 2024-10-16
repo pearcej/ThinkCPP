@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="chapter13_coding-practice-1">
   <title>Coding Practice</title>
-  <exercise xml:id="empty-77">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_13_AC_2q">
         <statement>
@@ -98,7 +98,7 @@ int main() {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-78">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_13_AC_4q">
         <statement>
@@ -155,7 +155,7 @@ using namespace std;
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-79">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_13_AC_6q">
         <statement>
@@ -217,7 +217,7 @@ using namespace std;
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-80">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_13_AC_8q">
         <statement>
@@ -342,7 +342,7 @@ void BingoBoard::makeBoard() {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-81">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_13_AC_10q">
         <statement>

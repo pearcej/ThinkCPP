@@ -27,7 +27,7 @@
             after the current-time, then&#x2026;</q></p>
   <exercise label="more_complicated_example_AC_1">
     <statement>
-      <p>The active code below is another practical example using the <c>after</c> function.
+      <p>This active code is another practical example using the <c>after</c> function.
             Feel free to modify the time that school gets out, and the time that the track meet starts, if you wish!</p>
     </statement>
     <program xml:id="more_complicated_example_AC_1_editor" interactive="activecode" line-numbers="yes">

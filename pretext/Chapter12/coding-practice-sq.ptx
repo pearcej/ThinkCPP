@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="chapter12_coding-practice-1">
   <title>Coding Practice</title>
-  <exercise xml:id="empty-51">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter12', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_12_AC_2q">
         <statement>
@@ -59,7 +59,7 @@ struct Pixel {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-52">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter12', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_12_AC_4q">
         <statement>
@@ -149,7 +149,7 @@ void Pixel::printPixel() {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-53">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter12', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_12_AC_6q">
         <statement>
@@ -250,7 +250,7 @@ void Image::cropImage(int startRow, int stopRow, int startCol, int stopCol) {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-54">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter12', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_12_AC_8q">
         <statement>
@@ -389,7 +389,7 @@ void Image::flipHorizontal() {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-55">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter12', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_12_AC_10q">
         <statement>

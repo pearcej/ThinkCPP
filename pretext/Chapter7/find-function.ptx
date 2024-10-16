@@ -7,7 +7,7 @@
     appears.</p>
   <listing label="find_function_AC_1">
     <caption>
-      <p>Take a look at the active code below, which uses the <c>find</c> function to find the character <c>'a'</c>
+      <p>Take a look at this active code, which uses the <c>find</c> function to find the character <c>'a'</c>
         in string <c>fruit</c> and string <c>dessert</c>.</p>
     </caption>
     <program xml:id="find_function_AC_1_editor"
@@ -38,7 +38,7 @@ int main() {
     finds the index where the substring appears in the string.</p>
   <listing label="find_function_AC_2">
     <caption>
-      <p>The active code below finds the starting index of <c>"nan"</c> in <c>fruit</c>.</p>
+      <p>This active code finds the starting index of <c>"nan"</c> in <c>fruit</c>.</p>
     </caption>
     <program xml:id="find_function_AC_2_editor"
              interactive="activecode"

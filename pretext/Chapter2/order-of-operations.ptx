@@ -120,8 +120,7 @@ int main() {
           <p>Try again!</p>
         </feedback>
         <areas>
-          <cline><area correct="no">1</area> <area correct="no"> + </area> <area correct="yes">2</area> <area correct="yes"> * </area> <area correct="yes">8</area> <area correct="no"> / </area> <area correct="no">4</area>
-        </cline>
+          <cline><area correct="no">1</area> <area correct="no"> + </area> <area correct="yes">2</area> <area correct="yes"> * </area> <area correct="yes">8</area> <area correct="no"> / </area> <area correct="no">4</area></cline>
         </areas>
       </exercise>
       <exercise label="order_of_operations_3C">
@@ -133,8 +132,7 @@ int main() {
           <p>Try again!</p>
         </feedback>
         <areas>
-          <cline><area correct="no">1</area> <area correct="no"> + </area> <area correct="yes">16</area> <area correct="yes"> / </area> <area correct="yes">4</area>
-        </cline>
+          <cline><area correct="no">1</area> <area correct="no"> + </area> <area correct="yes">16</area> <area correct="yes"> / </area> <area correct="yes">4</area></cline>
         </areas>
       </exercise>
     <!-- </exercisegroup> -->

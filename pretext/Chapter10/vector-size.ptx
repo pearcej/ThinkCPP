@@ -29,7 +29,7 @@ for (i = 0; i &lt; count.size(); i++) {
             begins, and use this variable to check for the last element.</p>
   <exercise label="vector_size_AC_1">
     <statement>
-      <p>Try running the active code below!</p>
+      <p>Try running this active code!</p>
     </statement>
     <program xml:id="vector_size_AC_1_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[

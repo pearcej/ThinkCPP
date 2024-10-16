@@ -10,7 +10,7 @@
 }</program>
   <exercise label="printTime_AC_1">
     <statement>
-      <p>In the active code below, the output of this function, if we pass <c>time</c> an argument, is
+      <p>In this active code, the output of this function, if we pass <c>time</c> an argument, is
             <c>11:59:3.14159</c>.</p>
     </statement>
     <program xml:id="printTime_AC_1_editor" interactive="activecode" line-numbers="yes">

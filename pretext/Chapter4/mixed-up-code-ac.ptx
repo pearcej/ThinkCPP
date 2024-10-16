@@ -3,7 +3,7 @@
   <title>Activecode Exercises</title>
   <p>Answer the following <term>Activecode</term> questions to
             assess what you have learned in this chapter.</p>
-  <exercise xml:id="empty-206">
+  <exercise label="XXX">
     <statement>
       <p>Construct a block of code that prints the remainder of 18 when
                     divided by 13.</p>
@@ -47,7 +47,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-207">
+  <exercise label="XXX">
     <statement>
       <p>Construct a function, <c>is_even</c>, that prints whether a number
                     is even.</p>
@@ -117,7 +117,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-208">
+  <exercise label="XXX">
     <statement>
       <p>Construct a function, <c>difference</c>, that prints the difference of a and b if the result
                     would result in a positive number.  Otherwise, prints -1.</p>
@@ -187,7 +187,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-209">
+  <exercise label="XXX">
     <statement>
       <p>Construct a function, <c>matic</c>, that takes as inputs 2 integers, x and y, and prints <q>automatic</q> if x is
                     an odd number, <q>systematic</q> if x is greater than y, AND
@@ -246,7 +246,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-210">
+  <exercise label="XXX">
     <statement>
       <p>Construct a block of code that prints <q>Pick me!</q> if x is
                     equal to y, <q>Choose me!</q> if x is less than y, OR <q>Love me!</q>
@@ -297,7 +297,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-211">
+  <exercise label="XXX">
     <statement>
       <p>Construct a function, <c>printLetterGrade</c>, that prints your letter grade according to this scheme.
                     [0, 70) = F, [70, 80) = C, [80, 90) = B, and [90, 100] = A.</p>
@@ -368,7 +368,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-212">
+  <exercise label="XXX">
     <statement>
       <p>According to a logic game, a knight is someone who cannot tell a lie,
                     and a knave is someone who cannot tell the truth.  Construct a function
@@ -439,7 +439,7 @@ void knightKnave(bool truth, bool told) {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-213">
+  <exercise label="XXX">
     <statement>
       <p>If a cat is in a good mood, it purrs; when it's in a bad mood, it
                     meows.  If a doog is in a good mood, it barks; when it's in a bad
@@ -520,7 +520,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-214">
+  <exercise label="XXX">
     <statement>
       <p>Construct a recursive function that tells the user to enter a positive
                     number.  It should then output that number to the terminal.  If the user
@@ -581,7 +581,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-215">
+  <exercise label="XXX">
     <statement>
       <p>In the table of ASCII characters, the lowercase alphabet consists
                     of characters 97-122.  The uppercase alphabet consists of characters

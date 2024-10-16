@@ -3,7 +3,7 @@
   <title>Activecode Exercises</title>
   <p>Answer the following <term>Activecode</term> questions to
             assess what you have learned in this chapter.</p>
-  <exercise xml:id="empty-185">
+  <exercise label="XXX">
     <statement>
       <p>Construct a function <c>printInteger</c> that correctly prints the integer conversion of the passed double.</p>
     </statement>
@@ -61,7 +61,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-186">
+  <exercise label="XXX">
     <statement>
       <p>Construct a function called <c>newLine</c> that takes no arguments and prints a blank line.  Then construct another function called <c>divider</c> that prints two blank lines separated by a line of <q>&#x2026; &#x2026; &#x2026; &#x2026;</q></p>
     </statement>
@@ -129,7 +129,7 @@ int main() { // Use the two functions
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-187">
+  <exercise label="XXX">
     <statement>
       <p>Construct a function, <c>volumeCone</c>, that takes as inputs the radius then the height and correctly calculates the volume of a cone with as much precision as possible and prints the value to the terminal.  Use 3.14 for pi.</p>
     </statement>
@@ -178,7 +178,7 @@ void volumeCone(double r, double h) {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-188">
+  <exercise label="XXX">
     <statement>
       <p>Construct a function, <c>sineDegrees</c>, that prints the sin of an angle given in degrees. Use 3.14 for pi.</p>
     </statement>
@@ -241,7 +241,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-189">
+  <exercise label="XXX">
     <statement>
       <p>Construct a function, <c>finalPrice</c>, that prints the price (with 8% sales tax) of an item with after using a 30% off coupon.</p>
     </statement>
@@ -291,7 +291,7 @@ void finalPrice(double item) {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-190">
+  <exercise label="XXX">
     <statement>
       <p>Suppose you have already defined a function called <c>sumOfSquares</c> which returns the sum of the squares of two numbers and <c>root</c> which returns the square root of a number.  Construct a function that calculates the hypotenuse of the right triangle and prints the three sidelengths.</p>
     </statement>
@@ -340,7 +340,7 @@ int main() {
         ]]></input>
     </program>
   </exercise>
-  <exercise xml:id="empty-191">
+  <exercise label="XXX">
     <statement>
       <p>The chickens from the previous chapter are infuriated.  Construct a function, <c>eatMore</c>, that prints <q>Eat</q> on the first line, <q>More</q> on the second line, and the name of the passed animal on the fourth line, followed by an exclamation point.</p>
     </statement>
@@ -402,7 +402,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-192">
+  <exercise label="XXX">
     <statement>
       <p>Construct a function, <c>printAmount</c>, that takes a dollar amount and cent amount and prints the total amount of money that you have. Hint: the mod operator &#x2018;%' returns the remainder of a division.</p>
     </statement>
@@ -465,7 +465,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-193">
+  <exercise label="XXX">
     <statement>
       <p>In Michigan, the probability that it snows on any given day in the winter is about 14%.  The probability of having a snow day on any given day in the winter is about 4%.  The probability that is snows and you have a snow day is 8%.
                     Construct and call a function, <c>conditionalProb</c>, that calculates the probability of a having a snow day, given the fact that it will snow tonight.
@@ -520,7 +520,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-194">
+  <exercise label="XXX">
     <statement>
       <p>Your final grade is determined by a midterm component (each midterm is worth 20% of the grade) and a final component that is worth 60% of the grade. In order to avoid any discrepancies with students who's grades are on the fence, your teacher follows this strict grading scale:
                     [0%,60%) = F, [60%, 70%) = D, [70%, 80%) = C, [80%, 90%) = B and [90%, 100%] = A. He does not round until the very end.

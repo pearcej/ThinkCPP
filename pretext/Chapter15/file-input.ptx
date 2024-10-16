@@ -20,7 +20,7 @@ int main()
 
  ifstream infile ("file-name");
  infile &gt;&gt; x;               // get a single integer and store in x
- getline (infile, line);    // get a whole line and store in line
+ getline(infile, line);    // get a whole line and store in line
 }</program>
   <p>If we know ahead of time how much data is in a file, it is
             straightforward to write a loop that reads the entire file and then
@@ -50,7 +50,7 @@ int main()
  }
 
  while (true) {
-   getline (infile, line);
+   getline(infile, line);
    if (infile.eof()) {
      break;
    }

@@ -42,7 +42,7 @@ TEN, JACK, QUEEN, KING };</program>
   <program>Card card (1, 11);</program>
   <exercise label="enum_type_AC_1">
     <statement>
-      <p>The active code below uses the enumerated types created above to construct <c>Card</c> objects.
+      <p>This active code uses the enumerated types created above to construct <c>Card</c> objects.
             Feel free to modify the values that the cards are being initialized to in the constructor:  this will
             change the output from the <c>print</c> function. Notice how this is much clearer than using integers.</p>
     </statement>

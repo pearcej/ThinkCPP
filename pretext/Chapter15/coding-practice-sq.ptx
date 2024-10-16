@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="chapter15_coding-practice-1">
   <title>Coding Practice</title>
-  <exercise xml:id="empty-129">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter15', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_15_AC_2q">
         <statement>
@@ -93,7 +93,7 @@ because that challenge is one that we are willing to accept, one we are
 unwilling to postpone, and one we intend to win, and the others, too.</program>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-130">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter15', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_15_AC_4q">
         <statement>
@@ -202,7 +202,7 @@ int main() {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-131">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter15', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_15_AC_6q">
         <statement>
@@ -304,7 +304,7 @@ you, you want, you want them to do you
 so much you could do anything?</program>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-132">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter15', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_15_AC_8q">
         <statement>
@@ -401,7 +401,7 @@ shrimp and potatoes, shrimp burger, shrimp sandwich.
 That- that's about it.</program>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-133">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter15', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_15_AC_10q">
         <statement>

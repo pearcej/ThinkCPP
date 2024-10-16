@@ -51,7 +51,7 @@ void printMultTable(int high) {
 7   14   21   28   35   42   49</output></console>
   <listing label="more_generalization_AC_1">
     <caption>
-      <p>The active code below uses the updated <c>printMultTable</c> function. Notice that with generalization,
+      <p>This active code uses the updated <c>printMultTable</c> function. Notice that with generalization,
         we can create multiplication tables of multiple sizes by simply changing the parameter
         passed into <c>printMultTable</c>. Run the active code to see what happens!</p>
     </caption>
@@ -104,7 +104,7 @@ int main() {
   <p>I'll leave it up to you to figure out how it works.</p>
   <listing label="more_generalization_AC_2">
     <caption>
-      <p>The active code below prints half the multiplication table. We can achieve this by
+      <p>This active code prints half the multiplication table. We can achieve this by
         replacing the <c>printMultiples(i, high)</c> in <c>printMultTable</c> with <c>printMultiples(i, i)</c>. Run the active code to see what happens!</p>
     </caption>
     <program xml:id="more_generalization_AC_2_editor"

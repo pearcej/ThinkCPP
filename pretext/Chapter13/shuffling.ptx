@@ -81,7 +81,7 @@
   <exercise label="shuffling_2">
     <statement>
       <p>Try writing the <c>randomInt</c> and <c>swapCards</c> functions in the commented sections
-            of the active code below. Once you're done with <c>randomInt</c> and <c>swapCards</c>,
+            of this active code. Once you're done with <c>randomInt</c> and <c>swapCards</c>,
             try using them to implement the <c>Deck</c> member function <c>shuffleDeck</c>. If done correctly,
             the program should output a shuffled deck of cards. If you stuck, you can reveal the
             extra problems at the end for help.</p>

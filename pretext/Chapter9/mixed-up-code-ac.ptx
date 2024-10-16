@@ -3,7 +3,7 @@
   <title>Activecode Exercises</title>
   <p>Answer the following <term>Activecode</term> questions to
             assess what you have learned in this chapter.</p>
-  <exercise xml:id="empty-341">
+  <exercise label="XXX">
     <statement>
       <p>Let's write the code for the struct definition of <c>Movie</c>.
                     The Movie structure will have the instance variables title,
@@ -48,7 +48,7 @@ struct Movie {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-342">
+  <exercise label="XXX">
     <statement>
       <p>Let's write the code for the <c>printMovie</c> function.
                     printMovie should print the information about a movie
@@ -103,7 +103,7 @@ void printMovie(const Movie& m) {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-343">
+  <exercise label="XXX">
     <statement>
       <p>Let's write the code for the <c>movieAge</c> function.
                     movieAge should take a Movie and currentYear as a parameter and
@@ -156,7 +156,7 @@ int movieAge(const Movie& m, int currentYear) {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-344">
+  <exercise label="XXX">
     <statement>
       <p>Let's write the code for the struct definition of <c>Date</c>.
                     The Date structure will have three integer instance variables: day,
@@ -201,7 +201,7 @@ struct Date {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-345">
+  <exercise label="XXX">
     <statement>
       <p>Let's write the code for the <c>printDate</c> function.
                     printDate should print the date in the following format:
@@ -254,7 +254,7 @@ void printDate(const Date& d) {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-346">
+  <exercise label="XXX">
     <statement>
       <p>Let's write the code for the <c>nextMonth</c> function.
                     nextMonth should change the date to one month later.
@@ -322,7 +322,7 @@ void nextMonth (Date& d) {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-347">
+  <exercise label="XXX">
     <statement>
       <p>Let's write the code for the struct definition of <c>Length</c>.
                     Length should have the instance variables inches, feet, and yard.</p>
@@ -366,7 +366,7 @@ struct Length {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-348">
+  <exercise label="XXX">
     <statement>
       <p>Let's write the code for the <c>printLength</c> function.
                     printLength should print the date in the following format:
@@ -419,7 +419,7 @@ void printLength(const Length& l) {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-349">
+  <exercise label="XXX">
     <statement>
       <p>Let's write the code for the <c>allInches</c> function.
                     printLength should modify a Length object to convert all
@@ -473,7 +473,7 @@ void allInches (Length& l) {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-350">
+  <exercise label="XXX">
     <statement>
       <p>Let's write the code for the <c>addLengths</c> function.
                     addLengths should take three Lengths as parameters.

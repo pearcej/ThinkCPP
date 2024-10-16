@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="chapter5_coding-practice-1">
   <title>Coding Practice</title>
-  <exercise xml:id="empty-227">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter5', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_5_AC_2q">
         <statement>
@@ -74,7 +74,7 @@ TEST_CASE("convertToBinary function") {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-228">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter5', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_5_AC_4q">
         <statement>
@@ -172,7 +172,7 @@ TEST_CASE("birthSeason function: winter") {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-229">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter5', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_5_AC_6q">
         <statement>
@@ -249,7 +249,7 @@ TEST_CASE("isCommonFactor function: false cases") {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-230">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter5', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_5_AC_8q">
         <statement>
@@ -348,7 +348,7 @@ TEST_CASE("isPoisonous function: false cases") {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-231">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter5', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_5_AC_10q">
         <statement>

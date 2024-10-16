@@ -3,7 +3,7 @@
   <title>Activecode Exercises</title>
   <p>Answer the following <term>Activecode</term> questions to
             assess what you have learned in this chapter.</p>
-  <exercise xml:id="empty-260">
+  <exercise label="XXX">
     <statement>
       <p>Write a program that prints out the even numbers between 20 and 40, inclusive.</p>
     </statement>
@@ -50,7 +50,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-261">
+  <exercise label="XXX">
     <statement>
       <p>Write a program that counts down from 100 to 0 in decrements of 10.</p>
     </statement>
@@ -97,7 +97,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-262">
+  <exercise label="XXX">
     <statement>
       <p>Write a program that finds the sum of the first 10 natural numbers.</p>
     </statement>
@@ -146,7 +146,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-263">
+  <exercise label="XXX">
     <statement>
       <p>Write a function, <c>repreatHello</c>, that is a void function that takes no arguments and uses a while loop to print out <q>hello</q> three times.</p>
     </statement>
@@ -207,7 +207,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-264">
+  <exercise label="XXX">
     <statement>
       <p>Now let's generalize the repeatHello function so that it repeats a given string three times.
                     Let's write the code for the <c>repeatString</c> function, which takes
@@ -270,7 +270,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-265">
+  <exercise label="XXX">
     <statement>
       <p>We can further generalize repeatString so that it repeats a given string a given number of times.
                     Let's write the code for the new <c>repeatString</c> function, which takes
@@ -333,7 +333,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-266">
+  <exercise label="XXX">
     <statement>
       <p>On the last day of every year, we count down the seconds before the new year arrives.
                     Write the function <c>newYearCountdown</c>, which prints out a countdown from 10 and then
@@ -398,7 +398,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-267">
+  <exercise label="XXX">
     <statement>
       <p>Help Goku reach power levels of over 9000! Write the function
                     <c>powerUp</c> which takes powerLevel as a parameter.
@@ -464,7 +464,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-268">
+  <exercise label="XXX">
     <statement>
       <p>Write the function <c>summation</c> which takes two
                     parameters, start and end. summation adds
@@ -558,7 +558,7 @@ TEST_CASE("summation function") {
 </tests></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-269">
+  <exercise label="XXX">
     <statement>
       <p>Write the function <c>reverseNumber</c> which takes num
                     as a parameter and returns num but with its digits reversed.

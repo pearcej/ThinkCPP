@@ -44,7 +44,7 @@ while (i &lt;= 6) {
     the print statement with a function call.</p>
   <listing label="encapsulation_generalization_AC_1">
     <caption>
-      <p>Try running the active code below, which uses <c>printMultiples</c>.</p>
+      <p>Try running this active code, which uses <c>printMultiples</c>.</p>
     </caption>
     <program xml:id="encapsulation_generalization_AC_1_editor"
              interactive="activecode"
@@ -83,7 +83,7 @@ int main() {
     bothers you, you can also use tab characters, like below.</p>
   <listing label="encapsulation_generalization_AC_2">
     <caption>
-      <p>The active code below uses tab characters to make the table neater.</p>
+      <p>This active code uses tab characters to make the table neater.</p>
     </caption>
     <program xml:id="encapsulation_generalization_AC_2_editor"
              interactive="activecode"

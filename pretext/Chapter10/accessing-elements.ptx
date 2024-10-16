@@ -12,7 +12,7 @@ count[2]++;
 count[3] -= 60;</program>
   <p>All of these are legal assignment statements. Here is the effect of this
             code fragment:</p>
-  <figure align="center" xml:id="empty-2">
+  <figure align="center" label="XXX">
     <image source="Chapter10/Images/10.2count_diagram.png" width="50%" alt="image"/>
   </figure>
   <warning>
@@ -38,7 +38,7 @@ while (i &lt; 4) {
             Chianti.</p>
   <exercise label="accessing_elements_AC_1">
     <statement>
-      <p>Take a look at the active code below. We can modify the vectors by accessing
+      <p>Take a look at this active code. We can modify the vectors by accessing
             its elements.</p>
     </statement>
     <program xml:id="accessing_elements_AC_1_editor" interactive="activecode" line-numbers="yes">

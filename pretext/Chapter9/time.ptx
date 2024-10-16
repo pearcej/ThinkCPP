@@ -11,7 +11,7 @@
             record fractions of a second.</p>
   <exercise label="time_AC_1">
     <statement>
-      <p>The active code below shows what the structure definition looks like.
+      <p>This active code shows what the structure definition looks like.
             We can create a <c>Time</c> object in the usual way.</p>
     </statement>
     <program xml:id="time_AC_1_editor" interactive="activecode" line-numbers="yes">
@@ -32,7 +32,7 @@ int main() {
     </program>
   </exercise>
   <p>The state diagram for this object looks like this:</p>
-  <figure align="center" xml:id="empty-351">
+  <figure align="center" label="XXX">
     <image source="Chapter9/Images/9.1stackdiagram.png" width="50%" alt="image"/>
   </figure>
   <p>The word <term>instance</term> is sometimes used when we talk about objects,
@@ -174,7 +174,7 @@ int main() {
   <exercise label="time_AC_2">
     <statement>
       <p>Try writing the <c>printTime</c> function in the commented section
-            of the active code below. <c>printTime</c> should print out the time
+            of this active code. <c>printTime</c> should print out the time
             in the HOUR:MINUTE:SECONDS format. If you get stuck, you can reveal the extra problem
             at the end for help.</p>
     </statement>

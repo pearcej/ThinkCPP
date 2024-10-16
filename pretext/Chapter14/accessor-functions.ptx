@@ -31,7 +31,7 @@
             invoking them might modify the instance variables.</p>
   <exercise label="fourteenfour">
     <statement>
-      <p>Take a look at the active code below, which uses the <c>getReal</c>
+      <p>Take a look at this active code, which uses the <c>getReal</c>
             accessor function.</p>
     </statement>
     <program xml:id="fourteenfour_editor" interactive="activecode" line-numbers="yes">

@@ -43,7 +43,7 @@ public:
             useful reminder.</p>
   <exercise label="fourteeneleven">
     <statement>
-      <p>The active code below updates <c>calculatePolar</c> and <c>calculateCartesian</c>
+      <p>This active code updates <c>calculatePolar</c> and <c>calculateCartesian</c>
             to be private functions. Notice how we are no longer able to call
             <c>calculateCartesian</c> in main. Feel free to modify the code and experiment around!</p>
     </statement>

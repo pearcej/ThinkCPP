@@ -54,7 +54,7 @@ int main()
   DistMatrix distances (2);
 
   while (true) {
-    getline (infile, line);
+    getline(infile, line);
     if (infile.eof()) break;
     processLine (line, distances);
   }

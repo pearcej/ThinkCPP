@@ -3,7 +3,7 @@
   <title>Activecode Exercises</title>
   <p>Answer the following <term>Activecode</term> questions to
             assess what you have learned in this chapter.</p>
-  <exercise xml:id="empty-232">
+  <exercise label="XXX">
     <statement>
       <p>Vacation time! But before you go, you need to convert your currency.
                     Let's write the code for the <c>dollarToYen</c> function. dollarToYen
@@ -75,7 +75,7 @@ TEST_CASE("dollarToYen function") {
 </tests></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-233">
+  <exercise label="XXX">
     <statement>
       <p>When you buy something, you also need to pay sales tax. For example,
                     a nice shirt could be labeled with a price of exactly $20, but when
@@ -149,7 +149,7 @@ TEST_CASE("priceWithTax function") {
 </tests></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-234">
+  <exercise label="XXX">
     <statement>
       <p>Most assignments and tests are graded as a percentage, but final
                     grades are letters. Let's write the code for the <c>percentToLetter</c> function.
@@ -244,7 +244,7 @@ TEST_CASE("percentToLetter function") {
 </tests></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-235">
+  <exercise label="XXX">
     <statement>
       <p>Let's write the code for the <c>triangleArea</c> function. triangleArea
                     takes two parameters, base and height. It returns the
@@ -315,7 +315,7 @@ TEST_CASE("triangleArea function") {
 </tests></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-236">
+  <exercise label="XXX">
     <statement>
       <p>Let's write the code for the <c>cylinderVolume</c> function. cylinderVolume
                     takes two parameters, radius and height. It returns the
@@ -391,7 +391,7 @@ TEST_CASE("cylinderVolume function") {
 </tests></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-237">
+  <exercise label="XXX">
     <statement>
       <p>On a distant planet, depending on the characteristics of an egg, a kenchic,
                     an ooseg, or a guinpen might hatch from it. Let's write the function
@@ -484,7 +484,7 @@ TEST_CASE("birdType function") {
 </tests></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-238">
+  <exercise label="XXX">
     <statement>
       <p>Let's write the code for the <c>isDoubleDigit</c> function. isDoubleDigit
                     takes num as a parameter. isDoubleDigit returns true if
@@ -565,7 +565,7 @@ TEST_CASE("isDoubleDigit function") {
 </tests></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-239">
+  <exercise label="XXX">
     <statement>
       <p>Let's write the code for the <c>Compare</c> function. Compare
                     takes two integers a, b. Compare returns 1 if
@@ -655,7 +655,7 @@ TEST_CASE("Compare function") {
 </tests></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-240">
+  <exercise label="XXX">
     <statement>
       <p>Let's write the code for the <c>isFactor</c> function. isFactor
                     takes two parameters, num and factor.
@@ -740,7 +740,7 @@ TEST_CASE("isFactor function") {
 </tests></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-241">
+  <exercise label="XXX">
     <statement>
       <p>Let's write the code for the <c>isPerfectSquare</c> function. isPerfectSquare
                     takes input as a parameter and returns true if input is a
@@ -829,7 +829,7 @@ TEST_CASE("isPerfectSquare function") {
 </tests></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-242">
+  <exercise label="XXX">
     <statement>
       <p>Most bacteria cultures grow exponentially. For this problem,
                     assume the number of cells in a bacterial culture doubles every hour.

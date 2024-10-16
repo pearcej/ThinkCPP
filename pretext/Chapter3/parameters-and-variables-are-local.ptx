@@ -35,7 +35,7 @@ int main() {
     variables are contained in larger boxes that indicate which function they belong to.</p>
   <p>For example, the state diagram for <c>printTwice</c> looks like this:</p>
   <figure align="center"
-          xml:id="empty-195">
+          label="XXX">
     <image source="Chapter3/Images/3.9stackdiagram.png"
            width="50%"
            alt="Two boxes. One labeled main that contains a variable named 'argument' which is 'b'. The other labeled printTwice that contains a variable named 'phil' which is 'b'."/>

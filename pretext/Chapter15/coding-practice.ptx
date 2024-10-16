@@ -3,9 +3,9 @@
   <title>Coding Practice</title>
   <DataFileNode line="3" runestone_options="{'fromfile': 'poem.txt', 'hide': None, 'subchapter': 'coding_practice', 'chapter': 'Chapter15', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': 'poem.txt', 'qnumber': 'Q-1', 'cols': 38, 'rows': 20, 'filecontent': 'Two roads diverged in a yellow wood,\nAnd sorry I could not travel both\nAnd be one traveler, long I stood\nAnd looked down one as far as I could\nTo where it bent in the undergrowth;\nThen took the other, as just as fair,\nAnd having perhaps the better claim\nBecause it was grassy and wanted wear,\nThough as for that the passing there\nHad worn them really about the same,\nAnd both that morning equally lay\nIn leaves no step had trodden black.\nOh, I kept the first for another day!\nYet knowing how way leads on to way\nI doubted if I should ever come back.\nI shall be telling this with a sigh\nSomewhere ages and ages hence:\nTwo roads diverged in a wood, and I,\nI took the one less traveled by,\nAnd that has made all the difference\n', 'hidden': 'data-hidden', 'edit': 'false', 'question_label': '15.14.1'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter15/coding_practice.rst">
         </DataFileNode>
-  <exercise xml:id="empty-119">
+  <exercise label="XXX">
     <statement/>
-    <program interactive="" language="" xml:id="empty-120"/>
+    <program interactive="" language="" label="XXX"/>
     <TabNode tabname="Input File" tabnode_options="{'subchapter': 'coding_practice', 'chapter': 'Chapter15', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Input File'}">
       <p>Below are the contents of the input file.</p>
       <program>Two roads diverged in a yellow wood,
@@ -73,9 +73,9 @@ int main() {
 </raw>
   <DataFileNode line="90" runestone_options="{'fromfile': 'heights.txt', 'hide': None, 'subchapter': 'coding_practice', 'chapter': 'Chapter15', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': 'heights.txt', 'qnumber': 'Q-6', 'cols': 14, 'rows': 20, 'filecontent': '62\t67\t75\t68\t65\n67\t70\t72\t74\t66\n72\t66\t66\t73\t69\n61\t60\t73\t72\t6\n', 'hidden': 'data-hidden', 'edit': 'false', 'question_label': '15.14.5'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter15/coding_practice.rst">
         </DataFileNode>
-  <exercise xml:id="empty-121">
+  <exercise label="XXX">
     <statement/>
-    <program interactive="" language="" xml:id="empty-122"/>
+    <program interactive="" language="" label="XXX"/>
     <TabNode tabname="Input File" tabnode_options="{'subchapter': 'coding_practice', 'chapter': 'Chapter15', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Input File'}">
       <p>Below are the contents of the input file.</p>
       <program>62  67      75      68      65
@@ -140,9 +140,9 @@ int main() {
 </raw>
   <DataFileNode line="176" runestone_options="{'fromfile': 'message.txt', 'hide': None, 'subchapter': 'coding_practice', 'chapter': 'Chapter15', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': 'message.txt', 'qnumber': 'Q-11', 'cols': 59, 'rows': 20, 'filecontent': &quot;Can you encrypt this message and decrypt the message below?\nPbatenghyngvbaf! Lbh'ir qrpelcgrq guvf zrffntr\n&quot;, 'hidden': 'data-hidden', 'edit': 'false', 'question_label': '15.14.9'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter15/coding_practice.rst">
         </DataFileNode>
-  <exercise xml:id="empty-123">
+  <exercise label="XXX">
     <statement/>
-    <program interactive="" language="" xml:id="empty-124"/>
+    <program interactive="" language="" label="XXX"/>
     <TabNode tabname="Input File" tabnode_options="{'subchapter': 'coding_practice', 'chapter': 'Chapter15', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Input File'}">
       <p>Below are the contents of the input file.</p>
       <program>Can you encrypt this message and decrypt the message below?
@@ -216,9 +216,9 @@ int main() {
 </raw>
   <DataFileNode line="277" runestone_options="{'fromfile': 'class_data.txt', 'hide': None, 'subchapter': 'coding_practice', 'chapter': 'Chapter15', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': 'class_data.txt', 'qnumber': 'Q-16', 'cols': 39, 'rows': 20, 'filecontent': 'First    Last       Grade    GPA    Age\nAlex     Jones      9        3.4    14\nBeth     Hamilton   12       3.7    18\nCharles  White      11       3.5    16\nDaniel   Kim        10       3.8    16\nEthan    Brooks     11       3.9    17\nFaith    Flemmings  10       3.0    15\nGina     Zhou       9        3.2    1\n', 'hidden': 'data-hidden', 'edit': 'false', 'question_label': '15.14.13'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter15/coding_practice.rst">
         </DataFileNode>
-  <exercise xml:id="empty-125">
+  <exercise label="XXX">
     <statement/>
-    <program interactive="" language="" xml:id="empty-126"/>
+    <program interactive="" language="" label="XXX"/>
     <TabNode tabname="Input File" tabnode_options="{'subchapter': 'coding_practice', 'chapter': 'Chapter15', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Input File'}">
       <p>Below are the contents of the input file.</p>
       <program>First    Last       Grade    GPA    Age
@@ -279,9 +279,9 @@ int main() {
 </raw>
   <DataFileNode line="359" runestone_options="{'fromfile': 'mult_table.txt', 'hide': None, 'subchapter': 'coding_practice', 'chapter': 'Chapter15', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': 'mult_table.txt', 'qnumber': 'Q-21', 'cols': 18, 'rows': 20, 'filecontent': 'Student output fil\n', 'hidden': 'data-hidden', 'edit': 'false', 'question_label': '15.14.17'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter15/coding_practice.rst">
         </DataFileNode>
-  <exercise xml:id="empty-127">
+  <exercise label="XXX">
     <statement/>
-    <program interactive="" language="" xml:id="empty-128"/>
+    <program interactive="" language="" label="XXX"/>
     <solution>
                 Below is one way to implement this program. We create a 10x10 matrix
                     and fill in the products. Then we traverse through the matrix and output

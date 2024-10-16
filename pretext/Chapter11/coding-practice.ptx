@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="chapter11_coding-practice">
   <title>Coding Practice</title>
-  <exercise xml:id="empty-26">
+  <exercise label="XXX">
     <statement>
       <p>Write the <c>Cake</c> structure, which has instance variables name, weight and member function has_icing function that returns a bool. Use the <c>Cake</c> object initialised below to invoke the has_icing function.</p>
     </statement>
@@ -62,7 +62,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-27">
+  <exercise label="XXX">
     <statement>
       <p>The <c>Cake</c> structure has instance variables name, weight and member function has_icing. Write the has_icing function which returns true when the weight is greater than 10.</p>
     </statement>
@@ -142,7 +142,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-28">
+  <exercise label="XXX">
     <statement>
       <p>Create the <c>Music</c> structure, with member variables num_sold and year, and member functions <c>sold</c> and <c>is_new</c>. The <c>sold</c> function should print twice the num_sold while the <c>is_new</c> function should return true if the year is greater than 2012.</p>
     </statement>
@@ -228,7 +228,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-29">
+  <exercise label="XXX">
     <statement>
       <p>Create the <c>Music</c> structure, with member variables num_sold and year, and member function <c>latest</c>. The <c>latest</c> function operates on two <c>Music</c> objects, and returns true if the current object's year is greater than the other's.</p>
     </statement>
@@ -310,7 +310,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-30">
+  <exercise label="XXX">
     <statement>
       <p>Write the function <c>printInfo</c>, which prints the music album's information in the format
                     <q>This is a <c>artist</c>, <c>year</c> album with/without featured artists.</q> If <c>artist</c> has the value <q>n/a</q>, <c>printInfo</c> prints out <q>Unknown <c>artist</c>! Your album is from <c>year</c>.</q></p>
@@ -410,7 +410,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-31">
+  <exercise label="XXX">
     <statement>
       <p>The <c>Music</c> structure has instance variables name, weight and member function has_icing. Write the has_icing function which returns true when the weight is greater than 10.</p>
     </statement>
@@ -490,7 +490,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-32">
+  <exercise label="XXX">
     <statement>
       <p>Write the <c>Pants</c> structure, which has instance variables size and material. Also write a constructor for <c>Pants</c> that would be called when p1 is declred. The constructor sets the size to L and material to cotton.</p>
     </statement>
@@ -563,7 +563,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-33">
+  <exercise label="XXX">
     <statement>
       <p>Implement 2 constructors for the struct <c>Book</c>, which has the instance variables name and publish_year. One should be a default constructor  that sets name to N/A and publish_year to 0. The other constructor should take arguments</p>
     </statement>
@@ -656,7 +656,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-34">
+  <exercise label="XXX">
     <statement>
       <p>Implement the struct <c>Book</c> as would appear in the Book.h header file and the following necessary statement in main.cpp in order for thr program to run</p>
     </statement>
@@ -738,7 +738,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-35">
+  <exercise label="XXX">
     <statement>
       <p>Implement the struct <c>Instrument</c> struct along with 2 constructors for the same (default and one that takes parameters). <c>Instrument</c> has the instance variables name, year_made and function is_popular(). The default constructor sets name to guitar and year_made to 2000.</p>
     </statement>

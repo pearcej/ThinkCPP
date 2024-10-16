@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <section xml:id="chapter9_coding-practice">
   <title>Coding Practice</title>
-  <exercise xml:id="empty-326">
+  <exercise label="XXX">
     <statement/>
-    <program interactive="" language="" xml:id="empty-327"/>
+    <program interactive="" language="" label="XXX"/>
     <solution>
                 Below is one way to implement the program. We declare the Cake struct and list the instance
                     variables in order.
@@ -37,9 +37,9 @@ int main() {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <exercise xml:id="empty-328">
+  <exercise label="XXX">
     <statement/>
-    <program interactive="" language="" xml:id="empty-329"/>
+    <program interactive="" language="" label="XXX"/>
     <solution>
                 Below is one way to implement the program. We create a Cake for the user, read in the user's input using cin, and return the Cake.
 
@@ -118,9 +118,9 @@ void printCakeInfo(Cake c) {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <exercise xml:id="empty-330">
+  <exercise label="XXX">
     <statement/>
-    <program interactive="" language="" xml:id="empty-331"/>
+    <program interactive="" language="" label="XXX"/>
     <solution>
                 Below is one way to implement the program. We call makeCake in editCake and then set the original cake
                     equal to the new one.
@@ -208,9 +208,9 @@ int main() {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <exercise xml:id="empty-332">
+  <exercise label="XXX">
     <statement/>
-    <program interactive="" language="" xml:id="empty-333"/>
+    <program interactive="" language="" label="XXX"/>
     <solution>
                 Below is one way to implement the program. We declare the Pants struct and list the instance
                     variables in order.
@@ -242,9 +242,9 @@ int main() {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <exercise xml:id="empty-334">
+  <exercise label="XXX">
     <statement/>
-    <program interactive="" language="" xml:id="empty-335"/>
+    <program interactive="" language="" label="XXX"/>
     <solution>
                 Below is one way to implement the program. We declare the Cake struct and list the instance
                     variables in order.

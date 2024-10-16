@@ -2,7 +2,7 @@
 <section xml:id="chapter2_activecode-exercises-2">
   <title>Activecode Exercises</title>
   <p>Answer the following <term>Activecode</term> questions to assess what you have learned in this chapter.</p>
-  <exercise xml:id="empty-159">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter2', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="VARS_a2">
         <caption>
@@ -75,7 +75,7 @@ int main() {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-160">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter2', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="VARS_a4">
         <caption>
@@ -147,7 +147,7 @@ int main() {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-161">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter2', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="VARS_a6">
         <caption>
@@ -220,7 +220,7 @@ int main() {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-162">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter2', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="VARS_a8">
         <caption>
@@ -281,7 +281,7 @@ int main() {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-163">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter2', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="VARS_a10">
         <caption>

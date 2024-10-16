@@ -42,7 +42,7 @@ if (card1.equals(card2)) {
             can choose the interface that works best depending on the circumstance.</p>
   <exercise label="12_4">
     <statement>
-      <p>Run the active code below to see how the <c>equals()</c> function works.</p>
+      <p>Run this active code to see how the <c>equals()</c> function works.</p>
     </statement>
     <program xml:id="c12_4_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[

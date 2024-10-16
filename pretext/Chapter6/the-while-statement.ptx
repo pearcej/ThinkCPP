@@ -4,7 +4,7 @@
   <p>Using a <c>while</c> statement, we can rewrite <c>countdown</c>:</p>
   <listing label="the_while_statement_AC_1">
     <caption>
-      <p>Try running the active code below! Afterwards, try changing 9 to a different
+      <p>Try running this active code! Afterwards, try changing 9 to a different
         integer to see how the function works!</p>
     </caption>
     <program xml:id="the_while_statement_AC_1_editor"

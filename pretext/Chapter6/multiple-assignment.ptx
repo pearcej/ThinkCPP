@@ -6,7 +6,7 @@
     is to replace the old value of the variable with a new value.</p>
   <listing label="multiple_assignment_AC_1">
     <caption>
-      <p>The active code below reassigns <c>fred</c> from 5 to 7 and prints both values out.</p>
+      <p>This active code reassigns <c>fred</c> from 5 to 7 and prints both values out.</p>
     </caption>
     <program xml:id="multiple_assignment_AC_1_editor"
              interactive="activecode"
@@ -29,7 +29,7 @@ int main() {
     and the second time his value is 7.</p>
   <listing label="multiple_assignment_AC_2">
     <caption>
-      <p>The active code below reassigns <c>fred</c> from 5 to 7 without printing out the initial value.</p>
+      <p>This active code reassigns <c>fred</c> from 5 to 7 without printing out the initial value.</p>
     </caption>
     <program xml:id="multiple_assignment_AC_2_editor"
              interactive="activecode"
@@ -53,7 +53,7 @@ int main() {
     container</em> for values. When you assign a value to a variable, you change the contents of the
     container, as shown in the figure:</p>
   <figure align="center"
-          xml:id="empty-270">
+          label="XXX">
     <image source="Chapter6/Images/6.1image.png"
            width="50%"
            alt="An assignment of 'fred = 7' changing the existing value of 'fred'."/>

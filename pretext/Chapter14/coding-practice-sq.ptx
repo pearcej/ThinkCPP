@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="chapter14_coding-practice-1">
   <title>Coding Practice</title>
-  <exercise xml:id="empty-103">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter14', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_14_AC_2q">
         <statement>
@@ -129,7 +129,7 @@ int main() {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-104">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter14', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_14_AC_4q">
         <statement>
@@ -215,7 +215,7 @@ int main() {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-105">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter14', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_14_AC_6q">
         <statement>
@@ -264,7 +264,7 @@ class MyVector {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-106">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter14', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_14_AC_8q">
         <statement>
@@ -366,7 +366,7 @@ int MyVector::at(int index) { return elements[index]; }
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-107">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter14', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_14_AC_10q">
         <statement>

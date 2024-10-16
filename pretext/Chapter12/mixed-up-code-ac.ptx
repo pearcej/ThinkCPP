@@ -2,7 +2,7 @@
 <section xml:id="chapter12_activecode-exercises">
   <title>Activecode Exercises</title>
   <p>Answer the following <term>Activecode</term> questions to assess what you have learned in this chapter.</p>
-  <exercise xml:id="empty-56">
+  <exercise label="XXX">
     <statement>
       <p>Let's write the struct definition for <c>Song</c>. Song should have
                     instance variables title, artist, and numLikes.</p>
@@ -46,7 +46,7 @@ struct Song {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-57">
+  <exercise label="XXX">
     <statement>
       <p>Let's make an album! Write the struct definition for
                     <c>Album</c>, which should have instance variables name, year and
@@ -106,7 +106,7 @@ struct Album {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-58">
+  <exercise label="XXX">
     <statement>
       <p>Two Songs are equal if the title and artist of the Songs are equal.
                     Write the function <c>songEqual</c>, which takes two Songs as parameters
@@ -169,7 +169,7 @@ bool songEqual(const Song& a, const &Song b) {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-59">
+  <exercise label="XXX">
     <statement>
       <p>What if we'd like to search an album for our favorite song?
                     Write the <c>Album</c> member function searchAlbum which takes a
@@ -249,7 +249,7 @@ int Album::searchAlbum(const Song& a) {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-60">
+  <exercise label="XXX">
     <statement>
       <p>What's the most popular Song within an Album? Let's write
                     the <c>Album</c> member function mostLikedSong, which prints out
@@ -338,7 +338,7 @@ void Album::mostLikedSong() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-61">
+  <exercise label="XXX">
     <statement>
       <p>Let's write the struct definition for <c>Product</c>. <c>Product</c> should have
                     instance variables name and price.</p>
@@ -380,7 +380,7 @@ struct Product {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-62">
+  <exercise label="XXX">
     <statement>
       <p>Let's make a shopping list! Write the struct definition for
                     <c>List</c>, which should have instance variables type and
@@ -436,7 +436,7 @@ struct List {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-63">
+  <exercise label="XXX">
     <statement>
       <p>Two Products are equal if the name and price of the Products are equal.
                     Write the function productEqual, which takes two Products as parameters
@@ -521,7 +521,7 @@ int List::searchList(const Product& a) {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-64">
+  <exercise label="XXX">
     <statement>
       <p>Time to checkout! Write the List member function <c>totalPrice</c>
                     which calculates and returns the total price of all the Products.</p>
@@ -592,7 +592,7 @@ double List::totalPrice() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-65">
+  <exercise label="XXX">
     <statement>
       <p>Oops! We made a mistake and grabbed pineapple pizza.
                     What if we want to remove an Product from our List?

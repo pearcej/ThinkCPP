@@ -2,7 +2,7 @@
 <section xml:id="chapter13_activecode-exercises">
   <title>Activecode Exercises</title>
   <p>Answer the following <term>Activecode</term> questions to assess what you have learned in this chapter.</p>
-  <exercise xml:id="empty-83">
+  <exercise label="XXX">
     <statement>
       <p>Write the enumerated type <c>Days</c> which maps days of the week to integers
                     starting at 1. Use a switch statement to determine whether or not day
@@ -69,7 +69,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-84">
+  <exercise label="XXX">
     <statement>
       <p>Use a switch statement to check and print out whether a number is divisible by two.
                     Prompt and get input from the user. If input isn't valid,
@@ -138,7 +138,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-85">
+  <exercise label="XXX">
     <statement>
       <p>Use a switch statement to check and print out the maximum between two numbers.
                     Prompt and get input from the user for two integers. If input isn't valid,
@@ -209,7 +209,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-86">
+  <exercise label="XXX">
     <statement>
       <p>Write the pseudocode for the implementation of <c>mergeSort</c>.</p>
     </statement>
@@ -248,7 +248,7 @@ Deck Deck::mergeSort() const {
         </input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-87">
+  <exercise label="XXX">
     <statement>
       <p>Let's revisit the Dictionary data structure defined in the previous section.
                     Write the struct definitions for <c>Entry</c>, which has member variables word and page,
@@ -302,7 +302,7 @@ struct Dictionary {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-88">
+  <exercise label="XXX">
     <statement>
       <p>Assume our dictionary is currently unsorted. Let's write a Dictionary member function <c>find</c>
                     that takes a string word as a parameter and returns the index of its corresponding
@@ -374,7 +374,7 @@ int Dictionary::find(string word) {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-89">
+  <exercise label="XXX">
     <statement>
       <p>Of course, all dictionaries are in some sort of order. In order to do this, we
                     must first write the Dictionary member function <c>findFirstWord</c>, which takes a starting
@@ -449,7 +449,7 @@ int Dictionary::findFirstWord(int start) {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-90">
+  <exercise label="XXX">
     <statement>
       <p>We also need a swap function. Write the Dictionary member function
                     <c>swap</c> which takes two indices as parameters and swaps the Entries
@@ -515,7 +515,7 @@ void Dictionary::swap(int a, int b) {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-91">
+  <exercise label="XXX">
     <statement>
       <p>Now let's write the Dictionary member function <c>alphabetize</c>, which
                     sorts the Entries in the Dictionary in alphabetical order. Use
@@ -565,7 +565,7 @@ void Dictionary::alphabetize() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-92">
+  <exercise label="XXX">
     <statement>
       <p>Let's check to see if our sorting worked! Write the Dictionary
                     member function <c>printDictionary</c>, which prints out the word in each

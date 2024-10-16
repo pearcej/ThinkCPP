@@ -2,7 +2,7 @@
 <section xml:id="chapter10_activecode-exercises">
   <title>Activecode Exercises</title>
   <p>Answer the following <term>Activecode</term> questions to assess what you have learned in this chapter.</p>
-  <exercise xml:id="empty-3">
+  <exercise label="XXX">
     <statement>
       <p>Fix the code below so that it creates a vector with 5 elements initialized to 1, and changes
                     the third element of that vector to a 2.</p>
@@ -63,7 +63,7 @@ int main() {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <exercise xml:id="empty-4">
+  <exercise label="XXX">
     <statement>
       <p>Fix the function below so that it creates a vector of all of the words in <c>words</c> that end with
                     the passed character.</p>
@@ -146,7 +146,7 @@ int endsWith(const vector<string>& vec, char c) {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <exercise xml:id="empty-5">
+  <exercise label="XXX">
     <statement>
       <p>Finish the code below so that it creates removes elements from the end of the vector until
                     it ends with <c>"stop"</c>.</p>
@@ -217,7 +217,7 @@ int main() {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <exercise xml:id="empty-6">
+  <exercise label="XXX">
     <statement>
       <p>Write a function called <c>has_char</c> that returns a boolean of whether every string in the
                     vector <c>vec</c> contains the character <c>let</c>.  It should return true if all strings contain the <c>let</c>.</p>
@@ -294,7 +294,7 @@ int has_char(const vector<string>& vec, char let) {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <exercise xml:id="empty-7">
+  <exercise label="XXX">
     <statement>
       <p>Write the function <c>mean</c> which returns the average of a vector of numbers.</p>
     </statement>
@@ -352,7 +352,7 @@ double mean(const vector<double> nums) {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <exercise xml:id="empty-8">
+  <exercise label="XXX">
     <statement>
       <p>Write the function <c>make_odd</c> which subtracts 1 from every even number in a vector of integers.
                     We don't want any negative values so don't subtract 1 from 0.

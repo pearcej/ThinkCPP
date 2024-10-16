@@ -26,7 +26,7 @@ Deck pack = deck.subdeck (10, 51);</program>
             misleading analogies.</p>
   <exercise label="shuffle_deal_AC_1">
     <statement>
-      <p>The active code below deals a deck of cards among three players for a game
+      <p>This active code deals a deck of cards among three players for a game
             of Go Fish. Feel free to experiment with the code and deal decks for other
             games like War, Poker, and Egyptian Ratscrew.</p>
     </statement>

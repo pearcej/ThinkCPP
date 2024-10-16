@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <section xml:id="chapter13_coding-practice">
   <title>Coding Practice</title>
-  <exercise xml:id="empty-67">
+  <exercise label="XXX">
     <statement/>
-    <program interactive="" language="" xml:id="empty-68"/>
+    <program interactive="" language="" label="XXX"/>
     <solution>
                 Below is one way to implement the program. The planets in our solar system
                     are Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune.
@@ -28,9 +28,9 @@ enum Planet { MERCURY = 1, VENUS, EARTH, MARS, JUPITER, SATURN, URANUS, NEPTUNE 
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <exercise xml:id="empty-69">
+  <exercise label="XXX">
     <statement/>
-    <program interactive="" language="" xml:id="empty-70"/>
+    <program interactive="" language="" label="XXX"/>
     <solution>
                 Below is one way to implement the program. We declare the Space and BingoBoard struct
                     and create the instance variables in order. Make sure to set is_filled to false!
@@ -63,9 +63,9 @@ struct BingoBoard {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <exercise xml:id="empty-71">
+  <exercise label="XXX">
     <statement/>
-    <program interactive="" language="" xml:id="empty-72"/>
+    <program interactive="" language="" label="XXX"/>
     <solution>
                 Below is one way to implement the program. We store the value at index1 in a temp
                     variable, replace the value at index1 with the value at index2, and then finally
@@ -99,9 +99,9 @@ void swapValues (vector<int> &vec, int index1, int index2) {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <exercise xml:id="empty-73">
+  <exercise label="XXX">
     <statement/>
-    <program interactive="" language="" xml:id="empty-74"/>
+    <program interactive="" language="" label="XXX"/>
     <solution>
                 Below is one way to implement the program. First we need to initialize
                     the board to the correct dimensions. Then, we use generateRandVec
@@ -195,9 +195,9 @@ vector&lt;int&gt; generateRandVec() {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-  <exercise xml:id="empty-75">
+  <exercise label="XXX">
     <statement/>
-    <program interactive="" language="" xml:id="empty-76"/>
+    <program interactive="" language="" label="XXX"/>
     <solution>
                 Below is one way to implement the program. We must loop through all elements
                     in the vector. Since we know the last i elements are already in place,

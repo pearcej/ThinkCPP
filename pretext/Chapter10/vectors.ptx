@@ -32,7 +32,7 @@ vector&lt;double&gt; doubleVector;</program>
             takes a single argument, which is the size of the new vector.</p>
   <p>The following figure shows how vectors are represented in state
             diagrams:</p>
-  <figure align="center" xml:id="empty-25">
+  <figure align="center" label="XXX">
     <image source="Chapter10/Images/10.1state_diagram.png" width="50%" alt="image"/>
   </figure>
   <p>The large numbers inside the boxes are the <term>elements</term> of the vector.

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="chapter7_coding-practice-1">
   <title>Coding Practice</title>
-  <exercise xml:id="empty-281">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter7', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_7_AC_2q">
         <statement>
@@ -96,7 +96,7 @@ int main() {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-282">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter7', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_7_AC_4q">
         <statement>
@@ -174,7 +174,7 @@ int main() {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-283">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter7', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_7_AC_6q">
         <statement>
@@ -243,7 +243,7 @@ TEST_CASE("reverseWord function") {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-284">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter7', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_7_AC_8q">
         <statement>
@@ -316,7 +316,7 @@ TEST_CASE("countVowels function") {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-285">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter7', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_7_AC_10q">
         <statement>
