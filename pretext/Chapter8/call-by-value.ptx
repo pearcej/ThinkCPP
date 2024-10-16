@@ -1,26 +1,29 @@
 <?xml version="1.0"?>
 <section xml:id="chapter8_call-by-value">
   <title>Call by value</title>
-  <p>When you pass a structure as an argument, remember that the argument and
-            the parameter are not the same variable. Instead, there are two
-            variables (one in the caller and one in the callee) that have the same
-            value, at least initially. For example, when we call <c>printPoint</c>, the stack diagram looks like this:</p>
-  <figure align="center" xml:id="empty-298">
-    <image source="Chapter8/Images/8.6stackdiagram.png" width="50%" alt="image"/>
+  <p>When you pass a structure as an argument, remember that the argument and the parameter are not
+    the same variable. Instead, there are two variables (one in the caller and one in the callee)
+    that have the same value, at least initially. For example, when we call <c>printPoint</c>, the stack
+    diagram looks like this:</p>
+  <figure align="center"
+          label="XXX">
+    <image source="Chapter8/Images/8.6stackdiagram.png"
+           width="50%"
+           alt="Two boxes, one for 'main' and one for 'printPoint'. 'main' has a variable blank and 'printPoint' has a variable 'p'. Both variables have 'x:3, y:4'"/>
   </figure>
-  <p>If <c>printPoint</c> happened to change one of the instance variables of
-            <c>p</c>, it would have no effect on <c>blank</c>. Of course, there is no
-            reason for <c>printPoint</c> to modify its parameter, so this isolation
-            between the two functions is appropriate.</p>
-  <p>This kind of parameter-passing is called <q>pass by value</q> because it is
-            the value of the structure (or other type) that gets passed to the
-            function.</p>
-  <exercise label="call_by_value_AC_1">
-    <statement>
-      <p>Take a look at the active code below. Notice from the output of the code below how the
-            function <c>addTwo</c> changes the instance variables, but not on <c>blank</c> itself.</p>
-    </statement>
-    <program xml:id="call_by_value_AC_1_editor" interactive="activecode" line-numbers="yes">
+  <p>If <c>printPoint</c> happened to change one of the instance variables of <c>p</c>, it would have no effect
+    on <c>blank</c>. Of course, there is no reason for <c>printPoint</c> to modify its parameter, so this isolation
+    between the two functions is appropriate.</p>
+  <p>This kind of parameter-passing is called <q>pass by value</q> because it is the value of the
+    structure (or other type) that gets passed to the function.</p>
+  <listing label="call_by_value_AC_1">
+    <caption>
+      <p>Take a look at this active code. Notice from the output of the code below how the function <c>addTwo</c>
+        changes the instance variables, but not on <c>blank</c> itself.</p>
+    </caption>
+    <program xml:id="call_by_value_AC_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -40,7 +43,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <exercise label="call_by_value_1">
     <statement>
       <p>What will print?</p>
@@ -121,7 +124,7 @@ void timesTwo(Point p) {
 
 int main() {
   Point blank = { 3, 4 };
-  timesTwo (blank);
+  timesTwo(blank);
   cout << ", " << blank.x << endl;
 }
 ]]></input>

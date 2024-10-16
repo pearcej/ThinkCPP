@@ -4,7 +4,8 @@
   <exercise label="mce_8_1">
     <statement>
       <p>Which of the following are compound values?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input>
 struct Student {
   string firstName, lastName;
@@ -95,7 +96,8 @@ int main() {
   <exercise label="mce_8_2">
     <statement>
       <p>What is wrong with the following <c>struct</c> definition?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input>
 struct Chicken {
   string name;
@@ -143,7 +145,8 @@ struct Chicken {
   <exercise label="mce_8_3">
     <statement>
       <p>How do we assign the value of 4 to the instance variable <c>numLegs</c> of the <c>Dog</c> object?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input>
 struct Dog {
   string name;
@@ -203,7 +206,8 @@ int main() {
   <exercise label="mce_8_4">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input><![CDATA[
 struct Cube {
   int edgeLength;
@@ -269,7 +273,8 @@ int main() {
   <exercise label="mce_8_5">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input><![CDATA[
 struct Cube {
   int edgeLength;
@@ -284,7 +289,7 @@ int calculateDensity(Cube c) {
 int main() {
   Cube c;
   c = (Cube) { 2, 8, 4 };
-  int density = calculateDensity (c);
+  int density = calculateDensity(c);
   cout << density;
 }
 ]]></input>
@@ -328,7 +333,8 @@ int main() {
   <exercise label="mce_8_6">
     <statement>
       <p>What is the value of <c>s.coffeeCupFull</c> when the code is done running?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input>
 struct Student {
   string name;
@@ -379,7 +385,9 @@ int main() {
           <p>0</p>
         </statement>
         <feedback id="mce_8_6_opt_d">
-          <p>Since we pass a <c>Student</c> object by value to <c>pourCoffee</c>, the function makes a copy of the object and does not modify the original. If you wanted the original value to change, pass it by reference!</p>
+          <p>Since we pass a <c>Student</c> object by value to <c>pourCoffee</c>, the function makes a copy of the
+            object and does not modify the original. If you wanted the original value to change,
+            pass it by reference!</p>
         </feedback>
       </choice>
     </choices>
@@ -387,7 +395,8 @@ int main() {
   <exercise label="mce_8_7">
     <statement>
       <p>What is the value of <c>r.batteryLevelPercentage</c> when the code is done running?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input>
 struct Robot {
   string name;
@@ -395,7 +404,7 @@ struct Robot {
   bool isFullyCharged;
 };
 
-void chargeRobot (Robot&amp; r) {
+void chargeRobot(Robot&amp; r) {
   if (r.batteryLevelPercentage + 50 &gt; 100) {
     r.batteryLevelPercentage = 100;
     r.isFullyCharged = true;
@@ -407,7 +416,7 @@ void chargeRobot (Robot&amp; r) {
 
 int main() {
   Robot r = { "Rob", 60, false };
-  chargeRobot (r);
+  chargeRobot(r);
 }
 </input>
       </program>
@@ -450,7 +459,8 @@ int main() {
   <exercise label="mce_8_8">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input><![CDATA[
 void foo (int& x, int y) {
   x = x + 4;
@@ -483,7 +493,8 @@ int main() {
           <p>4, 7</p>
         </statement>
         <feedback id="mce_8_8_opt_a">
-          <p>Take a closer look at <c>func</c> and its parameters. Are they passed by value, passed by reference, or both?</p>
+          <p>Take a closer look at <c>func</c> and its parameters. Are they passed by value, passed by
+            reference, or both?</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -491,7 +502,8 @@ int main() {
           <p>4, 10</p>
         </statement>
         <feedback id="mce_8_8_opt_b">
-          <p>Since <c>bar</c> doesn't pass either parameter by reference, neither <c>bar</c> nor <c>foo</c> affect the values of <c>x</c> and <c>y</c>.</p>
+          <p>Since <c>bar</c> doesn't pass either parameter by reference, neither <c>bar</c> nor <c>foo</c>
+            affect the values of <c>x</c> and <c>y</c>.</p>
         </feedback>
       </choice>
       <choice>
@@ -515,7 +527,8 @@ int main() {
   <exercise label="mce_8_9">
     <statement>
       <p>If the user inputted the string <q>R2-D2</q>, what is the output of the code below?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input><![CDATA[
 int main() {
   string name;
@@ -563,7 +576,8 @@ int main() {
   <exercise label="mce_8_10">
     <statement>
       <p>If the user inputted the string <q>C-3PO</q>, what is the output of the code below?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input><![CDATA[
 int main() {
   char name;
@@ -587,7 +601,8 @@ int main() {
           <p>Hello, C!</p>
         </statement>
         <feedback id="mce_8_10_opt_b">
-          <p>Since &#x2018;C' is the first <c>char</c> in the input, this is the correct output. The program will ignore everything that comes after the first <c>char</c>.</p>
+          <p>Since &#x2018;C' is the first <c>char</c> in the input, this is the correct output. The
+            program will ignore everything that comes after the first <c>char</c>.</p>
         </feedback>
       </choice>
       <choice>
@@ -611,11 +626,12 @@ int main() {
   <exercise label="mce_8_11">
     <statement>
       <p>If the user inputted the string <q>Darth Vader</q>, what is the output of the code below?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input><![CDATA[
 int main() {
   string quote;
-  getline (cin, quote);
+  getline(cin, quote);
   cout << quote << " is the epitome of Star Wars!";
 }
 ]]></input>

@@ -1,28 +1,26 @@
 <?xml version="1.0"?>
 <section xml:id="chapter8_structures-as-return-types">
   <title>Structures as return types</title>
-  <p>You can write functions that return structures. For example,
-            <c>findCenter</c> takes a <c>Rectangle</c> as an argument and returns a
-            <c>Point</c> that contains the coordinates of the center of the
-            <c>Rectangle</c>:</p>
+  <p>You can write functions that return structures. For example, <c>findCenter</c> takes a <c>Rectangle</c> as an
+    argument and returns a <c>Point</c> that contains the coordinates of the center of the <c>Rectangle</c>:</p>
   <program>Point findCenter (Rectangle&amp; box) {
   double x = box.corner.x + box.width/2;
   double y = box.corner.y + box.height/2;
   Point result = {x, y};
   return result;
 }</program>
-  <p>To call this function, we have to pass a box as an argument (notice that
-            it is being passed by reference), and assign the return value to a
-            <c>Point</c> variable:</p>
+  <p>To call this function, we have to pass a box as an argument (notice that it is being passed by
+    reference), and assign the return value to a <c>Point</c> variable:</p>
   <program>Rectangle box = { {0.0, 0.0}, 100, 200 };
 Point center = findCenter (box);
 printPoint (center);</program>
-  <exercise label="structures_return_types_AC_1">
-    <statement>
-      <p>The active code below uses the <c>findCenter</c> function. Run the code
-            to see what the output is!</p>
-    </statement>
-    <program xml:id="structures_return_types_AC_1_editor" interactive="activecode" line-numbers="yes">
+  <listing label="structures_return_types_AC_1">
+    <caption>
+      <p>This active code uses the <c>findCenter</c> function. Run the code to see what the output is!</p>
+    </caption>
+    <program xml:id="structures_return_types_AC_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -54,7 +52,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>The output of this program is <c>(50, 100)</c>.</p>
   <exercise label="structures_return_types_1">
     <statement>

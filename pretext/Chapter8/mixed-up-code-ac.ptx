@@ -3,7 +3,7 @@
   <title>Activecode Exercises</title>
   <p>Answer the following <term>Activecode</term> questions to
             assess what you have learned in this chapter.</p>
-  <exercise xml:id="empty-314">
+  <exercise label="XXX">
     <statement>
       <p>Let's write the code for the struct definition of <c>Song</c>.
                     The Song structure will have the instance variables string title,
@@ -50,7 +50,7 @@ struct Song {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-315">
+  <exercise label="XXX">
     <statement>
       <p>In main, create a Song object called <c>fly</c> which holds
                     the data for Frank Sinatra's <q>Fly Me to the Moon</q> from his 1964 album <q>It Might as Well Be Swing</q>.</p>
@@ -112,7 +112,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-316">
+  <exercise label="XXX">
     <statement>
       <p>Let's write the code for the <c>printSong</c> function. printSong
                     takes a Song as a parameter and prints out the instance variables
@@ -185,7 +185,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-317">
+  <exercise label="XXX">
     <statement>
       <p>Let's write the code for the struct definition of <c>Unicorn</c>.
                     The Unicorn structure will have the instance variables name,
@@ -235,7 +235,7 @@ struct Unicorn {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-318">
+  <exercise label="XXX">
     <statement>
       <p>Let's write the code for the <c>convertToHumanAge</c> function. convertToHumanAge
                     takes a Unicorn as a parameter and returns the equivalent human age.
@@ -304,7 +304,7 @@ int convertToHumanAge(Unicorn u) {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-319">
+  <exercise label="XXX">
     <statement>
       <p>Let's write the code for the <c>unicornPower</c> function. unicornPower
                     takes a Unicorn as a parameter and
@@ -363,7 +363,7 @@ void unicornPower (Unicorn& u) {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-320">
+  <exercise label="XXX">
     <statement>
       <p>Let's write the code for the struct definitions of <c>Address</c> and <c>Employee</c>.
                     The Address structure will have the instance variables houseNumber,
@@ -420,7 +420,7 @@ struct Employee {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-321">
+  <exercise label="XXX">
     <statement>
       <p>Let's write the code for the <c>printAddress</c> function. printAddress takes
                     an Employee as a parameter and should print out the information of the employee in the
@@ -487,7 +487,7 @@ void printAddress(Employee e) {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-322">
+  <exercise label="XXX">
     <statement>
       <p>Sometimes employees will move around and thus we'll need to update their addresses.
                     Let's write the code for the <c>updateAddress</c> function. updateAddress takes an
@@ -550,7 +550,7 @@ void updateAdress (Employee& e, Address a) {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise xml:id="empty-323">
+  <exercise label="XXX">
     <statement>
       <p>Let's write the code for the <c>storeEmployeeData</c> function. storeEmployeeData doesn't
                     take any parameters and prompts the user for information regarding their

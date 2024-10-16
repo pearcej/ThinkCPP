@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="chapter8_coding-practice-1">
   <title>Coding Practice</title>
-  <exercise xml:id="empty-309">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter8', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_8_AC_2q">
         <statement>
@@ -63,7 +63,7 @@ int main() {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-310">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter8', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_8_AC_4q">
         <statement>
@@ -92,7 +92,7 @@ void printRobotData(Robot r);
 
 int main() {
     Robot bob = { "Bob", "MKZ", 143, 65, "sweeping floors" };
-    chargeRobot (bob);
+    chargeRobot(bob);
     cout << "Your output:" << endl;
     printRobotData (bob);
     cout << "Correct output:" << endl;
@@ -144,7 +144,7 @@ void printRobotData(Robot r) {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-311">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter8', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_8_AC_6q">
         <statement>
@@ -222,7 +222,7 @@ int main() {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-312">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter8', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_8_AC_8q">
         <statement>
@@ -329,7 +329,7 @@ void printTrainerInfo(Trainer t) {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise xml:id="empty-313">
+  <exercise label="XXX">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter8', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="cp_8_AC_10q">
         <statement>

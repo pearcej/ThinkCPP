@@ -5,15 +5,15 @@
   <program>void printPoint(Point p) {
   cout &lt;&lt; "(" &lt;&lt; p.x &lt;&lt; ", " &lt;&lt; p.y &lt;&lt; ")" &lt;&lt; endl;
 }</program>
-  <p><c>printPoint</c> takes a point as an argument and outputs it in the
-            standard format. If you call <c>printPoint (blank)</c>, it will output
-            <c>(3, 4)</c>.</p>
-  <exercise label="structures_parameters_AC_1">
-    <statement>
-      <p>The active code below uses the <c>printPoint</c> function. Run the code to
-            see the output!</p>
-    </statement>
-    <program xml:id="structures_parameters_AC_1_editor" interactive="activecode" line-numbers="yes">
+  <p><c>printPoint</c> takes a point as an argument and outputs it in the standard format. If you call <c>printPoint (blank)</c>,
+    it will output <c>(3, 4)</c>.</p>
+  <listing label="structures_parameters_AC_1">
+    <caption>
+      <p>This active code uses the <c>printPoint</c> function. Run the code to see the output!</p>
+    </caption>
+    <program xml:id="structures_parameters_AC_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -32,21 +32,26 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
-  <p>As a second example, we can rewrite the <c>distance</c> function from
-            <number_reference internal="True" refuri="../Chapter5/programdevelopment#distance" title="Section %s"><inline classes="std std-numref">Section 5.2</inline></number_reference> so that it takes two <c>Point</c>s as
-            parameters instead of four <c>double</c>s.</p>
+  </listing>
+  <p>As a second example, we can rewrite the <c>distance</c> function from <number_reference internal="True"
+                      refuri="../Chapter5/programdevelopment#distance"
+                      title="Section %s">
+      <inline classes="std std-numref">Section 5.2</inline>
+    </number_reference> so that it takes
+    two <c>Point</c>s as parameters instead of four <c>double</c>s.</p>
   <program>double distance(Point p1, Point p2) {
   double dx = p2.x - p1.x;
   double dy = p2.y - p1.y;
   return sqrt (dx*dx + dy*dy);
 }</program>
-  <exercise label="structures_parameters_AC_2">
-    <statement>
-      <p>The active code below uses the updated version of the <c>distance</c> function.
-            Feel free to modify the code!</p>
-    </statement>
-    <program xml:id="structures_parameters_AC_2_editor" interactive="activecode" line-numbers="yes">
+  <listing label="structures_parameters_AC_2">
+    <caption>
+      <p>This active code uses the updated version of the <c>distance</c> function. Feel free to modify the
+        code!</p>
+    </caption>
+    <program xml:id="structures_parameters_AC_2_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <cmath>
@@ -69,7 +74,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <exercise label="structures_parameters_1">
     <statement>
       <p>What will print?</p>
@@ -133,9 +138,14 @@ int main() {
       </choice>
     </choices>
   </exercise>
-  <exercise label="structures_parameters_2" numbered="yes" adaptive="yes" indentation="hide">
+  <exercise label="structures_parameters_2"
+            numbered="yes"
+            adaptive="yes"
+            indentation="hide">
     <statement>
-      <p>Construct a function that takes in three Point structures and prints the average of the x coordinates and the average of the y coordinates as a coordinate. Find the x average before the y average.</p>
+      <p>Construct a function that takes in three Point structures and prints the average of the x
+        coordinates and the average of the y coordinates as a coordinate. Find the x average before
+        the y average.</p>
     </statement>
     <blocks>
       <block order="4">
@@ -147,13 +157,15 @@ int main() {
       <block order="2">
         <cline> double avgY = (p1.y + p2.y + p3.y)/3;</cline>
       </block>
-      <block order="1" correct="no">
+      <block order="1"
+             correct="no">
         <cline> double avgY = (y.p1 + y.p2 + y.p3)/3; </cline>
       </block>
       <block order="7">
         <cline><![CDATA[ cout << "(" << avgX << "," << avgY << ")";]]></cline>
       </block>
-      <block order="5" correct="no">
+      <block order="5"
+             correct="no">
         <cline><![CDATA[ cout << "(" << "avgX" << "," << "avgY" << ")"; ]]></cline>
       </block>
       <block order="6">

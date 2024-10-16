@@ -2,56 +2,57 @@
 <section xml:id="chapter8_rectangles">
   <title>Rectangles</title>
   <p>Now let's say that we want to create a structure to represent a
-            rectangle. The question is, what information do I have to provide in
-            order to specify a rectangle? To keep things simple let's assume that
-            the rectangle will be oriented vertically or horizontally, never at an
-            angle.</p>
+    rectangle. The question is, what information do I have to provide in
+    order to specify a rectangle? To keep things simple let's assume that
+    the rectangle will be oriented vertically or horizontally, never at an
+    angle.</p>
   <p>There are a few possibilities: I could specify the center of the
-            rectangle (two coordinates) and its size (width and height), or I could
-            specify one of the corners and the size, or I could specify two opposing
-            corners.</p>
-  <p>The most common choice in existing programs is to specify the upper left
-            corner of the rectangle and the size. To do that in C++, we will define
-            a structure that contains a <c>Point</c> and two doubles.</p>
+    rectangle (two coordinates) and its size (width and height), or I could
+    specify one of the corners and the size, or I could specify two opposing
+    corners.</p>
+  <p>The most common choice in existing programs is to specify the upper left corner of the
+    rectangle and the size. To do that in C++, we will define a structure that contains a <c>Point</c>
+    and two doubles.</p>
   <program>struct Rectangle {
   Point corner;
   double width, height;
 };</program>
-  <p>Notice that one structure can contain another. In fact, this sort of
-            thing is quite common. Of course, this means that in order to create a
-            <c>Rectangle</c>, we have to create a <c>Point</c> first:</p>
+  <p>Notice that one structure can contain another. In fact, this sort of thing is quite common. Of
+    course, this means that in order to create a <c>Rectangle</c>, we have to create a <c>Point</c> first:</p>
   <program>Point corner = { 0.0, 0.0 };
 Rectangle box = { corner, 100.0, 200.0 };</program>
-  <p>This code creates a new <c>Rectangle</c> structure and initializes the
-            instance variables. The figure shows the effect of this assignment.</p>
-  <figure align="center" xml:id="empty-325">
-    <image source="Chapter8/Images/8.8stackdiagram.png" width="50%" alt="image"/>
+  <p>This code creates a new <c>Rectangle</c> structure and initializes the instance variables. The figure
+    shows the effect of this assignment.</p>
+  <figure align="center"
+          label="XXX">
+    <image source="Chapter8/Images/8.8stackdiagram.png"
+           width="50%"
+           alt="'box' names a box that contains three variables: 'width' which is 100, 'height' which is 200, and 'corner' which names a package that has 'x: 0' and 'y: 0'."/>
   </figure>
   <p>We can access the <c>width</c> and <c>height</c> in the usual way:</p>
   <program>box.width += 50.0;
 cout &lt;&lt; box.height &lt;&lt; endl;</program>
-  <p>In order to access the instance variables of <c>corner</c>, we can use a
-            temporary variable:</p>
+  <p>In order to access the instance variables of <c>corner</c>, we can use a temporary variable:</p>
   <program>Point temp = box.corner;
 double x = temp.x;</program>
   <p>Alternatively, we can compose the two statements:</p>
   <program>double x = box.corner.x;</program>
-  <p>It makes the most sense to read this statement from right to left:
-            <q>Extract <c>x</c> from the <c>corner</c> of the <c>box</c>, and assign it to the
-            local variable <c>x</c>.</q></p>
-  <p>While we are on the subject of composition, I should point out that you
-            can, in fact, create the <c>Point</c> and the <c>Rectangle</c> at the same
-            time:</p>
+  <p>It makes the most sense to read this statement from right to left: <q>Extract <c>x</c> from the <c>corner</c>
+    of the <c>box</c>, and assign it to the local variable <c>x</c>.</q></p>
+  <p>While we are on the subject of composition, I should point out that you can, in fact, create
+    the <c>Point</c> and the <c>Rectangle</c> at the same time:</p>
   <program>Rectangle box = { { 0.0, 0.0 }, 100.0, 200.0 };</program>
-  <p>The innermost squiggly braces are the coordinates of the corner point;
-            together they make up the first of the three values that go into the new
-            <c>Rectangle</c>. This statement is an example of <term>nested structure</term>.</p>
-  <exercise label="rectangles_AC_1">
-    <statement>
-      <p>The active code below uses the <c>Rectangle</c> structure. Feel free to
-            modify the code and experiment around!</p>
-    </statement>
-    <program xml:id="rectangles_AC_1_editor" interactive="activecode" line-numbers="yes">
+  <p>The innermost squiggly braces are the coordinates of the corner point; together they make up
+    the first of the three values that go into the new <c>Rectangle</c>. This statement is an example of <term>nested
+    structure</term>.</p>
+  <listing label="rectangles_AC_1">
+    <caption>
+      <p>This active code uses the <c>Rectangle</c> structure. Feel free to modify the code and experiment
+        around!</p>
+    </caption>
+    <program xml:id="rectangles_AC_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -73,7 +74,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <exercise label="rectangles_1">
     <statement>
       <p>How can you combine these two statements into one?</p>
@@ -129,30 +130,20 @@ double y = temp.y;
   </exercise>
   <exercise label="rectangles_2">
     <statement>
-      <p>Click on the legal ways to create a Point and Rectangle structure, assuming that the Point and Rectangle structures are declared above the main function in the same way as in the active code above.</p>
+      <p>Click on the legal ways to create a Point and Rectangle structure, assuming that the Point
+        and Rectangle structures are declared above the main function in the same way as in the
+        active code above.</p>
     </statement>
     <feedback>
       <p>Re-read the text above and try again.</p>
     </feedback>
     <areas>
-      <cline>
-        <area correct="no">def main() {</area>
-      </cline>
-      <cline>
-        <area correct="no">Point corner = ( 0.0, 0.0 );</area>
-      </cline>
-      <cline>
-        <area correct="no">Rectangle box = { ( 0.0, 0.0 ), 100.0, 200.0 }</area>
-      </cline>
-      <cline>
-        <area correct="yes">Rectangle box = { { 0.0, 0.0 }, 100.0, 200.0 };</area>
-      </cline>
-      <cline>
-        <area correct="yes">Point corner = { 0.0, 0.0 };</area>
-      </cline>
-      <cline>
-        <area correct="yes">Rectangle box = { corner, 100.0, 200.0 };</area>
-      </cline>
+      <cline>        <area correct="no">def main() {</area></cline>
+      <cline>        <area correct="no">Point corner = ( 0.0, 0.0 );</area></cline>
+      <cline>        <area correct="no">Rectangle box = { ( 0.0, 0.0 ), 100.0, 200.0 }</area></cline>
+      <cline>        <area correct="yes">Rectangle box = { { 0.0, 0.0 }, 100.0, 200.0 };</area></cline>
+      <cline>        <area correct="yes">Point corner = { 0.0, 0.0 };</area></cline>
+      <cline>        <area correct="yes">Rectangle box = { corner, 100.0, 200.0 };</area></cline>
       <cline>}</cline>
     </areas>
   </exercise>

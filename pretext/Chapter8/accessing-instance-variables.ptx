@@ -2,25 +2,25 @@
 <section xml:id="chapter8_accessing-instance-variables">
   <title>Accessing instance variables</title>
   <p>You can read the values of an instance variable using the same syntax we
-            used to write them:</p>
+    used to write them:</p>
   <program>int x = blank.x;</program>
-  <p>The expression <c>blank.x</c> means <q>go to the object named <c>blank</c> and
-            get the value of <c>x</c>.</q> In this case we assign that value to a local
-            variable named <c>x</c>. Notice that there is no conflict between the local
-            variable named <c>x</c> and the instance variable named <c>x</c>. The purpose
-            of dot notation is to identify <em>which</em> variable you are referring to
-            unambiguously.</p>
+  <p>The expression <c>blank.x</c> means <q>go to the object named <c>blank</c> and get the value of <c>x</c>.</q>
+    In this case we assign that value to a local variable named <c>x</c>. Notice that there is no
+    conflict between the local variable named <c>x</c> and the instance variable named <c>x</c>. The
+    purpose of dot notation is to identify <em>which</em> variable you are referring to
+    unambiguously.</p>
   <p>You can use dot notation as part of any C++ expression, so the following
-            are legal.</p>
+    are legal.</p>
   <program>cout &lt;&lt; blank.x &lt;&lt; ", " &lt;&lt; blank.y &lt;&lt; endl;
 double distance = sqrt(blank.x * blank.x + blank.y * blank.y);</program>
   <exercise label="accessing_instance_variables_AC_1">
     <statement>
-      <p>In the active code below, we access the instance variables of <c>Point</c> object
-            <c>black</c> using dot notation and output their values. Next, we output the
-            distance from the origin.</p>
+      <p>In this active code, we access the instance variables of <c>Point</c> object <c>black</c> using
+        dot notation and output their values. Next, we output the distance from the origin.</p>
     </statement>
-    <program xml:id="accessing_instance_variables_AC_1_editor" interactive="activecode" line-numbers="yes">
+    <program xml:id="accessing_instance_variables_AC_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <cmath>
@@ -43,7 +43,8 @@ int main() {
   </exercise>
   <exercise label="accessing_instance_variables_1">
     <statement>
-      <p>In <c>string x = thing.cube;</c>, what is the object and what is the instance variable we are reading the value of?</p>
+      <p>In <c>string x = thing.cube;</c>, what is the object and what is the instance variable we are reading the value
+        of?</p>
     </statement>
     <choices>
       <choice>
@@ -75,7 +76,8 @@ int main() {
           <p><c>cube</c> is the instance variable, <c>thing</c> is the object</p>
         </statement>
         <feedback id="accessing_instance_variables_1_opt_d">
-          <p>Yes, we access the instance variable <c>cube</c> of the object <c>thing</c> using the dot operator.</p>
+          <p>Yes, we access the instance variable <c>cube</c> of the object <c>thing</c> using the dot
+            operator.</p>
         </feedback>
       </choice>
       <choice>
@@ -136,7 +138,8 @@ int main() {
           </p>
         </statement>
         <feedback id="accessing_instance_variables_2_opt_c">
-          <p>The order in which the variables are printed out do not need to match the order in which they are declared.</p>
+          <p>The order in which the variables are printed out do not need to match the order in
+            which they are declared.</p>
         </feedback>
       </choice>
       <choice>
@@ -146,14 +149,16 @@ int main() {
           </p>
         </statement>
         <feedback id="accessing_instance_variables_2_opt_d">
-          <p>The order in which the variables are printed out do not need to match the order in which they are declared.</p>
+          <p>The order in which the variables are printed out do not need to match the order in
+            which they are declared.</p>
         </feedback>
       </choice>
     </choices>
   </exercise>
   <exercise label="accessing_instance_variables_3">
     <statement>
-      <p>You want to go to the object named <c>circle</c> and get the integer value of <c>y</c>, then assign it to the local variable <c>x</c>. How would you do that?</p>
+      <p>You want to go to the object named <c>circle</c> and get the integer value of <c>y</c>, then
+        assign it to the local variable <c>x</c>. How would you do that?</p>
     </statement>
     <choices>
       <choice>

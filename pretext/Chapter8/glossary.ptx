@@ -13,19 +13,19 @@
     <li>
       <title>reference:</title>
       <p>A value that indicates or refers to a variable or structure. In a
-                        state diagram, a reference appears as an arrow.</p>
+        state diagram, a reference appears as an arrow.</p>
     </li>
     <li>
       <title>pass by value:</title>
       <p>A method of parameter-passing in which the value provided as an
-                        argument is copied into the corresponding parameter, but the
-                        parameter and the argument occupy distinct locations.</p>
+        argument is copied into the corresponding parameter, but the
+        parameter and the argument occupy distinct locations.</p>
     </li>
     <li>
       <title>pass by reference:</title>
       <p>A method of parameter-passing in which the parameter is a reference
-                        to the argument variable. Changes to the parameter also affect the
-                        argument variable.</p>
+        to the argument variable. Changes to the parameter also affect the
+        argument variable.</p>
     </li>
   </dl>
   <exercise label="chapter_eight_glossary">
@@ -50,11 +50,14 @@
       </match>
       <match order="4">
         <premise>pass by value</premise>
-        <response>A method of parameter-passing in which the value provided as an argument is copied into the corresponding parameter, but the parameter and the argument occupy distinct locations.</response>
+        <response>A method of parameter-passing in which the value provided as an argument is copied
+          into the corresponding parameter, but the parameter and the argument occupy distinct
+          locations.</response>
       </match>
       <match order="5">
         <premise>pass by reference</premise>
-        <response>A method of parameter-passing in which the parameter is a reference to the argument variable. Changes to the parameter also affect the argument variable.</response>
+        <response>A method of parameter-passing in which the parameter is a reference to the
+          argument variable. Changes to the parameter also affect the argument variable.</response>
       </match>
     </matches>
   </exercise>
