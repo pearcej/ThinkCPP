@@ -6,7 +6,7 @@
             that creates a new deck of 52 cards:</p>
   <program>vector&lt;Card&gt; deck (52);</program>
   <p>Here is the state diagram for this object:</p>
-  <figure align="center" label="XXX">
+  <figure align="center" >
     <image source="Chapter12/Images/12.6deck_state_diagram.png" width="50%" alt="image"/>
   </figure>
   <p>The three dots represent the 48 cards I didn't feel like drawing. Keep

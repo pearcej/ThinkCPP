@@ -23,8 +23,7 @@
 Rectangle box = { corner, 100.0, 200.0 };</program>
   <p>This code creates a new <c>Rectangle</c> structure and initializes the instance variables. The figure
     shows the effect of this assignment.</p>
-  <figure align="center"
-          label="XXX">
+  <figure align="center">
     <image source="Chapter8/Images/8.8stackdiagram.png"
            width="50%"
            alt="'box' names a box that contains three variables: 'width' which is 100, 'height' which is 200, and 'corner' which names a package that has 'x: 0' and 'y: 0'."/>

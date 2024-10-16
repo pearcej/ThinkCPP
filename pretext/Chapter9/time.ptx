@@ -32,8 +32,7 @@ int main() {
     </program>
   </listing>
   <p>The state diagram for this object looks like this:</p>
-  <figure align="center"
-          label="XXX">
+  <figure align="center">
     <image source="Chapter9/Images/9.1stackdiagram.png"
            width="50%"
            alt="image"/>

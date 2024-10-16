@@ -2,7 +2,7 @@
 <section xml:id="chapter2_activecode-exercises-1">
   <title>Activecode Exercises</title>
   <p>Answer the following <term>Activecode</term> questions to assess what you have learned in this chapter.</p>
-  <exercise label="XXX">
+  <exercise label="VARS_a">
     <caption>
       <p>Fix the code below so that it runs without errors.  Hint: you might need to change the names of some variables.</p>
     </caption>
@@ -54,7 +54,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise label="XXX">
+  <exercise label="VARS_a2">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'activeCode_pseudocode', 'chapter': 'Chapter2', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="VARS_a2_ps">
         <caption>
@@ -130,7 +130,7 @@ int main() {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise label="XXX">
+  <exercise label="VARS_a3">
     <caption>
       <p>Fix the code below so that it prints <q>Cady scored 90% on the exam.</q></p>
     </caption>
@@ -178,7 +178,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise label="XXX">
+  <exercise label="VARS_a4">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'activeCode_pseudocode', 'chapter': 'Chapter2', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="VARS_a4_ps">
         <caption>
@@ -241,7 +241,7 @@ int main() {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise label="XXX">
+  <exercise label="VARS_a5">
     <caption>
       <p>Fix the code below so that assigns <c>a</c> its correct value of <c>'a'</c>.  Hint: use character operations!</p>
     </caption>
@@ -294,7 +294,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise label="XXX">
+  <exercise label="VARS_a6">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'activeCode_pseudocode', 'chapter': 'Chapter2', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="VARS_a6_ps">
         <caption>
@@ -351,7 +351,7 @@ int main() {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise label="XXX">
+  <exercise label="VARS_a7">
     <caption>
       <p>Write code that prints <q>Eat</q>, <q>More</q>, and <q>Chicken</q> on 3 consecutive lines. Be sure to inclue any necessary headers.</p>
     </caption>
@@ -394,7 +394,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise label="XXX">
+  <exercise label="VARS_a8">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'activeCode_pseudocode', 'chapter': 'Chapter2', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="VARS_a8_ps">
         <caption>
@@ -445,7 +445,7 @@ int main() {
       </exercise>
     </TabNode>
   </exercise>
-  <exercise label="XXX">
+  <exercise label="VARS_a9">
     <caption>
       <p>You have about three hours and fifteen minutes of homework to do today.  Rather than starting it right away, you choose to procrastinate by calculating how many seconds you'll be spending on your work.  Convert the time to seconds and store the result in <c>seconds</c>.  Be sure to inclue any necessary headers.</p>
     </caption>
@@ -492,7 +492,7 @@ int main() {
         ]]></input></program></exercise>
             </solution>
   </exercise>
-  <exercise label="XXX">
+  <exercise label="VARS_a10">
     <TabNode tabname="Activecode" tabnode_options="{'subchapter': 'activeCode_pseudocode', 'chapter': 'Chapter2', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
       <exercise label="VARS_a10_ps">
         <caption>

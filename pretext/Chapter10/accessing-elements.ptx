@@ -12,7 +12,7 @@ count[2]++;
 count[3] -= 60;</program>
   <p>All of these are legal assignment statements. Here is the effect of this
             code fragment:</p>
-  <figure align="center" label="XXX">
+  <figure align="center">
     <image source="Chapter10/Images/10.2count_diagram.png" width="50%" alt="image"/>
   </figure>
   <warning>

@@ -52,8 +52,7 @@ int main() {
   <p>This kind of <term>multiple assignment</term> is the reason I described variables as a <em>
     container</em> for values. When you assign a value to a variable, you change the contents of the
     container, as shown in the figure:</p>
-  <figure align="center"
-          label="XXX">
+  <figure align="center">
     <image source="Chapter6/Images/6.1image.png"
            width="50%"
            alt="An assignment of 'fred = 7' changing the existing value of 'fred'."/>

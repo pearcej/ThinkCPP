@@ -5,8 +5,7 @@
     the same variable. Instead, there are two variables (one in the caller and one in the callee)
     that have the same value, at least initially. For example, when we call <c>printPoint</c>, the stack
     diagram looks like this:</p>
-  <figure align="center"
-          label="XXX">
+  <figure align="center">
     <image source="Chapter8/Images/8.6stackdiagram.png"
            width="50%"
            alt="Two boxes, one for 'main' and one for 'printPoint'. 'main' has a variable blank and 'printPoint' has a variable 'p'. Both variables have 'x:3, y:4'"/>

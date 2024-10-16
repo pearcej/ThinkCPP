@@ -31,8 +31,7 @@ blank.y = 4.0;</program>
     similar to the syntax for invoking a function on an object, as in <c>fruit.length()</c>. Of course, one
     difference is that function names are always followed by an argument list, even if it is empty.</p>
   <p>The result of these assignments is shown in the following state diagram:</p>
-  <figure align="center"
-          label="XXX">
+  <figure align="center">
     <image source="Chapter8/Images/8.2stackdiagram.png"
            width="50%"
            alt="'blank' names a box with two halves. One is 'x: 3' the other is 'y: 4'."/>

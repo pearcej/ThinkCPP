@@ -61,8 +61,7 @@ int main() {
   <program>(3, 4)
 (4, 3)</program>
   <p>Here's how we would draw a stack diagram for this program:</p>
-  <figure align="center"
-          label="XXX">
+  <figure align="center">
     <image source="Chapter8/Images/8.7stackdiagram.png"
            width="50%"
            alt="Two boxes, one for 'main' and one for 'reflect'. 'main' has a variable blank with 'x:3, y:4' crossed out and replaced with 'x:4, y:3'. 'reflect' has a variable 'p' that just points at 'blank' in 'main'."/>
