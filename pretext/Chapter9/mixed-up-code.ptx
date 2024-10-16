@@ -273,7 +273,7 @@
         <cline>      d.year = 1;</cline>
       </block>
       <block order="9">
-        <cline>   } // end if</cline>
+        <cline>   }</cline>
       </block>
       <block order="13">
         <cline>   else {</cline>
@@ -282,10 +282,10 @@
         <cline>      d.month++;</cline>
       </block>
       <block order="4">
-        <cline>   } // end else</cline>
+        <cline>   }</cline>
       </block>
       <block order="8">
-        <cline>} // end nextMonth</cline>
+        <cline>}</cline>
       </block>
     </blocks>
   </exercise>
@@ -477,7 +477,7 @@
         <cline>      total.inches = total.inches - addFeet * 12;</cline>
       </block>
       <block order="9">
-        <cline> } // end if total.inches</cline>
+        <cline> }</cline>
       </block>
       <block order="13">
         <cline>   if (total.feet &gt;= 3) {</cline>
@@ -492,7 +492,7 @@
         <cline>      total.feet = total.feet - addYards * 3;</cline>
       </block>
       <block order="17">
-        <cline> } // end if total.feet</cline>
+        <cline> }</cline>
         <cline>}</cline>
       </block>
     </blocks>

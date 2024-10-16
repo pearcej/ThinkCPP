@@ -446,19 +446,19 @@
         </choice>
       </block>
       <block order="2">
-        <cline>      } // end if</cline>
+        <cline>      }</cline>
       </block>
       <block order="7">
         <cline>      i++;</cline>
       </block>
       <block order="6">
-        <cline>   } // end while</cline>
+        <cline>   }</cline>
       </block>
       <block order="13">
         <cline>   return input;</cline>
       </block>
       <block order="15">
-        <cline>} // end main</cline>
+        <cline>}</cline>
       </block>
     </blocks>
   </exercise>
@@ -511,19 +511,19 @@
         </choice>
       </block>
       <block order="7">
-        <cline>      } //end if</cline>
+        <cline>      }</cline>
       </block>
       <block order="10">
         <cline>      i++;</cline>
       </block>
       <block order="11">
-        <cline>   } //end while</cline>
+        <cline>   }</cline>
       </block>
       <block order="14">
         <cline>   return input;</cline>
       </block>
       <block order="4">
-        <cline>} //end main</cline>
+        <cline>}</cline>
       </block>
     </blocks>
   </exercise>
@@ -578,7 +578,7 @@
         </choice>
       </block>
       <block order="5">
-        <cline>} //end main</cline>
+        <cline>}</cline>
       </block>
     </blocks>
   </exercise>
@@ -637,13 +637,13 @@
         <cline>      back = back - 1;</cline>
       </block>
       <block order="15">
-        <cline>   } //end while</cline>
+        <cline>   }</cline>
       </block>
       <block order="12">
         <cline>   return true;</cline>
       </block>
       <block order="8">
-        <cline>} //end main</cline>
+        <cline>}</cline>
       </block>
     </blocks>
   </exercise>

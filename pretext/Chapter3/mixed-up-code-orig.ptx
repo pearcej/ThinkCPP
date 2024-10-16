@@ -49,7 +49,7 @@
         <cline> cout &lt;&lt; endl;</cline>
       </block>
       <block order="3">
-        <cline>}  //newLine</cline>
+        <cline>}</cline>
       </block>
       <block order="5">
         <choice correct="yes">
@@ -79,7 +79,7 @@
         </choice>
       </block>
       <block order="8">
-        <cline>}  //divider</cline>
+        <cline>}</cline>
       </block>
     </blocks>
   </exercise>
@@ -353,7 +353,7 @@
         <cline> cout &lt;&lt; prob;</cline>
       </block>
       <block order="2">
-        <cline>} //conditionalProb</cline>
+        <cline>}</cline>
       </block>
       <block order="12">
         <cline>int main() {</cline>
@@ -375,7 +375,7 @@
         <cline> conditionalProb(pSnowday, pSnow); </cline>
       </block>
       <block order="7">
-        <cline>} //main</cline>
+        <cline>}</cline>
       </block>
     </blocks>
   </exercise>

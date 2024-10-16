@@ -164,7 +164,7 @@
         <cline>   }</cline>
       </block>
       <block order="17">
-        <cline>}  //end of function</cline>
+        <cline>}</cline>
       </block>
     </blocks>
   </exercise>
@@ -305,7 +305,7 @@
         <cline>   }</cline>
       </block>
       <block order="14">
-        <cline>}  // end of function</cline>
+        <cline>}</cline>
       </block>
     </blocks>
   </exercise>
@@ -355,7 +355,7 @@
         <cline>   }</cline>
       </block>
       <block order="9">
-        <cline>}  // end of function</cline>
+        <cline>}</cline>
       </block>
     </blocks>
   </exercise>
@@ -412,7 +412,7 @@
         <cline>   }</cline>
       </block>
       <block order="4">
-        <cline>}  // end of function</cline>
+        <cline>}</cline>
       </block>
     </blocks>
   </exercise>
@@ -463,7 +463,7 @@
         <cline>   }</cline>
       </block>
       <block order="2">
-        <cline>}  // end of function</cline>
+        <cline>}</cline>
       </block>
     </blocks>
   </exercise>
@@ -515,7 +515,7 @@
         <cline>   }</cline>
       </block>
       <block order="4">
-        <cline>}  // end of function</cline>
+        <cline>}</cline>
       </block>
     </blocks>
   </exercise>
@@ -580,7 +580,7 @@
         <cline>   }</cline>
       </block>
       <block order="3">
-        <cline>}  // end of function</cline>
+        <cline>}</cline>
       </block>
     </blocks>
   </exercise>

@@ -554,10 +554,10 @@ TEST_CASE("countVowels function") {
             <cline>            count++;</cline>
           </block>
           <block order="7">
-            <cline>        } // end if</cline>
+            <cline>        }</cline>
           </block>
           <block order="4">
-            <cline>    } // end for</cline>
+            <cline>    }</cline>
           </block>
           <block order="2">
             <cline>    return count;</cline>
@@ -704,7 +704,7 @@ TEST_CASE("camelToSnake function") {
           <block order="1">
             <cline>    }</cline>
             <cline>    return input;</cline>
-            <cline>} //end snakeToCamel</cline>
+            <cline>}</cline>
           </block>
           <block order="6">
             <cline>// camelToSnake function</cline>
@@ -721,7 +721,7 @@ TEST_CASE("camelToSnake function") {
           <block order="8">
             <cline>    }</cline>
             <cline>    return input;</cline>
-            <cline>} //end camelToSnake</cline>
+            <cline>}</cline>
           </block>
         </blocks>
       </activity>

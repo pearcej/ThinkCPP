@@ -368,7 +368,7 @@
         <cline> cout &lt;&lt; num;</cline>
       </block>
       <block order="6">
-        <cline>} // END function</cline>
+        <cline>}</cline>
       </block>
     </blocks>
   </exercise>

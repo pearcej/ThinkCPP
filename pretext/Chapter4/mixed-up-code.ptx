@@ -155,7 +155,7 @@
         <cline> }</cline>
       </block>
       <block order="7">
-        <cline>}  //end of function</cline>
+        <cline>}</cline>
       </block>
     </blocks>
   </exercise>
@@ -259,7 +259,7 @@
         <cline> }</cline>
       </block>
       <block order="9">
-        <cline>}  // end of function</cline>
+        <cline>}</cline>
       </block>
     </blocks>
   </exercise>
@@ -380,7 +380,7 @@
         <cline> cout &lt;&lt; num;</cline>
       </block>
       <block order="6">
-        <cline>} // END function</cline>
+        <cline>}</cline>
       </block>
     </blocks>
   </exercise>

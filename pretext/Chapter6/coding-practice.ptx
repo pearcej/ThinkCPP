@@ -133,14 +133,14 @@ int main() {
             <cline>   col++;</cline>
           </block>
           <block order="2">
-            <cline>  } // end inner loop</cline>
+            <cline>  }</cline>
           </block>
           <block order="1">
             <cline><![CDATA[  cout << endl;]]></cline>
             <cline>  row++;</cline>
           </block>
           <block order="8">
-            <cline> } // end outer loop</cline>
+            <cline> }</cline>
             <cline>}</cline>
           </block>
         </blocks>
@@ -481,7 +481,7 @@ int main() {
             <cline><![CDATA[            cout << i + j << '\t';]]></cline>
           </block>
           <block order="2">
-            <cline>        }  //end inner loop</cline>
+            <cline>        }</cline>
           </block>
           <block order="4">
             <cline><![CDATA[        cout << '\n';]]></cline>

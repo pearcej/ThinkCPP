@@ -107,7 +107,7 @@ int main() {
             <cline>        }</cline>
           </block>
           <block order="3">
-            <cline>    } // end c.name</cline>
+            <cline>    }</cline>
           </block>
           <block order="10">
             <cline>    else {</cline>
@@ -123,7 +123,7 @@ int main() {
             <cline>        }</cline>
           </block>
           <block order="8">
-            <cline>    } // end else</cline>
+            <cline>    }</cline>
             <cline>}</cline>
           </block>
         </blocks>
@@ -782,7 +782,7 @@ void printOutfit(Outfit o) {
             <cline>    outfit.s = shirt;</cline>
           </block>
           <block order="5">
-            <cline>} // end change shirt</cline>
+            <cline>}</cline>
           </block>
           <block order="1">
             <cline>// changePants function</cline>
@@ -792,7 +792,7 @@ void printOutfit(Outfit o) {
             <cline>    outfit.p = pants;</cline>
           </block>
           <block order="3">
-            <cline>} // end change pants</cline>
+            <cline>}</cline>
           </block>
         </blocks>
       </activity>

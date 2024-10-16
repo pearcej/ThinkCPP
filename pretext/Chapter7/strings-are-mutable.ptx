@@ -167,7 +167,7 @@ string message = "You're a lizard Harry";
         <cline>     i++;</cline>
       </block>
       <block order="2">
-        <cline>   } // end while</cline>
+        <cline>   }</cline>
       </block>
       <block order="12">
         <choice correct="yes">
@@ -178,7 +178,7 @@ string message = "You're a lizard Harry";
         </choice>
       </block>
       <block order="3">
-        <cline>} // end program</cline>
+        <cline>}</cline>
       </block>
     </blocks>
   </exercise>
