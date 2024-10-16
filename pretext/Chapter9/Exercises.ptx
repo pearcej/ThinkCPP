@@ -138,7 +138,7 @@ struct Book {
   double price;
 };
 
-void printBook (Book& b) {
+void printBook(Book& b) {
   cout << "\"" << b.title << "\" by " << b.author << " (" << b.yearPublished << "), $" << b.price << endl;
 }
 
@@ -146,7 +146,7 @@ int main() {
   Book mockingbird = { "To Kill a Mockingbird", "Harper Lee", 1960, 9.25 };
   double discountedPrice = 7.19;
   mockingbird.price = discountedPrice;
-  printBook (mockingbird);
+  printBook(mockingbird);
 }
 ]]></input>
       </program>
@@ -197,13 +197,13 @@ struct Book {
   double price;
 };
 
-void printBook (Book& b) {
+void printBook(Book& b) {
   cout << "\"" << b.title << "\" by " << b.author << " (" << b.yearPublished << "), $" << b.price << endl;
 }
 
 int main() {
   Book dracula = { "Dracula", "Bram Stoker", 1897, 3.95 };
-  printBook (dracula);
+  printBook(dracula);
 }
 ]]></input>
       </program>
@@ -254,7 +254,7 @@ struct Book {
   double price;
 }
 
-void printBook (Book& b) {
+void printBook(Book& b) {
   cout << "\"" << b.title << "\" by " << b.author << " (" << b.yearPublished << "), $" << b.price << endl;
 }
 
@@ -264,8 +264,8 @@ void applyDiscount(const Book& b, double discount) {
 
 int main() {
   Book godfather = { "The Godfather", "Mario Puzo", 1969, 10.90 };
-  applyDiscount (godfather, 5.40);
-  printBook (godfather);
+  applyDiscount(godfather, 5.40);
+  printBook(godfather);
 }
 ]]></input>
       </program>
@@ -316,18 +316,18 @@ struct Book {
   double price;
 };
 
-void printBook (Book& b) {
+void printBook(Book& b) {
   cout << "\"" << b.title << "\" by " << b.author << " (" << b.yearPublished << "), $" << b.price << endl;
 }
 
-void applyDiscount (Book& b, double discount) {
+void applyDiscount(Book& b, double discount) {
   b.price -= discount;
 }
 
 int main() {
   Book godfather = { "The Godfather", "Mario Puzo", 1969, 10.90 };
-  applyDiscount (godfather, 5.40);
-  printBook (godfather);
+  applyDiscount(godfather, 5.40);
+  printBook(godfather);
 }
 ]]></input>
       </program>
@@ -390,8 +390,8 @@ int main() {
   Point3D p1 = { 3.0, 5.0, 2.0 };
   Point3D p2 = { 6.0, 3.5, 9.3 };
   Point3D p3 = { 0.0, 0.0, 0.0 };
-  midpoint (p1, p2, p3);
-  printPoint3D (p3);
+  midpoint(p1, p2, p3);
+  printPoint3D(p3);
 }
 ]]></input>
       </program>
@@ -454,8 +454,8 @@ int main() {
   Point3D p1 = { 3.0, 5.0, 2.0 };
   Point3D p2 = { 6.0, 3.5, 9.3 };
   Point3D p3 = { 0.0, 0.0, 0.0 };
-  midpoint (p1, p2, p3);
-  printPoint3D (p3);
+  midpoint(p1, p2, p3);
+  printPoint3D(p3);
 }
 ]]></input>
       </program>
@@ -522,8 +522,8 @@ Point3D reflectXYPlane(const Point3D& p) {
 
 int main() {
   Point3D p = { 11.3, 4.5, 2.9 };
-  Point3D pReflected = reflectXYPlane (p);
-  printPoint3D (pReflected);
+  Point3D pReflected = reflectXYPlane(p);
+  printPoint3D(pReflected);
 }
 ]]></input>
       </program>
@@ -592,9 +592,9 @@ int main() {
   Point3D p1 = { 7.0, 3.5, 6.7 };
   Point3D p2 = { 2.0, 1.0, 0.0 };
   Point3D p3 = { 3.9, 4.5, 10.0 };
-  Point3D p4 = reflectXYPlane (p1);
-  midpoint (p4, p3, p2);
-  printPoint3D (p2);
+  Point3D p4 = reflectXYPlane(p1);
+  midpoint(p4, p3, p2);
+  printPoint3D(p2);
 }
 ]]></input>
       </program>

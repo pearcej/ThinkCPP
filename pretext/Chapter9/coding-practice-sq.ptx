@@ -27,9 +27,9 @@ struct Cake {
 
 int main() {
     Cake c1 = { "n/a", "red", 12.5, true };
-    printCakeInfo (c1);
+    printCakeInfo(c1);
     Cake c2 = { "Tom", "white", 10, false };
-    printCakeInfo (c2);
+    printCakeInfo(c2);
 }
         ]]></input>
         </program>
@@ -117,8 +117,8 @@ Cake makeCake();
 
 int main() {
     Cake original = { "John", "green", 8.5, true };
-    changeCakeDiameter (original, 2);
-    printCakeInfo (original);
+    changeCakeDiameter(original, 2);
+    printCakeInfo(original);
 }
         ]]></input>
           <tests>
@@ -357,8 +357,8 @@ int main() {
     printOutfit(o);
     Shirt newShirt = { "red", 'M' };
     Pants newPants = { 'M', "khakis" };
-    changeShirts (o, newShirt);
-    changePants (o, newPants);
+    changeShirts(o, newShirt);
+    changePants(o, newPants);
     printOutfit(o);
 }
         ]]></input>

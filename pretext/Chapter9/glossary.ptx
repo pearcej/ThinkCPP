@@ -4,13 +4,13 @@
   <dl>
     <li>
       <title>instance:</title>
-      <p>An example from a category. My cat is an instance of the category
-                        <q>feline things.</q> Every object is an instance of some type.</p>
+      <p>An example from a category. My cat is an instance of the category <q>feline things.</q>
+        Every object is an instance of some type.</p>
     </li>
     <li>
       <title>instance variable:</title>
       <p>One of the named data items that make up an structure. Each structure
-                        has its own copy of the instance variables for its type.</p>
+        has its own copy of the instance variables for its type.</p>
     </li>
     <li>
       <title>constant reference parameter:</title>
@@ -19,27 +19,27 @@
     <li>
       <title>pure function:</title>
       <p>A function whose result depends only on its parameters, and that has
-                        so effects other than returning a value.</p>
+        so effects other than returning a value.</p>
     </li>
     <li>
       <title>functional programming style:</title>
       <p>A style of program design in which the majority of functions are
-                        pure.</p>
+        pure.</p>
     </li>
     <li>
       <title>modifier:</title>
-      <p>A function that changes one or more of the objects it receives as
-                        parameters, and usually returns <c>void</c>.</p>
+      <p>A function that changes one or more of the objects it receives as parameters, and usually
+        returns <c>void</c>.</p>
     </li>
     <li>
       <title>fill-in function:</title>
-      <p>A function that takes an <q>empty</q> object as a parameter and fills in
-                        its instance variables instead of generating a return value.</p>
+      <p>A function that takes an <q>empty</q> object as a parameter and fills in its instance
+        variables instead of generating a return value.</p>
     </li>
     <li>
       <title>algorithm:</title>
       <p>A set of instructions for solving a class of problems by a
-                        mechanical, unintelligent process.</p>
+        mechanical, unintelligent process.</p>
     </li>
   </dl>
   <exercise label="chapter_nine_glossary_one">
@@ -52,11 +52,13 @@
     <matches>
       <match order="1">
         <premise>instance</premise>
-        <response>An example from a category. My cat is an instance of the category <q>feline things.</q> Every object is an instance of some type.</response>
+        <response>An example from a category. My cat is an instance of the category <q>feline
+          things.</q> Every object is an instance of some type.</response>
       </match>
       <match order="2">
         <premise>instance variable</premise>
-        <response>One of the named data items that make up an structure. Each structure has its own copy of the instance variables for its type.</response>
+        <response>One of the named data items that make up an structure. Each structure has its own
+          copy of the instance variables for its type.</response>
       </match>
       <match order="3">
         <premise>constant reference parameter</premise>
@@ -64,7 +66,8 @@
       </match>
       <match order="4">
         <premise>pure function</premise>
-        <response>A function whose result depends only on its parameters, and that has so effects other than returning a value.</response>
+        <response>A function whose result depends only on its parameters, and that has so effects
+          other than returning a value.</response>
       </match>
     </matches>
   </exercise>
@@ -82,15 +85,18 @@
       </match>
       <match order="2">
         <premise>modifier</premise>
-        <response>A function that changes one or more of the objects it receives as parameters, and usually returns void.</response>
+        <response>A function that changes one or more of the objects it receives as parameters, and
+          usually returns void.</response>
       </match>
       <match order="3">
         <premise>fill-in function</premise>
-        <response>A function that takes an <q>empty</q> object as a parameter and fills it its instance variables instead of generating a return value.</response>
+        <response>A function that takes an <q>empty</q> object as a parameter and fills it its
+          instance variables instead of generating a return value.</response>
       </match>
       <match order="4">
         <premise>algorithm</premise>
-        <response>A set of instructions for solving a class of problems by a mechanical, unintelligent process.</response>
+        <response>A set of instructions for solving a class of problems by a mechanical,
+          unintelligent process.</response>
       </match>
     </matches>
   </exercise>
