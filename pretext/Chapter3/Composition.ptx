@@ -10,10 +10,10 @@
   <p>You can also take the result of one function and pass it as an argument
     to another:</p>
   <listing label="function_comp_AC_1">
-    <statement>
+    <caption>
       <p>This program finds the log base e of 10 and raises e to that power. The
         result of this computation is assigned to x.</p>
-    </statement>
+    </caption>
     <program xml:id="function_comp_AC_1_editor"
              interactive="activecode"
              line-numbers="yes">

@@ -6,11 +6,11 @@
     this:</p>
   <p>The <q>Hello, World.</q> program is a great place to start learning a new language. Observe the
     program structure below.</p>
-  <listing>
+  <listing xml:id="first_program_AC_list">
     <caption>
       <p>This program prints <q>Hello, World.</q> to the output.</p>
     </caption>
-    <program interactive="activecode"  label="first_program_AC" id="first_program_AC"
+    <program interactive="activecode"  label="first_program_AC"
              line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -33,7 +33,7 @@ for (int i = 0; i &lt; upperBound; i++) {
     World.</q> program. By this standard, C++ does reasonably well. Even so, this simple program
     contains several features that are hard to explain to beginning programmers. For now, we will
     ignore some of them, like the first two lines.</p>
-  <p>The third line of <xref ref="first_program_AC"/> begins with <c>//</c>, which indicates that it
+  <p>The third line of <xref ref="first_program_AC_list"/> begins with <c>//</c>, which indicates that it
     is a <term>comment</term>. A comment is a bit of English text that you can put in the middle of
     a program, usually to explain what the program does. When the compiler sees a <c>//</c>, it
     ignores everything from there until the end of the line.</p>

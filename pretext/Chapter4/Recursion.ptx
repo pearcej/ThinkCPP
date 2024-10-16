@@ -23,13 +23,13 @@
   <p>The name of the function is <c>countdown</c> and it takes a single integer as a parameter. If the
     parameter is zero, it outputs the word <q>Blastoff.</q> Otherwise, it outputs the parameter and
     then calls a function named <c>countdown</c> &#x2014;itself&#x2014; passing <c>n - 1</c> as an argument.</p>
-  <listing label="recursion_AC_1">
+  <activity label="recursion_AC_1">
     <statement>
       <p>Watch how the countdown function works when we start with a value
         of 3.</p>
     </statement>
     <program xml:id="recursion_AC_1_editor"
-             interactive="codelens"
+             interactive="codelens" language="cpp"
              line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -52,7 +52,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </listing>
+  </activity>
   <p>What happens if we call <c>countdown</c> function like this:</p>
   <blockquote>
     <p>The execution of <c>countdown</c> begins with <c>n = 3</c>, and since n is not zero, it outputs the value

@@ -24,10 +24,10 @@ printTime(int hour, int minute);   // WRONG!</program>
   </warning>
   <p>The correct syntax is printTime(hour, minute).</p>
   <listing label="multiple_params_AC_1">
-    <statement>
+    <caption>
       <p>This program shows how the dollar_amount and cent_amount arguments
         are passed into the printPrice function.</p>
-    </statement>
+    </caption>
     <program xml:id="multiple_params_AC_1_editor"
              interactive="activecode"
              line-numbers="yes">

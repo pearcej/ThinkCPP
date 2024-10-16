@@ -4,12 +4,12 @@
   <p>Parameters and variables only exist inside their own functions. In the code below, within the confines of <c>main</c>,
     there is no such thing as <c>phil</c>. If you try to use it, the compiler will complain. Similarly,
     inside <c>printTwice</c> there is no such thing as argument.</p>
-  <exercise xml:id="locals_AC_1">
-    <statement>
+  <listing xml:id="locals_AC_1">
+    <caption>
       <p>The following code will show the output of the printTwice function.
         Notice that it is the argument &#x2018;b' that is outputted, not the
         variable &#x2018;phil'.</p>
-    </statement>
+    </caption>
     <program xml:id="locals_AC_1_editor"
              interactive="activecode"
              line-numbers="yes">
@@ -28,14 +28,13 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <p>Variables like this are said to be <term>local</term>. In order to keep track of parameters and
     local variables, it is useful to draw a <term>stack
       diagram</term>. Like state diagrams, stack diagrams show the value of each variable, but the
     variables are contained in larger boxes that indicate which function they belong to.</p>
   <p>For example, the state diagram for <c>printTwice</c> looks like this:</p>
-  <figure align="center"
-          label="XXX">
+  <figure align="center">
     <image source="Chapter3/Images/3.9stackdiagram.png"
            width="50%"
            alt="Two boxes. One labeled main that contains a variable named 'argument' which is 'b'. The other labeled printTwice that contains a variable named 'phil' which is 'b'."/>

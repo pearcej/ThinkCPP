@@ -21,7 +21,7 @@
   <p>Fortunately, C++ is adept at keeping track of where it is, so each time <c>newLine</c> completes, the
     program picks up where it left off in <c>threeLine</c>, and eventually gets back to <c>main</c> so the
     program can terminate.</p>
-  <exercise label="multiple_functions_AC_1">
+  <activity label="multiple_functions_AC_1">
     <statement>
       <p>This program calls the multiplyTwo and addTwo functions in the
         main. Follow the order of execution using the Codelens.</p>
@@ -57,7 +57,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </activity>
   <p>What's the moral of this sordid tale? When you read a program, don't read from top to bottom.
     Instead, <term>follow the flow of execution</term>.</p>
   <exercise label="multiple_fun_1">

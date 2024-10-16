@@ -35,9 +35,9 @@ int main() {
   <p>Often it is useful to display the output from multiple output statements all on one line. You
     can do this by leaving out the first <c>endl</c>:</p>
   <listing label="more_output_AC_2">
-    <statement>
+    <caption>
       <p>This program prints two different statements on the same line.</p>
-    </statement>
+    </caption>
     <program xml:id="more_output_AC_2_editor"
              interactive="activecode"
              line-numbers="yes"

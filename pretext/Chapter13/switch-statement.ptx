@@ -39,12 +39,12 @@ else {
             error message. Occasionally this feature is useful, but most of the time
             it is a source of errors when people forget the <c>break</c> statements.</p>
   <listing label="switch_AC_1">
-    <statement>
+    <caption>
       <p>Take a look at this active code that allows you to choose your starter Pokemon.
             If you change the value of <c>type</c>, it will change the Pokemon you choose. Notice how
             if you don't assign <c>type</c> to a valid type, it outputs the default message. Try taking out
             the <c>break</c> statements in each case. What happens if you run the code with <c>type</c> as &#x2018;g' afterwards?</p>
-    </statement>
+    </caption>
     <program xml:id="switch_AC_1_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
