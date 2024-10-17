@@ -2,12 +2,11 @@
 <section xml:id="chapter10_for-loops">
   <title><c>for</c> loops</title>
   <p>The loops we have written so far have a number of elements in common.
-            All of them start by initializing a variable; they have a test, or
-            condition, that depends on that variable; and inside the loop they do
-            something to that variable, like increment it.</p>
-  <p>This type of loop is so common that there is an alternate loop
-            statement, called <c>for</c>, that expresses it more concisely. The general
-            syntax looks like this:</p>
+    All of them start by initializing a variable; they have a test, or
+    condition, that depends on that variable; and inside the loop they do
+    something to that variable, like increment it.</p>
+  <p>This type of loop is so common that there is an alternate loop statement, called <c>for</c>, that
+    expresses it more concisely. The general syntax looks like this:</p>
   <program>for (INITIALIZER; CONDITION; INCREMENTOR) {
   BODY
 }</program>
@@ -18,7 +17,7 @@ while (CONDITION) {
   INCREMENTOR
 }</program>
   <p>except that it is more concise and, since it puts all the loop-related
-            statements in one place, it is easier to read. For example:</p>
+    statements in one place, it is easier to read. For example:</p>
   <program>int i;
 for (i = 0; i &lt; 4; i++) {
   cout &lt;&lt; count[i] &lt;&lt; endl;
@@ -30,10 +29,12 @@ while (i &lt; 4) {
   i++;
 }</program>
   <listing label="for_loops_AC_1">
-    <statement>
+    <caption>
       <p>Run this active code, which uses a <c>for</c> loop.</p>
-    </statement>
-    <program xml:id="for_loops_AC_1_editor" interactive="activecode" line-numbers="yes">
+    </caption>
+    <program xml:id="for_loops_AC_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <vector>
@@ -50,10 +51,12 @@ int main() {
     </program>
   </listing>
   <listing label="for_loops_AC_2">
-    <statement>
+    <caption>
       <p>Run this active code, which uses a <c>while</c> loop.</p>
-    </statement>
-    <program xml:id="for_loops_AC_2_editor" interactive="activecode" line-numbers="yes">
+    </caption>
+    <program xml:id="for_loops_AC_2_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <vector>
@@ -70,9 +73,37 @@ int main() {
         ]]></input>
     </program>
   </listing>
+
+  <p>The <c>INCREMENTOR</c> does not have to do <c>++</c> to a variable. It can be any statement you like, but it should do something to modify the looping variable. If you want to count down, you could use <c>i--</c> as your <c>INCREMENTOR</c>.</p>
+  <listing label="for_loops_AC_3">
+    <caption>
+      <p>Run this active code, which uses a <c>for</c> loop with a negative change in the <q>
+        INCREMENTOR</q>.</p>
+    </caption>
+    <program xml:id="for_loops_AC_3_editor"
+             interactive="activecode"
+             line-numbers="yes">
+      <input><![CDATA[
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    vector<int> count = {1,2,3,4};
+    int i;
+    for (i = 3; i > -1; i--) {
+       cout << count[i] << endl;
+    }
+}
+        ]]></input>
+    </program>
+  </listing>
+
+
   <exercise label="for_loops_1">
     <statement>
-      <p>How many times would the following loop execute?  <c><![CDATA[for (int i = 1; i < 4; i++)]]></c> <var/>  </p>
+      <p>How many times would the following loop execute? <c><![CDATA[for (int i = 1; i < 4; i++)]]></c> <var/>
+      </p>
     </statement>
     <setup>
       <var>
@@ -133,10 +164,12 @@ int main() {
       </choice>
     </choices>
   </exercise>
-  <exercise label="question10_4_3" numbered="yes" adaptive="yes" indentation="hide">
+  <exercise label="question10_4_3"
+            numbered="yes"
+            adaptive="yes"
+            indentation="hide">
     <statement>
-      <p>Construct the <c>half_life()</c> function that prints the first num half lives
-            of the initial amount.</p>
+      <p>Construct the <c>half_life()</c> function that prints the first num half lives of the initial amount.</p>
     </statement>
     <blocks>
       <block order="9">
@@ -152,10 +185,10 @@ int main() {
       </block>
       <block order="2">
         <choice correct="yes">
-          <cline>   for (int i = 0; i &amp;#60; num; i++) {</cline>
+          <cline>   for (int i = 0; i &lt; num; i++) {</cline>
         </choice>
         <choice>
-          <cline>   for (int i = 0; i &amp;#60;= num; i++) {                         </cline>
+          <cline>   for (int i = 0; i &lt;= num; i++) {                         </cline>
         </choice>
       </block>
       <block order="10">
@@ -169,7 +202,8 @@ int main() {
       <block order="3">
         <cline><![CDATA[      cout << new_amount << endl;]]></cline>
       </block>
-      <block order="7" correct="no">
+      <block order="7"
+             correct="no">
         <cline>   return new_amount;                         </cline>
       </block>
       <block order="8">
@@ -178,24 +212,4 @@ int main() {
       </block>
     </blocks>
   </exercise>
-  <listing label="for_loops_AC_3">
-    <statement>
-      <p>Run this active code, which uses a <c>for</c> loop with a negative change in the <q>INCREMENTOR</q>.</p>
-    </statement>
-    <program xml:id="for_loops_AC_3_editor" interactive="activecode" line-numbers="yes">
-      <input><![CDATA[
-#include <iostream>
-#include <vector>
-using namespace std;
-
-int main() {
-    vector<int> count = {1,2,3,4};
-    int i;
-    for (i = 3; i > -1; i--) {
-       cout << count[i] << endl;
-    }
-}
-        ]]></input>
-    </program>
-  </listing>
 </section>

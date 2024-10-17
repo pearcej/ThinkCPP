@@ -1,12 +1,14 @@
 <?xml version="1.0"?>
 <exercises xml:id="chapter10_multiple-choice-exercises">
   <title>Multiple Choice Exercises</title>
-  <p>Answer the following <term>Multiple Choice</term> questions to assess what you have learned in this chapter.</p>
+  <p>Answer the following <term>Multiple Choice</term> questions to assess what you have learned in
+    this chapter.</p>
   <exercise label="vectors_mc1">
     <statement>
-      <p>Suppose you are collecting data for a science experiment. You are to perform three trials of eight temperature
-            readings measured in degrees fahrenheit to the nearest hundredth and initialized to <em>freezing</em>.  Choose the vector
-            that has the proper amount of storage for this scenario.</p>
+      <p>Suppose you are collecting data for a science experiment. You are to perform three trials
+        of eight temperature readings measured in degrees fahrenheit to the nearest hundredth and
+        initialized to <em>freezing</em>. Choose the vector that has the proper amount of storage
+        for this scenario.</p>
     </statement>
     <choices>
       <choice>
@@ -37,7 +39,7 @@
           </p>
         </statement>
         <feedback id="vectors_mc1_opt_c">
-          <p>Freezing is 32 degrees fahrenheit.  The order of parameters is incorrect.</p>
+          <p>Freezing is 32 degrees fahrenheit. The order of parameters is incorrect.</p>
         </feedback>
       </choice>
       <choice>
@@ -47,7 +49,8 @@
           </p>
         </statement>
         <feedback id="vectors_mc1_opt_d">
-          <p>This statement creates a vector size 32 with elements initialized to 24.00 degress fahrenheit.</p>
+          <p>This statement creates a vector size 32 with elements initialized to 24.00 degress
+            fahrenheit.</p>
         </feedback>
       </choice>
     </choices>
@@ -106,7 +109,7 @@
           </p>
         </statement>
         <feedback id="vectors_mc2_opt_e">
-          <p>This is not proper vector indexing.  Also, vectors are zero-indexed.</p>
+          <p>This is not proper vector indexing. Also, vectors are zero-indexed.</p>
         </feedback>
       </choice>
     </choices>
@@ -277,7 +280,7 @@ for ( size_t i = 0; i &lt; chant.size(); i++ ) {
   <exercise label="vectors_mc6">
     <statement>
       <p><term>Multiple Response</term> Select all ways to print out the contents of <c>ryan</c> without
-            going out of bounds.</p>
+        going out of bounds.</p>
       <program>vector&lt;int&gt; ryan = {2, 3, 1, 5, 6, 0, 0, 5, 4};</program>
     </statement>
     <choices>
@@ -318,7 +321,8 @@ for ( size_t i = 0; i &lt; chant.size(); i++ ) {
 }</program>
         </statement>
         <feedback id="vectors_mc6_opt_d">
-          <p>There are 9 elements numbered 0 through 8, and this statement iterates over all of them.</p>
+          <p>There are 9 elements numbered 0 through 8, and this statement iterates over all of
+            them.</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -328,7 +332,8 @@ for ( size_t i = 0; i &lt; chant.size(); i++ ) {
 }</program>
         </statement>
         <feedback id="vectors_mc6_opt_e">
-          <p>There are 9 elements numbered 0 through 8, and this statement iterates over all of them.</p>
+          <p>There are 9 elements numbered 0 through 8, and this statement iterates over all of
+            them.</p>
         </feedback>
       </choice>
     </choices>
@@ -338,14 +343,14 @@ for ( size_t i = 0; i &lt; chant.size(); i++ ) {
       <p>Suppose you want <c>ryan</c> to have the value</p>
       <program>vector&lt;int&gt; ryan = {2, 3, 1, 5, 6, 7, 8, 9};</program>
       <p>What vector functions will you use to achieve this, and how many times will you use them?
-            Keep in mind, <c>ryan</c> is currently the following vector of integers.</p>
+        Keep in mind, <c>ryan</c> is currently the following vector of integers.</p>
       <program>vector&lt;int&gt; ryan = {2, 3, 1, 5, 6, 0, 0, 5, 4};</program>
     </statement>
     <choices>
       <choice>
         <statement id="vectors_mc7_opt_a">
-          <p>Use <c>push_back</c> 4 times with no arguments to get rid of the last 4 elements, then use <c>push_back</c> 3 times
-            with arguments to specify which values you want to add to the end.</p>
+          <p>Use <c>push_back</c> 4 times with no arguments to get rid of the last 4 elements, then use <c>push_back</c>
+            3 times with arguments to specify which values you want to add to the end.</p>
         </statement>
         <feedback id="vectors_mc7_opt_a">
           <p>You'll need to use two <em>different</em> functions to accomplish this task.</p>
@@ -353,17 +358,18 @@ for ( size_t i = 0; i &lt; chant.size(); i++ ) {
       </choice>
       <choice>
         <statement id="vectors_mc7_opt_b">
-          <p>Use <c>push_back</c> 4 times with no arguments to get rid of the last 4 elements, then use <c>pop_back</c> 3 times
-            with arguments to specify which values you want to add to the end.</p>
+          <p>Use <c>push_back</c> 4 times with no arguments to get rid of the last 4 elements, then use <c>pop_back</c>
+            3 times with arguments to specify which values you want to add to the end.</p>
         </statement>
         <feedback id="vectors_mc7_opt_b">
-          <p><c>push_back</c><em>pushes</em> new items onto the end of the vector, and <c>pop_back</c> <em>pops</em> old items off the end of the vector.</p>
+          <p><c>push_back</c><em>pushes</em> new items onto the end of the vector, and <c>pop_back</c> <em>pops</em>
+            old items off the end of the vector.</p>
         </feedback>
       </choice>
       <choice>
         <statement id="vectors_mc7_opt_c">
-          <p>Use <c>pop_back</c> 4 times with no arguments to get rid of the last 4 elements, then use <c>pop_back</c> 3 times
-            with arguments to specify which values you want to add to the end.</p>
+          <p>Use <c>pop_back</c> 4 times with no arguments to get rid of the last 4 elements, then use <c>pop_back</c>
+            3 times with arguments to specify which values you want to add to the end.</p>
         </statement>
         <feedback id="vectors_mc7_opt_c">
           <p>You'll need to use two <em>different</em> functions to accomplish this task.</p>
@@ -371,19 +377,21 @@ for ( size_t i = 0; i &lt; chant.size(); i++ ) {
       </choice>
       <choice correct="yes">
         <statement id="vectors_mc7_opt_d">
-          <p>Use <c>pop_back</c> 4 times with no arguments to get rid of the last 4 elements, then use <c>push_back</c> 3 times
-            with arguments to specify which values you want to add to the end.</p>
+          <p>Use <c>pop_back</c> 4 times with no arguments to get rid of the last 4 elements, then use <c>push_back</c>
+            3 times with arguments to specify which values you want to add to the end.</p>
         </statement>
         <feedback id="vectors_mc7_opt_d">
-          <p>T``push_back`` <em>pushes</em> new items onto the end of the vector, and <c>pop_back</c> <em>pops</em> old items off the end of the vector.</p>
+          <p>T``push_back`` <em>pushes</em> new items onto the end of the vector, and <c>pop_back</c> <em>
+            pops</em> old items off the end of the vector.</p>
         </feedback>
       </choice>
     </choices>
   </exercise>
   <exercise label="vectors_mc8">
     <statement>
-      <p>Suppose you are randomly assigning students to discussions 1-8.  How would you do this correctly?  Assume
-            you have alreay implemented the following code.</p>
+      <p>Suppose you are randomly assigning students to discussions 1-8. How would you do this
+        correctly? Assume
+        you have alreay implemented the following code.</p>
       <program>int x = random();</program>
     </statement>
     <choices>
@@ -393,7 +401,8 @@ for ( size_t i = 0; i &lt; chant.size(); i++ ) {
 y = y + 1;</program>
         </statement>
         <feedback id="vectors_mc8_opt_a">
-          <p>The first part creates a random number between 0 and 7 (8 numbers) and the second part adds 1 so that
+          <p>The first part creates a random number between 0 and 7 (8 numbers) and the second part
+            adds 1 so that
             our random number is actually between 1 and 8.</p>
         </feedback>
       </choice>
@@ -403,7 +412,7 @@ y = y + 1;</program>
 y = y + 1;</program>
         </statement>
         <feedback id="vectors_mc8_opt_b">
-          <p>The first part creates a random number between 0 and 8 (9 numbers).  This is too many.</p>
+          <p>The first part creates a random number between 0 and 8 (9 numbers). This is too many.</p>
         </feedback>
       </choice>
       <choice>
@@ -411,7 +420,8 @@ y = y + 1;</program>
           <program>int y = x % 7;</program>
         </statement>
         <feedback id="vectors_mc8_opt_c">
-          <p>This creates a random number between 0 and 7 (8 numbers), which are not the numbers we are looking for.</p>
+          <p>This creates a random number between 0 and 7 (8 numbers), which are not the numbers we
+            are looking for.</p>
         </feedback>
       </choice>
       <choice>
@@ -419,7 +429,8 @@ y = y + 1;</program>
           <program>int y = x % 8;</program>
         </statement>
         <feedback id="vectors_mc8_opt_d">
-          <p>The first part creates a random number between 0 and 8 (9 numbers).  This is too many, and not the numbers we are looking for.</p>
+          <p>The first part creates a random number between 0 and 8 (9 numbers). This is too many,
+            and not the numbers we are looking for.</p>
         </feedback>
       </choice>
     </choices>
@@ -633,7 +644,8 @@ int counter = repeater(vals);</program>
           <p>169</p>
         </statement>
         <feedback id="vectors_mc12_opt_a">
-          <p>What is being counted by <c>repeater</c> in each iteration of the outer loop? Definitely not everything!</p>
+          <p>What is being counted by <c>repeater</c> in each iteration of the outer loop? Definitely not
+            everything!</p>
         </feedback>
       </choice>
       <choice>
@@ -649,7 +661,8 @@ int counter = repeater(vals);</program>
           <p>18</p>
         </statement>
         <feedback id="vectors_mc12_opt_c">
-          <p><c>repeater</c> considers the number of times each index shares a value with any of the other indices.</p>
+          <p><c>repeater</c> considers the number of times each index shares a value with any of the other
+            indices.</p>
         </feedback>
       </choice>
       <choice>

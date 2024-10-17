@@ -1,13 +1,11 @@
 <?xml version="1.0"?>
 <section xml:id="chapter10_vector-of-random-numbers">
   <title>Vector of random numbers</title>
-  <p>The first step is to generate a large number of random values and store
-            them in a vector. By <q>large number,</q> of course, I mean 20. It's always a
-            good idea to start with a manageable number, to help with debugging, and
-            then increase it later.</p>
-  <p>The following function takes a single argument, the size of the vector.
-            It allocates a new vector of <c>int</c>s, and fills it with random values
-            between 0 and <c>upperBound-1</c>.</p>
+  <p>The first step is to generate a large number of random values and store them in a vector. By <q>large
+    number,</q> of course, I mean 20. It's always a good idea to start with a manageable number, to
+    help with debugging, and then increase it later.</p>
+  <p>The following function takes a single argument, the size of the vector. It allocates a new
+    vector of <c>int</c>s, and fills it with random values between 0 and <c>upperBound-1</c>.</p>
   <program>vector&lt;int&gt; randomVector(int n, int upperBound) {
   vector&lt;int&gt; vec (n);
   for (size_t i = 0; i &lt; vec.size(); i++) {
@@ -15,31 +13,31 @@
   }
   return vec;
 }</program>
-  <p>The return type is <c>vector&lt;int&gt;</c>, which means that this function
-            returns a vector of integers. To test this function, it is convenient to
-            have a function that outputs the contents of a vector.</p>
+  <p>The return type is <c>vector&lt;int&gt;</c>, which means that this function returns a vector of integers. To
+    test this function, it is convenient to have a function that outputs the contents of a vector.</p>
   <program>void printVector(const vector&lt;int&gt;&amp; vec) {
   for (size_t i = 0; i &lt; vec.size(); i++) {
     cout &lt;&lt; vec[i] &lt;&lt; " ";
   }
 }</program>
-  <p>Notice that it is legal to pass <c>vector</c>s by reference. In fact it
-            is quite common, since it makes it unnecessary to copy the vector. Since
-            <c>printVector</c> does not modify the vector, we declare the parameter
-            <c>const</c>.</p>
+  <p>Notice that it is legal to pass <c>vector</c>s by reference. In fact it is quite common, since it
+    makes it unnecessary to copy the vector. Since <c>printVector</c> does not modify the vector, we declare
+    the parameter <c>const</c>.</p>
   <p>The following code generates a vector and outputs it:</p>
   <program>int numValues = 20;
 int upperBound = 10;
-vector&lt;int&gt; vector = randomVector (numValues, upperBound);
-printVector (vector);</program>
+vector&lt;int&gt; vector = randomVector(numValues, upperBound);
+printVector(vector);</program>
   <p>On my machine the output is</p>
-  <program>3 6 7 5 3 5 6 2 9 1 2 7 0 9 3 6 0 6 2 6</program>
+  <console><output>3 6 7 5 3 5 6 2 9 1 2 7 0 9 3 6 0 6 2 6</output></console>
   <p>which is pretty random-looking. Your results might be different.</p>
   <listing label="vector_of_rand_nums_AC_1">
-    <statement>
-      <p>Try running this active code!</p>
-    </statement>
-    <program xml:id="vector_of_rand_nums_AC_1_editor" interactive="activecode" line-numbers="yes">
+    <caption>
+      <p>Try running this active code.</p>
+    </caption>
+    <program xml:id="vector_of_rand_nums_AC_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <vector>
@@ -51,8 +49,8 @@ void printVector(const vector<int> & vec);
 int main() {
     int numValues = 20;
     int upperBound = 10;
-    vector<int> vector = randomVector (numValues, upperBound);
-    printVector (vector);
+    vector<int> vector = randomVector(numValues, upperBound);
+    printVector(vector);
 }
 
         ]]></input>
@@ -75,18 +73,19 @@ void printVector(const vector&lt;int&gt;&amp; vec) {
     </program>
   </listing>
   <p>If these numbers are really random, we expect each digit to appear the
-            same number of times&#x2014;twice each. In fact, the number 6 appears five
-            times, and the numbers 4 and 8 never appear at all.</p>
+    same number of times&#x2014;twice each. In fact, the number 6 appears five
+    times, and the numbers 4 and 8 never appear at all.</p>
   <p>Do these results mean the values are not really uniform? It's hard to
-            tell. With so few values, the chances are slim that we would get exactly
-            what we expect. But as the number of values increases, the outcome
-            should be more predictable.</p>
-  <p>To test this theory, we'll write some programs that count the number of
-            times each value appears, and then see what happens when we increase
-            <c>numValues</c>.</p>
+    tell. With so few values, the chances are slim that we would get exactly
+    what we expect. But as the number of values increases, the outcome
+    should be more predictable.</p>
+  <p>To test this theory, we'll write some programs that count the number of times each value
+    appears, and then see what happens when we increase <c>numValues</c>.</p>
   <exercise label="vector_of_rand_nums_1">
     <statement>
-      <p>How should we declare the parameter, <term>vector</term>, if we don't intend to make any changes to it? <var/>  </p>
+      <p>How should we declare the parameter, <term>vector</term>, if we don't intend to make any
+        changes to it? <var/>
+      </p>
     </statement>
     <setup>
       <var case="insensitive">
@@ -97,7 +96,7 @@ void printVector(const vector&lt;int&gt;&amp; vec) {
         </condition>
         <condition string="^\s*.*\s*$">
           <feedback>
-            <p>Incorrect, Try again!</p>
+            <p>Incorrect, Try again! Hint: what word do we put before vector&lt;TYPE&gt;</p>
           </feedback>
         </condition>
       </var>
@@ -105,7 +104,8 @@ void printVector(const vector&lt;int&gt;&amp; vec) {
   </exercise>
   <exercise label="vector_of_rand_nums_2">
     <statement>
-      <p>As we store more and more random numbers in a vector, we expect its contents to be __________.</p>
+      <p>As we store more and more random numbers in a vector, we expect its contents to be
+        __________.</p>
     </statement>
     <choices>
       <choice correct="yes">
@@ -121,7 +121,8 @@ void printVector(const vector&lt;int&gt;&amp; vec) {
           <p>less uniform</p>
         </statement>
         <feedback>
-          <p>Incorrect! As we store more random numbers in a vector, we see that the frequencies of each number are approximately equal.</p>
+          <p>Incorrect! As we store more random numbers in a vector, we see that the frequencies of
+            each number are approximately equal.</p>
         </feedback>
       </choice>
       <choice>
@@ -129,7 +130,8 @@ void printVector(const vector&lt;int&gt;&amp; vec) {
           <p>more normal</p>
         </statement>
         <feedback>
-          <p>Incorrect! The distribution of random numbers is not related to the normal distribution.</p>
+          <p>Incorrect! The distribution of random numbers is not related to the normal
+            distribution.</p>
         </feedback>
       </choice>
       <choice>
@@ -137,7 +139,8 @@ void printVector(const vector&lt;int&gt;&amp; vec) {
           <p>less normal</p>
         </statement>
         <feedback>
-          <p>Incorrect! The distribution of random numbers is not related to the normal distribution.</p>
+          <p>Incorrect! The distribution of random numbers is not related to the normal
+            distribution.</p>
         </feedback>
       </choice>
     </choices>

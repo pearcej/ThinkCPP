@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <section xml:id="chapter10_copying-vectors">
   <title>Copying vectors</title>
-  <p>There is one more constructor for <c>vector</c>s, which is called a copy
-            constructor because it takes one <c>vector</c> as an argument and creates a
-            new vector that is the same size, with the same elements.</p>
-  <program>vector&lt;int&gt; copy (count);</program>
-  <p>Although this syntax is legal, it is almost never used for <c>vector</c>s
-            because there is a better alternative:</p>
-  <program>vector&lt;int&gt; copy = count;</program>
-  <p>The <c>=</c> operator works on <c>vector</c>s in pretty much the way you
-            would expect.</p>
+  <p>There is one more constructor for <c>vector</c>s, which is called a copy constructor because it takes
+    one <c>vector</c> as an argument and creates a new vector that is the same size, with the same
+    elements.</p>
+  <program>vector&lt;int&gt; countCopy(count);</program>
+  <p>Although this syntax is legal, it is almost never used for <c>vector</c>s because there is a better
+    alternative:</p>
+  <program>vector&lt;int&gt; countCopy = count;</program>
+  <p>The <c>=</c> operator works on <c>vector</c>s in pretty much the way you would expect.</p>
   <listing label="copying_vectors_AC_1">
-    <statement>
+    <caption>
       <p>Take a look at this active code, which uses the copy constructor.</p>
-    </statement>
-    <program xml:id="copying_vectors_AC_1_editor" interactive="activecode" line-numbers="yes">
+    </caption>
+    <program xml:id="copying_vectors_AC_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <vector>
@@ -26,7 +27,7 @@ int main() {
     vector<int> count = {1,2,3,4};
     cout << "count = "; print_vec(count);
 
-    vector<int> copy_1 (count);
+    vector<int> copy_1(count);
     vector<int> copy_2 = count;
 
     cout << "copy_1 = "; print_vec(copy_1);
@@ -52,7 +53,8 @@ void print_vec(vector&lt;int&gt; vec) {
   </listing>
   <exercise label="copying_vectors_1">
     <statement>
-      <p><term>Multiple Response</term> How would you make a copy of <c><![CDATA[vector<double> decimals]]></c> called <term>nums</term>?</p>
+      <p><term>Multiple Response</term> How would you make a copy of <c><![CDATA[vector<double> decimals]]></c> called <term>nums</term>
+        ?</p>
     </statement>
     <choices>
       <choice correct="yes">
@@ -99,8 +101,9 @@ void print_vec(vector&lt;int&gt; vec) {
   </exercise>
   <exercise label="copying_vectors_2">
     <statement>
-      <p>What is the name of the function that takes a vector as an argument, and
-creates a new vector of the same size and with the same elements? <var/> </p>
+      <p>What is the name of the function that takes a vector as an argument, and creates a new
+        vector of the same size and with the same elements? <var/>
+      </p>
     </statement>
     <setup>
       <var case="insensitive">
@@ -111,7 +114,7 @@ creates a new vector of the same size and with the same elements? <var/> </p>
         </condition>
         <condition string="^\s*.*\s*$">
           <feedback>
-            <p>incorrect! You can find the answer by re-reading the text above.</p>
+            <p>incorrect! You can find the answer by re-reading the text above. It is a two word answer.</p>
           </feedback>
         </condition>
       </var>
