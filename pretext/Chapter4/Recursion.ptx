@@ -100,9 +100,9 @@ void threeLine() {
     newline, and then calls itself to output <c>n-1</c> additional newlines. Thus, the total number of
     newlines is <c>1 + (n - 1)</c>, which usually comes out to roughly n.</p>
   <listing label="recursion_AC_2">
-    <statement>
+    <caption>
       <p>You can have a little bit of fun with recursion. Try this guessing game below!</p>
-    </statement>
+    </caption>
     <program xml:id="recursion_AC_2_editor"
              interactive="activecode"
              line-numbers="yes">

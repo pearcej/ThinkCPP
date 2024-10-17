@@ -252,7 +252,7 @@ class MyVector {
         </statement>
         <blocks>
           <block order="1">
-            <cline><![CDATA[MyVector (vector<int> vec) {]]></cline>
+            <cline><![CDATA[MyVector(vector<int> vec) {]]></cline>
           </block>
           <block order="2">
             <cline>   elements = vec;</cline>
@@ -312,7 +312,7 @@ int main() {
 }
         ]]></input>
           <tests>
-MyVector::MyVector (vector&lt;int&gt; vec) {
+MyVector::MyVector(vector&lt;int&gt; vec) {
     elements = vec;
 }
 
@@ -417,7 +417,7 @@ int main() {
 }
         ]]></input>
           <tests>
-MyVector::MyVector (vector&lt;int&gt; vec) {
+MyVector::MyVector(vector&lt;int&gt; vec) {
     elements = vec;
 }
 

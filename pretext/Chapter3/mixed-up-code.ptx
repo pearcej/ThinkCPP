@@ -141,10 +141,10 @@
     </statement>
     <blocks>
       <block order="9">
-        <cline>#include &amp;#60;cmath&amp;#62;</cline>
+        <cline>#include &lt;cmath&gt;</cline>
       </block>
       <block order="1">
-        <cline>#include &amp;#60;iostream&amp;#62;</cline>
+        <cline>#include &lt;iostream&gt;</cline>
         <cline>using namespace std;</cline>
       </block>
       <block order="11">
@@ -179,7 +179,7 @@
       </block>
       <block order="10"
              correct="no">
-        <cline> #include &amp;#60;math&amp;#62; </cline>
+        <cline> #include &lt;math&gt; </cline>
       </block>
     </blocks>
   </exercise>

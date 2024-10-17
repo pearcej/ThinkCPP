@@ -180,7 +180,7 @@ int main() {
          << myVec.at(3) << ", and " << myVec.at(4) << endl;
 }
         ]]></input><tests>
-MyVector::MyVector (vector&lt;int&gt; vec) {
+MyVector::MyVector(vector&lt;int&gt; vec) {
     elements = vec;
 }
 </tests></program>
@@ -255,7 +255,7 @@ int main() {
     myVec.print();
 }
         ]]></input><tests>
-MyVector::MyVector (vector&lt;int&gt; vec) {
+MyVector::MyVector(vector&lt;int&gt; vec) {
     elements = vec;
 }
 

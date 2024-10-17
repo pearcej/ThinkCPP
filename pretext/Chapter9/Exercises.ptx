@@ -4,7 +4,8 @@
   <exercise label="mce_9_1">
     <statement>
       <p>Which of the following are variables of type <c>Book</c>?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input>
 struct Book {
   string title, author;
@@ -67,7 +68,8 @@ int main() {
   <exercise label="mce_9_2">
     <statement>
       <p>Which of the following are instance variables of type <c>Book</c>?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input>
 struct Book {
   string title, author;
@@ -130,7 +132,8 @@ int main() {
   <exercise label="mce_9_3">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input><![CDATA[
 struct Book {
   string title, author;
@@ -181,7 +184,8 @@ int main() {
           <p>To Kill a Mockingbirdby Harper Lee (1960), $7.19</p>
         </statement>
         <feedback id="mce_9_3_opt_d">
-          <p>The <c>\</c> are escape characters. Used in this context, they allow us to print quotation marks.</p>
+          <p>The <c>\</c> are escape characters. Used in this context, they allow us to print
+            quotation marks.</p>
         </feedback>
       </choice>
     </choices>
@@ -189,7 +193,8 @@ int main() {
   <exercise label="mce_9_4">
     <statement>
       <p>What kind of function is <c>printBook</c>?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input><![CDATA[
 struct Book {
   string title, author;
@@ -214,7 +219,7 @@ int main() {
           <p>Pure function</p>
         </statement>
         <feedback id="mce_9_4_opt_a">
-          <p><c>printBook</c> takes  a <c>Book</c> as an object but it doesn't modify it.</p>
+          <p><c>printBook</c> takes a <c>Book</c> as an object but it doesn't modify it.</p>
         </feedback>
       </choice>
       <choice>
@@ -246,7 +251,8 @@ int main() {
   <exercise label="mce_9_5">
     <statement>
       <p>What is wrong with the code below?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input><![CDATA[
 struct Book {
   string title, author;
@@ -284,7 +290,8 @@ int main() {
           <p>We are not allowed to pass in a <c>Book</c> object by reference in <c>printBook</c>.</p>
         </statement>
         <feedback id="mce_9_5_opt_b">
-          <p>We are allowed to do this. It's usually a good idea to pass structures by reference since it won't make copies of the structures, thus saving memory space.</p>
+          <p>We are allowed to do this. It's usually a good idea to pass structures by reference
+            since it won't make copies of the structures, thus saving memory space.</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -292,7 +299,8 @@ int main() {
           <p>The keyword <c>const</c> needs to be removed in the function definition for <c>applyDiscount</c>.</p>
         </statement>
         <feedback id="mce_9_5_opt_c">
-          <p>Since the <c>applyDiscount</c> function modifies the <c>Book</c> passed into it, we don't it to be <c>const</c>.</p>
+          <p>Since the <c>applyDiscount</c> function modifies the <c>Book</c> passed into it, we don't it to be <c>const</c>
+            .</p>
         </feedback>
       </choice>
       <choice>
@@ -308,7 +316,8 @@ int main() {
   <exercise label="mce_9_6">
     <statement>
       <p>What kind of function is <c>applyDiscount</c>?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input><![CDATA[
 struct Book {
   string title, author;
@@ -370,7 +379,8 @@ int main() {
   <exercise label="mce_9_7">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input><![CDATA[
 struct Point3D {
   double x, y, z;
@@ -426,7 +436,8 @@ int main() {
           <p>(0, 0, 0)</p>
         </statement>
         <feedback id="mce_9_7_opt_d">
-          <p>The last parameter in <c>midpoint</c> is not passed by reference, so a copy is made and changes are made to the copy, not the original.</p>
+          <p>The last parameter in <c>midpoint</c> is not passed by reference, so a copy is made and changes
+            are made to the copy, not the original.</p>
         </feedback>
       </choice>
     </choices>
@@ -434,7 +445,8 @@ int main() {
   <exercise label="mce_9_8">
     <statement>
       <p>What kind of function is <c>midpoint</c>?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input><![CDATA[
 struct Point3D {
   double x, y, z;
@@ -482,7 +494,8 @@ int main() {
           <p>Fill-in function</p>
         </statement>
         <feedback id="mce_9_8_opt_c">
-          <p><c>midpoint</c> takes an <q>empty</q> third <c>Point3D</c> and fills it with the average of the other two <c>Point3D</c> objects.</p>
+          <p><c>midpoint</c> takes an <q>empty</q> third <c>Point3D</c> and fills it with the average of the other
+            two <c>Point3D</c> objects.</p>
         </feedback>
       </choice>
       <choice>
@@ -498,7 +511,8 @@ int main() {
   <exercise label="mce_9_9">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input><![CDATA[
 struct Point3D {
   double x, y, z;
@@ -566,7 +580,8 @@ int main() {
   <exercise label="mce_9_10">
     <statement>
       <p>What is the output of the code below?</p>
-      <program language="cpp" line-numbers="yes">
+      <program language="cpp"
+               line-numbers="yes">
         <input><![CDATA[
 struct Point3D {
   double x, y, z;

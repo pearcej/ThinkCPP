@@ -20,10 +20,10 @@ cout &lt;&lt; i &lt;&lt; j &lt;&lt; endl;</program>
             <c>swap</c> would not work. It would modify <c>x</c> and <c>y</c> and have no
             effect on <c>i</c> and <c>j</c>.</p>
   <listing label="pass_others_reference_AC_1">
-    <statement>
+    <caption>
       <p>This active code uses the <c>swap</c> function. Run the active code
             for the output!</p>
-    </statement>
+    </caption>
     <program xml:id="pass_others_reference_AC_1_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>

@@ -207,10 +207,10 @@ struct Deck {
       </block>
       <block order="4">
         <choice correct="yes">
-          <cline>   for (size_t i = 0; i &amp;#60; cards.size(); i++) {</cline>
+          <cline>   for (size_t i = 0; i &lt; cards.size(); i++) {</cline>
         </choice>
         <choice>
-          <cline>   for (size_t i = 0; i &amp;#60; deck.cards.size(); i++) {                       </cline>
+          <cline>   for (size_t i = 0; i &lt; deck.cards.size(); i++) {                       </cline>
         </choice>
       </block>
       <block order="5">
@@ -329,7 +329,7 @@ void Deck::print() const {
 }
 
 int Deck::find(Card card) const {
-    for (size_t i = 0; i &amp;#60; cards.size(); i++) {
+    for (size_t i = 0; i &lt; cards.size(); i++) {
         if (cards[i].equals(card)) {
             return i;
         }

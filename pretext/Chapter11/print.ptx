@@ -71,9 +71,9 @@ currentTime.print();</program>
             that has an interface different from what you promised, the compiler
             will complain.</p>
   <listing label="print_AC_1">
-    <statement>
+    <caption>
       <p>Feel free to mess around with input for <c>currentTime</c> in this active code!</p>
-    </statement>
+    </caption>
     <program xml:id="print_AC_1_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>

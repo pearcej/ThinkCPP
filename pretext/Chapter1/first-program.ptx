@@ -23,7 +23,7 @@ int main(int foo) {
 
 
 for (int i = 0; i &lt; upperBound; i++) {
-  int count = howMany (vector, i);
+  int count = howMany(vector, i);
   histogram[i] = count;
 }
         ]]></input>

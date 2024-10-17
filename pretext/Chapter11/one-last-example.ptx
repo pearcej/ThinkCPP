@@ -35,9 +35,9 @@
             single <c>double</c> as a parameter; the last line returns the resulting
             object.</p>
   <listing label="one_last_example_AC_1">
-    <statement>
+    <caption>
       <p>Feel free to try out the <c>add</c> function in this active code!</p>
-    </statement>
+    </caption>
     <program xml:id="one_last_example_AC_1_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
