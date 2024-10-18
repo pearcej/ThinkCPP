@@ -58,10 +58,10 @@
         <cline>   Song song;  </cline>
       </block>
       <block order="8">
-        <cline>   vector&amp;#60Song&amp;#62 songs;</cline>
+        <cline>   vector&lt;Song&gt; songs;</cline>
       </block>
       <block order="2" correct="no">
-        <cline>   vector&amp;#60string&amp;#62 Song;  </cline>
+        <cline>   vector&lt;string&gt; Song;  </cline>
       </block>
       <block order="4">
         <cline>};</cline>
@@ -293,10 +293,10 @@
         <cline>   Product type;  </cline>
       </block>
       <block order="4">
-        <cline>   vector&amp;#60Product&amp;#62 products;</cline>
+        <cline>   vector&lt;Product&gt; products;</cline>
       </block>
       <block order="3" correct="no">
-        <cline>   vector&amp;#60&amp;#62 Product;  </cline>
+        <cline>   vector&lt;&gt; Product;  </cline>
       </block>
       <block order="5">
         <cline>};</cline>

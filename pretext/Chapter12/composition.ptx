@@ -1,19 +1,18 @@
 <?xml version="1.0"?>
 <section xml:id="chapter12_composition">
   <title>Composition</title>
-  <p>By now we have seen several examples of <term>composition</term> (the ability to
-            combine language features in a variety of arrangements). One of the
-            first examples we saw was using a function invocation as part of an
-            expression. Another example is the nested structure of statements: you
-            can put an <c>if</c> statement within a <c>while</c> loop, or within another
-            <c>if</c> statement, etc.</p>
+  <p>By now we have seen several examples of <term>composition</term> (the ability to combine
+    language features in a variety of arrangements). One of the first examples we saw was using a
+    function invocation as part of an expression. Another example is the nested structure of
+    statements: you can put an <c>if</c> statement within a <c>while</c> loop, or within another <c>if</c>
+    statement, etc.</p>
   <p>Having seen this pattern, and having learned about vectors and objects,
-            you should not be surprised to learn that you can have vectors of
-            objects. In fact, you can also have objects that contain vectors (as
-            instance variables); you can have vectors that contain vectors; you can
-            have objects that contain objects, and so on.</p>
-  <p>In the next two chapters we will look at some examples of these
-            combinations, using <c>Card</c> objects as a case study.</p>
+    you should not be surprised to learn that you can have vectors of
+    objects. In fact, you can also have objects that contain vectors (as
+    instance variables); you can have vectors that contain vectors; you can
+    have objects that contain objects, and so on.</p>
+  <p>In the next two chapters we will look at some examples of these combinations, using <c>Card</c>
+    objects as a case study.</p>
   <exercise label="composition_1">
     <statement>
       <p>Which of the following statements is correct?</p>
@@ -29,7 +28,8 @@
       </choice>
       <choice>
         <statement>
-          <p>You can have vectors that contain other vectors, but you can never have objects that contain other objects.</p>
+          <p>You can have vectors that contain other vectors, but you can never have objects that
+            contain other objects.</p>
         </statement>
         <feedback>
           <p>In this chapter you will see how you can have objects that contain other objects.</p>
@@ -37,7 +37,8 @@
       </choice>
       <choice>
         <statement>
-          <p>You can never have vectors that contain other vectors, but you can have objects that contain other objects.</p>
+          <p>You can never have vectors that contain other vectors, but you can have objects that
+            contain other objects.</p>
         </statement>
         <feedback>
           <p>In this chapter you will see how you can have vectors that contain other vectors.</p>
@@ -45,7 +46,8 @@
       </choice>
       <choice>
         <statement>
-          <p>You can never have vectors that contain other vectors, nor objects that contain other objects.</p>
+          <p>You can never have vectors that contain other vectors, nor objects that contain other
+            objects.</p>
         </statement>
         <feedback>
           <p>Vectors and objects can have nested compositons!</p>
@@ -55,7 +57,7 @@
   </exercise>
   <exercise label="composition_2">
     <statement>
-      <p>There are many different arrangements to combine language features.  This is called <var/>.</p>
+      <p>There are many different arrangements to combine language features. This is called <var/>.</p>
     </statement>
     <setup>
       <var case="insensitive">
@@ -66,7 +68,7 @@
         </condition>
         <condition string="^\s*.*\s*$">
           <feedback>
-            <p>Incorrect!  Try again!</p>
+            <p>Incorrect! Try again!</p>
           </feedback>
         </condition>
       </var>

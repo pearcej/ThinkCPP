@@ -5,7 +5,7 @@
     <li>
       <title>encode:</title>
       <p>To represent one set of values using another set of values, by
-                        constructing a mapping between them.</p>
+        constructing a mapping between them.</p>
     </li>
     <li>
       <title>abstract parameter:</title>
@@ -23,7 +23,8 @@
     <matches>
       <match order="1">
         <premise>encode</premise>
-        <response>To represent one set of values using another set of values, by constructing a mapping between them</response>
+        <response>To represent one set of values using another set of values, by constructing a
+          mapping between them</response>
       </match>
       <match order="2">
         <premise>abstract parameter</premise>

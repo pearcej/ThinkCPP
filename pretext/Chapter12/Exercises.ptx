@@ -337,7 +337,7 @@ struct Card {
 };
 
 vector<Card> createDeck() {
-  vector<Card> deck (12);
+  vector<Card> deck(12);
   int i = 0;
   for (int suit = 0; suit <= 3; suit++) {
     for (int rank = 1; rank < 4; rank++) {
@@ -423,7 +423,8 @@ int main() {
           <p>0</p>
         </statement>
         <feedback id="mce_12_8_opt_a">
-          <p>The King of Diamonds is right in the middle of the deck, so it doesn't need to call itself.</p>
+          <p>The King of Diamonds is right in the middle of the deck, so it doesn't need to call
+            itself.</p>
         </feedback>
       </choice>
       <choice>
@@ -454,8 +455,8 @@ int main() {
   </exercise>
   <exercise label="mce_12_9">
     <statement>
-      <p>We want to write the function <c>findAllQueens</c>, which searches through a deck and
-            prints out the location of all 4 queens in the <c>deck</c>. What should go in the blanks?</p>
+      <p>We want to write the function <c>findAllQueens</c>, which searches through a deck and prints out the
+        location of all 4 queens in the <c>deck</c>. What should go in the blanks?</p>
       <program line-numbers="yes">
         <input><![CDATA[
 struct Card {
@@ -522,7 +523,8 @@ int main() {
   </exercise>
   <exercise label="mce_12_10">
     <statement>
-      <p>What is the process of modeling a complex system with a simplified description in order to suppress unnecessary details while capturing relevant behavior?</p>
+      <p>What is the process of modeling a complex system with a simplified description in order to
+        suppress unnecessary details while capturing relevant behavior?</p>
     </statement>
     <choices>
       <choice>
@@ -546,7 +548,8 @@ int main() {
           <p>Abstraction</p>
         </statement>
         <feedback id="mce_12_10_opt_c">
-          <p>Using this process, we can remove unnecessary details to focus on the more important aspects.</p>
+          <p>Using this process, we can remove unnecessary details to focus on the more important
+            aspects.</p>
         </feedback>
       </choice>
       <choice>
