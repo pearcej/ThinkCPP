@@ -60,13 +60,13 @@ Card::Card(Suit s, Rank r) {
 }
 
 void Card::print() const {
-    vector&lt;string&gt; suits (4);
+    vector&lt;string&gt; suits(4);
     suits[0] = "Clubs";
     suits[1] = "Diamonds";
     suits[2] = "Hearts";
     suits[3] = "Spades";
 
-    vector&lt;string&gt; ranks (14);
+    vector&lt;string&gt; ranks(14);
     ranks[1] = "Ace";
     ranks[2] = "2";
    ranks[3] = "3";
@@ -117,7 +117,7 @@ void Deck::print() const {
             Here's my version:</p>
   <program>int Card::find(const Deck&amp; deck) const {
   for (size_t i = 0; i &lt; deck.cards.size(); i++) {
-    if (equals (deck.cards[i], *this)) return i;
+    if (equals(deck.cards[i], *this)) return i;
   }
   return -1;
 }</program>
@@ -220,7 +220,7 @@ struct Deck {
           <cline>      }</cline>
         </choice>
         <choice>
-          <cline>      if (equals (deck.cards[i], *this)) {                         </cline>
+          <cline>      if (equals(deck.cards[i], *this)) {                         </cline>
           <cline>         return i;</cline>
           <cline>      }</cline>
         </choice>
@@ -284,13 +284,13 @@ Card::Card(Suit s, Rank r) {
 }
 
 void Card::print() const {
-    vector&lt;string&gt; suits (4);
+    vector&lt;string&gt; suits(4);
     suits[0] = "Clubs";
     suits[1] = "Diamonds";
     suits[2] = "Hearts";
     suits[3] = "Spades";
 
-    vector&lt;string&gt; ranks (14);
+    vector&lt;string&gt; ranks(14);
     ranks[1] = "Ace";
     ranks[2] = "2";
     ranks[3] = "3";

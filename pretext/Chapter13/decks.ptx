@@ -23,7 +23,7 @@ Deck::Deck(int size) {
             <c>vector</c> class, passing the size as a parameter. Then it copies the
             vector from <c>temp</c> into the instance variable <c>cards</c>.</p>
   <p>Now we can create a deck of cards like this:</p>
-  <program>Deck deck (52);</program>
+  <program>Deck deck(52);</program>
   <p>Here is a state diagram showing what a <c>Deck</c> object looks like:</p>
   <figure align="center" >
     <image source="Chapter13/Images/13.3stackdiagram.png" width="50%" alt="image"/>
@@ -61,7 +61,7 @@ would type: <c>Deck euchre_deck</c> <var/> <c>;</c> <var/>  </p>
   </exercise>
   <exercise label="decks_2">
     <statement>
-      <p>Take a look at the state diagram above. When we create a deck of cards using <c>Deck deck (52)</c>,
+      <p>Take a look at the state diagram above. When we create a deck of cards using <c>Deck deck(52)</c>,
             what is true about our new deck?</p>
     </statement>
     <choices>

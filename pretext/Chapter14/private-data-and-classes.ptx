@@ -107,13 +107,13 @@ Card::Card(int s, int r) {
 }
 
 void Card::print() const {
-    vector&lt;string&gt; suits (4);
+    vector&lt;string&gt; suits(4);
     suits[0] = "Clubs";
     suits[1] = "Diamonds";
     suits[2] = "Hearts";
     suits[3] = "Spades";
 
-    vector&lt;string&gt; ranks (14);
+    vector&lt;string&gt; ranks(14);
     ranks[1] = "Ace";
     ranks[2] = "2";
     ranks[3] = "3";
