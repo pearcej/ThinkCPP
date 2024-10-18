@@ -55,7 +55,7 @@ struct Time {
     double second;
 };
 
-void printTime (Time& t) {
+void printTime(Time& t) {
     cout << t.hour << ":" << t.minute << ":" << t.second << endl;
 }
 
@@ -84,7 +84,7 @@ int main() {
     Time currentTime = { 9, 14, 30.0 };
     Time otherTime = { 10, 32, 15.2 };
     Time doneTime = addTime(currentTime, otherTime);
-    printTime (doneTime);
+    printTime(doneTime);
 }
         ]]></input>
     </program>
@@ -109,7 +109,7 @@ struct Time {
     double second;
 };
 
-void printTime (Time& t) {
+void printTime(Time& t) {
     cout << t.hour << ":" << t.minute << ":" << t.second << endl;
 }
 

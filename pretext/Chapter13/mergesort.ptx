@@ -16,7 +16,7 @@
             of which has been sorted, it is easy (and fast) to merge them into a
             single, sorted deck. Try this out with a deck of cards:</p>
   <p>
-    <ol label="1">
+    <ol>
       <li>
         <p>Form two subdecks with about 10 cards each and sort them so that when
                     they are face up the lowest cards are on top. Place both decks face

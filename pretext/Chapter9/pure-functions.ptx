@@ -21,7 +21,7 @@ struct Time {
     double second;
 };
 
-bool after (Time& time1, Time& time2) {
+bool after(Time& time1, Time& time2) {
     if (time1.hour > time2.hour) { return true; }
     if (time1.hour < time2.hour) { return false; }
     if (time1.minute > time2.minute) { return true; }
@@ -47,7 +47,7 @@ int main() {
             35 minutes, you could use <c>addTime</c> to figure out when the bread will
             be done.</p>
   <p>Here is a rough draft of this function that is not quite right:</p>
-  <program>Time addTime (Time&amp; t1, Time&amp; t2) {
+  <program>Time addTime(Time&amp; t1, Time&amp; t2) {
   Time sum;
   sum.hour = t1.hour + t2.hour;
   sum.minute = t1.minute + t2.minute;
@@ -71,11 +71,11 @@ struct Time {
     double second;
 };
 
-void printTime (Time& t) {
+void printTime(Time& t) {
     cout << t.hour << ":" << t.minute << ":" << t.second << endl;
 }
 
-Time addTime (Time& t1, Time& t2) {
+Time addTime(Time& t1, Time& t2) {
     Time sum;
     sum.hour = t1.hour + t2.hour;
     sum.minute = t1.minute + t2.minute;
@@ -86,8 +86,8 @@ Time addTime (Time& t1, Time& t2) {
 int main() {
     Time currentTime = { 9, 14, 30.0 };
     Time breadTime = { 3, 35, 0.0 };
-    Time doneTime = addTime (currentTime, breadTime);
-    printTime (doneTime);
+    Time doneTime = addTime(currentTime, breadTime);
+    printTime(doneTime);
 }
         ]]></input>
     </program>
@@ -114,11 +114,11 @@ struct Time {
     double second;
 };
 
-void printTime (Time& t) {
+void printTime(Time& t) {
     cout << t.hour << ":" << t.minute << ":" << t.second << endl;
 }
 
-Time addTime (Time& t1, Time& t2) {
+Time addTime(Time& t1, Time& t2) {
     Time sum;
     sum.hour = t1.hour + t2.hour;
     sum.minute = t1.minute + t2.minute;
@@ -137,8 +137,8 @@ Time addTime (Time& t1, Time& t2) {
 int main() {
     Time currentTime = { 9, 14, 30.0 };
     Time breadTime = { 3, 35, 0.0 };
-    Time doneTime = addTime (currentTime, breadTime);
-    printTime (doneTime);
+    Time doneTime = addTime(currentTime, breadTime);
+    printTime(doneTime);
 }
         ]]></input>
     </program>

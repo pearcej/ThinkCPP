@@ -10,7 +10,7 @@
             order. As a result, you probably use an algorithm that is similar to a
             <term>bisection search</term>:</p>
   <p>
-    <ol label="1">
+    <ol>
       <li>
         <p>Start in the middle somewhere.</p>
       </li>
@@ -45,7 +45,7 @@
             the vector that should be searched (including both <c>low</c> and
             <c>high</c>).</p>
   <p>
-    <ol label="1">
+    <ol>
       <li>
         <p>To search the vector, choose an index between <c>low</c> and <c>high</c>,
                     and call it <c>mid</c>. Compare the card at <c>mid</c> to the card you are

@@ -6,7 +6,7 @@
             evaluate the design and improve it.</p>
   <p>What are some of the problems with the existing code?</p>
   <p>
-    <ol label="1">
+    <ol>
       <li>
         <p>We did not know ahead of time how big to make the distance matrix, so
                     we chose an arbitrary large number (50) and made it a fixed size. It

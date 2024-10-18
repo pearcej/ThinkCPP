@@ -5,7 +5,7 @@
   </title>
   <p>When we define a new type it is a good idea to write function that
             displays the instance variables in a human-readable form, which you attempted on the page before. Your solution should have looked something like this.</p>
-  <program>void printTime (Time&amp; t) {
+  <program>void printTime(Time&amp; t) {
   cout &lt;&lt; t.hour &lt;&lt; ":" &lt;&lt; t.minute &lt;&lt; ":" &lt;&lt; t.second &lt;&lt; endl;
 }</program>
   <listing label="printTime_AC_1">
@@ -23,7 +23,7 @@ struct Time {
     double second;
 };
 
-void printTime (Time& t) {
+void printTime(Time& t) {
     cout << t.hour << ":" << t.minute << ":" << t.second << endl;
 }
 
