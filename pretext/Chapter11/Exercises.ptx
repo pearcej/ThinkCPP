@@ -8,10 +8,12 @@
     <choices>
       <choice correct="yes">
         <statement id="mce_11_1_opt_a">
-          <p>In C++, anything done with a member function can also be done by a free-standing function</p>
+          <p>In C++, anything done with a member function can also be done by a free-standing
+            function</p>
         </statement>
         <feedback id="mce_11_1_opt_a">
-          <p>Though sometimes there may be an advantage of one over the other this process is doable and converting from one form to the other is a mechanical process</p>
+          <p>Though sometimes there may be an advantage of one over the other this process is doable
+            and converting from one form to the other is a mechanical process</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -19,15 +21,18 @@
           <p>In a function that operates on 3 structures, 2 are accessed with dot notation</p>
         </statement>
         <feedback id="mce_11_1_opt_b">
-          <p>There is one implicit structure, and two structures that need to be accessed with dot notation.</p>
+          <p>There is one implicit structure, and two structures that need to be accessed with dot
+            notation.</p>
         </feedback>
       </choice>
       <choice>
         <statement id="mce_11_1_opt_c">
-          <p>The scope resolution operator should be used every time you work with data structures and implement member function inside the structure definition.</p>
+          <p>The scope resolution operator should be used every time you work with data structures
+            and implement member function inside the structure definition.</p>
         </statement>
         <feedback id="mce_11_1_opt_c">
-          <p>The scope resolution operator need not be used everytime one works with structures and is used to implement member functions outside the class definition.</p>
+          <p>The scope resolution operator need not be used everytime one works with structures and
+            is used to implement member functions outside the class definition.</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -42,7 +47,8 @@
   </exercise>
   <exercise label="mce_11_2">
     <statement>
-      <p>What is the correct way to declare a member function called <c>student_email</c> outside the structure definition and takes a <c>Student</c> object as a parameter by reference?</p>
+      <p>What is the correct way to declare a member function called <c>student_email</c> outside the structure
+        definition and takes a <c>Student</c> object as a parameter by reference?</p>
     </statement>
     <choices>
       <choice correct="yes">
@@ -52,7 +58,8 @@
           </p>
         </statement>
         <feedback id="mce_11_2_opt_a">
-          <p>This is the proper way to declare a member function <c>student_email</c> that passes a <c>Student</c> object by reference.</p>
+          <p>This is the proper way to declare a member function <c>student_email</c> that passes a <c>Student</c>
+            object by reference.</p>
         </feedback>
       </choice>
       <choice>
@@ -72,7 +79,8 @@
           </p>
         </statement>
         <feedback id="mce_11_2_opt_c">
-          <p>Close! Look closely at the answer choices again and the methos of passing the parameter.</p>
+          <p>Close! Look closely at the answer choices again and the methos of passing the
+            parameter.</p>
         </feedback>
       </choice>
       <choice>
@@ -145,7 +153,8 @@ int main() {
           </p>
         </statement>
         <feedback id="mce_11_3_opt_c">
-          <p>As the function was implemented outside the class definition a scope resolution operator must be used.</p>
+          <p>As the function was implemented outside the class definition a scope resolution
+            operator must be used.</p>
         </feedback>
       </choice>
       <choice>
@@ -155,7 +164,8 @@ int main() {
           </p>
         </statement>
         <feedback id="mce_11_3_opt_d">
-          <p>As the function was implemented outside the class definition a scope resolution operator must be used. Additionally, the object is passed implicitly.</p>
+          <p>As the function was implemented outside the class definition a scope resolution
+            operator must be used. Additionally, the object is passed implicitly.</p>
         </feedback>
       </choice>
     </choices>
@@ -265,7 +275,8 @@ int main() {
           <p>No values, the constructor cannot be invoked as it is out of the struct</p>
         </statement>
         <feedback id="mce_11_5_opt_b">
-          <p>The scope resolution operator allows for a member function outside the structure definition to be invoked by the class type.</p>
+          <p>The scope resolution operator allows for a member function outside the structure
+            definition to be invoked by the class type.</p>
         </feedback>
       </choice>
       <choice>
@@ -273,12 +284,14 @@ int main() {
           <p>0 and <q/></p>
         </statement>
         <feedback id="mce_11_5_opt_c">
-          <p>In such a scenario a default constructor is not called. Pay attention to the constructor values implemented.</p>
+          <p>In such a scenario a default constructor is not called. Pay attention to the
+            constructor values implemented.</p>
         </feedback>
       </choice>
       <choice>
         <statement id="mce_11_5_opt_d">
-          <p>No values, nothing was assigned to <c>age</c> and <c>gender</c> and the constructor was never called</p>
+          <p>No values, nothing was assigned to <c>age</c> and <c>gender</c> and the constructor was never
+            called</p>
         </statement>
         <feedback id="mce_11_5_opt_d">
           <p>Upon creation of the Penguin p1 the constructor initialises the object automatically</p>
@@ -319,7 +332,8 @@ int main() {
     <choices>
       <choice>
         <statement id="mce_11_6_opt_a">
-          <p>This program does not run as the presence of two constructors will throw a compile error.</p>
+          <p>This program does not run as the presence of two constructors will throw a compile
+            error.</p>
         </statement>
         <feedback id="mce_11_6_opt_a">
           <p>Constructor overloading is possible.</p>
@@ -330,7 +344,8 @@ int main() {
           <p>Friend constructors</p>
         </statement>
         <feedback id="mce_11_6_opt_b">
-          <p><q>Friend</q> constructors are constructors that are private except to the friend class.</p>
+          <p><q>Friend</q> constructors are constructors that are private except to the friend
+            class.</p>
         </feedback>
       </choice>
       <choice>
@@ -338,7 +353,8 @@ int main() {
           <p>Constructor overriding</p>
         </statement>
         <feedback id="mce_11_6_opt_c">
-          <p>Overriding is the ability of an inherited class to rewrite the methods of the base class at runtime. Constructors cannot be overwritten</p>
+          <p>Overriding is the ability of an inherited class to rewrite the methods of the base
+            class at runtime. Constructors cannot be overwritten</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -346,14 +362,15 @@ int main() {
           <p>Overloading</p>
         </statement>
         <feedback id="mce_11_6_opt_d">
-          <p>Correct! The constructors are overloaded as they have the same the name but different number of arguments.</p>
+          <p>Correct! The constructors are overloaded as they have the same the name but different
+            number of arguments.</p>
         </feedback>
       </choice>
     </choices>
   </exercise>
   <exercise label="mce_11_7">
     <statement>
-      <p>What statements are true based on the following  <c>Stundent.h</c> header file?</p>
+      <p>What statements are true based on the following <c>Stundent.h</c> header file?</p>
       <program line-numbers="yes">
         <input>
 struct Student {
@@ -395,7 +412,8 @@ struct Student {
       </choice>
       <choice>
         <statement id="mce_11_7_opt_c">
-          <p>The Student.cpp file must implement the member functions in the same order as the declarations.</p>
+          <p>The Student.cpp file must implement the member functions in the same order as the
+            declarations.</p>
         </statement>
         <feedback id="mce_11_7_opt_c">
           <p>This is not necessary.</p>
@@ -403,7 +421,9 @@ struct Student {
       </choice>
       <choice correct="yes">
         <statement id="mce_11_7_opt_d">
-          <p>Header files contain the structure/function definitions and by splitting the program into multiple files one can compile the files seperately and link it to a single program later.</p>
+          <p>Header files contain the structure/function definitions and by splitting the program
+            into multiple files one can compile the files seperately and link it to a single program
+            later.</p>
         </statement>
         <feedback id="mce_11_7_opt_d">
           <p>This is true!</p>
@@ -448,7 +468,8 @@ int main() {
           <p>3</p>
         </statement>
         <feedback id="mce_11_8_opt_a">
-          <p>p1 is initialised using the Penguin() constructor, its gender variable would not be null.</p>
+          <p>p1 is initialised using the Penguin() constructor, its gender variable would not be
+            null.</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -549,7 +570,8 @@ Point3D p1;
       </choice>
       <choice>
         <statement id="mce_11_10_opt_b">
-          <p>In a member function, you should declare the implicit parameter to be const before the parameter list</p>
+          <p>In a member function, you should declare the implicit parameter to be const before the
+            parameter list</p>
         </statement>
         <feedback id="mce_11_10_opt_b">
           <p>The implicit parameter should be declared const after the parameter list</p>
@@ -557,15 +579,19 @@ Point3D p1;
       </choice>
       <choice correct="yes">
         <statement id="mce_11_10_opt_c">
-          <p>In the example <c>x::y</c> the scope resolution operator indicates that a function named <c>y</c> can be invoked on a structure <c>x</c></p>
+          <p>In the example <c>x::y</c> the scope resolution operator indicates that a function named <c>y</c>
+            can be invoked on a structure <c>x</c></p>
         </statement>
         <feedback id="mce_11_10_opt_c">
-          <p>When defining a member function outside of the sturucture definition the <c>::</c> operator is used to indicate that an object of that class type can call the function is question.</p>
+          <p>When defining a member function outside of the sturucture definition the <c>::</c>
+            operator is used to indicate that an object of that class type can call the function is
+            question.</p>
         </feedback>
       </choice>
       <choice correct="yes">
         <statement id="mce_11_10_opt_d">
-          <p>Implicit variable access in member functions allows us to access member variables without the dot notation</p>
+          <p>Implicit variable access in member functions allows us to access member variables
+            without the dot notation</p>
         </statement>
         <feedback id="mce_11_10_opt_d">
           <p>Correct! Implicit variable access allows us to access variables directly</p>

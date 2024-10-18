@@ -8,7 +8,7 @@
 }</program>
   <p>We have to make several changes to this function, including:</p>
   <p>
-    <ol label="1">
+    <ol>
       <li>
         <p>Change the name from <c>addTime</c> to <c>Time::add</c>.</p>
       </li>
@@ -55,8 +55,8 @@ struct Time {
 };
 
 int main() {
-    Time t1 (9, 20, 0.0); cout << "t1 = "; t1.print(); cout << endl;
-    Time t2 (7, 30, 0.0); cout << "t2 = "; t2.print(); cout << endl;
+    Time t1(9, 20, 0.0); cout << "t1 = "; t1.print(); cout << endl;
+    Time t2(7, 30, 0.0); cout << "t2 = "; t2.print(); cout << endl;
     Time t3 = t1.add(t2);
     cout << "Time t1 + Time t2 = "; t3.print(); cout << endl;
 }
@@ -127,8 +127,8 @@ on the <var/> object.  </p>
   </exercise>
   <exercise label="one_last_example_2">
     <statement>
-      <p>We have previously initialized t1 and t2 using constructors <c>Time t1 (8, 30, 45.0)</c>
-and <c>Time t2 (1, 50, 13.0)</c>. What should be returned by <c>t1.add(t2)</c>? <var/>  </p>
+      <p>We have previously initialized t1 and t2 using constructors <c>Time t1(8, 30, 45.0)</c>
+and <c>Time t2(1, 50, 13.0)</c>. What should be returned by <c>t1.add(t2)</c>? <var/>  </p>
     </statement>
     <setup>
       <var case="insensitive">

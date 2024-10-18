@@ -1,41 +1,41 @@
 <?xml version="1.0"?>
 <section xml:id="chapter11_initialize-or-construct">
   <title>Initialize or construct?</title>
-  <p>Earlier we declared and initialized some <c>Time</c> structures using
-            squiggly-braces:</p>
+  <p>Earlier we declared and initialized some <c>Time</c> structures using squiggly-braces:</p>
   <program>Time currentTime = { 9, 14, 30.0 };
 Time breadTime = { 3, 35, 0.0 };</program>
   <p>Now, using constructors, we have a different way to declare and
-            initialize:</p>
+    initialize:</p>
   <program>Time time(seconds);</program>
   <p>These two functions represent different programming styles, and
-            different points in the history of C++. Maybe for that reason, the C++
-            compiler requires that you use one or the other, and not both in the
-            same program.</p>
+    different points in the history of C++. Maybe for that reason, the C++
+    compiler requires that you use one or the other, and not both in the
+    same program.</p>
   <p>If you define a constructor for a structure, then you have to use the
-            constructor to initialize all new structures of that type. The alternate
-            syntax using squiggly-braces is no longer allowed.</p>
-  <p>Fortunately, it is legal to overload constructors in the same way we
-            overloaded functions. In other words, there can be more than one
-            constructor with the same <q>name,</q> as long as they take different
-            parameters. Then, when we initialize a new object the compiler will try
-            to find a constructor that takes the appropriate parameters.</p>
+    constructor to initialize all new structures of that type. The alternate
+    syntax using squiggly-braces is no longer allowed.</p>
+  <p>Fortunately, it is legal to overload constructors in the same way we overloaded functions. In
+    other words, there can be more than one constructor with the same <q>name,</q> as long as they
+    take different parameters. Then, when we initialize a new object the compiler will try to find a
+    constructor that takes the appropriate parameters.</p>
   <p>For example, it is common to have a constructor that takes one parameter
-            for each instance variable, and that assigns the values of the
-            parameters to the instance variables:</p>
+    for each instance variable, and that assigns the values of the
+    parameters to the instance variables:</p>
   <program>Time::Time(int h, int m, double s) {
   hour = h;  minute = m;  second = s;
 }</program>
-  <p>To invoke this constructor, we use the same funny syntax as before,
-            except that the arguments have to be two integers and a <c>double</c>:</p>
-  <program>Time currentTime (9, 14, 30.0);</program>
+  <p>To invoke this constructor, we use the same funny syntax as before, except that the arguments
+    have to be two integers and a <c>double</c>:</p>
+  <program>Time currentTime(9, 14, 30.0);</program>
   <listing label="initialize_or_construct_AC_1">
     <caption>
       <p>In this active code, you can experiment passing values into the two
-            different constructors that we have defined on this page and the previous
-            page.</p>
+        different constructors that we have defined on this page and the previous
+        page.</p>
     </caption>
-    <program xml:id="initialize_or_construct_AC_1_editor" interactive="activecode" line-numbers="yes">
+    <program xml:id="initialize_or_construct_AC_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -49,9 +49,9 @@ struct Time {
 };
 
 int main() {
-    Time marathon (9000);
+    Time marathon(9000);
     cout << "My marathon time is "; marathon.print(); cout << "." << endl;
-    Time race (7, 30, 0.0);
+    Time race(7, 30, 0.0);
     cout << "My next race is at "; race.print(); cout << "." << endl;
 }
 
@@ -83,7 +83,8 @@ void Time::print() {
     <choices>
       <choice>
         <statement>
-          <p>When we initialize a new object, the compiler automatically finds the correct constructor to use.</p>
+          <p>When we initialize a new object, the compiler automatically finds the correct
+            constructor to use.</p>
         </statement>
         <feedback>
           <p>Incorrect! This statement is true!</p>
@@ -94,7 +95,8 @@ void Time::print() {
           <p>You can always initialize an object using squiggly-braces.</p>
         </statement>
         <feedback>
-          <p>Correct! Once you define a constructor, you can no longer use squiggly-braces to initialize an object.</p>
+          <p>Correct! Once you define a constructor, you can no longer use squiggly-braces to
+            initialize an object.</p>
         </feedback>
       </choice>
       <choice>
@@ -102,12 +104,14 @@ void Time::print() {
           <p>You can have many constructors with the same name.</p>
         </statement>
         <feedback>
-          <p>Incorrect! This statement is true, as long as the constructors take different parameters.</p>
+          <p>Incorrect! This statement is true, as long as the constructors take different
+            parameters.</p>
         </feedback>
       </choice>
       <choice>
         <statement>
-          <p>Once you define a constructor for a structure, you MUST use it to initialize any new structures of that type.</p>
+          <p>Once you define a constructor for a structure, you MUST use it to initialize any new
+            structures of that type.</p>
         </statement>
         <feedback>
           <p>Incorrect! This statement is true!</p>
@@ -117,7 +121,8 @@ void Time::print() {
   </exercise>
   <exercise label="initialize_or_construct_2">
     <statement>
-      <p>What is the term for having multiple constructors with the same <q>name</q> that take different parameters?</p>
+      <p>What is the term for having multiple constructors with the same <q>name</q> that take
+        different parameters?</p>
     </statement>
     <choices>
       <choice>
@@ -125,7 +130,8 @@ void Time::print() {
           <p>friend constructors</p>
         </statement>
         <feedback>
-          <p>Incorrect! "Friend" constructors are constructors that are private except to the friend class.</p>
+          <p>Incorrect! "Friend" constructors are constructors that are private except to the friend
+            class.</p>
         </feedback>
       </choice>
       <choice>
@@ -133,7 +139,8 @@ void Time::print() {
           <p>overriding</p>
         </statement>
         <feedback>
-          <p>Incorrect! Overriding is the ability of an inherited class to rewrite the methods of the base class at runtime, not what we're looking for here.</p>
+          <p>Incorrect! Overriding is the ability of an inherited class to rewrite the methods of
+            the base class at runtime, not what we're looking for here.</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -149,16 +156,20 @@ void Time::print() {
           <p>friend class</p>
         </statement>
         <feedback>
-          <p>Incorrect! A friend class is a class that can access private members of another class, not what we're looking for here.</p>
+          <p>Incorrect! A friend class is a class that can access private members of another class,
+            not what we're looking for here.</p>
         </feedback>
       </choice>
     </choices>
   </exercise>
-  <exercise label="initialize_or_construct_3" numbered="yes" adaptive="yes" indentation="hide">
+  <exercise label="initialize_or_construct_3"
+            numbered="yes"
+            adaptive="yes"
+            indentation="hide">
     <statement>
-      <p>Implement two constructors for the <c>Dog</c> structure. One should be a default constructor, the other should take
-            arguments. The weight needs to be converted from pounds to kilograms in the second constructor (for
-            reference, 1 kilogram is approximately 2.2 pounds).</p>
+      <p>Implement two constructors for the <c>Dog</c> structure. One should be a default constructor,
+        the other should take arguments. The weight needs to be converted from pounds to kilograms
+        in the second constructor (for reference, 1 kilogram is approximately 2.2 pounds).</p>
     </statement>
     <blocks>
       <block order="2">

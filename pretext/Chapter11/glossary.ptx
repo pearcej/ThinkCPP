@@ -4,41 +4,39 @@
   <dl>
     <li>
       <title>member function:</title>
-      <p>A function that operates on an object that is passed as an implicit
-                        parameter named <c>this</c>.</p>
+      <p>A function that operates on an object that is passed as an implicit parameter named <c>this</c>
+        .</p>
     </li>
     <li>
       <title>nonmember function:</title>
-      <p>A function that is not a member of any structure definition. Also
-                        called a <q>free-standing</q> function.</p>
+      <p>A function that is not a member of any structure definition. Also called a <q>free-standing</q>
+        function.</p>
     </li>
     <li>
       <title>invoke:</title>
-      <p>To call a function <q>on</q> an object, in order to pass the object as an
-                        implicit parameter.</p>
+      <p>To call a function <q>on</q> an object, in order to pass the object as an implicit
+        parameter.</p>
     </li>
     <li>
       <title>current object:</title>
-      <p>The object on which a member function is invoked. Inside the member
-                        function, we can refer to the current object implicitly, or by using
-                        the keyword <c>this</c>.</p>
+      <p>The object on which a member function is invoked. Inside the member function, we can refer
+        to the current object implicitly, or by using the keyword <c>this</c>.</p>
     </li>
     <li>
       <title>this:</title>
-      <p>A keyword that refers to the current object. <c>this</c> is a pointer,
-                        which makes it difficult to use, since we do not cover pointers in
-                        this book.</p>
+      <p>A keyword that refers to the current object. <c>this</c> is a pointer, which makes it difficult
+        to use, since we do not cover pointers in this book.</p>
     </li>
     <li>
       <title>interface:</title>
       <p>A description of how a function is used, including the number and
-                        types of the parameters and the type of the return value.</p>
+        types of the parameters and the type of the return value.</p>
     </li>
     <li>
       <title>function declaration:</title>
       <p>A statement that declares the interface to a function without
-                        providing the body. Declarations of member functions appear inside
-                        structure definitions even if the definitions appear outside.</p>
+        providing the body. Declarations of member functions appear inside
+        structure definitions even if the definitions appear outside.</p>
     </li>
     <li>
       <title>implementation:</title>
@@ -47,7 +45,7 @@
     <li>
       <title>constructor:</title>
       <p>A special function that initializes the instance variables of a
-                        newly-created object.</p>
+        newly-created object.</p>
     </li>
   </dl>
   <exercise label="glossary11_1">
@@ -61,7 +59,8 @@
     <matches>
       <match order="1">
         <premise>member function</premise>
-        <response>A function that operates on an object that is passed as an implicit parameter named "this".</response>
+        <response>A function that operates on an object that is passed as an implicit parameter
+          named "this".</response>
       </match>
       <match order="2">
         <premise>nonmember function</premise>
@@ -115,7 +114,8 @@
       </match>
       <match order="3">
         <premise>constructor</premise>
-        <response>A special function that initializes the instance variables of a newly-created object.</response>
+        <response>A special function that initializes the instance variables of a newly-created
+          object.</response>
       </match>
     </matches>
   </exercise>

@@ -13,18 +13,19 @@
   double seconds = minutes * 60 + second;
   return seconds;
 }</program>
-  <p>The interesting thing here is that the implicit parameter should be
-            declared <c>const</c>, since we don't modify it in this function. But it is
-            not obvious where we should put information about a parameter that
-            doesn't exist. The answer, as you can see in the example, is after the
-            parameter list (which is empty in this case).</p>
-  <p>The <c>print</c> function in the previous section should also declare that
-            the implicit parameter is <c>const</c>.</p>
+  <p>The interesting thing here is that the implicit parameter should be declared <c>const</c>, since we
+    don't modify it in this function. But it is not obvious where we should put information about a
+    parameter that doesn't exist. The answer, as you can see in the example, is after the parameter
+    list (which is empty in this case).</p>
+  <p>The <c>print</c> function in the previous section should also declare that the implicit parameter is <c>const</c>
+    .</p>
   <listing label="yet_another_example_AC_1">
     <caption>
       <p>Feel free to try out the <c>convertToSeconds()</c> function in this active code!</p>
     </caption>
-    <program xml:id="yet_another_example_AC_1_editor" interactive="activecode" line-numbers="yes">
+    <program xml:id="yet_another_example_AC_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -61,7 +62,8 @@ double Time::convertToSeconds() const {
   </listing>
   <exercise label="yet_another_example_1">
     <statement>
-      <p>When writing a member function, where should you declare the implicit parameter to be <c>const</c>?</p>
+      <p>When writing a member function, where should you declare the implicit parameter to be <c>const</c>
+        ?</p>
     </statement>
     <choices>
       <choice>
@@ -93,7 +95,8 @@ double Time::convertToSeconds() const {
           <p>Implicit parameters are always const and don't need to be declared.</p>
         </statement>
         <feedback>
-          <p>Incorrect! Parameters are only const if they are not modified inside the function, implicit parameters are no exception.</p>
+          <p>Incorrect! Parameters are only const if they are not modified inside the function,
+            implicit parameters are no exception.</p>
         </feedback>
       </choice>
     </choices>

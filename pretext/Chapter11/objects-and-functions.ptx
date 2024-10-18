@@ -1,70 +1,71 @@
 <?xml version="1.0"?>
 <section xml:id="chapter11_objects-and-functions">
   <title>Objects and functions</title>
-  <p>C++ is generally considered an <term>object-oriented programming</term> language,
-            which means that it provides features that support object-oriented
-            programming.</p>
+  <p>C++ is generally considered an <term>object-oriented programming</term> language, which means
+    that it provides features that support object-oriented programming.</p>
   <p>It's not easy to define object-oriented programming, but we have already
-            seen some features of it:</p>
+    seen some features of it:</p>
   <p>
-    <ol label="1">
+    <ol>
       <li>
         <p>Programs are made up of a collection of structure definitions and
-                    function definitions, where most of the functions operate on specific
-                    kinds of structures (or objects).</p>
+          function definitions, where most of the functions operate on specific
+          kinds of structures (or objects).</p>
       </li>
       <li>
         <p>Each structure definition corresponds to some object or concept in
-                    the real world, and the functions that operate on that structure
-                    correspond to the ways real-world objects interact.</p>
+          the real world, and the functions that operate on that structure
+          correspond to the ways real-world objects interact.</p>
       </li>
     </ol>
   </p>
-  <p>For example, the <c>Time</c> structure we defined in
-            <number_reference internal="True" refuri="../Chapter9/time#time" title="Section %s"><inline classes="std std-numref">Section 9.1</inline></number_reference> obviously corresponds to the way people
-            record the time of day, and the operations we defined correspond to the
-            sorts of things people do with recorded times. Similarly, the <c>Point</c>
-            and <c>Rectangle</c> structures correspond to the mathematical concept of a
-            point and a rectangle.</p>
+  <p>For example, the <c>Time</c> structure we defined in <number_reference internal="True"
+                      refuri="../Chapter9/time#time"
+                      title="Section %s">
+      <inline classes="std std-numref">Section 9.1</inline>
+    </number_reference> obviously
+    corresponds to the way people record the time of day, and the operations we defined correspond
+    to the sorts of things people do with recorded times. Similarly, the <c>Point</c> and <c>Rectangle</c>
+    structures correspond to the mathematical concept of a point and a rectangle.</p>
   <p>So far, though, we have not taken advantage of the features C++ provides
-            to support object-oriented programming. Strictly speaking, these
-            features are not necessary. For the most part they provide an alternate
-            syntax for doing things we have already done, but in many cases the
-            alternate syntax is more concise and more accurately conveys the
-            structure of the program.</p>
-  <p>For example, in the <c>Time</c> program, there is no obvious connection
-            between the structure definition and the function definitions that
-            follow. With some examination, it is apparent that every function takes
-            at least one <c>Time</c> structure as a parameter.</p>
-  <p>This observation is the motivation for <term>member functions</term>. Member
-            function differ from the other functions we have written in two ways:</p>
+    to support object-oriented programming. Strictly speaking, these
+    features are not necessary. For the most part they provide an alternate
+    syntax for doing things we have already done, but in many cases the
+    alternate syntax is more concise and more accurately conveys the
+    structure of the program.</p>
+  <p>For example, in the <c>Time</c> program, there is no obvious connection between the structure
+    definition and the function definitions that follow. With some examination, it is apparent that
+    every function takes at least one <c>Time</c> structure as a parameter.</p>
+  <p>This observation is the motivation for <term>member functions</term>. Member function differ
+    from the other functions we have written in two ways:</p>
   <p>
-    <ol label="1">
+    <ol>
       <li>
-        <p>When we call the function, we <term>invoke</term> it on an object, rather than
-                    just call it. People sometimes describe this process as <q>performing
-                    an operation on an object,</q> or <q>sending a message to an object.</q></p>
+        <p>When we call the function, we <term>invoke</term> it on an object, rather than just call
+          it. People sometimes describe this process as <q>performing
+            an operation on an object,</q> or <q>sending a message to an object.</q></p>
       </li>
       <li>
-        <p>The function is <em>declared</em> inside the <c>struct</c> definition, in order
-                    to make the relationship between the structure and the function
-                    explicit.</p>
+        <p>The function is <em>declared</em> inside the <c>struct</c> definition, in order to make the
+          relationship between the structure and the function explicit.</p>
       </li>
     </ol>
   </p>
-  <p>In the next few sections, we will take the functions from
-            <number_reference internal="True" refuri="../Chapter9/time#time" title="Section %s"><inline classes="std std-numref">Section 9.1</inline></number_reference> and transform them into member functions. One
-            thing you should realize is that this transformation is purely
-            mechanical; in other words, you can do it just by following a sequence
-            of steps.</p>
-  <p>As I said, anything that can be done with a member function can also be
-            done with a nonmember function (sometimes called a <term>free-standing</term>
-            function). But sometimes there is an advantage to one over the other. If
-            you are comfortable converting from one form to another, you will be
-            able to choose the best form for whatever you are doing.</p>
+  <p>In the next few sections, we will take the functions from <number_reference internal="True"
+                      refuri="../Chapter9/time#time"
+                      title="Section %s">
+      <inline classes="std std-numref">Section 9.1</inline>
+    </number_reference> and transform
+    them into member functions. One thing you should realize is that this transformation is purely
+    mechanical; in other words, you can do it just by following a sequence of steps.</p>
+  <p>As I said, anything that can be done with a member function can also be done with a nonmember
+    function (sometimes called a <term>free-standing</term> function). But sometimes there is an
+    advantage to one over the other. If you are comfortable converting from one form to another, you
+    will be able to choose the best form for whatever you are doing.</p>
   <exercise label="objects_and_functions_1">
     <statement>
-      <p>What is do we call programming that makes use of data structures and functions that interact with them?</p>
+      <p>What is do we call programming that makes use of data structures and functions that
+        interact with them?</p>
     </statement>
     <choices>
       <choice correct="yes">
@@ -88,7 +89,8 @@
           <p>structured programming</p>
         </statement>
         <feedback>
-          <p>Incorrect! Structured programming makes use of structured control flow using block structures (if/else, for/while).</p>
+          <p>Incorrect! Structured programming makes use of structured control flow using block
+            structures (if/else, for/while).</p>
         </feedback>
       </choice>
       <choice>
@@ -103,7 +105,8 @@
   </exercise>
   <exercise label="objects_and_functions_2">
     <statement>
-      <p>Free-standing functions can perform __________ of the operation(s) that a member function can.</p>
+      <p>Free-standing functions can perform __________ of the operation(s) that a member function
+        can.</p>
     </statement>
     <choices>
       <choice correct="yes">
@@ -166,7 +169,8 @@
           <p>anywhere in the program</p>
         </statement>
         <feedback>
-          <p>Incorrect! The purpose of a member function is to establish a relationship between the structure and the function.</p>
+          <p>Incorrect! The purpose of a member function is to establish a relationship between the
+            structure and the function.</p>
         </feedback>
       </choice>
     </choices>

@@ -1,14 +1,13 @@
 <?xml version="1.0"?>
 <section xml:id="chapter11_a-more-complicated-example">
   <title>A more complicated example</title>
-  <p>Although the process of transforming functions into member functions is
-            mechanical, there are some oddities. For example, <c>after</c> operates on
-            two <c>Time</c> structures, not just one, and we can't make both of them
-            implicit. Instead, we have to invoke the function on one of them and
-            pass the other as an argument.</p>
+  <p>Although the process of transforming functions into member functions is mechanical, there are
+    some oddities. For example, <c>after</c> operates on two <c>Time</c> structures, not just one, and we
+    can't make both of them implicit. Instead, we have to invoke the function on one of them and
+    pass the other as an argument.</p>
   <p>Inside the function, we can refer to one of the them implicitly, but to
-            access the instance variables of the other we continue to use dot
-            notation.</p>
+    access the instance variables of the other we continue to use dot
+    notation.</p>
   <program>bool Time::after(const Time&amp; time2) const {
   if (hour &gt; time2.hour) return true;
   if (hour &lt; time2.hour) return false;
@@ -20,17 +19,19 @@
   return false;
 }</program>
   <p>To invoke this function:</p>
-  <program>if (doneTime.after (currentTime)) {
+  <program>if (doneTime.after(currentTime)) {
   cout &lt;&lt; "The bread will be done after it starts." &lt;&lt; endl;
 }</program>
   <p>You can almost read the invocation like English: <q>If the done-time is
-            after the current-time, then&#x2026;</q></p>
+      after the current-time, then&#x2026;</q></p>
   <listing label="more_complicated_example_AC_1">
     <caption>
-      <p>This active code is another practical example using the <c>after</c> function.
-            Feel free to modify the time that school gets out, and the time that the track meet starts, if you wish!</p>
+      <p>This active code is another practical example using the <c>after</c> function. Feel free to
+        modify the time that school gets out, and the time that the track meet starts, if you wish!</p>
     </caption>
-    <program xml:id="more_complicated_example_AC_1_editor" interactive="activecode" line-numbers="yes">
+    <program xml:id="more_complicated_example_AC_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -44,7 +45,7 @@ struct Time {
 int main() {
     Time end_school = { 2, 20, 0.0 };
     Time track_meet = { 1, 30, 0.0 };
-    if (track_meet.after (end_school)) {
+    if (track_meet.after(end_school)) {
         cout << "The track meet starts after school is dismissed." << endl;
     }
     else {
@@ -109,7 +110,8 @@ bool Time::after(const Time&amp; time2) const {
   </exercise>
   <exercise label="more_complicated_example_2">
     <statement>
-      <p>In a function that operates on <term>four</term> structures, how many of them are accessed with dot notation?</p>
+      <p>In a function that operates on <term>four</term> structures, how many of them are accessed
+        with dot notation?</p>
     </statement>
     <choices>
       <choice>
@@ -133,7 +135,8 @@ bool Time::after(const Time&amp; time2) const {
           <p>Three</p>
         </statement>
         <feedback>
-          <p>Correct!  There is One implicit structure, and three structures that need to be accessed with dot notation.</p>
+          <p>Correct! There is One implicit structure, and three structures that need to be accessed
+            with dot notation.</p>
         </feedback>
       </choice>
       <choice>
@@ -146,21 +149,25 @@ bool Time::after(const Time&amp; time2) const {
       </choice>
     </choices>
   </exercise>
-  <exercise label="more_complicated_example_3" numbered="yes" adaptive="yes" indentation="hide">
+  <exercise label="more_complicated_example_3"
+            numbered="yes"
+            adaptive="yes"
+            indentation="hide">
     <statement>
-      <p>Create the <c>Dog::is_older()</c> function as it would be defined INSIDE of the <c>Dog</c> structure definition.  This function
-            checks if the current <c>Dog</c> is older than another <c>Dog</c>.  The function is invoked on the current <c>Dog</c>.</p>
+      <p>Create the <c>Dog::is_older()</c> function.
+        This function checks if the current <c>Dog</c> is older than another <c>Dog</c>. The
+        function is invoked on the current <c>Dog</c>.</p>
     </statement>
     <blocks>
-      <block order="3" correct="no">
-        <cline>bool Dog::is_older(const Dog&amp; dog, const Dog&amp; dog2) {                         </cline>
-      </block>
       <block order="1">
-        <choice correct="yes">
+        <choice>
           <cline>bool is_older(const Dog&amp; dog2) const {</cline>
         </choice>
         <choice>
-          <cline>bool is_older(Dog&amp; dog2) {                         </cline>
+          <cline>bool Dog::is_older(const Dog&amp; dog, const Dog&amp; dog2) {</cline>
+        </choice>
+        <choice correct="yes">
+          <cline>bool Dog::is_older(const Dog&amp; dog2) {</cline>
         </choice>
       </block>
       <block order="8">
@@ -170,7 +177,7 @@ bool Time::after(const Time&amp; time2) const {
           <cline> }</cline>
         </choice>
         <choice>
-          <cline> if (dog.age &gt; dog2.age) {                         </cline>
+          <cline> if (dog.age &gt; dog2.age) {</cline>
           <cline>   return true;</cline>
           <cline> }</cline>
         </choice>
@@ -185,14 +192,12 @@ bool Time::after(const Time&amp; time2) const {
           <cline>}</cline>
         </choice>
         <choice>
-          <cline>};                         </cline>
+          <cline>};</cline>
         </choice>
       </block>
-      <block order="7" correct="no">
-        <cline> Dog dog = *this;                         </cline>
-      </block>
-      <block order="4" correct="no">
-        <cline>bool Dog::is_older(const Dog&amp; dog2) {                         </cline>
+      <block order="7"
+             correct="no">
+        <cline> Dog dog = *this;</cline>
       </block>
     </blocks>
   </exercise>
