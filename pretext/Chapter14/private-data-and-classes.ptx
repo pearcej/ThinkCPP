@@ -1,31 +1,25 @@
 <?xml version="1.0"?>
 <section xml:id="chapter14_private-data-and-classes">
   <title>Private data and classes</title>
-  <p>I have used the word <term>encapsulation</term> in this book to refer to the
-            process of wrapping up a sequence of instructions in a function, in
-            order to separate the function's interface (how to use it) from its
-            implementation (how it does what it does).</p>
-  <p>This kind of encapsulation might be called <q>functional encapsulation,</q>
-            to distinguish it from <q>data encapsulation,</q> which is the topic of this
-            chapter. Data encapsulation is based on the idea that each structure
-            definition should provide a set of functions that apply to the
-            structure, and prevent unrestricted access to the internal
-            representation.</p>
+  <p>I have used the word <term>encapsulation</term> in this book to refer to the process of
+    wrapping up a sequence of instructions in a function, in order to separate the function's
+    interface (how to use it) from its implementation (how it does what it does).</p>
+  <p>This kind of encapsulation might be called <q>functional encapsulation,</q> to distinguish it
+    from <q>data encapsulation,</q> which is the topic of this chapter. Data encapsulation is based
+    on the idea that each structure definition should provide a set of functions that apply to the
+    structure, and prevent unrestricted access to the internal representation.</p>
   <p>One use of data encapsulation is to hide implementation details from
-            users or programmers that don't need to know them.</p>
-  <p>For example, there are many possible representations for a <c>Card</c>,
-            including two integers, two strings and two enumerated types. The
-            programmer who writes the <c>Card</c> member functions needs to know which
-            implementation to use, but someone using the <c>Card</c> structure should
-            not have to know anything about its internal structure.</p>
-  <p>As another example, we have been using <c>string</c> and <c>vector</c>
-            objects without ever discussing their implementations. There are many
-            possibilities, but as <q>clients</q> of these libraries, we don't need to
-            know.</p>
-  <p>In C++, the most common way to enforce data encapsulation is to prevent
-            client programs from accessing the instance variables of an object. The
-            keyword <c>private</c> is used to protect parts of a structure definition.
-            For example, we could have written the <c>Card</c> definition:</p>
+    users or programmers that don't need to know them.</p>
+  <p>For example, there are many possible representations for a <c>Card</c>, including two integers, two
+    strings and two enumerated types. The programmer who writes the <c>Card</c> member functions needs
+    to know which implementation to use, but someone using the <c>Card</c> structure should not have to
+    know anything about its internal structure.</p>
+  <p>As another example, we have been using <c>string</c> and <c>vector</c> objects without ever discussing
+    their implementations. There are many possibilities, but as <q>clients</q> of these libraries,
+    we don't need to know.</p>
+  <p>In C++, the most common way to enforce data encapsulation is to prevent client programs from
+    accessing the instance variables of an object. The keyword <c>private</c> is used to protect parts of a
+    structure definition. For example, we could have written the <c>Card</c> definition:</p>
   <program>struct Card
 {
 private:
@@ -41,24 +35,24 @@ public:
   void setSuit(int s) { suit = s; }
 };</program>
   <p>There are two sections of this definition, a <term>private</term> part and a <term>public</term>
-            part. The functions are public, which means that they can be invoked by
-            client programs. The instance variables are private, which means that
-            they can be read and written only by <c>Card</c> member functions.</p>
-  <p>It is still possible for client programs to read and write the instance
-            variables using the <term>accessor functions</term> (the ones beginning with
-            <c>get</c> and <c>set</c>). On the other hand, it is now easy to control which
-            operations clients can perform on which instance variables. For example,
-            it might be a good idea to make cards <q>read only</q> so that after they are
-            constructed, they cannot be changed. To do that, all we have to do is
-            remove the <c>set</c> functions.</p>
+    part. The functions are public, which means that they can be invoked by client programs. The
+    instance variables are private, which means that they can be read and written only by <c>Card</c>
+    member functions.</p>
+  <p>It is still possible for client programs to read and write the instance variables using the <term>accessor
+    functions</term> (the ones beginning with <c>get</c> and <c>set</c>). On the other hand, it is now
+    easy to control which operations clients can perform on which instance variables. For example,
+    it might be a good idea to make cards <q>read only</q> so that after they are constructed, they
+    cannot be changed. To do that, all we have to do is remove the <c>set</c> functions.</p>
   <p>Another advantage of using accessor functions is that we can change the
-            internal representations of cards without having to change any client
-            programs.</p>
+    internal representations of cards without having to change any client
+    programs.</p>
   <listing label="priv_data_AC_1">
     <caption>
       <p>Run this active code. Uncomment the commented out code to see what happens!</p>
     </caption>
-    <program xml:id="priv_data_AC_1_editor" interactive="activecode" line-numbers="yes">
+    <program xml:id="priv_data_AC_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <string>
@@ -66,16 +60,16 @@ public:
 using namespace std;
 
 struct Card {
-    private:
-        int suit, rank;
-    public:
-        Card();
-        Card(int s, int r);
-        int getRank() const { return rank; }
-        int getSuit() const { return suit; }
-        void setRank(int r) { rank = r; }
-        void setSuit(int s) { suit = s; }
-        void print() const;
+private:
+    int suit, rank;
+public:
+    Card();
+    Card(int s, int r);
+    int getRank() const { return rank; }
+    int getSuit() const { return suit; }
+    void setRank(int r) { rank = r; }
+    void setSuit(int s) { suit = s; }
+    void print() const;
 };
 
 int main() {
@@ -135,8 +129,9 @@ void Card::print() const {
   </listing>
   <exercise label="question14_1_1">
     <statement>
-      <p>Data encapsulation is based on the idea that each structure definition should provide a set of functions that
-            apply to the structure, and allow unrestricted access to the internal representation.</p>
+      <p>Data encapsulation is based on the idea that each structure definition should provide a set
+        of functions that
+        apply to the structure, and allow unrestricted access to the internal representation.</p>
     </statement>
     <choices>
       <choice>
@@ -159,7 +154,8 @@ void Card::print() const {
   </exercise>
   <exercise label="question14_1_2">
     <statement>
-      <p>What type of data member cannot be directly accessed outside of the structure? <var/>  </p>
+      <p>What type of data member cannot be directly accessed outside of the structure? <var/>
+      </p>
     </statement>
     <setup>
       <var case="insensitive">

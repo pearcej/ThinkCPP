@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <section xml:id="chapter14_what-is-a-class">
   <title>What is a class?</title>
-  <p>In most object-oriented programming languages, a <term>class</term> is a
-            user-defined type that includes a set of functions. As we have seen,
-            structures in C++ meet the general definition of a class.</p>
-  <p>But there is another feature in C++ that also meets this definition;
-            confusingly, it is called a <c>class</c>. In C++, a class is just a
-            structure whose instance variables are private by default. For example,
-            I could have written the <c>Card</c> definition:</p>
+  <p>In most object-oriented programming languages, a <term>class</term> is a user-defined type that
+    includes a set of functions. As we have seen, structures in C++ meet the general definition of a
+    class.</p>
+  <p>But there is another feature in C++ that also meets this definition; confusingly, it is called
+    a <c>class</c>. In C++, a class is just a structure whose instance variables are private by default.
+    For example, I could have written the <c>Card</c> definition:</p>
   <program>class Card
 {
+private:
   int suit, rank;
 
 public:
@@ -21,16 +21,13 @@ public:
   int setRank(int r) { rank = r; }
   int setSuit(int s) { suit = s; }
 };</program>
-  <p>I replaced the word <c>struct</c> with the word <c>class</c> and removed the
-            <c>private:</c> label. This result of the two definitions is exactly the
-            same.</p>
-  <p>In fact, anything that can be written as a <c>struct</c> can also be
-            written as a <c>class</c>, just by adding or removing labels. There is no
-            real reason to choose one over the other, except that as a stylistic
-            choice, most C++ programmers use <c>class</c>.</p>
-  <p>Also, it is common to refer to all user-defined types in C++ as
-            <q>classes,</q> regardless of whether they are defined as a <c>struct</c> or a
-            <c>class</c>.</p>
+  <p>I replaced the word <c>struct</c> with the word <c>class</c> - the result of the two definitions is exactly the same. If I wanted to, I could remove the <c>private:</c> label. In a <c>class</c>, any non-labeled members default
+  to <term>private</term>. Members default to <term>public</term> in a struct, which is why we didn't have to say <c>public:</c> in any of our structs.</p>
+  <p>In fact, anything that can be written as a <c>struct</c> can also be written as a <c>class</c>, just by
+    adding or removing labels. There is no real reason to choose one over the other, except that as
+    a stylistic choice, most C++ programmers use <c>class</c>.</p>
+  <p>Also, it is common to refer to all user-defined types in C++ as <q>classes,</q> regardless of
+    whether they are defined as a <c>struct</c> or a <c>class</c>.</p>
   <exercise label="question14_2_1">
     <statement>
       <p>By default, the data members of a <c>class</c> are private.</p>
@@ -41,7 +38,8 @@ public:
           <p>True</p>
         </statement>
         <feedback>
-          <p>Correct! We can omit the ``private:`` label because the data members are private by default</p>
+          <p>Correct! We can omit the ``private:`` label because the data members are private by
+            default</p>
         </feedback>
       </choice>
       <choice>

@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-        <title></title>
-        <xi:include href='./private-data-and-classes.ptx' />
-        <xi:include href='./what-is-a-class.ptx' />
-        <xi:include href='./complex-numbers.ptx' />
-        <xi:include href='./accessor-functions.ptx' />
-        <xi:include href='./output.ptx' />
-        <xi:include href='./a-function-on-complex-numbers.ptx' />
-        <xi:include href='./another-function-on-complex-numbers.ptx' />
-        <xi:include href='./invariants.ptx' />
-        <xi:include href='./preconditions.ptx' />
-        <xi:include href='./private-functions.ptx' />
-        <xi:include href='./glossary.ptx' />
-        <xi:include href='./exercises.ptx' />
-        <xi:include href='./mixed-up-code.ptx' />
-        <xi:include href='./coding-practice.ptx' />
-    </chapter>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"
+         xml:lang="en-US"
+         xml:id="classes">
+  <title>Classes</title>
+  <xi:include href='./private-data-and-classes.ptx'/>
+  <xi:include href='./what-is-a-class.ptx'/>
+  <xi:include href='./complex-numbers.ptx'/>
+  <xi:include href='./accessor-functions.ptx'/>
+  <xi:include href='./output.ptx'/>
+  <xi:include href='./a-function-on-complex-numbers.ptx'/>
+  <xi:include href='./another-function-on-complex-numbers.ptx'/>
+  <xi:include href='./invariants.ptx'/>
+  <xi:include href='./preconditions.ptx'/>
+  <xi:include href='./private-functions.ptx'/>
+  <xi:include href='./glossary.ptx'/>
+  <xi:include href='./exercises.ptx'/>
+  <xi:include href='./mixed-up-code.ptx'/>
+  <xi:include href='./coding-practice.ptx'/>
+</chapter>

@@ -43,13 +43,13 @@ public:
   <note>
     <p>Fortunately, it is easy to convert from one form to another. To go from
                 Cartesian to polar,</p>
-    <math_block docname="Chapter14/complex_numbers" label="True" nowrap="False" number="True" xml:space="preserve">\begin{aligned}
-r       &amp; = &amp;  \sqrt{x^2 + y^2} \\
-\theta  &amp; = &amp;  \arctan (y / x)\end{aligned}</math_block>
+    <me>\begin{aligned}
+r       &amp; = \sqrt{x^2 + y^2} \\
+\theta  &amp; = \arctan (y / x)\end{aligned}</me>
     <p>To go from polar to Cartesian,</p>
-    <math_block docname="Chapter14/complex_numbers" label="True" nowrap="False" number="True" xml:space="preserve">\begin{aligned}
-x       &amp; = &amp;  r \cos \theta \\
-y       &amp; = &amp;  r \sin \theta\end{aligned}</math_block>
+    <me docname="Chapter14/complex_numbers" label="True" nowrap="False" number="True" xml:space="preserve">\begin{aligned}
+x       &amp; = r \cos \theta \\
+y       &amp; = r \sin \theta\end{aligned}</me>
   </note>
   <p>So which representation should we use? Well, the whole reason there are
             multiple representations is that some operations are easier to perform
@@ -64,12 +64,17 @@ y       &amp; = &amp;  r \sin \theta\end{aligned}</math_block>
   bool cartesian, polar;
 
 public:
-  Complex() { cartesian = false;  polar = false; }
+  Complex() { 
+    cartesian = false;  
+    polar = false; 
+  }
 
   Complex(double r, double i)
   {
-    real = r;  imag = i;
-    cartesian = true;  polar = false;
+    real = r;
+    imag = i;
+    cartesian = true;
+    polar = false;
   }
 };</program>
   <p>There are now six instance variables, which means that this
@@ -92,31 +97,31 @@ public:
             be easy for them to make errors by reading uninitialized values. In the
             next few sections, we will develop accessor functions that will make
             those kinds of mistakes impossible.</p>
-  <exercise label="fourteentwo">
-    <statement>
+  <listing label="fourteentwo">
+    <caption>
       <p>Take a look at this active code, which demonstrates the separation of
             interface and implementation using classes. In this code, we create a <c>Triangle</c>
             object which is represented by three sides. In <c>main</c>, we print out the perimeter of
             the triangle, which should be 12.</p>
-    </statement>
+    </caption>
     <program xml:id="fourteentwo_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
 
 class Triangle {
-  private:
-    double side_a, side_b, side_c;
-  public:
-    Triangle() {side_a = 1; side_b = 1; side_c = 1;}
-    Triangle(double a_in, double b_in, double c_in) {
-      side_a = a_in;
-      side_b = b_in;
-      side_c = c_in;
-    }
-    double perimeter() {
-      return side_a + side_b + side_c;
-    }
+private:
+  double side_a, side_b, side_c;
+public:
+  Triangle() {side_a = 1; side_b = 1; side_c = 1;}
+  Triangle(double a_in, double b_in, double c_in) {
+    side_a = a_in;
+    side_b = b_in;
+    side_c = c_in;
+  }
+  double perimeter() {
+    return side_a + side_b + side_c;
+  }
 };
 
 int main() {
@@ -125,15 +130,15 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
-  <exercise label="fourteenthree">
-    <statement>
+  </listing>
+  <listing label="fourteenthree">
+    <caption>
       <p>Now take a look at this second piece of active code. What if we decide we want
             to represent a <c>Triangle</c> in a different way? Because the way we represent a
             <c>Triangle</c> is private, we can easily change the implementation while keeping
             the interface the same. Now, <c>Triangle</c> is represented by two sides and the
             angle between them. Notice how our <c>main</c> function is the exact same as before.</p>
-    </statement>
+    </caption>
     <program xml:id="fourteenthree_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
@@ -141,22 +146,22 @@ int main() {
 using namespace std;
 
 class Triangle {
-  private:
-    double side_a, side_b, angle;
-  public:
-    Triangle() {side_a = 1; side_b = 1; angle = 60;}
-    Triangle(double a_in, double b_in, double c_in) {
-      side_a = a_in;
-      side_b = b_in;
-      // Law of Cosines: c^2 = a^2 + b^2 - 2abcosC
-      angle = acos((pow(a_in, 2) + pow(b_in, 2) - pow(c_in, 2))
-                   / 2 * a_in * b_in);
-    }
-    double perimeter() {
-      return side_a + side_b +
-             sqrt(pow(side_a, 2) + pow(side_b, 2)
-             - 2 * side_a * side_b * cos(angle));
-    }
+private:
+  double side_a, side_b, angle;
+public:
+  Triangle() {side_a = 1; side_b = 1; angle = 60;}
+  Triangle(double a_in, double b_in, double c_in) {
+    side_a = a_in;
+    side_b = b_in;
+    // Law of Cosines: c^2 = a^2 + b^2 - 2abcosC
+    angle = acos((pow(a_in, 2) + pow(b_in, 2) - pow(c_in, 2))
+                  / 2 * a_in * b_in);
+  }
+  double perimeter() {
+    return side_a + side_b +
+            sqrt(pow(side_a, 2) + pow(side_b, 2)
+            - 2 * side_a * side_b * cos(angle));
+  }
 };
 
 int main() {
@@ -165,7 +170,7 @@ int main() {
 }
         ]]></input>
     </program>
-  </exercise>
+  </listing>
   <exercise label="question14_3_1" numbered="yes" adaptive="yes" indentation="hide">
     <statement>
       <p>Let's write a constructor that uses parameters to

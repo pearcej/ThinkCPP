@@ -1,9 +1,8 @@
 <?xml version="1.0"?>
 <section xml:id="chapter14_output">
   <title>Output</title>
-  <p>As usual when we define a new class, we want to be able to output
-            objects in a human-readable form. For <c>Complex</c> objects, we could use
-            two functions:</p>
+  <p>As usual when we define a new class, we want to be able to output objects in a human-readable
+    form. For <c>Complex</c> objects, we could use two functions:</p>
   <program>void Complex::printCartesian()
 {
   cout &lt;&lt; getReal() &lt;&lt; " + " &lt;&lt; getImag() &lt;&lt; "i" &lt;&lt; endl;
@@ -13,33 +12,31 @@ void Complex::printPolar()
 {
   cout &lt;&lt; getMag() &lt;&lt; " e^ " &lt;&lt; getTheta() &lt;&lt; "i" &lt;&lt; endl;
 }</program>
-  <p>The nice thing here is that we can output any <c>Complex</c> object in
-            either format without having to worry about the representation. Since
-            the output functions use the accessor functions, the program will
-            compute automatically any values that are needed.</p>
-  <p>The following code creates a <c>Complex</c> object using the second
-            constructor. Initially, it is in Cartesian format only. When we invoke
-            <c>printCartesian</c> it accesses <c>real</c> and <c>imag</c> without having to
-            do any conversions.</p>
+  <p>The nice thing here is that we can output any <c>Complex</c> object in either format without having to
+    worry about the representation. Since the output functions use the accessor functions, the
+    program will compute automatically any values that are needed.</p>
+  <p>The following code creates a <c>Complex</c> object using the second constructor. Initially, it is in
+    Cartesian format only. When we invoke <c>printCartesian</c> it accesses <c>real</c> and <c>imag</c> without having to
+    do any conversions.</p>
   <program>Complex c1 (2.0, 3.0);
 
 c1.printCartesian();
 c1.printPolar();</program>
-  <p>When we invoke <c>printPolar</c>, and <c>printPolar</c> invokes <c>getMag</c>,
-            the program is forced to convert to polar coordinates and store the
-            results in the instance variables. The good news is that we only have to
-            do the conversion once. When <c>printPolar</c> invokes <c>getTheta</c>, it
-            will see that the polar coordinates are valid and return <c>theta</c>
-            immediately.</p>
+  <p>When we invoke <c>printPolar</c>, and <c>printPolar</c> invokes <c>getMag</c>, the program is forced to convert to polar
+    coordinates and store the results in the instance variables. The good news is that we only have
+    to do the conversion once. When <c>printPolar</c> invokes <c>getTheta</c>, it will see that the polar coordinates
+    are valid and return <c>theta</c> immediately.</p>
   <p>The output of this code is:</p>
-  <program>2 + 3i
-3.60555 e^ 0.982794i</program>
-  <exercise label="fourteensix">
-    <statement>
-      <p>This active code uses the print functions for <c>Complex</c> objects.
-            Feel free to modify the code and experiment around!</p>
-    </statement>
-    <program xml:id="fourteensix_editor" interactive="activecode" line-numbers="yes">
+  <console><output>2 + 3i
+3.60555 e^ 0.982794i</output></console>
+  <listing label="fourteensix">
+    <caption>
+      <p>This active code uses the print functions for <c>Complex</c> objects. Feel free to modify the code
+        and experiment around!</p>
+    </caption>
+    <program xml:id="fourteensix_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <cmath>
@@ -123,7 +120,7 @@ void Complex::printPolar() {
 }
 </tests>
     </program>
-  </exercise>
+  </listing>
   <exercise label="question14_5_1">
     <statement>
       <p>What is the correct output of the code below?</p>

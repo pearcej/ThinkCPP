@@ -2,11 +2,11 @@
 <section xml:id="chapter14_another-function-on-complex-numbers">
   <title>Another function on <c>Complex</c> numbers</title>
   <p>Another operation we might want is multiplication. Unlike addition,
-            multiplication is easy if the numbers are in polar coordinates and hard
-            if they are in Cartesian coordinates (well, a little harder, anyway).</p>
+    multiplication is easy if the numbers are in polar coordinates and hard
+    if they are in Cartesian coordinates (well, a little harder, anyway).</p>
   <p>In polar coordinates, we can just multiply the magnitudes and add the
-            angles. As usual, we can use the accessor functions without worrying
-            about the representation of the objects.</p>
+    angles. As usual, we can use the accessor functions without worrying
+    about the representation of the objects.</p>
   <program>Complex mult (Complex&amp; a, Complex&amp; b)
 {
   double mag = a.getMag() * b.getMag();
@@ -15,22 +15,21 @@
   product.setPolar (mag, theta);
   return product;
 }</program>
-  <p>A small problem we encounter here is that we have no constructor that
-            accepts polar coordinates. It would be nice to write one, but remember
-            that we can only overload a function (even a constructor) if the
-            different versions take different parameters. In this case, we would
-            like a second constructor that also takes two <c>double</c>s, and we
-            can't have that.</p>
-  <p>An alternative it to provide an accessor function that <em>sets</em> the
-            instance variables. In order to do that properly, though, we have to
-            make sure that when <c>mag</c> and <c>theta</c> are set, we also set the
-            <c>polar</c> flag. At the same time, we have to make sure that the
-            <c>cartesian</c> flag is unset. That's because if we change the polar
-            coordinates, the cartesian coordinates are no longer valid.</p>
+  <p>A small problem we encounter here is that we have no constructor that accepts polar
+    coordinates. It would be nice to write one, but remember that we can only overload a function
+    (even a constructor) if the different versions take different parameters. In this case, we would
+    like a second constructor that also takes two <c>double</c>s, and we can't have that.</p>
+  <p>An alternative it to provide an accessor function that <em>sets</em> the instance variables. In
+    order to do that properly, though, we have to make sure that when <c>mag</c> and <c>theta</c> are set,
+    we also set the <c>polar</c> flag. At the same time, we have to make sure that the <c>cartesian</c> flag is
+    unset. That's because if we change the polar coordinates, the cartesian coordinates are no
+    longer valid.</p>
   <program>void Complex::setPolar(double m, double t)
 {
-  mag = m;  theta = t;
-  cartesian = false;  polar = true;
+  mag = m;
+  theta = t;
+  cartesian = false;
+  polar = true;
 }</program>
   <p>As an exercise, write the corresponding function named <c>setCartesian</c>.</p>
   <p>To test the <c>mult</c> function, we can try something like:</p>
@@ -40,13 +39,17 @@ Complex c2 (3.0, 4.0);
 Complex product = mult (c1, c2);
 product.printCartesian();</program>
   <p>The output of this program is</p>
-  <program>-6 + 17i</program>
-  <exercise label="fourteeneight">
-    <statement>
-      <p>This active code uses the <c>mult</c> and <c>setPolar</c> functions.
-            Feel free to modify the code and experiment around!</p>
-    </statement>
-    <program xml:id="fourteeneight_editor" interactive="activecode" line-numbers="yes">
+  <console>
+    <output>-6 + 17i</output>
+  </console>
+  <listing label="fourteeneight">
+    <caption>
+      <p>This active code uses the <c>mult</c> and <c>setPolar</c> functions. Feel free to modify the code and
+        experiment around!</p>
+    </caption>
+    <program xml:id="fourteeneight_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <cmath>
@@ -163,12 +166,11 @@ Complex mult (Complex&amp; a, Complex&amp; b) {
 }
 </tests>
     </program>
-  </exercise>
-  <p>There is a lot of conversion going on in this program behind the scenes.
-            When we call <c>mult</c>, both arguments get converted to polar
-            coordinates. The result is also in polar format, so when we invoke
-            <c>printCartesian</c> it has to get converted back. Really, it's amazing
-            that we get the right answer!</p>
+  </listing>
+  <p>There is a lot of conversion going on in this program behind the scenes. When we call <c>mult</c>,
+    both arguments get converted to polar coordinates. The result is also in polar format, so when
+    we invoke <c>printCartesian</c> it has to get converted back. Really, it's amazing that we get the right
+    answer!</p>
   <exercise label="question14_7_1">
     <statement>
       <p>What is the correct output of the code below?</p>
@@ -224,12 +226,13 @@ int main() {
   </exercise>
   <exercise label="fourteennine">
     <statement>
-      <p>Now let's try implementing the <c>setCartesian</c> function. Write your
-            implementation in the commented area of this active code.
-            Read the comments in <c>main</c> to test out your code! If you get stuck,
-            you can reveal the extra problem at the end for help.</p>
+      <p>Now let's try implementing the <c>setCartesian</c> function. Write your implementation in the commented
+        area of this active code. Read the comments in <c>main</c> to test out your code! If you get
+        stuck, you can reveal the extra problem at the end for help.</p>
     </statement>
-    <program xml:id="fourteennine_editor" interactive="activecode" line-numbers="yes">
+    <program xml:id="fourteennine_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <cmath>
@@ -356,41 +359,44 @@ Complex mult (Complex&amp; a, Complex&amp; b) {
 }
 </tests>
     </program>
+    <hint>
+      <activity label="question14_7_2"
+                numbered="yes"
+                adaptive="yes"
+                indentation="hide">
+        <statement>
+          <p>Let's write the code for the <c>setCartesian</c> function.</p>
+        </statement>
+        <blocks>
+          <block order="7">
+            <choice correct="yes">
+              <cline>void Complex::setCartesian(double r, double i) {</cline>
+            </choice>
+            <choice>
+              <cline>Complex Complex::setCartesian(double r, double i) {                         </cline>
+            </choice>
+          </block>
+          <block order="6">
+            <choice correct="yes">
+              <cline>   real = r;    imag = i;</cline>
+            </choice>
+            <choice>
+              <cline>   real = i;    imag = r;                         </cline>
+            </choice>
+          </block>
+          <block order="4">
+            <choice correct="yes">
+              <cline>   cartesian = true;  polar = false;</cline>
+            </choice>
+            <choice>
+              <cline>   cartesian = false;  polar = true;                         </cline>
+            </choice>
+          </block>
+          <block order="5">
+            <cline>}</cline>
+          </block>
+        </blocks>
+      </activity>
+    </hint>
   </exercise>
-  <exercises line="348" runestone_options="{'showtitle': 'data-showtitle=&quot;Reveal Problem&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'another_function_on_complex_numbers', 'chapter': 'Chapter14', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': '14_7_1', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter14/another_function_on_complex_numbers.rst">
-    <exercise label="question14_7_2" numbered="yes" adaptive="yes" indentation="hide">
-      <statement>
-        <p>Let's write the code for the <c>setCartesian</c> function.</p>
-      </statement>
-      <blocks>
-        <block order="7">
-          <choice correct="yes">
-            <cline>void Complex::setCartesian(double r, double i) {</cline>
-          </choice>
-          <choice>
-            <cline>Complex Complex::setCartesian(double r, double i) {                         </cline>
-          </choice>
-        </block>
-        <block order="6">
-          <choice correct="yes">
-            <cline>   real = r;    imag = i;</cline>
-          </choice>
-          <choice>
-            <cline>   real = i;    imag = r;                         </cline>
-          </choice>
-        </block>
-        <block order="4">
-          <choice correct="yes">
-            <cline>   cartesian = true;  polar = false;</cline>
-          </choice>
-          <choice>
-            <cline>   cartesian = false;  polar = true;                         </cline>
-          </choice>
-        </block>
-        <block order="5">
-          <cline>}</cline>
-        </block>
-      </blocks>
-    </exercise>
-  </exercises>
 </section>

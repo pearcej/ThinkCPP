@@ -19,7 +19,8 @@
           <p>To hide implementation details from users or programmers that don't need to know them.</p>
         </statement>
         <feedback id="mce_14_1_opt_b">
-          <p>Data encapsulation is the separation of the implementation of data from the interface of a structure.</p>
+          <p>Data encapsulation is the separation of the implementation of data from the interface
+            of a structure.</p>
         </feedback>
       </choice>
       <choice>
@@ -35,7 +36,8 @@
           <p>To make all data public and accessible to everyone.</p>
         </statement>
         <feedback id="mce_14_1_opt_d">
-          <p>Data encapsulation is based on the idea that each estructure should prevent unrestricted access to internal representation.</p>
+          <p>Data encapsulation is based on the idea that each structure should prevent
+            unrestricted access to internal representation.</p>
         </feedback>
       </choice>
     </choices>
@@ -46,15 +48,15 @@
       <program line-numbers="yes">
         <input><![CDATA[
 struct Student {
-  private:
-    int id;
-  public:
-    string name;
-    int year;
+private:
+  int id;
+public:
+  string name;
+  int year;
 
-    int getID() { return id; }
-    int setID(int i) { id = i; }
-    void printInfo() { cout << "Student: " << name << ", " << year; }
+  int getID() { return id; }
+  int setID(int i) { id = i; }
+  void printInfo() { cout << "Student: " << name << ", " << year; }
 };
 ]]></input>
       </program>
@@ -77,7 +79,8 @@ struct Student {
           </p>
         </statement>
         <feedback id="mce_14_2_opt_b">
-          <p>This is a <q>getter</q> function, which is an accessor function since it accesses and returns a private member variable.</p>
+          <p>This is a <q>getter</q> function, which is an accessor function since it accesses and
+            returns a private member variable.</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -87,7 +90,8 @@ struct Student {
           </p>
         </statement>
         <feedback id="mce_14_2_opt_c">
-          <p>This is a <q>setter</q> function, which is an accessor function since it accesses and modifies a private member variable.</p>
+          <p>This is a <q>setter</q> function, which is an accessor function since it accesses and
+            modifies a private member variable.</p>
         </feedback>
       </choice>
       <choice>
@@ -112,7 +116,8 @@ struct Student {
           <p>By default, <c>struct</c> member variables are private.</p>
         </statement>
         <feedback id="mce_14_3_opt_a">
-          <p>By default, <c>struct</c> member variables are public. This is the main difference between a <c>class</c> and a <c>struct</c>.</p>
+          <p>By default, <c>struct</c> member variables are public. This is the main difference between a <c>class</c>
+            and a <c>struct</c>.</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -168,7 +173,8 @@ class rightTriangle {
           </p>
         </statement>
         <feedback id="mce_14_4_opt_a">
-          <p>We use the Pythagorean Theorem and <c>getBase</c> and <c>getHeight</c> to calculate and return the hypotenuse.</p>
+          <p>We use the Pythagorean Theorem and <c>getBase</c> and <c>getHeight</c> to calculate and return the
+            hypotenuse.</p>
         </feedback>
       </choice>
       <choice>
@@ -238,7 +244,8 @@ int main() {
           <p>The <c>Plane</c> class is missing the keyword <c>private:</c>.</p>
         </statement>
         <feedback id="mce_14_5_opt_a">
-          <p>By default, <c>class</c> member variables are private, so we don't need to explicitly write <c>private:</c>.</p>
+          <p>By default, <c>class</c> member variables are private, so we don't need to explicitly write <c>private:</c>
+            .</p>
         </feedback>
       </choice>
       <choice>
@@ -246,7 +253,8 @@ int main() {
           <p><c>printInfo</c> cannot access <c>Plane</c>'s private member variables.</p>
         </statement>
         <feedback id="mce_14_5_opt_b">
-          <p>The private member variables of <c>Plane</c> are only inaccessible to those outside of the class.</p>
+          <p>The private member variables of <c>Plane</c> are only inaccessible to those outside of the
+            class.</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -254,7 +262,8 @@ int main() {
           <p>We cannot assign the private member variables of <c>p</c> in <c>main</c>.</p>
         </statement>
         <feedback id="mce_14_5_opt_c">
-          <p>We are trying to access the private member variables of a <c>Plane</c> object outside of the <c>Plane</c> class.</p>
+          <p>We are trying to access the private member variables of a <c>Plane</c> object outside of the <c>Plane</c>
+            class.</p>
         </feedback>
       </choice>
       <choice>
@@ -273,25 +282,25 @@ int main() {
       <program line-numbers="yes">
         <input><![CDATA[
 class Temp {
-  private:
-    double fahrenheit;
-    double celsius;
-    bool is_fahrenheit;
-    bool is_celsius;
+private:
+  double fahrenheit;
+  double celsius;
+  bool is_fahrenheit;
+  bool is_celsius;
 
-  public:
-    double getFahrenheit() { return fahrenheit; }
-    double getCelsius() { return celsius; }
-    void setFahrenheit(double f) { fahrenheit = f; is_fahrenheit = true; is_celsius = false; }
-    void setCelsius(double c) { celsius = c; is_celsius = true; is_fahrenheit = false; }
-    void printTemp() {
-      if (is_fahrenheit) {
-        cout << "It is " << getFahrenheit() << " degrees Fahrenheit" << endl;
-      }
-      else {
-        cout << "It is " << getCelsius() << " degrees Celsius" << endl;
-      }
+public:
+  double getFahrenheit() { return fahrenheit; }
+  double getCelsius() { return celsius; }
+  void setFahrenheit(double f) { fahrenheit = f; is_fahrenheit = true; is_celsius = false; }
+  void setCelsius(double c) { celsius = c; is_celsius = true; is_fahrenheit = false; }
+  void printTemp() {
+    if (is_fahrenheit) {
+      cout << "It is " << getFahrenheit() << " degrees Fahrenheit" << endl;
     }
+    else {
+      cout << "It is " << getCelsius() << " degrees Celsius" << endl;
+    }
+  }
 };
 
 int main() {
@@ -345,10 +354,12 @@ int main() {
     <choices>
       <choice correct="yes">
         <statement id="mce_14_7_opt_a">
-          <p>Data encapsulation helps enforce invariants by preventing unrestricted access to private member variables.</p>
+          <p>Data encapsulation helps enforce invariants by preventing unrestricted access to
+            private member variables.</p>
         </statement>
         <feedback id="mce_14_7_opt_a">
-          <p>By limiting access to private member variables, data encapsulation can control what values these variables can take on.</p>
+          <p>By limiting access to private member variables, data encapsulation can control what
+            values these variables can take on.</p>
         </feedback>
       </choice>
       <choice>
@@ -361,7 +372,8 @@ int main() {
       </choice>
       <choice>
         <statement id="mce_14_7_opt_c">
-          <p>An invariant cannot be false in the middle of a function, even if it is true at the start and the end.</p>
+          <p>An invariant cannot be false in the middle of a function, even if it is true at the
+            start and the end.</p>
         </statement>
         <feedback id="mce_14_7_opt_c">
           <p>An invariant can be false in the middle of a function, and it is sometimes unavoidable.</p>
@@ -383,21 +395,21 @@ int main() {
       <program line-numbers="yes">
         <input>
 class Date {
-  private:
-    int day;
-    int month;
-    int year;
-    bool is_birthday;
-    string message;
+private:
+  int day;
+  int month;
+  int year;
+  bool is_birthday;
+  string message;
 
-  public:
-    Date(int hour, int d, int m, int y, bool b, string m) {
-      day = d;
-      month = m;
-      year = y;
-      is_birthday = b;
-      message = m;
-    }
+public:
+  Date(int hour, int d, int m, int y, bool b, string m) {
+    day = d;
+    month = m;
+    year = y;
+    is_birthday = b;
+    message = m;
+  }
 };
 </input>
       </program>
@@ -517,7 +529,8 @@ int calculateRectangleArea(int length, int width) {
           <p>Functions that are declared private which cannot be invoked by client programs.</p>
         </statement>
         <feedback id="mce_14_10_opt_d">
-          <p>We would make functions private if we wanted to restrict their usage outside of the class.</p>
+          <p>We would make functions private if we wanted to restrict their usage outside of the
+            class.</p>
         </feedback>
       </choice>
     </choices>

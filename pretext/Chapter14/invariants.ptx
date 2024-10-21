@@ -1,45 +1,42 @@
 <?xml version="1.0"?>
 <section xml:id="chapter14_invariants">
   <title>Invariants</title>
-  <p>There are several conditions we expect to be true for a proper
-            <c>Complex</c> object. For example, if the <c>cartesian</c> flag is set then
-            we expect <c>real</c> and <c>imag</c> to contain valid data. Similarly, if
-            <c>polar</c> is set, we expect <c>mag</c> and <c>theta</c> to be valid. Finally,
-            if both flags are set then we expect the other four variables to be
-            consistent; that is, they should be specifying the same point in two
-            different formats.</p>
-  <p>These kinds of conditions are called <c>invariants</c>, for the obvious
-            reason that they do not vary&#x2014;they are always supposed to be true. One of
-            the ways to write good quality code that contains few bugs is to figure
-            out what invariants are appropriate for your classes, and write code
-            that makes it impossible to violate them.</p>
+  <p>There are several conditions we expect to be true for a proper <c>Complex</c> object. For example, if
+    the <c>cartesian</c> flag is set then we expect <c>real</c> and <c>imag</c> to contain valid data. Similarly, if <c>polar</c>
+    is set, we expect <c>mag</c> and <c>theta</c> to be valid. Finally, if both flags are set then we expect
+    the other four variables to be consistent; that is, they should be specifying the same point in
+    two different formats.</p>
+  <p>These kinds of conditions are called <c>invariants</c>, for the obvious reason that they do not
+    vary<mdash/>they are always supposed to be true. One of the ways to write good quality code that
+    contains few bugs is to figure out what invariants are appropriate for your classes, and write
+    code that makes it impossible to violate them.</p>
   <p>One of the primary things that data encapsulation is good for is helping
-            to enforce invariants. The first step is to prevent unrestricted access
-            to the instance variables by making them private. Then the only way to
-            modify the object is through accessor functions and modifiers. If we
-            examine all the accessors and modifiers, and we can show that every one
-            of them maintains the invariants, then we can prove that it is
-            impossible for an invariant to be violated.</p>
-  <p>Looking at the <c>Complex</c> class, we can list the functions that make
-            assignments to one or more instance variables:</p>
+    to enforce invariants. The first step is to prevent unrestricted access
+    to the instance variables by making them private. Then the only way to
+    modify the object is through accessor functions and modifiers. If we
+    examine all the accessors and modifiers, and we can show that every one
+    of them maintains the invariants, then we can prove that it is
+    impossible for an invariant to be violated.</p>
+  <p>Looking at the <c>Complex</c> class, we can list the functions that make assignments to one or more
+    instance variables:</p>
   <program>the second constructor
 calculateCartesian
 calculatePolar
 setCartesian
 setPolar</program>
-  <p>In each case, it is straightforward to show that the function maintains
-            each of the invariants I listed. We have to be a little careful, though.
-            Notice that I said <q>maintain</q> the invariant. What that means is <q>If the
-            invariant is true when the function is called, it will still be true
-            when the function is complete.</q></p>
+  <p>In each case, it is straightforward to show that the function maintains each of the invariants
+    I listed. We have to be a little careful, though. Notice that I said <q>maintain</q> the
+    invariant. What that means is <q>If the
+      invariant is true when the function is called, it will still be true
+      when the function is complete.</q></p>
   <p>That definition allows two loopholes. First, there may be some point in
-            the middle of the function when the invariant is not true. That's ok,
-            and in some cases unavoidable. As long as the invariant is restored by
-            the end of the function, all is well.</p>
+    the middle of the function when the invariant is not true. That's ok,
+    and in some cases unavoidable. As long as the invariant is restored by
+    the end of the function, all is well.</p>
   <p>The other loophole is that we only have to maintain the invariant if it
-            was true at the beginning of the function. Otherwise, all bets are off.
-            If the invariant was violated somewhere else in the program, usually the
-            best we can do is detect the error, output an error message, and exit.</p>
+    was true at the beginning of the function. Otherwise, all bets are off.
+    If the invariant was violated somewhere else in the program, usually the
+    best we can do is detect the error, output an error message, and exit.</p>
   <exercise label="question14_8_1">
     <statement>
       <p>How does data encapsulation help us enforce invariants?</p>
@@ -81,7 +78,8 @@ setPolar</program>
   </exercise>
   <exercise label="question14_8_2">
     <statement>
-      <p>An invariant can be false in the middle of a function as long as it is true at the start and end.</p>
+      <p>An invariant can be false in the middle of a function as long as it is true at the start
+        and end.</p>
     </statement>
     <choices>
       <choice correct="yes">
@@ -89,7 +87,8 @@ setPolar</program>
           <p>True</p>
         </statement>
         <feedback>
-          <p>Correct! The invariant just has to be true when the function is complete, given that it's true at the start.</p>
+          <p>Correct! The invariant just has to be true when the function is complete, given that
+            it's true at the start.</p>
         </feedback>
       </choice>
       <choice>
@@ -104,7 +103,8 @@ setPolar</program>
   </exercise>
   <exercise label="question14_8_3">
     <statement>
-      <p>If an invariant is false at the start of the function, the function must fix it to be true by the end.</p>
+      <p>If an invariant is false at the start of the function, the function must fix it to be true
+        by the end.</p>
     </statement>
     <choices>
       <choice>
@@ -120,7 +120,8 @@ setPolar</program>
           <p>False</p>
         </statement>
         <feedback>
-          <p>Correct! We only have to maintain the invariant if it was true at the start. If it's false, all bets are off.</p>
+          <p>Correct! We only have to maintain the invariant if it was true at the start. If it's
+            false, all bets are off.</p>
         </feedback>
       </choice>
     </choices>

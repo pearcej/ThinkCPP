@@ -1,53 +1,53 @@
 <?xml version="1.0"?>
 <section xml:id="chapter14_private-functions">
   <title>Private functions</title>
-  <p>In some cases, there are member functions that are used internally by a
-            class, but that should not be invoked by client programs. For example,
-            <c>calculatePolar</c> and <c>calculateCartesian</c> are used by the accessor
-            functions, but there is probably no reason clients should call them
-            directly (although it would not do any harm). If we wanted to protect
-            these functions, we could declare them <c>private</c> the same way we do
-            with instance variables. In that case the complete class definition for
-            <c>Complex</c> would look like:</p>
+  <p>In some cases, there are member functions that are used internally by a class, but that should
+    not be invoked by client programs. For example, <c>calculatePolar</c> and <c>calculateCartesian</c> are used by the accessor
+    functions, but there is probably no reason clients should call them directly (although it would
+    not do any harm). If we wanted to protect these functions, we could declare them <c>private</c> the
+    same way we do with instance variables. In that case the complete class definition for <c>Complex</c>
+    would look like:</p>
   <program>class Complex
 {
 private:
-  double real, imag;
-  double mag, theta;
-  bool cartesian, polar;
+    double real, imag;
+    double mag, theta;
+    bool cartesian, polar;
 
-  void calculateCartesian();
-  void calculatePolar();
+    void calculateCartesian();
+    void calculatePolar();
 
 public:
-  Complex() { cartesian = false;  polar = false; }
+    Complex() { cartesian = false;  polar = false; }
 
-  Complex(double r, double i)
-  {
-    real = r;  imag = i;
-    cartesian = true;  polar = false;
-  }
+    Complex(double r, double i)
+    {
+        real = r;
+        imag = i;
+        cartesian = true;
+        polar = false;
+    }
 
-  void printCartesian();
-  void printPolar();
+    void printCartesian();
+    void printPolar();
 
-  double getReal();
-  double getImag();
-  double getMag();
-  double getTheta();
+    double getReal();
+    double getImag();
+    double getMag();
+    double getTheta();
 
-  void setCartesian(double r, double i);
-  void setPolar(double m, double t);
+    void setCartesian(double r, double i);
+    void setPolar(double m, double t);
 };</program>
-  <p>The <c>private</c> label at the beginning is not necessary, but it is a
-            useful reminder.</p>
-  <exercise label="fourteeneleven">
-    <statement>
-      <p>This active code updates <c>calculatePolar</c> and <c>calculateCartesian</c>
-            to be private functions. Notice how we are no longer able to call
-            <c>calculateCartesian</c> in main. Feel free to modify the code and experiment around!</p>
-    </statement>
-    <program xml:id="fourteeneleven_editor" interactive="activecode" line-numbers="yes">
+  <note>The <c>private</c> label at the beginning is not necessary, but it is a useful reminder.</note>
+  <listing label="fourteeneleven">
+    <caption>
+      <p>This active code updates <c>calculatePolar</c> and <c>calculateCartesian</c> to be private functions. Notice how we are no
+        longer able to call <c>calculateCartesian</c> in main. Feel free to modify the code and experiment around!</p>
+    </caption>
+    <program xml:id="fourteeneleven_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <cmath>
@@ -56,23 +56,23 @@ using namespace std;
 
 class Complex
 {
-  double real, imag;
-  double mag, theta;
-  bool cartesian, polar;
-  void calculateCartesian();
-  void calculatePolar();
+    double real, imag;
+    double mag, theta;
+    bool cartesian, polar;
+    void calculateCartesian();
+    void calculatePolar();
 
 public:
-  Complex();
-  Complex(double r, double i);
-  double getReal();
-  double getImag();
-  double getMag();
-  double getTheta();
-  void printCartesian();
-  void printPolar();
-  void setPolar(double m, double t);
-  void setCartesian(double r, double i);
+    Complex();
+    Complex(double r, double i);
+    double getReal();
+    double getImag();
+    double getMag();
+    double getTheta();
+    void printCartesian();
+    void printPolar();
+    void setPolar(double m, double t);
+    void setCartesian(double r, double i);
 };
 
 Complex add (Complex& a, Complex& b);
@@ -80,11 +80,11 @@ Complex subtract (Complex& a, Complex& b);
 Complex mult (Complex& a, Complex& b);
 
 int main() {
-  Complex c1(-4.0, 0.0);
-  c1.setPolar(4.0, 3.1415);
-  // ``calculateCartesian`` can't be called in main because
-  // it is now a private member function
-  c1.calculateCartesian();
+    Complex c1(-4.0, 0.0);
+    c1.setPolar(4.0, 3.1415);
+    // ``calculateCartesian`` can't be called in main because
+    // it is now a private member function
+    c1.calculateCartesian();
 }
         ]]></input>
       <tests>
@@ -96,11 +96,11 @@ Complex::Complex(double r, double i) {
 }
 
 void Complex::calculateCartesian() {
-  assert (polar);
+  assert(polar);
   real = mag * cos (theta);
   imag = mag * sin (theta);
   cartesian = true;
-  assert (polar &amp;&amp; cartesian);
+  assert(polar &amp;&amp; cartesian);
 }
 
 double Complex::getReal() {
@@ -174,5 +174,5 @@ void Complex::setCartesian(double r, double i) {
 }
 </tests>
     </program>
-  </exercise>
+  </listing>
 </section>
