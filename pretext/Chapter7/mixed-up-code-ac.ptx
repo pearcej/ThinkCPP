@@ -353,7 +353,7 @@ using namespace std;
 int main() {
     string quote = "Your time is limited, so don't waste it living someone else's life.";
     int first = quote.find("i");
-    int index = find (quote, 'i', first + 1);
+    int index = find(quote, 'i', first + 1);
     cout << index;
 }
         ]]></input></program>
@@ -368,7 +368,7 @@ using namespace std;
 int main() {
     string quote = "Your time is limited, so don't waste it living someone else's life.";
     int first = quote.find("i");
-    int index = find (quote, 'i', first + 1);
+    int index = find(quote, 'i', first + 1);
     cout << index;
 }
         ]]></input></program></exercise>

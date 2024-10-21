@@ -42,7 +42,7 @@
     </statement>
     <setup>
       <var case="insensitive">
-        <condition string="^\s*(?:a|A)lgorithm\s*$">
+        <condition string="^\s*algorithm\s*$">
           <feedback>
             <p>Correct!</p>
           </feedback>

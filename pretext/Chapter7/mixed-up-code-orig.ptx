@@ -293,10 +293,10 @@
       </block>
       <block order="5">
         <choice correct="yes">
-          <cline>   int index = find (quote, 'i', first + 1);</cline>
+          <cline>   int index = find(quote, 'i', first + 1);</cline>
         </choice>
         <choice>
-          <cline>   int index = find (quote, 'i', first);  </cline>
+          <cline>   int index = find(quote, 'i', first);  </cline>
         </choice>
       </block>
       <block order="4">

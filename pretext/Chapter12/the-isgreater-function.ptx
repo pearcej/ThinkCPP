@@ -52,9 +52,9 @@ if (card1.isGreater (card2)) {
 }</program>
   <p>You can almost read it like English: <q>If card1 isGreater card2 &#x2026;</q> The output of
     this program is</p>
-  <program>10 of Hearts
+  <console><output>10 of Hearts
 is greater than
-4 of Hearts</program>
+4 of Hearts</output></console>
   <p>According to <c>isGreater</c>, aces are less than deuces (2s). As an exercise, fix it so that aces are
     ranked higher than Kings, as they are in most card games.</p>
   <listing label="12_5">

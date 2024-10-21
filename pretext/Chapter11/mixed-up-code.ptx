@@ -81,7 +81,7 @@ int main( ) {
             indentation="show">
     <statement>
       <p>Let's make an album! Write the struct definition for
-        Album, which should have instance variables name and year.
+        Album, which should have instance variables name and year (in that order).
         Include a member function called check that returns true if
         the song was released after 2015.</p>
     </statement>
@@ -223,7 +223,7 @@ int main( ) {
     <statement>
       <p>Put the necessary blocks of code in the correct order to initialise
         a constructor for type Days that takes in the number of days and
-        initialises the member variables days, weeks, years.</p>
+        initialises the member variables days, weeks, years (in that order).</p>
     </statement>
     <blocks>
       <block order="4">
@@ -390,10 +390,10 @@ int main( ) {
     <statement>
       <p>Put the necessary blocks of code in the correct order to make the
         AddDays function below a member function a member function.</p>
-      <p>Days AddDays(const Days&amp; d1, const Days&amp; d2) {
+      <program>Days AddDays(const Days&amp; d1, const Days&amp; d2) {
         int days = convertToDays (d1) + convertToDays(d2);
         return makeDays (days);
-        }</p>
+        }</program>
     </statement>
     <blocks>
       <block order="6">
@@ -429,7 +429,7 @@ int main( ) {
             indentation="hide">
     <statement>
       <p>Put the necessary blocks of code in the correct order to create a struct
-        Penguin that stores name and age. In addition have 2 constructors and
+        Penguin that stores name and age (in that order). In addition have 2 constructors and
         declare Penguins in main such that both are called.</p>
     </statement>
     <blocks>

@@ -425,7 +425,7 @@ int main() {
         <input><![CDATA[
 int main() {
   string tongue_twister = "How much wood could a woodchuck chuck if a woodchuck could chuck wood?";
-  size_t index = find (quote, 'w', quote.find("wood") + 1);
+  size_t index = find(quote, 'w', quote.find("wood") + 1);
   cout << index;
 }
 ]]></input>

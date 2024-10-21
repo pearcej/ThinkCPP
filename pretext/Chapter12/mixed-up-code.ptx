@@ -7,7 +7,7 @@
             indentation="show">
     <statement>
       <p>Let's write the struct definition for Song. Song should have
-        instance variables title, artist, and numLikes. Put the necessary
+        instance variables title, artist, and numLikes (in that order). Put the necessary
         blocks of code in the correct order.</p>
     </statement>
     <blocks>
@@ -43,7 +43,7 @@
     <statement>
       <p>Let's make an album! Write the struct definition for
         Album, which should have instance variables name, year and
-        a vector of Songs. Put the necessary
+        a vector of Songs (in that order). Put the necessary
         blocks of code in the correct order.</p>
     </statement>
     <blocks>

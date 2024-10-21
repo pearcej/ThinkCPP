@@ -263,7 +263,7 @@
           <cline>int Dictionary::find(string word) {</cline>
         </choice>
         <choice>
-          <cline>int Dictionary::find (Entry word) {  </cline>
+          <cline>int Dictionary::find(Entry word) {  </cline>
         </choice>
       </block>
       <block order="8">
