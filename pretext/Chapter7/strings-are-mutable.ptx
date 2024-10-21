@@ -128,7 +128,7 @@ string message = "You're a lizard Harry";
     <blocks>
       <block order="13">
         <choice correct="yes">
-          <cline>string greeter(string s1,string s2) {</cline>
+          <cline>string mixer(string s1,string s2) {</cline>
         </choice>
         <choice>
           <cline>void mixer(string s1,string s2) { </cline>
@@ -136,19 +136,19 @@ string message = "You're a lizard Harry";
       </block>
       <block order="4">
         <choice correct="yes">
-          <cline>   int size = s1.length();</cline>
+          <cline>   size_t size = s1.length();</cline>
         </choice>
         <choice>
-          <cline>   int size = s2.length(); </cline>
+          <cline>   size_t size = s2.length(); </cline>
         </choice>
       </block>
       <block order="10">
-        <cline>   index i = 0;</cline>
+        <cline>   size_t i = 0;</cline>
         <cline>   while (i &amp;lt size) {</cline>
       </block>
       <block order="1"
              correct="no">
-        <cline>   index i = size - 1; </cline>
+        <cline>   size_t i = size - 1; </cline>
         <cline>   while (i &amp;lt size) {</cline>
       </block>
       <block order="9">

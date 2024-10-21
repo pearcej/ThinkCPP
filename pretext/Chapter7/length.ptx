@@ -16,7 +16,7 @@ using namespace std;
 
 int main() {
     string fruit = "Watermelon";
-    int length;
+    size_t length;
     length = fruit.length();
     cout << length << endl;
 }
@@ -57,7 +57,7 @@ using namespace std;
 
 int main() {
     string fruit = "Watermelon";
-    int length = fruit.length();
+    size_t length = fruit.length();
     char last = fruit[length-1];
     cout << last;
 }
@@ -155,7 +155,7 @@ cout << (s[s.length()-5]) << endl;
         <cline> string course = "Programming";</cline>
       </block>
       <block order="3">
-        <cline> int num_chars;</cline>
+        <cline> size_t num_chars;</cline>
       </block>
       <block order="1" correct="no">
         <cline> string num_chars; </cline>

@@ -366,7 +366,7 @@ int main() {
                line-numbers="yes">
         <input><![CDATA[
 int main() {
-  string tongue_twister = "How much wood could a woodchuck chuck if a woodchuck could chuck wood?";
+  string quote = "How much wood could a woodchuck chuck if a woodchuck could chuck wood?";
   size_t index = quote.find("wood");
   cout << index;
 }
@@ -424,8 +424,8 @@ int main() {
                line-numbers="yes">
         <input><![CDATA[
 int main() {
-  string tongue_twister = "How much wood could a woodchuck chuck if a woodchuck could chuck wood?";
-  size_t index = find(quote, 'w', quote.find("wood") + 1);
+  string quote = "How much wood could a woodchuck chuck if a woodchuck could chuck wood?";
+  size_t index = quote.find('w', quote.find("wood") + 1);
   cout << index;
 }
 ]]></input>
@@ -653,7 +653,7 @@ int main() {
                line-numbers="yes">
         <input><![CDATA[
 int main() {
-  cout << "butter" < "butterfly";
+  cout << ("butter" < "butterfly");
 }
 ]]></input>
       </program>
