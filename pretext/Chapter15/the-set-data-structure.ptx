@@ -94,7 +94,7 @@ Set::Set(int n)
             for traversing and searching should be old hat:</p>
   <program>int Set::find(const string&amp; s) const
 {
-  for (int i=0; i&lt;numElements; i++) {
+  for (int i=0; i &lt; numElements; i++) {
     if (elements[i] == s) return i;
   }
   return -1;
@@ -192,7 +192,7 @@ string Set::getElement(int i) const {
 }
 
 int Set::find(const string&amp; s) const {
-  for (int i=0; i&lt;numElements; i++) {
+  for (int i=0; i &lt; numElements; i++) {
     if (elements[i] == s) return i;
   }
   return -1;

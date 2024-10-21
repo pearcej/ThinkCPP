@@ -68,7 +68,7 @@ int main()
   char quote = '\"';
   vector&lt;int&gt; quoteIndex (4);
   quoteIndex[0] = line.find (quote);
-  for (int i=1; i&lt;4; i++) {
+  for (int i=1; i &lt; 4; i++) {
     quoteIndex[i] = find (line, quote, quoteIndex[i-1]+1);
   }
 

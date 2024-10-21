@@ -57,7 +57,7 @@
   quoteIndex[0] = line.find (quote);
 
   // find the other quotation marks using the find from Chapter 7
-  for (int i=1; i&lt;4; i++) {
+  for (int i=1; i &lt; 4; i++) {
     quoteIndex[i] = find (line, quote, quoteIndex[i-1]+1);
   }
 

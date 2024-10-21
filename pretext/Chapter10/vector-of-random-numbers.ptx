@@ -58,14 +58,14 @@ int main() {
 
 vector&lt;int&gt; randomVector(int n, int upperBound) {
    vector&lt;int&gt; vec (n);
-   for (size_t i = 0; i&lt;vec.size(); i++) {
+   for (size_t i = 0; i &lt; vec.size(); i++) {
       vec[i] = random() % upperBound;
    }
    return vec;
 }
 
 void printVector(const vector&lt;int&gt;&amp; vec) {
-   for (size_t i = 0; i&lt;vec.size(); i++) {
+   for (size_t i = 0; i &lt; vec.size(); i++) {
       cout &lt;&lt; vec[i] &lt;&lt; " ";
    }
 }

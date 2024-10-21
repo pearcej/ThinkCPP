@@ -16,7 +16,7 @@ distances[index1][index2] = distance;
 distances[index2][index1] = distance;</program>
   <p>Finally, in <c>main</c> we can print the information in a human-readable
             form:</p>
-  <program>for (int i=0; i&lt;cities.getNumElements(); i++) {
+  <program>for (int i=0; i &lt; cities.getNumElements(); i++) {
   cout &lt;&lt; cities.getElement(i) &lt;&lt; "\t";
 
   for (int j=0; j&lt;=i; j++) {
@@ -26,7 +26,7 @@ distances[index2][index1] = distance;</program>
 }
 
 cout &lt;&lt; "\t";
-for (int i=0; i&lt;cities.getNumElements(); i++) {
+for (int i=0; i &lt; cities.getNumElements(); i++) {
   cout &lt;&lt; cities.getElement(i) &lt;&lt; "\t";
 }
 cout &lt;&lt; endl;</program>
