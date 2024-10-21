@@ -155,7 +155,8 @@ int main() {
           <p>It's summer!It's fall!</p>
         </statement>
         <feedback id="mce_13_3_opt_b">
-          <p>Since there is no <c>break</c> statement after the case for summer but there is one after fall, this is correct.</p>
+          <p>Since there is no <c>break</c> statement after the case for summer but there is one after
+            fall, this is correct.</p>
         </feedback>
       </choice>
       <choice>
@@ -171,16 +172,16 @@ int main() {
           <p>Compile error.</p>
         </statement>
         <feedback id="mce_13_3_opt_d">
-          <p>Since <c>s</c> is an enumerated type, the <c>Season</c>s are mapped to <c>int</c>s, which are valid for <c>switch</c> statements.</p>
+          <p>Since <c>s</c> is an enumerated type, the <c>Season</c>s are mapped to <c>int</c>s, which are
+            valid for <c>switch</c> statements.</p>
         </feedback>
       </choice>
     </choices>
   </exercise>
   <exercise label="mce_13_4">
     <statement>
-      <p>Take a look at the <c>struct</c> definition of <c>Entry</c>. If we wanted to make a
-            <c>struct</c> called <c>Dictionary</c>, how can we create a <c>vector</c> of <c>Entry</c>s
-            as a member variable?</p>
+      <p>Take a look at the <c>struct</c> definition of <c>Entry</c>. If we wanted to make a <c>struct</c> called <c>Dictionary</c>,
+        how can we create a <c>vector</c> of <c>Entry</c>s as a member variable?</p>
       <program line-numbers="yes">
         <input>
 struct Entry {
@@ -327,7 +328,8 @@ struct Deck {
           <p>Our code would perform a perfect shuffle.</p>
         </statement>
         <feedback id="mce_13_6_opt_d">
-          <p>Because the cards are shuffled perfectly, the exact ordering of the cards is predictable and thus the cards aren't really shuffled.</p>
+          <p>Because the cards are shuffled perfectly, the exact ordering of the cards is
+            predictable and thus the cards aren't really shuffled.</p>
         </feedback>
       </choice>
     </choices>
@@ -358,7 +360,8 @@ struct Deck {
           <p>They shorten the code used in bigger functions.</p>
         </statement>
         <feedback id="mce_13_7_opt_c">
-          <p>Usually the bigger function has repetitive code, which is then put into a helper function to help shorten the bigger function.</p>
+          <p>Usually the bigger function has repetitive code, which is then put into a helper
+            function to help shorten the bigger function.</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -366,14 +369,16 @@ struct Deck {
           <p>They make debugging easier.</p>
         </statement>
         <feedback id="mce_13_7_opt_d">
-          <p>Since helper functions break down the bigger function into smaller parts, it's easier to isolate and identify issues.</p>
+          <p>Since helper functions break down the bigger function into smaller parts, it's easier
+            to isolate and identify issues.</p>
         </feedback>
       </choice>
     </choices>
   </exercise>
   <exercise label="mce_13_8">
     <statement>
-      <p>Using pseudocode to figure out what helper functions are needed is a characteristic of what?</p>
+      <p>Using pseudocode to figure out what helper functions are needed is a characteristic of
+        what?</p>
     </statement>
     <choices>
       <choice>
@@ -397,7 +402,8 @@ struct Deck {
           <p>Top-down design</p>
         </statement>
         <feedback id="mce_13_8_opt_c">
-          <p>This is the process of using pseudocode to sketch solutions to large problems and design the interfaces of helper functions.</p>
+          <p>This is the process of using pseudocode to sketch solutions to large problems and
+            design the interfaces of helper functions.</p>
         </feedback>
       </choice>
       <choice>
@@ -405,7 +411,8 @@ struct Deck {
           <p>Bottom-up design</p>
         </statement>
         <feedback id="mce_13_8_opt_d">
-          <p>This is the process of writing small, useful functions and then assembling them into larger solutions.</p>
+          <p>This is the process of writing small, useful functions and then assembling them into
+            larger solutions.</p>
         </feedback>
       </choice>
     </choices>
@@ -490,7 +497,8 @@ struct Deck {
   </exercise>
   <exercise label="mce_13_11">
     <statement>
-      <p>What kind of sorting algorithm is our <c>sortDeck</c> function? You are encouraged to search up these different sorting algorithms!</p>
+      <p>What kind of sorting algorithm is our <c>sortDeck</c> function? You are encouraged to search up
+        these different sorting algorithms!</p>
     </statement>
     <choices>
       <choice>
@@ -506,7 +514,8 @@ struct Deck {
           <p>Insertion sort</p>
         </statement>
         <feedback id="mce_13_11_opt_b">
-          <p>Insertion sort selects an item from the unsorted section and puts it in the right location in the sorted section.</p>
+          <p>Insertion sort selects an item from the unsorted section and puts it in the right
+            location in the sorted section.</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -514,7 +523,8 @@ struct Deck {
           <p>Selection sort</p>
         </statement>
         <feedback id="mce_13_11_opt_c">
-          <p>Selection sort finds the smallest item at each iteration i and puts it at the ith location.</p>
+          <p>Selection sort finds the smallest item at each iteration i and puts it at the ith
+            location.</p>
         </feedback>
       </choice>
       <choice>

@@ -1,51 +1,50 @@
 <?xml version="1.0"?>
 <section xml:id="chapter13_switch-statement">
   <title><c>switch</c> statement</title>
-  <p>It's hard to mention enumerated types without mentioning <c>switch</c>
-            statements, because they often go hand in hand. A <c>switch</c> statement
-            is an alternative to a chained conditional that is syntactically
-            prettier and often more efficient. It looks like this:</p>
+  <p>It's hard to mention enumerated types without mentioning <c>switch</c> statements, because they often
+    go hand in hand. A <c>switch</c> statement is an alternative to a chained conditional that is
+    syntactically prettier and often more efficient. It looks like this:</p>
   <program>switch (symbol) {
 case '+':
-  perform_addition();
-  break;
+    perform_addition();
+    break;
 case '*':
-  perform_multiplication();
-  break;
+    perform_multiplication();
+    break;
 default:
-  cout &lt;&lt; "I only know how to perform addition and multiplication" &lt;&lt; endl;
-  break;
+    cout &lt;&lt; "I only know how to perform addition and multiplication" &lt;&lt; endl;
+    break;
 }</program>
-  <p>This <c>switch</c> statement is equivalent to the following chained
-            conditional:</p>
+  <p>This <c>switch</c> statement is equivalent to the following chained conditional:</p>
   <program>if (symbol == '+') {
-  perform_addition();
+    perform_addition();
 }
 else if (symbol == '*') {
-  perform_multiplication();
+    perform_multiplication();
 }
 else {
-  cout &lt;&lt; "I only know how to perform addition and multiplication" &lt;&lt; endl;
+    cout &lt;&lt; "I only know how to perform addition and multiplication" &lt;&lt; endl;
 }</program>
-  <p>The <c>break</c> statements are necessary in each branch in a <c>switch</c>
-            statement because otherwise the flow of execution <q>falls through</q> to the
-            next case.</p>
+  <p>The <c>break</c> statements are necessary in each branch in a <c>switch</c> statement because otherwise
+    the flow of execution <q>falls through</q> to the next case.</p>
   <note>
-    <p>Be sure to incorporate a <c>break</c> statment into each branch so
-                that the flow of execution stops after that branch.</p>
+    <p>Be sure to incorporate a <c>break</c> statment into each branch so that the flow of execution
+      stops after that branch.</p>
   </note>
-  <p>Without the <c>break</c> statements, the symbol <c>+</c> would make the program
-            perform addition, and then perform multiplication, and then print the
-            error message. Occasionally this feature is useful, but most of the time
-            it is a source of errors when people forget the <c>break</c> statements.</p>
+  <p>Without the <c>break</c> statements, the symbol <c>+</c> would make the program perform addition, and
+    then perform multiplication, and then print the error message. Occasionally this feature is
+    useful, but most of the time it is a source of errors when people forget the <c>break</c> statements.</p>
   <listing label="switch_AC_1">
     <caption>
-      <p>Take a look at this active code that allows you to choose your starter Pokemon.
-            If you change the value of <c>type</c>, it will change the Pokemon you choose. Notice how
-            if you don't assign <c>type</c> to a valid type, it outputs the default message. Try taking out
-            the <c>break</c> statements in each case. What happens if you run the code with <c>type</c> as &#x2018;g' afterwards?</p>
+      <p>Take a look at this active code that allows you to choose your starter Pokemon. If you
+        change the value of <c>type</c>, it will change the Pokemon you choose. Notice how if you don't
+        assign <c>type</c> to a valid type, it outputs the default message. Try taking out the <c>break</c>
+        statements in each case. What happens if you run the code with <c>type</c> as &#x2018;g'
+        afterwards?</p>
     </caption>
-    <program xml:id="switch_AC_1_editor" interactive="activecode" line-numbers="yes">
+    <program xml:id="switch_AC_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <string>
@@ -72,9 +71,8 @@ int main() {
         ]]></input>
     </program>
   </listing>
-  <p><c>switch</c> statements work with integers, characters, and enumerated
-            types. For example, to convert a <c>Suit</c> to the corresponding string,
-            we could use something like:</p>
+  <p><c>switch</c> statements work with integers, characters, and enumerated types. For example, to
+    convert a <c>Suit</c> to the corresponding string, we could use something like:</p>
   <program>switch (suit) {
 case CLUBS:     return "Clubs";
 case DIAMONDS:  return "Diamonds";
@@ -82,14 +80,14 @@ case HEARTS:    return "Hearts";
 case SPADES:    return "Spades";
 default:        return "Not a valid suit";
 }</program>
-  <p>In this case we don't need <c>break</c> statements because the <c>return</c>
-            statements cause the flow of execution to return to the caller instead
-            of falling through to the next case.</p>
-  <p>In general it is good style to include a <c>default</c> case in every
-            <c>switch</c> statement, to handle errors or unexpected values.</p>
+  <p>In this case we don't need <c>break</c> statements because the <c>return</c> statements cause the flow of
+    execution to return to the caller instead of falling through to the next case.</p>
+  <p>In general it is good style to include a <c>default</c> case in every <c>switch</c> statement, to handle
+    errors or unexpected values.</p>
   <exercise label="switch_1">
     <statement>
-      <p>A(n) <var/> statement is necessary for each branch in a <c>switch</c> statement. <var/>  </p>
+      <p>A(n) <var/> statement is necessary for each branch in a <c>switch</c> statement. <var/>
+      </p>
     </statement>
     <setup>
       <var case="insensitive">
@@ -132,7 +130,8 @@ default:        return "Not a valid suit";
           <p>strings</p>
         </statement>
         <feedback>
-          <p>Switch statements only work on integral values, so we cannot use strings with switch statements!</p>
+          <p>Switch statements only work on integral values, so we cannot use strings with switch
+            statements!</p>
         </feedback>
       </choice>
       <choice>
@@ -258,7 +257,7 @@ int main() {
           <p>149Invalid num! Please try again.</p>
         </statement>
         <feedback>
-          <p>Is 1 one of the valid numbers?  Where do we encounter a break statement?</p>
+          <p>Is 1 one of the valid numbers? Where do we encounter a break statement?</p>
         </feedback>
       </choice>
       <choice>
@@ -324,7 +323,8 @@ int main() {
           <p>49Invalid num! Please try again.</p>
         </statement>
         <feedback>
-          <p>Notice that 2 is not an invalid number, but since we are missing break statements, multiple branches execute.</p>
+          <p>Notice that 2 is not an invalid number, but since we are missing break statements,
+            multiple branches execute.</p>
         </feedback>
       </choice>
       <choice>

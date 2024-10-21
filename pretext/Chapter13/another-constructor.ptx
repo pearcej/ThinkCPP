@@ -1,10 +1,9 @@
 <?xml version="1.0"?>
 <section xml:id="chapter13_another-constructor">
   <title>Another constructor</title>
-  <p>Now that we have a <c>Deck</c> object, it would be useful to initialize the
-            cards in it. From the previous chapter we have a function called
-            <c>buildDeck</c> that we could use (with a few adaptations), but it might
-            be more natural to write a second <c>Deck</c> constructor.</p>
+  <p>Now that we have a <c>Deck</c> object, it would be useful to initialize the cards in it. From the
+    previous chapter we have a function called <c>buildDeck</c> that we could use (with a few adaptations),
+    but it might be more natural to write a second <c>Deck</c> constructor.</p>
   <program>Deck::Deck() {
   vector&lt;Card&gt; temp (52);
   cards = temp;
@@ -18,14 +17,15 @@
     }
   }
 }</program>
-  <p>Notice how similar this function is to <c>buildDeck</c>, except that we had
-            to change the syntax to make it a constructor. Now we can create a
-            standard 52-card deck with the simple declaration <c>Deck deck;</c></p>
+  <p>Notice how similar this function is to <c>buildDeck</c>, except that we had to change the syntax to make
+    it a constructor. Now we can create a standard 52-card deck with the simple declaration <c>Deck deck;</c></p>
   <listing label="deck_constructor_AC_1">
     <caption>
       <p>This active code prints out the cards in a deck using the loop from the previous section.</p>
     </caption>
-    <program xml:id="deck_constructor_AC_1_editor" interactive="activecode" line-numbers="yes">
+    <program xml:id="deck_constructor_AC_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <string>
@@ -111,7 +111,7 @@ Deck::Deck() {
   <exercise label="deck_constructor_1">
     <statement>
       <p>Based on your observations from the active code above, the cards in <c>deck</c> are initialized
-            to the correct suits and ranks of a standard deck of 52 cards.</p>
+        to the correct suits and ranks of a standard deck of 52 cards.</p>
     </statement>
     <choices>
       <choice>
@@ -135,7 +135,7 @@ Deck::Deck() {
           <p>False - we used the buildDeck function with a few modifications to do this.</p>
         </statement>
         <feedback>
-          <p>Look at the active code.  How do we create the deck?</p>
+          <p>Look at the active code. How do we create the deck?</p>
         </feedback>
       </choice>
       <choice>
@@ -148,11 +148,14 @@ Deck::Deck() {
       </choice>
     </choices>
   </exercise>
-  <exercise label="deck_constructor_2" numbered="yes" adaptive="yes" indentation="hide">
+  <exercise label="deck_constructor_2"
+            numbered="yes"
+            adaptive="yes"
+            indentation="hide">
     <statement>
       <p>Let's write a constructor for a deck of cards that uses 40 cards.
-            This deck uses all 4 suits and ranks Ace through 10, omitting all
-            face cards.</p>
+        This deck uses all 4 suits and ranks Ace through 10, omitting all
+        face cards.</p>
     </statement>
     <blocks>
       <block order="2">

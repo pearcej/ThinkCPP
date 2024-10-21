@@ -5,24 +5,24 @@
     <li>
       <title>pseudocode:</title>
       <p>A way of designing programs by writing rough drafts in a combination
-                        of English and C++.</p>
+        of English and C++.</p>
     </li>
     <li>
       <title>helper function:</title>
       <p>Often a small function that does not do anything enormously useful by
-                        itself, but which helps another, more useful, function.</p>
+        itself, but which helps another, more useful, function.</p>
     </li>
     <li>
       <title>top-down design:</title>
       <p>A method of program development that uses pseudocode to sketch
-                        solutions to large problems and design the interfaces of helper
-                        functions.</p>
+        solutions to large problems and design the interfaces of helper
+        functions.</p>
     </li>
     <li>
       <title>mergesort:</title>
       <p>An algorithm for sorting a collection of values. Mergesort is faster
-                        than the simple algorithm in the previous chapter, especially for
-                        large collections.</p>
+        than the simple algorithm in the previous chapter, especially for
+        large collections.</p>
     </li>
   </dl>
   <exercise label="glossary_13">
@@ -36,19 +36,23 @@
     <matches>
       <match order="1">
         <premise>pseudocode</premise>
-        <response>A way of designing programs by writing rough drafts in a combination of English and C++.</response>
+        <response>A way of designing programs by writing rough drafts in a combination of English
+          and C++.</response>
       </match>
       <match order="2">
         <premise>helper function</premise>
-        <response>Often a small function that does not do anything enormously useful by itself, but which helps another, more useful, function.</response>
+        <response>Often a small function that does not do anything enormously useful by itself, but
+          which helps another, more useful, function.</response>
       </match>
       <match order="3">
         <premise>top-down design</premise>
-        <response>A method of program development that uses pseudocode to sketch solutions to large problems and design the interfaces of helper functions.</response>
+        <response>A method of program development that uses pseudocode to sketch solutions to large
+          problems and design the interfaces of helper functions.</response>
       </match>
       <match order="4">
         <premise>mergesort</premise>
-        <response>An algorithm for sorting a collection of values. It is faster than the simple algorithm in the previous chapter, especially for large collections.</response>
+        <response>An algorithm for sorting a collection of values. It is faster than the simple
+          algorithm in the previous chapter, especially for large collections.</response>
       </match>
     </matches>
   </exercise>

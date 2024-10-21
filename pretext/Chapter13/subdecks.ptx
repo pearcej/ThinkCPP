@@ -1,40 +1,38 @@
 <?xml version="1.0"?>
 <section xml:id="chapter13_subdecks">
   <title>Subdecks</title>
-  <p>How should we represent a hand or some other subset of a full deck? One
-            easy choice is to make a <c>Deck</c> object that has fewer than 52 cards.</p>
-  <p>We might want a function, <c>subdeck</c>, that takes a vector of cards and
-            a range of indices, and that returns a new vector of cards that contains
-            the specified subset of the deck:</p>
+  <p>How should we represent a hand or some other subset of a full deck? One easy choice is to make
+    a <c>Deck</c> object that has fewer than 52 cards.</p>
+  <p>We might want a function, <c>subdeck</c>, that takes a vector of cards and a range of indices, and
+    that returns a new vector of cards that contains the specified subset of the deck:</p>
   <program>Deck Deck::subdeck(int low, int high) const {
-  Deck sub (high - low + 1);
+    Deck sub(high - low + 1);
 
-  for (size_t i = 0; i &lt; sub.cards.size(); i++) {
-    sub.cards[i] = cards[low + i];
-  }
-  return sub;
+    for (size_t i = 0; i &lt; sub.cards.size(); i++) {
+        sub.cards[i] = cards[low + i];
+    }
+    return sub;
 }</program>
-  <p>To create the local variable named <c>subdeck</c> we are using the <c>Deck</c>
-            constructor that takes the size of the deck as an argument and that does
-            not initialize the cards. The cards get initialized when they are copied
-            from the original deck.</p>
-  <p>The length of the subdeck is <c>high - low + 1</c> because both the low card
-            and high card are included.</p>
+  <p>To create the local variable named <c>subdeck</c> we are using the <c>Deck</c> constructor that takes the
+    size of the deck as an argument and that does not initialize the cards. The cards get
+    initialized when they are copied from the original deck.</p>
+  <p>The length of the subdeck is <c>high - low + 1</c> because both the low card and high card are included.</p>
   <warning>
-    <p>This sort of computation can be confusing and can lead to <q>off-by-one</q>
-                errors. Drawing a picture is usually the best way to avoid them.</p>
+    <p>This sort of computation can be confusing and can lead to <q>off-by-one</q> errors. Drawing a
+      picture is usually the best way to avoid them.</p>
   </warning>
-  <p>As an exercise, write a version of <c>findBisect</c> that takes a subdeck
-            as an argument, rather than a deck and an index range. Which version is
-            more error-prone? Which version do you think is more efficient?</p>
+  <p>As an exercise, write a version of <c>findBisect</c> that takes a subdeck as an argument, rather than a
+    deck and an index range. Which version is more error-prone? Which version do you think is more
+    efficient?</p>
   <exercise label="subdeck_cards_1">
     <statement>
-      <p>Try writing the <c>findBisect</c> function in the commented section
-            of this active code. If done correctly, the program should output that
-            the Seven of Clubs is at index 6 and the King of Diamonds is at index -1.
-            If you get stuck, you can reveal the extra problem at the end for help.</p>
+      <p>Try writing the <c>findBisect</c> function in the commented section of this active code. If done
+        correctly, the program should output that the Seven of Clubs is at index 6 and the King of
+        Diamonds is at index -1. If you get stuck, you can reveal the hint below for help.</p>
     </statement>
-    <program xml:id="subdeck_cards_1_editor" interactive="activecode" line-numbers="yes">
+    <program xml:id="subdeck_cards_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <string>
@@ -199,65 +197,69 @@ void Deck::sortDeck() {
 }
 
 Deck Deck::subdeck(int low, int high) const {
-    Deck sub (high-low+1);
+    Deck sub(high-low+1);
 
-    for (size_t i = 0; i&lt;sub.cards.size(); i++) {
+    for (size_t i = 0; i &lt; sub.cards.size(); i++) {
         sub.cards[i] = cards[low+i];
     }
     return sub;
 }
 </tests>
     </program>
-  </exercise>
-  <exercises line="217" runestone_options="{'showtitle': 'data-showtitle=&quot;findBisect Help&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'subdecks', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': 'subdecks_reveal_1', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter13/subdecks.rst">
-    <exercise label="subdecks_help_1" numbered="yes" adaptive="yes" indentation="hide">
-      <statement>
-        <p>Let's write the code for this version of the findBisect function.
-                findBisect should take a subdeck and a card as parameters and
-                return the index of the card in the subdeck or -1 if it's not found.</p>
-      </statement>
-      <blocks>
-        <block order="5">
-          <choice correct="yes">
-            <cline>int findBisect(Deck subdeck, Card card) {</cline>
-          </choice>
-          <choice>
-            <cline>int findBisect (Subdeck subdeck, Card card) {                         </cline>
-          </choice>
-        </block>
-        <block order="7">
-          <cline> if (subdeck.cards.size() == 1 &amp;&amp; !subdeck.cards[0].equals(card)) return -1;</cline>
-        </block>
-        <block order="6">
-          <choice correct="yes">
-            <cline> int mid = subdeck.cards.size() / 2;</cline>
-          </choice>
-          <choice>
-            <cline> int mid = (high + low) / 2;                         </cline>
-          </choice>
-        </block>
-        <block order="2">
-          <cline> if (subdeck.cards[mid].equals(card)) return mid;</cline>
-        </block>
-        <block order="9">
-          <choice correct="yes">
-            <cline> else if (subdeck.cards[mid].isGreater(card)) {</cline>
-            <cline>  return findBisect (subdeck.subdeck(0, mid - 1), card);</cline>
-            <cline> }</cline>
-          </choice>
-          <choice>
-            <cline> else if (subdeck.cards[mid].isGreater(card)) {                         </cline>
+    <hint>
+      <title>findBisect</title>
+      <activity label="subdecks_help_1"
+                numbered="yes"
+                adaptive="yes"
+                indentation="hide">
+        <statement>
+          <p>Let's write the code for this version of the findBisect function.
+            findBisect should take a subdeck and a card as parameters and
+            return the index of the card in the subdeck or -1 if it's not found.</p>
+        </statement>
+        <blocks>
+          <block order="5">
+            <choice correct="yes">
+              <cline>int findBisect(Deck subdeck, Card card) {</cline>
+            </choice>
+            <choice>
+              <cline>int findBisect (Subdeck subdeck, Card card) {                         </cline>
+            </choice>
+          </block>
+          <block order="7">
+            <cline> if (subdeck.cards.size() == 1 &amp;&amp; !subdeck.cards[0].equals(card)) return -1;</cline>
+          </block>
+          <block order="6">
+            <choice correct="yes">
+              <cline> int mid = subdeck.cards.size() / 2;</cline>
+            </choice>
+            <choice>
+              <cline> int mid = (high + low) / 2;                         </cline>
+            </choice>
+          </block>
+          <block order="2">
+            <cline> if (subdeck.cards[mid].equals(card)) return mid;</cline>
+          </block>
+          <block order="9">
+            <choice correct="yes">
+              <cline> else if (subdeck.cards[mid].isGreater(card)) {</cline>
+              <cline>  return findBisect (subdeck.subdeck(0, mid - 1), card);</cline>
+              <cline> }</cline>
+            </choice>
+            <choice>
+              <cline> else if (subdeck.cards[mid].isGreater(card)) {                         </cline>
+              <cline>  return findBisect (subdeck.subdeck(mid + 1, subdeck.cards.size()), card);</cline>
+              <cline> }</cline>
+            </choice>
+          </block>
+          <block order="4">
+            <cline> else {</cline>
             <cline>  return findBisect (subdeck.subdeck(mid + 1, subdeck.cards.size()), card);</cline>
             <cline> }</cline>
-          </choice>
-        </block>
-        <block order="4">
-          <cline> else {</cline>
-          <cline>  return findBisect (subdeck.subdeck(mid + 1, subdeck.cards.size()), card);</cline>
-          <cline> }</cline>
-          <cline>}</cline>
-        </block>
-      </blocks>
-    </exercise>
-  </exercises>
+            <cline>}</cline>
+          </block>
+        </blocks>
+      </activity>
+    </hint>
+  </exercise>
 </section>

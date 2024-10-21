@@ -1,10 +1,9 @@
 <?xml version="1.0"?>
 <section xml:id="chapter13_decks">
   <title>Decks</title>
-  <p>In the previous chapter, we worked with a vector of objects, but I also
-            mentioned that it is possible to have an object that contains a vector
-            as an instance variable. In this chapter I am going to create a new
-            object, called a <c>Deck</c>, that contains a vector of <c>Card</c>s.</p>
+  <p>In the previous chapter, we worked with a vector of objects, but I also mentioned that it is
+    possible to have an object that contains a vector as an instance variable. In this chapter I am
+    going to create a new object, called a <c>Deck</c>, that contains a vector of <c>Card</c>s.</p>
   <p>The structure definition looks like this</p>
   <program>struct Deck {
   vector&lt;Card&gt; cards;
@@ -16,33 +15,32 @@ Deck::Deck(int size) {
   vector&lt;Card&gt; temp (size);
   cards = temp;
 }</program>
-  <p>The name of the instance variable is <c>cards</c> to help distinguish the
-            <c>Deck</c> object from the vector of <c>Card</c>s that it contains.</p>
-  <p>For now there is only one constructor. It creates a local variable named
-            <c>temp</c>, which it initializes by invoking the constructor for the
-            <c>vector</c> class, passing the size as a parameter. Then it copies the
-            vector from <c>temp</c> into the instance variable <c>cards</c>.</p>
+  <p>The name of the instance variable is <c>cards</c> to help distinguish the <c>Deck</c> object from the
+    vector of <c>Card</c>s that it contains.</p>
+  <p>For now there is only one constructor. It creates a local variable named <c>temp</c>, which it
+    initializes by invoking the constructor for the <c>vector</c> class, passing the size as a parameter.
+    Then it copies the vector from <c>temp</c> into the instance variable <c>cards</c>.</p>
   <p>Now we can create a deck of cards like this:</p>
   <program>Deck deck(52);</program>
   <p>Here is a state diagram showing what a <c>Deck</c> object looks like:</p>
-  <figure align="center" >
-    <image source="Chapter13/Images/13.3stackdiagram.png" width="50%" alt="image"/>
+  <figure align="center">
+    <image source="Chapter13/Images/13.3stackdiagram.png"
+           width="50%"
+           alt="'deck' names a box. Inside it is a box named 'cards'. Inside 'cards' is a sequence of 52 numbered boxes each with 'suit: 0, rank: 0'."/>
   </figure>
-  <p>The object named <c>deck</c> has a single instance variable named
-            <c>cards</c>, which is a vector of <c>Card</c> objects. To access the cards in
-            a deck we have to compose the syntax for accessing an instance variable
-            and the syntax for selecting an element from an array. For example, the
-            expression <c>deck.cards[i]</c> is the ith card in the deck, and
-            <c>deck.cards[i].suit</c> is its suit. The following loop</p>
-  <program>for (int i = 0; i&lt;52; i++) {
+  <p>The object named <c>deck</c> has a single instance variable named <c>cards</c>, which is a vector of <c>Card</c>
+    objects. To access the cards in a deck we have to compose the syntax for accessing an instance
+    variable and the syntax for selecting an element from an array. For example, the expression <c>deck.cards[i]</c>
+    is the ith card in the deck, and <c>deck.cards[i].suit</c> is its suit. The following loop</p>
+  <program>for (int i = 0; i &lt; 52; i++) {
   deck.cards[i].print();
 }</program>
   <p>demonstrates how to traverse the deck and output each card.</p>
   <exercise label="decks_1">
     <statement>
-      <p>A euchre deck consists of 9's, 10's, Jacks, Queens, Kings, and Aces.
-If we wanted to create a deck that is the size of the euchre deck, we
-would type: <c>Deck euchre_deck</c> <var/> <c>;</c> <var/>  </p>
+      <p>A euchre deck consists of 9's, 10's, Jacks, Queens, Kings, and Aces. If we wanted to create
+        a deck that is the size of the euchre deck, we would type: <c>Deck euchre_deck</c> <var/> <c>;</c>
+      </p>
     </statement>
     <setup>
       <var case="insensitive">
@@ -61,13 +59,14 @@ would type: <c>Deck euchre_deck</c> <var/> <c>;</c> <var/>  </p>
   </exercise>
   <exercise label="decks_2">
     <statement>
-      <p>Take a look at the state diagram above. When we create a deck of cards using <c>Deck deck(52)</c>,
-            what is true about our new deck?</p>
+      <p>Take a look at the state diagram above. When we create a deck of cards using <c>Deck deck(52)</c>, what
+        is true about our new deck?</p>
     </statement>
     <choices>
       <choice>
         <statement>
-          <p>The ranks and suits of the cards are initialized to the proper ranks and suits in a standard deck of cards.</p>
+          <p>The ranks and suits of the cards are initialized to the proper ranks and suits in a
+            standard deck of cards.</p>
         </statement>
         <feedback>
           <p>Unless you the programmer tell it to, the computer won't do it.</p>
@@ -141,7 +140,8 @@ would type: <c>Deck euchre_deck</c> <var/> <c>;</c> <var/>  </p>
           <p>False - because our definition of rank overrides the default mapping.</p>
         </statement>
         <feedback>
-          <p>If we wanted to, we could have set the rank of ace to 7, and the rest of the cards would still be ranked in order.</p>
+          <p>If we wanted to, we could have set the rank of ace to 7, and the rest of the cards
+            would still be ranked in order.</p>
         </feedback>
       </choice>
     </choices>

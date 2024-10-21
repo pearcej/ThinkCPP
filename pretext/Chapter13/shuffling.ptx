@@ -1,44 +1,45 @@
 <?xml version="1.0"?>
 <section xml:id="chapter13_shuffling-id1">
   <title>Shuffling</title>
-  <p>For most card games you need to be able to shuffle the deck; that is,
-            put the cards in a random order. In <number_reference internal="True" refuri="../Chapter10/random_numbers#random" title="Section %s"><inline classes="std std-numref">Section 10.7</inline></number_reference> we
-            saw how to generate random numbers, but it is not obvious how to use
-            them to shuffle a deck.</p>
-  <p>One possibility is to model the way humans shuffle, which is usually by
-            dividing the deck in two and then reassembling the deck by choosing
-            alternately from each deck. Since humans usually don't shuffle
-            perfectly, after about 7 iterations the order of the deck is pretty well
-            randomized. But a computer program would have the annoying property of
-            doing a perfect shuffle every time, which is not really very random. In
-            fact, after 8 perfect shuffles, you would find the deck back in the same
-            order you started in. For a discussion of that claim, see
-            <c>http://www.wiskit.com/marilyn/craig.html</c> or do a web search with the
-            keywords <q>perfect shuffle.</q></p>
+  <p>For most card games you need to be able to shuffle the deck; that is, put the cards in a random
+    order. In <number_reference internal="True"
+                      refuri="../Chapter10/random_numbers#random"
+                      title="Section %s">
+      <inline classes="std std-numref">Section 10.7</inline>
+    </number_reference> we saw how to
+    generate random numbers, but it is not obvious how to use them to shuffle a deck.</p>
+  <p>One possibility is to model the way humans shuffle, which is usually by dividing the deck in
+    two and then reassembling the deck by choosing alternately from each deck. Since humans usually
+    don't shuffle perfectly, after about 7 iterations the order of the deck is pretty well
+    randomized. But a computer program would have the annoying property of doing a perfect shuffle
+    every time, which is not really very random. In fact, after 8 perfect shuffles, you would find
+    the deck back in the same order you started in<fn>For a discussion of that claim, see <url>
+    http://www.wiskit.com/marilyn/craig.html</url> or do a web search with the keywords <q>perfect
+    shuffle.</q></fn>.</p>
   <p>A better shuffling algorithm is to traverse the deck one card at a time,
-            and at each iteration choose two cards and swap them.</p>
-  <p>Here is an outline of how this algorithm works. To sketch the program, I
-            am using a combination of C++ statements and English words that is
-            sometimes called <term>pseudocode</term>:</p>
+    and at each iteration choose two cards and swap them.</p>
+  <p>Here is an outline of how this algorithm works. To sketch the program, I am using a combination
+    of C++ statements and English words that is sometimes called <term>pseudocode</term>:</p>
   <program>for (size_t i = 0; i &lt; cards.size(); i++) {
-  // choose a random number between i and cards.size()
-  // swap the ith card and the randomly-chosen card
+    // choose a random number between i and cards.size()
+    // swap the ith card and the randomly-chosen card
 }</program>
-  <p>The nice thing about using pseudocode is that it often makes it clear
-            what functions you are going to need. In this case, we need something
-            like <c>randomInt</c>, which chooses a random integer between the
-            parameters <c>low</c> and <c>high</c>, and <c>swapCards</c> which takes two
-            indices and switches the cards at the indicated positions.</p>
+  <p>The nice thing about using pseudocode is that it often makes it clear what functions you are
+    going to need. In this case, we need something like <c>randomInt</c>, which chooses a random integer
+    between the parameters <c>low</c> and <c>high</c>, and <c>swapCards</c> which takes two indices and switches the
+    cards at the indicated positions.</p>
   <note>
-    <p>If you are even the slightest bit unsure on how to begin coding
-                your program, <term>pseudocode</term> is a great place to start!</p>
+    <p>If you are even the slightest bit unsure on how to begin coding your program, <term>
+      pseudocode</term> is a great place to start!</p>
   </note>
-  <p>You can probably figure out how to write <c>randomInt</c> by looking at
-            <number_reference internal="True" refuri="../Chapter10/random_numbers#random" title="Section %s"><inline classes="std std-numref">Section 10.7</inline></number_reference>, although you will have to be careful
-            about possibly generating indices that are out of range.</p>
-  <p>You can also figure out <c>swapCards</c> yourself. I will leave the
-            remaining implementation of these functions as an exercise to the
-            reader.</p>
+  <p>You can probably figure out how to write <c>randomInt</c> by looking at <number_reference internal="True"
+                      refuri="../Chapter10/random_numbers#random"
+                      title="Section %s">
+      <inline classes="std std-numref">Section 10.7</inline>
+    </number_reference>, although you
+    will have to be careful about possibly generating indices that are out of range.</p>
+  <p>You can also figure out <c>swapCards</c> yourself. I will leave the remaining implementation of these
+    functions as an exercise to the reader.</p>
   <exercise label="shuffling_1">
     <statement>
       <p>Which library should we include to create random numbers?</p>
@@ -80,13 +81,14 @@
   </exercise>
   <exercise label="shuffling_2">
     <statement>
-      <p>Try writing the <c>randomInt</c> and <c>swapCards</c> functions in the commented sections
-            of this active code. Once you're done with <c>randomInt</c> and <c>swapCards</c>,
-            try using them to implement the <c>Deck</c> member function <c>shuffleDeck</c>. If done correctly,
-            the program should output a shuffled deck of cards. If you stuck, you can reveal the
-            extra problems at the end for help.</p>
+      <p>Try writing the <c>randomInt</c> and <c>swapCards</c> functions in the commented sections of this active
+        code. Once you're done with <c>randomInt</c> and <c>swapCards</c>, try using them to implement the <c>Deck</c>
+        member function <c>shuffleDeck</c>. If done correctly, the program should output a shuffled deck of
+        cards. If you stuck, you can check the hints below.</p>
     </statement>
-    <program xml:id="shuffling_2_editor" interactive="activecode" line-numbers="yes">
+    <program xml:id="shuffling_2_editor"
+             interactive="activecode"
+             line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 #include <string>
@@ -195,111 +197,124 @@ void Deck::print() const {
 }
 </tests>
     </program>
+    <hint>
+      <title>randomInt</title>
+      <activity label="shuffling_help_1"
+                numbered="yes"
+                adaptive="yes"
+                indentation="hide">
+        <statement>
+          <p>Let's write the code for the randomInt function. randomInt should take two parameters,
+            low and high, and return a random integer between them, inclusive.</p>
+        </statement>
+        <blocks>
+          <block order="3">
+            <choice correct="yes">
+              <cline>int randomInt(int low, int high) {</cline>
+            </choice>
+            <choice>
+              <cline>int randomInt() {                         </cline>
+            </choice>
+          </block>
+          <block order="7">
+            <cline> int x = random();</cline>
+          </block>
+          <block order="5">
+            <choice correct="yes">
+              <cline> int y = x % (high - low + 1) + low;</cline>
+            </choice>
+            <choice>
+              <cline> int y = x % high;                         </cline>
+            </choice>
+          </block>
+          <block order="6">
+            <choice correct="yes">
+              <cline> return y;</cline>
+              <cline>}</cline>
+            </choice>
+            <choice>
+              <cline> return x;                         </cline>
+              <cline>}</cline>
+            </choice>
+          </block>
+        </blocks>
+      </activity>
+    </hint>
+
+    <hint>
+      <title>swapCards</title>
+      <activity label="shuffling_help_2"
+                numbered="yes"
+                adaptive="yes"
+                indentation="hide">
+        <statement>
+          <p>Let's write the code for the swapCards function. We'll write swapCards
+            as a Deck member function that takes two indices as parameters.</p>
+        </statement>
+        <blocks>
+          <block order="1">
+            <choice correct="yes">
+              <cline>void Deck::swapCards(int index1, int index2) {</cline>
+            </choice>
+            <choice>
+              <cline>void Card::swapCards(int index1, int index2) {                         </cline>
+            </choice>
+          </block>
+          <block order="5">
+            <cline> Card temp = cards[index1];</cline>
+          </block>
+          <block order="3">
+            <choice correct="yes">
+              <cline> cards[index1] = cards[index2];</cline>
+            </choice>
+            <choice>
+              <cline> cards[index2] = cards[index1];                         </cline>
+            </choice>
+          </block>
+          <block order="6">
+            <cline> cards[index2] = temp;</cline>
+            <cline>}</cline>
+          </block>
+        </blocks>
+      </activity>
+    </hint>
+    <hint>
+      <title>shuffleDeck</title>
+      <activity label="shuffling_help_3"
+                numbered="yes"
+                adaptive="yes"
+                indentation="hide">
+        <statement>
+          <p>Let's write the code for the shuffleDeck function. We'll use randomInt
+            and swapCards in our implementation of shuffleDeck.</p>
+        </statement>
+        <blocks>
+          <block order="2">
+            <choice correct="yes">
+              <cline>void Deck::shuffleDeck() {</cline>
+            </choice>
+            <choice>
+              <cline>Deck Deck::shuffleDeck(Deck deck) {                         </cline>
+            </choice>
+          </block>
+          <block order="6">
+            <cline><![CDATA[ for (size_t i = 0; i < cards.size(); i++) {]]></cline>
+          </block>
+          <block order="5">
+            <choice correct="yes">
+              <cline>  int x = randomInt (i, cards.size() - 1);</cline>
+            </choice>
+            <choice>
+              <cline>  int x = randomInt (i, cards.size());                         </cline>
+            </choice>
+          </block>
+          <block order="4">
+            <cline>  swapCards (i, x);</cline>
+            <cline> }</cline>
+            <cline>}</cline>
+          </block>
+        </blocks>
+      </activity>
+    </hint>
   </exercise>
-  <exercises line="186" runestone_options="{'showtitle': 'data-showtitle=&quot;randomInt Help&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'shuffling', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': 'shuffle_reveal_1', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter13/shuffling.rst">
-    <exercise label="shuffling_help_1" numbered="yes" adaptive="yes" indentation="hide">
-      <statement>
-        <p>Let's write the code for the randomInt function. randomInt should take two parameters,
-                low and high, and return a random integer between them, inclusive.</p>
-      </statement>
-      <blocks>
-        <block order="3">
-          <choice correct="yes">
-            <cline>int randomInt(int low, int high) {</cline>
-          </choice>
-          <choice>
-            <cline>int randomInt() {                         </cline>
-          </choice>
-        </block>
-        <block order="7">
-          <cline> int x = random();</cline>
-        </block>
-        <block order="5">
-          <choice correct="yes">
-            <cline> int y = x % (high - low + 1) + low;</cline>
-          </choice>
-          <choice>
-            <cline> int y = x % high;                         </cline>
-          </choice>
-        </block>
-        <block order="6">
-          <choice correct="yes">
-            <cline> return y;</cline>
-            <cline>}</cline>
-          </choice>
-          <choice>
-            <cline> return x;                         </cline>
-            <cline>}</cline>
-          </choice>
-        </block>
-      </blocks>
-    </exercise>
-  </exercises>
-  <exercises line="213" runestone_options="{'showtitle': 'data-showtitle=&quot;swapCards Help&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'shuffling', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': 'shuffle_reveal_2', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter13/shuffling.rst">
-    <exercise label="shuffling_help_2" numbered="yes" adaptive="yes" indentation="hide">
-      <statement>
-        <p>Let's write the code for the swapCards function. We'll write swapCards
-                as a Deck member function that takes two indices as parameters.</p>
-      </statement>
-      <blocks>
-        <block order="1">
-          <choice correct="yes">
-            <cline>void Deck::swapCards(int index1, int index2) {</cline>
-          </choice>
-          <choice>
-            <cline>void Card::swapCards(int index1, int index2) {                         </cline>
-          </choice>
-        </block>
-        <block order="5">
-          <cline> Card temp = cards[index1];</cline>
-        </block>
-        <block order="3">
-          <choice correct="yes">
-            <cline> cards[index1] = cards[index2];</cline>
-          </choice>
-          <choice>
-            <cline> cards[index2] = cards[index1];                         </cline>
-          </choice>
-        </block>
-        <block order="6">
-          <cline> cards[index2] = temp;</cline>
-          <cline>}</cline>
-        </block>
-      </blocks>
-    </exercise>
-  </exercises>
-  <exercises line="237" runestone_options="{'showtitle': 'data-showtitle=&quot;shuffleDeck Help&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'shuffling', 'chapter': 'Chapter13', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': 'shuffle_reveal_3', 'instructoronly': '', 'is_dynamic': 'True'}" source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter13/shuffling.rst">
-    <exercise label="shuffling_help_3" numbered="yes" adaptive="yes" indentation="hide">
-      <statement>
-        <p>Let's write the code for the shuffleDeck function. We'll use randomInt
-                and swapCards in our implementation of shuffleDeck.</p>
-      </statement>
-      <blocks>
-        <block order="2">
-          <choice correct="yes">
-            <cline>void Deck::shuffleDeck() {</cline>
-          </choice>
-          <choice>
-            <cline>Deck Deck::shuffleDeck(Deck deck) {                         </cline>
-          </choice>
-        </block>
-        <block order="6">
-          <cline><![CDATA[ for (size_t i = 0; i < cards.size(); i++) {]]></cline>
-        </block>
-        <block order="5">
-          <choice correct="yes">
-            <cline>  int x = randomInt (i, cards.size() - 1);</cline>
-          </choice>
-          <choice>
-            <cline>  int x = randomInt (i, cards.size());                         </cline>
-          </choice>
-        </block>
-        <block order="4">
-          <cline>  swapCards (i, x);</cline>
-          <cline> }</cline>
-          <cline>}</cline>
-        </block>
-      </blocks>
-    </exercise>
-  </exercises>
 </section>
