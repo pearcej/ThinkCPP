@@ -1,28 +1,27 @@
 <?xml version="1.0"?>
 <section xml:id="chapter15_streams">
   <title>Streams</title>
-  <p>To get input from a file or send output to a file, you have to create an
-            <c>ifstream</c> object (for input files) or an <c>ofstream</c> object (for
-            output files). These objects are defined in the header file <c>fstream</c>,
-            which you have to include.</p>
-  <p>A <term>stream</term> is an abstract object that represents the flow of data from
-            a source like the keyboard or a file to a destination like the screen or
-            a file.</p>
-  <p>We have already worked with two streams: <c>cin</c>, which has type
-            <c>istream</c>, and <c>cout</c>, which has type <c>ostream</c>. <c>cin</c>
-            represents the flow of data from the keyboard to the program. Each time
-            the program uses the <c>&gt;&gt;</c> operator or the <c>getline</c> function, it
-            removes a piece of data from the input stream.</p>
-  <p>Similarly, when the program uses the <c>&lt;&lt;</c> operator on an <c>ostream</c>,
-            it adds a datum to the outgoing stream.</p>
+  <p>To get input from a file or send output to a file, you have to create an <c>ifstream</c> object (for
+    input files) or an <c>ofstream</c> object (for output files). These objects are defined in the header
+    file <c>fstream</c>, which you have to include.</p>
+  <p>A <term>stream</term> is an abstract object that represents the flow of data from a source like
+    the keyboard or a file to a destination like the screen or a file.</p>
+  <p>We have already worked with two streams: <c>cin</c>, which has type <c>istream</c>, and <c>cout</c>, which
+    has type <c>ostream</c>. <c>cin</c> represents the flow of data from the keyboard to the program. Each
+    time the program uses the <c>&gt;&gt;</c> operator or the <c>getline</c> function, it removes a piece of data
+    from the input stream.</p>
+  <p>Similarly, when the program uses the <c>&lt;&lt;</c> operator on an <c>ostream</c>, it adds a datum to the
+    outgoing stream.</p>
   <exercise label="question15_2_1">
     <statement>
-      <p>You create an <var/> object to write data to a file, and a <var/> object to read data from a file.
-In order to define objects to input from a file or send output to a file, you must include the <c>&lt;</c> <var/> <c>&gt;</c> header file. <var/>  <var/>  <var/>  </p>
+      <p>You create an <var/> object to write data to a file, and a <var/> object to read data from
+        a file. In order to define objects to input from a file or send output to a file, you must
+        include the <c>&lt;</c> <var/> <c>&gt;</c> header file.
+      </p>
     </statement>
     <setup>
       <var case="insensitive">
-        <condition string="^\s*(?:o|O)(?:f|F)(?:s|S)(?:t|T)(?:r|R)(?:e|E)(?:a|A)(?:m|M)\s*$">
+        <condition string="^\s*ostream\s*$">
           <feedback>
             <p>Correct!</p>
           </feedback>
@@ -34,7 +33,7 @@ In order to define objects to input from a file or send output to a file, you mu
         </condition>
       </var>
       <var case="insensitive">
-        <condition string="^\s*(?:i|I)(?:f|F)(?:s|S)(?:t|T)(?:r|R)(?:e|E)(?:a|A)(?:m|M)\s*$">
+        <condition string="^\s*istream\s*$">
           <feedback>
             <p>Correct!</p>
           </feedback>
@@ -46,7 +45,7 @@ In order to define objects to input from a file or send output to a file, you mu
         </condition>
       </var>
       <var case="insensitive">
-        <condition string="^\s*(?:f|F)(?:s|S)(?:t|T)(?:r|R)(?:e|E)(?:a|A)(?:m|M)\s*$">
+        <condition string="^\s*fstream\s*$">
           <feedback>
             <p>Correct!</p>
           </feedback>
@@ -93,7 +92,8 @@ In order to define objects to input from a file or send output to a file, you mu
           <p>an abstract object that controls the flow of statements</p>
         </statement>
         <feedback>
-          <p>Incorrect! This is not at all what stream objects do, you should try re-reading to get a better understanding!</p>
+          <p>Incorrect! This is not at all what stream objects do, you should try re-reading to get
+            a better understanding!</p>
         </feedback>
       </choice>
     </choices>

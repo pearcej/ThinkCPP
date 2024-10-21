@@ -72,7 +72,7 @@
       </block>
       <block order="7">
         <choice correct="yes">
-          <cline>   ifstream infile(filename.c_str());</cline>
+          <cline>   ifstream infile(filename);</cline>
         </choice>
         <choice>
           <cline>   ifstream infile(filename);  </cline>
@@ -413,15 +413,15 @@
     <blocks>
       <block order="9">
         <cline>class Set {</cline>
-        <cline>   private:</cline>
-        <cline><![CDATA[      vector<string> elements;]]></cline>
-        <cline>      int numElements;</cline>
-        <cline>   public:</cline>
-        <cline>      Set(int n);</cline>
-        <cline>      int getNumElements() const;</cline>
-        <cline>      string getElement(int i) const;</cline>
-        <cline>      int find(const string&amp; s) const;</cline>
-        <cline>      int add(const string&amp; s);</cline>
+        <cline>private:</cline>
+        <cline><![CDATA[ vector<string> elements;]]></cline>
+        <cline> int numElements;</cline>
+        <cline>public:</cline>
+        <cline> Set(int n);</cline>
+        <cline> int getNumElements() const;</cline>
+        <cline> string getElement(int i) const;</cline>
+        <cline> find(const string&amp; s) const;</cline>
+        <cline> int add(const string&amp; s);</cline>
         <cline>};</cline>
       </block>
       <block order="6">
@@ -470,40 +470,38 @@
         <cline>class Matrix {</cline>
       </block>
       <block order="1">
-        <cline>   private:</cline>
+        <cline>private:</cline>
       </block>
       <block order="4">
-        <cline><![CDATA[      vector<vector<int> > elements;]]></cline>
+        <cline><![CDATA[ vector<vector<int> > elements;]]></cline>
       </block>
       <block order="13">
-        <cline>   public:</cline>
+        <cline>public:</cline>
       </block>
       <block order="6">
-        <cline>      Matrix(int numRows, int numCols) {</cline>
+        <cline> Matrix(int numRows, int numCols) {</cline>
       </block>
       <block order="12">
-        <cline><![CDATA[         vector<int> row(numCols);]]></cline>
+        <cline><![CDATA[  vector<int> row(numCols);]]></cline>
       </block>
       <block order="10">
-        <cline><![CDATA[         for (int i = 0; i < numRows; ++i) {]]></cline>
+        <cline><![CDATA[  for (int i = 0; i < numRows; ++i) {]]></cline>
       </block>
       <block order="14">
-        <cline>            elements.push_back(row);</cline>
+        <cline>   elements.push_back(row);</cline>
       </block>
       <block order="9">
-        <cline>         }</cline>
-      </block>
-      <block order="2">
-        <cline>      }</cline>
+        <cline>  }</cline>
+        <cline> }</cline>
       </block>
       <block order="3">
-        <cline>      int at(int row, int col) {</cline>
+        <cline> int at(int row, int col) {</cline>
       </block>
       <block order="5">
-        <cline>         return elements[row][col];</cline>
+        <cline>  return elements[row][col];</cline>
       </block>
       <block order="11">
-        <cline>      }</cline>
+        <cline> }</cline>
       </block>
       <block order="8">
         <cline>};</cline>

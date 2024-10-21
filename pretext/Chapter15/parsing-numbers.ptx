@@ -1,19 +1,17 @@
 <?xml version="1.0"?>
 <section xml:id="chapter15_parsing-numbers">
   <title>Parsing numbers</title>
-  <p>The next task is to convert the numbers in the file from strings to
-            integers. When people write large numbers, they often use commas to
-            group the digits, as in 1,750. Most of the time when computers write
-            large numbers, they don't include commas, and the built-in functions for
-            reading numbers usually can't handle them. That makes the conversion a
-            little more difficult, but it also provides an opportunity to write a
-            comma-stripping function, so that's ok. Once we get rid of the commas,
-            we can use the library function <c>atoi</c> to convert to integer. <c>atoi</c>
-            is defined in the header file <c>cstdlib</c>.</p>
+  <p>The next task is to convert the numbers in the file from strings to integers. When people write
+    large numbers, they often use commas to group the digits, as in 1,750. Most of the time when
+    computers write large numbers, they don't include commas, and the built-in functions for reading
+    numbers usually can't handle them. That makes the conversion a little more difficult, but it
+    also provides an opportunity to write a comma-stripping function, so that's ok. Once we get rid
+    of the commas, we can use the library function <c>atoi</c> to convert to integer. <c>atoi</c> is defined
+    in the header file <c>cstdlib</c>.</p>
   <p>To get rid of the commas, one option is to traverse the string and check
-            whether each character is a digit. If so, we add it to the result
-            string. At the end of the loop, the result string contains all the
-            digits from the original string, in order.</p>
+    whether each character is a digit. If so, we add it to the result
+    string. At the end of the loop, the result string contains all the
+    digits from the original string, in order.</p>
   <program> #include &lt;iostream&gt;
  using namespace std;
 
@@ -26,23 +24,27 @@ int convertToInt(const string&amp; s)
       digitString += s[i];
     }
   }
-  return atoi (digitString.c_str());
+  return atoi(digitString);
 }</program>
-  <p>The variable <c>digitString</c> is an example of an <term>accumulator</term>. It is
-            similar to the counter we saw in <number_reference internal="True" refuri="../Chapter7/looping_and_counting#loopcount" title="Section %s"><inline classes="std std-numref">Section 7.9</inline></number_reference>,
-            except that instead of getting incremented, it gets accumulates one new
-            character at a time, using string concatentation.</p>
+  <p>The variable <c>digitString</c> is an example of an <term>accumulator</term>. It is similar to the counter
+    we saw in <number_reference internal="True"
+                      refuri="../Chapter7/looping_and_counting#loopcount"
+                      title="Section %s">
+      <inline classes="std std-numref">Section 7.9</inline>
+    </number_reference>, except that
+    instead of getting incremented, it gets accumulates one new character at a time, using string
+    concatentation.</p>
   <p>The expression</p>
   <program>digitString += s[i];</program>
   <p>is equivalent to</p>
   <program>digitString = digitString + s[i];</program>
   <p>Both statements add a single character onto the end of the existing
-            string.</p>
-  <p>Since <c>atoi</c> takes a C string as a parameter, we have to convert
-            <c>digitString</c> to a C string before passing it as an argument.</p>
+    string.</p>
   <p>Try the function out for yourself! As you can see, this function can also be used
-            to parse phone numbers!</p>
-  <program xml:id="c15_6" interactive="activecode" line-numbers="yes">
+    to parse phone numbers!</p>
+  <program xml:id="c15_6"
+           interactive="activecode"
+           line-numbers="yes">
     <input><![CDATA[
 #include <iostream>
 #include <string>
@@ -57,7 +59,7 @@ int convertToInt(const string& s) {
          digitString += s[i];
       }
    }
-   return atoi (digitString.c_str());
+   return atoi(digitString);
 }
 
 int main() {
@@ -92,7 +94,8 @@ int main() {
           <p>converts a string to an int</p>
         </statement>
         <feedback>
-          <p>Correct! This is very helpful when we read numbers from a file (where they are strings).</p>
+          <p>Correct! This is very helpful when we read numbers from a file (where they are
+            strings).</p>
         </feedback>
       </choice>
       <choice>
@@ -152,11 +155,14 @@ int main() {
       </choice>
     </choices>
   </exercise>
-  <exercise label="question15_6_3" numbered="yes" adaptive="yes" indentation="hide">
+  <exercise label="question15_6_3"
+            numbered="yes"
+            adaptive="yes"
+            indentation="hide">
     <statement>
-      <p>Create the replace_with() function that takes a string <q>str</q>, a character to get rid of <q>olc_char</q>,
-            and a character to replace it with <q>new_char</q>.  It should return a new string that has replaces any
-            occurances of old_char with new_char.</p>
+      <p>Create the replace_with() function that takes a string <q>str</q>, a character to get rid
+        of <q>olc_char</q>, and a character to replace it with <q>new_char</q>. It should return a
+        new string that has replaces any occurances of old_char with new_char.</p>
     </statement>
     <blocks>
       <block order="10">

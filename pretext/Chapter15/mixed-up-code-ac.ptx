@@ -78,7 +78,7 @@ int main() {
     string filename;
     cout << "Enter the name of the file: ";
     cin >> filename;
-    ifstream infile(filename.c_str());
+    ifstream infile(filename);
     if (infile.good() == false) {
         cout << "Unable to open the file." << endl;
         exit(1);
@@ -96,7 +96,7 @@ int main() {
     string filename;
     cout << "Enter the name of the file: ";
     cin >> filename;
-    ifstream infile(filename.c_str());
+    ifstream infile(filename);
     if (infile.good() == false) {
         cout << "Unable to open the file." << endl;
         exit(1);

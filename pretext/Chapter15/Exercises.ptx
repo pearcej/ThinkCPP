@@ -61,7 +61,7 @@ using namespace std;
 int main() {
   string input;
   string filename = "input.txt";
-  ifstream infile(filename.c_str());
+  ifstream infile(filename);
   getline(filename, input);
 }
 ]]></input>
@@ -111,7 +111,9 @@ int main() {
       <choice>
         <statement id="mce_15_3_opt_a">
           <p>
-            <c><![CDATA[if (infile.good()) { cout << "File opened unsuccessfully" << endl; }]]></c>
+            <c><![CDATA[if (infile.good()) { 
+  cout << "File opened unsuccessfully" << endl; 
+}]]></c>
           </p>
         </statement>
         <feedback id="mce_15_3_opt_a">
@@ -121,7 +123,9 @@ int main() {
       <choice correct="yes">
         <statement id="mce_15_3_opt_b">
           <p>
-            <c><![CDATA[if (!infile.is_open()) { cout << "File opened unsuccessfully" << endl; }]]></c>
+            <c><![CDATA[if (!infile.is_open()) {
+  cout << "File opened unsuccessfully" << endl;
+}]]></c>
           </p>
         </statement>
         <feedback id="mce_15_3_opt_b">
@@ -131,7 +135,9 @@ int main() {
       <choice correct="yes">
         <statement id="mce_15_3_opt_c">
           <p>
-            <c><![CDATA[if (infile.good() == false) { cout << "File opened unsuccessfully" << endl; }]]></c>
+            <c><![CDATA[if (infile.good() == false) {
+  cout << "File opened unsuccessfully" << endl;
+}]]></c>
           </p>
         </statement>
         <feedback id="mce_15_3_opt_c">
@@ -141,7 +147,9 @@ int main() {
       <choice>
         <statement id="mce_15_3_opt_d">
           <p>
-            <c><![CDATA[if (!infile.open()) { cout << "File opened unsuccessfully" << endl; }]]></c>
+            <c><![CDATA[if (!infile.open()) {
+  cout << "File opened unsuccessfully" << endl;
+}]]></c>
           </p>
         </statement>
         <feedback id="mce_15_3_opt_d">
@@ -155,14 +163,6 @@ int main() {
       <p>Which of the following statements are true?</p>
     </statement>
     <choices>
-      <choice correct="yes">
-        <statement id="mce_15_4_opt_a">
-          <p>The <c>ifstream</c> constructor expects a C string as an argument.</p>
-        </statement>
-        <feedback id="mce_15_4_opt_a">
-          <p>Thus you should convert a filename string to a C string using the c_str() function.</p>
-        </feedback>
-      </choice>
       <choice>
         <statement id="mce_15_4_opt_b">
           <p>We can assume the program opens all files successfully.</p>
@@ -340,7 +340,7 @@ int main() {
       digitString += original[original.length() - 1 - i];
     }
   }
-  cout << atoi(digitString.c_str()) << endl;
+  cout << atoi(digitString) << endl;
 }
 ]]></input>
       </program>

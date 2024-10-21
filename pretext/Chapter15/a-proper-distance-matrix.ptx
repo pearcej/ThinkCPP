@@ -2,26 +2,23 @@
 <section xml:id="chapter15_a-proper-distance-matrix">
   <title>A proper distance matrix</title>
   <p>Although this code works, it is not as well organized as it should be.
-            Now that we have written a prototype, we are in a good position to
-            evaluate the design and improve it.</p>
+    Now that we have written a prototype, we are in a good position to
+    evaluate the design and improve it.</p>
   <p>What are some of the problems with the existing code?</p>
   <p>
     <ol>
       <li>
-        <p>We did not know ahead of time how big to make the distance matrix, so
-                    we chose an arbitrary large number (50) and made it a fixed size. It
-                    would be better to allow the distance matrix to expand in the same
-                    way a <c>Set</c> does. The <c>matrix</c> class has a function called
-                    <c>resize</c> that makes this possible.</p>
+        <p>We did not know ahead of time how big to make the distance matrix, so we chose an
+          arbitrary large number (50) and made it a fixed size. It would be better to allow the
+          distance matrix to expand in the same way a <c>Set</c> does. The <c>matrix</c> class has a function
+          called <c>resize</c> that makes this possible.</p>
       </li>
       <li>
-        <p>The data in the distance matrix is not well-encapsulated. We have to
-                    pass the set of city names and the matrix itself as arguments to
-                    <c>processLine</c>, which is awkward. Also, use of the distance matrix
-                    is error prone because we have not provided accessor functions that
-                    perform error-checking. It might be a good idea to take the <c>Set</c>
-                    of city names and the <c>matrix</c> of distances, and combine them
-                    into a single object called a <c>DistMatrix</c>.</p>
+        <p>The data in the distance matrix is not well-encapsulated. We have to pass the set of city
+          names and the matrix itself as arguments to <c>processLine</c>, which is awkward. Also, use of the
+          distance matrix is error prone because we have not provided accessor functions that
+          perform error-checking. It might be a good idea to take the <c>Set</c> of city names and the <c>matrix</c>
+          of distances, and combine them into a single object called a <c>DistMatrix</c>.</p>
       </li>
     </ol>
   </p>
@@ -50,13 +47,13 @@ using namespace std;
 int main()
 {
   string line;
-  ifstream infile ("distances");
-  DistMatrix distances (2);
+  ifstream infile("distances");
+  DistMatrix distances(2);
 
   while (true) {
     getline(infile, line);
     if (infile.eof()) break;
-    processLine (line, distances);
+    processLine(line, distances);
   }
 
   distances.print();
@@ -67,23 +64,22 @@ int main()
 {
   char quote = '\"';
   vector&lt;int&gt; quoteIndex (4);
-  quoteIndex[0] = line.find (quote);
+  quoteIndex[0] = line.find(quote);
   for (int i=1; i &lt; 4; i++) {
-    quoteIndex[i] = find (line, quote, quoteIndex[i-1]+1);
+    quoteIndex[i] = find(line, quote, quoteIndex[i-1]+1);
   }
 
   // break the line up into substrings
   int len1 = quoteIndex[1] - quoteIndex[0] - 1;
-  string city1 = line.substr (quoteIndex[0]+1, len1);
+  string city1 = line.substr(quoteIndex[0]+1, len1);
   int len2 = quoteIndex[3] - quoteIndex[2] - 1;
-  string city2 = line.substr (quoteIndex[2]+1, len2);
+  string city2 = line.substr(quoteIndex[2]+1, len2);
   int len3 = line.length() - quoteIndex[2] - 1;
-  string distString = line.substr (quoteIndex[3]+1, len3);
-  int distance = convertToInt (distString);
+  string distString = line.substr(quoteIndex[3]+1, len3);
+  int distance = convertToInt(distString);
 
   // add the new datum to the distances matrix
-  distances.add (city1, city2, distance);
+  distances.add(city1, city2, distance);
 }</program>
-  <p>I will leave it as an exercise to you to implement the member functions
-            of <c>DistMatrix</c>.</p>
+  <p>I will leave it as an exercise to you to implement the member functions of <c>DistMatrix</c>.</p>
 </section>

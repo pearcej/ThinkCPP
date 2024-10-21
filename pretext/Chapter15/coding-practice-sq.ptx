@@ -57,7 +57,7 @@ using namespace std;
             <cline><![CDATA[   cout << n << endl;]]></cline>
           </block>
           <block order="3">
-            <cline>   ifstream inFile(fileIn.c_str());</cline>
+            <cline>   ifstream inFile(fileIn);</cline>
           </block>
           <block order="1">
             <cline>   if (inFile.good() == false) {</cline>
@@ -156,7 +156,7 @@ int main() {
             <cline><![CDATA[   cout << n << endl;]]></cline>
           </block>
           <block order="4">
-            <cline>   ofstream outfile ("powers.txt");</cline>
+            <cline>   ofstream outfile("powers.txt");</cline>
           </block>
           <block order="12">
             <cline>   if (outfile.good() == false) {</cline>
