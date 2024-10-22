@@ -72,8 +72,8 @@ int main () {
 #include &lt;vector&gt;
 using namespace std;
 
-int evenCount (const vector&lt;int&gt; &amp;vec) {
-    for (int i = 0; i &lt; vec.size(); i++) {
+int evenCount(const vector&lt;int&gt; &amp;vec) {
+    for (size_t i = 0; i &lt; vec.size(); i++) {
         if (i % 2 == 0) {
             count++;
         }
@@ -105,7 +105,7 @@ int main() {
             <cline>    int count; </cline>
           </block>
           <block order="5">
-            <cline>    for (int i = 0; i &lt; vec.size(); i++) {</cline>
+            <cline>    for (size_t i = 0; i &lt; vec.size(); i++) {</cline>
           </block>
           <block order="8">
             <choice correct="yes">
@@ -151,10 +151,10 @@ int main() {
 #include &lt;vector&gt;
 using namespace std;
 
-int endsWith (const vector&lt;string&gt;&amp; vec, char c) {
+int endsWith(const vector&lt;string&gt;&amp; vec, char c) {
     int count;
     for (size_t i = 0; i &lt; vec.size(); i++) {
-        last = vec.size() - 1;
+        size_t last = vec.size() - 1;
         if (vec[last] == c) {
             count++;
         }
@@ -184,10 +184,10 @@ int endsWith (const vector&lt;string&gt;&amp; vec, char c) {
 #include &lt;vector&gt;
 using namespace std;
 
-int endsWith (const vector&lt;string&gt;&amp; vec, char c) {
+int endsWith(const vector&lt;string&gt;&amp; vec, char c) {
     int count = 0;
     for (size_t i = 0; i &lt; vec.size(); i++) {
-        int last = vec[i].size() - 1;
+        size_t  last = vec[i].size() - 1;
         if (vec[i][last] == c) {
             count++;
         }
@@ -225,7 +225,7 @@ int main () {
     vector&lt;double&gt; temps = {98.6, 97.8, 100.3, 97.2, 98.7, 97.8, 99.8, 96.9, 98.2, 99.1, 99.9};
 
     int covid_count = 0;
-    for (int i = 0; i &lt; temps.size(); i++) {
+    for (size_t i = 0; i &lt; temps.size(); i++) {
 
 
     }
@@ -258,7 +258,7 @@ int main () {
             <cline>    int covid_count = 0;</cline>
           </block>
           <block order="8">
-            <cline>    for (int i = 0; i &lt; temps.size(); i++) {</cline>
+            <cline>    for (size_t i = 0; i &lt; temps.size(); i++) {</cline>
           </block>
           <block order="2">
             <cline>        if (temps[i] &gt; 99.9) {</cline>
@@ -391,7 +391,7 @@ int main() {
               <cline>    while (vec.back() % 2 != 0) {</cline>
             </choice>
             <choice>
-              <cline>    for (int i = 0; i &lt; vec.size(); i++) { </cline>
+              <cline>    for (size_t i = 0; i &lt; vec.size(); i++) { </cline>
             </choice>
           </block>
           <block order="7">
@@ -444,8 +444,8 @@ using namespace std;
 using namespace std;
 
 
-int has_char (const vector&lt;string&gt;&amp; vec, char let) {
-    int count = 0;
+int has_char(const vector&lt;string&gt;&amp; vec, char let) {
+    size_t count = 0;
     for (size_t i = 0; i &lt; vec.size(); i++) {
         for (size_t c = 0; c &lt; vec[i].size(); c++) {
             if (vec[i][c] == let) {
@@ -492,7 +492,7 @@ int main() {
     int num = 10;
     int max = 100;
     randomNums(num,max);
-    for (int i = 0; i &lt; randomNums(num,max).size(); i++) {
+    for (size_t i = 0; i &lt; randomNums(num,max).size(); i++) {
         cout &lt;&lt; randomNums(num,max)[i] &lt;&lt; endl;
     }
 }
@@ -519,7 +519,7 @@ int main() {
               <cline>    for (int i = 0; i &lt; num; i++) {</cline>
             </choice>
             <choice>
-              <cline>    for (int i = 0; i &lt;= randomVec.size(); i++) { </cline>
+              <cline>    for (size_t i = 0; i &lt;= randomVec.size(); i++) { </cline>
             </choice>
           </block>
           <block order="5">
@@ -635,11 +635,11 @@ int main() {
             <cline>    int count = 0;</cline>
           </block>
           <block order="11">
-            <cline>    for (int i = 0; i &lt; vec.size(); i++) {</cline>
+            <cline>    for (size_t i = 0; i &lt; vec.size(); i++) {</cline>
           </block>
           <block order="2"
                  correct="no">
-            <cline>    for (int i = 0; i &lt; count(); i++) { </cline>
+            <cline>    for (size_t i = 0; i &lt; count(); i++) { </cline>
           </block>
           <block order="6">
             <cline>        if (vec[i] % 100 == 0) {</cline>
@@ -755,10 +755,10 @@ int main() {
             <cline>void weird_print (vector&lt;int&gt; vec) {</cline>
           </block>
           <block order="2">
-            <cline>    int half = vec.size() / 2;</cline>
+            <cline>    size_t half = vec.size() / 2;</cline>
           </block>
           <block order="4">
-            <cline>    for (int i = vec.size() - 1; i &gt;= half; i--){</cline>
+            <cline>    for (size_t i = vec.size() - 1; i &gt;= half; i--){</cline>
           </block>
           <block order="5">
             <cline>        cout &lt;&lt; vec[i-half] &lt;&lt; ' ';</cline>

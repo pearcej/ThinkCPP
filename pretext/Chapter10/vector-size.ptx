@@ -7,7 +7,7 @@
     than a constant. That way, if the size of the vector changes, you won't
     have to go through the program changing all the loops; they will work
     correctly for any size vector.</p>
-  <program>int i;
+  <program>size_t i;
 for (i = 0; i &lt; count.size(); i++) {
   cout &lt;&lt; count[i] &lt;&lt; endl;
 }</program>

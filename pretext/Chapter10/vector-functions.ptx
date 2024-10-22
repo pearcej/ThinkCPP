@@ -14,7 +14,8 @@ using namespace std;
 
 int main() {
   vector&lt;int&gt; values;
-  int c, i, len;
+  int c, i;
+  size_t len;
   cin &gt;&gt; c;
 
   while (c != -1) {
@@ -32,10 +33,10 @@ int main() {
       end of a vector.</p>
   </note>
   <listing label="vector_functions_AC_1">
-    <statement>
+    <caption>
       <p>This active code uses the <c>push_back</c> function to add even numbers less than or equal to 10 to
         the vector <c>values</c>.</p>
-    </statement>
+    </caption>
     <program xml:id="vector_functions_AC_1_editor"
              interactive="activecode"
              line-numbers="yes">
@@ -135,7 +136,7 @@ void print_vec(vector&lt;int&gt; vec) {
           <cline><![CDATA[   for (size_t i = 0; i < vec.size(); i++) {]]></cline>
         </choice>
         <choice>
-          <cline><![CDATA[   for (int i = 0; i < vec.size(); i++) {                         ]]></cline>
+          <cline><![CDATA[   for (int i = 0; i < vec.size(); i++) {]]></cline>
         </choice>
       </block>
       <block order="5">
