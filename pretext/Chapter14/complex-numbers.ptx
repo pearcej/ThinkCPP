@@ -35,11 +35,14 @@ public:
             point.</p>
   <p>The following figure shows the two coordinate systems graphically.</p>
   <figure align="center">
-    <image source="Chapter14/Images/14.3polar_and_cartesian.png" width="50%" alt="image"/>
+    <image source="Chapter14/Images/14.3polar_and_cartesian.png"
+           width="50%"
+           alt="Complex numbers in polar coordinates are written r*e^(i * theta), where r is
+        the magnitude (radius), and theta is the angle in radians."/>
+    <caption>Complex numbers in polar coordinates are written <m>r e^{i \theta}</m>, where <m>r</m> is
+        the magnitude (radius), and <m>\theta</m> is the angle in radians.</caption>
   </figure>
-  <p>Complex numbers in polar coordinates are written <m>r e^{i \theta}</m>,
-            where <m>r</m> is the magnitude (radius), and <m>\theta</m> is the
-            angle in radians.</p>
+
   <note>
     <p>Fortunately, it is easy to convert from one form to another. To go from
                 Cartesian to polar,</p>
@@ -99,12 +102,12 @@ public:
             those kinds of mistakes impossible.</p>
   <listing label="fourteentwo">
     <caption>
-      <p>Take a look at this active code, which demonstrates the separation of
+      Take a look at this active code, which demonstrates the separation of
             interface and implementation using classes. In this code, we create a <c>Triangle</c>
             object which is represented by three sides. In <c>main</c>, we print out the perimeter of
-            the triangle, which should be 12.</p>
+            the triangle, which should be 12.
     </caption>
-    <program xml:id="fourteentwo_editor" interactive="activecode" line-numbers="yes">
+    <program xml:id="fourteentwo_editor" interactive="activecode"  stdin="asdf asdf" language="python" download="yes" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -133,11 +136,11 @@ int main() {
   </listing>
   <listing label="fourteenthree">
     <caption>
-      <p>Now take a look at this second piece of active code. What if we decide we want
+        Now take a look at this second piece of active code. What if we decide we want
             to represent a <c>Triangle</c> in a different way? Because the way we represent a
             <c>Triangle</c> is private, we can easily change the implementation while keeping
             the interface the same. Now, <c>Triangle</c> is represented by two sides and the
-            angle between them. Notice how our <c>main</c> function is the exact same as before.</p>
+            angle between them. Notice how our <c>main</c> function is the exact same as before.
     </caption>
     <program xml:id="fourteenthree_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[
