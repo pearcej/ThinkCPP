@@ -521,7 +521,7 @@ public:
     MyVector() {};
     MyVector(vector&lt;int&gt; vec);
 
-    int size() { return elements.size(); }
+    size_t size() { return elements.size(); }
     void push_back(int value) { elements.push_back(value); }
     void pop_back() { elements.pop_back(); };
     int at(int index) { return elements[index]; }
@@ -575,7 +575,7 @@ public:
     MyVector() {};
     MyVector(vector&lt;int&gt; vec);
 
-    int size();
+    size_t size();
     void push_back(int value);
     void pop_back();
     int at(int index);
@@ -599,7 +599,7 @@ MyVector::MyVector (vector&lt;int&gt; vec) {
     elements = vec;
 }
 
-int MyVector::size() { return elements.size(); }
+size_t MyVector::size() { return elements.size(); }
 
 void MyVector::push_back(int value) { elements.push_back(value); }
 
@@ -667,7 +667,7 @@ public:
     MyVector() {};
     MyVector(vector&lt;int&gt; vec);
 
-    int size();
+    size_t size();
     void push_back(int value);
     void pop_back();
     int at(int index);
@@ -693,7 +693,7 @@ MyVector::MyVector (vector&lt;int&gt; vec) {
     elements = vec;
 }
 
-int MyVector::size() { return elements.size(); }
+size_t MyVector::size() { return elements.size(); }
 
 void MyVector::push_back(int value) { elements.push_back(value); }
 
@@ -733,7 +733,7 @@ public:
     MyVector() {};
     MyVector(vector&lt;int&gt; vec);
 
-    int size();
+    size_t size();
     void push_back(int value);
     void pop_back();
     int at(int index);
@@ -771,7 +771,7 @@ MyVector::MyVector (vector&lt;int&gt; vec) {
     elements = vec;
 }
 
-int MyVector::size() { return elements.size(); }
+size_t MyVector::size() { return elements.size(); }
 
 void MyVector::push_back(int value) { elements.push_back(value); }
 
@@ -821,7 +821,7 @@ public:
     MyVector() {};
     MyVector(vector&lt;int&gt; vec);
 
-    int size();
+    size_t size();
     void push_back(int value);
     void pop_back();
     int at(int index);
@@ -846,7 +846,7 @@ MyVector::MyVector (vector&lt;int&gt; vec) {
     elements = vec;
 }
 
-int MyVector::size() { return elements.size(); }
+size_t MyVector::size() { return elements.size(); }
 
 void MyVector::push_back(int value) { elements.push_back(value); }
 
