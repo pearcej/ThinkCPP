@@ -145,9 +145,9 @@ int main() {
             <cline>            k++;</cline>
           </block>
           <block order="3">
-            <cline>        if (m == word.length()) {</cline>
-            <cline>            count++</cline>
-            <cline>        }</cline>
+            <cline>            if (j == word.length()) {</cline>
+            <cline>                count++</cline>
+            <cline>            }</cline>
           </block>
           <block order="5">
             <cline>        }</cline>
