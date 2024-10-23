@@ -107,7 +107,7 @@ public:
             object which is represented by three sides. In <c>main</c>, we print out the perimeter of
             the triangle, which should be 12.
     </caption>
-    <program xml:id="fourteentwo_editor" interactive="activecode"  stdin="asdf asdf" language="python" download="yes" line-numbers="yes">
+    <program xml:id="fourteentwo_editor" interactive="activecode"  stdin="asdf asdf" download="yes" line-numbers="yes">
       <input><![CDATA[
 #include <iostream>
 using namespace std;

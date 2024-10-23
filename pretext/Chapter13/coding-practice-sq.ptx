@@ -9,7 +9,7 @@
                     in a year on each planet using a switch statement. These values are, in planetary order,
                     88 days, 225 days, 365 days, 687 days, 4333 days, 10759 days, 30687 days, and 60190 days.
                     Print out this information in the following format: Planet <c>planet</c> has <c>numDays</c> number of days in
-                    a year! Select the Parsonsprob tab for hints for the construction of the code.</p>
+                    a year! Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_13_AC_2q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
@@ -33,7 +33,7 @@ int main() {
                     in a year on each planet using a switch statement. These values are, in planetary order,
                     88 days, 225 days, 365 days, 687 days, 4333 days, 10759 days, 30687 days, and 60190 days.
                     Print out this information in the following format: Planet <c>planet</c> has <c>numDays</c> number of days in
-                    a year! Use the lines to construct the code, then go back to complete the Activecode tab.</p>
+                    a year! Use the lines to construct the code, then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="14">
@@ -108,7 +108,7 @@ int main() {
                     we will select the first 25 values for the 25 spaces on the <c>BingoBoard</c>. We will
                     do this entire process in multiple steps. First, write the function <c>randomInt</c>, which
                     generates a random value between low and high, inclusive. Be sure to include the relevant libraries!
-                    Select the Parsonsprob tab for hints for the construction of the code.</p>
+                    Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_13_AC_4q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
@@ -130,7 +130,7 @@ using namespace std;
                     we will select the first 25 values for the 25 spaces on the <c>BingoBoard</c>. We will
                     do this entire process in multiple steps. First, write the function <c>randomInt</c>, which
                     generates a random value between low and high, inclusive. Be sure to include the relevant libraries!
-                    Use the lines to construct the code, then go back to complete the Activecode tab.</p>
+                    Use the lines to construct the code, then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="2">
@@ -162,7 +162,7 @@ using namespace std;
           <p>Now that we have the functions <c>randomInt</c> and <c>swapValues</c>, we can write the function
                     <c>generateRandVec</c>. <c>generateRandVec</c> creates a <c>vector</c> with values from 1 to 75,
                     shuffles it using <c>randomInt</c> and <c>swapValues</c>, and returns the shuffled <c>vector</c>.
-                    Select the Parsonsprob tab for hints for the construction of the code.</p>
+                    Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_13_AC_6q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
@@ -183,7 +183,7 @@ using namespace std;
           <p>Now that we have the functions <c>randomInt</c> and <c>swapValues</c>, we can write the function
                     <c>generateRandVec</c>. <c>generateRandVec</c> creates a <c>vector</c> with values from 1 to 75,
                     shuffles it using <c>randomInt</c> and <c>swapValues</c>, and returns the shuffled <c>vector</c>.
-                    Use the lines to construct the code, then go back to complete the Activecode tab.</p>
+                    Use the lines to construct the code, then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="4">
@@ -223,7 +223,7 @@ using namespace std;
         <statement>
           <p>Let's print out our <c>BingoBoard</c>! Write the <c>BingoBoard</c> member function
                     <c>printBoard</c>. Insert tabs between each value in each row to make the board
-                    print out neater. Select the Parsonsprob tab for hints for the construction of the code.</p>
+                    print out neater. Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_13_AC_8q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
@@ -311,7 +311,7 @@ void BingoBoard::makeBoard() {
         <statement>
           <p>Let's print out our <c>BingoBoard</c>! Write the <c>BingoBoard</c> member function
                     <c>printBoard</c>. Insert tabs between each value in each row to make the board
-                    print out neater. Use the lines to construct the code, then go back to complete the Activecode tab.</p>
+                    print out neater. Use the lines to construct the code, then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="6">
@@ -353,7 +353,7 @@ void BingoBoard::makeBoard() {
                     If we swap values during a pass, we set <c>is_changed</c> to true. If nothing has been swapped,
                     then <c>is_changed</c> stays false, and we know to break out of the loop since our <c>vector</c>
                     is already sorted. Write the function <c>fastBubbleSort</c>, which is <c>bubbleSort</c> with this
-                    modification. Select the Parsonsprob tab for hints for the construction of the code.</p>
+                    modification. Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_13_AC_10q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
@@ -390,7 +390,7 @@ int main() {
                     If we swap values during a pass, we set <c>is_changed</c> to true. If nothing has been swapped,
                     then <c>is_changed</c> stays false, and we know to break out of the loop since our <c>vector</c>
                     is already sorted. Write the function <c>fastBubbleSort</c>, which is <c>bubbleSort</c> with this
-                    modification. Use the lines to construct the code, then go back to complete the Activecode tab.</p>
+                    modification. Use the lines to construct the code, then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="13">

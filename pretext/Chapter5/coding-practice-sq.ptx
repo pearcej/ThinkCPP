@@ -9,8 +9,7 @@
                     Write a function <c>convertToBinary</c> which takes a <c>decimal</c> as
                     a parameter. <c>convertToBinary</c> takes the number in decimal, converts
                     it into a binary number, and returns the binary number. Test your function
-                    in <c>main</c>. Run and test your code! Select the Parsonsprob tab for hints
-                    for the construction of the code.</p>
+                    in <c>main</c>. Run and test your code! Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_5_AC_2q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
@@ -44,7 +43,7 @@ TEST_CASE("convertToBinary function") {
                     a parameter. <c>convertToBinary</c> takes the number in decimal, converts
                     it into a binary number, and returns the binary number. Test your function
                     in <c>main</c>. Use the lines to construct the code, then go back to complete
-                    the Activecode tab.</p>
+                    the Activecode.</p>
         </statement>
         <blocks>
           <block order="2">
@@ -85,8 +84,7 @@ TEST_CASE("convertToBinary function") {
                     September 1, and winter starts on December 1. Write a function called <c>birthSeason</c>, which takes
                     two parameters, <c>month</c> and <c>day</c>. <c>birthSeason</c> calculates which season
                     the birthday falls in according to the meteorological start and returns a <c>string</c> with the correct season.
-                    For example, <c>birthSeason (7, 5)</c> returns <q>summer</q> since July 5 is in the summer. Select the Parsonsprob tab
-                    for hints for the construction of the code. Run and test your code!</p>
+                    For example, <c>birthSeason (7, 5)</c> returns <q>summer</q> since July 5 is in the summer. Check the hint below for help with the construction of the code. Run and test your code!</p>
         </statement>
         <program xml:id="cp_5_AC_4q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
@@ -139,7 +137,7 @@ TEST_CASE("birthSeason function: winter") {
                     two parameters, <c>month</c> and <c>day</c>. <c>birthSeason</c> calculates which season
                     the birthday falls in according to the meteorological start and returns a <c>string</c> with the correct season.
                     For example, <c>birthSeason (7, 5)</c> returns <q>summer</q> since July 5 is in the summer. Use the lines to construct
-                    the code, then go back to complete the Activecode tab.</p>
+                    the code, then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="5">
@@ -181,7 +179,7 @@ TEST_CASE("birthSeason function: winter") {
                     4 and 18. Write the function <c>isCommonFactor</c>, which takes three parameters,
                     <c>num1</c>, <c>num2</c>, and <c>factor</c>. <c>isCommonFactor</c> returns <c>true</c> if <c>factor</c> is a
                     factor of both <c>num1</c> and <c>num2</c>, and returns <c>false</c> otherwise. Run and test your code!
-                    Select the Parsonsprob tab for hints for the construction of the code.</p>
+                    Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_5_AC_6q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
@@ -217,7 +215,7 @@ TEST_CASE("isCommonFactor function: false cases") {
                     4 and 18. Write the function <c>isCommonFactor</c>, which takes three parameters,
                     <c>num1</c>, <c>num2</c>, and <c>factor</c>. <c>isCommonFactor</c> returns <c>true</c> if <c>factor</c> is a
                     factor of both <c>num1</c> and <c>num2</c>, and returns <c>false</c> otherwise. Run and test your code!
-                    Use the lines to construct the code, then go back to complete the Activecode tab.</p>
+                    Use the lines to construct the code, then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="5">
@@ -262,7 +260,7 @@ TEST_CASE("isCommonFactor function: false cases") {
                     and is red, it is poisonous. If a mushroom has fewer than 3 spots or is not red,
                     it is poisonous. Otherwise, it is not. <c>isPoisonous</c> should return <c>true</c> if
                     the mushroom is poisonous and <c>false</c> otherwise. Run and test your code!
-                    Select the Parsonsprob tab for hints for the construction of the code.</p>
+                    Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_5_AC_8q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
@@ -303,7 +301,7 @@ TEST_CASE("isPoisonous function: false cases") {
                     and is red, it is poisonous. If a mushroom has fewer than 3 spots or is not red,
                     it is poisonous. Otherwise, it is not. <c>isPoisonous</c> should return <c>true</c> if
                     the mushroom is poisonous and <c>false</c> otherwise. Use the lines to construct the
-                    code, then go back to complete the Activecode tab.</p>
+                    code, then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="4">
@@ -354,8 +352,7 @@ TEST_CASE("isPoisonous function: false cases") {
         <statement>
           <p>Write the function <c>digitSum</c> which takes an <c>int num</c> as a parameter
                     and returns the sum of all its digits. For example, <c>digitSum (1423)</c>
-                    would return 10. Use recursion. Run and test your code! Select the Parsonsprob
-                    tab for hints for the construction of the code.</p>
+                    would return 10. Use recursion. Run and test your code! Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_5_AC_10q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
@@ -386,7 +383,7 @@ TEST_CASE("digitSum function") {
           <p>Write the function <c>digitSum</c> which takes an <c>int num</c> as a parameter
                     and returns the sum of all its digits. For example, <c>digitSum (1423)</c>
                     would return 10. Use recursion. Use the lines to construct the code, then
-                    go back to complete the Activecode tab.</p>
+                    go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="4">

@@ -8,8 +8,7 @@
           <p>Write the function <c>printCakeInfo</c>, which prints the cake's information in the format
                     <q>This is a <c>color</c>, <c>diameter</c> inch diameter cake with/without icing.</q> If <c>name</c> does not
                     have the value <q>n/a</q>, <c>printCakeInfo</c> prints out <q>Happy birthday <c>name</c>! Your cake is <c>color</c>,
-                    has a <c>diameter</c> inch diameter, and comes with/without icing.</q> Select the Parsonsprob tab for hints
-                    for the construction of the code.</p>
+                    has a <c>diameter</c> inch diameter, and comes with/without icing.</q> Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_9_AC_2q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
@@ -42,7 +41,7 @@ int main() {
                     <q>This is a <c>color</c>, <c>diameter</c> inch diameter cake with/without icing.</q> If <c>name</c> does not
                     have the value <q>n/a</q>, <c>printCakeInfo</c> prints out <q>Happy birthday <c>name</c>! Your cake is <c>color</c>,
                     has a <c>diameter</c> inch diameter, and comes with/without icing.</q> Use the lines to construct the code,
-                    then go back to complete the Activecode tab.</p>
+                    then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="7">
@@ -96,7 +95,7 @@ int main() {
         <statement>
           <p>Write the function <c>changeCakeDiameter</c>, which takes a <c>Cake</c> and a <c>double</c> as a parameter.
                     <c>changeCakeDiameter</c> then multiplies the original diameter by the double and modifies the cake
-                    to have this new diameter. Select the Parsonsprob tab for hints for the construction of the code.</p>
+                    to have this new diameter. Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_9_AC_4q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
@@ -174,7 +173,7 @@ Cake makeCake() {
         <statement>
           <p>Write the function <c>changeCakeDiameter</c>, which takes a <c>Cake</c> and a <c>double</c> as a parameter.
                     <c>changeCakeDiameter</c> then multiplies the original diameter by the double and modifies the cake
-                    to have this new diameter. Use the lines to construct the code, then go back to complete the Activecode tab.</p>
+                    to have this new diameter. Use the lines to construct the code, then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="1">
@@ -209,7 +208,7 @@ Cake makeCake() {
       <exercise label="cp_9_AC_6q">
         <statement>
           <p>Write the struct <c>Shirt</c>, which has the instance variables color and size.
-                    Select the Parsonsprob tab for hints for the construction of the code.</p>
+                    Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_9_AC_6q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
@@ -229,7 +228,7 @@ int main() {
       <exercise label="cp_9_AC_6q_pp" numbered="yes" adaptive="yes" indentation="hide">
         <statement>
           <p>Write the struct <c>Shirt</c>, which has the instance variables color and size.
-                    Use the lines to construct the code, then go back to complete the Activecode tab.</p>
+                    Use the lines to construct the code, then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="4">
@@ -259,7 +258,7 @@ int main() {
       <exercise label="cp_9_AC_8q">
         <statement>
           <p>Write the struct <c>Outfit</c>, which is a nested structure that has a <c>Shirt</c>, <c>Pants</c>, and has_hat.
-                    Select the Parsonsprob tab for hints for the construction of the code.</p>
+                    Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_9_AC_8q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
@@ -290,7 +289,7 @@ int main() {
       <exercise label="cp_9_AC_8q_pp" numbered="yes" adaptive="yes" indentation="hide">
         <statement>
           <p>Write the struct <c>Outfit</c>, which is a nested structure that has a <c>Shirt</c>, <c>Pants</c>, and has_hat.
-                    Use the lines to construct the code, then go back to complete the Activecode tab.</p>
+                    Use the lines to construct the code, then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="4">
@@ -321,7 +320,7 @@ int main() {
         <statement>
           <p>Write the <c>changeShirts</c> and <c>changePants</c> functions, which both take an <c>Outfit</c> as a parameter. <c>changeShirts</c> also
                     takes a <c>Shirt</c> as a parameter and <c>changePants</c> also takes a <c>Pants</c> as a parameter. Each function modifies the <c>Outfit</c>
-                    and changes the shirt or pants to the new input. Select the Parsonsprob tab for hints for the construction of the code.</p>
+                    and changes the shirt or pants to the new input. Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_9_AC_10q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
@@ -381,7 +380,7 @@ void printOutfit(Outfit o) {
         <statement>
           <p>Write the <c>changeShirts</c> and <c>changePants</c> functions, which both take an <c>Outfit</c> as a parameter. <c>changeShirts</c> also
                     takes a <c>Shirt</c> as a parameter and <c>changePants</c> also takes a <c>Pants</c> as a parameter. Each function modifies the <c>Outfit</c>
-                    and changes the shirt or pants to the new input. Use the lines to construct the code, then go back to complete the Activecode tab.</p>
+                    and changes the shirt or pants to the new input. Use the lines to construct the code, then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="2">

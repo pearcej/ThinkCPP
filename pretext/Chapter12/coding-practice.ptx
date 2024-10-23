@@ -43,12 +43,10 @@ struct Pixel {
   <exercise label="cp_12_AC_2_q">
     <statement>
       <p>An image is just a matrix of pixels. Write the <c>struct</c> definition for <c>Image</c>, which should
-        store information about its height and width and contain a matrix of <c>Pixel</c>s. Select the
-        Parsonsprob tab for hints for the construction of the code.</p>
+        store information about its height and width and contain a matrix of <c>Pixel</c>s. Check the hint below for help with the construction of the code.</p>
 
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_12_AC_2q_editor">
         <input>
 #include &lt;iostream&gt;
@@ -69,7 +67,7 @@ struct Pixel {
         <statement>
           <p>An image is just a matrix of pixels. Write the <c>struct</c> definition for <c>Image</c>, which
             should store information about its height and width and contain a matrix of <c>Pixel</c>s.
-            Use the lines to construct the code, then go back to complete the Activecode tab.</p>
+            Use the lines to construct the code, then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="2">
@@ -162,12 +160,10 @@ int main() {
       <p>Now let&#8217;s print an <c>Image</c>. Unfortunately we can&#8217;t print out the actual image
         to the terminal, but we can print out the <c>Pixel</c>s in the <c>Image</c> matrix. Write the <c>Image</c>
         member function <c>printImage</c>. Separate pixels in the same row with a space and add a new line at
-        the end of each row. Use the <c>printPixel</c> function we created previously. Select the Parsonsprob
-        tab for hints for the construction of the code.</p>
+        the end of each row. Use the <c>printPixel</c> function we created previously. Check the hint below for help with the construction of the code.</p>
 
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_12_AC_4q_editor">
         <input>
 #include &lt;iostream&gt;
@@ -211,7 +207,7 @@ void Pixel::printPixel() {
             image to the terminal, but we can print out the <c>Pixel</c>s in the <c>Image</c> matrix. Write
             the <c>Image</c> member function <c>printImage</c>. Separate pixels in the same row with a space and
             add a new line at the end of each row. Use the <c>printPixel</c> function we created previously.
-            Use the lines to construct the code, then go back to complete the Activecode tab.</p>
+            Use the lines to construct the code, then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="8">
@@ -365,12 +361,10 @@ int main() {
     <statement>
       <p>Let&#8217;s write a <c>swapPixel</c> member function for <c>Image</c>. <c>swapPixel</c> takes two pairs of row
         indices and column indices from a matrix and swaps the two <c>Pixel</c>s at those locations. Note
-        that these indices are 0-indexed, unlike the previous <c>cropIndex</c> parameters. Select the
-        Parsonsprob tab for hints for the construction of the code.</p>
+        that these indices are 0-indexed, unlike the previous <c>cropIndex</c> parameters. Check the hint below for help with the construction of the code.</p>
 
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_12_AC_6q_editor">
         <input>
 #include &lt;iostream&gt;
@@ -439,7 +433,7 @@ void Image::cropImage(int startRow, int stopRow, int startCol, int stopCol) {
           <p>Let&#8217;s write a <c>swapPixel</c> member function for <c>Image</c>. <c>swapPixel</c> takes two pairs of row
             indices and column indices from a matrix and swaps the two <c>Pixel</c>s at those locations.
             Note that these indices are 0-indexed, unlike the previous <c>cropIndex</c> parameters. Use the
-            lines to construct the code, then go back to complete the Activecode tab.</p>
+            lines to construct the code, then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="5">
@@ -601,12 +595,11 @@ int main() {
   <exercise label="cp_12_AC_8_q">
     <statement>
       <p>Oops! Somehow our image came out upside down. Let&#8217;s write the <c>Image</c> member function <c>flipVertical</c>,
-        which reverts an image to be right side up. Select the Parsonsprob tab for hints for the
+        which reverts an image to be right side up. Check the hint below for help with the
         construction of the code.</p>
 
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_12_AC_8q_editor">
         <input>
 #include &lt;iostream&gt;
@@ -697,7 +690,7 @@ void Image::flipHorizontal() {
         <statement>
           <p>Oops! Somehow our image came out upside down. Let&#8217;s write the <c>Image</c> member
             function <c>flipVertical</c>, which reverts an image to be right side up. Use the lines to construct
-            the code, then go back to complete the Activecode tab.</p>
+            the code, then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="3">
@@ -901,12 +894,11 @@ int main() {
   <exercise label="cp_12_AC_10_q">
     <statement>
       <p>Let&#8217;s return our image to the state of a clean slate. Write the function <c>clearImage</c>,
-        which sets the color of every <c>Pixel</c> to white. Select the Parsonsprob tab for hints for the
+        which sets the color of every <c>Pixel</c> to white. Check the hint below for help with the
         construction of the code.</p>
 
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_12_AC_10q_editor">
         <input>
 #include &lt;iostream&gt;
@@ -1021,7 +1013,7 @@ void Image::createBorder(Pixel p) {
         <statement>
           <p>Let&#8217;s return our image to the state of a clean slate. Write the function <c>clearImage</c>,
             which sets the color of every <c>Pixel</c> to white. Use the lines to construct the code,
-            then go back to complete the Activecode tab.</p>
+            then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="1">

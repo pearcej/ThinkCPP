@@ -530,14 +530,14 @@
   <exercise label="mucp_7_10"
             numbered="yes"
             adaptive="yes"
-            indentation="hide"  language="cpp">
+            indentation="hide">
     <statement>
       <p>Let's write a function called alphaCombine which takes two strings, first and second, and
         returns a string which concatenates first and second in alphabetical order. For example,
         alphabetizer (<q>zebra, mega</q>) returns the string <q>megazebra</q> since <q>mega</q>
         comes before <q>zebra</q> in the alphabet. Put the necessary blocks in the correct order.</p>
     </statement>
-    <blocks language="cpp">
+    <blocks>
       <block order="2">
         <choice correct="yes">
           <cline>string alphaCombine(string first, string second) {</cline>
@@ -582,7 +582,7 @@
       </block>
     </blocks>
   </exercise>
-  <exercise label="mucp_7_11" language="cpp"
+  <exercise label="mucp_7_11"
             numbered="yes"
             adaptive="yes"
             indentation="show">
@@ -594,7 +594,7 @@
         palindromes: <q>join</q>, <q>hat</q>, <q>frat</q>, <q>supper</q>, <q>rhythm</q>. The code is
         mixed up and contains extra blocks. Put the necessary blocks in the correct order.</p>
     </statement>
-    <blocks  language="cpp">
+    <blocks>
       <block order="1">
         <choice correct="yes">
           <cline>bool ispalindrome(string input) {</cline>

@@ -32,7 +32,6 @@ And that has made all the difference.</pre>
   terminal. Include proper file error checking.</p>
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_15_AC_1q">
         <input>
 #include &lt;iostream&gt;
@@ -46,8 +45,7 @@ using namespace std;
       <p>Below is one way to implement this program. We create an <c>ifstream</c> object to open our file.
   We check to make sure the file is opened correctly before we use <c>getline</c> in a <c>for</c> loop to
   retrieve and print the first 5 lines of the poem.</p>
-      <program xml:id="cp_15_AC_1a"
-               language="cpp">
+      <program xml:id="cp_15_AC_1a">
         <input>
 #include &lt;iostream&gt;
 #include &lt;fstream&gt;
@@ -74,8 +72,7 @@ int main() {
       <p>Write a program that prompts a user for the name of an input file and for an integer <c>n</c>.
   Then open the file and output the first <c>n</c> lines of the file with each line reversed. For
   example, if you read in the line &#8220;hello world&#8221; you should print out &#8220;dlrow
-  olleh&#8221; to the terminal. Include proper file error checking. Select the Parsonsprob tab for
-  hints for the construction of the code.</p>
+  olleh&#8221; to the terminal. Include proper file error checking. Check the hint below for help with the construction of the code.</p>
       <!-- 
       No need for a particular file given the ask of this program...
       <datafile label="moon-speech.txt" filename="moon-speech.txt">
@@ -88,7 +85,6 @@ unwilling to postpone, and one we intend to win, and the others, too.</pre>
       </datafile> -->
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_15_AC_2q_editor">
         <input>
 #include &lt;iostream&gt;
@@ -105,7 +101,7 @@ using namespace std;
   Then open the file and output the first <c>n</c> lines of the file with each line reversed. For
   example, if you read in the line &#8220;hello world&#8221; you should print out &#8220;dlrow
   olleh&#8221; to the terminal. Include proper file error checking. Use the lines to construct the
-  code, then go back to complete the Activecode tab.</p>
+  code, then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="13">
@@ -176,7 +172,6 @@ using namespace std;
   checking.</p>
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_15_AC_3q">
         <input>
 #include &lt;iostream&gt;
@@ -193,8 +188,7 @@ using namespace std;
   We check to make sure the file is opened correctly before we read the data values into a vector.
   After sorting the vector, we find the median depending on whether the number of data values was
   even or odd. Finally, we output our result to the terminal.</p>
-      <program xml:id="cp_15_AC_3a"
-               language="cpp">
+      <program xml:id="cp_15_AC_3a">
         <input>
 #include &lt;iostream&gt;
 #include &lt;fstream&gt;
@@ -233,11 +227,10 @@ int main() {
       <p>Write a program that prompts a user for an integer <c>n</c> and print the first <c>n</c>
   powers of 2 to an output file called <c>powers.txt</c>. Include proper file error checking. To simulate what
   your output file would look like, the contents of your output file will be displayed on the
-  terminal. Select the Parsonsprob tab for hints for the construction of the code.</p>
+  terminal. Check the hint below for help with the construction of the code.</p>
 
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_15_AC_4q_editor">
         <input>
 #include &lt;iostream&gt;
@@ -270,7 +263,7 @@ int main() {
           <p>Write a program that prompts a user for an integer <c>n</c> and print the first <c>n</c>
   powers of 2 to an output file called <c>powers.txt</c>. Include proper file error checking. To simulate what
   your output file would look like, the contents of your output file will be displayed on the
-  terminal. Use the lines to construct the code, then go back to complete the Activecode tab.</p>
+  terminal. Use the lines to construct the code, then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="3">
@@ -353,7 +346,6 @@ int main() {
   the terminal. Include proper file error checking.</p>
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_15_AC_5q">
         <input>
 #include &lt;iostream&gt;
@@ -370,8 +362,7 @@ int main() {
       <p>Below is one way to implement this program. We create an <c>ifstream</c> object to open our file.
   We check to make sure the file is opened correctly before we read the data values into a string.
   We call our <c>ROT13</c> function and output the result to the output file.</p>
-      <program xml:id="cp_15_AC_5a"
-               language="cpp">
+      <program xml:id="cp_15_AC_5a">
         <input>
 #include &lt;iostream&gt;
 #include &lt;fstream&gt;
@@ -435,7 +426,6 @@ Gina     Zhou       9        3.2    14</pre>
   of data where a student has a GPA of at least 3.5. Include proper file error checking.</p>
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_15_AC_7q">
         <input>
 #include &lt;iostream&gt;
@@ -453,8 +443,7 @@ int main() {
   terminal if so.</p> Below is one way to implement this program. We create an ifstream object to
   open our file. We check to make sure the file is opened correctly before we read the data values
   into corresponding variables. We check if the GPA is at least 3.5, and print the data values to
-  the terminal if so. <program xml:id="cp_15_AC_7a"
-               language="cpp">
+  the terminal if so. <program xml:id="cp_15_AC_7a">
         <input>
 #include &lt;iostream&gt;
 #include &lt;fstream&gt;
@@ -487,11 +476,10 @@ int main() {
       <p>Write a program that takes an input file called <c>shrimp.txt</c> and outputs
         the contents of the file where "shrimp" is replaced by a word that the user inputs to the terminal.
   Include proper file error checking.
-        Select the Parsonsprob tab for hints for the construction of the code.</p>
+        Check the hint below for help with the construction of the code.</p>
 
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_15_AC_8q_editor">
         <input>
 #include &lt;iostream&gt;
@@ -508,7 +496,7 @@ using namespace std;
             the quote with &#8220;shrimp&#8221; replaced by a word that the user inputs to the
   terminal.
             Include proper file error checking.
-            Use the lines to construct the code, then go back to complete the Activecode tab.</p>
+            Use the lines to construct the code, then go back to complete the Activecode.</p>
 
           <datafile label="shrimp.txt"
                     filename="shrimp.txt">
@@ -587,7 +575,6 @@ That- that's about it.</pre>
   and outputting the table to an output file called <c>mult_table.txt</c>. Include proper file error checking.</p>
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_15_AC_9q">
         <input>
 #include &lt;iostream&gt;
@@ -604,8 +591,7 @@ int main() {
         and fill in the products. Then we traverse through the matrix and output
         the values into the output file.</p> Below is one way to implement this program. We create a
   10x10 matrix and fill in the products. Then we traverse through the matrix and output the values
-  into the output file. <program xml:id="cp_15_AC_9a"
-               language="cpp">
+  into the output file. <program xml:id="cp_15_AC_9a">
         <input>
 #include &lt;iostream&gt;
 #include &lt;fstream&gt;
@@ -649,11 +635,10 @@ int main() {
         from the second matrix, find the summation of the product of each component,
         and that&#8217;s the value that goes into the (i, j) location of the new matrix.
         The product of an mxn and an nxp matrix is an mxp matrix.
-        Select the Parsonsprob tab for hints for the construction of the code.</p>
+        Check the hint below for help with the construction of the code.</p>
 
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_15_AC_10q_editor">
         <input>
 #include &lt;iostream&gt;
@@ -681,7 +666,7 @@ int main() {
             from the second matrix, find the summation of the product of each component,
             and that&#8217;s the value that goes into the (i, j) location of the new matrix.
             The product of an mxn and an nxp matrix is an mxp matrix.
-            Use the lines to construct the code, then go back to complete the Activecode tab.</p>
+            Use the lines to construct the code, then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="7">

@@ -7,7 +7,6 @@
         member variables.</p>
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_14_AC_1q">
         <input>
 #include &lt;iostream&gt;
@@ -31,8 +30,7 @@ struct Room {
     </program>
     <solution><p>Below is the <c>class</c> definition of <c>Room</c>. As you can see, there isn&#8217;t a big
       difference between <c>struct</c>s and <c>class</c>es.</p> Below is the class definition of Room. As you
-      can see, there isn&#8217;t a big difference between structs and classes. <program xml:id="cp_14_AC_1a"
-               language="cpp">
+      can see, there isn&#8217;t a big difference between structs and classes. <program xml:id="cp_14_AC_1a">
         <input>
 #include &lt;iostream&gt;
 using namespace std;
@@ -60,11 +58,10 @@ public:
   <exercise label="cp_14_2_q">
     <statement>
       <p>There are errors in the code below. Modify the code so that <c>main</c> runs successfully.
-        Select the Parsonsprob tab for hints for the construction of the code.</p>
+        Check the hint below for help with the construction of the code.</p>
 
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_14_AC_2q_editor">
         <input>
 #include &lt;iostream&gt;
@@ -103,7 +100,7 @@ int main() {
       <activity label="cp_14_AC_2q_pp">
         <statement>
           <p>There are errors in the code below. Modify the code so that <c>main</c> runs successfully.
-            Use the lines to construct the code, then go back to complete the Activecode tab.</p>
+            Use the lines to construct the code, then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="14">
@@ -193,7 +190,6 @@ int main() {
         correct temperature in degrees Fahrenheit. Do the same for <c>getCelsius</c>.</p>
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_14_AC_3q">
         <input>
 #include &lt;iostream&gt;
@@ -229,8 +225,7 @@ public:
     <solution><p>Below is one way to implement this. We use the correct conversions in <c>cToF</c> and <c>fToC</c>
       and then call these functions in <c>getFahrenheit</c> and <c>getCelsius</c> if needed.</p> Below is one way to
       implement this. We use the correct conversions in cToF and fToC and then call these functions
-      in getFahrenheit and getCelsius if needed. <program xml:id="cp_14_AC_3a"
-               language="cpp">
+      in getFahrenheit and getCelsius if needed. <program xml:id="cp_14_AC_3a">
         <input>
 #include &lt;iostream&gt;
 using namespace std;
@@ -278,11 +273,10 @@ public:
   <exercise label="cp_14_4_q">
     <statement>
       <p>In <c>main</c> create a <c>Temp</c> object to calculate what 100 degrees Celsius is in Fahrenheit.
-        Select the Parsonsprob tab for hints for the construction of the code.</p>
+        Check the hint below for help with the construction of the code.</p>
 
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_14_AC_4q_editor">
         <input>
 #include &lt;iostream&gt;
@@ -333,8 +327,7 @@ int main() {
       <activity label="cp_14_AC_4q_pp">
         <statement>
           <p>In <c>main</c> create a <c>Temp</c> object to calculate what 100 degrees Celsius is in
-            Fahrenheit. Use the lines to construct the code, then go back to complete the Activecode
-            tab.</p>
+            Fahrenheit. Use the lines to construct the code, then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="5">
@@ -370,7 +363,6 @@ int main() {
         constructor.</p>
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_14_AC_5q">
         <input>
 #include &lt;iostream&gt;
@@ -383,8 +375,7 @@ using namespace std;
     <solution><p>Below is the <c>class</c> definition of <c>MyVector</c>. We use the <c>public</c> and <c>private</c> keywords
       to separate public and private members of our class. The default constructor sets size to 0.</p>
       Below is the class definition of MyVector. We use the public and private keywords to separate
-      public and private members of our class. The default constructor sets size to 0. <program xml:id="cp_14_AC_5a"
-               language="cpp">
+      public and private members of our class. The default constructor sets size to 0. <program xml:id="cp_14_AC_5a">
         <input>
 #include &lt;iostream&gt;
 #include &lt;vector&gt;
@@ -405,12 +396,10 @@ public:
   <exercise label="cp_14_6_q">
     <statement>
       <p>What if we had an existing <c>vector</c> with data that we want to copy into our <c>MyVector</c>? Write a
-        constructor that takes a <c>vector</c> and copies the data into the <c>elements</c> vector. Select the
-        Parsonsprob tab for hints for the construction of the code.</p>
+        constructor that takes a <c>vector</c> and copies the data into the <c>elements</c> vector. Check the hint below for help with the construction of the code.</p>
 
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_14_AC_6q_editor">
         <input>
 #include &lt;iostream&gt;
@@ -432,7 +421,7 @@ public:
         <statement>
           <p>What if we had an existing <c>vector</c> with data that we want to copy into our <c>MyVector</c>?
             Write a constructor that takes a <c>vector</c> and copies the data into the <c>elements</c> vector.
-            Use the lines to construct the code, then go back to complete the Activecode tab.</p>
+            Use the lines to construct the code, then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="1">
@@ -461,7 +450,6 @@ public:
         these <c>MyVector</c> functions!</p>
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_14_AC_7q">
         <input>
 #include &lt;iostream&gt;
@@ -506,8 +494,7 @@ MyVector::MyVector (vector&lt;int&gt; vec) {
     </program>
     <solution><p>Below is one way to implement these functions. Since these functions are defined
       for <c>vector</c>s, we can call them on <c>elements</c>.</p> Below is one way to implement these functions.
-      Since these functions are defined for vectors, we can call them on elements. <program xml:id="cp_14_AC_7a"
-               language="cpp">
+      Since these functions are defined for vectors, we can call them on elements. <program xml:id="cp_14_AC_7a">
         <input>
 #include &lt;iostream&gt;
 #include &lt;vector&gt;
@@ -555,12 +542,10 @@ MyVector::MyVector (vector&lt;int&gt; vec) {
         every time we want to print out a <c>vector</c>. With <c>MyVector</c>, we can just call the member
         function <c>print</c>! Write the <c>MyVector</c> member function <c>print</c>, which prints out the contents
         of <c>MyVector</c>. For example, if our <c>MyVector</c> contained the elements 2, 5, 1, and 8, <c>print</c>
-        should print out [2, 5, 1, 8] followed by a newline. Select the Parsonsprob tab for hints
-        for the construction of the code.</p>
+        should print out [2, 5, 1, 8] followed by a newline. Check the hint below for help with the construction of the code.</p>
 
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_14_AC_8q_editor">
         <input>
 #include &lt;iostream&gt;
@@ -617,7 +602,7 @@ int MyVector::at(int index) { return elements[index]; }
             member function <c>print</c>! Write the <c>MyVector</c> member function <c>print</c>, which prints out the
             contents of <c>MyVector</c>. For example, if our <c>MyVector</c> contained the elements 2, 5, 1, and 8, <c>print</c>
             should print out [2, 5, 1, 8] followed by a newline. Use the lines to construct the
-            code, then go back to complete the Activecode tab.</p>
+            code, then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="5">
@@ -652,7 +637,6 @@ int MyVector::at(int index) { return elements[index]; }
         value and add it to the front of our <c>MyVector</c>, and <c>pop_front</c> should remove the first element.</p>
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_14_AC_9q">
         <input>
 #include &lt;iostream&gt;
@@ -718,8 +702,7 @@ void MyVector::print() {
         pop the last element off.</p> Below is one way to implement these functions. For push_front,
       we can create a temporary vector and add the new element to the front before pushing the rest
       of the old elements to the back. For pop_front, we can shift all elements up by one index and
-      pop the last element off. <program xml:id="cp_14_AC_9a"
-               language="cpp">
+      pop the last element off. <program xml:id="cp_14_AC_9a">
         <input>
 #include &lt;iostream&gt;
 #include &lt;vector&gt;
@@ -797,12 +780,10 @@ void MyVector::print() {
       <p>What if we wanted to return the largest and smallest elements in our <c>MyVector</c>? Write the
         public member functions <c>max</c> and <c>min</c> which calls the private member functions <c>findMax</c>
         and <c>findMin</c>. <c>findMax</c> and <c>findMin</c> return the indices of the max and min values, and <c>max</c>
-        and <c>min</c> call these private member functions and return the max and min values. Select
-        the Parsonsprob tab for hints for the construction of the code.</p>
+        and <c>min</c> call these private member functions and return the max and min values. Check the hint below for help with the construction of the code.</p>
 
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_14_AC_10q_editor">
         <input>
 #include &lt;iostream&gt;
@@ -887,7 +868,7 @@ void MyVector::pop_front() {
             public member functions <c>max</c> and <c>min</c> which calls the private member functions <c>findMax</c>
             and <c>findMin</c>. <c>findMax</c> and <c>findMin</c> return the indices of the max and min values, and <c>max</c>
             and <c>min</c> call these private member functions and return the max and min values. Use
-            the lines to construct the code, then go back to complete the Activecode tab. Be sure to
+            the lines to construct the code, then go back to complete the Activecode. Be sure to
             declare the <c>max</c> and <c>min</c> functions in <c>public</c> when you complete the Activecode.</p>
         </statement>
         <blocks>

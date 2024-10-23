@@ -10,7 +10,7 @@
           <p>You are part of a class where everyone passes, but it's very hard
                     to pass with an A.  Fix the function so it prints your letter grade
                     according to this scheme.  [0, 50) = C, [50, 85) = B, and [85, 100] = A.
-                    Select the Parsonsprob tab for hints for the construction of the code.</p>
+                    Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cond_rec_a2_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
@@ -40,7 +40,7 @@ string whichDoor(double grade) {
           <p>You are part of a class where everyone passes, but it's very hard
                     to pass with an A.  Fix the function so it prints your letter grade
                     according to this scheme.  [0, 50) = C, [50, 85) = B, and [85, 100] = A.
-                    Use the lines to construct the code, then go back to complete the Activecode tab.</p>
+                    Use the lines to construct the code, then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="7">
@@ -94,8 +94,7 @@ string whichDoor(double grade) {
       <exercise label="cond_rec_a4">
         <statement>
           <p>Finish the code below so that it prints true if <c>x</c> is even
-                    and false if <c>x</c> is odd. Select the Parsonsprob tab for hints
-                    for the construction of the code.</p>
+                    and false if <c>x</c> is odd. Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cond_rec_a4_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
@@ -116,7 +115,7 @@ void is_even(int num) {
         <statement>
           <p>Finish the code below so that it prints true if <c>x</c> is even
                     and false if <c>x</c> is odd. Use the lines to construct the code,
-                    then go back to complete the Activecode tab.</p>
+                    then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="3">
@@ -160,8 +159,7 @@ void is_even(int num) {
           <p>Write the function <c>greaterThan</c> that prints true
                     if the first <c>double</c> argument is greater than the
                     second <c>double</c> argument.  Be sure to include any
-                    necessary headers. Select the Parsonsprob tab for hints
-                    for the construction of the code.</p>
+                    necessary headers. Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cond_rec_a6_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
@@ -182,7 +180,7 @@ void greaterThan() {
                     if the first <c>double</c> argument is greater than the
                     second <c>double</c> argument.  Be sure to include any
                     necessary headers. Use the lines to construct the code,
-                    then go back to complete the Activecode tab.</p>
+                    then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="3">
@@ -226,8 +224,7 @@ void greaterThan() {
         <statement>
           <p>Write the function <c>exclusiveOr</c> that prints true If
                     either <c>a</c> OR <c>b</c> is true, and prints false otherwise.
-                    Be sure to include any necessary headers. Select the Parsonsprob
-                    tab for hints for the construction of the code.</p>
+                    Be sure to include any necessary headers. Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cond_rec_a8_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
@@ -247,7 +244,7 @@ void exclusiveOr(bool a, bool b) {
           <p>Write the function <c>exclusiveOr</c> that prints true If
                     either <c>a</c> OR <c>b</c> is true, and prints false otherwise.
                     Be sure to include any necessary headers. Use the lines to
-                    construct the code, then go back to complete the Activecode tab.</p>
+                    construct the code, then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="2">
@@ -284,8 +281,7 @@ void exclusiveOr(bool a, bool b) {
           <p>Write the function <c>printNegativeNum</c> that asks the user
                     for a negative number.  If the user does not provide a negative
                     number, it should contine asking until the user provides one.
-                    It should then print the negative number. Select the Parsonsprob
-                    tab for hints for the construction of the code.</p>
+                    It should then print the negative number. Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cond_rec_a10_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
@@ -306,7 +302,7 @@ void printNegativeNum() {
                     for a negative number.  If the user does not provide a negative
                     number, it should contine asking until the user provides one.
                     It should then print the negative number. Use the lines to construct
-                    the code, then go back to complete the Activecode tab.</p>
+                    the code, then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="3">

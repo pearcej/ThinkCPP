@@ -66,7 +66,7 @@ bool isPalindrome(string input) {
         come up in his monologue? Write a function <c>countWord</c> that counts the number of times a given
         word appears in a given string. <c>countWord</c> should take two strings <c>input</c> and <c>word</c> as
         parameters and return an <c>int</c>. Feel free to use the <c>stringToLower</c> function we wrote earlier.
-        Select the Parsonsprob tab for hints for the construction of the code.</p>
+        Check the hint below for help with the construction of the code.</p>
     </statement>
     <program xml:id="cp_7_AC_2q_editor"
              interactive="activecode"
@@ -114,7 +114,7 @@ int main() {
             times a given word appears in a given string. <c>countWord</c> should take two strings <c>input</c>
             and <c>word</c> as parameters and return an <c>int</c>. Feel free to use the <c>stringToLower</c> function
             we wrote earlier. Use the lines to construct the code, then go back to complete the
-            Activecode tab.</p>
+            Activecode.</p>
         </statement>
         <blocks>
           <block order="2">
@@ -218,7 +218,7 @@ int main() {
         out <c>input</c> with every occurence of <c>word</c> removed. Use string concatenation and the C++
         string function <c>substr</c>. <c>substr</c> takes two parameters, a starting index and a length. For
         example, if <c>string greeting = "hello world"</c>, then <c>greeting.substr(6, 5)</c> returns the string <c>"world"</c>. Test your function in main.
-        Select the Parsonsprob tab for hints for the construction of the code. The output should be:</p>
+        Check the hint below for help with the construction of the code. The output should be:</p>
       <console>
         <output>Gucci , Gucci , Gucci , Gucci</output>
       </console>
@@ -252,7 +252,7 @@ int main() {
             and the C++ string function <c>substr</c>. <c>substr</c> takes two parameters, a starting index and
             a length. For example, if <c>string greeting = "hello world"</c>, then <c>greeting.substr(6, 5)</c> returns the string <c>"world"</c>. Test your
             function in main. Use the lines to construct the code, then go back to complete the
-            Activecode tab. The output should be:</p>
+            Activecode. The output should be:</p>
           <console>
             <output>Gucci , Gucci , Gucci , Gucci</output>
           </console>
@@ -374,7 +374,7 @@ int main() {
   <exercise label="cp_7_AC_6q">
     <statement>
       <p>Write the function <c>reverseWord</c> which takes a <c>string input</c>, reverses it, and returns the reversed <c>string</c>.
-        Run and test your code! Select the Parsonsprob tab for hints for the construction of the
+        Run and test your code! Check the hint below for help with the construction of the
         code.</p>
     </statement>
     <program xml:id="cp_7_AC_6q_editor"
@@ -406,7 +406,7 @@ TEST_CASE("reverseWord function") {
                 indentation="hide">
         <statement>
           <p>Write the function <c>reverseString</c> which takes a <c>string input</c>, reverses it, and returns the reversed <c>string</c>.
-            Use the lines to construct the code, then go back to complete the Activecode tab.</p>
+            Use the lines to construct the code, then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="8">
@@ -498,7 +498,7 @@ int main() {
     <statement>
       <p>Write the function <c>countVowels</c> which takes a <c>string input</c> and returns the number of vowels in the <c>string</c>.
         Remember, &#x2018;a', &#x2018;e', &#x2018;i', &#x2018;o', and &#x2018;u' are vowels. Run and
-        test your code! Select the Parsonsprob tab for hints for the construction of the code.</p>
+        test your code! Check the hint below for help with the construction of the code.</p>
     </statement>
     <program xml:id="cp_7_AC_8q_editor"
              interactive="activecode"
@@ -529,8 +529,7 @@ TEST_CASE("countVowels function") {
         <statement>
           <p>Write the function <c>countVowels</c> which takes a <c>string input</c> and returns the number of vowels in
             the <c>string</c>. Remember, &#x2018;a', &#x2018;e', &#x2018;i', &#x2018;o', and &#x2018;u'
-            are vowels. Use the lines to construct the code, then go back to complete the Activecode
-            tab.</p>
+            are vowels. Use the lines to construct the code, then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="5">
@@ -636,7 +635,7 @@ string longestWord(string input) {
         an underscore. For example, <q>snake case</q> in snake case is <q>snake_case</q>. Write the
         functions <c>snakeToCamel</c> and <c>camelToSnake</c>. Each function takes a <c>string input</c> and returns the input using the
         other stylization. Feel free to use any <c>string</c> functions you'd like. Run and test your
-        code! Select the Parsonsprob tab for hints for the construction of the code.</p>
+        code! Check the hint below for help with the construction of the code.</p>
     </statement>
     <program xml:id="cp_7_AC_10q_editor"
              interactive="activecode"
@@ -685,7 +684,7 @@ TEST_CASE("camelToSnake function") {
             snake_case</q>. Write the functions <c>snakeToCamel</c> and <c>camelToSnake</c>. Each function takes a <c>string input</c>
             and returns the input using the other stylization. Feel free to use any <c>string</c>
             functions you'd like. Use the lines to construct the code, then go back to complete the
-            Activecode tab.</p>
+            Activecode.</p>
         </statement>
         <blocks>
           <block order="3">

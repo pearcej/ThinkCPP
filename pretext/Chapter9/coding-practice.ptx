@@ -6,7 +6,6 @@
         has_icing.</p>
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_9_AC_1q">
         <input>
 #include &lt;iostream&gt;
@@ -21,8 +20,7 @@ int main() {
     </program>
     <solution><p>Below is one way to implement the program. We declare the <c>Cake</c> struct and list
       the instance variables in order.</p> Below is one way to implement the program. We declare the
-      Cake struct and list the instance variables in order. <program xml:id="cp_9_AC_1a"
-               language="cpp">
+      Cake struct and list the instance variables in order. <program xml:id="cp_9_AC_1a">
         <input>
 #include &lt;iostream&gt;
 using namespace std;
@@ -48,11 +46,10 @@ int main() {
         &#8220;This is a <c>color</c>, <c>diameter</c> inch diameter cake with/without icing.&#8221; If <c>name</c>
         does not have the value &#8220;n/a&#8221;, <c>printCakeInfo</c> prints out &#8220;Happy birthday <c>name</c>!
         Your cake is <c>color</c>, has a <c>diameter</c> inch diameter, and comes with/without icing.&#8221;
-        Select the Parsonsprob tab for hints for the construction of the code.</p>
+        Check the hint below for help with the construction of the code.</p>
 
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_9_AC_2q_editor">
         <input>
 #include &lt;iostream&gt;
@@ -82,7 +79,7 @@ int main() {
             &#8220;This is a <c>color</c>, <c>diameter</c> inch diameter cake with/without icing.&#8221; If <c>name</c>
             does not have the value &#8220;n/a&#8221;, <c>printCakeInfo</c> prints out &#8220;Happy birthday <c>name</c>!
             Your cake is <c>color</c>, has a <c>diameter</c> inch diameter, and comes with/without icing.&#8221;
-            Use the lines to construct the code, then go back to complete the Activecode tab.</p>
+            Use the lines to construct the code, then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="7">
@@ -137,7 +134,6 @@ int main() {
         or not they want icing. The function then returns the cake.</p>
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_9_AC_3q">
         <input>
 #include &lt;iostream&gt;
@@ -184,8 +180,7 @@ void printCakeInfo(Cake c) {
     <solution><p>Below is one way to implement the program. We create a <c>Cake</c> for the user, read
       in the user&#8217;s input using cin, and return the <c>Cake</c>.</p> Below is one way to implement
       the program. We create a Cake for the user, read in the user&#8217;s input using cin, and
-      return the Cake. <program xml:id="cp_9_AC_3a"
-               language="cpp">
+      return the Cake. <program xml:id="cp_9_AC_3a">
         <input>
 #include &lt;iostream&gt;
 using namespace std;
@@ -237,11 +232,10 @@ int main() {
     <statement>
       <p>Write the function <c>changeCakeDiameter</c>, which takes a <c>Cake</c> and a <c>double</c> as a parameter. <c>changeCakeDiameter</c>
         then multiplies the original diameter by the double and modifies the cake to have this new
-        diameter. Select the Parsonsprob tab for hints for the construction of the code.</p>
+        diameter. Check the hint below for help with the construction of the code.</p>
 
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_9_AC_4q_editor">
         <input>
 #include &lt;iostream&gt;
@@ -318,7 +312,7 @@ Cake makeCake() {
           <p>Write the function <c>changeCakeDiameter</c>, which takes a <c>Cake</c> and a <c>double</c> as a parameter. <c>changeCakeDiameter</c>
             then multiplies the original diameter by the double and modifies the cake to have this
             new diameter. Use the lines to construct the code, then go back to complete the
-            Activecode tab.</p>
+            Activecode.</p>
         </statement>
         <blocks>
           <block order="1">
@@ -358,7 +352,6 @@ Cake makeCake() {
         a parameter. Use the makeCake function in your implementation to avoid duplicate code!</p>
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_9_AC_5q">
         <input>
 #include &lt;iostream&gt;
@@ -431,8 +424,7 @@ int main() {
     </program>
     <solution><p>Below is one way to implement the program. We call <c>makeCake</c> in <c>editCake</c> and then set
       the original cake equal to the new one.</p> Below is one way to implement the program. We call
-      makeCake in editCake and then set the original cake equal to the new one. <program xml:id="cp_9_AC_5a"
-               language="cpp">
+      makeCake in editCake and then set the original cake equal to the new one. <program xml:id="cp_9_AC_5a">
         <input>
 #include &lt;iostream&gt;
 using namespace std;
@@ -468,7 +460,6 @@ int main() {
       <p>Write the <c>Pants</c> structure, which has instance variables size and material.</p>
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_9_AC_7q">
         <input>
 #include &lt;iostream&gt;
@@ -483,8 +474,7 @@ int main() {
     </program>
     <solution><p>Below is one way to implement the program. We declare the <c>Pants</c> struct and list
       the instance variables in order.</p> Below is one way to implement the program. We declare the
-      Pants struct and list the instance variables in order. <program xml:id="cp_9_AC_7a"
-               language="cpp">
+      Pants struct and list the instance variables in order. <program xml:id="cp_9_AC_7a">
         <input>
 #include &lt;iostream&gt;
 using namespace std;
@@ -504,12 +494,10 @@ int main() {
 
   <exercise label="cp_9_AC_6q_q">
     <statement>
-      <p>Write the struct <c>Shirt</c>, which has the instance variables color and size (in that order). Select the
-        Parsonsprob tab for hints for the construction of the code.</p>
+      <p>Write the struct <c>Shirt</c>, which has the instance variables color and size (in that order). Check the hint below for help with the construction of the code.</p>
 
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_9_AC_6q_editor">
         <input>
 #include &lt;iostream&gt;
@@ -526,7 +514,7 @@ int main () {
       <activity label="cp_9_AC_6q_pp">
         <statement>
           <p>Write the struct <c>Shirt</c>, which has the instance variables color and size (in that order). Use the
-            lines to construct the code, then go back to complete the Activecode tab.</p>
+            lines to construct the code, then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="4">
@@ -558,11 +546,10 @@ int main () {
   <exercise label="cp_9_AC_8q_q">
     <statement>
       <p>Write the struct <c>Outfit</c>, which is a nested structure that has a <c>Shirt</c>, <c>Pants</c>, and
-        has_hat (in that order). Select the Parsonsprob tab for hints for the construction of the code.</p>
+        has_hat (in that order). Check the hint below for help with the construction of the code.</p>
 
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_9_AC_8q_editor">
         <input>
 #include &lt;iostream&gt;
@@ -592,8 +579,7 @@ int main () {
           <p>Write the struct <c>Outfit</c>, which is a nested structure that has a <c>Shirt</c>, <c>Pants</c>,
             and
             has_hat (in that order). Use the lines to construct the code, then go back to complete
-            the Activecode
-            tab.</p>
+            the Activecode.</p>
         </statement>
         <blocks>
           <block order="4">
@@ -626,7 +612,6 @@ int main () {
         be &#8220;Shirt: blue and L; Pants: S and denim; has hat&#8221;.</p>
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_9_AC_9q">
         <input>
 #include &lt;iostream&gt;
@@ -660,8 +645,7 @@ int main() {
     </program>
     <solution><p>Below is one way to implement the program. We declare the <c>Cake</c> struct and list
       the instance variables in order.</p> Below is one way to implement the program. We declare the
-      Cake struct and list the instance variables in order. <program xml:id="cp_9_AC_9a"
-               language="cpp">
+      Cake struct and list the instance variables in order. <program xml:id="cp_9_AC_9a">
         <input>
 #include &lt;iostream&gt;
 using namespace std;
@@ -707,12 +691,10 @@ int main() {
     <statement>
       <p>Write the <c>changeShirts</c> and <c>changePants</c> functions, which both take an <c>Outfit</c> as a parameter. <c>changeShirts</c>
         also takes a <c>Shirt</c> as a parameter and <c>changePants</c> also takes a <c>Pants</c> as a parameter. Each
-        function modifies the <c>Outfit</c> and changes the shirt or pants to the new input. Select the
-        Parsonsprob tab for hints for the construction of the code.</p>
+        function modifies the <c>Outfit</c> and changes the shirt or pants to the new input. Check the hint below for help with the construction of the code.</p>
 
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_9_AC_10q_editor">
         <input>
 #include &lt;iostream&gt;
@@ -771,7 +753,7 @@ void printOutfit(Outfit o) {
           <p>Write the <c>changeShirts</c> and <c>changePants</c> functions, which both take an <c>Outfit</c> as a parameter. <c>changeShirts</c>
             also takes a <c>Shirt</c> as a parameter and <c>changePants</c> also takes a <c>Pants</c> as a parameter.
             Each function modifies the <c>Outfit</c> and changes the shirt or pants to the new input. Use
-            the lines to construct the code, then go back to complete the Activecode tab.</p>
+            the lines to construct the code, then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="2">

@@ -7,7 +7,6 @@
         Then <c>rectangleInfo</c> prints out the area and perimeter of the rectangle.</p>
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_8_AC_1q">
         <input>
 #include &lt;iostream&gt;
@@ -24,8 +23,7 @@ int main() {
     </program>
     <solution><p>Below is one way to implement the program. We prompt the user for input using <c>cin</c>
       before printing the area and perimeter.</p> Below is one way to implement the program. We
-      prompt the user for input using cin before printing the area and perimeter. <program xml:id="cp_8_AC_1a"
-               language="cpp">
+      prompt the user for input using cin before printing the area and perimeter. <program xml:id="cp_8_AC_1a">
         <input>
 #include &lt;iostream&gt;
 using namespace std;
@@ -49,12 +47,11 @@ int main() {
   <exercise label="cp_8_2">
     <statement>
       <p>Write a simple function called <c>greetUser</c> which prompts the user for their full name. Then the
-        function outputs &#8220;Hello <c>fullName</c>!&#8221;. Select the Parsonsprob tab for hints for the
+        function outputs &#8220;Hello <c>fullName</c>!&#8221;. Check the hint below for help with the
         construction of the code.</p>
 
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_8_AC_2q_editor">
         <input>
 #include &lt;iostream&gt;
@@ -74,7 +71,7 @@ int main() {
         <statement>
           <p>Write a simple function called <c>greetUser</c> which prompts the user for their full name. Then
             the function outputs &#8220;Hello <c>fullName</c>!&#8221;. Use the lines to construct the code,
-            then go back to complete the Activecode tab.</p>
+            then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="4">
@@ -118,7 +115,6 @@ int main() {
         has <c>batteryLevelPercentage</c> percent battery and is currently executing the task &#8220;<c>task</c>&#8221;.</p>
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_8_AC_3q">
         <input>
 #include &lt;iostream&gt;
@@ -141,8 +137,7 @@ int main() {
       in the <c>struct</c> definition. Next, we use dot notation to access the instance variables and
       output them using <c>cout</c>.</p> Below is one way to implement the program. First we declare the
       instance variables in the struct definition. Next, we use dot notation to access the instance
-      variables and output them using cout. <program xml:id="cp_8_AC_3a"
-               language="cpp">
+      variables and output them using cout. <program xml:id="cp_8_AC_3a">
         <input>
 #include &lt;iostream&gt;
 using namespace std;
@@ -178,12 +173,10 @@ int main() {
     <statement>
       <p>Robots will naturally deplete their charge as they carry out tasks. Write a function called <c>chargeRobot</c>
         which takes a <c>Robot</c> as a parameter and charges the robot to 100 percent. Then output the
-        statement &#8220;Robot <c>name</c> is fully charged!&#8221;. Select the Parsonsprob tab for
-        hints for the construction of the code.</p>
+        statement &#8220;Robot <c>name</c> is fully charged!&#8221;. Check the hint below for help with the construction of the code.</p>
 
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_8_AC_4q_editor">
         <input>
 #include &lt;iostream&gt;
@@ -226,7 +219,7 @@ void printRobotData (Robot r) {
           <p>Robots will naturally deplete their charge as they carry out tasks. Write a function
             called <c>chargeRobot</c> which takes a <c>Robot</c> as a parameter and charges the robot to 100
             percent. Then output the statement &#8220;Robot <c>name</c> is fully charged!&#8221;. Use
-            the lines to construct the code, then go back to complete the Activecode tab.</p>
+            the lines to construct the code, then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="3">
@@ -262,7 +255,6 @@ void printRobotData (Robot r) {
         percent, and resets the task to &#8220;Idle&#8221;.</p>
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_8_AC_5q">
         <input>
 #include &lt;iostream&gt;
@@ -304,8 +296,7 @@ void printRobotData (Robot r) {
       use dot notation to ensure that the <c>model</c> and <c>serialNumber</c> are the same.</p> Below is one way to
       implement the program. We can create another Robot with the settings after being reset. Then
       we set r equal to the new Robot we created. Notice we use dot notation to ensure that the
-      model and serialNumber are the same. <program xml:id="cp_8_AC_5a"
-               language="cpp">
+      model and serialNumber are the same. <program xml:id="cp_8_AC_5a">
         <input>
 #include &lt;iostream&gt;
 using namespace std;
@@ -352,11 +343,10 @@ void printRobotData (Robot r) {
       <p>Write the <c>Pokemon</c> structure, which has instance variables <c>string pokeName</c>, <c>string type</c>, <c>int level</c>, and <c>int healthPercentage</c>
         in that order. Next, write the function <c>printPokeInfo</c>, which takes a <c>Pokemon</c> as a parameter and
         outputs the Pokemon&#8217;s info in the following format: <c>pokeName</c> (Lv. <c>level</c>, <c>healthPercentage</c>%
-        HP). Select the Parsonsprob tab for hints for the construction of the code.</p>
+        HP). Check the hint below for help with the construction of the code.</p>
 
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_8_AC_6q_editor">
         <input>
 #include &lt;iostream&gt;
@@ -382,7 +372,7 @@ int main() {
             and <c>int healthPercentage</c> in that order. Next, write the function <c>printPokeInfo</c>, which takes a <c>Pokemon</c> as a
             parameter and outputs the Pokemon&#8217;s info in the following format: <c>pokeName</c> (Lv. <c>level</c>
             , <c>healthPercentage</c>% HP). Use the lines to construct the code, then go back to complete the
-            Activecode tab.</p>
+            Activecode.</p>
         </statement>
         <blocks>
           <block order="7">
@@ -432,7 +422,6 @@ int main() {
         For example, the code below should print:</p>
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_8_AC_7q">
         <input>
 #include &lt;iostream&gt;
@@ -473,8 +462,7 @@ void printPokeInfo(Pokemon p) {
       in the <c>struct</c> definition. Next, we call <c>printPokeInfo</c> on each <c>Pokemon</c> in <c>Trainer</c> and output the
       trainer&#8217;s info in the correct format.</p> Below is one way to implement the program.
       First we declare the instance variables in the struct definition. Next, we call printPokeInfo
-      on each Pokemon in Trainer and output the trainer&#8217;s info in the correct format. <program xml:id="cp_8_AC_7a"
-               language="cpp">
+      on each Pokemon in Trainer and output the trainer&#8217;s info in the correct format. <program xml:id="cp_8_AC_7a">
         <input>
 #include &lt;iostream&gt;
 using namespace std;
@@ -531,11 +519,10 @@ void printPokeInfo(Pokemon p) {
     <statement>
       <p>When Pokemon are injured, they can be healed up at the Pokemon Center. Write the function <c>healPokemon</c>,
         which takes a <c>Trainer</c> as a parameter and heals the Trainer&#8217;s Pokemon to 100 percent
-        health. Select the Parsonsprob tab for hints for the construction of the code.</p>
+        health. Check the hint below for help with the construction of the code.</p>
 
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_8_AC_8q_editor">
         <input>
 #include &lt;iostream&gt;
@@ -597,7 +584,7 @@ void printTrainerInfo(Trainer t) {
           <p>When Pokemon are injured, they can be healed up at the Pokemon Center. Write the
             function <c>healPokemon</c>, which takes a <c>Trainer</c> as a parameter and heals the Trainer&#8217;s
             Pokemon to 100 percent health. Use the lines to construct the code, then go back to
-            complete the Activecode tab.</p>
+            complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="3">
@@ -643,7 +630,6 @@ void printTrainerInfo(Trainer t) {
         user inputs an invalid character, output the error message.</p>
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_8_AC_9q">
         <input>
 #include &lt;iostream&gt;
@@ -712,8 +698,7 @@ void healPokemon(Trainer&amp; t) {
     <solution><p>Below is one way to implement the program. We use conditionals to perform
         the correct output and operation depending on the user&#8217;s input.</p> Below is one way
       to implement the program. We use conditionals to perform the correct output and operation
-      depending on the user&#8217;s input. <program xml:id="cp_8_AC_9a"
-               language="cpp">
+      depending on the user&#8217;s input. <program xml:id="cp_8_AC_9a">
         <input>
 #include &lt;iostream&gt;
 using namespace std;
@@ -805,8 +790,7 @@ void healPokemon(Trainer&amp; t) {
         their weight on that planet. If the user inputs an invalid planet, print out an error
         message. The weight conversion are as follows (multiply the number by <c>earthWeight</c> to get the
         weight on that planet): Mercury - 0.38, Venus - 0.91, Earth - 1.00, Mars - 0.38, Jupiter -
-        2.34, Saturn - 1.06, Uranus - 0.92, and Neptune - 1.19. Select the Parsonsprob tab for hints
-        for the construction of the code. Below are some examples.</p>
+        2.34, Saturn - 1.06, Uranus - 0.92, and Neptune - 1.19. Check the hint below for help with the construction of the code. Below are some examples.</p>
       <pre>Please enter your weight in pounds: 145.6
 Please select a planet: 3
 Your weight on Earth is 145.6 pounds.
@@ -825,7 +809,6 @@ Error, not a valid planet.</pre>
 
     </statement>
     <program interactive="activecode"
-             language="cpp"
              xml:id="cp_8_AC_10q_editor">
         <input>
 #include &lt;iostream&gt;
@@ -849,7 +832,7 @@ int main() {
             print out an error message. The weight conversion are as follows (multiply the number by <c>earthWeight</c>
             to get the weight on that planet): Mercury - 0.38, Venus - 0.91, Earth - 1.00, Mars -
             0.38, Jupiter - 2.34, Saturn - 1.06, Uranus - 0.92, and Neptune - 1.19. Use the lines to
-            construct the code, then go back to complete the Activecode tab. Below are some
+            construct the code, then go back to complete the Activecode. Below are some
             examples.</p>
           <p>
             <pre>Please enter your weight in pounds: 145.6

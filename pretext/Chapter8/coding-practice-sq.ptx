@@ -7,7 +7,7 @@
         <statement>
           <p>Write a simple function called <c>greetUser</c> which prompts the user
                     for their full name. Then the function outputs <q>Hello <c>fullName</c>!</q>.
-                    Select the Parsonsprob tab for hints for the construction of the code.</p>
+                    Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_8_AC_2q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
@@ -30,7 +30,7 @@ int main() {
         <statement>
           <p>Write a simple function called <c>greetUser</c> which prompts the user
                     for their full name. Then the function outputs <q>Hello <c>fullName</c>!</q>.
-                    Use the lines to construct the code, then go back to complete the Activecode tab.</p>
+                    Use the lines to construct the code, then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="4">
@@ -70,7 +70,7 @@ int main() {
           <p>Robots will naturally deplete their charge as they carry out tasks.
                     Write a function called <c>chargeRobot</c> which takes a <c>Robot</c> as
                     a parameter and charges the robot to 100 percent. Then output the statement
-                    <q>Robot <c>name</c> is fully charged!</q>. Select the Parsonsprob tab for hints for
+                    <q>Robot <c>name</c> is fully charged!</q>. Check the hint below for help with
                     the construction of the code.</p>
         </statement>
         <program xml:id="cp_8_AC_4q_editor" interactive="activecode" line-numbers="yes">
@@ -117,7 +117,7 @@ void printRobotData(Robot r) {
                     Write a function called <c>chargeRobot</c> which takes a <c>Robot</c> as
                     a parameter and charges the robot to 100 percent. Then output the statement
                     <q>Robot <c>name</c> is fully charged!</q>. Use the lines to construct the code, then
-                    go back to complete the Activecode tab.</p>
+                    go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="3">
@@ -152,7 +152,7 @@ void printRobotData(Robot r) {
                     <c>string type</c>, <c>int level</c>, and <c>int healthPercentage</c> in that order.
                     Next, write the function <c>printPokeInfo</c>, which takes a <c>Pokemon</c> as a parameter and outputs the
                     Pokemon's info in the following format: <c>pokeName</c> (Lv. <c>level</c>, <c>healthPercentage</c>% HP).
-                    Select the Parsonsprob tab for hints for the construction of the code.</p>
+                    Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_8_AC_6q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
@@ -181,7 +181,7 @@ int main() {
                     <c>string type</c>, <c>int level</c>, and <c>int healthPercentage</c> in that order.
                     Next, write the function <c>printPokeInfo</c>, which takes a <c>Pokemon</c> as a parameter and outputs the
                     Pokemon's info in the following format: <c>pokeName</c> (Lv. <c>level</c>, <c>healthPercentage</c>% HP).
-                    Use the lines to construct the code, then go back to complete the Activecode tab.</p>
+                    Use the lines to construct the code, then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="7">
@@ -228,8 +228,7 @@ int main() {
         <statement>
           <p>When Pokemon are injured, they can be healed up at the Pokemon Center.
                     Write the function <c>healPokemon</c>, which takes a <c>Trainer</c> as a parameter
-                    and heals the Trainer's Pokemon to 100 percent health. Select the Parsonsprob
-                    tab for hints for the construction of the code.</p>
+                    and heals the Trainer's Pokemon to 100 percent health. Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_8_AC_8q_editor" interactive="activecode" line-numbers="yes">
           <input><![CDATA[
@@ -293,7 +292,7 @@ void printTrainerInfo(Trainer t) {
           <p>When Pokemon are injured, they can be healed up at the Pokemon Center.
                     Write the function <c>healPokemon</c>, which takes a <c>Trainer</c> as a parameter
                     and heals the Trainer's Pokemon to 100 percent health. Use the lines to construct
-                    the code, then go back to complete the Activecode tab.</p>
+                    the code, then go back to complete the Activecode.</p>
         </statement>
         <blocks>
           <block order="3">
@@ -341,7 +340,7 @@ void printTrainerInfo(Trainer t) {
                     If the user inputs an invalid planet, print out an error message.
                     The weight conversion are as follows (multiply the number by <c>earthWeight</c> to get the weight on that planet):
                     Mercury - 0.38, Venus - 0.91, Earth - 1.00, Mars - 0.38, Jupiter - 2.34, Saturn - 1.06, Uranus - 0.92, and Neptune - 1.19.
-                    Select the Parsonsprob tab for hints for the construction of the code.
+                    Check the hint below for help with the construction of the code.
                     Below are some examples.</p>
           <program>Please enter your weight in pounds: 145.6
 Please select a planet: 3
@@ -384,7 +383,7 @@ int main() {
                     If the user inputs an invalid planet, print out an error message.
                     The weight conversion are as follows (multiply the number by <c>earthWeight</c> to get the weight on that planet):
                     Mercury - 0.38, Venus - 0.91, Earth - 1.00, Mars - 0.38, Jupiter - 2.34, Saturn - 1.06, Uranus - 0.92, and Neptune - 1.19.
-                    Use the lines to construct the code, then go back to complete the Activecode tab.
+                    Use the lines to construct the code, then go back to complete the Activecode.
                     Below are some examples.</p>
           <program>Please enter your weight in pounds: 145.6
 Please select a planet: 3
