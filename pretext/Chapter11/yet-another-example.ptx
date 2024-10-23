@@ -21,7 +21,7 @@
     .</p>
   <listing label="yet_another_example_AC_1">
     <caption>
-      <p>Feel free to try out the <c>convertToSeconds()</c> function in this active code!</p>
+      Feel free to try out the <c>convertToSeconds()</c> function in this active code!
     </caption>
     <program xml:id="yet_another_example_AC_1_editor"
              interactive="activecode"

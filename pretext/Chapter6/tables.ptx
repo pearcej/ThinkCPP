@@ -21,8 +21,8 @@
     iteration.</p>
   <listing label="tables_AC_1">
     <caption>
-      <p>This active code outputs a sequence of values in the left column
-        and their logarithms in the right column.</p>
+      This active code outputs a sequence of values in the left column
+        and their logarithms in the right column.
     </caption>
     <program xml:id="tables_AC_1_editor"
              interactive="activecode"
@@ -87,8 +87,8 @@ int main() {
     of other powers of two, we could modify the program like this:</p>
   <listing label="tables_AC_2">
     <caption>
-      <p>If we wanted to find the logarithms of other powers of two,
-        we could modify the program like this. Run this active code.</p>
+      If we wanted to find the logarithms of other powers of two,
+        we could modify the program like this. Run this active code.
     </caption>
     <program xml:id="tables_AC_2_editor"
              interactive="activecode"

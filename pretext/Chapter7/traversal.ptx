@@ -12,7 +12,7 @@
   </note>
   <listing label="traversal_AC_1">
     <caption>
-      <p>This active code outputs each letter of string <c>fruit</c> using a while loop.</p>
+      This active code outputs each letter of string <c>fruit</c> using a while loop.
     </caption>
     <program xml:id="traversal_AC_1_editor"
              interactive="activecode"
@@ -46,9 +46,9 @@ int main() {
     letters backwards, all on one line.</p>
   <exercise label="traversal_1">
     <caption>
-      <p>Try writing the <c>reverseWord</c> function in the commented section of this active code. If done
+      Try writing the <c>reverseWord</c> function in the commented section of this active code. If done
         correctly, the program should output <q>hello</q> backwards. If you get stuck, you can
-        reveal the hint below for help.</p>
+        reveal the hint below for help.
     </caption>
     <program xml:id="traversal_AC_2_editor"
              interactive="activecode"

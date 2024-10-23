@@ -8,7 +8,7 @@
     program structure below.</p>
   <listing xml:id="first_program_AC_list">
     <caption>
-      <p>This program prints <q>Hello, World.</q> to the output.</p>
+      This program prints <q>Hello, World.</q> to the output.
     </caption>
     <program interactive="activecode"  label="first_program_AC"
              line-numbers="yes">

@@ -176,7 +176,7 @@ cout &lt;&lt; e_double;</program>
     then the program will carry out floating point division.</p>
   <listing label="floating_point_a1">
     <caption>
-      <p>Run the code to see what type of division occurs each time.</p>
+      Run the code to see what type of division occurs each time.
     </caption>
     <program label="floating_point_a1_editor"
              interactive="activecode"

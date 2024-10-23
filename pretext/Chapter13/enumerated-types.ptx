@@ -39,10 +39,10 @@ TEN, JACK, QUEEN, KING };</program>
   <program>Card card (1, 11);</program>
   <listing label="enum_type_AC_1">
     <caption>
-      <p>This active code uses the enumerated types created above to construct <c>Card</c> objects. Feel
+      This active code uses the enumerated types created above to construct <c>Card</c> objects. Feel
         free to modify the values that the cards are being initialized to in the constructor: this
         will change the output from the <c>print</c> function. Notice how this is much clearer than using
-        integers.</p>
+        integers.
     </caption>
     <program xml:id="enum_type_AC_1_editor"
              interactive="activecode"

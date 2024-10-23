@@ -10,7 +10,7 @@
             turns out we can do both at the same time:</p>
   <listing label="composition_AC_1">
     <caption>
-      <p>This program performs multiplication and prints the result.</p>
+      This program performs multiplication and prints the result.
     </caption>
     <program xml:id="composition_AC_1_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[
@@ -29,7 +29,7 @@ int main() {
             used inside an output statement. We've already seen one example:</p>
   <listing label="composition_AC_2">
     <caption>
-      <p>This program performs a calculation involving variables and prints the result at the same time.</p>
+      This program performs a calculation involving variables and prints the result at the same time.
     </caption>
     <program xml:id="composition_AC_2_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[
@@ -48,7 +48,7 @@ int main() {
             assignment statement:</p>
   <listing label="composition_AC_3">
     <caption>
-      <p>This program performs a calculation involving variables and assigns the result to a variable.</p>
+      This program performs a calculation involving variables and assigns the result to a variable.
     </caption>
     <program xml:id="composition_AC_3_editor" interactive="activecode" line-numbers="yes">
       <input><![CDATA[

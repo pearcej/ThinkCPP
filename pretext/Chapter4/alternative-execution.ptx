@@ -34,9 +34,9 @@ else {
 printParity(int number);         // WRONG!!!</program>
   <listing label="alt_execution_AC_1">
     <caption>
-      <p>This program shows you how the print parity function works.
+      This program shows you how the print parity function works.
         Feel free to modify the values of number and otherNumber to
-        see how the output is changed.</p>
+        see how the output is changed.
     </caption>
     <program xml:id="alt_execution_AC_1_editor"
              interactive="activecode"

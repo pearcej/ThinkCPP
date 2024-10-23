@@ -33,7 +33,7 @@ printVector(vector);</program>
   <p>which is pretty random-looking. Your results might be different.</p>
   <listing label="vector_of_rand_nums_AC_1">
     <caption>
-      <p>Try running this active code.</p>
+      Try running this active code.
     </caption>
     <program xml:id="vector_of_rand_nums_AC_1_editor"
              interactive="activecode"

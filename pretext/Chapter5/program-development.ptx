@@ -78,8 +78,8 @@ cout &lt;&lt; dist &lt;&lt; endl;</program>
   <p>Then in main, we should output and check the value of the result.</p>
   <listing label="program_dvlmt_AC_1">
     <caption>
-      <p>This program implements the distance function that we've been
-        talking about and outputs the result.</p>
+      This program implements the distance function that we've been
+        talking about and outputs the result.
     </caption>
     <program xml:id="program_dvlmt_AC_1_editor"
              interactive="activecode"

@@ -48,7 +48,7 @@ public:
     programs.</p>
   <listing label="priv_data_AC_1">
     <caption>
-      <p>Run this active code. Uncomment the commented out code to see what happens!</p>
+      Run this active code. Uncomment the commented out code to see what happens!
     </caption>
     <program xml:id="priv_data_AC_1_editor"
              interactive="activecode"

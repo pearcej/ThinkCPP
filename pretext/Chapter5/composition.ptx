@@ -30,10 +30,10 @@ return result;</program>
 }</program>
   <listing label="fun_comp_AC_1">
     <caption>
-      <p>This program shows you how the distance and area functions are
+      This program shows you how the distance and area functions are
         composed in the fred function to calculate the area of a circle
         if we only know the coordinates of the center, and one other point
-        of the circle.</p>
+        of the circle.
     </caption>
     <program xml:id="fun_comp_AC_1_editor"
              interactive="activecode"
@@ -169,8 +169,8 @@ int main() {
     different functions.</p>
   <listing label="multi_comp_1">
     <caption>
-      <p>This program shows how mutliple calls are made to one function and it
-        also shows that calling two or more different functions is valid.</p>
+      This program shows how mutliple calls are made to one function and it
+        also shows that calling two or more different functions is valid.
     </caption>
     <program xml:id="multi_comp_1_editor"
              interactive="activecode"

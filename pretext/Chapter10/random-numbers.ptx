@@ -23,7 +23,7 @@
     you get a different randomly-generated number. To see a sample, run this loop:</p>
   <listing label="random_numbers_AC_1">
     <caption>
-      <p>Take a look at this active code, which generates 4 random numbers.</p>
+      Take a look at this active code, which generates 4 random numbers.
     </caption>
     <program xml:id="random_numbers_AC_1_editor"
              interactive="activecode"
@@ -63,7 +63,7 @@ int y = x % upperBound;</program>
   </note>
   <listing label="random_numbers_AC_2">
     <caption>
-      <p>This active code generates random numbers between 1 and 7.</p>
+      This active code generates random numbers between 1 and 7.
     </caption>
     <program xml:id="random_numbers_AC_2_editor"
              interactive="activecode"

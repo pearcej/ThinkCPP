@@ -36,8 +36,8 @@ while (i &lt; 4) {
     beans and a nice Chianti.</p>
   <listing label="accessing_elements_AC_1">
     <caption>
-      <p>Take a look at this active code. We can modify the vectors by accessing
-        its elements.</p>
+      Take a look at this active code. We can modify the vectors by accessing
+        its elements.
     </caption>
     <program xml:id="accessing_elements_AC_1_editor"
              interactive="activecode"

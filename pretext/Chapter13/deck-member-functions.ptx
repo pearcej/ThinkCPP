@@ -18,8 +18,8 @@
     without using dot notation.</p>
   <listing label="deck_members_AC_1">
     <caption>
-      <p>This active code prints out the deck of cards like in the previous section. Notice we can
-        just use <c>deck.print()</c> to print out the deck instead of writing a for loop in main.</p>
+      This active code prints out the deck of cards like in the previous section. Notice we can
+        just use <c>deck.print()</c> to print out the deck instead of writing a for loop in main.
     </caption>
     <program xml:id="deck_members_AC_1_editor"
              interactive="activecode"
@@ -239,7 +239,7 @@ struct Deck {
   </exercise>
   <listing label="deck_members_AC_2">
     <caption>
-      <p>This active code uses the <c>Deck::find</c> function you just built.</p>
+      This active code uses the <c>Deck::find</c> function you just built.
     </caption>
     <program xml:id="deck_members_AC_2_editor"
              interactive="activecode"

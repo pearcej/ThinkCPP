@@ -5,7 +5,7 @@
     example, to output more than one line:</p>
   <listing label="more_output_AC_1">
     <caption>
-      <p>This program prints two different statements on two different lines using <c>endl</c>.</p>
+      This program prints two different statements on two different lines using <c>endl</c>.
     </caption>
     <program label="more_output_AC_1_editor"
              interactive="activecode"
@@ -36,7 +36,7 @@ int main() {
     can do this by leaving out the first <c>endl</c>:</p>
   <listing label="more_output_AC_2">
     <caption>
-      <p>This program prints two different statements on the same line.</p>
+      This program prints two different statements on the same line.
     </caption>
     <program xml:id="more_output_AC_2_editor"
              interactive="activecode"
@@ -61,9 +61,9 @@ world!</c>. Notice in <c>main</c> that there is a
     the behavior of the program. For example, I could have written:</p>
   <listing label="more_output_AC_3">
     <caption>
-      <p>This program accomplishes the same thing as the one above. The
+      This program accomplishes the same thing as the one above. The
         difference is that there are no spaces separating the different
-        components of each line.</p>
+        components of each line.
     </caption>
     <program xml:id="more_output_AC_3_editor"
              interactive="activecode"
@@ -84,9 +84,9 @@ int main() {
     behavior either, so I could have written:</p>
   <listing label="more_output_AC_4">
     <caption>
-      <p>This program accomplishes the same thing as the two above, but
+      This program accomplishes the same thing as the two above, but
         it only uses one line. However, this format is pretty messy and relatively
-        hard to follow.</p>
+        hard to follow.
     </caption>
     <program xml:id="more_output_AC_4_editor"
              interactive="activecode"

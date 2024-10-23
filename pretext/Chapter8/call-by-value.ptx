@@ -17,8 +17,8 @@
     structure (or other type) that gets passed to the function.</p>
   <listing label="call_by_value_AC_1">
     <caption>
-      <p>Take a look at this active code. Notice from the output of the code below how the function <c>addTwo</c>
-        changes the instance variables, but not on <c>blank</c> itself.</p>
+      Take a look at this active code. Notice from the output of the code below how the function <c>addTwo</c>
+        changes the instance variables, but not on <c>blank</c> itself.
     </caption>
     <program xml:id="call_by_value_AC_1_editor"
              interactive="activecode"

@@ -29,9 +29,9 @@ Time breadTime = { 3, 35, 0.0 };</program>
   <program>Time currentTime(9, 14, 30.0);</program>
   <listing label="initialize_or_construct_AC_1">
     <caption>
-      <p>In this active code, you can experiment passing values into the two
+        In this active code, you can experiment passing values into the two
         different constructors that we have defined on this page and the previous
-        page.</p>
+        page.
     </caption>
     <program label="initialize_or_construct_AC_1"
              interactive="activecode"

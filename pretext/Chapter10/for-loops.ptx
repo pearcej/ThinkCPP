@@ -30,7 +30,7 @@ while (i &lt; 4) {
 }</program>
   <listing label="for_loops_AC_1">
     <caption>
-      <p>Run this active code, which uses a <c>for</c> loop.</p>
+      Run this active code, which uses a <c>for</c> loop.
     </caption>
     <program xml:id="for_loops_AC_1_editor"
              interactive="activecode"
@@ -52,7 +52,7 @@ int main() {
   </listing>
   <listing label="for_loops_AC_2">
     <caption>
-      <p>Run this active code, which uses a <c>while</c> loop.</p>
+      Run this active code, which uses a <c>while</c> loop.
     </caption>
     <program xml:id="for_loops_AC_2_editor"
              interactive="activecode"
@@ -77,8 +77,8 @@ int main() {
   <p>The <c>INCREMENTOR</c> does not have to do <c>++</c> to a variable. It can be any statement you like, but it should do something to modify the looping variable. If you want to count down, you could use <c>i--</c> as your <c>INCREMENTOR</c>.</p>
   <listing label="for_loops_AC_3">
     <caption>
-      <p>Run this active code, which uses a <c>for</c> loop with a negative change in the <q>
-        INCREMENTOR</q>.</p>
+      Run this active code, which uses a <c>for</c> loop with a negative change in the <q>
+        INCREMENTOR</q>.
     </caption>
     <program xml:id="for_loops_AC_3_editor"
              interactive="activecode"

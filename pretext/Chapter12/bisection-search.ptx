@@ -129,9 +129,9 @@ I found the card at index = -1</output></console>
     convince yourself.</p>
   <listing label="12_9">
     <caption>
-      <p>The code below searches finds the same card from the same deck we used on the previous
+      The code below searches finds the same card from the same deck we used on the previous
         page.
-        This time, it uses bisection search to locate the card.</p>
+        This time, it uses bisection search to locate the card.
     </caption>
     <program xml:id="c12_9_editor"
              interactive="activecode"

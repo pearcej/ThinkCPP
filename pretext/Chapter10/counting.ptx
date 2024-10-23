@@ -42,9 +42,9 @@
 }</program>
   <listing label="counting_AC_1">
     <caption>
-      <p>Take a look at this active code which uses the <c>howMany</c> function. Run the code to see how
+      Take a look at this active code which uses the <c>howMany</c> function. Run the code to see how
         many times the target appears in the vector! Feel free to modify the code and experiment
-        around.</p>
+        around.
     </caption>
     <program xml:id="counting_AC_1_editor"
              interactive="activecode"

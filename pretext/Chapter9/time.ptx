@@ -9,8 +9,8 @@
     so we can record fractions of a second.</p>
   <listing label="time_AC_1">
     <caption>
-      <p>This active code shows what the structure definition looks like. We can create a <c>Time</c>
-        object in the usual way.</p>
+      This active code shows what the structure definition looks like. We can create a <c>Time</c>
+        object in the usual way.
     </caption>
     <program xml:id="time_AC_1_editor"
              interactive="activecode"

@@ -24,8 +24,8 @@ cin &gt;&gt; x;</program>
   <p>Thus, getting input from the user might look like this:</p>
   <listing label="getting_user_input_AC_1">
     <caption>
-      <p>This active code is an example of what getting input from the
-        user might look like. Feel free to change 42 to other values!</p>
+      This active code is an example of what getting input from the
+        user might look like. Feel free to change 42 to other values!
     </caption>
     <program xml:id="getting_user_input_AC_1_editor"
              interactive="activecode"
@@ -79,8 +79,8 @@ cout &lt;&lt; name &lt;&lt; endl;</program>
     strings that contain spaces.</p>
   <listing label="getting_user_input_AC_2">
     <caption>
-      <p>This active code is an example of what getting input from the user might look like using <c>getline</c>.
-        Feel free to change <q>Harry Potter</q> to other values!</p>
+      This active code is an example of what getting input from the user might look like using <c>getline</c>.
+        Feel free to change <q>Harry Potter</q> to other values!
     </caption>
     <program xml:id="getting_user_input_AC_2_editor"
              interactive="activecode"

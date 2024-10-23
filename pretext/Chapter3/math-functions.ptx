@@ -17,8 +17,8 @@
     using a syntax that is similar to mathematical notation:</p>
   <listing label="math_functions_AC_1">
     <caption>
-      <p>This program performs calculations using some of the built-in functions
-        from the cmath library.</p>
+      This program performs calculations using some of the built-in functions
+        from the cmath library.
     </caption>
     <program xml:id="math_functions_AC_1_editor"
              interactive="activecode"
@@ -54,10 +54,10 @@ int main() {
     \pi</m> is -1.</p>
   <listing label="math_functions_AC_2">
     <caption>
-      <p>This program also uses built-in functions from the cmath library,
+      This program also uses built-in functions from the cmath library,
         specifically the functions that deal with angles. As you can see,
         we have a line of code that converts the default radians value to
-        degrees.</p>
+        degrees.
     </caption>
     <program xml:id="math_functions_AC_2_editor"
              interactive="activecode"

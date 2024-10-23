@@ -6,9 +6,9 @@
     inside <c>printTwice</c> there is no such thing as argument.</p>
   <listing xml:id="locals_AC_1">
     <caption>
-      <p>The following code will show the output of the printTwice function.
+      The following code will show the output of the printTwice function.
         Notice that it is the argument &#x2018;b' that is outputted, not the
-        variable &#x2018;phil'.</p>
+        variable &#x2018;phil'.
     </caption>
     <program xml:id="locals_AC_1_editor"
              interactive="activecode"

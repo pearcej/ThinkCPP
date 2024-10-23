@@ -68,7 +68,7 @@ currentTime.print();</program>
     interface different from what you promised, the compiler will complain.</p>
   <listing label="print_AC_1">
     <caption>
-      <p>Feel free to mess around with input for <c>currentTime</c> in this active code!</p>
+      Feel free to mess around with input for <c>currentTime</c> in this active code!
     </caption>
     <program xml:id="print_AC_1_editor"
              interactive="activecode"

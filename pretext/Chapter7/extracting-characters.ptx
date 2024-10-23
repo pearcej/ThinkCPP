@@ -6,8 +6,8 @@
     characters. C++ uses square brackets (<c>[</c> and <c>]</c>) for this operation.</p>
   <listing label="extracting_characters_AC_1">
     <caption>
-      <p>Take a look at this active code. We extract the character at index 1 from string <c>fruit</c>
-        using <c>[</c> and <c>]</c>.</p>
+      Take a look at this active code. We extract the character at index 1 from string <c>fruit</c>
+        using <c>[</c> and <c>]</c>.
     </caption>
     <program xml:id="extracting_characters_AC_1_editor"
              interactive="activecode"
@@ -39,7 +39,7 @@ int main() {
     the square brackets.</p>
   <listing label="extracting_characters_AC_2">
     <caption>
-      <p>This active code accesses the first character in string <c>fruit</c>.</p>
+      This active code accesses the first character in string <c>fruit</c>.
     </caption>
     <program xml:id="extracting_characters_AC_2_editor"
              interactive="activecode"

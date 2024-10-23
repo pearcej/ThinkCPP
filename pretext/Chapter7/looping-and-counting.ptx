@@ -3,8 +3,8 @@
   <title>Looping and counting</title>
   <listing label="looping_and_counting_AC_1">
     <caption>
-      <p>This active code counts the number of times the letter <c>'a'</c> appears in a string <c>fruit</c>
-        .</p>
+      This active code counts the number of times the letter <c>'a'</c> appears in a string <c>fruit</c>
+        .
     </caption>
     <program xml:id="looping_and_counting_AC_1_editor"
              interactive="activecode"

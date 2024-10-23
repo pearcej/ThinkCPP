@@ -40,7 +40,7 @@ for (int suit = 0; suit &lt;= 3; suit++) {
     and that returns a fully-populated vector of <c>Card</c>s.</p>
   <listing label="12_6">
     <caption>
-      <p>Take a look at this active code, which includes the implementation of the <c>buildDeck</c> function.</p>
+      Take a look at this active code, which includes the implementation of the <c>buildDeck</c> function.
     </caption>
     <program xml:id="c12_6_editor"
              interactive="activecode"

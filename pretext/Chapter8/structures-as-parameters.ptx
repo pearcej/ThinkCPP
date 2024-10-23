@@ -9,7 +9,7 @@
     it will output <c>(3, 4)</c>.</p>
   <listing label="structures_parameters_AC_1">
     <caption>
-      <p>This active code uses the <c>printPoint</c> function. Run the code to see the output!</p>
+      This active code uses the <c>printPoint</c> function. Run the code to see the output!
     </caption>
     <program xml:id="structures_parameters_AC_1_editor"
              interactive="activecode"
@@ -46,8 +46,8 @@ int main() {
 }</program>
   <listing label="structures_parameters_AC_2">
     <caption>
-      <p>This active code uses the updated version of the <c>distance</c> function. Feel free to modify the
-        code!</p>
+      This active code uses the updated version of the <c>distance</c> function. Feel free to modify the
+        code!
     </caption>
     <program xml:id="structures_parameters_AC_2_editor"
              interactive="activecode"

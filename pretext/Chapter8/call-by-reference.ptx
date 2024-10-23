@@ -25,8 +25,8 @@ reflect (blank);
 printPoint (blank);</program>
   <listing label="call_by_reference_AC_1">
     <caption>
-      <p>Take a look at this active code. <c>reflect</c> passes the parameter <c>p</c> by reference. Notice
-        that the output of this code matches what we expect it to be.</p>
+      Take a look at this active code. <c>reflect</c> passes the parameter <c>p</c> by reference. Notice
+        that the output of this code matches what we expect it to be.
     </caption>
     <program xml:id="call_by_reference_AC_1_editor"
              interactive="activecode"

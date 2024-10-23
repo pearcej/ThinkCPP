@@ -5,7 +5,7 @@
     syntax for calling this function is a little different from what we've seen before.</p>
   <listing label="length_AC_1">
     <caption>
-      <p>This active code outputs the length of string <c>fruit</c>.</p>
+      This active code outputs the length of string <c>fruit</c>.
     </caption>
     <program xml:id="length_AC_1_editor"
              interactive="activecode"
@@ -45,8 +45,8 @@ char last = fruit[length];       // WRONG!!</program>
   </warning>
   <listing label="length_AC_2">
     <caption>
-      <p>This active code outputs the last character in string <c>fruit</c> using the <c>length</c>
-        function.</p>
+      This active code outputs the last character in string <c>fruit</c> using the <c>length</c>
+        function.
     </caption>
     <program xml:id="length_AC_2_editor"
              interactive="activecode"

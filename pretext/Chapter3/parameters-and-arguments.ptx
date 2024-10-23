@@ -53,8 +53,8 @@
     exceptions later.</p>
   <listing label="params_args_AC_1">
     <caption>
-      <p>The following code will show the output of the printTwice function.
-        Try modifying the value of argument to change the output.</p>
+      The following code will show the output of the printTwice function.
+        Try modifying the value of argument to change the output.
     </caption>
     <program xml:id="params_args_AC_1_editor"
              interactive="activecode"

@@ -27,7 +27,7 @@
     them might modify the instance variables.</p>
   <listing label="fourteenfour">
     <caption>
-      <p>Take a look at this active code, which uses the <c>getReal</c> accessor function.</p>
+      Take a look at this active code, which uses the <c>getReal</c> accessor function.
     </caption>
     <program xml:id="fourteenfour_editor"
              interactive="activecode"

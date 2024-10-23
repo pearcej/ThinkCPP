@@ -5,7 +5,7 @@
     also work on characters. For example, observe the output of the following program.</p>
   <listing label="char_operations_AC_1">
     <caption>
-      <p>This program performs character addition.</p>
+      This program performs character addition.
     </caption>
     <program xml:id="char_operations_AC_1_editor"
              interactive="activecode"
@@ -34,8 +34,8 @@ int main() {
     types. For example, the following is legal.</p>
   <listing label="char_operations_AC_2">
     <caption>
-      <p>This program performs automatic type converstion. It converts <c>'a'</c>
-        to its ASCII value.</p>
+      This program performs automatic type converstion. It converts <c>'a'</c>
+        to its ASCII value.
     </caption>
     <program xml:id="char_operations_AC_2_editor"
              interactive="activecode"

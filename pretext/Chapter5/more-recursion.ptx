@@ -112,7 +112,7 @@ int main() {
            width="50%"
            alt="A stack of five boxes showing the values of variables and the return value of a call to factorial(3)."/>
     <caption>
-      <p>The return values are shown being passed back up the stack.</p>
+      The return values are shown being passed back up the stack.
     </caption>
   </figure>
   <p>Notice that in the last instance of factorial, the local variables

@@ -21,7 +21,7 @@
     it a constructor. Now we can create a standard 52-card deck with the simple declaration <c>Deck deck;</c></p>
   <listing label="deck_constructor_AC_1">
     <caption>
-      <p>This active code prints out the cards in a deck using the loop from the previous section.</p>
+      This active code prints out the cards in a deck using the loop from the previous section.
     </caption>
     <program xml:id="deck_constructor_AC_1_editor"
              interactive="activecode"

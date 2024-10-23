@@ -16,7 +16,7 @@ Point center = findCenter (box);
 printPoint (center);</program>
   <listing label="structures_return_types_AC_1">
     <caption>
-      <p>This active code uses the <c>findCenter</c> function. Run the code to see what the output is!</p>
+      This active code uses the <c>findCenter</c> function. Run the code to see what the output is!
     </caption>
     <program xml:id="structures_return_types_AC_1_editor"
              interactive="activecode"

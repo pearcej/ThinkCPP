@@ -64,8 +64,8 @@ Abort</program>
     the function name and the contents of the assert statement.</p>
   <listing label="fourteenten">
     <caption>
-      <p>This active code uses the updated <c>calculateCartesian</c> with assert statements. Notice how because <c>c1</c>
-        is not in polar, the assert statement in <c>calculateCartesian</c> fails and thus we get an error.</p>
+      This active code uses the updated <c>calculateCartesian</c> with assert statements. Notice how because <c>c1</c>
+        is not in polar, the assert statement in <c>calculateCartesian</c> fails and thus we get an error.
     </caption>
     <program xml:id="fourteenten_editor"
              interactive="activecode"

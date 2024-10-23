@@ -44,8 +44,8 @@ product.printCartesian();</program>
   </console>
   <listing label="fourteeneight">
     <caption>
-      <p>This active code uses the <c>mult</c> and <c>setPolar</c> functions. Feel free to modify the code and
-        experiment around!</p>
+      This active code uses the <c>mult</c> and <c>setPolar</c> functions. Feel free to modify the code and
+        experiment around!
     </caption>
     <program xml:id="fourteeneight_editor"
              interactive="activecode"

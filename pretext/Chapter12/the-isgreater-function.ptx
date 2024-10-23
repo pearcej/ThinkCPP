@@ -59,8 +59,8 @@ is greater than
     ranked higher than Kings, as they are in most card games.</p>
   <listing label="12_5">
     <caption>
-      <p>Take a look at this active code, which uses the <c>isGreater</c> function. Feel free to change the
-        values of the cards.</p>
+      Take a look at this active code, which uses the <c>isGreater</c> function. Feel free to change the
+        values of the cards.
     </caption>
     <program xml:id="c12_5_editor"
              interactive="activecode"

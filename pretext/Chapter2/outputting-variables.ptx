@@ -13,8 +13,8 @@
     different time!</p>
   <listing label="output_vars_AC_1">
     <caption>
-      <p>This program outputs the current time, according to the values you
-        provide for hour and minute.</p>
+      This program outputs the current time, according to the values you
+        provide for hour and minute.
     </caption>
     <program xml:id="output_vars_AC_1_editor"
              interactive="activecode"
@@ -50,8 +50,8 @@ int main() {
     output statement, which can make the previous program more concise:</p>
   <listing label="output_vars_AC_2">
     <caption>
-      <p>This program does the same thing as the previous, but the print
-        statements have been condensed to one line. This is better style.</p>
+      This program does the same thing as the previous, but the print
+        statements have been condensed to one line. This is better style.
     </caption>
     <program xml:id="output_vars_AC_2_editor"
              interactive="activecode"

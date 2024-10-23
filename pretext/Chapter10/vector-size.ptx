@@ -25,7 +25,7 @@ for (i = 0; i &lt; count.size(); i++) {
     variable to check for the last element.</p>
   <listing label="vector_size_AC_1">
     <caption>
-      <p>Try running this active code!</p>
+      Try running this active code!
     </caption>
     <program xml:id="vector_size_AC_1_editor"
              interactive="activecode"

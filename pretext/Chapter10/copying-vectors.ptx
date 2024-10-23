@@ -11,7 +11,7 @@
   <p>The <c>=</c> operator works on <c>vector</c>s in pretty much the way you would expect.</p>
   <listing label="copying_vectors_AC_1">
     <caption>
-      <p>Take a look at this active code, which uses the copy constructor.</p>
+      Take a look at this active code, which uses the copy constructor.
     </caption>
     <program xml:id="copying_vectors_AC_1_editor"
              interactive="activecode"

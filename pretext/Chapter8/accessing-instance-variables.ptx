@@ -15,8 +15,8 @@
 double distance = sqrt(blank.x * blank.x + blank.y * blank.y);</program>
   <listing label="accessing_instance_variables_AC_1">
     <caption>
-      <p>In this active code, we access the instance variables of <c>Point</c> object <c>black</c> using
-        dot notation and output their values. Next, we output the distance from the origin.</p>
+      In this active code, we access the instance variables of <c>Point</c> object <c>black</c> using
+        dot notation and output their values. Next, we output the distance from the origin.
     </caption>
     <program xml:id="accessing_instance_variables_AC_1_editor"
              interactive="activecode"

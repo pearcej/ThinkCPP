@@ -38,7 +38,7 @@ if (card1.equals(card2)) {
     can choose the interface that works best depending on the circumstance.</p>
   <listing label="12_4">
     <caption>
-      <p>Run this active code to see how the <c>equals()</c> function works.</p>
+      Run this active code to see how the <c>equals()</c> function works.
     </caption>
     <program xml:id="c12_4_editor"
              interactive="activecode"
