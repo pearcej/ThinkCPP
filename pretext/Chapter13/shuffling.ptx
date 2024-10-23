@@ -1,12 +1,8 @@
 <?xml version="1.0"?>
-<section xml:id="chapter13_shuffling-id1">
+<section xml:id="chapter13_shuffling">
   <title>Shuffling</title>
   <p>For most card games you need to be able to shuffle the deck; that is, put the cards in a random
-    order. In <number_reference internal="True"
-                      refuri="../Chapter10/random_numbers#random"
-                      title="Section %s">
-      <inline classes="std std-numref">Section 10.7</inline>
-    </number_reference> we saw how to
+    order. In <xref ref="chapter10_random-numbers-random"/> we saw how to
     generate random numbers, but it is not obvious how to use them to shuffle a deck.</p>
   <p>One possibility is to model the way humans shuffle, which is usually by dividing the deck in
     two and then reassembling the deck by choosing alternately from each deck. Since humans usually
@@ -32,11 +28,7 @@
     <p>If you are even the slightest bit unsure on how to begin coding your program, <term>
       pseudocode</term> is a great place to start!</p>
   </note>
-  <p>You can probably figure out how to write <c>randomInt</c> by looking at <number_reference internal="True"
-                      refuri="../Chapter10/random_numbers#random"
-                      title="Section %s">
-      <inline classes="std std-numref">Section 10.7</inline>
-    </number_reference>, although you
+  <p>You can probably figure out how to write <c>randomInt</c> by looking at <xref ref="chapter10_random-numbers-random"/>, although you
     will have to be careful about possibly generating indices that are out of range.</p>
   <p>You can also figure out <c>swapCards</c> yourself. I will leave the remaining implementation of these
     functions as an exercise to the reader.</p>

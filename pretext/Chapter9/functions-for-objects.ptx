@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="chapter9_functions-for-objects-objectops">
+<section xml:id="chapter9_functions-for-objects">
   <title>Functions for objects</title>
   <p>In the next few sections, I will demonstrate several possible interfaces
     for functions that operate on objects. For some operations, you will

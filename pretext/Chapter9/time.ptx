@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="chapter9_time-id1">
+<section xml:id="chapter9_time">
   <title>Time</title>
   <p>As a second example of a user-defined structure, we will define a type called <c>Time</c>, which is
     used to record the time of day. The various pieces of information that form a time are the hour,

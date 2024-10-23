@@ -1,11 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="chapter13_shuffling-and-dealing">
   <title>Shuffling and dealing</title>
-  <p>In <number_reference internal="True"
-                      refuri="shuffling#shuffling"
-                      title="Section %s">
-      <inline classes="std std-numref">Section 13.6</inline>
-    </number_reference>, I wrote
+  <p>In <xref ref="chapter13_shuffling"/>, I wrote
     pseudocode for a shuffling algorithm. Assuming that we have a function called <c>shuffleDeck</c> that takes
     a deck as an argument and shuffles it, we can create and shuffle a deck:</p>
   <program>Deck deck;               // create a standard 52-card deck

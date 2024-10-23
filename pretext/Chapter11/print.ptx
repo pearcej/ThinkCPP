@@ -3,11 +3,7 @@
   <title>
     <c>print</c>
   </title>
-  <p>In <number_reference internal="True"
-                      refuri="../Chapter9/time#time"
-                      title="Section %s">
-      <inline classes="std std-numref">Section 9.1</inline>
-    </number_reference> we defined a
+  <p>In <xref ref="chapter9_time"/> we defined a
     structure named <c>Time</c> and wrote a function named <c>printTime</c></p>
   <program>struct Time {
   int hour, minute;

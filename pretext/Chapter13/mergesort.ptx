@@ -1,11 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="chapter13_mergesort">
   <title>Mergesort</title>
-  <p>In <number_reference internal="True"
-                      refuri="sorting#sorting"
-                      title="Section %s">
-      <inline classes="std std-numref">Section 13.7</inline>
-    </number_reference>, we saw a simple
+  <p>In <xref ref="chapter13_sorting"/>, we saw a simple
     sorting algorithm that turns out not to be very efficient. In order to sort <m>n</m> items, it
     has to traverse the vector <m>n</m> times, and each traversal takes an amount of time that is
     proportional to <m>n</m>. The total time, therefore, is proportional to <m>n^2</m>.</p>

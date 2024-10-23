@@ -1,11 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="chapter15_parsing-input-parsing">
   <title>Parsing input</title>
-  <p>In <number_reference internal="True"
-                      refuri="../Chapter1/formal_natural#formal"
-                      title="Section %s">
-      <inline classes="std std-numref">Section 1.5</inline>
-    </number_reference> I defined <q>
+  <p>In <xref ref="chapter1_formal-and-natural-languages-formal"/> I defined <q>
     parsing</q> as the process of analyzing the structure of a sentence in a natural language or a
     statement in a formal language. For example, the compiler has to parse your program before it
     can translate it into machine language.</p>

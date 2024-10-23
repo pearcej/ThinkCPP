@@ -33,11 +33,7 @@ int main() {
         ]]></input>
     </program>
   </listing>
-  <p>As a second example, we can rewrite the <c>distance</c> function from <number_reference internal="True"
-                      refuri="../Chapter5/programdevelopment#distance"
-                      title="Section %s">
-      <inline classes="std std-numref">Section 5.2</inline>
-    </number_reference> so that it takes
+  <p>As a second example, we can rewrite the <c>distance</c> function from <xref ref="chapter5_program-development-distance"/> so that it takes
     two <c>Point</c>s as parameters instead of four <c>double</c>s.</p>
   <program>double distance(Point p1, Point p2) {
   double dx = p2.x - p1.x;

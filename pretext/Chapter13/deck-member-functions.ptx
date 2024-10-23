@@ -3,11 +3,7 @@
   <title><c>Deck</c> member functions</title>
   <p>Now that we have a <c>Deck</c> object, it makes sense to put all the functions that pertain to <c>Deck</c>s
     in the <c>Deck</c> structure definition. Looking at the functions we have written so far, one
-    obvious candidate is <c>printDeck</c> (<number_reference internal="True"
-                      refuri="../Chapter12/the_printdeck_function#printdeck"
-                      title="Section %s">
-      <inline classes="std std-numref">Section 12.7</inline>
-    </number_reference>). Here's how it
+    obvious candidate is <c>printDeck</c> (<xref ref="printdeck-code"/>). Here's how it
     looks, rewritten as a <c>Deck</c> member function:</p>
   <program>void Deck::print() const {
   for (size_t i = 0; i &lt; cards.size(); i++) {

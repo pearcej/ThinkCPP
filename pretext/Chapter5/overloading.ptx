@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="chapter5_overloading-id1">
+<section xml:id="chapter5_overloading">
   <title>Overloading</title>
   <p>In the previous section you might have noticed that <c>fred</c> and <c>area</c> perform similar
     functions&#x2014;finding the area of a circle&#x2014;but take different parameters. For <c>area</c>,
