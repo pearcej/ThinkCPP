@@ -3,7 +3,7 @@
   <title>Activecode Exercises</title>
   <p>Answer the following <term>Activecode</term> questions to assess what you have learned in this
     chapter.</p>
-  <exercise xml:id="functions_a1">
+  <exercise label="functions_a1">
     <statement>
       <p>Fix the errors in the code below so that it prints the area of a circle with radius
         5. Use cmath functions to get an accurate value for pi.</p>
@@ -114,7 +114,7 @@ int main() {
     </hint>
   </exercise>
 
-  <exercise xml:id="functions_a3">
+  <exercise label="functions_a3">
     <statement>
       <p>Fix the code below so that it prints <c>12 / 8 = 1.5.</c></p>
     </statement>
@@ -234,7 +234,7 @@ int main() {
     </hint>
   </exercise>
 
-  <exercise xml:id="functions_a5">
+  <exercise label="functions_a5">
     <statement>
       <p>Finish the code below so that it prints <q>First Line</q>, a border, and <q>Second
           Line.</q> on three separate lines.</p>
@@ -347,7 +347,7 @@ cout << "Testing with a = 2.4, b = 6.8..." << endl; cout << "    Your solution h
     </hint>
   </exercise>
 
-  <exercise xml:id="functions_a7">
+  <exercise label="functions_a7">
     <statement>
       <p>Write a function called gpaBoost that prints your GPA rounded up to the nearest
         point. If your GPA is already at the nearest point, there is no rounding. Be sure to
@@ -464,7 +464,7 @@ int main() {
     </hint>
   </exercise>
 
-  <exercise xml:id="functions_a9">
+  <exercise label="functions_a9">
     <statement>
       <p>Write a function called <c>tanD</c> that prints the tangent of an angle given as a <c>double</c> in
         degrees. Use 3.14 for pi. Be sure to include any necessary headers.</p>

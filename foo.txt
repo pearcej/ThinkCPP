@@ -1,0 +1,249 @@
+PTX:DEBUG   : Parsed CLI args {'verbose': 3, 'config_file': None, 'component': 'all', 'format': 'html', 'publication_file': 'publication/publication.ptx', 'stringparams': [], 'extra_stylesheet': None, 'method': '', 'xmlid': 'chapter14_complex-numbers', 'server': None, 'data_dir': None, 'out': None, 'dir': 'output/html', 'abort': False, 'tgz': False, 'validate': False, 'xml_file': 'pretext/main.ptx'}
+PTX:DEBUG   : Python version: 3.10 (expecting 3.8 or newer)
+PTX:DEBUG   : PreTeXt distribution and xsl directories: /mnt/f/Programming/pretext, /mnt/f/Programming/pretext/xsl
+PTX:INFO    : parsing possible configuration files: ['/mnt/f/Programming/pretext/pretext/pretext.cfg', '/mnt/f/Programming/pretext/user/mbx.cfg', '/mnt/f/Programming/pretext/user/pretext.cfg']
+PTX:DEBUG   : configuration files actually used/read: ['/mnt/f/Programming/pretext/pretext/pretext.cfg']
+PTX:INFO    : using default configuration only
+PTX:INFO    : custom configuration file not used at /mnt/f/Programming/pretext/user/pretext.cfg
+PTX:INFO    : dictionary of executables/commands: {'latex': 'latex', 'pdflatex': 'pdflatex', 'xelatex': 'xelatex', 'asy': 'asy', 'mermaid': 'mmdc', 'sage': 'sage', 'pdfpng': 'convert', 'pdfeps': 'pdftops', 'node': 'node', 'liblouis': 'file2brl'}
+PTX:INFO    : verifying and expanding XML source file: pretext/main.ptx
+PTX:INFO    : input XML source file expanded to absolute path: /mnt/f/Programming/thinkcpp-rs/pretext/main.ptx
+PTX:INFO    : verifying and expanding publisher file: publication/publication.ptx
+PTX:INFO    : input publisher file expanded to absolute path: /mnt/f/Programming/thinkcpp-rs/publication/publication.ptx
+PTX:INFO    : verifying and expanding input directory: output/html
+PTX:INFO    : input directory expanded to absolute path: /mnt/f/Programming/thinkcpp-rs/output/html
+PTX:INFO    : Done examining environment and initializing setup info
+PTX:INFO    : discovering source file's directory name: /mnt/f/Programming/thinkcpp-rs/pretext
+PTX:INFO    : verifying and expanding input directory: /mnt/f/Programming/thinkcpp-rs/pretext/../generated-assets
+PTX:INFO    : input directory expanded to absolute path: /mnt/f/Programming/thinkcpp-rs/generated-assets
+PTX:INFO    : verifying and expanding input directory: /mnt/f/Programming/thinkcpp-rs/pretext/../assets
+PTX:INFO    : input directory expanded to absolute path: /mnt/f/Programming/thinkcpp-rs/assets
+PTX:INFO    : Runestone Services (via PreTeXt repository): version 7.3.3
+PTX:INFO    : Runestone Services (using newer, via online CDN query): version 7.4.3
+PTX:INFO    : Using existing Runestone Services located in /mnt/f/Programming/thinkcpp-rs/output/html/_static. Delete Runestone files there to force a fresh download.
+PTX:INFO    : converting /mnt/f/Programming/thinkcpp-rs/pretext/main.ptx to HTML in /tmp/ptx-t0m5g5um
+PTX:INFO    : XSL conversion of /mnt/f/Programming/thinkcpp-rs/pretext/main.ptx by /mnt/f/Programming/pretext/xsl/pretext-html.xsl
+PTX:DEBUG   : XSL conversion via /mnt/f/Programming/pretext/xsl/pretext-html.xsl of /mnt/f/Programming/thinkcpp-rs/pretext/main.ptx to None and/or into directory /tmp/ptx-t0m5g5um with parameters {'altrs-js': 'prefix-runtime.00db6230172ad960.bundle.js:prefix-347.8328b60515045466.bundle.js:prefix-runestone.aa624e4071d017c3.bundle.js', 'altrs-css': 'prefix-347.f9add1ca35d5ad93.css:prefix-runestone.f64dcc3632d7a0c3.css', 'altrs-cdn-url': 'https://runestone.academy/cdn/runestone/', 'altrs-version': '7.4.3', 'rs-local-files': 'yes', 'publisher': '/mnt/f/Programming/thinkcpp-rs/publication/publication.ptx', 'subtree': 'chapter14_complex-numbers'}
+PTX:INFO    : messages from the log for XSL processing:
+PTX:INFO    : * ========active-language==========
+PTX:INFO    : * program
+PTX:INFO    : * ========get-language==========
+PTX:INFO    : * label
+PTX:INFO    : * fourteentwo_editor22
+PTX:INFO    : * interactive
+PTX:INFO    : * activecode
+PTX:INFO    : * langauge
+PTX:INFO    : * python
+PTX:INFO    : * line-numbers
+PTX:INFO    : * yes
+PTX:INFO    : * original-id
+PTX:INFO    : * fourteentwo_editor22
+PTX:INFO    : * assembly-id
+PTX:INFO    : * fourteentwo_editor22
+PTX:INFO    : * authored-label
+PTX:INFO    : * unknown error
+PTX:INFO    : * unique-id
+PTX:INFO    : * fourteentwo_editor22
+PTX:INFO    : * ========no-language==========
+PTX:INFO    : * ========active-language==========
+PTX:INFO    : * program
+PTX:INFO    : * ========get-language==========
+PTX:INFO    : * label
+PTX:INFO    : * fourteentwo_editor22
+PTX:INFO    : * interactive
+PTX:INFO    : * activecode
+PTX:INFO    : * langauge
+PTX:INFO    : * python
+PTX:INFO    : * line-numbers
+PTX:INFO    : * yes
+PTX:INFO    : * original-id
+PTX:INFO    : * fourteentwo_editor22
+PTX:INFO    : * assembly-id
+PTX:INFO    : * fourteentwo_editor22
+PTX:INFO    : * authored-label
+PTX:INFO    : * unknown error
+PTX:INFO    : * unique-id
+PTX:INFO    : * fourteentwo_editor22
+PTX:INFO    : * ========no-language==========
+PTX:INFO    : * ========get-language==========
+PTX:INFO    : * label
+PTX:INFO    : * fourteentwo_editor22
+PTX:INFO    : * interactive
+PTX:INFO    : * activecode
+PTX:INFO    : * langauge
+PTX:INFO    : * python
+PTX:INFO    : * line-numbers
+PTX:INFO    : * yes
+PTX:INFO    : * original-id
+PTX:INFO    : * fourteentwo_editor22
+PTX:INFO    : * assembly-id
+PTX:INFO    : * fourteentwo_editor22
+PTX:INFO    : * authored-label
+PTX:INFO    : * unknown error
+PTX:INFO    : * unique-id
+PTX:INFO    : * fourteentwo_editor22
+PTX:INFO    : * ========no-language==========
+PTX:INFO    : * ========get-language==========
+PTX:INFO    : * original-id
+PTX:INFO    : * chapter14_complex-numbers-5
+PTX:INFO    : * assembly-id
+PTX:INFO    : * chapter14_complex-numbers-5
+PTX:INFO    : * unique-id
+PTX:INFO    : * chapter14_complex-numbers-5
+PTX:INFO    : * ========no-language==========
+PTX:INFO    : * ===================
+PTX:INFO    : * figure
+PTX:INFO    : * unknown error
+PTX:INFO    : * unknown error
+PTX:INFO    : * ========get-language==========
+PTX:INFO    : * original-id
+PTX:INFO    : * chapter14_complex-numbers-15
+PTX:INFO    : * assembly-id
+PTX:INFO    : * chapter14_complex-numbers-15
+PTX:INFO    : * unique-id
+PTX:INFO    : * chapter14_complex-numbers-15
+PTX:INFO    : * ========no-language==========
+PTX:INFO    : * ========active-language==========
+PTX:INFO    : * program
+PTX:INFO    : * ========get-language==========
+PTX:INFO    : * label
+PTX:INFO    : * fourteentwo_editor
+PTX:INFO    : * interactive
+PTX:INFO    : * activecode
+PTX:INFO    : * langauge
+PTX:INFO    : * python
+PTX:INFO    : * line-numbers
+PTX:INFO    : * yes
+PTX:INFO    : * original-id
+PTX:INFO    : * fourteentwo_editor
+PTX:INFO    : * assembly-id
+PTX:INFO    : * fourteentwo_editor
+PTX:INFO    : * authored-label
+PTX:INFO    : * unknown error
+PTX:INFO    : * unique-id
+PTX:INFO    : * fourteentwo_editor
+PTX:INFO    : * ========no-language==========
+PTX:INFO    : * ========active-language==========
+PTX:INFO    : * program
+PTX:INFO    : * ========get-language==========
+PTX:INFO    : * label
+PTX:INFO    : * fourteentwo_editor
+PTX:INFO    : * interactive
+PTX:INFO    : * activecode
+PTX:INFO    : * langauge
+PTX:INFO    : * python
+PTX:INFO    : * line-numbers
+PTX:INFO    : * yes
+PTX:INFO    : * original-id
+PTX:INFO    : * fourteentwo_editor
+PTX:INFO    : * assembly-id
+PTX:INFO    : * fourteentwo_editor
+PTX:INFO    : * authored-label
+PTX:INFO    : * unknown error
+PTX:INFO    : * unique-id
+PTX:INFO    : * fourteentwo_editor
+PTX:INFO    : * ========no-language==========
+PTX:INFO    : * ========get-language==========
+PTX:INFO    : * label
+PTX:INFO    : * fourteentwo_editor
+PTX:INFO    : * interactive
+PTX:INFO    : * activecode
+PTX:INFO    : * langauge
+PTX:INFO    : * python
+PTX:INFO    : * line-numbers
+PTX:INFO    : * yes
+PTX:INFO    : * original-id
+PTX:INFO    : * fourteentwo_editor
+PTX:INFO    : * assembly-id
+PTX:INFO    : * fourteentwo_editor
+PTX:INFO    : * authored-label
+PTX:INFO    : * unknown error
+PTX:INFO    : * unique-id
+PTX:INFO    : * fourteentwo_editor
+PTX:INFO    : * ========no-language==========
+PTX:INFO    : * ===================
+PTX:INFO    : * listing
+PTX:INFO    : * unknown error
+PTX:INFO    : * unknown error
+PTX:INFO    : * ========active-language==========
+PTX:INFO    : * program
+PTX:INFO    : * ========get-language==========
+PTX:INFO    : * xml:id
+PTX:INFO    : * fourteenthree_editor
+PTX:INFO    : * interactive
+PTX:INFO    : * activecode
+PTX:INFO    : * line-numbers
+PTX:INFO    : * yes
+PTX:INFO    : * original-id
+PTX:INFO    : * fourteenthree_editor
+PTX:INFO    : * assembly-id
+PTX:INFO    : * fourteenthree_editor
+PTX:INFO    : * label
+PTX:INFO    : * fourteenthree_editor
+PTX:INFO    : * unique-id
+PTX:INFO    : * fourteenthree_editor
+PTX:INFO    : * ========no-language==========
+PTX:INFO    : * ========active-language==========
+PTX:INFO    : * program
+PTX:INFO    : * ========get-language==========
+PTX:INFO    : * xml:id
+PTX:INFO    : * fourteenthree_editor
+PTX:INFO    : * interactive
+PTX:INFO    : * activecode
+PTX:INFO    : * line-numbers
+PTX:INFO    : * yes
+PTX:INFO    : * original-id
+PTX:INFO    : * fourteenthree_editor
+PTX:INFO    : * assembly-id
+PTX:INFO    : * fourteenthree_editor
+PTX:INFO    : * label
+PTX:INFO    : * fourteenthree_editor
+PTX:INFO    : * unique-id
+PTX:INFO    : * fourteenthree_editor
+PTX:INFO    : * ========no-language==========
+PTX:INFO    : * ========get-language==========
+PTX:INFO    : * xml:id
+PTX:INFO    : * fourteenthree_editor
+PTX:INFO    : * interactive
+PTX:INFO    : * activecode
+PTX:INFO    : * line-numbers
+PTX:INFO    : * yes
+PTX:INFO    : * original-id
+PTX:INFO    : * fourteenthree_editor
+PTX:INFO    : * assembly-id
+PTX:INFO    : * fourteenthree_editor
+PTX:INFO    : * label
+PTX:INFO    : * fourteenthree_editor
+PTX:INFO    : * unique-id
+PTX:INFO    : * fourteenthree_editor
+PTX:INFO    : * ========no-language==========
+PTX:INFO    : * ===================
+PTX:INFO    : * listing
+PTX:INFO    : * unknown error
+PTX:INFO    : * unknown error
+PTX:INFO    : * ========active-language==========
+PTX:INFO    : * exercise
+PTX:INFO    : * ========get-language==========
+PTX:INFO    : * exercise-customization
+PTX:INFO    : * inline
+PTX:INFO    : * exercise-interactive
+PTX:INFO    : * parson
+PTX:INFO    : * label
+PTX:INFO    : * question14_3_1
+PTX:INFO    : * numbered
+PTX:INFO    : * yes
+PTX:INFO    : * adaptive
+PTX:INFO    : * yes
+PTX:INFO    : * indentation
+PTX:INFO    : * hide
+PTX:INFO    : * original-id
+PTX:INFO    : * question14_3_1
+PTX:INFO    : * assembly-id
+PTX:INFO    : * question14_3_1
+PTX:INFO    : * authored-label
+PTX:INFO    : * unknown error
+PTX:INFO    : * unique-id
+PTX:INFO    : * question14_3_1
+PTX:INFO    : * ========no-language==========
+PTX:INFO    : successful application of /mnt/f/Programming/pretext/xsl/pretext-html.xsl
+PTX:DEBUG   : Temporary directories left behind for inspection: ['/tmp/ptx-t0m5g5um']

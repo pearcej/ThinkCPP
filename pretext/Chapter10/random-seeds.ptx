@@ -21,7 +21,7 @@
       sample uses <c>ctime</c> as the syntax to do so is simpler.</p>
   </note>
 
-  <listing>
+  <listing label="random-seeds-demo">
     <caption>Try this program - it should print a different sequence of numbers each time you run
       it. If you remove the srand call, it will generate the same sequence each time.</caption>
     <program interactive="activecode">

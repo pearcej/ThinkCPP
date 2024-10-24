@@ -6,11 +6,11 @@
     this:</p>
   <p>The <q>Hello, World.</q> program is a great place to start learning a new language. Observe the
     program structure below.</p>
-  <listing xml:id="first_program_AC_list">
+  <listing label="first_program_AC_list">
     <caption>
       This program prints <q>Hello, World.</q> to the output.
     </caption>
-    <program interactive="activecode"  label="first_program_AC"
+    <program interactive="activecode"
              line-numbers="yes">
       <input><![CDATA[
 #include <iostream>

@@ -6,7 +6,7 @@
     and store them in a vector till he inputs <c>-1</c>, and then display them. In such a case, we do
     not know the size of the vector beforehand. So we need wish add new values to the end of a
     vector as the user inputs them. We can use then vector function <c>push_back</c> for that purpose.</p>
-  <listing >
+  <listing label="vector-from-input">
     <caption>A program that reads in numbers, adding each to a vector, until the user inputs -1.</caption>
   <program>#include &lt;iostream&gt;
 #include &lt;vector&gt;

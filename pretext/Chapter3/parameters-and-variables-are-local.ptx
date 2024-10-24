@@ -4,7 +4,7 @@
   <p>Parameters and variables only exist inside their own functions. In the code below, within the confines of <c>main</c>,
     there is no such thing as <c>phil</c>. If you try to use it, the compiler will complain. Similarly,
     inside <c>printTwice</c> there is no such thing as argument.</p>
-  <listing xml:id="locals_AC_1">
+  <listing xml:id="locals_AC_1" label="locals_AC_1">
     <caption>
       The following code will show the output of the printTwice function.
         Notice that it is the argument &#x2018;b' that is outputted, not the
