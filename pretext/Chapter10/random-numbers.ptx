@@ -121,11 +121,11 @@ int main() {
 }
         ]]></input>
     </program>
+    <hint component="page_ex_parsons_hint">
+      <p>The formula to generate random numbers between min and max is
+        min + (max - min) * double(x) / RAND_MAX.</p>
+    </hint>
   </activity>
-  <hint>
-    <p>The formula to generate random numbers between min and max is
-      min + (max - min) * double(x) / RAND_MAX.</p>
-  </hint>
   <exercise label="random_numbers_1">
     <statement>
       <p>Pseudorandom numbers are said to be <var/>, because different numbers are generated every

@@ -25,7 +25,7 @@ int main() {
 }
         ]]></input>
     </program>
-    <solution component="ex_solution">
+    <solution>
       <p>Below is one way to fix the program. true and false are
         keywords, so they cannot be used as variable names.</p>
       <program xml:id="VARS_a1a_editor"
@@ -68,7 +68,7 @@ int main() {
     }
         ]]></input>
         </program>
-    <hint component="ex_parsons_help">
+    <hint>
       <p>Finish the code below so that it prints <q>I drive a 2014 Buick Regal</q>. Use the lines to
         construct the pseudocode, then go back to complete the exercise.</p>
       <activity label="VARS_a2_p"
@@ -145,7 +145,7 @@ int main() {
 }
         ]]></input>
     </program>
-    <solution component="ex_solution">
+    <solution>
       <p>Below is one way to fix the program. We want to use doubles so
         that our result isn't rounded down to 0 through integer division.</p>
       <program xml:id="VARS_a3a_editor"
@@ -187,7 +187,7 @@ int main() {
 }
     ]]></input>
     </program>
-    <hint component="ex_parsons_help">
+    <hint>
       <p>Use the lines on to construct the pseudocode, then go back to complete the exercise.</p>
       <activity label="VARS_a4_p_ps"
                 numbered="yes"
@@ -250,7 +250,7 @@ int main() {
 }
         ]]></input>
     </program>
-    <solution component="ex_solution"> Below is one way to complete the program. There are many
+    <solution> Below is one way to complete the program. There are many
       creative ways that you could use the order of operations to come up with a complex expression
       that will bring you to 'a', here is one way. <program xml:id="VARS_a5a_editor"
                line-numbers="yes"><input><![CDATA[
@@ -286,7 +286,7 @@ int main() {
 }
       ]]></input>
       </program>
-    <hint component="ex_parsons_hint">
+    <hint>
       <p>Use the lines to construct the pseudocode, then go back to complete the exercise.</p>
       <activity label="VARS_a6_p_ps"
                 numbered="yes"
@@ -343,7 +343,7 @@ int main() {
 }
         </input>
     </program>
-    <solution component="ex_solution"> Below is one way to implement the solution. <program xml:id="VARS_a7a_editor"
+    <solution> Below is one way to implement the solution. <program xml:id="VARS_a7a_editor"
                line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -375,7 +375,7 @@ int main() {
 }
     ]]></input>
     </program>
-    <hint component="ex_parsons_help">
+    <hint>
       <p>Use the lines to construct the pseudocode, then go back to complete the exercise.</p>
       <activity label="VARS_a8_p_ps"
                 numbered="yes"
@@ -431,7 +431,7 @@ int main() {
 }
         ]]></input>
     </program>
-    <solution component="ex_solution"> Below is one way to implement the solution. <program xml:id="VARS_a9a_editor"
+    <solution> Below is one way to implement the solution. <program xml:id="VARS_a9a_editor"
                line-numbers="yes"><input><![CDATA[
 #include <iostream>
 using namespace std;
@@ -464,7 +464,7 @@ int main() {
     }
             ]]></input>
             </program>
-    <hint component="ex_parsons_help">
+    <hint>
       <p>Write code that calculates and prints the average of a and b if a = 3.14, and b = 1.59.
         You may only use one line of code. Use the lines on the to construct the pseudocode,
         then go back to complete the Activecode.</p>
