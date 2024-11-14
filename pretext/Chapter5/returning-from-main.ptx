@@ -59,7 +59,7 @@
   <exercise label="fitb_return_main_2">
     <statement>
       <p>Usually, we return <var/> to exit main. However, if there are any errors that we catch, we
-        might return <var/>. <var/>  <var/>
+        might return <var/>.
       </p>
     </statement>
     <setup>

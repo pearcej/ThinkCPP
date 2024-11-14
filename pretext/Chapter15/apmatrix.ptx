@@ -92,7 +92,7 @@ m3[1][2] = 10.0 * m2[0][0];</program>
   <exercise label="question15_8_2">
     <statement>
       <p>Suppose we have matrix <c>mat</c>. Then <c>mat[9][17]</c> would be accessing column <var/> and row <var/>
-        of our matrix. <var/>  <var/>
+        of our matrix.
       </p>
     </statement>
     <setup>

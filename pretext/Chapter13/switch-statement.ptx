@@ -86,7 +86,7 @@ default:        return "Not a valid suit";
     errors or unexpected values.</p>
   <exercise label="switch_1">
     <statement>
-      <p>A(n) <var/> statement is necessary for each branch in a <c>switch</c> statement. <var/>
+      <p>A(n) <var/> statement is necessary for each branch in a <c>switch</c> statement.
       </p>
     </statement>
     <setup>

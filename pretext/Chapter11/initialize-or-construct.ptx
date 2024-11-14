@@ -27,13 +27,14 @@ Time breadTime = { 3, 35, 0.0 };</program>
   <p>To invoke this constructor, we use the same funny syntax as before, except that the arguments
     have to be two integers and a <c>double</c>:</p>
   <program>Time currentTime(9, 14, 30.0);</program>
-  <listing label="initialize_or_construct_AC_1">
+  <listing label="initialize_or_construct_AC_1"
+           xml:id="initialize_or_construct_AC_1">
     <caption>
-        In this active code, you can experiment passing values into the two
-        different constructors that we have defined on this page and the previous
-        page.
+      In this active code, you can experiment passing values into the two
+      different constructors that we have defined on this page and the previous
+      page.
     </caption>
-    <program label="initialize_or_construct_AC_1"
+    <program label="initialize_or_construct_AC_1_editor"
              interactive="activecode"
              line-numbers="yes">
       <input><![CDATA[

@@ -11,6 +11,7 @@
     </statement>
     <program interactive="activecode"
              line-numbers="yes"
+             language="python"
              xml:id="VARS_a1q_editor">
       <input><![CDATA[
 #include <iostream>
@@ -29,6 +30,7 @@ int main() {
       <p>Below is one way to fix the program. true and false are
         keywords, so they cannot be used as variable names.</p>
       <program xml:id="VARS_a1a_editor"
+             language="cpp"
                line-numbers="yes"><input><![CDATA[
            #include <iostream>
            using namespace std;
@@ -37,7 +39,7 @@ int main() {
                char t = 'T';
                char f = 'F';
                cout << t << " is short for true. ";
-               cout << f << " is short for false." << endl;
+               cout << f << " is short for false." << endl; cout << f << " is short for false." << endl;
            }
                    ]]></input>
            </program>
@@ -50,6 +52,7 @@ int main() {
     </statement>
     <program xml:id="VARS_a2_editor"
              interactive="activecode"
+             language="cpp"
              line-numbers="yes">
           <input><![CDATA[
     #include <iostream>
@@ -74,12 +77,14 @@ int main() {
       <activity label="VARS_a2_p"
                 numbered="yes"
                 adaptive="yes"
+        language="cpp"
                 indentation="show">
-        <asdf>
+        <statement>
           <p>Finish the code below so that it prints <q>I drive a 2014 Buick Regal</q>. Use the
             lines to construct the pseudocode, then go back to complete the exercise.</p>
-        </asdf>
-        <blocks>
+        </statement>
+        <blocks 
+        language="cpp">
           <block order="12">
             <cline>Open main()</cline>
           </block>

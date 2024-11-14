@@ -103,7 +103,7 @@ int main() {cout<<"Goodbye, ";cout<<"cruel world!"<<endl;}
     program is getting harder and harder to read. Newlines and spaces are
     useful for organizing your program visually, making it easier to read
     the program and locate syntax errors.</p>
-  <exercise label="more_output_2">
+  <exercise label="more_output_1">
     <statement>
       <p>A phrase that appears in quotation marks is called a(n)<var/>.</p>
     </statement>
@@ -122,7 +122,7 @@ int main() {cout<<"Goodbye, ";cout<<"cruel world!"<<endl;}
       </var>
     </setup>
   </exercise>
-  <exercise label="more_output_3.0">
+  <exercise label="more_output_2">
     <statement>
       <p>On how many separate lines will the 7's be printed?</p>
       <program
@@ -227,7 +227,7 @@ int main() {
       </block>
     </blocks>
   </exercise>
-  <exercise label="more_output_3.1"
+  <exercise label="more_output_4"
             numbered="yes"
             adaptive="yes"
             indentation="show">
