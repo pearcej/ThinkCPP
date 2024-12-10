@@ -39,7 +39,7 @@
       Feel free to try out the <c>add</c> function in this active code!
     </caption>
     <program xml:id="one_last_example_AC_1_editor" interactive="activecode" line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -61,7 +61,7 @@ int main() {
     cout << "Time t1 + Time t2 = "; t3.print(); cout << endl;
 }
 
-        ]]></input>
+        ]]></code>
       <tests>
 
 Time::Time(double secs) {

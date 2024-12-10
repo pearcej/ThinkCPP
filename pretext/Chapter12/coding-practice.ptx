@@ -13,19 +13,19 @@
     <program interactive="activecode"
              line-numbers="yes"
              xml:id="cp_12_AC_1q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
 
 // Write your code for the struct Pixel here.
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
       <p>Below is one way to implement the program. We declare the Pixel struct and create
         the instance variables in order.</p>
       <program xml:id="cp_12_AC_1a_editor"
-               line-numbers="yes"><input><![CDATA[
+               line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -35,7 +35,7 @@ struct Pixel {
     int g;
     int b;
 };
-        ]]></input></program>
+        ]]></code></program>
     </solution>
   </exercise>
 
@@ -48,7 +48,7 @@ struct Pixel {
     </statement>
     <program interactive="activecode"
              xml:id="cp_12_AC_2q_editor">
-        <input>
+        <code>
 #include &lt;iostream&gt;
 #include &lt;vector&gt;
 using namespace std;
@@ -60,7 +60,7 @@ struct Pixel {
 };
 
 // Write your code for the struct Image here.
-        </input>
+        </code>
     </program>
     <hint>
       <activity label="cp_12_AC_2_pp">
@@ -107,7 +107,7 @@ struct Pixel {
     <program interactive="activecode"
              line-numbers="yes"
              xml:id="cp_12_AC_3q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -125,13 +125,13 @@ int main() {
     Pixel p = {0, 0, 0};
     p.printPixel();
 }
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
       <p>Below is one way to implement the program. We use the scope resolution operator
         to make printPixel a Pixel member function.</p>
       <program xml:id="cp_12_AC_3a_editor"
-               line-numbers="yes"><input><![CDATA[
+               line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -151,7 +151,7 @@ int main() {
     Pixel p = {0, 0, 0};
     p.printPixel();
 }
-        ]]></input></program>
+        ]]></code></program>
     </solution>
   </exercise>
 
@@ -165,7 +165,7 @@ int main() {
     </statement>
     <program interactive="activecode"
              xml:id="cp_12_AC_4q_editor">
-        <input>
+        <code>
 #include &lt;iostream&gt;
 #include &lt;vector&gt;
 using namespace std;
@@ -192,7 +192,7 @@ int main() {
     Image image = { 2, 3, matrix };
     image.printImage();
 }
-        </input>
+        </code>
 <tests>
 void Pixel::printPixel() {
     cout &lt;&lt; "("&lt;&lt; r &lt;&lt; ", " &lt;&lt; g &lt;&lt; ", " &lt;&lt; b &lt;&lt; ")";
@@ -252,7 +252,7 @@ void Pixel::printPixel() {
     <program interactive="activecode"
              line-numbers="yes"
              xml:id="cp_12_AC_5q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -285,7 +285,7 @@ int main() {
     image.cropImage(2, 3, 1, 2);
     image.printImage();
 }
-        ]]></input>
+        ]]></code>
       <tests>
 void Pixel::printPixel() {
     cout &lt;&lt; "("&lt;&lt; r &lt;&lt; ", " &lt;&lt; g &lt;&lt; ", " &lt;&lt; b &lt;&lt; ")";
@@ -309,7 +309,7 @@ void Image::printImage() {
         matrix
         equal to the new one we created. </p>
       <program xml:id="cp_12_AC_5a_editor"
-               line-numbers="yes"><input><![CDATA[
+               line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -352,7 +352,7 @@ int main() {
     image.cropImage(2, 3, 1, 2);
     image.printImage();
 }
-        ]]></input>
+        ]]></code>
         </program>
     </solution>
   </exercise>
@@ -366,7 +366,7 @@ int main() {
     </statement>
     <program interactive="activecode"
              xml:id="cp_12_AC_6q_editor">
-        <input>
+        <code>
 #include &lt;iostream&gt;
 #include &lt;vector&gt;
 using namespace std;
@@ -397,7 +397,7 @@ int main() {
     image.swapPixel(0, 0, 0, 2);
     image.printImage();
 }
-        </input>
+        </code>
 <tests>
 void Pixel::printPixel() {
     cout &lt;&lt; "("&lt;&lt; r &lt;&lt; ", " &lt;&lt; g &lt;&lt; ", " &lt;&lt; b &lt;&lt; ")";
@@ -466,7 +466,7 @@ void Image::cropImage(int startRow, int stopRow, int startCol, int stopCol) {
     <program interactive="activecode"
              line-numbers="yes"
              xml:id="cp_12_AC_7q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -501,7 +501,7 @@ int main() {
     image.flipHorizontal();
     image.printImage();
 }
-        ]]></input>
+        ]]></code>
       <tests>
 void Pixel::printPixel() {
     cout &lt;&lt; "("&lt;&lt; r &lt;&lt; ", " &lt;&lt; g &lt;&lt; ", " &lt;&lt; b &lt;&lt; ")";
@@ -543,7 +543,7 @@ void Image::swapPixel(int row1, int col1, int row2, int col2) {
         toward the middle. Once they meet in the middle, we have finished flipping the
         image.</p>
       <program xml:id="cp_12_AC_7a_editor"
-               line-numbers="yes"><input><![CDATA[
+               line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -588,7 +588,7 @@ int main() {
     image.flipHorizontal();
     image.printImage();
 }
-        ]]></input></program>
+        ]]></code></program>
     </solution>
   </exercise>
 
@@ -601,7 +601,7 @@ int main() {
     </statement>
     <program interactive="activecode"
              xml:id="cp_12_AC_8q_editor">
-        <input>
+        <code>
 #include &lt;iostream&gt;
 #include &lt;vector&gt;
 using namespace std;
@@ -637,7 +637,7 @@ int main() {
     image.flipVertical();
     image.printImage();
 }
-        </input>
+        </code>
 <tests>
 void Pixel::printPixel() {
     cout &lt;&lt; "("&lt;&lt; r &lt;&lt; ", " &lt;&lt; g &lt;&lt; ", " &lt;&lt; b &lt;&lt; ")";
@@ -737,7 +737,7 @@ void Image::flipHorizontal() {
     <program interactive="activecode"
              line-numbers="yes"
              xml:id="cp_12_AC_9q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -776,7 +776,7 @@ int main() {
     image.createBorder(p);
     image.printImage();
 }
-        ]]></input>
+        ]]></code>
       <tests>
 void Pixel::printPixel() {
     cout &lt;&lt; "("&lt;&lt; r &lt;&lt; ", " &lt;&lt; g &lt;&lt; ", " &lt;&lt; b &lt;&lt; ")";
@@ -839,7 +839,7 @@ void Image::flipVertical() {
       <p>Below is one way to implement the program. We set the first and last row and
         first and last column of Pixels in the Image to the given Pixel.</p>
       <program xml:id="cp_12_AC_9a_editor"
-               line-numbers="yes"><input><![CDATA[
+               line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -887,7 +887,7 @@ int main() {
     image.createBorder(p);
     image.printImage();
 }
-        ]]></input></program>
+        ]]></code></program>
     </solution>
   </exercise>
 
@@ -900,7 +900,7 @@ int main() {
     </statement>
     <program interactive="activecode"
              xml:id="cp_12_AC_10q_editor">
-        <input>
+        <code>
 #include &lt;iostream&gt;
 #include &lt;vector&gt;
 using namespace std;
@@ -937,7 +937,7 @@ int main() {
     image.clearImage();
     image.printImage();
 }
-        </input>
+        </code>
 <tests>
 void Pixel::printPixel() {
     cout &lt;&lt; "("&lt;&lt; r &lt;&lt; ", " &lt;&lt; g &lt;&lt; ", " &lt;&lt; b &lt;&lt; ")";

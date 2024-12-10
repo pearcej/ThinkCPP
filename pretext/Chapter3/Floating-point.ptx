@@ -82,18 +82,18 @@ double pi = 3.14159;</program>
       <p>It's your birthday and your cake can serve 12. You want to slice it evenly so that you and
         each of your 4 friends receive an equal amount. One of your friends is on a diet and, and
         wants to know the serving size of her slice. You write the following code in C++ to answer
-        her question. <var/>  <var/>
-      </p>
-    </statement>
-    <setup>
-      <var>
-        <program>int servings = 12;
-int people = 5;
+        her question:</p>
+        
+        <program>
+          int servings = 12;
+          int people = 5;
+          
+          double servingSize = servings / people;</program>
 
-double servingSize = servings / people;</program>
         <p>Based on the value of <c>servingSize</c>, you tell your friend that each slice is <var/> servings.
           This is <var/> (more, less, the same) than/as the actual serving size of her slice.</p>
-      </var>
+    </statement>
+    <setup>
       <var>
         <condition number="2">
           <feedback>
@@ -105,9 +105,16 @@ double servingSize = servings / people;</program>
             <p>servingSize and people are integer variables!</p>
           </feedback>
         </condition>
+      </var>
+      <var>
         <condition string="^\s*less\s*$">
           <feedback>
             <p>Correct! You just unintentionally messed up your friend's diet.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Is this answer more or less than you would get if you did decimal division?</p>
           </feedback>
         </condition>
       </var>
@@ -181,7 +188,7 @@ cout &lt;&lt; e_double;</program>
     <program label="floating_point_a1_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -199,7 +206,7 @@ int main() {
     cout << "current value (d) is " << value << endl;
     return 0;
 }
-        ]]></input>
+        ]]></code>
     </program>
   </listing>
 </section>

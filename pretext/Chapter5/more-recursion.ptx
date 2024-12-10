@@ -61,7 +61,7 @@
     <program xml:id="more_recursion_AC_1_editor"
              interactive="codelens"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -79,7 +79,7 @@ int factorial(int n) {
 int main() {
     cout << factorial(3) << endl;
 }
-        ]]></input>
+        ]]></code>
     </program>
   </activity>
   <p>If we look at the flow of execution for this program, it is similar to

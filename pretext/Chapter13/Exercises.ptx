@@ -5,7 +5,7 @@
     <statement>
       <p>What is the output of the code below?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 enum Month { JAN = 1, FEB, MAR, APR,
 MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC };
 
@@ -14,7 +14,7 @@ int main() {
   Month m2 = NOV;
   cout << m1 << " " << m2 << endl;
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -56,7 +56,7 @@ int main() {
     <statement>
       <p>What is the output of the code below?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 int main() {
   string s = "summer";
   switch (s) {
@@ -75,7 +75,7 @@ int main() {
       break;
   }
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -117,7 +117,7 @@ int main() {
     <statement>
       <p>What is the output of the code below?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 enum Season { SPRING, SUMMER, FALL, WINTER };
 
 int main() {
@@ -138,7 +138,7 @@ int main() {
       break;
   }
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -183,12 +183,12 @@ int main() {
       <p>Take a look at the <c>struct</c> definition of <c>Entry</c>. If we wanted to make a <c>struct</c> called <c>Dictionary</c>,
         how can we create a <c>vector</c> of <c>Entry</c>s as a member variable?</p>
       <program line-numbers="yes">
-        <input>
+        <code>
 struct Entry {
   string word;
   int page;
 }
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -236,7 +236,7 @@ struct Entry {
     <statement>
       <p>What is wrong with the code below?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 struct Card {
   int suit, rank;
 
@@ -256,7 +256,7 @@ struct Deck {
   void print() const;
   int find(const Card& card) const;
 };
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>

@@ -45,7 +45,7 @@ else {
     <program xml:id="switch_AC_1_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
@@ -68,7 +68,7 @@ int main() {
         break;
     }
 }
-        ]]></input>
+        ]]></code>
     </program>
   </listing>
   <p><c>switch</c> statements work with integers, characters, and enumerated types. For example, to
@@ -86,7 +86,7 @@ default:        return "Not a valid suit";
     errors or unexpected values.</p>
   <exercise label="switch_1">
     <statement>
-      <p>A(n) <var/> statement is necessary for each branch in a <c>switch</c> statement. <var/>
+      <p>A(n) <var/> statement is necessary for each branch in a <c>switch</c> statement.
       </p>
     </statement>
     <setup>
@@ -148,7 +148,7 @@ default:        return "Not a valid suit";
     <statement>
       <p>What is the correct output of the code below?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 int main() {
   int num = 2;
 
@@ -166,7 +166,7 @@ int main() {
     break;
   }
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -216,7 +216,7 @@ int main() {
     <statement>
       <p>What is the correct output <term>this time</term>?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 int main() {
   int num = 1;
 
@@ -232,7 +232,7 @@ int main() {
     cout << "Invalid num! Please try again.";
   }
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -282,7 +282,7 @@ int main() {
     <statement>
       <p>And finally, what about <term>this time</term>?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 int main() {
   int num = 2;
 
@@ -298,7 +298,7 @@ int main() {
     cout << "Invalid num! Please try again.";
   }
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>

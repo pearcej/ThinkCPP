@@ -42,7 +42,7 @@ while (i &lt; 4) {
     <program xml:id="accessing_elements_AC_1_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -65,7 +65,7 @@ int main() {
     count[3] -= 60;
     cout << "After we made the above changes, count = "; print_vec(count);
 }
-        ]]></input>
+        ]]></code>
     </program>
   </listing>
   <exercise label="accessing_elements_1">

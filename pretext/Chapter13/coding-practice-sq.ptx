@@ -12,7 +12,7 @@
                     a year! Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_13_AC_2q_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -22,7 +22,7 @@ int main() {
     Planet p = JUPITER;
     // Write your code here.
 }
-        ]]></input>
+        ]]></code>
         </program>
       </exercise>
     </TabNode>
@@ -111,13 +111,13 @@ int main() {
                     Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_13_AC_4q_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 // Add any relevant libraries here.
 using namespace std;
 
 // Write your code for the randomInt function here.
-        ]]></input>
+        ]]></code>
         </program>
       </exercise>
     </TabNode>
@@ -165,7 +165,7 @@ using namespace std;
                     Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_13_AC_6q_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 #include <vector>
 #include <cstdlib>
@@ -173,7 +173,7 @@ using namespace std;
 using namespace std;
 
 // Write your code for the generateRandVec function here.
-        ]]></input>
+        ]]></code>
         </program>
       </exercise>
     </TabNode>
@@ -226,7 +226,7 @@ using namespace std;
                     print out neater. Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_13_AC_8q_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 #include <vector>
 #include <cstdlib>
@@ -255,7 +255,7 @@ int main() {
     bingo.makeBoard();
     bingo.printBoard();
 }
-        ]]></input>
+        ]]></code>
           <tests>
 int randomInt(int low, int high) {
     srand(time(NULL));
@@ -356,7 +356,7 @@ void BingoBoard::makeBoard() {
                     modification. Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_13_AC_10q_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -376,7 +376,7 @@ int main() {
         cout << vec[i] << " ";
     }
 }
-        ]]></input>
+        ]]></code>
         </program>
       </exercise>
     </TabNode>

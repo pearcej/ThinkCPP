@@ -6,7 +6,7 @@
       <p>Which of the following are variables of type <c>Book</c>?</p>
       <program
                line-numbers="yes">
-        <input>
+        <code>
 struct Book {
   string title, author;
   int yearPublished;
@@ -19,7 +19,7 @@ int main() {
   string flies = "Lord of the Flies";
   int year = 1954;
 }
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -70,7 +70,7 @@ int main() {
       <p>Which of the following are instance variables of type <c>Book</c>?</p>
       <program
                line-numbers="yes">
-        <input>
+        <code>
 struct Book {
   string title, author;
   int yearPublished;
@@ -83,7 +83,7 @@ int main() {
   string flies = "Lord of the Flies";
   int year = 1954;
 }
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -134,7 +134,7 @@ int main() {
       <p>What is the output of the code below?</p>
       <program
                line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 struct Book {
   string title, author;
   int yearPublished;
@@ -151,7 +151,7 @@ int main() {
   mockingbird.price = discountedPrice;
   printBook(mockingbird);
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -195,7 +195,7 @@ int main() {
       <p>What kind of function is <c>printBook</c>?</p>
       <program
                line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 struct Book {
   string title, author;
   int yearPublished;
@@ -210,7 +210,7 @@ int main() {
   Book dracula = { "Dracula", "Bram Stoker", 1897, 3.95 };
   printBook(dracula);
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -253,7 +253,7 @@ int main() {
       <p>What is wrong with the code below?</p>
       <program
                line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 struct Book {
   string title, author;
   int yearPublished;
@@ -273,7 +273,7 @@ int main() {
   applyDiscount(godfather, 5.40);
   printBook(godfather);
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -318,7 +318,7 @@ int main() {
       <p>What kind of function is <c>applyDiscount</c>?</p>
       <program
                line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 struct Book {
   string title, author;
   int yearPublished;
@@ -338,7 +338,7 @@ int main() {
   applyDiscount(godfather, 5.40);
   printBook(godfather);
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -381,7 +381,7 @@ int main() {
       <p>What is the output of the code below?</p>
       <program
                line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 struct Point3D {
   double x, y, z;
 };
@@ -403,7 +403,7 @@ int main() {
   midpoint(p1, p2, p3);
   printPoint3D(p3);
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -447,7 +447,7 @@ int main() {
       <p>What kind of function is <c>midpoint</c>?</p>
       <program
                line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 struct Point3D {
   double x, y, z;
 };
@@ -469,7 +469,7 @@ int main() {
   midpoint(p1, p2, p3);
   printPoint3D(p3);
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -513,7 +513,7 @@ int main() {
       <p>What is the output of the code below?</p>
       <program
                line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 struct Point3D {
   double x, y, z;
 };
@@ -539,7 +539,7 @@ int main() {
   Point3D pReflected = reflectXYPlane(p);
   printPoint3D(pReflected);
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -582,7 +582,7 @@ int main() {
       <p>What is the output of the code below?</p>
       <program
                line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 struct Point3D {
   double x, y, z;
 };
@@ -611,7 +611,7 @@ int main() {
   midpoint(p4, p3, p2);
   printPoint3D(p2);
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>

@@ -30,7 +30,7 @@ cin &gt;&gt; x;</program>
     <program xml:id="getting_user_input_AC_1_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -53,7 +53,8 @@ int main() {
     cout << x << endl;
     return 0;
 }
-        ]]></input>
+        ]]></code>
+      <stdin>42</stdin>
     </program>
   </listing>
   <p><c>cin</c> can also be used to input a <c>string</c>:</p>
@@ -85,7 +86,7 @@ cout &lt;&lt; name &lt;&lt; endl;</program>
     <program xml:id="getting_user_input_AC_2_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
@@ -97,7 +98,8 @@ int main() {
    getline(cin, name);
    cout << "Hello " << name << "!" << endl;
 }
-        ]]></input>
+        ]]></code>
+      <stdin>Indiana Jones</stdin>
     </program>
   </listing>
   <p>In fact, <c>getline</c> is generally useful for getting input of any kind. For example, if you wanted
@@ -144,14 +146,14 @@ int main() {
     <statement>
       <p>The user types in <c>John Doe</c>. What prints?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 int main() {
   char name;
   cout << "What is your name? ";
   cin >> name;
   cout << name << endl;
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -191,14 +193,14 @@ int main() {
     <statement>
       <p>The user types in <c>John Doe</c>. What prints?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 int main() {
   string name;
   cout << "What is your name? ";
   cin >> name;
   cout << name << endl;
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -238,14 +240,14 @@ int main() {
     <statement>
       <p>The user types in <c>John Doe</c>. What prints?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 int main() {
   string name;
   cout << "What is your name? ";
   getline(cin, name);
   cout << name << endl;
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -285,7 +287,7 @@ int main() {
     <statement>
       <p>The user types in <c>John Doe</c> and then <c>530 S State St.</c>. What prints?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 int main() {
   string first_name;
   string last_name;
@@ -296,7 +298,7 @@ int main() {
   getline(cin, address);
   cout << first_name << " " << last_name << " lives at " << address << endl;
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>

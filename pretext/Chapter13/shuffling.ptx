@@ -81,7 +81,7 @@
     <program xml:id="shuffling_2_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <string>
 #include <vector>
@@ -133,7 +133,7 @@ int main() {
     deck.print();
 }
 
-        ]]></input>
+        ]]></code>
       <tests>
 Card::Card() {
     suit = SPADES;  rank = ACE;

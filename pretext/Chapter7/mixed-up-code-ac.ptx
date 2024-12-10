@@ -10,12 +10,12 @@
                     Finally, print out the string.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_7_1_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -24,7 +24,7 @@ using namespace std;
                 Below is one way to write the program using the word &#x2018;irritating' as the string.
 
     
-    <program xml:id="mucp_7_1_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_7_1_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
@@ -37,11 +37,11 @@ int main() {
     }
     cout << word << endl;
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_7_1_ac_a"><statement><p>Below is one way to write the program using the word &#x2018;irritating' as the string.</p></statement><program xml:id="mucp_7_1_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_7_1_ac_a"><statement><p>Below is one way to write the program using the word &#x2018;irritating' as the string.</p></statement><program xml:id="mucp_7_1_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
@@ -54,7 +54,7 @@ int main() {
     }
     cout << word << endl;
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -64,12 +64,12 @@ int main() {
                     make <q>silent</q>. Write a program that rearranges <q>night</q> into <q>thing</q> and prints the anagram.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_7_2_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #inlcude <iostream>
 #include <string>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -78,7 +78,7 @@ using namespace std;
                 Below is one way to write the program.
 
     
-    <program xml:id="mucp_7_2_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_7_2_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
@@ -93,11 +93,11 @@ int main() {
     anagram[4] = original[original.find('g')];
     cout << anagram;
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_7_2_ac_a"><statement><p>Below is one way to write the program.</p></statement><program xml:id="mucp_7_2_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_7_2_ac_a"><statement><p>Below is one way to write the program.</p></statement><program xml:id="mucp_7_2_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
@@ -112,7 +112,7 @@ int main() {
     anagram[4] = original[original.find('g')];
     cout << anagram;
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -124,7 +124,7 @@ int main() {
                     prints <q>first and second are the same length</q>.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_7_3_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
@@ -136,7 +136,7 @@ int main() {
     longerString("longer", "string");
     longerString("string", "second");
 }
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -145,7 +145,7 @@ int main() {
                 Below is one way to write the function longerString.
 
     
-    <program xml:id="mucp_7_3_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_7_3_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
@@ -166,11 +166,11 @@ int main() {
     longerString("longer", "string");
     longerString("string", "second");
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_7_3_ac_a"><statement><p>Below is one way to write the function <c>longerString</c>.</p></statement><program xml:id="mucp_7_3_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_7_3_ac_a"><statement><p>Below is one way to write the function <c>longerString</c>.</p></statement><program xml:id="mucp_7_3_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
@@ -191,7 +191,7 @@ int main() {
     longerString("longer", "string");
     longerString("string", "second");
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -202,7 +202,7 @@ int main() {
                     and prints the encrypted string.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_7_4_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
@@ -213,7 +213,7 @@ using namespace std;
 int main() {
     cipherText("bad");
 }
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -222,7 +222,7 @@ int main() {
                 Below is one way to write the function cipherText.
 
     
-    <program xml:id="mucp_7_4_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_7_4_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
@@ -239,11 +239,11 @@ void cipherText(string input) {
 int main() {
     cipherText("bad");
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_7_4_ac_a"><statement><p>Below is one way to write the function <c>cipherText</c>.</p></statement><program xml:id="mucp_7_4_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_7_4_ac_a"><statement><p>Below is one way to write the function <c>cipherText</c>.</p></statement><program xml:id="mucp_7_4_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
@@ -260,7 +260,7 @@ void cipherText(string input) {
 int main() {
     cipherText("bad");
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -270,12 +270,12 @@ int main() {
                     Declare the string tongue_twister as &#x2018;twelve twins twirled twelve twigs.'</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_7_5_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -284,7 +284,7 @@ using namespace std;
                 Below is one way to write the program.
 
     
-    <program xml:id="mucp_7_5_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_7_5_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
@@ -301,11 +301,11 @@ int main() {
     }
     cout << count;
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_7_5_ac_a"><statement><p>Below is one way to write the program.</p></statement><program xml:id="mucp_7_5_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_7_5_ac_a"><statement><p>Below is one way to write the program.</p></statement><program xml:id="mucp_7_5_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
@@ -322,7 +322,7 @@ int main() {
     }
     cout << count;
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -331,12 +331,12 @@ int main() {
                     character &#x2018;i'. Use <c>string quote = "Your time is limited, so don't waste it living someone else's life.</c></p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_7_6_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -345,7 +345,7 @@ using namespace std;
                 Below is one way to write the program.
 
     
-    <program xml:id="mucp_7_6_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_7_6_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
@@ -356,11 +356,11 @@ int main() {
     int index = find(quote, 'i', first + 1);
     cout << index;
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_7_6_ac_a"><statement><p>Below is one way to write the program.</p></statement><program xml:id="mucp_7_6_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_7_6_ac_a"><statement><p>Below is one way to write the program.</p></statement><program xml:id="mucp_7_6_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
@@ -371,7 +371,7 @@ int main() {
     int index = find(quote, 'i', first + 1);
     cout << index;
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -381,12 +381,12 @@ int main() {
                     out each of their names.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_7_7_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -395,7 +395,7 @@ using namespace std;
                 Below is one way to write the program.
 
     
-    <program xml:id="mucp_7_7_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_7_7_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
@@ -410,11 +410,11 @@ int main() {
         letter++;
     }
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_7_7_ac_a"><statement><p>Below is one way to write the program.</p></statement><program xml:id="mucp_7_7_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_7_7_ac_a"><statement><p>Below is one way to write the program.</p></statement><program xml:id="mucp_7_7_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
@@ -429,7 +429,7 @@ int main() {
         letter++;
     }
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -440,14 +440,14 @@ int main() {
                     if the input is <q>hello world</q>, the function returns <q>h*llo world</q>.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_7_8_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
 // YOUR CODE HERE
 
 
-        ]]></input>
+        ]]></code>
       <tests>
 #define CATCH_CONFIG_MAIN
 #include &lt;catch.hpp&gt;
@@ -466,7 +466,7 @@ TEST_CASE("censorE function") {
                 Below is one way to write the censorE function.
 
     
-    <program xml:id="mucp_7_8_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_7_8_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
@@ -482,7 +482,7 @@ string censorE(string input) {
     return input;
 }
 
-        ]]></input><tests>
+        ]]></code><tests>
 #define CATCH_CONFIG_MAIN
 #include &lt;catch.hpp&gt;
 
@@ -495,7 +495,7 @@ TEST_CASE("censorE function") {
 
             
 
-<exercise label="mucp_7_8_ac_a"><statement><p>Below is one way to write the censorE function.</p></statement><program xml:id="mucp_7_8_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_7_8_ac_a"><statement><p>Below is one way to write the censorE function.</p></statement><program xml:id="mucp_7_8_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
@@ -511,7 +511,7 @@ string censorE(string input) {
     return input;
 }
 
-        ]]></input><tests>
+        ]]></code><tests>
 #define CATCH_CONFIG_MAIN
 #include &lt;catch.hpp&gt;
 
@@ -533,14 +533,14 @@ TEST_CASE("censorE function") {
                     string <q>Bye w*rld</q>.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_7_9_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
 // YOUR CODE HERE
 
 
-        ]]></input>
+        ]]></code>
       <tests>
 #define CATCH_CONFIG_MAIN
 #include &lt;catch.hpp&gt;
@@ -559,7 +559,7 @@ TEST_CASE("censorLetter function") {
                 Below is one way to write the censorLetter function.
 
     
-    <program xml:id="mucp_7_9_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_7_9_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
@@ -575,7 +575,7 @@ string censorLetter(string input, char letter) {
     return input;
 }
 
-        ]]></input><tests>
+        ]]></code><tests>
 #define CATCH_CONFIG_MAIN
 #include &lt;catch.hpp&gt;
 
@@ -588,7 +588,7 @@ TEST_CASE("censorLetter function") {
 
             
 
-<exercise label="mucp_7_9_ac_a"><statement><p>Below is one way to write the censorLetter function.</p></statement><program xml:id="mucp_7_9_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_7_9_ac_a"><statement><p>Below is one way to write the censorLetter function.</p></statement><program xml:id="mucp_7_9_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
@@ -604,7 +604,7 @@ string censorLetter(string input, char letter) {
     return input;
 }
 
-        ]]></input><tests>
+        ]]></code><tests>
 #define CATCH_CONFIG_MAIN
 #include &lt;catch.hpp&gt;
 
@@ -626,14 +626,14 @@ TEST_CASE("censorLetter function") {
                     <q>megazebra</q> since <q>mega</q> comes before <q>zebra</q> in the alphabet.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_7_10_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
 // YOUR CODE HERE
 
 
-        ]]></input>
+        ]]></code>
       <tests>
 #define CATCH_CONFIG_MAIN
 #include &lt;catch.hpp&gt;
@@ -652,7 +652,7 @@ TEST_CASE("alphaCombine function") {
                 Below is one way to write the alphaCombine function.
 
     
-    <program xml:id="mucp_7_10_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_7_10_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
@@ -666,7 +666,7 @@ string alphaCombine(string first, string second) {
     }
 }
 
-        ]]></input><tests>
+        ]]></code><tests>
 #define CATCH_CONFIG_MAIN
 #include &lt;catch.hpp&gt;
 
@@ -679,7 +679,7 @@ TEST_CASE("alphaCombine function") {
 
             
 
-<exercise label="mucp_7_10_ac_a"><statement><p>Below is one way to write the alphaCombine function.</p></statement><program xml:id="mucp_7_10_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_7_10_ac_a"><statement><p>Below is one way to write the alphaCombine function.</p></statement><program xml:id="mucp_7_10_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
@@ -693,7 +693,7 @@ string alphaCombine(string first, string second) {
     }
 }
 
-        ]]></input><tests>
+        ]]></code><tests>
 #define CATCH_CONFIG_MAIN
 #include &lt;catch.hpp&gt;
 
@@ -717,14 +717,14 @@ TEST_CASE("alphaCombine function") {
                     not palindromes: <q>join</q>, <q>hat</q>, <q>frat</q>, <q>supper</q>, <q>rhythm</q>.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_7_11_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
 // YOUR CODE HERE
 
 
-        ]]></input>
+        ]]></code>
       <tests>
 #define CATCH_CONFIG_MAIN
 #include &lt;catch.hpp&gt;
@@ -742,7 +742,7 @@ TEST_CASE("ispalindrome function") {
                 Below is one way to write the ispalindrome function.
 
     
-    <program xml:id="mucp_7_11_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_7_11_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
@@ -760,7 +760,7 @@ bool ispalindrome(string input) {
     return true;
 }
 
-        ]]></input><tests>
+        ]]></code><tests>
 #define CATCH_CONFIG_MAIN
 #include &lt;catch.hpp&gt;
 
@@ -772,7 +772,7 @@ TEST_CASE("ispalindrome function") {
 
             
 
-<exercise label="mucp_7_11_ac_a"><statement><p>Below is one way to write the ispalindrome function.</p></statement><program xml:id="mucp_7_11_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_7_11_ac_a"><statement><p>Below is one way to write the ispalindrome function.</p></statement><program xml:id="mucp_7_11_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
@@ -790,7 +790,7 @@ bool ispalindrome(string input) {
     return true;
 }
 
-        ]]></input><tests>
+        ]]></code><tests>
 #define CATCH_CONFIG_MAIN
 #include &lt;catch.hpp&gt;
 

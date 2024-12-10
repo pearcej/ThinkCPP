@@ -10,7 +10,7 @@
                     Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_8_AC_2q_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -21,8 +21,9 @@ void greetUser() {
 int main() {
     greetUser();
 }
-        ]]></input>
+        ]]></code>
         </program>
+        <stdin>Jane Doe</stdin>
       </exercise>
     </TabNode>
     <TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'coding_practice_sq', 'chapter': 'Chapter8', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
@@ -74,7 +75,7 @@ int main() {
                     the construction of the code.</p>
         </statement>
         <program xml:id="cp_8_AC_4q_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -98,7 +99,7 @@ int main() {
     cout << "Correct output:" << endl;
     cout << "Bob (MKZ 143) has 100 percent battery and is currently executing the task \"sweeping floors\"";
 }
-        ]]></input>
+        ]]></code>
           <tests>
 void printRobotData(Robot r) {
     cout &lt;&lt; r.name &lt;&lt; " (" &lt;&lt; r.model &lt;&lt; " " &lt;&lt; r.serialNumber
@@ -155,7 +156,7 @@ void printRobotData(Robot r) {
                     Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_8_AC_6q_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -170,7 +171,7 @@ int main() {
     cout << "Correct output:" << endl;
     cout << "Magikarp (Lv. 12, 100% HP)";
 }
-        ]]></input>
+        ]]></code>
         </program>
       </exercise>
     </TabNode>
@@ -231,7 +232,7 @@ int main() {
                     and heals the Trainer's Pokemon to 100 percent health. Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_8_AC_8q_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -266,7 +267,7 @@ int main() {
     healPokemon(blue);
     printTrainerInfo(blue);  // Pokemon should now all be healed to 100% health
 }
-        ]]></input>
+        ]]></code>
           <tests>
 void printPokeInfo(Pokemon p) {
     cout &lt;&lt; p.pokeName &lt;&lt; " (Lv. " &lt;&lt; p.level &lt;&lt; ", " &lt;&lt; p.healthPercentage &lt;&lt; "% HP)" &lt;&lt; endl;
@@ -359,7 +360,7 @@ Please select a planet: 23
 Error, not a valid planet.</program>
         </statement>
         <program xml:id="cp_8_AC_10q_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -368,7 +369,7 @@ using namespace std;
 int main() {
     // Write your implementation here.
 }
-        ]]></input>
+        ]]></code>
         </program>
       </exercise>
     </TabNode>

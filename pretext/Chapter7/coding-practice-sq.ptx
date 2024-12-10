@@ -11,7 +11,7 @@
                     Feel free to use the <c>stringToLower</c> function we wrote earlier. Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_7_AC_2q_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 #include "ctype.h"
 using namespace std;
@@ -41,7 +41,7 @@ int main() {
         "it.";
     cout << "Your output: " << countWord(quote, "shrimp") << ", Correct output: 14" << endl;
 }
-        ]]></input>
+        ]]></code>
         </program>
       </exercise>
     </TabNode>
@@ -110,7 +110,7 @@ int main() {
           <program>Gucci , Gucci , Gucci , Gucci</program>
         </statement>
         <program xml:id="cp_7_AC_4q_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
@@ -122,7 +122,7 @@ void removeWord(string input, string word) {
 int main() {
     removeWord ("Gucci gang, Gucci gang, Gucci gang, Gucci gang", "gang");
 }
-        ]]></input>
+        ]]></code>
         </program>
       </exercise>
     </TabNode>
@@ -182,14 +182,14 @@ int main() {
                     and returns the reversed <c>string</c>. Run and test your code! Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_7_AC_6q_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 using namespace std;
 
 string reverseWord(string input) {
     // Write your implementation here.
 }
-        ]]></input>
+        ]]></code>
           <tests>
 #define CATCH_CONFIG_MAIN
 #include &lt;catch.hpp&gt;
@@ -252,14 +252,14 @@ TEST_CASE("reverseWord function") {
                     the construction of the code.</p>
         </statement>
         <program xml:id="cp_7_AC_8q_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 using namespace std;
 
 int countVowels(string input) {
     // Write your implementation here.
 }
-        ]]></input>
+        ]]></code>
           <tests>
 #define CATCH_CONFIG_MAIN
 #include &lt;catch.hpp&gt;
@@ -329,7 +329,7 @@ TEST_CASE("countVowels function") {
                     Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_7_AC_10q_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 #include <string>
 #include "ctype.h"
@@ -342,7 +342,7 @@ string snakeToCamel(string input) {
 string camelToSnake(string input) {
     // Write your implementation here.
 }
-        ]]></input>
+        ]]></code>
           <tests>
 #define CATCH_CONFIG_MAIN
 #include &lt;catch.hpp&gt;

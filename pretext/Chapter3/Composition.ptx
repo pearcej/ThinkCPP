@@ -17,7 +17,7 @@
     <program xml:id="function_comp_AC_1_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -26,7 +26,7 @@ int main() {
     double x = exp(log(10.0));
     cout << x;
 }
-        ]]></input>
+        ]]></code>
     </program>
   </listing>
   <exercise label="function_comp_1">

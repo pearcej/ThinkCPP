@@ -8,7 +8,7 @@
         true if the input is a palindrome and false otherwise. Run and test your code!</p>
     </statement>
     <program interactive="activecode">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <cctype>
 using namespace std;
@@ -16,7 +16,7 @@ using namespace std;
 bool isPalindrome(string input) {
     // Write your implementation here.
 }
-]]></input>
+]]></code>
       <tests>
       #define CATCH_CONFIG_MAIN
       #include &lt;catch.hpp&gt;
@@ -33,7 +33,7 @@ bool isPalindrome(string input) {
         alphabetical characters. Then we continuously check to see if the letters in the front are
         equal to the ones in the back until we reach the middle of the string.</p>
       <program xml:id="cp_7_AC_1a"
-               line-numbers="yes"><input><![CDATA[
+               line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <cctype>
 using namespace std;
@@ -56,7 +56,7 @@ bool isPalindrome(string input) {
     }
     return true;
 }
-        ]]></input></program>
+        ]]></code></program>
     </solution>
   </exercise>
 
@@ -71,7 +71,7 @@ bool isPalindrome(string input) {
     <program xml:id="cp_7_AC_2q_editor"
              interactive="activecode"
              line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 #include "ctype.h"
 using namespace std;
@@ -101,7 +101,7 @@ int main() {
         "it.";
     cout << "Your output: " << countWord(quote, "shrimp") << ", Correct output: 14" << endl;
 }
-        ]]></input>
+        ]]></code>
         </program>
     <hint>
       <activity label="cp_7_AC_2q_pp"
@@ -168,7 +168,7 @@ int main() {
       results in the following output: <program><output>I ******, ******, ******, ******, ******, ****** like you</output></program>
     </statement>
     <program interactive="activecode">
-      <input><![CDATA[
+      <code><![CDATA[
            #include <iostream>
            using namespace std;
 
@@ -179,7 +179,7 @@ int main() {
            int main() {
                censorWord("I really, really, really, really, really, really like you", "really");
            }
-]]></input>
+]]></code>
     </program>
     <solution>
       <p>Below
@@ -187,7 +187,7 @@ int main() {
         repeatedly search for instances of word in input. Once found, we replace
         the length of the word with asterisks.</p>
       <program xml:id="cp_7_AC_3a"
-               line-numbers="yes"><input><![CDATA[
+               line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -207,7 +207,7 @@ void censorWord(string input, string word) {
 int main() {
     censorWord("I really, really, really, really, really, really like you", "really");
 }
-        ]]></input></program>
+        ]]></code></program>
     </solution>
   </exercise>
 
@@ -226,7 +226,7 @@ int main() {
     <program xml:id="cp_7_AC_4q_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
@@ -238,7 +238,7 @@ void removeWord(string input, string word) {
 int main() {
     removeWord("Gucci gang, Gucci gang, Gucci gang, Gucci gang", "gang");
 }
-    ]]></input>
+    ]]></code>
     </program>
     <hint>
       <activity label="cp_7_AC_4q_pp"
@@ -305,7 +305,7 @@ int main() {
         . Test your function in <c>main</c> .</p>
     </statement>
     <program interactive="activecode">
-      <input><![CDATA[
+      <code><![CDATA[
           #include <iostream>
           #include <cctype>
           using namespace std;
@@ -326,7 +326,7 @@ int main() {
               // string secretMessage = "Pbatenghyngvbaf! Lbh'ir fhpprffshyyl vzcyrzragrq EBG13 naq qrpbqrq gur frperg zrffntr :)";
               // cout << ROT13 (secretMessage) << endl;
           }
-]]></input>
+]]></code>
     </program>
     <solution>
       <p>Below is one way to implement the <c>ROT13</c> function. We use a <c>while</c> loop to go through all
@@ -334,7 +334,7 @@ int main() {
         and &#x2018;N', we use character operations to add 13 to each letter. Otherwise, we subtract
         13 from each letter. We return the encrypted message at the end.</p>
       <program xml:id="cp_7_AC_5a"
-               line-numbers="yes"><input><![CDATA[
+               line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <cctype>
 using namespace std;
@@ -367,7 +367,7 @@ int main() {
     // string secretMessage = "Pbatenghyngvbaf! Lbh'ir fhpprffshyyl vzcyrzragrq EBG13 naq qrpbqrq gur frperg zrffntr :)";
     // cout << ROT13 (secretMessage) << endl;
 }
-        ]]></input></program>
+        ]]></code></program>
     </solution>
   </exercise>
 
@@ -380,14 +380,14 @@ int main() {
     <program xml:id="cp_7_AC_6q_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 
 string reverseWord(string input) {
     // Write your implementation here.
 }
-]]></input>
+]]></code>
       <tests>
 #define CATCH_CONFIG_MAIN
 #include &lt;catch.hpp&gt;
@@ -447,7 +447,7 @@ TEST_CASE("reverseWord function") {
         first letter of every word, and returns the new <c>string</c> .</p>
     </statement>
     <program interactive="activecode">
-      <input><![CDATA[
+      <code><![CDATA[
           #include <iostream>
           #include <cctype>
           using namespace std;
@@ -460,14 +460,14 @@ TEST_CASE("reverseWord function") {
               cout << capitalize("every word in this string should be capitalized!") << endl;
               cout << capitalize("this String As well") << endl;
           }
-]]></input>
+]]></code>
     </program>
     <solution>
       <p>Below is one way to implement the <c>capitalize</c> function. We use a <c>while</c> loop to go through all
         the <c>char</c>s in the <c>string</c>. We capitalize the first character and all characters following
         a space using <c>toupper</c>. At the end, we return the <c>string</c>.</p>
       <program xml:id="cp_7_AC_7a"
-               line-numbers="yes"><input><![CDATA[
+               line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <cctype>
 using namespace std;
@@ -490,7 +490,7 @@ int main() {
     cout << capitalize ("every word in this string should be capitalized!") << endl;
     cout << capitalize ("this String As well") << endl;
 }
-]]></input></program>
+]]></code></program>
     </solution>
   </exercise>
 
@@ -503,14 +503,14 @@ int main() {
     <program xml:id="cp_7_AC_8q_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 
 int countVowels(string input) {
     // Write your implementation here.
 }
-]]></input>
+]]></code>
       <tests>
 #define CATCH_CONFIG_MAIN
 #include &lt;catch.hpp&gt;
@@ -575,14 +575,14 @@ TEST_CASE("countVowels function") {
         function. Run and test your code!</p>
     </statement>
     <program interactive="activecode">
-      <input><![CDATA[
+      <code><![CDATA[
           #include <iostream>
           using namespace std;
 
           string longestWord (string input) {
               // Write your implementation here.
           }
-]]></input>
+]]></code>
       <tests>
         #define CATCH_CONFIG_MAIN
         #include &lt;catch.hpp&gt;
@@ -602,7 +602,7 @@ TEST_CASE("countVowels function") {
         length becomes the new max and we update the longest word. This keeps repeating until we
         reach the end of the string, and the longest word is returned.</p>
       <program xml:id="cp_7_AC_9a"
-               line-numbers="yes"><input><![CDATA[
+               line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -623,7 +623,7 @@ string longestWord(string input) {
     }
     return longest;
 }
-]]></input></program>
+]]></code></program>
     </solution>
   </exercise>
 
@@ -640,7 +640,7 @@ string longestWord(string input) {
     <program xml:id="cp_7_AC_10q_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <string>
 #include "ctype.h"
@@ -653,7 +653,7 @@ string snakeToCamel(string input) {
 string camelToSnake(string input) {
     // Write your implementation here.
 }
-    ]]></input>
+    ]]></code>
       <tests>
 #define CATCH_CONFIG_MAIN
 #include &lt;catch.hpp&gt;

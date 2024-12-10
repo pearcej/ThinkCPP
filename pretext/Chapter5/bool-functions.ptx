@@ -27,7 +27,7 @@ bool bigFlag = !isSingleDigit(17);</program>
   <program xml:id="bool_fun_AC_1"
            interactive="activecode"
            line-numbers="yes">
-    <input><![CDATA[
+    <code><![CDATA[
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -42,7 +42,7 @@ using namespace std;
     cout << bigFlag;
     return 0;
   }
-        ]]></input>
+        ]]></code>
   </program>
   <p>The first line outputs the value true because 2 is a single-digit
     number. Unfortunately, when C++ outputs bools, it does not display the

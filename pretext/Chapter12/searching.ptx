@@ -36,7 +36,7 @@ cout &lt;&lt; "I found the card at index = " &lt;&lt; index &lt;&lt; endl;</prog
     <program xml:id="c12_8_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <string>
 #include <vector>
@@ -66,7 +66,7 @@ int main() {
     cout << find(card, deck);
 }
 
-        ]]></input>
+        ]]></code>
       <tests>
 
 Card::Card() {

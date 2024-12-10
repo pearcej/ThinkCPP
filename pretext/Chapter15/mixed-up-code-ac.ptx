@@ -9,11 +9,11 @@
                     display an error message and exit with a status of 1.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_15_1_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -22,7 +22,7 @@ using namespace std;
                 Below is one way to write code that makes sure the file was opened properly.
 
     
-    <program xml:id="mucp_15_1_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_15_1_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -33,11 +33,11 @@ int main() {
         exit(1);
     }
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_15_1_ac_a"><statement><p>Below is one way to write code that makes sure the file was opened properly.</p></statement><program xml:id="mucp_15_1_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_15_1_ac_a"><statement><p>Below is one way to write code that makes sure the file was opened properly.</p></statement><program xml:id="mucp_15_1_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -48,7 +48,7 @@ int main() {
         exit(1);
     }
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -57,11 +57,11 @@ int main() {
                     opens that file.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_15_2_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -70,7 +70,7 @@ using namespace std;
                 Below is one way to write the program.
 
     
-    <program xml:id="mucp_15_2_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_15_2_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -84,11 +84,11 @@ int main() {
         exit(1);
     }
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_15_2_ac_a"><statement><p>Below is one way to write the program.</p></statement><program xml:id="mucp_15_2_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_15_2_ac_a"><statement><p>Below is one way to write the program.</p></statement><program xml:id="mucp_15_2_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -102,7 +102,7 @@ int main() {
         exit(1);
     }
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -115,11 +115,11 @@ int main() {
                     check that it is opened correctly.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_15_3_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -128,7 +128,7 @@ using namespace std;
                 Below is one way to write the program.
 
     
-    <program xml:id="mucp_15_3_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_15_3_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -145,11 +145,11 @@ int main() {
    sum = n1 + n2 + n3 + n4 + n5;
    outfile << "The average is " << sum / 5.0 << endl;
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_15_3_ac_a"><statement><p>Below is one way to write the program.</p></statement><program xml:id="mucp_15_3_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_15_3_ac_a"><statement><p>Below is one way to write the program.</p></statement><program xml:id="mucp_15_3_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -166,7 +166,7 @@ int main() {
    sum = n1 + n2 + n3 + n4 + n5;
    outfile << "The average is " << sum / 5.0 << endl;
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -180,11 +180,11 @@ int main() {
                     number of data points before checking for the min and max.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_15_4_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -193,7 +193,7 @@ using namespace std;
                 Below is one way to write the code.
 
     
-    <program xml:id="mucp_15_4_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_15_4_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -216,11 +216,11 @@ int main() {
     }
     outfile << "Number of data: " << numData << ", min: " << min << ", max: " << max << endl;
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_15_4_ac_a"><statement><p>Below is one way to write the code.</p></statement><program xml:id="mucp_15_4_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_15_4_ac_a"><statement><p>Below is one way to write the code.</p></statement><program xml:id="mucp_15_4_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -243,7 +243,7 @@ int main() {
     }
     outfile << "Number of data: " << numData << ", min: " << min << ", max: " << max << endl;
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -255,13 +255,13 @@ int main() {
                     <c>main</c> function. Open and check the file before working with the data.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_15_5_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <string>
 #include <vector>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -270,7 +270,7 @@ using namespace std;
                 Below is one way to define Employee.
 
     
-    <program xml:id="mucp_15_5_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_15_5_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <string>
 #include <vector>
@@ -305,11 +305,11 @@ int main() {
         data.push_back(e);
     }
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_15_5_ac_a"><statement><p>Below is one way to define <c>Employee</c>.</p></statement><program xml:id="mucp_15_5_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_15_5_ac_a"><statement><p>Below is one way to define <c>Employee</c>.</p></statement><program xml:id="mucp_15_5_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <string>
 #include <vector>
@@ -344,7 +344,7 @@ int main() {
         data.push_back(e);
     }
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -356,11 +356,11 @@ int main() {
                     of the function <c>toLower</c> first. Separate the words with spaces.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_15_6_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -369,7 +369,7 @@ using namespace std;
                 Below is one way to write the program and toLower function.
 
     
-    <program xml:id="mucp_15_6_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_15_6_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
@@ -394,11 +394,11 @@ int main() {
         outfile << upper << " ";
     }
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_15_6_ac_a"><statement><p>Below is one way to write the program and <c>toLower</c> function.</p></statement><program xml:id="mucp_15_6_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_15_6_ac_a"><statement><p>Below is one way to write the program and <c>toLower</c> function.</p></statement><program xml:id="mucp_15_6_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
@@ -423,7 +423,7 @@ int main() {
         outfile << upper << " ";
     }
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -437,11 +437,11 @@ int main() {
                     are guaranteed that there are equal amounts of odd and even numbers.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_15_7_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -450,7 +450,7 @@ using namespace std;
                 Below is one way to write the prgram.
 
     
-    <program xml:id="mucp_15_7_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_15_7_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -467,11 +467,11 @@ int main() {
         outfile << odd << " " << even << " ";
     }
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_15_7_ac_a"><statement><p>Below is one way to write the prgram.</p></statement><program xml:id="mucp_15_7_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_15_7_ac_a"><statement><p>Below is one way to write the prgram.</p></statement><program xml:id="mucp_15_7_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -488,7 +488,7 @@ int main() {
         outfile << odd << " " << even << " ";
     }
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -499,12 +499,12 @@ int main() {
                     Put the <c>Set</c> definition first in your answer.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_15_8_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -513,7 +513,7 @@ using namespace std;
                 Below is one way to write the vectorToSet function.
 
     
-    <program xml:id="mucp_15_8_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_15_8_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -538,11 +538,11 @@ Set vectorToSet(vector<string> data) {
         s.add(data[i]);
     }
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_15_8_ac_a"><statement><p>Below is one way to write the <c>vectorToSet</c> function.</p></statement><program xml:id="mucp_15_8_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_15_8_ac_a"><statement><p>Below is one way to write the <c>vectorToSet</c> function.</p></statement><program xml:id="mucp_15_8_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -567,7 +567,7 @@ Set vectorToSet(vector<string> data) {
         s.add(data[i]);
     }
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -578,12 +578,12 @@ the constructor and ``at</c> function, which returns the data stored
                     at a given row and column.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_15_9_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -592,7 +592,7 @@ using namespace std;
                 Below is one way to define Matrix and write the functions.
 
     
-    <program xml:id="mucp_15_9_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_15_9_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -611,11 +611,11 @@ class Matrix {
             return elements[row][col];
         }
 };
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_15_9_ac_a"><statement><p>Below is one way to define <c>Matrix</c> and write the functions.</p></statement><program xml:id="mucp_15_9_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_15_9_ac_a"><statement><p>Below is one way to define <c>Matrix</c> and write the functions.</p></statement><program xml:id="mucp_15_9_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -634,7 +634,7 @@ class Matrix {
             return elements[row][col];
         }
 };
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -648,12 +648,12 @@ class Matrix {
                     Data values begin on the next line.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_15_10_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -662,7 +662,7 @@ using namespace std;
                 Below is one way to setData member function.
 
     
-    <program xml:id="mucp_15_10_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_15_10_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -703,11 +703,11 @@ int main() {
         }
     }
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_15_10_ac_a"><statement><p>Below is one way to <c>setData</c> member function.</p></statement><program xml:id="mucp_15_10_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_15_10_ac_a"><statement><p>Below is one way to <c>setData</c> member function.</p></statement><program xml:id="mucp_15_10_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -748,7 +748,7 @@ int main() {
         }
     }
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
 </section>

@@ -43,7 +43,7 @@ if (card1.equals(card2)) {
     <program xml:id="c12_4_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <string>
 #include <vector>
@@ -66,7 +66,7 @@ int main() {
     card1.equals(card3);
 }
 
-        ]]></input>
+        ]]></code>
       <tests>
 
 Card::Card() {

@@ -47,7 +47,7 @@ TEN, JACK, QUEEN, KING };</program>
     <program xml:id="enum_type_AC_1_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <string>
 #include <vector>
@@ -74,7 +74,7 @@ int main() {
     card3.print();
 }
 
-        ]]></input>
+        ]]></code>
       <tests>
 Card::Card(Suit s, Rank r) {
     suit = s;  rank = r;

@@ -27,7 +27,7 @@
     <program xml:id="tables_AC_1_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -40,7 +40,7 @@ int main() {
     }
     return 0;
 }
-        ]]></input>
+        ]]></code>
     </program>
   </listing>
   <p>The sequence <c>\t</c> represents a <term>tab</term> character. The sequence <c>\n</c> represents a
@@ -93,7 +93,7 @@ int main() {
     <program xml:id="tables_AC_2_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -105,7 +105,7 @@ int main() {
         x = x * 2.0;
     }
 }
-        ]]></input>
+        ]]></code>
     </program>
   </listing>
   <p>Now instead of adding something to <c>x</c> each time through the loop, which yields an
@@ -134,7 +134,7 @@ int main() {
     <program xml:id="tables_AC_3_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -146,7 +146,7 @@ int main() {
         x = x * 2.0;
     }
 }
-        ]]></input>
+        ]]></code>
     </program>
     <hint>
       <activity label="tables_1"
@@ -233,7 +233,7 @@ int main() {
       <p>How can we modify the code below to print out a table of the first five odd numbers and
         their perfect cubes?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 int main() {
   int x = 1;
   while (x < 11) {
@@ -241,7 +241,7 @@ int main() {
     x = x + 1;
   }
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>

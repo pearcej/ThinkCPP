@@ -48,7 +48,7 @@ public:
     <program xml:id="fourteeneleven_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <cmath>
 #include <cassert>
@@ -86,7 +86,7 @@ int main() {
     // it is now a private member function
     c1.calculateCartesian();
 }
-        ]]></input>
+        ]]></code>
       <tests>
 Complex::Complex() { cartesian = false;  polar = false; }
 

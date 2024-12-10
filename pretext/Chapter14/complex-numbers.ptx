@@ -107,8 +107,8 @@ public:
             object which is represented by three sides. In <c>main</c>, we print out the perimeter of
             the triangle, which should be 12.
     </caption>
-    <program xml:id="fourteentwo_editor" interactive="activecode"  stdin="asdf asdf" download="yes" line-numbers="yes">
-      <input><![CDATA[
+    <program xml:id="fourteentwo_editor" interactive="activecode" download="yes" line-numbers="yes">
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -131,7 +131,7 @@ int main() {
   Triangle t1(3, 4, 5);
   cout << t1.perimeter();
 }
-        ]]></input>
+        ]]></code>
     </program>
   </listing>
   <listing label="fourteenthree">
@@ -143,7 +143,7 @@ int main() {
             angle between them. Notice how our <c>main</c> function is the exact same as before.
     </caption>
     <program xml:id="fourteenthree_editor" interactive="activecode" line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -171,7 +171,7 @@ int main() {
   Triangle t1(3, 4, 5);
   cout << t1.perimeter();
 }
-        ]]></input>
+        ]]></code>
     </program>
   </listing>
   <exercise label="question14_3_1" numbered="yes" adaptive="yes" indentation="hide">

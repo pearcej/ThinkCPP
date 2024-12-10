@@ -43,7 +43,7 @@ blank.y = 4.0;</program>
       <p>Which of the following would be the correct way to initialize the <c>x</c> instance variable
         of the <c>Point</c> object?</p>
       <program line-numbers="yes">
-        <input>
+        <code>
 struct Point() {
   double x, y;
 };
@@ -51,7 +51,7 @@ struct Point() {
 int main() {
   Point nice;
 }
-</input>
+</code>
       </program>
     </statement>
     <choices>

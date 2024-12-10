@@ -8,11 +8,11 @@
                     instance variables title, artist, and numLikes.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_12_1_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -21,7 +21,7 @@ using namespace std;
                 Below is one way to define the Song struct.
 
     
-    <program xml:id="mucp_12_1_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_12_1_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -30,11 +30,11 @@ struct Song {
     string artist;
     int numLikes;
 };
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_12_1_ac_a"><statement><p>Below is one way to define the <c>Song</c> struct.</p></statement><program xml:id="mucp_12_1_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_12_1_ac_a"><statement><p>Below is one way to define the <c>Song</c> struct.</p></statement><program xml:id="mucp_12_1_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -43,7 +43,7 @@ struct Song {
     string artist;
     int numLikes;
 };
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -53,12 +53,12 @@ struct Song {
                     a vector of Songs.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_12_2_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -67,7 +67,7 @@ using namespace std;
                 Below is one way to define the Album struct.
 
     
-    <program xml:id="mucp_12_2_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_12_2_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -83,11 +83,11 @@ struct Album {
     int year;
     vector&#60Song&#62 songs;
 };
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_12_2_ac_a"><statement><p>Below is one way to define the <c>Album</c> struct.</p></statement><program xml:id="mucp_12_2_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_12_2_ac_a"><statement><p>Below is one way to define the <c>Album</c> struct.</p></statement><program xml:id="mucp_12_2_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -103,7 +103,7 @@ struct Album {
     int year;
     vector&#60Song&#62 songs;
 };
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -113,11 +113,11 @@ struct Album {
                     and returns true if they are equal.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_12_3_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -126,7 +126,7 @@ using namespace std
                 Below is one way to write the songEqual function.
 
     
-    <program xml:id="mucp_12_3_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_12_3_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std
 
@@ -144,11 +144,11 @@ bool songEqual(const Song& a, const &Song b) {
         return false;
     }
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_12_3_ac_a"><statement><p>Below is one way to write the <c>songEqual</c> function.</p></statement><program xml:id="mucp_12_3_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_12_3_ac_a"><statement><p>Below is one way to write the <c>songEqual</c> function.</p></statement><program xml:id="mucp_12_3_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std
 
@@ -166,7 +166,7 @@ bool songEqual(const Song& a, const &Song b) {
         return false;
     }
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -178,12 +178,12 @@ bool songEqual(const Song& a, const &Song b) {
                     songEqual function we defined earlier!</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_12_4_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -192,7 +192,7 @@ using namespace std;
                 Below is one way to write the Album member function.
 
     
-    <program xml:id="mucp_12_4_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_12_4_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -217,11 +217,11 @@ int Album::searchAlbum(const Song& a) {
     }
     return -1;
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_12_4_ac_a"><statement><p>Below is one way to write the <c>Album</c> member function.</p></statement><program xml:id="mucp_12_4_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_12_4_ac_a"><statement><p>Below is one way to write the <c>Album</c> member function.</p></statement><program xml:id="mucp_12_4_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -246,7 +246,7 @@ int Album::searchAlbum(const Song& a) {
     }
     return -1;
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -257,12 +257,12 @@ int Album::searchAlbum(const Song& a) {
                     liked song is title by artist with numLikes likes.</q></p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_12_5_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -271,7 +271,7 @@ using namespace std;
                 Below is one way to write the Album member function.
 
     
-    <program xml:id="mucp_12_5_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_12_5_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -301,11 +301,11 @@ void Album::mostLikedSong() {
     cout << " by " << songs[maxIndex].artist << " with ";
     cout << songs[maxIndex].numLikes << " likes." << endl;
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_12_5_ac_a"><statement><p>Below is one way to write the <c>Album</c> member function.</p></statement><program xml:id="mucp_12_5_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_12_5_ac_a"><statement><p>Below is one way to write the <c>Album</c> member function.</p></statement><program xml:id="mucp_12_5_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -335,7 +335,7 @@ void Album::mostLikedSong() {
     cout << " by " << songs[maxIndex].artist << " with ";
     cout << songs[maxIndex].numLikes << " likes." << endl;
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -344,11 +344,11 @@ void Album::mostLikedSong() {
                     instance variables name and price.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_12_6_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -357,7 +357,7 @@ using namespace std;
                 Below is one way to define the Product struct.
 
     
-    <program xml:id="mucp_12_6_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_12_6_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -365,11 +365,11 @@ struct Product {
     string name;
     double price;
 };
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_12_6_ac_a"><statement><p>Below is one way to define the <c>Product</c> struct.</p></statement><program xml:id="mucp_12_6_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_12_6_ac_a"><statement><p>Below is one way to define the <c>Product</c> struct.</p></statement><program xml:id="mucp_12_6_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -377,7 +377,7 @@ struct Product {
     string name;
     double price;
 };
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -387,12 +387,12 @@ struct Product {
                     a vector of Products.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_12_7_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -401,7 +401,7 @@ using namespace std;
                 Below is one way to define the List struct.
 
     
-    <program xml:id="mucp_12_7_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_12_7_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -415,11 +415,11 @@ struct List {
     string type;
     vector&#60Product&#62 products;
 };
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_12_7_ac_a"><statement><p>Below is one way to define the <c>List</c> struct.</p></statement><program xml:id="mucp_12_7_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_12_7_ac_a"><statement><p>Below is one way to define the <c>List</c> struct.</p></statement><program xml:id="mucp_12_7_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -433,7 +433,7 @@ struct List {
     string type;
     vector&#60Product&#62 products;
 };
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -446,12 +446,12 @@ struct List {
                     of the Product in the List. Return -1 if it's not in the List.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_12_8_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -460,7 +460,7 @@ using namespace std;
                 Below is one way to write the searchList member function.
 
     
-    <program xml:id="mucp_12_8_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_12_8_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -487,11 +487,11 @@ int List::searchList(const Product& a) {
     }
     return -1;
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_12_8_ac_a"><statement><p>Below is one way to write the <c>searchList</c> member function.</p></statement><program xml:id="mucp_12_8_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_12_8_ac_a"><statement><p>Below is one way to write the <c>searchList</c> member function.</p></statement><program xml:id="mucp_12_8_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -518,7 +518,7 @@ int List::searchList(const Product& a) {
     }
     return -1;
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -527,12 +527,12 @@ int List::searchList(const Product& a) {
                     which calculates and returns the total price of all the Products.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_12_9_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -541,7 +541,7 @@ using namespace std;
                 Below is one way to write the totalPrice member function.
 
     
-    <program xml:id="mucp_12_9_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_12_9_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -563,11 +563,11 @@ double List::totalPrice() {
     }
     return total;
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_12_9_ac_a"><statement><p>Below is one way to write the <c>totalPrice</c> member function.</p></statement><program xml:id="mucp_12_9_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_12_9_ac_a"><statement><p>Below is one way to write the <c>totalPrice</c> member function.</p></statement><program xml:id="mucp_12_9_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -589,7 +589,7 @@ double List::totalPrice() {
     }
     return total;
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -601,12 +601,12 @@ double List::totalPrice() {
                     the gap with the last product in the List.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_12_10_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -615,7 +615,7 @@ using namespace std;
                 Below is one way to write the removeProduct member function.
 
     
-    <program xml:id="mucp_12_10_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_12_10_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -633,11 +633,11 @@ struct List {
 void List::removeProduct(int index) {
     products[index] = products[products.size() - 1];
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_12_10_ac_a"><statement><p>Below is one way to write the <c>removeProduct</c> member function.</p></statement><program xml:id="mucp_12_10_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_12_10_ac_a"><statement><p>Below is one way to write the <c>removeProduct</c> member function.</p></statement><program xml:id="mucp_12_10_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -655,7 +655,7 @@ struct List {
 void List::removeProduct(int index) {
     products[index] = products[products.size() - 1];
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
 </section>

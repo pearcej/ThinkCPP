@@ -6,13 +6,12 @@
     this:</p>
   <p>The <q>Hello, World.</q> program is a great place to start learning a new language. Observe the
     program structure below.</p>
-  <listing label="first_program_AC_list">
-    <caption>
-      This program prints <q>Hello, World.</q> to the output.
-    </caption>
+  <listing label="first_program_AC_list"
+           xml:id="first_program_AC_list">
+    <caption> This program prints <q>Hello, World.</q> to the output. </caption>
     <program interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // main: generate some simple output
@@ -20,13 +19,7 @@ int main(int foo) {
     cout << "Hello, World." << endl;
     return 0;
 }
-
-
-for (int i = 0; i &lt; upperBound; i++) {
-  int count = howMany(vector, i);
-  histogram[i] = count;
-}
-        ]]></input>
+        ]]></code>
     </program>
   </listing>
   <p>Some people judge the quality of a programming language by the simplicity of the <q>Hello,

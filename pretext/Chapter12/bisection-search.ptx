@@ -136,7 +136,7 @@ I found the card at index = -1</output></console>
     <program xml:id="c12_9_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <string>
 #include <vector>
@@ -168,7 +168,7 @@ int main() {
     cout << findBisect(card, deck, 0, deck.size() - 1);
 }
 
-        ]]></input>
+        ]]></code>
       <tests>
 
 Card::Card() {

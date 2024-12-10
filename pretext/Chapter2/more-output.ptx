@@ -11,7 +11,7 @@
              interactive="activecode"
              line-numbers="yes"
              highlight-lines="5-6">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -19,7 +19,7 @@ int main() {
     cout << "Hello, world." << endl;     // output one line
     cout << "How are you?" << endl;      // output another
 }
-        ]]></input>
+        ]]></code>
     </program>
   </listing>
   <p>As you can see, it is legal to put comments at the end of a line, as
@@ -42,7 +42,7 @@ int main() {
              interactive="activecode"
              line-numbers="yes"
              highlight-lines="5">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -50,7 +50,7 @@ int main() {
     cout << "Goodbye, ";
     cout << "cruel world!" << endl;
 }
-]]></input>
+]]></code>
     </program>
   </listing>
   <p>In this case the output appears on a single line as <c>Goodbye, cruel
@@ -68,7 +68,7 @@ world!</c>. Notice in <c>main</c> that there is a
     <program xml:id="more_output_AC_3_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -76,7 +76,7 @@ int main() {
     cout<<"Goodbye, ";
     cout<<"cruel world!"<<endl;
 }
-        ]]></input>
+        ]]></code>
     </program>
   </listing>
   <p>This program would compile and run just as well as the original. The
@@ -91,19 +91,19 @@ int main() {
     <program xml:id="more_output_AC_4_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 
 int main() {cout<<"Goodbye, ";cout<<"cruel world!"<<endl;}
-        ]]></input>
+        ]]></code>
     </program>
   </listing>
   <p>That would work, too, although you have probably noticed that the
     program is getting harder and harder to read. Newlines and spaces are
     useful for organizing your program visually, making it easier to read
     the program and locate syntax errors.</p>
-  <exercise label="more_output_2">
+  <exercise label="more_output_1">
     <statement>
       <p>A phrase that appears in quotation marks is called a(n)<var/>.</p>
     </statement>
@@ -122,7 +122,7 @@ int main() {cout<<"Goodbye, ";cout<<"cruel world!"<<endl;}
       </var>
     </setup>
   </exercise>
-  <exercise label="more_output_3.0">
+  <exercise label="more_output_2">
     <statement>
       <p>On how many separate lines will the 7's be printed?</p>
       <program
@@ -227,7 +227,7 @@ int main() {
       </block>
     </blocks>
   </exercise>
-  <exercise label="more_output_3.1"
+  <exercise label="more_output_4"
             numbered="yes"
             adaptive="yes"
             indentation="show">

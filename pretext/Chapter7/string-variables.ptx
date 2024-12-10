@@ -11,7 +11,7 @@
     <program xml:id="string_variables_AC_1_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
@@ -21,7 +21,7 @@ int main() {
     first = "Hello, ";
     string second = "world.";
 }
-        ]]></input>
+        ]]></code>
     </program>
   </listing>
   <p>Normally when string values like <c>"Hello, "</c> or <c>"world."</c> appear, they are treated as C strings. In
@@ -40,7 +40,7 @@ int main() {
     <program xml:id="string_variables_AC_2_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
@@ -51,7 +51,7 @@ int main() {
     string second = "world.";
     cout << first << second << endl;
 }
-        ]]></input>
+        ]]></code>
     </program>
   </listing>
   <exercise label="string_variables_1"

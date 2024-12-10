@@ -118,7 +118,7 @@
     <program xml:id="keywords_4_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -130,7 +130,7 @@ int main() {
     // Do not modify anything below.
     return 0;
 }
-        ]]></input>
+        ]]></code>
     </program>
   </exercise>
 </section>

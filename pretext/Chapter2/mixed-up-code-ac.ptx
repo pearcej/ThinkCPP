@@ -7,11 +7,11 @@
       Construct a block of code that prints: <q>Lions &amp;</q> one the first line, <q>Tigers &amp; Bears!</q> on the second line, and <q>Oh my!</q> on the FOURTH line.
     </caption>
     <program interactive="activecode" line-numbers="yes" xml:id="VARS_p1_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -20,7 +20,7 @@ using namespace std;
                 Below is one way to write the code to print one separate lines.
 
     
-    <program xml:id="VARS_p1_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="VARS_p1_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -31,11 +31,11 @@ int main() {
     cout << endl;
     cout << "Oh my!";
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<listing label="VARS_p1_ac_a"><caption>Below is one way to write the code to print one separate lines.</caption><program xml:id="VARS_p1_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<listing label="VARS_p1_ac_a"><caption>Below is one way to write the code to print one separate lines.</caption><program xml:id="VARS_p1_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -46,7 +46,7 @@ int main() {
     cout << endl;
     cout << "Oh my!";
 }
-        ]]></input></program></listing>
+        ]]></code></program></listing>
             </solution>
   </listing>
   <listing label="XXX">
@@ -54,11 +54,11 @@ int main() {
       Construct a block of code that swaps the value of integers x and y, which have values 3 and 6, respectively.
     </caption>
     <program interactive="activecode" line-numbers="yes" xml:id="VARS_p2_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -67,7 +67,7 @@ using namespace std;
                 Below is one way to write the code to declare and swap these variables.
 
     
-    <program xml:id="VARS_p2_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="VARS_p2_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -80,11 +80,11 @@ int main() {
     x = y;
     y = temp;
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<listing label="VARS_p2_ac_a"><caption>Below is one way to write the code to declare and swap these variables.</caption><program xml:id="VARS_p2_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<listing label="VARS_p2_ac_a"><caption>Below is one way to write the code to declare and swap these variables.</caption><program xml:id="VARS_p2_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -97,7 +97,7 @@ int main() {
     x = y;
     y = temp;
 }
-        ]]></input></program></listing>
+        ]]></code></program></listing>
             </solution>
   </listing>
   <listing label="XXX">
@@ -105,11 +105,11 @@ int main() {
       Dan Humphrey is a 3.98 student at Constance High School. His crush's first initial is S. Construct a program that assigns the variables name, GPA, and crush, in that order. Output the variables to the terminal to check your code.
     </caption>
     <program interactive="activecode" line-numbers="yes" xml:id="VARS_p3_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -118,7 +118,7 @@ using namespace std;
                 Below is one way to write the code to assign the variables.
 
     
-    <program xml:id="VARS_p3_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="VARS_p3_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -128,11 +128,11 @@ int main() {
     GPA = 3.98;
     char crush = 'S';
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<listing label="VARS_p3_ac_a"><caption>Below is one way to write the code to assign the variables.</caption><program xml:id="VARS_p3_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<listing label="VARS_p3_ac_a"><caption>Below is one way to write the code to assign the variables.</caption><program xml:id="VARS_p3_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -142,7 +142,7 @@ int main() {
     GPA = 3.98;
     char crush = 'S';
 }
-        ]]></input></program></listing>
+        ]]></code></program></listing>
             </solution>
   </listing>
   <listing label="XXX">
@@ -151,11 +151,11 @@ int main() {
                     Use the variable name &#x2018;tbsp' for the final tablespoons conversion.
     </caption>
     <program interactive="activecode" line-numbers="yes" xml:id="VARS_p4_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -164,7 +164,7 @@ using namespace std;
                 Below is one way to write the code to convert units to tablespoons.
 
     
-    <program xml:id="VARS_p4_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="VARS_p4_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -174,11 +174,11 @@ int main() {
     double tbsp;
     tbsp = 16 * cups;
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<listing label="VARS_p4_ac_a"><caption>Below is one way to write the code to convert units to tablespoons.</caption><program xml:id="VARS_p4_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<listing label="VARS_p4_ac_a"><caption>Below is one way to write the code to convert units to tablespoons.</caption><program xml:id="VARS_p4_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -188,7 +188,7 @@ int main() {
     double tbsp;
     tbsp = 16 * cups;
 }
-        ]]></input></program></listing>
+        ]]></code></program></listing>
             </solution>
   </listing>
   <listing label="XXX">
@@ -197,11 +197,11 @@ int main() {
                     Use a length of 2, width of 3, and height of 4.
     </caption>
     <program interactive="activecode" line-numbers="yes" xml:id="VARS_p5_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -210,7 +210,7 @@ using namespace std;
                 Below is one way to write the code to define variables, find volume and print results to the terminal.
 
     
-    <program xml:id="VARS_p5_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="VARS_p5_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -222,11 +222,11 @@ int main() {
     volume = height * width * length;
     cout << volume;
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<listing label="VARS_p5_ac_a"><caption>Below is one way to write the code to define variables, find volume and print results to the terminal.</caption><program xml:id="VARS_p5_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<listing label="VARS_p5_ac_a"><caption>Below is one way to write the code to define variables, find volume and print results to the terminal.</caption><program xml:id="VARS_p5_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -238,7 +238,7 @@ int main() {
     volume = height * width * length;
     cout << volume;
 }
-        ]]></input></program></listing>
+        ]]></code></program></listing>
             </solution>
   </listing>
   <listing label="XXX">
@@ -246,11 +246,11 @@ int main() {
       Construct a block of code that changes the value of the variable a from the character &#x2018;a' to the character &#x2018;z'. Remember that number values can be used with characters and operations.
     </caption>
     <program interactive="activecode" line-numbers="yes" xml:id="VARS_p6_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -259,7 +259,7 @@ using namespace std;
                 Below is one way to write the code to change the value of the character variable.
 
     
-    <program xml:id="VARS_p6_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="VARS_p6_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -267,11 +267,11 @@ int main() {
     char a = 'a';
     a = a + 25;
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<listing label="VARS_p6_ac_a"><caption>Below is one way to write the code to change the value of the character variable.</caption><program xml:id="VARS_p6_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<listing label="VARS_p6_ac_a"><caption>Below is one way to write the code to change the value of the character variable.</caption><program xml:id="VARS_p6_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -279,7 +279,7 @@ int main() {
     char a = 'a';
     a = a + 25;
 }
-        ]]></input></program></listing>
+        ]]></code></program></listing>
             </solution>
   </listing>
   <listing label="XXX">
@@ -287,11 +287,11 @@ int main() {
       Construct a block of code that outputs the <c>volume</c> of a cylinder with a radius of 3 and a height of 4. The formula for volume of a cylinder is V = (pi)(r^2)(h). Use 3.14 for pi.
     </caption>
     <program interactive="activecode" line-numbers="yes" xml:id="VARS_p7_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -300,7 +300,7 @@ using namespace std;
                 Below is one way to write the code to output the volume of the cylinder.
 
     
-    <program xml:id="VARS_p7_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="VARS_p7_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -311,11 +311,11 @@ int main() {
     double volume = pi * radius * radius * height;
     cout << volume << endl;
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<listing label="VARS_p7_ac_a"><caption>Below is one way to write the code to output the volume of the cylinder.</caption><program xml:id="VARS_p7_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<listing label="VARS_p7_ac_a"><caption>Below is one way to write the code to output the volume of the cylinder.</caption><program xml:id="VARS_p7_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -326,7 +326,7 @@ int main() {
     double volume = pi * radius * radius * height;
     cout << volume << endl;
 }
-        ]]></input></program></listing>
+        ]]></code></program></listing>
             </solution>
   </listing>
   <listing label="XXX">
@@ -334,11 +334,11 @@ int main() {
       Construct a block of code that assigns the string <q>MATH</q> to a variable and prints <q>My favorite class is MATH</q> on the same line.
     </caption>
     <program interactive="activecode" line-numbers="yes" xml:id="VARS_p8_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -347,7 +347,7 @@ using namespace std;
                 Below is one way to write the code to output the string.
 
     
-    <program xml:id="VARS_p8_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="VARS_p8_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -356,11 +356,11 @@ int main() {
     cout << "My favorite class is ";
     cout << favClass;
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<listing label="VARS_p8_ac_a"><caption>Below is one way to write the code to output the string.</caption><program xml:id="VARS_p8_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<listing label="VARS_p8_ac_a"><caption>Below is one way to write the code to output the string.</caption><program xml:id="VARS_p8_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -369,7 +369,7 @@ int main() {
     cout << "My favorite class is ";
     cout << favClass;
 }
-        ]]></input></program></listing>
+        ]]></code></program></listing>
             </solution>
   </listing>
   <listing label="XXX">
@@ -377,7 +377,7 @@ int main() {
       It's Black Friday and the Nintendo Switch you'be been saving up for is marked down to 60% of its original price!  Construct a block of code that calculates and outputs the variable <c>moneySaved</c>, which is how much money you'd be saving if the system originally costed $359.99?
     </caption>
     <program interactive="activecode" line-numbers="yes" xml:id="VARS_p9_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -388,7 +388,7 @@ int main() {
     cout << moneySaved << endl;
     cout << "moneySaved should be $143.99." << endl;
 }
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -397,7 +397,7 @@ int main() {
                 Below is one way to write the code to calculate your savings.
 
     
-    <program xml:id="VARS_p9_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="VARS_p9_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -406,11 +406,11 @@ int main() {
     double discount = game * 0.60;
     double moneySaved = game - discount;
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<listing label="VARS_p9_ac_a"><caption>Below is one way to write the code to calculate your savings.</caption><program xml:id="VARS_p9_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<listing label="VARS_p9_ac_a"><caption>Below is one way to write the code to calculate your savings.</caption><program xml:id="VARS_p9_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -419,7 +419,7 @@ int main() {
     double discount = game * 0.60;
     double moneySaved = game - discount;
 }
-        ]]></input></program></listing>
+        ]]></code></program></listing>
             </solution>
   </listing>
   <listing label="XXX">
@@ -427,11 +427,11 @@ int main() {
       Your family just bought a dog and everyone has been fighting over what to name it.  It went from Champ to Copper to Higgins, and after a few days of being Higgins, everyone agreed on Buddy.  Construct a block of code that illustrates this concept.
     </caption>
     <program interactive="activecode" line-numbers="yes" xml:id="VARS_p10_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -440,7 +440,7 @@ using namespace std;
                 Below is one way to write the code to illustrate the dog's name change process.
 
     
-    <program xml:id="VARS_p10_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="VARS_p10_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -451,11 +451,11 @@ int main() {
     name = newName;
     name = "Buddy";
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<listing label="VARS_p10_ac_a"><caption>Below is one way to write the code to illustrate the dog's name change process.</caption><program xml:id="VARS_p10_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<listing label="VARS_p10_ac_a"><caption>Below is one way to write the code to illustrate the dog's name change process.</caption><program xml:id="VARS_p10_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -466,7 +466,7 @@ int main() {
     name = newName;
     name = "Buddy";
 }
-        ]]></input></program></listing>
+        ]]></code></program></listing>
             </solution>
   </listing>
 </section>

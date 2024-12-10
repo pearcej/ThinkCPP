@@ -9,12 +9,12 @@
                     of <c>vec</c> by 1 (in that order).  This should work no matter what <c>vec</c> is.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="vectors_p1_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -23,7 +23,7 @@ using namespace std;
                 Below is one way to construct the code.
 
     
-    <program xml:id="vectors_p1_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="vectors_p1_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -36,11 +36,11 @@ int main() {
     int last = vec.size() - 1;
     vec[last]++;
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="vectors_p1_ac_a"><statement><p>Below is one way to construct the code.</p></statement><program xml:id="vectors_p1_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="vectors_p1_ac_a"><statement><p>Below is one way to construct the code.</p></statement><program xml:id="vectors_p1_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -53,7 +53,7 @@ int main() {
     int last = vec.size() - 1;
     vec[last]++;
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -64,12 +64,12 @@ int main() {
                     increasing index.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="vectors_p2_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -78,7 +78,7 @@ using namespace std;
                 Below is one way to construct the code.
 
     
-    <program xml:id="vectors_p2_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="vectors_p2_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -89,11 +89,11 @@ int main() {
     digs.pop_back();
     digs.push_back(4);
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="vectors_p2_ac_a"><statement><p>Below is one way to construct the code.</p></statement><program xml:id="vectors_p2_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="vectors_p2_ac_a"><statement><p>Below is one way to construct the code.</p></statement><program xml:id="vectors_p2_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -104,7 +104,7 @@ int main() {
     digs.pop_back();
     digs.push_back(4);
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -114,12 +114,12 @@ int main() {
                     digits to <c>{1, 2, 3}</c>.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="vectors_p3_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -128,7 +128,7 @@ using namespace std;
                 Below is one way to construct the code.
 
     
-    <program xml:id="vectors_p3_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="vectors_p3_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -141,11 +141,11 @@ int main() {
     digits[1]++;
     digits[2] = digits[2] * 3;
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="vectors_p3_ac_a"><statement><p>Below is one way to construct the code.</p></statement><program xml:id="vectors_p3_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="vectors_p3_ac_a"><statement><p>Below is one way to construct the code.</p></statement><program xml:id="vectors_p3_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -158,7 +158,7 @@ int main() {
     digits[1]++;
     digits[2] = digits[2] * 3;
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -167,12 +167,12 @@ int main() {
                     and transforms the vector so each element is doubled.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="vectors_p4_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <vectors>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -181,7 +181,7 @@ using namespace std;
                 Below is one way to construct the code.
 
     
-    <program xml:id="vectors_p4_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="vectors_p4_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -192,11 +192,11 @@ int main() {
         numbers[i] = numbers[i] * 2;
     }
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="vectors_p4_ac_a"><statement><p>Below is one way to construct the code.</p></statement><program xml:id="vectors_p4_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="vectors_p4_ac_a"><statement><p>Below is one way to construct the code.</p></statement><program xml:id="vectors_p4_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -207,7 +207,7 @@ int main() {
         numbers[i] = numbers[i] * 2;
     }
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -217,7 +217,7 @@ int main() {
                     Write the necessary code.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="vectors_p5_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -228,7 +228,7 @@ int main() {
 
 
 }
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -237,7 +237,7 @@ int main() {
                 Below is one way to construct the code.
 
     
-    <program xml:id="vectors_p5_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="vectors_p5_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -254,11 +254,11 @@ int main() {
         }
     }
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="vectors_p5_ac_a"><statement><p>Below is one way to construct the code.</p></statement><program xml:id="vectors_p5_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="vectors_p5_ac_a"><statement><p>Below is one way to construct the code.</p></statement><program xml:id="vectors_p5_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -275,7 +275,7 @@ int main() {
         }
     }
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -285,12 +285,12 @@ int main() {
                     chooses these random numbers, then saves them to a vector called <c>keno</c>.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="vectors_p6_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -299,7 +299,7 @@ using namespace std;
                 Below is one way to construct the code
 
     
-    <program xml:id="vectors_p6_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="vectors_p6_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -312,11 +312,11 @@ int main() {
         keno.push_back(y + 1);
     }
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="vectors_p6_ac_a"><statement><p>Below is one way to construct the code</p></statement><program xml:id="vectors_p6_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="vectors_p6_ac_a"><statement><p>Below is one way to construct the code</p></statement><program xml:id="vectors_p6_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -329,7 +329,7 @@ int main() {
         keno.push_back(y + 1);
     }
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -337,7 +337,7 @@ int main() {
       <p>Suppose you have the defined vector <c>album</c>. Construct a block of code that counts how many songs in <c>album</c> start with b. Write the necessary code.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="vectors_p7_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -348,7 +348,7 @@ int main() {
 
 
 }
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -357,7 +357,7 @@ int main() {
                 Below is one way to construct the code
 
     
-    <program xml:id="vectors_p7_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="vectors_p7_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -371,11 +371,11 @@ int main() {
         }
     }
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="vectors_p7_ac_a"><statement><p>Below is one way to construct the code</p></statement><program xml:id="vectors_p7_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="vectors_p7_ac_a"><statement><p>Below is one way to construct the code</p></statement><program xml:id="vectors_p7_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -389,7 +389,7 @@ int main() {
         }
     }
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -399,7 +399,7 @@ int main() {
                     your family can hit the beach on your vacation.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="vectors_p8_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -411,7 +411,7 @@ int main() {
 
 
 }
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -420,7 +420,7 @@ int main() {
                 Below is one way to construct the code
 
     
-    <program xml:id="vectors_p8_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="vectors_p8_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -435,11 +435,11 @@ int main() {
         }
     }
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="vectors_p8_ac_a"><statement><p>Below is one way to construct the code</p></statement><program xml:id="vectors_p8_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="vectors_p8_ac_a"><statement><p>Below is one way to construct the code</p></statement><program xml:id="vectors_p8_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -454,7 +454,7 @@ int main() {
         }
     }
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -463,7 +463,7 @@ int main() {
                     Use the <c>isupper</c> function to check if a letter is uppercase.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="vectors_p9_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -474,7 +474,7 @@ int main() {
 
 
 }
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -483,7 +483,7 @@ int main() {
                 Below is one way to construct the code. For this question, the isupper function is not defined but it returns a bool determined by an input of a string.
 
     
-    <program xml:id="vectors_p9_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="vectors_p9_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -497,11 +497,11 @@ int main() {
         }
     }
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="vectors_p9_ac_a"><statement><p>Below is one way to construct the code. For this question, the <c>isupper</c> function is not defined but it returns a bool determined by an input of a string.</p></statement><program xml:id="vectors_p9_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="vectors_p9_ac_a"><statement><p>Below is one way to construct the code. For this question, the <c>isupper</c> function is not defined but it returns a bool determined by an input of a string.</p></statement><program xml:id="vectors_p9_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -515,7 +515,7 @@ int main() {
         }
     }
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -524,7 +524,7 @@ int main() {
                     Save the counts to a vector with <q>.</q> count as the first element, <q>!</q> count as the second, and <q>?</q> count as the third.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="vectors_p10_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -547,7 +547,7 @@ int main() {
 
 
 }
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -556,7 +556,7 @@ int main() {
                 Below is one way to construct the code
 
     
-    <program xml:id="vector_p10_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="vector_p10_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -581,11 +581,11 @@ int main() {
         counts.push_back(howMany(excl, punc[i]));
     }
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="vector_p10_ac_a"><statement><p>Below is one way to construct the code</p></statement><program xml:id="vector_p10_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="vector_p10_ac_a"><statement><p>Below is one way to construct the code</p></statement><program xml:id="vector_p10_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -610,7 +610,7 @@ int main() {
         counts.push_back(howMany(excl, punc[i]));
     }
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
 </section>

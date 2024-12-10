@@ -70,7 +70,7 @@ Abort</program>
     <program xml:id="fourteenten_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <cmath>
 #include <cassert>
@@ -107,7 +107,7 @@ int main() {
     // "Assertion 'polar' failed."
     c1.calculateCartesian();
 }
-        ]]></input>
+        ]]></code>
       <tests>
 Complex::Complex() { cartesian = false;  polar = false; }
 

@@ -14,7 +14,7 @@
             <c>11:59:3.14159</c>.
     </caption>
     <program xml:id="printTime_AC_1_editor" interactive="activecode" line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -31,14 +31,14 @@ int main() {
     Time time = { 11, 59, 3.14159 };
     printTime(time);
 }
-        ]]></input>
+        ]]></code>
     </program>
   </listing>
   <exercise label="printTime_1">
     <statement>
       <p>Which of the following would be a correct way to display the price of an object and finish the <c>printPrice</c>, which we saw on the previous page?</p>
       <program line-numbers="yes">
-        <input>
+        <code>
 struct Price {
   int dollar, cents;
 };
@@ -52,7 +52,7 @@ int main() {
   Price coffee = { 2, 50 };
   Price pastry = { 2, 0 };
 }
-</input>
+</code>
       </program>
     </statement>
     <choices>

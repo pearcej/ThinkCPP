@@ -53,7 +53,7 @@ public:
     <program xml:id="priv_data_AC_1_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <string>
 #include <vector>
@@ -90,7 +90,7 @@ int main() {
     card.suit = 0;
     */
 }
-        ]]></input>
+        ]]></code>
       <tests>
 Card::Card() {
     suit = 3;  rank = 0;

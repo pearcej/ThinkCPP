@@ -65,7 +65,7 @@ is greater than
     <program xml:id="c12_5_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <string>
 #include <vector>
@@ -96,7 +96,7 @@ int main() {
     }
 }
 
-        ]]></input>
+        ]]></code>
       <tests>
 
 Card::Card() {

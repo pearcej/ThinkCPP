@@ -53,7 +53,7 @@
     <statement>
       <p>The code below reads data from a file called <c>input.txt</c>. What is wrong with the following code?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 #include <iostream>
 #include <fstream>
 using namespace std;
@@ -64,7 +64,7 @@ int main() {
   ifstream infile(filename);
   getline(filename, input);
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -193,7 +193,7 @@ int main() {
     <statement>
       <p>What are the contents of the output file <c>output.txt</c> after running the code below?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 #include <iostream>
 #include <fstream>
 using namespace std;
@@ -208,7 +208,7 @@ int main() {
   cout << "Powers of 2: ";
   outfile << "2 4 8 16 32 64" << endl;
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -252,7 +252,7 @@ int main() {
             The output file <c>averages.txt</c> should store each student's roster number and average test score.
             What should replace the question marks?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 #include <iostream>
 #include <fstream>
 using namespace std;
@@ -276,7 +276,7 @@ int main() {
     ???
   }
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -326,7 +326,7 @@ int main() {
     <statement>
       <p>What does the following code do?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 #include <iostream>
 #include <string>
 using namespace std;
@@ -342,7 +342,7 @@ int main() {
   }
   cout << atoi(digitString) << endl;
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -470,7 +470,7 @@ int main() {
     <statement>
       <p>What is the output of the following code?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -502,7 +502,7 @@ int main() {
   }
   cout << n << endl;
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>

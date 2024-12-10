@@ -32,7 +32,7 @@
     <statement>
       <p>Are there any issues with the code below?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -48,7 +48,7 @@ int main() {
   j = 20;
   cout << i << ": " << j << "!";
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -101,7 +101,7 @@ int main() {
       <p>Take a look at the code below. Is the <c>i</c> in <c>printMultiples</c> the same variable as the <c>i</c>
         in <c>printMultTable</c>?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -125,7 +125,7 @@ void printMultTable() {
 int main() {
   printMultTable();
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -152,7 +152,7 @@ int main() {
     <statement>
       <p>Take a look at the code below. Is the variable <c>j</c> accessible in the function <c>printMultiples</c>?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -176,7 +176,7 @@ void printMultTable() {
 int main() {
   printMultTable();
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>

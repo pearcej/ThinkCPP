@@ -10,7 +10,7 @@
     <statement>
         <p>Construct a block of code that would make the print function into a member function.</p>
         <program line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 struct Student {
      int id, year;
      string name;
@@ -24,7 +24,7 @@ int main( ) {
       Student s1 = { 56673, 2023, "Bob" };
       printStudent (s1);
 }
-]]></input>
+]]></code>
         </program>
     </statement>
     <blocks>

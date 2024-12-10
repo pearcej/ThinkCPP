@@ -13,7 +13,7 @@
     <program xml:id="find_function_AC_1_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -25,7 +25,7 @@ int main() {
     size_t another_index = dessert.find('a');
     cout << another_index << " = " << string::npos << endl;
 }
-        ]]></input>
+        ]]></code>
     </program>
   </listing>
   <p>This example finds the index of the letter <c>'a'</c> in the string. In this case, the letter
@@ -43,7 +43,7 @@ int main() {
     <program xml:id="find_function_AC_2_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -52,7 +52,7 @@ int main() {
     size_t index = fruit.find("nan");
     cout << index;
 }
-        ]]></input>
+        ]]></code>
     </program>
   </listing>
   <p>This example returns the value 2.</p>
@@ -118,12 +118,12 @@ int main() {
     <statement>
       <p>What is printed when the code is run?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 string sentence = "Most seas are rough but this sea is so calm!";
 string target = "sea";
 size_t index = sentence.find(target);
 cout << "Index to find sea is " << index << endl;
-]]></input>
+]]></code>
       </program>
       <p>
         <ul>

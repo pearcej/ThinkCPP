@@ -6,7 +6,7 @@
       <p>Which of the following are compound values?</p>
       <program language="cpp"
                line-numbers="yes">
-        <input>
+        <code>
 struct Student {
   string firstName, lastName;
   int year;
@@ -27,7 +27,7 @@ int main() {
   int studentPop = 3400;
   double avgGPA = 3.2;
 }
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -98,13 +98,13 @@ int main() {
       <p>What is wrong with the following <c>struct</c> definition?</p>
       <program language="cpp"
                line-numbers="yes">
-        <input>
+        <code>
 struct Chicken {
   string name;
   int numLegs;
   int eggs;
 }
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -147,7 +147,7 @@ struct Chicken {
       <p>How do we assign the value of 4 to the instance variable <c>numLegs</c> of the <c>Dog</c> object?</p>
       <program language="cpp"
                line-numbers="yes">
-        <input>
+        <code>
 struct Dog {
   string name;
   int numLegs;
@@ -157,7 +157,7 @@ struct Dog {
 int main() {
   Dog doug = { "Doug", 0, true };
 }
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -208,7 +208,7 @@ int main() {
       <p>What is the output of the code below?</p>
       <program language="cpp"
                line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 struct Cube {
   int edgeLength;
   int volume;
@@ -224,7 +224,7 @@ int main() {
   int density = c.mass / c.volume;
   cout << density;
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -275,7 +275,7 @@ int main() {
       <p>What is the output of the code below?</p>
       <program language="cpp"
                line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 struct Cube {
   int edgeLength;
   int volume;
@@ -292,7 +292,7 @@ int main() {
   int density = calculateDensity(c);
   cout << density;
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -335,7 +335,7 @@ int main() {
       <p>What is the value of <c>s.coffeeCupFull</c> when the code is done running?</p>
       <program language="cpp"
                line-numbers="yes">
-        <input>
+        <code>
 struct Student {
   string name;
   bool isSleepy;
@@ -352,7 +352,7 @@ int main() {
     pourCoffee (s);
   }
 }
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -397,7 +397,7 @@ int main() {
       <p>What is the value of <c>r.batteryLevelPercentage</c> when the code is done running?</p>
       <program language="cpp"
                line-numbers="yes">
-        <input>
+        <code>
 struct Robot {
   string name;
   int batteryLevelPercentage;
@@ -418,7 +418,7 @@ int main() {
   Robot r = { "Rob", 60, false };
   chargeRobot(r);
 }
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -461,7 +461,7 @@ int main() {
       <p>What is the output of the code below?</p>
       <program language="cpp"
                line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 void foo (int& x, int y) {
   x = x + 4;
   y = 2 * x + 3 * y;
@@ -484,7 +484,7 @@ int main() {
   func (y, x);
   cout << x << ", " << y;
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -529,13 +529,13 @@ int main() {
       <p>If the user inputted the string <q>R2-D2</q>, what is the output of the code below?</p>
       <program language="cpp"
                line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 int main() {
   string name;
   cin >> name;
   cout << "Hello, " << name << "!";
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -578,13 +578,13 @@ int main() {
       <p>If the user inputted the string <q>C-3PO</q>, what is the output of the code below?</p>
       <program language="cpp"
                line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 int main() {
   char name;
   cin >> name;
   cout << "Hello, " << name << "!";
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -628,13 +628,13 @@ int main() {
       <p>If the user inputted the string <q>Darth Vader</q>, what is the output of the code below?</p>
       <program language="cpp"
                line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 int main() {
   string quote;
   getline(cin, quote);
   cout << quote << " is the epitome of Star Wars!";
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>

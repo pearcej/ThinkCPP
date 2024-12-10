@@ -9,11 +9,11 @@
                     is a weekend or not. Check for cases in numerical order.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_13_1_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -22,7 +22,7 @@ using namespace std;
                 Below is one way to use a switch statement to classify a day of the week.
 
     
-    <program xml:id="mucp_13_1_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_13_1_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -42,11 +42,11 @@ int main() {
             break;
     }
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_13_1_ac_a"><statement><p>Below is one way to use a switch statement to classify a day of the week.</p></statement><program xml:id="mucp_13_1_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_13_1_ac_a"><statement><p>Below is one way to use a switch statement to classify a day of the week.</p></statement><program xml:id="mucp_13_1_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -66,7 +66,7 @@ int main() {
             break;
     }
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -76,11 +76,11 @@ int main() {
                     print out the default statement <q>Invalid input.</q> Check for cases in numerical order.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_13_2_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -90,7 +90,7 @@ using namespace std;
                     two.
 
     
-    <program xml:id="mucp_13_2_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_13_2_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -110,12 +110,12 @@ int main() {
             break;
     }
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
 <exercise label="mucp_13_2_ac_a"><statement><p>Below is one way to use a switch statement to check and print out whether a number is divisible by
-                    two.</p></statement><program xml:id="mucp_13_2_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+                    two.</p></statement><program xml:id="mucp_13_2_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -135,7 +135,7 @@ int main() {
             break;
     }
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -145,11 +145,11 @@ int main() {
                     print out the default statement <q>Invalid input.</q> Check for cases in numerical order.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_13_3_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -158,7 +158,7 @@ using namespace std;
                 Below is one way to use a switch statement to check and print out the maximum between two numbers.
 
     
-    <program xml:id="mucp_13_3_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_13_3_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -180,11 +180,11 @@ int main() {
             break;
     }
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_13_3_ac_a"><statement><p>Below is one way to use a switch statement to check and print out the maximum between two numbers.</p></statement><program xml:id="mucp_13_3_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_13_3_ac_a"><statement><p>Below is one way to use a switch statement to check and print out the maximum between two numbers.</p></statement><program xml:id="mucp_13_3_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -206,7 +206,7 @@ int main() {
             break;
     }
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -214,9 +214,9 @@ int main() {
       <p>Write the pseudocode for the implementation of <c>mergeSort</c>.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_13_4_ac_q_editor">
-      <input>
+      <code>
 // YOUR PSEUDOCODE HERE
-        </input>
+        </code>
     </program>
     <solution>
 
@@ -225,7 +225,7 @@ int main() {
                 Below is one way to write the pseudocode of mergeSort.
 
     
-    <program xml:id="mucp_13_4_ac_a_editor" line-numbers="yes"><input>
+    <program xml:id="mucp_13_4_ac_a_editor" line-numbers="yes"><code>
 Deck Deck::mergeSort() const {
     find the midpoint of the deck
     divide the deck into two subdecks
@@ -233,11 +233,11 @@ Deck Deck::mergeSort() const {
     merge the two halves and return the result
     divide each subdeck into two more subdecks
 }
-        </input></program>
+        </code></program>
 
             
 
-<exercise label="mucp_13_4_ac_a"><statement><p>Below is one way to write the pseudocode of <c>mergeSort</c>.</p></statement><program xml:id="mucp_13_4_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input>
+<exercise label="mucp_13_4_ac_a"><statement><p>Below is one way to write the pseudocode of <c>mergeSort</c>.</p></statement><program xml:id="mucp_13_4_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code>
 Deck Deck::mergeSort() const {
     find the midpoint of the deck
     divide the deck into two subdecks
@@ -245,7 +245,7 @@ Deck Deck::mergeSort() const {
     merge the two halves and return the result
     divide each subdeck into two more subdecks
 }
-        </input></program></exercise>
+        </code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -255,12 +255,12 @@ Deck Deck::mergeSort() const {
                     and for <c>Dictionary</c>, which has a vector of Entries.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_13_5_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -269,7 +269,7 @@ using namespace std;
                 Below is one way to write the struct definition for Entry and for Dictionary.
 
     
-    <program xml:id="mucp_13_5_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_13_5_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -282,11 +282,11 @@ struct Entry {
 struct Dictionary {
     vector<Entry> entries;
 };
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_13_5_ac_a"><statement><p>Below is one way to write the struct definition for <c>Entry</c> and for <c>Dictionary</c>.</p></statement><program xml:id="mucp_13_5_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_13_5_ac_a"><statement><p>Below is one way to write the struct definition for <c>Entry</c> and for <c>Dictionary</c>.</p></statement><program xml:id="mucp_13_5_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -299,7 +299,7 @@ struct Entry {
 struct Dictionary {
     vector<Entry> entries;
 };
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -309,12 +309,12 @@ struct Dictionary {
                     entry. If the word isn't in the dictionary, return -1.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_13_6_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -323,7 +323,7 @@ using namespace std;
                 Below is one way to write the Dictionary member function.
 
     
-    <program xml:id="mucp_13_6_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_13_6_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -345,11 +345,11 @@ int Dictionary::find(string word) {
     }
     return -1;
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_13_6_ac_a"><statement><p>Below is one way to write the Dictionary member function.</p></statement><program xml:id="mucp_13_6_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_13_6_ac_a"><statement><p>Below is one way to write the Dictionary member function.</p></statement><program xml:id="mucp_13_6_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -371,7 +371,7 @@ int Dictionary::find(string word) {
     }
     return -1;
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -382,12 +382,12 @@ int Dictionary::find(string word) {
                     (i.e. the Entry with a word that would come first in the alphabet).</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_13_7_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -396,7 +396,7 @@ using namespace std;
                 Below is one way to write the findFirstWord member function.
 
     
-    <program xml:id="mucp_13_7_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_13_7_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -419,11 +419,11 @@ int Dictionary::findFirstWord(int start) {
     }
     return min;
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_13_7_ac_a"><statement><p>Below is one way to write the <c>findFirstWord</c> member function.</p></statement><program xml:id="mucp_13_7_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_13_7_ac_a"><statement><p>Below is one way to write the <c>findFirstWord</c> member function.</p></statement><program xml:id="mucp_13_7_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -446,7 +446,7 @@ int Dictionary::findFirstWord(int start) {
     }
     return min;
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -456,12 +456,12 @@ int Dictionary::findFirstWord(int start) {
                     at those indices.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_13_8_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -470,7 +470,7 @@ using namespace std;
                 Below is one way to write the swap member function
 
     
-    <program xml:id="mucp_13_8_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_13_8_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -489,11 +489,11 @@ void Dictionary::swap(int a, int b) {
     entries[a] = entries[b];
     entries[b] = temp;
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_13_8_ac_a"><statement><p>Below is one way to write the <c>swap</c> member function</p></statement><program xml:id="mucp_13_8_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_13_8_ac_a"><statement><p>Below is one way to write the <c>swap</c> member function</p></statement><program xml:id="mucp_13_8_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -512,7 +512,7 @@ void Dictionary::swap(int a, int b) {
     entries[a] = entries[b];
     entries[b] = temp;
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -522,12 +522,12 @@ void Dictionary::swap(int a, int b) {
                     the <c>findFirstWord</c> and <c>swap</c> functions we defined earlier!</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_13_9_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -536,7 +536,7 @@ using namespace std;
                 Below is one way to write the Dictionary member function alphabetize.
 
     
-    <program xml:id="mucp_13_9_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_13_9_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -547,11 +547,11 @@ void Dictionary::alphabetize() {
         swap (i, min);
     }
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_13_9_ac_a"><statement><p>Below is one way to write the Dictionary member function <c>alphabetize</c>.</p></statement><program xml:id="mucp_13_9_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_13_9_ac_a"><statement><p>Below is one way to write the Dictionary member function <c>alphabetize</c>.</p></statement><program xml:id="mucp_13_9_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -562,7 +562,7 @@ void Dictionary::alphabetize() {
         swap (i, min);
     }
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -572,12 +572,12 @@ void Dictionary::alphabetize() {
                     Entry.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_13_10_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -586,7 +586,7 @@ using namespace std;
                 Below is one way to write the Dictionary member function printDictionary.
 
     
-    <program xml:id="mucp_13_10_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_13_10_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -605,11 +605,11 @@ void Dictionary::printDictionary() {
         cout << entries[i].word << endl;
     }
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_13_10_ac_a"><statement><p>Below is one way to write the Dictionary member function <c>printDictionary</c>.</p></statement><program xml:id="mucp_13_10_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_13_10_ac_a"><statement><p>Below is one way to write the Dictionary member function <c>printDictionary</c>.</p></statement><program xml:id="mucp_13_10_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -628,7 +628,7 @@ void Dictionary::printDictionary() {
         cout << entries[i].word << endl;
     }
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
 </section>

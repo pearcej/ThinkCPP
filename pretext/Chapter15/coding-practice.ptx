@@ -33,20 +33,20 @@ And that has made all the difference.</pre>
     </statement>
     <program interactive="activecode"
              xml:id="cp_15_AC_1q">
-        <input>
+        <code>
 #include &lt;iostream&gt;
 #include &lt;fstream&gt;
 using namespace std;
 
 // Write your code here.
-        </input>
+        </code>
     </program>
     <solution>
       <p>Below is one way to implement this program. We create an <c>ifstream</c> object to open our file.
   We check to make sure the file is opened correctly before we use <c>getline</c> in a <c>for</c> loop to
   retrieve and print the first 5 lines of the poem.</p>
       <program xml:id="cp_15_AC_1a">
-        <input>
+        <code>
 #include &lt;iostream&gt;
 #include &lt;fstream&gt;
 using namespace std;
@@ -63,7 +63,7 @@ int main() {
         cout &lt;&lt; input &lt;&lt; endl;
     }
 }
-        </input>
+        </code>
     </program>
     </solution>
   </exercise>
@@ -86,13 +86,13 @@ unwilling to postpone, and one we intend to win, and the others, too.</pre>
     </statement>
     <program interactive="activecode"
              xml:id="cp_15_AC_2q_editor">
-        <input>
+        <code>
 #include &lt;iostream&gt;
 #include &lt;fstream&gt;
 using namespace std;
 
 // Write your code here.
-        </input>
+        </code>
     </program>
     <hint>
       <activity label="cp_15_AC_2q_pp">
@@ -173,7 +173,7 @@ using namespace std;
     </statement>
     <program interactive="activecode"
              xml:id="cp_15_AC_3q">
-        <input>
+        <code>
 #include &lt;iostream&gt;
 #include &lt;fstream&gt;
 #include &lt;vector&gt;
@@ -181,7 +181,7 @@ using namespace std;
 using namespace std;
 
 // Write your code here.
-        </input>
+        </code>
     </program>
     <solution>
       <p>Below is one way to implement this program. We create an <c>ifstream</c> object to open our file.
@@ -189,7 +189,7 @@ using namespace std;
   After sorting the vector, we find the median depending on whether the number of data values was
   even or odd. Finally, we output our result to the terminal.</p>
       <program xml:id="cp_15_AC_3a">
-        <input>
+        <code>
 #include &lt;iostream&gt;
 #include &lt;fstream&gt;
 #include &lt;vector&gt;
@@ -217,7 +217,7 @@ int main() {
     }
     cout &lt;&lt; "The median height is: " &lt;&lt; median &lt;&lt; " inches" &lt;&lt; endl;
 }
-        </input>
+        </code>
     </program>
     </solution>
   </exercise>
@@ -232,7 +232,7 @@ int main() {
     </statement>
     <program interactive="activecode"
              xml:id="cp_15_AC_4q_editor">
-        <input>
+        <code>
 #include &lt;iostream&gt;
 #include &lt;fstream&gt;
 #include &lt;cmath&gt;
@@ -255,7 +255,7 @@ int main() {
          cout &lt;&lt; answer &lt;&lt; endl;
    }
 }
-        </input>
+        </code>
     </program>
     <hint>
       <activity label="cp_15_AC_4q_pp">
@@ -347,7 +347,7 @@ int main() {
     </statement>
     <program interactive="activecode"
              xml:id="cp_15_AC_5q">
-        <input>
+        <code>
 #include &lt;iostream&gt;
 #include &lt;fstream&gt;
 #include &lt;cctype&gt;
@@ -356,14 +356,14 @@ using namespace std;
 int main() {
     // Write your code here.
 }
-        </input>
+        </code>
     </program>
     <solution>
       <p>Below is one way to implement this program. We create an <c>ifstream</c> object to open our file.
   We check to make sure the file is opened correctly before we read the data values into a string.
   We call our <c>ROT13</c> function and output the result to the output file.</p>
       <program xml:id="cp_15_AC_5a">
-        <input>
+        <code>
 #include &lt;iostream&gt;
 #include &lt;fstream&gt;
 #include &lt;cctype&gt;
@@ -404,7 +404,7 @@ int main() {
         cout &lt;&lt; ROT13(message) &lt;&lt; endl;
     }
 }
-        </input>
+        </code>
     </program>
     </solution>
   </exercise>
@@ -427,7 +427,7 @@ Gina     Zhou       9        3.2    14</pre>
     </statement>
     <program interactive="activecode"
              xml:id="cp_15_AC_7q">
-        <input>
+        <code>
 #include &lt;iostream&gt;
 #include &lt;fstream&gt;
 using namespace std;
@@ -435,7 +435,7 @@ using namespace std;
 int main() {
     // Write your code here.
 }
-        </input>
+        </code>
     </program>
     <solution><p>Below is one way to implement this program. We create an <c>ifstream</c> object to open our
   file. We check to make sure the file is opened correctly before we read the data values into
@@ -444,7 +444,7 @@ int main() {
   open our file. We check to make sure the file is opened correctly before we read the data values
   into corresponding variables. We check if the GPA is at least 3.5, and print the data values to
   the terminal if so. <program xml:id="cp_15_AC_7a">
-        <input>
+        <code>
 #include &lt;iostream&gt;
 #include &lt;fstream&gt;
 using namespace std;
@@ -466,7 +466,7 @@ int main() {
         }
     }
 }
-        </input>
+        </code>
     </program>
     </solution>
   </exercise>
@@ -481,13 +481,13 @@ int main() {
     </statement>
     <program interactive="activecode"
              xml:id="cp_15_AC_8q_editor">
-        <input>
+        <code>
 #include &lt;iostream&gt;
 #include &lt;fstream&gt;
 using namespace std;
 
 // Write your code here.
-        </input>
+        </code>
     </program>
     <hint>
       <activity label="cp_15_AC_8q_pp">
@@ -576,7 +576,7 @@ That- that's about it.</pre>
     </statement>
     <program interactive="activecode"
              xml:id="cp_15_AC_9q">
-        <input>
+        <code>
 #include &lt;iostream&gt;
 #include &lt;fstream&gt;
 #include &lt;vector&gt;
@@ -585,14 +585,14 @@ using namespace std;
 int main() {
     // Write your code here.
 }
-        </input>
+        </code>
     </program>
     <solution><p>Below is one way to implement this program. We create a 10x10 matrix
         and fill in the products. Then we traverse through the matrix and output
         the values into the output file.</p> Below is one way to implement this program. We create a
   10x10 matrix and fill in the products. Then we traverse through the matrix and output the values
   into the output file. <program xml:id="cp_15_AC_9a">
-        <input>
+        <code>
 #include &lt;iostream&gt;
 #include &lt;fstream&gt;
 #include &lt;vector&gt;
@@ -621,7 +621,7 @@ int main() {
         cout &lt;&lt; endl;
     }
 }
-        </input>
+        </code>
     </program>
     </solution>
   </exercise>
@@ -640,7 +640,7 @@ int main() {
     </statement>
     <program interactive="activecode"
              xml:id="cp_15_AC_10q_editor">
-        <input>
+        <code>
 #include &lt;iostream&gt;
 #include &lt;fstream&gt;
 using namespace std;
@@ -655,7 +655,7 @@ int main() {
 
    // Write your code here.
 }
-        </input>
+        </code>
     </program>
     <hint>
       <activity label="cp_15_AC_10q_pp">

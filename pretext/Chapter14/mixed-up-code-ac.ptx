@@ -12,11 +12,11 @@
                     Use 3.14 for the value of pi.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_14_1_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -25,7 +25,7 @@ using namespace std;
                 Below is one way to wrte the class definition and constructor for Circle.
 
     
-    <program xml:id="mucp_14_11_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_14_11_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -36,11 +36,11 @@ class Circle {
         Circle(double r) { radius = r; }
         double calculateArea() { return 3.14 * radius * radius; }
 };
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_14_11_ac_a"><statement><p>Below is one way to wrte the class definition and constructor for <c>Circle</c>.</p></statement><program xml:id="mucp_14_11_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_14_11_ac_a"><statement><p>Below is one way to wrte the class definition and constructor for <c>Circle</c>.</p></statement><program xml:id="mucp_14_11_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -51,7 +51,7 @@ class Circle {
         Circle(double r) { radius = r; }
         double calculateArea() { return 3.14 * radius * radius; }
 };
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -63,11 +63,11 @@ class Circle {
                     output an error message if the given radius is negative.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_14_2_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -76,7 +76,7 @@ using namespace std;
                 Below is one way to write the accessor functions for getRadius and setRadius.
 
     
-    <program xml:id="mucp_14_2_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_14_2_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -94,11 +94,11 @@ class Circle {
             else { radius = r; }
         }
 };
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_14_2_ac_a"><statement><p>Below is one way to write the accessor functions for <c>getRadius</c> and <c>setRadius</c>.</p></statement><program xml:id="mucp_14_2_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_14_2_ac_a"><statement><p>Below is one way to write the accessor functions for <c>getRadius</c> and <c>setRadius</c>.</p></statement><program xml:id="mucp_14_2_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -116,7 +116,7 @@ class Circle {
             else { radius = r; }
         }
 };
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -125,11 +125,11 @@ class Circle {
                     and output the radius. Then change the radius to 3.6 and output</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_14_3_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -138,7 +138,7 @@ using namespace std;
                 Below is one way to write the code.
 
     
-    <program xml:id="mucp_14_3_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_14_3_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -163,11 +163,11 @@ int main() {
     c.setRadius (3.6);
     cout << "New radius: " << c.getRadius() << endl;
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_14_3_ac_a"><statement><p>Below is one way to write the code.</p></statement><program xml:id="mucp_14_3_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_14_3_ac_a"><statement><p>Below is one way to write the code.</p></statement><program xml:id="mucp_14_3_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -192,7 +192,7 @@ int main() {
     c.setRadius (3.6);
     cout << "New radius: " << c.getRadius() << endl;
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -205,11 +205,11 @@ int main() {
                     <c>getX</c>, <c>getY</c>, <c>setX</c>, and <c>setY</c>.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_14_4_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -218,7 +218,7 @@ using namespace std;
                 Below is one way to write the code.
 
     
-    <program xml:id="mucp_14_4_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_14_4_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -233,11 +233,11 @@ class Point {
         void setX(double xVal) { x = xVal; }
         void setY(double yVal) { y = yVal; }
 };
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_14_4_ac_a"><statement><p>Below is one way to write the code.</p></statement><program xml:id="mucp_14_4_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_14_4_ac_a"><statement><p>Below is one way to write the code.</p></statement><program xml:id="mucp_14_4_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -252,7 +252,7 @@ class Point {
         void setX(double xVal) { x = xVal; }
         void setY(double yVal) { y = yVal; }
 };
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -266,11 +266,11 @@ class Point {
                     takes an upper-left point and a lower-right point as parameters.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_14_5_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -279,7 +279,7 @@ using namespace std;
                 Below is one way to write the Rectangle class.
 
     
-    <program xml:id="mucp_14_5_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_14_5_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -306,11 +306,11 @@ class Rectangle {
         void setUpperLeft(Point p) { upperLeft = p; }
         void setLowerRight(Point p) { lowerRight = p; }
 };
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_14_5_ac_a"><statement><p>Below is one way to write the <c>Rectangle</c> class.</p></statement><program xml:id="mucp_14_5_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_14_5_ac_a"><statement><p>Below is one way to write the <c>Rectangle</c> class.</p></statement><program xml:id="mucp_14_5_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -337,7 +337,7 @@ class Rectangle {
         void setUpperLeft(Point p) { upperLeft = p; }
         void setLowerRight(Point p) { lowerRight = p; }
 };
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -348,11 +348,11 @@ Afterwards, write the ``Rectangle</c> member function <c>calculateArea</c>,
                     which returns the area of the rectangle.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_14_6_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -361,7 +361,7 @@ using namespace std;
                 Below is one way to write the calculateSides and calculateArea member functions.
 
     
-    <program xml:id="mucp_14_6_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_14_6_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -399,11 +399,11 @@ double Rectangle::calculateSides() {
 double Rectangle::calculateArea() {
     return length * height;
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_14_6_ac_a"><statement><p>Below is one way to write the <c>calculateSides</c> and <c>calculateArea</c> member functions.</p></statement><program xml:id="mucp_14_6_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_14_6_ac_a"><statement><p>Below is one way to write the <c>calculateSides</c> and <c>calculateArea</c> member functions.</p></statement><program xml:id="mucp_14_6_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -441,7 +441,7 @@ double Rectangle::calculateSides() {
 double Rectangle::calculateArea() {
     return length * height;
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -452,11 +452,11 @@ double Rectangle::calculateArea() {
                     print out the new area.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_14_7_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -465,7 +465,7 @@ using namespace std;
                 Below is one way to create this Rectangle.
 
     
-    <program xml:id="mucp_14_7_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_14_7_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -516,11 +516,11 @@ int main() {
     r.calculateSides();
     cout << "New area: " << r.calculateArea() << endl;
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_14_7_ac_a"><statement><p>Below is one way to create this <c>Rectangle</c>.</p></statement><program xml:id="mucp_14_7_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_14_7_ac_a"><statement><p>Below is one way to create this <c>Rectangle</c>.</p></statement><program xml:id="mucp_14_7_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -571,7 +571,7 @@ int main() {
     r.calculateSides();
     cout << "New area: " << r.calculateArea() << endl;
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -585,12 +585,12 @@ int main() {
                     month, and year in that order.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_14_8_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -599,7 +599,7 @@ using namespace std;
                 Below is one way to write the Date class and addtional constructors.
 
     
-    <program xml:id="mucp_14_8_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_14_8_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -618,11 +618,11 @@ class Date {
         void setMonth(int m) { if (m > 0 && m < 13) month = m; }
         void setYear(int y) { year = y; }
 };
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_14_8_ac_a"><statement><p>Below is one way to write the <c>Date</c> class and addtional constructors.</p></statement><program xml:id="mucp_14_8_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_14_8_ac_a"><statement><p>Below is one way to write the <c>Date</c> class and addtional constructors.</p></statement><program xml:id="mucp_14_8_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -641,7 +641,7 @@ class Date {
         void setMonth(int m) { if (m > 0 && m < 13) month = m; }
         void setYear(int y) { year = y; }
 };
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -651,12 +651,12 @@ class Date {
                     depending on whether the year is negative or not.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_14_9_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -665,7 +665,7 @@ using namespace std;
                 Below is one way to write the printDate member function.
 
     
-    <program xml:id="mucp_14_9_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_14_9_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -693,11 +693,11 @@ void Date::printDate() {
         cout << getMonth() << "/" << getDay() << "/" << getYear() << " CE" << endl;
     }
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_14_9_ac_a"><statement><p>Below is one way to write the <c>printDate</c> member function.</p></statement><program xml:id="mucp_14_9_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_14_9_ac_a"><statement><p>Below is one way to write the <c>printDate</c> member function.</p></statement><program xml:id="mucp_14_9_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -725,7 +725,7 @@ void Date::printDate() {
         cout << getMonth() << "/" << getDay() << "/" << getYear() << " CE" << endl;
     }
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -735,12 +735,12 @@ void Date::printDate() {
                     which returns the last day in the <c>Date</c>'s month.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="mucp_14_10_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -749,7 +749,7 @@ using namespace std;
                 Below is onne way to write the isLeapYear and lastDayInMonth member functions.
 
     
-    <program xml:id="mucp_14_10_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="mucp_14_10_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -783,11 +783,11 @@ int Date::lastDayInMonth() {
         return daysInMonth[getMonth() - 1];
     }
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="mucp_14_10_ac_a"><statement><p>Below is onne way to write the <c>isLeapYear</c> and <c>lastDayInMonth</c> member functions.</p></statement><program xml:id="mucp_14_10_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="mucp_14_10_ac_a"><statement><p>Below is onne way to write the <c>isLeapYear</c> and <c>lastDayInMonth</c> member functions.</p></statement><program xml:id="mucp_14_10_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -821,7 +821,7 @@ int Date::lastDayInMonth() {
         return daysInMonth[getMonth() - 1];
     }
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
 </section>

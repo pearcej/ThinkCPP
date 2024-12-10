@@ -150,7 +150,7 @@
     <program xml:id="mergesort_2_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <string>
 #include <vector>
@@ -220,7 +220,7 @@ int main() {
     cout << "Merged sorted full deck:" << endl;
     finished.print();
 }
-        ]]></input>
+        ]]></code>
       <tests>
 Card::Card() {
     suit = SPADES;  rank = ACE;
@@ -449,7 +449,7 @@ void Deck::sortDeck() {
     <program xml:id="mergesort_3_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <string>
 #include <vector>
@@ -520,7 +520,7 @@ int main() {
     sorted2.print();
     */
 }
-        ]]></input>
+        ]]></code>
       <tests>
 Card::Card() {
     suit = SPADES;  rank = ACE;

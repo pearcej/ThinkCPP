@@ -33,7 +33,7 @@
     <program xml:id="subdeck_cards_1_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <string>
 #include <vector>
@@ -87,7 +87,7 @@ int main() {
     cout << "The Seven of Clubs is at index " << findBisect (clubs, card1) << endl;
     cout << "The King of Diamonds is at index " << findBisect (clubs, card2) << endl;
 }
-        ]]></input>
+        ]]></code>
       <tests>
 Card::Card() {
     suit = SPADES;  rank = ACE;

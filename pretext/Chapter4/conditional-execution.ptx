@@ -28,7 +28,7 @@ x &lt;= y               // x is less than or equal to y</program>
       This program performs a calculation involving variables and assigns the result to a variable.
     </caption>
     <program xml:id="composition_AC_31_editor" interactive="activecode" line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -38,7 +38,7 @@ int main() {
     percentage = (minute * 100) / 60;
     cout << percentage;
 }
-        ]]></input>
+        ]]></code>
     </program>
   </listing>
 
@@ -50,7 +50,7 @@ int main() {
     <program label="conditional_execution_AC_1_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -67,7 +67,7 @@ int main() {
     }
     return 0;
 }
-        ]]></input>
+        ]]></code>
     </program>
   </listing>
   <exercise label="conditional_execution_1">

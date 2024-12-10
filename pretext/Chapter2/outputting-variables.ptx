@@ -19,7 +19,7 @@
     <program xml:id="output_vars_AC_1_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -39,7 +39,7 @@ int main() {
 
     return 0;
 }
-        ]]></input>
+        ]]></code>
     </program>
   </listing>
   <p>When we talk about <q>outputting a variable,</q> we mean outputting the <em>value</em> of the
@@ -56,7 +56,7 @@ int main() {
     <program xml:id="output_vars_AC_2_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -72,7 +72,7 @@ int main() {
 
     return 0;
 }
-        ]]></input>
+        ]]></code>
     </program>
   </listing>
   <p>On one line, this program outputs a string, two integers, a character, and the special value <c>endl</c>.

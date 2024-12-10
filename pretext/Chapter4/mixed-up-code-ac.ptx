@@ -9,11 +9,11 @@
                     divided by 13.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="cond_recc_p1_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -22,7 +22,7 @@ using namespace std;
                 Below is one way to write the code to print the remainder of 18 when divided by 13.
 
     
-    <program xml:id="cond_recc_p1_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="cond_recc_p1_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -31,11 +31,11 @@ int main() {
     int y = 13;
     cout << x % y;
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="cond_recc_p1_ac_a"><statement><p>Below is one way to write the code to print the remainder of 18 when divided by 13.</p></statement><program xml:id="cond_recc_p1_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="cond_recc_p1_ac_a"><statement><p>Below is one way to write the code to print the remainder of 18 when divided by 13.</p></statement><program xml:id="cond_recc_p1_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -44,7 +44,7 @@ int main() {
     int y = 13;
     cout << x % y;
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -53,7 +53,7 @@ int main() {
                     is even.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="cond_recc_p2_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // YOUR CODE HERE
@@ -65,7 +65,7 @@ int main() {
     is_even(3);
     is_even(0);
 }
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -74,7 +74,7 @@ int main() {
                 Below is one way to construct the is_even function.
 
     
-    <program xml:id="cond_recc_p2_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="cond_recc_p2_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -92,11 +92,11 @@ int main() {
     is_even(3);
     is_even(0);
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="cond_recc_p2_ac_a"><statement><p>Below is one way to construct the <c>is_even</c> function.</p></statement><program xml:id="cond_recc_p2_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="cond_recc_p2_ac_a"><statement><p>Below is one way to construct the <c>is_even</c> function.</p></statement><program xml:id="cond_recc_p2_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -114,7 +114,7 @@ int main() {
     is_even(3);
     is_even(0);
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -123,7 +123,7 @@ int main() {
                     would result in a positive number.  Otherwise, prints -1.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="cond_recc_p3_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // YOUR CODE HERE
@@ -135,7 +135,7 @@ int main() {
     int b = 10;
     difference(a,b);
 }
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -144,7 +144,7 @@ int main() {
                 Below is one way to write the difference function.
 
     
-    <program xml:id="cond_recc_p3_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="cond_recc_p3_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -162,11 +162,11 @@ int main() {
     int b = 10;
     difference(a,b);
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="cond_recc_p3_ac_a"><statement><p>Below is one way to write the <c>difference</c> function.</p></statement><program xml:id="cond_recc_p3_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="cond_recc_p3_ac_a"><statement><p>Below is one way to write the <c>difference</c> function.</p></statement><program xml:id="cond_recc_p3_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -184,7 +184,7 @@ int main() {
     int b = 10;
     difference(a,b);
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -194,11 +194,11 @@ int main() {
                     <q>hydromatic</q> if y is not equal to x.  Check all 3 conditions.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="cond_recc_p4_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -207,7 +207,7 @@ using namespace std;
                 Below is one way to construct the code.
 
     
-    <program xml:id="cond_recc_p4_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="cond_recc_p4_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -223,11 +223,11 @@ void matic(int x, int y) {
 int main() {
     matix(5,4);
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="cond_recc_p4_ac_a"><statement><p>Below is one way to construct the code.</p></statement><program xml:id="cond_recc_p4_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="cond_recc_p4_ac_a"><statement><p>Below is one way to construct the code.</p></statement><program xml:id="cond_recc_p4_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -243,7 +243,7 @@ void matic(int x, int y) {
 int main() {
     matix(5,4);
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -253,11 +253,11 @@ int main() {
                     if x + y is even.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="cond_recc_p5_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -266,7 +266,7 @@ using namespace std;
                 Below is one way to construct the code.
 
     
-    <program xml:id="cond_recc_p5_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="cond_recc_p5_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -278,11 +278,11 @@ int main() {
     else if ((x + y) % 2 == 0) {
         cout << "Love me!"; }
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="cond_recc_p5_ac_a"><statement><p>Below is one way to construct the code.</p></statement><program xml:id="cond_recc_p5_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="cond_recc_p5_ac_a"><statement><p>Below is one way to construct the code.</p></statement><program xml:id="cond_recc_p5_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -294,7 +294,7 @@ int main() {
     else if ((x + y) % 2 == 0) {
         cout << "Love me!"; }
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -303,7 +303,7 @@ int main() {
                     [0, 70) = F, [70, 80) = C, [80, 90) = B, and [90, 100] = A.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="cond_recc_p6_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // YOUR CODE HERE
@@ -314,7 +314,7 @@ int main() {
     double grade = 90.0;
     printLetterGrade(grade);
 }
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -323,7 +323,7 @@ int main() {
                 Below is one way to write the printLetterGrade function.
 
     
-    <program xml:id="cond_recc_p6_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="cond_recc_p6_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -342,11 +342,11 @@ int main() {
     double grade = 90.0;
     printLetterGrade(grade);
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="cond_recc_p6_ac_a"><statement><p>Below is one way to write the <c>printLetterGrade</c> function.</p></statement><program xml:id="cond_recc_p6_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="cond_recc_p6_ac_a"><statement><p>Below is one way to write the <c>printLetterGrade</c> function.</p></statement><program xml:id="cond_recc_p6_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -365,7 +365,7 @@ int main() {
     double grade = 90.0;
     printLetterGrade(grade);
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -377,11 +377,11 @@ int main() {
                     knight or a knave.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="cond_recc_p7_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -390,7 +390,7 @@ using namespace std;
                 Below is one way to construct the knightKnave function.
 
     
-    <program xml:id="cond_recc_p7_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="cond_recc_p7_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -411,11 +411,11 @@ void knightKnave(bool truth, bool told) {
         }
         }
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="cond_recc_p7_ac_a"><statement><p>Below is one way to construct the <c>knightKnave</c> function.</p></statement><program xml:id="cond_recc_p7_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="cond_recc_p7_ac_a"><statement><p>Below is one way to construct the <c>knightKnave</c> function.</p></statement><program xml:id="cond_recc_p7_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -436,7 +436,7 @@ void knightKnave(bool truth, bool told) {
         }
         }
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -446,11 +446,11 @@ void knightKnave(bool truth, bool told) {
                     mood it woofs.  Construct a function that accomplishes this.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="cond_recc_p8_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -459,7 +459,7 @@ using namespace std;
                 Below is one way to construct the makeVocals function.
 
     
-    <program xml:id="cond_recc_p8_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="cond_recc_p8_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -486,11 +486,11 @@ int main() {
     makeVocals("dog","good");
     makeVocals("cat","bad");
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="cond_recc_p8_ac_a"><statement><p>Below is one way to construct the <c>makeVocals</c> function.</p></statement><program xml:id="cond_recc_p8_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="cond_recc_p8_ac_a"><statement><p>Below is one way to construct the <c>makeVocals</c> function.</p></statement><program xml:id="cond_recc_p8_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -517,7 +517,7 @@ int main() {
     makeVocals("dog","good");
     makeVocals("cat","bad");
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -527,11 +527,11 @@ int main() {
                     enters a negative number or zero, prompt the user again.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="cond_recc_p9_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -540,7 +540,7 @@ using namespace std;
                 Below is one way to write the takeSum recursive function.
 
     
-    <program xml:id="cond_recc_p9_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="cond_recc_p9_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -557,11 +557,11 @@ void takeSum() {
 int main() {
     takeSum();
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="cond_recc_p9_ac_a"><statement><p>Below is one way to write the <c>takeSum</c> recursive function.</p></statement><program xml:id="cond_recc_p9_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="cond_recc_p9_ac_a"><statement><p>Below is one way to write the <c>takeSum</c> recursive function.</p></statement><program xml:id="cond_recc_p9_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -578,7 +578,7 @@ void takeSum() {
 int main() {
     takeSum();
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
   <exercise label="XXX">
@@ -593,11 +593,11 @@ int main() {
                     statements.</p>
     </statement>
     <program interactive="activecode" line-numbers="yes" xml:id="cond_recc_p10_ac_q_editor">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 // YOUR CODE HERE
-        ]]></input>
+        ]]></code>
     </program>
     <solution>
 
@@ -606,7 +606,7 @@ using namespace std;
                 Below is one way to write the capitalize function.
 
     
-    <program xml:id="cond_recc_p10_ac_a_editor" line-numbers="yes"><input><![CDATA[
+    <program xml:id="cond_recc_p10_ac_a_editor" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -623,11 +623,11 @@ void capitalize() {
 int main() {
     capitalize();
 }
-        ]]></input></program>
+        ]]></code></program>
 
             
 
-<exercise label="cond_recc_p10_ac_a"><statement><p>Below is one way to write the <c>capitalize</c> function.</p></statement><program xml:id="cond_recc_p10_ac_a_editor-1" interactive="activecode" line-numbers="yes"><input><![CDATA[
+<exercise label="cond_recc_p10_ac_a"><statement><p>Below is one way to write the <c>capitalize</c> function.</p></statement><program xml:id="cond_recc_p10_ac_a_editor-1" interactive="activecode" line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -644,7 +644,7 @@ void capitalize() {
 int main() {
     capitalize();
 }
-        ]]></input></program></exercise>
+        ]]></code></program></exercise>
             </solution>
   </exercise>
 </section>

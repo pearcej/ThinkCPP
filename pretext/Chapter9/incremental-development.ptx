@@ -46,7 +46,7 @@
     <program xml:id="incremental_development_AC_1_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -86,7 +86,7 @@ int main() {
     Time doneTime = addTime(currentTime, otherTime);
     printTime(doneTime);
 }
-        ]]></input>
+        ]]></code>
     </program>
   </listing>
   <p>This is much shorter than the original version, and it is much easier to demonstrate that it is
@@ -100,7 +100,7 @@ int main() {
     <program xml:id="incremental_development_AC_2_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -150,7 +150,7 @@ int main() {
     // Should output "10:1:45"
     printTime(t2);
 }
-        ]]></input>
+        ]]></code>
     </program>
   </listing>
   <exercises line="174"

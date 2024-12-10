@@ -61,7 +61,7 @@ card.print();</program>
     <program xml:id="c12_3_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <string>
 #include <vector>
@@ -80,7 +80,7 @@ int main() {
     card.print();
 }
 
-        ]]></input>
+        ]]></code>
       <tests>
 
 Card::Card() {

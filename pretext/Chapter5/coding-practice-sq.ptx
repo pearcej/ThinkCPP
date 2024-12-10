@@ -12,7 +12,7 @@
                     in <c>main</c>. Run and test your code! Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_5_AC_2q_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
@@ -20,7 +20,7 @@ using namespace std;
 int convertToBinary(int decimal) {
     // Write your implementation here.
 }
-        ]]></input>
+        ]]></code>
           <tests>
 #define CATCH_CONFIG_MAIN
 #include &lt;catch.hpp&gt;
@@ -87,14 +87,14 @@ TEST_CASE("convertToBinary function") {
                     For example, <c>birthSeason (7, 5)</c> returns <q>summer</q> since July 5 is in the summer. Check the hint below for help with the construction of the code. Run and test your code!</p>
         </statement>
         <program xml:id="cp_5_AC_4q_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 using namespace std;
 
 string birthSeason(int month, int day) {
     // Write your implementation here.
 }
-        ]]></input>
+        ]]></code>
           <tests>
 #define CATCH_CONFIG_MAIN
 #include &lt;catch.hpp&gt;
@@ -182,14 +182,14 @@ TEST_CASE("birthSeason function: winter") {
                     Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_5_AC_6q_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 using namespace std;
 
 bool isCommonFactor(int num1, int num2, int factor) {
     // Write your implementation here.
 }
-        ]]></input>
+        ]]></code>
           <tests>
 #define CATCH_CONFIG_MAIN
 #include &lt;catch.hpp&gt;
@@ -263,14 +263,14 @@ TEST_CASE("isCommonFactor function: false cases") {
                     Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_5_AC_8q_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 using namespace std;
 
 bool isPoisonous(char size, int numSpots, bool isRed) {
     // Write your implementation here.
 }
-        ]]></input>
+        ]]></code>
           <tests>
 #define CATCH_CONFIG_MAIN
 #include &lt;catch.hpp&gt;
@@ -355,14 +355,14 @@ TEST_CASE("isPoisonous function: false cases") {
                     would return 10. Use recursion. Run and test your code! Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_5_AC_10q_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 using namespace std;
 
 int digitSum(int num) {
     // Write your implementation here.
 }
-        ]]></input>
+        ]]></code>
           <tests>
 #define CATCH_CONFIG_MAIN
 #include &lt;catch.hpp&gt;

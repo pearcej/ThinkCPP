@@ -8,7 +8,7 @@
         result. Run and test your code!</statement>
 
       <program interactive="activecode">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -17,7 +17,7 @@ double calculator(double first, double second, char operation) {
 }
 ]]>
 
-      </input>
+      </code>
       <tests>
         #define CATCH_CONFIG_MAIN
         #include &lt;catch.hpp&gt;
@@ -50,7 +50,7 @@ double calculator(double first, double second, char operation) {
           correct result depending on which operation was given.</p>
 
         <program xml:id="cp_5_AC_1a"
-                 line-numbers="yes"><input><![CDATA[
+                 line-numbers="yes"><code><![CDATA[
 double calculator(double first, double second, char operation) {
     if (operation == '+') {
         return first + second;
@@ -65,7 +65,7 @@ double calculator(double first, double second, char operation) {
         return first / second;
     }
 }
-        ]]></input></program>
+        ]]></code></program>
 
 
       </solution>
@@ -80,7 +80,7 @@ double calculator(double first, double second, char operation) {
       <program xml:id="cp_5_AC_2q_editor"
                interactive="activecode"
                line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
@@ -88,7 +88,7 @@ using namespace std;
 int convertToBinary(int decimal) {
 // Write your implementation here.
 }
-    ]]></input>
+    ]]></code>
       <tests>
 #define CATCH_CONFIG_MAIN
 #include &lt;catch.hpp&gt;
@@ -152,7 +152,7 @@ REQUIRE(convertToBinary(31) == 11111);
         The formula to find the interior angle of a regular ngon is (n - 2) x 180 / n. Run and test
         your code! </statement>
       <program interactive="activecode">
-      <input>
+      <code>
         <![CDATA[
 #include <iostream>
 using namespace std;
@@ -161,7 +161,7 @@ double calculateIntAngle(int numSides) {
     // Write your implementation here.
 }
         ]]>
-      </input>
+      </code>
     </program>
       <solution>
         <p>Below
@@ -169,14 +169,14 @@ double calculateIntAngle(int numSides) {
           we can find the interior angle and return it. Notice how we use 180.0
           instead of 180 to avoid integer division.</p>
         <program xml:id="cp_5_AC_3a"
-                 line-numbers="yes"><input><![CDATA[
+                 line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
 double calculateIntAngle(int numSides) {
     return (numSides - 2) * 180.0 / numSides;
 }
-        ]]></input><tests>
+        ]]></code><tests>
 #define CATCH_CONFIG_MAIN
 #include &lt;catch.hpp&gt;
 
@@ -206,14 +206,14 @@ TEST_CASE("calculateIntAngle function") {
       <program xml:id="cp_5_AC_4q_editor"
                interactive="activecode"
                line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 #include <iostream>
 using namespace std;
 
 string birthSeason(int month, int day) {
   // Write your implementation here.
 }
-      ]]></input>
+      ]]></code>
         <tests>
 #define CATCH_CONFIG_MAIN
 #include &lt;catch.hpp&gt;
@@ -304,14 +304,14 @@ TEST_CASE("birthSeason function: winter") {
           actually 28 years old in human years. Run and test your code!</p>
       </statement>
       <program interactive="activecode">          
-        <input><![CDATA[
+        <code><![CDATA[
 #include <iostream>
 using namespace std;
 
 int dogToHumanYears (int dogAge) {
     // Write your implementation here.
 }
-]]></input>
+]]></code>
         <tests><![CDATA[
 #define CATCH_CONFIG_MAIN
 #include &lt;catch.hpp&gt;
@@ -334,7 +334,7 @@ TEST_CASE("dogToHumanYears function for > 1") {
           check to see if the dog is one year old. If it is older than one, then
           we can use the formula to return the correct age in human years.</p>
         <program xml:id="cp_5_AC_5a"
-                 line-numbers="yes"><input><![CDATA[
+                 line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -344,7 +344,7 @@ int dogToHumanYears(int dogAge) {
     }
     return 24 + (dogAge - 2) * 4;
 }
-        ]]></input>
+        ]]></code>
       </program>
       </solution>
     </exercise>
@@ -360,14 +360,14 @@ int dogToHumanYears(int dogAge) {
       <program xml:id="cp_5_AC_6q_editor"
                interactive="activecode"
                line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 
 bool isCommonFactor(int num1, int num2, int factor) {
 // Write your implementation here.
 }
-    ]]></input>
+    ]]></code>
       <tests>
 #define CATCH_CONFIG_MAIN
 #include &lt;catch.hpp&gt;
@@ -433,7 +433,7 @@ REQUIRE(isCommonFactor (74, 23, 3) == 0);
         parameter and returns <c>true</c> if the year is a leap year and <c>false</c> otherwise. Run and test
         your code! </statement>
       <program interactive="activecode">
-      <input><![CDATA[ 
+      <code><![CDATA[ 
 #include <iostream>
 using namespace std;
 
@@ -442,7 +442,7 @@ bool isLeapYear(int year) {
 }
 
 ]]>
-      </input>
+      </code>
       <tests>
         #define CATCH_CONFIG_MAIN
         #include &lt;catch.hpp&gt;
@@ -473,7 +473,7 @@ bool isLeapYear(int year) {
           efficiently determine whether or not a given year is a leap year.</p>
 
         <program xml:id="cp_5_AC_7a"
-                 line-numbers="yes"><input><![CDATA[
+                 line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -491,7 +491,7 @@ bool isLeapYear(int year) {
         return false;
     }
 }
-        ]]></input></program>
+        ]]></code></program>
       </solution>
     </exercise>
 
@@ -509,14 +509,14 @@ bool isLeapYear(int year) {
       <program xml:id="cp_5_AC_8q_editor"
                interactive="activecode"
                line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 
 bool isPoisonous(char size, int numSpots, bool isRed) {
     // Write your implementation here.
 }
-    ]]></input>
+    ]]></code>
       <tests>
 #define CATCH_CONFIG_MAIN
 #include &lt;catch.hpp&gt;
@@ -597,7 +597,7 @@ TEST_CASE("isPoisonous function: false cases") {
         Write the <c>triangularNum</c> function, which takes an <c>int n</c> as a parameter and returns the nth
         triangular number. Use recursion. Run and test your code! </statement>
       <program interactive="activecode">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -606,7 +606,7 @@ int triangularNum(int n) {
 }
 
 ]]>
-      </input>
+      </code>
       <tests>
         #define CATCH_CONFIG_MAIN
         #include &lt;catch.hpp&gt;
@@ -624,7 +624,7 @@ int triangularNum(int n) {
           case and recursive cases. Our base case is when <c>n</c> is 1, and in that case we return
           1. Otherwise, we recursively call <c>triangularNum</c> on <c>n-1</c>.</p>
         <program xml:id="cp_5_AC_9a"
-                 line-numbers="yes"><input><![CDATA[
+                 line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -636,7 +636,7 @@ int triangularNum(int n) {
         return n + triangularNum(n - 1);
     }
 }
-        ]]></input>
+        ]]></code>
       </program>
       </solution>
     </exercise>
@@ -650,14 +650,14 @@ int triangularNum(int n) {
       <program xml:id="cp_5_AC_10q_editor"
                interactive="activecode"
                line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 #include <iostream>
 using namespace std;
 
 int digitSum(int num) {
     // Write your implementation here.
 }
-      ]]></input>
+      ]]></code>
         <tests>
 #define CATCH_CONFIG_MAIN
 #include &lt;catch.hpp&gt;

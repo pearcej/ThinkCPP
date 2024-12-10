@@ -32,7 +32,7 @@
     <program xml:id="fourteenfour_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -72,7 +72,7 @@ int main() {
   Complex c1 (5.0, 3.5);
   cout << c1.getReal() << ", " << c1.getImag() << endl;
 }
-        ]]></input>
+        ]]></code>
     </program>
   </listing>
   <exercise label="fourteenfive">
@@ -85,7 +85,7 @@ int main() {
     <program xml:id="fourteenfive_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -130,7 +130,7 @@ int main() {
   // Magnitude should be 1, theta should be pi/2, or about 1.5708
   cout << c1.getMag() << ", " << c1.getTheta() << endl;
 }
-        ]]></input>
+        ]]></code>
       <tests>
 Complex::Complex() { cartesian = false;  polar = false; }
 

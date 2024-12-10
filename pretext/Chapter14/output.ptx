@@ -37,7 +37,7 @@ c1.printPolar();</program>
     <program xml:id="fourteensix_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -66,7 +66,7 @@ int main() {
   c1.printCartesian();
   c1.printPolar();
 }
-        ]]></input>
+        ]]></code>
       <tests>
 Complex::Complex() { cartesian = false;  polar = false; }
 
@@ -125,13 +125,13 @@ void Complex::printPolar() {
     <statement>
       <p>What is the correct output of the code below?</p>
       <program line-numbers="yes">
-        <input>
+        <code>
 int main() {
   Complex c1 (3.0, 4.0);
   // c1.printCartesian();
   c1.printPolar();
 }
-</input>
+</code>
       </program>
     </statement>
     <choices>

@@ -99,7 +99,7 @@
     <statement>
       <p>Which of the following options should replace the blank in the following code?</p>
       <program line-numbers="yes">
-        <input>
+        <code>
 struct StarWars {
   string name;
   int num_appearences;
@@ -122,7 +122,7 @@ int main() {
   character = (StarWars) { "Rey", 3, true};
   character.isMaincast();
 }
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -174,7 +174,7 @@ int main() {
     <statement>
       <p>What is the output of the code below?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 struct Cube {
   int mass;
   int density;
@@ -200,7 +200,7 @@ int main() {
   c1.density = 50;
   cout << c.greater_density(c1) << endl;
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -242,7 +242,7 @@ int main() {
     <statement>
       <p>What are the values stored in the p1 object below?</p>
       <program line-numbers="yes">
-        <input>
+        <code>
 struct Penguin {
   int age;
   string gender;
@@ -258,7 +258,7 @@ Penguin::Penguin() {
 int main() {
   Penguin p1;
 }
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -303,7 +303,7 @@ int main() {
     <statement>
       <p> Will the following program run and if so, what does this program aptly depict?</p>
       <program line-numbers="yes">
-        <input>
+        <code>
 struct Penguin {
   int age;
   string gender;
@@ -326,7 +326,7 @@ int main() {
   Penguin p1;
   Penguin p2(3, "male");
 }
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -372,7 +372,7 @@ int main() {
     <statement>
       <p>What statements are true based on the following <c>Stundent.h</c> header file?</p>
       <program line-numbers="yes">
-        <input>
+        <code>
 struct Student {
   // Instance variables
   int age, id;
@@ -390,7 +390,7 @@ struct Student {
   bool isJunior(const Student&amp; student2) const;
   Student add(const Student&amp; s2) const;
 };
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -435,7 +435,7 @@ struct Student {
     <statement>
       <p>What is the output of the code below?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 struct Penguin {
   int age;
   string gender;
@@ -459,7 +459,7 @@ int main() {
   Penguin p2(3, "male");
   cout << p2.age << " " << p1.gender << endl;
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -502,7 +502,7 @@ int main() {
     <statement>
       <p>What is the output of the code below?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 struct Point3D {
   int x, y, z;
 
@@ -517,7 +517,7 @@ struct Point3D {
 int main() {
 Point3D p1;
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>

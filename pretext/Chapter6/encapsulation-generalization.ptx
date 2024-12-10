@@ -41,7 +41,7 @@ while (i &lt;= 6) {
     <program xml:id="encapsulation_generalization_AC_1_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -61,7 +61,7 @@ int main() {
         i = i + 1;
     }
 }
-        ]]></input>
+        ]]></code>
     </program>
   </listing>
   <p>The output of this program is</p>
@@ -80,7 +80,7 @@ int main() {
     <program xml:id="encapsulation_generalization_AC_2_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -100,7 +100,7 @@ int main() {
         i = i + 1;
     }
 }
-        ]]></input>
+        ]]></code>
     </program>
   </listing>
   <exercise label="encapsulation_generalization_1">

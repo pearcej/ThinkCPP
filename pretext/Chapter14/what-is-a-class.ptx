@@ -56,7 +56,7 @@ public:
     <statement>
       <p>How can we change <c>Deck</c>, which is currently a <c>struct</c>, into a <c>class</c>?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 struct Deck {
 private:
   vector<Card> cards;
@@ -74,7 +74,7 @@ public:
   Deck mergeSort() const;
   Deck mergeSort(Deck deck) const;
 };
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>

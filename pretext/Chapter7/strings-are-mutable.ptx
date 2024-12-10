@@ -10,7 +10,7 @@
     <program xml:id="strings_are_mutable_AC_1_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -19,7 +19,7 @@ int main() {
     greeting[0] = 'J';
     cout << greeting << endl;
 }
-        ]]></input>
+        ]]></code>
     </program>
   </listing>
   <p>This produces the output <c>Jello, world!</c>.</p>
@@ -27,11 +27,11 @@ int main() {
     <caption>
       What is printed by the following statements?
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 string fav_food = "ice cream";
 fav_food[3] = "d";
 cout << fav_food << endl;
-]]></input>
+]]></code>
       </program>
     </caption>
     <choices>
@@ -73,9 +73,9 @@ cout << fav_food << endl;
     <statement>
       <p>How can we fix the message to be <q>You're a wizard Harry</q>?</p>
       <program line-numbers="yes">
-        <input>
+        <code>
 string message = "You're a lizard Harry";
-</input>
+</code>
       </program>
     </statement>
     <choices>

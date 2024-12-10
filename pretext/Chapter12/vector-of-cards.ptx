@@ -45,7 +45,7 @@ for (int suit = 0; suit &lt;= 3; suit++) {
     <program xml:id="c12_6_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <string>
 #include <vector>
@@ -79,7 +79,7 @@ int main() {
     deck[0].print();
 }
 
-        ]]></input>
+        ]]></code>
       <tests>
 
 Card::Card() {

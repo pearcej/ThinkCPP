@@ -5,13 +5,13 @@
     <statement>
       <p>What should be the return type of the function <c>convertToCelsius</c>?</p>
       <program line-numbers="yes">
-        <input>
+        <code>
 ______ convertToCelsius(double fahrenheit) {
   double celsius;
   celsius = (fahrenheit - 32) * 5 / 9;
   return celsius;
 }
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -61,7 +61,7 @@ ______ convertToCelsius(double fahrenheit) {
     <statement>
       <p>What would be returned by <c>secretFunction</c> if the input was 14?</p>
       <program line-numbers="yes">
-        <input>
+        <code>
 int secretFunction(int input) {
   if (input % 2 == 0) {
     return 3 * input - 2;
@@ -74,7 +74,7 @@ int secretFunction(int input) {
   }
   return input + 4;
 }
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -175,9 +175,9 @@ int secretFunction(int input) {
         write
         and add to the program?</p>
       <program line-numbers="yes">
-        <input>
+        <code>
 int func(double x, bool y);
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -241,7 +241,7 @@ int func(double x, bool y);
     <statement>
       <p>What is the output of the code below?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 int main() {
   bool x = 2 < 3;
   cout << x;
@@ -249,7 +249,7 @@ int main() {
   cout << ((1 + 4) * 4 > 24);
   cout << (23 == (32 + 2 - 11));
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -293,7 +293,7 @@ int main() {
     <statement>
       <p>What is the output of the code below?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 int main() {
   bool w = !(2 * 3 == 6 || 4 - 3 > 8);
   bool x = true || 4 > 6;
@@ -301,7 +301,7 @@ int main() {
   bool z = (4 + 9 < 15 && 3 != 4) || 2 + 5 == 7;
   cout << w << x << y << z;
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -351,13 +351,13 @@ int main() {
     <statement>
       <p>Are there any issues with the code below?</p>
       <program line-numbers="yes">
-        <input>
+        <code>
 bool isEven(int num) {
   if (num % 2 == 0) {
     return true;
   }
 }
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -401,7 +401,7 @@ bool isEven(int num) {
     <statement>
       <p>Are there any issues with the code below?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 double Free_time(int day) {
   if (day == 1 || day == 2 || day == 3 || day == 4) {
     cout << "Better study on weekday!" << endl;
@@ -412,7 +412,7 @@ double Free_time(int day) {
     return day;
   }
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -455,13 +455,13 @@ double Free_time(int day) {
     <statement>
       <p>Are there any issues with the code below?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 void moonWeight(double earth) {
   double moon = 0.165 * earth;
   cout << "You would weigh " << moon << " pounds on the moon." << endl;
   return moon;
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -551,7 +551,7 @@ void moonWeight(double earth) {
     <statement>
       <p>What is the base case of the <c>factorial</c> recursive function?</p>
       <program line-numbers="yes">
-        <input>
+        <code>
 int factorial(int n) {
   if (n == 0) {
     return 1;
@@ -562,7 +562,7 @@ int factorial(int n) {
     return result;
   }
 }
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -610,7 +610,7 @@ int factorial(int n) {
     <statement>
       <p>What is printed?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 void print_sequence(int n) {
   if (n == 0) {
      cout << 1;
@@ -627,7 +627,7 @@ int main() {
     int val=6;
     print_sequence(val);
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>

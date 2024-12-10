@@ -6,7 +6,7 @@
       <p>What is the output of the code below?</p>
       <program language="cpp"
                line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 int main() {
   int x = 0;
   int i = 1;
@@ -16,7 +16,7 @@ int main() {
   }
   cout << x;
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -63,7 +63,7 @@ int main() {
       <p>What is the final value of <c>i</c> when the code finished running?</p>
       <program language="cpp"
                line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 int main() {
   int x = 0;
   int i = 1;
@@ -73,7 +73,7 @@ int main() {
   }
   cout << x;
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -118,7 +118,7 @@ int main() {
       <p>How many times does the following while loop run?</p>
       <program language="cpp"
                line-numbers="yes">
-        <input>
+        <code>
 int main() {
   int i = 6;
   while (i &gt; 2) {
@@ -127,7 +127,7 @@ int main() {
       i = i - 5;
   }
 }
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -170,7 +170,7 @@ int main() {
       <p>What is the output of the code below?</p>
       <program language="cpp"
                line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 int main() {
   int j = 6;
   int i = j + 4;
@@ -186,7 +186,7 @@ int main() {
   }
   cout << "like Joe's Pizza." << endl;
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -231,7 +231,7 @@ int main() {
       <p>What is the output of the code below?</p>
       <program language="cpp"
                line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 int main() {
   int n = 10;
   // cout << "Da ";
@@ -242,7 +242,7 @@ int main() {
   }
   cout << "Batman!";
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -286,7 +286,7 @@ int main() {
       <p>What is the output of the code below?</p>
       <program language="cpp"
                line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 int main() {
   int n = 10;
   cout << "Da ";
@@ -296,7 +296,7 @@ int main() {
   }
   cout << "Batman!";
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -340,7 +340,7 @@ int main() {
       <p>What is the output of the code below?</p>
       <program language="cpp"
                line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 int main() {
   int x = 1;
   while (x < 6) {
@@ -348,7 +348,7 @@ int main() {
     x++;
   }
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -393,7 +393,7 @@ int main() {
         definition of <c>superSecretFunction</c>?</p>
       <program language="cpp"
                line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 int superSecretFunction(int n) {
   int x = 0;
   return (2 + (n * n) - 5 * n / 7) * x;
@@ -403,7 +403,7 @@ int main() {
   int x = 1;
   cout << "After using the super secret function, we get " << superSecretFunction (x);
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -450,7 +450,7 @@ int main() {
       <p>What is the output of the code below?</p>
       <program language="cpp"
                line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 int loopFive(int n) {
   while (n % 5 != 0) {
     n = n + 3;
@@ -463,7 +463,7 @@ int main() {
   cout << loopFive (3);
   cout << loopFive (4);
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -511,7 +511,7 @@ int main() {
         error?</p>
       <program language="cpp"
                line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 void repeatBot(string input) {
   int n = 0;
   while (n < 5) {
@@ -523,7 +523,7 @@ void repeatBot(string input) {
 int main() {
   repeatBot ("Hello, how may I help you?");
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -573,7 +573,7 @@ int main() {
         Can you find the new error?</p>
       <program language="cpp"
                line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 void repeatBot(string input) {
   int n = 0;
   while (n > 5) {
@@ -585,7 +585,7 @@ void repeatBot(string input) {
 int main() {
   repeatBot ("Hello, how may I help you?");
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>

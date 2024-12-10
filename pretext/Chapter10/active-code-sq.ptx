@@ -9,7 +9,7 @@
                     Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="vectors_a2_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -27,7 +27,7 @@ int main() {
     vector<int> vec{1,2,3,4};
     cout << evenCount(vec) << endl;
 }
-        ]]></input>
+        ]]></code>
         </program>
       </exercise>
     </TabNode>
@@ -86,7 +86,7 @@ int main() {
                     Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="vectors_a4_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 
 
@@ -101,7 +101,7 @@ int main() {
 
     }
 }
-        ]]></input>
+        ]]></code>
         </program>
       </exercise>
     </TabNode>
@@ -160,7 +160,7 @@ int main() {
                     it ends with an even number. Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="vectors_a6_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -175,7 +175,7 @@ int main() {
         cout << vec[i] << endl;
     }
 }
-        ]]></input>
+        ]]></code>
         </program>
       </exercise>
     </TabNode>
@@ -223,7 +223,7 @@ int main() {
                     Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="vectors_a8_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 #include <cstdlib>
 #include <vector>
@@ -240,7 +240,7 @@ int main() {
         cout << randomNums(num,max)[i] << endl;
     }
 }
-        ]]></input>
+        ]]></code>
         </program>
       </exercise>
     </TabNode>
@@ -294,7 +294,7 @@ int main() {
                     <c>vec</c> that are divisible by 100. Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="vectors_a10_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -306,7 +306,7 @@ int main() {
     vector<int> vec{ 100,10,300,400,21,1000 };
     cout << hundyBundy(vec) << endl;
 }
-        ]]></input>
+        ]]></code>
         </program>
       </exercise>
     </TabNode>
@@ -368,7 +368,7 @@ int main() {
                     Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="vectors_a12_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -380,7 +380,7 @@ int main() {
     vector<int> vec{1,2,3,4,5,6};
     weird_print(vec);
 }
-        ]]></input>
+        ]]></code>
         </program>
       </exercise>
     </TabNode>

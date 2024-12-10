@@ -20,7 +20,7 @@
     <program xml:id="runtime_error_AC_1_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -29,7 +29,7 @@ int main() {
     cout << "The first letter is " << greeting[-1] << endl;
     cout << "The last letter is " << greeting[greeting.length()] << endl;
 }
-        ]]></input>
+        ]]></code>
     </program>
   </listing>
   <exercise label="runtime_error_1">

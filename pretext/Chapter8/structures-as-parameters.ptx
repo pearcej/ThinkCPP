@@ -14,7 +14,7 @@
     <program xml:id="structures_parameters_AC_1_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -30,7 +30,7 @@ int main() {
     Point blank = { 3.0, 4.0 };
     printPoint (blank);
 }
-        ]]></input>
+        ]]></code>
     </program>
   </listing>
   <p>As a second example, we can rewrite the <c>distance</c> function from <xref ref="chapter5_program-development-distance"/> so that it takes
@@ -48,7 +48,7 @@ int main() {
     <program xml:id="structures_parameters_AC_2_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -68,14 +68,14 @@ int main() {
     Point point = { 3.0, 4.0 };
     cout << "The distance from the point to the origin is " << distance (origin, point) << endl;
 }
-        ]]></input>
+        ]]></code>
     </program>
   </listing>
   <exercise label="structures_parameters_1">
     <statement>
       <p>What will print?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 struct Coordinate {
   int x, y;
 };
@@ -88,7 +88,7 @@ int main() {
   Coordinate coord = { 2, 7 };
   printOppositeCoordinate (coord);
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>

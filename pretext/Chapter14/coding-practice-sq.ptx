@@ -9,7 +9,7 @@
                     successfully. Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_14_AC_2q_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -40,7 +40,7 @@ int main() {
         << ", and " << r.height << " has an area of " << r.calculateArea()
         << " and a volume of " << r.calculateVolume << endl;
 }
-        ]]></input>
+        ]]></code>
         </program>
       </exercise>
     </TabNode>
@@ -138,7 +138,7 @@ int main() {
                     Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_14_AC_4q_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -181,7 +181,7 @@ class Temp {
 int main() {
     // Write your code here.
 }
-        ]]></input>
+        ]]></code>
         </program>
       </exercise>
     </TabNode>
@@ -225,7 +225,7 @@ int main() {
                     Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_14_AC_6q_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -238,7 +238,7 @@ class MyVector {
         MyVector() {};
         // Write your constructor here.
 };
-        ]]></input>
+        ]]></code>
         </program>
       </exercise>
     </TabNode>
@@ -279,7 +279,7 @@ class MyVector {
                     Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_14_AC_8q_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -310,7 +310,7 @@ int main() {
     myVec.push_back(24);
     myVec.print();
 }
-        ]]></input>
+        ]]></code>
           <tests>
 MyVector::MyVector(vector&lt;int&gt; vec) {
     elements = vec;
@@ -378,7 +378,7 @@ int MyVector::at(int index) { return elements[index]; }
                     and return the max and min values. Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_14_AC_10q_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -414,7 +414,7 @@ int main() {
     cout << "The largest element is " << myVec.max() << endl;
     cout << "The smallest element is " << myVec.min() << endl;
 }
-        ]]></input>
+        ]]></code>
           <tests>
 MyVector::MyVector(vector&lt;int&gt; vec) {
     elements = vec;

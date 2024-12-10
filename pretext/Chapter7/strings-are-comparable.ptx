@@ -9,7 +9,7 @@
     <program xml:id="strings_comparable_AC_1_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -20,7 +20,7 @@ int main() {
     }
     return 0;
 }
-        ]]></input>
+        ]]></code>
     </program>
   </listing>
   <p>The other comparison operations are useful for putting words in
@@ -33,7 +33,7 @@ int main() {
     <program xml:id="strings_comparable_AC_2_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -49,7 +49,7 @@ int main() {
     cout << "Yes, we have no bananas!" << endl;
   }
 }
-        ]]></input>
+        ]]></code>
     </program>
   </listing>
   <p>You should be aware, though, that the <c>string</c> class does not handle upper and lower case
@@ -66,9 +66,9 @@ int main() {
       <p>What would the result of the following comparison be? Where <c>1</c> means true and <c>0</c>
         means false.</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 "Dog" < "Doghouse";
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -96,9 +96,9 @@ int main() {
       <p>What would the result of the following comparison be? Where <c>1</c> means true and <c>0</c>
         means false.</p>
       <program line-numbers="yes">
-        <input>
+        <code>
 "dog" &lt; "Dog";
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -134,9 +134,9 @@ int main() {
       <p>What would the result of the following comparison be? Where <c>1</c> means true and <c>0</c>
         means false.</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 "dog" < "Doghouse";
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -163,9 +163,9 @@ int main() {
       <p>What would the result of the following comparison be? Where <c>1</c> means true and <c>0</c>
         means false.</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 "bread" < "bread";
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>

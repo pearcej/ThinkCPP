@@ -21,7 +21,7 @@ double distance = sqrt(blank.x * blank.x + blank.y * blank.y);</program>
     <program xml:id="accessing_instance_variables_AC_1_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -38,7 +38,7 @@ int main() {
     double distance = sqrt(blank.x * blank.x + blank.y * blank.y);
     cout << distance << endl;
 }
-        ]]></input>
+        ]]></code>
     </program>
   </listing>
   <exercise label="accessing_instance_variables_1">
@@ -94,7 +94,7 @@ int main() {
     <statement>
       <p>What will print?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 struct Blue {
   double x, y;
 };
@@ -107,7 +107,7 @@ int main() {
   double distance = blank.x * blank.x + blank.y * blank.y;
   cout << distance << endl;
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>

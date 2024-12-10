@@ -29,7 +29,7 @@
     <program label="multiple_functions_AC_1_editor"
              interactive="codelens"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -55,7 +55,7 @@ int main() {
     printTotal(newerNum);
     return 0;
 }
-        ]]></input>
+        ]]></code>
     </program>
   </activity>
   <p>What's the moral of this sordid tale? When you read a program, don't read from top to bottom.
@@ -91,7 +91,7 @@ int main() {
       <p>Consider the following C++ code. Note that line numbers are included
         on the left.</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -111,7 +111,7 @@ int main() {
   cout << "Second Line." << endl;
   return 0;
 }
-]]></input>
+]]></code>
       </program>
       <p>Which of the following reflects the order in which these functions
         are executed in C++?</p>
@@ -165,7 +165,7 @@ int main() {
     <statement>
       <p>Consider the following C++ code.</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -190,7 +190,7 @@ int main() {
   goodbye();
   return 0;
 }
-]]></input>
+]]></code>
       </program>
       <p>What is printed when the code is executed?</p>
     </statement>

@@ -15,19 +15,19 @@
 </output>
       </console>
     </statement>
-    <program interactive="activecode"><input><![CDATA[
+    <program interactive="activecode"><code><![CDATA[
            #include <iostream>
            using namespace std;
 
            int main() {
                // Write your implementation here.
-           }]]></input></program>
+           }]]></code></program>
     <solution>
       <p>Below is one way to implement the program. We use nested loops similar to the last
         version
         of the printMultTable function to print out the triangular shape.</p>
       <program xml:id="cp_6_AC_1a"
-               line-numbers="yes"><input><![CDATA[
+               line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -43,7 +43,7 @@ int main() {
         row++;
     }
 }
-        ]]></input></program>
+        ]]></code></program>
     </solution>
   </exercise>
 
@@ -63,7 +63,7 @@ int main() {
     <program xml:id="cp_6_AC_2q_editor"
              interactive="activecode"
              line-numbers="yes">
-              <input><![CDATA[
+              <code><![CDATA[
     #include <iostream>
     using namespace std;
     
@@ -74,7 +74,7 @@ int main() {
     int main() {
         // Write your implementation here.
     }
-            ]]></input>
+            ]]></code>
             </program>
     <hint>
       <activity label="cp_6_AC_2q_pp"
@@ -161,7 +161,7 @@ int main() {
 </output>
       </console>
     </statement>
-    <program interactive="activecode"><input><![CDATA[
+    <program interactive="activecode"><code><![CDATA[
            #include <iostream>
            using namespace std;
 
@@ -172,13 +172,13 @@ int main() {
            int main() {
                printPyramid (5);
            }
-               ]]></input></program>
+               ]]></code></program>
     <solution>
       <p>Below is one way to implement the program. We use multiple <c>while</c> loops to print out
         spaces and asterisks. The outer loop creates the number of rows, and within the outer loop,
         the two inner loops print out the correct number of spaces and asterisks.</p>
       <program xml:id="cp_6_AC_3a"
-               line-numbers="yes"><input><![CDATA[
+               line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -204,7 +204,7 @@ void printPyramid(int n) {
 int main() {
     printPyramid (5);
 }
-        ]]></input></program>
+        ]]></code></program>
     </solution>
   </exercise>
 
@@ -226,7 +226,7 @@ int main() {
     <program xml:id="cp_6_AC_4q_editor"
              interactive="activecode"
              line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -237,7 +237,7 @@ void printNumPyramid(int n) {
 int main() {
     printNumPyramid (5);
 }
-        ]]></input>
+        ]]></code>
         </program>
     <hint>
       <activity label="cp_6_AC_4q_pp"
@@ -347,7 +347,7 @@ Buzz
 </output>
       </console>
     </statement>
-    <program interactive="activecode"><input><![CDATA[
+    <program interactive="activecode"><code><![CDATA[
            #include <iostream>
            using namespace std;
 
@@ -358,14 +358,14 @@ Buzz
            int main() {
                printPyramid (5);
            }
-               ]]></input></program>
+               ]]></code></program>
     <solution>
       <p>Below is one way to implement the <q>FizzBuzz</q> program. We use conditionals with modulus
         operators in a while loop to categorize every number and print the correct output. Feel free
         to search up on the FizzBuzz coding interview problem if you are interested in other ways to
         code this program!</p>
       <program xml:id="cp_6_AC_5a"
-               line-numbers="yes"><input><![CDATA[
+               line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -387,7 +387,7 @@ int main() {
         n++;
     }
 }
-        ]]></input></program>
+        ]]></code></program>
 
     </solution>
   </exercise>
@@ -415,7 +415,7 @@ int main() {
     <program xml:id="cp_6_AC_6q_editor"
              interactive="activecode"
              line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -426,7 +426,7 @@ void printAddTable(int n) {
 int main() {
     // Call your function here.
 }
-        ]]></input>
+        ]]></code>
         </program>
     <hint>
       <activity label="cp_6_AC_6q_pp"
@@ -498,14 +498,14 @@ int main() {
         Run and test your code!</p>
     </statement>
     <program interactive="activecode">
-            <input><![CDATA[
+            <code><![CDATA[
 #include <iostream>
 using namespace std;
 
 bool isPrime (int num) {
     // Write your implementation here.
 }
-           ]]></input>
+           ]]></code>
             <tests><![CDATA[
             #define CATCH_CONFIG_MAIN
             #include <catch.hpp>
@@ -530,7 +530,7 @@ bool isPrime (int num) {
         loop only goes up to <c>num / 2</c> because if 2 doesn't divide evenly, then there isn't a smaller
         factor.</p>
       <program xml:id="cp_6_AC_7a"
-               line-numbers="yes"><input><![CDATA[
+               line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -547,7 +547,7 @@ bool isPrime(int num) {
     }
     return true;
 }
-        ]]></input><tests>
+        ]]></code><tests>
 #define CATCH_CONFIG_MAIN
 #include &lt;catch.hpp&gt;
 
@@ -574,14 +574,14 @@ TEST_CASE("isPrime for 0") {
     <program xml:id="cp_6_AC_8q_editor"
              interactive="activecode"
              line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 using namespace std;
 
 int main() {
     // Write your implementation here.
 }
-        ]]></input>
+        ]]></code>
         </program>
     <hint>
       <activity label="cp_6_AC_8q_pp"
@@ -631,14 +631,14 @@ int main() {
         numbers.</p>
     </statement>
     <program interactive="activecode">
-            <input><![CDATA[
+            <code><![CDATA[
 #include <iostream>
 using namespace std;
 
 int main() {
     // Write your implementation here.
 }
-           ]]></input>
+           ]]></code>
             <tests><![CDATA[
             #define CATCH_CONFIG_MAIN
             #include <catch.hpp>
@@ -661,7 +661,7 @@ int main() {
         loop only goes up to <c>num / 2</c> because if 2 doesn't divide evenly, then there isn't a smaller
         factor.</p>
       <program xml:id="cp_6_AC_9a"
-               line-numbers="yes"><input><![CDATA[
+               line-numbers="yes"><code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -679,7 +679,7 @@ int main() {
         n++;
     }
 }
-        ]]></input></program>
+        ]]></code></program>
     </solution>
   </exercise>
 
@@ -693,14 +693,14 @@ int main() {
     <program xml:id="cp_6_AC_10q_editor"
              interactive="activecode"
              line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 using namespace std;
 
 int factorial(int n) {
     // Write your implementation here.
 }
-        ]]></input>
+        ]]></code>
           <tests>
 #define CATCH_CONFIG_MAIN
 #include &lt;catch.hpp&gt;

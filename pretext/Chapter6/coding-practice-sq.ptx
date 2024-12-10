@@ -15,7 +15,7 @@
 ****</program>
         </statement>
         <program xml:id="cp_6_AC_2q_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -26,7 +26,7 @@ void printTriangle(int n) {
 int main() {
     // Write your implementation here.
 }
-        ]]></input>
+        ]]></code>
         </program>
       </exercise>
     </TabNode>
@@ -123,7 +123,7 @@ int main() {
 555555555</program>
         </statement>
         <program xml:id="cp_6_AC_4q_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -134,7 +134,7 @@ void printNumPyramid(int n) {
 int main() {
     printNumPyramid (5);
 }
-        ]]></input>
+        ]]></code>
         </program>
       </exercise>
     </TabNode>
@@ -229,7 +229,7 @@ int main() {
 10      11      12      13      14      15      16      17      18      19      20</program>
         </statement>
         <program xml:id="cp_6_AC_6q_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -240,7 +240,7 @@ void printAddTable(int n) {
 int main() {
     // Call your function here.
 }
-        ]]></input>
+        ]]></code>
         </program>
       </exercise>
     </TabNode>
@@ -308,14 +308,14 @@ int main() {
                     Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_6_AC_8q_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 using namespace std;
 
 int main() {
     // Write your implementation here.
 }
-        ]]></input>
+        ]]></code>
         </program>
       </exercise>
     </TabNode>
@@ -366,14 +366,14 @@ int main() {
                     Run and test your code! Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_6_AC_10q_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 using namespace std;
 
 int factorial(int n) {
     // Write your implementation here.
 }
-        ]]></input>
+        ]]></code>
           <tests>
 #define CATCH_CONFIG_MAIN
 #include &lt;catch.hpp&gt;

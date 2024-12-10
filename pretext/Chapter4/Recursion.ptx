@@ -31,7 +31,7 @@
     <program xml:id="recursion_AC_1_editor"
              interactive="codelens" language="cpp"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -50,7 +50,7 @@ int main() {
     countdown(3);
     return 0;
 }
-        ]]></input>
+        ]]></code>
     </program>
   </activity>
   <p>What happens if we call <c>countdown</c> function like this:</p>
@@ -106,7 +106,7 @@ void threeLine() {
     <program xml:id="recursion_AC_2_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
@@ -135,7 +135,8 @@ int main() {
     int randomNumber = (rand() % 10) + 1;
     guessTheNumber(randomNumber);
 }
-        ]]></input>
+        ]]></code>
+        <stdin>1 2 3 4 5 6 7 8 9 10</stdin>
     </program>
   </listing>
   <exercise label="recursion_1">

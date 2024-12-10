@@ -46,7 +46,7 @@
     <statement>
       <p>Which of the following are accessor functions?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 struct Student {
 private:
   int id;
@@ -58,7 +58,7 @@ public:
   int setID(int i) { id = i; }
   void printInfo() { cout << "Student: " << name << ", " << year; }
 };
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -150,7 +150,7 @@ public:
     <statement>
       <p>What should replace the question marks in the code below? Use accessor functions.</p>
       <program line-numbers="yes">
-        <input>
+        <code>
 class rightTriangle {
   int base;
   int height;
@@ -162,7 +162,7 @@ class rightTriangle {
       ???
     }
 };
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -213,7 +213,7 @@ class rightTriangle {
     <statement>
       <p>What is wrong with the code below?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 class Plane {
   int flightNumber;
   string model;
@@ -235,7 +235,7 @@ int main() {
   p.destination = "Detroit";
   p.printInfo();
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -280,7 +280,7 @@ int main() {
     <statement>
       <p>What is the output of the code below?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 class Temp {
 private:
   double fahrenheit;
@@ -309,7 +309,7 @@ int main() {
   t.setCelsius (30);
   t.printTemp();
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -393,7 +393,7 @@ int main() {
     <statement>
       <p>Take a look at the class definition of <c>Date</c>. What are some invariants we must maintain?</p>
       <program line-numbers="yes">
-        <input>
+        <code>
 class Date {
 private:
   int day;
@@ -411,7 +411,7 @@ public:
     message = m;
   }
 };
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -453,11 +453,11 @@ public:
     <statement>
       <p>Take a look at the function below. What are its preconditions and postconditions?</p>
       <program line-numbers="yes">
-        <input>
+        <code>
 int calculateRectangleArea(int length, int width) {
   return length * width;
 }
-</input>
+</code>
       </program>
     </statement>
     <choices>

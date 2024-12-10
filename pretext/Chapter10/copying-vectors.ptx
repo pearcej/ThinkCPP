@@ -16,7 +16,7 @@
     <program xml:id="copying_vectors_AC_1_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -35,7 +35,7 @@ int main() {
     cout << "We just made two copies of count.  As you can see, both methods work the same!" << endl;
 }
 
-        ]]></input>
+        ]]></code>
       <tests>
 
 void print_vec(vector&lt;int&gt; vec) {

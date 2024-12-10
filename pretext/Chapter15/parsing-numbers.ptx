@@ -41,7 +41,7 @@ int convertToInt(const string&amp; s)
   <program xml:id="c15_6"
            interactive="activecode"
            line-numbers="yes">
-    <input><![CDATA[
+    <code><![CDATA[
 #include <iostream>
 #include <string>
 #include <vector>
@@ -62,7 +62,7 @@ int main() {
    int num = convertToInt("867-5309");
    cout << num << endl;
 }
-        ]]></input>
+        ]]></code>
   </program>
   <exercise label="question15_6_1">
     <statement>

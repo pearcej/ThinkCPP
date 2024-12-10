@@ -10,7 +10,7 @@
     <program xml:id="the_while_statement_AC_1_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -25,7 +25,7 @@ void countdown(int n) {
 int main() {
     countdown (9);
 }
-        ]]></input>
+        ]]></code>
     </program>
   </listing>
   <p>You can almost read a <c>while</c> statement as if it were English. What this means is, <q>While <c>n</c>
@@ -126,7 +126,7 @@ int main() {
       <p>The following code contains an infinite loop. Which is the best explanation for why the
         loop does not terminate?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 int n = 10;
 int answer = 1;
 while (n > 0) {
@@ -134,7 +134,7 @@ while (n > 0) {
   n = n + 1;
 }
 cout << answer;
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -228,7 +228,7 @@ cout << answer;
     <statement>
       <p>What is printed by this code?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 int n = 1;
 int x = 2;
 while (n < 5) {
@@ -239,7 +239,7 @@ while (n < 5) {
 }
 cout << n;
 cout << x;
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>

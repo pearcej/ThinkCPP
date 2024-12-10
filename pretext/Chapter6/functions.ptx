@@ -27,7 +27,7 @@
   <p>For example, instead of writing the 53 lines of code below&#x2026;</p>
   <program xml:id="functions_AC_1"
            line-numbers="yes">
-    <input><![CDATA[
+    <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -81,13 +81,13 @@ int main() {
     x = x - 2;
     cout << x << endl;
 }
-        ]]></input>
+        ]]></code>
   </program>
   <p>..you would reduce it to the 21 lines of code below, making it easier to read, debug, and use
     the function many times with rewriting it each time.</p>
   <program xml:id="functions_AC_2"
            line-numbers="yes">
-    <input><![CDATA[
+    <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -109,7 +109,7 @@ int main() {
     all_operators(1000);
     all_operators(254);
 }
-        ]]></input>
+        ]]></code>
   </program>
   <exercise label="functions_1">
     <statement>

@@ -129,7 +129,7 @@ int index2 = cities.add (city2);</program>
   <program xml:id="c15_7"
            interactive="activecode"
            line-numbers="yes">
-    <input><![CDATA[
+    <code><![CDATA[
 #include <iostream>
 #include <string>
 #include <vector>
@@ -163,7 +163,7 @@ int main() {
   cout << cities.getElement(0);
 }
 
-        ]]></input>
+        ]]></code>
     <tests>
 
 int Set::getNumElements() const {

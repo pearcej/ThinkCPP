@@ -10,7 +10,7 @@
                     of <c>Pixel</c>s. Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_12_AC_2q_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -22,7 +22,7 @@ struct Pixel {
 };
 
 // Write your code for the struct Image here.
-        ]]></input>
+        ]]></code>
         </program>
       </exercise>
     </TabNode>
@@ -71,7 +71,7 @@ struct Pixel {
                     Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_12_AC_4q_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -98,7 +98,7 @@ int main() {
     Image image = { 2, 3, matrix };
     image.printImage();
 }
-        ]]></input>
+        ]]></code>
           <tests>
 void Pixel::printPixel() {
     cout &lt;&lt; "("&lt;&lt; r &lt;&lt; ", " &lt;&lt; g &lt;&lt; ", " &lt;&lt; b &lt;&lt; ")";
@@ -159,7 +159,7 @@ void Pixel::printPixel() {
                     previous <c>cropIndex</c> parameters. Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_12_AC_6q_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -190,7 +190,7 @@ int main() {
     image.swapPixel(0, 0, 0, 2);
     image.printImage();
 }
-        ]]></input>
+        ]]></code>
           <tests>
 void Pixel::printPixel() {
     cout &lt;&lt; "("&lt;&lt; r &lt;&lt; ", " &lt;&lt; g &lt;&lt; ", " &lt;&lt; b &lt;&lt; ")";
@@ -260,7 +260,7 @@ void Image::cropImage(int startRow, int stopRow, int startCol, int stopCol) {
                     Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_12_AC_8q_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -296,7 +296,7 @@ int main() {
     image.flipVertical();
     image.printImage();
 }
-        ]]></input>
+        ]]></code>
           <tests>
 void Pixel::printPixel() {
     cout &lt;&lt; "("&lt;&lt; r &lt;&lt; ", " &lt;&lt; g &lt;&lt; ", " &lt;&lt; b &lt;&lt; ")";
@@ -398,7 +398,7 @@ void Image::flipHorizontal() {
                     to white. Check the hint below for help with the construction of the code.</p>
         </statement>
         <program xml:id="cp_12_AC_10q_editor" interactive="activecode" line-numbers="yes">
-          <input><![CDATA[
+          <code><![CDATA[
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -435,7 +435,7 @@ int main() {
     image.clearImage();
     image.printImage();
 }
-        ]]></input>
+        ]]></code>
           <tests>
 void Pixel::printPixel() {
     cout &lt;&lt; "("&lt;&lt; r &lt;&lt; ", " &lt;&lt; g &lt;&lt; ", " &lt;&lt; b &lt;&lt; ")";

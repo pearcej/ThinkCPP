@@ -31,7 +31,7 @@ printPoint (blank);</program>
     <program xml:id="call_by_reference_AC_1_editor"
              interactive="activecode"
              line-numbers="yes">
-      <input><![CDATA[
+      <code><![CDATA[
 #include <iostream>
 using namespace std;
 
@@ -55,7 +55,7 @@ int main() {
     reflect (blank);
     printPoint (blank);
 }
-        ]]></input>
+        ]]></code>
     </program>
   </listing>
   <program>(3, 4)
@@ -142,7 +142,7 @@ int main() {
     <statement>
       <p>What will print?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 int addTwo(int& x) {
   cout << x << " ";
   x = x + 2;
@@ -155,7 +155,7 @@ int main() {
   addTwo(num);
   cout << num << endl;
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>
@@ -205,7 +205,7 @@ int main() {
     <statement>
       <p>What will print?</p>
       <program line-numbers="yes">
-        <input><![CDATA[
+        <code><![CDATA[
 struct Point {
   int x, y;
 };
@@ -221,7 +221,7 @@ int main() {
   timesTwo(blank);
   cout << ", " << blank.x << endl;
 }
-]]></input>
+]]></code>
       </program>
     </statement>
     <choices>

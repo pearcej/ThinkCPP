@@ -8,7 +8,7 @@
     </statement>
     <program interactive="activecode"
              xml:id="cp_8_AC_1q">
-        <input>
+        <code>
 #include &lt;iostream&gt;
 using namespace std;
 
@@ -19,12 +19,13 @@ void rectangleInfo() {
 int main() {
     rectangleInfo();
 }
-        </input>
+        </code>
+        <stdin>4 6</stdin>
     </program>
     <solution><p>Below is one way to implement the program. We prompt the user for input using <c>cin</c>
       before printing the area and perimeter.</p> Below is one way to implement the program. We
       prompt the user for input using cin before printing the area and perimeter. <program xml:id="cp_8_AC_1a">
-        <input>
+        <code>
 #include &lt;iostream&gt;
 using namespace std;
 
@@ -39,7 +40,7 @@ void rectangleInfo() {
 int main() {
     rectangleInfo();
 }
-        </input>
+        </code>
     </program>
     </solution>
   </exercise>
@@ -53,7 +54,7 @@ int main() {
     </statement>
     <program interactive="activecode"
              xml:id="cp_8_AC_2q_editor">
-        <input>
+        <code>
 #include &lt;iostream&gt;
 using namespace std;
 
@@ -64,7 +65,7 @@ void greetUser () {
 int main() {
     greetUser ();
 }
-        </input>
+        </code>
     </program>
     <hint>
       <activity label="cp_8_AC_2q_pp">
@@ -116,7 +117,7 @@ int main() {
     </statement>
     <program interactive="activecode"
              xml:id="cp_8_AC_3q">
-        <input>
+        <code>
 #include &lt;iostream&gt;
 using namespace std;
 
@@ -131,14 +132,14 @@ int main() {
     cout &lt;&lt; "Correct output:" &lt;&lt; endl;
     cout &lt;&lt; "Rob (XLV 9800) has 45 percent battery and is currently executing the task \"washing dishes\"";
 }
-        </input>
+        </code>
     </program>
     <solution><p>Below is one way to implement the program. First we declare the instance variables
       in the <c>struct</c> definition. Next, we use dot notation to access the instance variables and
       output them using <c>cout</c>.</p> Below is one way to implement the program. First we declare the
       instance variables in the struct definition. Next, we use dot notation to access the instance
       variables and output them using cout. <program xml:id="cp_8_AC_3a">
-        <input>
+        <code>
 #include &lt;iostream&gt;
 using namespace std;
 
@@ -164,7 +165,7 @@ int main() {
     cout &lt;&lt; "Correct output:" &lt;&lt; endl;
     cout &lt;&lt; "Rob (XLV 9800) has 45 percent battery and is currently executing the task \"washing dishes\"";
 }
-        </input>
+        </code>
     </program>
     </solution>
   </exercise>
@@ -178,7 +179,7 @@ int main() {
     </statement>
     <program interactive="activecode"
              xml:id="cp_8_AC_4q_editor">
-        <input>
+        <code>
 #include &lt;iostream&gt;
 using namespace std;
 
@@ -202,7 +203,7 @@ int main() {
     cout &lt;&lt; "Correct output:" &lt;&lt; endl;
     cout &lt;&lt; "Bob (MKZ 143) has 100 percent battery and is currently executing the task \"sweeping floors\"";
 }
-        </input>
+        </code>
 <tests>
 void printRobotData (Robot r) {
     cout &lt;&lt; r.name &lt;&lt; " (" &lt;&lt; r.model &lt;&lt; " " &lt;&lt; r.serialNumber
@@ -256,7 +257,7 @@ void printRobotData (Robot r) {
     </statement>
     <program interactive="activecode"
              xml:id="cp_8_AC_5q">
-        <input>
+        <code>
 #include &lt;iostream&gt;
 using namespace std;
 
@@ -280,7 +281,7 @@ int main() {
     cout &lt;&lt; "Correct output:" &lt;&lt; endl;
     cout &lt;&lt; "EnterAName (RSO 1985) has 100 percent battery and is currently executing the task \"Idle\"";
 }
-        </input>
+        </code>
 <tests>
 void printRobotData (Robot r) {
      cout &lt;&lt; r.name &lt;&lt; " (" &lt;&lt; r.model &lt;&lt; " " &lt;&lt; r.serialNumber
@@ -297,7 +298,7 @@ void printRobotData (Robot r) {
       implement the program. We can create another Robot with the settings after being reset. Then
       we set r equal to the new Robot we created. Notice we use dot notation to ensure that the
       model and serialNumber are the same. <program xml:id="cp_8_AC_5a">
-        <input>
+        <code>
 #include &lt;iostream&gt;
 using namespace std;
 
@@ -324,7 +325,7 @@ int main() {
     cout &lt;&lt; "Correct output:" &lt;&lt; endl;
     cout &lt;&lt; "EnterAName (RSO 1985) has 100 percent battery and is currently executing the task \"Idle\"";
 }
-        </input>
+        </code>
 <tests>
 void printRobotData (Robot r) {
      cout &lt;&lt; r.name &lt;&lt; " (" &lt;&lt; r.model &lt;&lt; " " &lt;&lt; r.serialNumber
@@ -348,7 +349,7 @@ void printRobotData (Robot r) {
     </statement>
     <program interactive="activecode"
              xml:id="cp_8_AC_6q_editor">
-        <input>
+        <code>
 #include &lt;iostream&gt;
 using namespace std;
 
@@ -363,7 +364,7 @@ int main() {
     cout &lt;&lt; "Correct output:" &lt;&lt; endl;
     cout &lt;&lt; "Magikarp (Lv. 12, 100% HP)";
 }
-        </input>
+        </code>
     </program>
     <hint>
       <activity label="cp_8_AC_6q_pp">
@@ -423,7 +424,7 @@ int main() {
     </statement>
     <program interactive="activecode"
              xml:id="cp_8_AC_7q">
-        <input>
+        <code>
 #include &lt;iostream&gt;
 using namespace std;
 
@@ -450,7 +451,7 @@ int main() {
     Trainer red = { "Red", 'M', 8, pikachu, espeon, snorlax, venusaur, charizard, blastoise };
     printTrainerInfo(red);
 }
-        </input>
+        </code>
 <tests>
 void printPokeInfo(Pokemon p) {
     cout &lt;&lt; p.pokeName &lt;&lt; " (Lv. " &lt;&lt; p.level &lt;&lt; ", " &lt;&lt; p.healthPercentage &lt;&lt; "% HP)" &lt;&lt; endl;
@@ -463,7 +464,7 @@ void printPokeInfo(Pokemon p) {
       trainer&#8217;s info in the correct format.</p> Below is one way to implement the program.
       First we declare the instance variables in the struct definition. Next, we call printPokeInfo
       on each Pokemon in Trainer and output the trainer&#8217;s info in the correct format. <program xml:id="cp_8_AC_7a">
-        <input>
+        <code>
 #include &lt;iostream&gt;
 using namespace std;
 
@@ -504,7 +505,7 @@ int main() {
     Trainer red = { "Red", 'M', 8, pikachu, espeon, snorlax, venusaur, charizard, blastoise };
     printTrainerInfo(red);
 }
-        </input>
+        </code>
 <tests>
 void printPokeInfo(Pokemon p) {
     cout &lt;&lt; p.pokeName &lt;&lt; " (Lv. " &lt;&lt; p.level &lt;&lt; ", " &lt;&lt; p.healthPercentage &lt;&lt; "% HP)" &lt;&lt; endl;
@@ -524,7 +525,7 @@ void printPokeInfo(Pokemon p) {
     </statement>
     <program interactive="activecode"
              xml:id="cp_8_AC_8q_editor">
-        <input>
+        <code>
 #include &lt;iostream&gt;
 using namespace std;
 
@@ -559,7 +560,7 @@ int main() {
     healPokemon(blue);
     printTrainerInfo(blue);  // Pokemon should now all be healed to 100% health
 }
-        </input>
+        </code>
 <tests>
 void printPokeInfo(Pokemon p) {
     cout &lt;&lt; p.pokeName &lt;&lt; " (Lv. " &lt;&lt; p.level &lt;&lt; ", " &lt;&lt; p.healthPercentage &lt;&lt; "% HP)" &lt;&lt; endl;
@@ -631,7 +632,7 @@ void printTrainerInfo(Trainer t) {
     </statement>
     <program interactive="activecode"
              xml:id="cp_8_AC_9q">
-        <input>
+        <code>
 #include &lt;iostream&gt;
 using namespace std;
 
@@ -667,7 +668,7 @@ int main() {
     pokeCenter(blue);
     printTrainerInfo(blue);  // Pokemon should now all be healed to 100% health
 }
-        </input>
+        </code>
 <tests>
 void printPokeInfo(Pokemon p) {
     cout &lt;&lt; p.pokeName &lt;&lt; " (Lv. " &lt;&lt; p.level &lt;&lt; ", " &lt;&lt; p.healthPercentage &lt;&lt; "% HP)" &lt;&lt; endl;
@@ -699,7 +700,7 @@ void healPokemon(Trainer&amp; t) {
         the correct output and operation depending on the user&#8217;s input.</p> Below is one way
       to implement the program. We use conditionals to perform the correct output and operation
       depending on the user&#8217;s input. <program xml:id="cp_8_AC_9a">
-        <input>
+        <code>
 #include &lt;iostream&gt;
 using namespace std;
 
@@ -750,7 +751,7 @@ int main() {
     pokeCenter(blue);
     printTrainerInfo(blue);  // Pokemon should now all be healed to 100% health
 }
-        </input>
+        </code>
 <tests>
 void printPokeInfo(Pokemon p) {
     cout &lt;&lt; p.pokeName &lt;&lt; " (Lv. " &lt;&lt; p.level &lt;&lt; ", " &lt;&lt; p.healthPercentage &lt;&lt; "% HP)" &lt;&lt; endl;
@@ -810,7 +811,7 @@ Error, not a valid planet.</pre>
     </statement>
     <program interactive="activecode"
              xml:id="cp_8_AC_10q_editor">
-        <input>
+        <code>
 #include &lt;iostream&gt;
 using namespace std;
 
@@ -819,7 +820,7 @@ using namespace std;
 int main() {
     // Write your implementation here.
 }
-        </input>
+        </code>
     </program>
     <hint>
       <activity label="cp_8_AC_10q_pp">
