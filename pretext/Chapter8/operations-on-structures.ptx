@@ -50,8 +50,7 @@ cout &lt;&lt; p2.x &lt;&lt; ", " &lt;&lt;  p2.y &lt;&lt; endl;</program>
   <exercise label="operations_structures_2"
             numbered="yes"
             adaptive="yes"
-            indentation="hide"
-            language="c++">
+            indentation="hide">
     <statement>
       <p>Construct a block of code that correctly initializes the instance variables of a structure.</p>
     </statement>
