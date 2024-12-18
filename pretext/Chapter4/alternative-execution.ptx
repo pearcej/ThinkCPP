@@ -26,7 +26,9 @@ else {
 }</program>
   <p>Now you have a function named <c>printParity</c> that will display an appropriate message for any integer
     you care to provide. In main you would call this function as follows:</p>
-  <program>printParity(17);</program>
+  <program>
+printParity(17);
+</program>
   <p>Always remember that when you <em>call</em> a function, you do not have to declare the types of
     the arguments you provide. C++ can figure out what type they are. You should resist the
     temptation to write things like:</p>

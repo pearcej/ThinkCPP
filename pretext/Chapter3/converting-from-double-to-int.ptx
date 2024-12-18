@@ -84,11 +84,15 @@ double exam3 = 97.9;</program>
       <p>
         <term>Method 1:</term>
       </p>
-      <program>double final = (int(exam1) + int(exam2) + int(exam3)) / 3;</program>
+      <program>
+double final = (int(exam1) + int(exam2) + int(exam3)) / 3;
+</program>
       <p>
         <term>Method 2:</term>
       </p>
-      <program>int final = int((exam1 + exam2 + exam3) / 3);</program>
+      <program>
+int final = int((exam1 + exam2 + exam3) / 3);
+</program>
       <p>Which method would <term>you</term> choose and why?</p>
     </statement>
     <choices>

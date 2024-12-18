@@ -90,9 +90,13 @@ int main() {
     symmetric, because <m>ab = ba</m>, so all the entries in the table appear twice. You could save
     ink by printing only half the table. To do that, you only have to change one line of <c>printMultTable</c>.
     Change</p>
-  <program>printMultiples(i, high);</program>
+  <program>
+printMultiples(i, high);
+</program>
   <p>to</p>
-  <program>printMultiples(i, i);</program>
+  <program>
+printMultiples(i, i);
+</program>
   <p>and you get</p>
   <console><output>1
 2   4

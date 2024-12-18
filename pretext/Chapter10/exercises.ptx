@@ -58,7 +58,9 @@
   <exercise label="vectors_mc2">
     <statement>
       <p>Suppose the following code is run:</p>
-      <program>vector&lt;string&gt; lauren = {"happy", "to", "you", "September", "birthday", "girl"}</program>
+      <program>
+vector&lt;string&gt; lauren = {"happy", "to", "you", "September", "birthday", "girl"}
+</program>
       <p>How would you save the string <c>"birthday"</c> from <c>lauren</c> to the variable <c>nurse</c>?</p>
     </statement>
     <choices>
@@ -164,7 +166,9 @@ for ( size_t i = 0; i &lt; chant.size(); i++ ) {
   <exercise label="vectors_mc4">
     <statement>
       <p>Select all of the following statments that correctly make a copy of <c>lauren</c>.</p>
-      <program>vector&lt;string&gt; lauren = {"happy", "to", "you", "September", "birthday", "girl"}</program>
+      <program>
+vector&lt;string&gt; lauren = {"happy", "to", "you", "September", "birthday", "girl"}
+</program>
       <p>How would you save the string <c>"birthday"</c> from <c>lauren</c> to the variable <c>nurse</c>?</p>
     </statement>
     <choices>
@@ -281,7 +285,9 @@ for ( size_t i = 0; i &lt; chant.size(); i++ ) {
     <statement>
       <p><term>Multiple Response</term> Select all ways to print out the contents of <c>ryan</c> without
         going out of bounds.</p>
-      <program>vector&lt;int&gt; ryan = {2, 3, 1, 5, 6, 0, 0, 5, 4};</program>
+      <program>
+vector&lt;int&gt; ryan = {2, 3, 1, 5, 6, 0, 0, 5, 4};
+</program>
     </statement>
     <choices>
       <choice>
@@ -341,10 +347,14 @@ for ( size_t i = 0; i &lt; chant.size(); i++ ) {
   <exercise label="vectors_mc7">
     <statement>
       <p>Suppose you want <c>ryan</c> to have the value</p>
-      <program>vector&lt;int&gt; ryan = {2, 3, 1, 5, 6, 7, 8, 9};</program>
+      <program>
+vector&lt;int&gt; ryan = {2, 3, 1, 5, 6, 7, 8, 9};
+</program>
       <p>What vector functions will you use to achieve this, and how many times will you use them?
         Keep in mind, <c>ryan</c> is currently the following vector of integers.</p>
-      <program>vector&lt;int&gt; ryan = {2, 3, 1, 5, 6, 0, 0, 5, 4};</program>
+      <program>
+vector&lt;int&gt; ryan = {2, 3, 1, 5, 6, 0, 0, 5, 4};
+</program>
     </statement>
     <choices>
       <choice>
@@ -392,7 +402,9 @@ for ( size_t i = 0; i &lt; chant.size(); i++ ) {
       <p>Suppose you are randomly assigning students to discussions 1-8. How would you do this
         correctly? Assume
         you have alreay implemented the following code.</p>
-      <program>int x = random();</program>
+      <program>
+int x = random();
+</program>
     </statement>
     <choices>
       <choice correct="yes">
@@ -417,7 +429,9 @@ y = y + 1;</program>
       </choice>
       <choice>
         <statement id="vectors_mc8_opt_c">
-          <program>int y = x % 7;</program>
+          <program>
+int y = x % 7;
+</program>
         </statement>
         <feedback id="vectors_mc8_opt_c">
           <p>This creates a random number between 0 and 7 (8 numbers), which are not the numbers we
@@ -426,7 +440,9 @@ y = y + 1;</program>
       </choice>
       <choice>
         <statement id="vectors_mc8_opt_d">
-          <program>int y = x % 8;</program>
+          <program>
+int y = x % 8;
+</program>
         </statement>
         <feedback id="vectors_mc8_opt_d">
           <p>The first part creates a random number between 0 and 8 (9 numbers). This is too many,

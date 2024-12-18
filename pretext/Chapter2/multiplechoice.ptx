@@ -68,7 +68,9 @@
   <exercise label="VARS_mc2">
     <statement>
       <p>What is the type of x?</p>
-      <program>x = "3";</program>
+      <program>
+x = "3";
+</program>
     </statement>
     <choices>
       <choice>
@@ -108,7 +110,9 @@
   <exercise label="VARS_mc3">
     <statement>
       <p>What is the value of <c>x</c>?</p>
-      <program>x = 2 + (13 - 5) * 2 + 6 /3;</program>
+      <program>
+x = 2 + (13 - 5) * 2 + 6 /3;
+</program>
     </statement>
     <choices>
       <choice>

@@ -30,7 +30,9 @@
     referring to the instance variables of the new object.</p>
   <p>To invoke the constructor, you use syntax that is a cross between a
     variable declaration and a function call:</p>
-  <program>Time time(seconds);</program>
+  <program>
+Time time(seconds);
+</program>
   <p>This statement declares that the variable <c>time</c> has type <c>Time</c>, and it invokes the
     constructor we just wrote, passing the value of <c>seconds</c> as an argument. The system allocates
     space for the new object and the constructor initializes its instance variables. The result is

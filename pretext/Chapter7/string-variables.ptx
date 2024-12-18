@@ -28,7 +28,9 @@ int main() {
     this case, when we assign them to an <c>string</c> variable, they are converted automatically to <c>string</c>
     values.</p>
   <p>We can output strings in the usual way:</p>
-  <program>cout &lt;&lt; first &lt;&lt; second &lt;&lt; endl;</program>
+  <program>
+cout &lt;&lt; first &lt;&lt; second &lt;&lt; endl;
+</program>
   <note><p>In order to compile this code, you will have to include the header file for the <c>string</c> class.
     If you are already including <c>iostream</c>, you may get away with not explicitly including <c>string</c>.
     In some environments, <c>iostream</c> will include <c>string</c> for you. But it is best to explicitly

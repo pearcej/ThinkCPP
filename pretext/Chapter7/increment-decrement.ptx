@@ -7,7 +7,9 @@
     used on <c>bool</c>s.</p>
   <p>Technically, it is legal to increment a variable and use it in an
     expression at the same time. For example, you might see something like:</p>
-  <program>cout &lt;&lt; i++ &lt;&lt; endl;</program>
+  <program>
+cout &lt;&lt; i++ &lt;&lt; endl;
+</program>
   <p>Looking at this, it is not clear whether the increment will take effect
     before or after the value is displayed. Because expressions like this
     tend to be confusing, I would discourage you from using them. In fact,
@@ -72,7 +74,9 @@ int main() {
     </program>
   </listing>
   <p>It is a common error to write something like</p>
-  <program>index = index++;             // WRONG!!</program>
+  <program>
+index = index++;             // WRONG!!
+</program>
   <p>Unfortunately, this is syntactically legal, so the compiler will not warn you. The effect of
     this statement is to leave the value of <c>index</c> unchanged. This is often a difficult bug to
     track down.</p>

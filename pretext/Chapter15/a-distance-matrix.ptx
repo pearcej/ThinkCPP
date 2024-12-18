@@ -4,7 +4,9 @@
   <p>Finally, we are ready to put the data from the file into a matrix.
     Specifically, the matrix will have one row and one column for each city.</p>
   <p>We'll create the matrix in <c>main</c>, with plenty of space to spare:</p>
-  <program>matrix&lt;int&gt; distances (50, 50, 0);</program>
+  <program>
+matrix&lt;int&gt; distances (50, 50, 0);
+</program>
   <p>Inside <c>processLine</c>, we add new information to the matrix by getting the indices of the two cities
     from the <c>Set</c> and using them as matrix indices:</p>
   <program>int dist = convertToInt(distString);

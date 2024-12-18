@@ -29,7 +29,9 @@ int main() {
     <p>Unfortunately, the <c>+</c> operator does not work on native C strings.</p>
   </warning>
   <p>Thus, you cannot write something like</p>
-  <program>string dessert = "banana" + " nut bread";</program>
+  <program>
+string dessert = "banana" + " nut bread";
+</program>
   <p>because both operands are C strings. As long as one of the operands is a <c>string</c>, though, C++
     will automatically convert the other.</p>
   <p>It is also possible to concatenate a character onto the beginning or end of an <c>string</c>. In the

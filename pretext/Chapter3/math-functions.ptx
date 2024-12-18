@@ -90,7 +90,9 @@ using namespace std;</program>
     C++ has a powerful feature called namespaces, that allow you to write your own implementation of
     cout. But in most cases, we would need to use the standard implementation. To convey this to the
     compiler, we use the line</p>
-  <program>using namespace std;</program>
+  <program>
+using namespace std;
+</program>
   <note>
     <p>As a rule of the thumb, you should write <c>using namespace std;</c> whenever you use iostream.</p>
   </note>
@@ -98,7 +100,9 @@ using namespace std;</program>
       cmath</url> header file contains information about the math
     functions. You can include it at the beginning of your program along
     with iostream:</p>
-  <program>#include &lt;cmath&gt;</program>
+  <program>
+#include &lt;cmath&gt;
+</program>
   <note><term>cmath</term> is one of a number of header files that start with &#x2018;c' to signify that
     they are derived from similar header files in the <term>C</term> language. In <term>C</term> the math
     library is named <c>math.h</c>. In <term>C++</term> you should always use the version of the library

@@ -4,7 +4,9 @@
   <p>Just as with mathematical functions, C++ functions can be <term>composed</term>, meaning that
     you use one expression as part of another. For example, you can use any expression as an
     argument to a function:</p>
-  <program>double x = cos(angle + pi / 2);</program>
+  <program>
+double x = cos(angle + pi / 2);
+</program>
   <p>This statement takes the value of pi, divides it by two and adds the result to the value of
     angle. The sum is then passed as an argument to the <c>cos</c> function.</p>
   <p>You can also take the result of one function and pass it as an argument

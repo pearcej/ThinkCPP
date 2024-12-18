@@ -21,7 +21,9 @@ Deck::Deck(int size) {
     initializes by invoking the constructor for the <c>vector</c> class, passing the size as a parameter.
     Then it copies the vector from <c>temp</c> into the instance variable <c>cards</c>.</p>
   <p>Now we can create a deck of cards like this:</p>
-  <program>Deck deck(52);</program>
+  <program>
+Deck deck(52);
+</program>
   <p>Here is a state diagram showing what a <c>Deck</c> object looks like:</p>
   <figure align="center">
     <image source="Chapter13/Images/13.3stackdiagram.png"

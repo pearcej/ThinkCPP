@@ -3,6 +3,7 @@
   <title>More Output</title>
   <p>As I mentioned in the last chapter, you can put as many statements as you want in <c>main</c>. For
     example, to output more than one line:</p>
+
   <listing label="more_output_AC_1">
     <caption>
       This program prints two different statements on two different lines using <c>endl</c>.

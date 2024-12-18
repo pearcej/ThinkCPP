@@ -3,7 +3,9 @@
   <title>Accessing instance variables</title>
   <p>You can read the values of an instance variable using the same syntax we
     used to write them:</p>
-  <program>int x = blank.x;</program>
+  <program>
+int x = blank.x;
+</program>
   <p>The expression <c>blank.x</c> means <q>go to the object named <c>blank</c> and get the value of <c>x</c>.</q>
     In this case we assign that value to a local variable named <c>x</c>. Notice that there is no
     conflict between the local variable named <c>x</c> and the instance variable named <c>x</c>. The

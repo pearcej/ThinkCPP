@@ -74,7 +74,9 @@ else {
     <choices>
       <choice correct="yes">
         <statement id="cond_rec_mc2_opt_a">
-          <program>hey!</program>
+          <program>
+hey!
+</program>
         </statement>
         <feedback id="cond_rec_mc2_opt_a">
           <p>Since the first conditon is met, the rest of the chained
@@ -83,7 +85,9 @@ else {
       </choice>
       <choice>
         <statement id="cond_rec_mc2_opt_b">
-          <program>hi!</program>
+          <program>
+hi!
+</program>
         </statement>
         <feedback id="cond_rec_mc2_opt_b">
           <p>It's true that <c>8 != 7</c>, but <q>hi!</q> is not printed here.</p>
@@ -91,7 +95,9 @@ else {
       </choice>
       <choice>
         <statement id="cond_rec_mc2_opt_c">
-          <program>hi!</program>
+          <program>
+hi!
+</program>
         </statement>
         <feedback id="cond_rec_mc2_opt_c">
           <p>It's true that <c>8 % 2 == 0</c>, but <q>hello!</q> is not printed!</p>
@@ -110,7 +116,9 @@ hello!</program>
       </choice>
       <choice>
         <statement id="cond_rec_mc2_opt_e">
-          <program>bye!</program>
+          <program>
+bye!
+</program>
         </statement>
         <feedback id="cond_rec_mc2_opt_e">
           <p>At least one of the conditons is met, so the <c>else</c> will not execute!</p>
@@ -139,7 +147,9 @@ else {
     <choices>
       <choice>
         <statement id="cond_rec_mc3_opt_a">
-          <program>It's Freezing!</program>
+          <program>
+It's Freezing!
+</program>
         </statement>
         <feedback id="cond_rec_mc3_opt_a">
           <p>Take a closer look at the conditions and the way they
@@ -148,7 +158,9 @@ else {
       </choice>
       <choice>
         <statement id="cond_rec_mc3_opt_b">
-          <program>It's Cold!</program>
+          <program>
+It's Cold!
+</program>
         </statement>
         <feedback id="cond_rec_mc3_opt_b">
           <p>Take a closer look at the conditions and the way they
@@ -178,7 +190,9 @@ It's Hot!</program>
       </choice>
       <choice>
         <statement id="cond_rec_mc3_opt_e">
-          <program>It's Hot!</program>
+          <program>
+It's Hot!
+</program>
         </statement>
         <feedback id="cond_rec_mc3_opt_e">
           <p>Take a closer look at the conditions and the way they
@@ -200,7 +214,9 @@ It's Hot!</program>
     cout &lt;&lt; a + b;
 }</program>
       <p>What is printed when we run the following code?</p>
-      <program>int x = practicingReturns(2, 3);</program>
+      <program>
+int x = practicingReturns(2, 3);
+</program>
     </statement>
     <choices>
       <choice>
@@ -262,7 +278,9 @@ It's Hot!</program>
     }
 }</program>
       <p>What will be your fortune if you run the following code?</p>
-      <program>fortuneCookie(14, false, 'm'');</program>
+      <program>
+fortuneCookie(14, false, 'm'');
+</program>
     </statement>
     <choices>
       <choice>
@@ -342,7 +360,9 @@ It's Hot!</program>
     }
 }</program>
       <p>What will be your fortune if you run the following code?</p>
-      <program>fortuneCookie(22, true, 'b');</program>
+      <program>
+fortuneCookie(22, true, 'b');
+</program>
     </statement>
     <choices>
       <choice correct="yes">
@@ -424,7 +444,9 @@ It's Hot!</program>
     cout &lt;&lt; -1;
 }</program>
       <p>What is printed when we run the following code?</p>
-      <program>theThing(5, 10, false);</program>
+      <program>
+theThing(5, 10, false);
+</program>
     </statement>
     <choices>
       <choice>
@@ -496,7 +518,9 @@ It's Hot!</program>
     cout &lt;&lt; -1;
 }</program>
       <p>What is printed when we run the following code?</p>
-      <program>theThing(6, 4, true);</program>
+      <program>
+theThing(6, 4, true);
+</program>
     </statement>
     <choices>
       <choice>
@@ -555,7 +579,9 @@ It's Hot!</program>
     }
 }</program>
       <p>How many times does <q>Moo!</q> print when we run the following?</p>
-      <program>moo(4, 8);</program>
+      <program>
+moo(4, 8);
+</program>
     </statement>
     <choices>
       <choice>
@@ -616,7 +642,9 @@ It's Hot!</program>
     }
 }</program>
       <p>How many times does <q>Moo!</q> print when we run the following?</p>
-      <program>moo(5, 10);</program>
+      <program>
+moo(5, 10);
+</program>
     </statement>
     <choices>
       <choice>

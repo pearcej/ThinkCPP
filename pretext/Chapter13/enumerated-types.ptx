@@ -32,11 +32,15 @@ TEN, JACK, QUEEN, KING };</program>
   <p>The types of the parameters for the constructor have changed, too.
     Now, to create a card, we can use the values from the enumerated type as
     arguments:</p>
-  <program>Card card (DIAMONDS, JACK);</program>
+  <program>
+Card card (DIAMONDS, JACK);
+</program>
   <p>By convention, the values in enumerated types have names with all
     capital letters. This code is much clearer than the alternative using
     integers:</p>
-  <program>Card card (1, 11);</program>
+  <program>
+Card card (1, 11);
+</program>
   <listing label="enum_type_AC_1">
     <caption>
       This active code uses the enumerated types created above to construct <c>Card</c> objects. Feel

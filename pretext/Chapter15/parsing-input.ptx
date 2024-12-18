@@ -30,7 +30,9 @@
     values.</p>
   <p>If we want to find the first appearance of a quotation mark, we have to
     write something like:</p>
-  <program>int index = line.find('\"');</program>
+  <program>
+int index = line.find('\"');
+</program>
   <p>The argument here looks like a mess, but it represents a single character, a double quotation
     mark. The outermost single-quotes indicate that this is a character value, as usual. The
     backslash (<c>\</c>) indicates that we want to treat the next character literally. The sequence <c>\"</c>

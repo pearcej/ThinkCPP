@@ -31,9 +31,13 @@ int convertToInt(const string&amp; s)
     instead of getting incremented, it gets accumulates one new character at a time, using string
     concatentation.</p>
   <p>The expression</p>
-  <program>digitString += s[i];</program>
+  <program>
+digitString += s[i];
+</program>
   <p>is equivalent to</p>
-  <program>digitString = digitString + s[i];</program>
+  <program>
+digitString = digitString + s[i];
+</program>
   <p>Both statements add a single character onto the end of the existing
     string.</p>
   <p>Try the function out for yourself! As you can see, this function can also be used

@@ -119,7 +119,9 @@ Set::Set(int n)
   <p>Here is a state diagram showing a <c>Set</c> object that initially contains space for 2 elements.</p>
   <p>Now we can use the <c>Set</c> class to keep track of the cities we find in the file. In <c>main</c> we
     create the <c>Set</c> with an initial size of 2:</p>
-  <program>Set cities (2);</program>
+  <program>
+Set cities (2);
+</program>
   <p>Then in <c>processLine</c> we add both cities to the <c>Set</c> and store the index that gets returned.</p>
   <program>int index1 = cities.add (city1);
 int index2 = cities.add (city2);</program>

@@ -106,7 +106,9 @@
   <p>I added an output statement at the beginning so I could watch the
     sequence of recursive calls and convince myself that it would eventually
     reach the base case. I tried out the following code:</p>
-  <program>cout &lt;&lt; findBisect (deck[23], deck, 0, 51);</program>
+  <program>
+cout &lt;&lt; findBisect (deck[23], deck, 0, 51);
+</program>
   <p>And got the following output:</p>
   <console><output>0, 51
 0, 24

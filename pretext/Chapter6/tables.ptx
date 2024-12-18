@@ -69,7 +69,9 @@ int main() {
     base 2. To do that, we can use the following formula:</p>
   <m>\log_2 x = \frac {log_e x}{log_e 2}</m>
   <p>Changing the output statement to</p>
-  <program>cout &lt;&lt; x &lt;&lt; "\t" &lt;&lt; log(x) / log(2.0) &lt;&lt; endl;</program>
+  <program>
+cout &lt;&lt; x &lt;&lt; "\t" &lt;&lt; log(x) / log(2.0) &lt;&lt; endl;
+</program>
   <p>yields</p>
   <console>
     <output>1      0

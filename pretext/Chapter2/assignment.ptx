@@ -72,7 +72,9 @@ hour = "Hello.";       // WRONG !!</program>
   <p>Another source of confusion is that some strings <em>look</em> like integers, but they are not.
     For example, the string <q>123</q>, which is made up of the characters 1, 2 and 3, is not the
     same thing as the <em>number</em> 123. This assignment is illegal:</p>
-  <program>int minute = "59";         // WRONG!</program>
+  <program>
+int minute = "59";         // WRONG!
+</program>
   <exercise label="assignment_1">
     <statement>
       <p>A(n) <var/> statement gives a value to a variable. </p>

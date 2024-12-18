@@ -15,10 +15,14 @@
   <p>This looks like a recursive function, but it is not. Actually, this version of <c>area</c> is
     calling the other version. When you call an overloaded function, C++ knows which version you
     want by looking at the arguments that you provide. If you write:</p>
-  <program>double x = area(3.0);</program>
+  <program>
+double x = area(3.0);
+</program>
   <p>C++ goes looking for a function named <c>area</c> that takes a double as an argument, and so it
     uses the first version. If you write</p>
-  <program>double x = area(1.0, 2.0, 4.0, 6.0);</program>
+  <program>
+double x = area(1.0, 2.0, 4.0, 6.0);
+</program>
   <p>C++ uses the second version of <c>area</c>.</p>
   <p>Many of the built-in C++ commands are overloaded, meaning that there are
     different versions that accept different numbers or types of parameters.</p>

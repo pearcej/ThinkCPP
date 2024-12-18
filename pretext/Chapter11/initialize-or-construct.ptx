@@ -6,7 +6,9 @@
 Time breadTime = { 3, 35, 0.0 };</program>
   <p>Now, using constructors, we have a different way to declare and
     initialize:</p>
-  <program>Time time(seconds);</program>
+  <program>
+Time time(seconds);
+</program>
   <p>These two functions represent different programming styles, and
     different points in the history of C++. Maybe for that reason, the C++
     compiler requires that you use one or the other, and not both in the
@@ -26,7 +28,9 @@ Time breadTime = { 3, 35, 0.0 };</program>
 }</program>
   <p>To invoke this constructor, we use the same funny syntax as before, except that the arguments
     have to be two integers and a <c>double</c>:</p>
-  <program>Time currentTime(9, 14, 30.0);</program>
+  <program>
+Time currentTime(9, 14, 30.0);
+</program>
   <listing label="initialize_or_construct_AC_1"
            xml:id="initialize_or_construct_AC_1">
     <caption>

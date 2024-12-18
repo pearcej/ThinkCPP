@@ -9,7 +9,9 @@
   <p>Let's say the center point is stored in the variables <c>xc</c> and <c>yc</c>, and the perimeter
     point is in <c>xp</c> and <c>yp</c>. The first step is to find the radius of the circle, which is
     the distance between the two points. Fortunately, we have a function, <c>distance</c>, that does that.</p>
-  <program>double radius = distance(xc, yc, xp, yp);</program>
+  <program>
+double radius = distance(xc, yc, xp, yp);
+</program>
   <p>The second step is to find the area of a circle with that radius, and
     return it.</p>
   <program>double result = area(radius);

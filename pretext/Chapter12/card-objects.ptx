@@ -131,7 +131,9 @@ Card::Card(int s, int r) {
   <p>The second constructor is more useful. It takes two parameters, the suit
     and rank of the card.</p>
   <p>The following code creates an object named <c>threeOfClubs</c> that represents the 3 of Clubs:</p>
-  <program>Card threeOfClubs(0, 3);</program>
+  <program>
+Card threeOfClubs(0, 3);
+</program>
   <p>The first argument, <c>0</c> represents the suit Clubs, the second, naturally, represents the
     rank 3.</p>
   <exercise label="card_objects_1">

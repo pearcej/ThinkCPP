@@ -7,7 +7,9 @@
     character variable named colon. It assigns appropriate values to each of
     the variables and then uses a series of output statements to generate
     the following:</p>
-  <program>The current time is 11:59</program>
+  <program>
+The current time is 11:59
+</program>
   <p>
     Run the code. After observing the output, try modifying the assignment statements to make a
     different time!</p>

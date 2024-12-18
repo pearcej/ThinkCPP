@@ -7,7 +7,9 @@
   <p>In the case of <c>Card</c> objects, <q>human-readable</q> means that we have to map the internal
     representation of the rank and suit onto words. A natural way to do that is with a vector of <c>string</c>s.
     You can create a vector of <c>string</c>s the same way you create an vector of other types:</p>
-  <program>vector&lt;string&gt; suits(4);</program>
+  <program>
+vector&lt;string&gt; suits(4);
+</program>
   <p>Of course, in order to use <c>vector</c>s and <c>string</c>s, you will have to include the header files for
     both.</p>
   <p>To initialize the elements of the vector, we can use a series of

@@ -3,7 +3,9 @@
   <title>Vectors of cards</title>
   <p>The reason I chose <c>Cards</c> as the objects for this chapter is that there is an obvious use for
     a vector of cards&#x2014;a deck. Here is some code that creates a new deck of 52 cards:</p>
-  <program>vector&lt;Card&gt; deck(52);</program>
+  <program>
+vector&lt;Card&gt; deck(52);
+</program>
   <p>Here is the state diagram for this object:</p>
   <figure align="center">
     <image source="Chapter12/Images/12.6deck_state_diagram.png"
@@ -183,7 +185,9 @@ void Card::print() const {
       <p>If we actually created the deck in the previous question, what is printed after the
         following code runs? Type your answer exactly as it would appear in the terminal!
       </p>
-      <program>deck[11].print();</program>
+      <program>
+deck[11].print();
+</program>
       <p><var/></p>
     </statement>
     <setup>

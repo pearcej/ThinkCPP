@@ -107,7 +107,9 @@ int main() {
                     if <c>string greeting = "hello world"</c>, then <c>greeting.substr(6, 5)</c> returns the string <c>"world"</c>.
                     Test your function in main. Check the hint below for help with the construction of the code.
                     The output should be:</p>
-          <program>Gucci , Gucci , Gucci , Gucci</program>
+          <program>
+Gucci , Gucci , Gucci , Gucci
+</program>
         </statement>
         <program xml:id="cp_7_AC_4q_editor" interactive="activecode" line-numbers="yes">
           <code><![CDATA[
@@ -136,7 +138,9 @@ int main() {
                     if <c>string greeting = "hello world"</c>, then <c>greeting.substr(6, 5)</c> returns the string <c>"world"</c>.
                     Test your function in main. Use the lines to construct the code, then go back to complete the Activecode.
                     The output should be:</p>
-          <program>Gucci , Gucci , Gucci , Gucci</program>
+          <program>
+Gucci , Gucci , Gucci , Gucci
+</program>
         </statement>
         <blocks>
           <block order="2">

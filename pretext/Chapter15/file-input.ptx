@@ -3,7 +3,9 @@
   <title>File input</title>
   <p>To get data from a file, we have to create a stream that flows from the file into the program.
     We can do that using the <c>ifstream</c> constructor.</p>
-  <program>ifstream infile("file-name");</program>
+  <program>
+ifstream infile("file-name");
+</program>
   <p>The argument for this constructor is a string that contains the name of the file you want to
     open. The result is an object named <c>infile</c> that supports all the same operations as <c>cin</c>,
     including <c>&gt;&gt;</c> and <c>getline</c>.</p>

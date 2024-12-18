@@ -35,12 +35,16 @@ cout &lt;&lt; box.height &lt;&lt; endl;</program>
   <program>Point temp = box.corner;
 double x = temp.x;</program>
   <p>Alternatively, we can compose the two statements:</p>
-  <program>double x = box.corner.x;</program>
+  <program>
+double x = box.corner.x;
+</program>
   <p>It makes the most sense to read this statement from right to left: <q>Extract <c>x</c> from the <c>corner</c>
     of the <c>box</c>, and assign it to the local variable <c>x</c>.</q></p>
   <p>While we are on the subject of composition, I should point out that you can, in fact, create
     the <c>Point</c> and the <c>Rectangle</c> at the same time:</p>
-  <program>Rectangle box = { { 0.0, 0.0 }, 100.0, 200.0 };</program>
+  <program>
+Rectangle box = { { 0.0, 0.0 }, 100.0, 200.0 };
+</program>
   <p>The innermost squiggly braces are the coordinates of the corner point; together they make up
     the first of the three values that go into the new <c>Rectangle</c>. This statement is an example of <term>nested
     structure</term>.</p>
