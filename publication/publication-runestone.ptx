@@ -16,8 +16,11 @@
     <!-- There are four components (statement/hint/answer/solution) for each -->
     <!-- of five exercise types (inline/divisional/worksheet/reading/        -->
     <!-- project). Some examples:                                            -->
-    <exercise-inline statement="yes" hint="yes" answer="no" solution="no" />
-    <exercise-divisional statement="yes" hint="yes" />
+    <!-- <exercise-inline statement="yes" hint="yes" answer="yes" solution="yes" />
+    <exercise-divisional statement="yes"
+                         hint="yes"
+                         answer="yes"
+                         solution="yes"/> -->
     <!-- Style of fill-in-the-blanks: -->
     <fillin textstyle="underline" mathstyle="shade" />
     <!-- You can set a watermark: -->
@@ -75,72 +78,26 @@
 
   <html>
     <platform host="runestone"/>
-    <!-- The host above could also be "runestone" -->
-
     <!-- Whether to knowl a particular elements is set here    -->
-    <!-- Lots of elements have this possibility; see the guide -->
     <knowl
-      theorem="no"
-      proof="yes"
-      definition="no"
-      example="yes"
-      example-solution="yes"
-      project="no"
-      task="no"
-      remark="no"
-      objectives="no"
-      outcomes="no"
-      figure="no"
-      table="no"
-      listing="no"
-      list="no"
       exercise-inline="no"
-      exercise-divisional="no"
-      exercise-worksheet="no"
-      exercise-readingquestion="no"
     />
-	<!-- <css style="oscarlevin" colors="blue_red" toc="crc" banner="crc" navbar="crc" shell="crc"/> -->
-	<css theme="default-modern"/>
 
-	<tableofcontents focused="yes"/>
-    <!-- Specify the style of the html by giving names to      -->
-    <!-- override defaults.  Ex: to use "style_oscarlevin.css" -->
-    <!-- put <css style="oscarlevin"/>                         -->
-    <!-- See also                                              -->
-    <!-- https://pretextbook.org/doc/guide/html/publication-file-online.html#online-style-options -->
-    <!-- <css
-        style="default"
-        colors="blue_red"
-        knowls="default"
-        toc="default"
-        banner="default"
-        navbar="default"
-    /> -->
+    <exercises tabbed-tasks="inline project reading"/>
+
+    <tableofcontents focused="yes"/>
+
+    <css theme="salem"/>
+
     <!-- Search can be default or none, or you can use a Google-cx number to use google's search
     feature (but then variant should be set to none to avoid conflict) -->
-    <search variant="default" />
+    <search variant="reference" />
     <!-- Embedded calculators.  For math, this could be geogebra-classic, geogebra-graphing,
     geogebra-geometry, and geogebra-3d.  For ActiveCode, you can specify a language (python,
     javascript, etc).  -->
-    <calculator model="none" activecode="none" />
+    <calculator model="none" activecode="cpp" />
     <cross-references knowled="cross-page" />
     <!-- Set the base URL of where the online version is hosted to have links in other formats -->
     <!-- <baseurl href="changetomywebsite.org"/> -->
-    <!-- Control behavior of online WeBWorK, per type: -->
-    <!-- <webwork
-      inline="dynamic"
-      divisional="static"
-      reading="static"
-      worksheet="static"
-      project="dynamic"
-    /> -->
-    <!-- Magic IDs identify HTML pages to analytics services   -->
-    <!-- Presence implies relevant Javascript will be added    -->
-    <!-- StatCounter requires both values to be set            -->
-    <!-- <analytics google-gst="UA-0123456-1" statcounter-project="0123456"
-    statcounter-security="0123456"/> -->
   </html>
-
-  <!-- To use WeBWorK, you need a server.  -->
-  <!-- <webwork server="https://webwork-ptx.aimath.org"> -->
 </publication>

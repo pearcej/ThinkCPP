@@ -12,39 +12,31 @@
       <source>pretext/main.ptx</source>
       <publication>publication/publication.ptx</publication>
       <output-dir>output/html</output-dir>
-      <stringparam key="debug.rs.dev" value="yes"/> 
-      <!-- <xsl>pretext/main.xsl</xsl> -->
+      <xsl>pretext/main.xsl</xsl>
     </target>
-    <!-- <target name="runestone">
+    <target name="runestone">
       <format>html</format>
       <source>pretext/main.ptx</source>
       <publication>pretext/publication-runestone.xml</publication>
-      <output-dir>output/welcomecs</output-dir>
-      <xsl>pretext/welcomecs-pretext.xsl</xsl>
-      <stringparam key="html.css.extra" value="external/overrides.css"/> 
-    </target> -->
-    <!-- <target name="print" pdf-method="xelatex">
+      <output-dir>published/think-cpp</output-dir>
+      <xsl>pretext/main.xsl</xsl>
+    </target>
+    <target name="print" pdf-method="xelatex">
       <format>pdf</format>
-      <source>source/main.ptx</source>
+      <source>pretext/main.ptx</source>
       <publication>publication/publication.ptx</publication>
       <output-dir>output/print</output-dir>
-    </target> -->
-    <!-- <target name="print-latex">
-      <format>latex</format>
-      <source>source/main.ptx</source>
-      <publication>publication/publication.ptx</publication>
-      <output-dir>output/print-latex</output-dir>
-    </target> -->
-    <!-- <target name="subset">
-      <!  Usage: to build starting at XMLID,  >
-      <!  pretext build subset -x XMLID       >
-      <!  or use <xml-root>XMLID</xml-root>   >
+    </target>
+    <target name="subset">
+      <!--  Usage: to build starting at XMLID,  -->
+      <!--  pretext build subset -x XMLID       -->
+      <!--  or use <xml-root>XMLID</xml-root>   -->
       <format>html</format>
       <source>source/main.ptx</source>
       <publication>publication/publication.ptx</publication>
-      <output-dir>output/subset</output-dir>
+      <output-dir>output/html</output-dir>
       <stringparam key="debug.skip-knowls" value="yes"/>
-    </target> -->
+    </target>
   </targets>
   <executables>
     <latex>latex</latex>
