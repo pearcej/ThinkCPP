@@ -21,7 +21,7 @@ would expect.
 
 .. activecode:: copying_vectors_AC_1
    :language: cpp
-   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+   :compileargs: [ '-Wall', '-Werror' ]
 
    Take a look at the active code below, which uses the copy constructor.
    ~~~~

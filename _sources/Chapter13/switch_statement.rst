@@ -53,7 +53,7 @@ it is a source of errors when people forget the ``break`` statements.
 
 .. activecode:: switch_AC_1
    :language: cpp
-   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+   :compileargs: [ '-Wall', '-Werror' ]
 
    Take a look at the active code below that allows you to choose your starter Pokemon.
    If you change the value of ``type``, it will change the Pokemon you choose. Notice how 

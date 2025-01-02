@@ -11,7 +11,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_8_1_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Let's write the code for the struct definition of ``Song``.
             The Song structure will have the instance variables string title,
@@ -26,7 +26,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_8_1_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to define the struct definition of ``Song``.
             ~~~~
@@ -47,7 +47,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_8_2_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             In main, create a Song object called ``fly`` which holds
             the data for Frank Sinatra's "Fly Me to the Moon" from his 1964 album "It Might as Well Be Swing".
@@ -61,7 +61,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_8_2_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to create the object in the main function.
             ~~~~
@@ -90,7 +90,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_8_3_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Let's write the code for the ``printSong`` function. printSong
             takes a Song as a parameter and prints out the instance variables
@@ -105,7 +105,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_8_3_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the printSong function.
             ~~~~
@@ -139,7 +139,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_8_4_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Let's write the code for the struct definition of ``Unicorn``.
             The Unicorn structure will have the instance variables name,
@@ -155,7 +155,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_8_4_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to define the struct ``Unicorn``.
             ~~~~
@@ -177,7 +177,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_8_5_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Let's write the code for the ``convertToHumanAge`` function. convertToHumanAge
             takes a Unicorn as a parameter and returns the equivalent human age.
@@ -194,7 +194,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_8_5_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the convertToHumanAge function.
             ~~~~
@@ -225,7 +225,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_8_6_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Let's write the code for the ``unicornPower`` function. unicornPower
             takes a Unicorn as a parameter and
@@ -240,7 +240,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_8_6_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the unicornPower function.
             ~~~~
@@ -267,7 +267,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_8_7_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Let's write the code for the struct definitions of ``Address`` and ``Employee``.
             The Address structure will have the instance variables houseNumber,
@@ -284,7 +284,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_8_7_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to define the ``Address`` and ``Employee`` structs.
             ~~~~
@@ -309,7 +309,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_8_8_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Let's write the code for the ``printAddress`` function. printAddress takes
             an Employee as a parameter and should print out the information of the employee in the
@@ -324,7 +324,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_8_8_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the printAddress function
             ~~~~
@@ -355,7 +355,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_8_9_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Sometimes employees will move around and thus we'll need to update their addresses.
             Let's write the code for the ``updateAddress`` function. updateAddress takes an
@@ -370,7 +370,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_8_9_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the ``updateAddress`` function.
             ~~~~
@@ -399,7 +399,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_8_10_ac_q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Let's write the code for the ``storeEmployeeData`` function. storeEmployeeData doesn't
             take any parameters and prompts the user for information regarding their
@@ -415,7 +415,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_8_10_ac_a
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the ``storeEmployeeData`` function.
             ~~~~

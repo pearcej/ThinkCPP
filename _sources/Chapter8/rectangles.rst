@@ -82,7 +82,7 @@ together they make up the first of the three values that go into the new
 
 .. activecode:: rectangles_AC_1
   :language: cpp
-  :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+  :compileargs: [ '-Wall', '-Werror' ]
 
   The active code below uses the ``Rectangle`` structure. Feel free to
   modify the code and experiment around!

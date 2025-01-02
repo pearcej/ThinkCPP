@@ -10,7 +10,7 @@ string is to extract one of the characters. C++ uses square brackets
 
 .. activecode:: extracting_characters_AC_1
   :language: cpp
-  :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+  :compileargs: [ '-Wall', '-Werror' ]
   :caption: Accessing a string character
 
   Take a look at the active code below. We extract the character
@@ -48,7 +48,7 @@ the square brackets.
 
 .. activecode:: extracting_characters_AC_2
   :language: cpp
-  :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+  :compileargs: [ '-Wall', '-Werror' ]
   :caption: Accessing a string character
 
   The active code below accesses the first character in string ``fruit``.

@@ -7,7 +7,7 @@ Coding Practice
 
         .. activecode:: cp_7_AC_2q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
             :practice: T
 
             How much does Bubba love shrimp? Probably a lot. But how many times does the word "shrimp" come
@@ -20,7 +20,7 @@ Coding Practice
             using namespace std;
 
             void stringToLower (string &input) {
-                int i = 0;
+                size_t i = 0;
                 while (i < input.length()) {
                     if (isalpha(input[i]) && isupper(input[i])) {
                         input[i] = tolower(input[i]);
@@ -61,24 +61,24 @@ Coding Practice
             =====
                 int count = 0;
             =====
-                for (int i = 0; i < input.length() - 1; i++) {
-                    int j = 0;
-                    int k = i;
+                for (size_t i = 0; i < input.length() - 1; i++) {
+                    size_t j = 0;
+                    size_t k = i;
             =====
                 for (int i = 0; i < input.length(); i++) { #paired
-                    int j = 0;
-                    int k = i;
+                    size_t j = 0;
+                    size_t k = i;
             =====
-                    for (int l = 0; l < word.length(); l++) {
+                    for (size_t l = 0; l < word.length(); l++) {
             =====
                         if (input[k] == word[l]) {
                             j++;
                         }
                         k++;
             =====
-                    if (m == word.length()) {
-                        count ++
-                    }
+                        if (j == word.length()) {
+                            count++;
+                        }
             =====
                     }
                 }
@@ -91,7 +91,7 @@ Coding Practice
 
         .. activecode:: cp_7_AC_4q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
             :practice: T
 
             Write a void function ``removeWord`` that removes a given word from a given string and prints
@@ -139,15 +139,15 @@ Coding Practice
             -----
             void removeWord (string input, string word) {
             =====
-                for (int i = 0; i < word.length(); i++) {
+                for (size_t i = 0; i < word.length(); i++) {
             =====
-                for (int i = 0; i < input.length(); i++) { #paired
+                for (size_t i = 0; i < input.length(); i++) { #paired
             =====
-                    int pos = input.find(word);
+                    size_t pos = input.find(word);
             =====
-                    if (pos != input.length()) {
+                    if (pos != string::npos) {
             =====
-                    if (pos == input.length()) { #paired
+                    if (pos != input.length()) { #paired
             =====
                         input.erase(pos, word.length());
             =====
@@ -162,7 +162,7 @@ Coding Practice
 
         .. activecode:: cp_7_AC_6q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
             :practice: T
 
             Write the function ``reverseString`` which takes a ``string input``, reverses it,
@@ -198,13 +198,13 @@ Coding Practice
             -----
             string reverseWord (string input) {
             =====
-                int len = input.length();
+                size_t len = input.length();
             =====
                 string reverse;
             =====
-                for (int i = len - 1; i >= 0; i--) {
+                for (size_t i = len - 1; i >= 0; i--) {
             =====
-                for (int i = len; i >= 0; i--) { #paired
+                for (size_t i = len; i >= 0; i--) { #paired
             =====
                     reverse.push_back(input[i]);
             =====
@@ -219,7 +219,7 @@ Coding Practice
 
         .. activecode:: cp_7_AC_8q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
             :practice: T
 
             Write the function ``countVowels`` which takes a ``string input`` and returns
@@ -258,7 +258,7 @@ Coding Practice
             =====
                 int count = 0;
             =====
-                for (int i = 0; i < input.length; i++) {
+                for (size_t i = 0; i < input.length; i++) {
             =====
                     if (input[i] == 'a' || input[i] == 'e' || input[i] == 'i' || input[i] == 'o' || input[i] == 'u') {
             =====
@@ -279,7 +279,7 @@ Coding Practice
     
         .. activecode:: cp_7_AC_10q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
             :practice: T
 
             Camel case is the practice of writing phrases without spaces or punctuation,
@@ -338,9 +338,9 @@ Coding Practice
             // snakeToCamel function
             string snakeToCamel (string input) {
             =====
-                int len = input.length();
+                size_t len = input.length();
             =====
-                for (int i = 0; i < len; i++) {
+                for (size_t i = 0; i < len; i++) {
             =====
                     if (input[i] == '_') {
                         input[i+1] = toupper(input[i+1]);
@@ -354,9 +354,9 @@ Coding Practice
             // camelToSnake function
             string camelToSnake (string input) {
             =====
-                int len = input.length();
+                size_t len = input.length();
             =====
-                for (int i = 0; i < len; i++) {
+                for (size_t i = 0; i < len; i++) {
             =====
                     if (isupper(input.at(i))){
                         input.at(i) = tolower(input.at(i));

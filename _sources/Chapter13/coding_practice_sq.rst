@@ -7,7 +7,7 @@ Coding Practice
 
         .. activecode:: cp_13_AC_2q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             How long is a year on other planets? Let's write a program that prints out the number of days
             in a year on each planet using a switch statement. These values are, in planetary order,
@@ -88,7 +88,7 @@ Coding Practice
 
         .. activecode:: cp_13_AC_4q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Now let's generate a ``BingoBoard``! We want to fill the 25 ``Space``\s on the ``BingoBoard`` with
             random values from 1 to 75 without repititon. To do this, we'll make a ``vector``
@@ -137,7 +137,7 @@ Coding Practice
 
         .. activecode:: cp_13_AC_6q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Now that we have the functions ``randomInt`` and ``swapValues``, we can write the function
             ``generateRandVec``. ``generateRandVec`` creates a ``vector`` with values from 1 to 75,
@@ -188,7 +188,7 @@ Coding Practice
 
         .. activecode:: cp_13_AC_8q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Let's print out our ``BingoBoard``! Write the ``BingoBoard`` member function
             ``printBoard``. Insert tabs between each value in each row to make the board
@@ -302,7 +302,7 @@ Coding Practice
 
         .. activecode:: cp_13_AC_10q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             You may have noticed that in some cases, our version of ``bubbleSort`` does
             an unnecessary amount of work. For example, if our ``vector`` was {1, 2, 3, 5, 4},

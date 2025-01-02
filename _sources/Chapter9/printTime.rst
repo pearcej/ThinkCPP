@@ -12,7 +12,7 @@ displays the instance variables in a human-readable form, which you attempted on
 
 .. activecode:: printTime_AC_1
   :language: cpp
-  :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+  :compileargs: [ '-Wall', '-Werror' ]
 
   In the active code below, the output of this function, if we pass ``time`` an argument, is
   ``11:59:3.14159``.

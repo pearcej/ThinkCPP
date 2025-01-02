@@ -143,7 +143,7 @@ writing the recursive version should be no problem. Good luck!
 
 .. activecode:: mergesort_2
    :language: cpp
-   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+   :compileargs: [ '-Wall', '-Werror' ]
 
    Write your implementation of ``merge`` in the commented area of the active 
    code below. Read the comments in ``main`` to see how we'll test if your
@@ -414,7 +414,7 @@ writing the recursive version should be no problem. Good luck!
 
 .. activecode:: mergesort_3 
    :language: cpp
-   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+   :compileargs: [ '-Wall', '-Werror' ]
 
    Now that we've written ``merge``, it's time to write the ``mergeSort`` function. Try writing
    the non-recursive version of ``mergeSort`` first before writing the recursive version. Follow the

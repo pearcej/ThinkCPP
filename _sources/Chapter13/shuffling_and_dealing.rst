@@ -37,7 +37,7 @@ misleading analogies.
 
 .. activecode:: shuffle_deal_AC_1
    :language: cpp
-   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+   :compileargs: [ '-Wall', '-Werror' ]
 
    The active code below deals a deck of cards among three players for a game
    of Go Fish. Feel free to experiment with the code and deal decks for other 

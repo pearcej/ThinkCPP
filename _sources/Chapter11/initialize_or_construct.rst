@@ -50,7 +50,7 @@ except that the arguments have to be two integers and a ``double``:
 
 .. activecode:: initialize_or_construct_AC_1
    :language: cpp
-   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+   :compileargs: [ '-Wall', '-Werror' ]
 
    In the active code below, you can experiment passing values into the two 
    different constructors that we have defined on this page and the previous

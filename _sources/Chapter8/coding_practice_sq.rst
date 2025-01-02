@@ -7,7 +7,7 @@ Coding Practice
 
         .. activecode:: cp_8_AC_2q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
             :stdin: Captain America
 
             Write a simple function called ``greetUser`` which prompts the user 
@@ -58,7 +58,7 @@ Coding Practice
 
         .. activecode:: cp_8_AC_4q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Robots will naturally deplete their charge as they carry out tasks.
             Write a function called ``chargeRobot`` which takes a ``Robot`` as 
@@ -128,7 +128,7 @@ Coding Practice
 
         .. activecode:: cp_8_AC_6q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
             :practice: T
 
             Write the ``Pokemon`` structure, which has instance variables ``string pokeName``,
@@ -193,7 +193,7 @@ Coding Practice
 
         .. activecode:: cp_8_AC_8q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
 
             When Pokemon are injured, they can be healed up at the Pokemon Center.
             Write the function ``healPokemon``, which takes a ``Trainer`` as a parameter
@@ -286,7 +286,7 @@ Coding Practice
 
         .. activecode:: cp_8_AC_10q
             :language: cpp
-            :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+            :compileargs: [ '-Wall', '-Werror' ]
             :stdin: 145 2
             :practice: T
 

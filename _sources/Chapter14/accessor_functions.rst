@@ -42,7 +42,7 @@ invoking them might modify the instance variables.
 
 .. activecode:: fourteenfour
    :language: cpp
-   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+   :compileargs: [ '-Wall', '-Werror' ]
 
    Take a look at the active code below, which uses the ``getReal``
    accessor function. 
@@ -89,7 +89,7 @@ invoking them might modify the instance variables.
 
 .. activecode:: fourteenfive
    :language: cpp
-   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+   :compileargs: [ '-Wall', '-Werror' ]
 
    Write your implementation of ``calculatePolar`` in the commented area of the active 
    code below. Once you're done with that, write the ``getMag`` and ``getTheta`` 

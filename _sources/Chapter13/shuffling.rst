@@ -70,7 +70,7 @@ reader.
 
 .. activecode:: shuffling_2
    :language: cpp
-   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+   :compileargs: [ '-Wall', '-Werror' ]
 
    Try writing the ``randomInt`` and ``swapCards`` functions in the commented sections
    of the active code below. Once you're done with ``randomInt`` and ``swapCards``,

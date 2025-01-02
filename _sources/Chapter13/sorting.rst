@@ -61,7 +61,7 @@ Once again, I am going to leave the implementation up to the reader.
 
 .. activecode:: sorting_deck_2
    :language: cpp
-   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+   :compileargs: [ '-Wall', '-Werror' ]
 
    Try writing the ``findLowestCard`` function in the commented section
    of the active code below. Once you're done with ``findLowestCard``,

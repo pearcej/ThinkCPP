@@ -220,7 +220,7 @@ Answer the following **Mixed-Up Code** questions to assess what you have learned
    -----
    count = 0;
    =====
-   for (int i = 0; i < 7; ++i) {
+   for (size_t i = 0; i < 7; ++i) {
    =====
     if (temps[i] >= 75.0 && precip[i] < 0.50) {
    =====
@@ -296,7 +296,7 @@ Answer the following **Mixed-Up Code** questions to assess what you have learned
    vector<char> punc = {'.', '!', '?'};
    vector<int> counts = {};
    =====
-   for (int i = 0; i < punc.size(); ++i) {
+   for (size_t i = 0; i < punc.size(); ++i) {
    =====
     counts.push_back(howMany(excl, punc[i]));
    =====
@@ -305,6 +305,6 @@ Answer the following **Mixed-Up Code** questions to assess what you have learned
    vector<string> punc = {".", "!", "?"}; #distractor
    vector<int> counts = {};
    =====
-   for (int i = 0; i < excl.size(); ++i) { #distractor
+   for (size_t i = 0; i < excl.size(); ++i) { #distractor
    =====
    counts.push_back(howMany(excl, i)); #distractor

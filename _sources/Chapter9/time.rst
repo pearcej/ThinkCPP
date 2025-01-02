@@ -16,7 +16,7 @@ record fractions of a second.
 
 .. activecode:: time_AC_1
   :language: cpp
-  :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+  :compileargs: [ '-Wall', '-Werror' ]
 
   The active code below shows what the structure definition looks like.
   We can create a ``Time`` object in the usual way.
@@ -121,7 +121,7 @@ type has a copy of the instance variables for that type.
 
 .. activecode:: time_AC_2
   :language: cpp
-  :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+  :compileargs: [ '-Wall', '-Werror' ]
 
   Try writing the ``printTime`` function in the commented section
   of the active code below. ``printTime`` should print out the time

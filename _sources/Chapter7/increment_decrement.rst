@@ -47,8 +47,8 @@ Using the increment operators, we can rewrite the letter-counter:
 
 ::
 
-     int index = 0;
-     while (index < length) {
+     size_t index = 0;
+     while (index < fruit.length()) {
        if (fruit[index] == 'a') {
          count++;
        }
@@ -66,7 +66,7 @@ Using the increment operators, we can rewrite the letter-counter:
 
   int main() {
       string fruit = "banana";
-      int count = 0;
+      size_t count = 0;
 
       size_t index = 0;
       while (index < fruit.length()) {

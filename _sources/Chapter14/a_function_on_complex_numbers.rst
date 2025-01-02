@@ -40,7 +40,7 @@ The output of this program is
 
 .. activecode:: fourteenseven
    :language: cpp
-   :compileargs: [ '-Wall', '-Werror', '-Wno-sign-compare' ]
+   :compileargs: [ '-Wall', '-Werror' ]
 
    The active code below uses the ``add`` function for ``Complex`` objects.
    As an exercise, write the ``subtract`` function for ``Complex`` objects
