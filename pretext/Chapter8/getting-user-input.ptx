@@ -1,0 +1,337 @@
+<?xml version="1.0"?>
+<section xml:id="chapter8_getting-user-input">
+  <title>Getting user input</title>
+  <p>The programs we have written so far are pretty predictable; they do the
+    same thing every time they run. Most of the time, though, we want
+    programs that take input from the user and respond accordingly.</p>
+  <p>There are many ways to get input, including keyboard input, mouse
+    movements and button clicks, as well as more exotic mechanisms like
+    voice control and retinal scanning. In this text we will consider only
+    keyboard input.</p>
+  <p>In the header file <c>iostream</c>, C++ defines an object named <c>cin</c> that handles input in much the
+    same way that <c>cout</c> handles output. To get an integer value from the user:</p>
+  <program>int x;
+cin &gt;&gt; x;</program>
+  <p>The <c>&gt;&gt;</c> operator causes the program to stop executing and wait for the user to type
+    something. If the user types a valid integer, the program converts it into an integer value and
+    stores it in <c>x</c>.</p>
+  <p>If the user types something other than an integer, C++ doesn't report an error, or anything
+    sensible like that. Instead, it puts some meaningless value in <c>x</c> and continues.</p>
+  <p>Fortunately, there is a way to check and see if an input statement succeeds. We can invoke the <c>good</c>
+    function on <c>cin</c> to check what is called the <term>stream state</term>. <c>good</c> returns a <c>bool</c>:
+    if true, then the last input statement succeeded. If not, we know that some previous operation
+    failed, and also that the next operation will fail.</p>
+  <p>Thus, getting input from the user might look like this:</p>
+  <listing label="getting_user_input_AC_1">
+    <caption>
+      This active code is an example of what getting input from the
+        user might look like. Feel free to change 42 to other values!
+    </caption>
+    <program xml:id="getting_user_input_AC_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
+      <code><![CDATA[
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x;
+
+    // prompt the user for input
+    cout << "Enter an integer: ";
+
+    // get input
+    cin >> x;
+
+    // check and see if the input statement succeeded
+    if (cin.fail()) {
+        cout << "That was not an integer." << endl;
+        return -1;
+    }
+
+    // print the value we got from the user
+    cout << x << endl;
+    return 0;
+}
+        ]]></code>
+      <stdin>42</stdin>
+    </program>
+  </listing>
+  <p><c>cin</c> can also be used to input a <c>string</c>:</p>
+  <program>string name;
+
+cout &lt;&lt; "What is your name? ";
+cin &gt;&gt; name;
+cout &lt;&lt; name &lt;&lt; endl;</program>
+  <p>Unfortunately, this statement only takes the first word of input, and
+    leaves the rest for the next input statement. So, if you run this
+    program and type your full name, it will only output your first name.</p>
+  <p>Because of these problems (inability to handle errors and funny behavior), I avoid using the <c>&gt;&gt;</c>
+    operator altogether, unless I am reading data from a source that is known to be error-free.</p>
+  <p>Instead, I use a function in the header <c>string</c> called <c>getline</c>.</p>
+  <program>string name;
+
+cout &lt;&lt; "What is your name? ";
+getline(cin, name);
+cout &lt;&lt; name &lt;&lt; endl;</program>
+  <p>The first argument to <c>getline</c> is <c>cin</c>, which is where the input is coming from. The second
+    argument is the name of the <c>string</c> where you want the result to be stored.</p>
+  <p><c>getline</c> reads the entire line until the user hits Return or Enter. This is useful for inputting
+    strings that contain spaces.</p>
+  <listing label="getting_user_input_AC_2">
+    <caption>
+      This active code is an example of what getting input from the user might look like using <c>getline</c>.
+        Feel free to change <q>Harry Potter</q> to other values!
+    </caption>
+    <program xml:id="getting_user_input_AC_2_editor"
+             interactive="activecode"
+             line-numbers="yes">
+      <code><![CDATA[
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+   string name;
+
+   cout << "What is your full name? ";
+   getline(cin, name);
+   cout << "Hello " << name << "!" << endl;
+}
+        ]]></code>
+      <stdin>Indiana Jones</stdin>
+    </program>
+  </listing>
+  <p>In fact, <c>getline</c> is generally useful for getting input of any kind. For example, if you wanted
+    the user to type an integer, you could input a string and then check to see if it is a valid
+    integer. If so, you can convert it to an integer value. If not, you can print an error message
+    and ask the user to try again.</p>
+  <p>To convert a string to an integer you can use the <c>atoi</c> function defined in the header file <c>cstdlib</c>.
+    We will get to that in <xref ref="chapter15_parsing-input-parsing"/>.</p>
+  <exercise label="getting_user_input_1">
+    <statement>
+      <p>What is the difference between <c>cin</c> and <c>getline</c> for a string?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement id="getting_user_input_1_opt_a">
+          <p><c>getline</c> only takes the first word of input while <c>cin</c> reads the entire line until
+            the user hits Return or Enter.</p>
+        </statement>
+        <feedback id="getting_user_input_1_opt_a">
+          <p>Try again!</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="getting_user_input_1_opt_b">
+          <p><c>cin</c> only takes the first word of input while <c>getline</c> reads the entire line until
+            the user hits Return or Enter.</p>
+        </statement>
+        <feedback id="getting_user_input_1_opt_b">
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="getting_user_input_1_opt_c">
+          <p><c>cin</c> only takes the first two words of input while <c>getline</c> reads the entire line
+            until there is a space.</p>
+        </statement>
+        <feedback id="getting_user_input_1_opt_c">
+          <p>Try again!</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="getting_user_input_2">
+    <statement>
+      <p>The user types in <c>John Doe</c>. What prints?</p>
+      <program line-numbers="yes">
+        <code><![CDATA[
+int main() {
+  char name;
+  cout << "What is your name? ";
+  cin >> name;
+  cout << name << endl;
+}
+]]></code>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement id="getting_user_input_2_opt_a">
+          <p>
+            <c>John</c>
+          </p>
+        </statement>
+        <feedback id="getting_user_input_2_opt_a">
+          <p>Try again! Pay attention to the data type of name.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="getting_user_input_2_opt_b">
+          <p>
+            <c>J</c>
+          </p>
+        </statement>
+        <feedback id="getting_user_input_2_opt_b">
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="getting_user_input_2_opt_c">
+          <p>
+            <c>John Doe</c>
+          </p>
+        </statement>
+        <feedback id="getting_user_input_2_opt_c">
+          <p>Try again! Pay attention to the manner of getting user input.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="getting_user_input_3">
+    <statement>
+      <p>The user types in <c>John Doe</c>. What prints?</p>
+      <program line-numbers="yes">
+        <code><![CDATA[
+int main() {
+  string name;
+  cout << "What is your name? ";
+  cin >> name;
+  cout << name << endl;
+}
+]]></code>
+      </program>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement id="getting_user_input_3_opt_a">
+          <p>
+            <c>John</c>
+          </p>
+        </statement>
+        <feedback id="getting_user_input_3_opt_a">
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="getting_user_input_3_opt_b">
+          <p>
+            <c>J</c>
+          </p>
+        </statement>
+        <feedback id="getting_user_input_3_opt_b">
+          <p>Try again! Pay attention to the data type of name.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="getting_user_input_3_opt_c">
+          <p>
+            <c>John Doe</c>
+          </p>
+        </statement>
+        <feedback id="getting_user_input_3_opt_c">
+          <p>Try again! Pay attention to the manner of getting user input.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="getting_user_input_4">
+    <statement>
+      <p>The user types in <c>John Doe</c>. What prints?</p>
+      <program line-numbers="yes">
+        <code><![CDATA[
+int main() {
+  string name;
+  cout << "What is your name? ";
+  getline(cin, name);
+  cout << name << endl;
+}
+]]></code>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement id="getting_user_input_4_opt_a">
+          <p>
+            <c>John</c>
+          </p>
+        </statement>
+        <feedback id="getting_user_input_4_opt_a">
+          <p>Try again! Pay attention to the manner of getting user input.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="getting_user_input_4_opt_b">
+          <p>
+            <c>J</c>
+          </p>
+        </statement>
+        <feedback id="getting_user_input_4_opt_b">
+          <p>Try again! Pay attention to the manner of getting user input.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="getting_user_input_4_opt_c">
+          <p>
+            <c>John Doe</c>
+          </p>
+        </statement>
+        <feedback id="getting_user_input_4_opt_c">
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="getting_user_input_5">
+    <statement>
+      <p>The user types in <c>John Doe</c> and then <c>530 S State St.</c>. What prints?</p>
+      <program line-numbers="yes">
+        <code><![CDATA[
+int main() {
+  string first_name;
+  string last_name;
+  string address;
+  cout << "What is your name? ";
+  cin >> first_name >> last_name;
+  cout << "What is your address? ";
+  getline(cin, address);
+  cout << first_name << " " << last_name << " lives at " << address << endl;
+}
+]]></code>
+      </program>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement id="getting_user_input_5_opt_a">
+          <p>
+            <c>John Doe lives at 530 S State St.</c>
+          </p>
+        </statement>
+        <feedback id="getting_user_input_5_opt_a">
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="getting_user_input_5_opt_b">
+          <p>
+            <c>J D lives at 530 S State St.</c>
+          </p>
+        </statement>
+        <feedback id="getting_user_input_5_opt_b">
+          <p>Try again! Pay attention to the manner of getting user input.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="getting_user_input_5_opt_c">
+          <p>
+            <c>John Doe lives at 530</c>
+          </p>
+        </statement>
+        <feedback id="getting_user_input_5_opt_c">
+          <p>Try again! Pay attention to the manner of getting user input.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

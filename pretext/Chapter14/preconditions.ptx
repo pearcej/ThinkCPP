@@ -1,0 +1,259 @@
+<?xml version="1.0"?>
+<section xml:id="chapter14_preconditions">
+  <title>Preconditions</title>
+  <p>Often when you write a function you make implicit assumptions about the
+    parameters you receive. If those assumptions turn out to be true, then
+    everything is fine; if not, your program might crash.</p>
+  <p>To make your programs more robust, it is a good idea to think about your
+    assumptions explicitly, document them as part of the program, and maybe
+    write code that checks them.</p>
+  <p>For example, let's take another look at <c>calculateCartesian</c>. Is there an assumption we make about the
+    current object? Yes, we assume that the <c>polar</c> flag is set and that <c>mag</c> and <c>theta</c> contain
+    valid data. If that is not true, then this function will produce meaningless results.</p>
+  <p>One option is to add a comment to the function that warns programmers about the <term>
+    precondition</term>.</p>
+  <program>
+// precondition: the current object contains valid polar coordinates
+//    and the polar flag is set
+// postcondition: the current object will contain valid Cartesian
+//    coordinates and valid polar coordinates, and both the cartesian
+//    flag and the polar flag will be set
+void Complex::calculateCartesian() {
+    real = mag * cos (theta);
+    imag = mag * sin (theta);
+    cartesian = true;
+}</program>
+  <p>At the same time, I also commented on the <term>postconditions</term>, the things we know will
+    be true when the function completes.</p>
+  <p>These comments are useful for people reading your programs, but it is an even better idea to
+    add code that <em>checks</em> the preconditions, so that we can print an appropriate error
+    message:</p>
+  <program>void Complex::calculateCartesian() {
+    if (polar == false) {
+        cout &lt;&lt;
+        "calculateCartesian failed because the polar representation is invalid"
+        &lt;&lt; endl;
+        exit(1);
+    }
+    real = mag * cos (theta);
+    imag = mag * sin (theta);
+    cartesian = true;
+}</program>
+  <p>The <c>exit</c> function causes the program to quit immediately. A non-zero exit value is an error code
+    that tells the system (or whoever executed the program) that something went wrong.</p>
+  <p>This kind of error-checking is so common that C++ provides a built-in function to check
+    preconditions and print error messages. If you include the <c>cassert</c> header file, you get a
+    function called <c>assert</c> that takes a boolean value (or a conditional expression) as an argument.
+    As long as the argument is true, <c>assert</c> does nothing. If the argument is false, assert prints
+    an error message and quits. Here's how to use it:</p>
+  <program>void Complex::calculateCartesian() {
+    assert(polar);
+    real = mag * cos (theta);
+    imag = mag * sin (theta);
+    cartesian = true;
+    assert(polar &amp;&amp; cartesian);
+}</program>
+  <p>The first <c>assert</c> statement checks the precondition (actually just part of it); the second <c>assert</c>
+    statement checks the postcondition.</p>
+  <p>In my development environment, I get the following message when I
+    violate an assertion:</p>
+  <program>Complex.cpp:63: void Complex::calculatePolar(): Assertion `cartesian' failed.
+Abort</program>
+  <p>There is a lot of information here to help me track down the error,
+    including the file name and line number of the assertion that failed,
+    the function name and the contents of the assert statement.</p>
+  <listing label="fourteenten">
+    <caption>
+      This active code uses the updated <c>calculateCartesian</c> with assert statements. Notice how because <c>c1</c>
+        is not in polar, the assert statement in <c>calculateCartesian</c> fails and thus we get an error.
+    </caption>
+    <program xml:id="fourteenten_editor"
+             interactive="activecode"
+             line-numbers="yes">
+      <code><![CDATA[
+#include <iostream>
+#include <cmath>
+#include <cassert>
+using namespace std;
+
+class Complex
+{
+    double real, imag;
+    double mag, theta;
+    bool cartesian, polar;
+
+public:
+    Complex();
+    Complex(double r, double i);
+    void calculateCartesian();
+    double getReal();
+    double getImag();
+    void calculatePolar();
+    double getMag();
+    double getTheta();
+    void printCartesian();
+    void printPolar();
+    void setPolar(double m, double t);
+    void setCartesian(double r, double i);
+};
+
+Complex add (Complex& a, Complex& b);
+Complex subtract (Complex& a, Complex& b);
+Complex mult (Complex& a, Complex& b);
+
+int main() {
+    Complex c1 (5.4, 3.2);
+    // This will output an error statement stating that
+    // "Assertion 'polar' failed."
+    c1.calculateCartesian();
+}
+        ]]></code>
+      <tests>
+Complex::Complex() { cartesian = false;  polar = false; }
+
+Complex::Complex(double r, double i) {
+  real = r;  imag = i;
+  cartesian = true;  polar = false;
+}
+
+void Complex::calculateCartesian() {
+  assert(polar);
+  real = mag * cos (theta);
+  imag = mag * sin (theta);
+  cartesian = true;
+  assert(polar &amp;&amp; cartesian);
+}
+
+double Complex::getReal() {
+  if (cartesian == false) calculateCartesian();
+  return real;
+}
+
+double Complex::getImag() {
+  if (cartesian == false) calculateCartesian();
+  return imag;
+}
+
+void Complex::calculatePolar() {
+  mag = sqrt(pow(real, 2) + pow(imag, 2));
+  theta = atan(imag / real);
+  polar = true;
+}
+
+double Complex::getMag() {
+  if (polar == false) {
+    calculatePolar();
+  }
+  return mag;
+}
+
+double Complex::getTheta() {
+  if (polar == false) {
+    calculatePolar();
+  }
+  return theta;
+}
+
+void Complex::printCartesian() {
+  cout &lt;&lt; getReal() &lt;&lt; " + " &lt;&lt; getImag() &lt;&lt; "i" &lt;&lt; endl;
+}
+
+void Complex::printPolar() {
+  cout &lt;&lt; getMag() &lt;&lt; " e^ " &lt;&lt; getTheta() &lt;&lt; "i" &lt;&lt; endl;
+}
+
+Complex add (Complex&amp; a, Complex&amp; b) {
+  double real = a.getReal() + b.getReal();
+  double imag = a.getImag() + b.getImag();
+  Complex sum (real, imag);
+  return sum;
+}
+
+Complex subtract (Complex&amp; a, Complex&amp; b) {
+  double real = a.getReal() - b.getReal();
+  double imag = a.getImag() - b.getImag();
+  Complex diff (real, imag);
+  return diff;
+}
+
+void Complex::setPolar(double m, double t) {
+  mag = m;  theta = t;
+  cartesian = false;  polar = true;
+}
+
+Complex mult (Complex&amp; a, Complex&amp; b) {
+  double mag = a.getMag() * b.getMag();
+  double theta = a.getTheta() + b.getTheta();
+  Complex product;
+  product.setPolar (mag, theta);
+  return product;
+}
+
+void Complex::setCartesian(double r, double i) {
+  real = r;    imag = i;
+  cartesian = true;  polar = false;
+}
+</tests>
+    </program>
+  </listing>
+  <exercise label="question14_9_1">
+    <statement>
+      <p>Which of the following are ways that we can make our code more robust?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>Assume assumptions are always true.</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! Assumptions can turn out to be true or false.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Only check the preconditions.</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! In order to maintain invariance, we must ensure that postconditions are met
+            as well.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Document assumptions explicitly as part of the program.</p>
+        </statement>
+        <feedback>
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Write code that checks assumptions, like using assert statements.</p>
+        </statement>
+        <feedback>
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="question14_9_2">
+    <statement>
+      <p>What function causes the program to quit immediately? <var/>
+      </p>
+    </statement>
+    <setup>
+      <var case="insensitive">
+        <condition string="^\s*exit\s*">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Incorrect! Try again.</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+</section>

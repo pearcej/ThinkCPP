@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+<section xml:id="chapter15_file-input-finput">
+  <title>File input</title>
+  <p>To get data from a file, we have to create a stream that flows from the file into the program.
+    We can do that using the <c>ifstream</c> constructor.</p>
+  <program>
+ifstream infile("file-name");
+</program>
+  <p>The argument for this constructor is a string that contains the name of the file you want to
+    open. The result is an object named <c>infile</c> that supports all the same operations as <c>cin</c>,
+    including <c>&gt;&gt;</c> and <c>getline</c>.</p>
+  <program>#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+using namespace std;
+
+int main()
+{
+    int x;
+    string line;
+
+    ifstream infile("file-name");
+    infile &gt;&gt; x;               // get a single integer and store in x
+    getline(infile, line);           // get a whole line and store in line
+}</program>
+  <p>If we know ahead of time how much data is in a file, it is
+    straightforward to write a loop that reads the entire file and then
+    stops. More often, though, we want to read the entire file, but don't
+    know how big it is.</p>
+  <p>There are member functions for <c>ifstreams</c> that check the status of the input stream; they are
+    called <c>good</c>, <c>eof</c>, <c>fail</c> and <c>bad</c>. We will use <c>good</c> to make sure the file was
+    opened successfully and <c>eof</c> to detect the <q>end of file.</q></p>
+  <p>Whenever you get data from an input stream, you don't know whether the attempt succeeded until
+    you check. If the return value from <c>eof</c> is <c>true</c> then we have reached the end of the file
+    and we know that the last attempt failed. Here is a program that reads lines from a file and
+    displays them on the screen:</p>
+  <program>#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+using namespace std;
+
+int main()
+{
+ string fileName = ...;
+ ifstream infile(fileName);
+
+ if (infile.good() == false) {
+   cout &lt;&lt; "Unable to open the file named " &lt;&lt; fileName;
+   exit (1);
+ }
+
+ while (true) {
+   getline(infile, line);
+   if (infile.eof()) {
+     break;
+   }
+   cout &lt;&lt; line &lt;&lt; endl;
+ }
+}</program>
+  <p>Immediately after opening the file, we invoke the <c>good</c> function. The return value is <c>false</c>
+    if the system could not open the file, most likely because it does not exist, or you do not have
+    permission to read it.</p>
+  <p>The statement <c>while(true)</c> is an idiom for an infinite loop. Usually there will be a <c>break</c>
+    statement somewhere in the loop so that the program does not really run forever (although some
+    programs do). In this case, the <c>break</c> statement allows us to exit the loop as soon as we
+    detect the end of file.</p>
+  <p>It is important to exit the loop between the input statement and the output statement, so that
+    when <c>getline</c> fails at the end of the file, we do not output the invalid data in <c>line</c>.</p>
+  <exercise label="question15_3_1">
+    <statement>
+      <p>Consider this code snippet:
+
+        ::
+
+        ifstream infile("file-name");
+
+        Finish each sentence.</p>
+    </statement>
+    <feedback>
+      <p>Try again!</p>
+    </feedback>
+    <matches>
+      <match order="1">
+        <premise>The constructor is</premise>
+        <response>ifstream.</response>
+      </match>
+      <match order="2">
+        <premise>The argument and the name of the file you want to open is</premise>
+        <response>"file-name".</response>
+      </match>
+      <match order="3">
+        <premise>The result of this code snippet is an object named</premise>
+        <response>infile.</response>
+      </match>
+      <match order="4">
+        <premise>The result of this code snippet supports the same operators as</premise>
+        <response>cin.</response>
+      </match>
+    </matches>
+  </exercise>
+  <exercise label="question15_3_2">
+    <statement>
+      <p>The <c>ifstream</c> member function called <var/> makes sure the file was opened successfully, and
+        member function <var/> detects the end of the file. 
+      </p>
+    </statement>
+    <setup>
+      <var case="insensitive">
+        <condition string="^\s*(?:g|G)(?:o|O)(?:o|O)(?:d|D)\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Try again!</p>
+          </feedback>
+        </condition>
+      </var>
+      <var case="insensitive">
+        <condition string="^\s*(?:e|E)(?:o|O)(?:f|F)\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Try again!</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="question15_3_3">
+    <statement>
+      <p>The __________ statement allows us to exit the loop as soon as we detect the end of the
+        file. <var/>
+      </p>
+    </statement>
+    <setup>
+      <var case="insensitive">
+        <condition string="^\s*(?:b|B)(?:r|R)(?:e|E)(?:a|A)(?:k|K)\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Try again!</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="question15_3_4"
+            numbered="yes"
+            adaptive="yes"
+            indentation="hide">
+    <statement>
+      <p>Create a code block that reads lines from <q>filename</q> and prints them out. First, make
+        sure that the file is able to be opened.</p>
+    </statement>
+    <blocks>
+      <block order="6">
+        <cline>int main() {</cline>
+      </block>
+      <block order="7">
+        <cline> string name_of_file = "filename";</cline>
+      </block>
+      <block order="8">
+        <cline> ifstream in_file(name_of_file);</cline>
+      </block>
+      <block order="1">
+        <cline> if (in_file.good() == false) {</cline>
+      </block>
+      <block order="10">
+        <cline><![CDATA[   cout << "Unable to open the file named " << name_of_file;]]></cline>
+      </block>
+      <block order="5">
+        <cline>   exit(1);</cline>
+        <cline> }</cline>
+      </block>
+      <block order="4">
+        <cline> while (true) {</cline>
+      </block>
+      <block order="3">
+        <cline>   getline(in_file, line);</cline>
+      </block>
+      <block order="2">
+        <cline>   if (in_file.eof()) break;</cline>
+      </block>
+      <block order="9">
+        <cline><![CDATA[   cout << line << endl;]]></cline>
+        <cline> }</cline>
+        <cline>}</cline>
+      </block>
+    </blocks>
+  </exercise>
+</section>

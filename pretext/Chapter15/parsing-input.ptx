@@ -1,0 +1,223 @@
+<?xml version="1.0"?>
+<section xml:id="chapter15_parsing-input-parsing">
+  <title>Parsing input</title>
+  <p>In <xref ref="chapter1_formal-and-natural-languages-formal"/> I defined <q>
+    parsing</q> as the process of analyzing the structure of a sentence in a natural language or a
+    statement in a formal language. For example, the compiler has to parse your program before it
+    can translate it into machine language.</p>
+  <p>In addition, when you read input from a file or from the keyboard you
+    often have to parse it in order to extract the information you want and
+    detect errors.</p>
+  <p>For example, I have a file called <c>distances</c> that contains information about the distances between
+    major cities in the United States. I got this information from a randomly-chosen web page
+  <fn><url>http://www.jaring.my/usiskl/usa/distance.html</url></fn>
+    so it may be wildly inaccurate, but that doesn't matter. The format of
+    the file looks like this:</p>
+  <console><output>"Atlanta"       "Chicago"       700
+"Atlanta"       "Boston"        1,100
+"Atlanta"       "Chicago"       700
+"Atlanta"       "Dallas"        800
+"Atlanta"       "Denver"        1,450
+"Atlanta"       "Detroit"       750
+"Atlanta"       "Orlando"       400</output></console>
+  <p>Each line of the file contains the names of two cities in quotation marks and the distance
+    between them in miles. The quotation marks are useful because they make it easy to deal with
+    names that have more than one word, like <q>San Francisco.</q></p>
+  <p>By searching for the quotation marks in a line of input, we can find the
+    beginning and end of each city name. Searching for special characters
+    like quotation marks can be a little awkward, though, because the
+    quotation mark is a special character in C++, used to identify string
+    values.</p>
+  <p>If we want to find the first appearance of a quotation mark, we have to
+    write something like:</p>
+  <program>
+int index = line.find('\"');
+</program>
+  <p>The argument here looks like a mess, but it represents a single character, a double quotation
+    mark. The outermost single-quotes indicate that this is a character value, as usual. The
+    backslash (<c>\</c>) indicates that we want to treat the next character literally. The sequence <c>\"</c>
+    represents a quotation mark; the sequence <c>\'</c> represents a single-quote. Interestingly, the
+    sequence <c>\\</c> represents a single backslash. The first backslash indicates that we should
+    take the second backslash seriously.</p>
+  <p>Parsing input lines consists of finding the beginning and end of each city name and using the <c>substr</c>
+    function to extract the cities and distance. <c>substr</c> is a <c>string</c> member function; it takes two
+    arguments, the starting index of the substring and the length.</p>
+  <program>void processLine(const string&amp; line)
+{
+  // the character we are looking for is a quotation mark
+  char quote = '\"';
+
+  // store the indices of the quotation marks in a vector
+  vector&lt;int&gt; quoteIndex (4);
+
+  // find the first quotation mark using the built-in find
+  quoteIndex[0] = line.find(quote);
+
+  // find the other quotation marks using the find from Chapter 7
+  for (int i=1; i &lt; 4; i++) {
+    quoteIndex[i] = find(line, quote, quoteIndex[i-1]+1);
+  }
+
+  // break the line up into substrings
+  int len1 = quoteIndex[1] - quoteIndex[0] - 1;
+  string city1 = line.substr(quoteIndex[0]+1, len1);
+  int len2 = quoteIndex[3] - quoteIndex[2] - 1;
+  string city2 = line.substr(quoteIndex[2]+1, len2);
+  int len3 = line.length() - quoteIndex[2] - 1;
+  string distString = line.substr(quoteIndex[3]+1, len3);
+
+  // output the extracted information
+  cout &lt;&lt; city1 &lt;&lt; "\t" &lt;&lt; city2 &lt;&lt; "\t" &lt;&lt; distString &lt;&lt; endl;
+}</program>
+  <p>Of course, just displaying the extracted information is not exactly what
+    we want, but it is a good starting place.</p>
+  <exercise label="question15_5_1">
+    <statement>
+      <p>What does <term>parsing</term> mean in the programming sense?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>to scan an entire program for errors</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! This is included in the debugging process.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>to run a program start to finish and record the run time</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! This is included in the debugging process.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>to analyze the structure of a statement in a formal language</p>
+        </statement>
+        <feedback>
+          <p>Correct! The compiler has to parse the program before it can translate it into machine
+            language!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>to search an entire program for a statement</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! You can use control (command) + F to find a particular statement.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="question15_5_2">
+    <statement>
+      <p>The <var/> character indicates that we want to match the next character literally. </p>
+    </statement>
+    <setup>
+      <var case="insensitive">
+        <condition string="^\s*(\\)|(backslash)\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Incorrect! Go back and read to find the answer!</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="question15_5_3">
+    <statement>
+      <p>The <c>substr()</c> takes <var/> and <var/> as its two arguments. </p>
+    </statement>
+    <setup>
+      <var case="insensitive">
+        <condition string="index">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Incorrect! Go back and read to find the answer!</p>
+          </feedback>
+        </condition>
+      </var>
+      <var case="insensitive">
+        <condition string="len(gth)?">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Incorrect! Go back and read to find the answer!</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="question15_5_4"
+            numbered="yes"
+            adaptive="yes"
+            indentation="hide">
+    <statement>
+      <p>Create a block of code that takes a date written in the format <q>mm/dd/yyyyy</q> as an
+        argument, and that separates it into three separate integers: day, month, and year. Find the
+        respective parts in this order: month, first slash, day, second slash, year.</p>
+    </statement>
+    <blocks>
+      <block order="1">
+        <cline>int main() {</cline>
+      </block>
+      <block order="13">
+        <choice correct="yes">
+          <cline> string month = date.substr(0, 2);</cline>
+        </choice>
+        <choice>
+          <cline> string month = date.substr(2, 0);                              </cline>
+        </choice>
+      </block>
+      <block order="3">
+        <cline> int first_slash = date.find('/');</cline>
+      </block>
+      <block order="6">
+        <choice correct="yes">
+          <cline> string day = date.substr(first_slash + 1, 2);</cline>
+        </choice>
+        <choice>
+          <cline> string day = date.substr(first_slash, 2);                              </cline>
+        </choice>
+      </block>
+      <block order="12">
+        <choice correct="yes">
+          <cline> int second_slash = date.find('/', first_slash + 1);</cline>
+        </choice>
+        <choice>
+          <cline> int second_slash = date.find('/', first_slash);                              </cline>
+        </choice>
+      </block>
+      <block order="5">
+        <cline> int second_slash = date.find('/');                              </cline>
+      </block>
+      <block order="10">
+        <choice correct="yes">
+          <cline> string year = date.substr(second_slash + 1, 4);</cline>
+        </choice>
+        <choice>
+          <cline> string year = date.substr(second_slash, 4);                              </cline>
+        </choice>
+      </block>
+      <block order="9">
+        <cline> string year = date.substr(second_slash + 1, 2);                              </cline>
+      </block>
+      <block order="2">
+        <cline>}</cline>
+      </block>
+    </blocks>
+  </exercise>
+</section>

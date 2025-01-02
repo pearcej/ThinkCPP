@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<section xml:id="chapter13_another-constructor">
+  <title>Another constructor</title>
+  <p>Now that we have a <c>Deck</c> object, it would be useful to initialize the cards in it. From the
+    previous chapter we have a function called <c>buildDeck</c> that we could use (with a few adaptations),
+    but it might be more natural to write a second <c>Deck</c> constructor.</p>
+  <program>Deck::Deck() {
+  vector&lt;Card&gt; temp (52);
+  cards = temp;
+
+  int i = 0;
+  for (Suit suit = CLUBS; suit &lt;= SPADES; suit = Suit(suit+1)) {
+    for (Rank rank = ACE; rank &lt;= KING; rank = Rank(rank+1)) {
+      cards[i].suit = suit;
+      cards[i].rank = rank;
+      i++;
+    }
+  }
+}</program>
+  <p>Notice how similar this function is to <c>buildDeck</c>, except that we had to change the syntax to make
+    it a constructor. Now we can create a standard 52-card deck with the simple declaration <c>Deck deck;</c></p>
+  <listing label="deck_constructor_AC_1">
+    <caption>
+      This active code prints out the cards in a deck using the loop from the previous section.
+    </caption>
+    <program xml:id="deck_constructor_AC_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
+      <code><![CDATA[
+#include <iostream>
+#include <string>
+#include <vector>
+using namespace std;
+
+enum Suit { CLUBS, DIAMONDS, HEARTS, SPADES };
+
+enum Rank { ACE=1, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE,
+TEN, JACK, QUEEN, KING };
+
+struct Card {
+    Rank rank;
+    Suit suit;
+    Card();
+    Card(Suit s, Rank r);
+    void print() const;
+};
+
+struct Deck {
+    vector<Card> cards;
+    Deck();
+};
+
+int main() {
+    Deck deck;
+    for (int i = 0; i < 52; i++) {
+        deck.cards[i].print();
+    }
+}
+
+        ]]></code>
+      <tests>
+Card::Card() {
+    suit = SPADES;  rank = ACE;
+}
+
+Card::Card(Suit s, Rank r) {
+    suit = s;  rank = r;
+}
+
+void Card::print() const {
+    vector&lt;string&gt; suits(4);
+    suits[0] = "Clubs";
+    suits[1] = "Diamonds";
+    suits[2] = "Hearts";
+    suits[3] = "Spades";
+
+    vector&lt;string&gt; ranks(14);
+    ranks[1] = "Ace";
+    ranks[2] = "2";
+    ranks[3] = "3";
+    ranks[4] = "4";
+    ranks[5] = "5";
+    ranks[6] = "6";
+    ranks[7] = "7";
+    ranks[8] = "8";
+    ranks[9] = "9";
+    ranks[10] = "10";
+    ranks[11] = "Jack";
+    ranks[12] = "Queen";
+    ranks[13] = "King";
+
+    cout &lt;&lt; ranks[rank] &lt;&lt; " of " &lt;&lt; suits[suit] &lt;&lt; endl;
+}
+
+Deck::Deck() {
+    vector&lt;Card&gt; temp (52);
+    cards = temp;
+
+    int i = 0;
+    for (Suit suit = CLUBS; suit &lt;= SPADES; suit = Suit(suit+1)) {
+        for (Rank rank = ACE; rank &lt;= KING; rank = Rank(rank+1)) {
+            cards[i].suit = suit;
+            cards[i].rank = rank;
+            i++;
+        }
+    }
+}
+</tests>
+    </program>
+  </listing>
+  <exercise label="deck_constructor_1">
+    <statement>
+      <p>Based on your observations from the active code above, the cards in <c>deck</c> are initialized
+        to the correct suits and ranks of a standard deck of 52 cards.</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>True - we used the buildDeck function with a few modifications to do this.</p>
+        </statement>
+        <feedback>
+          <p>How do we create the deck?</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>True - we wrote a Deck constructor to do this.</p>
+        </statement>
+        <feedback>
+          <p>The for loops in the Deck constructor initialize each card to its proper value.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>False - we used the buildDeck function with a few modifications to do this.</p>
+        </statement>
+        <feedback>
+          <p>Look at the active code. How do we create the deck?</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>False - we wrote a Deck constructor to do this.</p>
+        </statement>
+        <feedback>
+          <p>Look at the active code.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="deck_constructor_2"
+            numbered="yes"
+            adaptive="yes"
+            indentation="hide">
+    <statement>
+      <p>Let's write a constructor for a deck of cards that uses 40 cards.
+        This deck uses all 4 suits and ranks Ace through 10, omitting all
+        face cards.</p>
+    </statement>
+    <blocks>
+      <block order="2">
+        <cline>Deck::Deck() {</cline>
+      </block>
+      <block order="4">
+        <choice correct="yes">
+          <cline><![CDATA[   vector<Card> temp (40);]]></cline>
+        </choice>
+        <choice>
+          <cline><![CDATA[   vector<Card> temp (52);                         ]]></cline>
+        </choice>
+      </block>
+      <block order="3">
+        <cline>   cards = temp;</cline>
+        <cline>   int i = 0;</cline>
+      </block>
+      <block order="1">
+        <choice correct="yes">
+          <cline><![CDATA[   for (Suit suit = CLUBS; suit <= SPADES; suit = Suit(suit+1)) {]]></cline>
+        </choice>
+        <choice>
+          <cline><![CDATA[   for (Suit suit = CLUBS; suit < SPADES; suit = Suit(suit+1)) {                         ]]></cline>
+        </choice>
+      </block>
+      <block order="9">
+        <choice correct="yes">
+          <cline><![CDATA[      for (Rank rank = ACE; rank <= TEN; rank = Rank(rank+1)) {]]></cline>
+        </choice>
+        <choice>
+          <cline><![CDATA[      for (Rank rank = ACE; rank <= KING; rank = Rank(rank+1)) {                         ]]></cline>
+        </choice>
+      </block>
+      <block order="8">
+        <choice correct="yes">
+          <cline>        cards[i].suit = suit;</cline>
+          <cline>        cards[i].rank = rank;</cline>
+        </choice>
+        <choice>
+          <cline>        cards[i].suit = rank;</cline>
+          <cline>        cards[i].rank = suit;                         </cline>
+        </choice>
+      </block>
+      <block order="10">
+        <cline>        i++;</cline>
+        <cline>      }</cline>
+        <cline>   }</cline>
+        <cline>}</cline>
+      </block>
+    </blocks>
+  </exercise>
+</section>

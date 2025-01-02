@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<section xml:id="chapter5_returning-from-main">
+  <title>Returning from main</title>
+  <p>Now that we have functions that return values, I can let you in on a
+    secret. main is not really supposed to be a void function. It's supposed
+    to return an integer:</p>
+  <program>int main() {
+  return 0;
+}</program>
+  <p>The usual return value from main is 0, which indicates that the program
+    succeeded at whatever it was supposed to do. If something goes wrong, it
+    is common to return -1, or some other value that indicates what kind of
+    error occurred.</p>
+  <p>Of course, you might wonder who this value gets returned to, since we
+    never call main ourselves. It turns out that when the system executes a
+    program, it starts by calling main in pretty much the same way it calls
+    all the other functions.</p>
+  <p>There are even some parameters that are passed to main by the system,
+    but we are not going to deal with them for a little while.</p>
+  <exercise label="return_main_mc_1">
+    <statement>
+      <p>What data type is the main function supposed to return?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>string</p>
+        </statement>
+        <feedback>
+          <p>Look at the function definition for main.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>integer</p>
+        </statement>
+        <feedback>
+          <p>Correct! You should always return an integer to avoid issues down the road.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>nothing</p>
+        </statement>
+        <feedback>
+          <p>Main is supposed to return something!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>anything</p>
+        </statement>
+        <feedback>
+          <p>Main has a return type, check its function definition.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="fitb_return_main_2">
+    <statement>
+      <p>Usually, we return <var/> to exit main. However, if there are any errors that we catch, we
+        might return <var/>.
+      </p>
+    </statement>
+    <setup>
+      <var case="insensitive">
+        <condition string="^\s*[0]\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Try again!</p>
+          </feedback>
+        </condition>
+      </var>
+      <var>
+        <condition number="[-1, -1]">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Try again!</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="return_main_mc_2">
+    <statement>
+      <p>What gets printed when the following code runs?</p>
+      <program>int main() {
+    bool sun_set=true;
+    if(sun_set) {
+        cout &lt;&lt; "its night time ";
+        sun_set=false;
+        return 0;
+    }
+    if(!sun_set) {
+        cout &lt;&lt; "Day time ";
+    }
+    else {
+        cout &lt;&lt; "afternoon ";
+    }
+}</program>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>"its night time Day time"</p>
+        </statement>
+        <feedback>
+          <p>a return statement if encountered before reaching the second ``if``.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>"its night time afternoon"</p>
+        </statement>
+        <feedback>
+          <p>a return statement is encountered before and ``sun_set`` is false.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>nothing is printed</p>
+        </statement>
+        <feedback>
+          <p>``sun_set`` is true so the "its night time" gets printed</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>"its night time"</p>
+        </statement>
+        <feedback>
+          <p>Correct! Once the ``return`` statement is encountered nothing else is printed</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

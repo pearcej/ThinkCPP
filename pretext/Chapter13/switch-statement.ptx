@@ -1,0 +1,348 @@
+<?xml version="1.0"?>
+<section xml:id="chapter13_switch-statement">
+  <title><c>switch</c> statement</title>
+  <p>It's hard to mention enumerated types without mentioning <c>switch</c> statements, because they often
+    go hand in hand. A <c>switch</c> statement is an alternative to a chained conditional that is
+    syntactically prettier and often more efficient. It looks like this:</p>
+  <program>switch (symbol) {
+case '+':
+    perform_addition();
+    break;
+case '*':
+    perform_multiplication();
+    break;
+default:
+    cout &lt;&lt; "I only know how to perform addition and multiplication" &lt;&lt; endl;
+    break;
+}</program>
+  <p>This <c>switch</c> statement is equivalent to the following chained conditional:</p>
+  <program>if (symbol == '+') {
+    perform_addition();
+}
+else if (symbol == '*') {
+    perform_multiplication();
+}
+else {
+    cout &lt;&lt; "I only know how to perform addition and multiplication" &lt;&lt; endl;
+}</program>
+  <p>The <c>break</c> statements are necessary in each branch in a <c>switch</c> statement because otherwise
+    the flow of execution <q>falls through</q> to the next case.</p>
+  <note>
+    <p>Be sure to incorporate a <c>break</c> statment into each branch so that the flow of execution
+      stops after that branch.</p>
+  </note>
+  <p>Without the <c>break</c> statements, the symbol <c>+</c> would make the program perform addition, and
+    then perform multiplication, and then print the error message. Occasionally this feature is
+    useful, but most of the time it is a source of errors when people forget the <c>break</c> statements.</p>
+  <listing label="switch_AC_1">
+    <caption>
+      Take a look at this active code that allows you to choose your starter Pokemon. If you
+        change the value of <c>type</c>, it will change the Pokemon you choose. Notice how if you don't
+        assign <c>type</c> to a valid type, it outputs the default message. Try taking out the <c>break</c>
+        statements in each case. What happens if you run the code with <c>type</c> as &#x2018;g'
+        afterwards?
+    </caption>
+    <program xml:id="switch_AC_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
+      <code><![CDATA[
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    char type = 'w';
+
+    switch (type) {
+    case 'g':
+        cout << "You've chosen Bulbasaur!" << endl;
+        break;
+    case 'f':
+        cout << "You've chosen Charmander!" << endl;
+        break;
+    case 'w':
+        cout << "You've chosen Squirtle!" << endl;
+       break;
+    default:
+        cout << "Invalid type! Please try again." << endl;
+        break;
+    }
+}
+        ]]></code>
+    </program>
+  </listing>
+  <p><c>switch</c> statements work with integers, characters, and enumerated types. For example, to
+    convert a <c>Suit</c> to the corresponding string, we could use something like:</p>
+  <program>switch (suit) {
+case CLUBS:     return "Clubs";
+case DIAMONDS:  return "Diamonds";
+case HEARTS:    return "Hearts";
+case SPADES:    return "Spades";
+default:        return "Not a valid suit";
+}</program>
+  <p>In this case we don't need <c>break</c> statements because the <c>return</c> statements cause the flow of
+    execution to return to the caller instead of falling through to the next case.</p>
+  <p>In general it is good style to include a <c>default</c> case in every <c>switch</c> statement, to handle
+    errors or unexpected values.</p>
+  <exercise label="switch_1">
+    <statement>
+      <p>A(n) <var/> statement is necessary for each branch in a <c>switch</c> statement.
+      </p>
+    </statement>
+    <setup>
+      <var case="insensitive">
+        <condition string="^\s*break\s*$">
+          <feedback>
+            <p>A return would also suffice.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Try again! How do we prevent the flow of execution from <q>falling through?</q></p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="switch_2">
+    <statement>
+      <p>Which one of the following types do NOT work with <c>switch</c> statement?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>ints</p>
+        </statement>
+        <feedback>
+          <p>We can use ints with switch statements.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>chars</p>
+        </statement>
+        <feedback>
+          <p>We can use chars with switch statements.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>strings</p>
+        </statement>
+        <feedback>
+          <p>Switch statements only work on integral values, so we cannot use strings with switch
+            statements!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>enumerated types</p>
+        </statement>
+        <feedback>
+          <p>We can use enumerated types with switch statements.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="switch_3">
+    <statement>
+      <p>What is the correct output of the code below?</p>
+      <program line-numbers="yes">
+        <code><![CDATA[
+int main() {
+  int num = 2;
+
+  switch (num) {
+  case 1:
+    cout << 1;
+    break;
+  case 2:
+    cout << 4;
+  case 3:
+    cout << 9;
+    break;
+  default:
+    cout << "Invalid num! Please try again.";
+    break;
+  }
+}
+]]></code>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>4</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! Try running it with the active code.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>49</p>
+        </statement>
+        <feedback>
+          <p>Case 2 doesn't end with a break statement, so case 3 also runs!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>49Invalid num! Please try again.</p>
+        </statement>
+        <feedback>
+          <p>Where do we encounter a break statement?</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Invalid num! Please try again.</p>
+        </statement>
+        <feedback>
+          <p>Is 2 one of the invalid numbers?</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Code will not run.</p>
+        </statement>
+        <feedback>
+          <p>There is no reason why the code wouldn't run.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="switch_4">
+    <statement>
+      <p>What is the correct output <term>this time</term>?</p>
+      <program line-numbers="yes">
+        <code><![CDATA[
+int main() {
+  int num = 1;
+
+  switch (num) {
+  case 1:
+    cout << 1;
+    break;
+  case 2:
+    cout << 4;
+  case 3:
+    cout << 9;
+  default:
+    cout << "Invalid num! Please try again.";
+  }
+}
+]]></code>
+      </program>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>1</p>
+        </statement>
+        <feedback>
+          <p>The first statement ends with a break, so only 1 will print!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>149</p>
+        </statement>
+        <feedback>
+          <p>Where do we encounter a break statement?</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>149Invalid num! Please try again.</p>
+        </statement>
+        <feedback>
+          <p>Is 1 one of the valid numbers? Where do we encounter a break statement?</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Invalid num! Please try again.</p>
+        </statement>
+        <feedback>
+          <p>Is 1 one of the invalid numbers?</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Code will not run.</p>
+        </statement>
+        <feedback>
+          <p>There is no reason why the code wouldn't run.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="switch_5">
+    <statement>
+      <p>And finally, what about <term>this time</term>?</p>
+      <program line-numbers="yes">
+        <code><![CDATA[
+int main() {
+  int num = 2;
+
+  switch (num) {
+  case 1:
+    cout << 1;
+    break;
+  case 2:
+    cout << 4;
+  case 3:
+    cout << 9;
+  default:
+    cout << "Invalid num! Please try again.";
+  }
+}
+]]></code>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>4</p>
+        </statement>
+        <feedback>
+          <p>Where do we / don't we encounter a break statement?</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>49</p>
+        </statement>
+        <feedback>
+          <p>Where do we / don't we encounter a break statement?</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>49Invalid num! Please try again.</p>
+        </statement>
+        <feedback>
+          <p>Notice that 2 is not an invalid number, but since we are missing break statements,
+            multiple branches execute.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Invalid num! Please try again.</p>
+        </statement>
+        <feedback>
+          <p>Is 2 one of the invalid numbers?</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Code will not run.</p>
+        </statement>
+        <feedback>
+          <p>There is no reason why the code wouldn't run.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

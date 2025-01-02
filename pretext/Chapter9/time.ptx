@@ -1,0 +1,241 @@
+<?xml version="1.0"?>
+<section xml:id="chapter9_time">
+  <title>Time</title>
+  <p>As a second example of a user-defined structure, we will define a type called <c>Time</c>, which is
+    used to record the time of day. The various pieces of information that form a time are the hour,
+    minute and second, so these will be the instance variables of the structure.</p>
+  <p>The first step is to decide what type each instance variable should be. It seems clear that <c>hour</c>
+    and <c>minute</c> should be integers. Just to keep things interesting, let's make <c>second</c> a <c>double</c>,
+    so we can record fractions of a second.</p>
+  <listing label="time_AC_1">
+    <caption>
+      This active code shows what the structure definition looks like. We can create a <c>Time</c>
+        object in the usual way.
+    </caption>
+    <program xml:id="time_AC_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
+      <code><![CDATA[
+#include <iostream>
+using namespace std;
+
+struct Time {
+    int hour, minute;
+    double second;
+};
+
+int main() {
+    Time time = { 11, 59, 3.14159 };
+    cout << time.hour << ":" << time.minute << ":" << time.second;
+}
+        ]]></code>
+    </program>
+  </listing>
+  <p>The state diagram for this object looks like this:</p>
+  <figure align="center">
+    <image source="Chapter9/Images/9.1stackdiagram.png"
+           width="50%"
+           alt="image"/>
+  </figure>
+  <p>The word <term>instance</term> is sometimes used when we talk about objects, because every
+    object is an instance (or example) of some type. The reason that instance variables are so-named
+    is that every instance of a type has a copy of the instance variables for that type.</p>
+  <exercise label="time_1">
+    <statement>
+      <p>Which of the following words are variables of type <c>Price</c>?</p>
+      <program line-numbers="yes">
+        <code>
+struct Price {
+  int dollar, cents;
+};
+
+int main() {
+  Price sandwich = { 3, 45 };
+  Price coffee = { 2, 50 };
+  Price pastry = { 2, 0 };
+}
+</code>
+      </program>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>sandwich, coffee, pastry</p>
+        </statement>
+        <feedback>
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>dollar, cents</p>
+        </statement>
+        <feedback>
+          <p>Try again. We are looking for variable names not instances of a structure.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Price, struct</p>
+        </statement>
+        <feedback>
+          <p>Try again. ``struct`` and ``Price`` are not variables.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="time_2">
+    <statement>
+      <p>Which of the following words are instance variables of the <c>Price</c> structure?</p>
+      <program line-numbers="yes">
+        <code>
+struct Price {
+  int dollar, cents;
+};
+
+int main() {
+  Price sandwich = { 3, 45 };
+  Price coffee = { 2, 50 };
+  Price pastry = { 2, 0 };
+}
+</code>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>sandwich, coffee, pastry</p>
+        </statement>
+        <feedback>
+          <p>These are variables of type Price.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>dollar, cents</p>
+        </statement>
+        <feedback>
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Price, struct</p>
+        </statement>
+        <feedback>
+          <p>Try again. ``struct`` and ``Price`` are not variables.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="time_3">
+    <statement>
+      <p>Which of the following words are a user-defined structure?</p>
+      <program line-numbers="yes">
+        <code>
+struct Price {
+  int dollar, cents;
+};
+
+int main() {
+  Price sandwich = { 3, 45 };
+  Price coffee = { 2, 50 };
+  Price pastry = { 2, 0 };
+}
+</code>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>sandwich, coffee, pastry</p>
+        </statement>
+        <feedback>
+          <p>These are variables of type Price.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>dollar, cents</p>
+        </statement>
+        <feedback>
+          <p>These are instance variables of the Price structure.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Price</p>
+        </statement>
+        <feedback>
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="time_AC_2">
+    <statement>
+      <p>Try writing the <c>printTime</c> function in the commented section of this active code. <c>printTime</c>
+        should print out the time in the HOUR:MINUTE:SECONDS format. If you get stuck, you can
+        reveal the extra problem at the end for help.</p>
+    </statement>
+    <program xml:id="time_AC_2_editor"
+             interactive="activecode"
+             line-numbers="yes">
+      <code><![CDATA[
+#include <iostream>
+using namespace std;
+
+struct Time {
+    int hour, minute;
+    double second;
+};
+
+void printTime(Time& time) {
+    // ``printTime`` should print out the time in the
+    // HOUR:MINUTE:SECONDS format. Write your implementation here.
+}
+
+int main() {
+    Time time = { 11, 59, 3.14159 };
+
+    // Should output "11:59:3.14159"
+    printTime(time);
+}
+        ]]></code>
+    </program>
+  </exercise>
+  <exercises line="151"
+             runestone_options="{'showtitle': 'data-showtitle=&quot;Reveal Problem&quot;', 'hidetitle': 'data-hidetitle=&quot;Hide Problem&quot;', 'subchapter': 'time', 'chapter': 'Chapter9', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'divid': '9_1_1', 'instructoronly': '', 'is_dynamic': 'True'}"
+             source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter9/time.rst">
+    <exercise label="time_4"
+              numbered="yes"
+              adaptive="yes"
+              indentation="hide">
+      <statement>
+        <p>Let's write the code for the <c>printTime</c> function. <c>printTime</c> should print out the time in the
+          HOUR:MINUTE:SECONDS format.</p>
+      </statement>
+      <blocks>
+        <block order="3">
+          <choice correct="yes">
+            <cline>void printTime(Time&amp; time) {</cline>
+          </choice>
+          <choice>
+            <cline>Time printTime(Time&amp; time) {                         </cline>
+          </choice>
+        </block>
+        <block order="5">
+          <choice correct="yes">
+            <cline><![CDATA[   cout << time.hour << ":" << time.minute << ":" << time.second;]]></cline>
+          </choice>
+          <choice>
+            <cline><![CDATA[   cout << hour << ":" << minute << ":" << second;                        ]]></cline>
+          </choice>
+        </block>
+        <block order="2">
+          <cline>}</cline>
+        </block>
+      </blocks>
+    </exercise>
+  </exercises>
+</section>
