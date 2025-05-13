@@ -1,7 +1,7 @@
 A run-time error
 ----------------
 
-Way back in Section `[run-time] <#run-time>`__ I talked about run-time
+Way back in :numref:`run-time` I talked about run-time
 errors, which are errors that don’t appear until a program has started
 running.
 
@@ -38,7 +38,7 @@ Try it in your development environment and see how it looks.
     :iscode:
     :feedback: Remember, an index that is negative or greater than the length of the string - 1 will give a run-time error.
 
-    :click-incorrect:def main() {:endclick:
+    :click-incorrect:int main() {:endclick:
         :click-incorrect:string fruit = "apple";:endclick:
         char letter = :click-incorrect:fruit[0];:endclick:
         char letter = :click-correct:fruit[9];:endclick:

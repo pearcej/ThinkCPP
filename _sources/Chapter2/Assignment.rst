@@ -79,13 +79,13 @@ assignment is illegal:
 
 .. mchoice:: assignment_2
    :practice: T
-   :answer_a: Change the type of variable q from int to char.
-   :answer_b: Change the type of both variables (p and q) from int to char.
+   :answer_a: Change the type of variable q from int to string.
+   :answer_b: Change the type of both variables (p and q) from int to string.
    :answer_c: Change the type of variable p from int to char.
    :answer_d: Nothing needs to change! The code will work just fine!
    :correct: b
    :feedback_a: Yes, but take a look at variable p.
-   :feedback_b: Both variables are a character surrounded by single quotes, so they should be type char.
+   :feedback_b: Both variables are a character surrounded by double quotes, so they should be type string.
    :feedback_c: Yes, but take a look at variable q.
    :feedback_d: No! There will be a compile error.
 
@@ -100,8 +100,8 @@ assignment is illegal:
        int main () {
          int p;
          int q;
-         p = 'h';
-         q = '9';
+         p = "h";
+         q = "9";
        }
 
 

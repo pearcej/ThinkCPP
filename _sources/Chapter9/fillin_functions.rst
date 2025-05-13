@@ -32,6 +32,7 @@ worth a spending a little run time to avoid a lot of debugging time.
 
 .. activecode:: fillin_functions_AC_1
   :language: cpp
+  :compileargs: [ '-Wall', '-Werror' ]
 
   The active code below uses the fill-in version of the ``addTime`` function.
   Feel free to modify the code!

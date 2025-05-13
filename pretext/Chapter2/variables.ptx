@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<section xml:id="chapter2_variables">
+  <title>Variables</title>
+  <p>One of the most powerful features of a programming language is the ability to manipulate <term>
+    variables</term>. A variable is a named location that stores a value.</p>
+  <p>Just as there are different types of values (integer, character, etc.),
+    there are different types of variables. When you create a new variable,
+    you have to declare what type it is.</p>
+  <note>
+    <p>In C++, integer variables are declared as type <c>int</c> and character variables are declared
+      as type <c>char</c>.</p>
+  </note>
+  <p>The following statement creates a new variable named fred that has type <c>char</c>.</p>
+  <program>
+char fred;
+</program>
+  <p>This kind of statement is called a <term>declaration</term>.</p>
+  <p>The type of a variable determines what kind of values it can store. A <c>char</c> variable can
+    contain characters, and it should come as no surprise that <c>int</c> variables can store integers.</p>
+  <p>There are several types in C++ that can store <c>string</c> values, but we are going to skip that for
+    now (see Chapter 7).</p>
+  <p>To create an integer variable, the syntax is</p>
+  <program>
+int bob;
+</program>
+  <p>where bob is the arbitrary name you made up for the variable. In
+    general, you will want to make up variable names that indicate what you
+    plan to do with the variable. For example, if you saw these variable
+    declarations:</p>
+  <program>
+char firstLetter;
+char lastLetter;
+int hour, minute;</program>
+  <p>you could probably make a good guess at what values would be stored in them. This example also
+    demonstrates the syntax for declaring multiple variables with the same type: hour and minute are
+    both integers (<c>int</c> type).</p>
+  <exercise label="variables_3">
+    <statement>
+      <p>A(n) <var/> is a name given to a location in memory used to keep track of a value. </p>
+    </statement>
+    <setup>
+      <var case="insensitive">
+        <condition string="^\s*variable\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Try again!</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="variables_1">
+    <statement>
+      <p>Take a look at the code block below:
+      </p>
+      <program>
+char tom;
+</program>
+      <p>It's an example of a(n) <var/> statement.</p>
+    </statement>
+    <setup>
+      <var case="insensitive">
+        <condition string="^\s*declaration\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Try again!</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="variables2.0">
+    <statement>
+      <p>Click on all instances of integer VARIABLES.</p>
+    </statement>
+    <feedback>
+      <p>Try again!</p>
+    </feedback>
+    <areas>
+      <cline><area correct="no">int main() {</area></cline>
+      <cline>    int <area correct="yes">x</area> = <area correct="no">7</area>;</cline>
+      <cline>    int <area correct="yes">y</area> = <area correct="no">10</area>;</cline>
+      <cline>    <area correct="no">char c</area> = <area correct="no">'8'</area>;</cline>
+      <cline>    while (<area correct="yes">x</area> &lt; <area correct="yes">y</area>) {</cline>
+      <cline>        cout &lt;&lt; <area correct="no">c</area> &lt;&lt; endl;</cline>
+      <cline>        <area correct="yes">x</area>++;</cline>
+      <cline>    }</cline>
+      <cline>    double <area correct="no">d</area> = <area correct="no">9</area>;</cline>
+      <cline>    int <area correct="yes">z</area> = <area correct="yes">x</area> + <area correct="yes">y</area>;</cline>
+      <cline><![CDATA[    cout << "It's the year " << ]]><area correct="no">2000</area> + <area correct="yes">z</area> &lt;&lt; "!";</cline>
+      <cline>}</cline>
+    </areas>
+  </exercise>
+  <exercise label="variables2.1">
+    <statement>
+      <p>Click on all instances of character VARIABLES.</p>
+    </statement>
+    <feedback>
+      <p>Try again!</p>
+    </feedback>
+    <areas>
+      <cline>int main() {</cline>
+      <cline>    char <area correct="yes">init1</area> = <area correct="no">'K'</area>;</cline>
+      <cline>    string <area correct="no">init2</area> = <area correct="no">"T"</area>;</cline>
+      <cline>    cout &lt;&lt; <area correct="yes">init1</area> &lt;&lt; <area correct="no">"+"</area> &lt;&lt; <area correct="no">init2</area> &lt;&lt; endl;</cline>
+      <cline>    string <area correct="no">init3</area> = <area correct="no">"C"</area>;</cline>
+      <cline>    char <area correct="yes">init4</area> = <area correct="no">'J'</area>;</cline>
+      <cline>    cout &lt;&lt; <area correct="no">init3</area> &lt;&lt; <area correct="no">'+'</area> &lt;&lt; <area correct="yes">init4</area> &lt;&lt; endl;</cline>
+      <cline>    string <area correct="no">c</area> = <area correct="no">"Carved their initials in a tree!"</area>;</cline>
+      <cline>    cout &lt;&lt; <area correct="no">c</area>;</cline>
+      <cline>}</cline>
+    </areas>
+  </exercise>
+  <exercise label="variables_2">
+    <statement>
+      <p>Match the variable to the kind of value it can store. Do so by dragging items on the left to the boxes on the right.</p>
+    </statement>
+    <feedback>
+      <p>Ideally, you want your variables to be named according to what they represent. Not the case
+        here! Try again!</p>
+    </feedback>
+    <matches>
+      <match order="1">
+        <premise><c>char joe;</c></premise>
+        <response><c>'x'</c></response>
+      </match>
+      <match order="2">
+        <premise><c>string ten;</c></premise>
+        <response><c>"Joe"</c></response>
+      </match>
+      <match order="3">
+        <premise><c>int x;</c></premise>
+        <response><c>10</c></response>
+      </match>
+    </matches>
+  </exercise>
+  <exercise label="variables_4"
+            numbered="yes"
+            adaptive="yes"
+            indentation="hide">
+    <statement>
+      <p>Arrange the code blocks to create the variables <c>name</c>, <c>firstInitial</c>, and <c>numberOfSiblings</c> IN THAT
+        ORDER. It is up to you to choose the correct types for these variables.</p>
+    </statement>
+    <blocks>
+      <block order="7">
+        <choice correct="yes">
+          <cline>string name;</cline>
+        </choice>
+        <choice>
+          <cline>string name </cline>
+        </choice>
+      </block>
+      <block order="2">
+        <choice correct="yes">
+          <cline>char firstInitial;</cline>
+        </choice>
+        <choice>
+          <cline>char firstInitial </cline>
+        </choice>
+      </block>
+      <block order="8">
+        <choice correct="yes">
+          <cline>string firstInitial; </cline>
+        </choice>
+        <choice>
+          <cline>string firstInitial </cline>
+        </choice>
+      </block>
+      <block order="6">
+        <choice correct="yes">
+          <cline>int numberOfSiblings;</cline>
+        </choice>
+        <choice>
+          <cline>int numberOfSiblings </cline>
+        </choice>
+      </block>
+      <block order="9">
+        <choice correct="yes">
+          <cline>double numberOfSiblings; </cline>
+        </choice>
+        <choice>
+          <cline>double numberOfSiblings </cline>
+        </choice>
+      </block>
+    </blocks>
+  </exercise>
+</section>

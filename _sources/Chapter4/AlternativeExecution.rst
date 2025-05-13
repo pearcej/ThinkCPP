@@ -94,12 +94,15 @@ type they are. You should resist the temptation to write things like:
    :feedback_c: One of the statements is satisfied, so something does print.
    :feedback_d: There is nothing in the code below that would generate an error.
 
-   What will be printed after the main is executed?
+   What will be printed after ``main`` is executed?
 
    ::
+                 
+       #include <iostream>
+       using namespace std;
 
        void weather(int temp) {
-         if temp < 52 {
+         if (temp < 52) {
            cout << "It is cold!";
          }
          else {

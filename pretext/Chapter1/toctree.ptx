@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"
+         xml:lang="en-US"
+         xml:id="way-of-the-program"
+         >
+  <title>The way of the program</title>
+  <xi:include href='./the-way.ptx'/>
+  <xi:include href='./programming-language.ptx'/>
+  <xi:include href='./program.ptx'/>
+  <xi:include href='./debugging.ptx'/>
+  <xi:include href='./formal-natural.ptx'/>
+  <xi:include href='./first-program.ptx'/>
+  <xi:include href='./glossary.ptx'/>
+  <xi:include href='./exercises.ptx'/>
+</chapter>

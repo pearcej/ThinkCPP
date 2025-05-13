@@ -11,6 +11,7 @@ return value.
 
 .. activecode:: pure_function_AC_1
   :language: cpp
+  :compileargs: [ '-Wall', '-Werror' ]
 
   One example is the function ``after``, which compares two ``Time``\ s and returns a
   ``bool`` that indicates whether the first operand comes after the second. Take a look
@@ -63,6 +64,7 @@ Here is a rough draft of this function that is not quite right:
 
 .. activecode:: pure_function_AC_2
   :language: cpp
+  :compileargs: [ '-Wall', '-Werror' ]
 
   Take a look at the active code below. If ``currentTime``
   contains the current time and ``breadTime`` contains the amount of time
@@ -109,6 +111,7 @@ Here’s a second, corrected version of this function.
 
 .. activecode:: pure_function_AC_3
   :language: cpp
+  :compileargs: [ '-Wall', '-Werror' ]
 
   The active code below is the corrected version of ``addTime``.
   ~~~~

@@ -1,4 +1,7 @@
-﻿Counting
+﻿
+.. _counting:
+
+Counting
 --------
 
 .. index::
@@ -15,7 +18,7 @@ Also, it is not always obvious what sort of things are easy to write,
 but a good approach is to look for subproblems that fit a pattern you
 have seen before.
 
-Back in Section `[loopcount] <#loopcount>`__ we looked at a loop that
+Back in :numref:`loopcount` we looked at a loop that
 traversed a string and counted the number of times a given letter
 appeared. You can think of this program as an example of a pattern
 called “traverse and count.” The elements of this pattern are:
@@ -43,6 +46,7 @@ return value is the number of times the value appears.
 
 .. activecode:: counting_AC_1
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror' ]
 
    Take a look at the active code below which uses the ``howMany`` function. Run the
    code to see how many times the target appears in the vector! Feel free to 
@@ -78,14 +82,14 @@ return value is the number of times the value appears.
 
    vector<int> randomVector (int n, int upperBound) {
       vector<int> vec (n);
-      for (size_t i = 0; i<vec.size(); i++) {
-         vec[i] = random () % upperBound;
+      for (size_t i = 0; i < vec.size(); i++) {
+         vec[i] = rand() % upperBound;
       }
       return vec;
    }
    
    void printVector (const vector<int>& vec) {
-      for (size_t i = 0; i<vec.size(); i++) {
+      for (size_t i = 0; i < vec.size(); i++) {
          cout << vec[i] << " ";
       }
    }
@@ -109,18 +113,18 @@ return value is the number of times the value appears.
 
    Construct a block of code that counts how many numbers are between lowerbound and upperbound inclusive.
    -----
-   int just_right(const vector<int>& vec, int lowerbound, int upperbound) {
+   int just_right(const vector&lt;int&gt;&amp; vec, int lowerbound, int upperbound) {
    =====
       int count = 0;
    =====
-      for (size_t i = 0; i &#60; vec.size(); i++) {
+      for (size_t i = 0; i < vec.size(); i++) {
    =====
-      for (int i = 0; i &#60; upperbound; i++)                         #paired
+      for (size_t i = 0; i > upperbound; i++)                         #paired
    =====
-         if (vec[i] i &#62;= lowerbound && vec[i] i &#60;= upperbound) {
+         if (vec[i] >= lowerbound && vec[i] <= upperbound) {
 	    count++;
    =====
-         if (vec[i] i &#62; lowerbound && vec[i] i &#60; upperbound) {                         #paired
+         if (vec[i] > lowerbound && vec[i] < upperbound) {                         #paired
             count++;
    =====
          }

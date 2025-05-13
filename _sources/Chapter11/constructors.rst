@@ -1,7 +1,7 @@
 Constructors
 ------------
 
-Another function we wrote in Chapter `[time] <#time>`__ was
+Another function we wrote in :numref:`time` was
 ``makeTime``:
 
 ::
@@ -84,5 +84,5 @@ result is assigned to the variable ``time``.
 
     Write code to initialize the variable ``lunch`` that has type ``Time`` and a value of 1800 seconds.
 
-    - :(Time lunch\s?\(1800\)): Correct!
+    - :(\s*Time\s+lunch\s*\(\s*1800\s*\)\s*;?): Correct!
       :.*: Incorrect!

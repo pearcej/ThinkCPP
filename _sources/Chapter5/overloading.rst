@@ -1,3 +1,6 @@
+
+.. _overloading:
+
 Overloading
 -----------
 
@@ -128,7 +131,7 @@ accordingly.
    :feedback_c: Variable names don't matter in overloading.
    :feedback_d: Return type is not considered in resolving function overloads.
 
-   Would adding both of the follwoing function declarations to a program lead to an error?
+   Would adding both of the following function declarations to a program lead to an error?
 
    ::
 

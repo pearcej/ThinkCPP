@@ -36,10 +36,10 @@ which outputs a new line character, represented by the special value
 ``endl``.
 
 The first word of the header is the "return type":
-**void: ** returns nothing;
-**int: ** returns an int;
-*double: ** returns a double;
-**string: ** returns a string;
+**void** returns nothing;
+**int** returns an int;
+**double** returns a double;
+**string** returns a string;
 
 In ``main`` we can call this new function using syntax that is similar to
 the way we call the built-in C++ commands:
@@ -85,13 +85,13 @@ lines:
 
    Here we define the threeLine function, which calls the newLine function
    three times.  The result is a function that prints three lines after it
-   is called.
+   is called (each of those empty lines begins with a "*").
    ~~~~
    #include <iostream>
    using namespace std;
 
    void newLine () {
-       cout << endl;
+       cout << '*' << endl;
    }
 
    void threeLine () {
@@ -151,7 +151,7 @@ example only demonstrates two:
 
         +   You can't name a function the same name as a reserved keyword.
 
-    -   You can have a fucntion with several parameters or a function with none.
+    -   You can have a function with several parameters or a function with none.
 
         -   This is true! However, you must always use parentheses.
 
@@ -232,7 +232,7 @@ example only demonstrates two:
    =====
    int perimeter_value = twice_length + twice_width;
    =====
-   cout << perimeter_value<<endl;
+   cout << perimeter_value << endl;
    =====
    return parameter_value; #distractor
    =====

@@ -1,0 +1,270 @@
+<?xml version="1.0"?>
+<section xml:id="chapter8_call-by-reference">
+  <title>Call by reference</title>
+  <p>An alternative parameter-passing mechanism that is available in C++ is called <q>pass by
+    reference.</q> This mechanism makes it possible to pass a structure to a procedure and modify
+    it.</p>
+  <p>For example, you can reflect a point around the 45-degree line by swapping the two coordinates.
+    The most obvious (but incorrect) way to write a <c>reflect</c> function is something like this:</p>
+  <program>void reflect(Point p) {      // WRONG !!
+  double temp = p.x;
+  p.x = p.y;
+  p.y = temp;
+}</program>
+  <p>But this won't work, because the changes we make in <c>reflect</c> will have no effect on the caller.</p>
+  <p>Instead, we have to specify that we want to pass the parameter by reference. We do that by
+    adding an ampersand (<c>&amp;</c>) to the parameter declaration:</p>
+  <program>void reflect (Point&amp; p) {
+  double temp = p.x;
+  p.x = p.y;
+  p.y = temp;
+}</program>
+  <p>Now we can call the function in the usual way:</p>
+  <program>printPoint (blank);
+reflect (blank);
+printPoint (blank);</program>
+  <listing label="call_by_reference_AC_1">
+    <caption>
+      Take a look at this active code. <c>reflect</c> passes the parameter <c>p</c> by reference. Notice
+        that the output of this code matches what we expect it to be.
+    </caption>
+    <program xml:id="call_by_reference_AC_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
+      <code><![CDATA[
+#include <iostream>
+using namespace std;
+
+struct Point {
+    double x, y;
+};
+
+void reflect (Point& p) {
+    double temp = p.x;
+    p.x = p.y;
+    p.y = temp;
+}
+
+void printPoint(Point p) {
+    cout << "(" << p.x << ", " << p.y << ")" << endl;
+}
+
+int main() {
+    Point blank = { 3.0, 4.0 };
+    printPoint (blank);
+    reflect (blank);
+    printPoint (blank);
+}
+        ]]></code>
+    </program>
+  </listing>
+  <program>(3, 4)
+(4, 3)</program>
+  <p>Here's how we would draw a stack diagram for this program:</p>
+  <figure align="center">
+    <image source="Chapter8/Images/8.7stackdiagram.png"
+           width="50%"
+           alt="Two boxes, one for 'main' and one for 'reflect'. 'main' has a variable blank with 'x:3, y:4' crossed out and replaced with 'x:4, y:3'. 'reflect' has a variable 'p' that just points at 'blank' in 'main'."/>
+  </figure>
+  <p>The parameter <c>p</c> is a reference to the structure named <c>blank</c>. The usual representation
+    for a reference is a dot with an arrow that points to whatever the reference refers to.</p>
+  <p>The important thing to see in this diagram is that any changes that <c>reflect</c> makes in <c>p</c>
+    will also affect <c>blank</c>.</p>
+  <p>Passing structures by reference is more versatile than passing by value,
+    because the callee can modify the structure. It is also faster, because
+    the system does not have to copy the whole structure. On the other hand,
+    it is less safe, since it is harder to keep track of what gets modified
+    where. Nevertheless, in C++ programs, almost all structures are passed
+    by reference almost all the time. In this book I will follow that
+    convention.</p>
+  <exercise label="call_by_reference_1">
+    <statement>
+      <p>Which symbol is used to cause the compiler to pass a function's parameter by reference? <var/>
+      </p>
+    </statement>
+    <setup>
+      <var case="insensitive">
+        <condition string="^\s*&amp;\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Try again!</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="call_by_reference_2">
+    <statement>
+      <p>Which is NOT a benefit to using pass by reference instead of pass by value?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement id="call_by_reference_2_opt_a">
+          <p>Passing structures by reference is more versatile</p>
+        </statement>
+        <feedback id="call_by_reference_2_opt_a">
+          <p>Try again! Passing by reference is more versatile.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="call_by_reference_2_opt_b">
+          <p>Passing structures by reference is faster, because the system does not have to copy the
+            whole structure</p>
+        </statement>
+        <feedback id="call_by_reference_2_opt_b">
+          <p>Try again! Passing by reference does not involve making copies.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="call_by_reference_2_opt_c">
+          <p>In C++ programs, almost all structures are passed by reference almost all the time</p>
+        </statement>
+        <feedback id="call_by_reference_2_opt_c">
+          <p>Try again!</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="call_by_reference_2_opt_d">
+          <p>Passing structures by reference is less safe, since it is harder to keep track of what
+            gets modified where</p>
+        </statement>
+        <feedback id="call_by_reference_2_opt_d">
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="call_by_reference_3">
+    <statement>
+      <p>What will print?</p>
+      <program line-numbers="yes">
+        <code><![CDATA[
+int addTwo(int& x) {
+  cout << x << " ";
+  x = x + 2;
+  cout << x << " ";
+  return x;
+}
+
+int main() {
+  int num = 2;
+  addTwo(num);
+  cout << num << endl;
+}
+]]></code>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement id="call_by_reference_3_opt_a">
+          <p>
+            <c>2 4</c>
+          </p>
+        </statement>
+        <feedback id="call_by_reference_3_opt_a">
+          <p>Take a look at exactly what is being outputted.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="call_by_reference_3_opt_b">
+          <p>
+            <c>2 4 2</c>
+          </p>
+        </statement>
+        <feedback id="call_by_reference_3_opt_b">
+          <p>Remember the rules of pass by reference.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="call_by_reference_3_opt_c">
+          <p>
+            <c>4 4 2</c>
+          </p>
+        </statement>
+        <feedback id="call_by_reference_3_opt_c">
+          <p>Take a look at exactly what is being outputted.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="call_by_reference_3_opt_d">
+          <p>
+            <c>2 4 4</c>
+          </p>
+        </statement>
+        <feedback id="call_by_reference_3_opt_d">
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="call_by_reference_4">
+    <statement>
+      <p>What will print?</p>
+      <program line-numbers="yes">
+        <code><![CDATA[
+struct Point {
+  int x, y;
+};
+
+void timesTwo(Point& p) {
+  p.x = p.x * 2;
+  p.y = p.y * 2;
+  cout << "(" << p.x << ", " << p.y << ")";
+}
+
+int main() {
+  Point blank = { 3, 4 };
+  timesTwo(blank);
+  cout << ", " << blank.x << endl;
+}
+]]></code>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement id="call_by_reference_4_opt_a">
+          <p>
+            <c>(6, 8), 3</c>
+          </p>
+        </statement>
+        <feedback id="call_by_reference_4_opt_a">
+          <p>The <c>&amp;</c> indicates pass by reference.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="call_by_reference_4_opt_b">
+          <p>
+            <c>(6, 8), 6</c>
+          </p>
+        </statement>
+        <feedback id="call_by_reference_4_opt_b">
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="call_by_reference_4_opt_c">
+          <p>
+            <c>(6.0, 8.0) 3.0</c>
+          </p>
+        </statement>
+        <feedback id="call_by_reference_4_opt_c">
+          <p>The <c>&amp;</c> indicates pass by reference. Take a look at the data type.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="call_by_reference_4_opt_d">
+          <p>
+            <c>686</c>
+          </p>
+        </statement>
+        <feedback id="call_by_reference_4_opt_d">
+          <p>Take a look at exactly what is being printed.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

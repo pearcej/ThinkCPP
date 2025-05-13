@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude"
+         xml:lang="en-US">
+
+  <docinfo>
+    <document-id edition="ptx">thinkcpp</document-id>
+    <numbering>
+      <figures level="2"/>
+      <exercises level="2"/>
+    </numbering>
+    <programs language="cpp"
+              compiler-args="-Wall -Wextra -std=c++17"/>
+    <rename element="insight">Tip</rename>
+    <rename element="colophon">License</rename>
+    <rename element="frontmatter">About this book</rename>
+  </docinfo>
+
+  <book xml:id="book">
+    <title>How To Think Like a Computer Scientist C++ Edition</title>
+    <subtitle>The Runestone Interactive Version</subtitle>
+    <xi:include href="./frontmatter.ptx"/>
+    <xi:include href="./Chapter1/toctree.ptx"/>
+    <xi:include href="./Chapter2/toctree.ptx"/>
+    <xi:include href="./Chapter3/toctree.ptx"/>
+    <xi:include href="./Chapter4/toctree.ptx"/>
+    <xi:include href="./Chapter5/toctree.ptx"/>
+    <xi:include href="./Chapter6/toctree.ptx"/>
+    <xi:include href="./Chapter7/toctree.ptx"/>
+    <xi:include href="./Chapter8/toctree.ptx"/>
+    <xi:include href="./Chapter9/toctree.ptx"/>
+    <xi:include href="./Chapter10/toctree.ptx"/>
+    <xi:include href="./Chapter11/toctree.ptx"/>
+    <xi:include href="./Chapter12/toctree.ptx"/>
+    <xi:include href="./Chapter13/toctree.ptx"/>
+    <xi:include href="./Chapter14/toctree.ptx"/>
+    <xi:include href="./Chapter15/toctree.ptx"/>
+  </book>
+</pretext>

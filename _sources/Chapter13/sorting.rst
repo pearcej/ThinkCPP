@@ -1,3 +1,6 @@
+
+.. _sorting:
+
 Sorting
 -------
 
@@ -40,7 +43,7 @@ looking in the vector of cards.
 
 This process, using pseudocode to figure out what helper functions are
 needed, is sometimes called **top-down design**, in contrast to the
-bottom-up design I discussed in Section `[counting] <#counting>`__.
+bottom-up design I discussed in :numref:`counting`.
 
 Once again, I am going to leave the implementation up to the reader.
 
@@ -58,6 +61,7 @@ Once again, I am going to leave the implementation up to the reader.
 
 .. activecode:: sorting_deck_2
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror' ]
 
    Try writing the ``findLowestCard`` function in the commented section
    of the active code below. Once you're done with ``findLowestCard``,

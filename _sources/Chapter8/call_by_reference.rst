@@ -44,6 +44,7 @@ Now we can call the function in the usual way:
 
 .. activecode:: call_by_reference_AC_1
   :language: cpp
+  :compileargs: [ '-Wall', '-Werror' ]
 
   Take a look at the active code below. ``reflect`` passes the parameter ``p``
   by reference. Notice that the output of this code matches what we expect it to be.
@@ -101,36 +102,35 @@ convention.
 
 .. fillintheblank:: call_by_reference_1
 
-    Which symbol should you put in front of the data type of the parameter of a function to make it pass by reference?
+    Which symbol is used to cause the compiler to pass a function's parameter by reference?
 
     - :&: Correct!
       :.*: Try again!
 
 .. mchoice:: call_by_reference_2
    :practice: T
-   :answer_a: Passing structures by reference is more versatile
-   :answer_b: Passing structures by reference is faster, because the system does not have to copy the whole structure
-   :answer_c: In C++ programs, almost all structures are passed by reference almost all the time
-   :answer_d: Passing structures by reference is less safe, since it is harder to keep track of what gets modified where
-   :correct: d
-   :feedback_a: Try again! Passing by reference is more versatile.
-   :feedback_b: Try again! Passing by reference does not involve making copies.
-   :feedback_c: Try again!
-   :feedback_d: Correct!
 
    Which is NOT a benefit to using pass by reference instead of pass by value?
 
+   - Passing structures by reference is more versatile
+
+     - Try again! Passing by reference is more versatile.
+
+   - Passing structures by reference is faster, because the system does not have to copy the whole structure
+
+     - Try again! Passing by reference does not involve making copies.
+
+   - In C++ programs, almost all structures are passed by reference almost all the time
+
+     - Try again!
+
+   - Passing structures by reference is less safe, since it is harder to keep track of what gets modified where
+
+     + Correct!
+
+
 .. mchoice:: call_by_reference_3
    :practice: T
-   :answer_a: 2 4
-   :answer_b: 2 4 2
-   :answer_c: 4 4 2
-   :answer_d: 2 4 4
-   :correct: d
-   :feedback_a: Take a look at exactly what is being outputted.
-   :feedback_b: Remember the rules of pass by reference.
-   :feedback_c: Take a look at exactly what is being outputted.
-   :feedback_d: Correct!
 
    What will print?
 
@@ -149,17 +149,25 @@ convention.
         cout << num << endl;
       }
 
+   - ``2 4``
+
+     - Take a look at exactly what is being outputted.
+
+   - ``2 4 2``
+
+     - Remember the rules of pass by reference.
+
+   - ``4 4 2``
+
+     - Take a look at exactly what is being outputted.
+
+   - ``2 4 4``
+
+     + Correct!
+
+
 .. mchoice:: call_by_reference_4
    :practice: T
-   :answer_a: (6, 8), 3
-   :answer_b: (6, 8), 6
-   :answer_c: (6.08.0)3.0
-   :answer_d: 686
-   :correct: b
-   :feedback_a: The ``&`` indicates pass by reference.
-   :feedback_b: Correct!
-   :feedback_c: The ``&`` indicates pass by reference. Take a look at the data type.
-   :feedback_d: Take a look at exactly what is being outputted.
 
    What will print?
 
@@ -180,4 +188,20 @@ convention.
         timesTwo (blank);
         cout << ", " << blank.x << endl;
       }
+
+   - ``(6, 8), 3``
+
+     - The ``&`` indicates pass by reference.
+
+   - ``(6, 8), 6``
+
+     + Correct!
+
+   - ``(6.0, 8.0) 3.0``
+
+     - The ``&`` indicates pass by reference. Take a look at the data type.
+
+   - ``686``
+
+     - Take a look at exactly what is being printed.
 

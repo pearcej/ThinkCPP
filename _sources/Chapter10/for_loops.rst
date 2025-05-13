@@ -51,6 +51,7 @@ is equivalent to
 
 .. activecode:: for_loops_AC_1
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror' ]
 
    Run the active code below, which uses a ``for`` loop.
    ~~~~
@@ -68,6 +69,7 @@ is equivalent to
 
 .. activecode:: for_loops_AC_2
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror' ]
 
    Run the active code below, which uses a ``while`` loop.
    ~~~~
@@ -109,7 +111,7 @@ is equivalent to
    :numbered: left
    :adaptive:
 
-   Construct the <code>half_life()</code> function that prints the first num half lives
+   Construct the ``half_life()`` function that prints the first num half lives
    of the initial amount.
    -----
    void half_life(int initial_amount, int num) {
@@ -118,9 +120,9 @@ is equivalent to
    =====
       int new_amount = initial_amount;
    =====
-      for (int i = 0; i &#60; num; i++) {
+      for (int i = 0; i &lt; num; i++) {
    =====
-      for (int i = 0; i &#60;= num; i++) {                         #paired
+      for (int i = 0; i &lt; num; i++) {                         #paired
    =====
          new_amount = new_amount / 2;
    =====
@@ -135,6 +137,7 @@ is equivalent to
 
 .. activecode:: for_loops_AC_3
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror' ]
 
    Run the active code below, which uses a ``for`` loop with a negative change in the "INCREMENTOR".
    ~~~~

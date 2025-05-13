@@ -9,6 +9,7 @@ end to end.
 
 .. activecode:: string_concatenation_AC_1
   :language: cpp
+  :compileargs: [ '-Wall', '-Werror' ]
   :caption: String concatenation
 
   In the active code below, we use the ``+`` operator to concatenate ``fruit`` with
@@ -50,6 +51,7 @@ order:
 
 .. activecode:: string_concatenation_AC_2
   :language: cpp
+  :compileargs: [ '-Wall', '-Werror' ]
   :caption: String concatenation
 
   The active code below outputs the ducklings names in alphabetical order.
@@ -59,9 +61,14 @@ order:
 
   int main() {
       string suffix = "ack";
+      string u = "u";
       char letter = 'J';
       while (letter <= 'Q') {
-          cout << letter + suffix << endl;
+          if (letter == 'O' || letter == 'Q') {
+              cout << letter + u + suffix << endl;
+          } else {
+              cout << letter + suffix << endl;
+          }
           letter++;
       }
   }
@@ -75,9 +82,9 @@ The output of this program is:
    Lack
    Mack
    Nack
-   Oack
+   Ouack
    Pack
-   Qack
+   Quack
 
 Again, be careful to use string concatenation only with ``string``\ s
 and not with native C strings. Unfortunately, an expression like
@@ -109,7 +116,7 @@ very strange result, at least in my development environment.
    :numbered: left
    :adaptive:
 
-   As an exercise, put together the code below so that it prints ``C++ is so fun!""
+   As an exercise, put together the code below so that it prints ``C++ is so fun!``
    -----
    int main() {
    =====
@@ -131,9 +138,9 @@ very strange result, at least in my development environment.
    :numbered: left
    :adaptive:
 
-   Put together the code below to creater a function <code>greeter</code> that adds "hello" and "goodbye" behind and ahead of a message
+   Put together the code below to creater a function ``greeter`` that adds "hello" and "goodbye" behind and ahead of a message
    respectively and then prints the new message.
-   Example: <code>greeter("ssup")</code> will print "hello ssup goodbye";
+   Example: ``greeter("ssup")`` will print "hello ssup goodbye"
 
    -----
    void greeter(string message) {

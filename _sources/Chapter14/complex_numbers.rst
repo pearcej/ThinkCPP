@@ -123,6 +123,7 @@ those kinds of mistakes impossible.
 
 .. activecode:: fourteentwo 
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror' ]
 
    Take a look at the active code below, which demonstrates the separation of
    interface and implementation using classes. In this code, we create a ``Triangle`` 
@@ -154,6 +155,7 @@ those kinds of mistakes impossible.
 
 .. activecode:: fourteenthree 
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror' ]
 
    Now take a look at this second piece of active code. What if we decide we want
    to represent a ``Triangle`` in a different way? Because the way we represent a 

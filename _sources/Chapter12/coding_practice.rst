@@ -7,6 +7,7 @@ Coding Practice
 
         .. activecode:: cp_12_AC_1q
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :practice: T
            
            A pixel is the smallest controllable element of a picture represented on the screen. Images
@@ -25,6 +26,7 @@ Coding Practice
 
         .. activecode:: cp_12_AC_1a
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :optional:
 
            Below is one way to implement the program. We declare the ``Pixel`` struct
@@ -50,6 +52,7 @@ Coding Practice
 
         .. activecode:: cp_12_AC_3q
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :practice: T
 
            Let's print out a ``Pixel``! Write the ``Pixel`` member function ``printPixel``,
@@ -77,6 +80,7 @@ Coding Practice
 
         .. activecode:: cp_12_AC_3a
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :optional:
 
            Below is one way to implement the program. We use the scope resolution
@@ -112,6 +116,7 @@ Coding Practice
 
         .. activecode:: cp_12_AC_5q
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
 
            Somebody photobombed our image! What if we wanted to crop the photobomber out?
            Let's write the ``Image`` member function ``cropImage``, which takes four paramenters,
@@ -169,6 +174,7 @@ Coding Practice
 
         .. activecode:: cp_12_AC_5a
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
 
            Below is one way to implement the program. First we make a new matrix
            with the correct amount of rows. Then we push back the pixels we want 
@@ -243,6 +249,7 @@ Coding Practice
 
         .. activecode:: cp_12_AC_7q
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
 
            When you take a selfie on your phone, the image is mirrored. 
            We can do the same to an image by flipping it horizontally.
@@ -321,6 +328,7 @@ Coding Practice
 
         .. activecode:: cp_12_AC_7a
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
 
            Below is one way to implement the program. We loop through
            each row in the matrix. We create start and end indices and
@@ -414,6 +422,7 @@ Coding Practice
 
         .. activecode:: cp_12_AC_9q
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
 
            Let's write the ``Image`` member function called ``createBorder``,
            which sets the ``Pixel``\s on the edge of an ``Image`` to a given
@@ -518,6 +527,7 @@ Coding Practice
 
         .. activecode:: cp_12_AC_9a
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
 
            Below is one way to implement the program. We set the first and last 
            row and first and last column of ``Pixel``\s in the ``Image`` to the 

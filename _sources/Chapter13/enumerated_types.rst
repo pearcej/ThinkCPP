@@ -64,6 +64,7 @@ integers:
 
 .. activecode:: enum_type_AC_1 
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror' ]
    
    The active code below uses the enumerated types created above to construct ``Card`` objects.  
    Feel free to modify the values that the cards are being initialized to in the constructor:  this will 

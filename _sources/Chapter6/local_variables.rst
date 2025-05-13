@@ -31,7 +31,7 @@ different values, and changing one does not affect the other.
 
 Notice that the value of the parameter ``n`` in ``printMultiples`` has
 to be the same as the value of ``i`` in ``printMultTable``. On the other
-hand, the value of ``i`` in ``printMultiple`` goes from 1 up to ``n``.
+hand, the value of ``i`` in ``printMultiples`` goes from 1 up to ``n``.
 In the diagram, it happens to be 3. The next time through the loop it
 will be 4.
 
@@ -44,15 +44,15 @@ to read.
 
 .. mchoice:: local_variables_1
    :multiple_answers:
-   :answer_a: Yes, we cannot output the value of i outside of the for loop.
-   :answer_b: Yes, we cannot output anything before the for loop.
-   :answer_c: Yes, we cannot reassign i to 10 outside of the for loop.
-   :answer_d: Yes, we cannot let i start at 1 in the for loop.
+   :answer_a: Yes, we cannot output the value of j outside of the loop.
+   :answer_b: Yes, we cannot output anything before the loop.
+   :answer_c: Yes, we cannot reassign j to 20 outside of the loop.
+   :answer_d: Yes, we cannot let i start at 1 in the loop.
    :answer_e: No, there are no issues with the code below.
    :correct: a, c
-   :feedback_a: The scope of i is restricted to the for loop, so we cannot change the value of i outside of the for loop.
+   :feedback_a: The scope of i is restricted to the loop, so we cannot change the value of i outside of the loop.
    :feedback_b: This is allowed.
-   :feedback_c: The scope of i is restricted to the for loop, so we cannot output the value of i outside of the for loop.
+   :feedback_c: The scope of i is restricted to the loop, so we cannot output the value of i outside of the loop.
    :feedback_d: We are allowed to initialize i to any value.
    :feedback_e: There are issues with the code. Can you find them?
 
@@ -64,20 +64,24 @@ to read.
     using namespace std;
 
     int main() {
-      cout << "Let's print some numbers." << endl;
-      for (int i = 1; i < 10; ++i) {
-        cout << i << "! ";
+      cout << "Let's print the multiples of 2." << endl;
+      int i = 1;
+      while (i < 10) {
+        int j = i * 2;
+        cout << i << ": " << j << endl;
+        i++;
       }
       i = 10;
-      cout << i << "!";
+      j = 20;
+      cout << i << ": " << j << "!";
     }
 
 .. mchoice:: local_variables_2
-   :answer_a: True
-   :answer_b: False
+   :answer_a: Yes
+   :answer_b: No
    :correct: b
-   :feedback_a: They are two different variables in two different scopes but they do have the same name.
-   :feedback_b: Yes, they are not the same variable.
+   :feedback_a: They are two different variables in two different scopes, but they do have the same name.
+   :feedback_b: Correct! They are not the same variable.
 
 
    Take a look at the code below. Is the ``i`` in ``printMultiples`` the same variable as the ``i`` in ``printMultTable``?
@@ -109,37 +113,43 @@ to read.
     }
 
 .. mchoice:: local_variables_3
-   :answer_a: True
-   :answer_b: False
-   :correct: b
-   :feedback_a: The scope of ``j`` does not include ``printMultiples`` function.
-   :feedback_b: Yes, ``j`` is not accessable as the value is merely passes from one function to another. We cannot have a statement such as j++; in ``printMultiples`` as it is out of the scope of ``printMultTable``
+             
+    Take a look at the code below. Is the variable ``j`` accessable  in the function ``printMultiples``?
+    
+    .. code-block:: cpp
+
+        #include <iostream>
+        using namespace std;
+
+        void printMultiples (int n) {
+          int i = 1;
+          while (i <= 6) {
+            cout << n * i << '\t';
+            i = i + 1;
+          }
+          cout << endl;
+        }
+
+        void printMultTable() {
+          int j = 1;
+          while (j <= 6) {
+            printMultiples (j);
+            j = j + 1;
+          }
+        }
+
+        int main() {
+          printMultTable();
+        }
 
 
-   Take a look at the code below. Is the variable ``j`` accessable  in the function ``printMultiples``?
-   .. code-block:: cpp
+    - Yes
 
-    #include <iostream>
-    using namespace std;
+      - The scope of ``j`` does not include ``printMultiples`` function.
 
-    void printMultiples (int n) {
-      int i = 1;
-      while (i <= 6) {
-        cout << n * i << '\t';
-        i = i + 1;
-      }
-      cout << endl;
-    }
+    - No
 
-    void printMultTable() {
-      int j = 1;
-      while (j <= 6) {
-        printMultiples (j);
-        j = j + 1;
-      }
-    }
+      + Correct! ``j`` is not accessable as the value is merely passes from one function to another. We cannot have a statement such as j++; in ``printMultiples`` as it is out of the scope of ``printMultTable``
 
-    int main() {
-      printMultTable();
-    }
+
 

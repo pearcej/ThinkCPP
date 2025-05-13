@@ -1,0 +1,243 @@
+<?xml version="1.0"?>
+<section xml:id="chapter14_a-function-on-complex-numbers">
+  <title>A function on <c>Complex</c> numbers</title>
+  <p>A natural operation we might want to perform on complex numbers is
+    addition. If the numbers are in Cartesian coordinates, addition is easy:
+    you just add the real parts together and the imaginary parts together.
+    If the numbers are in polar coordinates, it is easiest to convert them
+    to Cartesian coordinates and then add them.</p>
+  <p>Again, it is easy to deal with these cases if we use the accessor
+    functions:</p>
+  <program>Complex add (Complex&amp; a, Complex&amp; b)
+{
+  double real = a.getReal() + b.getReal();
+  double imag = a.getImag() + b.getImag();
+  Complex sum (real, imag);
+  return sum;
+}</program>
+  <p>Notice that the arguments to <c>add</c> are not <c>const</c> because they might be modified when we
+    invoke the accessors. To invoke this function, we would pass both operands as arguments:</p>
+  <program>Complex c1 (2.0, 3.0);
+Complex c2 (3.0, 4.0);
+
+Complex sum = add (c1, c2);
+sum.printCartesian();</program>
+  <p>The output of this program is</p>
+  <console><output>5 + 7i</output></console>
+  <exercise label="fourteenseven">
+    <statement>
+      <p>This active code uses the <c>add</c> function for <c>Complex</c> objects. As an exercise, write the <c>subtract</c>
+        function for <c>Complex</c> objects in the commented area of the active code. If you get stuck, you
+        can reveal the hint below for help. Once you are finished, feel free to modify the code and
+        experiment around!</p>
+    </statement>
+    <program xml:id="fourteenseven_editor"
+             interactive="activecode"
+             line-numbers="yes">
+      <code><![CDATA[
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+class Complex
+{
+  double real, imag;
+  double mag, theta;
+  bool cartesian, polar;
+
+public:
+  Complex();
+  Complex(double r, double i);
+  void calculateCartesian();
+  double getReal();
+  double getImag();
+  void calculatePolar();
+  double getMag();
+  double getTheta();
+  void printCartesian();
+  void printPolar();
+};
+
+Complex add (Complex& a, Complex& b);
+Complex subtract (Complex& a, Complex& b) {
+  // ``subtract`` should subtract b from a and return
+  // the difference of the two ``Complex`` objects.
+  // Delete the existing code and write your implementation here.
+  Complex c (0,0); return c;
+}
+
+int main() {
+  Complex c1 (2.0, 3.0);
+  Complex c2 (3.0, 4.0);
+  Complex sum = add (c1, c2);
+  sum.printCartesian();
+
+  // Difference should be 1 + 1i
+  Complex diff = subtract(c2, c1);
+  diff.printCartesian();
+}
+        ]]></code>
+      <tests>
+Complex::Complex() { cartesian = false;  polar = false; }
+
+Complex::Complex(double r, double i) {
+  real = r;  imag = i;
+  cartesian = true;  polar = false;
+}
+
+void Complex::calculateCartesian() {
+  real = mag * cos (theta);
+  imag = mag * sin (theta);
+  cartesian = true;
+}
+
+double Complex::getReal() {
+  if (cartesian == false) calculateCartesian();
+  return real;
+}
+
+double Complex::getImag() {
+  if (cartesian == false) calculateCartesian();
+  return imag;
+}
+
+void Complex::calculatePolar() {
+  mag = sqrt(pow(real, 2) + pow(imag, 2));
+  theta = atan(imag / real);
+  polar = true;
+}
+
+double Complex::getMag() {
+  if (polar == false) {
+    calculatePolar();
+  }
+  return mag;
+}
+
+double Complex::getTheta() {
+  if (polar == false) {
+    calculatePolar();
+  }
+  return theta;
+}
+
+void Complex::printCartesian() {
+  cout &lt;&lt; getReal() &lt;&lt; " + " &lt;&lt; getImag() &lt;&lt; "i" &lt;&lt; endl;
+}
+
+void Complex::printPolar() {
+  cout &lt;&lt; getMag() &lt;&lt; " e^ " &lt;&lt; getTheta() &lt;&lt; "i" &lt;&lt; endl;
+}
+
+Complex add (Complex&amp; a, Complex&amp; b) {
+  double real = a.getReal() + b.getReal();
+  double imag = a.getImag() + b.getImag();
+  Complex sum (real, imag);
+  return sum;
+}
+</tests>
+    </program>
+    <hint>
+      <title>subtract</title>
+      <activity label="question14_6_1"
+                numbered="yes"
+                adaptive="yes"
+                indentation="hide">
+        <statement>
+          <p>Let's write the code for the <c>subtract</c> function, which should return the difference of
+            two <c>Complex</c> objects.</p>
+        </statement>
+        <blocks>
+          <block order="2">
+            <choice correct="yes">
+              <cline>Complex subtract (Complex&amp; a, Complex&amp; b) {</cline>
+            </choice>
+            <choice>
+              <cline>Complex subtract (Complex&amp; a) {                         </cline>
+            </choice>
+          </block>
+          <block order="4">
+            <choice correct="yes">
+              <cline>   double real = a.getReal() - b.getReal();</cline>
+            </choice>
+            <choice>
+              <cline>   double real = a.getReal() + b.getReal();                         </cline>
+            </choice>
+          </block>
+          <block order="8">
+            <cline>   double imag = a.getImag() - b.getImag();</cline>
+          </block>
+          <block order="6">
+            <choice correct="yes">
+              <cline>   Complex diff (real, imag);</cline>
+            </choice>
+            <choice>
+              <cline>   Complex diff (imag, real);                         </cline>
+            </choice>
+          </block>
+          <block order="3">
+            <choice correct="yes">
+              <cline>   return diff;</cline>
+              <cline>}</cline>
+            </choice>
+            <choice>
+              <cline>   return sum;                         </cline>
+              <cline>}</cline>
+            </choice>
+          </block>
+        </blocks>
+      </activity>
+    </hint>
+  </exercise>
+  <exercise label="question14_6_2">
+    <statement>
+      <p>What is the correct output of the code below?</p>
+      <program line-numbers="yes">
+        <code>
+int main() {
+  Complex c1 (2.5, 1.3);
+  Complex c2 (3.9, 4.4);
+  Complex c3 (9.5, 7.6);
+  Complex sum = add (c1, c2);
+  Complex diff = subtract(c3, sum);
+  diff.printCartesian();
+}
+</code>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>3.1i + 1.9i</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! Try using the active code above.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>1.9i + 3.1</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! Try using the active code above.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>3.0 + 1.9i</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! Try using the active code above.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>3.1 + 1.9i</p>
+        </statement>
+        <feedback>
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

@@ -160,7 +160,7 @@ the program and locate syntax errors.
    =====
     cout << endl; // second endl
    =====
-    cout << "Crakcle!" << endl;
+    cout << "Crackle!" << endl;
    =====
     cout << endl; // third endl
    =====

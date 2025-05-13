@@ -11,10 +11,11 @@ Coding Practice
 
         .. activecode:: cp_7_AC_1q
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :practice: T
 
            #include <iostream>
-           #include "ctype.h"
+           #include <cctype>
            using namespace std;
 
            bool isPalindrome (string input) {
@@ -40,15 +41,16 @@ Coding Practice
 
         .. activecode:: cp_7_AC_1a
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :optional:
 
            #include <iostream>
-           #include "ctype.h"
+           #include <cctype>
            using namespace std;
 
            bool isPalindrome (string input) {
-               int front = 0;
-               int back = input.length() - 1;
+               size_t front = 0;
+               size_t back = input.length() - 1;
                while (front < back) {
                    while (!isalpha(input[front])) {
                        front++;
@@ -94,6 +96,7 @@ Coding Practice
 
         .. activecode:: cp_7_AC_3q
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :practice: T
 
            #include <iostream>
@@ -116,16 +119,17 @@ Coding Practice
 
         .. activecode:: cp_7_AC_3a
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :optional:
 
            #include <iostream>
            using namespace std;
 
            void censorWord(string input, string word) {
-               int length = word.length();
-               while ((int)input.find(word) != -1) {
+               size_t length = word.length();
+               while (input.find(word) != string::npos) {
                    int index = input.find(word);
-                   int i = 0;
+                   size_t i = 0;
                    while (i < length) {
                        input[index + i] = '*';
                        i++;
@@ -156,10 +160,11 @@ Coding Practice
 
         .. activecode:: cp_7_AC_5q
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :practice: T
 
            #include <iostream>
-           #include "ctype.h"
+           #include <cctype>
            using namespace std;
 
            string ROT13 (string input) {
@@ -189,15 +194,16 @@ Coding Practice
 
         .. activecode:: cp_7_AC_5a
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :optional:
 
            #include <iostream>
-           #include "ctype.h"
+           #include <cctype>
            using namespace std;
 
            string ROT13(string input) {
-               int n = 0;
-               while (n < (int)input.length()) {
+               size_t n = 0;
+               while (n < input.length()) {
                    if (isalpha(input[n])) {
                        if ((input[n] >= 'a' && input[n] < 'n') || (input[n] >= 'A' && input[n] < 'N')) {
                            input[n] = input[n] + 13;
@@ -237,10 +243,11 @@ Coding Practice
 
         .. activecode:: cp_7_AC_7q
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :practice: T
 
            #include <iostream>
-           #include "ctype.h"
+           #include <cctype>
            using namespace std;
 
            string capitalize (string input) {
@@ -261,15 +268,16 @@ Coding Practice
 
         .. activecode:: cp_7_AC_7a
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :optional:
 
            #include <iostream>
-           #include "ctype.h"
+           #include <cctype>
            using namespace std;
 
            string capitalize (string input) {
-               int n = 0;
-               while (n < (int)input.length()) {
+               size_t n = 0;
+               while (n < input.length()) {
                    if (n == 0) {
                        input[n] = toupper(input[n]);
                    }
@@ -300,6 +308,7 @@ Coding Practice
 
         .. activecode:: cp_7_AC_9q
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :practice: T
 
            #include <iostream>
@@ -330,18 +339,19 @@ Coding Practice
 
         .. activecode:: cp_7_AC_9a
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :optional:
 
            #include <iostream>
            using namespace std;
 
            string longestWord (string input) {
-               int n = 0;
+               size_t n = 0;
                string longest;
-               int maxLength = 0;
-               while (n < (int)input.length()) {
-                   int wordLength = 0;
-                   while (input[n] != ' ' && n < (int)input.length()) {
+               size_t maxLength = 0;
+               while (n < input.length()) {
+                   size_t wordLength = 0;
+                   while (input[n] != ' ' && n < input.length()) {
                        wordLength++;
                        n++;
                    }

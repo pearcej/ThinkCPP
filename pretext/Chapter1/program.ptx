@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<section xml:id="chapter1_what-is-a-program">
+  <title>What is a Program?</title>
+  <p>A <term>program</term> is a sequence of instructions that specifies
+    how to perform a computation. The computation might be something mathematical, like solving a
+    system of equations or finding the roots of a polynomial, but it can also be a symbolic
+    computation, like searching and replacing text in a document or (strangely enough) compiling a
+    program.</p>
+  <p>The instructions (or commands, or statements) look different in
+    different programming languages, but there are a few basic functions
+    that appear in just about every language:</p>
+  <dl>
+    <li>
+      <title>input:</title>
+      <p>Get data from the keyboard, or a file, or some other device.</p>
+    </li>
+    <li>
+      <title>output:</title>
+      <p>Display data on the screen or send data to a file or other device.</p>
+    </li>
+    <li>
+      <title>math:</title>
+      <p>Perform basic mathematical operations like addition and
+        multiplication.</p>
+    </li>
+    <li>
+      <title>testing:</title>
+      <p>Check for certain conditions and execute the appropriate sequence of
+        statements.</p>
+    </li>
+    <li>
+      <title>repetition:</title>
+      <p>Perform some action repeatedly, usually with some variation.</p>
+    </li>
+  </dl>
+  <p>Believe it or not, that's pretty much all there is to it. Every program
+    you've ever used, no matter how complicated, is made up of functions
+    that look more or less like these. Thus, one way to describe programming
+    is the process of breaking a large, complex task up into smaller and
+    smaller subtasks until eventually the subtasks are simple enough to be
+    performed with one of these simple functions.</p>
+  <exercise label="program_1">
+    <statement>
+      <p>A(n) <var/> is a series of instructions that are used to perform
+        a computation. 
+      </p>
+    </statement>
+    <setup>
+      <var case="insensitive">
+        <condition string="^\s*program\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Try again!</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="program_2">
+    <statement>
+      <p>Match each term to an example of it.</p>
+    </statement>
+    <feedback>
+      <p>Try again!</p>
+    </feedback>
+    <matches>
+      <match order="1">
+        <premise>input</premise>
+        <response>the program user enters a few ordered pairs when prompted in the terminal</response>
+      </match>
+      <match order="2">
+        <premise>output</premise>
+        <response>the calculated distances are saved to a file</response>
+      </match>
+      <match order="3">
+        <premise>math</premise>
+        <response>the program calculates the distance between two ordered pairs</response>
+      </match>
+      <match order="4">
+        <premise>testing</premise>
+        <response>the program makes sure that the calculated distance is non-negative</response>
+      </match>
+      <match order="5">
+        <premise>repetition</premise>
+        <response>the program continues executing as long as there are more data points to compute
+          distance</response>
+      </match>
+    </matches>
+  </exercise>
+</section>

@@ -1,4 +1,11 @@
+pavement.py
+build
+published
+__pycache__
+output
+.error_schema.log
+logs
 
-pavement.py
-pavement.py
-pavement.py
+# at least temporarily, ignore stuff the CLI makes for github codespaces
+.devcontainer.json
+.github

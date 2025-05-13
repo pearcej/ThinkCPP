@@ -4,8 +4,8 @@ Encapsulation and generalization
 Encapsulation usually means taking a piece of code and wrapping it up in
 a function, allowing you to take advantage of all the things functions
 are good for. We have seen two examples of encapsulation, when we wrote
-``printParity`` in Section `[alternative] <#alternative>`__ and
-``isSingleDigit`` in Section `[bool] <#bool>`__.
+``printParity`` in :numref:`alternative` and
+``isSingleDigit`` in :numref:`bool`.
 
 Generalization means taking something specific, like printing multiples
 of 2, and making it more general, like printing the multiples of any

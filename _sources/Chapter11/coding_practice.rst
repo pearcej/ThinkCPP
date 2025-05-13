@@ -7,6 +7,7 @@ Coding Practice
 
         .. activecode:: cp_11_AC_1q
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :practice: T
 
            Write the ``Cake`` structure, which has instance variables name, weight and member function has_icing function that returns a bool. Use the ``Cake`` object initialised below to invoke the has_icing function.
@@ -26,6 +27,7 @@ Coding Practice
 
         .. activecode:: cp_11_AC_1a
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :optional:
 
            Below is one way to implement the program. We declare the ``Cake`` struct and list the instance
@@ -51,6 +53,7 @@ Coding Practice
 
         .. activecode:: cp_11_AC_2q
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :practice: T
 
            The ``Cake`` structure has instance variables name, weight and member function has_icing. Write the has_icing function which returns true when the weight is greater than 10.
@@ -75,6 +78,7 @@ Coding Practice
 
         .. activecode:: cp_9_AC_2a
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :optional:
 
            Below is one way to implement the program.
@@ -107,6 +111,7 @@ Coding Practice
 
         .. activecode:: cp_11_AC_3q
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :practice: T
 
            Create the ``Music`` structure, with member variables num_sold and year, and member functions ``sold`` and ``is_new``. The ``sold`` function should print twice the num_sold while the ``is_new`` function should return true if the year is greater than 2012.
@@ -127,6 +132,7 @@ Coding Practice
 
         .. activecode:: cp_11_AC_3a
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :optional:
            
            Below is one way to implement the program.
@@ -164,6 +170,7 @@ Coding Practice
 
         .. activecode:: cp_11_AC_4q
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :practice: T
            
            Create the ``Music`` structure, with member variables num_sold and year, and member function ``latest``. The ``latest`` function operates on two ``Music`` objects, and returns true if the current object's year is greater than the other's.
@@ -186,6 +193,7 @@ Coding Practice
 
         .. activecode:: cp_11_AC_4a
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :optional:
 
            Below is one way to implement the program.
@@ -220,6 +228,7 @@ Coding Practice
 
         .. activecode:: cp_11_AC_5q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Write the function ``printInfo``, which prints the music album's information in the format
             "This is a ``artist``, ``year`` album with/without featured artists." If ``artist`` has the value "n/a", ``printInfo`` prints out "Unknown ``artist``! Your album is from ``year``."
@@ -246,6 +255,7 @@ Coding Practice
 
         .. activecode:: cp_11_AC_5a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
             :optional:
 
             Below is one way to implement the program.
@@ -286,6 +296,7 @@ Coding Practice
 
         .. activecode:: cp_11_AC_6q
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :practice: T
 
            The ``Music`` structure has instance variables name, weight and member function has_icing. Write the has_icing function which returns true when the weight is greater than 10.
@@ -310,6 +321,7 @@ Coding Practice
 
         .. activecode:: cp_11_AC_6a
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :optional:
 
            Below is one way to implement the program.
@@ -342,6 +354,7 @@ Coding Practice
 
         .. activecode:: cp_11_AC_7q
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :practice: T
 
            Write the ``Pants`` structure, which has instance variables size and material. Also write a constructor for ``Pants`` that would be called when p1 is declred. The constructor sets the size to L and material to cotton.
@@ -363,6 +376,7 @@ Coding Practice
 
         .. activecode:: cp_11_AC_7a
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :optional:
 
            Below is one way to implement the program. We declare the ``Pants`` struct and list the instance
@@ -393,6 +407,7 @@ Coding Practice
             
         .. activecode:: cp_11_AC_8q
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :practice: T
 
            Implement 2 constructors for the struct ``Book``, which has the instance variables name and publish_year. One should be a default constructor  that sets name to N/A and publish_year to 0. The other constructor should take arguments
@@ -422,6 +437,7 @@ Coding Practice
 
         .. activecode:: cp_11_AC_8a
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :optional:
 
            Below is one way to implement the program.
@@ -458,6 +474,7 @@ Coding Practice
             
         .. activecode:: cp_11_AC_9q
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :practice: T
 
            Implement the struct ``Book`` as would appear in the Book.h header file and the following necessary statement in main.cpp in order for thr program to run
@@ -486,6 +503,7 @@ Coding Practice
 
         .. activecode:: cp_11_AC_9a
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :optional:
 
            Below is one way to implement the program.
@@ -517,6 +535,7 @@ Coding Practice
 
         .. activecode:: cp_11_AC_10q
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :practice: T
 
            Implement the struct ``Instrument`` struct along with 2 constructors for the same (default and one that takes parameters). ``Instrument`` has the instance variables name, year_made and function is_popular(). The default constructor sets name to guitar and year_made to 2000.
@@ -536,6 +555,7 @@ Coding Practice
 
         .. activecode:: cp_11_AC_10a
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :optional:
 
            Below is one way to implement the program.

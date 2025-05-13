@@ -62,6 +62,7 @@ The output of this program is
 
 .. activecode:: fourteeneight
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror' ]
 
    The active code below uses the ``mult`` and ``setPolar`` functions.
    Feel free to modify the code and experiment around!
@@ -214,6 +215,7 @@ that we get the right answer!
 
 .. activecode:: fourteennine
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror' ]
 
    Now let's try implementing the ``setCartesian`` function. Write your 
    implementation in the commented area of the active code below.
@@ -260,7 +262,7 @@ that we get the right answer!
      Complex c2 (3.0, 4.0);
      Complex product = mult (c1, c2);
      product.printCartesian();
-     // Should output 2 + 2.7i
+     // Should output 1.5 + 2.7i
      product.setCartesian(1.5, 2.7);
      product.printCartesian();
    }

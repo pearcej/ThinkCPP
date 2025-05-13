@@ -1,0 +1,241 @@
+<?xml version="1.0"?>
+<section xml:id="chapter3_programs-with-multiple-functions">
+  <title>Programs with Multiple Functions</title>
+  <p>When you look at a class definition that contains several functions, it is tempting to read it
+    from top to bottom, but that is likely to be confusing, because that is not the <term>order of
+    execution</term> of the program.</p>
+  <note>
+    <p>The order of execution is not necessarily the order in which functions are defined! For
+      example, the last function that you write might be the first one that you call in the <c>main</c>
+      function.</p>
+  </note>
+  <p>Execution always begins at the first statement of <c>main</c>, regardless of where it is in the
+    program** (often it is at the bottom). Statements are executed one at a time, in order, until
+    you reach a function call. Function calls are like a detour in the flow of execution. Instead of
+    going to the next statement, you go to the first line of the called function, execute all the
+    statements there, and then come back and pick up again where you left off.</p>
+  <p>That sounds simple enough, except that you have to remember that one function can call another.
+    Thus, while we are in the middle of <c>main</c>, we might have to go off and execute the statements
+    in <c>threeLine</c>. But while we are executing <c>threeLine</c>, we get interrupted three times to go off and
+    execute <c>newLine</c>.</p>
+  <p>Fortunately, C++ is adept at keeping track of where it is, so each time <c>newLine</c> completes, the
+    program picks up where it left off in <c>threeLine</c>, and eventually gets back to <c>main</c> so the
+    program can terminate.</p>
+  <activity label="multiple_functions_AC_1">
+    <statement>
+      <p>This program calls the multiplyTwo and addTwo functions in the
+        main. Follow the order of execution using the Codelens.</p>
+    </statement>
+    <program label="multiple_functions_AC_1_editor"
+             interactive="codelens"
+             line-numbers="yes">
+      <code><![CDATA[
+#include <iostream>
+using namespace std;
+
+void printTotal(int x) {
+    cout << x << endl;
+}
+
+int multiplyTwo(int x) {
+    int total = x * 2;
+    printTotal(total);
+    return total;
+}
+
+int addTwo(int x) {
+    int total = x + 2;
+    return total;
+}
+
+int main() {
+    int num = 3;
+    int newNum = multiplyTwo(num);
+    int newerNum = addTwo(newNum);
+    printTotal(newerNum);
+    return 0;
+}
+        ]]></code>
+    </program>
+  </activity>
+  <p>What's the moral of this sordid tale? When you read a program, don't read from top to bottom.
+    Instead, <term>follow the flow of execution</term>.</p>
+  <exercise label="multiple_fun_1">
+    <statement>
+      <p>Match the function to the order it is executed in the program above.</p>
+    </statement>
+    <feedback>
+      <p>Try again!</p>
+    </feedback>
+    <matches>
+      <match order="1">
+        <premise>multiplyTwo </premise>
+        <response> executes second</response>
+      </match>
+      <match order="2">
+        <premise>printTotal </premise>
+        <response> executes third</response>
+      </match>
+      <match order="3">
+        <premise>main </premise>
+        <response> executes first</response>
+      </match>
+      <match order="4">
+        <premise>addTwo </premise>
+        <response> executes last</response>
+      </match>
+    </matches>
+  </exercise>
+  <exercise label="multiple_fun_2">
+    <statement>
+      <p>Consider the following C++ code. Note that line numbers are included
+        on the left.</p>
+      <program line-numbers="yes">
+        <code><![CDATA[
+#include <iostream>
+using namespace std;
+
+void newLine() {
+  cout << endl;
+}
+
+void threeLine() {
+  newLine ();
+  newLine ();
+  newLine ();
+}
+
+int main() {
+  cout << "First Line." << endl;
+  threeLine ();
+  cout << "Second Line." << endl;
+  return 0;
+}
+]]></code>
+      </program>
+      <p>Which of the following reflects the order in which these functions
+        are executed in C++?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement id="multiple_fun_2_opt_a">
+          <p>
+            <c>newLine, threeLine, main</c>
+          </p>
+        </statement>
+        <feedback id="multiple_fun_2_opt_a">
+          <p>Remember to follow the order of execution, which is not necessarily the order the
+            program is written.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="multiple_fun_2_opt_b">
+          <p>
+            <c>newLine, threeLine, newLine, newLine, newLine, main</c>
+          </p>
+        </statement>
+        <feedback id="multiple_fun_2_opt_b">
+          <p>Remember to follow the order of execution, which is not necessarily the order the
+            program is written.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="multiple_fun_2_opt_c">
+          <p>
+            <c>main, threeLine, newLine, newLine, newLine</c>
+          </p>
+        </statement>
+        <feedback id="multiple_fun_2_opt_c">
+          <p>Execution begins in the main, then functions are executed as they are called.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="multiple_fun_2_opt_d">
+          <p>
+            <c>main, threeLine</c>
+          </p>
+        </statement>
+        <feedback id="multiple_fun_2_opt_d">
+          <p>Note that <c>newLine</c> is called inside of <c>threeLine</c>.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="multiple_fun_3">
+    <statement>
+      <p>Consider the following C++ code.</p>
+      <program line-numbers="yes">
+        <code><![CDATA[
+#include <iostream>
+using namespace std;
+
+void yo() {
+  cout << "yo, ";
+}
+
+void hello() {
+  cout << "hello, ";
+  yo();
+  yo();
+}
+
+void goodbye() {
+  yo();
+  hello();
+  cout << "goodbye,";
+}
+
+int main() {
+  cout << "welcome, ";
+  goodbye();
+  return 0;
+}
+]]></code>
+      </program>
+      <p>What is printed when the code is executed?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement id="multiple_fun_3_opt_a">
+          <p>
+            <q>welcome, yo, hello, goodbye,</q>
+          </p>
+        </statement>
+        <feedback id="multiple_fun_3_opt_a">
+          <p>take into account <c>hello</c> also calls <c>yo</c> .</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="multiple_fun_3_opt_b">
+          <p>
+            <q>welcome, goodbye,</q>
+          </p>
+        </statement>
+        <feedback id="multiple_fun_3_opt_b">
+          <p><c>goodbye</c> calls other functions that print output as well.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="multiple_fun_3_opt_c">
+          <p>
+            <q>welcome, yo, hello, yo, yo, goodbye,</q>
+          </p>
+        </statement>
+        <feedback id="multiple_fun_3_opt_c">
+          <p>The order of calls and composition of <c>yo</c> in <c>hello</c> and both of those in <c>goodbye</c>
+            produce this output.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="multiple_fun_3_opt_d">
+          <p>
+            <q>yo, hello, yo, yo, goodbye,</q>
+          </p>
+        </statement>
+        <feedback id="multiple_fun_3_opt_d">
+          <p>Note that the <c>main</c> also prints something directly.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

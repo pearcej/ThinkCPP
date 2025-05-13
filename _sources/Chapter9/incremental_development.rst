@@ -65,6 +65,7 @@ are convinced, we can use these functions to rewrite ``addTime``:
 
 .. activecode:: incremental_development_AC_1
   :language: cpp
+  :compileargs: [ '-Wall', '-Werror' ]
 
   The active code below uses the ``convertToSeconds`` and ``makeTime`` functions.
   ~~~~
@@ -115,6 +116,7 @@ way.
 
 .. activecode:: incremental_development_AC_2
   :language: cpp
+  :compileargs: [ '-Wall', '-Werror' ]
 
   Write your implementation of ``increment`` in the commented area of the active 
   code below. If you get stuck, you can reveal the extra problem at the end for help. 

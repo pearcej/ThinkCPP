@@ -20,25 +20,23 @@ The values in squiggly braces get assigned to the instance variables of
 the structure one by one, in order. So in this case, ``x`` gets the
 first value and ``y`` gets the second.
 
-Unfortunately, this syntax can be used only in an initialization, not in
-an assignment statement. So the following is illegal.
+This syntax can also be used in an assignment statement. So the following is legal.
 
 ::
 
      Point blank;
-     blank = { 3.0, 4.0 };       // WRONG !!
+     blank = { 3.0, 4.0 };
 
-You might wonder why this perfectly reasonable statement should be
-illegal; I’m not sure, but I think the problem is that the compiler
-doesn’t know what type the right hand side should be. If you add a
-typecast:
+
+Before C++11 (2011), a cast was required for assignment. This form of
+assignment was written like the following. Both forms are supported in
+modern compilers.
 
 ::
 
      Point blank;
      blank = (Point){ 3.0, 4.0 };
 
-That works.
 
 It is legal to assign one structure to another. For example:
 
@@ -58,16 +56,17 @@ The output of this program is ``3, 4``.
     :click-incorrect:int main() {:endclick:
         :click-incorrect:Point blank = { 3.0, 4.0 };:endclick:
         :click-incorrect:Point hello;:endclick:
-        :click-correct:hello = { 3.0, 4.0 };:endclick:
-        :click-incorrect:Point new;:endclick:
+        :click-incorrect:hello = { 3.0, 4.0 };:endclick:
+        :click-incorrect:Point beep;:endclick:
         :click-incorrect:Point p = hello;:endclick:
-        :click-incorrect:new = (Point){3.0, 4.0};:endclick:
-        :click-correct:bool check = blank == new;:endclick:
-        :click-correct:new = {3.0, 4.0};:endclick:
+        :click-incorrect:beep = (Point){3.0, 4.0};:endclick:
+        :click-correct:bool check = blank == beep;:endclick:
+        :click-incorrect:beep = {3.0, 4.0};:endclick:
     }
 
 .. parsonsprob:: operations_structures_2
    :numbered: left
+   :language: c++
    :adaptive:
 
    Construct a block of code that correctly initializes the instance variables of a structure.
@@ -84,11 +83,11 @@ The output of this program is ``3, 4``.
    =====
        int blank; #distractor
    =====
-       blank = (Point){ 12.0, 3.2 };
+       blank = { 12.0, 3.2 };
    =====
-       blank = (Point){ 12.0, 3.2 } #distractor
+       blank = { 12.0, 3.2 }               #distractor
    =====
-       blank = { 12.0, 3.2 }; #distractor
+       blank = 12.0, 3.2;                  #distractor
    =====
    }
 

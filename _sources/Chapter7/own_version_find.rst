@@ -9,12 +9,12 @@ function.
 
 ::
 
-   int find (string s, char c, int i) {
+   size_t find (string s, char c, size_t i) {
      while (i < s.length()) {
        if (s[i] == c) return i;
        i = i + 1;
      }
-     return -1;
+     return string::npos;
    }
 
 Instead of invoking this function on an ``string``, like the first
@@ -33,35 +33,26 @@ the index where we should start.
   #include <iostream>
   using namespace std;
 
-  int find (string s, char c, int i) {
-      int length = s.length();
+  size_t find (string s, char c, size_t i) {
+      size_t length = s.length();
       while (i < length) {
           if (s[i] == c) {
               return i;
           }
           i = i + 1;
       }
-      return -1;
+      return string::npos;
   }
 
   int main() {
       string dog = "German Shepard";
-      int start_shepard = 7;
+      size_t start_shepard = 7;
       cout << find(dog, 'e', start_shepard) << endl;
       cout << dog.find('e') << endl;
   }
 
 .. mchoice:: own_version_find_1
    :practice: T
-   :answer_a: 13, -1, 8
-   :answer_b: 13, 0, 7
-   :answer_c: 13, -1, 0
-   :answer_d: 14, -1, 9
-   :correct: a
-   :feedback_a: Notice how the built-in find function works differently from ours.
-   :feedback_b: Remember that when a character isn't found, the function returns -1.
-   :feedback_c: Keep in mind that the find function is case sensitive, so "A" is different from "a".
-   :feedback_d: Remember that indexing begins at 0 for C++.
 
    What is the correct output of the code below?
 
@@ -71,3 +62,19 @@ the index where we should start.
         string quote = "The way to get started is to quit talking and begin doing.";
         cout << find(quote, 't', 11) << ", " << find(quote, 't', 42) << ", " << quote.find('t');
       }
+
+   - 13, ``string::npos``, 8
+     
+     + Notice how the built-in ``find`` function works differently from ours.
+
+   - 13, 0, 7
+
+     - Remember that when a character isn't found, the function returns ``string::npos``.
+
+   - 13, ``string::npos``, 0
+
+     - Keep in mind that the find function is case sensitive, so 'A' is different from 'a'.
+
+   - 14, ``string::npos``, 9
+
+     - Remember that indexing begins at 0 for C++.

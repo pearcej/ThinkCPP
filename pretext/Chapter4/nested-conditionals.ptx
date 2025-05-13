@@ -1,0 +1,237 @@
+<?xml version="1.0"?>
+<section xml:id="chapter4_nested-conditionals">
+  <title>Nested Conditionals</title>
+  <p>In addition to chaining, you can also nest one conditional within
+    another. We could have written the previous example as:</p>
+  <listing label="nested_conditionals_AC_1">
+    <caption>
+      This program classifies a number (x) as positive, negative, or zero,
+        just like the program on the previous page. However, this time, we are
+        using nested conditionals.
+    </caption>
+    <program xml:id="nested_conditionals_AC_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
+      <code><![CDATA[
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x = 9;
+    if (x == 0) {
+        cout << "x is zero" << endl;
+    }
+    else {
+        if (x > 0) {
+            cout << "x is positive" << endl;
+        }
+        else {
+            cout << "x is negative" << endl;
+        }
+    }
+    return 0;
+
+}
+        ]]></code>
+    </program>
+  </listing>
+  <p>There is now an outer conditional that contains two branches. The first
+    branch contains a simple output statement, but the second branch
+    contains another if statement, which has two branches of its own.
+    Fortunately, those two branches are both output statements, although
+    they could have been conditional statements as well.</p>
+  <note>
+    <p>There is not a limit to the number of times you can nest a conditional.
+      However, you should try to limit this number, as it will reduce the
+      complexity of your program structure.</p>
+  </note>
+  <p>Notice again that indentation helps make the structure apparent, but
+    nevertheless, nested conditionals get difficult to read very quickly. In
+    general, it is a good idea to avoid them when you can.</p>
+  <p>On the other hand, this kind of <term>nested structure</term> is common, and we will see it
+    again, so you better get used to it.</p>
+  <exercise label="nested_conditionals_1">
+    <statement>
+      <p>What will print?</p>
+      <program>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+  int x = 0;
+  if (x == 0) {
+    cout &lt;&lt; "Hey!" &lt;&lt; endl;
+  }
+  else {
+    if (x &gt; 0) {
+      cout &lt;&lt; "Hi!" &lt;&lt; endl;
+    }
+    else {
+      cout &lt;&lt; "Hello!" &lt;&lt; endl;
+    }
+  }
+  return 0;
+}</program>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>Hey!</p>
+        </statement>
+        <feedback>
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Hi!</p>
+        </statement>
+        <feedback>
+          <p>Remember that the program would only enter the "else" if x was not equal to 0.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Hello!</p>
+        </statement>
+        <feedback>
+          <p>Remember that the program would only enter the "else" if x was not equal to 0.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Nothing will print.</p>
+        </statement>
+        <feedback>
+          <p>Only one of the condtionals will execute, but something will print, regardless of which
+            one it is.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="nested_conditionals_2">
+    <statement>
+      <p>What will print?</p>
+      <program>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+  int x = -4;
+  if (x == 0) {
+    cout &lt;&lt; "Hey!" &lt;&lt; endl;
+  }
+  else {
+    if (x &gt; 0) {
+      cout &lt;&lt; "Hi!" &lt;&lt; endl;
+    }
+    else {
+      cout &lt;&lt; "Hello!" &lt;&lt; endl;
+    }
+  }
+  return 0;
+}</program>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>Hey!</p>
+        </statement>
+        <feedback>
+          <p>Remember that the program would only enter the first "if" if x was equal to 0.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Hi!</p>
+        </statement>
+        <feedback>
+          <p>Remember that the program would only enter the nested "if" if x was greater than 0.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Hello!</p>
+        </statement>
+        <feedback>
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Nothing will print.</p>
+        </statement>
+        <feedback>
+          <p>Only one of the condtionals will execute, but something will print, regardless of which
+            one it is.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="nested_conditionals_3">
+    <statement>
+      <p>Your school uses a system to arrange students in a large stadium using their initials. Look
+        at the function definition below. Where would a student with the initials <q>MZ</q> be
+        seated?</p>
+      <program>string seatingArrangement(char first, char last) {
+  if (last &gt; m) {
+    if (first &gt; m) {
+      return "Back Left!";
+    }
+    else {
+      return "Back Right!";
+    }
+  }
+  else {
+    if (first &gt; m) {
+      return "Front Left!";
+    }
+    else {
+      return "Front Right!";
+    }
+  }
+}</program>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>Back Left!</p>
+        </statement>
+        <feedback>
+          <p>Remember that the &gt; opearator is not inclusive.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Back Right!</p>
+        </statement>
+        <feedback>
+          <p>z &gt; m is true, and m &gt; m is false, so a student with these initials would be
+            seated in the back right.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Front Left!</p>
+        </statement>
+        <feedback>
+          <p>z &gt; m is true because z comes after m. Also, the &gt; opearator is not inclusive.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Front Right!</p>
+        </statement>
+        <feedback>
+          <p>z &gt; m is true because z comes after m.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Error!</p>
+        </statement>
+        <feedback>
+          <p>Character comparisons are legal, and useful in this case!</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

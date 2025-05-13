@@ -291,7 +291,7 @@ Answer the following **Multiple Choice** questions to assess what you have learn
         int fizzBuzz (const vector<int> & vec, int num1, int num2) {
             int count = 0;
             for (size_t i = 0; i < vec.size(); i++) {
-                if (vec[i]/num1 == 0 && vec[i]/num2 == 0) {
+                if (vec[i] % num1 == 0 && vec[i] % num2 == 0) {
                     count++;
                 }
             }

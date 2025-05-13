@@ -40,6 +40,7 @@ object.
 
 .. activecode:: one_last_example_AC_1
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror' ]
 
    Feel free to try out the ``add`` function in the active code below!
    ~~~~

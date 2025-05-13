@@ -22,7 +22,8 @@ then vector function ``push_back`` for that purpose.
    
    int main() {
      vector<int> values;
-     int c, i, len;
+     int c, i;
+     size_t len;
      cin >> c;
 
      while (c != -1) {
@@ -37,6 +38,7 @@ then vector function ``push_back`` for that purpose.
 
 .. activecode:: vector_functions_AC_1
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror' ]
 
    The active code below uses the ``push_back`` function to add 
    even numbers less than or equal to 10 to the vector ``values``.
@@ -88,16 +90,16 @@ then vector function ``push_back`` for that purpose.
    :numbered: left
    :adaptive:
 
-   Construct the <code>make_even</code> function that loops through vec, adds 1 to any elements
+   Construct the ``make_even`` function that loops through ``vec``, adds 1 to any elements
    that are odd, and returns the new vector.
    -----
-   vector&#60;int&#62; make_even(vector&#60;int&#62; vec) {
+   vector&lt;int&gt; make_even(vector&lt;int&gt; vec) {
    =====
-   void make_even(vector&#60;int&#62; vec) {                         #paired
+   void make_even(vector&lt;int&gt; vec) {                         #paired
    =====
-      for (size_t i = 0; i &#60; vec.size(); i++) {
+      for (size_t i = 0; i &lt; vec.size(); i++) {
    =====
-      for (int i = 0; i &#60; vec.size(); i++) {                         #paired
+      for (int i = 0; i &lt; vec.size(); i++) {                         #paired
    =====
          if (vec[i] % 2 == 1) {
    =====
@@ -113,9 +115,8 @@ then vector function ``push_back`` for that purpose.
             vec[i] -= 1;
          }
    =====
-      return vec;
-   =====
       }
+      return vec;
    }
 
 .. mchoice:: vector_functions_3

@@ -163,17 +163,26 @@ doesn’t change, so there is no reason to recompile it.
    What is a header file?
 
 .. mchoice:: header_files_2
-   :answer_a: #include <header.h>
-   :answer_b: #include <"header.h">
-   :answer_c: #include header.h
-   :answer_d: #include "header.h"
-   :correct: d
-   :feedback_a: Incorrect! This is how we include standard library headers.
-   :feedback_b: Incorrect! You should get rid of those brackets!
-   :feedback_c: Incorrect! You're missing quotes!
-   :feedback_d: Correct!
+
 
    If I have defined a structure in ``header.h``, how would I include it in the implementation file?
+
+   - ``#include <header.h>``
+
+     - Incorrect! This is how we include standard library headers.
+
+   - ``#include <"header.h">``
+
+     - Incorrect! You should get rid of those brackets!
+
+   - ``#include header.h``
+
+     - Incorrect! You're missing quotes!
+
+   - ``#include "header.h"``
+
+     + Correct!
+
 
 .. mchoice:: header_files_3
    :answer_a: Files can be compiled separately and linked to a single program later.

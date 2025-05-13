@@ -4,7 +4,7 @@
 Now that we have a ``Deck`` object, it makes sense to put all the
 functions that pertain to ``Deck``\ s in the ``Deck`` structure
 definition. Looking at the functions we have written so far, one obvious
-candidate is ``printDeck`` (Section `[printdeck] <#printdeck>`__).
+candidate is ``printDeck`` (:numref:`printdeck`).
 Here’s how it looks, rewritten as a ``Deck`` member function:
 
 ::
@@ -20,6 +20,7 @@ without using dot notation.
 
 .. activecode:: deck_members_AC_1
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror' ]
 
    The active code below prints out the deck of cards like in the previous section. Notice we can just use ``deck.print ()``
    to print out the deck instead of writing a for loop in main.
@@ -209,6 +210,7 @@ One solution is to declare ``Deck`` before ``Card`` and then define
 
 .. activecode:: deck_members_AC_2
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror' ]
 
    The active code below uses the ``find`` function that we just wrote.
    ~~~~

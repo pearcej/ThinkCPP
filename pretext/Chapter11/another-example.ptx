@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<section xml:id="chapter11_another-example">
+  <title>Another example</title>
+  <p>Let's convert <c>increment</c> to a member function. Again, we are going to transform one of the
+    parameters into the implicit parameter called <c>this</c>. Then we can go through the function and
+    make all the variable accesses implicit.</p>
+  <program>void Time::increment(double secs) {
+  second += secs;
+
+  while (second &gt;= 60.0) {
+    second -= 60.0;
+    minute += 1;
+  }
+  while (minute &gt;= 60) {
+    minute -= 60.0;
+    hour += 1;
+  }
+}</program>
+  <p>By the way, remember that this is not the most efficient implementation of this function. If
+    you didn't do it back in <xref ref="chapter9_time"/>, you should write
+    a more efficient version now.</p>
+  <p>To declare the function, we can just copy the first line into the
+    structure definition:</p>
+  <program>struct Time {
+  int hour, minute;
+  double second;
+
+  print();
+  increment(double secs);
+};</program>
+  <p>And again, to call it, we have to invoke it on a <c>Time</c> object:</p>
+  <program>Time currentTime = { 9, 14, 30.0 };
+currentTime.increment (500.0);
+currentTime.print();</program>
+  <p>The output of this program is <c>9:22:50</c>.</p>
+  <listing label="another_example_AC_1">
+    <caption>
+      Feel free to change the input and experiment around with the active
+        code below!
+    </caption>
+    <program xml:id="another_example_AC_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
+      <code><![CDATA[
+#include <iostream>
+using namespace std;
+
+struct Time {
+    int hour, minute;
+    double second;
+    void print();
+    void increment(double secs);
+};
+
+int main() {
+    Time currentTime = { 9, 14, 30.0 };
+    currentTime.increment (500.0);
+    currentTime.print();
+}
+
+        ]]></code>
+      <tests>
+void Time::print() {
+  cout &lt;&lt; hour &lt;&lt; ":" &lt;&lt; minute &lt;&lt; ":" &lt;&lt; second &lt;&lt; endl;
+}
+
+void Time::increment(double secs) {
+  second += secs;
+  while (second &gt;= 60.0) {
+    second -= 60.0;
+    minute += 1;
+  }
+  while (minute &gt;= 60) {
+    minute -= 60.0;
+    hour += 1;
+  }
+}
+</tests>
+    </program>
+  </listing>
+  <exercise label="another_example_1">
+    <statement>
+      <p>Suppose we have previously declared <c>Time currentTime = {9, 14, 30.0}</c>. What should be printed by <c>time.print()</c> after
+        calling <c>time.increment(645.0)</c>? Type your response in the form <term>hh:mm:ss</term>. 
+      </p>
+      <p><var/></p>
+    </statement>
+    <setup>
+      <var case="insensitive">
+        <condition string="^\s*(9:25:15)|(09:25:15)\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Incorrect! Try plugging the given input into the active code above!</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="another_example_2">
+    <statement>
+      <p>When we call a member function, we <var/> the function on the data structure. </p>
+    </statement>
+    <setup>
+      <var case="insensitive">
+        <condition string="^\s*invoke\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Incorrect! Try reading the past few pages again!</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="another_example_3"
+            numbered="yes"
+            adaptive="yes"
+            indentation="hide">
+    <statement>
+      <p>Create the <c>Cat</c> object with member functions <c>make_noise</c> and <c>catch_mouse</c>. The <c>make_noise</c> function
+        should print different noises depending on the cat's mood. The <c>catch_mouse</c> function returns true
+        if the product of the cat's weight and age is less than twice the speed of the mouse. Write
+        the functions in the same order they appear inside the structure. Use implicit variable
+        access.</p>
+    </statement>
+    <blocks>
+      <block order="6">
+        <cline>struct Cat {</cline>
+      </block>
+      <block order="12">
+        <cline> int age, weight;</cline>
+        <cline> string mood;</cline>
+      </block>
+      <block order="8">
+        <cline> void make_noise();</cline>
+        <cline> bool catch_mouse(int speed);</cline>
+      </block>
+      <block order="10">
+        <cline>};</cline>
+      </block>
+      <block order="3">
+        <cline>void Cat::make_noise() {</cline>
+      </block>
+      <block order="4"
+             correct="no">
+        <cline> Cat cat = *this;                         </cline>
+      </block>
+      <block order="1">
+        <choice correct="yes">
+          <cline> if (mood == "happy") {</cline>
+          <cline><![CDATA[   cout << "purrr" << endl;]]></cline>
+          <cline> }</cline>
+          <cline> else {</cline>
+          <cline><![CDATA[   cout << "MEOW" << endl;]]></cline>
+          <cline> }</cline>
+        </choice>
+        <choice>
+          <cline> if (cat.mood == "happy") {                         </cline>
+          <cline><![CDATA[  cout << "purrr" << endl;]]></cline>
+          <cline> }</cline>
+          <cline> else {</cline>
+          <cline><![CDATA[   cout << "MEOW" << endl;]]></cline>
+          <cline> }</cline>
+        </choice>
+      </block>
+      <block order="7">
+        <cline>}</cline>
+      </block>
+      <block order="14"
+             correct="no">
+        <cline> Cat cat = *this;                         </cline>
+      </block>
+      <block order="2">
+        <cline>bool Cat::catch_mouse(int speed) {</cline>
+      </block>
+      <block order="5">
+        <cline> if (speed * 2 &gt; age * weight) {</cline>
+        <cline>   return true;</cline>
+        <cline> }</cline>
+        <cline> return false;</cline>
+        <cline>}</cline>
+      </block>
+      <block order="9"
+             correct="no">
+        <cline> if (cat.speed * 2 &gt; age * weight) {                          </cline>
+        <cline>   return true;</cline>
+        <cline> }</cline>
+        <cline> return false;</cline>
+        <cline>}</cline>
+      </block>
+      <block order="11"
+             correct="no">
+        <cline><![CDATA[ if (speed * 2 < age * weight) {                         ]]></cline>
+        <cline>   return true;</cline>
+        <cline> }</cline>
+        <cline> return false;</cline>
+        <cline>}</cline>
+      </block>
+    </blocks>
+  </exercise>
+</section>

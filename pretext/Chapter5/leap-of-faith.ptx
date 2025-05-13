@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<section xml:id="chapter5_leap-of-faith">
+  <title>Leap of faith</title>
+  <p>Following the flow of execution is one way to read programs, but as you saw in the previous
+    section, it can quickly become labarynthine. An alternative is what I call the <q>leap of faith.</q></p>
+  <note>
+    <p>When you come to a function call, instead of following the flow of execution, you <em>assume</em>
+      that the function works correctly and returns the appropriate value. This is the <term>leap of
+      faith</term>.</p>
+  </note>
+  <p>In fact, you are already practicing this leap of faith when you use
+    built-in functions. When you call <c>cos</c> or <c>exp</c>, you don't examine the
+    implementations of those functions. You just assume that they work,
+    because the people who wrote the built-in libraries were good
+    programmers.</p>
+  <p>Well, the same is true when you call one of your own functions. For example, in <xref ref="chapter5_bool-functions-bool"/> we wrote a
+    function called <c>isSingleDigit</c> that determines whether a number is between 0 and 9.
+    Once we have convinced ourselves that this function is correct&#x2014;by testing and examination
+    of the code&#x2014;we can use the function without ever looking at the code again.</p>
+  <p>The same is true of recursive programs. When you get to the recursive call, instead of
+    following the flow of execution, you should <em>assume</em> that the recursive call works
+    (yields the correct result), and then ask yourself, <q>Assuming that I can find the factorial of <m>
+    n-1</m>, can I compute the factorial of <m>n</m>?</q> In this case, it is clear that you can, by
+    multiplying by <m>n</m>.</p>
+  <p>Of course, it is a bit strange to assume that the function works
+    correctly when you have not even finished writing it, but that's why
+    it's called a leap of faith!</p>
+  <exercise label="recursive_leap_1">
+    <statement>
+      <p>Which of the following is an example of the recursive leap of faith?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>Since you can find the factorial of the first 3 numbers in a list, you must also be
+            able to find the factorial of the first 2.</p>
+        </statement>
+        <feedback>
+          <p>There is no leap of faith here. In fact, it's quite flip-flopped.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>You assume that the log function works, without examining the implementation.</p>
+        </statement>
+        <feedback>
+          <p>This is a leap of faith, but it is not recursive.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Since you can take the sum of the first 7 numbers in a list, you assume that you can
+            also take the sum of the first 8.</p>
+        </statement>
+        <feedback>
+          <p>Recursive leaps of faith always assume that the recursive call will work.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>You write a function and assume that it will work.</p>
+        </statement>
+        <feedback>
+          <p>This is a leap of faith, but it is not recursive.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

@@ -20,7 +20,7 @@ seen some features of it:
    correspond to the ways real-world objects interact.
 
 For example, the ``Time`` structure we defined in
-Chapter `[time] <#time>`__ obviously corresponds to the way people
+:numref:`time` obviously corresponds to the way people
 record the time of day, and the operations we defined correspond to the
 sorts of things people do with recorded times. Similarly, the ``Point``
 and ``Rectangle`` structures correspond to the mathematical concept of a
@@ -56,7 +56,7 @@ function differ from the other functions we have written in two ways:
    explicit.
 
 In the next few sections, we will take the functions from
-Chapter `[time] <#time>`__ and transform them into member functions. One
+:numref:`time` and transform them into member functions. One
 thing you should realize is that this transformation is purely
 mechanical; in other words, you can do it just by following a sequence
 of steps.

@@ -81,6 +81,7 @@ in most card games.
 
 .. activecode:: 12_5
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror' ]
 
    Take a look at the active code below, which uses the ``isGreater`` function.
    Feel free to change the values of the cards.

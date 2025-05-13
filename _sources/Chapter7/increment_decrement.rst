@@ -47,8 +47,8 @@ Using the increment operators, we can rewrite the letter-counter:
 
 ::
 
-     int index = 0;
-     while (index < length) {
+     size_t index = 0;
+     while (index < fruit.length()) {
        if (fruit[index] == 'a') {
          count++;
        }
@@ -66,11 +66,10 @@ Using the increment operators, we can rewrite the letter-counter:
 
   int main() {
       string fruit = "banana";
-      int length = fruit.length();
-      int count = 0;
+      size_t count = 0;
 
-      int index = 0;
-      while (index < length) {
+      size_t index = 0;
+      while (index < fruit.length()) {
           if (fruit[index] == 'a') {
               count++;
           }
@@ -90,7 +89,7 @@ warn you. The effect of this statement is to leave the value of
 ``index`` unchanged. This is often a difficult bug to track down.
 
 .. warning::
-   Remember, you can write ``index = index +1;``, or you can write
+   Remember, you can write ``index = index + 1;``, or you can write
    ``index++;``, but you shouldn’t mix them.
 
 .. clickablearea:: increment_decrement_1
@@ -134,11 +133,11 @@ warn you. The effect of this statement is to leave the value of
 
    Print every number from 1-10 in this format: "Number 1". Each number should be on its own line.
    -----
-   int x = 0;
+   int x = 1;
    =====
-   x = 0; #distractor
+   x = 1; #distractor
    =====
-   while (x < 10) {
+   while (x <= 10) {
    =====
        cout << "Number " << x << endl;
    =====

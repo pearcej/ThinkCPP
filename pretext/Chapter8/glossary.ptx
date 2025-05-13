@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<section xml:id="chapter8_glossary">
+  <title>Glossary</title>
+  <dl>
+    <li>
+      <title>structure:</title>
+      <p>A collection of data grouped together and treated as a single object.</p>
+    </li>
+    <li>
+      <title>instance variable:</title>
+      <p>One of the named pieces of data that make up a structure.</p>
+    </li>
+    <li>
+      <title>reference:</title>
+      <p>A value that indicates or refers to a variable or structure. In a
+        state diagram, a reference appears as an arrow.</p>
+    </li>
+    <li>
+      <title>pass by value:</title>
+      <p>A method of parameter-passing in which the value provided as an
+        argument is copied into the corresponding parameter, but the
+        parameter and the argument occupy distinct locations.</p>
+    </li>
+    <li>
+      <title>pass by reference:</title>
+      <p>A method of parameter-passing in which the parameter is a reference
+        to the argument variable. Changes to the parameter also affect the
+        argument variable.</p>
+    </li>
+  </dl>
+  <exercise label="chapter_eight_glossary">
+    <statement>
+      <p>Match the definition to the term.</p>
+    </statement>
+    <feedback>
+      <p>Try again!</p>
+    </feedback>
+    <matches>
+      <match order="1">
+        <premise>structure</premise>
+        <response>A collection of data grouped together and treated as a single object.</response>
+      </match>
+      <match order="2">
+        <premise>instance variable</premise>
+        <response>One of the named pieces of data that make up a structure.</response>
+      </match>
+      <match order="3">
+        <premise>reference</premise>
+        <response>A value that indicates or refers to a variable or structure.</response>
+      </match>
+      <match order="4">
+        <premise>pass by value</premise>
+        <response>A method of parameter-passing in which the value provided as an argument is copied
+          into the corresponding parameter, but the parameter and the argument occupy distinct
+          locations.</response>
+      </match>
+      <match order="5">
+        <premise>pass by reference</premise>
+        <response>A method of parameter-passing in which the parameter is a reference to the
+          argument variable. Changes to the parameter also affect the argument variable.</response>
+      </match>
+    </matches>
+  </exercise>
+</section>

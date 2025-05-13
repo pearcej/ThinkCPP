@@ -231,22 +231,22 @@ Multiple Choice Exercises
     .. code-block:: cpp
 
       struct Student {
-      // Instance variables
-      int age, id;
-      string year;
+        // Instance variables
+        int age, id;
+        string year;
+      
+        // Constructors
+        Student (int age, int id, string year);
+        Student (string year);
 
-      // Constructors
-      Student (int age, int id, string year);
-      Student (string year);
+        // Modifiers
+        void increment (int age);
 
-      // Modifiers
-      void increment (int age);
-
-      // Functions
-      void print () const;
-      bool isJunior (const Student& student2) const;
-      Student add (const Student& s2) const;
-    };
+        // Functions
+        void print () const;
+        bool isJunior (const Student& student2) const;
+        Student add (const Student& s2) const;
+      };
 
     - The Student.cpp file will have the definitions of the member functions.
 

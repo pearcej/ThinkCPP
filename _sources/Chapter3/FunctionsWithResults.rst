@@ -1,3 +1,4 @@
+
 Functions with Results
 ----------------------
 
@@ -26,9 +27,12 @@ up to you to answer the other two questions by trying them out.
 
 .. fillintheblank:: fuwresults_1
 
-   What will be **printed** when the following code runs?
+   What will be **printed** when the following code runs? |blank|
 
-::
+   .. code-block:: cpp
+
+        #include <iostream>
+        using namespace std;
 
         void multiply (int x, int y) {
           cout << x*y;
@@ -40,17 +44,20 @@ up to you to answer the other two questions by trying them out.
           multiply(x,y);
         }
 
-   - :8: 2*4=8 so that will be printed but not returned
+   - :8: Yes! 2*4=8 so that will be printed but not returned
      :.*: Try again!
 
-.. fillintheblank:: fuwresults_2
+.. mchoice:: fuwresults_2
 
    Will the following code compile?
 
-::
+   .. code-block:: cpp
+
+        #include <iostream>
+        using namespace std;
 
         void multiply (int x, int y) {
-          out = x * y
+          cout << x * y << endl;
         }
 
         int main() {
@@ -59,5 +66,10 @@ up to you to answer the other two questions by trying them out.
           cout << multiply(x,y);
         }
 
-   - :No:You can not print the result from a void function
-     :.*: Try again!
+   - Yes
+
+     - Can you print the result of a void function?
+
+   - No
+
+     + Correct! You can't print the result of a void function

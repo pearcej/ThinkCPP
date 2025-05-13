@@ -124,6 +124,7 @@ comes out to roughly n.
 .. activecode:: recursion_AC_2
    :language: cpp
    :caption: Guessing Game.
+   :stdin: 1 2 3 4 5 6 7 8 9 10
 
    You can have a little bit of fun with recursion.  Try this guessing game below!
    ~~~~
@@ -136,22 +137,23 @@ comes out to roughly n.
        cout << "Enter your guess!";
        int guess;
        cin >> guess;
+       cout << "Your guess " << guess << ". ";
        if (guess == num) {
            cout << "That's it!";
        }
        else if (guess > num) {
-           cout << "Too high! ";
+           cout << "Too high! " << endl;
            guessTheNumber(num);
        }
        else {
-           cout << "Too low! ";
+           cout << "Too low! " << endl;
            guessTheNumber(num);
        }
    }
 
    int main() {
        srand((unsigned) time(0));
-       int randomNumber = (rand())%101;
+       int randomNumber = (rand() % 10) + 1;
        guessTheNumber(randomNumber);
    }
 

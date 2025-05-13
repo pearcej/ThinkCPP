@@ -9,6 +9,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: vectors_p1_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Construct a block of code that changes the first element of ``vec`` to a 6,
             multiplies the third element of ``vec`` by 2, and increments the last element 
@@ -24,6 +25,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: vectors_p1_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to construct the code.
             ~~~~
@@ -47,6 +49,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: vectors_p2_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Construct a block of code that creates a vector called ``digs`` whose elements are
             7, 8, 7, 8.  Then access elements to change the ``digs`` to contain the elements
@@ -63,6 +66,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: vectors_p2_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to construct the code. 
             ~~~~
@@ -84,6 +88,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: vectors_p3_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Construct a block of code that creates a vector called ``nums`` whose elements are five ``1``'s.
             Then make a copy of this vector called ``digits``, and use vector operations to change
@@ -99,6 +104,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: vectors_p3_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to construct the code.
             ~~~~
@@ -122,6 +128,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: vectors_p4_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Construct a block of code that loops over a vector called ``numbers``
             and transforms the vector so each element is doubled.
@@ -136,6 +143,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: vectors_p4_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to construct the code.
             ~~~~
@@ -157,6 +165,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: vectors_p5_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Suppose you have the vector ``words``. 
             Construct a block of code that transforms the vector to: ``vector<string> words = {"cAr", "cAt", "switch", "mArio"}``.
@@ -177,6 +186,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: vectors_p5_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to construct the code.
             ~~~~
@@ -204,6 +214,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: vectors_p6_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Suppose you run Club Keno, and you are in charge of picking the 20
             random numbered balls between 1 and 80.  Construct a block of code that
@@ -219,6 +230,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: vectors_p6_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to construct the code
             ~~~~
@@ -242,6 +254,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: vectors_p7_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Suppose you have the defined vector ``album``. Construct a block of code that counts how many songs in ``album`` start with b. Write the necessary code. 
             ~~~~
@@ -260,6 +273,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: vectors_p7_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to construct the code
             ~~~~
@@ -284,6 +298,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: vectors_p8_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Suppose you have the defined vectors, ``temps`` and ``precip``. Your family will go to the beach if the temperature at least 75 degrees and the chance
             of precipitation is less than 50%.  Construct a block of code that counts how many days
@@ -305,6 +320,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: vectors_p8_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to construct the code
             ~~~~
@@ -330,6 +346,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: vectors_p9_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Suppose you have the defined vector ``nouns``. Construct a block of code that creates a vector of the **proper** nouns in ``nouns``.
             Use the ``isupper`` function to check if a letter is uppercase.
@@ -349,6 +366,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: vectors_p9_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to construct the code. For this question, the ``isupper`` function is not defined but it returns a bool determined by an input of a string.
             ~~~~
@@ -373,6 +391,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: vectors_p10_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Suppose you have the already defined ``howMany`` function and ``excl`` vector. Construct a block of code that counts how many times ".", "!", and "?" occur in ``excl``.
             Save the counts to a vector with "." count as the first element, "!" count as the second, and "?" count as the third.
@@ -404,6 +423,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: vector_p10_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to construct the code
             ~~~~

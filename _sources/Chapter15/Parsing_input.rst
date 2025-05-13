@@ -1,7 +1,9 @@
-﻿Parsing input
+﻿.. _parsing:
+
+Parsing input
 -------------
 
-In Section `[formal] <#formal>`__ I defined “parsing” as the process of
+In :numref:`formal` I defined “parsing” as the process of
 analyzing the structure of a sentence in a natural language or a
 statement in a formal language. For example, the compiler has to parse
 your program before it can translate it into machine language.
@@ -118,10 +120,8 @@ we want, but it is a good starting place.
 
 .. fillintheblank:: question15_5_3
 
-    The ``substr()`` takes |blank| |blank| and |blank| as its two arguments.
+    The ``substr()`` takes |blank| and |blank| as its two arguments.
 
-    - :([Ss][Tt][Aa][Rr][Tt][Ii][Nn][Gg]): Correct!
-      :x: Incorrect! Go back and read to find the answer!
     - :([Ii][Nn][Dd][Ee][Xx]): Correct!
       :.*: Incorrect! Go back and read to find the answer!
     - :([Ll][Ee][Nn][Gg][Tt][Hh]): Correct!

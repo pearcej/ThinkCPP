@@ -7,6 +7,7 @@ Coding Practice
 
         .. activecode:: cp_14_AC_2q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             There are errors in the code below. Modify the code so that ``main`` runs
             successfully. Select the Parsonsprob tab for hints for the construction of the code.
@@ -115,6 +116,7 @@ Coding Practice
 
         .. activecode:: cp_14_AC_4q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             In ``main`` create a ``Temp`` object to calculate 
             what 100 degrees Celsius is in Fahrenheit.
@@ -192,6 +194,7 @@ Coding Practice
 
         .. activecode:: cp_14_AC_6q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             What if we had an existing ``vector`` with data that we want to copy
             into our ``MyVector``? Write a constructor that takes a ``vector``
@@ -235,6 +238,7 @@ Coding Practice
 
         .. activecode:: cp_14_AC_8q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Now we can write some of our own fun functions! No longer
             do we need to write ``for`` loops every time we want to
@@ -258,7 +262,7 @@ Coding Practice
                     MyVector() {};
                     MyVector(vector<int> vec);
 
-                    int size();
+                    size_t size();
                     void push_back(int value);
                     void pop_back();
                     int at(int index);
@@ -281,7 +285,7 @@ Coding Practice
                 elements = vec;
             }
 
-            int MyVector::size() { return elements.size(); }
+            size_t MyVector::size() { return elements.size(); }
 
             void MyVector::push_back(int value) { elements.push_back(value); }
 
@@ -326,6 +330,7 @@ Coding Practice
 
         .. activecode:: cp_14_AC_10q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             What if we wanted to return the largest and smallest elements in our
             ``MyVector``? Write the public member functions ``max`` and ``min``
@@ -351,7 +356,7 @@ Coding Practice
                     MyVector() {};
                     MyVector(vector<int> vec);
 
-                    int size();
+                    size_t size();
                     void push_back(int value);
                     void pop_back();
                     int at(int index);
@@ -375,7 +380,7 @@ Coding Practice
                 elements = vec;
             }
 
-            int MyVector::size() { return elements.size(); }
+            size_t MyVector::size() { return elements.size(); }
 
             void MyVector::push_back(int value) { elements.push_back(value); }
 

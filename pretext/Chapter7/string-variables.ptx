@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<section xml:id="chapter7_string-variables">
+  <title><c>string</c> variables</title>
+  <p>You can create a variable with type <c>string</c> in the usual ways.</p>
+  <listing label="string_variables_AC_1">
+    <caption>
+      In this active code, the first line creates a <c>string</c> without giving it a value. The
+        second line assigns it the string value <c>"Hello,"</c>. The third line is a combined declaration
+        and assignment, also called an initialization.
+    </caption>
+    <program xml:id="string_variables_AC_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
+      <code><![CDATA[
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string first;
+    first = "Hello, ";
+    string second = "world.";
+}
+        ]]></code>
+    </program>
+  </listing>
+  <p>Normally when string values like <c>"Hello, "</c> or <c>"world."</c> appear, they are treated as C strings. In
+    this case, when we assign them to an <c>string</c> variable, they are converted automatically to <c>string</c>
+    values.</p>
+  <p>We can output strings in the usual way:</p>
+  <program>
+cout &lt;&lt; first &lt;&lt; second &lt;&lt; endl;
+</program>
+  <note><p>In order to compile this code, you will have to include the header file for the <c>string</c> class.
+    If you are already including <c>iostream</c>, you may get away with not explicitly including <c>string</c>.
+    In some environments, <c>iostream</c> will include <c>string</c> for you. But it is best to explicitly
+    include <c>string</c> if your code relies on it.</p></note>
+  <listing label="string_variables_AC_2">
+    <caption>
+      Run this active code!
+    </caption>
+    <program xml:id="string_variables_AC_2_editor"
+             interactive="activecode"
+             line-numbers="yes">
+      <code><![CDATA[
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string first;
+    first = "Hello, ";
+    string second = "world.";
+    cout << first << second << endl;
+}
+        ]]></code>
+    </program>
+  </listing>
+  <exercise label="string_variables_1"
+            numbered="yes"
+            adaptive="yes"
+            indentation="hide">
+    <statement>
+      <p>Construct a block of code that correctly prints out a string variable.</p>
+    </statement>
+    <blocks>
+      <block order="3">
+        <cline>string x;</cline>
+      </block>
+      <block order="2">
+        <choice correct="yes">
+          <cline>x = "It is cold outside!";</cline>
+        </choice>
+        <choice>
+          <cline>x = It is cold outside;</cline>
+        </choice>
+      </block>
+      <block order="1">
+        <cline>cout &lt;&lt; x &lt;&lt; endl;</cline>
+      </block>
+    </blocks>
+  </exercise>
+  <exercise label="string_variables_2">
+    <statement>
+      <p>How would you initialize a string?</p>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>string x = "Hello";</p>
+        </statement>
+        <feedback>
+          <p>This is the correct way to initialize a string.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>x = "Hello";</p>
+        </statement>
+        <feedback>
+          <p>This is an assignment.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>string x;</p>
+        </statement>
+        <feedback>
+          <p>This is a declaration.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="string_variables_3">
+    <statement>
+      <p>Click on each spot where a string assignment occurs.</p>
+    </statement>
+    <areas>
+      <cline><area correct="no">def main() {</area></cline>
+      <cline>    <area correct="no">string fruit;</area></cline>
+      <cline>    <area correct="yes">fruit = "apple";</area></cline>
+      <cline>    <area correct="yes">fruit = "pear";</area></cline>
+      <cline>    <area correct="no">string flavor;</area></cline>
+      <cline>    <area correct="yes">flavor = "vanilla";</area></cline>
+      <cline>}</cline>
+    </areas>
+  </exercise>
+</section>

@@ -1,0 +1,967 @@
+<exercises xml:id="chapter14_coding-practice">
+  <title>Coding Practice</title>
+  <exercise label="cp_14_1">
+    <statement>
+      <p>Below is the <c>struct</c> definition for <c>Room</c>, which has a length, width, and height. It also
+        has two member functions, <c>calculateArea</c> and <c>calculateVolume</c>. Turn this <c>struct</c> into a <c>class</c> with private
+        member variables.</p>
+    </statement>
+    <program interactive="activecode"
+             xml:id="cp_14_AC_1q">
+        <code>
+#include &lt;iostream&gt;
+using namespace std;
+
+// Turn the struct definition of Room into a class definition.
+struct Room {
+    int length;
+    int width;
+    int height;
+
+    int calculateArea () {
+        return length * width;
+    }
+
+    int calculateVolume () {
+        return length * width * height;
+    }
+};
+        </code>
+    </program>
+    <solution><p>Below is the <c>class</c> definition of <c>Room</c>. As you can see, there isn&#8217;t a big
+      difference between <c>struct</c>s and <c>class</c>es.</p> Below is the class definition of Room. As you
+      can see, there isn&#8217;t a big difference between structs and classes. <program xml:id="cp_14_AC_1a">
+        <code>
+#include &lt;iostream&gt;
+using namespace std;
+
+class Room {
+private:
+    int length;
+    int width;
+    int height;
+
+public:
+    int calculateArea () {
+        return length * width;
+    }
+
+    int calculateVolume () {
+        return length * width * height;
+    }
+};
+        </code>
+    </program>
+    </solution>
+  </exercise>
+
+  <exercise label="cp_14_2_q">
+    <statement>
+      <p>There are errors in the code below. Modify the code so that <c>main</c> runs successfully.
+        Check the hint below for help with the construction of the code.</p>
+
+    </statement>
+    <program interactive="activecode"
+             xml:id="cp_14_AC_2q_editor">
+        <code>
+#include &lt;iostream&gt;
+using namespace std;
+
+class Room {
+private:
+    int length;
+    int width;
+    int height;
+
+public:
+    int calculateArea () {
+        return length * width;
+    }
+
+    int calculateVolume () {
+        return length * width * height;
+    }
+
+    // Add any necessary functions here.
+};
+
+int main() {
+    Room r;
+    r.length = 12;
+    r.width = 14;
+    r.height = 10;
+    cout &lt;&lt; "The room with dimensions " &lt;&lt; r.length ", " &lt;&lt; r.width
+        &lt;&lt; ", and " &lt;&lt; r.height &lt;&lt; " has an area of " &lt;&lt; r.calculateArea()
+        &lt;&lt; " and a volume of " &lt;&lt; r.calculateVolume &lt;&lt; endl;
+}
+        </code>
+    </program>
+    <hint>
+      <activity label="cp_14_AC_2q_pp">
+        <statement>
+          <p>There are errors in the code below. Modify the code so that <c>main</c> runs successfully.
+            Use the lines to construct the code, then go back to complete the Activecode.</p>
+        </statement>
+        <blocks>
+          <block order="14">
+            <cline>class Room {</cline>
+            <cline>private:</cline>
+            <cline> int length;</cline>
+            <cline> int width;</cline>
+            <cline> int height;</cline>
+          </block>
+          <block order="6">
+            <cline>public:</cline>
+            <cline> int calculateArea () {</cline>
+            <cline>  return length * width;</cline>
+            <cline> }</cline>
+          </block>
+          <block order="4">
+            <cline> int calculateVolume () {</cline>
+            <cline>  return length * width * height;</cline>
+            <cline> }</cline>
+          </block>
+          <block order="8">
+            <cline> void setLength (int l) {</cline>
+            <cline>  length = l;</cline>
+            <cline> }</cline>
+          </block>
+          <block order="16">
+            <cline> int getLength () const {</cline>
+            <cline>  return length;</cline>
+            <cline> }</cline>
+          </block>
+          <block order="9">
+            <cline> void setWidth (int w) {</cline>
+            <cline>  width = w;</cline>
+            <cline> }</cline>
+          </block>
+          <block order="3">
+            <cline> int getWidth () const {</cline>
+            <cline>  return width;</cline>
+            <cline> }</cline>
+          </block>
+          <block order="13">
+            <cline> void setHeight (int h) {</cline>
+            <cline>  height = h;</cline>
+            <cline> }</cline>
+          </block>
+          <block order="17">
+            <cline> int getHeight () const {</cline>
+            <cline>  return height;</cline>
+            <cline> }</cline>
+          </block>
+          <block order="2">
+            <cline>};</cline>
+          </block>
+          <block order="15">
+            <cline>int main() {</cline>
+          </block>
+          <block order="12">
+            <cline> Room r;</cline>
+          </block>
+          <block order="11">
+            <cline> r.setLength(12);</cline>
+          </block>
+          <block order="1">
+            <cline> r.setWidth(14);</cline>
+          </block>
+          <block order="5">
+            <cline> r.setHeight(10);</cline>
+          </block>
+          <block order="10">
+            <cline> cout &lt;&lt; "The room with dimensions " &lt;&lt; r.getLength() &lt;&lt; ", " &lt;&lt; r.getWidth()</cline>
+            <cline>  &lt;&lt; ", and " &lt;&lt; r.getHeight() &lt;&lt; " has an area of " &lt;&lt; r.calculateArea()</cline>
+            <cline>  &lt;&lt; " and a volume of " &lt;&lt; r.calculateVolume() &lt;&lt; endl;</cline>
+          </block>
+          <block order="7">
+            <cline>}</cline>
+          </block>
+        </blocks>
+      </activity>
+    </hint>
+  </exercise>
+
+  <exercise label="cp_14_3">
+    <statement>
+      <p>Below is the <c>class</c> definition for <c>Temp</c>. Write the private member functions <c>cToF</c> and <c>fToC</c>,
+        which converts Celsius to Fahrenheit and vice versa and returns the conversion. Update <c>getFahrenheit</c>
+        and so that if <c>is_celsius</c> is true and a user calls <c>getFahrenheit</c>, it will call <c>cToF</c> and return the
+        correct temperature in degrees Fahrenheit. Do the same for <c>getCelsius</c>.</p>
+    </statement>
+    <program interactive="activecode"
+             xml:id="cp_14_AC_3q">
+        <code>
+#include &lt;iostream&gt;
+using namespace std;
+
+class Temp {
+private:
+    double fahrenheit;
+    double celsius;
+    bool is_fahrenheit;
+    bool is_celsius;
+
+    // Write your implementation of cToF here.
+
+    // Write your implementation of fToC here.
+
+public:
+    double getFahrenheit () { return fahrenheit; }
+    double getCelsius () { return celsius; }
+    void setFahrenheit (double f) { fahrenheit = f; is_fahrenheit = true; is_celsius = false; }
+    void setCelsius (double c) { celsius = c; is_celsius = true; is_fahrenheit = false; }
+    void printTemp () {
+        if (is_fahrenheit) {
+            cout &lt;&lt; "It is " &lt;&lt; getFahrenheit() &lt;&lt; " degrees Fahrenheit" &lt;&lt; endl;
+        }
+        else {
+            cout &lt;&lt; "It is " &lt;&lt; getCelsius() &lt;&lt; " degrees Celsius" &lt;&lt; endl;
+        }
+    }
+};
+        </code>
+    </program>
+    <solution><p>Below is one way to implement this. We use the correct conversions in <c>cToF</c> and <c>fToC</c>
+      and then call these functions in <c>getFahrenheit</c> and <c>getCelsius</c> if needed.</p> Below is one way to
+      implement this. We use the correct conversions in cToF and fToC and then call these functions
+      in getFahrenheit and getCelsius if needed. <program xml:id="cp_14_AC_3a">
+        <code>
+#include &lt;iostream&gt;
+using namespace std;
+
+class Temp {
+private:
+    double fahrenheit;
+    double celsius;
+    bool is_fahrenheit;
+    bool is_celsius;
+
+    double cToF() {
+        return celsius * 9/5 + 32;
+    }
+
+    double fToC() {
+        return (fahrenheit - 32) * 5/9;
+    }
+
+public:
+    double getFahrenheit () {
+        if (is_celsius) { return cToF(); }
+        else { return fahrenheit; }
+    }
+    double getCelsius () {
+        if (is_fahrenheit) { return fToC(); }
+        else { return celsius; }
+    }
+    void setFahrenheit (double f) { fahrenheit = f; is_fahrenheit = true; is_celsius = false; }
+    void setCelsius (double c) { celsius = c; is_celsius = true; is_fahrenheit = false; }
+    void printTemp () {
+        if (is_fahrenheit) {
+            cout &lt;&lt; "It is " &lt;&lt; getFahrenheit() &lt;&lt; " degrees Fahrenheit" &lt;&lt; endl;
+        }
+        else {
+            cout &lt;&lt; "It is " &lt;&lt; getCelsius() &lt;&lt; " degrees Celsius" &lt;&lt; endl;
+        }
+    }
+};
+        </code>
+    </program>
+    </solution>
+  </exercise>
+
+  <exercise label="cp_14_4_q">
+    <statement>
+      <p>In <c>main</c> create a <c>Temp</c> object to calculate what 100 degrees Celsius is in Fahrenheit.
+        Check the hint below for help with the construction of the code.</p>
+
+    </statement>
+    <program interactive="activecode"
+             xml:id="cp_14_AC_4q_editor">
+        <code>
+#include &lt;iostream&gt;
+using namespace std;
+
+class Temp {
+private:
+    double fahrenheit;
+    double celsius;
+    bool is_fahrenheit;
+    bool is_celsius;
+
+    double cToF() {
+        return celsius * 9/5 + 32;
+    }
+
+    double fToC() {
+        return (fahrenheit - 32) * 5/9;
+    }
+
+public:
+    double getFahrenheit () {
+        if (is_celsius) { return cToF(); }
+        else { return fahrenheit; }
+    }
+    double getCelsius () {
+        if (is_fahrenheit) { return fToC(); }
+        else { return celsius; }
+    }
+    void setFahrenheit (double f) { fahrenheit = f; is_fahrenheit = true; is_celsius = false; }
+    void setCelsius (double c) { celsius = c; is_celsius = true; is_fahrenheit = false; }
+    void printTemp () {
+        if (is_fahrenheit) {
+            cout &lt;&lt; "It is " &lt;&lt; getFahrenheit() &lt;&lt; " degrees Fahrenheit" &lt;&lt; endl;
+        }
+        else {
+            cout &lt;&lt; "It is " &lt;&lt; getCelsius() &lt;&lt; " degrees Celsius" &lt;&lt; endl;
+        }
+    }
+};
+
+int main() {
+    // Write your code here.
+}
+        </code>
+    </program>
+    <hint>
+      <activity label="cp_14_AC_4q_pp">
+        <statement>
+          <p>In <c>main</c> create a <c>Temp</c> object to calculate what 100 degrees Celsius is in
+            Fahrenheit. Use the lines to construct the code, then go back to complete the Activecode.</p>
+        </statement>
+        <blocks>
+          <block order="5">
+            <cline>int main() {</cline>
+          </block>
+          <block order="4">
+            <cline>    Temp t;</cline>
+          </block>
+          <block order="1">
+            <cline>    t.setCelsius(100);</cline>
+          </block>
+          <block order="6">
+            <cline>    t.setFahrenheit(t.getFahrenheit());</cline>
+          </block>
+          <block order="2">
+            <cline>    t.printTemp();</cline>
+          </block>
+          <block order="3">
+            <cline>}</cline>
+          </block>
+        </blocks>
+      </activity>
+    </hint>
+  </exercise>
+
+  <exercise label="cp_14_5">
+    <statement>
+      <p>We took a look at <c>vector</c>s in chapter 10, where we saw how we could add data to the end of
+        a <c>vector</c> and remove data from the end of a <c>vector</c>. But what if we wanted to add and remove
+        things at the beginning of a <c>vector</c>? Or we wanted to print out a <c>vector</c> without painfully
+        constructing a loop every time? We can create our own <c>MyVector</c> class! Write the <c>MyVector</c>
+        class, which has a <c>vector</c> of <c>int</c>s as a private member variable. Also write the default
+        constructor.</p>
+    </statement>
+    <program interactive="activecode"
+             xml:id="cp_14_AC_5q">
+        <code>
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+// Write the class definition for MyVector here.
+        </code>
+    </program>
+    <solution><p>Below is the <c>class</c> definition of <c>MyVector</c>. We use the <c>public</c> and <c>private</c> keywords
+      to separate public and private members of our class. The default constructor sets size to 0.</p>
+      Below is the class definition of MyVector. We use the public and private keywords to separate
+      public and private members of our class. The default constructor sets size to 0. <program xml:id="cp_14_AC_5a">
+        <code>
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+class MyVector {
+private:
+    vector&lt;int&gt; elements;
+
+public:
+    MyVector() {};
+};
+        </code>
+    </program>
+    </solution>
+  </exercise>
+
+  <exercise label="cp_14_6_q">
+    <statement>
+      <p>What if we had an existing <c>vector</c> with data that we want to copy into our <c>MyVector</c>? Write a
+        constructor that takes a <c>vector</c> and copies the data into the <c>elements</c> vector. Check the hint below for help with the construction of the code.</p>
+
+    </statement>
+    <program interactive="activecode"
+             xml:id="cp_14_AC_6q_editor">
+        <code>
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+class MyVector {
+private:
+    vector&lt;int&gt; elements;
+
+public:
+    MyVector() {};
+    // Write your constructor here.
+};
+        </code>
+    </program>
+    <hint>
+      <activity label="cp_14_AC_6q_pp">
+        <statement>
+          <p>What if we had an existing <c>vector</c> with data that we want to copy into our <c>MyVector</c>?
+            Write a constructor that takes a <c>vector</c> and copies the data into the <c>elements</c> vector.
+            Use the lines to construct the code, then go back to complete the Activecode.</p>
+        </statement>
+        <blocks>
+          <block order="1">
+            <cline>MyVector (vector&lt;int&gt; vec) {</cline>
+          </block>
+          <block order="2">
+            <cline>   elements = vec;</cline>
+          </block>
+          <block order="3">
+            <cline>}</cline>
+          </block>
+        </blocks>
+      </activity>
+    </hint>
+  </exercise>
+
+  <exercise label="cp_14_7">
+    <statement>
+      <p>The reason why we have <c>elements</c> as a private member variable is that people using our <c>MyVector</c>
+        class don&#8217;t need to know how we implemented our class, so we can implement it however
+        we want. This means for functions <c>MyVector</c> has that overlap with functions that <c>vector</c> has,
+        we can just call the same function on our <c>elements</c> vector. Write the <c>MyVector</c> functions <c>size</c>
+        , <c>push_back</c>, <c>pop_back</c>, and <c>at</c>. <c>size</c> returns the size of our <c>MyVector</c>. <c>push_back</c> takes an <c>int</c>
+        and adds it to the end of our <c>MyVector</c>. <c>pop_back</c> removes the last element. <c>at</c> takes an
+        index and returns the data stored at that index. Use existing <c>vector</c> functions to implement
+        these <c>MyVector</c> functions!</p>
+    </statement>
+    <program interactive="activecode"
+             xml:id="cp_14_AC_7q">
+        <code>
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+class MyVector {
+private:
+    vector&lt;int&gt; elements;
+
+public:
+    MyVector() {};
+    MyVector(vector&lt;int&gt; vec);
+
+    // Write the size function here.
+
+    // Write the push_back function here.
+
+    // Write the pop_back function here.
+
+    // Write the at function here.
+};
+
+int main() {
+    vector&lt;int&gt; data = { 2, 4, 1, 5, 2, 6 };
+    MyVector myVec(data);
+    cout &lt;&lt; "The first element is " &lt;&lt; myVec.at(0) &lt;&lt; endl;
+    myVec.pop_back();
+    myVec.pop_back();
+    myVec.push_back(12);
+    cout &lt;&lt; "The size of myVec is " &lt;&lt; myVec.size() &lt;&lt; endl;
+    cout &lt;&lt; "The last three elements are " &lt;&lt; myVec.at(2) &lt;&lt; ", "
+         &lt;&lt; myVec.at(3) &lt;&lt; ", and " &lt;&lt; myVec.at(4) &lt;&lt; endl;
+}
+        </code>
+<tests>
+MyVector::MyVector (vector&lt;int&gt; vec) {
+    elements = vec;
+}
+</tests>
+
+    </program>
+    <solution><p>Below is one way to implement these functions. Since these functions are defined
+      for <c>vector</c>s, we can call them on <c>elements</c>.</p> Below is one way to implement these functions.
+      Since these functions are defined for vectors, we can call them on elements. <program xml:id="cp_14_AC_7a">
+        <code>
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+class MyVector {
+private:
+    vector&lt;int&gt; elements;
+
+public:
+    MyVector() {};
+    MyVector(vector&lt;int&gt; vec);
+
+    size_t size() { return elements.size(); }
+    void push_back(int value) { elements.push_back(value); }
+    void pop_back() { elements.pop_back(); };
+    int at(int index) { return elements[index]; }
+};
+
+int main() {
+    vector&lt;int&gt; data = { 2, 4, 1, 5, 2, 6 };
+    MyVector myVec(data);
+    cout &lt;&lt; "The first element is " &lt;&lt; myVec.at(0) &lt;&lt; endl;
+    myVec.pop_back();
+    myVec.pop_back();
+    myVec.push_back(12);
+    cout &lt;&lt; "The size of myVec is " &lt;&lt; myVec.size() &lt;&lt; endl;
+    cout &lt;&lt; "The last three elements are " &lt;&lt; myVec.at(2) &lt;&lt; ", "
+         &lt;&lt; myVec.at(3) &lt;&lt; ", and " &lt;&lt; myVec.at(4) &lt;&lt; endl;
+}
+        </code>
+<tests>
+MyVector::MyVector (vector&lt;int&gt; vec) {
+    elements = vec;
+}
+</tests>
+
+    </program>
+    </solution>
+  </exercise>
+
+  <exercise label="cp_14_8_q">
+    <statement>
+      <p>Now we can write some of our own fun functions! No longer do we need to write <c>for</c> loops
+        every time we want to print out a <c>vector</c>. With <c>MyVector</c>, we can just call the member
+        function <c>print</c>! Write the <c>MyVector</c> member function <c>print</c>, which prints out the contents
+        of <c>MyVector</c>. For example, if our <c>MyVector</c> contained the elements 2, 5, 1, and 8, <c>print</c>
+        should print out [2, 5, 1, 8] followed by a newline. Check the hint below for help with the construction of the code.</p>
+
+    </statement>
+    <program interactive="activecode"
+             xml:id="cp_14_AC_8q_editor">
+        <code>
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+class MyVector {
+private:
+    vector&lt;int&gt; elements;
+
+public:
+    MyVector() {};
+    MyVector(vector&lt;int&gt; vec);
+
+    size_t size();
+    void push_back(int value);
+    void pop_back();
+    int at(int index);
+
+    // Write your print function here.
+};
+
+int main() {
+    MyVector myVec;
+    myVec.push_back(13);
+    myVec.push_back(2);
+    myVec.push_back(4);
+    myVec.push_back(7);
+    myVec.push_back(9);
+    myVec.push_back(24);
+    myVec.print();
+}
+        </code>
+<tests>
+MyVector::MyVector (vector&lt;int&gt; vec) {
+    elements = vec;
+}
+
+size_t MyVector::size() { return elements.size(); }
+
+void MyVector::push_back(int value) { elements.push_back(value); }
+
+void MyVector::pop_back() { elements.pop_back(); };
+
+int MyVector::at(int index) { return elements[index]; }
+</tests>
+
+    </program>
+    <hint>
+      <activity label="cp_14_AC_8q_pp">
+        <statement>
+          <p>Now we can write some of our own fun functions! No longer do we need to write <c>for</c>
+            loops every time we want to print out a <c>vector</c>. With <c>MyVector</c>, we can just call the
+            member function <c>print</c>! Write the <c>MyVector</c> member function <c>print</c>, which prints out the
+            contents of <c>MyVector</c>. For example, if our <c>MyVector</c> contained the elements 2, 5, 1, and 8, <c>print</c>
+            should print out [2, 5, 1, 8] followed by a newline. Use the lines to construct the
+            code, then go back to complete the Activecode.</p>
+        </statement>
+        <blocks>
+          <block order="5">
+            <cline>void print() {</cline>
+          </block>
+          <block order="7">
+            <cline>   cout &lt;&lt; "[";</cline>
+          </block>
+          <block order="2">
+            <cline>   for (size_t i = 0; i &lt; elements.size() - 1; ++i) {</cline>
+          </block>
+          <block order="4">
+            <cline>       cout &lt;&lt; elements[i] &lt;&lt; ", ";</cline>
+          </block>
+          <block order="3">
+            <cline>   }</cline>
+          </block>
+          <block order="6">
+            <cline>   cout &lt;&lt; elements[elements.size() - 1] &lt;&lt; "]" &lt;&lt; endl;</cline>
+          </block>
+          <block order="1">
+            <cline>}</cline>
+          </block>
+        </blocks>
+      </activity>
+    </hint>
+  </exercise>
+
+  <exercise label="cp_14_9">
+    <statement>
+      <p>Let&#8217;s write the <c>MyVector</c> member function <c>push_front</c> and <c>pop_front</c>. <c>push_front</c> should take a
+        value and add it to the front of our <c>MyVector</c>, and <c>pop_front</c> should remove the first element.</p>
+    </statement>
+    <program interactive="activecode"
+             xml:id="cp_14_AC_9q">
+        <code>
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+class MyVector {
+private:
+    vector&lt;int&gt; elements;
+
+public:
+    MyVector() {};
+    MyVector(vector&lt;int&gt; vec);
+
+    size_t size();
+    void push_back(int value);
+    void pop_back();
+    int at(int index);
+    void print();
+};
+
+// Write your implementation of push_front here.
+
+// Write your implementation of pop_front here.
+
+int main() {
+    vector&lt;int&gt; data = { 2, 14, 5 };
+    MyVector myVec(data);
+    myVec.pop_front();
+    myVec.push_front(5);
+    myVec.push_front(10);
+    cout &lt;&lt; "The new size is " &lt;&lt; myVec.size(); &lt;&lt; endl;
+    myVec.print();
+}
+        </code>
+<tests>
+MyVector::MyVector (vector&lt;int&gt; vec) {
+    elements = vec;
+}
+
+size_t MyVector::size() { return elements.size(); }
+
+void MyVector::push_back(int value) { elements.push_back(value); }
+
+void MyVector::pop_back() { elements.pop_back(); };
+
+int MyVector::at(int index) { return elements[index]; }
+
+void MyVector::print() {
+    cout &lt;&lt; "[";
+    for (size_t i = 0; i &lt; elements.size() - 1; ++i) {
+        cout &lt;&lt; elements[i] &lt;&lt; ", ";
+    }
+    cout &lt;&lt; elements[elements.size() - 1] &lt;&lt; "]" &lt;&lt; endl;
+}
+</tests>
+
+    </program>
+    <solution><p>Below is one way to implement these functions. For push_front,
+        we can create a temporary vector and add the new element to the
+        front before pushing the rest of the old elements to the back.
+        For pop_front, we can shift all elements up by one index and
+        pop the last element off.</p> Below is one way to implement these functions. For push_front,
+      we can create a temporary vector and add the new element to the front before pushing the rest
+      of the old elements to the back. For pop_front, we can shift all elements up by one index and
+      pop the last element off. <program xml:id="cp_14_AC_9a">
+        <code>
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+class MyVector {
+private:
+    vector&lt;int&gt; elements;
+
+public:
+    MyVector() {};
+    MyVector(vector&lt;int&gt; vec);
+
+    size_t size();
+    void push_back(int value);
+    void pop_back();
+    int at(int index);
+    void print();
+};
+
+void MyVector::push_front(int value) {
+    vector&lt;int&gt; temp;
+    temp.push_back(value);
+    for (size_t i = 0; i &lt; elements.size(); ++i) {
+        temp.push_back(elements[i]);
+    }
+    elements = temp;
+}
+
+void MyVector::pop_front() {
+    for (size_t i = 1; i &lt; elements.size(); ++i) {
+        elements[i - 1] = elements[i];
+    }
+    elements.pop_back();
+}
+
+int main() {
+    vector&lt;int&gt; data = { 2, 14, 5 };
+    MyVector myVec(data);
+    myVec.pop_front();
+    myVec.push_front(5);
+    myVec.push_front(10);
+    cout &lt;&lt; "The new size is " &lt;&lt; myVec.size() &lt;&lt; endl;
+    myVec.print();
+}
+        </code>
+<tests>
+MyVector::MyVector (vector&lt;int&gt; vec) {
+    elements = vec;
+}
+
+size_t MyVector::size() { return elements.size(); }
+
+void MyVector::push_back(int value) { elements.push_back(value); }
+
+void MyVector::pop_back() { elements.pop_back(); };
+
+int MyVector::at(int index) { return elements[index]; }
+
+void MyVector::print() {
+    cout &lt;&lt; "[";
+    for (size_t i = 0; i &lt; elements.size() - 1; ++i) {
+        cout &lt;&lt; elements[i] &lt;&lt; ", ";
+    }
+    cout &lt;&lt; elements[elements.size() - 1] &lt;&lt; "]" &lt;&lt; endl;
+}
+</tests>
+
+    </program>
+    </solution>
+  </exercise>
+
+  <exercise label="cp_14_10_q">
+    <statement>
+      <p>What if we wanted to return the largest and smallest elements in our <c>MyVector</c>? Write the
+        public member functions <c>max</c> and <c>min</c> which calls the private member functions <c>findMax</c>
+        and <c>findMin</c>. <c>findMax</c> and <c>findMin</c> return the indices of the max and min values, and <c>max</c>
+        and <c>min</c> call these private member functions and return the max and min values. Check the hint below for help with the construction of the code.</p>
+
+    </statement>
+    <program interactive="activecode"
+             xml:id="cp_14_AC_10q_editor">
+        <code>
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+class MyVector {
+private:
+    vector&lt;int&gt; elements;
+
+    // Write your findMax function here.
+
+    // Write your findMin function here.
+
+public:
+    MyVector() {};
+    MyVector(vector&lt;int&gt; vec);
+
+    size_t size();
+    void push_back(int value);
+    void pop_back();
+    int at(int index);
+    void print();
+    void push_front(int value);
+    void pop_front();
+};
+
+// Write your max function here.
+
+// Write your min function here.
+
+int main() {
+    vector&lt;int&gt; vec = { 8, 1, 5, 87, 23, 64 };
+    MyVector myVec(vec);
+    cout &lt;&lt; "The largest element is " &lt;&lt; myVec.max() &lt;&lt; endl;
+    cout &lt;&lt; "The smallest element is " &lt;&lt; myVec.min() &lt;&lt; endl;
+}
+        </code>
+<tests>
+MyVector::MyVector (vector&lt;int&gt; vec) {
+    elements = vec;
+}
+
+size_t MyVector::size() { return elements.size(); }
+
+void MyVector::push_back(int value) { elements.push_back(value); }
+
+void MyVector::pop_back() { elements.pop_back(); };
+
+int MyVector::at(int index) { return elements[index]; }
+
+void MyVector::print() {
+    cout &lt;&lt; "[";
+    for (size_t i = 0; i &lt; elements.size() - 1; ++i) {
+        cout &lt;&lt; elements[i] &lt;&lt; ", ";
+    }
+    cout &lt;&lt; elements[elements.size() - 1] &lt;&lt; "]" &lt;&lt; endl;
+}
+
+void MyVector::push_front(int value) {
+    vector&lt;int&gt; temp;
+    temp.push_back(value);
+    for (size_t i = 0; i &lt; elements.size(); ++i) {
+        temp.push_back(elements[i]);
+    }
+    elements = temp;
+}
+
+void MyVector::pop_front() {
+    for (size_t i = 1; i &lt; elements.size(); ++i) {
+        elements[i - 1] = elements[i];
+    }
+    elements.pop_back();
+}
+</tests>
+
+    </program>
+    <hint>
+      <activity label="cp_14_AC_10q_pp">
+        <statement>
+          <p>What if we wanted to return the largest and smallest elements in our <c>MyVector</c>? Write the
+            public member functions <c>max</c> and <c>min</c> which calls the private member functions <c>findMax</c>
+            and <c>findMin</c>. <c>findMax</c> and <c>findMin</c> return the indices of the max and min values, and <c>max</c>
+            and <c>min</c> call these private member functions and return the max and min values. Use
+            the lines to construct the code, then go back to complete the Activecode. Be sure to
+            declare the <c>max</c> and <c>min</c> functions in <c>public</c> when you complete the Activecode.</p>
+        </statement>
+        <blocks>
+          <block order="3">
+            <cline>// findMax private member function</cline>
+            <cline>int findMax (vector&lt;int&gt; vec) {</cline>
+          </block>
+          <block order="22">
+            <cline>    int inMax;</cline>
+          </block>
+          <block order="16">
+            <cline>    int max = vec[0];</cline>
+          </block>
+          <block order="25">
+            <cline>    for (size_t i = 0; i &lt; vec.size() - 1; i++) {</cline>
+          </block>
+          <block order="8">
+            <cline>        if (vec[i] &gt; max) {</cline>
+          </block>
+          <block order="18">
+            <cline>            max = vec[i];</cline>
+          </block>
+          <block order="13">
+            <cline>            inMax = i;</cline>
+          </block>
+          <block order="9">
+            <cline>        }</cline>
+          </block>
+          <block order="1">
+            <cline>    }</cline>
+          </block>
+          <block order="4">
+            <cline>    return inMax;</cline>
+          </block>
+          <block order="21">
+            <cline>}</cline>
+          </block>
+          <block order="2">
+            <cline>// findMin private member function</cline>
+            <cline>int findMin (vector&lt;int&gt; vec) {</cline>
+          </block>
+          <block order="20">
+            <cline>    int inMin;</cline>
+          </block>
+          <block order="5">
+            <cline>    int min = vec[0];</cline>
+          </block>
+          <block order="7">
+            <cline>    for (size_t i = 0; i &lt; vec.size(); i++) {</cline>
+          </block>
+          <block order="23">
+            <cline>        if (vec[i] &lt; min) {</cline>
+          </block>
+          <block order="10">
+            <cline>            min = vec[i];</cline>
+          </block>
+          <block order="14">
+            <cline>            inMin = i;</cline>
+          </block>
+          <block order="24">
+            <cline>        }</cline>
+          </block>
+          <block order="17">
+            <cline>    }</cline>
+          </block>
+          <block order="15">
+            <cline>    return inMin;</cline>
+          </block>
+          <block order="28">
+            <cline>}</cline>
+          </block>
+          <block order="11">
+            <cline>// max public member function</cline>
+            <cline>int MyVector::max () {</cline>
+          </block>
+          <block order="27">
+            <cline>    return elements[findMax(elements)];</cline>
+          </block>
+          <block order="26">
+            <cline>}</cline>
+          </block>
+          <block order="19">
+            <cline>// min public member function</cline>
+            <cline>int MyVector::min () {</cline>
+          </block>
+          <block order="6">
+            <cline>    return elements[findMin(elements)];</cline>
+          </block>
+          <block order="12">
+            <cline>}</cline>
+          </block>
+        </blocks>
+      </activity>
+    </hint>
+  </exercise>
+</exercises>

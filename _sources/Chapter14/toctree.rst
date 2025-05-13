@@ -1,3 +1,6 @@
+
+.. _class:
+
 Classes and invariants
 ::::::::::::::::::::::::::::
 

@@ -7,6 +7,7 @@ Coding Practice
 
         .. activecode::  vectors_a2
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Fix the function below so that it returns how many even numbers are in ``nums``.
             Select the Parsonsprob tab for hints for the construction of the code.
@@ -16,7 +17,7 @@ Coding Practice
             using namespace std;
 
             int evenCount (const vector<int> &vec) {
-                for (int i = 0; i < vec.size(); i++) {
+                for (size_t i = 0; i < vec.size(); i++) {
                     if (i % 2 == 0) {
                         count++;
                     }
@@ -45,7 +46,7 @@ Coding Practice
             =====
                 int count; #distractor
             =====
-                for (int i = 0; i < vec.size(); i++) {
+                for (size_t i = 0; i < vec.size(); i++) {
             =====
                     if (vec[i] % 2 == 0) {
             =====
@@ -67,6 +68,7 @@ Coding Practice
 
         .. activecode::  vectors_a4
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Someone could have COVID-19 if their temperature is above 99.9 degrees Fahrenheit.  Finish 
             the code below so that it counts and prints how many students in the class may have been exposed.
@@ -81,7 +83,7 @@ Coding Practice
                 vector<double> temps = {98.6, 97.8, 100.3, 97.2, 98.7, 97.8, 99.8, 96.9, 98.2, 99.1, 99.9};
 
                 int covid_count = 0;
-                for (int i = 0; i < temps.size(); i++) {
+                for (size_t i = 0; i < temps.size(); i++) {
                     
 
                 }
@@ -107,7 +109,7 @@ Coding Practice
             =====
                 int covid_count = 0;
             =====
-                for (int i = 0; i < temps.size(); i++) {
+                for (size_t i = 0; i < temps.size(); i++) {
             =====
                     if (temps[i] > 99.9) {
             =====
@@ -127,6 +129,7 @@ Coding Practice
 
         .. activecode::  vectors_a6
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Write the function ``endsEven`` that takes a vector and removes elements from the end of the vector until
             it ends with an even number. Select the Parsonsprob tab for hints for the construction of the code.
@@ -141,7 +144,7 @@ Coding Practice
             int main() {
                 vector<int> vec{1,2,3,4,5,6,7,7,9};
                 endsEven(vec);
-                for(int unsigned i = 0; i < vec.size(); i++) {
+                for(size_t i = 0; i < vec.size(); i++) {
                     cout << vec[i] << endl;
                 }
             }
@@ -162,7 +165,7 @@ Coding Practice
             =====
                 while (vec.back() % 2 != 0) {
             =====
-                for (int i = 0; i < vec.size(); i++) { #paired
+                for (size_t i = 0; i < vec.size(); i++) { #paired
             =====
                     vec.pop_back();
             =====
@@ -176,6 +179,7 @@ Coding Practice
 
         .. activecode::  vectors_a8
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Write the function ``randomNums`` that takes two integers: ``num`` which is the number of random numbers
             you wish to generate, and ``max``, which is the maximum value of random number you wish to generate.  Your
@@ -194,7 +198,7 @@ Coding Practice
                 int num = 10;
                 int max = 100;
                 randomNums(num,max);
-                for (int i = 0; i < randomNums(num,max).size(); i++) {
+                for (size_t i = 0; i < randomNums(num,max).size(); i++) {
                     cout << randomNums(num,max)[i] << endl;
                 }
             }
@@ -234,6 +238,7 @@ Coding Practice
 
        .. activecode::  vectors_a10
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Write the function ``hundyBundy`` that returns a count of all numbers in the passed vector
             ``vec`` that are divisible by 100. Select the Parsonsprob tab for hints for the construction of the code.
@@ -266,9 +271,9 @@ Coding Practice
             =====
                 int count = 0;
             =====
-                for (int i = 0; i < vec.size(); i++) {
+                for (size_t i = 0; i < vec.size(); i++) {
             =====
-                for (int i = 0; i < count(); i++) { #distractor
+                for (size_t i = 0; i < count(); i++) { #distractor
             =====
                     if (vec[i] % 100 == 0) {
             =====
@@ -288,6 +293,7 @@ Coding Practice
 
         .. activecode::  vectors_a12
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Write the function ``weird_print`` that prints the first half of a vector of integers in reverse order
             and then prints the second half in the order present in the vector.
@@ -324,15 +330,15 @@ Coding Practice
             -----
             void weird_print (vector<int> vec) {
             =====
-                int half = vec.size() / 2;
+                size_t half = vec.size() / 2;
             =====
-                for (int i = vec.size() - 1; i >= half; i--){
+                for (size_t i = vec.size() - 1; i >= half; i--){
             =====
                     cout << vec[i-half] << ' ';
             =====
                 }
             =====
-                for (int h = 0; h < half; h++) {
+                for (size_t h = 0; h < half; h++) {
             =====
                     cout << vec[h + half] << ' ';
             =====

@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<section xml:id="chapter11_a-more-complicated-example">
+  <title>A more complicated example</title>
+  <p>Although the process of transforming functions into member functions is mechanical, there are
+    some oddities. For example, <c>after</c> operates on two <c>Time</c> structures, not just one, and we
+    can't make both of them implicit. Instead, we have to invoke the function on one of them and
+    pass the other as an argument.</p>
+  <p>Inside the function, we can refer to one of the them implicitly, but to
+    access the instance variables of the other we continue to use dot
+    notation.</p>
+  <program>bool Time::after(const Time&amp; time2) const {
+  if (hour &gt; time2.hour) return true;
+  if (hour &lt; time2.hour) return false;
+
+  if (minute &gt; time2.minute) return true;
+  if (minute &lt; time2.minute) return false;
+
+  if (second &gt; time2.second) return true;
+  return false;
+}</program>
+  <p>To invoke this function:</p>
+  <program>if (doneTime.after(currentTime)) {
+  cout &lt;&lt; "The bread will be done after it starts." &lt;&lt; endl;
+}</program>
+  <p>You can almost read the invocation like English: <q>If the done-time is
+      after the current-time, then&#x2026;</q></p>
+  <listing label="more_complicated_example_AC_1">
+    <caption>
+      This active code is another practical example using the <c>after</c> function. Feel free to
+        modify the time that school gets out, and the time that the track meet starts, if you wish!
+    </caption>
+    <program xml:id="more_complicated_example_AC_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
+      <code><![CDATA[
+#include <iostream>
+using namespace std;
+
+struct Time {
+    int hour, minute;
+    double second;
+    bool after(const Time& time2) const;
+};
+
+int main() {
+    Time end_school = { 2, 20, 0.0 };
+    Time track_meet = { 1, 30, 0.0 };
+    if (track_meet.after(end_school)) {
+        cout << "The track meet starts after school is dismissed." << endl;
+    }
+    else {
+        cout << "The track meet starts before school gets out, athletes will get an early dismissal." << endl;
+    }
+}
+
+        ]]></code>
+      <tests>
+
+bool Time::after(const Time&amp; time2) const {
+  if (hour &gt; time2.hour) return true;
+  if (hour &lt; time2.hour) return false;
+
+  if (minute &gt; time2.minute) return true;
+  if (minute &lt; time2.minute) return false;
+
+  if (second &gt; time2.second) return true;
+  return false;
+}
+</tests>
+    </program>
+  </listing>
+  <exercise label="more_complicated_example_1">
+    <statement>
+      <p>Which is/are true about the <c>Time::after</c> member function?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>There is only one Time parameter.</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! There are actually two Time parameters, one of them is implicit.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>The function operates on two Time objects.</p>
+        </statement>
+        <feedback>
+          <p>Correct! There are two Time objects - the implicit one and time2.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>The function is invoked on time2.</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! The function is invoked on the implicit Time object.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>"hour" and "minute" refer to the hour and minute of the implicit Time object.</p>
+        </statement>
+        <feedback>
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="more_complicated_example_2">
+    <statement>
+      <p>In a function that operates on <term>four</term> structures, how many of them are accessed
+        with dot notation?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>One</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! There is One implicit structure.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Two</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! Keep in mind there are 4 structures and 1 is implicit.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Three</p>
+        </statement>
+        <feedback>
+          <p>Correct! There is One implicit structure, and three structures that need to be accessed
+            with dot notation.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Four</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! We shouldn't need to use dot notation for all of them!</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="more_complicated_example_3"
+            numbered="yes"
+            adaptive="yes"
+            indentation="hide">
+    <statement>
+      <p>Create the <c>Dog::is_older()</c> function.
+        This function checks if the current <c>Dog</c> is older than another <c>Dog</c>. The
+        function is invoked on the current <c>Dog</c>.</p>
+    </statement>
+    <blocks>
+      <block order="1">
+        <choice>
+          <cline>bool is_older(const Dog&amp; dog2) const {</cline>
+        </choice>
+        <choice>
+          <cline>bool Dog::is_older(const Dog&amp; dog, const Dog&amp; dog2) {</cline>
+        </choice>
+        <choice correct="yes">
+          <cline>bool Dog::is_older(const Dog&amp; dog2) {</cline>
+        </choice>
+      </block>
+      <block order="8">
+        <choice correct="yes">
+          <cline> if (age &gt; dog2.age) {</cline>
+          <cline>   return true;</cline>
+          <cline> }</cline>
+        </choice>
+        <choice>
+          <cline> if (dog.age &gt; dog2.age) {</cline>
+          <cline>   return true;</cline>
+          <cline> }</cline>
+        </choice>
+      </block>
+      <block order="9">
+        <cline> else {</cline>
+        <cline>   return false;</cline>
+        <cline> }</cline>
+      </block>
+      <block order="5">
+        <choice correct="yes">
+          <cline>}</cline>
+        </choice>
+        <choice>
+          <cline>};</cline>
+        </choice>
+      </block>
+      <block order="7"
+             correct="no">
+        <cline> Dog dog = *this;</cline>
+      </block>
+    </blocks>
+  </exercise>
+</section>

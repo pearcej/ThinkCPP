@@ -25,7 +25,7 @@ modifier:
    parameters, and usually returns ``void``.
 
 fill-in function:
-   A function that takes an “empty” object as a parameter and fills it
+   A function that takes an “empty” object as a parameter and fills in
    its instance variables instead of generating a return value.
 
 algorithm:

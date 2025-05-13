@@ -60,7 +60,7 @@ this all looks like translated into C++:
 
 ::
 
-   int findBisect (const Card& card, const apvector<Card>& deck,
+   int findBisect (const Card& card, const vector<Card>& deck,
                    int low, int high) {
      int mid = (high + low) / 2;
 
@@ -92,7 +92,7 @@ With that line added, the function works correctly:
 
 ::
 
-   int findBisect (const Card& card, const apvector<Card>& deck,
+   int findBisect (const Card& card, const vector<Card>& deck,
                    int low, int high) {
 
      cout << low << ", " << high << endl;
@@ -149,6 +149,7 @@ convince yourself.
 
 .. activecode:: 12_9
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror' ]
 
    The code below searches finds the same card from the same deck we used on the previous page.
    This time, it uses bisection search to locate the card.
@@ -180,7 +181,8 @@ convince yourself.
    int main() {
        vector<Card> deck = buildDeck();
        Card card (3, 6);
-       cout << findBisect(card, deck, 0, 51);
+       // We need to sort from the first card (0) to the last card (size-1)
+       cout << findBisect(card, deck, 0, deck.size() - 1);
    }
 
    ====

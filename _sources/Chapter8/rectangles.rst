@@ -82,6 +82,7 @@ together they make up the first of the three values that go into the new
 
 .. activecode:: rectangles_AC_1
   :language: cpp
+  :compileargs: [ '-Wall', '-Werror' ]
 
   The active code below uses the ``Rectangle`` structure. Feel free to
   modify the code and experiment around!
@@ -105,24 +106,33 @@ together they make up the first of the three values that go into the new
       cout << box.width << endl;
   }
 
+
 .. mchoice:: rectangles_1
    :practice: T
-   :answer_a: double y = corner.box.y;
-   :answer_b: double y = box.corner.y;
-   :answer_c: double y = corner.y;
-   :answer_d: double y = box.y;
-   :correct: b
-   :feedback_a: Try again.
-   :feedback_b: Correct!
-   :feedback_c: Try again.
-   :feedback_d: Try again.
 
    How can you combine these two statements into one?
 
    .. code-block:: cpp
 
       Point temp = box.corner;
-      double x = temp.x;
+      double y = temp.y;
+
+
+   - ``double y = corner.box.y;``
+
+     - Try again.
+
+   - ``double y = box.corner.y;``
+
+     + Correct!
+
+   - ``double y = corner.y;``
+
+     - Try again.
+
+   - ``double y = box.y;``
+
+     - Try again.
 
 
 .. clickablearea:: rectangles_2
@@ -131,7 +141,7 @@ together they make up the first of the three values that go into the new
     :feedback: Re-read the text above and try again.
 
     :click-incorrect:def main() {:endclick:
-        :click-incorrect:Point corner = { 0.0, 0.0 );:endclick:
+        :click-incorrect:Point corner = ( 0.0, 0.0 );:endclick:
         :click-incorrect:Rectangle box = { ( 0.0, 0.0 ), 100.0, 200.0 }:endclick:
         :click-correct:Rectangle box = { { 0.0, 0.0 }, 100.0, 200.0 };:endclick:
         :click-correct:Point corner = { 0.0, 0.0 };:endclick:

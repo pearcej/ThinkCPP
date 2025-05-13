@@ -1,0 +1,270 @@
+<?xml version="1.0"?>
+<section xml:id="chapter4_recursion">
+  <title>Recursion</title>
+  <p>What mentioned in the last chapter is that it is legal for one function to
+    call another, and we have seen several examples of that. I neglected to
+    mention that it is also legal for a function to call itself. It may not
+    be obvious why that is a good thing, but it turns out to be one of the
+    most magical and interesting things a program can do.</p>
+  <note>
+    <p>The process of a function calling itself is called <term>recursion</term>, and such functions
+      are said to be <term>recursive</term>.</p>
+  </note>
+  <p>For example, look at the following function:</p>
+  <program>void countdown(int n) {
+  if (n == 0) {
+    cout &lt;&lt; "Blastoff!" &lt;&lt; endl;
+  }
+  else {
+    cout &lt;&lt; n &lt;&lt; endl;
+    countdown(n - 1);
+  }
+}</program>
+  <p>The name of the function is <c>countdown</c> and it takes a single integer as a parameter. If the
+    parameter is zero, it outputs the word <q>Blastoff.</q> Otherwise, it outputs the parameter and
+    then calls a function named <c>countdown</c> &#x2014;itself&#x2014; passing <c>n - 1</c> as an argument.</p>
+  <activity label="recursion_AC_1">
+    <statement>
+      <p>Watch how the countdown function works when we start with a value
+        of 3.</p>
+    </statement>
+    <program xml:id="recursion_AC_1_editor"
+             interactive="codelens" language="cpp"
+             line-numbers="yes">
+      <code><![CDATA[
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+void countdown(int n) {
+    if (n == 0) {
+        cout << "Blastoff!" << endl;
+    }
+    else {
+        cout << n << endl;
+        countdown(n-1);
+    }
+}
+
+int main() {
+    countdown(3);
+    return 0;
+}
+        ]]></code>
+    </program>
+  </activity>
+  <p>What happens if we call <c>countdown</c> function like this:</p>
+  <blockquote>
+    <p>The execution of <c>countdown</c> begins with <c>n = 3</c>, and since n is not zero, it outputs the value
+      3, and then calls itself&#x2026;</p>
+    <blockquote>
+      <p>The execution of <c>countdown</c> begins with <c>n = 2</c>, and since n is not zero, it outputs the value
+        2, and then calls itself&#x2026;</p>
+      <blockquote>
+        <p>The execution of <c>countdown</c> begins with <c>n = 1</c>, and since n is not zero, it outputs the
+          value 1, and then calls itself&#x2026;</p>
+        <blockquote>
+          <p>The execution of <c>countdown</c> begins with <c>n = 0</c>, and since n is zero, it outputs the word <q>
+            Blastoff!</q> and then returns.</p>
+        </blockquote>
+        <p>The <c>countdown</c> that get <c>n = 1</c> returns.</p>
+      </blockquote>
+      <p>The <c>countdown</c> that get <c>n = 2</c> returns.</p>
+    </blockquote>
+    <p>The <c>countdown</c> that get <c>n = 3</c> returns.</p>
+  </blockquote>
+  <p>And then you're back in <c>main</c> (what a trip). So the total output looks like:</p>
+  <program>3
+2
+1
+Blastoff!</program>
+  <p>As a second example, let's look again at the functions <c>newLine</c> and <c>threeLine</c>.</p>
+  <program>void newLine() {
+  cout &lt;&lt; endl;
+}
+
+void threeLine() {
+  newLine();
+  newLine();
+  newLine();
+}</program>
+  <p>Although these work, they would not be much help if I wanted to output 2
+    newlines, or 4 newlines. A better alternative would be</p>
+  <program>void nLines(int n) {
+  if (n &gt; 0) {
+    cout &lt;&lt; endl;
+    nLines (n - 1);
+  }
+}</program>
+  <p>This program is similar to countdown; as long as n is greater than zero, it outputs one
+    newline, and then calls itself to output <c>n-1</c> additional newlines. Thus, the total number of
+    newlines is <c>1 + (n - 1)</c>, which usually comes out to roughly n.</p>
+  <listing label="recursion_AC_2">
+    <caption>
+      You can have a little bit of fun with recursion. Try this guessing game below!
+    </caption>
+    <program xml:id="recursion_AC_2_editor"
+             interactive="activecode"
+             line-numbers="yes">
+      <code><![CDATA[
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+
+void guessTheNumber(int num) {
+    cout << "Enter your guess!";
+    int guess;
+    cin >> guess;
+    cout << "Your guess " << guess << ". ";
+    if (guess == num) {
+        cout << "That's it!";
+    }
+    else if (guess > num) {
+        cout << "Too high! " << endl;
+        guessTheNumber(num);
+    }
+    else {
+        cout << "Too low! " << endl;
+        guessTheNumber(num);
+    }
+}
+
+int main() {
+    srand((unsigned) time(0));
+    int randomNumber = (rand() % 10) + 1;
+    guessTheNumber(randomNumber);
+}
+        ]]></code>
+        <stdin>1 2 3 4 5 6 7 8 9 10</stdin>
+    </program>
+  </listing>
+  <exercise label="recursion_1">
+    <statement>
+      <p>What will print?</p>
+      <program>#include &lt;iostream&gt;
+using namespace std;
+
+void exclamationPoint(int n) {
+  if (n &gt; 0) {
+    cout &lt;&lt; "!";
+    exclamationPoint (n-1);
+  }
+}
+
+int main() {
+  exclamationPoint(3);
+}</program>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>!</p>
+        </statement>
+        <feedback>
+          <p>The function keeps executing while n is greater than 0.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>!!</p>
+        </statement>
+        <feedback>
+          <p>The function keeps executing while n is greater than 0.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>!!!</p>
+        </statement>
+        <feedback>
+          <p>Correct! First, the program enters the if statement within exclamationPoint because n
+            is greater than 0. Then the function prints a "!" and calls itself again, but with n-1,
+            which is 2. This repeats until n is 0, which is when the program exits the function.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>!!!!</p>
+        </statement>
+        <feedback>
+          <p>The function keeps executing while n is greater than 0. Therefore, when n is 0, it will
+            not print a "!"</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="recursion_2">
+    <statement>
+      <p>What will print?</p>
+      <program>#include &lt;iostream&gt;
+using namespace std;
+
+void exclamationPoint(int n) {
+  if (n &gt; 0) {
+    cout &lt;&lt; "!";
+    exclamationPoint (n-1);
+  }
+}
+
+int main() {
+  exclamationPoint(0);
+}</program>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>!!</p>
+        </statement>
+        <feedback>
+          <p>If we start at zero, will the function ever call itself?</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>!</p>
+        </statement>
+        <feedback>
+          <p>If we start at zero, will the function ever call itself?</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>0</p>
+        </statement>
+        <feedback>
+          <p>The only output statement in this program prints a "!", therefore "0" would never
+            print.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Nothing prints.</p>
+        </statement>
+        <feedback>
+          <p>Correct! The program never enters the "if" statement within the function because n is
+            never greater than 0.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="recursion_3">
+    <statement>
+      <p>A function that calls itself is said to be <var/>.</p>
+    </statement>
+    <setup>
+      <var case="insensitive">
+        <condition string="^\s*recursive\s*$">
+          <feedback>
+            <p>And the process by which a function calls itself is called recursion.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Try again!</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+</section>

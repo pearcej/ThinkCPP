@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<section xml:id="chapter11_implicit-variable-access">
+  <title>Implicit variable access</title>
+  <p>Actually, the new version of <c>Time::print</c> is more complicated than it needs to be. We don't really
+    need to create a local variable in order to refer to the instance variables of the current
+    object.</p>
+  <p>If the function refers to <c>hour</c>, <c>minute</c>, or <c>second</c>, all by themselves with no dot notation,
+    C++ knows that it must be referring to the current object. So we could have written:</p>
+  <program>void Time::print () {
+  cout &lt;&lt; hour &lt;&lt; ":" &lt;&lt; minute &lt;&lt; ":" &lt;&lt; second &lt;&lt; endl;
+}</program>
+  <p>This kind of variable access is called <term>implicit</term> because the name of the object
+    does not appear explicitly. Features like this are one reason member functions are often more
+    concise than nonmember functions.</p>
+  <exercise label="implicit_variable_access_1">
+    <statement>
+      <p>Implicit variable access in member functions allows us to access member variables
+        __________.</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>after being granted permission</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! You don't need "permission" to access member variables inside a member
+            function.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>only inside of that specific member function</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! You can access member variables implicitly inside any and all member
+            functions.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>using dot notation</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! You don't need to use dot notation to access variables implicitly.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>directly, without dot notation</p>
+        </statement>
+        <feedback>
+          <p>Correct! Implicit variable access allows us to access variables directly-- without
+            using dot notation.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="implicit_variable_access_2">
+    <statement>
+      <p>When should you use the scope resolution operator <c>::</c>?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>Every time you are working with data structures!</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! The scope resolution operator is not always necessary!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>When you implement member functions inside of the structure definition.</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! When you write member functions inside of the structure definition, you do
+            not need to specify the scope.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>When you implement member functions outside of the structure definition.</p>
+        </statement>
+        <feedback>
+          <p>Correct! When you write member functions outside of the structure definition, you need
+            to specify the scope, hence the :: operator!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Never! It is bad practice!</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! The scope resolution operator is good practice when used correctly!</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

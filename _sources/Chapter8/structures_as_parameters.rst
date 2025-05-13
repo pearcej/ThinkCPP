@@ -15,6 +15,7 @@ standard format. If you call ``printPoint (blank)``, it will output
 
 .. activecode:: structures_parameters_AC_1
   :language: cpp
+  :compileargs: [ '-Wall', '-Werror' ]
 
   The active code below uses the ``printPoint`` function. Run the code to
   see the output!
@@ -36,7 +37,7 @@ standard format. If you call ``printPoint (blank)``, it will output
   }
 
 As a second example, we can rewrite the ``distance`` function from
-Section `[distance] <#distance>`__ so that it takes two ``Point``\ s as
+:numref:`distance` so that it takes two ``Point``\ s as
 parameters instead of four ``double``\ s.
 
 ::
@@ -49,6 +50,7 @@ parameters instead of four ``double``\ s.
    
 .. activecode:: structures_parameters_AC_2
   :language: cpp
+  :compileargs: [ '-Wall', '-Werror' ]
 
   The active code below uses the updated version of the ``distance`` function.
   Feel free to modify the code!
@@ -75,15 +77,6 @@ parameters instead of four ``double``\ s.
 
 .. mchoice:: structures_parameters_1
    :practice: T
-   :answer_a: (-2, -7)
-   :answer_b: (2.0, 7.0)
-   :answer_c: (-7, -2)
-   :answer_d: (-7.0, -2.0)
-   :correct: c
-   :feedback_a: Take a close look at the printOppositeCoordinate function.
-   :feedback_b: Take a close look at the printOppositeCoordinate function.
-   :feedback_c: Yes, this is the correct output.
-   :feedback_d: Take a close look at the Coordinate struct.
 
    What will print?
 
@@ -101,6 +94,23 @@ parameters instead of four ``double``\ s.
         Coordinate coord = { 2, 7 };
         printOppositeCoordinate (coord);
       }
+
+   - ``(-2, -7)``
+
+     - Take a close look at the printOppositeCoordinate function.
+
+   - ``(2.0, 7.0)``
+
+     - Take a close look at the printOppositeCoordinate function.
+
+   - ``(-7, -2)``
+
+     + Yes, this is the correct output.
+
+   - ``(-7.0, -2.0)``
+
+     - Take a close look at the Coordinate struct.
+
 
 .. parsonsprob:: structures_parameters_2
    :numbered: left

@@ -88,7 +88,7 @@ line is being created infinitely.
        void isNegative(int n) {
          if (n >= 0) {
            cout << "Not Negative!";
-           nLines(n - 1);
+           isNegative(n - 1);
          }
          cout << "Negative!";
        }
@@ -109,13 +109,22 @@ line is being created infinitely.
    :feedback_c: The function will eventually print "Not Negative!", but that's not all!
    :feedback_d: Since we decrement each time, the base case will be reached.
 
-   Suppose we have already defined isNegative (see previous question).
+   ``isNegative`` is defined exactly as it was above, but we have changed the
+   call to it in ``main``.
    What will happen if we run the code with this input?
 
    ::
 
        #include <iostream>
        using namespace std;
+
+       void isNegative(int n) {
+         if (n >= 0) {
+           cout << "Not Negative!";
+           isNegative(n - 1);
+         }
+         cout << "Negative!";
+       }
 
        int main() {
          isNegative(10);
@@ -133,7 +142,7 @@ line is being created infinitely.
    :feedback_c: We start with a positive number, so the function simply won't print "Not Negative!"
    :feedback_d: Our input is incremented with every recursive call, so if we start with a positive number, we will never reach the base case.
 
-   The isNegative function has been **edited** as shown below.  What will 
+   The ``isNegative`` function has been **edited** as shown below.  What will 
    happen now when we run the code?
 
    ::
@@ -144,7 +153,7 @@ line is being created infinitely.
        void isNegative(int n) {
          if (n >= 0) {
            cout << "Not Negative!";
-           nLines(n + 1);
+           isNegative(n + 1);
          }
          cout << "Negative!";
        }

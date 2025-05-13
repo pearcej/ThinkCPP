@@ -9,6 +9,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_14_1_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Let's write the class definition for ``Circle``. ``Circle`` should have its
             radius stored in a private member variable. Also write the constructor 
@@ -26,6 +27,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_14_11_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to wrte the class definition and constructor for ``Circle``.
             ~~~~
@@ -46,6 +48,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_14_2_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Now that we have our ``Circle`` class, let's write some accessor
             functions! Write the ``Circle`` member functions ``getRadius`` 
@@ -62,6 +65,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_14_2_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the accessor functions for ``getRadius`` and ``setRadius``.
             ~~~~
@@ -89,6 +93,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_14_3_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Write a ``main``. In ``main``, create a ``Circle`` with radius 2.4
             and output the radius. Then change the radius to 3.6 and output
@@ -102,6 +107,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_14_3_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the code.
             ~~~~
@@ -136,6 +142,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_14_4_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             A ``Rectangle`` can be constructed given only two points. First,
             write the class definition for ``Point``, which stores an x and 
@@ -153,6 +160,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_14_4_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the code.
             ~~~~
@@ -177,6 +185,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_14_5_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Now that we've defined the ``Point`` class, we can go back to
             writing the ``Rectangle`` class. ``Rectangle`` should store 
@@ -195,6 +204,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_14_5_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the ``Rectangle`` class.
             ~~~~
@@ -231,6 +241,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_14_6_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Write the ``Rectangle`` member function ``calculateSides``, which finds
             the length and height of the rectangle using the stored ``Point``s.
@@ -246,6 +257,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_14_6_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the ``calculateSides`` and ``calculateArea`` member functions.
             ~~~~
@@ -293,6 +305,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_14_7_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Write a ``main`` In ``main``, create a ``Rectangle`` with corners
             at (2.5, 7.5) and (8, 1.5). Print out the length and height, calculate the area,
@@ -307,6 +320,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_14_7_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to create this ``Rectangle``.
             ~~~~
@@ -367,6 +381,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_14_8_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Let's write the ``Date`` class. ``Date`` stores information 
             about the day, month, and year in private variables, in addition to a ``vector``
@@ -386,6 +401,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_14_8_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the ``Date`` class and addtional constructors.
             ~~~~
@@ -414,6 +430,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_14_9_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Let's write the ``Date`` member function, ``printDate``,
             which prints the date out in the following format: month/day/year CE/BCE
@@ -429,6 +446,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_14_9_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the ``printDate`` member function.
             ~~~~
@@ -466,6 +484,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_14_10_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Write the ``Date`` member function ``isLeapYear``, which returns true if 
             the year is a leap year. Then write the ``Date`` member function ``lastDayInMonth``,
@@ -481,6 +500,7 @@ Answer the following **Activecode** questions to assess what you have learned in
 
         .. activecode:: mucp_14_10_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is onne way to write the ``isLeapYear`` and ``lastDayInMonth`` member functions.
             ~~~~

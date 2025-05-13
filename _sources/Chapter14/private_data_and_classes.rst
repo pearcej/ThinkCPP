@@ -84,6 +84,7 @@ programs.
 
 .. activecode:: priv_data_AC_1 
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror' ]
 
    Run the active code below. Uncomment the commented out code to see what happens!
    ~~~~
@@ -160,7 +161,7 @@ programs.
 .. mchoice:: question14_1_1
    :answer_a: True
    :answer_b: False
-   :correct: a
+   :correct: b
    :feedback_a: Incorrect! Data encapsulation should hide implementation details.
    :feedback_b: Correct! Data encapsulation prevents unrestricted access to internal representations.
 

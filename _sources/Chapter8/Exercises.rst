@@ -64,7 +64,6 @@ Multiple Choice Exercises
         string name;
         int numLegs;
         int eggs;
-        bool eggs;
       }
 
     - The word "struct" needs to be capitalized.
@@ -75,9 +74,9 @@ Multiple Choice Exercises
 
       + It is a common error to forgot the semicolon at the end of ``struct`` definitions.
 
-    - The ``struct`` cannot have two instance variables that are both named ``eggs``.
+    - A ``struct`` cannot have two instance variables of both ``string`` and ``int``
 
-      - One is an ``int`` and one is a ``bool`` so this is allowed.
+      - Instance variables of different types in a single struct is fine.
 
     - There is nothing wrong with the ``struct`` definition.
 
@@ -139,19 +138,19 @@ Multiple Choice Exercises
         cout << density;
       }
 
-    - 4, 64, 128, 2
+    - ``4, 64, 128, 2``
 
       - Check the ordering of the output statements.
 
-    - 4, 128, 64
+    - ``4, 128, 64``
 
       - Take a closer look at the output statements.
 
-    - 4, 128, 64, 2
+    - ``4, 128, 64, 2``
 
       + The code outputs all instance variables and the density in the proper order.
 
-    - edgeLength, volume, mass, density
+    - ``edgeLength, volume, mass, density``
 
       - Dot notation accesses the values of the instance variables, not the names.
 
@@ -396,18 +395,18 @@ Multiple Choice Exercises
         cout << quote << " is the epitome of Star Wars!";
       }
 
-    - quote is the epitome of Star Wars!
+    - ``quote is the epitome of Star Wars!``
 
       - ``quote`` is not in quotes so the value stored in ``quote`` will be printed.
 
-    - Darth Vader is the epitome of Star Wars!
+    - ``Darth Vader is the epitome of Star Wars!``
 
       + getline reads the entire line until the user hits Return or Enter.
 
-    - Darth is the epitome of Star Wars!
+    - ``Darth is the epitome of Star Wars!``
 
       - Check the manner in which the user input is acquired.
 
-    - D is the epitome of Star Wars!
+    - ``D is the epitome of Star Wars!``
 
       - Try Again! Pay attention to the way in which user input is recieved.

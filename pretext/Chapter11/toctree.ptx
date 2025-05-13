@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"
+         xml:lang="en-US"
+         xml:id="member-functions">
+  <title>Member functions</title>
+  <xi:include href='./objects-and-functions.ptx'/>
+  <xi:include href='./print.ptx'/>
+  <xi:include href='./implicit-variable-access.ptx'/>
+  <xi:include href='./another-example.ptx'/>
+  <xi:include href='./yet-another-example.ptx'/>
+  <xi:include href='./a-more-complicated-example.ptx'/>
+  <xi:include href='./constructors.ptx'/>
+  <xi:include href='./initialize-or-construct.ptx'/>
+  <xi:include href='./one-last-example.ptx'/>
+  <xi:include href='./header-files.ptx'/>
+  <xi:include href='./glossary.ptx'/>
+  <xi:include href='./exercises.ptx'/>
+  <xi:include href='./mixed-up-code.ptx'/>
+  <xi:include href='./coding-practice.ptx'/>
+</chapter>

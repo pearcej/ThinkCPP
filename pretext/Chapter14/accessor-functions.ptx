@@ -1,0 +1,275 @@
+<?xml version="1.0"?>
+<section xml:id="chapter14_accessor-functions">
+  <title>Accessor functions</title>
+  <p>By convention, accessor functions have names that begin with <c>get</c> and end with the name of
+    the instance variable they fetch. The return type, naturally, is the type of the corresponding
+    instance variable.</p>
+  <p>In this case, the accessor functions give us an opportunity to make sure that the value of the
+    variable is valid before we return it. Here's what <c>getReal</c> looks like:</p>
+  <program>double Complex::getReal()
+{
+  if (cartesian == false) calculateCartesian();
+  return real;
+}</program>
+  <p>If the <c>cartesian</c> flag is true then <c>real</c> contains valid data, and we can just return it.
+    Otherwise, we have to call <c>calculateCartesian</c> to convert from polar coordinates to Cartesian coordinates:</p>
+  <program>void Complex::calculateCartesian()
+{
+  real = mag * cos (theta);
+  imag = mag * sin (theta);
+  cartesian = true;
+}</program>
+  <p>Assuming that the polar coordinates are valid, we can calculate the Cartesian coordinates using
+    the formulas from the previous section. Then we set the <c>cartesian</c> flag, indicating that <c>real</c>
+    and <c>imag</c> now contain valid data.</p>
+  <p>As an exercise, write a corresponding function called <c>calculatePolar</c> and then write <c>getMag</c> and <c>getTheta</c>.
+    One unusual thing about these accessor functions is that they are not <c>const</c>, because invoking
+    them might modify the instance variables.</p>
+  <listing label="fourteenfour">
+    <caption>
+      Take a look at this active code, which uses the <c>getReal</c> accessor function.
+    </caption>
+    <program xml:id="fourteenfour_editor"
+             interactive="activecode"
+             line-numbers="yes">
+      <code><![CDATA[
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+class Complex
+{
+  double real, imag;
+  double mag, theta;
+  bool cartesian, polar;
+
+public:
+  Complex() { cartesian = false;  polar = false; }
+  Complex(double r, double i)
+  {
+    real = r;  imag = i;
+    cartesian = true;  polar = false;
+  }
+  void calculateCartesian()
+  {
+    real = mag * cos (theta);
+    imag = mag * sin (theta);
+    cartesian = true;
+  }
+  double getReal()
+  {
+    if (cartesian == false) calculateCartesian();
+    return real;
+  }
+  double getImag()
+  {
+    if (cartesian == false) calculateCartesian();
+    return imag;
+  }
+};
+
+int main() {
+  Complex c1 (5.0, 3.5);
+  cout << c1.getReal() << ", " << c1.getImag() << endl;
+}
+        ]]></code>
+    </program>
+  </listing>
+  <exercise label="fourteenfive">
+    <statement>
+      <p>Write your implementation of <c>calculatePolar</c> in the commented area of the active code below. Once
+        you're done with that, write the <c>getMag</c> and <c>getTheta</c> accessor functions. Read the comments
+        in <c>main</c> to see how we'll test if your functions works. If you get stuck, you can reveal
+        the hint below for help.</p>
+    </statement>
+    <program xml:id="fourteenfive_editor"
+             interactive="activecode"
+             line-numbers="yes">
+      <code><![CDATA[
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+class Complex
+{
+  double real, imag;
+  double mag, theta;
+  bool cartesian, polar;
+
+public:
+  Complex();
+  Complex(double r, double i);
+  void calculateCartesian();
+  double getReal();
+  double getImag();
+  void calculatePolar();
+  double getMag();
+  double getTheta();
+};
+
+void Complex::calculatePolar() {
+  // ``calculatePolar`` should convert the real and imaginary parts
+  // into magnitude and theta. Use the formula in the previous section.
+  // Write your implementation here.
+}
+
+double Complex::getMag() {
+  // ``getMag`` should return the magnitude.
+  // Delete the return 0 and write your implementation here.
+  return 0;
+}
+
+double Complex::getTheta() {
+  // ``getMag`` should return the theta.
+  // Delete the return 0 and write your implementation here.
+  return 0;
+}
+
+int main() {
+  Complex c1 (0.0, 1.0);
+  // Magnitude should be 1, theta should be pi/2, or about 1.5708
+  cout << c1.getMag() << ", " << c1.getTheta() << endl;
+}
+        ]]></code>
+      <tests>
+Complex::Complex() { cartesian = false;  polar = false; }
+
+Complex::Complex(double r, double i) {
+  real = r;  imag = i;
+  cartesian = true;  polar = false;
+}
+
+void Complex::calculateCartesian() {
+  real = mag * cos (theta);
+  imag = mag * sin (theta);
+  cartesian = true;
+}
+
+double Complex::getReal() {
+  if (cartesian == false) calculateCartesian();
+  return real;
+}
+
+double Complex::getImag() {
+  if (cartesian == false) calculateCartesian();
+  return imag;
+}
+</tests>
+    </program>
+    <hint>
+      <title>calculatePolar</title>
+      <activity label="question14_4_1"
+                numbered="yes"
+                adaptive="yes"
+                indentation="hide">
+        <statement>
+          <p>Let's write the code for the <c>calculatePolar</c> function. Follow the format of the function <c>calculateCartesian</c>
+            .</p>
+        </statement>
+        <blocks>
+          <block order="1">
+            <choice correct="yes">
+              <cline>void Complex::calculatePolar() {</cline>
+            </choice>
+            <choice>
+              <cline>void Complex::calculateCartesian() {                         </cline>
+            </choice>
+          </block>
+          <block order="4">
+            <choice correct="yes">
+              <cline>   mag = sqrt(pow(real, 2) + pow(imag, 2));</cline>
+            </choice>
+            <choice>
+              <cline>   mag = pow(real, 2) + pow(imag, 2);                         </cline>
+            </choice>
+          </block>
+          <block order="3">
+            <cline>   theta = atan(imag / real);</cline>
+          </block>
+          <block order="6">
+            <choice correct="yes">
+              <cline>   polar = true;</cline>
+              <cline>}</cline>
+            </choice>
+            <choice>
+              <cline>   cartesian = true;                                          </cline>
+              <cline>}</cline>
+            </choice>
+          </block>
+        </blocks>
+      </activity>
+    </hint>
+    <hint>
+      <title>getMag</title>
+      <statement label="question14_4_2"
+                 numbered="yes"
+                 adaptive="yes"
+                 indentation="hide">
+        <statement>
+          <p>Let's write the code for the <c>getMag</c> function, which should return the magnitude of a <c>Complex</c>
+            object.</p>
+        </statement>
+        <blocks>
+          <block order="3">
+            <choice correct="yes">
+              <cline>double Complex::getMag() {</cline>
+            </choice>
+            <choice>
+              <cline>void Complex::getMag() {                         </cline>
+            </choice>
+          </block>
+          <block order="4">
+            <cline>   if (polar == false) {</cline>
+          </block>
+          <block order="1">
+            <cline>      calculatePolar();</cline>
+            <cline>   }</cline>
+          </block>
+          <block order="5">
+            <cline>   return mag;</cline>
+            <cline>}</cline>
+          </block>
+        </blocks>
+      </statement>
+    </hint>
+    <hint>
+      <title>getTheta</title>
+      <activity label="question14_4_3"
+                numbered="yes"
+                adaptive="yes"
+                indentation="hide">
+        <statement>
+          <p>Let's write the code for the <c>getTheta</c> function, which should return the magnitude of a <c>Complex</c>
+            object.</p>
+        </statement>
+        <blocks>
+          <block order="1">
+            <choice correct="yes">
+              <cline>double Complex::getTheta() {</cline>
+            </choice>
+            <choice>
+              <cline>double Complex::getMag() {                         </cline>
+            </choice>
+          </block>
+          <block order="3">
+            <cline>   if (polar == false) {</cline>
+          </block>
+          <block order="6">
+            <choice correct="yes">
+              <cline>      calculatePolar();</cline>
+              <cline>   }</cline>
+            </choice>
+            <choice>
+              <cline>      calculateCartesian();                         </cline>
+              <cline>   }</cline>
+            </choice>
+          </block>
+          <block order="5">
+            <cline>   return theta;</cline>
+            <cline>}</cline>
+          </block>
+        </blocks>
+      </activity>
+    </hint>
+  </exercise>
+</section>

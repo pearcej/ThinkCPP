@@ -66,7 +66,7 @@ program) that something went wrong.
 
 This kind of error-checking is so common that C++ provides a built-in
 function to check preconditions and print error messages. If you include
-the ``assert.h`` header file, you get a function called ``assert`` that
+the ``cassert`` header file, you get a function called ``assert`` that
 takes a boolean value (or a conditional expression) as an argument. As
 long as the argument is true, ``assert`` does nothing. If the argument
 is false, assert prints an error message and quits. Here’s how to use
@@ -100,6 +100,7 @@ the function name and the contents of the assert statement.
 
 .. activecode:: fourteenten
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror' ]
 
    The active code below uses the updated ``calculateCartesian`` with assert statements.
    Notice how because ``c1`` is not in polar, the assert statement in ``calculateCartesian``

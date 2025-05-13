@@ -197,7 +197,7 @@ Coding Practice
 
            #include <iostream>
            #include <fstream>
-           #include <ctype.h>
+           #include <cctype>
            using namespace std;
 
            int main() { 
@@ -227,7 +227,7 @@ Coding Practice
 
            #include <iostream>
            #include <fstream>
-           #include <ctype.h>
+           #include <cctype>
            using namespace std;
 
            string ROT13 (string message) {

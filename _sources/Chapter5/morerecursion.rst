@@ -166,9 +166,9 @@ them does not execute.
 
 .. fillintheblank:: more_recursion_3
 
-    The factorial of 13 is |blank|.
+    The factorial of 12 is |blank|.
 
-    - :1932053504: Correct!
+    - :479001600: Correct!
       :x: Try plugging this into the active code!
 
 .. mchoice:: return_print_des_mc
@@ -186,6 +186,7 @@ them does not execute.
    What gets printed by the following code?
 
    ::
+
       void print_descend(int a) {
           if(a==0) {
               return;

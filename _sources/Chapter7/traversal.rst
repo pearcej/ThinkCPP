@@ -8,6 +8,13 @@ each character in turn, do something to it, and continue until the end.
 This pattern of processing is called a **traversal**. A natural way to
 encode a traversal is with a ``while`` statement.
 
+.. note::
+   On some machines, comparing an ``int`` to the output from ``length``
+   will generate a type error.  This is because the length function
+   returns an unsigned integer type. To keep the variable type consistent,
+   you should use ``size_t`` rather than ``int`` for the
+   type of iterator ``i``.
+
 .. activecode:: traversal_AC_1
   :language: cpp
   :caption: Accessing a string character
@@ -20,10 +27,9 @@ encode a traversal is with a ``while`` statement.
   using namespace std;
 
   int main() {
-      int index = 0;
+      size_t index = 0;
       string fruit = "apple";
-      int lengthfruit = fruit.length();
-      while (index < lengthfruit) {
+      while (index < fruit.lenght()) {
           char letter = fruit[index];
           cout << letter << endl;
           index = index + 1;
@@ -80,21 +86,25 @@ and that outputs the letters backwards, all on one line.
       -----
       void reverseWord (string input) {
       =====
-        int x = input.length() - 1;
+        size_t count = 0;
+        size_t index = input.length() - 1;
       =====
-        int x = input.length();  #paired
+        size_t count = 0;
+        size_t index = input.length();  #paired
       =====
-        while (x >= 0) {
+        while (count < input.length()) {
       =====
-        while (x > 0) { #paired
+        while (count <= input.length() ) { #paired
       =====
-          cout << input[x];
+          cout << input[index];
       =====
-          x--;
+          index = index - 1;
+          count = count + 1;
         }
       }
       =====
-          x++;
+          index = index + 1;
+          count = count + 1;
         }
       } #distractor
 
@@ -114,9 +124,8 @@ and that outputs the letters backwards, all on one line.
    .. code-block:: cpp
 
       string s = "coding rocks";
-      int i = 1;
-      int length = s.length();
-      while (i < length) {
+      size_t i = 1;
+      while (i < s.length()) {
         cout << s[i] << endl;
         i = i + 2;
       }
@@ -137,10 +146,10 @@ and that outputs the letters backwards, all on one line.
    .. code-block:: cpp
 
       string truth = "engr101";
-      int index = 0;
+      size_t index = 0;
       int counter = 0;
-      while ( index < truth.length() ) {
-        cout << truth[index] <<" ";
+      while (index < truth.length()) {
+        cout << truth[index] << " ";
         index = index + counter;
         counter = counter + 1;
       }

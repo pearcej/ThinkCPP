@@ -10,6 +10,7 @@ Coding Practice
 
         .. activecode:: cp_13_AC_1q
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :practice: T
 
            #include <iostream>
@@ -24,6 +25,7 @@ Coding Practice
 
         .. activecode:: cp_13_AC_1a
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :optional:
 
            #include <iostream>
@@ -44,6 +46,7 @@ Coding Practice
 
         .. activecode:: cp_13_AC_3q
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :practice: T
 
            #include <iostream>
@@ -61,6 +64,7 @@ Coding Practice
 
         .. activecode:: cp_13_AC_3a
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :optional:
 
            #include <iostream>
@@ -89,6 +93,7 @@ Coding Practice
 
         .. activecode:: cp_13_AC_5q
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :practice: T
 
            #include <iostream>
@@ -106,6 +111,7 @@ Coding Practice
 
         .. activecode:: cp_13_AC_5a
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :optional:
 
            #include <iostream>
@@ -135,6 +141,7 @@ Coding Practice
 
         .. activecode:: cp_13_AC_7q
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :practice: T
 
            #include <iostream>
@@ -193,6 +200,7 @@ Coding Practice
 
         .. activecode:: cp_13_AC_7a
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :optional:
 
            #include <iostream>
@@ -284,6 +292,7 @@ Coding Practice
 
         .. activecode:: cp_13_AC_9q
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :practice: T
 
            #include <iostream>
@@ -315,6 +324,7 @@ Coding Practice
 
         .. activecode:: cp_13_AC_9a
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :optional:
 
            #include <iostream>

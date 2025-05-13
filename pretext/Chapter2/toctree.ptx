@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"
+         xml:lang="en-US"
+         xml:id="variables-types">
+  <title>Variables and Types</title>
+  <xi:include href='./more-output.ptx'/>
+  <xi:include href='./values.ptx'/>
+  <xi:include href='./variables.ptx'/>
+  <xi:include href='./assignment.ptx'/>
+  <xi:include href='./outputting-variables.ptx'/>
+  <xi:include href='./keywords.ptx'/>
+  <xi:include href='./operators.ptx'/>
+  <xi:include href='./order-of-operations.ptx'/>
+  <xi:include href='./operators-for-characters.ptx'/>
+  <xi:include href='./composition.ptx'/>
+  <xi:include href='./glossary.ptx'/>
+  <xi:include href='./multiplechoice.ptx'/>
+  <xi:include href='./mixed-up-code.ptx'/>
+  <xi:include href='./active-code.ptx'/>
+</chapter>

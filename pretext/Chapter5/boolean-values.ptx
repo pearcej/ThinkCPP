@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<section xml:id="chapter5_boolean-values">
+  <title>Boolean Values</title>
+  <p>The types we have seen so far are pretty big. There are a lot of integers in the world, and
+    even more floating-point numbers. By comparison, the set of characters is pretty small. Well,
+    there is another type in C++ that is even smaller. It is called <term>boolean</term>, and the
+    only values in it are true and false.</p>
+  <p>Without thinking about it, we have been using boolean values for the
+    last couple of chapters. The condition inside an if statement or a while
+    statement is a boolean expression. Also, the result of a comparison
+    operator is a boolean value. For example:</p>
+  <program>if (x == 5) {
+  // do something
+}</program>
+  <p>The operator <c>==</c> compares two integers and produces a boolean value.</p>
+  <p>The values true and false are keywords in C++, and can be used anywhere
+    a boolean expression is called for. For example,</p>
+  <program>while (true) {
+  // loop forever
+}</program>
+  <p>is a standard idiom for a loop that should run forever (or until it
+    reaches a return or break statement).</p>
+  <exercise label="bool_vals_1">
+    <statement>
+      <p>The boolean type has two values <var/> and <var/>. The <var/> operator is used to check if
+        two boolean values are equal. </p>
+    </statement>
+    <setup>
+      <var case="insensitive">
+        <condition string="^\s*(true)|(false)\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Try again!</p>
+          </feedback>
+        </condition>
+      </var>
+      <var case="insensitive">
+        <condition string="^\s*(true)|(false)\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Try again!</p>
+          </feedback>
+        </condition>
+      </var>
+      <var case="insensitive">
+        <condition string="^\s*==\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Try again!</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="bool_vals_2"
+            indentation="hide">
+    <statement>
+      <p>Put the following blocks in order of how large the set is. Put the largest
+        set at the top.</p>
+    </statement>
+    <blocks>
+      <block order="3">
+        <cline>double</cline>
+      </block>
+      <block order="2">
+        <cline>int</cline>
+      </block>
+      <block order="4">
+        <cline>char</cline>
+      </block>
+      <block order="1">
+        <cline>bool</cline>
+      </block>
+    </blocks>
+  </exercise>
+</section>

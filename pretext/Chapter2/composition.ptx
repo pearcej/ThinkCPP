@@ -1,0 +1,215 @@
+<?xml version="1.0"?>
+<section xml:id="chapter2_composition">
+  <title>Composition</title>
+  <p>So far we have looked at the elements of a programming
+            language&#x2014;variables, expressions, and statements&#x2014;in isolation, without
+            talking about how to combine them.</p>
+  <p>One of the most useful features of programming languages is their
+            ability to take small building blocks and <term>compose</term> them. For example,
+            we know how to multiply integers and we know how to output values; it
+            turns out we can do both at the same time:</p>
+  <listing label="composition_AC_1">
+    <caption>
+      This program performs multiplication and prints the result.
+    </caption>
+    <program xml:id="composition_AC_1_editor" interactive="activecode" line-numbers="yes">
+      <code><![CDATA[
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << 17 * 3;
+}
+        ]]></code>
+    </program>
+  </listing>
+  <p>Actually, I shouldn't say <q>at the same time,</q> since in reality the
+            multiplication has to happen before the output, but the point is that
+            any expression, involving numbers, characters, and variables, can be
+            used inside an output statement. We've already seen one example:</p>
+  <listing label="composition_AC_2">
+    <caption>
+      This program performs a calculation involving variables and prints the result at the same time.
+    </caption>
+    <program xml:id="composition_AC_2_editor" interactive="activecode" line-numbers="yes">
+      <code><![CDATA[
+#include <iostream>
+using namespace std;
+
+int main() {
+    int hour = 7;
+    int minute = 1;
+    cout << hour * 60 + minute << endl;
+}
+        ]]></code>
+    </program>
+  </listing>
+  <p>You can also put arbitrary expressions on the right-hand side of an
+            assignment statement:</p>
+  <listing label="composition_AC_3">
+    <caption>
+      This program performs a calculation involving variables and assigns the result to a variable.
+    </caption>
+    <program xml:id="composition_AC_3_editor" interactive="activecode" line-numbers="yes">
+      <code><![CDATA[
+#include <iostream>
+using namespace std;
+
+int main() {
+    int minute = 3;
+    int percentage;
+    percentage = (minute * 100) / 60;
+    cout << percentage;
+}
+        ]]></code>
+    </program>
+  </listing>
+  <p>This ability may not seem so impressive now, but we will see other
+            examples where composition makes it possible to express complex
+            computations neatly and concisely.</p>
+  <warning>
+    <p>There are limits on where you can use certain expressions; most
+                notably, the left-hand side of an assignment statement has to be a
+                <em>variable</em> name, not an expression.</p>
+  </warning>
+  <p>That's because the left side indicates the storage location where the
+            result will go. Expressions do not represent storage locations, only
+            values. So the following is illegal: <c>minute + 1 = hour;</c>.</p>
+  <exercise label="compos_1">
+    <statement>
+      <p>What must be changed in order for this code block to work?</p>
+      <program>int main() {
+    int dogs = 3;
+    int cats = 6;
+    int pets;
+    dogs + cats = pets;
+    cout &lt;&lt; "I have " &lt;&lt; pets &lt;&lt; " pets!";
+    return 0;
+}</program>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>Change line 5 to pets = dogs + cats;</p>
+        </statement>
+        <feedback>
+          <p>Assignment statements operate such that the evaluated expression on the right is assigned to the variable on the left.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Change line 5 to int pets = dogs + cats;</p>
+        </statement>
+        <feedback>
+          <p>pets has already been declared as an int.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Change line 5 to pets == dogs + cats;</p>
+        </statement>
+        <feedback>
+          <p>The == operator checks if the left side EQUALS the right side.  It is not the correct operator here.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Change line 5 to int pets == dogs + cats;</p>
+        </statement>
+        <feedback>
+          <p>pets has already been declared as an int.  Also, the == operator is not the proper choice here.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>No change, the code runs fine as is.</p>
+        </statement>
+        <feedback>
+          <p>Assignment statements assign the value on the right to the variable on the left.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="compos_2">
+    <statement>
+      <p>The left-hand side of an assignment statement has to be a <var/> name, not an expression.  </p>
+    </statement>
+    <setup>
+      <var case="insensitive">
+        <condition string="^\s*variable\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Try again!</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="compos_3">
+    <statement>
+      <p>In programming, another word for <term>combine</term> is <var/>.  </p>
+    </statement>
+    <setup>
+      <var case="insensitive">
+        <condition string="^\s*(compose)|(composition)\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Try again!</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="compos_4">
+    <statement>
+      <p>Finish the code below so that the velocity is calculated completely on a single line.  Hint: the current velocity results from 1) the initial velocity and 2) the acceleration over a window of time.  Use <c>v0</c> for initial velocity, <c>a</c> for acceleration, and <c>t</c> for time.</p>
+    </statement>
+    <program xml:id="compos_4_editor" interactive="activecode" line-numbers="yes">
+      <code><![CDATA[
+#include <iostream>
+using namespace std;
+
+int main() {
+   int v0 = 5, a = 3, t = 4, velocity;
+
+   // You may only use the next line for your code.
+   velocity = ;
+
+   cout << "Testing..." << endl;
+   cout << "Yours = " << velocity << endl;
+   cout << "Correct = 17";
+}
+        ]]></code>
+    </program>
+  </exercise>
+  <exercise label="compos_5">
+    <statement>
+      <p>Finish the code below so that the volume of a rectangular prism with length <c>l</c>, width <c>w</c>, and height <c>h</c> is calculated on a single line.</p>
+    </statement>
+    <program xml:id="compos_5_editor" interactive="activecode" line-numbers="yes">
+      <code><![CDATA[
+#include <iostream>
+using namespace std;
+
+int main() {
+   int l = 2, w = 3, h = 4, volume;
+
+   // You may only use the next line for your code.
+   volume = ;
+
+   cout << "Testing..." << endl;
+   cout << "Yours = " << volume << endl;
+   cout << "Correct = 24";
+}
+        ]]></code>
+    </program>
+  </exercise>
+</section>

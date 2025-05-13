@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<section xml:id="chapter4_conditional-execution">
+  <title>Conditional Execution</title>
+  <p>In order to write useful programs, we almost always need the ability to check certain
+    conditions and change the behavior of the program accordingly. <term>Conditional statements</term>
+    give us this ability. The simplest form is the if statement:</p>
+  <program>if (x &gt; 0) {
+  cout &lt;&lt; "x is positive" &lt;&lt; endl;
+}</program>
+  <p>The expression in parentheses is called the condition. If it is true,
+    then the statements in brackets get executed. If the condition is not
+    true, nothing happens.</p>
+  <p>The condition can contain any of the <term>comparison operators</term>:</p>
+  <program>x == y               // x equals y
+x != y               // x is not equal to y
+x &gt; y                // x is greater than y
+x &lt; y                // x is less than y
+x &gt;= y               // x is greater than or equal to y
+x &lt;= y               // x is less than or equal to y</program>
+  <p>Although these operations are probably familiar to you, the syntax C++ uses is a little
+    different from mathematical symbols like <m>=</m>, <m>\neq</m>, and <m>\le</m>. A common error is
+    to use a single <c>=</c> instead of a double <c>==</c>. Remember that <c>=</c> is the assignment operator,
+    and <c>==</c> is a comparison operator. Also, there is no such thing as <c>=&lt;</c> or <c>=&gt;</c>.</p>
+  <p>Observe the conditional statement below.</p>
+
+  <listing label="composition_AC_31">
+    <caption>
+      This program performs a calculation involving variables and assigns the result to a variable.
+    </caption>
+    <program xml:id="composition_AC_31_editor" interactive="activecode" line-numbers="yes">
+      <code><![CDATA[
+#include <iostream>
+using namespace std;
+
+int main() {
+    int minute = 3;
+    int percentage;
+    percentage = (minute * 100) / 60;
+    cout << percentage;
+}
+        ]]></code>
+    </program>
+  </listing>
+
+  <listing label="conditional_execution_AC_1">
+    <caption>
+      This program shows how you can use conditional statements to
+        assess true/false situations.
+    </caption>
+    <program label="conditional_execution_AC_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
+      <code><![CDATA[
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x = 12;
+    if (x == 12) {
+        cout << "Equal!" << endl;
+    }
+    if (x != 13) {
+        cout << "Not equal!" << endl;
+    }
+    if (x < 6) {
+        cout << "Bigger!" << endl;
+    }
+    return 0;
+}
+        ]]></code>
+    </program>
+  </listing>
+  <exercise label="conditional_execution_1">
+    <statement>
+      <p>Observe the code above. <q>Bigger</q> doesn't print! How can you modify this so that all of
+        the statements print?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>Change the value of x to be anything less than 6.</p>
+        </statement>
+        <feedback>
+          <p>While "Bigger" would now print, the other two statements would not!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Change the value of x to 13.</p>
+        </statement>
+        <feedback>
+          <p>Now, none of the statements would print!</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Change the sign of the last conditional statement to x &gt; 6.</p>
+        </statement>
+        <feedback>
+          <p>Now, all of the statements would print.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Change the value of the return from 0 to "Bigger!"</p>
+        </statement>
+        <feedback>
+          <p>main returns an int, so trying to make it return a string will cause an error.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="conditional_execution_2">
+    <statement>
+      <p>Match the operator to values of x and y that would return true.</p>
+    </statement>
+    <feedback>
+      <p>Try again!</p>
+    </feedback>
+    <matches>
+      <match order="1">
+        <premise>x &gt; y</premise>
+        <response>x = 10, y = 2</response>
+      </match>
+      <match order="2">
+        <premise>x &lt;= y</premise>
+        <response>x = 5, y = 5</response>
+      </match>
+      <match order="3">
+        <premise>x &lt; y</premise>
+        <response>x = 2, y = 10</response>
+      </match>
+    </matches>
+  </exercise>
+  <exercise label="conditional_execution_3">
+    <statement>
+      <p>Match the operator to values of x and y that would return true.</p>
+    </statement>
+    <feedback>
+      <p>Try again!</p>
+    </feedback>
+    <matches>
+      <match order="1">
+        <premise>x == y</premise>
+        <response>x = 3, y = 3</response>
+      </match>
+      <match order="2">
+        <premise>x &gt;= y</premise>
+        <response>x = 6, y = 2</response>
+      </match>
+      <match order="3">
+        <premise>x &lt; y</premise>
+        <response>x = 2, y = 6</response>
+      </match>
+    </matches>
+  </exercise>
+</section>

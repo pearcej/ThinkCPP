@@ -5,7 +5,7 @@ It is often useful to examine a character and test whether it is upper
 or lower case, or whether it is a character or a digit. C++ provides a
 library of functions that perform this kind of character classification.
 In order to use these functions, you have to include the header file
-``ctype.h``.
+``cctype``.
 
 ::
 
@@ -48,12 +48,13 @@ The output of this code is ``A``.
 
 As an exercise, use the character classification and conversion library
 to write functions named ``stringToUpper`` and ``stringToLower`` that
-take a single ``string`` as a parameter, and that modify the string by
-converting all the letters to upper or lower case. The return type
-should be ``void``.
+take a single ``string`` as a parameter, and return a string with all the
+characters converted to upper or lower case. The return type
+should be ``string``.
 
 .. activecode:: character_classification_AC_1
   :language: cpp
+  :compileargs: [ '-Wall', '-Werror' ]
 
   Try writing the ``stringToUpper`` and ``stringToLower`` functions in the 
   commented sections of the active code below. Both functions take a single ``string``
@@ -63,22 +64,22 @@ should be ``void``.
   If you get stuck, you can reveal the extra problems at the end for help. 
   ~~~~
   #include <iostream>
-  #include "ctype.h"
+  #include <cctype>
   using namespace std;
 
-  void stringToUpper (string &input) {
-      // ``stringToUpper`` should convert a string to uppercase. 
-      // Write your implementation here.
+  string stringToUpper(string input) {
+      // ``stringToUpper`` should convert a string to uppercase and
+      // and return it. Write your implementation here.
   }
 
-  void stringToLower (string &input) {
-      // ``stringToLower`` should convert a string to lowercase.   
-      // Write your implementation here.
+  string stringToLower(string input) {
+      // ``stringToLower`` should convert a string to lowercase and
+      // and return it. Write your implementation here.
   }
 
   int main() {
       string upper = "This String Should Be Converted To Uppercase!";
-      stringToUpper (upper);
+      upper = stringToUpper (upper);
       cout << upper << endl;
       string lower = "This String Should Be Converted To Lowercase!";
       stringToLower (lower);
@@ -96,29 +97,30 @@ should be ``void``.
       Let's write the code for the ``stringToUpper`` function. ``stringToUpper`` 
       should convert a string to uppercase.
       -----
-      void stringToUpper (string &input) {
+      string stringToUpper(string input) {
       =====
-      void stringToUpper (string input) {                         #paired
+      void stringToUpper(string input) {                          #paired
       =====
-         int i = 0;
+         size_t i = 0;
       =====
          while (i < input.length()) {
       =====
-         while (i < input.length() - 1) {  #paired
+         while (i > input.length()) {                             #paired
       =====
-            if (isalpha(input[i]) && islower(input[i])) {
+             if (isalpha(input[i]) && islower(input[i])) {
       =====
-            if (isalpha(input[i]) && isupper(input[i])) {                        #paired 
+             if (isalpha(input[i]) || islower(input[i])) {        #paired
       =====
-               input[i] = toupper(input[i]);
-            }
+                 input[i] = toupper(input[i]));
       =====
-               toupper(input[i]);                        #paired
-            }
-      =====
-            i++;
+             }
+             i++;
          }
+      =====
+         return result;
+      =====
       }
+
 
 .. reveal:: 7_14_2
    :showtitle: Reveal Problem
@@ -131,26 +133,26 @@ should be ``void``.
       Let's write the code for the ``stringToLower`` function. ``stringToLower`` 
       should convert a string to lowercase.
       -----
-      void stringToLower (string &input) {
+      string stringToLower(string input) {
       =====
-      void stringToLower (string input) {                         #paired
+      void stringToLower(string input) {                          #paired
       =====
-         int i = 0;
+         size_t i = 0;
       =====
          while (i < input.length()) {
       =====
-         while (i > input.length()) {  #paired 
+         while (i > input.length()) {                             #paired
       =====
-            if (isalpha(input[i]) && isupper(input[i])) {
+             if (isalpha(input[i]) && isupper(input[i])) {
       =====
-            if (isalpha(input[i]) || isupper(input[i])) {                        #paired 
+             if (isalpha(input[i]) && isupper(input[i])) {        #paired
       =====
-               input[i] = tolower(input[i]);
-            }
+                 input[i] = tolower(input[i]);
       =====
-               input[i] = tolower(input[0]);                        #paired
-            }
-      =====
-            i++;
+             }
+             i++;
          }
+      =====
+         return input;
+      =====
       }

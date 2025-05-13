@@ -1,0 +1,255 @@
+<?xml version="1.0"?>
+<section xml:id="chapter11_header-files">
+  <title>Header files</title>
+  <p>It might seem like a nuisance to declare functions inside the structure definition and then
+    define the functions later. Any time you change the interface to a function, you have to change
+    it in two places, even if it is a small change like declaring one of the parameters <c>const</c>.</p>
+  <p>There is a reason for the hassle, though, which is that it is now possible to separate the
+    structure definition and the functions into two files: the <term>header file</term>, which
+    contains the structure definition, and the implementation file, which contains the functions.</p>
+  <p>Header files usually have the same name as the implementation file, but with the suffix <c>.h</c>
+    instead of <c>.cpp</c>. For the example we have been looking at, the header file is called <c>Time.h</c>,
+    and it contains the following:</p>
+  <program>struct Time {
+  // instance variables
+  int hour, minute;
+  double second;
+
+  // constructors
+  Time(int hour, int min, double secs);
+  Time(double secs);
+
+  // modifiers
+  void increment(double secs);
+
+  // functions
+  void print() const;
+  bool after(const Time&amp; time2) const;
+  Time add(const Time&amp; t2) const;
+  double convertToSeconds() const;
+};</program>
+  <p>Notice that in the structure definition I don't include the prefix <c>Time::</c> at the beginning of
+    every function name. The compiler knows that we are declaring functions that are members of the <c>Time</c>
+    structure.</p>
+  <p><c>Time.cpp</c> contains the definitions of the member functions (I have elided the function bodies to
+    save space):</p>
+  <program>#include &lt;iostream&gt;
+using namespace std;
+#include "Time.h"
+
+Time::Time(int h, int m, double s)  ...
+
+Time::Time(double secs) ...
+
+void Time::increment(double secs) ...
+
+void Time::print() const ...
+
+bool Time::after(const Time&amp; time2) const ...
+
+Time Time::add(const Time&amp; t2) const ...
+
+double Time::convertToSeconds() const ...</program>
+  <p>In this case the definitions in <c>Time.cpp</c> appear in the same order as the declarations in <c>Time.h</c>,
+    although it is not necessary.</p>
+  <note>
+    <p>Notice that <em>outside</em> of the structure definition, you <term>do</term> need to include
+      the prefix <c>Time::</c> at the beginning of each function name!</p>
+  </note>
+  <p>On the other hand, it is necessary to include the header file using an <c>include</c> statement. That
+    way, while the compiler is reading the function definitions, it knows enough about the structure
+    to check the code and catch errors.</p>
+  <p>Notice that the <c>Time.h</c> include directive uses quotation marks around the name of the file. The
+    quotation marks tell the compiler that it should look for the file in the same folder as the
+    code. Using <c>&lt; &gt;</c> tells the compiler it should look for the file in the standard libraries
+    folder that was provided with the compiler.</p>
+  <insight>
+    <p>Use <c>&lt; &gt;</c> to include standard libraries. Use <c>" "</c> to include your own headers.</p>
+  </insight>
+  <p>Finally, <c>main.cpp</c> contains the function <c>main</c> along with any functions we want that are not
+    members of the <c>Time</c> structure (in this case there are none):</p>
+  <program>#include &lt;iostream&gt;
+using namespace std;
+#include "Time.h"
+
+int main() {
+  Time currentTime(9, 14, 30.0);
+  currentTime.increment (500.0);
+  currentTime.print();
+
+  Time breadTime(3, 35, 0.0);
+  Time doneTime = currentTime.add (breadTime);
+  doneTime.print();
+
+  if (doneTime.after(currentTime)) {
+    cout &lt;&lt; "The bread will be done after it starts." &lt;&lt; endl;
+  }
+  return 0;
+}</program>
+  <p>Again, <c>main.cpp</c> has to include the header file.</p>
+  <p>It may not be obvious why it is useful to break such a small program
+    into three pieces. In fact, most of the advantages come when we are
+    working with larger programs:</p>
+  <dl>
+    <li>
+      <title>Reuse:</title>
+      <p>Once you have written a structure like <c>Time</c>, you might find it useful in more than one
+        program. By separating the definition of <c>Time</c> from <c>main.cpp</c>, you make is easy to include
+        the <c>Time</c> structure in another program.</p>
+    </li>
+    <li>
+      <title>Managing interactions:</title>
+      <p>As systems become large, the number of interactions between components grows and quickly
+        becomes unmanageable. It is often useful to minimize these interactions by separating
+        modules like <c>Time.cpp</c> from the programs that use them.</p>
+    </li>
+    <li>
+      <title>Separate compilation:</title>
+      <p>Separate files can be compiled separately and then linked into a
+        single program later. The details of how to do this depend on your
+        programming environment. As the program gets large, separate
+        compilation can save a lot of time, since you usually need to compile
+        only a few files at a time.</p>
+    </li>
+  </dl>
+  <p>For small programs like the ones in this book, there is no great
+    advantage to splitting up programs. But it is good for you to know about
+    this feature, especially since it explains one of the statements that
+    appeared in the first program we wrote:</p>
+  <program>#include &lt;iostream&gt;
+using namespace std;</program>
+  <p><c>iostream</c> is the header file that contains declarations for <c>cin</c> and <c>cout</c> and the functions
+    that operate on them. When you compile your program, you need the information in that header
+    file.</p>
+  <p>The implementations of those functions are stored in a library, sometimes called the <q>Standard
+    Library</q> that gets linked to your program automatically. The nice thing is that you don't
+    have to recompile the library every time you compile a program. For the most part the library
+    doesn't change, so there is no reason to recompile it.</p>
+  <exercise label="header_files_1">
+    <statement>
+      <p>What is a header file?</p>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>the file that contains structure/function definitions</p>
+        </statement>
+        <feedback>
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>the file that contains structure/function implementation</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! This is called the implementation file.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>the file that contains int main()</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! Header files are compiled separately and later linked to int main().</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>the first file that you write for any given project</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! You are not required to write your programs in any specific order.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="header_files_2">
+    <statement>
+      <p>If I have defined a structure in <c>header.h</c>, how would I include it in the implementation
+        file?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement id="header_files_2_opt_a">
+          <p>
+            <c>#include &lt;header.h&gt;</c>
+          </p>
+        </statement>
+        <feedback id="header_files_2_opt_a">
+          <p>Incorrect! This is how we include standard library headers.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="header_files_2_opt_b">
+          <p>
+            <c><![CDATA[#include <"header.h">]]></c>
+          </p>
+        </statement>
+        <feedback id="header_files_2_opt_b">
+          <p>Incorrect! You should get rid of those brackets!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="header_files_2_opt_c">
+          <p>
+            <c>#include header.h</c>
+          </p>
+        </statement>
+        <feedback id="header_files_2_opt_c">
+          <p>Incorrect! You're missing quotes!</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="header_files_2_opt_d">
+          <p>
+            <c>#include "header.h"</c>
+          </p>
+        </statement>
+        <feedback id="header_files_2_opt_d">
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="header_files_3">
+    <statement>
+      <p>Which is <term>false</term> about breaking a program into three pieces?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>Files can be compiled separately and linked to a single program later.</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! This is actually true!</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Separate compilation can be time-consuming, since you're working with more files.</p>
+        </statement>
+        <feedback>
+          <p>Correct! Separate compilation actually saves time, since you only need to compile a few
+            files at a time!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>It minimizes interactions between components.</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! This is actually true!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>It's easier to include your implementation in other program, besides your main.</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! This is actually true!</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

@@ -12,6 +12,7 @@ Coding Practice
 
         .. activecode:: cp_14_AC_1q
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :practice: T
 
            #include <iostream>
@@ -39,6 +40,7 @@ Coding Practice
 
         .. activecode:: cp_14_AC_1a
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :optional:
 
            #include <iostream>
@@ -79,6 +81,7 @@ Coding Practice
 
         .. activecode:: cp_14_AC_3q
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :practice: T
 
            #include <iostream>
@@ -118,6 +121,7 @@ Coding Practice
 
         .. activecode:: cp_14_AC_3a
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :optional:
 
            #include <iostream>
@@ -178,6 +182,7 @@ Coding Practice
 
         .. activecode:: cp_14_AC_5q
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :practice: T
 
            #include <iostream>
@@ -194,6 +199,7 @@ Coding Practice
 
         .. activecode:: cp_14_AC_5a
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :optional:
 
            #include <iostream>
@@ -231,6 +237,7 @@ Coding Practice
 
         .. activecode:: cp_14_AC_7q
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :practice: T
 
            #include <iostream>
@@ -278,6 +285,7 @@ Coding Practice
 
         .. activecode:: cp_14_AC_7a
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :optional:
 
            #include <iostream>
@@ -292,7 +300,7 @@ Coding Practice
                    MyVector() {};
                    MyVector(vector<int> vec);
 
-                   int size() { return elements.size(); }
+                   size_t size() { return elements.size(); }
                    void push_back(int value) { elements.push_back(value); }
                    void pop_back() { elements.pop_back(); };
                    int at(int index) { return elements[index]; }
@@ -329,6 +337,7 @@ Coding Practice
 
         .. activecode:: cp_14_AC_9q
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :practice: T
 
            #include <iostream>
@@ -343,7 +352,7 @@ Coding Practice
                    MyVector() {};
                    MyVector(vector<int> vec);
 
-                   int size();
+                   size_t size();
                    void push_back(int value);
                    void pop_back();
                    int at(int index);
@@ -368,7 +377,7 @@ Coding Practice
                elements = vec;
            }
 
-           int MyVector::size() { return elements.size(); }
+           size_t MyVector::size() { return elements.size(); }
 
            void MyVector::push_back(int value) { elements.push_back(value); }
 
@@ -394,6 +403,7 @@ Coding Practice
 
         .. activecode:: cp_14_AC_9a
            :language: cpp
+           :compileargs: [ '-Wall', '-Werror' ]
            :optional:
 
            #include <iostream>
@@ -408,7 +418,7 @@ Coding Practice
                    MyVector() {};
                    MyVector(vector<int> vec);
 
-                   int size();
+                   size_t size();
                    void push_back(int value);
                    void pop_back();
                    int at(int index);
@@ -445,7 +455,7 @@ Coding Practice
                elements = vec;
            }
 
-           int MyVector::size() { return elements.size(); }
+           size_t MyVector::size() { return elements.size(); }
 
            void MyVector::push_back(int value) { elements.push_back(value); }
 

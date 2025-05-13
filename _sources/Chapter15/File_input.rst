@@ -1,4 +1,7 @@
-﻿File input
+﻿
+.. _finput:
+
+File input
 ----------
 
 To get data from a file, we have to create a stream that flows from the
@@ -17,6 +20,7 @@ supports all the same operations as ``cin``, including ``>>`` and
 ::
 
     #include <iostream>
+    #include <fstream>
     using namespace std;
 
     int main ()
@@ -49,6 +53,7 @@ displays them on the screen:
 ::
 
     #include <iostream>
+    #include <fstream>
     using namespace std;
 
     int main ()
@@ -123,7 +128,7 @@ we do not output the invalid data in ``line``.
    :feedback_a: Correct!
    :feedback_b: Incorrect! Try reading again!
    :feedback_c: Incorrect! Try reading again!
-   :feedback_d: Incorrect! apstrings are allowed in C++.
+   :feedback_d: Incorrect! strings are allowed in C++.
 
    We need to use the function ``c_str()`` to convert a string to a native C string because...
 

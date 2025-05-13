@@ -23,7 +23,7 @@ accesses implicit.
 
 By the way, remember that this is not the most efficient implementation
 of this function. If you didn’t do it back in
-Chapter `[time] <#time>`__, you should write a more efficient version
+:numref:`time`, you should write a more efficient version
 now.
 
 To declare the function, we can just copy the first line into the
@@ -51,6 +51,7 @@ The output of this program is ``9:22:50``.
 
 .. activecode:: another_example_AC_1
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror' ]
 
    Feel free to change the input and experiment around with the active
    code below!

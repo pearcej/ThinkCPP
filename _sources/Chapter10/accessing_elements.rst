@@ -57,6 +57,7 @@ Chianti.
 
 .. activecode:: accessing_elements_AC_1
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror' ]
 
    Take a look at the active code below. We can modify the vectors by accessing
    its elements.
@@ -97,7 +98,7 @@ Chianti.
 
         -   Incorrect! This is not proper syntax.
 
-    -   ``vec[2] = vec[2]++;``
+    -   ``vec[2]++;``
 
         +   ``vec[2]`` is the third element and we increment it by using the ``++`` operator.
 

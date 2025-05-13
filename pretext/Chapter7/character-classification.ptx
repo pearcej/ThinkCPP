@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+<section xml:id="chapter7_character-classification">
+  <title>Character classification</title>
+  <p>It is often useful to examine a character and test whether it is upper or lower case, or
+    whether it is a character or a digit. C++ provides a library of functions that perform this kind
+    of character classification. In order to use these functions, you have to include the header
+    file <c>cctype</c>.</p>
+  <program>char letter = 'a';
+if (isalpha(letter)) {
+  cout &lt;&lt; "The character " &lt;&lt; letter &lt;&lt; " is a letter." &lt;&lt; endl;
+}</program>
+  <p>You might expect the return value from <c>isalpha</c> to be a <c>bool</c>, but for reasons I don't even
+    want to think about, it is actually an integer that is 0 if the argument is not a letter, and
+    some non-zero value if it is.</p>
+  <p>This oddity is not as inconvenient as it seems, because it is legal to use this kind of integer
+    in a conditional, as shown in the example. The value 0 is treated as <c>false</c>, and all non-zero
+    values are treated as <c>true</c>.</p>
+  <p>Technically, this sort of thing should not be allowed&#x2014;integers are not
+    the same thing as boolean values. Nevertheless, the C++ habit of
+    converting automatically between types can be useful.</p>
+  <p>Other character classification functions include <c>isdigit</c>, which identifies the digits 0 through
+    9, and <c>isspace</c>, which identifies all kinds of <q>white</q> space, including spaces, tabs,
+    newlines, and a few others. There are also <c>isupper</c> and <c>islower</c>, which distinguish upper and
+    lower case letters.</p>
+  <p>Finally, there are two functions that convert letters from one case to the other, called <c>toupper</c>
+    and <c>tolower</c>. Both take a single character as a parameter and return a (possibly converted)
+    character.</p>
+  <program>char letter = 'a';
+letter = toupper (letter);
+cout &lt;&lt; letter &lt;&lt; endl;</program>
+  <p>The output of this code is <c>A</c>.</p>
+  <p>As an exercise, use the character classification and conversion library to write functions
+    named <c>stringToUpper</c> and <c>stringToLower</c> that take a single <c>string</c> as a parameter, and return a string with
+    all the characters converted to upper or lower case. The return type should be <c>string</c>.</p>
+  <exercise label="character_classification_AC_1">
+    <statement>
+      <p>Try writing the <c>stringToUpper</c> and <c>stringToLower</c> functions in the commented sections of the active code
+        below. Both functions take a single <c>string</c> as a parameter and have return type <c>void</c>. <c>stringToUpper</c>
+        should convert the string to uppercase, and <c>stringToLower</c> should convert the string to lowercase.
+        Some functions that you might find useful include <c>isalpha</c>, <c>isupper</c>, <c>islower</c>, <c>toupper</c>, and <c>tolower</c>.
+        If you get stuck, you can reveal the hint after the problem for help.</p>
+    </statement>
+    <program xml:id="character_classification_AC_1_editor"
+             interactive="activecode"
+             line-numbers="yes">
+      <code><![CDATA[
+#include <iostream>
+#include <cctype>
+using namespace std;
+
+string stringToUpper(string input) {
+    // ``stringToUpper`` should convert a string to uppercase and
+    // and return it. Write your implementation here.
+}
+
+string stringToLower(string input) {
+    // ``stringToLower`` should convert a string to lowercase and
+    // and return it. Write your implementation here.
+}
+
+int main() {
+    string upper = "This String Should Be Converted To Uppercase!";
+    upper = stringToUpper (upper);
+    cout << upper << endl;
+    string lower = "This String Should Be Converted To Lowercase!";
+    stringToLower (lower);
+    cout << lower << endl;
+}
+        ]]></code>
+    </program>
+    <hint>
+      <activity label="character_classification_1"
+                numbered="yes"
+                adaptive="yes"
+                indentation="hide">
+        <statement>
+          <p>Let's write the code for the <c>stringToUpper</c> function. <c>stringToUpper</c> should convert a string to
+            uppercase.</p>
+        </statement>
+        <blocks>
+          <block order="7">
+            <choice correct="yes">
+              <cline>string stringToUpper(string input) {</cline>
+            </choice>
+            <choice>
+              <cline>void stringToUpper(string input) {                          </cline>
+            </choice>
+          </block>
+          <block order="2">
+            <cline>   size_t i = 0;</cline>
+          </block>
+          <block order="5">
+            <choice correct="yes">
+              <cline><![CDATA[   while (i < input.length()) {]]></cline>
+            </choice>
+            <choice>
+              <cline>   while (i &gt; input.length()) {                             </cline>
+            </choice>
+          </block>
+          <block order="4">
+            <choice correct="yes">
+              <cline>       if (isalpha(input[i]) &amp;&amp; islower(input[i])) {</cline>
+            </choice>
+            <choice>
+              <cline>       if (isalpha(input[i]) || islower(input[i])) {        </cline>
+            </choice>
+          </block>
+          <block order="6">
+            <cline>           input[i] = toupper(input[i]));</cline>
+          </block>
+          <block order="3">
+            <cline>       }</cline>
+            <cline>       i++;</cline>
+            <cline>   }</cline>
+          </block>
+          <block order="10">
+            <cline>   return result;</cline>
+          </block>
+          <block order="1">
+            <cline>}</cline>
+          </block>
+        </blocks>
+      </activity>
+    </hint>
+    <hint>
+      source="/mnt/f/Programming/Runestone2PreTeXt/book/_sources/Chapter7/character_classification.rst">
+      <activity label="character_classification_2"
+                numbered="yes"
+                adaptive="yes"
+                indentation="hide">
+        <statement>
+          <p>Let's write the code for the <c>stringToLower</c> function. <c>stringToLower</c> should convert a string to
+      lowercase.</p>
+        </statement>
+        <blocks>
+          <block order="1">
+            <choice correct="yes">
+              <cline>string stringToLower(string input) {</cline>
+            </choice>
+            <choice>
+              <cline>void stringToLower(string input) {                          </cline>
+            </choice>
+          </block>
+          <block order="4">
+            <cline>   size_t i = 0;</cline>
+          </block>
+          <block order="11">
+            <choice correct="yes">
+              <cline><![CDATA[   while (i < input.length()) {]]></cline>
+            </choice>
+            <choice>
+              <cline>   while (i &gt; input.length()) {                             </cline>
+            </choice>
+          </block>
+          <block order="9">
+            <choice correct="yes">
+              <cline>       if (isalpha(input[i]) &amp;&amp; isupper(input[i])) {</cline>
+            </choice>
+            <choice>
+              <cline>       if (isalpha(input[i]) &amp;&amp; isupper(input[i])) {        </cline>
+            </choice>
+          </block>
+          <block order="10">
+            <cline>           input[i] = tolower(input[i]);</cline>
+          </block>
+          <block order="5">
+            <cline>       }</cline>
+            <cline>       i++;</cline>
+            <cline>   }</cline>
+          </block>
+          <block order="8">
+            <cline>   return input;</cline>
+          </block>
+          <block order="2">
+            <cline>}</cline>
+          </block>
+        </blocks>
+      </activity>
+    </hint>
+  </exercise>
+</section>

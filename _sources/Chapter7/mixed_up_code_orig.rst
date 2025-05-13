@@ -23,11 +23,11 @@ Mixed Up Code Practice
    =====
       cout << word[4] << endl;  #distractor
    =====
-      while ((int)word.find('i') != -1) {
+      while (word.find('i') != string::npos) {
    =====
-      while ((int)word.find('e') != -1) {  #distractor
+      while ((int)word.find('e') != string::npos) {  #distractor
    =====
-      while ((int)word.find('i')) {  #distractor
+      while (word.find('i')) {  #distractor
    =====
          word[word.find('i')] = 'e';
    =====
@@ -129,7 +129,7 @@ Mixed Up Code Practice
    =====
    string cipherText (string input) {  #paired
    =====
-      int i = 0;
+      size_t i = 0;
    =====
       while (i < input.length()) {
    =====
@@ -166,9 +166,9 @@ Mixed Up Code Practice
    =====
       int count = 1;  #paired
    =====
-      int i = 0;
+      size_t i = 0;
    =====
-      while (i < (int)tongue_twister.length()) {
+      while (i < tongue_twister.length()) {
    =====
          if (tongue_twister[i] == 't') {
    =====
@@ -199,15 +199,15 @@ Mixed Up Code Practice
    =====
       string quote = "Your time is limited, so don't waste it living someone else's life.";
    =====
-      int i = 0;  #distractor
+      size_t i = 0;  #distractor
    =====
       while (i < quote.length()) {  #distractor
    =====
-      int first = quote.find("i");
+      size_t first = quote.find("i");
    =====
-      int index = find (quote, 'i', first + 1);
+      size_t index = quote.find('i', first + 1);
    =====
-      int index = find (quote, 'i', first);  #paired
+      size_t index = quote.find('i', first);  #paired
    =====
       cout << index;
    =====
@@ -267,7 +267,7 @@ Mixed Up Code Practice
    =====
       string copy = input;  #distractor
    =====
-      int i = 0;
+      size_t i = 0;
    =====
       while (i < input.length()) {
    =====
@@ -306,9 +306,9 @@ Mixed Up Code Practice
    =====
    string censorLetter (string input) {  #paired
    =====
-      int i = 0;
+      size_t i = 0;
    =====
-      int i = 1;  #paired
+      size_t i = 1;  #paired
    =====
       while (i < input.length()) {
    =====
@@ -351,16 +351,17 @@ Mixed Up Code Practice
       if ("first" > "second") {  #paired
    =====
          return second + first;
+      }
    =====
-         cout << second << first;  #distractor
+         cout << second << first;  #paired
       }
    =====
       else {
    =====
          return first + second;
+      }
    =====
-         cout << first << second;
-   =====
+         cout << first << second;  #paired
       }
    =====
    }
@@ -385,15 +386,15 @@ Mixed Up Code Practice
    =====
    string ispalindrome(bool input) {  #paired
    =====
-      int front = 0 , back = input.length() - 1;
+      size_t front = 0 , back = input.length() - 1;
    =====
-      int front = 0 , back = input.length(); #paired
+      size_t front = 0 , back = input.length(); #paired
    =====
       while ( front &lt back) {
    =====
       while ( front &gt back) { #paired
    =====
-         if( input[b] != input[e] ) {
+         if( input[front] != input[back] ) {
    =====
          else { #distractor
    =====

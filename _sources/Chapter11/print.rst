@@ -1,7 +1,7 @@
 ``print``
 ---------
 
-In Chapter `[time] <#time>`__ we defined a structure named ``Time`` and
+In :numref:`time` we defined a structure named ``Time`` and
 wrote a function named ``printTime``
 
 ::
@@ -112,6 +112,7 @@ will complain.
 
 .. activecode:: print_AC_1
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror' ]
 
    Feel free to mess around with input for ``currentTime`` in the active code below!
    ~~~~
@@ -188,7 +189,7 @@ will complain.
    =====
     Dog dog = *this;                          #distractor
    =====
-    if (dog.weight < 4) {
+    if (weight < 4) {
       return true;
     }
     return false;

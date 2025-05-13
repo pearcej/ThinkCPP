@@ -29,7 +29,7 @@ whole deck. But as long as the recipient plays by the rules, it makes
 sense to think of it, abstractly, as a subdeck.
 
 There is one other example of this kind of abstraction that you might
-have noticed in Section `[objectops] <#objectops>`__, when I referred to
+have noticed in :numref:`objectops`, when I referred to
 an “empty” data structure. The reason I put “empty” in quotation marks
 was to suggest that it is not literally accurate. All variables have
 values all the time. When you create them, they are given default

@@ -11,6 +11,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_7_1_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Write a program that prints the 4th character of word, 
             and finds and replaces all instances of 'i' with 'e'.
@@ -26,6 +27,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_7_1_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the program using the word 'irritating' as the string. 
             ~~~~
@@ -36,7 +38,7 @@ assess what you have learned in this chapter.
             int main() {
                 string word = "irritating";
                 cout << word[3] << endl;
-                while ((int)word.find('i') != -1) {
+                while (word.find('i') != string::npos) {
                     word[word.find('i')] = 'e';
                 }
                 cout << word << endl;
@@ -49,6 +51,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_7_2_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             An anagram is a play on words by rearranging the letters of the original words
             to form new words. For example, the letters in "listen" can be rearranged to
@@ -64,6 +67,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_7_2_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the program.
             ~~~~
@@ -89,6 +93,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_7_3_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Let's write the function ``longerString``, which takes two parameters, 
             first and second. If first has more letters
@@ -112,6 +117,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_7_3_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the function ``longerString``.
             ~~~~
@@ -143,6 +149,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_7_4_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Let's write the code for the ``cipherText`` function. cipherText 
             should be a void function that takes the string input as a parameter,
@@ -164,6 +171,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_7_4_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the function ``cipherText``.
             ~~~~
@@ -172,8 +180,8 @@ assess what you have learned in this chapter.
             using namespace std;
 
             void cipherText (string input) {
-                int i = 0;
-                while ((unsigned)i < input.length()) {
+                size_t i = 0;
+                while (i < input.length()) {
                     input[i] = input[i] + 1;
                     i++;
                 }
@@ -191,6 +199,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_7_5_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Write a program that prints out the number of occurences of the character 't'
             in the string tongue_twister, with declaration in the order of ``tongue_twister``, ``count``, and ``i``.
@@ -206,6 +215,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_7_5_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the program.
             ~~~~
@@ -216,7 +226,7 @@ assess what you have learned in this chapter.
             int main() {
                 string tongue_twister = "twelve twins twirled twelve twigs";
                 int count = 0;
-                int i = 0;
+                size_t i = 0;
                 while (i < (int)tongue_twister.length()) {
                     if (tongue_twister[i] == 't') {
                         count++;
@@ -233,6 +243,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_7_6_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Write a program that prints out the index of the second instance of the 
             character 'i'. Use ``string quote = "Your time is limited, so don't waste it living someone else's life.``
@@ -247,6 +258,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_7_6_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the program.
             ~~~~
@@ -256,8 +268,8 @@ assess what you have learned in this chapter.
 
             int main() {
                 string quote = "Your time is limited, so don't waste it living someone else's life.";
-                int first = quote.find("i");
-                int index = find (quote, 'i', first + 1);
+                size_t first = quote.find("i");
+                int index = quote.find('i', first + 1);
                 cout << index;
             }
 
@@ -268,6 +280,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_7_7_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Deep in the forest live the 7 dwarves named Sorty, Torty, Vorty,
             Worty, Xorty, Yorty, and Zorty. Write a program that prints
@@ -283,6 +296,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_7_7_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
             
             Below is one way to write the program.
             ~~~~
@@ -308,6 +322,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_7_8_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             On the strange planet of Noes, there's a law that prohibits the usage of the letter "e". 
             As a result, they hired you to write a function called ``censorE`` that replaces all occurences
@@ -334,6 +349,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_7_8_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the censorE function.
             ~~~~
@@ -342,7 +358,7 @@ assess what you have learned in this chapter.
             using namespace std;
 
             string censorE (string input) {
-                int i = 0;
+                size_t i = 0;
                 while ((unsigned)i < input.length()) {
                     if (input[i] == 'e') {
                         input[i] = '*';
@@ -369,6 +385,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_7_9_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Your work for the planet of Noes impressed the nearby planets of Noas, Nois, Noos, and Nous.
             They want you to write different functions that censor out each planet's corresponding forbidden letter.
@@ -397,6 +414,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_7_9_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the censorLetter function.
             ~~~~
@@ -405,8 +423,8 @@ assess what you have learned in this chapter.
             using namespace std;
             
             string censorLetter (string input, char letter) {
-                int i = 0;
-                while ((unsigned)i < input.length()) {
+                size_t i = 0;
+                while (i < input.length()) {
                     if (input[i] == letter) {
                         input[i] = '*';
                     }
@@ -432,6 +450,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_7_10_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Let's write a function called ``alphaCombine`` which takes
             two strings, first and second,
@@ -460,6 +479,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_7_10_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the alphaCombine function.
             ~~~~
@@ -473,7 +493,6 @@ assess what you have learned in this chapter.
                 }
                 else {
                     return first + second;
-                    cout << first << second;
                 }
             }
 
@@ -494,6 +513,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_7_11_ac_q
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Let's write a function called ``ispalindrome`` which takes
             a string named input
@@ -523,6 +543,7 @@ assess what you have learned in this chapter.
 
         .. activecode:: mucp_7_11_ac_a
             :language: cpp
+            :compileargs: [ '-Wall', '-Werror' ]
 
             Below is one way to write the ispalindrome function.
             ~~~~
@@ -531,10 +552,12 @@ assess what you have learned in this chapter.
             using namespace std;
 
             bool ispalindrome(string input) {
-                int front = 0;
-                int back = input.length() - 1;
+                if (input.length() == 0)
+                    return true;
+                size_t front = 0;
+                size_t back = input.length() - 1;
                 while (front < back) {
-                    if( input[b] != input[e] ) {
+                    if(input[front] != input[back]) {
                         return false;
                     }
                     front = front + 1;

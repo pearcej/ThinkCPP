@@ -73,16 +73,14 @@ messages you get.
 
    Construct a block of code that correctly defines a the addTwo function.
    -----
-   int addTwo(int x) {
+   void addTwo(int x) {
 
-   int addTwo(int x); #distractor
+   void addTwo(int x); #distractor
 
-   int addTwo(int x) #distractor
+   void addTwo(int x) #distractor
 
-    int new = x + 2;
+    int plustwo = x + 2;
 
-    return new;
-
-    return x; #distractor
+    cout << plustwo;
 
    }

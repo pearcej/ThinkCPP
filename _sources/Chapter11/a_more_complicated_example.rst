@@ -37,6 +37,7 @@ after the current-time, then...”
 
 .. activecode:: more_complicated_example_AC_1
    :language: cpp
+   :compileargs: [ '-Wall', '-Werror' ]
 
    The active code below is another practical example using the ``after`` function. 
    Feel free to modify the time that school gets out, and the time that the track meet starts, if you wish!
@@ -105,8 +106,9 @@ after the current-time, then...”
    :numbered: left
    :adaptive:
 
-   Create the Dog::is_older() function as it would be defined INSIDE of the Dog structure definition.  This function
-   checks if the current Dog is older than another Dog.  The function is invoked on the current Dog.
+   Create the ``Dog::is_older()`` function as it would be defined INSIDE of the ``Dog`` structure definition.  This function
+   checks if the current ``Dog`` is older than another ``Dog``.  The function is invoked on the current ``Dog``.
+   
    -----
    bool Dog::is_older(const Dog& dog, const Dog& dog2) {                         #distractor
    =====
